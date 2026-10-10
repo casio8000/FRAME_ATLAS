@@ -1274,4 +1274,76 @@ window.bkSaveShared=faSaveSharedSnapshotFile;
 if(window.__faStoreReady&&typeof window.__faStoreReady.then==='function')window.__faStoreReady.then(()=>faAutoSharedPull(false)).catch(()=>{});
 </script>
 
+
+<style id="fa532-local-change-warning-style">
+#fa532-local-change-warning{position:sticky;top:0;z-index:9999;background:#fff0d9;color:#58380a;border-bottom:1px solid #e5b968;padding:10px 14px;font-size:13px;line-height:1.5;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+#fa532-local-change-warning button{border:0;border-radius:7px;padding:8px 11px;background:#202721;color:white;font-weight:800}
+#fa532-local-change-warning .fa532-dismiss{background:transparent;color:#58380a;border:1px solid #c99b52}
+@media(max-width:600px){#fa532-local-change-warning{font-size:12px;padding:9px 10px;gap:7px}}
+</style>
+<script id="fa532-local-change-warning">
+(function(){
+'use strict';
+if(window.__fa532ChangeWarningInstalled)return;
+window.__fa532ChangeWarningInstalled=true;
+let armed=false,dirty=false,alerted=false;
+const DIRTY_KEY='fa532LocalChangesNeedBackup';
+function setDirty(){
+ if(!armed||window.__fa532SyncApplying||dirty)return;
+ dirty=true;
+ try{localStorage.setItem(DIRTY_KEY,'1')}catch(e){}
+ showBanner();
+ if(!alerted){
+  alerted=true;
+  try{sessionStorage.setItem('fa532ChangePopupShown','1')}catch(e){}
+  try{alert('변경사항이 이 기기에 저장되었습니다.\nGitHub에는 자동 업로드되지 않습니다. 다른 기기에서도 사용하려면 데이터 관리에서 GitHub 공유용 백업 파일을 저장한 뒤 저장소에 업로드해야 합니다.')}catch(e){}
+ }
+}
+function showBanner(){
+ if(!document.body)return;
+ let el=document.getElementById('fa532-local-change-warning');
+ if(!el){
+  el=document.createElement('div');el.id='fa532-local-change-warning';
+  el.innerHTML='<span><b>백업 필요:</b> 변경사항은 이 기기에 저장되며 GitHub에 자동 업로드되지 않습니다.</span><button type="button" id="fa532-open-backup">백업 화면 열기</button><button type="button" class="fa532-dismiss" id="fa532-hide-warning">알림 접기</button>';
+  document.body.prepend(el);
+  document.getElementById('fa532-open-backup').addEventListener('click',function(){if(typeof window.backup==='function')window.backup();else alert('메뉴에서 더보기 → 데이터 관리로 이동하세요.');});
+  document.getElementById('fa532-hide-warning').addEventListener('click',function(){el.style.display='none';});
+ }else el.style.display='flex';
+}
+try{if(sessionStorage.getItem('fa532ChangePopupShown')==='1')alerted=true}catch(e){}
+try{dirty=localStorage.getItem(DIRTY_KEY)==='1'}catch(e){}
+if(dirty)showBanner();
+function arm(){
+ if(armed)return;
+ armed=true;
+ try{
+  if(window.LSX&&typeof window.LSX.setItem==='function'){
+   const set=window.LSX.setItem.bind(window.LSX);
+   window.LSX.setItem=function(k,v){const r=set(k,v);if(!window.__fa532SyncApplying)setDirty();return r};
+  }
+  if(window.LSX&&typeof window.LSX.removeItem==='function'){
+   const remove=window.LSX.removeItem.bind(window.LSX);
+   window.LSX.removeItem=function(k){const r=remove(k);if(!window.__fa532SyncApplying)setDirty();return r};
+  }
+  if(window.IDB){
+   for(const method of ['put','del','clear']){
+    if(typeof window.IDB[method]==='function'){
+     const original=window.IDB[method].bind(window.IDB);
+     window.IDB[method]=function(){const r=original.apply(null,arguments);if(!window.__fa532SyncApplying)setDirty();return r};
+    }
+   }
+  }
+  if(typeof window.faApplySharedSnapshot==='function'){
+   const apply=window.faApplySharedSnapshot;
+   window.faApplySharedSnapshot=async function(){window.__fa532SyncApplying=true;try{return await apply.apply(this,arguments)}finally{window.__fa532SyncApplying=false}};
+  }
+  window.addEventListener('beforeunload',function(e){if(dirty){e.preventDefault();e.returnValue='변경사항이 GitHub에 업로드되지 않았습니다.';return e.returnValue}});
+ }catch(e){console.warn('FRAME ATLAS 변경 알림 초기화 실패',e)}
+}
+if(window.__faStoreReady&&typeof window.__faStoreReady.then==='function'){
+ window.__faStoreReady.then(function(){setTimeout(arm,1800)}).catch(function(){setTimeout(arm,2500)});
+}else setTimeout(arm,3000);
+})();
+</script>
+
 </body></html>
