@@ -1,4 +1,4 @@
-/* FRAME ATLAS 이미지 레지스트리 v5.26 */
+/* FRAME ATLAS 이미지 레지스트리 v5.27 */
 window.FA_IMAGE_REGISTRY={
  "version": "5.25",
  "updated": "2026-10-10",
