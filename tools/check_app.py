@@ -120,6 +120,27 @@ if re.search(r"fetch\(o\.data\)\)\.blob\(\)", html):
 if "더보기 → 데이터 관리" in html:
     fail("사용 안내에 실제 메뉴와 다른 '더보기 → 데이터 관리' 경로가 남아 있습니다.")
 
+# 화면 출력 경로의 HTML 이스케이프와 동적 URL 검증 회귀 검사입니다.
+for label, token in {
+    "HTML 문자 이스케이프 함수": "const esc=",
+    "이미지 주소 제한 함수": "function safeImageSrc(value)",
+    "http/https 링크 제한 함수": "function safeHref(value)",
+}.items():
+    if token not in html:
+        fail(f"필수 출력 보안 처리 누락: {label}")
+    else:
+        checks.append(f"{label} 확인")
+for raw, label in [
+    ('<div class="name">${x.name}</div>', "장소 카드의 미이스케이프 장소명"),
+    ('href="${x.naver}"', "검증되지 않은 Naver 주소 직접 삽입"),
+    ('href="${x.google}"', "검증되지 않은 Google 주소 직접 삽입"),
+    ('href="${x.officialUrl}"', "검증되지 않은 공식 URL 직접 삽입"),
+    ('src="${m.url||phOf(k)}"', "미검증 이미지 주소 직접 삽입"),
+]:
+    if raw in html:
+        fail(f"미해결 동적 출력 패턴: {label}")
+
+
 if errors:
     print("FRAME ATLAS 정적 검사: 실패")
     for item in errors:
