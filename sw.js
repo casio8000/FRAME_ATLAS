@@ -1,6 +1,6 @@
-/* FRAME ATLAS v5.37: GitHub Pages shared data is always checked online first. */
-const CACHE_NAME = 'frame-atlas-v5.37-20261011-sync-safety';
-const APP_FILES = ['./', './index.html', './data/places.js', './data/DB_SCHEMA.json', './data/review-workflow.js', './data/image-registry.js', './manifest.json', './assets/icons/icon-128.png', './assets/icons/icon-180.png', './assets/icons/icon-192.png', './assets/icons/icon-512.png'];
+/* FRAME ATLAS v5.38: GitHub Pages shared data is always checked online first. */
+const CACHE_NAME = 'frame-atlas-v5.38-20261011-safe-merge';
+const APP_FILES = ['./', './index.html', './data/places.js', './data/DB_SCHEMA.json', './data/review-workflow.js', './data/backup-merge.js', './data/image-registry.js', './manifest.json', './assets/icons/icon-128.png', './assets/icons/icon-180.png', './assets/icons/icon-192.png', './assets/icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
@@ -27,7 +27,7 @@ self.addEventListener('fetch', event => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
   const path = url.pathname;
-  const sharedFresh = req.mode === 'navigate' || /\/(?:index\.html|data\/places\.js|data\/image-registry\.js|data\/review-workflow\.js|data\/DB_SCHEMA\.json|manifest\.json|sw\.js)$/.test(path);
+  const sharedFresh = req.mode === 'navigate' || /\/(?:index\.html|data\/places\.js|data\/image-registry\.js|data\/review-workflow\.js|data\/backup-merge\.js|data\/DB_SCHEMA\.json|manifest\.json|sw\.js)$/.test(path);
   if (sharedFresh) {
     event.respondWith((async () => {
       const cache = await caches.open(CACHE_NAME);
