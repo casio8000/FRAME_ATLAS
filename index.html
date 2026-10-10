@@ -1317,19 +1317,19 @@ function arm(){
  if(armed)return;
  armed=true;
  try{
-  if(window.LSX&&typeof window.LSX.setItem==='function'){
-   const set=window.LSX.setItem.bind(window.LSX);
-   window.LSX.setItem=function(k,v){const r=set(k,v);if(!window.__fa532SyncApplying)setDirty();return r};
+  if(typeof LSX!=='undefined'&&typeof LSX.setItem==='function'){
+   const set=LSX.setItem.bind(LSX);
+   LSX.setItem=function(k,v){const r=set(k,v);if(!window.__fa532SyncApplying)setDirty();return r};
   }
-  if(window.LSX&&typeof window.LSX.removeItem==='function'){
-   const remove=window.LSX.removeItem.bind(window.LSX);
-   window.LSX.removeItem=function(k){const r=remove(k);if(!window.__fa532SyncApplying)setDirty();return r};
+  if(typeof LSX!=='undefined'&&typeof LSX.removeItem==='function'){
+   const remove=LSX.removeItem.bind(LSX);
+   LSX.removeItem=function(k){const r=remove(k);if(!window.__fa532SyncApplying)setDirty();return r};
   }
-  if(window.IDB){
+  if(typeof IDB!=='undefined'){
    for(const method of ['put','del','clear']){
-    if(typeof window.IDB[method]==='function'){
-     const original=window.IDB[method].bind(window.IDB);
-     window.IDB[method]=function(){const r=original.apply(null,arguments);if(!window.__fa532SyncApplying)setDirty();return r};
+    if(typeof IDB[method]==='function'){
+     const original=IDB[method].bind(IDB);
+     IDB[method]=function(){const r=original.apply(null,arguments);if(!window.__fa532SyncApplying)setDirty();return r};
     }
    }
   }
