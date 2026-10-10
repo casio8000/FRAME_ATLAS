@@ -1,5 +1,5 @@
 /* FRAME ATLAS v5.36: GitHub Pages shared data is always checked online first. */
-const CACHE_NAME = 'frame-atlas-v5.36-20261011-app-audit';
+const CACHE_NAME = 'frame-atlas-v5.36-20261011-audit-security';
 const APP_FILES = ['./', './index.html', './data/places.js', './data/DB_SCHEMA.json', './data/review-workflow.js', './data/image-registry.js', './manifest.json', './assets/icons/icon-128.png', './assets/icons/icon-180.png', './assets/icons/icon-192.png', './assets/icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
