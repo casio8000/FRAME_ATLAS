@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""FRAME ATLAS 데이터 검증.  사용: python tools/validate.py [--strict]
-오류(E)가 있으면 종료코드 1 → GitHub Actions 배포가 중단됩니다. --strict 는 경고(W)도 오류로 취급."""
+"""FRAME ATLAS 데이터 검증. 사용: python tools/validate.py [--strict]
+오류(E)가 있으면 종료코드 1을 반환해 품질검사를 실패 처리합니다. 기본 모드는 경고(W)를 기록만 하며 --strict는 경고도 실패로 처리합니다. Pages 배포 차단 여부는 저장소의 브랜치 보호 규칙 설정에 따릅니다."""
 import json,re,sys,math,itertools,collections,pathlib
 R=pathlib.Path(__file__).resolve().parent.parent
 t=(R/'data/places.js').read_text(encoding='utf-8');D=json.loads(t[t.index('{'):t.rindex('}')+1])
