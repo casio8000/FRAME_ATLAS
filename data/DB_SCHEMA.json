@@ -1,0 +1,152 @@
+{
+  "name": "FRAME ATLAS 장소 불러오기 형식",
+  "version": "5.7",
+  "howto": "더보기 > 내 장소 관리 > CSV·JSON 불러오기. CSV는 UTF-8, 첫 줄은 머리글입니다. 상세 JSON은 위치·사진·허가 검증 구조와 촬영 포인트를 포함합니다.",
+  "duplicate_rule": "같은 '장소명 + 지역'은 건너뜁니다.",
+  "fields": [
+    {
+      "csv": "장소명",
+      "json": "name",
+      "required": true,
+      "example": "예시 스튜디오"
+    },
+    {
+      "csv": "지역",
+      "json": "region",
+      "required": false,
+      "example": "서울 성동",
+      "note": "첫 단어가 지역 필터(서울·경기·강원 등)에 쓰입니다."
+    },
+    {
+      "csv": "유형",
+      "json": "type",
+      "example": "폐공장 재생"
+    },
+    {
+      "csv": "실내외",
+      "json": "indoorOutdoor",
+      "example": "실내 | 실외 | 실내·외",
+      "note": "실내 / 실외 / 실내·외 3종으로 통일됩니다(야외→실외)."
+    },
+    {
+      "csv": "분위기",
+      "json": "mood",
+      "example": "거친·미니멀",
+      "note": "· / , ; | 로 구분"
+    },
+    {
+      "csv": "촬영목적",
+      "json": "shooting",
+      "example": "패션 화보"
+    },
+    {
+      "csv": "추천시간",
+      "json": "time",
+      "example": "오전"
+    },
+    {
+      "csv": "메모",
+      "json": "memo"
+    },
+    {
+      "csv": "확인사항",
+      "json": "check",
+      "example": "상업촬영 대관 문의"
+    },
+    {
+      "csv": "상업촬영",
+      "json": "commercial",
+      "example": "대관 필요",
+      "note": "명시적으로 '사전 허가 필요'·'대관 필요'가 확인된 경우만 사전 허가로 분류합니다. '확인 필요'·'허가 확인'·'조건 확인'·'미확인'은 허가 상태 미확인으로 남깁니다."
+    },
+    {
+      "csv": "위도",
+      "json": "lat",
+      "example": 37.5445
+    },
+    {
+      "csv": "경도",
+      "json": "lng",
+      "example": 127.056
+    },
+    {
+      "csv": "공식링크",
+      "json": "officialUrl"
+    },
+    {
+      "csv": null,
+      "json": "imageReview",
+      "required": false,
+      "example": {
+        "status": "reference-unverified",
+        "placeMatchVerified": false,
+        "usageRightsStatus": "not-verified"
+      },
+      "note": "대표 사진의 장소 일치, 원본 출처, 이용권은 개별 확인 기록으로 구분합니다."
+    },
+    {
+      "csv": null,
+      "json": "permitReview",
+      "required": false,
+      "example": {
+        "status": "unverified",
+        "commercialUseConfirmed": false
+      },
+      "note": "일반 관람 가능과 상업촬영 승인을 분리하며 공식 근거·확인일을 기록합니다."
+    },
+    {
+      "csv": null,
+      "json": "locationReview",
+      "required": false,
+      "example": {
+        "coordinateStatus": "precise-coordinate-unverified",
+        "entranceVerified": false
+      },
+      "note": "지역 중심 좌표와 정밀 촬영 진입점 좌표를 구별합니다."
+    },
+    {
+      "csv": null,
+      "json": "technicalReview",
+      "required": false,
+      "example": {
+        "status": "not-scouted",
+        "fieldScouted": false,
+        "fieldPoints": []
+      },
+      "note": "실측 촬영 포인트와 전력·하차·대기·안전 등은 현장 답사 후 기록합니다. 기본 아이디어는 현장 검증값이 아닙니다."
+    },
+    {
+      "csv": null,
+      "json": "sourceRefs",
+      "required": false,
+      "example": [
+        "https://example.org/location"
+      ],
+      "note": "공식/참고 출처 목록입니다. 링크가 있다는 것만으로 해당 출처가 허가를 증명하는 것은 아닙니다."
+    },
+    {
+      "csv": null,
+      "json": "imageReview.placeMatchVerifiedAt",
+      "required": false,
+      "example": "2026-10-09",
+      "note": "사진 장소 일치를 사람이 직접 확인한 날짜. 이 값이 없으면 확인 완료 점수로 계산하지 않습니다."
+    }
+  ],
+  "status_levels": {
+    "g": "촬영 가능",
+    "y": "조건 확인",
+    "o": "사전 허가",
+    "r": "제한·불가",
+    "k": "출입 불명",
+    "u": "미확인 — 근거가 없거나 최신 조건을 확인하지 못함"
+  },
+  "id_rule": "id는 영문·숫자·_·- 40자 이내만 허용됩니다. 그 외 id는 자동 재발급됩니다.",
+  "quality_principle": "Field status is user-recorded. Populated fields do not prove real-world accuracy. Location match, photo rights, commercial permission, address/GPS precision and site visit are independently recorded; confirmed states require dated evidence as described in the UI.",
+  "quality_scores": {
+    "dataCompleteness": "필수 자료 입력 정도",
+    "creativeFit": "콘셉트 잠재력(기획 참고)",
+    "productionFit": "정적 기획 메모의 제작 적합도",
+    "fieldReadiness": "현장답사·허가·장비 조건이 기록된 정도",
+    "verificationConfidence": "위치·사진 권리·상업촬영 승인 근거의 정도"
+  }
+}
