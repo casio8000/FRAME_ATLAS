@@ -2,7 +2,7 @@
 
 작성일: 2026-10-11  
 대상 저장소: casio8000/FRAME_ATLAS  
-대상 구성: index.html, sw.js, manifest.json, data/places.js, data/review-workflow.js, data/image-registry.js, tools/validate.py
+대상 구성: index.html, sw.js, manifest.json, data/places.js, data/review-workflow.js, data/image-registry.js, tools/validate.py, tools/check_app.py
 
 ## 1. 확인된 코드·사용성 문제와 조치
 
@@ -14,6 +14,7 @@
 | 업데이트 캐시 | 앱 코드와 서비스 워커가 함께 바뀌어야 새 코드가 반영됨 | 화면 버전과 서비스 워커 캐시를 v5.36으로 갱신 |
 | 회귀 검사 | 저장소에 앱 문법·리소스 경로 검사 자동화가 없었음 | tools/check_app.py 및 GitHub Actions 품질검사 추가 |
 | 배포 설명 | 검사 실패가 항상 Pages 배포를 자동 차단한다는 문구가 과도했음 | 검사 실패와 실제 배포 차단 설정을 구분하도록 설명 수정 |
+| 동적 HTML 출력 | 장소명·메모·촬영 포인트 등 동적 텍스트가 카드/상세 HTML에 직접 삽입되는 구간이 있었음 | 주요 카드·상세 출력을 이스케이프하고 미검증 이미지·링크 주소를 거부하도록 보강 |
 
 ## 2. 자동 검사에서 확인하는 항목
 
@@ -21,9 +22,10 @@
 - 로컬 JavaScript 파일, PWA 시작 경로와 아이콘 파일의 존재 여부를 확인합니다.
 - 페이지 제목 버전과 서비스 워커 캐시 버전을 비교합니다.
 - 이미지 가져오기 메뉴·핸들러, 파일 읽기, Data URL 변환 경로와 오래된 복원 코드의 재유입 여부를 검사합니다.
+- 주요 장소 카드·상세 출력의 이스케이프 처리와 미검증 URL 직접 삽입의 재유입 여부도 검사합니다.
 - tools/validate.py로 장소 ID·필수 정보·중복·좌표·반복 문구·이미지 및 검증 공백을 점검합니다.
 
-자동 검사가 성공해도 실제 iPhone Safari나 PC 브라우저에서 모든 버튼을 눌러 확인한 것과 같지는 않습니다. 특히 파일 선택창과 IndexedDB 저장은 실제 기기에서 마지막 확인이 필요합니다.
+주요 카드와 상세 화면의 텍스트·링크·이미지 주소는 정적 검사로 다시 확인했으나, 앱 전반의 모든 입력·출력 위치에 대해 형식적 보안 감사가 완료된 것은 아닙니다. 자동 검사가 성공해도 실제 iPhone Safari나 PC 브라우저에서 모든 버튼을 눌러 확인한 것과 같지는 않습니다. 특히 파일 선택창과 IndexedDB 저장은 실제 기기에서 마지막 확인이 필요합니다.
 
 ## 3. 장소 데이터 품질 공백
 
