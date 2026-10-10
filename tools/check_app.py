@@ -107,12 +107,20 @@ required = {
     "이미지 전용 가져오기 함수": "async function bkApplyImages(",
     "iOS 대응 FileReader 사용": "new FileReader()",
     "공통 Data URL → Blob 변환 함수": "function faBackupDataUrlToBlob(data)",
+    "안전 병합 모듈 스크립트": 'src="data/backup-merge.js"',
+    "로컬 우선 병합 함수 호출": "window.FABackupMerge.mergeRaw",
+    "병합 복원 버튼 충돌 정책": "새 항목 추가 · 충돌 시 현재 기기 우선",
 }
 for label, token in required.items():
     if token not in html:
         fail(f"필수 기능 코드 누락: {label}")
     else:
         checks.append(f"{label} 확인")
+if "async function bkApply(replace)" not in html or "window.FABackupMerge.mergeValues" not in html:
+    fail("백업 복원 경로에 안전한 항목별 병합 로직이 없습니다.")
+else:
+    checks.append("백업의 항목별 안전 병합 경로 확인")
+
 if html.count("faBackupDataUrlToBlob(o.data)") < 3:
     fail("전체 백업 복원과 공유 백업 적용에서 공통 Blob 변환 함수를 모두 사용하지 않습니다.")
 if re.search(r"fetch\(o\.data\)\)\.blob\(\)", html):
