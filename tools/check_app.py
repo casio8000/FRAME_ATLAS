@@ -142,6 +142,17 @@ if min(apply_start, clear_at, guard_at, confirm_at) < 0 or not (apply_start < gu
 else:
     checks.append("공유 스냅샷 초기화 전 안전 게이트 순서 확인")
 
+# 예전 안내가 자동 덮어쓰기를 약속하지 않도록 회귀 검사합니다.
+for obsolete in [
+    "이후 변경된 백업은 자동 반영됩니다.",
+    "새 버전을 자동 반영합니다.",
+    "기기 간 자동 반영을 원하면",
+]:
+    if obsolete in html:
+        fail(f"오래된 공유 백업 자동 반영 안내가 남아 있습니다: {obsolete}")
+    else:
+        checks.append(f"오래된 자동 덮어쓰기 안내 제거: {obsolete}")
+
 # 화면 출력 경로의 HTML 이스케이프와 동적 URL 검증 회귀 검사입니다.
 for label, token in {
     "HTML 문자 이스케이프 함수": "const esc=",
