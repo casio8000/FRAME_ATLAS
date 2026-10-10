@@ -110,6 +110,7 @@ required = {
     "안전 병합 모듈 스크립트": 'src="data/backup-merge.js"',
     "로컬 우선 병합 함수 호출": "window.FABackupMerge.mergeRaw",
     "병합 복원 버튼 충돌 정책": "새 항목 추가 · 충돌 시 현재 기기 우선",
+    "삭제 전파 미구현 안내": "삭제를 다른 백업에 전파하지 않습니다",
 }
 for label, token in required.items():
     if token not in html:
