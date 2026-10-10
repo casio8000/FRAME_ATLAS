@@ -36,3 +36,6 @@ jobs:
 
       - name: Check app syntax, resources, version and photo import
         run: python tools/check_app.py
+
+      - name: Test safe backup merge rules
+        run: node tools/test_backup_merge.js
