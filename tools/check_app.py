@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 import re
 import subprocess
-import sys
 import tempfile
 from pathlib import Path
 
@@ -28,13 +27,13 @@ if not SW_PATH.is_file():
     fail("sw.js가 없습니다.")
 
 # 앱에서 참조하는 로컬 script 파일이 저장소에 존재하는지 확인합니다.
-script_tags = list(re.finditer(r"<script\\b([^>]*)>([\\s\\S]*?)</script\\s*>", html, re.I))
+script_tags = list(re.finditer(r"<script\b([^>]*)>([\s\S]*?)</script\s*>", html, re.I))
 if not script_tags:
     fail("script 태그를 찾지 못했습니다.")
 inline_scripts = []
 for match in script_tags:
     attrs, body = match.group(1), match.group(2)
-    src_match = re.search(r"""\\bsrc\\s*=\\s*["']([^"']+)["']""", attrs, re.I)
+    src_match = re.search(r"""\bsrc\s*=\s*["']([^"']+)["']""", attrs, re.I)
     if src_match:
         src = src_match.group(1)
         if not re.match(r"^(?:https?:)?//|^data:", src, re.I):
@@ -43,13 +42,13 @@ for match in script_tags:
                 fail(f"저장소 밖을 가리키는 script 경로: {src}")
             elif not local_path.is_file():
                 fail(f"존재하지 않는 로컬 script: {src}")
-    elif not re.search(r"""\\btype\\s*=\\s*["']application/(?:ld\\+json|json)["']""", attrs, re.I):
+    elif not re.search(r"""\btype\s*=\s*["']application/(?:ld\+json|json)["']""", attrs, re.I):
         inline_scripts.append(body)
 checks.append(f"script 태그 {len(script_tags)}개 확인")
 
 # 인라인 코드 블록 전체를 하나의 파일로 이어붙여 문법을 검사합니다.
 # 개별 태그마다 검사할 때 놓칠 수 있는 최상위 const/let 중복 선언도 함께 찾습니다.
-combined_js = "\\n;\\n".join(inline_scripts)
+combined_js = "\n;\n".join(inline_scripts)
 with tempfile.TemporaryDirectory(prefix="frame-atlas-check-") as tmp:
     js_path = Path(tmp) / "inline-app.js"
     js_path.write_text(combined_js, encoding="utf-8")
@@ -62,7 +61,7 @@ with tempfile.TemporaryDirectory(prefix="frame-atlas-check-") as tmp:
             timeout=30,
         )
         if result.returncode:
-            fail("인라인 JavaScript 문법 오류:\\n" + (result.stderr.strip() or result.stdout.strip()))
+            fail("인라인 JavaScript 문법 오류:\n" + (result.stderr.strip() or result.stdout.strip()))
         else:
             checks.append("인라인 JavaScript 문법 통과 (Node.js --check)")
     except FileNotFoundError:
@@ -90,8 +89,8 @@ else:
         fail(f"manifest.json을 읽을 수 없습니다: {exc}")
 
 # 화면 버전과 서비스 워커 캐시 이름이 서로 어긋나면 오래된 화면이 남을 수 있습니다.
-version_match = re.search(r"<title>\\s*FRAME ATLAS v([0-9]+\\.[0-9]+)", html, re.I)
-cache_match = re.search(r"CACHE_NAME\\s*=\\s*['\"]frame-atlas-v([0-9]+\\.[0-9]+)-", sw)
+version_match = re.search(r"<title>\s*FRAME ATLAS v([0-9]+\.[0-9]+)", html, re.I)
+cache_match = re.search(r"CACHE_NAME\s*=\s*['\"]frame-atlas-v([0-9]+\.[0-9]+)-", sw)
 if not version_match:
     fail("페이지 제목에서 앱 버전을 읽을 수 없습니다.")
 elif not cache_match:
@@ -116,7 +115,7 @@ for label, token in required.items():
         checks.append(f"{label} 확인")
 if html.count("faBackupDataUrlToBlob(o.data)") < 3:
     fail("전체 백업 복원과 공유 백업 적용에서 공통 Blob 변환 함수를 모두 사용하지 않습니다.")
-if re.search(r"fetch\\(o\\.data\\)\\)\\.blob\\(\\)", html):
+if re.search(r"fetch\(o\.data\)\)\.blob\(\)", html):
     fail("레거시 fetch(Data URL).blob() 복원 코드가 남아 있습니다.")
 if "더보기 → 데이터 관리" in html:
     fail("사용 안내에 실제 메뉴와 다른 '더보기 → 데이터 관리' 경로가 남아 있습니다.")
