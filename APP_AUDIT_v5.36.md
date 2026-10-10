@@ -51,4 +51,6 @@
 
 ## 5. 검증 한계
 
-GitHub 저장소 코드와 설정을 정적으로 확인하고 자동 검사 절차를 추가했습니다. 이 환경에서는 실제 iPhone 기기 실행과 GitHub Pages 배포 후 시각적 동작을 직접 조작하는 실기 검증은 수행할 수 없습니다. GitHub Actions 실행 결과도 확인한 뒤 최종 상태에 반영해야 합니다.
+GitHub Actions의 FRAME ATLAS quality checks가 커밋 83ee73b에서 성공했습니다. 장소 데이터 검증, 검증 보고서 최신성 비교, 앱 문법·리소스·버전·사진 가져오기 정적 검사가 모두 통과했습니다. 같은 커밋의 GitHub Pages build 및 deploy 작업도 성공했습니다. [품질검사 실행](https://github.com/casio8000/FRAME_ATLAS/actions/runs/38089451792) · [Pages 배포 실행](https://github.com/casio8000/FRAME_ATLAS/actions/runs/38089451074)
+
+이 환경에서는 실제 iPhone 기기 실행과 배포된 페이지의 시각적 동작을 직접 조작하는 실기 검증은 수행할 수 없습니다. 따라서 메뉴 바로가기·코드·자동검사는 확인했지만, 실제 아이폰에서 파일 선택 후 사진이 전부 저장되는지는 기기에서 마지막으로 확인해야 합니다.
