@@ -120,6 +120,28 @@ if re.search(r"fetch\(o\.data\)\)\.blob\(\)", html):
 if "더보기 → 데이터 관리" in html:
     fail("사용 안내에 실제 메뉴와 다른 '더보기 → 데이터 관리' 경로가 남아 있습니다.")
 
+# 공유 전체 스냅샷은 로컬 개인 데이터가 있을 때 자동으로 덮어쓰면 안 됩니다.
+for label, token in {
+    "공유 백업 적용 전 전체 백업 생성": "async function faDownloadPreApplyBackup()",
+    "공유 스냅샷 변경 시 보류 상태": "const FA531_PENDING_HASH='fa532SharedSnapshotPendingHash'",
+    "백그라운드 자동 적용 차단": "if(!manual)",
+    "백업 후 재확인 절차": "const pendingHash=localStorage.getItem(FA531_PENDING_HASH)",
+    "복원 전 명시적 사용자 확인": "const ok=confirm('안전 백업을 파일로 저장했는지 확인하세요.",
+}.items():
+    if token not in html:
+        fail(f"공유 동기화 안전 검사 누락: {label}")
+    else:
+        checks.append(f"{label} 확인")
+
+apply_start = html.find("async function faApplySharedSnapshot(d,hash,manual)")
+clear_at = html.find("const stores=['places','pmeta','pblob'];for(const st of stores)await IDB.clear(st);", apply_start)
+guard_at = html.find("const pendingHash=localStorage.getItem(FA531_PENDING_HASH)", apply_start)
+confirm_at = html.find("const ok=confirm('안전 백업을 파일로 저장했는지 확인하세요.", apply_start)
+if min(apply_start, clear_at, guard_at, confirm_at) < 0 or not (apply_start < guard_at < confirm_at < clear_at):
+    fail("공유 스냅샷의 백업·확인 절차가 로컬 저장소 초기화보다 앞에 있지 않습니다.")
+else:
+    checks.append("공유 스냅샷 초기화 전 안전 게이트 순서 확인")
+
 # 화면 출력 경로의 HTML 이스케이프와 동적 URL 검증 회귀 검사입니다.
 for label, token in {
     "HTML 문자 이스케이프 함수": "const esc=",
