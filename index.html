@@ -1550,6 +1550,74 @@ if(window.__faStoreReady&&typeof window.__faStoreReady.then==='function'){
  window.__faStoreReady.then(function(){setTimeout(arm,1800)}).catch(function(){setTimeout(arm,2500)});
 }else setTimeout(arm,3000);
 })();
+
+/* ===== v5.39 안정화: 기기간 이동 가능한 전체 백업/복원 ===== */
+const FA_BACKUP_VERSION='5.39';
+function faBlobToDataURL(blob){return new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=()=>reject(r.error||new Error('사진 읽기 실패'));r.readAsDataURL(blob)})}
+async function faMakeBackup(){
+  const local={};
+  for(let i=0;i<LSX.length;i++){const k=LSX.key(i);if(/^(frameAtlas|memo25_|rec30_|img31$|faPhotoUrlVault525$|faReview57_|fa_auto_photo_cache|fa_auto_photo_v521)/i.test(k))local[k]=LSX.getItem(k)}
+  const stores={};
+  for(const name of ['pmeta','pblob','places']){
+    const keys=await IDB.keys(name),rows=[];
+    for(const key of keys){let value=await IDB.get(name,key);if(name==='pblob'&&value instanceof Blob)value={__faBlobDataURL:await faBlobToDataURL(value),type:value.type||'image/jpeg',size:value.size||0};rows.push({key,value})}
+    stores[name]=rows;
+  }
+  return {format:'FRAME_ATLAS_BACKUP',version:FA_BACKUP_VERSION,createdAt:new Date().toISOString(),localStorage:local,indexedDB:stores};
+}
+function backup(){
+  $('sheet').innerHTML='<div class="filterBody pj"><div class="filterHead"><h2>백업·복원 · v'+FA_BACKUP_VERSION+'</h2><button class="close" onclick="hide()">×</button></div>'+
+  '<p class="kicker">장소 기록과 IndexedDB 사진을 함께 백업합니다. 백업 파일은 PC와 아이폰 사이에서 직접 옮길 수 있습니다. 백업 파일을 안전한 곳에 보관하세요.</p>'+
+  '<div class="filterFooter" style="display:flex;gap:8px;flex-wrap:wrap"><button class="cta" id="faExportBtn" onclick="faExportBackup()">전체 백업 파일 만들기</button><label class="cta" style="display:inline-flex;align-items:center;cursor:pointer">백업 파일 복원<input id="faRestoreFile" type="file" accept=".json,application/json" style="display:none" onchange="faRestoreBackupFile(this.files&&this.files[0])"></label></div>'+
+  '<p class="kicker" id="faBackupStatus" role="status">복원은 현재 기기의 FRAME ATLAS 데이터를 교체합니다. 복원 전 현재 데이터도 백업하세요.</p></div>';
+  $('overlay').classList.add('show');
+}
+async function faExportBackup(){
+  const btn=$('faExportBtn'),status=$('faBackupStatus');
+  try{if(btn)btn.disabled=true;if(status)status.textContent='장소와 사진을 모으는 중입니다…';
+    const data=await faMakeBackup(),blob=new Blob([JSON.stringify(data)],{type:'application/json'});
+    const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='FRAME_ATLAS_backup_'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+    if(status)status.textContent='백업 파일 생성이 완료되었습니다. 파일 크기가 클 수 있으므로 저장 완료를 확인하세요.';
+    try{const m=LS('frameAtlasMeta',{});m.last=new Date().toISOString().slice(0,10);SV('frameAtlasMeta',m)}catch(e){}
+  }catch(e){console.error(e);if(status)status.textContent='백업 실패: '+(e.message||'저장소 읽기 오류')+'. 저장 공간과 브라우저 권한을 확인하세요.'}
+  finally{if(btn)btn.disabled=false}
+}
+async function faRestoreBackupFile(file){
+  if(!file)return;
+  const status=$('faBackupStatus');
+  try{
+    if(status)status.textContent='백업 파일을 검사하는 중입니다…';
+    const data=JSON.parse(await file.text());
+    if(!data||typeof data!=='object')throw new Error('JSON 객체가 아닙니다.');
+    const full=data.format==='FRAME_ATLAS_BACKUP'&&data.indexedDB&&data.localStorage;
+    if(!full&&!Object.keys(data).every(k=>/^(frameAtlas|memo25_|rec30_|img31$|faPhotoUrlVault525$|faReview57_)/i.test(k)))throw new Error('FRAME ATLAS 백업 파일 형식이 아닙니다.');
+    const local=full?data.localStorage:data;
+    if(!local||typeof local!=='object'||Array.isArray(local))throw new Error('로컬 기록 데이터가 올바르지 않습니다.');
+    if(full){
+      const stores=data.indexedDB;
+      for(const name of ['pmeta','pblob','places']){
+        const rows=stores[name]||[];
+        if(!Array.isArray(rows))throw new Error('사진/장소 저장 데이터 형식이 올바르지 않습니다: '+name);
+        for(const row of rows){if(!row||!Object.prototype.hasOwnProperty.call(row,'key')||!Object.prototype.hasOwnProperty.call(row,'value'))throw new Error('저장 데이터 항목이 손상되었습니다.')}
+      }
+    }
+    for(const k of Object.keys(local)){if(!/^(frameAtlas|memo25_|rec30_|img31$|faPhotoUrlVault525$|faReview57_|fa_auto_photo_cache|fa_auto_photo_v521)/i.test(k))throw new Error('허용되지 않은 저장 항목이 있습니다.');if(typeof local[k]!=='string'&&local[k]!==null)throw new Error('저장 항목 값이 올바르지 않습니다.')}
+    if(!confirm('복원하면 이 기기에 있는 FRAME ATLAS 기록이 백업 파일의 기록으로 교체됩니다. 현재 데이터를 별도로 백업했습니까?'))return;
+    for(const k of Object.keys(local)){if(local[k]===null)LSX.removeItem(k);else LSX.setItem(k,local[k])}
+    if(full){
+      for(const name of ['pmeta','pblob','places']){
+        await IDB.clear(name);
+        for(const row of data.indexedDB[name]||[]){
+          let value=row.value;
+          if(name==='pblob'&&value&&value.__faBlobDataURL){const response=await fetch(value.__faBlobDataURL);if(!response.ok)throw new Error('사진 데이터를 복원하지 못했습니다.');value=await response.blob()}
+          await IDB.put(name,row.key,value);
+        }
+      }
+    }
+    alert('복원이 완료되었습니다. 화면을 새로 고칩니다.');location.reload();
+  }catch(e){console.error(e);if(status)status.textContent='복원 실패: '+(e.message||'파일 읽기 오류')+'. 기존 데이터는 복원 완료 전까지 유지됩니다.';alert('복원 실패: '+(e.message||'파일 읽기 오류'))}
+}
+
 </script>
 
 </body></html>
