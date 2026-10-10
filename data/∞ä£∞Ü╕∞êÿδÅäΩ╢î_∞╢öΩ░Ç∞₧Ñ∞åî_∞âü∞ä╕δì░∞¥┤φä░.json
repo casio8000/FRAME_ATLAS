@@ -1,0 +1,2182 @@
+[
+  {
+    "id": "L-187",
+    "region": "서울 금천구",
+    "name": "서울시립 서서울미술관",
+    "type": "뉴미디어 미술관·반사 금속 건축",
+    "mood": "미래적·메탈릭·미니멀·도시적",
+    "shooting": "패션 화보·아이돌 콘셉트·아티스트 프로필·광고 사전답사",
+    "time": "오전 개관 직후 / 해질녘 외관",
+    "popularity": "B",
+    "memo": "물결치는 은빛 외관과 지하·지상 공간의 대비를 활용하는 신규 건축 에디토리얼 후보.",
+    "check": "건축 외관·옥상정원·로비별 상업촬영 가능 여부, 촬영 장비 반입, 전시작품 노출, 삼각대·조명 사용을 시설 담당자에게 확인.",
+    "indoorOutdoor": "실내·외",
+    "commercial": "상업촬영 조건 미확인",
+    "fee": "확인 필요",
+    "accessibility": "공식 안내 주소 확인. 차량 하차점·케이스 이동로·엘리베이터 사용은 사전 확인.",
+    "safety": "보행로와 시민 동선을 막지 않도록 소규모 테스트 촬영부터 협의. 옥상정원은 개방 범위와 사용 조건 확인.",
+    "verification": "공식 미술관 페이지에서 개관·대표주소·건축 특징 확인(2026-10-09). 현장 촬영 허가·좌표는 미검증.",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "반사 메탈 외관",
+      "뉴미디어 에디토리얼",
+      "기하학적 파사드",
+      "도시 건축 인물"
+    ],
+    "colorTags": [
+      "실버",
+      "차콜",
+      "쿨그레이"
+    ],
+    "lightTags": [
+      "흐린 날 확산광",
+      "해질녘 반사광",
+      "파사드 하이라이트"
+    ],
+    "techniqueTags": [
+      "광각 건축 원근",
+      "반사면 노출 제어",
+      "실루엣",
+      "컬러 젤 보조광"
+    ],
+    "points": [
+      {
+        "id": "L-187-A",
+        "name": "은빛 파사드 사선 포인트",
+        "mood": "미래적·메탈릭",
+        "note": "공식 보행로에서 건물 모서리와 반사 외벽이 겹치는 시점을 현장 답사 후 선택. 24–35mm로 건축선을 살리되 인물은 프레임 가장자리 왜곡을 피하도록 중앙부에 배치."
+      },
+      {
+        "id": "L-187-B",
+        "name": "유리-공원 경계 인물 컷",
+        "mood": "미니멀·도시적",
+        "note": "유리 너머 녹지와 인물의 레이어를 활용할 수 있는 위치를 찾는다. 반사광이 강하면 편광필터 효과를 확인하고, 하이라이트를 보존하도록 노출 브라케팅을 권장."
+      },
+      {
+        "id": "L-187-C",
+        "name": "옥상정원 실루엣 후보",
+        "mood": "에디토리얼·여백",
+        "note": "옥상정원 접근과 촬영 허가가 확인된 경우에만 진행. 해질녘 역광에서 50mm 또는 85mm로 인물 실루엣과 주변 스카이라인을 분리."
+      }
+    ],
+    "subjectTags": [
+      "전신",
+      "실루엣",
+      "듀오",
+      "아티스트 프로필"
+    ],
+    "styleTags": [
+      "미래지향",
+      "하이패션",
+      "클린"
+    ],
+    "rarity": "A",
+    "score": 82,
+    "officialUrl": "https://sema.seoul.go.kr/kr/visit/seoseoul",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "실제 장소 사진을 본 데이터에 확정 연결하지 않았습니다. 네이버·구글 사진 검색에서 외관과 실내를 각각 확인한 뒤 촬영 참고 사진을 등록하십시오.",
+    "visualProfile": "2026년 개관한 뉴미디어 특화 미술관. 굴곡진 은색 외벽과 투명한 실내-공원 연결, 지하 전시공간과 중정이 대비를 만들며 테크웨어·실험적 패션의 배경으로 적합한 후보.",
+    "recommendedLenses": [
+      "24–35mm",
+      "50mm",
+      "85mm"
+    ],
+    "composition": [
+      "건축 대칭·사선",
+      "환경인물",
+      "반사 레이어",
+      "여백형 전신"
+    ],
+    "shootingChecklist": [
+      "상업촬영 승인 주체 확인",
+      "옥상정원 접근 범위 확인",
+      "전시작품 및 관람객 노출 조건 확인",
+      "플래시·삼각대·스탠드 반입 확인",
+      "장비 차량 하차 위치 확인"
+    ],
+    "confidence": "중",
+    "proScout": {
+      "creativeFit": 91,
+      "productionFit": 48,
+      "lightDirection": "외관 반사와 밝기 변화가 큰 공간. 촬영 예정 시간에 파사드 방향과 반사광을 답사해야 함.",
+      "shadowControl": "외부는 자연광 중심. 실내·전시실은 별도 조명 허가 전까지 추가 조명 불가로 가정하지 말고 문의.",
+      "backgroundControl": "외벽은 배경이 강함. 보행자·안내판·행사물을 프레임에서 분리해야 함.",
+      "subjectScale": "전신·3/4·듀오·실루엣",
+      "recommendedFocalLength": "24–35mm 건축 / 50mm 전신 / 85mm 인물",
+      "cameraHeight": "정면 수평·낮은 시점의 파사드 비교",
+      "movement": "외벽 라인을 따라 느린 워킹 또는 정지 포즈",
+      "power": "외부 전원과 분전반 사용 가능 여부 미확인",
+      "loadIn": "공식 주소 기준, 실제 촬영 포인트까지 케이스 이동 경로 미확인",
+      "parking": "미술관 주차장 이용 조건·장비차량 정차 가능 여부 확인",
+      "ceiling": "로비 고천장으로 보이나 정확 높이·조명 설치 조건은 담당처 확인",
+      "sound": "일반 관람 및 전시 운영 소음 확인",
+      "crewBase": "메이크업·의상·대기 공간 대관 여부 확인",
+      "connectivity": "현장 통신 상태 미측정",
+      "restrictions": "상업촬영·전시작품·플래시·삼각대·영상 촬영은 사전 문의",
+      "rights": "건축물·전시작품·브랜드/기관 표식 사용 조건 확인",
+      "restoration": "장비·테이프 부착·이동식 배경 사용 전 원상복구 조건 확인",
+      "weatherPlan": "실내 촬영 승인 여부를 확인한 뒤 외관 촬영의 우천 대안 수립",
+      "bestWindow": "외관은 늦은 오후, 내부는 개관 직후 검토",
+      "scoutStatus": "공식자료 확인 후보 · 현장 테크스카우트 필요",
+      "confidence": "중"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실내·외",
+      "뉴미디어 미술관·반사 금속 건축",
+      "미래적·메탈릭·미니멀·도시적",
+      "패션 화보",
+      "기하학적 파사드"
+    ],
+    "source": "공식 웹자료 중심 추가 발굴",
+    "mapQuery": "서울시립 서서울미술관 서울 금천구 시흥대로79길 65",
+    "addressStatus": "공식 대표주소: 서울 금천구 시흥대로79길 65. 정밀 좌표 미검증 — 지역 중심 핀 대신 지도 검색 링크 사용.",
+    "scout": "새로 조성된 은빛 외벽의 반사와 수평·사선 구조가 핵심. 일반 관람 가능 여부와 상업 프로덕션 촬영 허용은 별도 사안으로 취급.",
+    "pro": {
+      "light": "은색 외벽의 반사 하이라이트를 살리려면 흐린 날의 균일한 빛이나 해가 낮아지는 시간대를 비교 답사합니다.",
+      "plan": "공식 안내에서 건축·공간 정보는 확인했지만 상업촬영 허가는 미확인입니다. 외관·로비·옥상정원·전시실별로 구역을 나눠 문의하십시오."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=서울%20금천구%20서울시립%20서서울미술관",
+    "google": "https://www.google.com/search?tbm=isch&q=서울%20금천구%20서울시립%20서서울미술관",
+    "sourceRefs": [
+      "https://sema.seoul.go.kr/kr/visit/seoseoul"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 91,
+      "productionFeasibility": 48,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "공식 대표주소: 서울 금천구 시흥대로79길 65. 정밀 좌표 미검증 — 지역 중심 핀 대신 지도 검색 링크 사용.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://sema.seoul.go.kr/kr/visit/seoseoul",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "주소/진입점 추가 확인 필요",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "공식 장소 안내 URL을 등록했으나, 이번 검증 배치에서 주소·진입점까지 독립 확인하지 않음.",
+    "sourceEvidenceUrl": "https://sema.seoul.go.kr/kr/visit/seoseoul"
+  },
+  {
+    "id": "L-188",
+    "region": "서울 도봉구",
+    "name": "서울시립 사진미술관",
+    "type": "사진 전문 미술관·조형적 큐브 건축",
+    "mood": "미니멀·모노크롬·실험적·현대적",
+    "shooting": "패션 화보·뷰티 프로필·포토 콘셉트·아티스트 이미지",
+    "time": "평일 개관 직후 / 외관은 흐린 날",
+    "popularity": "B",
+    "memo": "사진 매체를 주제로 한 비틀린 큐브형 건축과 10m 로비가 만드는 스케일 대비를 활용하는 후보.",
+    "check": "건축 외관과 공개 로비 중심으로 촬영 가능 범위 확인. 전시실·아카이브는 별도 승인을 전제로 하며 촬영 허가가 확인되기 전에는 사전답사만 진행.",
+    "indoorOutdoor": "실내·외",
+    "commercial": "상업촬영 조건 미확인",
+    "fee": "확인 필요",
+    "accessibility": "공식 주소 확인: 서울 도봉구 마들로13길 68. 건물 주차 안내는 공식 페이지에서 확인 가능하나 장비 하차점 별도 확인.",
+    "safety": "관람 동선과 전시물 보호가 우선. 대형 스탠드 및 붐 설치 가능 여부 확인.",
+    "verification": "서울시립미술관 공식 방문 페이지에서 주소·운영시간·건축 설명 확인(2026-10-09). 상업촬영은 미확인.",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "회전 큐브 건축",
+      "고천장 로비",
+      "모노크롬 파사드",
+      "사진 매체 콘셉트"
+    ],
+    "colorTags": [
+      "블랙",
+      "그레이",
+      "오프화이트"
+    ],
+    "lightTags": [
+      "측창 확산광",
+      "고천장 간접광",
+      "흑백 대비"
+    ],
+    "techniqueTags": [
+      "수평·수직 대비",
+      "광각 로비 원근",
+      "모노크롬 톤",
+      "프레임 인 프레임"
+    ],
+    "points": [
+      {
+        "id": "L-188-A",
+        "name": "회전 큐브 외관",
+        "mood": "미래적·모노크롬",
+        "note": "입방체의 비틀린 입면이 가장 명확하게 보이는 공공 동선을 찾는다. 24–35mm에서 건물 선이 과도하게 기울지 않도록 카메라 수평을 유지."
+      },
+      {
+        "id": "L-188-B",
+        "name": "10m 로비 스케일 컷",
+        "mood": "미니멀·압도감",
+        "note": "로비 촬영 승인이 있을 때만 진행. 인물을 프레임 아래 1/3에 작게 두어 천장 높이를 강조하고 24mm 수직 구도를 비교."
+      },
+      {
+        "id": "L-188-C",
+        "name": "외벽 레이어 인물 컷",
+        "mood": "차갑고 정제된 패션",
+        "note": "층층이 쌓인 듯한 외벽과 인물 옷의 질감 대비를 사용. 정오의 강한 반사보다 흐린 날의 부드러운 톤을 우선 시험."
+      }
+    ],
+    "subjectTags": [
+      "전신",
+      "뷰티",
+      "모노크롬",
+      "미니멀 프로필"
+    ],
+    "styleTags": [
+      "컨템포러리",
+      "실험적 패션"
+    ],
+    "rarity": "A",
+    "score": 81,
+    "officialUrl": "https://sema.seoul.go.kr/kr/visit/photosema",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "대표 사진을 실제 촬영 가능 구역의 이미지로 확정하지 않았습니다. 사진 검색 시 외관·로비·전시실 이미지를 분리해 참고해야 합니다.",
+    "visualProfile": "카메라 조리개의 개폐에서 영감을 받은 듯한 회전 큐브형 건축, 회색·검정 외벽의 시간대별 색 변화, 10m 높이 로비가 차별점. 사진가·아티스트 브랜딩 및 미니멀 화보와 궁합이 좋다.",
+    "recommendedLenses": [
+      "24mm",
+      "35mm",
+      "50mm",
+      "85mm"
+    ],
+    "composition": [
+      "수직선 강조",
+      "인물을 작게 둔 스케일 구도",
+      "모노크롬 전신",
+      "건축 디테일"
+    ],
+    "shootingChecklist": [
+      "상업 촬영 가능 여부 문의",
+      "전시실·로비 구역별 허용범위 확인",
+      "플래시·삼각대 사용 조건 확인",
+      "전시물 저작권 및 작품 노출 조건 확인",
+      "주차장 운영시간과 장비 하차 동선 확인"
+    ],
+    "confidence": "중",
+    "proScout": {
+      "creativeFit": 90,
+      "productionFit": 45,
+      "lightDirection": "공식 설명상 고천장 로비와 외벽의 톤 변화가 특징. 실제 자연광 방향은 답사에서 확인.",
+      "shadowControl": "전시실 조명은 시설 운영 조건에 따름. 별도 조명은 승인 전제.",
+      "backgroundControl": "외관은 구조가 강한 배경. 관람객과 안내 표식을 제거할 수 있는 시간대 선택 필요.",
+      "subjectScale": "전신·반신·뷰티 클로즈업",
+      "recommendedFocalLength": "24–35mm 건축 / 50mm 반신 / 85mm 뷰티",
+      "cameraHeight": "수평 구도와 낮은 카메라 높이를 비교",
+      "movement": "정지 포즈 위주; 로비 보행 컷은 통행 방해가 없을 때만",
+      "power": "전시공간 전원 이용 여부 미확인",
+      "loadIn": "공식 주소와 주차정보는 있으나 촬영 포인트까지 장비 반입 동선 미확인",
+      "parking": "공식 주차 요금·시간 확인, 장비차량 정차 별도 문의",
+      "ceiling": "공식 자료에서 로비 높이 약 10m로 소개. 조명 리깅 가능 여부는 미확인.",
+      "sound": "관람객과 프로그램 운영 중 잔향 확인",
+      "crewBase": "대기·의상 변경 공간 별도 문의",
+      "connectivity": "현장 측정 필요",
+      "restrictions": "공공 미술관 운영 규정·전시 저작권 우선; 상업 촬영은 허가 전제로 검토",
+      "rights": "전시작품·미술관 표식·출연자 이미지의 사용 범위를 분리 확인",
+      "restoration": "장비·배경 설치로 시설이나 작품에 접촉하지 않도록 함",
+      "weatherPlan": "외관 촬영 시 흐린 날을 우선 후보로, 실내는 승인된 경우에만 대안으로 활용",
+      "bestWindow": "평일 개관 직후",
+      "scoutStatus": "공식자료 확인 후보 · 현장 테크스카우트 필요",
+      "confidence": "중"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실내·외",
+      "사진 전문 미술관·조형적 큐브 건축",
+      "미니멀·모노크롬·실험적·현대적",
+      "패션 화보",
+      "회전 큐브 건축"
+    ],
+    "source": "공식 웹자료 중심 추가 발굴",
+    "mapQuery": "서울시립 사진미술관 서울 도봉구 마들로13길 68",
+    "addressStatus": "공식 대표주소: 서울 도봉구 마들로13길 68. 정밀 좌표 미검증 — 지도 검색으로 실제 진입점을 확인.",
+    "scout": "건물의 비틀어진 큐브 형태와 고천장 로비가 시각적 핵심. 사진 매체 기관인 만큼 전시물 보호와 촬영 규정을 우선 확인.",
+    "pro": {
+      "light": "외벽은 날씨와 태양의 각도에 따라 회색에서 검정까지 톤이 달라질 수 있으므로 촬영 시각별 테스트 컷이 필요합니다.",
+      "plan": "공식 운영·주소·건축 안내를 확인했습니다. 상업촬영 승인 여부, 플래시·스탠드·전시물 배경 사용은 별도 확인이 필요합니다."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=서울%20도봉구%20서울시립%20사진미술관",
+    "google": "https://www.google.com/search?tbm=isch&q=서울%20도봉구%20서울시립%20사진미술관",
+    "sourceRefs": [
+      "https://sema.seoul.go.kr/kr/visit/photosema"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 90,
+      "productionFeasibility": 45,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "공식 대표주소: 서울 도봉구 마들로13길 68. 정밀 좌표 미검증 — 지도 검색으로 실제 진입점을 확인.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://sema.seoul.go.kr/kr/visit/photosema",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "주소/진입점 추가 확인 필요",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "공식 장소 안내 URL을 등록했으나, 이번 검증 배치에서 주소·진입점까지 독립 확인하지 않음.",
+    "sourceEvidenceUrl": "https://sema.seoul.go.kr/kr/visit/photosema"
+  },
+  {
+    "id": "L-189",
+    "region": "서울 강서구",
+    "name": "마곡문화관(옛 양천수리조합 배수펌프장)",
+    "type": "근대 산업유산·목조 펌프장·수변",
+    "mood": "빈티지·농촌기억·고독·텍스처",
+    "shooting": "패션 화보·뮤직비디오·서정적 인물·브랜드 스토리",
+    "time": "오전 개관 시간대 / 흐린 날 외관",
+    "popularity": "B",
+    "memo": "1928년 배수펌프장의 목조 상부와 콘크리트 기단, 수변 산책로를 묶어 근대 산업유산 콘셉트를 구성.",
+    "check": "문화유산·전시시설 내부 촬영, 상업촬영, 삼각대·조명 사용, 예약 가능 구역을 서울식물원 운영처에 확인.",
+    "indoorOutdoor": "실내·외",
+    "commercial": "상업촬영 조건 미확인",
+    "fee": "확인 필요",
+    "accessibility": "공식 공개자료 주소: 서울 강서구 양천로 282, 서울식물원 내부. 주제원 입구에서 걸어서 접근해야 하므로 장비 운반 거리 확인.",
+    "safety": "목조·콘크리트 구조와 수변 데크 주변에서 장비를 고정하지 말고, 개방 구역·전시 동선을 따라 촬영.",
+    "verification": "공식 주소·시설 소개 확인; 현장 진입점 미확인",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "근대문화유산",
+      "목재와 콘크리트 질감",
+      "수변·습지원",
+      "역사적 구조물"
+    ],
+    "colorTags": [
+      "바랜 브라운",
+      "웜그레이",
+      "수초 그린"
+    ],
+    "lightTags": [
+      "흐린 날 확산광",
+      "수변 반사광",
+      "처마 그림자"
+    ],
+    "techniqueTags": [
+      "재질 대비",
+      "환경인물",
+      "고정 프레임",
+      "자연광 저채도"
+    ],
+    "points": [
+      {
+        "id": "L-189-A",
+        "name": "목조 상부와 콘크리트 기단",
+        "mood": "산업유산·텍스처",
+        "note": "건물 전체를 찍기보다 목재 상부와 콘크리트 하부가 만나는 높이에서 질감 대비를 강조. 35–50mm로 왜곡을 줄이고 정면·사선 두 앵글을 기록."
+      },
+      {
+        "id": "L-189-B",
+        "name": "수문·벽체 디테일",
+        "mood": "빈티지·거친 질감",
+        "note": "수문과 기단의 흔적을 인물의 손·의상 소재와 연결하는 디테일 후보. 측광이 생기는 시각을 확인하고 흰 반사판으로 그림자만 보완."
+      },
+      {
+        "id": "L-189-C",
+        "name": "호수·습지원 배경 인물",
+        "mood": "서정·고독",
+        "note": "출입이 허용된 수변 산책로에서 인물과 오래된 건축을 한 프레임에 배치. 85mm로 배경을 정리하거나 35mm로 주변 생태 공간을 포함."
+      }
+    ],
+    "subjectTags": [
+      "전신",
+      "질감 클로즈업",
+      "환경인물",
+      "서정적 화보"
+    ],
+    "styleTags": [
+      "빈티지",
+      "아날로그",
+      "헤리티지"
+    ],
+    "rarity": "A",
+    "score": 80,
+    "officialUrl": "https://botanicpark.seoul.go.kr/",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "대표 이미지 미연결. 공식 서울시 공개 자료에서 해당 시설명과 주소를 확인하고, 이미지 검색 결과가 온실 사진과 혼동되지 않도록 시설명을 함께 검색하십시오.",
+    "visualProfile": "옛 배수펌프장이라는 산업적 맥락, 목조 상부와 콘크리트 수로의 대비가 특별하다. 식물원 내부의 정돈된 자연과 오래된 구조물을 한 곳에서 섞을 수 있어 빈티지 패션, 저채도 아티스트 프로필에 적합.",
+    "recommendedLenses": [
+      "35mm",
+      "50mm",
+      "85mm"
+    ],
+    "composition": [
+      "질감 레이어",
+      "프레임 안 프레임",
+      "낮은 채도의 환경인물",
+      "수변 여백"
+    ],
+    "shootingChecklist": [
+      "서울식물원 운영처 예약 및 구역 확인",
+      "문화유산 시설 내부 촬영 조건 확인",
+      "상업촬영 승인·사용료 확인",
+      "입구에서 장비 이동 거리 산정",
+      "수변 안전 및 관람객 동선 확인"
+    ],
+    "confidence": "중",
+    "proScout": {
+      "creativeFit": 88,
+      "productionFit": 52,
+      "lightDirection": "목조 처마 아래와 수변의 반사광이 서로 다를 수 있어 오전과 오후의 표면광을 확인.",
+      "shadowControl": "처마 그림자는 플래그 없이 활용 가능하나 조명 설치는 별도 허가가 필요.",
+      "backgroundControl": "건축물과 수변 배경은 비교적 단정하지만 방문객·안내판·전시물은 관리 필요.",
+      "subjectScale": "3/4·전신·디테일·환경인물",
+      "recommendedFocalLength": "35–50mm 질감 / 85mm 인물 / 24–35mm 건축 전체",
+      "cameraHeight": "벽체 선과 수면선을 맞춘 아이레벨",
+      "movement": "정지 포즈와 천천히 걷는 컷을 혼합",
+      "power": "외부·건물 내부 전원 사용 가능 여부 미확인",
+      "loadIn": "서울식물원 주제원 진입구에서 시설까지 도보 이동이 필요할 수 있어 케이스 운반 확인",
+      "parking": "식물원 주차공간이 넉넉하지 않다는 공개 안내. 장비차량 하차와 주차 분리 계획 권장.",
+      "ceiling": "목조 상부 내부의 높이 및 조명 거치 가능 여부 확인 필요",
+      "sound": "수변 바람·방문객·전시 음향 확인",
+      "crewBase": "메이크업·의상 대기 공간 별도 문의",
+      "connectivity": "현장 측정 필요",
+      "restrictions": "문화유산 훼손, 시설 접촉, 관람객 동선 차단 금지; 촬영 허가 조건 확인",
+      "rights": "문화유산·전시 콘텐츠 및 시설 로고 노출 조건 확인",
+      "restoration": "수변·목재 구조물에 장비나 테이프를 부착하지 않음",
+      "weatherPlan": "비 예보 시 수변 노출 컷은 보류, 승인된 실내 대체 공간 유무 확인",
+      "bestWindow": "오전 또는 흐린 날",
+      "scoutStatus": "공식 웹자료 확인 후보 · 현장 테크스카우트 필요",
+      "confidence": "중"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실내·외",
+      "근대 산업유산·목조 펌프장·수변",
+      "빈티지·농촌기억·고독·텍스처",
+      "패션 화보",
+      "근대문화유산"
+    ],
+    "source": "서울시 공개 안내 및 식물원 자료 중심",
+    "mapQuery": "마곡문화관 서울 강서구 양천로 282",
+    "addressStatus": "서울시 공개자료 주소: 서울 강서구 양천로 282, 서울식물원 내. 정밀 좌표 미검증 — 진입구와 시설 위치를 지도·현장에서 재확인.",
+    "scout": "1928년 배수펌프장이라는 장소성은 다른 스튜디오에서 대체하기 어려운 강점. 건축물의 보존과 전시 운영이 우선이므로 촬영 승인 여부부터 확인.",
+    "pro": {
+      "light": "오래된 목재와 콘크리트의 표면광, 수면 반사, 처마 그림자를 따로 관찰합니다. 흐린 날에는 재질의 톤이 균일해집니다.",
+      "plan": "공식 공개 자료에서 시설의 역사와 주소를 확인했습니다. 전시 일정, 내부 촬영, 조명 설치 및 상업촬영 조건은 예약 창구에 문의해야 합니다."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=서울%20강서구%20마곡문화관(옛%20양천수리조합%20배수펌프장)",
+    "google": "https://www.google.com/search?tbm=isch&q=서울%20강서구%20마곡문화관(옛%20양천수리조합%20배수펌프장)",
+    "sourceRefs": [
+      "https://botanicpark.seoul.go.kr/"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 88,
+      "productionFeasibility": 52,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "서울시 공개자료 주소: 서울 강서구 양천로 282, 서울식물원 내. 정밀 좌표 미검증 — 진입구와 시설 위치를 지도·현장에서 재확인.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://botanicpark.seoul.go.kr/",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "address": "서울특별시 강서구 마곡동로 161 (서울식물원 내 마곡문화관)",
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "공식 주소 확인",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "서울시 공식 안내: 마곡문화관은 구 양천수리조합 배수펌프장으로 현재 전시공간 활용; 서울식물원 주소 확인",
+    "sourceEvidenceUrl": "https://mediahub.seoul.go.kr/archives/2004775"
+  },
+  {
+    "id": "L-190",
+    "region": "서울 도봉구",
+    "name": "평화문화진지",
+    "type": "옛 대전차방호시설 재생·콘크리트·문화창작공간",
+    "mood": "브루탈리즘·군사유산·거칠고 미래적·실험적",
+    "shooting": "하이패션·록/힙합 아티스트·뮤직비디오·그룹 화보",
+    "time": "오전 / 흐린 날 / 폐관 전 외부",
+    "popularity": "B",
+    "memo": "옛 대전차방호시설의 콘크리트 구조와 재생 문화공간, 평화광장을 결합한 강한 산업적 로케이션 후보.",
+    "check": "문화공간 대관 신청, 내부 심의 및 허가 필요. 영상스튜디오·전시실·평화광장별 사용 가능 일정과 비용을 문의.",
+    "indoorOutdoor": "실내·외",
+    "commercial": "대관 및 상업촬영 조건 확인 필요",
+    "fee": "공식 안내 대관표에 일부 공간 요금 공개; 야외 평화광장은 기본 2시간 200,000원으로 안내. 촬영 종류·날짜·부가비용은 재확인.",
+    "accessibility": "공식 주소: 서울 도봉구 마들로 932. 장비차량 주차공간이 시설 바로 옆에 없을 수 있으므로 하차점과 이동 경로를 확인.",
+    "safety": "콘크리트 단차, 외부 계단과 난간을 사전 점검. 벽면이나 시설에 장비 고정 금지.",
+    "verification": "공식 주소·대관 절차 확인; 개별 촬영 승인 미확인",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "콘크리트 브루탈리즘",
+      "옛 방호시설",
+      "도시재생",
+      "야외 평화광장"
+    ],
+    "colorTags": [
+      "시멘트 그레이",
+      "블랙",
+      "올리브"
+    ],
+    "lightTags": [
+      "측광",
+      "흐린 날 확산광",
+      "낮은 겨울 태양"
+    ],
+    "techniqueTags": [
+      "로우앵글",
+      "광각 구조선",
+      "강한 명암",
+      "워킹 시퀀스"
+    ],
+    "points": [
+      {
+        "id": "L-190-A",
+        "name": "방호벽 중첩 프레임",
+        "mood": "브루탈리즘·강한 실루엣",
+        "note": "서로 다른 콘크리트 면이 겹쳐 보이는 승인 구역을 찾는다. 24–35mm 낮은 시점으로 구조의 규모를 강조하되 인물 주변 안전 거리를 확보."
+      },
+      {
+        "id": "L-190-B",
+        "name": "평화광장 풀바디",
+        "mood": "스트리트·그룹 화보",
+        "note": "대관 승인된 광장 사용 시 배경 간판과 보행 동선을 정리하고 35mm로 그룹 정렬·엇갈린 대형을 시험. 낮은 태양을 측면광으로 활용."
+      },
+      {
+        "id": "L-190-C",
+        "name": "영상스튜디오 또는 전시실",
+        "mood": "어두운 실내·공연 콘셉트",
+        "note": "시설별로 대관 승인된 공간에 한해 진행. 저조도는 ISO를 높이기보다 조명 세팅, 전원, 스탠드·붐 설치를 사전 협의."
+      }
+    ],
+    "subjectTags": [
+      "전신",
+      "그룹",
+      "강한 실루엣",
+      "뮤직비디오 스틸"
+    ],
+    "styleTags": [
+      "스트리트",
+      "인더스트리얼",
+      "디스토피아"
+    ],
+    "rarity": "A",
+    "score": 86,
+    "officialUrl": "https://www.dbfac.or.kr/front/cultureplace/culturebunker.do",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "대표 현장 사진 미연결. 공식 시설 페이지의 외관 및 시설 사진을 참고하고, 실제 촬영 포인트 사진은 별도 답사 후 등록.",
+    "visualProfile": "옛 대전차방호시설을 재생한 공간으로, 콘크리트 방어 구조와 창작 스튜디오·광장이 공존한다. 어두운 스트리트, 강한 실루엣, 미래 군사적 느낌의 패션에 적합하다.",
+    "recommendedLenses": [
+      "24mm",
+      "35mm",
+      "50mm"
+    ],
+    "composition": [
+      "로우앵글 구조선",
+      "대칭·반복",
+      "그룹 대형",
+      "강한 실루엣"
+    ],
+    "shootingChecklist": [
+      "공간 대관 신청 및 심의",
+      "대관료·시간·사용 범위 문의",
+      "평화광장과 내부 공간 승인 분리",
+      "장비차량 하차점과 주차 계획",
+      "벽면·난간·구조물 보호 조건 확인"
+    ],
+    "confidence": "중",
+    "proScout": {
+      "creativeFit": 92,
+      "productionFit": 67,
+      "lightDirection": "콘크리트 면에 사광이 들어오는 시간대가 구조감을 살릴 수 있음. 계절별 그림자 길이를 답사로 확인.",
+      "shadowControl": "야외는 자연광 중심이며 차광 장비의 설치 허가를 별도 확인. 내부는 허가된 공간에서 조명 세팅.",
+      "backgroundControl": "배경 구조가 강하므로 프레임 내 안내 표지·일반 방문객·행사물 제거가 관건.",
+      "subjectScale": "전신·그룹·3/4·아티스트 포트레이트",
+      "recommendedFocalLength": "24–35mm 구조 / 50mm 인물",
+      "cameraHeight": "낮은 시점과 눈높이를 함께 테스트",
+      "movement": "광장 워킹, 구조 사이를 지나는 짧은 시퀀스",
+      "power": "내부 대관 공간별 전력·분전반 확인",
+      "loadIn": "시설 인근 주차가 제한적일 수 있어 도보 운반 구간 확인",
+      "parking": "공식 안내가 주차공간 부족을 알림. 외부 공영주차장과 하차를 구분해 계획.",
+      "ceiling": "영상스튜디오·전시실별 천장 높이와 리깅 가능 여부 확인",
+      "sound": "공연·문화 프로그램 스케줄, 인근 도봉산·도로 소음 확인",
+      "crewBase": "시설 대관 범위에 대기실 포함 여부 확인",
+      "connectivity": "현장 측정 필요",
+      "restrictions": "내부 심의·허가 절차 준수; 상업촬영, 음향, 플래시, 조명 스탠드 별도 문의",
+      "rights": "시설명·전시 콘텐츠·벽화 등 기록물 사용 조건 확인",
+      "restoration": "보호대 없는 장비 이동과 벽·바닥 테이핑은 피함",
+      "weatherPlan": "비·강풍 시 대관 승인된 실내 공간으로 전환 가능 여부 확인",
+      "bestWindow": "흐린 날 또는 오전 사광",
+      "scoutStatus": "공식 대관 정보 확인 후보 · 예약 전 촬영 승인 필요",
+      "confidence": "중"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실내·외",
+      "옛 대전차방호시설 재생·콘크리트·문화창작공간",
+      "브루탈리즘·군사유산·거칠고 미래적·실험적",
+      "하이패션",
+      "콘크리트 브루탈리즘"
+    ],
+    "source": "도봉문화재단 공식 시설 페이지",
+    "mapQuery": "평화문화진지 서울 도봉구 마들로 932",
+    "addressStatus": "공식 대표주소: 서울 도봉구 마들로 932. 정밀 좌표 미검증 — 지도 검색으로 실제 게이트·하차점을 확인.",
+    "scout": "공간의 원래 군사적 기능이 구조의 미학을 만든다는 점이 차별적. 사용 구역별 대관 심의가 있으므로 무단 상업촬영이 가능한 공원으로 취급하지 않는다.",
+    "pro": {
+      "light": "콘크리트 표면에 사광이 생기는 시간대는 질감을 강하게 만들 수 있습니다. 어두운 의상과 벽의 밝기 차이를 먼저 측정하십시오.",
+      "plan": "공식 안내에 대관 심의와 허가 절차가 명시되어 있습니다. 후보 구역을 정한 뒤 일정·촬영 범위·장비·비용을 함께 신청하십시오."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=서울%20도봉구%20평화문화진지",
+    "google": "https://www.google.com/search?tbm=isch&q=서울%20도봉구%20평화문화진지",
+    "sourceRefs": [
+      "https://www.dbfac.or.kr/front/cultureplace/culturebunker.do"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 92,
+      "productionFeasibility": 67,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "공식 대표주소: 서울 도봉구 마들로 932. 정밀 좌표 미검증 — 지도 검색으로 실제 게이트·하차점을 확인.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://www.dbfac.or.kr/front/cultureplace/culturebunker.do",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "address": "서울특별시 도봉구 마들로 932",
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "공식 주소 확인",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "평화문화진지 공식 대관 안내의 주소 및 대관 절차 확인",
+    "sourceEvidenceUrl": "https://culturebunker.or.kr/space/process"
+  },
+  {
+    "id": "L-191",
+    "region": "서울 강서구",
+    "name": "국립항공박물관",
+    "type": "항공산업 전시·유리 금속 아트리움",
+    "mood": "미래적·테크웨어·스케일·기계적",
+    "shooting": "아티스트 프로필·테크웨어 패션·콘셉트 화보·뮤직비디오 사전답사",
+    "time": "평일 개관 직후",
+    "popularity": "B",
+    "memo": "유리와 금속 아트리움에 실제 항공기가 매달린 스케일이 강한 실내 콘셉트 후보.",
+    "check": "전시 관람 중 촬영 가능 여부와 상업촬영·플래시·삼각대·장비반입 조건을 별도 문의. 항공기 및 전시 자료를 배경에 넣는 경우 권리·보안 조건 확인.",
+    "indoorOutdoor": "실내·외",
+    "commercial": "상업촬영 조건 미확인",
+    "fee": "확인 필요",
+    "accessibility": "공식 주소: 서울 강서구 하늘길 177. 박물관 주차·엘리베이터 이용은 가능하지만 촬영 장비 반입 동선은 별도 확인.",
+    "safety": "전시 항공기와 관람객 사이의 안전선·전시 보호 구역을 준수. 장비 거치물은 전시 구역에 설치하지 않음.",
+    "verification": "서울 공식 관광정보에서 시설·주소·이용시간 확인(수정 2026-10-01). 상업촬영 조건은 미확인.",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "행잉 항공기",
+      "유리 아트리움",
+      "항공 메탈릭 질감",
+      "규모 대비"
+    ],
+    "colorTags": [
+      "실버",
+      "화이트",
+      "항공 블루"
+    ],
+    "lightTags": [
+      "창광",
+      "천장 확산광",
+      "금속 하이라이트"
+    ],
+    "techniqueTags": [
+      "광각 스케일",
+      "인물 실루엣",
+      "반사 하이라이트 관리",
+      "대칭 원근"
+    ],
+    "points": [
+      {
+        "id": "L-191-A",
+        "name": "행잉 항공기와 인물 스케일",
+        "mood": "미래적·거대한 스케일",
+        "note": "관람 허용 구역의 안전선 뒤에서 항공기와 인물을 한 프레임에 담을 수 있는 시점을 찾는다. 24–35mm를 쓰되 주변 관람객이 적은 시간을 선택."
+      },
+      {
+        "id": "L-191-B",
+        "name": "유리벽 측면광 인물",
+        "mood": "테크웨어·클린",
+        "note": "창을 통한 자연광이 의상의 윤곽을 만드는 각도를 답사. 금속·유리 반사가 강하면 노출을 보호하고, 검은 의상은 반사판으로 최소 보완."
+      },
+      {
+        "id": "L-191-C",
+        "name": "항공 디테일·재질 컷",
+        "mood": "기계적·디테일",
+        "note": "전시물 접근 제한을 지키면서 기체·엔진·좌석 구조를 배경 디테일로 쓸 수 있는지 확인. 접촉·장비 거치·장시간 점유는 하지 않음."
+      }
+    ],
+    "subjectTags": [
+      "전신",
+      "프로필",
+      "테크웨어",
+      "실루엣"
+    ],
+    "styleTags": [
+      "퓨처리즘",
+      "테크노",
+      "산업"
+    ],
+    "rarity": "A",
+    "score": 77,
+    "officialUrl": "https://www.aviation.or.kr/",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "항공기 전시 사진은 전시 배치가 바뀔 수 있으므로 참고 이미지와 촬영일의 현장을 동일하다고 단정하지 않습니다.",
+    "visualProfile": "고층 유리·금속 아트리움에 항공기가 매달린 장면이 독특하다. 미래적 테크웨어와 공학·기계 콘셉트를 만들기 좋지만, 방문객 밀집과 전시물 보호로 제작팀의 자유도가 낮을 수 있다.",
+    "recommendedLenses": [
+      "24–35mm",
+      "50mm",
+      "85mm"
+    ],
+    "composition": [
+      "인물-항공기 스케일 대비",
+      "수직선 대칭",
+      "실루엣",
+      "기체 디테일"
+    ],
+    "shootingChecklist": [
+      "상업촬영 사전 문의",
+      "관람객 노출·통제 범위 확인",
+      "전시물 저작권·보안 규정 확인",
+      "플래시·삼각대·장비반입 허용 여부",
+      "개관 직후 및 단체 관람 시간 확인"
+    ],
+    "confidence": "중",
+    "proScout": {
+      "creativeFit": 93,
+      "productionFit": 39,
+      "lightDirection": "대형 창의 자연광이 주된 시각 요소. 항공기 전시물의 금속 반사와 밝은 창 간 노출 차이를 현장에서 측정.",
+      "shadowControl": "일반 관람 공간의 조명 변경은 제한적일 수 있어 자연광 기반 촬영으로 설계.",
+      "backgroundControl": "전시물과 관람객을 통제하기 어렵다. 넓은 구간 또는 개관 직후 촬영 가능 여부 확인.",
+      "subjectScale": "전신·상반신·실루엣",
+      "recommendedFocalLength": "24–35mm 스케일 / 50mm 인물 / 85mm 포트레이트",
+      "cameraHeight": "눈높이·약간 낮은 시점 비교",
+      "movement": "정지 포즈 위주, 보행샷은 관람객 흐름을 방해하지 않을 때",
+      "power": "공용 전원 제공 여부 미확인",
+      "loadIn": "공식 접근성·주차시설은 있으나 촬영 장비 반입 가능 여부 확인 필요",
+      "parking": "박물관 주차장 정보 있음. 대형 장비 차량 정차는 별도 문의.",
+      "ceiling": "대형 아트리움이나 리깅·붐 사용은 시설 승인 전제",
+      "sound": "관람 방송·체험 프로그램 소음 고려",
+      "crewBase": "별도 대기 공간 대관 여부 확인",
+      "connectivity": "현장 측정 필요",
+      "restrictions": "전시물 접근·플래시·삼각대·상업촬영 및 항공 보안 관련 규정 확인",
+      "rights": "항공기·제조사 마크·전시물 및 박물관 이미지 사용 조건 확인",
+      "restoration": "전시물·난간·유리벽에 장비 접촉 금지",
+      "weatherPlan": "실내이므로 날씨 영향은 적지만 방문객 혼잡도 대안 계획 필요",
+      "bestWindow": "평일 오전 개관 직후",
+      "scoutStatus": "공식 관광안내 확인 후보 · 현장 촬영조건 미확인",
+      "confidence": "중"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실내·외",
+      "항공산업 전시·유리 금속 아트리움",
+      "미래적·테크웨어·스케일·기계적",
+      "테크웨어 패션",
+      "행잉 항공기"
+    ],
+    "source": "서울 공식 관광정보",
+    "mapQuery": "국립항공박물관 서울 강서구 하늘길 177",
+    "addressStatus": "공식 주소: 서울 강서구 하늘길 177. 정밀 좌표 미검증 — 지도 검색으로 입구·주차장 위치를 확인.",
+    "scout": "항공기 자체가 비정형 조형물이어서 흔한 도시 배경과 차별화. 실제 촬영 허가가 불투명하고 전시물 보호 조건이 크므로 소규모 프로필 또는 사전 협의를 우선.",
+    "pro": {
+      "light": "대형 창광과 전시 조명의 혼합광을 측정하고 창 외부와 인물의 노출 차이를 확인하십시오.",
+      "plan": "전시 관람시설입니다. 촬영을 할 수 있다는 전제 없이 상업 촬영·전시물 배경·장비 반입을 먼저 문의해야 합니다."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=서울%20강서구%20국립항공박물관",
+    "google": "https://www.google.com/search?tbm=isch&q=서울%20강서구%20국립항공박물관",
+    "sourceRefs": [
+      "https://www.aviation.or.kr/"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 93,
+      "productionFeasibility": 39,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "공식 주소: 서울 강서구 하늘길 177. 정밀 좌표 미검증 — 지도 검색으로 입구·주차장 위치를 확인.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://www.aviation.or.kr/",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "주소/진입점 추가 확인 필요",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "공식 장소 안내 URL을 등록했으나, 이번 검증 배치에서 주소·진입점까지 독립 확인하지 않음.",
+    "sourceEvidenceUrl": "https://www.aviation.or.kr/"
+  },
+  {
+    "id": "L-192",
+    "region": "경기 수원",
+    "name": "경기상상캠퍼스",
+    "type": "옛 농생대 캠퍼스·벽돌 건축·숲길",
+    "mood": "레트로·자연·청춘·에디토리얼",
+    "shooting": "패션 화보·밴드 프로필·라이프스타일·영상 스틸",
+    "time": "오전 숲길 / 오후 벽돌 건물",
+    "popularity": "B",
+    "memo": "옛 서울대 농생대 캠퍼스의 벽돌 건물과 숲길이 맞닿아 레트로 캠퍼스·청춘 서사를 만들기 좋은 후보.",
+    "check": "야외 구역은 일반 이용이 가능하나 상업 화보·단체 촬영·조명 설치·실내 사용은 사전 협의. 공간 대관은 공식 예약 절차 확인.",
+    "indoorOutdoor": "실내·외",
+    "commercial": "상업촬영 조건 확인 필요",
+    "fee": "공간과 촬영 목적에 따라 확인 필요",
+    "accessibility": "공식 주소: 경기 수원시 권선구 서둔로 166. 약 100대 주차 안내가 있으나 장비차량과 일반 차량 구분 확인.",
+    "safety": "숲길 뿌리·단차와 자전거·보행자 동선 주의. 나무·건물·시설에 장비를 고정하지 않음.",
+    "verification": "경기상상캠퍼스 공식 운영안내에서 주소·운영시간·주차·야외 행사 사전협의·대관 절차 확인.",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "벽돌 건물",
+      "옛 캠퍼스",
+      "숲길·녹지",
+      "레트로 라이프스타일"
+    ],
+    "colorTags": [
+      "벽돌 브라운",
+      "포레스트 그린",
+      "오트밀"
+    ],
+    "lightTags": [
+      "숲의 점광",
+      "그늘 확산광",
+      "늦은 오후 사광"
+    ],
+    "techniqueTags": [
+      "환경인물",
+      "레이어 워킹",
+      "필름톤 색감",
+      "자연광 반사판"
+    ],
+    "points": [
+      {
+        "id": "L-192-A",
+        "name": "벽돌 캠퍼스 입면",
+        "mood": "레트로·청춘",
+        "note": "붉은 벽돌과 창의 반복을 배경으로 단정한 전신을 구성. 35–50mm로 건축을 과장하지 않고 아이레벨·로우앵글을 비교."
+      },
+      {
+        "id": "L-192-B",
+        "name": "숲길 레이어 워킹",
+        "mood": "자연·라이프스타일",
+        "note": "나무 사이의 층과 빛의 얼룩을 활용하되 얼굴에 얼룩진 빛이 떨어지지 않는 위치를 선택. 50mm 또는 85mm로 배경을 분리."
+      },
+      {
+        "id": "L-192-C",
+        "name": "옛 건물과 녹지 경계",
+        "mood": "청춘·서정",
+        "note": "건축과 숲이 동시에 들어오는 프레임을 찾고 35mm로 환경을 살린다. 야외 촬영은 일반 이용객이 적은 평일 오전을 우선."
+      }
+    ],
+    "subjectTags": [
+      "전신",
+      "그룹",
+      "워킹샷",
+      "라이프스타일"
+    ],
+    "styleTags": [
+      "레트로",
+      "청춘",
+      "내추럴"
+    ],
+    "rarity": "B",
+    "score": 83,
+    "officialUrl": "https://sscampus.ggcf.kr/pages/guide",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "공식 자료에서 여러 건물·숲길·야외 공간 사진을 확인한 후, 촬영하려는 건물과 촬영 포인트가 일치하는지 구분해 등록해야 합니다.",
+    "visualProfile": "옛 농생대 건물을 리모델링한 캠퍼스이며 여러 시기의 벽돌 건물과 숲이 함께 있다. 인물의 에너지와 공간의 여유를 동시에 표현할 수 있어 밴드·아이돌의 청춘 콘셉트 또는 빈티지 브랜드 캠페인에 좋다.",
+    "recommendedLenses": [
+      "35mm",
+      "50mm",
+      "85mm"
+    ],
+    "composition": [
+      "벽돌 입면 반복",
+      "숲길 원근",
+      "환경인물",
+      "워킹 레이어"
+    ],
+    "shootingChecklist": [
+      "야외 상업촬영 사전협의",
+      "실내 공간 대관·목적 승인",
+      "스탠드·반사판·전원 설치 확인",
+      "대형 장비 차량 하차 동선 확인",
+      "행사 일정 및 일반 이용자 혼잡 확인"
+    ],
+    "confidence": "중",
+    "proScout": {
+      "creativeFit": 88,
+      "productionFit": 71,
+      "lightDirection": "숲길은 나뭇잎 그림자가 빠르게 바뀐다. 얼굴에 생기는 얼룩빛과 벽돌면 사광을 서로 다른 포인트로 분리.",
+      "shadowControl": "반사판으로 인물 그림자를 보완할 수 있으나 조명 스탠드·설치물은 사전 협의.",
+      "backgroundControl": "숲과 건축의 배경 선택이 가능하나 이용객·주차 차량을 피해야 함.",
+      "subjectScale": "전신·3/4·그룹·워킹",
+      "recommendedFocalLength": "35mm 환경인물 / 50mm 전신 / 85mm 인물",
+      "cameraHeight": "아이레벨, 건물 외관은 수평 유지",
+      "movement": "숲길 워킹·가벼운 안무·정지 포즈",
+      "power": "야외 전원 위치와 실내 전원은 대관 담당처 확인",
+      "loadIn": "캠퍼스 규모가 넓으므로 주차에서 각 촬영 포인트까지 카트/케이스 이동 거리 실측",
+      "parking": "공식 안내상 100대 가능. 촬영팀·방문객 주차 분리 가능 여부 확인.",
+      "ceiling": "건물별 내부 높이와 조명 리깅 조건 대관 담당처 확인",
+      "sound": "숲길은 비교적 자연음 중심이나 행사·카페·방문객 소음 확인",
+      "crewBase": "대관 가능한 실내 공간을 메이크업·의상 대기실로 확보할 수 있는지 확인",
+      "connectivity": "현장 측정 필요",
+      "restrictions": "야외 행사 사전 협의, 시설·수목 보호, 금연·설치물 제한 준수",
+      "rights": "벽화·입주단체 작품·상호 노출 및 상업 이미지 사용 조건 확인",
+      "restoration": "잔디·숲길 보호와 장비 이동 구역 지정",
+      "weatherPlan": "우천 시 실내 공간을 미리 대관하거나 날짜를 변경",
+      "bestWindow": "평일 오전 숲길, 오후 벽돌 외벽",
+      "scoutStatus": "공식 공간 안내 확인 후보 · 목적별 사전협의 필요",
+      "confidence": "중"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실내·외",
+      "옛 농생대 캠퍼스·벽돌 건축·숲길",
+      "레트로·자연·청춘·에디토리얼",
+      "패션 화보",
+      "옛 캠퍼스"
+    ],
+    "source": "경기문화재단 공식 운영안내",
+    "mapQuery": "경기상상캠퍼스 경기 수원시 권선구 서둔로 166",
+    "addressStatus": "공식 주소: 경기 수원시 권선구 서둔로 166. 정밀 좌표 미검증 — 캠퍼스 내 실제 촬영 건물·게이트는 지도 검색 및 답사로 확정.",
+    "scout": "벽돌·숲·옛 교정이라는 복합 배경은 스튜디오 세트보다 자연스럽고 덜 상업적으로 보인다. 캠퍼스 전체가 단일 촬영 대관 구역인 것은 아니므로 공간을 지정해 문의.",
+    "pro": {
+      "light": "숲길의 점광과 벽돌 벽의 사광을 각각 다른 시간에 기록하면 같은 장소에서 다양한 장면을 얻을 수 있습니다.",
+      "plan": "공식 안내상 야외 공간 이용과 실내 대관은 조건이 다릅니다. 단체 상업촬영·조명 장비·공간 독점 사용은 사전에 협의해야 합니다."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=경기%20수원%20경기상상캠퍼스",
+    "google": "https://www.google.com/search?tbm=isch&q=경기%20수원%20경기상상캠퍼스",
+    "sourceRefs": [
+      "https://sscampus.ggcf.kr/pages/guide"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 88,
+      "productionFeasibility": 71,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "공식 주소: 경기 수원시 권선구 서둔로 166. 정밀 좌표 미검증 — 캠퍼스 내 실제 촬영 건물·게이트는 지도 검색 및 답사로 확정.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://sscampus.ggcf.kr/pages/guide",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "주소/진입점 추가 확인 필요",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "공식 장소 안내 URL을 등록했으나, 이번 검증 배치에서 주소·진입점까지 독립 확인하지 않음.",
+    "sourceEvidenceUrl": "https://sscampus.ggcf.kr/pages/guide"
+  },
+  {
+    "id": "L-193",
+    "region": "경기 안양",
+    "name": "안양예술공원(APAP 공공예술 구역)",
+    "type": "숲속 공공예술·조형 건축·계곡 공원",
+    "mood": "예술적·실험적·자연·초현실",
+    "shooting": "컨셉 화보·아이돌 콘셉트·아티스트 프로필·룩북",
+    "time": "평일 오전 / 계절감 있는 오후",
+    "popularity": "B",
+    "memo": "숲·계곡·공공예술 작품이 한 코스로 연결되어 장소 이동만으로 서로 다른 시각 언어를 얻을 수 있는 후보.",
+    "check": "촬영하려는 작품별 위치와 접근 동선을 확인하고, 상업촬영 허가 및 작품 저작권·작품 위 접근 제한을 안양시/관리 주체에 문의.",
+    "indoorOutdoor": "실외",
+    "commercial": "상업촬영 조건 확인 필요",
+    "fee": "공원 및 작품 구역별 확인 필요",
+    "accessibility": "공원 전체가 넓고 경사와 계단이 섞여 있어 촬영 포인트별 장비 이동시간을 따로 산정.",
+    "safety": "계곡·산책로·계단과 작품 주변 안전 거리를 확보. 구조물에 올라가거나 작품에 기대지 않음.",
+    "verification": "대표 집결지 주소 확인; 개별 작품 좌표·상업촬영 승인 미확인",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "공공예술 작품",
+      "숲·계곡",
+      "비정형 조형",
+      "자연과 건축의 대비"
+    ],
+    "colorTags": [
+      "그린",
+      "스톤그레이",
+      "작품별 포인트 컬러"
+    ],
+    "lightTags": [
+      "숲 그늘",
+      "나뭇잎 확산광",
+      "계곡 반사광"
+    ],
+    "techniqueTags": [
+      "작품과 인물 스케일 대비",
+      "형태 반복",
+      "와이드 환경인물",
+      "망원 배경 압축"
+    ],
+    "points": [
+      {
+        "id": "L-193-A",
+        "name": "비정형 공공예술과 전신",
+        "mood": "실험적·초현실",
+        "note": "작품에 접촉하지 않고 조형의 선과 인물의 실루엣이 충돌하는 위치를 찾는다. 35mm 또는 50mm로 인물의 선을 작품의 주요 선과 맞춘다."
+      },
+      {
+        "id": "L-193-B",
+        "name": "숲속 워킹 시퀀스",
+        "mood": "자연·유기적",
+        "note": "숲길의 전경-중경-후경을 층으로 활용. 85mm로 인물과 나뭇잎을 압축하거나 35mm로 공간을 포함한다."
+      },
+      {
+        "id": "L-193-C",
+        "name": "안양파빌리온 주변 건축선",
+        "mood": "미니멀·건축적",
+        "note": "공간 자체의 곡선·개구부가 만드는 프레임을 탐색하되 정확한 촬영점과 작품 권리 조건은 답사 후 확정."
+      }
+    ],
+    "subjectTags": [
+      "전신",
+      "그룹",
+      "아티스트 프로필",
+      "동작 컷"
+    ],
+    "styleTags": [
+      "아트 패션",
+      "실험적",
+      "내추럴"
+    ],
+    "rarity": "A",
+    "score": 82,
+    "officialUrl": "https://www.anyang.go.kr/tour/contents.do?key=1868",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "작품들이 공원 내 여러 지점에 분산되어 있어 단일 대표 사진은 전체 장소를 설명하기 어렵습니다. 작품별 공식 안내와 실제 포인트 사진을 개별 등록하십시오.",
+    "visualProfile": "공원 곳곳의 현대 공공예술 작품과 숲·계곡이 결합한다. 하나의 장소에서 유기적인 자연과 기하학적 조형을 이어 촬영할 수 있어 실험적 패션, 아티스트 브랜딩, 콘셉트 시퀀스에 적합.",
+    "recommendedLenses": [
+      "24–35mm",
+      "50mm",
+      "85mm"
+    ],
+    "composition": [
+      "작품-인물 스케일 대비",
+      "비정형 프레임",
+      "숲속 레이어",
+      "곡선과 인물 포즈"
+    ],
+    "shootingChecklist": [
+      "상업촬영 가능 여부 확인",
+      "작품별 저작권 및 촬영 조건 문의",
+      "포인트 간 도보 이동시간 계산",
+      "계곡·경사·계단 안전 확인",
+      "주말 방문객 동선 및 주차 확인"
+    ],
+    "confidence": "중",
+    "proScout": {
+      "creativeFit": 89,
+      "productionFit": 62,
+      "lightDirection": "수목 그늘이 넓어 균일한 빛을 얻기 쉽지만 포인트에 따라 광량이 다르다. 작품 표면 반사와 그림자는 답사 때 기록.",
+      "shadowControl": "휴대용 반사판 중심 계획. 스탠드·조명 설치는 별도 승인 및 보행로 차단 여부 확인.",
+      "backgroundControl": "작품 배치에 따라 배경을 고를 수 있으나 방문객과 안내판이 들어올 수 있음.",
+      "subjectScale": "전신·환경인물·그룹",
+      "recommendedFocalLength": "24–35mm 환경 / 50mm 전신 / 85mm 인물 압축",
+      "cameraHeight": "작품과 인물 비례에 맞춰 아이레벨과 낮은 시점 비교",
+      "movement": "숲길 워킹·조형 사이 정지 포즈",
+      "power": "야외 전원 확보 어려움으로 배터리 기반 조명 권장",
+      "loadIn": "공원 규모와 계단·경사로를 고려해 장비를 최소화하고 이동 동선을 사전 설정",
+      "parking": "공원 주차장 이용 조건과 포인트별 운반 거리 확인",
+      "ceiling": "야외",
+      "sound": "자연·방문객·계곡 소음",
+      "crewBase": "근거리 실내 대기 공간 유무 확인",
+      "connectivity": "현장 측정 필요",
+      "restrictions": "작품에 접촉·기대기·오르기 금지, 작품별 촬영 및 상업 이용 권리 확인",
+      "rights": "공공예술 작품의 저작권·상업 이미지 사용 권한을 구분해 문의",
+      "restoration": "수목·작품·산책로 보호; 고정물 설치 금지",
+      "weatherPlan": "우천 시 계곡·경사 포인트를 배제하고 실내 대안 별도 확보",
+      "bestWindow": "평일 오전 또는 흐린 날",
+      "scoutStatus": "공식 관광안내 확인 후보 · 작품별 권리 확인 필요",
+      "confidence": "중"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실외",
+      "숲속 공공예술·조형 건축·계곡 공원",
+      "예술적·실험적·자연·초현실",
+      "컨셉 화보",
+      "공공예술 작품"
+    ],
+    "source": "안양시 문화관광 공식 안내",
+    "mapQuery": "안양예술공원 경기도 안양시 만안구 예술공원로 일대",
+    "addressStatus": "공식 공원 대표 위치만 사용. 정밀 좌표 미검증 — 개별 작품 좌표·주차장·촬영점은 공식 안내 지도와 현장답사로 확정.",
+    "scout": "특정 한 작품을 배경으로 고정하기보다 작품·숲·계곡을 연결한 3개 포인트 시퀀스를 구성하면 장소를 더 입체적으로 사용할 수 있다.",
+    "pro": {
+      "light": "숲의 자연광과 조형물의 표면 재질이 포인트마다 달라 서로 다른 노출 기준과 색온도 기록이 필요합니다.",
+      "plan": "공원 이용이 가능하더라도 공공예술 작품의 상업적 이용 권리와 촬영팀의 장비 설치 허가는 별도로 확인해야 합니다."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=경기%20안양%20안양예술공원(APAP%20공공예술%20구역)",
+    "google": "https://www.google.com/search?tbm=isch&q=경기%20안양%20안양예술공원(APAP%20공공예술%20구역)",
+    "sourceRefs": [
+      "https://www.anyang.go.kr/tour/contents.do?key=1868"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 89,
+      "productionFeasibility": 62,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "공식 공원 대표 위치만 사용. 정밀 좌표 미검증 — 개별 작품 좌표·주차장·촬영점은 공식 안내 지도와 현장답사로 확정.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://www.anyang.go.kr/tour/contents.do?key=1868",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "address": "경기도 안양시 만안구 예술공원로 180 (안양파빌리온 기준)",
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "공식 주소 확인",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "안양문화예술재단의 2026 APAP 작품투어 안내에서 안양예술공원·평촌 구역과 안양파빌리온 출발지 확인",
+    "sourceEvidenceUrl": "https://ayac.or.kr/base/board/read?boardManagementNo=8&boardNo=5783&menuLevel=2&menuNo=20&page=5&searchCategory=&searchType=&searchWord="
+  },
+  {
+    "id": "L-194",
+    "region": "경기 광명",
+    "name": "광명동굴",
+    "type": "폐광 재생·지하 암반·조명 설치 공간",
+    "mood": "초현실·어둡고 극적·미래적·컬러풀",
+    "shooting": "뮤직비디오 콘셉트·판타지 화보·록 아티스트·광고",
+    "time": "평일 개장 직후 / 비 오는 날 실내 후보",
+    "popularity": "B",
+    "memo": "천연 암반과 인공 조명이 혼재한 지하 공간으로 현실감이 다른 극적 장면을 만들 수 있는 후보.",
+    "check": "관람 구역별 상업촬영 가능 여부, 플래시·삼각대·조명 사용과 인원·장비 규모, 전시 운영 중 촬영 조건을 담당처에 확인.",
+    "indoorOutdoor": "실내",
+    "commercial": "상업촬영 조건 미확인",
+    "fee": "확인 필요",
+    "accessibility": "공식 주소: 경기 광명시 가학로85번길 142. 동굴 내부 통로·계단·경사 구간에 맞춘 장비 최소화 필요.",
+    "safety": "습도·미끄러운 바닥·낮은 천장·계단 및 방문객 통행 주의. 대형 스탠드·케이블은 허가 없이 설치하지 않음.",
+    "verification": "광명동굴 공식 홈페이지에서 장소·주소 확인. 사진·영상 상업촬영 규정과 비용은 미확인.",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "암반 텍스처",
+      "컬러 조명",
+      "지하 공간",
+      "계단·통로 원근"
+    ],
+    "colorTags": [
+      "딥퍼플",
+      "앰버",
+      "블루",
+      "암반 블랙"
+    ],
+    "lightTags": [
+      "혼합색 조명",
+      "저조도",
+      "스팟광",
+      "색 반사"
+    ],
+    "techniqueTags": [
+      "화이트밸런스 고정",
+      "저조도 노출 테스트",
+      "실루엣",
+      "컬러 대비"
+    ],
+    "points": [
+      {
+        "id": "L-194-A",
+        "name": "암반과 계단 원근",
+        "mood": "극적·지하 세계",
+        "note": "안전선 안쪽에서 암반과 조명 계단의 선이 깊어지는 구도를 탐색. 24–35mm 광각은 왜곡을 과도하게 만들지 않도록 수평과 인물 위치를 관리."
+      },
+      {
+        "id": "L-194-B",
+        "name": "컬러 라이트 인물",
+        "mood": "초현실·뮤직비디오",
+        "note": "시설의 기존 조명이 허용된 구역에서만 촬영. 자동 화이트밸런스를 끄고 색온도를 고정한 뒤 피부 톤과 암반 색을 따로 테스트."
+      },
+      {
+        "id": "L-194-C",
+        "name": "암반 디테일·실루엣",
+        "mood": "어둡고 조각적",
+        "note": "암반 표면을 배경으로 인물을 옆모습 실루엣으로 두는 포인트. 플래시 사용을 전제로 하지 말고 시설이 허가한 조명만 활용."
+      }
+    ],
+    "subjectTags": [
+      "전신",
+      "실루엣",
+      "아티스트 프로필",
+      "뮤직비디오 스틸"
+    ],
+    "styleTags": [
+      "판타지",
+      "다크",
+      "테크노"
+    ],
+    "rarity": "A",
+    "score": 78,
+    "officialUrl": "https://gm.go.kr/cv/gc/CVGC_14000.jsp",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "조명 콘텐츠와 전시 구역은 시기마다 달라질 수 있습니다. 인터넷의 컬러 조명 사진을 현재 세팅 또는 촬영 허용 구역과 동일하다고 가정하지 마십시오.",
+    "visualProfile": "암반의 자연 질감과 인공 컬러 조명이 만나는 독특한 지하 공간. 일반 야외 장소에서 얻기 어려운 판타지·다크·테크노의 무드를 만들 수 있으나 상업촬영과 장비 제한이 핵심 리스크.",
+    "recommendedLenses": [
+      "24–35mm",
+      "50mm",
+      "85mm"
+    ],
+    "composition": [
+      "통로 원근",
+      "계단 대칭",
+      "실루엣",
+      "암반 텍스처 클로즈업"
+    ],
+    "shootingChecklist": [
+      "상업촬영·영상 촬영 승인 문의",
+      "플래시·조명·삼각대 반입 여부 확인",
+      "안전 동선 및 케이블 설치 금지 구역 확인",
+      "촬영 가능 시간과 관람객 통제 조건 확인",
+      "습기와 바닥 미끄럼에 대비한 보호 장비"
+    ],
+    "confidence": "중",
+    "proScout": {
+      "creativeFit": 94,
+      "productionFit": 32,
+      "lightDirection": "기존 설치 조명 색과 방향은 구역별로 다름. 현장 화이트밸런스·플리커·노출 테스트가 필수.",
+      "shadowControl": "설치 조명은 임의 조절할 수 없다고 가정. 별도 조명 사용은 승인을 먼저 받음.",
+      "backgroundControl": "암반과 빛은 강렬하지만 관광 동선·안내판·난간을 완전히 제거하기 어려울 수 있음.",
+      "subjectScale": "3/4·전신·실루엣·디테일",
+      "recommendedFocalLength": "24–35mm 공간 / 50mm 전신 / 85mm 표정",
+      "cameraHeight": "계단·통로의 안전을 확보한 지점에서 아이레벨",
+      "movement": "저조도에서는 정지 포즈 위주, 짐벌·이동촬영은 승인 후 검토",
+      "power": "시설 전원·추가 조명 이용 여부 미확인",
+      "loadIn": "동굴 내부는 계단과 통로가 있어 장비 수량을 최소화하고 케이스 이동로 확인",
+      "parking": "외부 주차장 이용 가능 여부·장비차량 하차점 확인",
+      "ceiling": "구역별 천장 높이·붐 사용·삼각대 설치 조건 확인",
+      "sound": "관람 방송과 반향음이 있을 수 있어 동영상 음향 별도 녹음 계획",
+      "crewBase": "실내 대기·의상 교체 공간 및 온습도 확인",
+      "connectivity": "지하 수신 상태 미측정; 오프라인 자료 준비",
+      "restrictions": "시설 조명·장비·안전선·관람 동선 규정 우선; 허가 전 상업 촬영 금지",
+      "rights": "시설 영상·조명 쇼·전시 콘텐츠의 상업 이용 권리 확인",
+      "restoration": "암반·난간·바닥에 테이프나 장비를 부착하지 않음",
+      "weatherPlan": "실내지만 혼잡·운영일 영향으로 백업 장소 필요",
+      "bestWindow": "평일 개장 직후",
+      "scoutStatus": "공식 장소 확인 후보 · 상업촬영 허가 미확인",
+      "confidence": "중"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실내",
+      "폐광 재생·지하 암반·조명 설치 공간",
+      "초현실·어둡고 극적·미래적·컬러풀",
+      "뮤직비디오 콘셉트",
+      "암반 텍스처"
+    ],
+    "source": "광명동굴 공식 안내",
+    "mapQuery": "광명동굴 경기도 광명시 가학로85번길 142",
+    "addressStatus": "공식 주소: 경기 광명시 가학로85번길 142. 정밀 좌표 미검증 — 주차장·매표소·실내 촬영구역은 별도 지도 확인.",
+    "scout": "시각적 잠재력은 매우 높지만 촬영팀의 창작 자유도와 장소 관리 조건이 가장 큰 변수. 담당처의 촬영 가능 구역과 장비 범위를 먼저 확인한 뒤 예비 후보로 유지.",
+    "pro": {
+      "light": "기존 컬러 조명의 색이 피부와 의상에 강하게 묻을 수 있습니다. 화이트밸런스 고정, 테스트 촬영, 피부 톤 보호를 우선합니다.",
+      "plan": "일반 관람과 프로덕션 촬영은 다른 조건입니다. 추가 조명, 삼각대, 동영상, 상업 촬영 가능 여부 및 인원·시간을 운영처에 문의하십시오."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=경기%20광명%20광명동굴",
+    "google": "https://www.google.com/search?tbm=isch&q=경기%20광명%20광명동굴",
+    "sourceRefs": [
+      "https://gm.go.kr/cv/gc/CVGC_14000.jsp"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 94,
+      "productionFeasibility": 32,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "공식 주소: 경기 광명시 가학로85번길 142. 정밀 좌표 미검증 — 주차장·매표소·실내 촬영구역은 별도 지도 확인.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://gm.go.kr/cv/gc/CVGC_14000.jsp",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "주소/진입점 추가 확인 필요",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "공식 장소 안내 URL을 등록했으나, 이번 검증 배치에서 주소·진입점까지 독립 확인하지 않음.",
+    "sourceEvidenceUrl": "https://gm.go.kr/cv/gc/CVGC_14000.jsp"
+  },
+  {
+    "id": "L-195",
+    "region": "경기 시흥",
+    "name": "시흥갯골생태공원",
+    "type": "옛 염전·갯골·생태 데크·평지 풍경",
+    "mood": "미니멀·바람·서정·와이드 스케일",
+    "shooting": "패션 화보·뮤직비디오 외경·라이프스타일·앨범 커버",
+    "time": "일출 후 / 해질녘 / 바람 약한 날",
+    "popularity": "B",
+    "memo": "옛 염전의 직선 수면과 갯골 지형, 탁 트인 하늘이 만드는 여백을 활용한 야외 에디토리얼 후보.",
+    "check": "상업촬영·팀 단위 촬영 및 장비 사용 조건, 생태 보호 구역, 염전·데크 출입제한을 시흥시 관리처에 문의.",
+    "indoorOutdoor": "실외",
+    "commercial": "상업촬영 조건 미확인",
+    "fee": "확인 필요",
+    "accessibility": "공식 관광정보 주소: 경기 시흥시 동서로 287. 넓은 부지 내 촬영 포인트 간 보행 거리와 차량 진입 금지 구역 확인.",
+    "safety": "갯골 가장자리·습지·데크에서 안전거리 유지. 바람이 강한 날 라이트 스탠드·대형 플래그 사용 위험.",
+    "verification": "한국관광공사 관광 안내에서 주소·연중 이용 정보 확인. 상업촬영 허가와 특정 구역 접근은 미확인.",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "염전 수면선",
+      "갯골 지형",
+      "넓은 하늘",
+      "목재 데크·전망탑"
+    ],
+    "colorTags": [
+      "솔트화이트",
+      "하늘 블루",
+      "갈대 베이지"
+    ],
+    "lightTags": [
+      "낮은 태양",
+      "역광 실루엣",
+      "흐린 날 플랫광"
+    ],
+    "techniqueTags": [
+      "와이드 여백",
+      "망원 레이어",
+      "바람을 이용한 의상",
+      "수평선 정렬"
+    ],
+    "points": [
+      {
+        "id": "L-195-A",
+        "name": "염전 직선 수면 포인트",
+        "mood": "미니멀·기하학",
+        "note": "염전 흔적이 남은 수면·바닥의 직선을 찾아 수평선과 인물의 위치를 정리. 35–50mm로 대칭 구도를 시험하고 반사면의 하이라이트를 보호."
+      },
+      {
+        "id": "L-195-B",
+        "name": "갯골과 광활한 하늘",
+        "mood": "서정·고독",
+        "note": "하늘 여백을 크게 두거나 인물을 작게 배치하는 장면. 24–35mm의 와이드와 85mm 압축을 모두 촬영해 공간감을 비교."
+      },
+      {
+        "id": "L-195-C",
+        "name": "전망탑·데크의 수직선",
+        "mood": "그래픽·스포츠 에디토리얼",
+        "note": "공공 데크와 전망 구조물을 활용하되 보행자 통로를 막지 않는 촬영점 선정. 바람이 강하면 플래그와 스탠드를 사용하지 않는다."
+      }
+    ],
+    "subjectTags": [
+      "전신",
+      "그룹",
+      "워킹샷",
+      "앨범 커버"
+    ],
+    "styleTags": [
+      "내추럴",
+      "미니멀",
+      "시네마틱"
+    ],
+    "rarity": "A",
+    "score": 84,
+    "officialUrl": "https://access.visitkorea.or.kr/cos/detail.do?cotId=6c0e7e10-d251-48c1-bba9-f837bc6f47a5",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "계절에 따라 염전 수면·갈대·꽃 상태가 크게 달라집니다. 사진 검색 이미지를 촬영 날짜의 실제 배경으로 단정하지 말고 계절과 수위 정보를 확인하십시오.",
+    "visualProfile": "넓은 하늘과 갯골 지형, 염전 흔적이 만드는 수평·직선이 시각적 개성. 컬러를 절제한 패션 화보, 바람에 움직이는 의상, 광활한 프레임의 앨범 커버에 잘 맞는다.",
+    "recommendedLenses": [
+      "24–35mm",
+      "50mm",
+      "85mm"
+    ],
+    "composition": [
+      "수평선 낮게 배치",
+      "큰 여백",
+      "망원 레이어 압축",
+      "바람을 이용한 움직임"
+    ],
+    "shootingChecklist": [
+      "상업촬영과 장비 사용 조건 확인",
+      "염전 흔적 및 생태 보호 구역 출입 확인",
+      "일출·일몰 시각과 풍속 확인",
+      "주차장에서 포인트까지 이동 거리 산정",
+      "바람에 대비한 장비 안전 및 우천 계획"
+    ],
+    "confidence": "중",
+    "proScout": {
+      "creativeFit": 89,
+      "productionFit": 73,
+      "lightDirection": "일출·일몰의 낮은 빛이 수평면과 갈대에 긴 그림자를 만들 수 있음. 풍속·수위·계절이 결과에 큰 영향을 줌.",
+      "shadowControl": "개방된 야외이므로 자연광 중심; 강풍에는 반사판·플래그를 제한.",
+      "backgroundControl": "넓은 배경이 장점이지만 방문객·시설물·계절 식생이 프레임에 들어올 수 있음.",
+      "subjectScale": "전신·그룹·환경인물",
+      "recommendedFocalLength": "24–35mm 여백 / 50mm 전신 / 85mm 풍경 압축",
+      "cameraHeight": "수평선과 갯골 라인에 맞춘 아이레벨; 낮은 시점 비교",
+      "movement": "바람에 반응하는 의상·천·머리카락 움직임",
+      "power": "야외 전원 미확인; 배터리 기반 장비 권장",
+      "loadIn": "넓은 공원과 긴 데크 이동을 고려해 장비를 압축하고 포인트 순서를 사전 설계",
+      "parking": "공원 주차 및 행사 일정·대형차량 진입 가능 여부 확인",
+      "ceiling": "야외",
+      "sound": "바람·습지 조류·방문객 소음. 녹음이 중요하면 별도 현장 체크.",
+      "crewBase": "야외 탈의·메이크업 공간 별도 확보 필요",
+      "connectivity": "현장 측정 필요",
+      "restrictions": "습지·갯골 진입 금지 구역, 데크 안전 및 생태 보호 규정 준수",
+      "rights": "시설·관리 구역 및 상업 촬영 조건 확인",
+      "restoration": "염전 수면·갈대·생태 식생 훼손 금지, 장비 설치 최소화",
+      "weatherPlan": "풍속·비·수위에 따라 촬영일과 포인트를 바꿀 수 있도록 백업 필요",
+      "bestWindow": "일출 후 또는 일몰 전; 바람 약한 날",
+      "scoutStatus": "공공 관광정보 확인 후보 · 촬영 허가 및 구역 미확인",
+      "confidence": "중"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실외",
+      "옛 염전·갯골·생태 데크·평지 풍경",
+      "미니멀·바람·서정·와이드 스케일",
+      "패션 화보",
+      "염전 수면선"
+    ],
+    "source": "한국관광공사 관광정보",
+    "mapQuery": "시흥갯골생태공원 경기 시흥시 동서로 287",
+    "addressStatus": "관광정보 주소: 경기 시흥시 동서로 287. 정밀 좌표 미검증 — 갯골·염전·데크별 위치와 출입 구역 확인 필요.",
+    "scout": "야외 촬영의 배경이 단순하면서도 그래픽적이다. 풍속과 시간대가 의상 움직임과 라이트 스탠드 안전에 영향을 주므로 촬영 전날 기상과 현장 상태를 다시 확인.",
+    "pro": {
+      "light": "낮은 태양과 넓은 하늘을 이용하면 큰 여백과 긴 그림자를 얻을 수 있습니다. 수면 반사와 풍속은 현장답사에서 기록하십시오.",
+      "plan": "공원 이용 정보는 확인했지만 상업촬영 및 장비 사용 조건은 미확인입니다. 생태 구역과 일반 산책 동선을 분리해 문의하십시오."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=경기%20시흥%20시흥갯골생태공원",
+    "google": "https://www.google.com/search?tbm=isch&q=경기%20시흥%20시흥갯골생태공원",
+    "sourceRefs": [
+      "https://access.visitkorea.or.kr/cos/detail.do?cotId=6c0e7e10-d251-48c1-bba9-f837bc6f47a5"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 89,
+      "productionFeasibility": 73,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "관광정보 주소: 경기 시흥시 동서로 287. 정밀 좌표 미검증 — 갯골·염전·데크별 위치와 출입 구역 확인 필요.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://access.visitkorea.or.kr/cos/detail.do?cotId=6c0e7e10-d251-48c1-bba9-f837bc6f47a5",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "주소/진입점 추가 확인 필요",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "공식 장소 안내 URL을 등록했으나, 이번 검증 배치에서 주소·진입점까지 독립 확인하지 않음.",
+    "sourceEvidenceUrl": "https://access.visitkorea.or.kr/cos/detail.do?cotId=6c0e7e10-d251-48c1-bba9-f837bc6f47a5"
+  },
+  {
+    "id": "L-196",
+    "region": "인천 부평구",
+    "name": "부평 캠프마켓 개방공간 B구역",
+    "type": "옛 미군기지 부지·잔디 광장·역사 공간",
+    "mood": "산업적·군사유산·그린 필드·도시 재생",
+    "shooting": "패션 화보·뮤직비디오 외경·단체 프로필",
+    "time": "평일 오전 / 허가된 사용시간 내",
+    "popularity": "B",
+    "memo": "옛 군부대 부지의 역사성과 개방 잔디광장을 활용할 수 있지만 실제 개방 구역과 사용 허가를 구분해야 하는 후보.",
+    "check": "인천시 공개 안내상 B구역 개방공간 사용 신청이 필요하며 신청 시점은 사용일 60~10일 전. 상업 화보가 허가 대상에 해당하는지 반드시 담당처 확인.",
+    "indoorOutdoor": "실외",
+    "commercial": "공간 사용 허가 및 상업촬영 적용 여부 확인 필요",
+    "fee": "패션촬영 요금·무료 적용 대상은 별도 확인",
+    "accessibility": "공식 위치: 인천 부평구 산곡동 449 일원. 차량은 개방 구역 내부 진입 금지 안내가 있으므로 외부 하차·도보 운반 계획 필요.",
+    "safety": "정비·공사 구역과 개방구역 경계를 엄수. 옛 시설물과 토양 상태에 접근하지 않고 관리구역 통제를 따름.",
+    "verification": "개방구역 주소 확인; 상업촬영 허가·장비 반입 미확인",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "대형 잔디광장",
+      "옛 기지 흔적",
+      "역사 공간",
+      "넓은 단체 구도"
+    ],
+    "colorTags": [
+      "올리브",
+      "콘크리트 그레이",
+      "카키"
+    ],
+    "lightTags": [
+      "아침 잔디 반사",
+      "흐린 날 균일광",
+      "낮은 역광"
+    ],
+    "techniqueTags": [
+      "와이드 그룹",
+      "정돈된 대형",
+      "배경 최소화",
+      "드론은 별도 허가 전제"
+    ],
+    "points": [
+      {
+        "id": "L-196-A",
+        "name": "잔디광장 와이드",
+        "mood": "그린 필드·대형 스케일",
+        "note": "승인된 사용 구역의 경계와 목적 공간을 먼저 확인하고, 24–35mm로 인원 간 여백을 둔 대형 구도를 설계. 차량은 내부에 두지 않는 것으로 계획."
+      },
+      {
+        "id": "L-196-B",
+        "name": "과거 기지 흔적 주변 인물",
+        "mood": "역사·도시재생",
+        "note": "일반 개방 구역에서 실제 보존·전시 중인 요소만 배경으로 검토. 공사·정비 구역 또는 출입 제한 시설은 프레임에 포함하지 않는다."
+      },
+      {
+        "id": "L-196-C",
+        "name": "대칭형 단체 화보",
+        "mood": "스트리트·집단",
+        "note": "넓은 평지에서 대칭 대형을 만들 수 있으나, 사용 허가 위치도와 안전 동선을 먼저 확보하고 현장 통행을 막지 않는 범위로 구성."
+      }
+    ],
+    "subjectTags": [
+      "전신",
+      "그룹",
+      "대형 구도",
+      "환경인물"
+    ],
+    "styleTags": [
+      "스트리트",
+      "역사·재생",
+      "미니멀"
+    ],
+    "rarity": "A",
+    "score": 78,
+    "officialUrl": "https://www.incheon.go.kr/campmarket/CA070101",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "개방 구역의 실제 시설물 구성은 업데이트·공사에 따라 달라질 수 있습니다. 공식 현황도와 최신 현장을 대조한 뒤 이미지 등록.",
+    "visualProfile": "옛 미군기지라는 도시사적 장소성, 큰 잔디 구역, 개방공간이라는 조합이 드물다. 그러나 촬영팀의 이용은 일반 산책과 다르며, 허가 가능한 목적·구역·일정을 먼저 판별해야 한다.",
+    "recommendedLenses": [
+      "24–35mm",
+      "50mm",
+      "85mm"
+    ],
+    "composition": [
+      "대형 그룹 대칭",
+      "와이드 여백",
+      "역사적 요소와 인물",
+      "낮은 시점"
+    ],
+    "shootingChecklist": [
+      "상업 화보가 사용허가 대상인지 사전 확인",
+      "사용일 60~10일 전 신청 요건 확인",
+      "사용 위치도·행사계획·안전관리·복구계획 준비",
+      "내부 차량 진입 제한 및 케이스 운반 확인",
+      "현재 공사·정화·출입통제 구역 확인"
+    ],
+    "confidence": "중",
+    "proScout": {
+      "creativeFit": 87,
+      "productionFit": 54,
+      "lightDirection": "개방 잔디 공간은 빛이 강하므로 오전과 일몰 전의 낮은 태양을 우선 검토.",
+      "shadowControl": "넓은 야외라 자연광 제어가 어려움. 강풍 시 플래그·스탠드 위험.",
+      "backgroundControl": "정돈된 광장 배경이 장점이지만 공사 펜스·안내판·일반 이용자를 체크해야 함.",
+      "subjectScale": "전신·그룹·대형 인원",
+      "recommendedFocalLength": "24–35mm 그룹 / 50mm 전신",
+      "cameraHeight": "아이레벨과 낮은 시점 비교; 수평 유지",
+      "movement": "그룹 워킹·대형 변화·정지 포즈",
+      "power": "야외 전원 미확인",
+      "loadIn": "차량 내부 진입 금지 안내가 있으므로 외부 하차 위치와 도보 운반 거리 확인",
+      "parking": "인근 공영주차장 안내를 확인하고 장비 하차와 주차 분리",
+      "ceiling": "야외",
+      "sound": "주변 활동·인근 도로 소음 확인",
+      "crewBase": "현장 내 대기 공간 및 화장실·탈의 지원 여부 확인",
+      "connectivity": "현장 측정 필요",
+      "restrictions": "B구역 사용허가·신청 일정·시설 보호·차량 진입 제한 및 안전 규정 준수",
+      "rights": "시설 흔적·기념 콘텐츠 사용 범위와 홍보물 배포 조건 확인",
+      "restoration": "사용 위치도 기준으로 원상복구·정리 계획 제출 필요 여부 확인",
+      "weatherPlan": "야외 일정은 비·강풍 시 변경 조건과 환불 조건을 사전 합의",
+      "bestWindow": "허가된 일정의 평일 오전 또는 일몰 전",
+      "scoutStatus": "공식 사용 절차 확인 후보 · 촬영 목적 적합성은 미확인",
+      "confidence": "중"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실외",
+      "옛 미군기지 부지·잔디 광장·역사 공간",
+      "산업적·군사유산·그린 필드·도시 재생",
+      "패션 화보",
+      "대형 잔디광장"
+    ],
+    "source": "인천광역시 캠프마켓 공식 안내",
+    "mapQuery": "인천 캠프마켓 B구역 인천 부평구 산곡동 449",
+    "addressStatus": "공식 안내 위치: 인천 부평구 산곡동 449 일원. 정밀 좌표 미검증 — 개방 B구역과 출입 게이트를 지도에서 확인.",
+    "scout": "개방공간 49,300㎡ 정보가 있으나 전체 부지가 모두 촬영 가능한 것은 아니다. 사용허가 심의와 상업 프로덕션이 신청 대상인지부터 확인해야 한다.",
+    "pro": {
+      "light": "잔디와 하늘의 대비가 강해 정오에는 의상과 얼굴에 하이라이트가 쉽게 생깁니다. 오전 또는 일몰 전을 우선 답사하십시오.",
+      "plan": "공식 안내는 공간사용 허가 절차와 신청기간을 명시합니다. 시민 여가·행사와 광고 화보가 같은 허가 범주인지 확인한 뒤 후보로 확정하십시오."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=인천%20부평구%20부평%20캠프마켓%20개방공간%20B구역",
+    "google": "https://www.google.com/search?tbm=isch&q=인천%20부평구%20부평%20캠프마켓%20개방공간%20B구역",
+    "sourceRefs": [
+      "https://www.incheon.go.kr/campmarket/CA070101"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 87,
+      "productionFeasibility": 54,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "공식 안내 위치: 인천 부평구 산곡동 449 일원. 정밀 좌표 미검증 — 개방 B구역과 출입 게이트를 지도에서 확인.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://www.incheon.go.kr/campmarket/CA070101",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "address": "인천광역시 부평구 산곡동 294-150 (캠프마켓 개방구역 일원)",
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "공식 주소 확인",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "캠프마켓 시민소통 공식 사이트의 행사 장소·오시는 길 안내 확인",
+    "sourceEvidenceUrl": "https://www.campmarket.or.kr/notice"
+  },
+  {
+    "id": "L-197",
+    "region": "경기 파주",
+    "name": "헤이리시네마",
+    "type": "독립영화관·블랙박스 객석·스크린",
+    "mood": "시네마틱·아날로그·어둡고 극적·인디",
+    "shooting": "가수 프로필·밴드 화보·뮤직비디오 스틸·인터뷰 포트레이트",
+    "time": "촬영 대관 시간대에 맞춤",
+    "popularity": "B",
+    "memo": "관객석과 스크린, 극장 특유의 어둠을 온전히 제어할 수 있는 실내 촬영 대관 후보.",
+    "check": "공식 홈페이지에 촬영 대관 1시간 20만원(VAT 포함) 안내가 있으나 촬영 내용·날짜·추가비용·조명·음향 조건을 예약 시 재확인.",
+    "indoorOutdoor": "실내",
+    "commercial": "촬영 대관 가능(일정·내용은 승인 및 협의)",
+    "fee": "공식 웹 안내: 촬영 대관 1시간 200,000원(VAT 포함). 예약 시 최신 요금·시간·내용 재확인.",
+    "accessibility": "공식 주소: 경기 파주시 헤이리마을길 93-119, 커피공장103 3층. 건물 뒤 공터 및 건물 주차공간을 먼저 확인하도록 안내.",
+    "safety": "어두운 객석의 계단·케이블과 스탠드 위치 표시. 비상구와 통로를 막지 않음.",
+    "verification": "주소·촬영 대관 요금표 확인; 촬영 일정·내용 승인 필요",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "영화관 객석",
+      "스크린 광원",
+      "저조도 실내",
+      "아날로그 시네마"
+    ],
+    "colorTags": [
+      "블랙",
+      "레드",
+      "웜앰버"
+    ],
+    "lightTags": [
+      "스크린 광원",
+      "사이드 키라이트",
+      "객석 스텝라이트"
+    ],
+    "techniqueTags": [
+      "로우키 인물",
+      "스크린 역광",
+      "객석 대칭",
+      "실용광 활용"
+    ],
+    "points": [
+      {
+        "id": "L-197-A",
+        "name": "객석 중앙 대칭 컷",
+        "mood": "시네마틱·아티스트",
+        "note": "대관 시간에 객석 중앙축을 비워 정면 대칭의 포트레이트 구성. 스크린 밝기는 얼굴 노출과 분리해 조정하고 검정 의상의 디테일은 측면 키라이트로 살린다."
+      },
+      {
+        "id": "L-197-B",
+        "name": "스크린 역광 실루엣",
+        "mood": "극적·인디",
+        "note": "스크린 사용과 영상 재생을 대관처와 합의한 경우 실루엣을 시험. 화면의 플리커·색온도와 인물 노출을 확인한 뒤 셔터와 화이트밸런스를 고정."
+      },
+      {
+        "id": "L-197-C",
+        "name": "좌석 사이 반신 인물",
+        "mood": "아날로그·친밀감",
+        "note": "객석 사이의 통로를 프레임 라인으로 활용. 50mm 또는 85mm로 배경을 압축하고 계단·통로를 케이블로 막지 않도록 세팅."
+      }
+    ],
+    "subjectTags": [
+      "반신",
+      "클로즈업",
+      "밴드",
+      "인터뷰 프로필"
+    ],
+    "styleTags": [
+      "인디",
+      "레트로",
+      "로우키"
+    ],
+    "rarity": "B",
+    "score": 85,
+    "officialUrl": "https://hcine.kr/about",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "영화관 내부 사진은 좌석·스크린·조명 상태가 바뀔 수 있습니다. 현 대관 조건과 촬영일의 실제 구성은 대관처에 확인하십시오.",
+    "visualProfile": "실내를 대관할 수 있는 독립영화관이라는 점에서 날씨와 관객 흐름을 제어하기 좋다. 스크린과 객석의 반복 구조를 이용해 가수·밴드의 시네마틱 프로필을 만들 수 있다.",
+    "recommendedLenses": [
+      "35mm",
+      "50mm",
+      "85mm"
+    ],
+    "composition": [
+      "객석 대칭",
+      "스크린 역광",
+      "좌석 레이어",
+      "로우키 클로즈업"
+    ],
+    "shootingChecklist": [
+      "촬영 대관 날짜 및 금액 재확인",
+      "스크린·프로젝터·음향 사용 여부 협의",
+      "조명 장비와 전원·케이블 동선 확인",
+      "준비·철수 포함 대관 시간 확인",
+      "주차와 장비 하차 조건 확인"
+    ],
+    "confidence": "중-상",
+    "proScout": {
+      "creativeFit": 85,
+      "productionFit": 83,
+      "lightDirection": "스크린·객석 계단등·별도 조명을 조합할 수 있으나 실제 조명·스크린 운용은 대관 내용과 일치해야 함.",
+      "shadowControl": "실내 대관 공간이라 별도 조명 사용 범위를 합의하면 다른 공공장소보다 제어가 쉬울 수 있음.",
+      "backgroundControl": "객석과 스크린은 통제 가능성이 높으나 극장 장비와 비상구가 프레임에 들어올 수 있음.",
+      "subjectScale": "반신·클로즈업·그룹·앉은 인물",
+      "recommendedFocalLength": "35mm 객석 / 50mm 반신 / 85mm 인물",
+      "cameraHeight": "객석 중앙축·좌석 높이와 비슷한 시점",
+      "movement": "정지 포즈·느린 팬·짧은 워킹 시퀀스",
+      "power": "촬영 조명 사용 전 전력 용량·회로 위치 확인",
+      "loadIn": "커피공장103 3층에 위치. 엘리베이터·계단·케이스 반입 동선 확인",
+      "parking": "공식 안내상 건물 뒤 공터·건물 주차 공간 우선 확인, 공영주차장 별도 운영은 아님",
+      "ceiling": "천장 높이·붐 설치 가능 높이·극장 설비 간섭 확인",
+      "sound": "상영 장비·공조 소음 및 녹음 음향 반향 확인",
+      "crewBase": "극장 내 보관·대기 공간 사용 여부를 대관 조건에 포함",
+      "connectivity": "현장 측정 필요",
+      "restrictions": "대관 계약에 촬영물 목적·스크린 사용·음향·장비·인원·추가 시간 기재",
+      "rights": "스크린에 재생하는 영화·이미지·음악의 권리 확인",
+      "restoration": "좌석·벽·스크린에 장비나 테이프를 부착하지 않음",
+      "weatherPlan": "실내 대관으로 우천 영향은 낮으나 일정 변경·환불 조건 확인",
+      "bestWindow": "대관 확정 시간",
+      "scoutStatus": "촬영 대관 요금 공개 · 날짜·세부 조건 재확인",
+      "confidence": "중-상"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실내",
+      "독립영화관·블랙박스 객석·스크린",
+      "시네마틱·아날로그·어둡고 극적·인디",
+      "가수 프로필",
+      "영화관 객석"
+    ],
+    "source": "헤이리시네마 공식 대관 페이지",
+    "mapQuery": "헤이리시네마 경기 파주시 헤이리마을길 93-119",
+    "addressStatus": "공식 주소: 경기 파주시 헤이리마을길 93-119, 커피공장103 3층. 정밀 좌표 미검증 — 건물 주차·출입구 확인 필요.",
+    "scout": "현재 목록에서 명확한 촬영 대관료가 공개된 소수의 실내 후보. 스크린·좌석을 이용하면 공간을 통제하는 연출이 가능하므로 가수 프로필 또는 밴드 화보에 실무적인 장점.",
+    "pro": {
+      "light": "스크린 밝기와 별도 키라이트의 균형을 사전에 설정하고, 스크린을 배경으로 쓸 때는 플리커·색 재현을 테스트하십시오.",
+      "plan": "공식 홈페이지에 촬영 대관 1시간 20만원(VAT 포함)이 안내되어 있습니다. 최신 요금·추가 장비·준비 철수 시간·스크린 콘텐츠 권리는 계약 전에 재확인하십시오."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=경기%20파주%20헤이리시네마",
+    "google": "https://www.google.com/search?tbm=isch&q=경기%20파주%20헤이리시네마",
+    "sourceRefs": [
+      "https://hcine.kr/about"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 85,
+      "productionFeasibility": 83,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "공식 주소: 경기 파주시 헤이리마을길 93-119, 커피공장103 3층. 정밀 좌표 미검증 — 건물 주차·출입구 확인 필요.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://hcine.kr/about",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "address": "경기도 파주시 탄현면 헤이리마을길 93-119, 커피공장103 3층",
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "공식 주소 확인",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "헤이리시네마 공식 소개의 주소·연락처·촬영 대관 정책 확인",
+    "sourceEvidenceUrl": "https://hcine.kr/about"
+  },
+  {
+    "id": "L-198",
+    "region": "경기 고양",
+    "name": "현대 모터스튜디오 고양",
+    "type": "자동차 전시·금속 조형·대형 아트리움",
+    "mood": "테크놀로지·럭셔리·산업적·미래적",
+    "shooting": "테크웨어·럭셔리 패션·남성 화보·자동차/모빌리티 광고",
+    "time": "평일 개관 직후",
+    "popularity": "B",
+    "memo": "다층 아트리움과 금속 계단, 유리·자동차 전시가 구성하는 럭셔리 산업 공간 후보.",
+    "check": "일반 방문은 사전 예약제로 운영된다는 안내가 있음. 상업 촬영·자동차/브랜드 노출·조명·장비 반입·공간 독점은 별도 문의.",
+    "indoorOutdoor": "실내·외",
+    "commercial": "상업촬영 조건 미확인",
+    "fee": "다목적홀 등 별도 대관공간 요금은 공식 안내 확인; 일반 전시장·차량 전시구역 촬영 허가 및 요금은 별도 문의.",
+    "accessibility": "공식 관광 안내 주소: 경기 고양시 일산서구 킨텍스로 217-6. 주차 가능 정보 확인; 대형 장비 하차·적재 동선은 별도 문의.",
+    "safety": "차량 전시·관람객 동선과 계단을 침범하지 않음. 자동차나 전시 구조물에 기대거나 접촉하는 연출은 승인 전제.",
+    "verification": "공식 주소 확인; 일반 전시장 상업촬영 승인 미확인",
+    "lastVerified": "2026-10-09",
+    "visualTags": [
+      "메탈릭 계단",
+      "다층 아트리움",
+      "유리·철골",
+      "자동차 전시"
+    ],
+    "colorTags": [
+      "스틸",
+      "블랙",
+      "웜골드"
+    ],
+    "lightTags": [
+      "천장 반사광",
+      "유리창 창광",
+      "실내 실용광"
+    ],
+    "techniqueTags": [
+      "건축 원근",
+      "대각선 계단",
+      "반사 제어",
+      "저채도 럭셔리"
+    ],
+    "points": [
+      {
+        "id": "L-198-A",
+        "name": "대각선 계단과 다층 아트리움",
+        "mood": "럭셔리·미래적",
+        "note": "공용 관람 구역 중 계단 대각선과 층간 공간이 겹쳐 보이는 위치를 탐색. 24–35mm로 스케일을 드러내되 사람의 신체 비율을 유지하도록 프레임 중앙부 배치."
+      },
+      {
+        "id": "L-198-B",
+        "name": "금속·유리 반사 포트레이트",
+        "mood": "테크웨어·쿨",
+        "note": "검은 의상과 금속/유리의 반사를 이용하되 배경에 관람객이 반사되지 않도록 위치를 바꾼다. CPL 필터는 반사 억제와 색 변화 모두 시험."
+      },
+      {
+        "id": "L-198-C",
+        "name": "자동차 전시를 활용한 인물 컷",
+        "mood": "모빌리티·광고",
+        "note": "특정 차량·브랜드를 배경에 넣을 수 있는지 먼저 승인받는다. 차량 전시물과 안전 거리를 유지하고, 차체 반사를 기준으로 인물과 조명 위치를 설계."
+      }
+    ],
+    "subjectTags": [
+      "전신",
+      "남성 패션",
+      "자동차/모빌리티",
+      "프로필"
+    ],
+    "styleTags": [
+      "럭셔리",
+      "테크웨어",
+      "미래적"
+    ],
+    "rarity": "B",
+    "score": 79,
+    "officialUrl": "https://motorstudio.hyundai.com/goyang/ln/main.do?strgCd=01",
+    "imageUrl": "",
+    "imageCredit": "",
+    "imageAnalysis": "건축가 프로젝트 사진은 실제 방문객 동선·전시 차량·현재 공간 구성과 다를 수 있습니다. 공식 운영 중인 구역과 촬영 가능 지점을 직접 구분해야 합니다.",
+    "visualProfile": "대각선으로 이어지는 금속 계단, 다층 아트리움, 유리와 자동차 표면이 럭셔리·테크웨어 콘셉트에 어울린다. 공간 자체가 강한 브랜드 이미지를 띠므로 상업 광고에서는 브랜드 노출과 촬영 승인 범위를 우선 확인해야 한다.",
+    "recommendedLenses": [
+      "24–35mm",
+      "50mm",
+      "85mm"
+    ],
+    "composition": [
+      "대각선 계단",
+      "다층 레이어",
+      "반사면 포트레이트",
+      "자동차-인물 대비"
+    ],
+    "shootingChecklist": [
+      "상업촬영 목적 승인 문의",
+      "브랜드·차량 노출 및 로고 사용 조건 확인",
+      "예약·운영시간·관람객 통제 가능성 확인",
+      "조명·스탠드·차량 주변 안전 조건 확인",
+      "장비차량 하차·주차 동선 확인"
+    ],
+    "confidence": "중",
+    "proScout": {
+      "creativeFit": 90,
+      "productionFit": 44,
+      "lightDirection": "천장·창·금속면의 혼합 반사광이 있어 인물 피부와 차량 하이라이트를 별도 측정.",
+      "shadowControl": "일반 관람 환경은 조명을 통제하기 어려움. 공간 대관 승인 시에만 플래그·키라이트 세팅을 계획.",
+      "backgroundControl": "건축은 정교하지만 차량 전시·브랜드 표식·관람객을 완전히 통제하기 어려움.",
+      "subjectScale": "전신·3/4·남성 포트레이트",
+      "recommendedFocalLength": "24–35mm 건축 / 50mm 전신 / 85mm 포트레이트",
+      "cameraHeight": "계단을 따라 낮은 시점과 정면 수평 시점 비교",
+      "movement": "걷는 컷은 관람객 흐름을 방해하지 않는 범위에서 협의",
+      "power": "추가 조명 전원 및 분전반 미확인",
+      "loadIn": "공식 주차 가능 안내는 있으나 케이스 하차·엘리베이터·전시 구역 반입 여부는 별도 확인",
+      "parking": "방문객 주차와 장비 차량 사용 조건 분리 확인",
+      "ceiling": "다층 아트리움이 있으나 리깅·붐·사다리 설치 조건 미확인",
+      "sound": "체험·안내 방송과 방문객 소음 확인",
+      "crewBase": "별도 대기 공간 대관 여부 문의",
+      "connectivity": "현장 측정 필요",
+      "restrictions": "브랜드·차량·전시물 보호 및 촬영 허가; 일반 입장권이 상업촬영권을 뜻하지 않음",
+      "rights": "현대차 상표·전시 차량·전시물의 상업적 묘사 및 협찬 오해 방지 확인",
+      "restoration": "차량·유리·금속 구조물에 장비 접촉 금지",
+      "weatherPlan": "실내 촬영 가능성은 높지만 행사·전시 일정에 따른 대체 날짜 확인",
+      "bestWindow": "평일 개관 직후",
+      "scoutStatus": "공식 운영정보 확인 후보 · 상업촬영은 별도 협의",
+      "confidence": "중"
+    },
+    "cardImage": "",
+    "cardImageType": "ref",
+    "scoutTags": [
+      "실내·외",
+      "자동차 전시·금속 조형·대형 아트리움",
+      "테크놀로지·럭셔리·산업적·미래적",
+      "테크웨어 패션",
+      "다층 아트리움"
+    ],
+    "source": "고양시 공식 관광안내 및 현대모터스튜디오 공식 페이지",
+    "mapQuery": "현대 모터스튜디오 고양 경기도 고양시 일산서구 킨텍스로 217-6",
+    "addressStatus": "공식 주소: 경기 고양시 일산서구 킨텍스로 217-6. 정밀 좌표 미검증 — 관람 입구와 장비 하차점 확인 필요.",
+    "scout": "건축과 자동차 자체가 이미 강한 브랜드 이미지이므로 촬영 결과가 강렬할 수 있지만, 독립 프로덕션이 공간을 자유롭게 쓰기에는 제한이 클 수 있다.",
+    "pro": {
+      "light": "금속 계단과 차량 도장면의 스펙큘러 하이라이트를 먼저 살펴보고, 반사면에 카메라·스태프가 드러나는 위치를 피하십시오.",
+      "plan": "공식 일반 이용 정보와 주차는 확인했지만 상업촬영 승인은 확인되지 않았습니다. 차량·로고·공간 독점·조명 장비 범위를 함께 문의하십시오."
+    },
+    "naver": "https://search.naver.com/search.naver?where=image&query=경기%20고양%20현대%20모터스튜디오%20고양",
+    "google": "https://www.google.com/search?tbm=isch&q=경기%20고양%20현대%20모터스튜디오%20고양",
+    "sourceRefs": [
+      "https://motorstudio.hyundai.com/goyang/ln/main.do?strgCd=01"
+    ],
+    "locationReview": {
+      "visualDistinctiveness": 90,
+      "productionFeasibility": 44,
+      "permissionStatus": "미확인 — 실제 상업촬영 계약 전 담당처 확인 필요",
+      "coordinateStatus": "정밀 좌표 미검증 — 주소 기반 지도 검색만 제공",
+      "imageStatus": "프로그램에 실제 현장 사진을 자동 연결하지 않음 — 검색/공식 페이지에서 장소 일치 여부 확인",
+      "webCheckedDate": "2026-10-09",
+      "fieldScouted": false,
+      "addressStatus": "공식 주소: 경기 고양시 일산서구 킨텍스로 217-6. 정밀 좌표 미검증 — 관람 입구와 장비 하차점 확인 필요.",
+      "entranceVerified": false,
+      "siteVisitVerified": false,
+      "note": "지역·대표 주소만으로 장비차량 진입점이나 개별 촬영 포인트를 확정하지 말 것."
+    },
+    "imageReview": {
+      "status": "not-collected",
+      "placeMatchVerified": false,
+      "usageRightsStatus": "not-applicable",
+      "sourceUrl": "",
+      "note": "대표 현장 사진이 아직 등록되지 않음."
+    },
+    "permitReview": {
+      "status": "unverified",
+      "lastChecked": "",
+      "evidenceUrl": "https://motorstudio.hyundai.com/goyang/ln/main.do?strgCd=01",
+      "commercialUseConfirmed": false,
+      "note": "일반 관람·개인 촬영 허용은 패션 화보·광고·뮤직비디오 등 상업촬영 승인을 뜻하지 않음."
+    },
+    "address": "경기도 고양시 일산서구 킨텍스로 217-6",
+    "sourceReviewDate": "2026-10-09",
+    "sourceReviewScope": "공식 웹페이지 확인; 현장 실사·촬영 허가 승인 아님",
+    "addressAccuracy": "공식 주소 확인",
+    "imageVerificationStatus": "실제 장소 사진 미등록 또는 장소 일치 미확인",
+    "imageRightsStatus": "이미지 사용권 확인 전",
+    "commercialPermitStatus": "미확인",
+    "locationAccuracy": "공식 주소 또는 지역 기준; 정밀 촬영 좌표 미확인",
+    "sourceEvidence": "현대 모터스튜디오 고양 공식 층별 안내의 주소 확인",
+    "sourceEvidenceUrl": "https://motorstudio.hyundai.com/goyang/cotn/at/floor3.do?strgCd=01&subPrenMenuId=HPSGGU09"
+  }
+]

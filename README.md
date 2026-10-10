@@ -1,4 +1,4 @@
-# FRAME ATLAS v5.9 — PRO PHOTO LOCATION SCOUT
+# FRAME ATLAS v5.28 — PRO PHOTO LOCATION SCOUT
 
 개인용 사진촬영 로케이션 스카우팅 프로그램입니다. `index.html`과 `data/places.js` 외에 `data/review-workflow.js`가 위치·사진·허가·현장 기술 검증 기록의 입력·저장·내보내기를 담당합니다.
 
@@ -47,3 +47,8 @@
 
 ## v5.23 업데이트
 - 홈 상단 배너 이미지, 이미지 레지스트리(`data/image-registry.js`), 확정 이미지 내보내기, `tools/harvest_images.py`, 영화·드라마·언론 등장 장소 11곳 추가. 자세한 내용은 `CHANGELOG_v5.23.md`.
+
+
+## v5.28 PC·모바일 공용 데이터 갱신
+- `data/places.js` 등 GitHub Pages의 공용 데이터는 앱을 열거나 새로고침할 때 서버를 우선 확인합니다. PC에서 커밋·배포한 장소 데이터가 모바일에도 반영됩니다.
+- 개인 메모·사진 등 기기별 기록은 자동으로 공유되지 않으며 기존 백업·동기화 기능이 필요합니다.

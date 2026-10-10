@@ -1,10 +1,16 @@
-/* FRAME ATLAS v5.23: same-origin offline shell only. External image/API requests are not cached. */
-const CACHE_NAME = 'frame-atlas-v5.27-20261010';
+/* FRAME ATLAS v5.28: GitHub Pages shared data is always checked online first. */
+const CACHE_NAME = 'frame-atlas-v5.28-20261010-shared-fresh';
 const APP_FILES = ['./', './index.html', './data/places.js', './data/DB_SCHEMA.json', './data/review-workflow.js', './data/image-registry.js', './manifest.json', './assets/icons/icon-128.png', './assets/icons/icon-180.png', './assets/icons/icon-192.png', './assets/icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
-    await cache.addAll(APP_FILES);
+    /* Do not let a stale HTTP cache seed the new app cache. */
+    await Promise.all(APP_FILES.map(async path => {
+      try {
+        const response = await fetch(new Request(path, {cache:'no-store'}));
+        if (response.ok) await cache.put(path, response);
+      } catch (_) { /* offline first install: remaining files can be fetched later */ }
+    }));
     await self.skipWaiting();
   })());
 });
@@ -20,12 +26,18 @@ self.addEventListener('fetch', event => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
-  if (req.mode === 'navigate') {
+  const path = url.pathname;
+  const sharedFresh = req.mode === 'navigate' || /\/(?:index\.html|data\/places\.js|data\/image-registry\.js|data\/review-workflow\.js|data\/DB_SCHEMA\.json|manifest\.json|sw\.js)$/.test(path);
+  if (sharedFresh) {
     event.respondWith((async () => {
+      const cache = await caches.open(CACHE_NAME);
       try {
-        const fresh = await fetch(req);
-        const cache = await caches.open(CACHE_NAME);
-        cache.put('./index.html', fresh.clone());
+        /* cache:'no-store' is essential: bypass both SW and browser HTTP caches. */
+        const fresh = await fetch(new Request(req, {cache:'no-store'}));
+        if (fresh && fresh.ok) {
+          const key = req.mode === 'navigate' ? './index.html' : req;
+          await cache.put(key, fresh.clone());
+        }
         return fresh;
       } catch (_) {
         return (await caches.match(req)) || (await caches.match('./index.html')) || Response.error();
@@ -38,13 +50,11 @@ self.addEventListener('fetch', event => {
     if (hit) return hit;
     try {
       const fresh = await fetch(req);
-      if (fresh && fresh.ok && url.origin === self.location.origin) {
+      if (fresh && fresh.ok) {
         const cache = await caches.open(CACHE_NAME);
-        cache.put(req, fresh.clone());
+        await cache.put(req, fresh.clone());
       }
       return fresh;
-    } catch (_) {
-      return hit || Response.error();
-    }
+    } catch (_) { return hit || Response.error(); }
   })());
 });
