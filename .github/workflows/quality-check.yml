@@ -1,0 +1,38 @@
+name: FRAME ATLAS quality checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate data and app shell
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate location data
+        run: python tools/validate.py
+
+      - name: Ensure validation report matches current data
+        run: git diff --exit-code -- tools/report.md
+
+      - name: Check app syntax, resources, version and photo import
+        run: python tools/check_app.py
