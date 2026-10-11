@@ -183,6 +183,15 @@ if "async function ghPull(){const s=$('gh_s');if(localStorage.getItem('faDeviceS
 else:
     checks.append("안전 동기화와 기존 단일 파일 내려받기 간섭 방지 확인")
 
+if "if(ri.private!==true)" not in html:
+    fail("기존 백업 API의 공개 저장소 차단 검사가 없습니다.")
+else:
+    checks.append("기존 백업 API의 비공개 저장소 강제 확인")
+if "if(repoInfo.private!==true)" not in html:
+    fail("기존 공유 스냅샷의 공개 저장소 차단 검사가 없습니다.")
+else:
+    checks.append("기존 공유 스냅샷의 비공개 저장소 강제 확인")
+
 if "node tools/test_device_sync.js" not in (ROOT / ".github/workflows/quality-check.yml").read_text(encoding="utf-8"):
     fail("GitHub Actions에 기기별 동기화 테스트가 연결되지 않았습니다.")
 else:
