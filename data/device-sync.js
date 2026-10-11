@@ -299,7 +299,7 @@
     }
     return env.value;
   }
-  async function applyLocal(store, key, value, deleted) {
+  async function applyLocal(store, key, value, deleted, sourceEntry) {
     root.__faDeviceSyncApplying = true;
     root.__fa532SyncApplying = true;
     suppress++;
@@ -320,12 +320,34 @@
       } else {
         await IDB.put(store, key, value);
       }
+      if (store === "pmeta" && typeof PMETA !== "undefined") {
+        if (deleted) delete PMETA[key]; else PMETA[key] = value;
+      }
+      if ((store === "pblob" || (store === "pmeta" && deleted)) && typeof PCACHE !== "undefined" && PCACHE[key]) {
+        try { URL.revokeObjectURL(PCACHE[key]); } catch (_) {}
+        delete PCACHE[key];
+      }
+      if (store === "pblob" && !deleted && typeof PCACHE !== "undefined" && value instanceof Blob) {
+        PCACHE[key] = URL.createObjectURL(value);
+      }
+      if (store === "places" && typeof DB !== "undefined" && Array.isArray(DB)) {
+        const at = DB.findIndex(function (p) { return p && String(p.id) === String(key); });
+        if (deleted) {
+          if (at >= 0) DB.splice(at, 1);
+        } else if (at >= 0) {
+          DB[at] = value;
+        } else {
+          if (typeof prep === "function") prep(value);
+          if (typeof applyTips === "function") applyTips(value);
+          DB.push(value);
+        }
+      }
     } finally {
       suppress--;
       root.__faDeviceSyncApplying = false;
       root.__fa532SyncApplying = false;
     }
-    updateRemoteMeta(store, key, { updatedAt: value && value.updatedAt ? value.updatedAt : new Date().toISOString(), deleted });
+    updateRemoteMeta(store, key, { updatedAt: sourceEntry && sourceEntry.updatedAt ? sourceEntry.updatedAt : new Date().toISOString(), deleted });
   }
   function mergeRecord(store, localValue, remoteValue) {
     if (store === "pblob") return { value: localValue, changed: false, conflicts: 1, action: "preserve-local-photo" };
@@ -397,7 +419,7 @@
             if (!current) {
               updateRemoteMeta(entry.store, entry.key, entry);
             } else if (baseMatchesLocal && !localChanged && !alreadyMergedRemote) {
-              await applyLocal(entry.store, entry.key, null, true);
+              await applyLocal(entry.store, entry.key, null, true, entry);
               local.delete(rid);
               counts.deleted++;
             } else {
@@ -426,7 +448,7 @@
           const remoteValue = await readPeerValue(c, entry);
           const remoteRec = { id: rid, store: entry.store, key: entry.key, value: remoteValue, fingerprint: entry.fingerprint };
           if (!current) {
-            await applyLocal(entry.store, entry.key, remoteValue, false);
+            await applyLocal(entry.store, entry.key, remoteValue, false, entry);
             local.set(rid, remoteRec);
             counts.added++;
             delete conflictMap[seenId];
@@ -438,7 +460,7 @@
           } else {
             const merged = mergeRecord(entry.store, current.value, remoteValue);
             if (merged.changed && merged.value !== current.value) {
-              await applyLocal(entry.store, entry.key, merged.value, false);
+              await applyLocal(entry.store, entry.key, merged.value, false, null);
               const newFingerprint = await fingerprint(entry.store, merged.value);
               local.set(rid, Object.assign({}, current, { value: merged.value, fingerprint: newFingerprint }));
               counts.updated++;
@@ -464,7 +486,7 @@
       for (const [rid, oldEntry] of Object.entries(nextRecords)) {
         if (fresh.has(rid)) continue;
         const m = metaMap[rid];
-        if (m && m.deleted && (!oldEntry.deleted || Date.parse(m.updatedAt || 0) >= Date.parse(oldEntry.updatedAt || 0))) {
+        if (m && m.deleted && (!oldEntry.deleted || Date.parse(m.updatedAt || 0) > Date.parse(oldEntry.updatedAt || 0))) {
           nextRecords[rid] = Object.assign({}, oldEntry, {
             id: rid, store: oldEntry.store, key: oldEntry.key,
             deleted: true, fingerprint: "", updatedAt: m.updatedAt || new Date().toISOString(),
@@ -542,10 +564,11 @@
   async function enable() {
     const c = config();
     await verifyPrivateRepo(c);
-    if (root.localStorage.getItem(BACKUP_GATE_KEY) !== "1") {
+    const backupGateAt = Number(root.localStorage.getItem(BACKUP_GATE_KEY) || 0);
+    if (!backupGateAt || !Number.isFinite(backupGateAt) || Date.now() - backupGateAt > 60 * 60 * 1000) {
       if (typeof faDownloadPreApplyBackup === "function") await faDownloadPreApplyBackup();
       else throw new Error("전체 백업 기능을 찾을 수 없습니다. 먼저 DB 백업/복원에서 백업 파일을 저장하세요.");
-      root.localStorage.setItem(BACKUP_GATE_KEY, "1");
+      root.localStorage.setItem(BACKUP_GATE_KEY, String(Date.now()));
       safeStatus("안전 백업 다운로드를 시작했습니다. 파일이 실제로 저장된 것을 확인한 뒤 [안전 동기화 시작]을 다시 누르세요.", "warn");
       return { backupRequired: true };
     }
