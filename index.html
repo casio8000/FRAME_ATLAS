@@ -1470,7 +1470,11 @@ async function faAutoSharedPull(manual=false){
  try{
   const g=LS('faGH',{repo:'',token:''}),repo=String(g.repo||'').trim(),token=String(g.token||'').trim();
   if(!/^[\w.-]+\/[\w.-]+$/.test(repo)||!token){if(manual&&s)s.textContent='먼저 저장소와 토큰을 입력한 뒤 설정 저장을 누르세요.';return}
-  if(manual&&s)s.textContent='GitHub 공유 백업 확인 중…';
+  if(manual&&s)s.textContent='비공개 저장소와 GitHub 공유 백업 확인 중…';
+  const meta=await fetch('https://api.github.com/repos/'+repo.split('/').map(encodeURIComponent).join('/'),{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'},cache:'no-store'});
+  if(!meta.ok)throw new Error('GitHub 저장소 확인 실패 '+meta.status+' — 토큰과 저장소 권한을 확인하세요.');
+  const repoInfo=await meta.json();
+  if(repoInfo.private!==true)throw new Error('개인 데이터 보호를 위해 비공개 저장소만 허용합니다. 공개 저장소의 공유 백업은 사용하지 않았습니다.');
   const url='https://api.github.com/repos/'+repo+'/contents/'+FA531_SHARED_FILE;
   const r=await fetch(url,{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github.raw+json','X-GitHub-Api-Version':'2022-11-28'},cache:'no-store'});
   if(r.status===404){if(manual&&s)s.textContent='공유 백업 파일이 없습니다. '+FA531_SHARED_FILE+' 경로에 파일을 업로드하세요.';return}
