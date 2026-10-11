@@ -7,7 +7,12 @@
   if (typeof module === "object" && module.exports) module.exports = api;
   if (root) {
     root.FADeviceSync = api;
-    root.faDeviceSyncEnable = function () { api.enable().catch(function (e) { factoryReport(e); }); };
+    root.faDeviceSyncEnable = function () {
+      api.enable().catch(function (e) {
+        const last = root.localStorage && root.localStorage.getItem("faDeviceSyncLastStatus") || "";
+        if (!last.startsWith("안전 동기화 실패:")) factoryReport(e);
+      });
+    };
     root.faDeviceSyncNow = function () {
       if (!api.isEnabled()) { root.alert("먼저 [안전 동기화 시작]을 눌러 이 기기의 백업을 만들고 연결을 승인하세요."); return; }
       api.syncNow(true).catch(function () {});
@@ -565,6 +570,14 @@
       writeState(SEEN_KEY, seen);
       writeState(CONFLICT_KEY, conflictMap);
       const conflictCount = Object.keys(conflictMap).length;
+      if (counts.added + counts.updated + counts.deleted > 0) {
+        try {
+          if (typeof updateMetrics === "function") updateMetrics();
+          if (typeof renderChips === "function") renderChips();
+          if (typeof render === "function") render();
+          if (typeof renderHome === "function") renderHome();
+        } catch (_) {}
+      }
       const status = "동기화 완료 · 추가 " + counts.added + " · 갱신 " + counts.updated + " · 삭제 반영 " + counts.deleted + " · 업로드 " + counts.uploaded + (conflictCount ? " · 충돌 확인 " + conflictCount : "");
       safeStatus(status, conflictCount ? "warn" : "ok");
       try { root.dispatchEvent(new Event("faDeviceSyncComplete")); } catch (_) {}
@@ -645,7 +658,7 @@
         const clear = IDB.clear.bind(IDB);
         try {
           IDB.clear = function (store) {
-            if (STORES.has(String(store)) && !suppress) {
+            if (STORES.has(String(store)) && !suppress && !root.__faDeviceSyncApplying && !root.__fa532SyncApplying) {
               const meta = localMeta();
               for (const id of Object.keys(meta)) if (id.startsWith(String(store) + "\u0000")) {
                 meta[id] = { updatedAt: new Date().toISOString(), deleted: true };
