@@ -65,6 +65,7 @@ const peerReportsConflict = core.peerReportsConflict;
   }
   const files = new Map();
   let serial = 0;
+  let repoPrivate = true;
   const jsonResponse = (value, status) => new Response(JSON.stringify(value), {
     status: status || 200, headers: { "Content-Type": "application/json" }
   });
@@ -72,7 +73,7 @@ const peerReportsConflict = core.peerReportsConflict;
     options = options || {};
     const path = new URL(typeof url === "string" ? url : url.url).pathname;
     if (path === "/repos/owner/vault") {
-      return jsonResponse({ private: true, permissions: { push: true } });
+      return jsonResponse({ private: repoPrivate, permissions: { push: true } });
     }
     const base = "/repos/owner/vault/contents/";
     if (!path.startsWith(base)) return jsonResponse({ message: "not found" }, 404);
@@ -185,7 +186,15 @@ const peerReportsConflict = core.peerReportsConflict;
     "the first device's conflicting photo should remain intact");
   assert.ok(sync.getConflicts().length >= 3, "the first device should see propagated conflict markers");
 
-  console.log("FRAME ATLAS device sync tests: unit + mock round-trip passed");
+  const writesBeforePublicRepoAttempt = serial;
+  repoPrivate = false;
+  await assert.rejects(() => sync.syncNow(true), /비공개/,
+    "the sync engine must refuse to send personal data to a public repository");
+  assert.equal(serial, writesBeforePublicRepoAttempt,
+    "a public-repository refusal must occur before any file write");
+  repoPrivate = true;
+
+  console.log("FRAME ATLAS device sync tests: unit + mock round-trip + public-repo guard passed");
 
 })().catch(error => {
   console.error(error);
