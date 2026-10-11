@@ -415,6 +415,12 @@
     const changed = typeof remoteTime === "number" ? remoteTime : Date.parse(remoteTime || 0);
     return Number.isFinite(changed) && changed > deleted;
   }
+  function peerReportsConflict(conflicts, localDeviceId, store, key) {
+    return Object.values(conflicts || {}).some(function (item) {
+      return item && item.deviceId === localDeviceId &&
+        item.store === store && String(item.key) === String(key);
+    });
+  }
   function setConflict(conflicts, peerId, entry, reason) {
     conflicts[peerId + "|" + entry.id] = {
       deviceId: peerId,
@@ -462,11 +468,12 @@
           if (entry.id && entry.id !== rid) continue;
           const seenId = peerId + "|" + rid;
           const current = local.get(rid);
+          const peerReportedConflict = peerReportsConflict(peer.data.conflicts, id, entry.store, entry.key);
           if (seen[seenId] === entry.revision) {
             if (conflictMap[seenId] && current && !entry.deleted && current.fingerprint === entry.fingerprint) {
               delete conflictMap[seenId];
             }
-            continue;
+            if (!peerReportedConflict || conflictMap[seenId]) continue;
           }
           const base = own.data.records[rid];
           const baseMatchesLocal = !!(current && base && !base.deleted && base.fingerprint === current.fingerprint);
@@ -516,7 +523,7 @@
             local.set(rid, remoteRec);
             counts.added++;
             delete conflictMap[seenId];
-          } else if (baseMatchesLocal && !alreadyMergedRemote) {
+          } else if (baseMatchesLocal && !alreadyMergedRemote && !peerReportedConflict) {
             await applyLocal(entry.store, entry.key, remoteValue, false, entry);
             local.set(rid, remoteRec);
             counts.updated++;
@@ -531,7 +538,7 @@
             }
             if (merged.conflicts > 0) {
               counts.conflicts += merged.conflicts;
-              setConflict(conflictMap, peerId, Object.assign({ id: rid }, entry), entry.store === "pblob" ? "같은 사진 키에 서로 다른 이미지가 있어 현재 사진을 유지했습니다. 양쪽 기기의 파일은 보존되어 있습니다." : "같은 항목의 일부 값이 달라 현재 기기 값을 우선 보존했습니다.");
+              setConflict(conflictMap, peerId, Object.assign({ id: rid }, entry), entry.store === "pblob" ? "같은 사진 키에 서로 다른 이미지가 있어 현재 사진을 유지했습니다. 양쪽 기기의 파일은 보존되어 있습니다." : peerReportedConflict ? "다른 기기에서도 이 항목의 동시 수정 충돌이 확인되어 현재 값을 자동 덮어쓰지 않았습니다." : "같은 항목의 일부 값이 달라 현재 기기 값을 우선 보존했습니다.");
             } else {
               delete conflictMap[seenId];
             }
@@ -606,7 +613,8 @@
 
       const manifestData = {
         app: "FRAME ATLAS", schema: VERSION, deviceId: id, label,
-        updatedAt: new Date().toISOString(), records: nextRecords
+        updatedAt: new Date().toISOString(), records: nextRecords,
+        conflicts: conflictMap
       };
       const manifestText = JSON.stringify(manifestData);
       if (new TextEncoder().encode(manifestText).length > 750000) throw new Error("이 기기의 동기화 목록이 750KB를 넘습니다. 전체 백업 파일로 덮어쓰지 않았으며, 데이터는 로컬에 유지했습니다.");
@@ -755,6 +763,6 @@
     isEnabled: enabled,
     schedule,
     getConflicts,
-    core: { fingerprint, stableStringify, logicalId, keyPath, mergeRecord, fallbackHash, encodeText, decodeText, remoteSupersedesDelete }
+    core: { fingerprint, stableStringify, logicalId, keyPath, mergeRecord, fallbackHash, encodeText, decodeText, remoteSupersedesDelete, peerReportsConflict }
   };
 });
