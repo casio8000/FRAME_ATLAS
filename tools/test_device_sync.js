@@ -4,6 +4,7 @@ global.FABackupMerge = require("../data/backup-merge.js");
 const sync = require("../data/device-sync.js");
 const core = sync.core;
 const remoteSupersedesDelete = core.remoteSupersedesDelete;
+const peerReportsConflict = core.peerReportsConflict;
 
 (async function main() {
   assert.equal(core.stableStringify({ b: 2, a: 1 }), core.stableStringify({ a: 1, b: 2 }),
@@ -44,10 +45,16 @@ const remoteSupersedesDelete = core.remoteSupersedesDelete;
   assert.equal(remoteSupersedesDelete("2026-10-11T10:00:00.000Z", "invalid"), false,
     "an invalid remote timestamp must not resurrect a deleted item");
 
+  const propagated = { "device-A|ls\u0000memo25_P1": { deviceId: "device-A", store: "ls", key: "memo25_P1" } };
+  assert.equal(peerReportsConflict(propagated, "device-A", "ls", "memo25_P1"), true,
+    "a peer manifest should carry an unresolved conflict back to the device involved");
+  assert.equal(peerReportsConflict(propagated, "device-A", "ls", "memo25_P2"), false,
+    "conflict markers must match both the record store and key");
+
   const text = "FRAME ATLAS · 촬영 장소";
   assert.equal(core.decodeText(core.encodeText(text)), text, "UTF-8 data must survive API Base64 conversion");
 
-  console.log("FRAME ATLAS device sync tests: 10 cases passed");
+  console.log("FRAME ATLAS device sync tests: 17 assertions passed");
 })().catch(error => {
   console.error(error);
   process.exitCode = 1;
