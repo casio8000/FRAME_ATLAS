@@ -25,6 +25,23 @@ const peerReportsConflict = core.peerReportsConflict;
     "rate limiting should be retried automatically");
   assert.equal(core.isRetryableError(Object.assign(new Error("업로드 실패 403 — API rate limit exceeded"), { status: 403 })), true,
     "GitHub rate-limit 403 responses should be retried but ordinary permission 403 errors should not");
+
+  const rateLimitedRead = await core.httpError(
+    new Response(JSON.stringify({ message: "API rate limit exceeded" }), { status: 403, headers: { "Content-Type": "application/json" } }),
+    "파일 확인 실패: sync/v1/devices"
+  );
+  assert.equal(rateLimitedRead.status, 403,
+    "GitHub Contents read errors must retain their HTTP status");
+  assert.equal(core.isRetryableError(rateLimitedRead), true,
+    "rate-limited Contents reads must enter the bounded retry path");
+
+  const unavailableRead = await core.httpError(
+    new Response(JSON.stringify({ message: "Service Unavailable" }), { status: 503, headers: { "Content-Type": "application/json" } }),
+    "파일 읽기 실패: manifest.json"
+  );
+  assert.equal(unavailableRead.status, 503);
+  assert.equal(core.isRetryableError(unavailableRead), true,
+    "Contents 5xx errors must enter the bounded retry path");
   assert.equal(core.isRetryableError(new TypeError("Failed to fetch")), true,
     "temporary network failures should be retried automatically");
   assert.equal(core.isRetryableError(Object.assign(new Error("권한 없음"), { status: 401 })), false,
