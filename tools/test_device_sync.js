@@ -15,6 +15,21 @@ const peerReportsConflict = core.peerReportsConflict;
                await core.fingerprint("places", { a: 1, id: "P1", b: 2 }),
     "equivalent place objects should have equal fingerprints");
 
+  assert.equal(core.isRetryableError(Object.assign(new Error("GitHub 응답 503"), { status: 503 })), true,
+    "server errors should be retried automatically");
+  assert.equal(core.isRetryableError(Object.assign(new Error("업로드 충돌 409"), { status: 409 })), true,
+    "concurrent-write conflicts should receive a bounded retry");
+  assert.equal(core.isRetryableError(Object.assign(new Error("GitHub 응답 429"), { status: 429 })), true,
+    "rate limiting should be retried automatically");
+  assert.equal(core.isRetryableError(new TypeError("Failed to fetch")), true,
+    "temporary network failures should be retried automatically");
+  assert.equal(core.isRetryableError(Object.assign(new Error("권한 없음"), { status: 401 })), false,
+    "authentication errors should not be retried as if they were temporary");
+  assert.equal(core.isRetryableError(Object.assign(new Error("저장소 쓰기 권한 없음"), { status: 403 })), false,
+    "permission errors should not trigger retry loops");
+  assert.deepEqual(core.retryDelays, [5000, 15000, 30000, 60000, 120000],
+    "retry delays should be bounded and progressively increase");
+
   const key = "faReview57_서울/#1";
   const path = core.keyPath(key, ".json");
   assert.match(path, /^[A-Za-z0-9_-]+\.json$/, "record keys must not break GitHub path segments");
