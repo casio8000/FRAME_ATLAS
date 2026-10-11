@@ -11,6 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 HTML_PATH = ROOT / "index.html"
 SW_PATH = ROOT / "sw.js"
+SYNC_PATH = ROOT / "data" / "device-sync.js"
+SYNC_TEST_PATH = ROOT / "tools" / "test_device_sync.js"
 MANIFEST_PATH = ROOT / "manifest.json"
 errors: list[str] = []
 checks: list[str] = []
@@ -25,6 +27,10 @@ html = HTML_PATH.read_text(encoding="utf-8")
 sw = SW_PATH.read_text(encoding="utf-8") if SW_PATH.is_file() else ""
 if not SW_PATH.is_file():
     fail("sw.js가 없습니다.")
+if not SYNC_PATH.is_file():
+    fail("data/device-sync.js가 없습니다.")
+if not SYNC_TEST_PATH.is_file():
+    fail("tools/test_device_sync.js가 없습니다.")
 
 # 앱에서 참조하는 로컬 script 파일이 저장소에 존재하는지 확인합니다.
 script_tags = list(re.finditer(r"<script\b([^>]*)>([\s\S]*?)</script\s*>", html, re.I))
@@ -68,6 +74,23 @@ with tempfile.TemporaryDirectory(prefix="frame-atlas-check-") as tmp:
         fail("Node.js가 없습니다. GitHub Actions 환경에 Node.js를 설치해야 합니다.")
     except subprocess.TimeoutExpired:
         fail("JavaScript 문법 검사 시간 초과")
+
+# 독립 동기화 엔진 파일도 Node.js로 별도 문법 검사합니다.
+if SYNC_PATH.is_file():
+    try:
+        result = subprocess.run(
+            ["node", "--check", str(SYNC_PATH)],
+            text=True,
+            capture_output=True,
+            check=False,
+            timeout=30,
+        )
+        if result.returncode:
+            fail("기기별 동기화 엔진 JavaScript 문법 오류:\n" + (result.stderr.strip() or result.stdout.strip()))
+        else:
+            checks.append("기기별 동기화 엔진 문법 통과 (Node.js --check)")
+    except (FileNotFoundError, subprocess.TimeoutExpired) as exc:
+        fail(f"기기별 동기화 엔진 문법 검사 실패: {exc}")
 
 # PWA manifest 및 아이콘 경로를 검사합니다.
 if not MANIFEST_PATH.is_file():
@@ -128,6 +151,26 @@ if re.search(r"fetch\(o\.data\)\)\.blob\(\)", html):
     fail("레거시 fetch(Data URL).blob() 복원 코드가 남아 있습니다.")
 if "더보기 → 데이터 관리" in html:
     fail("사용 안내에 실제 메뉴와 다른 '더보기 → 데이터 관리' 경로가 남아 있습니다.")
+
+# 새 기기별 동기화는 비공개 저장소, 백업 게이트 및 항목별 병합을 요구합니다.
+sync_js = SYNC_PATH.read_text(encoding="utf-8") if SYNC_PATH.is_file() else ""
+for label, token in {
+    "기기별 동기화 모듈 연결": 'src="data/device-sync.js"',
+    "비공개 저장소 강제": 'if (repo.private !== true)',
+    "기기별 독립 레코드 경로": 'const ROOT_PATH = "sync/v1/devices"',
+    "동기화 전 안전 백업 확인": 'const backupGateAt = Number(root.localStorage.getItem(BACKUP_GATE_KEY) || 0);',
+    "사진 파일 개별 전송": 'if (rec.store === "pblob")',
+    "충돌 사진의 로컬 보존": 'action: "preserve-local-photo"',
+}.items():
+    source = html if label == "기기별 동기화 모듈 연결" else sync_js
+    if token not in source:
+        fail(f"기기별 동기화 안전 검사 누락: {label}")
+    else:
+        checks.append(f"{label} 확인")
+if "node tools/test_device_sync.js" not in (ROOT / ".github/workflows/quality-check.yml").read_text(encoding="utf-8"):
+    fail("GitHub Actions에 기기별 동기화 테스트가 연결되지 않았습니다.")
+else:
+    checks.append("GitHub Actions 기기별 동기화 테스트 연결 확인")
 
 # 공유 전체 스냅샷은 로컬 개인 데이터가 있을 때 자동으로 덮어쓰면 안 됩니다.
 for label, token in {
