@@ -759,8 +759,16 @@
             const shouldTrack = STORES.has(storeName) && !suppress &&
               !root.__faDeviceSyncApplying && !root.__fa532SyncApplying;
             let keys = [];
-            if (shouldTrack && typeof IDB.keys === "function") {
-              try { keys = await IDB.keys(storeName); } catch (_) { keys = []; }
+            if (shouldTrack) {
+              if (typeof IDB.keys !== "function") {
+                throw new Error("IndexedDB 항목 목록을 확인할 수 없어 안전을 위해 저장소 비우기를 취소했습니다. 데이터는 삭제되지 않았습니다.");
+              }
+              try {
+                keys = await IDB.keys(storeName);
+                if (!Array.isArray(keys)) throw new Error("IndexedDB 항목 목록 형식이 올바르지 않습니다.");
+              } catch (error) {
+                throw new Error("IndexedDB 항목을 확인할 수 없어 안전을 위해 저장소 비우기를 취소했습니다. 데이터는 삭제되지 않았습니다. " + (error && error.message ? error.message : ""));
+              }
             }
             const result = await clear.apply(null, arguments);
             if (shouldTrack) {
