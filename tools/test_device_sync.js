@@ -17,8 +17,10 @@ const peerReportsConflict = core.peerReportsConflict;
 
   assert.equal(core.isRetryableError(Object.assign(new Error("GitHub 응답 503"), { status: 503 })), true,
     "server errors should be retried automatically");
-  assert.equal(core.isRetryableError(Object.assign(new Error("업로드 충돌 409"), { status: 409 })), true,
-    "concurrent-write conflicts should receive a bounded retry");
+  assert.equal(core.isRetryableError(Object.assign(new Error("업로드 충돌 409"), { status: 409 })), false,
+    "optimistic write conflicts must not be blindly retried against a stale SHA");
+  assert.equal(core.isRetryableError(Object.assign(new Error("유효성 충돌 422"), { status: 422 })), false,
+    "validation/SHA conflicts require a fresh sync attempt rather than an automatic retry loop");
   assert.equal(core.isRetryableError(Object.assign(new Error("GitHub 응답 429"), { status: 429 })), true,
     "rate limiting should be retried automatically");
   assert.equal(core.isRetryableError(Object.assign(new Error("업로드 실패 403 — API rate limit exceeded"), { status: 403 })), true,
