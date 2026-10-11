@@ -754,16 +754,24 @@
       if (typeof IDB.clear === "function") {
         const clear = IDB.clear.bind(IDB);
         try {
-          IDB.clear = function (store) {
-            if (STORES.has(String(store)) && !suppress && !root.__faDeviceSyncApplying && !root.__fa532SyncApplying) {
+          IDB.clear = async function (store) {
+            const storeName = String(store);
+            const shouldTrack = STORES.has(storeName) && !suppress &&
+              !root.__faDeviceSyncApplying && !root.__fa532SyncApplying;
+            let keys = [];
+            if (shouldTrack && typeof IDB.keys === "function") {
+              try { keys = await IDB.keys(storeName); } catch (_) { keys = []; }
+            }
+            const result = await clear.apply(null, arguments);
+            if (shouldTrack) {
               const meta = localMeta();
-              for (const id of Object.keys(meta)) if (id.startsWith(String(store) + "\u0000")) {
-                meta[id] = { updatedAt: new Date().toISOString(), deleted: true };
+              const updatedAt = new Date().toISOString();
+              for (const key of keys) {
+                meta[logicalId(storeName, String(key))] = { updatedAt, deleted: true };
               }
               writeState(META_KEY, meta);
+              schedule("기록 변경 감지 · 동기화 대기");
             }
-            const result = clear.apply(null, arguments);
-            if (STORES.has(String(store))) schedule("기록 변경 감지 · 동기화 대기");
             return result;
           };
           IDB.__faDeviceSyncWrapped = true;
