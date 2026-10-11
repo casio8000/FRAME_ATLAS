@@ -461,8 +461,13 @@
           if (!entry || !STORES.has(entry.store) && entry.store !== "ls") continue;
           if (entry.id && entry.id !== rid) continue;
           const seenId = peerId + "|" + rid;
-          if (seen[seenId] === entry.revision) continue;
           const current = local.get(rid);
+          if (seen[seenId] === entry.revision) {
+            if (conflictMap[seenId] && current && !entry.deleted && current.fingerprint === entry.fingerprint) {
+              delete conflictMap[seenId];
+            }
+            continue;
+          }
           const base = own.data.records[rid];
           const baseMatchesLocal = !!(current && base && !base.deleted && base.fingerprint === current.fingerprint);
           const priorLocalFingerprint = originalFingerprints.get(rid);
