@@ -5,8 +5,23 @@
 (function (root, factory) {
   const api = factory(root);
   if (typeof module === "object" && module.exports) module.exports = api;
-  if (root) root.FADeviceSync = api;
+  if (root) {
+    root.FADeviceSync = api;
+    root.faDeviceSyncEnable = function () { api.enable().catch(function (e) { factoryReport(e); }); };
+    root.faDeviceSyncNow = function () {
+      if (!api.isEnabled()) { root.alert("먼저 [안전 동기화 시작]을 눌러 이 기기의 백업을 만들고 연결을 승인하세요."); return; }
+      api.syncNow(true).catch(function () {});
+    };
+    root.faDeviceSyncDisable = function () { api.disable(); };
+  }
   if (root && root.document) api.install();
+  function factoryReport(error) {
+    const message = "안전 동기화 설정 실패: " + (error && error.message ? error.message : String(error));
+    try { root.localStorage.setItem("faDeviceSyncLastStatus", message); } catch (_) {}
+    const el = root.document && root.document.getElementById("fa_device_sync_status");
+    if (el) el.textContent = message;
+    if (root.alert) root.alert(message);
+  }
 })(typeof window !== "undefined" ? window : (typeof globalThis !== "undefined" ? globalThis : null), function (root) {
   "use strict";
 
@@ -564,6 +579,7 @@
   async function enable() {
     const c = config();
     await verifyPrivateRepo(c);
+    if (enabled()) return await syncNow(true);
     const backupGateAt = Number(root.localStorage.getItem(BACKUP_GATE_KEY) || 0);
     if (!backupGateAt || !Number.isFinite(backupGateAt) || Date.now() - backupGateAt > 60 * 60 * 1000) {
       if (typeof faDownloadPreApplyBackup === "function") await faDownloadPreApplyBackup();
