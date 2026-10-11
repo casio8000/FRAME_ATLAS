@@ -21,6 +21,8 @@ const peerReportsConflict = core.peerReportsConflict;
     "concurrent-write conflicts should receive a bounded retry");
   assert.equal(core.isRetryableError(Object.assign(new Error("GitHub 응답 429"), { status: 429 })), true,
     "rate limiting should be retried automatically");
+  assert.equal(core.isRetryableError(Object.assign(new Error("업로드 실패 403 — API rate limit exceeded"), { status: 403 })), true,
+    "GitHub rate-limit 403 responses should be retried but ordinary permission 403 errors should not");
   assert.equal(core.isRetryableError(new TypeError("Failed to fetch")), true,
     "temporary network failures should be retried automatically");
   assert.equal(core.isRetryableError(Object.assign(new Error("권한 없음"), { status: 401 })), false,
