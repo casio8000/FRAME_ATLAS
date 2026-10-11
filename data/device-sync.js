@@ -338,7 +338,15 @@
     };
     let ls = {};
     if (typeof bkLS === "function") {
-      try { ls = bkLS() || {}; } catch (_) {}
+      try {
+        const captured = bkLS();
+        if (!captured || typeof captured !== "object" || Array.isArray(captured)) {
+          throw new Error("로컬 백업 데이터 목록 형식이 올바르지 않습니다.");
+        }
+        ls = captured;
+      } catch (error) {
+        throw new Error("로컬 기록 목록을 안전하게 읽지 못해 동기화를 중단했습니다. 원본 데이터는 변경하지 않았습니다. " + (error && error.message ? error.message : ""));
+      }
     } else {
       for (let i = 0; i < root.localStorage.length; i++) {
         const key = root.localStorage.key(i);
