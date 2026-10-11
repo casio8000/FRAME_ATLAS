@@ -180,6 +180,23 @@ for label, token in {
         fail(f"기기별 동기화 안전 검사 누락: {label}")
     else:
         checks.append(f"{label} 확인")
+# Temporary API/network failures must retry with a bounded backoff; auth/permission errors must not loop.
+for label, token in {
+    "일시 오류 재시도 분류": "function isRetryableError(error)",
+    "제한된 지수형 재시도 일정": "const RETRY_DELAYS = [5000, 15000, 30000, 60000, 120000];",
+    "재시도 중지 시 타이머 정리": "clearRetry(true);",
+    "실패 후 자동 재시도 예약": "queueRetry(error);",
+}.items():
+    if token not in sync_js:
+        fail(f"기기별 동기화 재시도 안정성 검사 누락: {label}")
+    else:
+        checks.append(f"{label} 확인")
+
+if "core.isRetryableError" not in (ROOT / "tools" / "test_device_sync.js").read_text(encoding="utf-8"):
+    fail("일시적 동기화 오류 분류 테스트가 없습니다.")
+else:
+    checks.append("일시적 동기화 오류 분류 테스트 확인")
+
 if 'faDeviceSyncShowConflicts()' not in html:
     fail("동기화 충돌 내역 조회 버튼이 없습니다.")
 else:

@@ -71,6 +71,9 @@
   let rerunRequested = false;
   let suppress = 0;
   let timer = null;
+  let retryTimer = null;
+  let retryAttempt = 0;
+  const RETRY_DELAYS = [5000, 15000, 30000, 60000, 120000];
 
   function parse(raw, fallback) {
     try { return raw == null ? fallback : JSON.parse(raw); } catch (_) { return fallback; }
@@ -197,6 +200,35 @@
     const msg = "안전 동기화 실패: " + (error && error.message ? error.message : String(error));
     safeStatus(msg, "error");
     if (manual && root && root.alert) root.alert(msg);
+  }
+  function isRetryableError(error) {
+    const status = Number(error && error.status);
+    if ([408, 425, 429].includes(status) || status >= 500) return true;
+    const message = String(error && error.message || error || "");
+    if (status === 403 && /rate.?limit|secondary rate|abuse detection/i.test(message)) return true;
+    return !!error && error.name === "TypeError" || /failed to fetch|network request failed|networkerror|load failed/i.test(message);
+  }
+  function clearRetry(resetAttempt) {
+    if (retryTimer !== null) clearTimeout(retryTimer);
+    retryTimer = null;
+    if (resetAttempt) retryAttempt = 0;
+  }
+  function queueRetry(error) {
+    if (!enabled() || !isRetryableError(error)) return;
+    if (retryTimer !== null) clearTimeout(retryTimer);
+    if (retryAttempt >= RETRY_DELAYS.length) {
+      safeStatus("자동 재시도를 " + RETRY_DELAYS.length + "회 시도했지만 연결되지 않았습니다. 네트워크·토큰 권한을 확인한 뒤 [지금 동기화]를 눌러 다시 시도하세요. 로컬 데이터는 유지되어 있습니다.", "error");
+      retryAttempt = 0;
+      return;
+    }
+    const delay = RETRY_DELAYS[retryAttempt++];
+    const seconds = Math.round(delay / 1000);
+    safeStatus("일시적인 연결 또는 GitHub 응답 오류입니다. " + seconds + "초 후 자동 재시도합니다 (" + retryAttempt + "/" + RETRY_DELAYS.length + "). 로컬 데이터는 유지되어 있습니다.", "warn");
+    retryTimer = setTimeout(function () {
+      retryTimer = null;
+      if (!enabled()) { retryAttempt = 0; return; }
+      syncNow(false, true).catch(function () {});
+    }, delay);
   }
   function config() {
     const c = readState("faGH", {});
@@ -430,7 +462,8 @@
       updatedAt: entry.updatedAt || new Date().toISOString()
     };
   }
-  async function syncNow(manual) {
+  async function syncNow(manual, fromRetry) {
+    if (!fromRetry) clearRetry(true);
     if (!root || !root.localStorage) throw new Error("브라우저 저장소를 사용할 수 없습니다.");
     if (busy) {
       rerunRequested = true;
@@ -631,11 +664,13 @@
         } catch (_) {}
       }
       const status = "동기화 완료 · 추가 " + counts.added + " · 갱신 " + counts.updated + " · 삭제 반영 " + counts.deleted + " · 업로드 " + counts.uploaded + (conflictCount ? " · 충돌 확인 " + conflictCount : "");
+      clearRetry(true);
       safeStatus(status, conflictCount ? "warn" : "ok");
       try { root.dispatchEvent(new Event("faDeviceSyncComplete")); } catch (_) {}
       return Object.assign({ ok: true, deviceId: id, conflictsPending: conflictCount, manifestSha: newManifestSha, message: status }, counts);
     } catch (error) {
       reportError(error, !!manual);
+      queueRetry(error);
       throw error;
     } finally {
       busy = false;
@@ -668,10 +703,14 @@
   }
   function disable() {
     root.localStorage.removeItem(ENABLED_KEY);
+    if (timer !== null) clearTimeout(timer);
+    timer = null;
+    clearRetry(true);
     safeStatus("자동 동기화를 일시중지했습니다. 저장소와 원격 기록은 삭제하지 않았습니다.", "warn");
   }
   function schedule(message) {
     if (!root || !enabled() || root.__faDeviceSyncApplying || root.__fa532SyncApplying) return;
+    if (retryTimer !== null) clearRetry(false);
     if (message) safeStatus(message, "pending");
     if (timer) clearTimeout(timer);
     timer = setTimeout(function () {
@@ -763,6 +802,6 @@
     isEnabled: enabled,
     schedule,
     getConflicts,
-    core: { fingerprint, stableStringify, logicalId, keyPath, mergeRecord, fallbackHash, encodeText, decodeText, remoteSupersedesDelete, peerReportsConflict }
+    core: { fingerprint, stableStringify, logicalId, keyPath, mergeRecord, fallbackHash, encodeText, decodeText, remoteSupersedesDelete, peerReportsConflict, isRetryableError, retryDelays: RETRY_DELAYS.slice() }
   };
 });
