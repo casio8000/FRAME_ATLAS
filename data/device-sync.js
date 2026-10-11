@@ -18,6 +18,31 @@
       api.syncNow(true).catch(function () {});
     };
     root.faDeviceSyncDisable = function () { api.disable(); };
+    root.faDeviceSyncShowConflicts = function () {
+      const host = root.document && root.document.getElementById("fa_device_sync_conflicts");
+      if (!host) return;
+      const conflicts = api.getConflicts();
+      host.replaceChildren();
+      if (!conflicts.length) {
+        host.textContent = "현재 남아 있는 동기화 충돌이 없습니다.";
+        return;
+      }
+      const intro = root.document.createElement("p");
+      intro.textContent = conflicts.length + "건의 충돌이 보관되어 있습니다. 아래 항목은 양쪽 데이터를 자동 삭제하지 않았습니다.";
+      host.appendChild(intro);
+      conflicts.forEach(function (item, index) {
+        const card = root.document.createElement("div");
+        card.style.cssText = "border:1px solid var(--line);border-radius:8px;padding:10px;margin:8px 0;background:#fff";
+        const title = root.document.createElement("b");
+        title.textContent = (index + 1) + ". " + String(item.store || "기록") + " · " + String(item.key || "알 수 없는 항목");
+        const detail = root.document.createElement("p");
+        detail.style.cssText = "font-size:12px;line-height:1.6;margin:6px 0 0";
+        detail.textContent = String(item.reason || "수동 확인이 필요합니다.") + " · 기기 " + String(item.deviceId || "알 수 없음") + " · " + String(item.updatedAt || "");
+        card.appendChild(title);
+        card.appendChild(detail);
+        host.appendChild(card);
+      });
+    };
   }
   if (root && root.document) api.install();
   function factoryReport(error) {
@@ -385,6 +410,11 @@
     }
     return { value: localValue, changed: false, conflicts: 1, action: "preserve-local-no-merger" };
   }
+  function remoteSupersedesDelete(deleteTime, remoteTime) {
+    const deleted = typeof deleteTime === "number" ? deleteTime : Date.parse(deleteTime || 0);
+    const changed = typeof remoteTime === "number" ? remoteTime : Date.parse(remoteTime || 0);
+    return Number.isFinite(changed) && changed > deleted;
+  }
   function setConflict(conflicts, peerId, entry, reason) {
     conflicts[peerId + "|" + entry.id] = {
       deviceId: peerId,
@@ -463,10 +493,9 @@
 
           if (!current) {
             const currentDeleteMeta = localMeta()[rid];
-            const localDeleteTime = Date.parse((currentDeleteMeta && currentDeleteMeta.deleted && currentDeleteMeta.updatedAt) || (base && base.deleted && base.updatedAt) || 0);
-            const remoteChangeTime = Date.parse(entry.updatedAt || 0);
+            const localDeleteTime = (currentDeleteMeta && currentDeleteMeta.deleted && currentDeleteMeta.updatedAt) || (base && base.deleted && base.updatedAt) || 0;
             if ((currentDeleteMeta && currentDeleteMeta.deleted || base && base.deleted) &&
-                !(Number.isFinite(remoteChangeTime) && remoteChangeTime > localDeleteTime)) {
+                !remoteSupersedesDelete(localDeleteTime, entry.updatedAt)) {
               counts.conflicts++;
               setConflict(conflictMap, peerId, Object.assign({ id: rid }, entry), "현재 기기의 삭제 기록보다 원격 변경 시각이 늦다는 점이 확인되지 않아 자동 복구하지 않았습니다.");
               seen[seenId] = entry.revision;
@@ -706,6 +735,12 @@
       setTimeout(function () { if (enabled()) syncNow(false).catch(function () {}); }, 3200);
     }
   }
+  function getConflicts() {
+    const map = readState(CONFLICT_KEY, {});
+    return Object.entries(map).map(function (pair) {
+      return Object.assign({ id: pair[0] }, pair[1] || {});
+    }).sort(function (a, b) { return String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")); });
+  }
   return {
     version: VERSION,
     install,
@@ -714,6 +749,7 @@
     disable,
     isEnabled: enabled,
     schedule,
-    core: { fingerprint, stableStringify, logicalId, keyPath, mergeRecord, fallbackHash, encodeText, decodeText }
+    getConflicts,
+    core: { fingerprint, stableStringify, logicalId, keyPath, mergeRecord, fallbackHash, encodeText, decodeText, remoteSupersedesDelete }
   };
 });
