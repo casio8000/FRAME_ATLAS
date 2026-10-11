@@ -243,15 +243,19 @@
   function headers(token, accept) {
     return { Authorization: "Bearer " + token, Accept: accept || "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" };
   }
+  async function httpError(response, context) {
+    let detail = "";
+    try {
+      const body = await response.clone().json();
+      detail = body && body.message ? " — " + body.message : "";
+    } catch (_) {}
+    const error = new Error(String(context || "GitHub 요청 실패") + " " + response.status + detail);
+    error.status = Number(response.status);
+    return error;
+  }
   async function apiResponse(url, token, options) {
     const response = await fetch(url, Object.assign({ headers: headers(token) }, options || {}));
-    if (!response.ok) {
-      let detail = "";
-      try { const body = await response.clone().json(); detail = body.message ? " — " + body.message : ""; } catch (_) {}
-      const err = new Error("GitHub 응답 " + response.status + detail);
-      err.status = response.status;
-      throw err;
-    }
+    if (!response.ok) throw await httpError(response, "GitHub 응답 실패");
     return response;
   }
   async function verifyPrivateRepo(c) {
@@ -264,11 +268,7 @@
   async function getMeta(c, path) {
     const res = await fetch(apiPath(c.repo, path), { headers: headers(c.token), cache: "no-store" });
     if (res.status === 404) return null;
-    if (!res.ok) {
-      let detail = "";
-      try { detail = (await res.clone().json()).message || ""; } catch (_) {}
-      throw new Error("파일 확인 실패 " + res.status + (detail ? " — " + detail : ""));
-    }
+    if (!res.ok) throw await httpError(res, "파일 확인 실패: " + path);
     const j = await res.json();
     if (!j || typeof j.sha !== "string") throw new Error("GitHub 파일 메타데이터를 확인할 수 없습니다: " + path);
     return { sha: j.sha, size: j.size || 0, type: j.type || "" };
@@ -276,7 +276,7 @@
   async function readFile(c, path, binary) {
     const res = await fetch(apiPath(c.repo, path), { headers: headers(c.token, "application/vnd.github.raw+json"), cache: "no-store" });
     if (res.status === 404) return null;
-    if (!res.ok) throw new Error("파일 읽기 실패 " + res.status + ": " + path);
+    if (!res.ok) throw await httpError(res, "파일 읽기 실패: " + path);
     if (binary) return res.blob();
     return res.text();
   }
@@ -312,7 +312,7 @@
   async function listDevices(c) {
     const res = await fetch(apiPath(c.repo, ROOT_PATH), { headers: headers(c.token), cache: "no-store" });
     if (res.status === 404) return [];
-    if (!res.ok) throw new Error("기기 목록 읽기 실패 " + res.status);
+    if (!res.ok) throw await httpError(res, "기기 목록 읽기 실패");
     const data = await res.json();
     if (!Array.isArray(data)) throw new Error("동기화 기기 목록 형식이 올바르지 않습니다.");
     return data.filter(v => v && v.type === "dir" && /^[a-f0-9]{24,64}$/i.test(v.name)).map(v => v.name);
