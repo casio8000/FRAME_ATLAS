@@ -135,10 +135,11 @@ const peerReportsConflict = core.peerReportsConflict;
     global.PCACHE = {};
     global.FABackupMerge = require("../data/backup-merge.js");
     global.bkLS = function () {
+      const activeStorage = global.localStorage;
       const out = {};
-      for (let i = 0; i < storage.length; i++) {
-        const key = storage.key(i);
-        if (/^(frameAtlas[\w-]*|memo25_[\w-]*|rec30_[\w-]*|faReview57_[\w-]*|img31|faPhotoUrlVault525)$/.test(key || "")) out[key] = storage.getItem(key);
+      for (let i = 0; i < activeStorage.length; i++) {
+        const key = activeStorage.key(i);
+        if (/^(frameAtlas[\w-]*|memo25_[\w-]*|rec30_[\w-]*|faReview57_[\w-]*|img31|faPhotoUrlVault525)$/.test(key || "")) out[key] = activeStorage.getItem(key);
       }
       return out;
     };
