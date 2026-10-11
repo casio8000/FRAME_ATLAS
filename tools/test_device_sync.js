@@ -54,7 +54,138 @@ const peerReportsConflict = core.peerReportsConflict;
   const text = "FRAME ATLAS · 촬영 장소";
   assert.equal(core.decodeText(core.encodeText(text)), text, "UTF-8 data must survive API Base64 conversion");
 
-  console.log("FRAME ATLAS device sync tests: 17 assertions passed");
+  // Mock GitHub Contents API to exercise a complete PC -> iPhone -> PC round trip.
+  class MemoryStorage {
+    constructor() { this.map = new Map(); }
+    get length() { return this.map.size; }
+    key(i) { return Array.from(this.map.keys())[i] ?? null; }
+    getItem(k) { return this.map.has(String(k)) ? this.map.get(String(k)) : null; }
+    setItem(k, v) { this.map.set(String(k), String(v)); }
+    removeItem(k) { this.map.delete(String(k)); }
+  }
+  const files = new Map();
+  let serial = 0;
+  const jsonResponse = (value, status) => new Response(JSON.stringify(value), {
+    status: status || 200, headers: { "Content-Type": "application/json" }
+  });
+  global.fetch = async function (url, options) {
+    options = options || {};
+    const path = new URL(typeof url === "string" ? url : url.url).pathname;
+    if (path === "/repos/owner/vault") {
+      return jsonResponse({ private: true, permissions: { push: true } });
+    }
+    const base = "/repos/owner/vault/contents/";
+    if (!path.startsWith(base)) return jsonResponse({ message: "not found" }, 404);
+    const rel = decodeURIComponent(path.slice(base.length));
+    if (options.method === "PUT") {
+      const body = JSON.parse(options.body || "{}");
+      const oldFile = files.get(rel);
+      if (oldFile && body.sha !== oldFile.sha) return jsonResponse({ message: "sha mismatch" }, 409);
+      if (!oldFile && body.sha) return jsonResponse({ message: "file missing" }, 422);
+      const bytes = Buffer.from(body.content || "", "base64");
+      const sha = "mock-sha-" + (++serial);
+      files.set(rel, { bytes, sha });
+      return jsonResponse({ content: { sha } });
+    }
+    const file = files.get(rel);
+    if (file) {
+      const accept = options.headers && options.headers.Accept || "";
+      if (accept.includes("raw+json")) return new Response(file.bytes, { status: 200 });
+      return jsonResponse({ sha: file.sha, size: file.bytes.length, type: "file" });
+    }
+    const prefix = rel.replace(/\/+$/, "") + "/";
+    const children = new Map();
+    for (const filePath of files.keys()) {
+      if (!filePath.startsWith(prefix)) continue;
+      const rest = filePath.slice(prefix.length);
+      const bits = rest.split("/");
+      const child = bits[0];
+      if (!children.has(child)) children.set(child, bits.length > 1 ? "dir" : "file");
+    }
+    if (children.size) {
+      return jsonResponse(Array.from(children, ([name, type]) => ({ name, type, path: prefix + name })));
+    }
+    return jsonResponse({ message: "not found" }, 404);
+  };
+  function makeIdb() {
+    const data = new Map(["places", "pmeta", "pblob"].map(name => [name, new Map()]));
+    return {
+      keys: async store => Array.from(data.get(store).keys()),
+      get: async (store, key) => data.get(store).get(key),
+      put: async (store, key, value) => { data.get(store).set(key, value); return key; },
+      del: async (store, key) => data.get(store).delete(key),
+      clear: async store => data.get(store).clear()
+    };
+  }
+  function setupDevice(id, memo, place, photoText) {
+    const storage = new MemoryStorage();
+    storage.setItem("faGH", JSON.stringify({ repo: "owner/vault", token: "test-token" }));
+    storage.setItem("faDeviceSyncEnabled", "1");
+    storage.setItem("faDeviceSyncDeviceId", id);
+    storage.setItem("memo25_P1", JSON.stringify(memo));
+    const db = makeIdb();
+    db.put("places", "P-1", place);
+    db.put("pmeta", "P-1", { kind: "blob", credit: "local user" });
+    db.put("pblob", "P-1", new Blob([photoText], { type: "image/jpeg" }));
+    global.localStorage = storage;
+    global.LSX = storage;
+    global.IDB = db;
+    global.DB = [place];
+    global.PMETA = { "P-1": { kind: "blob", credit: "local user" } };
+    global.PCACHE = {};
+    global.FABackupMerge = require("../data/backup-merge.js");
+    global.bkLS = function () {
+      const out = {};
+      for (let i = 0; i < storage.length; i++) {
+        const key = storage.key(i);
+        if (/^(frameAtlas[\w-]*|memo25_[\w-]*|rec30_[\w-]*|faReview57_[\w-]*|img31|faPhotoUrlVault525)$/.test(key || "")) out[key] = storage.getItem(key);
+      }
+      return out;
+    };
+    return { storage, db };
+  }
+  const deviceA = setupDevice("a".repeat(32),
+    { memo: "PC memo", pcOnly: true },
+    { id: "P-1", name: "Mock Place", memo: "PC memo", pcOnly: true },
+    "PC photo");
+  const first = await sync.syncNow(false);
+  assert.equal(first.ok, true, "first device should write its initial snapshot");
+  assert.ok(Array.from(files.keys()).some(path => path.endsWith("/manifest.json")),
+    "the private mock repository should contain a device manifest");
+
+  const deviceB = setupDevice("b".repeat(32),
+    { memo: "iPhone memo", phoneOnly: true },
+    { id: "P-1", name: "Mock Place", memo: "iPhone memo", phoneOnly: true },
+    "iPhone photo");
+  const second = await sync.syncNow(false);
+  assert.equal(second.ok, true, "second device should merge and publish its own snapshot");
+  assert.ok(second.conflictsPending >= 3, "same-field and photo conflicts should be recorded on the second device");
+  const bMemo = JSON.parse(deviceB.storage.getItem("memo25_P1"));
+  assert.equal(bMemo.memo, "iPhone memo", "the second device's conflicting scalar should stay local");
+  assert.equal(bMemo.pcOnly, true, "remote-only fields should merge into the second device");
+  assert.equal(await (await deviceB.db.get("pblob", "P-1")).text(), "iPhone photo",
+    "the second device's conflicting photo should not be overwritten");
+
+  global.localStorage = deviceA.storage;
+  global.LSX = deviceA.storage;
+  global.IDB = deviceA.db;
+  global.DB = [{ id: "P-1", name: "Mock Place", memo: "PC memo", pcOnly: true }];
+  global.PMETA = { "P-1": { kind: "blob", credit: "local user" } };
+  global.PCACHE = {};
+  const third = await sync.syncNow(false);
+  assert.equal(third.ok, true, "first device should read the peer's changes back");
+  const aMemo = JSON.parse(deviceA.storage.getItem("memo25_P1"));
+  assert.equal(aMemo.memo, "PC memo", "conflict propagation must prevent the peer from overwriting the original scalar");
+  assert.equal(aMemo.phoneOnly, true, "the first device should still receive the peer-only field");
+  const aPlace = await deviceA.db.get("places", "P-1");
+  assert.equal(aPlace.memo, "PC memo", "place scalar conflicts should keep the first device value");
+  assert.equal(aPlace.phoneOnly, true, "place records should merge peer-only fields");
+  assert.equal(await (await deviceA.db.get("pblob", "P-1")).text(), "PC photo",
+    "the first device's conflicting photo should remain intact");
+  assert.ok(sync.getConflicts().length >= 3, "the first device should see propagated conflict markers");
+
+  console.log("FRAME ATLAS device sync tests: unit + mock round-trip passed");
+
 })().catch(error => {
   console.error(error);
   process.exitCode = 1;
