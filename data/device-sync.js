@@ -461,12 +461,18 @@
             continue;
           }
 
-          if (!current && base && base.deleted) {
-            counts.conflicts++;
-            setConflict(conflictMap, peerId, Object.assign({ id: rid }, entry), "현재 기기의 삭제 기록과 원격 변경이 충돌하여 원격 데이터를 자동 복구하지 않았습니다.");
-            seen[seenId] = entry.revision;
-            remoteTouched.add(rid);
-            continue;
+          if (!current) {
+            const currentDeleteMeta = localMeta()[rid];
+            const localDeleteTime = Date.parse((currentDeleteMeta && currentDeleteMeta.deleted && currentDeleteMeta.updatedAt) || (base && base.deleted && base.updatedAt) || 0);
+            const remoteChangeTime = Date.parse(entry.updatedAt || 0);
+            if ((currentDeleteMeta && currentDeleteMeta.deleted || base && base.deleted) &&
+                !(Number.isFinite(remoteChangeTime) && remoteChangeTime > localDeleteTime)) {
+              counts.conflicts++;
+              setConflict(conflictMap, peerId, Object.assign({ id: rid }, entry), "현재 기기의 삭제 기록보다 원격 변경 시각이 늦다는 점이 확인되지 않아 자동 복구하지 않았습니다.");
+              seen[seenId] = entry.revision;
+              remoteTouched.add(rid);
+              continue;
+            }
           }
 
           const remoteValue = await readPeerValue(c, entry);
@@ -477,7 +483,7 @@
             counts.added++;
             delete conflictMap[seenId];
           } else if (baseMatchesLocal && !alreadyMergedRemote) {
-            await applyLocal(entry.store, entry.key, remoteValue, false);
+            await applyLocal(entry.store, entry.key, remoteValue, false, entry);
             local.set(rid, remoteRec);
             counts.updated++;
             delete conflictMap[seenId];
