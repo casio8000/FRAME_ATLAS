@@ -39,3 +39,6 @@ jobs:
 
       - name: Test safe backup merge rules
         run: node tools/test_backup_merge.js
+
+      - name: Test per-device sync safety rules
+        run: node tools/test_device_sync.js
