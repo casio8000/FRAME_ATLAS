@@ -203,7 +203,7 @@
   }
   function isRetryableError(error) {
     const status = Number(error && error.status);
-    if ([408, 409, 425, 429].includes(status) || status >= 500) return true;
+    if ([408, 425, 429].includes(status) || status >= 500) return true;
     const message = String(error && error.message || error || "");
     if (status === 403 && /rate.?limit|secondary rate|abuse detection/i.test(message)) return true;
     return !!error && error.name === "TypeError" || /failed to fetch|network request failed|networkerror|load failed/i.test(message);
