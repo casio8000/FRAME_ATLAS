@@ -161,12 +161,28 @@ for label, token in {
     "동기화 전 안전 백업 확인": 'const backupGateAt = Number(root.localStorage.getItem(BACKUP_GATE_KEY) || 0);',
     "사진 파일 개별 전송": 'if (rec.store === "pblob")',
     "충돌 사진의 로컬 보존": 'action: "preserve-local-photo"',
+    "충돌 내역 조회 함수": "function getConflicts()",
+    "삭제 기록 시각 비교": "function remoteSupersedesDelete(",
+    "동기화 중 추가 변경 재실행": "let rerunRequested = false;",
 }.items():
     source = html if label == "기기별 동기화 모듈 연결" else sync_js
     if token not in source:
         fail(f"기기별 동기화 안전 검사 누락: {label}")
     else:
         checks.append(f"{label} 확인")
+if 'faDeviceSyncShowConflicts()' not in html:
+    fail("동기화 충돌 내역 조회 버튼이 없습니다.")
+else:
+    checks.append("동기화 충돌 내역 조회 버튼 확인")
+if "async function ghPush(){const s=$('gh_s'),ls={};if(localStorage.getItem('faDeviceSyncEnabled')==='1')" not in html:
+    fail("안전 동기화 사용 중 기존 단일 파일 업로드가 차단되지 않습니다.")
+else:
+    checks.append("안전 동기화와 기존 단일 파일 업로드 간섭 방지 확인")
+if "async function ghPull(){const s=$('gh_s');if(localStorage.getItem('faDeviceSyncEnabled')==='1')" not in html:
+    fail("안전 동기화 사용 중 기존 단일 파일 내려받기가 차단되지 않습니다.")
+else:
+    checks.append("안전 동기화와 기존 단일 파일 내려받기 간섭 방지 확인")
+
 if "node tools/test_device_sync.js" not in (ROOT / ".github/workflows/quality-check.yml").read_text(encoding="utf-8"):
     fail("GitHub Actions에 기기별 동기화 테스트가 연결되지 않았습니다.")
 else:
