@@ -19,6 +19,7 @@
 - `data/device-sync.js`: 비공개 저장소를 통한 기기별 레코드·사진 안전 동기화(옵트인)
 - `tools/test_backup_merge.js`: 백업 규칙 자동 테스트
 - `tools/test_device_sync.js`: 기기별 동기화 안전 규칙 테스트
+- `CHANGELOG_v5.39.md`: 기기별 안전 동기화 초기 구현 및 알려진 제한
 - `data/DB_SCHEMA.json`: 가져오기와 품질 상태 스키마
 - `data/서울수도권_추가장소_상세데이터.json`: 신규 12곳 상세 데이터
 - `data/서울수도권_추가장소_기본가져오기.csv`: 기본 정보 CSV
