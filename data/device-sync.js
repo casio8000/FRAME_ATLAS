@@ -43,6 +43,7 @@
   const STORES = new Set(["places", "pmeta", "pblob"]);
   let installed = false;
   let busy = false;
+  let rerunRequested = false;
   let suppress = 0;
   let timer = null;
 
@@ -395,7 +396,10 @@
   }
   async function syncNow(manual) {
     if (!root || !root.localStorage) throw new Error("브라우저 저장소를 사용할 수 없습니다.");
-    if (busy) return { skipped: true, message: "이미 동기화가 진행 중입니다." };
+    if (busy) {
+      rerunRequested = true;
+      return { skipped: true, queued: true, message: "동기화 중 발생한 변경사항을 다음 실행에 반영합니다." };
+    }
     if (!enabled() && !manual) return { skipped: true, message: "안전 동기화가 아직 활성화되지 않았습니다." };
     busy = true;
     const counts = { added: 0, updated: 0, deleted: 0, uploaded: 0, conflicts: 0, errors: 0 };
@@ -587,6 +591,12 @@
       throw error;
     } finally {
       busy = false;
+      if (rerunRequested && enabled()) {
+        rerunRequested = false;
+        setTimeout(function () { syncNow(false).catch(function () {}); }, 500);
+      } else {
+        rerunRequested = false;
+      }
     }
   }
   async function enable() {
