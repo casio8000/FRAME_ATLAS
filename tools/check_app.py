@@ -133,7 +133,8 @@ required = {
     "안전 병합 모듈 스크립트": 'src="data/backup-merge.js"',
     "로컬 우선 병합 함수 호출": "window.FABackupMerge.mergeRaw",
     "병합 복원 버튼 충돌 정책": "새 항목 추가 · 충돌 시 현재 기기 우선",
-    "삭제 전파 미구현 안내": "삭제를 다른 백업에 전파하지 않습니다",
+    "수동 백업 병합의 삭제 정책": "삭제를 다른 백업에 전파하지 않습니다",
+    "구형 공유 스냅샷과 자동 동기화 구분": "이 구형 공유 스냅샷 방식은 자동 양방향 동기화가 아닙니다",
 }
 for label, token in required.items():
     if token not in html:
@@ -151,6 +152,15 @@ if re.search(r"fetch\(o\.data\)\)\.blob\(\)", html):
     fail("레거시 fetch(Data URL).blob() 복원 코드가 남아 있습니다.")
 if "더보기 → 데이터 관리" in html:
     fail("사용 안내에 실제 메뉴와 다른 '더보기 → 데이터 관리' 경로가 남아 있습니다.")
+
+if "async async function ghApi" in html:
+    fail("GitHub API 함수에 중복 async 선언이 남아 있습니다.")
+else:
+    checks.append("GitHub API 함수 선언 확인")
+if "자동 양방향 동기화는 아직 구현되지 않았습니다" in html:
+    fail("현재 버전과 맞지 않는 자동 동기화 미구현 안내가 남아 있습니다.")
+else:
+    checks.append("구형 도움말의 자동 동기화 안내 최신화 확인")
 
 # 새 기기별 동기화는 비공개 저장소, 백업 게이트 및 항목별 병합을 요구합니다.
 sync_js = SYNC_PATH.read_text(encoding="utf-8") if SYNC_PATH.is_file() else ""
