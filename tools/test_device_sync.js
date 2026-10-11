@@ -3,6 +3,7 @@ const assert = require("node:assert/strict");
 global.FABackupMerge = require("../data/backup-merge.js");
 const sync = require("../data/device-sync.js");
 const core = sync.core;
+const remoteSupersedesDelete = core.remoteSupersedesDelete;
 
 (async function main() {
   assert.equal(core.stableStringify({ b: 2, a: 1 }), core.stableStringify({ a: 1, b: 2 }),
@@ -36,10 +37,17 @@ const core = sync.core;
   assert.equal(photoConflict.value, localBlob, "different photo blobs must never be auto-overwritten during a conflict");
   assert.equal(photoConflict.conflicts, 1);
 
+  assert.equal(remoteSupersedesDelete("2026-10-11T10:00:00.000Z", "2026-10-11T09:59:59.000Z"), false,
+    "an older peer record must not resurrect a deleted item");
+  assert.equal(remoteSupersedesDelete("2026-10-11T10:00:00.000Z", "2026-10-11T10:00:01.000Z"), true,
+    "a genuinely newer remote edit can be considered after deletion");
+  assert.equal(remoteSupersedesDelete("2026-10-11T10:00:00.000Z", "invalid"), false,
+    "an invalid remote timestamp must not resurrect a deleted item");
+
   const text = "FRAME ATLAS · 촬영 장소";
   assert.equal(core.decodeText(core.encodeText(text)), text, "UTF-8 data must survive API Base64 conversion");
 
-  console.log("FRAME ATLAS device sync tests: 7 cases passed");
+  console.log("FRAME ATLAS device sync tests: 10 cases passed");
 })().catch(error => {
   console.error(error);
   process.exitCode = 1;
