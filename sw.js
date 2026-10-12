@@ -27,7 +27,7 @@ self.addEventListener('fetch', event => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
   const path = url.pathname;
-  const sharedFresh = req.mode === 'navigate' || /\/(?:index\.html|data\/places\.js|data\/image-registry\.js|data\/review-workflow\.js|data\/backup-merge\.js|data\/device-sync\.js|data\/DB_SCHEMA\.json|manifest\.json|sw\.js)$/.test(path);
+  const sharedFresh = req.mode === 'navigate' || /\/(?:index\.html|data\/places\.js|data\/image-registry\.js|data\/review-workflow\.js|data\/backup-merge\.js|data\/device-sync\.js|data\/legacy-v6-audit\.js|data\/DB_SCHEMA\.json|manifest\.json|sw\.js)$/.test(path);
   if (sharedFresh) {
     event.respondWith((async () => {
       const cache = await caches.open(CACHE_NAME);
