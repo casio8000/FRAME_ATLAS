@@ -42,3 +42,6 @@ jobs:
 
       - name: Test per-device sync safety rules
         run: node tools/test_device_sync.js
+
+      - name: Test legacy V6 audit summary
+        run: node --test tests/legacy-v6-audit.test.js
