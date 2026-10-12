@@ -196,8 +196,9 @@
       banner.style.display = kind ? "block" : "none";
     }
   }
-  function reportError(error, manual) {
-    const msg = "안전 동기화 실패: " + (error && error.message ? error.message : String(error));
+  function reportError(error, manual, stage) {
+    const detail = error && error.message ? error.message : (error == null ? "오류 원인 정보가 null로 전달되었습니다." : String(error));
+    const msg = "안전 동기화 실패 [" + String(stage || "단계 미확인") + "]: " + detail;
     safeStatus(msg, "error");
     if (manual && root && root.alert) root.alert(msg);
   }
@@ -480,23 +481,29 @@
     if (!enabled() && !manual) return { skipped: true, message: "안전 동기화가 아직 활성화되지 않았습니다." };
     busy = true;
     const counts = { added: 0, updated: 0, deleted: 0, uploaded: 0, conflicts: 0, errors: 0 };
+    let stage = "설정 확인";
     try {
       const c = config();
+      stage = "비공개 저장소 및 토큰 확인";
       const repoInfo = await verifyPrivateRepo(c);
       if (repoInfo.private !== true) throw new Error("비공개 저장소 확인에 실패했습니다.");
       const id = deviceId();
       const label = root.localStorage.getItem(LABEL_KEY) || inferDeviceLabel();
       root.localStorage.setItem(LABEL_KEY, label);
+      stage = "현재 기기 manifest 읽기";
       const own = await loadManifest(c, id);
       const seen = readState(SEEN_KEY, {});
       const conflictMap = readState(CONFLICT_KEY, {});
       const localMetaMap = localMeta();
+      stage = "이 기기의 장소·사진·메모 읽기";
       const local = await collectRecords();
       const originalFingerprints = new Map();
       local.forEach((r, key) => originalFingerprints.set(key, r.fingerprint));
       const remoteTouched = new Set();
+      stage = "동기화 기기 목록 읽기";
       const peers = (await listDevices(c)).filter(v => v !== id).sort();
 
+      stage = "다른 기기 데이터 병합";
       for (const peerId of peers) {
         const peer = await loadManifest(c, peerId);
         const peerEntries = Object.entries(peer.data.records || {}).sort((a, b) => {
@@ -592,6 +599,7 @@
         }
       }
 
+      stage = "병합 후 로컬 데이터 재확인";
       const fresh = await collectRecords();
       const metaMap = localMeta();
       const nextRecords = Object.assign({}, own.data.records || {});
@@ -607,6 +615,7 @@
         }
         /* No delete marker means this absence might be an interrupted restore, so preserve the remote copy. */
       }
+      stage = "장소·사진·기록을 GitHub에 업로드";
       for (const [rid, rec] of fresh) {
         const oldEntry = nextRecords[rid];
         if (oldEntry && !oldEntry.deleted && oldEntry.fingerprint === rec.fingerprint) continue;
@@ -659,6 +668,7 @@
       };
       const manifestText = JSON.stringify(manifestData);
       if (new TextEncoder().encode(manifestText).length > 750000) throw new Error("이 기기의 동기화 목록이 750KB를 넘습니다. 전체 백업 파일로 덮어쓰지 않았으며, 데이터는 로컬에 유지했습니다.");
+      stage = "동기화 결과 manifest 저장";
       const newManifestSha = await putFile(c, own.path, manifestText, own.sha, false);
       writeState(SEEN_KEY, seen);
       writeState(CONFLICT_KEY, conflictMap);
@@ -677,7 +687,7 @@
       try { root.dispatchEvent(new Event("faDeviceSyncComplete")); } catch (_) {}
       return Object.assign({ ok: true, deviceId: id, conflictsPending: conflictCount, manifestSha: newManifestSha, message: status }, counts);
     } catch (error) {
-      reportError(error, !!manual);
+      reportError(error, !!manual, stage);
       queueRetry(error);
       throw error;
     } finally {
