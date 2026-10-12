@@ -12,6 +12,8 @@ ROOT = Path(__file__).resolve().parent.parent
 HTML_PATH = ROOT / "index.html"
 SW_PATH = ROOT / "sw.js"
 SYNC_PATH = ROOT / "data" / "device-sync.js"
+AUDIT_PATH = ROOT / "data" / "legacy-v6-audit.js"
+AUDIT_TEST_PATH = ROOT / "tests" / "legacy-v6-audit.test.js"
 SYNC_TEST_PATH = ROOT / "tools" / "test_device_sync.js"
 MANIFEST_PATH = ROOT / "manifest.json"
 errors: list[str] = []
@@ -29,6 +31,10 @@ if not SW_PATH.is_file():
     fail("sw.js가 없습니다.")
 if not SYNC_PATH.is_file():
     fail("data/device-sync.js가 없습니다.")
+if not AUDIT_PATH.is_file():
+    fail("data/legacy-v6-audit.js가 없습니다.")
+if not AUDIT_TEST_PATH.is_file():
+    fail("tests/legacy-v6-audit.test.js가 없습니다.")
 if not SYNC_TEST_PATH.is_file():
     fail("tools/test_device_sync.js가 없습니다.")
 
@@ -91,6 +97,23 @@ if SYNC_PATH.is_file():
             checks.append("기기별 동기화 엔진 문법 통과 (Node.js --check)")
     except (FileNotFoundError, subprocess.TimeoutExpired) as exc:
         fail(f"기기별 동기화 엔진 문법 검사 실패: {exc}")
+
+# 이전 V6 데이터 점검 모듈도 별도 문법 검사를 거칩니다.
+if AUDIT_PATH.is_file():
+    try:
+        result = subprocess.run(
+            ["node", "--check", str(AUDIT_PATH)],
+            text=True,
+            capture_output=True,
+            check=False,
+            timeout=30,
+        )
+        if result.returncode:
+            fail("이전 V6 점검 모듈 JavaScript 문법 오류:\n" + (result.stderr.strip() or result.stdout.strip()))
+        else:
+            checks.append("이전 V6 점검 모듈 문법 통과 (Node.js --check)")
+    except (FileNotFoundError, subprocess.TimeoutExpired) as exc:
+        fail(f"이전 V6 점검 모듈 문법 검사 실패: {exc}")
 
 # PWA manifest 및 아이콘 경로를 검사합니다.
 if not MANIFEST_PATH.is_file():
@@ -166,6 +189,7 @@ else:
 sync_js = SYNC_PATH.read_text(encoding="utf-8") if SYNC_PATH.is_file() else ""
 for label, token in {
     "기기별 동기화 모듈 연결": 'src="data/device-sync.js"',
+    "이전 V6 점검 모듈 연결": 'src="data/legacy-v6-audit.js"',
     "비공개 저장소 강제": 'if (repo.private !== true)',
     "기기별 독립 레코드 경로": 'const ROOT_PATH = "sync/v1/devices"',
     "동기화 전 안전 백업 확인": 'const backupGateAt = Number(root.localStorage.getItem(BACKUP_GATE_KEY) || 0);',
