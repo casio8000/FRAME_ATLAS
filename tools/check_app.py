@@ -199,7 +199,7 @@ for label, token in {
     "삭제 기록 시각 비교": "function remoteSupersedesDelete(",
     "동기화 중 추가 변경 재실행": "let rerunRequested = false;",
 }.items():
-    source = html if label == "기기별 동기화 모듈 연결" else sync_js
+    source = html if label in {"기기별 동기화 모듈 연결", "이전 V6 점검 모듈 연결"} else sync_js
     if token not in source:
         fail(f"기기별 동기화 안전 검사 누락: {label}")
     else:
