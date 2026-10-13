@@ -4,7 +4,7 @@
   "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
   "dataStatus": "서울·경기·인천 34개 현재 촬영 후보. 장소별 대표 참고사진은 이미지 후보 중 하나를 선정해 표시하며 정식 대표사진 승인과 구분합니다. 이미지 출처·실제 장소 일치·공개 사용 권리는 별도 확인 대상.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-13T14:04:35.228Z",
+  "updatedAt": "2026-10-13T14:07:45.218Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -66,6 +66,20 @@
           "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "commons-oil-tank-culture-park-ccby-sa4",
+          "title": "문화비축기지 T6 외관 (Wikimedia Commons)",
+          "viewType": "산업건축·탱크 외관",
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Oil-tank-culture-park.jpg?width=960",
+          "sourceThumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Oil-tank-culture-park.jpg?width=960",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Oil-tank-culture-park.jpg",
+          "sourceName": "Mvcervi / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "rightsStatus": "license-attribution-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "문화비축기지 T6를 직접 촬영한 공개 라이선스 사진. 저자·출처 표시 및 동일조건 공유 검토 필요."
         }
       ],
       "sourceRefs": [
@@ -837,6 +851,20 @@
           "placeMatch": "confirmed",
           "status": "candidate",
           "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY 4.0 출처·저자 표시 필요."
+        },
+        {
+          "id": "commons-culture-station-seoul-284-cc0",
+          "title": "문화역서울284 외관 (CC0 공개 사진)",
+          "viewType": "역사건축·외관",
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Culture_Station_Seoul_284_%28_2014_08_05_%29.jpg?width=960",
+          "sourceThumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Culture_Station_Seoul_284_%28_2014_08_05_%29.jpg?width=960",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Culture_Station_Seoul_284_(2014_08_05).jpg",
+          "sourceName": "HaulS / Wikimedia Commons",
+          "license": "CC0 1.0",
+          "rightsStatus": "public-domain-dedication",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "문화역서울284 외관 사진. CC0 공개 기증으로 재사용 가능하나 출처 기록은 유지."
         }
       ],
       "sourceRefs": [
