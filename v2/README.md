@@ -127,3 +127,10 @@ CC BY-NC 등 비상업 조건, CC BY-ND 등 파생 저작물 제한이 있는 �
 - The “대표 참고사진으로 지정” action lets the user choose another candidate without falsely marking it rights-approved.
 - External image errors are handled with a readable placeholder.
 - The published `primaryImageId` / approval state is not changed by selecting a reference photo.
+
+
+## 2026-10-13 — Thumbnail loading fix
+- Added an image load fallback: when a source image is blocked or unavailable, the page retries a provided source thumbnail and then tries an image-resizing/cache proxy for the original remote image.
+- The fallback is applied to place-list thumbnails, the selected place's reference image, and saved candidate cards.
+- Visible loading/error states replace the previous silent blank thumbnail.
+- This only changes display reliability; it does not confer copyright permission or mark a reference image as a formally approved representative image.

@@ -26,11 +26,38 @@ function bindImageFallbacks(root){
  root.querySelectorAll("img[data-image-fallback]").forEach(img=>{
   if(img.dataset.fallbackBound==="1")return;
   img.dataset.fallbackBound="1";
+  img.dataset.originalImageUrl=img.getAttribute("src")||img.currentSrc||img.src||"";
+  img.addEventListener("load",()=>{
+   const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame");
+   if(frame)frame.classList.remove("image-missing","proxy-loading");
+   img.removeAttribute("aria-hidden");
+  });
   img.addEventListener("error",()=>{
    const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame");
+   const original=img.dataset.originalImageUrl||"";
+   const thumbnail=img.dataset.fallbackThumbnail||"";
+   // Some host sites reject direct hotlink requests. Try an alternate preview if supplied.
+   if(!img.dataset.thumbnailTried && thumbnail && thumbnail!==original){
+    img.dataset.thumbnailTried="1";
+    img.src=thumbnail;
+    return;
+   }
+   // Retry only remote HTTP(S) image URLs through an image resize/cache proxy.
+   // This does not approve the image's copyright or place match; it only helps display it.
+   if(!img.dataset.proxyTried && /^https?:\/\//i.test(original) && !/images\.weserv\.nl/i.test(original)){
+    img.dataset.proxyTried="1";
+    if(frame)frame.classList.add("proxy-loading");
+    const width=frame&&frame.classList.contains("thumb")?240:900;
+    const height=frame&&frame.classList.contains("thumb")?180:650;
+    img.referrerPolicy="no-referrer";
+    img.src="https://images.weserv.nl/?url="+encodeURIComponent(original)+"&w="+width+"&h="+height+"&fit=inside&output=webp";
+    return;
+   }
    if(frame)frame.classList.add("image-missing");
    img.setAttribute("aria-hidden","true");
-  },{once:true});
+  });
+  // Cached images can fail before the error listener has finished binding.
+  if(img.complete&&img.naturalWidth===0)queueMicrotask(()=>img.dispatchEvent(new Event("error")));
  });
 }
 function stamp(){return new Date().toISOString();}
@@ -93,7 +120,7 @@ function render(){
   const im=approvedImage(p),ref=im?null:referenceImage(p),shown=im||ref;
   const closed=/운영 종료/.test(String(p.openingStatus||""));
   const state=(closed?'<span class="chip closed">운영 종료 · 재개관 확인</span>':'')+(im?'<span class="chip">정식 대표사진</span>':ref?'<span class="chip need">대표 참고사진 · 검토 중</span>':imageCount(p)?'<span class="chip need">사진 후보 '+imageCount(p)+'개</span>':'<span class="chip need">사진 미등록</span>');
-  const thumb=shown?'<img data-image-fallback="true" data-place-preview="'+esc(p.id)+'" loading="lazy" alt="'+esc(p.name)+' '+(im?'대표사진':'참고사진 후보')+'" src="'+esc(shown.imageUrl||shown.sourceThumbnail||"")+'" referrerpolicy="no-referrer"><span class="thumb-flag '+(im?'approved':'reference')+'">'+(im?'대표사진':'참고 후보')+'</span><span class="thumb-missing">이미지 확인 필요</span>':'<span>이미지 후보 없음</span>';
+  const thumb=shown?'<img data-image-fallback="true" data-fallback-thumbnail="'+esc(shown.sourceThumbnail||"")+'" data-place-preview="'+esc(p.id)+'" loading="lazy" alt="'+esc(p.name)+' '+(im?'대표사진':'참고사진 후보')+'" src="'+esc(shown.imageUrl||shown.sourceThumbnail||"")+'" referrerpolicy="no-referrer"><span class="thumb-flag '+(im?'approved':'reference')+'">'+(im?'대표사진':'참고 후보')+'</span><span class="thumb-missing">이미지 연결을 확인 중입니다</span>':'<span>이미지 후보 없음</span>';
   return '<article class="place '+(p.id===selectedId?'active':'')+'" data-select="'+esc(p.id)+'" tabindex="0" role="button" aria-pressed="'+(p.id===selectedId?'true':'false')+'"><div class="thumb '+(im?'thumb-approved':ref?'thumb-reference':'')+'">'+thumb+'</div><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+'</p><div class="chips"><span class="chip">'+esc((p.spaceTypes||[]).join(" · "))+'</span><span class="chip '+(p.scoutPriority===1?'':'need')+'">조사 '+(p.scoutPriority===1?'A':p.scoutPriority===2?'B':'C')+'</span><span class="chip">사진잠재력 '+esc(p.photoPotentialScore||"—")+'/100</span>'+state+'</div></div><span class="place-chevron" aria-hidden="true">↗</span></article>';
  }).join(""):'<div class="empty">검색 조건에 맞는 장소가 없습니다.</div>';
  bindImageFallbacks($("placeList"));
@@ -165,7 +192,7 @@ function referencePhotoPanel(p,approved,ref){
   return '<div class="section approved-photo"><img data-image-fallback="true" data-primary-preview="'+esc(approved.id)+'" src="'+esc(approved.imageUrl||"")+'" alt="'+esc(p.name)+' 정식 대표사진" loading="lazy"><div class="photo-caption"><b>정식 대표사진</b><span>'+esc(approved.sourceName||"출처 미기록")+' · '+esc(approved.rightsLabel||approved.rights)+'</span>'+(approved.sourcePageUrl?'<a target="_blank" rel="noopener noreferrer" href="'+esc(approved.sourcePageUrl)+'">원본 출처 열기 ↗</a>':"")+'</div></div>';
  }
  if(!ref)return '<div class="statusbar warn">사진 후보가 아직 없습니다. 아래의 사진 검색에서 후보를 추가하세요.</div>';
- return '<div class="section reference-hero"><div class="reference-photo-wrap"><img data-image-fallback="true" data-reference-preview="'+esc(ref.id)+'" src="'+esc(ref.imageUrl||ref.sourceThumbnail||"")+'" alt="'+esc(p.name)+' 대표 참고사진" loading="lazy" referrerpolicy="no-referrer"><span class="reference-stamp">REPRESENTATIVE REFERENCE · 검토 후보</span><span class="reference-missing">이미지를 불러오지 못했습니다</span></div><div class="reference-info"><div class="reference-kicker">IMAGE RESEARCH / '+esc(ref.sourceName||"출처 미확인")+'</div><h3>대표 참고사진</h3><p>'+esc(ref.title||"촬영 참고 이미지 후보")+'</p><div class="reference-meta">장소 일치: '+esc(ref.placeMatch||"미확인")+' · 사용 권리: '+esc(ref.rightsLabel||ref.rights||"미확인")+'</div><div class="toolbar">'+(ref.sourcePageUrl?'<a class="btn small" href="'+esc(ref.sourcePageUrl)+'" target="_blank" rel="noopener noreferrer">원본 출처 ↗</a>':"")+'<a class="btn small" href="#candidateList">사진 후보 검토 ↓</a></div><p class="tiny">선택된 참고사진입니다. 외부 원본 이미지의 표시 여부는 제공 사이트에 따라 달라질 수 있습니다. 공개 사용 권리 확인 전에는 정식 대표사진으로 승인되지 않습니다.</p></div></div>';
+ return '<div class="section reference-hero"><div class="reference-photo-wrap"><img data-image-fallback="true" data-fallback-thumbnail="'+esc(ref.sourceThumbnail||"")+'" data-reference-preview="'+esc(ref.id)+'" src="'+esc(ref.imageUrl||ref.sourceThumbnail||"")+'" alt="'+esc(p.name)+' 대표 참고사진" loading="lazy" referrerpolicy="no-referrer"><span class="reference-stamp">REPRESENTATIVE REFERENCE · 검토 후보</span><span class="reference-missing">이미지 연결을 확인할 수 없습니다</span></div><div class="reference-info"><div class="reference-kicker">IMAGE RESEARCH / '+esc(ref.sourceName||"출처 미확인")+'</div><h3>대표 참고사진</h3><p>'+esc(ref.title||"촬영 참고 이미지 후보")+'</p><div class="reference-meta">장소 일치: '+esc(ref.placeMatch||"미확인")+' · 사용 권리: '+esc(ref.rightsLabel||ref.rights||"미확인")+'</div><div class="toolbar">'+(ref.sourcePageUrl?'<a class="btn small" href="'+esc(ref.sourcePageUrl)+'" target="_blank" rel="noopener noreferrer">원본 출처 ↗</a>':"")+'<a class="btn small" href="#candidateList">사진 후보 검토 ↓</a></div><p class="tiny">선택된 참고사진입니다. 외부 원본 이미지의 표시 여부는 제공 사이트에 따라 달라질 수 있습니다. 공개 사용 권리 확인 전에는 정식 대표사진으로 승인되지 않습니다.</p></div></div>';
 }
 function renderDetail(){
  const p=getPlace(selectedId);
@@ -224,7 +251,7 @@ function renderCandidates(p){
  return p.imageCandidates.map(c=>{
   const safe=esc((c.pendingAsset||c.assetPath)?(c.imageUrl||""):(c.imageUrl||c.sourceThumbnail||"")),licensed=PERMITTED.has(c.rights);
   const badges=(c.status==="approved"&&licensed&&c.placeMatch==="confirmed"&&(c.assetPath||c.pendingAsset))?'<span class="chip">대표사진 승인</span>':c.status==="rejected"?'<span class="chip">제외</span>':'<span class="chip need">검토 대기</span>';
-  const imageMarkup=(c.imageUrl||c.sourceThumbnail)?'<div class="candidate-image-frame"><img data-image-fallback="true" data-local-preview="'+esc(c.id)+'" loading="lazy" alt="사진 후보 미리보기" src="'+safe+'" referrerpolicy="no-referrer"><span class="reference-missing">이미지를 불러오지 못했습니다</span></div>':c.pendingAsset?'<div><img data-local-preview="'+esc(c.id)+'" alt="로컬 사진 파일 미리보기" style="width:100%;height:120px;object-fit:contain;background:#f2f2ec" src=""><div class="tiny">이 기기에 보관된 사진 파일</div></div>':'<div class="thumb">NO IMAGE</div>';
+  const imageMarkup=(c.imageUrl||c.sourceThumbnail)?'<div class="candidate-image-frame"><img data-image-fallback="true" data-fallback-thumbnail="'+esc(c.sourceThumbnail||"")+'" data-local-preview="'+esc(c.id)+'" loading="lazy" alt="사진 후보 미리보기" src="'+safe+'" referrerpolicy="no-referrer"><span class="reference-missing">이미지 연결을 확인할 수 없습니다</span></div>':c.pendingAsset?'<div><img data-local-preview="'+esc(c.id)+'" alt="로컬 사진 파일 미리보기" style="width:100%;height:120px;object-fit:contain;background:#f2f2ec" src=""><div class="tiny">이 기기에 보관된 사진 파일</div></div>':'<div class="thumb">NO IMAGE</div>';
   const evidence=(c.rights==="self-owned")||(c.sourcePageUrl&&c.licenseUrl);
   const canApprove=licensed&&c.placeMatch==="confirmed"&&evidence&&(!!c.pendingAsset||!!c.assetPath);
   const rightsSelect='<select class="field" data-cand-field="rights" data-cand-id="'+esc(c.id)+'">'+rightOptions.map(o=>'<option value="'+o[0]+'" '+(c.rights===o[0]?'selected':'')+'>'+o[1]+'</option>').join("")+'</select>';

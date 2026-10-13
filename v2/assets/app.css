@@ -190,3 +190,8 @@ body{background:radial-gradient(ellipse at 100% 0%,rgba(232,91,60,.055),transpar
  .reference-info{padding:1px 2px}
  .reference-info h3{font-size:18px;margin:5px 0}
 }
+
+/* Image-loading retry states */
+.thumb.proxy-loading:after{content:"사진 불러오는 중";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:4px;color:#6d7569;font-size:8px;font-weight:800;background:linear-gradient(135deg,#e7e9df,#d7ddd1)}
+.reference-photo-wrap.proxy-loading:after,.candidate-image-frame.proxy-loading:after{content:"사진 주소를 다시 확인하고 있습니다";position:absolute;z-index:3;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;color:#596559;font-size:11px;font-weight:800;background:rgba(239,238,230,.9)}
+.thumb.image-missing:after,.reference-photo-wrap.image-missing:after,.candidate-image-frame.image-missing:after{display:none}
