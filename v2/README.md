@@ -119,3 +119,11 @@ CC BY-NC 등 비상업 조건, CC BY-ND 등 파생 저작물 제한이 있는 �
 - Added source references for official address checks.
 - SeMA Bunker is marked as closed from 2025-01-13 based on the Seoul Museum of Art notice. The app now displays a closed-status warning and advises against scheduling a shoot before reopening is confirmed.
 - Updated service-worker cache version so installed devices refresh changed app UI.
+
+
+## 2026-10-13 — Reference photo presentation
+- Each current location now records a separate `referenceImageId` for the best available candidate image.
+- Reference images appear in the list and the selected location detail, but remain labeled as review references until rights and final placement are verified.
+- The “대표 참고사진으로 지정” action lets the user choose another candidate without falsely marking it rights-approved.
+- External image errors are handled with a readable placeholder.
+- The published `primaryImageId` / approval state is not changed by selecting a reference photo.
