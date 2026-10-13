@@ -29,6 +29,8 @@
  <div class="notice"><b>중요:</b> 이 사이트는 공개 GitHub Pages에 배포될 예정입니다. 웹에서 찾은 사진을 개인적으로 참고하는 것과 공개 사이트에 복제·전시하는 것은 다릅니다. 권리 확인이 안 된 사진은 후보로만 보관하며, 출처·작가·라이선스/허가 근거가 확인되기 전에는 대표 이미지로 확정하지 않습니다.</div>
  <div class="toolbar">
   <button class="btn primary" id="addPlaceBtn">＋ 장소 등록</button>
+  <button class="btn orange" id="batchSearchA">A급 장소 사진 일괄검색</button>
+  <button class="btn" id="batchSearchAll">전체 장소 사진 일괄검색</button>
   <button class="btn" id="nextUnphotographedBtn">다음 사진 미등록 장소 →</button>
   <button class="btn" id="exportBtn">카탈로그 JSON 내보내기</button>
   <button class="btn orange" id="publishBtn">GitHub에 게시</button>
@@ -36,6 +38,7 @@
   <button class="btn" id="reloadBtn">배포된 기본자료 다시 읽기</button>
   <span class="tagline" id="saveStatus">불러오는 중…</span>
  </div>
+ <div id="batchStatus" class="statusbar hidden"></div>
  <div class="searchbar">
   <div class="filters">
    <input id="query" class="field" placeholder="장소명·별칭·지역·촬영 콘셉트 검색">
@@ -392,6 +395,60 @@ function attachAutoButtons(host,items,provider,p){
   }finally{btn.disabled=false;btn.textContent=oldText;}
  }));
 }
+async function batchSearch(scope){
+ const status=$("batchStatus"),buttons=[$("batchSearchA"),$("batchSearchAll")];
+ const targets=catalog.places.filter(p=>scope==="all"||p.scoutPriority===1).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||a.name.localeCompare(b.name,"ko"));
+ if(!targets.length){alert("검색 대상 장소가 없습니다.");return;}
+ if(scope==="all"&&!confirm("서울·수도권 "+targets.length+"곳을 대상으로 Openverse와 Wikimedia Commons 검색을 순서대로 실행합니다. 네트워크 상태에 따라 시간이 걸릴 수 있습니다. 계속할까요?"))return;
+ buttons.forEach(b=>b.disabled=true);status.classList.remove("hidden");
+ let found=0,duplicates=0,failures=0,requests=0;
+ const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+ try{
+  for(let i=0;i<targets.length;i++){
+   const p=targets[i],query=photoQuery(p,"place");
+   status.textContent="사진 후보 일괄검색 "+(i+1)+"/"+targets.length+" · "+p.name+" · 후보 "+found+"개 · 오류 "+failures+"건";
+   const tasks=[
+    {provider:"openverse",url:"https://api.openverse.org/v1/images/?q="+encodeURIComponent(query)+"&license_type=commercial&page_size=8"},
+    {provider:"commons",url:"https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch="+encodeURIComponent(query)+"&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=480&format=json&origin=*"}
+   ];
+   for(const task of tasks){
+    requests++;
+    try{
+     const r=await fetch(task.url,{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);
+     const data=await r.json();let rawItems=[];
+     if(task.provider==="openverse"){
+      rawItems=(data.results||[]).map(x=>({title:x.title||"제목 없음",url:x.url||"",foreign_landing_url:x.foreign_landing_url||x.detail_url||"",license:x.license||"unknown",license_url:x.license_url||"",creator:x.creator||"미확인",attribution:x.attribution||"",thumbnail:x.thumbnail||""}));
+     }else{
+      rawItems=Object.values((data.query&&data.query.pages)||{}).map(x=>{
+       const info=(x.imageinfo||[])[0]||{},m=info.extmetadata||{},val=k=>(m[k]&&m[k].value)||"";
+       return {title:x.title||"제목 없음",url:info.url||"",foreign_landing_url:info.descriptionurl||"",license:stripHtml(val("LicenseShortName"))||"unknown",license_url:val("LicenseUrl"),creator:stripHtml(val("Artist")||val("Credit"))||"미확인",attribution:stripHtml(val("Attribution"))||"",thumbnail:info.thumburl||info.url||""};
+      });
+     }
+     for(const item of rawItems){
+      if(!item.url)continue;
+      if((p.imageCandidates||[]).some(c=>c.imageUrl===item.url)){duplicates++;continue;}
+      const candidate=autoCandidateFrom(item,task.provider);
+      candidate.title=item.title||"검색 후보";candidate.sourceName=task.provider==="commons"?"Wikimedia Commons":"Openverse";
+      candidate.sourceThumbnail=item.thumbnail||"";
+      candidate.status="candidate";candidate.placeMatch="unverified";candidate.viewType="미확인";
+      candidate.notes="일괄검색 후보. "+(item.attribution||"")+" 실제 장소 일치·라이선스·원본 해상도 확인 후 사용하세요.";
+      p.imageCandidates=p.imageCandidates||[];p.imageCandidates.push(candidate);found++;
+     }
+     p.updatedAt=stamp();
+    }catch(e){failures++;}
+    status.textContent="사진 후보 일괄검색 "+(i+1)+"/"+targets.length+" · "+p.name+" · 후보 "+found+"개 · 중복 "+duplicates+"건 · 오류 "+failures+"건";
+    await wait(350);
+   }
+   catalog.updatedAt=stamp();localSave("사진 후보 일괄검색 진행 중");
+  }
+  localSave("사진 후보 일괄검색 완료");
+  status.textContent="일괄검색 완료 · 대상 "+targets.length+"곳 · 신규 후보 "+found+"개 · 중복 제외 "+duplicates+"개 · 요청 "+requests+"회 중 오류 "+failures+"회. 후보는 자동 승인되지 않았습니다. 사진 일치와 사용 권리를 개별 검토하세요.";
+  render();
+ }catch(e){
+  status.textContent="일괄검색이 중단되었습니다: "+e.message+" · 지금까지 수집된 후보는 이 기기에 저장되어 있습니다.";
+  localSave("사진 후보 일괄검색이 중단되어 중간 결과를 저장했습니다");render();
+ }finally{buttons.forEach(b=>b.disabled=false);}
+}
 function exportCatalog(){
  const blob=new Blob([JSON.stringify(catalog,null,2)],{type:"application/json;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=url;a.download="frame-atlas-v2-catalog-"+new Date().toISOString().slice(0,10)+".json";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
@@ -401,6 +458,8 @@ function importCatalog(file){
  const reader=new FileReader();reader.onload=()=>{try{catalog=normalizeCatalog(JSON.parse(reader.result));selectedId=catalog.places[0]?.id||null;localSave("가져온 카탈로그를 이 기기에 임시저장");render();alert("가져오기 완료. 장소 "+catalog.places.length+"곳");}catch(e){alert("가져오기 실패: "+e.message);}};reader.readAsText(file,"utf-8");
 }
 $("addPlaceBtn").addEventListener("click",addNewPlace);
+$("batchSearchA").addEventListener("click",()=>batchSearch("A"));
+$("batchSearchAll").addEventListener("click",()=>batchSearch("all"));
 $("nextUnphotographedBtn").addEventListener("click",()=>{
  const start=catalog.places.findIndex(p=>p.id===selectedId);
  for(let n=1;n<=catalog.places.length;n++){
