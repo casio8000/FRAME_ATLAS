@@ -542,3 +542,70 @@ body[data-app-view="detail"] .workspace{display:block}body[data-app-view="detail
 @media(max-width:1050px){.landing-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.landing-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}}
 @media(max-width:380px){.landing-feature-grid{grid-template-columns:1fr}}
+
+
+/* FRAME ATLAS 2.0 — design-system alignment (blue / slate / warm ivory / ink) */
+:root{
+ --bg:#f2f3f5;--card:#fff;--ink:#202833;--muted:#687383;--line:#dce1e7;
+ --dark:#263648;--accent:#8b9fb5;--green:#405d73;--soft:#e7edf2;--warn:#f7efdf;
+ --atlas-blue:#405d78;--atlas-slate:#697b8d;--atlas-beige:#e8e1d6;--atlas-ink:#202833;
+}
+body{background:var(--bg);color:var(--atlas-ink);font-family:Arial,"Noto Sans KR","Apple SD Gothic Neo",sans-serif;font-size:15px;line-height:1.65}
+.wrap{max-width:1480px}
+.brand{letter-spacing:-.7px;color:#263648}
+.pill,.hero-tags span,.landing-region-shortcuts button{background:#e6ebf0;color:#405d78}
+.btn.primary,.landing-primary,.welcome-start{background:#263648;border-color:#263648}
+.btn.orange{background:#71869b;border-color:#71869b}
+.panel,.landing-search-panel,.landing-feature-section,.more-menu-grid button,.map-place-panel{border-color:#dce1e7}
+.landing-hero{border-radius:20px}
+.landing-hero-content h1,.welcome-content h1{letter-spacing:-1.1px}
+.landing-section-head h2,.screen-heading h1,.screen-heading h2{color:#263648;letter-spacing:-.6px}
+.landing-section-kicker,.landing-eyebrow,.eyebrow{color:#61778c}
+.scout-feature-card{border-color:#dce1e7;background:#fff}
+.scout-feature-image{background:linear-gradient(135deg,#e5e9ed,#d6dce2)}
+.scout-feature-index{color:#61778c}
+.scout-feature-desc{line-height:1.65}
+.detail{font-size:15px;line-height:1.8}
+.detail p,.detail li,.detail dd,.detail .description,.detail .detail-copy{font-size:15px;line-height:1.8}
+.detail h3,.detail h4{font-size:18px;line-height:1.45}
+.detailtitle h2{font-size:clamp(24px,2.7vw,32px)}
+.detail .tiny,.detail .reference-meta,.detail .photo-caption{font-size:12px;line-height:1.7}
+.detail .btn{font-size:13px}
+.detail .chip{font-size:12px}
+.detail .approved-photo img{max-height:520px}
+.place h3{font-size:16px;line-height:1.45}
+.place p,.place .place-photo-title{font-size:13px;line-height:1.65}
+.panelhead h2{font-size:16px}
+.panelhead span{font-size:12px}
+@media(min-width:621px){
+ .detail{padding:clamp(20px,2vw,30px)}
+ .detailtitle{margin-bottom:8px}
+ .place{grid-template-columns:100px minmax(0,1fr) 14px}
+ .thumb{width:100px;height:88px}
+}
+@media(max-width:620px){
+ .wrap{padding:12px 12px 86px}
+ .head{gap:8px}
+ .head .pill{display:none}
+ .brand{font-size:20px}
+ .app-nav{padding-bottom:max(8px,env(safe-area-inset-bottom))}
+ .landing-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .scout-feature-image{height:clamp(125px,42vw,190px)}
+ .scout-feature-body{padding:10px}
+ .scout-feature-body>b{font-size:15px;line-height:1.45}
+ .scout-feature-desc{font-size:12px;line-height:1.55}
+ /* In the all-location archive, move the photo above the place details. */
+ #placeList .place{display:grid;grid-template-columns:minmax(0,1fr) 18px;gap:9px;padding:10px;border:1px solid #dce1e7;border-radius:14px;margin:8px 0;align-items:start}
+ #placeList .place .thumb{grid-column:1/-1;grid-row:1;width:100%;height:clamp(175px,58vw,260px);border-radius:9px;overflow:hidden}
+ #placeList .place .thumb img{width:100%;height:100%;object-fit:cover}
+ #placeList .place>div:nth-child(2){grid-column:1;grid-row:2;min-width:0}
+ #placeList .place .place-chevron{grid-column:2;grid-row:2;align-self:start;padding-top:3px}
+ #placeList .place h3{font-size:17px;margin:2px 0 5px}
+ #placeList .place p{font-size:13px}
+ .detail{font-size:16px;line-height:1.8;padding:17px}
+ .detail p,.detail li,.detail dd,.detail .description,.detail .detail-copy{font-size:16px;line-height:1.8}
+ .detail h3,.detail h4{font-size:19px}
+ .detailtitle h2{font-size:25px}
+ .detail .tiny,.detail .reference-meta,.detail .photo-caption{font-size:12px}
+ .screen-heading h1{font-size:26px}
+}
