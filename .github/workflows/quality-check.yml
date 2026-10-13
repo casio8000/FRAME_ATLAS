@@ -28,6 +28,9 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Check V2 application JavaScript syntax
+        run: node --check v2/assets/app.js
+
       - name: Validate location data
         run: python tools/validate.py
 

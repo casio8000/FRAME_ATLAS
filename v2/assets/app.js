@@ -428,7 +428,7 @@ async function candidateAction(placeId,cid,action){
   if(value===null)return;
   clearObjectUrl(c.id);
   const url=value.trim();
-  if(!/^https?:\\/\\//i.test(url)){alert("http:// 또는 https://로 시작하는 이미지 주소를 입력하세요.");return;}
+  if(!/^https?:\/\//i.test(url)){alert("http:// 또는 https://로 시작하는 이미지 주소를 입력하세요.");return;}
   if(c.assetPath){catalog.deletedAssetPaths=Array.from(new Set([...(catalog.deletedAssetPaths||[]),c.assetPath]));c.assetPath=null;}
   if(c.pendingAsset){try{await deletePendingPhoto(pendingKey(p.id,c.id));}catch(_){}c.pendingAsset=false;}
   c.imageUrl=url;c.sourceThumbnail="";c.localFileName="";c.updatedAt=stamp();p.updatedAt=stamp();
