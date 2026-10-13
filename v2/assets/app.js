@@ -228,12 +228,18 @@ function toggleFavorite(id){if(isFavorite(id))favorites=favorites.filter(x=>x!==
 function chooseHomeHeroPlace(places){
  const pool=places.filter(p=>{
   const photo=activePhoto(p),url=photo&&(photo.imageUrl||photo.sourceThumbnail||"");
-  return !!url && /^https?:\/\//i.test(String(url));
+  return !!url && /^https?:\/\//i.test(String(url)) && photo.placeMatch!=="mismatch";
  });
  if(!pool.length)return null;
- const existing=pool.find(p=>p.id===homeHeroPlaceId);
- const chosen=existing||pool[Math.floor(Math.random()*pool.length)];
+ const current=pool.find(p=>p.id===homeHeroPlaceId);
+ if(current)return current;
+ let previous="";
+ try{previous=localStorage.getItem("frameAtlas2HomeHeroLast")||"";}catch(_){}
+ let candidates=pool.length>1?pool.filter(p=>p.id!==previous):pool;
+ if(!candidates.length)candidates=pool;
+ const chosen=candidates[Math.floor(Math.random()*candidates.length)];
  homeHeroPlaceId=chosen.id;
+ try{localStorage.setItem("frameAtlas2HomeHeroLast",chosen.id);}catch(_){}
  return chosen;
 }
 function renderLanding(){
