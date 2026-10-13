@@ -24,14 +24,18 @@ for (const p of catalog.places) {
   assert.ok(Array.isArray(p.searchTerms) && p.searchTerms.length >= 1, "place needs targeted photo-search terms: " + p.name);
   const candidateIds = new Set();
   for (const c of p.imageCandidates) {
-    assert.ok(c.id && c.imageUrl, "each image candidate needs an id and direct image URL");
+    assert.ok(c.id && (c.imageUrl || c.assetPath), "each image candidate needs an id and image URL or stored asset path");
     assert.ok(!candidateIds.has(c.id), "duplicate image candidate id in " + p.name);
     candidateIds.add(c.id);
     if (c.status === "approved") {
       assert.ok(allowedRights.has(c.rights), "approved image must have an allowed rights class");
       assert.equal(c.placeMatch, "confirmed", "approved image must be location-confirmed");
-      assert.ok(c.sourcePageUrl, "approved image must have an original page URL");
-      assert.ok(c.licenseUrl, "approved image must have rights evidence URL");
+      if (c.rights !== "self-owned") {
+        assert.ok(c.sourcePageUrl, "approved external image must have an original page URL");
+        assert.ok(c.licenseUrl, "approved external image must have rights evidence URL");
+      } else {
+        assert.ok(c.rightsLabel, "self-owned image must document its declared ownership status");
+      }
       assert.equal(p.primaryImageId, c.id, "approved image must match primaryImageId");
     }
   }
