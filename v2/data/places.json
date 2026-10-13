@@ -4,7 +4,7 @@
   "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
   "dataStatus": "서울·경기·인천 34개 현재 촬영 후보. 장소별 대표 참고사진은 이미지 후보 중 하나를 선정해 표시하며 정식 대표사진 승인과 구분합니다. 이미지 출처·실제 장소 일치·공개 사용 권리는 별도 확인 대상.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-13T13:56:46.812Z",
+  "updatedAt": "2026-10-13T14:04:35.228Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -383,6 +383,20 @@
           "notes": "2019년 전시 공간 참고 후보. 장소의 과거 전시 이미지이며 현재 개방/운영·촬영 허용 상태가 확인됐다는 의미가 아님. 재사용 권리 미확인.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "commons-sema-bunker-ccby-sa3",
+          "title": "여의도 SeMA 벙커 외부·출입구 (Wikimedia Commons)",
+          "viewType": "실내외·산업공간",
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeouido_SeMA_Bunker.jpg?width=960",
+          "sourceThumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/Yeouido_SeMA_Bunker.jpg?width=960",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Yeouido_SeMA_Bunker.jpg",
+          "sourceName": "Wikiwater2020 / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "rightsStatus": "license-attribution-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "여의도 SeMA 벙커 사진. 저자·출처 표시 및 동일조건 공유 검토 필요."
         }
       ],
       "sourceRefs": [
@@ -1259,6 +1273,20 @@
           "placeMatch": "confirmed",
           "status": "candidate",
           "notes": "기존 아카이브에서 장소 일치 확인된 대체 후보. 기사 사진 재사용 조건은 별도 확인 필요."
+        },
+        {
+          "id": "commons-mmca-seoul-ccby4",
+          "title": "국립현대미술관 서울관 전경 (Wikimedia Commons)",
+          "viewType": "건축·외관·중정",
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MMCA_Seoul.jpg?width=960",
+          "sourceThumbnail": "https://commons.wikimedia.org/wiki/Special:FilePath/MMCA_Seoul.jpg?width=960",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:MMCA_Seoul.jpg",
+          "sourceName": "서울연구원 / Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "rightsStatus": "license-attribution-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "국립현대미술관 서울관을 직접 촬영한 공개 라이선스 사진. 저자·출처 표시 및 변경 여부 고지 필요."
         }
       ],
       "sourceRefs": [
@@ -3149,6 +3177,20 @@
           "placeMatch": "confirmed",
           "status": "candidate",
           "notes": "기존 아카이브에서 장소 일치 확인된 대체 후보. 이미지 이용 조건은 별도 확인 필요."
+        },
+        {
+          "id": "commons-incheon-art-platform-central-way",
+          "title": "인천아트플랫폼 중앙길 (Wikimedia Commons)",
+          "viewType": "벽돌 창고·중앙 보행로",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/%EC%9D%B8%EC%B2%9C%EC%95%84%ED%8A%B8%ED%94%8C%EB%9E%AB%ED%8F%BC_%EC%A4%91%EC%95%99%EA%B8%B8_Incheon_Art_Platform%2C_Central_way.jpg",
+          "sourceThumbnail": "https://upload.wikimedia.org/wikipedia/commons/3/35/%EC%9D%B8%EC%B2%9C%EC%95%84%ED%8A%B8%ED%94%8C%EB%9E%AB%ED%8F%BC_%EC%A4%91%EC%95%99%EA%B8%B8_Incheon_Art_Platform%2C_Central_way.jpg",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%EC%9D%B8%EC%B2%9C%EC%95%84%ED%8A%B8%ED%94%8C%EB%9E%AB%ED%8F%BC_%EC%A4%91%EC%95%99%EA%B8%B8_Incheon_Art_Platform,_Central_way.jpg",
+          "sourceName": "이강철 / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "rightsStatus": "license-attribution-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "인천아트플랫폼 중앙길을 직접 촬영한 공개 라이선스 사진. 저자·출처 표시 및 동일조건 공유 검토 필요."
         }
       ],
       "sourceRefs": [
