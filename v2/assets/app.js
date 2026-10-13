@@ -95,7 +95,7 @@ function normalizeCatalog(obj){
   if(![1,2,3].includes(p.scoutPriority))p.scoutPriority=3;
   if(!Array.isArray(p.searchTerms)||!p.searchTerms.length)p.searchTerms=[p.name+" 사진 촬영 장소"];
   if(!p.verification)p.verification={location:"미확인",photoMatch:"미확인",rights:"미확인",shootingPermission:"미확인",lastCheckedAt:null};
-  p.shootingDetails=Object.assign({parking:"미확인",publicTransport:"미확인",loadIn:"미확인",stairsElevator:"미확인",accessibleRoute:"미확인",restroom:"미확인",changingRoom:"미확인",power:"미확인",lighting:"미확인",indoorBackup:"미확인",crowdTiming:"미확인",equipmentRestrictions:"미확인",permitCost:"미확인",contact:"미확인",fieldNotes:"",lastFieldCheck:"미확인"},p.shootingDetails||{});
+  p.shootingDetails=Object.assign({parking:"확인 필요 — 주차 요금·높이 제한·장비 하차 지점",publicTransport:"확인 필요 — 가까운 역·정류장과 도보 동선",loadIn:"확인 필요 — 반입구·차량 하차점·카트 이동",stairsElevator:"확인 필요 — 계단·경사·엘리베이터",accessibleRoute:"확인 필요 — 휠체어·경사로·촬영 포인트 접근",restroom:"확인 필요 — 화장실 위치와 운영시간",changingRoom:"확인 필요 — 탈의·메이크업·대기 공간",crewBase:"확인 필요 — 스태프 집결·모니터링·휴식 공간",power:"확인 필요 — 콘센트·사용허가·회로 용량",lightDirection:"확인 필요 — 시간대별 자연광 방향과 역광",shadowControl:"확인 필요 — 차광·플래그 설치 가능 위치",backgroundControl:"확인 필요 — 간판·방문객·차량 등 배경 통제",focalLength:"기획 제안 — 공간·인물 구도별 초점거리 시험",cameraHeight:"기획 제안 — 아이레벨·로우앵글·하이앵글 비교",composition:"기획 제안 — 와이드·미디엄·디테일 촬영 포인트",subjectScale:"기획 제안 — 전신·3/4·환경 인물 구도",movement:"기획 제안 — 워킹샷·정지 포즈·카메라 이동",ceiling:"확인 필요 — 천장 높이·스탠드·붐 설치 제한",sound:"확인 필요 — 방문객·교통·공조·작업 소음",connectivity:"확인 필요 — 휴대전화 수신·Wi‑Fi·데이터 백업",lighting:"확인 필요 — 전원·조명 설치 조건",indoorBackup:"확인 필요 — 우천·강풍 대체 장소",crowdTiming:"확인 필요 — 행사·혼잡 시간·추천 시간대",equipmentRestrictions:"확인 필요 — 삼각대·플래시·조명·드론·연막 제한",permitCost:"확인 필요 — 상업촬영 허가·예약·촬영료·보증금",restoration:"확인 필요 — 촬영 후 청소·원상복구·손상 책임",contact:"확인 필요 — 관리 부서·담당 연락처",fieldNotes:"",lastFieldCheck:"미확인"},p.shootingDetails||{});
   p.updatedAt=p.updatedAt||stamp();
  });
  return obj;
@@ -389,13 +389,24 @@ function renderDetail(){
 }
 function renderShootingDetails(p){
  const d=p.shootingDetails||{};
- const fields=[["parking","주차·하차 위치"],["publicTransport","대중교통·도보 접근"],["loadIn","장비 반입·이동 동선"],["stairsElevator","계단·엘리베이터·층간 이동"],["accessibleRoute","휠체어·접근성"],["restroom","화장실"],["changingRoom","탈의·대기 공간"],["power","전원·콘센트"],["lighting","자연광·조명 조건"],["indoorBackup","우천·실내 대체 공간"],["crowdTiming","혼잡 시간·추천 시간대"],["equipmentRestrictions","장비·삼각대·조명 제한"],["permitCost","촬영 허가·예약·비용"],["contact","관리 부서·연락처"]];
- const markup='<div class="section shooting-checklist"><div class="shooting-section-head"><div><p class="eyebrow">FIELD CHECK / PRODUCTION LOGISTICS</p><h3>현장 촬영 체크리스트</h3></div><span class="checklist-note">미확인 항목은 방문 전 확인</span></div><p class="searchnote">확인되지 않은 사항을 임의로 가능하다고 표시하지 않습니다. 공식 안내·전화 확인·현장 확인 결과를 기록하세요.</p><div class="catalogform shooting-form">'+fields.map(([key,label])=>'<label>'+label+'<input id="sd_'+key+'" value="'+esc(d[key]||"미확인")+'" placeholder="미확인 또는 확인 내용"></label>').join('')+'<label class="wide">현장 답사·촬영 메모<textarea id="sd_fieldNotes" rows="4" placeholder="빛의 방향, 촬영 포인트, 혼잡도, 허가 담당자 답변 등">'+esc(d.fieldNotes||"")+'</textarea></label><label>마지막 확인일<input id="sd_lastFieldCheck" value="'+esc(d.lastFieldCheck||"미확인")+'" placeholder="YYYY-MM-DD"></label><div class="wide"><button class="btn primary" type="button" id="saveShootingDetailsBtn">현장 체크리스트 저장</button></div></div></div>';
+ const groups=[
+  ["접근·장비 동선",[
+   ["parking","주차·하차 위치"],["publicTransport","대중교통·도보 접근"],["loadIn","장비 반입·이동 동선"],["stairsElevator","계단·엘리베이터·층간 이동"],["accessibleRoute","휠체어·접근성"],["restroom","화장실"],["changingRoom","탈의·메이크업 공간"],["crewBase","스태프 집결·대기·모니터링"]
+  ]],
+  ["장비·공간·사진 설계",[
+   ["power","전원·콘센트·회로"],["lighting","인공조명 사용 조건"],["lightDirection","자연광 방향·시간대"],["shadowControl","그림자·차광 통제"],["backgroundControl","배경 통제·통행"],["focalLength","추천 초점거리"],["cameraHeight","카메라 높이·앵글"],["composition","구도·촬영 포인트"],["subjectScale","인물·피사체 크기"],["movement","워킹샷·카메라 이동"],["ceiling","천장 높이·스탠드·붐"],["sound","주변 소음·음향"]
+  ]],
+  ["허가·운영·현장 대응",[
+   ["connectivity","휴대전화·Wi‑Fi·데이터 백업"],["indoorBackup","우천·강풍 대체 장소"],["crowdTiming","혼잡 시간·추천 시간대"],["equipmentRestrictions","삼각대·플래시·조명·드론 제한"],["permitCost","촬영 허가·예약·비용"],["restoration","청소·원상복구 조건"],["contact","관리 부서·담당 연락처"]
+  ]]
+ ];
+ const fieldMarkup=groups.map(([title,fields])=>'<div class="wide scout-subsection"><h4>'+esc(title)+'</h4></div>'+fields.map(([key,label])=>'<label>'+esc(label)+'<input id="sd_'+key+'" value="'+esc(d[key]||"미확인")+'" placeholder="미확인 / 확인 결과 / 근거 링크"></label>').join("")).join("");
+ const markup='<div class="section shooting-checklist"><div class="shooting-section-head"><div><p class="eyebrow">FIELD CHECK / PRODUCTION LOGISTICS</p><h3>현장 촬영 체크리스트</h3></div><span class="checklist-note">미확인 항목은 방문 전 확인</span></div><p class="searchnote">이전 버전의 현장 조사 항목을 재구성했습니다. ‘확인 필요’는 확인된 사실이 아니라 점검할 내용입니다. 공식 안내·전화·현장 답사 결과를 기록하세요.</p><div class="catalogform shooting-form">'+fieldMarkup+'<label class="wide">현장 답사·촬영 메모<textarea id="sd_fieldNotes" rows="4" placeholder="빛의 방향, 촬영 포인트, 혼잡도, 담당자 답변, 근거 URL 등">'+esc(d.fieldNotes||"")+'</textarea></label><label>마지막 확인일<input id="sd_lastFieldCheck" value="'+esc(d.lastFieldCheck||"미확인")+'" placeholder="YYYY-MM-DD"></label><div class="wide"><button class="btn primary" type="button" id="saveShootingDetailsBtn">현장 체크리스트 저장</button></div></div></div>';
  $("detail").insertAdjacentHTML("beforeend",markup);
 }
 function saveShootingDetails(id){
  const p=getPlace(id);if(!p)return;
- const keys=["parking","publicTransport","loadIn","stairsElevator","accessibleRoute","restroom","changingRoom","power","lighting","indoorBackup","crowdTiming","equipmentRestrictions","permitCost","contact","fieldNotes","lastFieldCheck"];
+ const keys=["parking","publicTransport","loadIn","stairsElevator","accessibleRoute","restroom","changingRoom","crewBase","power","lighting","lightDirection","shadowControl","backgroundControl","focalLength","cameraHeight","composition","subjectScale","movement","ceiling","sound","connectivity","indoorBackup","crowdTiming","equipmentRestrictions","permitCost","restoration","contact","fieldNotes","lastFieldCheck"];
  p.shootingDetails=p.shootingDetails||{};
  keys.forEach(key=>{const el=$("sd_"+key);if(el)p.shootingDetails[key]=el.value.trim()||(key==="fieldNotes"?"":"미확인");});
  p.updatedAt=stamp();localSave("현장 촬영 체크리스트를 이 기기에 저장했습니다");render();
