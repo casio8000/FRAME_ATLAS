@@ -1,9 +1,8 @@
 # FRAME ATLAS 2.0 — 사진가 관점의 로케이션 스카우팅
 
-개발 브랜치: v2-development  
-작업 경로: v2/  
-미리보기 경로(통합 후): https://casio8000.github.io/FRAME_ATLAS/v2/index.html  
-기존 메인 앱 경로 `/FRAME_ATLAS/`는 그대로 두고, 2세대는 `/v2/` 경로에서 별도 운영한다.
+현재 배포 브랜치: `main` · 2.0 작업 경로: `v2/`  
+미리보기: https://casio8000.github.io/FRAME_ATLAS/v2/index.html  
+기존 메인 앱 경로 `/FRAME_ATLAS/`와 기존 파일은 유지하고, 2.0은 같은 저장소의 `/v2/` 경로에서 운영 중이다. **아직 별도 GitHub 저장소로 분리된 상태는 아니다.** 별도 저장소 생성·복제 및 독립 배포를 완료하기 전에는 기존 저장소나 루트 앱을 삭제하지 않는다.
 
 ## 설계 방향
 
