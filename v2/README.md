@@ -161,3 +161,6 @@ CC BY-NC 등 비상업 조건, CC BY-ND 등 파생 저작물 제한이 있는 �
 - Repository image files marked for deletion are removed on the next publish.
 - Venue access and actual-place match checks remain; creator/license fields are not part of routine photo management.
 - The service-worker cache version has been bumped.
+
+- Follow-up safety: uploaded photo files are now deleted after the updated catalog commits successfully, avoiding a broken catalog if the metadata update fails.
+- Object URLs are revoked when a local file is replaced/deleted so previews never keep showing an old image.

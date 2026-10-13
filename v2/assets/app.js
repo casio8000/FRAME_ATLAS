@@ -22,6 +22,7 @@ function referenceImage(p){
  return candidates.find(c=>c.placeMatch==="confirmed"&&usable(c))||candidates.find(usable)||candidates[0]||null;
 }
 function activePhoto(p){return approvedImage(p)||referenceImage(p);}
+function clearObjectUrl(cid){const old=objectUrls.get(cid);if(old){URL.revokeObjectURL(old);objectUrls.delete(cid);}}
 function bindImageFallbacks(root){
  if(!root)return;
  root.querySelectorAll("img[data-image-fallback]").forEach(img=>{
@@ -413,6 +414,7 @@ async function candidateAction(placeId,cid,action){
  if(action==="edit-url"){
   const value=prompt("이 사진의 이미지 주소를 입력하세요.",c.imageUrl||"");
   if(value===null)return;
+  clearObjectUrl(c.id);
   const url=value.trim();
   if(!/^https?:\\/\\//i.test(url)){alert("http:// 또는 https://로 시작하는 이미지 주소를 입력하세요.");return;}
   if(c.assetPath){catalog.deletedAssetPaths=Array.from(new Set([...(catalog.deletedAssetPaths||[]),c.assetPath]));c.assetPath=null;}
@@ -426,6 +428,7 @@ async function candidateAction(placeId,cid,action){
    const file=picker.files&&picker.files[0];if(!file)return;
    if(file.size>8*1024*1024){alert("사진 파일은 8MB 이하로 선택하세요.");return;}
    try{
+    clearObjectUrl(c.id);
     await putPendingPhoto(pendingKey(p.id,c.id),file);
     if(c.assetPath)catalog.deletedAssetPaths=Array.from(new Set([...(catalog.deletedAssetPaths||[]),c.assetPath]));
     c.assetPath=null;c.pendingAsset=true;c.localFileName=file.name;c.localFileSize=file.size;c.imageUrl="";c.sourceThumbnail="";c.updatedAt=stamp();
@@ -437,6 +440,7 @@ async function candidateAction(placeId,cid,action){
  }
  if(action==="delete"){
   if(!confirm("이 사진을 이 장소의 후보 목록에서 삭제할까요?"))return;
+  clearObjectUrl(c.id);
   if(c.assetPath)catalog.deletedAssetPaths=Array.from(new Set([...(catalog.deletedAssetPaths||[]),c.assetPath]));
   try{await deletePendingPhoto(pendingKey(p.id,c.id));}catch(_){}
   p.imageCandidates=p.imageCandidates.filter(x=>x.id!==cid);
@@ -660,15 +664,7 @@ async function publishCatalog(){
    if(!p.imageCandidates.some(c=>c.id===p.primaryImageId)){p.primaryImageId=null;if(!p.imageStatus)p.imageStatus="사진 후보 있음";}
    p.deletedAssetPaths=[];
   }
-  for(const assetPath of (catalog.deletedAssetPaths||[])){
-   const encodedPath=assetPath.split("/").map(encodeURIComponent).join("/");
-   const existing=await fetch(repo+encodedPath+"?ref=main",{headers,cache:"no-store"});
-   if(existing.status===404)continue;
-   if(!existing.ok)throw new Error("삭제할 이미지 파일 확인 실패 (HTTP "+existing.status+"): "+assetPath);
-   const info=await existing.json();
-   const del=await fetch(repo+encodedPath,{method:"DELETE",headers:Object.assign({"Content-Type":"application/json"},headers),body:JSON.stringify({message:"Remove deleted FRAME ATLAS location photo",sha:info.sha,branch:"main"})});
-   if(!del.ok){const err=await del.json().catch(()=>({}));throw new Error("사진 파일 삭제 실패: "+String(err.message||assetPath));}
-  }
+  const assetPathsToDelete=[...(catalog.deletedAssetPaths||[])];
   publishedCatalog.updatedAt=stamp();
   const bodyText=JSON.stringify(publishedCatalog,null,2),bytes=new TextEncoder().encode(bodyText);
   let binaryText="";for(let i=0;i<bytes.length;i++)binaryText+=String.fromCharCode(bytes[i]);
@@ -676,12 +672,24 @@ async function publishCatalog(){
   const put=await fetch(repo+catalogPath,{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},headers),body:JSON.stringify({message:"Publish FRAME ATLAS 2.0 catalog",content,sha:currentCatalog.sha,branch:"main"})});
   const result=await put.json();
   if(!put.ok)throw new Error("카탈로그 저장 실패 (HTTP "+put.status+"): "+String(result.message||"응답 오류"));
+  const cleanupFailed=[];
+  for(const assetPath of assetPathsToDelete){
+   try{
+    const encodedPath=assetPath.split("/").map(encodeURIComponent).join("/");
+    const existing=await fetch(repo+encodedPath+"?ref=main",{headers,cache:"no-store"});
+    if(existing.status===404)continue;
+    if(!existing.ok)throw new Error("HTTP "+existing.status);
+    const info=await existing.json();
+    const del=await fetch(repo+encodedPath,{method:"DELETE",headers:Object.assign({"Content-Type":"application/json"},headers),body:JSON.stringify({message:"Remove deleted FRAME ATLAS location photo",sha:info.sha,branch:"main"})});
+    if(!del.ok)throw new Error("HTTP "+del.status);
+   }catch(e){cleanupFailed.push(assetPath);}
+  }
   for(const key of staged){try{await deletePendingPhoto(key);}catch(_){}}
-  catalog.deletedAssetPaths=[];
+  catalog.deletedAssetPaths=cleanupFailed;
   localSave("GitHub에 장소 카탈로그와 선택 사진을 게시했습니다");
   render();renderLanding();
   status.classList.remove("hidden");
-  status.textContent="게시 완료. 커밋: "+String(result.commit&&result.commit.sha||"성공")+" · 장소 정보, 사진 선택, 사진 URL 및 저장된 이미지 파일을 반영했습니다. GitHub Pages 배포 후 PC와 아이폰에서 같은 카탈로그를 볼 수 있습니다.";
+  status.textContent="게시 완료. 커밋: "+String(result.commit&&result.commit.sha||"성공")+" · 장소 정보와 사진 변경사항을 게시했습니다."+ (cleanupFailed.length?" 다만 오래된 이미지 파일 "+cleanupFailed.length+"개는 삭제 재시도가 필요합니다. 다시 게시하면 재시도됩니다.":"") +" PC와 아이폰에서 같은 카탈로그를 볼 수 있습니다.";
   $("publishToken").value="";btn.textContent="게시 완료";
  }catch(e){status.textContent="게시 실패: "+e.message+" · 토큰은 저장하지 않았습니다.";}
  finally{btn.disabled=false;}
