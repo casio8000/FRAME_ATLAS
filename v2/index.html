@@ -404,8 +404,19 @@ async function publishCatalog(){
     status.textContent="승인된 사진 업로드 중… "+staged.length+"개 완료";
    }
   }
-  catalog.updatedAt=stamp();
-  const bodyText=JSON.stringify(catalog,null,2),bytes=new TextEncoder().encode(bodyText);
+  const publishedCatalog=JSON.parse(JSON.stringify(catalog));
+  for(const p of publishedCatalog.places){
+   p.imageCandidates=(p.imageCandidates||[]).filter(c=>!(c.pendingAsset&&!c.imageUrl&&c.status!=="approved"));
+   for(const c of p.imageCandidates){
+    if(c.pendingAsset&&c.status!=="approved"){
+     c.pendingAsset=false;
+     delete c.localFileName;
+     delete c.localFileSize;
+    }
+   }
+  }
+  publishedCatalog.updatedAt=stamp();
+  const bodyText=JSON.stringify(publishedCatalog,null,2),bytes=new TextEncoder().encode(bodyText);
   let binaryText="";for(let i=0;i<bytes.length;i++)binaryText+=String.fromCharCode(bytes[i]);
   const content=btoa(binaryText);
   const put=await fetch(repo+catalogPath,{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},headers),body:JSON.stringify({message:"Publish FRAME ATLAS 2.0 catalog",content,sha:currentCatalog.sha,branch:"v2-development"})});
@@ -415,7 +426,7 @@ async function publishCatalog(){
   localSave("GitHub 개발 브랜치에 카탈로그와 승인 사진을 게시했습니다");
   render();
   status.classList.remove("hidden");
-  status.textContent="게시 완료. 커밋: "+String(result.commit&&result.commit.sha||"성공")+" · 승인한 로컬 사진 파일은 저장소에 파일로 저장했습니다. 현재는 개발 브랜치이므로 기본 공개 앱에는 아직 반영되지 않습니다.";
+  status.textContent="게시 완료. 커밋: "+String(result.commit&&result.commit.sha||"성공")+" · 승인한 로컬 사진 파일은 저장소에 저장했습니다. 미승인 로컬 전용 사진 파일은 공개하지 않았습니다. 현재는 개발 브랜치이므로 기본 공개 앱에는 아직 반영되지 않습니다.";
   $("publishToken").value="";
   btn.textContent="게시 완료";
  }catch(e){status.textContent="게시 실패: "+e.message+" · 토큰은 저장하지 않았습니다. 중간에 업로드된 사진은 다시 게시하면 재사용됩니다.";}
