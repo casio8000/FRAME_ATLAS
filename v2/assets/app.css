@@ -609,3 +609,92 @@ body{background:var(--bg);color:var(--atlas-ink);font-family:Arial,"Noto Sans KR
  .detail .tiny,.detail .reference-meta,.detail .photo-caption{font-size:12px}
  .screen-heading h1{font-size:26px}
 }
+
+
+/* Reference implementation: FRAME ATLAS 2.0 design-system board */
+:root{
+ --bg:#F8FAFC;--card:#FFFFFF;--ink:#111827;--muted:#657280;--line:#E5E7EB;
+ --dark:#111827;--accent:#3B82F6;--green:#10B981;--soft:#EFF6FF;--warn:#FEF3C7;
+ --atlas-primary:#111827;--atlas-secondary:#657280;--atlas-accent:#3B82F6;
+ --atlas-surface:#F8FAFC;--atlas-border:#E5E7EB;--atlas-success:#10B981;
+ --atlas-warning:#F59E0B;--atlas-danger:#EF4444;
+}
+html{background:#F8FAFC}
+body{background:#F8FAFC;color:#111827;font-family:"Pretendard","Noto Sans KR",Arial,sans-serif;font-size:15px;line-height:1.65}
+button,input,select,textarea{font-family:inherit}
+.brand,.landing-section-head h2,.screen-heading h1,.screen-heading h2{color:#111827}
+.brand small,.eyebrow,.landing-section-kicker,.landing-eyebrow{color:#657280}
+.btn.primary,.landing-primary,.welcome-start,.app-nav button.active,.photo-actions .btn.primary{background:#111827;border-color:#111827;color:#fff}
+.btn.orange{background:#3B82F6;border-color:#3B82F6;color:#fff}
+.pill,.hero-tags span,.landing-region-shortcuts button,.chip{background:#EFF6FF;color:#334155}
+.landing-search-panel,.landing-feature-section,.panel,.map-place-panel,.more-menu-grid button,.more-menu-grid a{background:#fff;border-color:#E5E7EB}
+.landing-hero,.welcome-screen,.more-banner{border-color:#E5E7EB}
+.landing-hero-shade{background:linear-gradient(90deg,rgba(17,24,39,.78),rgba(17,24,39,.18))}
+.welcome-photo-shade{background:linear-gradient(90deg,rgba(17,24,39,.66),rgba(17,24,39,.16))}
+.scout-feature-card{background:#fff;border-color:#E5E7EB;color:#111827}
+.scout-feature-image{background:#E5E7EB}
+.scout-feature-index,.scout-feature-bottom{color:#657280}
+.scout-feature-arrow,.more-arrow{color:#3B82F6}
+.landing-region-shortcuts button[aria-pressed=true],.landing-region-shortcuts button.active{background:#111827;color:#fff}
+.detail{font-size:16px;line-height:1.8;color:#111827}
+.detail p,.detail li,.detail dd,.detail .description,.detail .detail-copy{font-size:16px;line-height:1.8}
+.detail h3,.detail h4{font-size:19px;line-height:1.45}
+.detailtitle h2{font-size:clamp(25px,2.7vw,33px);line-height:1.25}
+.detail .tiny,.detail .reference-meta,.detail .photo-caption{font-size:13px;line-height:1.7}
+.detail .btn{font-size:14px}
+.detail .chip{font-size:12px}
+.detail .approved-photo img{max-height:520px}
+.score-track span{background:#3B82F6}
+.scorecard,.section,.statusbar,.candidate,.photo-editor{border-color:#E5E7EB}
+.shooting-checklist{border:1px solid #E5E7EB;border-radius:16px;padding:clamp(15px,2vw,24px);background:#fff;margin:16px 0}
+.shooting-section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.shooting-section-head h3{margin:0;color:#111827}
+.checklist-note{font-size:12px;color:#657280;background:#F8FAFC;border:1px solid #E5E7EB;border-radius:999px;padding:5px 10px}
+.shooting-form label{font-size:13px;font-weight:700;color:#334155}
+.shooting-form input,.shooting-form textarea{font-size:14px;min-height:43px;border-color:#D7DDE5}
+.shooting-form input:focus,.shooting-form textarea:focus{outline:2px solid rgba(59,130,246,.18);border-color:#3B82F6}
+.place h3{font-size:16px;line-height:1.45}
+.place p,.place .place-photo-title{font-size:13px;line-height:1.65}
+.panelhead h2{font-size:16px}
+.panelhead span{font-size:12px}
+.more-menu-grid a{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;padding:14px;border:1px solid #E5E7EB;border-radius:14px}
+.more-menu-grid a:hover{border-color:#93C5FD;background:#F8FAFC}
+.manual-menu-icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#EFF6FF;color:#3B82F6;flex:0 0 auto}
+.manual-menu-text{display:flex;flex-direction:column;min-width:0;flex:1}
+.manual-menu-text b{font-size:14px}
+.manual-menu-text small{font-size:12px;color:#657280}
+@media(min-width:621px){
+ .detail{padding:clamp(22px,2vw,32px)}
+ .detailtitle{margin-bottom:10px}
+ .place{grid-template-columns:100px minmax(0,1fr) 14px}
+ .thumb{width:100px;height:88px}
+}
+@media(max-width:620px){
+ .wrap{padding:12px 12px 92px}
+ .head{gap:8px}
+ .head .pill{display:none}
+ .brand{font-size:20px}
+ .app-nav{padding-bottom:max(8px,env(safe-area-inset-bottom))}
+ .landing-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .scout-feature-image{height:clamp(125px,42vw,190px)}
+ .scout-feature-body{padding:10px}
+ .scout-feature-body>b{font-size:15px;line-height:1.45}
+ .scout-feature-desc{font-size:12px;line-height:1.55}
+ /* Archive cards: photo on top, details below, matching the 2.0 mobile concept */
+ #placeList .place{display:grid;grid-template-columns:minmax(0,1fr) 18px;gap:9px;padding:10px;border:1px solid #E5E7EB;border-radius:16px;margin:10px 0;align-items:start;background:#fff}
+ #placeList .place .thumb{grid-column:1/-1;grid-row:1;width:100%;height:clamp(185px,58vw,275px);border-radius:11px;overflow:hidden}
+ #placeList .place .thumb img{display:block;width:100%;height:100%;object-fit:cover}
+ #placeList .place>div:nth-child(2){grid-column:1;grid-row:2;min-width:0}
+ #placeList .place .place-chevron{grid-column:2;grid-row:2;align-self:start;padding-top:3px}
+ #placeList .place h3{font-size:17px;margin:2px 0 5px}
+ #placeList .place p{font-size:13px}
+ .detail{font-size:16px;line-height:1.8;padding:17px}
+ .detail p,.detail li,.detail dd,.detail .description,.detail .detail-copy{font-size:16px;line-height:1.8}
+ .detail h3,.detail h4{font-size:19px}
+ .detailtitle h2{font-size:25px}
+ .detail .tiny,.detail .reference-meta,.detail .photo-caption{font-size:13px}
+ .screen-heading h1{font-size:26px}
+ .shooting-checklist{padding:14px}
+ .shooting-form{grid-template-columns:1fr}
+ .shooting-form label.wide{grid-column:auto}
+}
