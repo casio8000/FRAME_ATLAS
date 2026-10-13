@@ -280,7 +280,7 @@ function renderAnalysisScreen(){
 function renderMoreScreen(){
  $("moreFavoriteCount").textContent=favorites.filter(id=>getPlace(id)).length;
  $("moreView").querySelectorAll("[data-more-action]").forEach(button=>{if(button.dataset.bound==="1")return;button.dataset.bound="1";button.addEventListener("click",()=>{const action=button.dataset.moreAction;
- if(action==="archive")goToWorkspace("","");else if(action==="favorites"){archiveMode="favorites";selectedId=null;$("query").value="";$("regionFilter").value="";$("imageFilter").value="";showAppView("workspace");}else if(action==="analysis")showAppView("analysis");else if(action==="photos")showAppView("photos");else if(action==="export")exportCatalog();else if(action==="import")$("importInput").click();else if(action==="settings"){if(typeof $("installDialog").showModal==="function")$("installDialog").showModal();}else if(action==="welcome")showAppView("welcome");
+ if(action==="archive")goToWorkspace("","");else if(action==="favorites"){archiveMode="favorites";selectedId=null;$("query").value="";$("regionFilter").value="";$("imageFilter").value="";showAppView("favorites");}else if(action==="analysis")showAppView("analysis");else if(action==="photos")showAppView("photos");else if(action==="export")exportCatalog();else if(action==="import")$("importInput").click();else if(action==="settings"){if(typeof $("installDialog").showModal==="function")$("installDialog").showModal();}else if(action==="welcome")showAppView("welcome");
  });});
 }
 

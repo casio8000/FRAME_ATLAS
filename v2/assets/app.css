@@ -778,3 +778,28 @@ button,input,select,textarea{font-family:inherit}
  padding:12px;text-align:center;background:rgba(248,250,252,.22);color:#fff;font-size:13px;font-weight:700;
 }
 .thumb.image-loading .thumb-flag,.scout-feature-image.image-loading .featured-photo-label{visibility:hidden}
+
+
+/* Match the supplied design board: blue accent and immersive full-screen splash */
+.landing-kicker{color:#DBEAFE!important}
+.landing-kicker-dot{background:#3B82F6;box-shadow:0 0 0 4px rgba(59,130,246,.20)}
+.landing-search-copy>span{color:#3B82F6!important}
+.landing-section-kicker{color:#3B82F6!important}
+.featured-photo-label{background:rgba(17,24,39,.88)}
+body[data-app-view="welcome"]{background:#111827;min-height:100svh}
+body[data-app-view="welcome"] .wrap{max-width:none;min-height:100svh;padding:0;margin:0;background:#111827}
+body[data-app-view="welcome"] .head,body[data-app-view="welcome"] #appNav{display:none!important}
+body[data-app-view="welcome"] #welcomeView{display:flex!important;width:100%;height:100svh;min-height:100svh;max-height:none;margin:0;border:0;border-radius:0;padding:clamp(26px,6vw,76px)}
+body[data-app-view="welcome"] .welcome-photo-shade{background:linear-gradient(90deg,rgba(17,24,39,.85),rgba(17,24,39,.58) 48%,rgba(17,24,39,.10))}
+body[data-app-view="welcome"] .welcome-logo-mark{border-color:#ffffff8c;background:rgba(17,24,39,.18)}
+body[data-app-view="welcome"] .welcome-kicker{color:#DBEAFE!important}
+body[data-app-view="welcome"] .welcome-content h1 span{color:#60A5FA}
+@media(max-width:620px){
+ body[data-app-view="welcome"] .wrap{padding:0}
+ body[data-app-view="welcome"] #welcomeView{height:100svh;min-height:100svh;padding:28px 22px calc(26px + env(safe-area-inset-bottom))}
+ body[data-app-view="welcome"] .welcome-photo-shade{background:linear-gradient(180deg,rgba(17,24,39,.18),rgba(17,24,39,.25) 32%,rgba(17,24,39,.92) 100%)}
+ body[data-app-view="welcome"] .welcome-content{width:100%;max-width:460px}
+ body[data-app-view="welcome"] .welcome-content h1{font-size:clamp(54px,15vw,76px);line-height:.92;letter-spacing:-3px}
+ body[data-app-view="welcome"] .welcome-tagline{font-size:clamp(21px,6vw,26px)}
+ body[data-app-view="welcome"] .welcome-copy{font-size:13px;line-height:1.75}
+}
