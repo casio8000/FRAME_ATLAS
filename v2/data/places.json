@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
-  "dataStatus": "서울·경기·인천 34개 현재 촬영 후보. 장소별 대표 참고사진은 이미지 후보 중 하나를 선정해 표시하며 정식 대표사진 승인과 구분합니다. 이미지 출처·실제 장소 일치·공개 사용 권리는 별도 확인 대상.",
+  "dataStatus": "서울·경기·인천 38개 현재 촬영 후보. 장소별 사진은 참고 이미지 후보이며, 실제 장소 일치·재사용 권리·운영·촬영 허가는 각각 별도 확인 대상.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-13T22:43:46.454Z",
+  "updatedAt": "2026-10-14T00:00:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -436,9 +436,9 @@
       ],
       "aliases": [],
       "summary": "곡선형 외피와 스케일감 있는 건축면으로 그래픽한 패션 이미지와 실루엣을 만들 후보",
-      "address": "",
+      "address": "서울특별시 중구 을지로 281",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://ddp.or.kr/",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -516,7 +516,8 @@
       },
       "mapSearchQuery": "서울특별시 중구 을지로 281 동대문디자인플라자 DDP",
       "referenceImageId": "ref-ddp-night-curved",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "phone": "02-2153-0000"
     },
     {
       "id": "seo-sema-bunker",
@@ -550,9 +551,9 @@
       ],
       "aliases": [],
       "summary": "낮은 천장과 원형·거친 실내 구조를 활용할 수 있는 특수 분위기 공간 후보",
-      "address": "서울특별시 영등포구 여의대로 지하 76",
+      "address": "서울특별시 영등포구 여의도동 2-11",
       "coordinates": null,
-      "officialUrl": "https://sema.seoul.go.kr/kr/sema/landing",
+      "officialUrl": "https://sema.seoul.go.kr/kr/visit/sema_bunker",
       "openingStatus": "운영 종료 (2025-01-13) · 재개관 여부 확인 필요",
       "shootingPermission": "운영 종료 확인 · 재개관 및 촬영 허가 확인 전 후보에서 제외",
       "parking": "미확인",
@@ -631,7 +632,8 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-sema-bunker-gallery-grid",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "phone": "02-2124-8946"
     },
     {
       "id": "seo-sewoon",
@@ -1697,7 +1699,7 @@
       "summary": "현대적 외벽과 전통 건축 요소가 만나는 대비를 활용할 후보",
       "address": "서울특별시 종로구 율곡로3길 4",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://craftmuseum.seoul.go.kr/",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -1762,7 +1764,8 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-craftmuseum-courtyard",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "phone": "02-6450-7000"
     },
     {
       "id": "seo-mmca",
@@ -4204,9 +4207,9 @@
       ],
       "aliases": [],
       "summary": "근대 건축 외벽과 골목을 활용해 유럽풍·레트로 에디토리얼 배경을 조사할 후보",
-      "address": "",
+      "address": "인천광역시 중구 중앙동1가 개항장 문화지구 일대",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://eng-itour.incheon.go.kr/cmn/board/BBSMSTR_000000000080/3009bbsDetail.do",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -4217,19 +4220,57 @@
         {
           "id": "ref-incheon-openport-brick-street",
           "title": "인천 개항장 거리의 근대건축·벽돌 골목",
-          "imageUrl": "https://itour.incheon.go.kr/common/viewImg.do?imgId=API21112609215027698",
-          "sourcePageUrl": "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=APD21112609214993209",
-          "sourceName": "인천투어 · 한국관광공사 관광지 자료",
-          "creator": "한국관광공사 관광지 이미지",
+          "imageUrl": "https://eng-itour.incheon.go.kr/storytelling/storytelling_db/2/1.jpg",
+          "sourcePageUrl": "https://eng-itour.incheon.go.kr/cmn/board/BBSMSTR_000000000080/3009bbsDetail.do",
+          "sourceName": "인천투어 공식 · 개항 누리길",
+          "creator": "인천관광공사",
           "rights": "unknown",
-          "rightsLabel": "공개 재사용 권리 미확인",
+          "rightsLabel": "이용조건 확인 필요",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "근대건축·벽돌·원근",
-          "notes": "인천투어 공식 '개항장 거리' 페이지의 이미지(이미지 ID API21112609215027698)로 교체했습니다. 실제 개항장 거리의 벽돌 건축·골목 참고사진입니다. 사진 이용 및 상업적 재사용 권리는 확인되지 않아 정식 대표사진으로 승인하지 않았습니다.",
+          "viewType": "근대건축·벽돌·골목",
+          "notes": "인천투어 공식 소개 페이지의 고정 JPG 경로로 교체했습니다. 기존 API 이미지 주소보다 변동성이 낮은 정적 이미지 주소를 우선하되, 이미지 로드와 재사용 권리는 별도로 확인합니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z",
-          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fitour.incheon.go.kr%2Fcommon%2FviewImg.do%3FimgId%3DAPI21112609215027698&w=900&h=650&fit=inside&output=webp",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Feng-itour.incheon.go.kr%2Fstorytelling%2Fstorytelling_db%2F2%2F1.jpg&w=900&h=650&fit=inside&output=webp",
+          "license": "이용조건 확인 필요",
+          "licenseEvidenceUrl": ""
+        },
+        {
+          "id": "ref-incheon-openport-museum-front",
+          "title": "인천개항장 근대건축전시관 외관 후보",
+          "imageUrl": "https://itour.incheon.go.kr/common/viewImg.do?imgId=DBI21121410580796373",
+          "sourcePageUrl": "https://itour.incheon.go.kr/intgrfind/list.do?ipt_intgrfind_kword=%EA%B0%9C%ED%95%AD",
+          "sourceName": "인천투어 · 개항장 문화지구",
+          "creator": "인천투어 · 개항장 문화지구",
+          "rights": "unknown",
+          "rightsLabel": "이용조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "근대건축·외관",
+          "notes": "API 이미지가 실패할 때 사용할 대체 후보. 재사용 권리는 미확인입니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fitour.incheon.go.kr%2Fcommon%2FviewImg.do%3FimgId%3DDBI21121410580796373&w=900&h=650&fit=inside&output=webp",
+          "license": "이용조건 확인 필요",
+          "licenseEvidenceUrl": ""
+        },
+        {
+          "id": "ref-incheon-openport-trippose",
+          "title": "개항장 거리 참고사진 대체 후보",
+          "imageUrl": "https://img.trippose.com/thum/1090999/800/533",
+          "sourcePageUrl": "https://en.trippose.com/tour/incheon-open-port-culture-history-tour",
+          "sourceName": "TripPose · 인천 개항장 거리",
+          "creator": "TripPose · 인천 개항장 거리",
+          "rights": "unknown",
+          "rightsLabel": "이용조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "근대건축·거리",
+          "notes": "외부 관광정보 사진 후보로 실제 장소 일치·사용권을 다시 확인해야 합니다. 대표사진으로 승인된 상태는 아닙니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.trippose.com%2Fthum%2F1090999%2F800%2F533&w=900&h=650&fit=inside&output=webp",
           "license": "이용조건 확인 필요",
           "licenseEvidenceUrl": ""
         }
@@ -4254,7 +4295,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T22:43:46.454Z",
+      "updatedAt": "2026-10-14T00:00:00.000Z",
       "photoPotentialScore": 77,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -4271,9 +4312,9 @@
         "rationale": "근대 건축 외벽과 골목을 활용해 유럽풍·레트로 에디토리얼 배경을 조사할 후보",
         "status": "desk-review"
       },
-      "mapSearchQuery": "인천광역시 중구 개항장 문화지구 인천개항박물관",
+      "mapSearchQuery": "인천광역시 중구 중앙동1가 개항장 문화지구 인천개항박물관",
       "referenceImageId": "ref-incheon-openport-brick-street",
-      "referenceImageStatus": "공식 관광정보 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "인천투어 공식 참고사진 · 로드 대체 후보 3종 · 재사용 권리 미확인",
       "shootingDetails": {
         "parking": "이전 조사 항목: 주차·하차 위치와 좁은 도로에서 장비 이동·보행 동선을 확인",
         "loadIn": "좁은 거리·일방통행 구간이 있을 수 있음. 장비 하차점과 케이스 이동 경로를 현장 확인",
@@ -4362,7 +4403,8 @@
           "35–50mm: 벽돌 입면과 환경인물",
           "85mm: 창호·벽돌·간판 디테일"
         ]
-      }
+      },
+      "phone": "032-760-6448"
     },
     {
       "id": "ic-baedari",
@@ -4643,6 +4685,573 @@
       "mapSearchQuery": "인천광역시 남동구 소래로154번길 77 소래습지생태공원",
       "referenceImageId": "ref-sorae-windmill-shallow-reflection",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+    },
+    {
+      "id": "seo-peace-culture-bunker",
+      "name": "평화문화진지",
+      "region": "서울",
+      "category": "군사유산 재생·거친 콘크리트",
+      "spaceTypes": [
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "옛 대전차방호시설의 거친 콘크리트, 낮은 수평선과 반복 구조를 활용하는 산업·도시재생 에디토리얼 후보.",
+      "visualStrengths": [
+        "방호시설의 두꺼운 콘크리트와 시간의 흔적",
+        "낮고 긴 수평 구조와 반복 리듬",
+        "산업유산과 현대 예술 공간의 대비"
+      ],
+      "bestConcepts": [
+        "모노톤 패션 에디토리얼",
+        "포스트 인더스트리얼 인물화보",
+        "구조·질감 중심 시리즈"
+      ],
+      "constraints": [
+        "전시·스튜디오 내부는 예약 또는 별도 허가 확인",
+        "공간 대관과 상업 촬영 조건은 관리기관에 확인",
+        "시설물에 장비를 접촉하지 않기"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "평화문화진지 외관 콘크리트 사진",
+        "평화문화진지 전경 도봉문화재단",
+        "Peace Culture Bunker Seoul architecture"
+      ],
+      "aliases": [],
+      "summary": "기존 방호시설을 문화창작공간으로 재생한 장소. 거친 표면과 반복 구조가 사진적 차별점이며 실내 접근·대관은 별도 확인 대상.",
+      "address": "서울특별시 도봉구 마들로 932 평화문화진지",
+      "coordinates": null,
+      "officialUrl": "https://www.dbfac.or.kr/front/cultureplace/culturebunker.do",
+      "phone": "02-3494-1970",
+      "openingStatus": "공식 운영시간·휴관일 확인 후 방문",
+      "shootingPermission": "상업·장비 촬영은 사전 문의 필요",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-seoul-peace-culture-bunker",
+          "title": "평화문화진지 외관·콘크리트 구조",
+          "imageUrl": "https://www.co-re.kr/project/peace-culture-bunker",
+          "sourcePageUrl": "https://www.co-re.kr/project/peace-culture-bunker",
+          "sourceName": "CoRe · 평화문화진지 프로젝트",
+          "creator": "CoRe · 평화문화진지 프로젝트",
+          "rights": "unknown",
+          "rightsLabel": "이용조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "산업유산·콘크리트 외관",
+          "notes": "프로젝트 소개 페이지의 외관 참고사진 후보. 재사용 전 원문·권리 조건을 확인하세요.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.co-re.kr%2Fproject%2Fpeace-culture-bunker&w=900&h=650&fit=inside&output=webp",
+          "license": "이용조건 확인 필요",
+          "licenseEvidenceUrl": ""
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "공식 운영정보",
+          "url": "https://www.dbfac.or.kr/front/cultureplace/culturebunker.do"
+        }
+      ],
+      "verification": {
+        "location": "공식 출처 참고",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보·휴관일 확인",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "사진적 잠재력을 기준으로 선정한 1차 후보입니다. 참고사진의 재사용 권리와 상업 촬영 허가 여부는 확인되지 않았습니다. 실제 촬영 전 운영기관에 별도로 확인하세요.",
+      "createdAt": "2026-10-14T00:00:00.000Z",
+      "updatedAt": "2026-10-14T00:00:00.000Z",
+      "photoPotentialScore": 86,
+      "photoScoreBreakdown": {
+        "distinctiveness": 27,
+        "compositionVariety": 17,
+        "lightAndTexture": 19,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 6
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/운영·허가 검증 전",
+      "priorityLabel": "A · 우선 조사",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "군사시설 재생이라는 장소 정체성과 표면 질감·수평 구도가 뚜렷함",
+        "status": "desk-review"
+      },
+      "mapSearchQuery": "서울특별시 도봉구 마들로 932 평화문화진지",
+      "referenceImageId": "ref-seoul-peace-culture-bunker",
+      "referenceImageStatus": "참고사진 후보 · 사용 권리 및 장소 현장 확인 전",
+      "shootingDetails": {
+        "parking": "주차·장비 하차 위치와 촬영 지점까지의 이동 확인",
+        "publicTransport": "공식 홈페이지에서 대중교통·도보 접근 확인",
+        "loadIn": "장비 반입구·엘리베이터·이동 경로 확인",
+        "stairsElevator": "계단·경사·엘리베이터와 장비 반입 가능 여부 확인",
+        "accessibleRoute": "경사로와 촬영 포인트 접근성 확인",
+        "restroom": "화장실 위치와 운영시간 확인",
+        "changingRoom": "탈의·메이크업·대기 공간 이용 가능 여부 확인",
+        "crewBase": "스태프 집결·대기 공간 확인",
+        "power": "콘센트·전원 사용 허가·회로 용량 확인",
+        "lighting": "조명 장비 설치와 전원 사용 조건 확인",
+        "lightDirection": "시간대별 자연광·반사 방향 현장 기록",
+        "shadowControl": "차광 설치 위치와 통행 동선 확인",
+        "backgroundControl": "간판·방문객·차량이 프레임에 들어오는지 확인",
+        "focalLength": "24–35mm / 50mm / 85mm로 구도 비교",
+        "cameraHeight": "아이레벨·로우앵글·하이앵글 비교",
+        "composition": "와이드·미디엄·디테일 프레임 구성 기록",
+        "subjectScale": "인물 구도별 거리와 배경 분리 확인",
+        "movement": "워킹샷·정지 포즈·카메라 이동 동선 확인",
+        "ceiling": "천장 높이 및 조명 스탠드·붐 제한 확인",
+        "sound": "방문객·교통·공조 소음 확인",
+        "connectivity": "휴대전화 수신·Wi-Fi·백업 가능 여부 확인",
+        "indoorBackup": "우천·강풍 대체 장소 검토",
+        "crowdTiming": "혼잡 시간 및 행사 일정 확인",
+        "equipmentRestrictions": "삼각대·조명·드론 반입 조건 확인",
+        "permitCost": "허가 주체·예약·촬영료·보증금 조건 확인",
+        "restoration": "청소·원상복구·시설물 접촉 조건 확인",
+        "contact": "촬영 허가와 장비 반입 조건을 담당 부서에 확인",
+        "fieldNotes": "참고사진은 촬영 기획용 후보입니다. 재사용 권리와 촬영 허가를 확인하기 전에는 확정하지 마세요.",
+        "lastFieldCheck": "미확인"
+      }
+    },
+    {
+      "id": "seo-upcycling-plaza",
+      "name": "서울새활용플라자",
+      "region": "서울",
+      "category": "자원순환 건축·디자인 공간",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "중정·복도"
+      ],
+      "photoProfile": "유리·패널·입면 반복과 밝은 복도, 전시 디자인을 활용하는 현대 공간·브랜드 에디토리얼 후보.",
+      "visualStrengths": [
+        "현대식 입면과 창호의 반복",
+        "중정·복도의 선형 원근",
+        "소재·업사이클 디자인 전시의 색과 질감"
+      ],
+      "bestConcepts": [
+        "지속가능성·디자인 브랜드 화보",
+        "미니멀 패션 인물 촬영",
+        "재료·제품·공간 디테일 시리즈"
+      ],
+      "constraints": [
+        "토요일 탐방·교육은 예약자 중심 운영 안내",
+        "전시·기업 공간 촬영은 운영자 및 입주기업 동의 확인",
+        "상업 촬영과 조명 설치는 별도 문의"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "서울새활용플라자 외관 사진",
+        "서울새활용플라자 입구 서울시 미디어허브",
+        "Seoul Upcycling Plaza architecture"
+      ],
+      "aliases": [],
+      "summary": "자원순환과 디자인을 주제로 한 복합 공간. 건축의 반복선과 실내 전시 환경을 활용하되 촬영 가능한 구역은 운영기관과 확인해야 함.",
+      "address": "서울특별시 성동구 자동차시장길 49",
+      "coordinates": null,
+      "officialUrl": "https://seoulup.or.kr/",
+      "phone": "02-2153-0400",
+      "openingStatus": "월~토 10:00~18:00 안내 · 일요일 휴관, 최신 안내 확인",
+      "shootingPermission": "전시·공간·상업촬영 조건 사전 문의",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-seoul-upcycling-plaza-exterior",
+          "title": "서울새활용플라자 외관",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/01/xYCJhTTFBIHFiaabWfoXweLeZzNtQpSn.jpg",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2018487",
+          "sourceName": "서울시 미디어허브 · 서울새활용플라자",
+          "creator": "서울시 미디어허브 · 서울새활용플라자",
+          "rights": "unknown",
+          "rightsLabel": "이용조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "현대건축·외관",
+          "notes": "서울시 미디어허브의 시설 외관 참고 이미지 후보. 재사용 권리 확인 전입니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2026%2F01%2FxYCJhTTFBIHFiaabWfoXweLeZzNtQpSn.jpg&w=900&h=650&fit=inside&output=webp",
+          "license": "이용조건 확인 필요",
+          "licenseEvidenceUrl": ""
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "공식 운영정보",
+          "url": "https://seoulup.or.kr/"
+        }
+      ],
+      "verification": {
+        "location": "공식 출처 참고",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보·휴관일 확인",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "사진적 잠재력을 기준으로 선정한 1차 후보입니다. 참고사진의 재사용 권리와 상업 촬영 허가 여부는 확인되지 않았습니다. 실제 촬영 전 운영기관에 별도로 확인하세요.",
+      "createdAt": "2026-10-14T00:00:00.000Z",
+      "updatedAt": "2026-10-14T00:00:00.000Z",
+      "photoPotentialScore": 82,
+      "photoScoreBreakdown": {
+        "distinctiveness": 24,
+        "compositionVariety": 18,
+        "lightAndTexture": 17,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 6
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/운영·허가 검증 전",
+      "priorityLabel": "A · 우선 조사",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "디자인 시설 특유의 건축선·전시물·복도 구도를 사진 콘텐츠와 연결할 수 있음",
+        "status": "desk-review"
+      },
+      "mapSearchQuery": "서울특별시 성동구 자동차시장길 49",
+      "referenceImageId": "ref-seoul-upcycling-plaza-exterior",
+      "referenceImageStatus": "참고사진 후보 · 사용 권리 및 장소 현장 확인 전",
+      "shootingDetails": {
+        "parking": "주차·장비 하차 위치와 촬영 지점까지의 이동 확인",
+        "publicTransport": "공식 홈페이지에서 대중교통·도보 접근 확인",
+        "loadIn": "장비 반입구·엘리베이터·이동 경로 확인",
+        "stairsElevator": "계단·경사·엘리베이터와 장비 반입 가능 여부 확인",
+        "accessibleRoute": "경사로와 촬영 포인트 접근성 확인",
+        "restroom": "화장실 위치와 운영시간 확인",
+        "changingRoom": "탈의·메이크업·대기 공간 이용 가능 여부 확인",
+        "crewBase": "스태프 집결·대기 공간 확인",
+        "power": "콘센트·전원 사용 허가·회로 용량 확인",
+        "lighting": "조명 장비 설치와 전원 사용 조건 확인",
+        "lightDirection": "시간대별 자연광·반사 방향 현장 기록",
+        "shadowControl": "차광 설치 위치와 통행 동선 확인",
+        "backgroundControl": "간판·방문객·차량이 프레임에 들어오는지 확인",
+        "focalLength": "24–35mm / 50mm / 85mm로 구도 비교",
+        "cameraHeight": "아이레벨·로우앵글·하이앵글 비교",
+        "composition": "와이드·미디엄·디테일 프레임 구성 기록",
+        "subjectScale": "인물 구도별 거리와 배경 분리 확인",
+        "movement": "워킹샷·정지 포즈·카메라 이동 동선 확인",
+        "ceiling": "천장 높이 및 조명 스탠드·붐 제한 확인",
+        "sound": "방문객·교통·공조 소음 확인",
+        "connectivity": "휴대전화 수신·Wi-Fi·백업 가능 여부 확인",
+        "indoorBackup": "우천·강풍 대체 장소 검토",
+        "crowdTiming": "혼잡 시간 및 행사 일정 확인",
+        "equipmentRestrictions": "삼각대·조명·드론 반입 조건 확인",
+        "permitCost": "허가 주체·예약·촬영료·보증금 조건 확인",
+        "restoration": "청소·원상복구·시설물 접촉 조건 확인",
+        "contact": "촬영 허가와 장비 반입 조건을 담당 부서에 확인",
+        "fieldNotes": "참고사진은 촬영 기획용 후보입니다. 재사용 권리와 촬영 허가를 확인하기 전에는 확정하지 마세요.",
+        "lastFieldCheck": "미확인"
+      }
+    },
+    {
+      "id": "seo-urban-life-museum",
+      "name": "서울생활사박물관",
+      "region": "서울",
+      "category": "공공건축 재생·도시생활 아카이브",
+      "spaceTypes": [
+        "실내",
+        "외관",
+        "마당"
+      ],
+      "photoProfile": "옛 공공시설을 문화공간으로 전환한 건축과 단정한 입면, 실내 아카이브 전시를 배경으로 기록·에디토리얼 촬영을 검토할 장소.",
+      "visualStrengths": [
+        "옛 공공건축의 정돈된 입면과 창호",
+        "실내 전시·복도의 반복 구조",
+        "도시의 기억과 현대 공간 활용의 대비"
+      ],
+      "bestConcepts": [
+        "도시생활·인물 다큐멘터리",
+        "차분한 패션·라이프스타일 에디토리얼",
+        "건축선·창호 중심 환경 인물 사진"
+      ],
+      "constraints": [
+        "전시실 촬영 및 삼각대·플래시 제한 확인",
+        "관람객·전시물 촬영 조건 확인",
+        "상업 촬영과 공간 대관은 박물관에 별도 문의"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "서울생활사박물관 외관 입구 사진",
+        "서울생활사박물관 건축 서울시 공식",
+        "Seoul Urban Life Museum exterior"
+      ],
+      "aliases": [],
+      "summary": "서울의 근현대 생활사를 다루는 박물관. 공공건축과 전시 공간을 기록·환경 인물 촬영에 활용할 가능성이 있지만 촬영 제한과 구역은 별도 확인이 필요.",
+      "address": "서울특별시 노원구 동일로174길 27",
+      "coordinates": null,
+      "officialUrl": "https://museum.seoul.go.kr/sulm/index.do",
+      "phone": "02-3399-2900",
+      "openingStatus": "화~일 09:00~18:00 안내 · 월요일 휴관, 최신 운영정보 확인",
+      "shootingPermission": "전시실·상업촬영·장비 사용 사전 문의",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-seoul-urban-life-museum-entrance",
+          "title": "서울생활사박물관 외관·입구",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/03/QCGxlowthSliXugpNDPMGobKMIPlvtYB.jpg",
+          "sourcePageUrl": "https://museum.seoul.go.kr/sulm/index.do",
+          "sourceName": "서울시 미디어허브 · 서울생활사박물관 참고사진",
+          "creator": "서울시 미디어허브 · 서울생활사박물관 참고사진",
+          "rights": "unknown",
+          "rightsLabel": "이용조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "공공건축·외관",
+          "notes": "장소 분위기 파악용 참고사진 후보. 원본 페이지 및 재사용 권리와 해당 구역 촬영 허가를 별도 확인해야 합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2026%2F03%2FQCGxlowthSliXugpNDPMGobKMIPlvtYB.jpg&w=900&h=650&fit=inside&output=webp",
+          "license": "이용조건 확인 필요",
+          "licenseEvidenceUrl": ""
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "공식 운영정보",
+          "url": "https://museum.seoul.go.kr/sulm/index.do"
+        }
+      ],
+      "verification": {
+        "location": "공식 출처 참고",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보·휴관일 확인",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "사진적 잠재력을 기준으로 선정한 1차 후보입니다. 참고사진의 재사용 권리와 상업 촬영 허가 여부는 확인되지 않았습니다. 실제 촬영 전 운영기관에 별도로 확인하세요.",
+      "createdAt": "2026-10-14T00:00:00.000Z",
+      "updatedAt": "2026-10-14T00:00:00.000Z",
+      "photoPotentialScore": 79,
+      "photoScoreBreakdown": {
+        "distinctiveness": 22,
+        "compositionVariety": 16,
+        "lightAndTexture": 16,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/운영·허가 검증 전",
+      "priorityLabel": "B · 보완 조사",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "역사적 건축과 실내 아카이브 공간의 조형성 및 환경 인물 활용 가능성",
+        "status": "desk-review"
+      },
+      "mapSearchQuery": "서울특별시 노원구 동일로174길 27",
+      "referenceImageId": "ref-seoul-urban-life-museum-entrance",
+      "referenceImageStatus": "참고사진 후보 · 사용 권리 및 장소 현장 확인 전",
+      "shootingDetails": {
+        "parking": "주차·장비 하차 위치와 촬영 지점까지의 이동 확인",
+        "publicTransport": "공식 홈페이지에서 대중교통·도보 접근 확인",
+        "loadIn": "장비 반입구·엘리베이터·이동 경로 확인",
+        "stairsElevator": "계단·경사·엘리베이터와 장비 반입 가능 여부 확인",
+        "accessibleRoute": "경사로와 촬영 포인트 접근성 확인",
+        "restroom": "화장실 위치와 운영시간 확인",
+        "changingRoom": "탈의·메이크업·대기 공간 이용 가능 여부 확인",
+        "crewBase": "스태프 집결·대기 공간 확인",
+        "power": "콘센트·전원 사용 허가·회로 용량 확인",
+        "lighting": "조명 장비 설치와 전원 사용 조건 확인",
+        "lightDirection": "시간대별 자연광·반사 방향 현장 기록",
+        "shadowControl": "차광 설치 위치와 통행 동선 확인",
+        "backgroundControl": "간판·방문객·차량이 프레임에 들어오는지 확인",
+        "focalLength": "24–35mm / 50mm / 85mm로 구도 비교",
+        "cameraHeight": "아이레벨·로우앵글·하이앵글 비교",
+        "composition": "와이드·미디엄·디테일 프레임 구성 기록",
+        "subjectScale": "인물 구도별 거리와 배경 분리 확인",
+        "movement": "워킹샷·정지 포즈·카메라 이동 동선 확인",
+        "ceiling": "천장 높이 및 조명 스탠드·붐 제한 확인",
+        "sound": "방문객·교통·공조 소음 확인",
+        "connectivity": "휴대전화 수신·Wi-Fi·백업 가능 여부 확인",
+        "indoorBackup": "우천·강풍 대체 장소 검토",
+        "crowdTiming": "혼잡 시간 및 행사 일정 확인",
+        "equipmentRestrictions": "삼각대·조명·드론 반입 조건 확인",
+        "permitCost": "허가 주체·예약·촬영료·보증금 조건 확인",
+        "restoration": "청소·원상복구·시설물 접촉 조건 확인",
+        "contact": "촬영 허가와 장비 반입 조건을 담당 부서에 확인",
+        "fieldNotes": "참고사진은 촬영 기획용 후보입니다. 재사용 권리와 촬영 허가를 확인하기 전에는 확정하지 마세요.",
+        "lastFieldCheck": "미확인"
+      }
+    },
+    {
+      "id": "seo-city-hall-facade",
+      "name": "서울시청 신청사 외관",
+      "region": "서울",
+      "category": "유리 파사드·현대 공공건축",
+      "spaceTypes": [
+        "야외",
+        "유리 입면",
+        "광장"
+      ],
+      "photoProfile": "곡면 유리 입면과 반사, 수직·수평 그리드와 도심의 대비를 활용하는 현대건축·패션 에디토리얼 후보.",
+      "visualStrengths": [
+        "곡면 유리 파사드와 반사되는 하늘",
+        "반복되는 수직·수평 그리드",
+        "역사적 구청사와 현대 신청사의 시각적 대비"
+      ],
+      "bestConcepts": [
+        "미래적·테크웨어 패션 화보",
+        "도시 건축과 환경 인물 사진",
+        "반사·대칭·기하학 실험"
+      ],
+      "constraints": [
+        "청사 출입·보안 구역 및 광장 사용 규정 확인",
+        "삼각대·조명·상업 촬영 허가 문의",
+        "보행 동선과 출입구를 막지 않기"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "서울시청 신청사 유리 파사드 사진",
+        "서울시청 신청사 외관 서울 공식 사진",
+        "Seoul City Hall new building glass facade"
+      ],
+      "aliases": [],
+      "summary": "유리와 금속의 곡면 입면, 반사와 규칙적 그리드가 사진적 장점인 도심 건축 후보. 건물 내부와 광장 사용은 별도 확인해야 함.",
+      "address": "서울특별시 중구 세종대로 110",
+      "coordinates": null,
+      "officialUrl": "https://www.seoul.go.kr/",
+      "phone": "02-120",
+      "openingStatus": "외부 공개 구역·청사 운영은 방문 전 공식 안내 확인",
+      "shootingPermission": "청사·광장 점유형 및 상업 촬영은 사전 문의",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-seoul-city-hall-glass-facade",
+          "title": "서울시청 신청사 유리 파사드",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2023/11/XREnAbuGArLmKheGNhoDnztvWnfJFsgD.jpg",
+          "sourcePageUrl": "https://www.seoul.go.kr/",
+          "sourceName": "서울시 미디어허브 · 신청사 외관 참고사진",
+          "creator": "서울시 미디어허브 · 신청사 외관 참고사진",
+          "rights": "unknown",
+          "rightsLabel": "이용조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "유리 파사드·현대건축",
+          "notes": "서울시청 신청사 외관 참고사진 후보입니다. 이용권과 상업 재사용 권리는 별도 확인 대상.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2023%2F11%2FXREnAbuGArLmKheGNhoDnztvWnfJFsgD.jpg&w=900&h=650&fit=inside&output=webp",
+          "license": "이용조건 확인 필요",
+          "licenseEvidenceUrl": ""
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "공식 운영정보",
+          "url": "https://www.seoul.go.kr/"
+        }
+      ],
+      "verification": {
+        "location": "공식 출처 참고",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보·휴관일 확인",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "사진적 잠재력을 기준으로 선정한 1차 후보입니다. 참고사진의 재사용 권리와 상업 촬영 허가 여부는 확인되지 않았습니다. 실제 촬영 전 운영기관에 별도로 확인하세요.",
+      "createdAt": "2026-10-14T00:00:00.000Z",
+      "updatedAt": "2026-10-14T00:00:00.000Z",
+      "photoPotentialScore": 81,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 17,
+        "lightAndTexture": 18,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 4
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/운영·허가 검증 전",
+      "priorityLabel": "B · 보완 조사",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "현대 공공건축의 반사면·곡면·도시 그리드에 사진적 특이성이 있음",
+        "status": "desk-review"
+      },
+      "mapSearchQuery": "서울특별시 중구 세종대로 110",
+      "referenceImageId": "ref-seoul-city-hall-glass-facade",
+      "referenceImageStatus": "참고사진 후보 · 사용 권리 및 장소 현장 확인 전",
+      "shootingDetails": {
+        "parking": "주차·장비 하차 위치와 촬영 지점까지의 이동 확인",
+        "publicTransport": "공식 홈페이지에서 대중교통·도보 접근 확인",
+        "loadIn": "장비 반입구·엘리베이터·이동 경로 확인",
+        "stairsElevator": "계단·경사·엘리베이터와 장비 반입 가능 여부 확인",
+        "accessibleRoute": "경사로와 촬영 포인트 접근성 확인",
+        "restroom": "화장실 위치와 운영시간 확인",
+        "changingRoom": "탈의·메이크업·대기 공간 이용 가능 여부 확인",
+        "crewBase": "스태프 집결·대기 공간 확인",
+        "power": "콘센트·전원 사용 허가·회로 용량 확인",
+        "lighting": "조명 장비 설치와 전원 사용 조건 확인",
+        "lightDirection": "시간대별 자연광·반사 방향 현장 기록",
+        "shadowControl": "차광 설치 위치와 통행 동선 확인",
+        "backgroundControl": "간판·방문객·차량이 프레임에 들어오는지 확인",
+        "focalLength": "24–35mm / 50mm / 85mm로 구도 비교",
+        "cameraHeight": "아이레벨·로우앵글·하이앵글 비교",
+        "composition": "와이드·미디엄·디테일 프레임 구성 기록",
+        "subjectScale": "인물 구도별 거리와 배경 분리 확인",
+        "movement": "워킹샷·정지 포즈·카메라 이동 동선 확인",
+        "ceiling": "천장 높이 및 조명 스탠드·붐 제한 확인",
+        "sound": "방문객·교통·공조 소음 확인",
+        "connectivity": "휴대전화 수신·Wi-Fi·백업 가능 여부 확인",
+        "indoorBackup": "우천·강풍 대체 장소 검토",
+        "crowdTiming": "혼잡 시간 및 행사 일정 확인",
+        "equipmentRestrictions": "삼각대·조명·드론 반입 조건 확인",
+        "permitCost": "허가 주체·예약·촬영료·보증금 조건 확인",
+        "restoration": "청소·원상복구·시설물 접촉 조건 확인",
+        "contact": "촬영 허가와 장비 반입 조건을 담당 부서에 확인",
+        "fieldNotes": "참고사진은 촬영 기획용 후보입니다. 재사용 권리와 촬영 허가를 확인하기 전에는 확정하지 마세요.",
+        "lastFieldCheck": "미확인"
+      }
     }
   ],
   "selectionRubric": {
