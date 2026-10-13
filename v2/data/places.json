@@ -4,7 +4,7 @@
   "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
   "dataStatus": "편집 기획을 바탕으로 한 후보 목록. 장소별 현재 운영·출입·촬영 허가·사진은 공식 출처와 현장/이미지 검토 전",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-13T06:36:19.710Z",
+  "updatedAt": "2026-10-13T06:51:03.624Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -48,7 +48,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-oil-tank-t4",
+          "title": "문화비축기지 T4 원형 탱크 내부",
+          "imageUrl": "https://mediahub.seoul.go.kr/css/2018seoul/public/front/common/file/file02_s3.jpg",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/css/2018seoul/public/front/mobile/html/m_file6.html",
+          "sourceName": "서울시 미디어허브",
+          "creator": "서울시 미디어허브",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·산업건축",
+          "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -112,7 +129,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-seonyudo-pergola",
+          "title": "선유도공원 콘크리트 퍼골라",
+          "imageUrl": "https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?filePath=L2Rpc2sxL25ld2RhdGEvMjAxNC8yMS9DTFM2L2RpZ2lfMTExNzk5MTZfMDEyMDE0MTExNTEz&thumbAt=Y&thumbSe=b_tbumb&wrtSn=11179916&wrtTy=10006",
+          "sourcePageUrl": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?menuNo=200018&wrtSn=11179916",
+          "sourceName": "공유마당",
+          "creator": "김상범",
+          "rights": "cc-by",
+          "rightsLabel": "CC BY · 저작자 표시",
+          "licenseUrl": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?menuNo=200018&wrtSn=11179916",
+          "placeMatch": "confirmed",
+          "viewType": "야외·콘크리트 퍼골라",
+          "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -499,7 +533,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-culture-station-hall",
+          "title": "문화역서울284 대형 아치형 홀",
+          "imageUrl": "https://www.esquirekorea.co.kr/resources_old/online/org_online_image/eq/17b074a0-23a1-40d4-bc47-4f80ad06b829.jpg",
+          "sourcePageUrl": "https://www.esquirekorea.co.kr/article/65273",
+          "sourceName": "Esquire Korea / 문화역서울284 소개",
+          "creator": "출처 페이지 사진 크레딧 참조",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·역사건축",
+          "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -1208,7 +1259,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-mimesis-curved-courtyard",
+          "title": "미메시스 아트 뮤지엄 곡면 콘크리트 중정",
+          "imageUrl": "https://3.bp.blogspot.com/-iMK-Lb7EWuk/UdGAkZP7gXI/AAAAAAAAkuE/zCFYrwcg5Iw/s1599/MIMESIS%2BMUSEUM%2BBY%2BALVARO%2BSIZA%2BVIERA07.jpg",
+          "sourcePageUrl": "https://aida-architecture.blogspot.com/2015/07/mimesis-museum-by-alvaro-siza-viera.html",
+          "sourceName": "Aida Architecture 블로그",
+          "creator": "출처 페이지 기재 저작자 미확인",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·곡면 건축",
+          "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -1917,7 +1985,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-incheon-art-platform-brick",
+          "title": "인천아트플랫폼 붉은 벽돌 창고 외관",
+          "imageUrl": "https://itour.incheon.go.kr/common/viewImg.do?imgId=DBI21121414075451912",
+          "sourcePageUrl": "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD21121414020850918",
+          "sourceName": "인천투어 공식 관광자료",
+          "creator": "인천투어",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·붉은 벽돌 산업건축",
+          "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
