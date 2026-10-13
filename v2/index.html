@@ -112,7 +112,7 @@ function render(){
  $("placeList").innerHTML=places.length?places.map(p=>{
   const im=approvedImage(p);
   const state=im?'<span class="chip">대표사진 확정</span>':imageCount(p)?'<span class="chip need">사진 후보 '+imageCount(p)+'개</span>':'<span class="chip need">사진 미등록</span>';
-  return '<article class="place '+(p.id===selectedId?'active':'')+'" data-select="'+esc(p.id)+'"><div class="thumb">'+(im?'<img loading="lazy" alt="" src="'+esc(im.imageUrl)+'" referrerpolicy="no-referrer">':'<span>NO PHOTO</span>')+'</div><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+'</p><div class="chips">'+state+'</div></div></article>';
+  return '<article class="place '+(p.id===selectedId?'active':'')+'" data-select="'+esc(p.id)+'"><div class="thumb">'+(im?'<img loading="lazy" alt="" src="'+esc(im.imageUrl)+'" referrerpolicy="no-referrer">':'<span>NO PHOTO</span>')+'</div><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+'</p><div class="chips"><span class="chip">'+esc((p.spaceTypes||[]).join(" · "))+'</span><span class="chip '+(p.scoutPriority===1?'':'need')+'">조사 '+(p.scoutPriority===1?'A':p.scoutPriority===2?'B':'C')+'</span>'+state+'</div></div></article>';
  }).join(""):'<div class="empty">검색 조건에 맞는 장소가 없습니다.</div>';
  $("placeList").querySelectorAll("[data-select]").forEach(el=>el.addEventListener("click",()=>{selectedId=el.dataset.select;render();}));
  renderDetail();
@@ -298,11 +298,14 @@ function renderAutoCard(x){
 }
 function autoCandidateFrom(x,provider){
  let rights="unknown",label=x.license||"미확인";
- const lic=String(x.license||"").toLowerCase().replace(/\s+/g,"");
+ const lic=String(x.license||"").toLowerCase().replace(/[\s_]+/g,"").replace(/^cc-/,"cc");
+ const url=String(x.licenseUrl||x.license_url||"").toLowerCase();
+ const hasNC=lic.includes("by-nc")||lic.includes("ccby-nc")||lic.includes("noncommercial")||url.includes("/by-nc/");
+ const hasND=lic.includes("by-nd")||lic.includes("ccby-nd")||lic.includes("noderivatives")||url.includes("/by-nd/");
  if(lic.includes("cc0")||lic==="zero")rights="cc0";
  else if(lic.includes("publicdomain")||lic==="pdm")rights="public-domain";
- else if(lic==="by"||lic==="ccby"||lic.includes("creativecommons.org/licenses/by/"))rights="cc-by";
- else if(lic.includes("by-sa")||lic.includes("ccby-sa"))rights="cc-by-sa";
+ else if(!hasNC&&!hasND&&(lic.includes("by-sa")||lic.includes("ccby-sa")||url.includes("/licenses/by-sa/")))rights="cc-by-sa";
+ else if(!hasNC&&!hasND&&(lic==="by"||lic==="ccby"||/^ccby[0-9.]+$/.test(lic)||lic.includes("creativecommons.org/licenses/by/")||url.includes("/licenses/by/")))rights="cc-by";
  return {id:"img-"+Math.random().toString(36).slice(2,10),title:x.title||"검색 후보",imageUrl:x.imageUrl||x.url||"",sourcePageUrl:x.pageUrl||x.foreign_landing_url||x.detail_url||"",sourceName:provider==="commons"?"Wikimedia Commons":"Openverse",creator:x.creator||"미확인",rights,rightsLabel:label,licenseUrl:x.licenseUrl||x.license_url||"",placeMatch:"unverified",viewType:"미확인",notes:"자동 검색 후보. 실제 장소 일치·라이선스 문구·공개 사용 가능 여부를 다시 확인하세요. "+(x.attribution||""),status:"candidate",createdAt:stamp()};
 }
 function attachAutoButtons(host,items,provider,p){
