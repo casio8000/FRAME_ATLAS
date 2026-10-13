@@ -337,20 +337,6 @@ function attachAutoButtons(host,items,provider,p){
   }finally{btn.disabled=false;btn.textContent=oldText;}
  }));
 }
-
- host.querySelectorAll("[data-auto-save]").forEach(btn=>btn.addEventListener("click",()=>{
-  const x=items[Number(btn.dataset.autoSave)];let rights="unknown",label=x.license||"미확인";
-  const lic=String(x.license||"").toLowerCase().replace(/\s+/g,"");
-  if(lic.includes("cc0")||lic==="zero")rights="cc0";
-  else if(lic.includes("publicdomain")||lic==="pdm")rights="public-domain";
-  else if(lic==="by"||lic==="ccby"||lic.includes("creativecommons.org/licenses/by/"))rights="cc-by";
-  else if(lic.includes("by-sa")||lic.includes("ccby-sa"))rights="cc-by-sa";
-  const candidate={id:"img-"+Math.random().toString(36).slice(2,10),title:x.title||"검색 후보",imageUrl:x.imageUrl||x.url||"",sourcePageUrl:x.pageUrl||x.foreign_landing_url||x.detail_url||"",sourceName:provider==="commons"?"Wikimedia Commons":"Openverse",creator:x.creator||"미확인",rights,rightsLabel:label,licenseUrl:x.licenseUrl||x.license_url||"",placeMatch:"unverified",viewType:"미확인",notes:"자동 검색 후보. 실제 장소 일치·라이선스 문구·공개 사용 가능 여부를 다시 확인하세요. "+(x.attribution||""),status:"candidate",createdAt:stamp()};
-  if(!candidate.imageUrl){alert("원본 이미지 주소가 없어 후보 등록할 수 없습니다.");return;}
-  addCandidate(p.id,candidate);
-  alert("사진 후보를 저장했습니다. 장소 일치와 권리 상태를 확인한 뒤 대표사진을 승인하세요.");
- }));
-}
 function exportCatalog(){
  const blob=new Blob([JSON.stringify(catalog,null,2)],{type:"application/json;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=url;a.download="frame-atlas-v2-catalog-"+new Date().toISOString().slice(0,10)+".json";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
