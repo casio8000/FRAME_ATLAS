@@ -4,7 +4,7 @@
   "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
   "dataStatus": "서울·경기·인천 34개 현재 촬영 후보. 장소별 대표 참고사진은 이미지 후보 중 하나를 선정해 표시하며 정식 대표사진 승인과 구분합니다. 이미지 출처·실제 장소 일치·공개 사용 권리는 별도 확인 대상.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-13T22:13:53.131Z",
+  "updatedAt": "2026-10-13T22:43:46.454Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -4211,25 +4211,25 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 연결 · 권리 확인 전",
       "primaryImageId": null,
       "imageCandidates": [
         {
           "id": "ref-incheon-openport-brick-street",
-          "title": "인천 개항 누리길의 근대건축전시관 주변 거리",
-          "imageUrl": "https://itour.incheon.go.kr/common/viewImg.do?imgId=DBI21122809500170331",
-          "sourcePageUrl": "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD21122809475709381",
-          "sourceName": "인천투어 공식 관광정보",
-          "creator": "미확인",
+          "title": "인천 개항장 거리의 근대건축·벽돌 골목",
+          "imageUrl": "https://itour.incheon.go.kr/common/viewImg.do?imgId=API21112609215027698",
+          "sourcePageUrl": "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=APD21112609214993209",
+          "sourceName": "인천투어 · 한국관광공사 관광지 자료",
+          "creator": "한국관광공사 관광지 이미지",
           "rights": "unknown",
           "rightsLabel": "공개 재사용 권리 미확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "근대건축·벽돌·원근",
-          "notes": "기존 Kakao CDN 이미지 주소의 서명 만료를 확인해 인천투어 공식 관광정보의 개항 누리길 사진으로 교체. 공개·상업 재사용 권한은 별도 확인 대상이며 정식 대표사진으로 승인하지 않음.",
+          "notes": "인천투어 공식 '개항장 거리' 페이지의 이미지(이미지 ID API21112609215027698)로 교체했습니다. 실제 개항장 거리의 벽돌 건축·골목 참고사진입니다. 사진 이용 및 상업적 재사용 권리는 확인되지 않아 정식 대표사진으로 승인하지 않았습니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z",
-          "sourceThumbnail": "https://itour.incheon.go.kr/common/viewImg.do?imgId=DBI21122809500170331",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fitour.incheon.go.kr%2Fcommon%2FviewImg.do%3FimgId%3DAPI21112609215027698&w=900&h=650&fit=inside&output=webp",
           "license": "이용조건 확인 필요",
           "licenseEvidenceUrl": ""
         }
@@ -4254,7 +4254,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T22:43:46.454Z",
       "photoPotentialScore": 77,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -4273,7 +4273,7 @@
       },
       "mapSearchQuery": "인천광역시 중구 개항장 문화지구 인천개항박물관",
       "referenceImageId": "ref-incheon-openport-brick-street",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "공식 관광정보 참고사진 · 사용 권리 검토 전",
       "shootingDetails": {
         "parking": "이전 조사 항목: 주차·하차 위치와 좁은 도로에서 장비 이동·보행 동선을 확인",
         "loadIn": "좁은 거리·일방통행 구간이 있을 수 있음. 장비 하차점과 케이스 이동 경로를 현장 확인",

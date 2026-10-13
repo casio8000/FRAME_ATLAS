@@ -184,6 +184,7 @@ function render(){
    el.addEventListener("keydown",event=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();choose();}});
   });
  renderDetail();
+ updateFloatingControls();
 }
 function showAppView(view,scroll=true){
  const workspaceViews=["workspace","detail","favorites"];
@@ -194,11 +195,34 @@ function showAppView(view,scroll=true){
  if(view==="home")renderLanding();if(view==="welcome")renderWelcomeView();if(view==="map")renderMapScreen();if(view==="photos")renderPhotosScreen();if(view==="analysis")renderAnalysisScreen();if(view==="more")renderMoreScreen();
  document.querySelectorAll("[data-nav-view]").forEach(button=>{const target=button.dataset.navView,active=(view==="detail"&&(target==="home"||(target==="favorites"&&archiveMode==="favorites")))||(view==="favorites"&&target==="favorites")||((view==="workspace"||view==="photos"||view==="analysis")&&target==="more")||target===view;button.classList.toggle("active",active);if(active)button.setAttribute("aria-current","page");else button.removeAttribute("aria-current");});
  if(scroll)window.scrollTo({top:0,behavior:"auto"});
+ updateFloatingControls();
 }
 function goToWorkspace(query="",region=""){archiveMode="all";selectedId=null;$("query").value=query;$("regionFilter").value=region||"";$("imageFilter").value="";showAppView("workspace");}
 const FAVORITES_KEY="frameAtlas2FavoritePlaces";
 let favorites=[];try{favorites=JSON.parse(localStorage.getItem(FAVORITES_KEY)||"[]");if(!Array.isArray(favorites))favorites=[];}catch(_){favorites=[];}
 let archiveMode="all";
+const scrollTopBtn=$("scrollTopBtn"),backToArchiveBtn=$("backToArchiveBtn");
+function updateFloatingControls(){
+ const view=document.body.dataset.appView||"welcome";
+ const y=Math.max(window.scrollY||0,document.documentElement.scrollTop||0);
+ if(scrollTopBtn)scrollTopBtn.hidden=view==="welcome"||y<Math.max(280,(window.innerHeight||700)*.4);
+ const placeDetailOpen=!!selectedId&&(view==="detail"||view==="workspace"||view==="favorites");
+ if(backToArchiveBtn)backToArchiveBtn.hidden=!placeDetailOpen;
+}
+let floatingUpdateFrame=0;
+function scheduleFloatingControlUpdate(){
+ if(floatingUpdateFrame)return;
+ floatingUpdateFrame=requestAnimationFrame(()=>{floatingUpdateFrame=0;updateFloatingControls();});
+}
+window.addEventListener("scroll",scheduleFloatingControlUpdate,{passive:true});
+window.addEventListener("resize",scheduleFloatingControlUpdate,{passive:true});
+if(scrollTopBtn)scrollTopBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}));
+if(backToArchiveBtn)backToArchiveBtn.addEventListener("click",()=>{
+ archiveMode="all";selectedId=null;
+ $("query").value="";$("regionFilter").value="";$("imageFilter").value="";
+ showAppView("workspace");
+});
+
 function isFavorite(id){return favorites.includes(id);}
 function toggleFavorite(id){if(isFavorite(id))favorites=favorites.filter(x=>x!==id);else favorites.push(id);try{localStorage.setItem(FAVORITES_KEY,JSON.stringify(favorites));}catch(_){}render();renderLanding();renderMoreScreen();renderPhotosScreen();}
 function renderLanding(){
