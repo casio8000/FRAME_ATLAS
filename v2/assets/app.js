@@ -73,9 +73,19 @@ function render(){
  $("placeList").innerHTML=places.length?places.map(p=>{
   const im=approvedImage(p);
   const state=im?'<span class="chip">대표사진 확정</span>':imageCount(p)?'<span class="chip need">사진 후보 '+imageCount(p)+'개</span>':'<span class="chip need">사진 미등록</span>';
-  return '<article class="place '+(p.id===selectedId?'active':'')+'" data-select="'+esc(p.id)+'"><div class="thumb">'+(im?'<img data-place-preview="'+esc(p.id)+'" loading="lazy" alt="" src="'+esc(im.imageUrl||"")+'" referrerpolicy="no-referrer">':'<span>NO PHOTO</span>')+'</div><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+'</p><div class="chips"><span class="chip">'+esc((p.spaceTypes||[]).join(" · "))+'</span><span class="chip '+(p.scoutPriority===1?'':'need')+'">조사 '+(p.scoutPriority===1?'A':p.scoutPriority===2?'B':'C')+'</span><span class="chip">사진잠재력 '+esc(p.photoPotentialScore||"—")+'/100</span>'+state+'</div></div></article>';
+  return '<article class="place '+(p.id===selectedId?'active':'')+'" data-select="'+esc(p.id)+'" tabindex="0" role="button" aria-pressed="'+(p.id===selectedId?'true':'false')+'"><div class="thumb">'+(im?'<img data-place-preview="'+esc(p.id)+'" loading="lazy" alt="" src="'+esc(im.imageUrl||"")+'" referrerpolicy="no-referrer">':'<span>SCOUT<br>NO PHOTO</span>')+'</div><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+'</p><div class="chips"><span class="chip">'+esc((p.spaceTypes||[]).join(" · "))+'</span><span class="chip '+(p.scoutPriority===1?'':'need')+'">조사 '+(p.scoutPriority===1?'A':p.scoutPriority===2?'B':'C')+'</span><span class="chip">사진잠재력 '+esc(p.photoPotentialScore||"—")+'/100</span>'+state+'</div></div><span class="place-chevron" aria-hidden="true">↗</span></article>';
  }).join(""):'<div class="empty">검색 조건에 맞는 장소가 없습니다.</div>';
- $("placeList").querySelectorAll("[data-select]").forEach(el=>el.addEventListener("click",()=>{selectedId=el.dataset.select;render();}));
+ $("placeList").querySelectorAll("[data-select]").forEach(el=>{
+   const choose=()=>{
+    selectedId=el.dataset.select;render();
+    if(window.matchMedia("(max-width: 1050px)").matches){
+     const detailPanel=document.querySelector(".workspace .panel:nth-child(2)");
+     if(detailPanel)detailPanel.scrollIntoView({behavior:"smooth",block:"start"});
+    }
+   };
+   el.addEventListener("click",choose);
+   el.addEventListener("keydown",event=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();choose();}});
+  });
  renderDetail();
 }
 function photoQuery(p,mode){
@@ -108,6 +118,25 @@ function sourceLinks(p,mode){
  ];
  return '<div class="sourcegrid">'+links.map(x=>'<a class="source" target="_blank" rel="noopener noreferrer" href="'+esc(x[1])+'">'+esc(x[0])+'<small>'+esc(x[2])+'</small></a>').join("")+'</div>';
 }
+function locationActions(p){
+ const address=String(p.address||"").trim();
+ const query=address||[p.name,p.region,"대한민국"].filter(Boolean).join(" ");
+ const q=encodeURIComponent(query);
+ const googleSearch="https://www.google.com/maps/search/?api=1&query="+q;
+ const googleRoute="https://www.google.com/maps/dir/?api=1&destination="+q;
+ const naver="https://map.naver.com/p/search/"+q;
+ const kakao="https://map.kakao.com/?q="+q;
+ const apple="https://maps.apple.com/?daddr="+q+"&q="+q;
+ const note=address?"등록된 주소를 지도 검색에 사용합니다.":"주소·좌표 미확인 후보입니다. 장소명과 지역으로 지도를 열며, 정확한 방문 전 공식 주소를 확인하세요.";
+ return '<div class="location-actions" aria-label="지도 보기와 길찾기">'+
+  '<a class="btn primary" href="'+esc(googleSearch)+'" target="_blank" rel="noopener noreferrer">⌖ 지도 보기</a>'+
+  '<a class="btn orange" href="'+esc(googleRoute)+'" target="_blank" rel="noopener noreferrer">➜ 길찾기</a>'+
+  '<details class="map-more"><summary class="btn">다른 지도 앱⌄</summary><div class="map-menu">'+
+  '<a href="'+esc(naver)+'" target="_blank" rel="noopener noreferrer">네이버 지도 ↗</a>'+
+  '<a href="'+esc(kakao)+'" target="_blank" rel="noopener noreferrer">카카오맵 ↗</a>'+
+  '<a href="'+esc(apple)+'" target="_blank" rel="noopener noreferrer">Apple 지도 ↗</a>'+
+  '</div></details><p class="map-note">'+esc(note)+'</p></div>';
+}
 function renderDetail(){
  const p=getPlace(selectedId);
  if(!p){$("detail").innerHTML='<div class="empty">장소를 선택하세요.</div>';$("selectedMeta").textContent="";return;}
@@ -120,7 +149,7 @@ function renderDetail(){
  scoreBar("시각적 고유성",bd.distinctiveness,30)+scoreBar("구도 다양성",bd.compositionVariety,20)+scoreBar("빛·재료 질감",bd.lightAndTexture,20)+scoreBar("에디토리얼 활용도",bd.editorialVersatility,20)+scoreBar("실내외·날씨 유연성",bd.indoorOutdoorFlexibility,10)+
  '</div><div class="score-legend"><span>A 85–100 · 최우선</span><span>B 74–84 · 보완 조사</span><span>C 0–73 · 조건부</span></div><div class="score-foot">'+esc(p.scoreStatus||"탁상 평가이며 현장 확인 전입니다.")+' 점수는 시각적 잠재력만 나타내며 출입·운영·촬영 허가 가능성은 별도 확인합니다.</div></div>';
  $("detail").innerHTML=
- '<div class="detailtitle"><div><h2>'+esc(p.name)+'</h2><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+' · ID '+esc(p.id)+'</p></div><div class="toolbar"><button class="btn small" id="editPlaceBtn">정보 수정</button><button class="btn small" id="deletePlaceBtn">장소 삭제</button></div></div>'+profileCard+
+ '<div class="detailtitle"><div><h2>'+esc(p.name)+'</h2><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+' · ID '+esc(p.id)+'</p></div><div class="toolbar"><button class="btn small" id="editPlaceBtn">정보 수정</button><button class="btn small" id="deletePlaceBtn">장소 삭제</button></div></div>'+locationActions(p)+profileCard+
  (prim?'<div class="section"><img data-primary-preview="'+esc(prim.id)+'" src="'+esc(prim.imageUrl||"")+'" alt="'+esc(p.name)+' 대표 사진" style="width:100%;max-height:280px;object-fit:contain;background:#eee;border-radius:9px"><div class="tiny">출처: <a target="_blank" rel="noopener" href="'+esc(prim.sourcePageUrl)+'">'+esc(prim.sourceName||"사진 출처")+'</a> · '+esc(prim.rightsLabel||prim.rights)+'</div></div>':'<div class="statusbar warn">정식 대표 사진이 아직 없습니다. 검색 결과를 후보로 모은 뒤 장소 일치 및 사용 권한을 검토하세요.</div>')+
  '<div class="section"><h3>여러 검색원에서 사진 찾기</h3><label class="tiny">사진가 관점의 검색 방향<select id="photoSearchMode" class="field"><option value="place">장소·현장 전경</option><option value="fashion">패션·인물 에디토리얼</option><option value="architecture">건축·기하학·질감</option><option value="interior">실내·자연광</option><option value="outdoor">야외·인물 배경</option><option value="details">디테일·재료·그림자</option></select></label><div id="sourceLinksHost">'+sourceLinks(p,"place")+'</div><p class="searchnote">검색 방향을 바꾸면 같은 장소를 다른 촬영 콘셉트로 검색합니다. Google·Bing·네이버·다음·Flickr는 검색 페이지를 열며, 후보를 등록할 때는 원본 사진 페이지·장소 일치·사용 권리를 확인하세요.</p></div>'+
  '<div class="section"><h3>열린 라이선스 이미지 자동 검색</h3><div class="row"><button class="btn primary" id="searchOpenverseBtn">Openverse 검색</button><button class="btn" id="searchCommonsBtn">Wikimedia Commons 검색</button><button class="btn" id="clearSearchBtn">검색 결과 지우기</button></div><div class="searchnote">Openverse와 Commons에서 제목·썸네일·출처·라이선스 정보를 불러옵니다. 결과에 다른 장소가 섞일 수 있으므로 실제 사진을 확인한 뒤 후보로 저장하세요.</div><div id="autoSearchStatus" class="statusbar hidden"></div><div id="autoResults" class="results"></div></div>'+
@@ -504,5 +533,27 @@ $("regionFilter").addEventListener("change",render);
 $("imageFilter").addEventListener("change",render);
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")refreshSharedCatalogIfClean();});
 window.addEventListener("pageshow",refreshSharedCatalogIfClean);
+
+let deferredInstallPrompt=null;
+const installButton=$("installAppBtn"),installDialog=$("installDialog");
+function isStandaloneMode(){return (window.matchMedia&&window.matchMedia("(display-mode: standalone)").matches)||window.navigator.standalone===true;}
+if(isStandaloneMode()&&installButton)installButton.hidden=true;
+window.addEventListener("beforeinstallprompt",event=>{
+ event.preventDefault();deferredInstallPrompt=event;
+ if(installButton){installButton.textContent="앱 설치";installButton.classList.add("install-ready");}
+});
+window.addEventListener("appinstalled",()=>{if(installButton){installButton.textContent="설치 완료";installButton.disabled=true;}deferredInstallPrompt=null;});
+if(installButton)installButton.addEventListener("click",async()=>{
+ if(deferredInstallPrompt){
+  deferredInstallPrompt.prompt();
+  try{const choice=await deferredInstallPrompt.userChoice;if(choice&&choice.outcome==="accepted"){installButton.textContent="설치 완료";installButton.disabled=true;}}catch(_){}
+  deferredInstallPrompt=null;
+ }else if(installDialog&&typeof installDialog.showModal==="function"){installDialog.showModal();}
+});
+const closeInstallDialogBtn=$("closeInstallDialogBtn");
+if(closeInstallDialogBtn)closeInstallDialogBtn.addEventListener("click",()=>installDialog.close());
+if("serviceWorker" in navigator && /^https?:$/.test(window.location.protocol)){
+ window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{scope:"./"}).catch(error=>console.warn("FRAME ATLAS 오프라인 셸 등록 실패",error)));
+}
 loadBase();
 })();

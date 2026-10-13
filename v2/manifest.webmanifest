@@ -1,0 +1,27 @@
+{
+  "name": "FRAME ATLAS 2.0 · Photo Location Scout",
+  "short_name": "FRAME ATLAS",
+  "description": "서울·수도권 촬영 장소 탐색, 이미지 검토와 지도 길찾기",
+  "id": "./index.html",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#efeee6",
+  "theme_color": "#192a21",
+  "lang": "ko-KR",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/atlas-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -100,3 +100,15 @@ CC BY-NC 등 비상업 조건, CC BY-ND 등 파생 저작물 제한이 있는 �
 
 
 - `LOCATION_SELECTION_STANDARD.md`: 사진가 관점의 100점 장소 선정 기준과 A/B/C 우선순위
+
+
+## 2026-10-13 — UX, navigation and home-screen update
+- Kept the existing main page separate from `/v2/`.
+- Added an editorial visual system using forest green, warm limestone and restrained vermilion accents.
+- Added Google Maps search/directions, Naver Map, KakaoMap and Apple Maps links to place details.
+- If a verified address is missing, map links use the place name + region and tell the user to verify the exact address.
+- Added a web app manifest, app mark, Apple touch icon, and a versioned service worker for offline app-shell/catalog fallback.
+- Added native installation prompt where supported and iPhone/Android home-screen instructions.
+- Added keyboard activation and mobile scrolling from selected place to its detail.
+- Offline caching does not sync device-local drafts/photos between devices. Only deliberately published catalog data is shared.
+- Catalog currently has 34 locations and 36 image candidates; representative photos are not automatically approved.
