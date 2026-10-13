@@ -164,3 +164,5 @@ CC BY-NC 등 비상업 조건, CC BY-ND 등 파생 저작물 제한이 있는 �
 
 - Follow-up safety: uploaded photo files are now deleted after the updated catalog commits successfully, avoiding a broken catalog if the metadata update fails.
 - Object URLs are revoked when a local file is replaced/deleted so previews never keep showing an old image.
+
+- Corrected local-file preview hydration so IndexedDB photos can appear in the selected place detail, the place list, and the home featured cards before they are published.

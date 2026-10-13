@@ -367,17 +367,25 @@ async function deletePendingPhoto(key){
  return new Promise((resolve,reject)=>{const tx=db.transaction("photos","readwrite");tx.objectStore("photos").delete(key);tx.oncomplete=()=>{db.close();resolve(true);};tx.onerror=()=>{db.close();reject(tx.error||new Error("사진 파일 삭제 실패"));};});
 }
 async function hydratePendingPreviews(p){
+ const isCurrent=p.id===selectedId;
+ const candidateList=isCurrent?$("candidateList"):null;
+ const detail=isCurrent?$("detail"):null;
+ const placeList=$("placeList"),homeView=$("homeView");
  for(const c of (p.imageCandidates||[])){
   if(!c.pendingAsset)continue;
   try{
    const item=await getPendingPhoto(pendingKey(p.id,c.id));if(!item||!item.blob)continue;
    let u=objectUrls.get(c.id);if(!u){u=URL.createObjectURL(item.blob);objectUrls.set(c.id,u);}
-   const img=$("#candidateList").querySelector('[data-local-preview="'+CSS.escape(c.id)+'"]');if(img){img.src=u;img.style.objectFit="contain";}
-   const primary=$("#detail").querySelector('[data-primary-preview="'+CSS.escape(c.id)+'"]');if(primary)primary.src=u;
-   const reference=$("#detail").querySelector('[data-reference-preview="'+CSS.escape(c.id)+'"]');if(reference)reference.src=u;
-   const listThumb=$("#placeList").querySelector('[data-place-preview="'+CSS.escape(p.id)+'"]');if(listThumb&&(p.primaryImageId===c.id||p.referenceImageId===c.id))listThumb.src=u;
-   const homeThumb=$("#homeView").querySelector('[data-home-preview="'+CSS.escape(p.id)+'"]');if(homeThumb&&(p.primaryImageId===c.id||p.referenceImageId===c.id))homeThumb.src=u;
-   const hero=$("#landingHeroImage");if(hero&&(p.id==="seo-ddp"||p.id==="seo-oil-tank")&&(p.primaryImageId===c.id||p.referenceImageId===c.id))hero.src=u;
+   const img=candidateList?candidateList.querySelector('[data-local-preview="'+CSS.escape(c.id)+'"]'):null;
+   if(img){img.src=u;img.style.objectFit="contain";}
+   const primary=detail?detail.querySelector('[data-primary-preview="'+CSS.escape(c.id)+'"]'):null;if(primary)primary.src=u;
+   const reference=detail?detail.querySelector('[data-reference-preview="'+CSS.escape(c.id)+'"]'):null;if(reference)reference.src=u;
+   const listThumb=placeList?placeList.querySelector('[data-place-preview="'+CSS.escape(p.id)+'"]'):null;
+   if(listThumb&&(p.primaryImageId===c.id||p.referenceImageId===c.id))listThumb.src=u;
+   const homeThumb=homeView?homeView.querySelector('[data-home-preview="'+CSS.escape(p.id)+'"]'):null;
+   if(homeThumb&&(p.primaryImageId===c.id||p.referenceImageId===c.id))homeThumb.src=u;
+   const hero=$("landingHeroImage");
+   if(hero&&(p.id==="seo-ddp"||p.id==="seo-oil-tank")&&(p.primaryImageId===c.id||p.referenceImageId===c.id))hero.src=u;
   }catch(_){}
  }
 }
