@@ -29,9 +29,11 @@ function bindImageFallbacks(root){
   if(img.dataset.fallbackBound==="1")return;
   img.dataset.fallbackBound="1";
   img.dataset.originalImageUrl=img.getAttribute("src")||img.currentSrc||img.src||"";
+  const initialFrame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");
+  if(initialFrame){if(img.complete&&img.naturalWidth>0)initialFrame.classList.remove("image-loading");else initialFrame.classList.add("image-loading");}
   img.addEventListener("load",()=>{
    const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");
-   if(frame)frame.classList.remove("image-missing","proxy-loading");
+   if(frame)frame.classList.remove("image-loading","image-missing","proxy-loading");
    img.removeAttribute("aria-hidden");
   });
   img.addEventListener("error",()=>{
@@ -69,11 +71,13 @@ function bindImageFallbacks(root){
      return;
     }
    }
+   if(frame)frame.classList.remove("image-loading","proxy-loading");
    if(frame)frame.classList.add("image-missing");
    img.setAttribute("aria-hidden","true");
   });
   // Cached images can fail before the error listener has finished binding.
   if(img.complete&&img.naturalWidth===0)queueMicrotask(()=>img.dispatchEvent(new Event("error")));
+  else if(img.complete&&img.naturalWidth>0){const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");if(frame)frame.classList.remove("image-loading","image-missing","proxy-loading");}
  });
 }
 function stamp(){return new Date().toISOString();}

@@ -1,4 +1,4 @@
-const CACHE_NAME="frame-atlas-v2-shell-20261014-23";
+const CACHE_NAME="frame-atlas-v2-shell-20261014-24";
 const CORE_FILES=["./","./index.html","./assets/app.css","./assets/app.js","./data/places.json","./manifest.webmanifest","./icons/atlas-mark.svg","./icons/icon-192.png","./icons/icon-180.png"];
 const APP_BASE=new URL("./",self.location.href);
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(CORE_FILES)).then(()=>self.skipWaiting())));

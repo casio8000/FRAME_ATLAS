@@ -758,3 +758,23 @@ button,input,select,textarea{font-family:inherit}
 .app-nav button .nav-icon{font-size:18px}
 .app-nav button span:last-child{font-size:12px}
 @media(max-width:620px){.app-nav{grid-template-columns:repeat(4,minmax(0,1fr));gap:2px}.app-nav button span:last-child{font-size:11px}.app-nav button{padding-inline:4px}}
+
+
+/* Clear and informative image loading states for all device sizes */
+.thumb.image-loading:before{
+ content:"사진 불러오는 중";position:absolute;z-index:8;inset:0;display:flex;align-items:center;justify-content:center;
+ padding:8px;text-align:center;background:rgba(248,250,252,.91);color:#657280;font-size:12px;font-weight:700;
+}
+.reference-photo-wrap.image-loading:after,.candidate-image-frame.image-loading:after{
+ content:"사진 불러오는 중";position:absolute;z-index:8;inset:0;display:flex;align-items:center;justify-content:center;
+ padding:12px;text-align:center;background:rgba(248,250,252,.94);color:#657280;font-size:13px;font-weight:700;
+}
+.scout-feature-image.image-loading:before{
+ content:"사진 불러오는 중";position:absolute;z-index:4;inset:0;display:flex;align-items:center;justify-content:center;
+ padding:12px;text-align:center;background:rgba(248,250,252,.86);color:#657280;font-size:13px;font-weight:700;
+}
+.landing-hero.image-loading:before{
+ content:"사진 불러오는 중";position:absolute;z-index:4;inset:0;display:flex;align-items:center;justify-content:center;
+ padding:12px;text-align:center;background:rgba(248,250,252,.22);color:#fff;font-size:13px;font-weight:700;
+}
+.thumb.image-loading .thumb-flag,.scout-feature-image.image-loading .featured-photo-label{visibility:hidden}
