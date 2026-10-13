@@ -44,7 +44,7 @@ const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
 const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/gi)];
 assert.ok(scripts.length >= 1, "index.html must contain client code");
 for (const [, code] of scripts) new vm.Script(code, { filename: "v2/index-inline.js" });
-for (const provider of ["Openverse", "Wikimedia Commons", "Google 이미지", "Bing 이미지", "네이버 이미지", "다음 이미지", "Flickr", "공식·관광 출처", "패션·인물 에디토리얼", "건축·기하학·질감", "photoQuery", "publishCatalog"]) {
+for (const provider of ["Openverse", "Wikimedia Commons", "Google 이미지", "Bing 이미지", "네이버 이미지", "다음 이미지", "Flickr", "공유마당", "한국관광공사", "서울·지자체 공식사진", "공식·운영기관", "패션·인물 에디토리얼", "건축·기하학·질감", "photoQuery", "publishCatalog"]) {
   assert.ok(html.includes(provider), "missing photo search provider: " + provider);
 }
 console.log("FRAME ATLAS 2.0 validation passed: " + catalog.places.length + " starter places; " + ids.size + " unique IDs.");
