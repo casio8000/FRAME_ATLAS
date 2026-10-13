@@ -117,17 +117,30 @@ function render(){
  $("placeList").querySelectorAll("[data-select]").forEach(el=>el.addEventListener("click",()=>{selectedId=el.dataset.select;render();}));
  renderDetail();
 }
-function sourceLinks(p){
- const q=p.name+" "+p.region+" 한국 장소 사진";
+function photoQuery(p,mode){
+ const searchTerms=Array.isArray(p.searchTerms)?p.searchTerms:[];
+ const base=[p.name,p.region,"Korea"].filter(Boolean).join(" ");
+ const extras={
+  place:searchTerms[0]||p.name+" 현장 외관 사진",
+  fashion:"fashion editorial portrait photoshoot",
+  architecture:"architecture facade geometry texture photography",
+  interior:"interior architecture natural light photography",
+  outdoor:"outdoor location portrait photography",
+  details:"architectural details material texture shadow photography"
+ };
+ return (base+" "+(extras[mode]||extras.place)).trim();
+}
+function sourceLinks(p,mode){
+ const qt=encodeURIComponent(photoQuery(p,mode||"place"));
  const links=[
-  ["Google 이미지","https://www.google.com/search?tbm=isch&q="+encodeURIComponent(q),"폭넓은 이미지"],
-  ["Bing 이미지","https://www.bing.com/images/search?q="+encodeURIComponent(q),"다른 검색 색인"],
-  ["네이버 이미지","https://search.naver.com/search.naver?where=image&query="+encodeURIComponent(q),"국내 자료"],
-  ["다음 이미지","https://search.daum.net/search?w=img&q="+encodeURIComponent(q),"국내 자료"],
-  ["Flickr","https://www.flickr.com/search/?text="+encodeURIComponent(p.name+" Korea"),"작가·라이선스 확인"],
-  ["Openverse","https://openverse.org/search/image?q="+encodeURIComponent(p.name),"열린 라이선스"],
-  ["Wikimedia Commons","https://commons.wikimedia.org/w/index.php?search="+encodeURIComponent(p.name)+"&title=Special:MediaSearch&type=image","열린 라이선스 후보"],
-  ["공식·관광 출처","https://www.google.com/search?q="+encodeURIComponent('"'+p.name+'" 공식 사진 OR 관광'),"공식 홈페이지·관광기관"]
+  ["Google 이미지","https://www.google.com/search?tbm=isch&q="+qt,"웹 전반 · 사진 후보"],
+  ["Bing 이미지","https://www.bing.com/images/search?q="+qt,"다른 검색 색인"],
+  ["네이버 이미지","https://search.naver.com/search.naver?where=image&query="+qt,"국내 사진·블로그"],
+  ["다음 이미지","https://search.daum.net/search?w=img&q="+qt,"국내 검색 결과"],
+  ["Flickr","https://www.flickr.com/search/?text="+qt,"작가·라이선스 확인"],
+  ["Openverse","https://openverse.org/search/image?q="+qt,"열린 라이선스 후보"],
+  ["Wikimedia Commons","https://commons.wikimedia.org/w/index.php?search="+qt+"&title=Special:MediaSearch&type=image","열린 라이선스 후보"],
+  ["공식·관광 출처","https://www.google.com/search?q="+encodeURIComponent('"'+p.name+'" 공식 홈페이지 사진 OR 촬영'),"운영기관·공공 출처"]
  ];
  return '<div class="sourcegrid">'+links.map(x=>'<a class="source" target="_blank" rel="noopener noreferrer" href="'+esc(x[1])+'">'+esc(x[0])+'<small>'+esc(x[2])+'</small></a>').join("")+'</div>';
 }
@@ -252,7 +265,7 @@ function addNewPlace(){
 async function searchOpenverse(p){
  const status=$("autoSearchStatus"),host=$("autoResults");status.classList.remove("hidden");status.textContent="Openverse의 열린 라이선스 이미지 검색 중…";host.innerHTML="";
  try{
-  const url="https://api.openverse.org/v1/images/?q="+encodeURIComponent(p.name+" Korea")+"&license_type=commercial&page_size=20";
+  const mode=$("photoSearchMode")?.value||"place";const query=photoQuery(p,mode);const url="https://api.openverse.org/v1/images/?q="+encodeURIComponent(query)+"&license_type=commercial&page_size=30";
   const r=await fetch(url);if(!r.ok)throw new Error("HTTP "+r.status);
   const data=await r.json();const items=data.results||[];searchCache=items.map(x=>({provider:"Openverse",x}));
   if(!items.length){status.textContent="검색 결과가 없습니다. Google·Bing·네이버·다음·공식 출처 검색도 확인하세요.";return;}
@@ -267,7 +280,7 @@ async function searchOpenverse(p){
 async function searchCommons(p){
  const status=$("autoSearchStatus"),host=$("autoResults");status.classList.remove("hidden");status.textContent="Wikimedia Commons 검색 중…";host.innerHTML="";
  try{
-  const url="https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch="+encodeURIComponent(p.name+" Korea")+"&gsrnamespace=6&gsrlimit=20&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=480&format=json&origin=*";
+  const mode=$("photoSearchMode")?.value||"place";const query=photoQuery(p,mode);const url="https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch="+encodeURIComponent(query)+"&gsrnamespace=6&gsrlimit=30&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=480&format=json&origin=*";
   const r=await fetch(url);if(!r.ok)throw new Error("HTTP "+r.status);
   const data=await r.json();const pages=Object.values((data.query&&data.query.pages)||{});
   const items=pages.map(x=>{const info=(x.imageinfo||[])[0]||{},m=info.extmetadata||{};const val=k=>(m[k]&&m[k].value)||"";return{title:x.title,thumb:info.thumburl||info.url,imageUrl:info.url||"",pageUrl:info.descriptionurl||("https://commons.wikimedia.org/wiki/"+encodeURIComponent(x.title.replace(/^File:/,"File:"))),creator:stripHtml(val("Artist")||val("Credit")),license:stripHtml(val("LicenseShortName"))||"unknown",licenseUrl:val("LicenseUrl"),provider:"Wikimedia Commons",attribution:stripHtml(val("Attribution"))};});
