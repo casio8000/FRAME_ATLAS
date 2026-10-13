@@ -8,14 +8,39 @@
   if (root) {
     root.FADeviceSync = api;
     root.faDeviceSyncEnable = function () {
-      api.enable().catch(function (e) {
-        const last = root.localStorage && root.localStorage.getItem("faDeviceSyncLastStatus") || "";
-        if (!last.startsWith("안전 동기화 실패:")) factoryReport(e);
-      });
+      try {
+        Promise.resolve(api.enable()).catch(function (e) {
+          let last = "";
+          try { last = root.localStorage && root.localStorage.getItem("faDeviceSyncLastStatus") || ""; } catch (_) {}
+          if (!/^안전 동기화 (?:실패|오류)/.test(last)) factoryReport(e);
+        });
+      } catch (e) { factoryReport(e); }
     };
     root.faDeviceSyncNow = function () {
-      if (!api.isEnabled()) { root.alert("먼저 [안전 동기화 시작]을 눌러 이 기기의 백업을 만들고 연결을 승인하세요."); return; }
-      api.syncNow(true).catch(function () {});
+      try {
+        if (!api.isEnabled()) {
+          const msg = "먼저 [안전 동기화 시작]을 눌러 이 기기의 백업을 만들고 연결을 승인하세요.";
+          const status = root.document && root.document.getElementById("fa_device_sync_status");
+          if (status) status.textContent = msg;
+          if (root.alert) root.alert(msg);
+          return;
+        }
+        const status = root.document && root.document.getElementById("fa_device_sync_status");
+        const pending = "동기화 요청 접수 · GitHub 연결 상태를 확인하고 있습니다…";
+        if (status) status.textContent = pending;
+        try { root.localStorage.setItem("faDeviceSyncLastStatus", pending); } catch (_) {}
+        Promise.resolve(api.syncNow(true)).then(function (result) {
+          if (result && result.skipped && result.queued) {
+            const msg = "다른 동기화 작업이 진행 중입니다. 작업이 끝나면 변경사항을 다시 반영합니다.";
+            if (status) status.textContent = msg;
+            try { root.localStorage.setItem("faDeviceSyncLastStatus", msg); } catch (_) {}
+          }
+        }).catch(function (e) {
+          let last = "";
+          try { last = root.localStorage && root.localStorage.getItem("faDeviceSyncLastStatus") || ""; } catch (_) {}
+          if (!/^안전 동기화 (?:실패|오류)/.test(last)) factoryReport(e);
+        });
+      } catch (e) { factoryReport(e); }
     };
     root.faDeviceSyncDisable = function () { api.disable(); };
     root.faDeviceSyncShowConflicts = function () {
@@ -46,7 +71,7 @@
   }
   if (root && root.document) api.install();
   function factoryReport(error) {
-    const message = "안전 동기화 설정 실패: " + (error && error.message ? error.message : String(error));
+    const message = "안전 동기화 오류: " + (error && error.message ? error.message : String(error));
     try { root.localStorage.setItem("faDeviceSyncLastStatus", message); } catch (_) {}
     const el = root.document && root.document.getElementById("fa_device_sync_status");
     if (el) el.textContent = message;
