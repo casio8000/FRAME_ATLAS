@@ -14,7 +14,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="icons/atlas-mark.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
-<link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"><link rel="stylesheet" href="assets/app.css?v=20261013-19">
+<link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"><link rel="stylesheet" href="assets/app.css?v=20261013-20">
 
 </head>
 <body data-app-view="welcome">
@@ -134,6 +134,7 @@
  </section>
  <section id="photosView" class="app-screen" hidden>
   <div class="screen-heading"><div><p class="eyebrow">PHOTO CANDIDATES / REVIEW</p><h1>사진 후보</h1><p>장소별 사진을 비교하고, 실제 장소와 맞는 사진을 대표사진으로 지정하세요.</p></div><span class="screen-count" id="photoCandidateCount">0장</span></div>
+<div class="photo-category-tabs" role="group" aria-label="사진 종류"><button type="button" data-photo-category="all" class="active" aria-pressed="true">전체</button><button type="button" data-photo-category="portrait" aria-pressed="false">인물</button><button type="button" data-photo-category="landscape" aria-pressed="false">풍경</button><button type="button" data-photo-category="architecture" aria-pressed="false">건축</button></div>
   <div class="screen-filter-row"><input id="photosSearchInput" class="field" type="search" placeholder="장소명·지역·사진 설명 검색"><select id="photosMatchFilter" class="field" aria-label="사진 일치 필터"><option value="">모든 후보</option><option value="confirmed">장소 일치 확인됨</option><option value="unverified">일치 여부 확인 필요</option><option value="mismatch">다른 장소 사진</option></select></div>
   <div id="photosGrid" class="photos-grid"><div class="landing-empty">사진 후보를 불러오는 중입니다…</div></div>
  </section>
@@ -142,13 +143,13 @@
   <div class="screen-filter-row"><input id="analysisSearchInput" class="field" type="search" placeholder="장소명·지역 검색"><select id="analysisRegionFilter" class="field" aria-label="분석 지역 필터"><option value="">모든 지역</option><option>서울</option><option>경기</option><option>인천</option></select></div><div id="analysisGrid" class="analysis-grid"></div>
  </section>
  <section id="moreView" class="app-screen" hidden>
-  <div class="more-profile"><div class="more-avatar">FA</div><div><p class="eyebrow">YOUR FIELD ATLAS</p><h1>사진가는 여행자</h1><p>개인 촬영 장소 아카이브</p></div><span class="more-premium">PERSONAL</span></div>
+  <div class="more-profile"><div class="more-avatar">FA</div><div><p class="eyebrow">YOUR FIELD ATLAS</p><h1>FRAME ATLAS</h1><p>사진으로 만나는 특별한 공간</p></div><span class="more-premium">PERSONAL</span></div>
   <div class="screen-heading more-heading"><div><p class="eyebrow">LIBRARY / SETTINGS</p><h2>마이페이지</h2><p>저장한 장소, 사진 후보와 백업을 관리합니다.</p></div></div>
   <div class="more-menu-grid">
-   <button type="button" data-more-action="archive"><span class="more-icon">▤</span><span><b>내 아카이브</b><small>등록 장소 전체 보기</small></span><span class="more-arrow">›</span></button>
-   <button type="button" data-more-action="favorites"><span class="more-icon">♡</span><span><b>저장한 장소</b><small><span id="moreFavoriteCount">0</span>곳 즐겨찾기</small></span><span class="more-arrow">›</span></button>
+   <button type="button" data-more-action="archive"><span class="more-icon">▤</span><span><b>전체 촬영 장소</b><small>등록된 장소 탐색</small></span><span class="more-arrow">›</span></button>
+   <button type="button" data-more-action="favorites"><span class="more-icon">♡</span><span><b>내 저장 장소</b><small><span id="moreFavoriteCount">0</span>곳 즐겨찾기</small></span><span class="more-arrow">›</span></button>
    <button type="button" data-more-action="analysis"><span class="more-icon">◌</span><span><b>촬영 분석</b><small>사진적 잠재력 비교</small></span><span class="more-arrow">›</span></button>
-   <button type="button" data-more-action="photos"><span class="more-icon">▧</span><span><b>사진 후보</b><small>대표사진 선택·교체·삭제</small></span><span class="more-arrow">›</span></button>
+   <button type="button" data-more-action="photos"><span class="more-icon">▧</span><span><b>내 갤러리</b><small>사진 후보 선택·교체·삭제</small></span><span class="more-arrow">›</span></button>
    <button type="button" data-more-action="export"><span class="more-icon">⇩</span><span><b>백업 내보내기</b><small>현재 카탈로그 JSON 저장</small></span><span class="more-arrow">›</span></button>
    <button type="button" data-more-action="import"><span class="more-icon">⇧</span><span><b>백업 가져오기</b><small>JSON 백업 불러오기</small></span><span class="more-arrow">›</span></button>
    <button type="button" data-more-action="settings"><span class="more-icon">⚙</span><span><b>설정</b><small>설치 및 기본자료 다시 읽기</small></span><span class="more-arrow">›</span></button>
@@ -170,6 +171,6 @@
  <dialog id="publishDialog"><h2>카탈로그를 GitHub에 게시</h2><p>이 동작은 장소 목록과 사진 후보 정보를 개발 브랜치의 v2/data/places.json에 커밋합니다. 이미지 파일 자체를 업로드하는 기능은 다음 단계에서 연결합니다.</p><div class="statusbar warn">Fine-grained Personal Access Token을 사용하고, casio8000/FRAME_ATLAS 저장소 하나에만 Contents 읽기/쓰기 권한을 부여하세요. 토큰은 이 입력창에서만 사용하며 브라우저 저장소에 보관하지 않습니다. 신뢰하는 기기에서만 사용하세요.</div><label>GitHub 토큰<input type="password" id="publishToken" autocomplete="off" spellcheck="false" placeholder="github_pat_..." /></label><div id="publishStatus" class="statusbar hidden"></div><div class="toolbar"><button type="button" class="btn" id="cancelPublishBtn">취소</button><button type="button" class="btn primary" id="confirmPublishBtn">게시 시작</button></div></dialog>
  <footer class="footer">FRAME ATLAS 2.0 · Co-created by 지혜의 쉼터 with Claude &amp; Chat GPT · ⓒ 2026<br>2.0 PREVIEW · 장소 조사 · 이미지 검토 · 지도 연결 · 개인 기기 설치를 단계적으로 강화 중입니다.</footer>
 </div>
-<script defer src="assets/app.js?v=20261013-19"></script>
+<script defer src="assets/app.js?v=20261013-20"></script>
 </body>
 </html>
