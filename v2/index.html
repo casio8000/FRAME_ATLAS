@@ -132,16 +132,19 @@ function photoQuery(p,mode){
  return (base+" "+(extras[mode]||extras.place)).trim();
 }
 function sourceLinks(p,mode){
- const qt=encodeURIComponent(photoQuery(p,mode||"place"));
+ const q=photoQuery(p,mode||"place"),qt=encodeURIComponent(q);
  const links=[
-  ["Google 이미지","https://www.google.com/search?tbm=isch&q="+qt,"웹 전반 · 사진 후보"],
+  ["Google 이미지","https://www.google.com/search?tbm=isch&q="+qt,"웹 전반 · 다양한 후보"],
   ["Bing 이미지","https://www.bing.com/images/search?q="+qt,"다른 검색 색인"],
   ["네이버 이미지","https://search.naver.com/search.naver?where=image&query="+qt,"국내 사진·블로그"],
   ["다음 이미지","https://search.daum.net/search?w=img&q="+qt,"국내 검색 결과"],
   ["Flickr","https://www.flickr.com/search/?text="+qt,"작가·라이선스 확인"],
   ["Openverse","https://openverse.org/search/image?q="+qt,"열린 라이선스 후보"],
   ["Wikimedia Commons","https://commons.wikimedia.org/w/index.php?search="+qt+"&title=Special:MediaSearch&type=image","열린 라이선스 후보"],
-  ["공식·관광 출처","https://www.google.com/search?q="+encodeURIComponent('"'+p.name+'" 공식 홈페이지 사진 OR 촬영'),"운영기관·공공 출처"]
+  ["공유마당","https://www.google.com/search?q="+encodeURIComponent("site:gongu.copyright.or.kr "+q),"국내 저작권·공유 자료"],
+  ["한국관광공사","https://www.google.com/search?q="+encodeURIComponent("site:visitkorea.or.kr "+q),"국내 관광 공식 자료"],
+  ["서울·지자체 공식사진","https://www.google.com/search?q="+encodeURIComponent("site:seoul.go.kr OR site:gg.go.kr OR site:incheon.go.kr "+p.name+" 사진"),"공공기관 사진·장소 정보"],
+  ["공식·운영기관","https://www.google.com/search?q="+encodeURIComponent('"'+p.name+'" 공식 홈페이지 사진 OR 촬영'),"시설 운영기관 정보"]
  ];
  return '<div class="sourcegrid">'+links.map(x=>'<a class="source" target="_blank" rel="noopener noreferrer" href="'+esc(x[1])+'">'+esc(x[0])+'<small>'+esc(x[2])+'</small></a>').join("")+'</div>';
 }
