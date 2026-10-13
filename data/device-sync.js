@@ -589,6 +589,7 @@
           const rid = pair[0], entry = pair[1];
           if (!entry || !STORES.has(entry.store) && entry.store !== "ls") continue;
           if (entry.id && entry.id !== rid) continue;
+          stage = "다른 기기 데이터 병합 · " + peerId + " · " + String(entry.store || "기록") + "/" + String(entry.key || rid);
           const seenId = peerId + "|" + rid;
           const current = local.get(rid);
           const peerReportedConflict = peerReportsConflict(peer.data.conflicts, id, entry.store, entry.key);
