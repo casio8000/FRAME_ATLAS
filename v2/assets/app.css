@@ -749,3 +749,12 @@ button,input,select,textarea{font-family:inherit}
 .landing-search-control button{background:#111827!important;border-color:#111827!important;color:#fff!important}
 .landing-primary,.welcome-start{background:#111827!important;border-color:#111827!important}
 @media(max-width:620px){#homeView .landing-search-control button{background:#111827!important}}
+
+/* 2.0 six-screen navigation and structured field-notes sections */
+.scout-subsection{grid-column:1/-1;margin:12px 0 0;padding:8px 0 6px;border-bottom:1px solid #E5E7EB}
+.scout-subsection h4{margin:0;font-size:14px!important;color:#334155;letter-spacing:.2px}
+.app-nav{grid-template-columns:repeat(4,minmax(0,1fr))}
+.app-nav button{min-width:0}
+.app-nav button .nav-icon{font-size:18px}
+.app-nav button span:last-child{font-size:12px}
+@media(max-width:620px){.app-nav{grid-template-columns:repeat(4,minmax(0,1fr));gap:2px}.app-nav button span:last-child{font-size:11px}.app-nav button{padding-inline:4px}}
