@@ -188,7 +188,7 @@ else:
 # 새 기기별 동기화는 비공개 저장소, 백업 게이트 및 항목별 병합을 요구합니다.
 sync_js = SYNC_PATH.read_text(encoding="utf-8") if SYNC_PATH.is_file() else ""
 for label, token in {
-    "기기별 동기화 모듈 연결": 'src="data/device-sync.js"',
+    "기기별 동기화 모듈 연결": 'src="data/device-sync.js',
     "이전 V6 점검 모듈 연결": 'src="data/legacy-v6-audit.js"',
     "비공개 저장소 강제": 'if (repo.private !== true)',
     "기기별 독립 레코드 경로": 'const ROOT_PATH = "sync/v1/devices"',
