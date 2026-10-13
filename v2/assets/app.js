@@ -55,6 +55,20 @@ function bindImageFallbacks(root){
     img.src="https://images.weserv.nl/?url="+encodeURIComponent(original)+"&w="+width+"&h="+height+"&fit=inside&output=webp";
     return;
    }
+   // If the first URL and its proxy fail, try another non-rejected candidate for the same place.
+   if(!img.dataset.alternateCandidatesTried){
+    const placeId=img.dataset.homePreview||img.dataset.placePreview||img.closest("[data-home-place]")?.dataset.homePlace||img.closest("[data-select]")?.dataset.select||img.closest("[data-photos-detail]")?.dataset.photosDetail||img.closest("[data-map-place]")?.dataset.mapPlace||img.closest("[data-analysis-place]")?.dataset.analysisPlace||selectedId;
+    const place=getPlace(placeId);
+    const alternatives=(place?.imageCandidates||[]).filter(c=>c&&c.status!=="rejected"&&c.placeMatch!=="mismatch"&&(c.imageUrl||c.sourceThumbnail)&&![(img.dataset.originalImageUrl||""),thumbnail].includes(c.imageUrl||c.sourceThumbnail));
+    const index=Number(img.dataset.alternateCandidateIndex||0);
+    if(index<alternatives.length){
+     const alt=alternatives[index];img.dataset.alternateCandidateIndex=String(index+1);img.dataset.alternateCandidatesTried="1";
+     img.dataset.originalImageUrl=alt.imageUrl||alt.sourceThumbnail||"";img.dataset.thumbnailTried="1";img.dataset.proxyTried="";img.removeAttribute("aria-hidden");
+     if(frame)frame.classList.remove("image-missing","proxy-loading");
+     img.src=img.dataset.originalImageUrl;
+     return;
+    }
+   }
    if(frame)frame.classList.add("image-missing");
    img.setAttribute("aria-hidden","true");
   });
