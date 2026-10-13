@@ -2,7 +2,8 @@
 
 개발 브랜치: v2-development  
 작업 경로: v2/  
-현재 상태: 초기 프로토타입. 기존 v5.x 앱과 운영 경로를 변경하지 않고 별도 개발 중.
+미리보기 경로(통합 후): https://casio8000.github.io/FRAME_ATLAS/v2/index.html  
+기존 메인 앱 경로 `/FRAME_ATLAS/`는 그대로 두고, 2세대는 `/v2/` 경로에서 별도 운영한다.
 
 ## 설계 방향
 
