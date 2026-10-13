@@ -4,7 +4,7 @@
   "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
   "dataStatus": "편집 기획을 바탕으로 한 후보 목록. 장소별 현재 운영·출입·촬영 허가·사진은 공식 출처와 현장/이미지 검토 전",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-13T09:31:29.235Z",
+  "updatedAt": "2026-10-13T09:33:34.519Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -344,7 +344,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-sema-bunker-gallery-grid",
+          "title": "SeMA 벙커의 낮은 천장·그리드 바닥 전시공간",
+          "imageUrl": "https://iscp-nyc.org/wp-content/uploads/2023/08/ZoomBackCamera-scaled.jpeg",
+          "sourcePageUrl": "https://iscp-nyc.org/resident/suzy-park",
+          "sourceName": "International Studio & Curatorial Program · SeMA Bunker 전시 기록",
+          "creator": "미확인",
+          "rights": "unknown",
+          "rightsLabel": "공개 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·낮은 천장·그리드·전시",
+          "notes": "2019년 전시 공간 참고 후보. 장소의 과거 전시 이미지이며 현재 개방/운영·촬영 허용 상태가 확인됐다는 의미가 아님. 재사용 권리 미확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -365,7 +382,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T09:33:34.518Z",
       "photoPotentialScore": 87,
       "photoScoreBreakdown": {
         "distinctiveness": 28,
@@ -406,7 +423,9 @@
       "constraints": [
         "옥상·통제구역 출입 금지 여부",
         "상가 내부 촬영 동의",
-        "상업촬영 허가"
+        "상업촬영 허가",
+        "서울시가 2025년 세운지구 도심공원 1단계 사업과 2026년 상반기 착공 목표를 발표했으므로 현재 공사·접근구간 확인 필요",
+        "보행데크·옥상·상가 내부는 개방 여부와 촬영 조건을 각각 확인"
       ],
       "scoutPriority": 1,
       "searchTerms": [
@@ -418,15 +437,35 @@
       "summary": "오래된 상업·산업 건축, 난간과 반복되는 수평선으로 도시형 인물화보를 구성할 후보",
       "address": "",
       "coordinates": null,
-      "officialUrl": "",
-      "openingStatus": "미확인",
+      "officialUrl": "https://www.seoul.go.kr/news/news_report.do?nttNo=439602",
+      "openingStatus": "공사 및 접근구간 확인 필요",
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
-      "sourceRefs": [],
+      "imageCandidates": [
+        {
+          "id": "ref-sewoon-citywalk-seoulmediahub",
+          "title": "세운상가를 잇는 공중보행로와 도심 구조",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2024/06/tzwTwtxyEPetKbnmbKefJvFLOZDIJKRU.jpg",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2011520",
+          "sourceName": "서울시 미디어허브",
+          "creator": "홍혜수",
+          "rights": "unknown",
+          "rightsLabel": "이미지별 공개 재사용 조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "도시·공중보행로·수평선",
+          "notes": "세운상가 및 인접 보행로의 구조 참고 후보. 서울시 기사 이미지이나 이미지별 재사용 조건 확인 전까지 대표사진 승인 불가. 2025년 이후 일대 공원화/공사 계획이 있어 현재 접근구간을 반드시 재확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://www.seoul.go.kr/news/news_report.do?nttNo=439602",
+        "https://mediahub.seoul.go.kr/archives/2011520"
+      ],
       "verification": {
         "location": "미확인",
         "photoMatch": "미확인",
@@ -446,7 +485,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T09:33:34.518Z",
       "photoPotentialScore": 87,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -602,7 +641,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-seongsu-brick-industrial-front",
+          "title": "성수동 붉은 벽돌 산업건축과 목재 출입문",
+          "imageUrl": "https://img.seoul.co.kr/img/upload/2019/07/10/SSI_20190710174554_O2.jpg",
+          "sourcePageUrl": "https://www.seoul.co.kr/news/plan/seoulgrand/2019/07/11/20190711019003",
+          "sourceName": "서울신문 · 성수동 수제화·공장 골목 기사",
+          "creator": "미확인",
+          "rights": "unknown",
+          "rightsLabel": "공개 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "벽돌·목재·그림자·산업건축",
+          "notes": "산업건축의 재료감 참고 후보. 2019년 기사 이미지로 현재 건물 상태와 주소를 다시 확인할 필요가 있음. 공개 재사용 권리 미확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -623,7 +679,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T09:33:34.518Z",
       "photoPotentialScore": 85,
       "photoScoreBreakdown": {
         "distinctiveness": 24,
@@ -898,7 +954,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-nodeul-island-sunken-plaza-dusk",
+          "title": "노들섬의 선큰 광장·상부 데크·황혼 조명",
+          "imageUrl": "https://architizer-prod.imgix.net/media/mediadata/uploads/1594177727427Nodeul_Island_upperlevel_plaza02.jpg?auto=format%2Ccompress&cs=strip&q=60&w=1680",
+          "sourcePageUrl": "https://architizer.com/projects/nodeul-island-2/",
+          "sourceName": "Architizer · Nodeul Island",
+          "creator": "건축 사진 저작자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "공개 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "현대건축·선큰·황혼·조명",
+          "notes": "노들섬의 레벨 차이와 조명, 광장 구성 참고 후보. 건축 플랫폼 사진의 저작권 및 현장 접근 가능 구역을 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -919,7 +992,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T09:33:34.518Z",
       "photoPotentialScore": 83,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -1218,7 +1291,9 @@
       "constraints": [
         "상점·작업장 촬영 동의",
         "보행 동선",
-        "야간 소음과 조명"
+        "야간 소음과 조명",
+        "운영 상점·작업장을 방해하지 않는 촬영 동선 확인",
+        "재개발·공사·상가 운영 변화와 보행 안전을 촬영 전 확인"
       ],
       "scoutPriority": 1,
       "searchTerms": [
@@ -1237,8 +1312,27 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
-      "sourceRefs": [],
+      "imageCandidates": [
+        {
+          "id": "ref-euljiro-rooftop-city-texture",
+          "title": "을지로 골목의 오래된 지붕·간판·도심 밀도",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2024/06/FbAMFpgmQFhsaCHqzYfPyFQuzxsWrFTl.jpg",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2011520",
+          "sourceName": "서울시 미디어허브",
+          "creator": "홍혜수",
+          "rights": "unknown",
+          "rightsLabel": "이미지별 공개 재사용 조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "도시 텍스처·지붕·원근",
+          "notes": "세운상가 인근 을지로 일대 지붕과 상업 건물의 밀도를 보여주는 참고 후보. 서울시 기사 이미지이나 재사용 권리는 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://mediahub.seoul.go.kr/archives/2011520"
+      ],
       "verification": {
         "location": "미확인",
         "photoMatch": "미확인",
@@ -1258,7 +1352,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T09:33:34.518Z",
       "photoPotentialScore": 86,
       "photoScoreBreakdown": {
         "distinctiveness": 24,
@@ -2193,7 +2287,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-mmca-gwacheon-circular-ramp",
+          "title": "국립현대미술관 과천관의 원형 램프와 조각 전시",
+          "imageUrl": "https://www.jungle.co.kr/image/e83dea6e4aee95cb65c4a3e1",
+          "sourcePageUrl": "https://www.jungle.co.kr/magazine/23182",
+          "sourceName": "Jungle · 미술관 건축 소개",
+          "creator": "미확인",
+          "rights": "unknown",
+          "rightsLabel": "공개 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·원형 램프·조각·자연광",
+          "notes": "원형 램프/천창/조각의 공간 구성을 파악하기 위한 참고 후보. 실제 현재 전시·촬영 구역 및 사진 재사용 권리 미확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -2214,7 +2325,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T09:33:34.518Z",
       "photoPotentialScore": 86,
       "photoScoreBreakdown": {
         "distinctiveness": 26,
