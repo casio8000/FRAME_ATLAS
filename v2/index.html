@@ -206,7 +206,7 @@ function renderCandidates(p){
  const matchOptions=[["unverified","미확인"],["confirmed","장소 일치 확인"],["mismatch","다른 장소"]];
  const viewOptions=["현장 시점 사진","건물·장소 전경","실내","디테일","항공·드론","지도·포스터"];
  return p.imageCandidates.map(c=>{
-  const safe=esc(c.imageUrl||""),licensed=PERMITTED.has(c.rights);
+  const safe=esc((c.pendingAsset||c.assetPath)?(c.imageUrl||""):(c.sourceThumbnail||c.imageUrl||"")),licensed=PERMITTED.has(c.rights);
   const badges=(c.status==="approved"&&licensed&&c.placeMatch==="confirmed"&&(c.assetPath||c.pendingAsset))?'<span class="chip">대표사진 승인</span>':c.status==="rejected"?'<span class="chip">제외</span>':'<span class="chip need">검토 대기</span>';
   const imageMarkup=c.imageUrl?'<div><img data-local-preview="'+esc(c.id)+'" loading="lazy" alt="사진 후보 미리보기" src="'+safe+'" referrerpolicy="no-referrer"></div>':c.pendingAsset?'<div><img data-local-preview="'+esc(c.id)+'" alt="로컬 사진 파일 미리보기" style="width:100%;height:120px;object-fit:contain;background:#f2f2ec" src=""><div class="tiny">이 기기에 보관된 사진 파일</div></div>':'<div class="thumb">NO IMAGE</div>';
   const evidence=(c.rights==="self-owned")||(c.sourcePageUrl&&c.licenseUrl);
@@ -364,7 +364,7 @@ function autoCandidateFrom(x,provider){
  else if(lic.includes("publicdomain")||lic==="pdm")rights="public-domain";
  else if(!hasNC&&!hasND&&(lic.includes("by-sa")||lic.includes("ccby-sa")||url.includes("/licenses/by-sa/")))rights="cc-by-sa";
  else if(!hasNC&&!hasND&&(lic==="by"||lic==="ccby"||/^ccby[0-9.]+$/.test(lic)||lic.includes("creativecommons.org/licenses/by/")||url.includes("/licenses/by/")))rights="cc-by";
- return {id:"img-"+Math.random().toString(36).slice(2,10),title:x.title||"검색 후보",imageUrl:x.imageUrl||x.url||"",sourcePageUrl:x.pageUrl||x.foreign_landing_url||x.detail_url||"",sourceName:provider==="commons"?"Wikimedia Commons":"Openverse",creator:x.creator||"미확인",rights,rightsLabel:label,licenseUrl:x.licenseUrl||x.license_url||"",placeMatch:"unverified",viewType:"미확인",notes:"자동 검색 후보. 실제 장소 일치·라이선스 문구·공개 사용 가능 여부를 다시 확인하세요. "+(x.attribution||""),status:"candidate",createdAt:stamp()};
+ return {id:"img-"+Math.random().toString(36).slice(2,10),title:x.title||"검색 후보",imageUrl:x.imageUrl||x.url||"",sourceThumbnail:x.thumbnail||x.thumb||"",sourcePageUrl:x.pageUrl||x.foreign_landing_url||x.detail_url||"",sourceName:provider==="commons"?"Wikimedia Commons":"Openverse",creator:x.creator||"미확인",rights,rightsLabel:label,licenseUrl:x.licenseUrl||x.license_url||"",placeMatch:"unverified",viewType:"미확인",notes:"자동 검색 후보. 실제 장소 일치·라이선스 문구·공개 사용 가능 여부를 다시 확인하세요. "+(x.attribution||""),status:"candidate",createdAt:stamp()};
 }
 function attachAutoButtons(host,items,provider,p){
  host.querySelectorAll("[data-auto-save]").forEach(btn=>btn.addEventListener("click",()=>{
