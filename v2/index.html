@@ -69,7 +69,7 @@ let catalog={schemaVersion:1,places:[]},selectedId=null,searchCache=[];
 const esc=v=>String(v==null?"":v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const getPlace=id=>catalog.places.find(p=>p.id===id);
 const imageCount=p=>(p.imageCandidates||[]).length;
-const approvedImage=p=>(p.imageCandidates||[]).find(i=>i.id===p.primaryImageId&&i.status==="approved"&&PERMITTED.has(i.rights)&&i.placeMatch==="confirmed");
+const approvedImage=p=>(p.imageCandidates||[]).find(i=>i.id===p.primaryImageId&&i.status==="approved"&&PERMITTED.has(i.rights)&&i.placeMatch==="confirmed"&&(!!i.assetPath||!!i.pendingAsset));
 const isImageReady=p=>!!approvedImage(p);
 const hasPending=p=>(p.imageCandidates||[]).some(i=>i.status!=="rejected"&&! (i.status==="approved"&&PERMITTED.has(i.rights)&&i.placeMatch==="confirmed"));
 function stamp(){return new Date().toISOString();}
@@ -183,8 +183,8 @@ function renderCandidates(p){
   const badges=(c.status==="approved"&&licensed&&c.placeMatch==="confirmed")?'<span class="chip">대표사진 승인</span>':c.status==="rejected"?'<span class="chip">제외</span>':'<span class="chip need">검토 대기</span>';
   const imageMarkup=c.imageUrl?'<div><img data-local-preview="'+esc(c.id)+'" loading="lazy" alt="사진 후보 미리보기" src="'+safe+'" referrerpolicy="no-referrer"></div>':c.pendingAsset?'<div><img data-local-preview="'+esc(c.id)+'" alt="로컬 사진 파일 미리보기" style="width:100%;height:120px;object-fit:contain;background:#f2f2ec" src=""><div class="tiny">이 기기에 보관된 사진 파일</div></div>':'<div class="thumb">NO IMAGE</div>';
   const evidence=(c.rights==="self-owned")||(c.sourcePageUrl&&c.licenseUrl);
-  const canApprove=licensed&&c.placeMatch==="confirmed"&&evidence&&(c.imageUrl||c.pendingAsset);
-  return '<article class="candidate"><div class="candidategrid">'+imageMarkup+'<div><h4>'+esc(c.title||c.sourceName||"사진 후보")+' '+badges+'</h4><p>출처: '+esc(c.sourceName||"미상")+' · 저작자: '+esc(c.creator||"미확인")+'</p><p>권리: '+esc(c.rightsLabel||c.rights||"미확인")+' · 장소 일치: '+esc(c.placeMatch||"미확인")+' · 구도: '+esc(c.viewType||"미확인")+'</p><p>'+esc(c.notes||"")+'</p><p class="tiny">'+(c.pendingAsset?"로컬 사진 파일이 이 기기에 임시보관됨"+(c.localFileName?" · "+esc(c.localFileName):""):"")+'</p>'+(c.sourcePageUrl?'<p><a target="_blank" rel="noopener noreferrer" href="'+esc(c.sourcePageUrl)+'">원본 페이지 열기 ↗</a></p>':'')+(c.licenseUrl?'<p><a target="_blank" rel="noopener noreferrer" href="'+esc(c.licenseUrl)+'">라이선스·허가 근거 ↗</a></p>':'')+'<div class="toolbar">'+(c.status!=="approved"?'<button class="btn small primary" data-cand-action="approve" data-cand-id="'+esc(c.id)+'" '+(canApprove?'':'disabled')+'>대표사진 승인</button>':'<button class="btn small" data-cand-action="unapprove" data-cand-id="'+esc(c.id)+'">대표사진 해제</button>')+'<button class="btn small" data-cand-action="reject" data-cand-id="'+esc(c.id)+'">제외</button><button class="btn small" data-cand-action="delete" data-cand-id="'+esc(c.id)+'">삭제</button></div>'+(!canApprove?'<p class="tiny">승인 조건: 공개 사용 가능한 권리 상태, 실제 장소 일치 확인, 이미지 URL 또는 로컬 파일. 직접 촬영한 사진은 본인 소유를 확인해야 합니다.</p>':'')+'</div></div></article>';
+  const canApprove=licensed&&c.placeMatch==="confirmed"&&evidence&&(!!c.pendingAsset||!!c.assetPath);
+  return '<article class="candidate"><div class="candidategrid">'+imageMarkup+'<div><h4>'+esc(c.title||c.sourceName||"사진 후보")+' '+badges+'</h4><p>출처: '+esc(c.sourceName||"미상")+' · 저작자: '+esc(c.creator||"미확인")+'</p><p>권리: '+esc(c.rightsLabel||c.rights||"미확인")+' · 장소 일치: '+esc(c.placeMatch||"미확인")+' · 구도: '+esc(c.viewType||"미확인")+'</p><p>'+esc(c.notes||"")+'</p><p class="tiny">'+(c.pendingAsset?"로컬 사진 파일이 이 기기에 임시보관됨"+(c.localFileName?" · "+esc(c.localFileName):""):"")+'</p>'+(c.sourcePageUrl?'<p><a target="_blank" rel="noopener noreferrer" href="'+esc(c.sourcePageUrl)+'">원본 페이지 열기 ↗</a></p>':'')+(c.licenseUrl?'<p><a target="_blank" rel="noopener noreferrer" href="'+esc(c.licenseUrl)+'">라이선스·허가 근거 ↗</a></p>':'')+'<div class="toolbar">'+(c.status!=="approved"?'<button class="btn small primary" data-cand-action="approve" data-cand-id="'+esc(c.id)+'" '+(canApprove?'':'disabled')+'>대표사진 승인</button>':'<button class="btn small" data-cand-action="unapprove" data-cand-id="'+esc(c.id)+'">대표사진 해제</button>')+'<button class="btn small" data-cand-action="reject" data-cand-id="'+esc(c.id)+'">제외</button><button class="btn small" data-cand-action="delete" data-cand-id="'+esc(c.id)+'">삭제</button></div>'+(!canApprove?'<p class="tiny">승인 조건: 실제 장소 일치와 공개 사용 권리 확인, 이미지 파일이 이 기기에 임시 저장됐거나 저장소에 이미 보관되어야 합니다. URL만 등록한 사진은 대표사진으로 확정할 수 없습니다.</p>':'')+'</div></div></article>';
  }).join("");
 }
 function savePlace(id){
@@ -254,7 +254,7 @@ async function addCandidate(placeId,record){
 function candidateAction(placeId,cid,action){
  const p=getPlace(placeId),c=(p.imageCandidates||[]).find(x=>x.id===cid);if(!c)return;
  if(action==="approve"){
-  if(!PERMITTED.has(c.rights)||c.placeMatch!=="confirmed"||!((c.rights==="self-owned")||(c.sourcePageUrl&&c.licenseUrl))||(!c.imageUrl&&!c.pendingAsset)){alert("공개 사용 권리·장소 일치·이미지 파일 또는 URL이 필요합니다. 직접 촬영한 사진은 본인 소유임을 확인한 뒤 승인할 수 있습니다.");return;}
+  if(!PERMITTED.has(c.rights)||c.placeMatch!=="confirmed"||!((c.rights==="self-owned")||(c.sourcePageUrl&&c.licenseUrl))||!(c.pendingAsset||c.assetPath)){alert("대표사진은 실제 이미지 파일을 이 기기에 저장했거나 이미 저장소에 보관한 상태여야 합니다. URL만 등록한 사진은 후보로 남겨 두세요.");return;}
   p.imageCandidates.forEach(x=>{if(x.id!==cid&&x.status==="approved")x.status="candidate";});
   c.status="approved";p.primaryImageId=c.id;p.imageStatus="대표사진 확정";p.verification.photoMatch="확인 완료";p.verification.rights="확인 완료";p.verification.lastCheckedAt=stamp().slice(0,10);
  }else if(action==="unapprove"){c.status="candidate";if(p.primaryImageId===cid)p.primaryImageId=null;p.imageStatus="미등록";}
