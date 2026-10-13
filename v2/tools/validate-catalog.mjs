@@ -19,6 +19,7 @@ for (const p of catalog.places) {
   ids.add(p.id);
   assert.ok(allowedRegions.has(p.region), "unknown region for " + p.name);
   assert.ok(Array.isArray(p.imageCandidates), "imageCandidates must be an array");
+  if (p.scoutPriority === 1) assert.ok(p.imageCandidates.length >= 1, "every A-tier location must have at least one researched photo candidate: " + p.name);
   assert.ok(p.photoProfile && p.photoProfile.length > 15, "place needs a photographer-oriented selection rationale: " + p.name);
   assert.ok(Array.isArray(p.visualStrengths) && p.visualStrengths.length >= 2, "place needs visual strengths: " + p.name);
   assert.ok(Array.isArray(p.bestConcepts) && p.bestConcepts.length >= 2, "place needs suitable shoot concepts: " + p.name);
@@ -88,4 +89,8 @@ assert.ok(appCode.includes('c.status==="approved"&&c.assetPath&&c.imageUrl'), "p
 assert.ok(appCode.includes('obj.schemaVersion=2'), "imported catalogs must be normalized to schema v2");
 assert.doesNotMatch(appCode, /localStorage\.setItem\([^\n]*(?:token|Token|TOKEN)/,
   "the GitHub token must not be persisted in browser storage");
-console.log("FRAME ATLAS 2.0 validation passed: " + catalog.places.length + " starter places; " + ids.size + " unique IDs.");
+const candidateCount = catalog.places.reduce((sum, p) => sum + p.imageCandidates.length, 0);
+const candidatePlaces = catalog.places.filter(p => p.imageCandidates.length > 0).length;
+const aTier = catalog.places.filter(p => p.scoutPriority === 1);
+assert.ok(aTier.every(p => p.imageCandidates.length > 0), "all A-tier locations must be covered by photo research");
+console.log("FRAME ATLAS 2.0 validation passed: " + catalog.places.length + " places; " + ids.size + " unique IDs; " + candidatePlaces + " places with photo candidates / " + candidateCount + " candidates; all " + aTier.length + " A-tier places covered.");
