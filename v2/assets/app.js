@@ -56,7 +56,7 @@ function bindImageFallbacks(root){
     return;
    }
    // If the first URL and its proxy fail, try another non-rejected candidate for the same place.
-   if(!img.dataset.alternateCandidatesTried){
+   if(Number(img.dataset.alternateCandidateIndex||0)<8){
     const placeId=img.dataset.homePreview||img.dataset.placePreview||img.closest("[data-home-place]")?.dataset.homePlace||img.closest("[data-select]")?.dataset.select||img.closest("[data-photos-detail]")?.dataset.photosDetail||img.closest("[data-map-place]")?.dataset.mapPlace||img.closest("[data-analysis-place]")?.dataset.analysisPlace||selectedId;
     const place=getPlace(placeId);
     const alternatives=(place?.imageCandidates||[]).filter(c=>c&&c.status!=="rejected"&&c.placeMatch!=="mismatch"&&(c.imageUrl||c.sourceThumbnail)&&![(img.dataset.originalImageUrl||""),thumbnail].includes(c.imageUrl||c.sourceThumbnail));
