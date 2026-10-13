@@ -69,18 +69,23 @@ for (const p of catalog.places) {
       "primaryImageId must refer to an approved candidate");
   }
 }
+const root = new URL("../", import.meta.url);
 const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
-const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/gi)];
-assert.ok(scripts.length >= 1, "index.html must contain client code");
-for (const [, code] of scripts) new vm.Script(code, { filename: "v2/index-inline.js" });
+const appCode = fs.readFileSync(new URL("../assets/app.js", import.meta.url), "utf8");
+const css = fs.readFileSync(new URL("../assets/app.css", import.meta.url), "utf8");
+assert.ok(html.includes('<link rel="stylesheet" href="assets/app.css">'), "index.html must load the separate stylesheet");
+assert.ok(html.includes('<script defer src="assets/app.js"></script>'), "index.html must load the separate app script");
+assert.ok(!html.includes("<style>") && !html.includes("<script>"), "index.html should remain a thin shell without inline CSS/JS");
+assert.ok(css.length > 1000 && css.includes("@media"), "separate CSS must contain responsive app styling");
+new vm.Script(appCode, { filename: "v2/assets/app.js" });
 for (const provider of ["Openverse", "Wikimedia Commons", "Google 이미지", "Bing 이미지", "네이버 이미지", "다음 이미지", "Flickr", "공유마당", "한국관광공사", "서울·지자체 공식사진", "공식·운영기관", "패션·인물 에디토리얼", "건축·기하학·질감", "photoQuery", "publishCatalog", "batchSearch(scope)", "data-cand-field", "data-auto-download"]) {
-  assert.ok(html.includes(provider), "missing photo search provider or workflow: " + provider);
+  assert.ok(appCode.includes(provider), "missing photo search provider or workflow: " + provider);
 }
-assert.match(html, /const approvedImage=[^;]+\(\!\!i\.assetPath\|\|\!\!i\.pendingAsset\)/,
+assert.match(appCode, /const approvedImage=[^;]+\(\!\!i\.assetPath\|\|\!\!i\.pendingAsset\)/,
   "a photo must be stored locally or staged before it can be treated as a representative image");
-assert.ok(html.includes('branch:"main"'), "shared catalog publisher must target the Pages source branch");
-assert.ok(html.includes('c.status==="approved"&&c.assetPath&&c.imageUrl'), "public catalog must only retain approved stored photos");
-assert.ok(html.includes('obj.schemaVersion=2'), "imported catalogs must be normalized to schema v2");
-assert.doesNotMatch(html, /localStorage\.setItem\([^\n]*(?:token|Token|TOKEN)/,
+assert.ok(appCode.includes('branch:"main"'), "shared catalog publisher must target the Pages source branch");
+assert.ok(appCode.includes('c.status==="approved"&&c.assetPath&&c.imageUrl'), "public catalog must only retain approved stored photos");
+assert.ok(appCode.includes('obj.schemaVersion=2'), "imported catalogs must be normalized to schema v2");
+assert.doesNotMatch(appCode, /localStorage\.setItem\([^\n]*(?:token|Token|TOKEN)/,
   "the GitHub token must not be persisted in browser storage");
 console.log("FRAME ATLAS 2.0 validation passed: " + catalog.places.length + " starter places; " + ids.size + " unique IDs.");
