@@ -1,7 +1,7 @@
 {
   "name": "FRAME ATLAS 2.0 · Photo Location Scout",
   "short_name": "FRAME ATLAS",
-  "description": "서울·수도권 촬영 장소 탐색, 이미지 검토와 지도 길찾기",
+  "description": "서울·수도권 촬영 장소 탐색, 실제 장소 사진 확인과 사진 교체",
   "id": "./index.html",
   "start_url": "./index.html",
   "scope": "./",

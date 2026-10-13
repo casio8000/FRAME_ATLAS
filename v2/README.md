@@ -134,3 +134,12 @@ CC BY-NC 등 비상업 조건, CC BY-ND 등 파생 저작물 제한이 있는 �
 - The fallback is applied to place-list thumbnails, the selected place's reference image, and saved candidate cards.
 - Visible loading/error states replace the previous silent blank thumbnail.
 - This only changes display reliability; it does not confer copyright permission or mark a reference image as a formally approved representative image.
+
+
+## 2026-10-13 — Home-first scouting and editorial layout
+- The app now starts on a home/dashboard page inspired by the previous FRAME ATLAS home screen. Users enter the workspace deliberately.
+- Added a location photo hero, quick search, region shortcuts and six curated location cards.
+- Rebalanced the desktop list/detail workspace and added dedicated responsive layouts for tablet and phone widths.
+- Reframed the image workflow around matching the actual location, selecting a representative photo, replacing an image URL, replacing it with a local file, editing photo notes, and deleting an image.
+- Author/license fields are no longer part of routine photo review screens.
+- Service-worker cache version bumped so installed devices refresh the new landing/workspace UX.

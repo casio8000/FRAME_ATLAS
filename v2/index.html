@@ -29,20 +29,56 @@
    <button class="btn install-btn" id="installAppBtn" type="button">홈 화면에 추가</button>
   </div>
  </header>
- <section class="intro">
+ 
+ <section id="homeView" class="landing-view">
+  <div class="landing-eyebrow"><span>FIELD GUIDE / SEOUL METROPOLITAN AREA</span><span>FRAME ATLAS · 2.0</span></div>
+  <section class="landing-hero">
+   <img id="landingHeroImage" class="landing-hero-photo" data-image-fallback="true" src="" alt="서울·수도권 촬영 장소 참고사진">
+   <div class="landing-hero-shade"></div>
+   <div class="landing-hero-content">
+    <div class="landing-kicker"><span class="landing-kicker-dot"></span> PHOTO LOCATION SCOUT</div>
+    <h1>좋은 장면은<br>좋은 장소에서 시작됩니다.</h1>
+    <p>건축의 선과 빛, 오래된 거리의 질감, 자연이 만드는 여백까지.<br>촬영을 위한 장소와 실제 공간의 사진을 한곳에 모았습니다.</p>
+    <div class="landing-hero-actions">
+     <button class="landing-primary" id="startBrowseBtn" type="button">촬영 장소 탐색 시작 <span>↗</span></button>
+     <button class="landing-secondary" id="homeMapBtn" type="button">장소 지도 열기 <span>⌖</span></button>
+    </div>
+    <div class="landing-metrics">
+     <div><b id="homeCountPlaces">34</b><span>등록 장소</span></div>
+     <div><b id="homeCountPhotos">34</b><span>사진 참고 후보</span></div>
+     <div><b>03</b><span>수도권 권역</span></div>
+    </div>
+   </div>
+   <div class="landing-image-caption"><span>01 / SELECTED LOCATION</span><b id="landingHeroCaption">LOCATION ARCHIVE</b></div>
+  </section>
+  <section class="landing-search-panel">
+   <div class="landing-search-copy"><span>START YOUR SCOUT</span><b>어떤 장소를 찾고 계신가요?</b><small>장소명, 지역 또는 촬영 분위기로 찾아보세요.</small></div>
+   <div class="landing-search-control"><input id="homeSearchInput" type="search" placeholder="예: 산업건축, 야간, 자연광, 성수동"><button id="homeSearchBtn" type="button">검색 <span>→</span></button></div>
+   <div class="landing-region-shortcuts"><button type="button" data-home-region="">전체</button><button type="button" data-home-region="서울">서울</button><button type="button" data-home-region="경기">경기</button><button type="button" data-home-region="인천">인천</button></div>
+  </section>
+  <section class="landing-feature-section">
+   <div class="landing-section-head"><div><span class="landing-section-kicker">CURATED FOR PHOTOGRAPHY</span><h2>먼저 살펴볼 장소</h2><p>관광 순위가 아니라 사진의 구도와 공간적 개성을 기준으로 골랐습니다.</p></div><button id="seeAllPlacesBtn" type="button">전체 장소 보기 <span>↗</span></button></div>
+   <div id="homeFeaturedGrid" class="landing-feature-grid"><div class="landing-empty">장소 사진을 불러오는 중입니다…</div></div>
+  </section>
+  <div class="landing-bottomline"><span>FRAME ATLAS / FIELD NOTES</span><span>SEOUL · GYEONGGI · INCHEON</span></div>
+ </section>
+ <section id="workspaceView" hidden>
+  <div class="worktopline-spacer"></div>
+<section class="intro catalog-intro">
   <div class="intro-copy">
-   <p class="eyebrow">FIELD NOTES / LOCATION SCOUTING</p>
-   <h1>장소를 고르는 순간부터<br>사진은 달라진다.</h1>
-   <p>건축의 선, 공간의 질감, 자연광과 그림자까지.<br>패션·인물·에디토리얼 촬영을 위한 서울·수도권 로케이션을 발굴하고 검증합니다.</p>
-   <div class="hero-tags"><span>ARCHITECTURE</span><span>LIGHT &amp; SHADOW</span><span>EDITORIAL</span><span>INDOOR / OUTDOOR</span></div>
+   <p class="eyebrow">LOCATION ARCHIVE / FIELD SCOUTING</p>
+   <h1>촬영 장소 아카이브</h1>
+   <p>실제 장소 사진과 촬영 관점의 정보를 살펴보고, 가장 적합한 사진을 직접 선택하세요.</p>
+   <div class="hero-tags"><span>SEOUL</span><span>GYEONGGI</span><span>INCHEON</span><span>INDOOR / OUTDOOR</span></div>
   </div>
   <div class="stats">
    <div class="stat"><b id="countAll">0</b><span>장소 후보</span></div>
-   <div class="stat"><b id="countNoImage">0</b><span>대표사진 검증 대기</span></div>
-   <div class="stat"><b id="countReview">0</b><span>사진 검토 진행 중</span></div>
+   <div class="stat"><b id="countNoImage">0</b><span>대표사진 선택 필요</span></div>
+   <div class="stat"><b id="countReview">0</b><span>대체 사진 후보</span></div>
   </div>
  </section>
- <div class="notice"><span class="notice-mark">!</span><div><b>사진 검증 원칙</b><br>검색 이미지는 후보입니다. 실제 장소와 사진의 일치 여부, 출처·저작자·사용 권리를 확인하기 전에는 대표사진으로 확정하지 않습니다. 촬영 허가와 사진 사용 권리는 별개의 확인 항목입니다.</div></div>
+ <div class="notice"><span class="notice-mark">◎</span><div><b>장소 사진 우선</b><br>목록의 사진은 실제 촬영 장소를 파악하기 위한 참고 이미지입니다. 사진 속 건축 형태·간판·주변 구조가 등록 장소와 일치하는지 확인하고, 맞지 않으면 다른 후보로 바꾸세요.</div></div>
+ <div class="worktopline"><button class="btn home-return" id="goHomeBtn" type="button">← 메인 화면</button><span>PHOTO LOCATION WORKSPACE <i>LOCATION ARCHIVE</i></span><span id="saveStatus" class="tagline">불러오는 중…</span></div>
  <div class="toolbar">
   <button class="btn primary" id="addPlaceBtn">＋ 장소 등록</button>
   <button class="btn orange" id="batchSearchA">A급 장소 사진 일괄검색</button>
@@ -52,14 +88,13 @@
   <button class="btn orange" id="publishBtn">GitHub에 게시</button>
   <label class="btn filelabel">JSON 가져오기<input id="importInput" type="file" accept=".json,application/json"></label>
   <button class="btn" id="reloadBtn">배포된 기본자료 다시 읽기</button>
-  <span class="tagline" id="saveStatus">불러오는 중…</span>
  </div>
  <div id="batchStatus" class="statusbar hidden"></div>
  <div class="searchbar">
   <div class="filters">
-   <input id="query" class="field" placeholder="장소명·별칭·지역·촬영 콘셉트 검색">
+   <input id="query" class="field" placeholder="장소명·지역·구조·분위기로 검색">
    <select id="regionFilter" class="field"><option value="">서울·수도권 전체</option><option>서울</option><option>경기</option><option>인천</option></select>
-   <select id="imageFilter" class="field"><option value="">모든 사진 상태</option><option value="none">대표사진 없음</option><option value="review">사진 검토 대기</option><option value="ready">대표사진 확정</option></select>
+   <select id="imageFilter" class="field"><option value="">모든 사진 상태</option><option value="none">사진 없음</option><option value="review">다른 사진 후보 있음</option><option value="ready">대표사진 선택됨</option></select>
   </div>
  </div>
  <main class="workspace">
@@ -69,9 +104,11 @@
   </section>
   <section class="panel">
    <div class="panelhead"><h2>장소 정보 · 이미지 연구</h2><span id="selectedMeta">장소를 선택하세요</span></div>
-   <div id="detail" class="detail"><div class="empty">왼쪽 목록에서 장소를 선택하면 이미지 검색과 사진 등록 도구가 열립니다.</div></div>
+   <div id="detail" class="detail"><div class="empty">장소를 선택하면 대표사진 변경과 지도·촬영 정보를 확인할 수 있습니다.</div></div>
   </section>
  </main>
+
+ </section>
  <dialog id="installDialog" class="install-dialog">
   <div class="dialog-kicker">YOUR FIELD ATLAS</div>
   <h2>FRAME ATLAS를 홈 화면에 추가</h2>
