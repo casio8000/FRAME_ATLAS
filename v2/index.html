@@ -14,10 +14,10 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="icons/atlas-mark.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
-<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/app.css?v=20261013-16">
 
 </head>
-<body>
+<body data-app-view="welcome">
 <div class="wrap">
  <header class="head">
   <a class="brandlock" href="#welcome" id="brandHomeBtn" aria-label="FRAME ATLAS 시작 화면">
@@ -34,7 +34,7 @@
   <button type="button" data-nav-view="workspace"><span class="nav-icon">▤</span><span>아카이브</span></button>
   <button type="button" data-nav-view="map"><span class="nav-icon">⌖</span><span>지도</span></button>
   <button type="button" data-nav-view="photos"><span class="nav-icon">▧</span><span>사진 후보</span></button>
-  <button type="button" data-nav-view="more"><span class="nav-icon">•••</span><span>더보기</span></button>
+  <button type="button" data-nav-view="more"><span class="nav-icon">•••</span><span>마이페이지</span></button>
  </nav>
  
  <section id="homeView" class="landing-view">
@@ -64,7 +64,7 @@
    <div class="landing-region-shortcuts"><button type="button" data-home-region="">전체</button><button type="button" data-home-region="서울">서울</button><button type="button" data-home-region="경기">경기</button><button type="button" data-home-region="인천">인천</button></div>
   </section>
   <section class="landing-feature-section">
-   <div class="landing-section-head"><div><span class="landing-section-kicker">CURATED FOR PHOTOGRAPHY</span><h2>먼저 살펴볼 장소</h2><p>관광 순위가 아니라 사진의 구도와 공간적 개성을 기준으로 골랐습니다.</p></div><button id="seeAllPlacesBtn" type="button">전체 장소 보기 <span>↗</span></button></div>
+   <div class="landing-section-head"><div><span class="landing-section-kicker">CURATED FOR PHOTOGRAPHY</span><h2>전체 촬영 장소 <span id="homeFeaturedCount">34</span></h2><p>추천순으로 정렬된 모든 등록 장소입니다. 관광 순위가 아니라 사진의 구도와 공간적 개성을 기준으로 선별했습니다.</p></div><button id="seeAllPlacesBtn" type="button">전체 장소 보기 <span>↗</span></button></div>
    <div id="homeFeaturedGrid" class="landing-feature-grid"><div class="landing-empty">장소 사진을 불러오는 중입니다…</div></div>
   </section>
   <section class="home-all-section" id="homeAllLocations">
@@ -143,7 +143,7 @@
  </section>
  <section id="moreView" class="app-screen" hidden>
   <div class="more-profile"><div class="more-avatar">FA</div><div><p class="eyebrow">YOUR FIELD ATLAS</p><h1>사진가는 여행자</h1><p>개인 촬영 장소 아카이브</p></div><span class="more-premium">PERSONAL</span></div>
-  <div class="screen-heading more-heading"><div><p class="eyebrow">LIBRARY / SETTINGS</p><h2>내 기록과 설정</h2><p>저장한 장소, 사진 후보와 백업을 관리합니다.</p></div></div>
+  <div class="screen-heading more-heading"><div><p class="eyebrow">LIBRARY / SETTINGS</p><h2>마이페이지</h2><p>저장한 장소, 사진 후보와 백업을 관리합니다.</p></div></div>
   <div class="more-menu-grid">
    <button type="button" data-more-action="archive"><span class="more-icon">▤</span><span><b>내 아카이브</b><small>등록 장소 전체 보기</small></span><span class="more-arrow">›</span></button>
    <button type="button" data-more-action="favorites"><span class="more-icon">♡</span><span><b>저장한 장소</b><small><span id="moreFavoriteCount">0</span>곳 즐겨찾기</small></span><span class="more-arrow">›</span></button>
@@ -169,6 +169,6 @@
  <dialog id="publishDialog"><h2>카탈로그를 GitHub에 게시</h2><p>이 동작은 장소 목록과 사진 후보 정보를 개발 브랜치의 v2/data/places.json에 커밋합니다. 이미지 파일 자체를 업로드하는 기능은 다음 단계에서 연결합니다.</p><div class="statusbar warn">Fine-grained Personal Access Token을 사용하고, casio8000/FRAME_ATLAS 저장소 하나에만 Contents 읽기/쓰기 권한을 부여하세요. 토큰은 이 입력창에서만 사용하며 브라우저 저장소에 보관하지 않습니다. 신뢰하는 기기에서만 사용하세요.</div><label>GitHub 토큰<input type="password" id="publishToken" autocomplete="off" spellcheck="false" placeholder="github_pat_..." /></label><div id="publishStatus" class="statusbar hidden"></div><div class="toolbar"><button type="button" class="btn" id="cancelPublishBtn">취소</button><button type="button" class="btn primary" id="confirmPublishBtn">게시 시작</button></div></dialog>
  <footer class="footer">FRAME ATLAS 2.0 · Co-created by 지혜의 쉼터 with Claude &amp; Chat GPT · ⓒ 2026<br>2.0 PREVIEW · 장소 조사 · 이미지 검토 · 지도 연결 · 개인 기기 설치를 단계적으로 강화 중입니다.</footer>
 </div>
-<script defer src="assets/app.js?v=20261013-15"></script>
+<script defer src="assets/app.js?v=20261013-16"></script>
 </body>
 </html>
