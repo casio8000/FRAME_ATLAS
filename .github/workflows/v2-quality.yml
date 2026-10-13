@@ -1,0 +1,22 @@
+name: FRAME ATLAS 2.0 checks
+
+on:
+  push:
+    branches: [v2-development]
+  pull_request:
+    branches: [v2-development]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-v2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validate catalog and client syntax
+        run: node v2/tools/validate-catalog.mjs
