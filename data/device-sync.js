@@ -99,6 +99,7 @@
   let retryTimer = null;
   let retryAttempt = 0;
   const RETRY_DELAYS = [5000, 15000, 30000, 60000, 120000];
+  const SYNC_FETCH_TIMEOUT_MS = 25000;
 
   function parse(raw, fallback) {
     try { return raw == null ? fallback : JSON.parse(raw); } catch (_) { return fallback; }
@@ -269,8 +270,35 @@
   function headers(token, accept) {
     return { Authorization: "Bearer " + token, Accept: accept || "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" };
   }
+  async function fetchWithTimeout(url, options) {
+    const opts = Object.assign({}, options || {});
+    const timeoutMs = Number(opts.faTimeoutMs) || SYNC_FETCH_TIMEOUT_MS;
+    delete opts.faTimeoutMs;
+    let controller = null, timerId = null;
+    if (typeof AbortController === "function") {
+      controller = new AbortController();
+      opts.signal = controller.signal;
+      timerId = setTimeout(function () { controller.abort(); }, timeoutMs);
+    }
+    try {
+      return await fetch(url, opts);
+    } catch (error) {
+      if (controller && controller.signal.aborted) {
+        const timedOut = new Error("GitHub 응답 대기 시간 초과 (" + Math.round(timeoutMs / 1000) + "초). 인터넷 연결 또는 GitHub 응답을 확인한 뒤 다시 시도하세요. 로컬 데이터는 이 기기에 유지되어 있습니다.");
+        timedOut.name = "TimeoutError";
+        timedOut.status = 408;
+        throw timedOut;
+      }
+      throw error;
+    } finally {
+      if (timerId !== null) clearTimeout(timerId);
+    }
+  }
+  function announceStage(stage) {
+    safeStatus("동기화 진행 중 · " + String(stage) + "…", "pending");
+  }
   async function apiResponse(url, token, options) {
-    const response = await fetch(url, Object.assign({ headers: headers(token) }, options || {}));
+    const response = await fetchWithTimeout(url, Object.assign({ headers: headers(token) }, options || {}));
     if (!response.ok) {
       let detail = "";
       try { const body = await response.clone().json(); detail = body.message ? " — " + body.message : ""; } catch (_) {}
@@ -288,7 +316,7 @@
     return repo;
   }
   async function getMeta(c, path) {
-    const res = await fetch(apiPath(c.repo, path), { headers: headers(c.token), cache: "no-store" });
+    const res = await fetchWithTimeout(apiPath(c.repo, path), { headers: headers(c.token), cache: "no-store" });
     if (res.status === 404) return null;
     if (!res.ok) {
       let detail = "";
@@ -300,7 +328,7 @@
     return { sha: j.sha, size: j.size || 0, type: j.type || "" };
   }
   async function readFile(c, path, binary) {
-    const res = await fetch(apiPath(c.repo, path), { headers: headers(c.token, "application/vnd.github.raw+json"), cache: "no-store" });
+    const res = await fetchWithTimeout(apiPath(c.repo, path), { headers: headers(c.token, "application/vnd.github.raw+json"), cache: "no-store" });
     if (res.status === 404) return null;
     if (!res.ok) throw new Error("파일 읽기 실패 " + res.status + ": " + path);
     if (binary) return res.blob();
@@ -319,7 +347,7 @@
     }
     const body = { message: "FRAME ATLAS 안전 동기화: " + path.split("/").slice(-2).join("/"), content };
     if (sha) body.sha = sha;
-    const response = await fetch(apiPath(c.repo, path), {
+    const response = await fetchWithTimeout(apiPath(c.repo, path), {
       method: "PUT",
       headers: headers(c.token),
       body: JSON.stringify(body)
@@ -336,7 +364,7 @@
     return result.content.sha;
   }
   async function listDevices(c) {
-    const res = await fetch(apiPath(c.repo, ROOT_PATH), { headers: headers(c.token), cache: "no-store" });
+    const res = await fetchWithTimeout(apiPath(c.repo, ROOT_PATH), { headers: headers(c.token), cache: "no-store" });
     if (res.status === 404) return [];
     if (!res.ok) throw new Error("기기 목록 읽기 실패 " + res.status);
     const data = await res.json();
@@ -510,25 +538,31 @@
     try {
       const c = config();
       stage = "비공개 저장소 및 토큰 확인";
+      announceStage(stage);
       const repoInfo = await verifyPrivateRepo(c);
       if (repoInfo.private !== true) throw new Error("비공개 저장소 확인에 실패했습니다.");
       const id = deviceId();
       const label = root.localStorage.getItem(LABEL_KEY) || inferDeviceLabel();
       root.localStorage.setItem(LABEL_KEY, label);
       stage = "현재 기기 manifest 읽기";
+      announceStage(stage);
       const own = await loadManifest(c, id);
       const seen = readState(SEEN_KEY, {});
       const conflictMap = readState(CONFLICT_KEY, {});
       const localMetaMap = localMeta();
       stage = "이 기기의 장소·사진·메모 읽기";
+      announceStage(stage);
       const local = await collectRecords();
       const originalFingerprints = new Map();
       local.forEach((r, key) => originalFingerprints.set(key, r.fingerprint));
       const remoteTouched = new Set();
       stage = "동기화 기기 목록 읽기";
+      announceStage(stage);
       const peers = (await listDevices(c)).filter(v => v !== id).sort();
 
       stage = "다른 기기 데이터 병합";
+
+      announceStage(stage);
       for (const peerId of peers) {
         const peer = await loadManifest(c, peerId);
         const peerEntries = Object.entries(peer.data.records || {}).sort((a, b) => {
@@ -625,6 +659,8 @@
       }
 
       stage = "병합 후 로컬 데이터 재확인";
+
+      announceStage(stage);
       const fresh = await collectRecords();
       const metaMap = localMeta();
       const nextRecords = Object.assign({}, own.data.records || {});
@@ -641,6 +677,7 @@
         /* No delete marker means this absence might be an interrupted restore, so preserve the remote copy. */
       }
       stage = "장소·사진·기록을 GitHub에 업로드";
+      announceStage(stage);
       for (const [rid, rec] of fresh) {
         const oldEntry = nextRecords[rid];
         if (oldEntry && !oldEntry.deleted && oldEntry.fingerprint === rec.fingerprint) continue;
@@ -694,6 +731,7 @@
       const manifestText = JSON.stringify(manifestData);
       if (new TextEncoder().encode(manifestText).length > 750000) throw new Error("이 기기의 동기화 목록이 750KB를 넘습니다. 전체 백업 파일로 덮어쓰지 않았으며, 데이터는 로컬에 유지했습니다.");
       stage = "동기화 결과 manifest 저장";
+      announceStage(stage);
       const newManifestSha = await putFile(c, own.path, manifestText, own.sha, false);
       writeState(SEEN_KEY, seen);
       writeState(CONFLICT_KEY, conflictMap);
