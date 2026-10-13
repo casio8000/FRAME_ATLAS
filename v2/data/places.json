@@ -1,46 +1,44 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
-  "scope": "서울·수도권 초기 후보 목록",
-  "dataStatus": "초기 후보 목록이며 개별 장소의 현장/촬영/사진 검증 전",
-  "updatedAt": "2026-10-13T00:00:00.000Z",
+  "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
+  "dataStatus": "편집 기획을 바탕으로 한 후보 목록. 장소별 현재 운영·출입·촬영 허가·사진은 공식 출처와 현장/이미지 검토 전",
+  "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
+  "updatedAt": "2026-10-13T06:36:19.710Z",
   "places": [
     {
-      "id": "seo-seoul-forest",
-      "name": "서울숲",
-      "region": "서울",
-      "category": "자연·공원",
-      "aliases": [],
-      "summary": "",
-      "address": "",
-      "coordinates": null,
-      "officialUrl": "",
-      "openingStatus": "미확인",
-      "shootingPermission": "미확인",
-      "parking": "미확인",
-      "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
-      "imageCandidates": [],
-      "sourceRefs": [],
-      "verification": {
-        "location": "미확인",
-        "photoMatch": "미확인",
-        "rights": "미확인",
-        "shootingPermission": "미확인",
-        "lastCheckedAt": null
-      },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
-    },
-    {
-      "id": "seo-culture-depot",
+      "id": "seo-oil-tank",
       "name": "문화비축기지",
       "region": "서울",
-      "category": "산업유산·건축",
+      "category": "산업유산·대형 구조",
+      "spaceTypes": [
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "폐산업시설의 대형 원형 구조와 거친 재료감, 강한 명암을 활용할 수 있는 에디토리얼 후보",
+      "visualStrengths": [
+        "철·콘크리트 질감",
+        "원형 구조와 반복 패턴",
+        "넓은 여백과 그림자"
+      ],
+      "bestConcepts": [
+        "패션 에디토리얼",
+        "모노톤 인물화보",
+        "미래적·산업적 콘셉트"
+      ],
+      "constraints": [
+        "탱크 내부 개방 여부",
+        "상업촬영 허가",
+        "장비·조명 반입"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "문화비축기지 탱크 내부 외관 사진",
+        "Oil Tank Culture Park Seoul architecture",
+        "문화비축기지 패션 화보 촬영"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "폐산업시설의 대형 원형 구조와 거친 재료감, 강한 명암을 활용할 수 있는 에디토리얼 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -59,17 +57,52 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "seo-seonyudo",
       "name": "선유도공원",
       "region": "서울",
-      "category": "공원·건축",
+      "category": "산업건축·정원",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "재생 콘크리트 구조와 식생이 함께 있어 인물과 건축을 겹쳐 구성하기 좋은 공간 후보",
+      "visualStrengths": [
+        "콘크리트 프레임",
+        "수변과 식물",
+        "구조물 사이의 레이어"
+      ],
+      "bestConcepts": [
+        "컨템포러리 패션",
+        "자연·도시 대비",
+        "흑백 인물 에디토리얼"
+      ],
+      "constraints": [
+        "구조물별 접근 가능 여부",
+        "상업촬영 허가",
+        "방문객 혼잡"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "선유도공원 콘크리트 구조 사진",
+        "Seonyudo Park architecture photography",
+        "선유도공원 인물 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "재생 콘크리트 구조와 식생이 함께 있어 인물과 건축을 겹쳐 구성하기 좋은 공간 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -88,17 +121,53 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "seo-seoul-botanic",
-      "name": "서울식물원",
+      "id": "seo-ddp",
+      "name": "동대문디자인플라자(DDP)",
       "region": "서울",
-      "category": "식물원·건축",
+      "category": "조형건축·반사 표면",
+      "spaceTypes": [
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "곡선형 외피와 스케일감 있는 건축면으로 그래픽한 패션 이미지와 실루엣을 만들 후보",
+      "visualStrengths": [
+        "유선형 실루엣",
+        "메탈 패널",
+        "건축 스케일과 인물 대비"
+      ],
+      "bestConcepts": [
+        "하이패션",
+        "테크웨어",
+        "건축 에디토리얼"
+      ],
+      "constraints": [
+        "실내·외 구역별 촬영 정책",
+        "상업촬영 사전승인",
+        "행사 일정"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "DDP 외관 곡선 건축 사진",
+        "Dongdaemun Design Plaza architecture detail",
+        "DDP fashion editorial shoot"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "곡선형 외피와 스케일감 있는 건축면으로 그래픽한 패션 이미지와 실루엣을 만들 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -117,17 +186,52 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "seo-bukchon",
-      "name": "북촌한옥마을",
+      "id": "seo-sema-bunker",
+      "name": "서울시립미술관 SeMA 벙커",
       "region": "서울",
-      "category": "한옥·골목",
+      "category": "지하공간·산업적 질감",
+      "spaceTypes": [
+        "실내"
+      ],
+      "photoProfile": "낮은 천장과 원형·거친 실내 구조를 활용할 수 있는 특수 분위기 공간 후보",
+      "visualStrengths": [
+        "압축된 공간감",
+        "거친 벽체",
+        "인공조명과 그림자"
+      ],
+      "bestConcepts": [
+        "다크 패션",
+        "시네마틱 인물",
+        "콘셉추얼 포트레이트"
+      ],
+      "constraints": [
+        "현재 운영·전시 여부",
+        "촬영 허가",
+        "플래시·삼각대 제한"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "SeMA 벙커 내부 공간 사진",
+        "서울시립미술관 벙커 실내",
+        "SeMA Bunker interior"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "낮은 천장과 원형·거친 실내 구조를 활용할 수 있는 특수 분위기 공간 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -146,17 +250,53 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "seo-gyeongui-line",
-      "name": "경의선숲길",
+      "id": "seo-sewoon",
+      "name": "세운상가 일대",
       "region": "서울",
-      "category": "도시·산책로",
+      "category": "근현대 건축·도시 질감",
+      "spaceTypes": [
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "오래된 상업·산업 건축, 난간과 반복되는 수평선으로 도시형 인물화보를 구성할 후보",
+      "visualStrengths": [
+        "반복 난간과 수평선",
+        "금속·콘크리트",
+        "도심 원근감"
+      ],
+      "bestConcepts": [
+        "어반 패션",
+        "레트로 퓨처리즘",
+        "스트리트 에디토리얼"
+      ],
+      "constraints": [
+        "옥상·통제구역 출입 금지 여부",
+        "상가 내부 촬영 동의",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "세운상가 건축 난간 옥상 전경 사진",
+        "Sewoon Sangga architecture photography",
+        "세운상가 패션 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "오래된 상업·산업 건축, 난간과 반복되는 수평선으로 도시형 인물화보를 구성할 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -175,17 +315,310 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "seo-mullae",
+      "name": "문래창작촌",
+      "region": "서울",
+      "category": "공업지대·예술 골목",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "철공소와 창작공간이 만나는 골목의 금속 질감·낡은 표면·색 대비를 살릴 후보",
+      "visualStrengths": [
+        "산업 재료와 페인트",
+        "좁은 골목 원근감",
+        "오래된 간판과 문"
+      ],
+      "bestConcepts": [
+        "스트리트웨어",
+        "인디 에디토리얼",
+        "거친 텍스처 포트레이트"
+      ],
+      "constraints": [
+        "영업장 내부·문 앞 촬영 동의",
+        "보행·작업 안전",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "문래창작촌 철공소 골목 사진",
+        "Mullae Art Village industrial alley",
+        "문래동 패션 화보"
+      ],
+      "aliases": [],
+      "summary": "철공소와 창작공간이 만나는 골목의 금속 질감·낡은 표면·색 대비를 살릴 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "seo-seongsu",
+      "name": "성수동 옛 공장 골목",
+      "region": "서울",
+      "category": "산업건축·스트리트",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "벽돌·철문·적재 구조 등 산업도시의 배경을 짧은 동선에서 다양하게 찾을 후보",
+      "visualStrengths": [
+        "벽돌과 셔터",
+        "반복되는 출입문",
+        "거친 배경과 현대 스타일 대비"
+      ],
+      "bestConcepts": [
+        "패션 룩북",
+        "스트리트 캐주얼",
+        "브랜드 캠페인"
+      ],
+      "constraints": [
+        "사유지·매장 촬영 동의",
+        "영업 방해 금지",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "성수동 옛 공장 외관 벽돌 사진",
+        "Seongsu-dong old factory street photography",
+        "성수동 패션 룩북 촬영"
+      ],
+      "aliases": [],
+      "summary": "벽돌·철문·적재 구조 등 산업도시의 배경을 짧은 동선에서 다양하게 찾을 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "seo-seoul-station-284",
+      "name": "문화역서울284",
+      "region": "서울",
+      "category": "역사건축·대형 실내",
+      "spaceTypes": [
+        "실내",
+        "야외"
+      ],
+      "photoProfile": "역사적 건축 디테일과 높은 실내 공간의 선·비례가 돋보이는 인물·패션 촬영 후보",
+      "visualStrengths": [
+        "대형 홀과 아치",
+        "역사적 디테일",
+        "수직선·대칭 구도"
+      ],
+      "bestConcepts": [
+        "클래식 패션",
+        "아트 포트레이트",
+        "시대 대비 에디토리얼"
+      ],
+      "constraints": [
+        "운영·전시 일정",
+        "실내 촬영 허가",
+        "삼각대·조명 허용 여부"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "문화역서울284 내부 홀 아치 사진",
+        "Culture Station Seoul 284 interior architecture",
+        "문화역서울284 화보 촬영"
+      ],
+      "aliases": [],
+      "summary": "역사적 건축 디테일과 높은 실내 공간의 선·비례가 돋보이는 인물·패션 촬영 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "seo-botanic",
+      "name": "서울식물원 온실",
+      "region": "서울",
+      "category": "온실·식물의 실내 공간",
+      "spaceTypes": [
+        "실내"
+      ],
+      "photoProfile": "유리·철골 구조와 이국적인 식생을 레이어로 사용할 수 있는 실내 자연 배경 후보",
+      "visualStrengths": [
+        "유리 천장과 철골 격자",
+        "잎의 레이어",
+        "습윤한 색감과 확산광"
+      ],
+      "bestConcepts": [
+        "뷰티·패션 화보",
+        "자연주의 인물",
+        "컬러풀 에디토리얼"
+      ],
+      "constraints": [
+        "온실 내부 촬영 정책",
+        "상업촬영 허가",
+        "관람객 동선·조명 제한"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "서울식물원 온실 내부 철골 유리 사진",
+        "Seoul Botanic Park greenhouse interior",
+        "서울식물원 온실 인물 촬영"
+      ],
+      "aliases": [],
+      "summary": "유리·철골 구조와 이국적인 식생을 레이어로 사용할 수 있는 실내 자연 배경 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "seo-nodeul",
       "name": "노들섬",
       "region": "서울",
-      "category": "건축·한강",
+      "category": "현대건축·강변",
+      "spaceTypes": [
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "도시 구조물과 강변 여백을 함께 활용해 건축·인물·무대형 이미지를 만들 후보",
+      "visualStrengths": [
+        "직선·계단·플랫폼",
+        "한강의 넓은 여백",
+        "도시 스카이라인"
+      ],
+      "bestConcepts": [
+        "미니멀 패션",
+        "밴드·퍼포먼스 콘셉트",
+        "도시 에디토리얼"
+      ],
+      "constraints": [
+        "행사·공연 일정",
+        "공간별 이용 조건",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "노들섬 건축 계단 플랫폼 사진",
+        "Nodeul Island architecture photography",
+        "노들섬 패션 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "도시 구조물과 강변 여백을 함께 활용해 건축·인물·무대형 이미지를 만들 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -204,17 +637,53 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "seo-seongsu",
-      "name": "성수동 연무장길",
+      "id": "seo-craft-museum",
+      "name": "서울공예박물관 일대",
       "region": "서울",
-      "category": "도시·상업공간",
+      "category": "현대건축·한옥·중정",
+      "spaceTypes": [
+        "야외",
+        "실내"
+      ],
+      "photoProfile": "현대적 외벽과 전통 건축 요소가 만나는 대비를 활용할 후보",
+      "visualStrengths": [
+        "전통·현대 재료 대비",
+        "중정과 프레임",
+        "차분한 표면과 선"
+      ],
+      "bestConcepts": [
+        "정제된 패션",
+        "문화·예술 에디토리얼",
+        "미니멀 포트레이트"
+      ],
+      "constraints": [
+        "박물관 내부 촬영 규정",
+        "상업촬영 허가",
+        "전시 공간별 제한"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "서울공예박물관 건축 중정 사진",
+        "Seoul Museum of Craft Art architecture",
+        "서울공예박물관 외관 계단"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "현대적 외벽과 전통 건축 요소가 만나는 대비를 활용할 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -233,17 +702,181 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "seo-mmca",
+      "name": "국립현대미술관 서울관 일대",
+      "region": "서울",
+      "category": "미술관 건축·중정",
+      "spaceTypes": [
+        "야외",
+        "실내"
+      ],
+      "photoProfile": "현대 미술관의 낮은 수평선과 중정·벽면을 활용하는 절제된 건축 인물화보 후보",
+      "visualStrengths": [
+        "수평 구도",
+        "재료 표면",
+        "중정과 개방 프레임"
+      ],
+      "bestConcepts": [
+        "미니멀 에디토리얼",
+        "아트 포트레이트",
+        "디자이너 룩북"
+      ],
+      "constraints": [
+        "실내·외 구역별 촬영 정책",
+        "상업촬영 허가",
+        "관람객 초상권"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "국립현대미술관 서울관 건축 중정 사진",
+        "MMCA Seoul courtyard architecture",
+        "국립현대미술관 서울관 패션 화보"
+      ],
+      "aliases": [],
+      "summary": "현대 미술관의 낮은 수평선과 중정·벽면을 활용하는 절제된 건축 인물화보 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "seo-sema-namseoul",
+      "name": "서울시립미술관 남서울미술관 외관",
+      "region": "서울",
+      "category": "역사건축·석재 파사드",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "역사적 석재 외관과 계단·창호를 배경으로 클래식한 인물 이미지를 구성할 후보",
+      "visualStrengths": [
+        "석재 파사드",
+        "창호 반복",
+        "고전적 비례와 계단"
+      ],
+      "bestConcepts": [
+        "클래식 패션",
+        "빈티지 에디토리얼",
+        "정적인 인물화보"
+      ],
+      "constraints": [
+        "건물 앞 공간 이용 조건",
+        "상업촬영 허가",
+        "실내 전시공간과 구분"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "남서울미술관 외관 석조 건축 사진",
+        "SeMA Nam-Seoul Museum facade",
+        "서울시립미술관 남서울관 화보"
+      ],
+      "aliases": [],
+      "summary": "역사적 석재 외관과 계단·창호를 배경으로 클래식한 인물 이미지를 구성할 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "seo-euljiro",
-      "name": "을지로 골목",
+      "name": "을지로 인쇄·금속 골목",
       "region": "서울",
-      "category": "도시·골목",
+      "category": "도시 텍스처·야간",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "낮은 간판·금속 셔터·혼합 조명이 만드는 다층적인 도심 질감을 활용할 후보",
+      "visualStrengths": [
+        "네온과 혼합광",
+        "금속 표면과 셔터",
+        "좁은 골목의 압축감"
+      ],
+      "bestConcepts": [
+        "나이트 스트리트 패션",
+        "시네마틱 인물",
+        "레트로 에디토리얼"
+      ],
+      "constraints": [
+        "상점·작업장 촬영 동의",
+        "보행 동선",
+        "야간 소음과 조명"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "을지로 인쇄골목 금속 셔터 야간 사진",
+        "Euljiro printing alley night photography",
+        "을지로 패션 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "낮은 간판·금속 셔터·혼합 조명이 만드는 다층적인 도심 질감을 활용할 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -262,17 +895,116 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "seo-gyeongchun",
+      "name": "경춘선숲길 옛 철길 구간",
+      "region": "서울",
+      "category": "철길·선형 공간",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "철길 흔적과 길게 이어지는 수목·난간의 선을 이용할 후보",
+      "visualStrengths": [
+        "원근선",
+        "나무 터널과 계절 변화",
+        "도시와 녹지의 대비"
+      ],
+      "bestConcepts": [
+        "내추럴 패션",
+        "캐주얼 룩북",
+        "필름 무드 인물"
+      ],
+      "constraints": [
+        "철도시설 출입 금지",
+        "보행자 혼잡",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "경춘선숲길 옛 철길 선형 사진",
+        "Gyeongchun Line Forest Park photography",
+        "경춘선숲길 인물 화보"
+      ],
+      "aliases": [],
+      "summary": "철길 흔적과 길게 이어지는 수목·난간의 선을 이용할 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "seo-naksan-wall",
-      "name": "낙산공원·서울성곽",
+      "name": "낙산공원 서울성곽 구간",
       "region": "서울",
-      "category": "성곽·야경",
+      "category": "석성·도시 레이어",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "성곽의 돌 질감과 도시 지붕선을 함께 담아 고전적·도시적 분위기를 겹칠 후보",
+      "visualStrengths": [
+        "돌담 반복 패턴",
+        "도시 지붕 레이어",
+        "해질녘 역광과 실루엣"
+      ],
+      "bestConcepts": [
+        "모던 한복 에디토리얼",
+        "실루엣 인물",
+        "도시 야외 포트레이트"
+      ],
+      "constraints": [
+        "주민 사생활·야간 소음",
+        "보행로 점유",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "낙산공원 서울성곽 돌담 도시 전경 사진",
+        "Naksan Seoul City Wall photography",
+        "낙산공원 인물 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "성곽의 돌 질감과 도시 지붕선을 함께 담아 고전적·도시적 분위기를 겹칠 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -291,17 +1023,52 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "seo-haneul",
-      "name": "하늘공원",
+      "id": "seo-hangang-under-bridge",
+      "name": "한강 교량 하부·접근 가능한 공공 구간",
       "region": "서울",
-      "category": "자연·전망",
+      "category": "교량 구조·기하학",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "교량의 리듬감 있는 구조와 반복선을 활용하는 그래픽한 촬영을 위한 조사 후보",
+      "visualStrengths": [
+        "교량 하부의 반복 구조",
+        "콘크리트와 그림자",
+        "강변의 넓은 배경"
+      ],
+      "bestConcepts": [
+        "테크웨어",
+        "모노톤 스트리트",
+        "기하학적 인물화보"
+      ],
+      "constraints": [
+        "구체적인 교량·구간을 사전 지정",
+        "출입통제·안전구역 준수",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 3,
+      "searchTerms": [
+        "서울 한강 교량 하부 구조 사진",
+        "Seoul bridge underpass architecture photography",
+        "한강 교량 하부 패션 촬영"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "교량의 리듬감 있는 구조와 반복선을 활용하는 그래픽한 촬영을 위한 조사 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -320,46 +1087,53 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "seo-olympic",
-      "name": "올림픽공원",
-      "region": "서울",
-      "category": "공원·조형물",
-      "aliases": [],
-      "summary": "",
-      "address": "",
-      "coordinates": null,
-      "officialUrl": "",
-      "openingStatus": "미확인",
-      "shootingPermission": "미확인",
-      "parking": "미확인",
-      "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
-      "imageCandidates": [],
-      "sourceRefs": [],
-      "verification": {
-        "location": "미확인",
-        "photoMatch": "미확인",
-        "rights": "미확인",
-        "shootingPermission": "미확인",
-        "lastCheckedAt": null
-      },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
-    },
-    {
-      "id": "gg-suwon-hwaseong",
-      "name": "수원화성",
+      "id": "gg-paju-bookcity",
+      "name": "파주출판도시",
       "region": "경기",
-      "category": "역사·성곽",
+      "category": "현대건축·책의 도시",
+      "spaceTypes": [
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "기하학적 파사드와 건물 사이의 보이드·직선을 활용한 건축 중심 화보 후보",
+      "visualStrengths": [
+        "정돈된 건축선",
+        "벽돌·콘크리트·유리",
+        "빛과 그림자"
+      ],
+      "bestConcepts": [
+        "디자이너 룩북",
+        "건축 에디토리얼",
+        "미니멀 패션"
+      ],
+      "constraints": [
+        "출판사·건물별 사유공간 확인",
+        "실내 촬영 사전 승인",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "파주출판도시 건축 파사드 사진",
+        "Paju Book City architecture photography",
+        "파주출판도시 패션 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "기하학적 파사드와 건물 사이의 보이드·직선을 활용한 건축 중심 화보 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -378,17 +1152,53 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "gg-haenggung",
-      "name": "수원 행궁동",
+      "id": "gg-mimesis",
+      "name": "미메시스 아트 뮤지엄",
       "region": "경기",
-      "category": "한옥·골목",
+      "category": "조형건축·화이트 볼륨",
+      "spaceTypes": [
+        "실내",
+        "야외"
+      ],
+      "photoProfile": "화이트 곡면과 조각적인 실내외 볼륨을 통해 인물과 건축을 단순한 형태로 구성할 후보",
+      "visualStrengths": [
+        "곡면 흰 벽",
+        "매끈한 면과 곡선",
+        "빛에 따른 형태 변화"
+      ],
+      "bestConcepts": [
+        "하이패션",
+        "조형적 포트레이트",
+        "미니멀 아트 에디토리얼"
+      ],
+      "constraints": [
+        "관람 가능 시간",
+        "실내 사진·상업촬영 허가",
+        "행사·전시 일정"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "미메시스 아트 뮤지엄 흰 곡면 건축 사진",
+        "Mimesis Art Museum interior exterior",
+        "미메시스 미술관 패션 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "화이트 곡면과 조각적인 실내외 볼륨을 통해 인물과 건축을 단순한 형태로 구성할 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -407,104 +1217,53 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
-    },
-    {
-      "id": "gg-korean-folk",
-      "name": "한국민속촌",
-      "region": "경기",
-      "category": "전통·마을",
-      "aliases": [],
-      "summary": "",
-      "address": "",
-      "coordinates": null,
-      "officialUrl": "",
-      "openingStatus": "미확인",
-      "shootingPermission": "미확인",
-      "parking": "미확인",
-      "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
-      "imageCandidates": [],
-      "sourceRefs": [],
-      "verification": {
-        "location": "미확인",
-        "photoMatch": "미확인",
-        "rights": "미확인",
-        "shootingPermission": "미확인",
-        "lastCheckedAt": null
-      },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
-    },
-    {
-      "id": "gg-gwangmyeong-cave",
-      "name": "광명동굴",
-      "region": "경기",
-      "category": "산업유산·실내",
-      "aliases": [],
-      "summary": "",
-      "address": "",
-      "coordinates": null,
-      "officialUrl": "",
-      "openingStatus": "미확인",
-      "shootingPermission": "미확인",
-      "parking": "미확인",
-      "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
-      "imageCandidates": [],
-      "sourceRefs": [],
-      "verification": {
-        "location": "미확인",
-        "photoMatch": "미확인",
-        "rights": "미확인",
-        "shootingPermission": "미확인",
-        "lastCheckedAt": null
-      },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
-    },
-    {
-      "id": "gg-imjingak",
-      "name": "임진각 평화누리공원",
-      "region": "경기",
-      "category": "공원·조형물",
-      "aliases": [],
-      "summary": "",
-      "address": "",
-      "coordinates": null,
-      "officialUrl": "",
-      "openingStatus": "미확인",
-      "shootingPermission": "미확인",
-      "parking": "미확인",
-      "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
-      "imageCandidates": [],
-      "sourceRefs": [],
-      "verification": {
-        "location": "미확인",
-        "photoMatch": "미확인",
-        "rights": "미확인",
-        "shootingPermission": "미확인",
-        "lastCheckedAt": null
-      },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "gg-heyri",
-      "name": "파주 헤이리 예술마을",
+      "name": "헤이리 예술마을 건축 구간",
       "region": "경기",
-      "category": "예술·건축",
+      "category": "실험적 건축·예술공간",
+      "spaceTypes": [
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "서로 다른 건축 언어와 외장 재료가 모여 있어 콘셉트에 맞는 건물을 선별할 후보",
+      "visualStrengths": [
+        "개성적인 파사드",
+        "재료와 색의 변주",
+        "건물별 프레임"
+      ],
+      "bestConcepts": [
+        "아트 패션",
+        "독립 브랜드 룩북",
+        "건축 인물화보"
+      ],
+      "constraints": [
+        "건물별 사유지·입장 정책",
+        "실내 촬영 허가",
+        "주말 혼잡"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "헤이리 예술마을 현대건축 외관 사진",
+        "Heyri Art Village architecture photography",
+        "헤이리 건축 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "서로 다른 건축 언어와 외장 재료가 모여 있어 콘셉트에 맞는 건물을 선별할 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -523,17 +1282,52 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "gg-siheung-gaetgol",
-      "name": "시흥 갯골생태공원",
+      "id": "gg-anyang-artpark",
+      "name": "안양예술공원",
       "region": "경기",
-      "category": "자연·습지",
+      "category": "야외 설치미술·자연",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "산책로 주변의 설치미술과 지형을 하나씩 조사해 조형적 배경을 만들 후보",
+      "visualStrengths": [
+        "설치미술의 비정형 형태",
+        "숲·바위·계곡 대비",
+        "작품별 색과 스케일"
+      ],
+      "bestConcepts": [
+        "콘셉추얼 패션",
+        "아트 포트레이트",
+        "실험적 에디토리얼"
+      ],
+      "constraints": [
+        "작품별 접근·촬영 조건",
+        "작품 보호와 관람객 동선",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "안양예술공원 설치미술 작품 건축 사진",
+        "Anyang Art Park public art photography",
+        "안양예술공원 인물 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "산책로 주변의 설치미술과 지형을 하나씩 조사해 조형적 배경을 만들 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -552,17 +1346,52 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "gg-mul-ui",
-      "name": "남양주 물의정원",
+      "id": "gg-pocheon-artvalley",
+      "name": "포천아트밸리 채석장 전망·수변",
       "region": "경기",
-      "category": "자연·강변",
+      "category": "채석장 지형·반사 수면",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "절벽의 층리와 수면·암벽의 대비로 다른 도시 촬영지와 구분되는 배경을 만들 후보",
+      "visualStrengths": [
+        "암벽 층리",
+        "수면 반사",
+        "대형 지형과 인물 스케일"
+      ],
+      "bestConcepts": [
+        "드라마틱 패션",
+        "판타지·콘셉트 인물",
+        "광각 에디토리얼"
+      ],
+      "constraints": [
+        "지정 동선과 안전",
+        "운영시간·입장",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "포천아트밸리 채석장 암벽 수면 사진",
+        "Pocheon Art Valley quarry photography",
+        "포천아트밸리 패션 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "절벽의 층리와 수면·암벽의 대비로 다른 도시 촬영지와 구분되는 배경을 만들 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -581,17 +1410,52 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "gg-hwadam",
-      "name": "광주 화담숲",
+      "id": "gg-suwon-hwaseong",
+      "name": "수원화성 성곽·성문 구간",
       "region": "경기",
-      "category": "자연·정원",
+      "category": "역사건축·석성",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "성문·여장·돌·흙의 재료감과 길게 이어지는 성곽선을 활용할 후보",
+      "visualStrengths": [
+        "돌·벽돌·목재 대비",
+        "성곽의 선형 구조",
+        "시간대별 그림자"
+      ],
+      "bestConcepts": [
+        "역사적 패션 에디토리얼",
+        "모던 한복",
+        "클래식 인물화보"
+      ],
+      "constraints": [
+        "구간별 출입·행사",
+        "문화유산 촬영 조건",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "수원화성 성문 성곽 디테일 사진",
+        "Suwon Hwaseong fortress architecture photography",
+        "수원화성 화보 촬영"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "성문·여장·돌·흙의 재료감과 길게 이어지는 성곽선을 활용할 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -610,17 +1474,440 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "ic-songdo",
-      "name": "송도 센트럴파크",
+      "id": "gg-suwon-haenggung",
+      "name": "수원 행궁동 구도심 골목",
+      "region": "경기",
+      "category": "구도심·전통과 현대",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "낮은 상가와 오래된 골목, 전통 건축 주변의 현대적 요소를 섞어 구성할 후보",
+      "visualStrengths": [
+        "골목 원근감",
+        "낡은 표면과 새 간판",
+        "전통·현대 대비"
+      ],
+      "bestConcepts": [
+        "스트리트 패션",
+        "레트로 에디토리얼",
+        "라이프스타일 룩북"
+      ],
+      "constraints": [
+        "거주지·영업장 사생활",
+        "영업장 촬영 동의",
+        "혼잡 시간 피하기"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "수원 행궁동 오래된 골목 건축 사진",
+        "Suwon Haenggung-dong alley photography",
+        "행궁동 패션 화보"
+      ],
+      "aliases": [],
+      "summary": "낮은 상가와 오래된 골목, 전통 건축 주변의 현대적 요소를 섞어 구성할 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "gg-mmca-gwacheon",
+      "name": "국립현대미술관 과천관 조각공원 일대",
+      "region": "경기",
+      "category": "현대미술관·조각·자연",
+      "spaceTypes": [
+        "야외",
+        "실내"
+      ],
+      "photoProfile": "현대 건축과 야외 작품·숲의 스케일을 조합하는 조형적 인물화보 후보",
+      "visualStrengths": [
+        "작품과 인물 스케일",
+        "자연광",
+        "건축·조각의 대비"
+      ],
+      "bestConcepts": [
+        "아트 에디토리얼",
+        "미니멀 인물화보",
+        "브랜드 룩북"
+      ],
+      "constraints": [
+        "작품별 사진 정책",
+        "상업촬영 승인",
+        "실내 플래시 제한 여부"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "국립현대미술관 과천 조각공원 건축 사진",
+        "MMCA Gwacheon sculpture garden",
+        "국립현대미술관 과천 화보"
+      ],
+      "aliases": [],
+      "summary": "현대 건축과 야외 작품·숲의 스케일을 조합하는 조형적 인물화보 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "gg-gyeonggi-museum-art",
+      "name": "경기도미술관 외부 공간",
+      "region": "경기",
+      "category": "현대건축·공원",
+      "spaceTypes": [
+        "야외",
+        "실내"
+      ],
+      "photoProfile": "현대적 건물 면과 공원의 열린 공간을 배경으로 단정한 상업·인물 이미지를 만들 후보",
+      "visualStrengths": [
+        "넓은 외벽",
+        "기하학적 건축선",
+        "공원과 건축의 대비"
+      ],
+      "bestConcepts": [
+        "브랜드 캠페인",
+        "미니멀 룩북",
+        "아트 포트레이트"
+      ],
+      "constraints": [
+        "미술관 사진 정책",
+        "상업촬영 허가",
+        "전시·행사 일정"
+      ],
+      "scoutPriority": 3,
+      "searchTerms": [
+        "경기도미술관 외관 건축 사진",
+        "Gyeonggi Museum of Modern Art architecture",
+        "경기도미술관 패션 화보"
+      ],
+      "aliases": [],
+      "summary": "현대적 건물 면과 공원의 열린 공간을 배경으로 단정한 상업·인물 이미지를 만들 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "gg-gwangmyeong-cave",
+      "name": "광명동굴 내부 공간",
+      "region": "경기",
+      "category": "동굴·인공조명",
+      "spaceTypes": [
+        "실내"
+      ],
+      "photoProfile": "어둠과 컬러 조명, 암석 표면을 활용해 일반 스튜디오와 다른 분위기를 연구할 후보",
+      "visualStrengths": [
+        "암벽 질감",
+        "빛의 색 대비",
+        "좁고 긴 공간의 원근"
+      ],
+      "bestConcepts": [
+        "시네마틱 패션",
+        "판타지 콘셉트",
+        "극적인 인물 실루엣"
+      ],
+      "constraints": [
+        "상업촬영 허가",
+        "삼각대·조명 규정",
+        "관람객·안전 동선"
+      ],
+      "scoutPriority": 3,
+      "searchTerms": [
+        "광명동굴 내부 조명 암벽 사진",
+        "Gwangmyeong Cave interior photography",
+        "광명동굴 상업 촬영"
+      ],
+      "aliases": [],
+      "summary": "어둠과 컬러 조명, 암석 표면을 활용해 일반 스튜디오와 다른 분위기를 연구할 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "gg-goyang-aram",
+      "name": "고양아람누리 건축·광장",
+      "region": "경기",
+      "category": "공연문화시설·현대건축",
+      "spaceTypes": [
+        "야외",
+        "실내"
+      ],
+      "photoProfile": "공연장 외부 구조와 광장을 활용해 대칭·직선형 인물 이미지를 구성할 후보",
+      "visualStrengths": [
+        "대형 건축 프레임",
+        "기하학과 여백",
+        "공연장 특유의 스케일"
+      ],
+      "bestConcepts": [
+        "클래식 패션",
+        "공연·음악 콘셉트",
+        "건축 에디토리얼"
+      ],
+      "constraints": [
+        "공연 일정·출입 가능 구역",
+        "실내 촬영 승인",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 3,
+      "searchTerms": [
+        "고양아람누리 건축 외관 계단 사진",
+        "Goyang Aram Nuri architecture photography",
+        "고양아람누리 화보 촬영"
+      ],
+      "aliases": [],
+      "summary": "공연장 외부 구조와 광장을 활용해 대칭·직선형 인물 이미지를 구성할 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "gg-starfield-suwon",
+      "name": "스타필드 수원 별마당도서관",
+      "region": "경기",
+      "category": "대형 실내·수직 공간",
+      "spaceTypes": [
+        "실내"
+      ],
+      "photoProfile": "높은 수직 공간과 층별 반복 구조로 인물의 크기를 대비시키기 좋은 실내 건축 후보",
+      "visualStrengths": [
+        "수직 스케일",
+        "책장·층의 반복선",
+        "실내 확산광"
+      ],
+      "bestConcepts": [
+        "미니멀 인물화보",
+        "문화·라이프스타일 에디토리얼",
+        "패션 룩북"
+      ],
+      "constraints": [
+        "상업촬영 허가",
+        "상업시설 내 장비 사용",
+        "혼잡 시간과 초상권"
+      ],
+      "scoutPriority": 3,
+      "searchTerms": [
+        "스타필드 수원 별마당도서관 내부 건축 사진",
+        "Starfield Suwon Byeolmadang Library interior",
+        "별마당도서관 화보 촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "높은 수직 공간과 층별 반복 구조로 인물의 크기를 대비시키기 좋은 실내 건축 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "ic-art-platform",
+      "name": "인천아트플랫폼",
       "region": "인천",
-      "category": "도시·수변",
+      "category": "붉은 벽돌 창고·예술공간",
+      "spaceTypes": [
+        "야외",
+        "실내"
+      ],
+      "photoProfile": "붉은 벽돌의 반복과 창고형 구조를 활용해 인물·패션에 강한 재료감을 더할 후보",
+      "visualStrengths": [
+        "벽돌과 철제 창호",
+        "창고형 반복 구조",
+        "붉은색·회색 톤"
+      ],
+      "bestConcepts": [
+        "인디 패션",
+        "아트 에디토리얼",
+        "레트로 스트리트"
+      ],
+      "constraints": [
+        "운영 건물별 촬영 정책",
+        "상업촬영 허가",
+        "행사·전시 일정"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "인천아트플랫폼 붉은 벽돌 창고 건축 사진",
+        "Incheon Art Platform red brick architecture",
+        "인천아트플랫폼 패션 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "붉은 벽돌의 반복과 창고형 구조를 활용해 인물·패션에 강한 재료감을 더할 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -639,17 +1926,117 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "ic-tri-bowl",
+      "name": "송도 트라이보울 외부",
+      "region": "인천",
+      "category": "조형건축·수변",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "곡면과 부유하는 듯한 하부 구조를 이용해 미래적이고 조형적인 프레임을 만들 후보",
+      "visualStrengths": [
+        "비정형 곡면",
+        "수면과 반사",
+        "구조물 하부의 그림자"
+      ],
+      "bestConcepts": [
+        "미래적 패션",
+        "테크웨어",
+        "건축 인물 에디토리얼"
+      ],
+      "constraints": [
+        "건물 내부 출입",
+        "행사 일정",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "송도 트라이보울 곡면 건축 사진",
+        "Songdo Tri-Bowl architecture photography",
+        "트라이보울 패션 화보"
+      ],
+      "aliases": [],
+      "summary": "곡면과 부유하는 듯한 하부 구조를 이용해 미래적이고 조형적인 프레임을 만들 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "ic-open-port",
-      "name": "인천 개항장 거리",
+      "name": "인천 개항장 근대건축 구간",
       "region": "인천",
-      "category": "근대건축·골목",
+      "category": "근대건축·석재·벽돌",
+      "spaceTypes": [
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "근대 건축 외벽과 골목을 활용해 유럽풍·레트로 에디토리얼 배경을 조사할 후보",
+      "visualStrengths": [
+        "벽돌·석재 파사드",
+        "창호 반복과 골목선",
+        "시간감이 있는 표면"
+      ],
+      "bestConcepts": [
+        "빈티지 패션",
+        "시대극 느낌의 에디토리얼",
+        "클래식 인물"
+      ],
+      "constraints": [
+        "건물별 사유지·실내촬영 동의",
+        "보행자와 차량",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "인천 개항장 근대건축 벽돌 외관 사진",
+        "Incheon Open Port architecture photography",
+        "인천 개항장 패션 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "근대 건축 외벽과 골목을 활용해 유럽풍·레트로 에디토리얼 배경을 조사할 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -668,17 +2055,53 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     },
     {
-      "id": "ic-wolmido",
-      "name": "월미도 문화의거리",
+      "id": "ic-baedari",
+      "name": "인천 배다리 헌책방 골목",
       "region": "인천",
-      "category": "바다·도시",
+      "category": "헌책방·구도심 질감",
+      "spaceTypes": [
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "낡은 간판·책방 창·좁은 도로의 정서를 이용해 문학적이고 서사적인 인물 이미지를 만들 후보",
+      "visualStrengths": [
+        "낡은 표면과 간판",
+        "작은 상점의 프레임",
+        "골목 깊이와 생활감"
+      ],
+      "bestConcepts": [
+        "문학적 인물화보",
+        "빈티지 에디토리얼",
+        "라이프스타일 룩북"
+      ],
+      "constraints": [
+        "책방 내부 촬영 동의",
+        "주민·상인 사생활",
+        "영업 방해 방지"
+      ],
+      "scoutPriority": 3,
+      "searchTerms": [
+        "인천 배다리 헌책방 골목 사진",
+        "Incheon Baedari book alley photography",
+        "배다리 빈티지 화보"
+      ],
       "aliases": [],
-      "summary": "",
+      "summary": "낡은 간판·책방 창·좁은 도로의 정서를 이용해 문학적이고 서사적인 인물 이미지를 만들 후보",
       "address": "",
       "coordinates": null,
       "officialUrl": "",
@@ -697,9 +2120,83 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "notes": "초기 후보 목록. 정확한 위치·운영정보·촬영조건·대표사진은 공식 출처와 사진 실물 확인 후 등록합니다.",
-      "createdAt": "2026-10-13T00:00:00.000Z",
-      "updatedAt": "2026-10-13T00:00:00.000Z"
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "ic-sorae-saltfield",
+      "name": "소래습지생태공원 염전·풍차 구간",
+      "region": "인천",
+      "category": "염전 흔적·습지·실루엣",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "갈대·염전 흔적·수평선과 구조물의 반복을 활용해 미니멀한 야외 이미지를 연구할 후보",
+      "visualStrengths": [
+        "수평선과 반복 구조",
+        "갈대의 계절감",
+        "역광 실루엣"
+      ],
+      "bestConcepts": [
+        "내추럴 패션",
+        "광각 인물 실루엣",
+        "시네마틱 풍경 인물"
+      ],
+      "constraints": [
+        "습지 보호구역 준수",
+        "일몰·날씨 확인",
+        "상업촬영 허가"
+      ],
+      "scoutPriority": 3,
+      "searchTerms": [
+        "소래습지생태공원 염전 풍차 사진",
+        "Sorae Wetland Ecological Park salt field photography",
+        "소래습지 인물 화보"
+      ],
+      "aliases": [],
+      "summary": "갈대·염전 흔적·수평선과 구조물의 반복을 활용해 미니멀한 야외 이미지를 연구할 후보",
+      "address": "",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "미확인",
+      "shootingPermission": "미확인",
+      "parking": "미확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "미확인",
+        "photoMatch": "미확인",
+        "rights": "미확인",
+        "shootingPermission": "미확인",
+        "lastCheckedAt": null
+      },
+      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "scoutingChecklist": [
+        "공식 운영정보",
+        "실제 방문 시점의 사진",
+        "촬영 가능 구역",
+        "상업촬영 허가",
+        "장비·조명 반입",
+        "주차·하차",
+        "혼잡 시간"
+      ],
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     }
   ]
 }
