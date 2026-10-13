@@ -98,15 +98,24 @@ function normalizeCatalog(obj){
  });
  return obj;
 }
+let lastCleanRefresh=0;
 async function loadBase(){
+ lastCleanRefresh=Date.now();
  try{
-  const r=await fetch(DATA_URL+"?v=1",{cache:"no-store"});if(!r.ok)throw new Error("기본 카탈로그를 읽지 못했습니다 (HTTP "+r.status+")");
+  const r=await fetch(DATA_URL+"?v="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("기본 카탈로그를 읽지 못했습니다 (HTTP "+r.status+")");
   const base=normalizeCatalog(await r.json());
   let draft=null;try{draft=JSON.parse(localStorage.getItem(LOCAL_KEY)||"null");}catch(_){}
   catalog=normalizeCatalog(draft&&Array.isArray(draft.places)?draft:base);
   if(!selectedId||!getPlace(selectedId))selectedId=catalog.places[0]?.id||null;
-  localSave(draft?"이 기기의 초안 불러옴":"기본자료 불러옴");render();
+  if(draft)$("saveStatus").textContent="이 기기의 작업 초안 불러옴";
+  else $("saveStatus").textContent="공통 카탈로그 최신본 불러옴";
+  render();
  }catch(e){$("saveStatus").textContent="자료 불러오기 실패: "+e.message;$("placeList").innerHTML='<div class="empty">기본 자료를 불러오지 못했습니다.<br>GitHub Pages URL에서 열었는지 확인하세요.</div>';}
+}
+function refreshSharedCatalogIfClean(){
+ if(localStorage.getItem(LOCAL_KEY))return;
+ if(Date.now()-lastCleanRefresh<3000)return;
+ loadBase();
 }
 function render(){
  const q=$("query").value.trim().toLowerCase(),region=$("regionFilter").value,filter=$("imageFilter").value;
@@ -543,6 +552,8 @@ async function publishCatalog(){
 $("query").addEventListener("input",render);
 $("regionFilter").addEventListener("change",render);
 $("imageFilter").addEventListener("change",render);
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")refreshSharedCatalogIfClean();});
+window.addEventListener("pageshow",refreshSharedCatalogIfClean);
 loadBase();
 })();
 </script>
