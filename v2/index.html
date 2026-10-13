@@ -77,12 +77,21 @@ function localSave(msg){try{localStorage.setItem(LOCAL_KEY,JSON.stringify(catalo
 function normalizeCatalog(obj){
  if(!obj||!Array.isArray(obj.places))throw new Error("places 배열이 없는 카탈로그 파일입니다.");
  const seen=new Set();
+ obj.schemaVersion=2;
  obj.places.forEach((p,index)=>{
   if(!p||!p.id||!p.name)throw new Error((index+1)+"번째 장소에 id 또는 name이 없습니다.");
   if(seen.has(p.id))throw new Error("중복 장소 ID: "+p.id);seen.add(p.id);
   if(!Array.isArray(p.imageCandidates))p.imageCandidates=[];
   if(!Array.isArray(p.aliases))p.aliases=[];
+  if(!Array.isArray(p.spaceTypes)||!p.spaceTypes.length)p.spaceTypes=["실내·외 조사 필요"];
+  if(typeof p.photoProfile!=="string"||p.photoProfile.length<15)p.photoProfile="사진가 관점의 조형성·빛·배경과 촬영 활용 가능성을 조사해야 하는 신규 후보 장소.";
+  if(!Array.isArray(p.visualStrengths)||p.visualStrengths.length<2)p.visualStrengths=["시각적 강점 조사 필요","배경 재료와 빛 분석 필요"];
+  if(!Array.isArray(p.bestConcepts)||p.bestConcepts.length<2)p.bestConcepts=["패션·인물 화보 활용성 검토","에디토리얼·브랜드 촬영 적합성 검토"];
+  if(!Array.isArray(p.constraints)||p.constraints.length<2)p.constraints=["운영·출입 조건 확인 필요","상업촬영 허가·장비 반입 확인 필요"];
+  if(![1,2,3].includes(p.scoutPriority))p.scoutPriority=3;
+  if(!Array.isArray(p.searchTerms)||!p.searchTerms.length)p.searchTerms=[p.name+" 사진 촬영 장소"];
   if(!p.verification)p.verification={location:"미확인",photoMatch:"미확인",rights:"미확인",shootingPermission:"미확인",lastCheckedAt:null};
+  p.updatedAt=p.updatedAt||stamp();
  });
  return obj;
 }
@@ -307,7 +316,7 @@ function addNewPlace(){
  const name=prompt("새 장소 이름을 입력하세요.");if(!name||!name.trim())return;
  const region=prompt("지역을 입력하세요: 서울 / 경기 / 인천","서울");if(!["서울","경기","인천"].includes(region)){alert("지역은 서울, 경기, 인천 중 하나로 입력하세요.");return;}
  let id="new-place-"+Date.now().toString(36);while(catalog.places.some(p=>p.id===id))id="new-place-"+(Date.now()+Math.floor(Math.random()*10000)).toString(36);
- const p={id,name:name.trim(),region,category:"미분류",aliases:[],summary:"",address:"",coordinates:null,officialUrl:"",openingStatus:"미확인",shootingPermission:"미확인",parking:"미확인",fee:"미확인",imageStatus:"미등록",primaryImageId:null,imageCandidates:[],sourceRefs:[],verification:{location:"미확인",photoMatch:"미확인",rights:"미확인",shootingPermission:"미확인",lastCheckedAt:null},notes:"새로 등록한 장소. 정확한 정보 검증 필요.",createdAt:stamp(),updatedAt:stamp()};
+ const p={id,name:name.trim(),region,category:"미분류",spaceTypes:["실내·외 조사 필요"],photoProfile:"사진가 관점의 조형성·빛·배경과 촬영 활용 가능성을 조사해야 하는 신규 후보 장소.",visualStrengths:["시각적 강점 조사 필요","배경 재료와 빛 분석 필요"],bestConcepts:["패션·인물 화보 활용성 검토","에디토리얼·브랜드 촬영 적합성 검토"],constraints:["운영·출입 조건 확인 필요","상업촬영 허가·장비 반입 확인 필요"],scoutPriority:3,searchTerms:[name.trim()+" "+region+" 사진 촬영 장소"],aliases:[],summary:"",address:"",coordinates:null,officialUrl:"",openingStatus:"미확인",shootingPermission:"미확인",parking:"미확인",fee:"미확인",imageStatus:"미등록",primaryImageId:null,imageCandidates:[],sourceRefs:[],verification:{location:"미확인",photoMatch:"미확인",rights:"미확인",shootingPermission:"미확인",lastCheckedAt:null},notes:"새로 등록한 장소. 사진가 관점 평가와 사실 검증이 필요합니다.",createdAt:stamp(),updatedAt:stamp()};
  catalog.places.unshift(p);selectedId=id;localSave("새 장소를 이 기기에 임시저장");render();
 }
 async function searchOpenverse(p){
