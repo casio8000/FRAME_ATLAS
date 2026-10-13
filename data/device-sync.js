@@ -9,6 +9,7 @@
     root.FADeviceSync = api;
     root.faDeviceSyncEnable = function () {
       try {
+        safeStatus("안전 동기화 시작 · 저장소와 토큰을 확인합니다…", "pending");
         Promise.resolve(api.enable()).catch(function (e) {
           let last = "";
           try { last = root.localStorage && root.localStorage.getItem("faDeviceSyncLastStatus") || ""; } catch (_) {}
@@ -281,7 +282,19 @@
       timerId = setTimeout(function () { controller.abort(); }, timeoutMs);
     }
     try {
-      return await fetch(url, opts);
+      const response = await fetch(url, opts);
+      if (!controller) return response;
+      const body = await response.arrayBuffer();
+      const responseHeaders = new Headers(response.headers);
+      responseHeaders.delete("content-encoding");
+      responseHeaders.delete("content-length");
+      responseHeaders.delete("transfer-encoding");
+      const responseBody = [204, 205, 304].includes(response.status) ? null : body;
+      return new Response(responseBody, {
+        status: response.status,
+        statusText: response.statusText,
+        headers: responseHeaders
+      });
     } catch (error) {
       if (controller && controller.signal.aborted) {
         const timedOut = new Error("GitHub 응답 대기 시간 초과 (" + Math.round(timeoutMs / 1000) + "초). 인터넷 연결 또는 GitHub 응답을 확인한 뒤 다시 시도하세요. 로컬 데이터는 이 기기에 유지되어 있습니다.");
