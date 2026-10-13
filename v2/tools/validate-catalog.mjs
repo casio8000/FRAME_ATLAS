@@ -78,6 +78,21 @@ assert.ok(html.includes('<link rel="stylesheet" href="assets/app.css">'), "index
 assert.ok(html.includes('<script defer src="assets/app.js"></script>'), "index.html must load the separate app script");
 assert.ok(!html.includes("<style>") && !html.includes("<script>"), "index.html should remain a thin shell without inline CSS/JS");
 assert.ok(css.length > 1000 && css.includes("@media"), "separate CSS must contain responsive app styling");
+const staticIds = [
+  "countAll", "countNoImage", "countReview", "addPlaceBtn", "batchSearchA",
+  "batchSearchAll", "nextUnphotographedBtn", "exportBtn", "publishBtn",
+  "importInput", "reloadBtn", "query", "regionFilter", "imageFilter",
+  "placeList", "listCount", "detail", "selectedMeta", "saveStatus",
+  "batchStatus", "publishDialog", "publishToken", "publishStatus",
+  "cancelPublishBtn", "confirmPublishBtn"
+];
+for (const id of staticIds) {
+  assert.ok(new RegExp('id="' + id + '"').test(html), "index.html is missing required UI element: " + id);
+}
+assert.ok(appCode.includes('$("addPlaceBtn").addEventListener'), "place registration button must be wired");
+assert.ok(appCode.includes('$("batchSearchA").addEventListener'), "A-tier photo batch search must be wired");
+assert.ok(appCode.includes('$("publishBtn").addEventListener'), "catalog publish button must be wired");
+assert.ok(appCode.includes('$("importInput").addEventListener'), "catalog import control must be wired");
 new vm.Script(appCode, { filename: "v2/assets/app.js" });
 for (const provider of ["Openverse", "Wikimedia Commons", "Google 이미지", "Bing 이미지", "네이버 이미지", "다음 이미지", "Flickr", "공유마당", "한국관광공사", "서울·지자체 공식사진", "공식·운영기관", "패션·인물 에디토리얼", "건축·기하학·질감", "photoQuery", "publishCatalog", "batchSearch(scope)", "data-cand-field", "data-auto-download"]) {
   assert.ok(appCode.includes(provider), "missing photo search provider or workflow: " + provider);
