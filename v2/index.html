@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#18211d">
+<title>FRAME ATLAS 2.0 · 서울·수도권 촬영 로케이션</title>
+<link rel="stylesheet" href="assets/app.css">
+
+</head>
+<body>
+<div class="wrap">
+ <header class="head">
+  <div class="brand">FRAME ATLAS 2.0 <small>PHOTO LOCATION RESEARCH WORKSPACE</small></div>
+  <span class="pill">2세대 · 서울·수도권</span>
+ </header>
+ <section class="intro">
+  <div><h1>좋은 촬영 장소를 찾고, 실제 사진으로 검증한다.</h1><p>검색원을 위키미디어에 한정하지 않습니다. 오픈 라이선스 이미지 자동 검색과 Google·Bing·네이버·다음·Flickr·공식 관광 사이트 검색을 함께 사용합니다.<br>검색 결과는 후보일 뿐입니다. 장소 일치와 공개 사용 권한이 확인된 사진만 대표 이미지로 확정합니다.</p></div>
+  <div class="stats">
+   <div class="stat"><b id="countAll">0</b><span>장소 후보</span></div>
+   <div class="stat"><b id="countNoImage">0</b><span>대표사진 없음</span></div>
+   <div class="stat"><b id="countReview">0</b><span>사진 검토 대기</span></div>
+  </div>
+ </section>
+ <div class="notice"><b>중요:</b> 이 사이트는 공개 GitHub Pages에 배포될 예정입니다. 웹에서 찾은 사진을 개인적으로 참고하는 것과 공개 사이트에 복제·전시하는 것은 다릅니다. 권리 확인이 안 된 사진은 후보로만 보관하며, 출처·작가·라이선스/허가 근거가 확인되기 전에는 대표 이미지로 확정하지 않습니다.</div>
+ <div class="toolbar">
+  <button class="btn primary" id="addPlaceBtn">＋ 장소 등록</button>
+  <button class="btn orange" id="batchSearchA">A급 장소 사진 일괄검색</button>
+  <button class="btn" id="batchSearchAll">전체 장소 사진 일괄검색</button>
+  <button class="btn" id="nextUnphotographedBtn">다음 사진 미등록 장소 →</button>
+  <button class="btn" id="exportBtn">카탈로그 JSON 내보내기</button>
+  <button class="btn orange" id="publishBtn">GitHub에 게시</button>
+  <label class="btn filelabel">JSON 가져오기<input id="importInput" type="file" accept=".json,application/json"></label>
+  <button class="btn" id="reloadBtn">배포된 기본자료 다시 읽기</button>
+  <span class="tagline" id="saveStatus">불러오는 중…</span>
+ </div>
+ <div id="batchStatus" class="statusbar hidden"></div>
+ <div class="searchbar">
+  <div class="filters">
+   <input id="query" class="field" placeholder="장소명·별칭·지역·촬영 콘셉트 검색">
+   <select id="regionFilter" class="field"><option value="">서울·수도권 전체</option><option>서울</option><option>경기</option><option>인천</option></select>
+   <select id="imageFilter" class="field"><option value="">모든 사진 상태</option><option value="none">대표사진 없음</option><option value="review">사진 검토 대기</option><option value="ready">대표사진 확정</option></select>
+  </div>
+ </div>
+ <main class="workspace">
+  <section class="panel">
+   <div class="panelhead"><h2>장소 후보 목록</h2><span id="listCount">0곳</span></div>
+   <div id="placeList" class="list"><div class="empty">장소자료를 불러오는 중입니다.</div></div>
+  </section>
+  <section class="panel">
+   <div class="panelhead"><h2>장소 정보 · 이미지 연구</h2><span id="selectedMeta">장소를 선택하세요</span></div>
+   <div id="detail" class="detail"><div class="empty">왼쪽 목록에서 장소를 선택하면 이미지 검색과 사진 등록 도구가 열립니다.</div></div>
+  </section>
+ </main>
+ <dialog id="publishDialog"><h2>카탈로그를 GitHub에 게시</h2><p>이 동작은 장소 목록과 사진 후보 정보를 개발 브랜치의 v2/data/places.json에 커밋합니다. 이미지 파일 자체를 업로드하는 기능은 다음 단계에서 연결합니다.</p><div class="statusbar warn">Fine-grained Personal Access Token을 사용하고, casio8000/FRAME_ATLAS 저장소 하나에만 Contents 읽기/쓰기 권한을 부여하세요. 토큰은 이 입력창에서만 사용하며 브라우저 저장소에 보관하지 않습니다. 신뢰하는 기기에서만 사용하세요.</div><label>GitHub 토큰<input type="password" id="publishToken" autocomplete="off" spellcheck="false" placeholder="github_pat_..." /></label><div id="publishStatus" class="statusbar hidden"></div><div class="toolbar"><button type="button" class="btn" id="cancelPublishBtn">취소</button><button type="button" class="btn primary" id="confirmPublishBtn">게시 시작</button></div></dialog>
+ <footer class="footer">FRAME ATLAS 2.0 · Co-created by 지혜의 쉼터 with Claude &amp; Chat GPT · ⓒ 2026<br>개발 단계: 검색·검토·내보내기 흐름을 만드는 초기 버전입니다. 자동 검색 결과의 장소 일치·권리 확인은 별도 검증이 필요합니다.</footer>
+</div>
+<script defer src="assets/app.js"></script>
+</body>
+</html>
