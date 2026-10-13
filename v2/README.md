@@ -143,3 +143,11 @@ CC BY-NC 등 비상업 조건, CC BY-ND 등 파생 저작물 제한이 있는 �
 - Reframed the image workflow around matching the actual location, selecting a representative photo, replacing an image URL, replacing it with a local file, editing photo notes, and deleting an image.
 - Author/license fields are no longer part of routine photo review screens.
 - Service-worker cache version bumped so installed devices refresh the new landing/workspace UX.
+
+
+## 2026-10-13 — Home state and image-reference migration
+- Added navigation from the home page into the workspace via start, region shortcuts, search, and featured location cards.
+- The home screen renders image-led cards from the current 34-location catalog.
+- Older local drafts now merge missing published reference-photo records rather than masking the public catalog's new image references.
+- The place list shows the best available actual-location photo candidate, whether or not the user has explicitly selected it as the representative photo.
+- Service worker cache updated for the new interface.
