@@ -25,7 +25,7 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - No additional image service is needed for selection; this only changes which already-catalogued photo is used for the hero.
 
 ## Latest edits in this checkpoint
-- Random hero avoids mismatched photo candidates and consecutive repeats; the initial display avoids DDP when other eligible photos are available.
+- Random hero avoids mismatched photo candidates and consecutive repeats; the initial display avoids DDP when other eligible photos are available. The first visible home card is reordered to match that randomized location, including on mobile where the wide banner is collapsed.
 - Browser smoke test uses deterministic randomness to prove the hero can change across a fresh reload without a flaky probability-based assertion.
 - Mobile archive photo framing is 16:9 landscape and remains above the location text; the “photo unavailable” message only appears after the image fallback sequence fails.
 - CSS/JS cache-busting and service-worker cache version are kept in sync.

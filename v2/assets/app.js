@@ -251,8 +251,10 @@ function renderLanding(){
  const get=id=>places.find(p=>p.id===id);
  const prefer=["seo-ddp","seo-oil-tank","seo-seoul-station-284","gg-mimesis","ic-tri-bowl","ic-art-platform"];
  const picked=prefer.map(get).filter(Boolean);
- const featured=[...picked,...places.filter(p=>!picked.some(x=>x.id===p.id)).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9))];
- const heroPlace=chooseHomeHeroPlace(places)||featured.find(p=>activePhoto(p))||featured[0];
+ const baseFeatured=[...picked,...places.filter(p=>!picked.some(x=>x.id===p.id)).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9))];
+ const heroPlace=chooseHomeHeroPlace(places)||baseFeatured.find(p=>activePhoto(p))||baseFeatured[0];
+ /* The first visible card is the same random location as the hero; on mobile the photo banner is compacted into this first card. */
+ const featured=heroPlace?[heroPlace,...baseFeatured.filter(p=>p.id!==heroPlace.id)]:baseFeatured;
  if(heroPlace){
   const photo=activePhoto(heroPlace),hero=$("landingHeroImage");
   if(hero&&photo){
