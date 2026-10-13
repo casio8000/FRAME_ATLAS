@@ -9,7 +9,10 @@
     root.FADeviceSync = api;
     root.faDeviceSyncEnable = function () {
       try {
-        safeStatus("안전 동기화 시작 · 저장소와 토큰을 확인합니다…", "pending");
+        const initialMessage = "안전 동기화 시작 · 저장소와 토큰을 확인합니다…";
+        try { if (root.localStorage) root.localStorage.setItem("faDeviceSyncLastStatus", initialMessage); } catch (_) {}
+        const status = root.document && root.document.getElementById("fa_device_sync_status");
+        if (status) status.textContent = initialMessage;
         Promise.resolve(api.enable()).catch(function (e) {
           let last = "";
           try { last = root.localStorage && root.localStorage.getItem("faDeviceSyncLastStatus") || ""; } catch (_) {}
