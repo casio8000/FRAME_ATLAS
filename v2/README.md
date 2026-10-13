@@ -151,3 +151,13 @@ CC BY-NC 등 비상업 조건, CC BY-ND 등 파생 저작물 제한이 있는 �
 - Older local drafts now merge missing published reference-photo records rather than masking the public catalog's new image references.
 - The place list shows the best available actual-location photo candidate, whether or not the user has explicitly selected it as the representative photo.
 - Service worker cache updated for the new interface.
+
+
+## 2026-10-13 — Photo selection and edit workflow
+- Representative photo selection follows the chosen image and does not require author/license metadata.
+- Added image URL/file, caption, view type, actual-place match, optional source page and notes.
+- Candidate cards support selecting a representative, changing an image URL, replacing with a local file, editing details, and deleting.
+- Publishing retains non-rejected photo candidates and uploads a local file selected as representative/reference.
+- Repository image files marked for deletion are removed on the next publish.
+- Venue access and actual-place match checks remain; creator/license fields are not part of routine photo management.
+- The service-worker cache version has been bumped.

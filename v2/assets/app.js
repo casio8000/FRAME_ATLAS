@@ -154,6 +154,7 @@ function render(){
   return '<article class="place '+(p.id===selectedId?'active':'')+'" data-select="'+esc(p.id)+'" tabindex="0" role="button" aria-pressed="'+(p.id===selectedId?'true':'false')+'"><div class="thumb '+(im?'thumb-approved':ref?'thumb-reference':'')+'">'+thumb+'</div><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+'</p><div class="chips"><span class="chip">'+esc((p.spaceTypes||[]).join(" · "))+'</span><span class="chip '+(p.scoutPriority===1?'':'need')+'">조사 '+(p.scoutPriority===1?'A':p.scoutPriority===2?'B':'C')+'</span><span class="chip">사진잠재력 '+esc(p.photoPotentialScore||"—")+'/100</span>'+state+'</div><div class="place-photo-title">'+esc(shown?(shown.title||"장소 사진 후보"):"사진 후보 없음")+'</div></div><span class="place-chevron" aria-hidden="true">↗</span></article>';
  }).join(""):'<div class="empty">검색 조건에 맞는 장소가 없습니다.</div>';
  bindImageFallbacks($("placeList"));
+ catalog.places.forEach(place=>{if((place.imageCandidates||[]).some(c=>c.pendingAsset))hydratePendingPreviews(place);});
  $("placeList").querySelectorAll("[data-select]").forEach(el=>{
    const choose=()=>{
     selectedId=el.dataset.select;render();
@@ -266,11 +267,11 @@ function locationActions(p){
   '</div></details><p class="map-note">'+esc(note)+'</p></div>';
 }
 function referencePhotoPanel(p,approved,ref){
- if(approved){
-  return '<div class="section approved-photo"><img data-image-fallback="true" data-primary-preview="'+esc(approved.id)+'" src="'+esc(approved.imageUrl||"")+'" alt="'+esc(p.name)+' 정식 대표사진" loading="lazy"><div class="photo-caption"><b>정식 대표사진</b><span>'+esc(approved.sourceName||"출처 미기록")+' · '+esc(approved.rightsLabel||approved.rights)+'</span>'+(approved.sourcePageUrl?'<a target="_blank" rel="noopener noreferrer" href="'+esc(approved.sourcePageUrl)+'">원본 출처 열기 ↗</a>':"")+'</div></div>';
- }
- if(!ref)return '<div class="statusbar warn">사진 후보가 아직 없습니다. 아래의 사진 검색에서 후보를 추가하세요.</div>';
- return '<div class="section reference-hero"><div class="reference-photo-wrap"><img data-image-fallback="true" data-fallback-thumbnail="'+esc(ref.sourceThumbnail||"")+'" data-reference-preview="'+esc(ref.id)+'" src="'+esc(ref.imageUrl||ref.sourceThumbnail||"")+'" alt="'+esc(p.name)+' 대표 참고사진" loading="lazy" referrerpolicy="no-referrer"><span class="reference-stamp">REPRESENTATIVE REFERENCE · 검토 후보</span><span class="reference-missing">이미지 연결을 확인할 수 없습니다</span></div><div class="reference-info"><div class="reference-kicker">IMAGE RESEARCH / '+esc(ref.sourceName||"출처 미확인")+'</div><h3>대표 참고사진</h3><p>'+esc(ref.title||"촬영 참고 이미지 후보")+'</p><div class="reference-meta">장소 일치: '+esc(ref.placeMatch||"미확인")+' · 사용 권리: '+esc(ref.rightsLabel||ref.rights||"미확인")+'</div><div class="toolbar">'+(ref.sourcePageUrl?'<a class="btn small" href="'+esc(ref.sourcePageUrl)+'" target="_blank" rel="noopener noreferrer">원본 출처 ↗</a>':"")+'<a class="btn small" href="#candidateList">사진 후보 검토 ↓</a></div><p class="tiny">선택된 참고사진입니다. 외부 원본 이미지의 표시 여부는 제공 사이트에 따라 달라질 수 있습니다. 공개 사용 권리 확인 전에는 정식 대표사진으로 승인되지 않습니다.</p></div></div>';
+ const photo=approved||ref;
+ if(!photo)return '<div class="statusbar warn">이 장소의 사진 후보가 없습니다. 아래에서 이미지 주소를 넣거나 사진 파일을 추가하세요.</div>';
+ const chosen=!!approved;
+ const matchText=photo.placeMatch==="confirmed"?"장소 일치 확인됨":photo.placeMatch==="mismatch"?"다른 장소 사진으로 표시됨":"실제 장소의 사진인지 확인해 주세요";
+ return '<div class="section reference-hero"><div class="reference-photo-wrap"><img data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" data-reference-preview="'+esc(photo.id)+'" '+(chosen?'data-primary-preview="'+esc(photo.id)+'"':'')+' src="'+esc(photo.imageUrl||photo.sourceThumbnail||"")+'" alt="'+esc(p.name)+' '+(chosen?'대표사진':'촬영 참고사진')+'" loading="lazy" referrerpolicy="no-referrer"><span class="reference-stamp">'+(chosen?'CURRENT COVER PHOTO':'LOCATION PHOTO · REVIEWABLE')+'</span><span class="reference-missing">사진 연결을 확인할 수 없습니다</span></div><div class="reference-info"><div class="reference-kicker">'+(chosen?'SELECTED PHOTO':'SUGGESTED PHOTO')+' / '+esc(p.region||"수도권")+'</div><h3>'+(chosen?'현재 대표사진':'기본 참고사진')+'</h3><p>'+esc(photo.title||p.name+" 장소 사진")+'</p><div class="reference-meta">'+esc(matchText)+' · 다른 사진으로 바꿀 수 있습니다</div><div class="toolbar">'+(photo.sourcePageUrl?'<a class="btn small" href="'+esc(photo.sourcePageUrl)+'" target="_blank" rel="noopener noreferrer">사진 원문 ↗</a>':"")+'<a class="btn small" href="#candidateList">사진 변경·삭제 ↓</a></div><p class="tiny">실제 장소와 일치하지 않으면 아래 후보 중 다른 사진을 대표사진으로 지정하거나 사진을 삭제하세요.</p></div></div>';
 }
 function renderDetail(){
  const p=getPlace(selectedId);
@@ -289,13 +290,13 @@ function renderDetail(){
  '</div><div class="score-legend"><span>A 85–100 · 최우선</span><span>B 74–84 · 보완 조사</span><span>C 0–73 · 조건부</span></div><div class="score-foot">'+esc(p.scoreStatus||"탁상 평가이며 현장 확인 전입니다.")+' 점수는 시각적 잠재력만 나타내며 출입·운영·촬영 허가 가능성은 별도 확인합니다.</div></div>';
  $("detail").innerHTML=
  '<div class="detailtitle"><div><h2>'+esc(p.name)+'</h2><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+' · ID '+esc(p.id)+'</p></div><div class="toolbar"><button class="btn small" id="editPlaceBtn">정보 수정</button><button class="btn small" id="deletePlaceBtn">장소 삭제</button></div></div>'+locationActions(p)+closureNotice+photoPanel+profileCard+
- '<div class="section"><h3>여러 검색원에서 사진 찾기</h3><label class="tiny">사진가 관점의 검색 방향<select id="photoSearchMode" class="field"><option value="place">장소·현장 전경</option><option value="fashion">패션·인물 에디토리얼</option><option value="architecture">건축·기하학·질감</option><option value="interior">실내·자연광</option><option value="outdoor">야외·인물 배경</option><option value="details">디테일·재료·그림자</option></select></label><div id="sourceLinksHost">'+sourceLinks(p,"place")+'</div><p class="searchnote">검색 방향을 바꾸면 같은 장소를 다른 촬영 콘셉트로 검색합니다. Google·Bing·네이버·다음·Flickr는 검색 페이지를 열며, 후보를 등록할 때는 원본 사진 페이지·장소 일치·사용 권리를 확인하세요.</p></div>'+
+ '<div class="section"><h3>여러 검색원에서 사진 찾기</h3><label class="tiny">사진가 관점의 검색 방향<select id="photoSearchMode" class="field"><option value="place">장소·현장 전경</option><option value="fashion">패션·인물 에디토리얼</option><option value="architecture">건축·기하학·질감</option><option value="interior">실내·자연광</option><option value="outdoor">야외·인물 배경</option><option value="details">디테일·재료·그림자</option></select></label><div id="sourceLinksHost">'+sourceLinks(p,"place")+'</div><p class="searchnote">검색 방향을 바꾸면 같은 장소를 다른 촬영 콘셉트로 검색합니다. Google·Bing·네이버·다음·Flickr는 검색 페이지를 열며, 후보를 등록할 때는 원본 사진 페이지·장소 일치·사진 일치 여부를 확인하세요.</p></div>'+
  '<div class="section"><h3>열린 라이선스 이미지 자동 검색</h3><div class="row"><button class="btn primary" id="searchOpenverseBtn">Openverse 검색</button><button class="btn" id="searchCommonsBtn">Wikimedia Commons 검색</button><button class="btn" id="clearSearchBtn">검색 결과 지우기</button></div><div class="searchnote">Openverse와 Commons에서 제목·썸네일·출처·라이선스 정보를 불러옵니다. 결과에 다른 장소가 섞일 수 있으므로 실제 사진을 확인한 뒤 후보로 저장하세요.</div><div id="autoSearchStatus" class="statusbar hidden"></div><div id="autoResults" class="results"></div></div>'+
  '<div class="section"><h3>장소 기본 정보</h3><div class="catalogform"><label>장소명<input id="f_name" value="'+esc(p.name)+'"></label><label>지역<select id="f_region">'+["서울","경기","인천"].map(r=>'<option '+(p.region===r?'selected':'')+'>'+r+'</option>').join("")+'</select></label><label>분류<input id="f_category" value="'+esc(p.category||"")+'"></label><label>별칭(쉼표 구분)<input id="f_aliases" value="'+esc((p.aliases||[]).join(", "))+'"></label><label class="wide">주소<input id="f_address" value="'+esc(p.address||"")+'" placeholder="공식 출처로 확인된 주소"></label><label class="wide">공식 홈페이지·근거 링크<input id="f_official" value="'+esc(p.officialUrl||"")+'" placeholder="https://..."></label><label>운영 상태<select id="f_open">'+["미확인","운영 확인","운영시간 확인","휴관·폐쇄 확인"].map(v=>'<option '+((p.openingStatus||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>촬영 허가<select id="f_permission">'+["미확인","사전 허가 필요","제한 있음","허가 불필요 근거 확인","촬영 불가 근거 확인"].map(v=>'<option '+((p.shootingPermission||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label class="wide">촬영·조사 메모<textarea id="f_summary" rows="3">'+esc(p.summary||p.notes||"")+'</textarea></label><div class="wide"><button class="btn primary" id="savePlaceBtn">장소 정보 저장</button></div></div></div>'+
- '<div class="section"><h3>사진 후보 직접 등록</h3><div class="candidateform"><label>이미지 직접 주소(URL)<input id="c_image" placeholder="https://...jpg 또는 이미지 직접 주소"></label><label>다운로드한 사진 파일(선택)<input type="file" id="c_file" accept="image/jpeg,image/png,image/webp,image/avif"></label><label>원본 페이지 주소<input id="c_page" placeholder="사진이 소개된 원본 웹페이지"></label><label>출처·사이트명<input id="c_source" placeholder="예: 서울시, Flickr 작가명"></label><label>작가·저작자<input id="c_creator" placeholder="확인된 경우 기록"></label><label>라이선스 상태<select id="c_rights"><option value="unknown">미확인</option><option value="cc0">CC0</option><option value="public-domain">퍼블릭 도메인</option><option value="cc-by">CC BY</option><option value="cc-by-sa">CC BY-SA</option><option value="permission">이용 허가 확인</option><option value="self-owned">직접 촬영·소유</option><option value="reference-only">개인 참고용·공개 불가</option></select></label><label>라이선스/허가 근거 URL<input id="c_license" placeholder="라이선스 설명 또는 허가 근거 페이지"></label><label>실제 장소 일치<select id="c_match"><option value="unverified">미확인</option><option value="confirmed">사진의 장소 확인</option><option value="mismatch">다른 장소</option></select></label><label>이미지 구도<select id="c_view"><option>현장 시점 사진</option><option>건물·장소 전경</option><option>실내</option><option>디테일</option><option>항공·드론</option><option>지도·포스터</option></select></label><label class="wide">검토 메모<input id="c_notes" placeholder="예: 간판·주변 구조물로 장소 확인, 계절/공사 여부"></label><div class="wide"><button class="btn primary" id="addCandidateBtn">사진 후보 저장</button></div></div><p class="tiny">후보는 출처와 함께 저장됩니다. 라이선스 상태만 선택했다고 법적 권리가 자동으로 확인되는 것은 아닙니다. 대표사진 확정은 사용 권한, 장소 일치, 원본 페이지를 모두 점검한 뒤 진행합니다.</p></div>'+
- '<div class="section"><h3>저장된 사진 후보 ('+imageCount(p)+')</h3><div id="candidateList">'+renderCandidates(p)+'</div></div>'+
- '<div class="section"><h3>검증 상태</h3><div class="catalogform"><label>장소 정보<select id="v_location">'+["미확인","공식 출처 확인","현장 확인"].map(v=>'<option '+((p.verification?.location||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>사진 일치<select id="v_photo">'+["미확인","검토 중","확인 완료"].map(v=>'<option '+((p.verification?.photoMatch||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>사용 권한<select id="v_rights">'+["미확인","검토 중","확인 완료"].map(v=>'<option '+((p.verification?.rights||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>촬영 허가 근거<select id="v_permission">'+["미확인","공식 근거 확인","서면 확인","현장 확인 필요"].map(v=>'<option '+((p.verification?.shootingPermission||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><div class="wide"><button class="btn" id="saveVerificationBtn">검증 상태 저장</button></div></div></div>'+
- '<div class="section"><h3>이 장소의 출처·작업 기록</h3><p class="tiny">최종 확인일: '+esc(p.verification?.lastCheckedAt||"미기록")+' · 최근 수정: '+esc(p.updatedAt||"미기록")+'</p></div>';
+ '<div class="section photo-editor"><h3>사진 추가 / 교체</h3><p class="searchnote">이미지 주소를 붙여 넣거나 기기에 저장된 사진 파일을 선택하세요. 추가한 후보는 아래에서 대표사진으로 지정할 수 있습니다.</p><div class="candidateform"><label>이미지 주소(URL)<input id="c_image" placeholder="사진 파일의 직접 주소 https://..."></label><label>사진 파일 선택<input type="file" id="c_file" accept="image/jpeg,image/png,image/webp,image/avif"></label><label>사진 설명<input id="c_title" placeholder="예: 건물 정면, 중앙홀, 야간 외관"></label><label>사진 구도<select id="c_view"><option>장소 전경</option><option>건물·장소 전경</option><option>실내</option><option>디테일</option><option>야외 인물 배경</option><option>항공·드론</option><option>지도·포스터</option></select></label><label>실제 장소와 일치 여부<select id="c_match"><option value="unverified">확인 필요</option><option value="confirmed">이 장소의 사진임을 확인</option><option value="mismatch">다른 장소 사진</option></select></label><label>사진 원문 링크(선택)<input id="c_page" placeholder="사진이 표시된 페이지 주소"></label><label class="wide">메모(선택)<input id="c_notes" placeholder="장소가 맞는 근거, 촬영 위치나 각도"></label><div class="wide"><button class="btn primary" id="addCandidateBtn">사진 후보 추가</button></div></div></div>'+
+'<div class="section"><h3>저장된 사진 후보 ('+imageCount(p)+')</h3><div id="candidateList">'+renderCandidates(p)+'</div></div>'+
+ '<div class="section"><h3>장소 확인 상태</h3><div class="catalogform"><label>장소 정보<select id="v_location">'+["미확인","공식 출처 확인","현장 확인"].map(v=>'<option '+((p.verification?.location||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>대표사진의 장소 일치<select id="v_photo">'+["미확인","검토 중","확인 완료"].map(v=>'<option '+((p.verification?.photoMatch||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>촬영 가능 여부<select id="v_permission">'+["미확인","공식 근거 확인","서면 확인","현장 확인 필요"].map(v=>'<option '+((p.verification?.shootingPermission||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><div class="wide"><button class="btn" id="saveVerificationBtn">장소 확인 상태 저장</button></div></div></div>'+
+'<div class="section"><h3>이 장소의 출처·작업 기록</h3><p class="tiny">최종 확인일: '+esc(p.verification?.lastCheckedAt||"미기록")+' · 최근 수정: '+esc(p.updatedAt||"미기록")+'</p></div>';
  bindImageFallbacks($("detail"));
  $("editPlaceBtn").addEventListener("click",()=>{$("f_name").focus();$("f_name").scrollIntoView({behavior:"smooth",block:"center"});});
  $("deletePlaceBtn").addEventListener("click",()=>deletePlace(p.id));
@@ -309,35 +310,30 @@ function renderDetail(){
  $("candidateList").querySelectorAll("[data-cand-action]").forEach(el=>el.addEventListener("click",()=>candidateAction(p.id,el.dataset.candId,el.dataset.candAction)));
  $("candidateList").querySelectorAll("[data-cand-field]").forEach(el=>el.addEventListener("change",()=>{
   const c=(p.imageCandidates||[]).find(x=>x.id===el.dataset.candId);if(!c)return;
-  const field=el.dataset.candField;
-  if(field==="sourcePageUrl"||field==="licenseUrl"){
-   const value=el.value.trim();
-   if(value){try{const u=new URL(value);if(!["https:","http:"].includes(u.protocol))throw new Error("URL protocol");}catch(_){alert("웹 주소는 http:// 또는 https:// 형식으로 입력하세요.");el.focus();return;}}
+  const field=el.dataset.candField,value=el.value.trim();
+  if(field==="sourcePageUrl"){
+   if(value){try{const u=new URL(value);if(!["https:","http:"].includes(u.protocol))throw new Error("URL");}catch(_){alert("사진 원문 링크는 http:// 또는 https:// 형식으로 입력하세요.");el.focus();return;}}
    c[field]=value;
-  }else if(field==="rights"){
-   c.rights=el.value;c.rightsLabel=el.selectedOptions[0]?.textContent||el.value;
-  }else if(field==="placeMatch"||field==="viewType"||field==="creator"||field==="notes"){c[field]=el.value;}
-  c.updatedAt=stamp();p.updatedAt=stamp();localSave("사진 검토 정보를 저장했습니다");render();
+  }else if(field==="title"){c.title=value||"장소 사진 후보";}
+  else if(field==="placeMatch"||field==="viewType"||field==="notes"){c[field]=value;}
+  c.updatedAt=stamp();p.updatedAt=stamp();localSave("사진 정보를 저장했습니다");render();renderLanding();
  }));
  hydratePendingPreviews(p);
 }
 function renderCandidates(p){
- if(!imageCount(p))return '<div class="empty">아직 등록된 사진 후보가 없습니다. 여러 검색원에서 이미지를 찾아 후보로 추가하세요.</div>';
- const rightOptions=[["unknown","미확인"],["cc0","CC0"],["public-domain","퍼블릭 도메인"],["cc-by","CC BY"],["cc-by-sa","CC BY-SA"],["permission","이용 허가 확인"],["self-owned","직접 촬영·소유"],["reference-only","개인 참고용·공개 불가"]];
- const matchOptions=[["unverified","미확인"],["confirmed","장소 일치 확인"],["mismatch","다른 장소"]];
- const viewOptions=["현장 시점 사진","건물·장소 전경","실내","디테일","항공·드론","지도·포스터"];
+ if(!imageCount(p))return '<div class="empty">사진 후보가 없습니다. 위에서 이미지 주소를 입력하거나 사진 파일을 추가하세요.</div>';
+ const viewOptions=["장소 전경","건물·장소 전경","실내","디테일","야외 인물 배경","항공·드론","지도·포스터"];
  return p.imageCandidates.map(c=>{
-  const safe=esc((c.pendingAsset||c.assetPath)?(c.imageUrl||""):(c.imageUrl||c.sourceThumbnail||"")),licensed=PERMITTED.has(c.rights);
-  const badges=(c.status==="approved"&&licensed&&c.placeMatch==="confirmed"&&(c.assetPath||c.pendingAsset))?'<span class="chip">대표사진 승인</span>':c.status==="rejected"?'<span class="chip">제외</span>':'<span class="chip need">검토 대기</span>';
-  const imageMarkup=(c.imageUrl||c.sourceThumbnail)?'<div class="candidate-image-frame"><img data-image-fallback="true" data-fallback-thumbnail="'+esc(c.sourceThumbnail||"")+'" data-local-preview="'+esc(c.id)+'" loading="lazy" alt="사진 후보 미리보기" src="'+safe+'" referrerpolicy="no-referrer"><span class="reference-missing">이미지 연결을 확인할 수 없습니다</span></div>':c.pendingAsset?'<div><img data-local-preview="'+esc(c.id)+'" alt="로컬 사진 파일 미리보기" style="width:100%;height:120px;object-fit:contain;background:#f2f2ec" src=""><div class="tiny">이 기기에 보관된 사진 파일</div></div>':'<div class="thumb">NO IMAGE</div>';
-  const evidence=(c.rights==="self-owned")||(c.sourcePageUrl&&c.licenseUrl);
-  const canApprove=licensed&&c.placeMatch==="confirmed"&&evidence&&(!!c.pendingAsset||!!c.assetPath);
-  const rightsSelect='<select class="field" data-cand-field="rights" data-cand-id="'+esc(c.id)+'">'+rightOptions.map(o=>'<option value="'+o[0]+'" '+(c.rights===o[0]?'selected':'')+'>'+o[1]+'</option>').join("")+'</select>';
+  const safe=esc(c.imageUrl||c.sourceThumbnail||"");
+  const chosen=p.primaryImageId===c.id,defaultRef=p.referenceImageId===c.id;
+  const badge=chosen?'<span class="chip selected-photo">현재 대표사진</span>':defaultRef?'<span class="chip need">기본 참고사진</span>':'<span class="chip">대체 후보</span>';
+  const imageMarkup=(c.imageUrl||c.sourceThumbnail||c.pendingAsset||c.assetPath)?'<div class="candidate-image-frame"><img data-image-fallback="true" data-fallback-thumbnail="'+esc(c.sourceThumbnail||"")+'" data-local-preview="'+esc(c.id)+'" loading="lazy" alt="사진 후보 미리보기" src="'+safe+'" referrerpolicy="no-referrer"><span class="reference-missing">사진 연결을 확인할 수 없습니다</span></div>':'<div class="thumb">사진 없음</div>';
+  const matchOptions=[["unverified","확인 필요"],["confirmed","이 장소의 사진임을 확인"],["mismatch","다른 장소 사진"]];
   const matchSelect='<select class="field" data-cand-field="placeMatch" data-cand-id="'+esc(c.id)+'">'+matchOptions.map(o=>'<option value="'+o[0]+'" '+(c.placeMatch===o[0]?'selected':'')+'>'+o[1]+'</option>').join("")+'</select>';
   const viewSelect='<select class="field" data-cand-field="viewType" data-cand-id="'+esc(c.id)+'">'+viewOptions.map(o=>'<option '+(c.viewType===o?'selected':'')+'>'+o+'</option>').join("")+'</select>';
-  return '<article class="candidate"><div class="candidategrid">'+imageMarkup+'<div><h4>'+esc(c.title||c.sourceName||"사진 후보")+' '+badges+'</h4><p>출처: '+esc(c.sourceName||"미상")+' · 저작자: '+esc(c.creator||"미확인")+'</p><p>권리: '+esc(c.rightsLabel||c.rights||"미확인")+' · 장소 일치: '+esc(c.placeMatch||"미확인")+' · 구도: '+esc(c.viewType||"미확인")+'</p><p>'+esc(c.notes||"")+'</p><p class="tiny">'+(c.pendingAsset?"로컬 사진 파일 임시보관됨"+(c.localFileName?" · "+esc(c.localFileName):""):"")+(c.assetPath?" · 저장소 파일: "+esc(c.assetPath):"")+'</p>'+(c.sourcePageUrl?'<p><a target="_blank" rel="noopener noreferrer" href="'+esc(c.sourcePageUrl)+'">원본 페이지 열기 ↗</a></p>':'')+(c.licenseUrl?'<p><a target="_blank" rel="noopener noreferrer" href="'+esc(c.licenseUrl)+'">라이선스·허가 근거 ↗</a></p>':'')+
-  '<details class="candidateReview"><summary>사진·권리 검토 정보 수정</summary><div class="candidateform"><label>실제 장소 일치'+matchSelect+'</label><label>사용 권리 분류'+rightsSelect+'</label><label>사진가·저작자<input class="field" data-cand-field="creator" data-cand-id="'+esc(c.id)+'" value="'+esc(c.creator||"")+'" placeholder="저작자 이름"></label><label>사진 구도'+viewSelect+'</label><label class="wide">원본 페이지 URL<input class="field" data-cand-field="sourcePageUrl" data-cand-id="'+esc(c.id)+'" value="'+esc(c.sourcePageUrl||"")+'" placeholder="https://..."></label><label class="wide">라이선스·허가 근거 URL<input class="field" data-cand-field="licenseUrl" data-cand-id="'+esc(c.id)+'" value="'+esc(c.licenseUrl||"")+'" placeholder="공식 라이선스 또는 허가 근거 https://..."></label><label class="wide">검토 메모<textarea class="field" data-cand-field="notes" data-cand-id="'+esc(c.id)+'" rows="2">'+esc(c.notes||"")+'</textarea></label></div><p class="tiny">상태를 “확인”으로 바꾸기 전에 사진의 실제 장소와 라이선스 조건을 원본 페이지에서 확인하세요. 사진 파일을 저장소에 보관하지 않으면 대표사진 승인 버튼이 활성화되지 않습니다.</p></details>'+
-  '<div class="toolbar">'+(p.referenceImageId===c.id?'<span class="chip reference-selected">현재 대표 참고사진</span>':'<button class="btn small" data-cand-action="reference" data-cand-id="'+esc(c.id)+'">대표 참고사진으로 지정</button>')+(c.status!=="approved"?'<button class="btn small primary" data-cand-action="approve" data-cand-id="'+esc(c.id)+'" '+(canApprove?'':'disabled')+'>정식 대표사진 승인</button>':'<button class="btn small" data-cand-action="unapprove" data-cand-id="'+esc(c.id)+'">정식 대표사진 해제</button>')+((c.imageUrl&&!c.pendingAsset&&!c.assetPath)?'<button class="btn small" data-cand-action="download" data-cand-id="'+esc(c.id)+'">사진 파일 가져오기</button>':'')+'<button class="btn small" data-cand-action="reject" data-cand-id="'+esc(c.id)+'">제외</button><button class="btn small" data-cand-action="delete" data-cand-id="'+esc(c.id)+'">삭제</button></div>'+(!canApprove?'<p class="tiny">대표사진 승인 조건: 공개 사용 가능한 권리 확인, 실제 장소 일치 확인, 사진 파일을 이 기기에 임시 저장했거나 저장소에 보관한 상태.</p>':'')+'</div></div></article>';
+  return '<article class="candidate"><div class="candidategrid">'+imageMarkup+'<div><div class="candidate-heading"><h4>'+esc(c.title||"장소 사진 후보")+'</h4>'+badge+'</div><p class="candidate-location-state">'+(c.placeMatch==="confirmed"?"장소 일치 확인됨":c.placeMatch==="mismatch"?"다른 장소 사진으로 표시됨":"실제 장소와 일치하는지 확인 필요")+'</p><p class="tiny">'+(c.viewType?esc(c.viewType)+" · ":"")+(c.sourceName?esc(c.sourceName)+" · ":"")+(c.localFileName?"기기 사진 파일: "+esc(c.localFileName):c.assetPath?"저장된 이미지 파일":c.imageUrl?"사진 URL 등록됨":"이미지 주소 확인 필요")+'</p>'+(c.notes?'<p>'+esc(c.notes)+'</p>':'')+(c.sourcePageUrl?'<p><a target="_blank" rel="noopener noreferrer" href="'+esc(c.sourcePageUrl)+'">사진 원문 열기 ↗</a></p>':'')+
+   '<details class="candidateReview"><summary>사진 정보 수정</summary><div class="candidateform"><label>사진 설명<input class="field" data-cand-field="title" data-cand-id="'+esc(c.id)+'" value="'+esc(c.title||"")+'" placeholder="사진 설명"></label><label>사진 구도'+viewSelect+'</label><label>실제 장소 일치'+matchSelect+'</label><label class="wide">사진 원문 링크<input class="field" data-cand-field="sourcePageUrl" data-cand-id="'+esc(c.id)+'" value="'+esc(c.sourcePageUrl||"")+'" placeholder="https://..."></label><label class="wide">메모<textarea class="field" data-cand-field="notes" data-cand-id="'+esc(c.id)+'" rows="2">'+esc(c.notes||"")+'</textarea></label></div></details>'+
+   '<div class="toolbar photo-actions">'+(chosen?'<span class="chip selected-photo">현재 대표사진</span>':'<button class="btn small primary" data-cand-action="select" data-cand-id="'+esc(c.id)+'">대표사진으로 사용</button>')+'<button class="btn small" data-cand-action="edit-url" data-cand-id="'+esc(c.id)+'">이미지 주소 변경</button><button class="btn small" data-cand-action="replace-file" data-cand-id="'+esc(c.id)+'">파일로 교체</button><button class="btn small danger-quiet" data-cand-action="delete" data-cand-id="'+esc(c.id)+'">사진 삭제</button></div></div></div></article>';
  }).join("");
 }
 function savePlace(id){
@@ -346,7 +342,7 @@ function savePlace(id){
  p.name=name;p.region=$("f_region").value;p.category=$("f_category").value.trim();p.aliases=$("f_aliases").value.split(",").map(x=>x.trim()).filter(Boolean);p.address=$("f_address").value.trim();p.officialUrl=$("f_official").value.trim();p.openingStatus=$("f_open").value;p.shootingPermission=$("f_permission").value;p.summary=$("f_summary").value.trim();p.updatedAt=stamp();localSave("장소정보 임시저장 완료");render();
 }
 function saveVerification(id){
- const p=getPlace(id);p.verification=p.verification||{};p.verification.location=$("v_location").value;p.verification.photoMatch=$("v_photo").value;p.verification.rights=$("v_rights").value;p.verification.shootingPermission=$("v_permission").value;p.verification.lastCheckedAt=stamp().slice(0,10);p.updatedAt=stamp();localSave("검증상태 임시저장 완료");render();
+ const p=getPlace(id);if(!p)return;p.verification=p.verification||{};p.verification.location=$("v_location").value;p.verification.photoMatch=$("v_photo").value;p.verification.shootingPermission=$("v_permission").value;p.verification.lastCheckedAt=stamp().slice(0,10);p.updatedAt=stamp();localSave("장소 확인 상태를 임시저장했습니다");render();renderLanding();
 }
 function pendingKey(placeId,candidateId){return placeId+"::"+candidateId;}
 function openPendingPhotoDb(){
@@ -374,71 +370,84 @@ async function hydratePendingPreviews(p){
   if(!c.pendingAsset)continue;
   try{
    const item=await getPendingPhoto(pendingKey(p.id,c.id));if(!item||!item.blob)continue;
-   const img=$("candidateList").querySelector('[data-local-preview="'+CSS.escape(c.id)+'"]');
-   const old=objectUrls.get(c.id);if(old)URL.revokeObjectURL(old);
-   const u=URL.createObjectURL(item.blob);objectUrls.set(c.id,u);
-   if(img){img.src=u;img.style.objectFit="contain";}
-   const primary=$("detail").querySelector('[data-primary-preview="'+CSS.escape(c.id)+'"]');if(primary)primary.src=u;
-   const listThumb=$("placeList").querySelector('[data-place-preview="'+CSS.escape(p.id)+'"]');if(listThumb&&(p.primaryImageId===c.id||p.referenceImageId===c.id))listThumb.src=u;
-   const reference=$("detail").querySelector('[data-reference-preview="'+CSS.escape(c.id)+'"]');if(reference)reference.src=u;
+   let u=objectUrls.get(c.id);if(!u){u=URL.createObjectURL(item.blob);objectUrls.set(c.id,u);}
+   const img=$("#candidateList").querySelector('[data-local-preview="'+CSS.escape(c.id)+'"]');if(img){img.src=u;img.style.objectFit="contain";}
+   const primary=$("#detail").querySelector('[data-primary-preview="'+CSS.escape(c.id)+'"]');if(primary)primary.src=u;
+   const reference=$("#detail").querySelector('[data-reference-preview="'+CSS.escape(c.id)+'"]');if(reference)reference.src=u;
+   const listThumb=$("#placeList").querySelector('[data-place-preview="'+CSS.escape(p.id)+'"]');if(listThumb&&(p.primaryImageId===c.id||p.referenceImageId===c.id))listThumb.src=u;
+   const homeThumb=$("#homeView").querySelector('[data-home-preview="'+CSS.escape(p.id)+'"]');if(homeThumb&&(p.primaryImageId===c.id||p.referenceImageId===c.id))homeThumb.src=u;
+   const hero=$("#landingHeroImage");if(hero&&(p.id==="seo-ddp"||p.id==="seo-oil-tank")&&(p.primaryImageId===c.id||p.referenceImageId===c.id))hero.src=u;
   }catch(_){}
  }
 }
 async function addCandidate(placeId,record){
- const p=getPlace(placeId);let c=record,file=null;
+ const p=getPlace(placeId);if(!p)return;let c=record,file=null;
  if(!c){
   const imageUrl=$("c_image").value.trim(),sourcePageUrl=$("c_page").value.trim();
   file=$("c_file").files&&$("c_file").files[0]||null;
-  if(!imageUrl&&!file){alert("이미지 직접 주소 또는 다운로드한 사진 파일을 선택하세요.");return;}
-  if(file&&file.size>8*1024*1024){alert("사진 파일은 8MB 이하로 선택하세요. 큰 사진은 줄인 뒤 등록하세요.");return;}
-  if(imageUrl){try{new URL(imageUrl);}catch(_){alert("이미지 URL은 https:// 형식으로 입력하세요.");return;}}
-  if(sourcePageUrl){try{new URL(sourcePageUrl);}catch(_){alert("원본 페이지 URL은 https:// 형식으로 입력하세요.");return;}}
-  const rights=$("c_rights").value;
-  c={id:"img-"+Math.random().toString(36).slice(2,10),imageUrl,sourcePageUrl,sourceName:$("c_source").value.trim(),creator:$("c_creator").value.trim(),rights,rightsLabel:$("c_rights").selectedOptions[0].textContent,licenseUrl:$("c_license").value.trim(),placeMatch:$("c_match").value,viewType:$("c_view").value,notes:$("c_notes").value.trim(),status:"candidate",createdAt:stamp(),title:"수동 등록 후보",pendingAsset:!!file};
+  if(!imageUrl&&!file){alert("이미지 주소를 입력하거나 사진 파일을 선택하세요.");return;}
+  if(file&&file.size>8*1024*1024){alert("사진 파일은 8MB 이하로 선택하세요.");return;}
+  if(imageUrl){try{const u=new URL(imageUrl);if(!["http:","https:"].includes(u.protocol))throw new Error("URL");}catch(_){alert("http:// 또는 https:// 형식의 이미지 주소를 입력하세요.");return;}}
+  if(sourcePageUrl){try{const u=new URL(sourcePageUrl);if(!["http:","https:"].includes(u.protocol))throw new Error("URL");}catch(_){alert("사진 원문 링크는 http:// 또는 https:// 형식으로 입력하세요.");return;}}
+  c={id:"img-"+Math.random().toString(36).slice(2,10),imageUrl,sourcePageUrl,sourceName:"",creator:"",rights:"unknown",rightsLabel:"",licenseUrl:"",placeMatch:$("c_match").value,viewType:$("c_view").value,notes:$("c_notes").value.trim(),status:"candidate",createdAt:stamp(),title:$("c_title").value.trim()||"장소 사진 후보",pendingAsset:!!file};
  }
- if(!p.imageCandidates)p.imageCandidates=[];
- if(p.imageCandidates.some(x=>c.imageUrl&&x.imageUrl===c.imageUrl)){alert("같은 이미지 URL이 이미 등록돼 있습니다.");return;}
+ if(!Array.isArray(p.imageCandidates))p.imageCandidates=[];
+ if(p.imageCandidates.some(x=>c.imageUrl&&x.imageUrl===c.imageUrl)){alert("같은 이미지 주소가 이미 등록돼 있습니다.");return;}
  if(file){
-  try{await putPendingPhoto(pendingKey(p.id,c.id),file);}
-  catch(e){alert("사진 파일 임시보관 실패: "+e.message);return;}
+  try{await putPendingPhoto(pendingKey(p.id,c.id),file);}catch(e){alert("사진 파일 임시저장 실패: "+e.message);return;}
   c.pendingAsset=true;c.localFileName=file.name;c.localFileSize=file.size;
  }
- p.imageCandidates.unshift(c);p.imageStatus="검토 대기";p.updatedAt=stamp();localSave(file?"사진 후보와 로컬 파일을 임시보관했습니다":"사진 후보를 이 기기에 저장했습니다");render();
+ p.imageCandidates.unshift(c);p.photoSelectionCleared=false;p.imageStatus="사진 후보 추가";p.updatedAt=stamp();
+ if(!p.referenceImageId||!referenceImage(p))p.referenceImageId=c.id;
+ $("c_image").value="";$("c_page").value="";$("c_title").value="";$("c_notes").value="";if($("c_file"))$("c_file").value="";
+ localSave(file?"사진 후보와 로컬 파일을 이 기기에 임시저장했습니다":"사진 후보를 이 기기에 저장했습니다");render();renderLanding();
 }
 async function candidateAction(placeId,cid,action){
- const p=getPlace(placeId),c=(p.imageCandidates||[]).find(x=>x.id===cid);if(!c)return;
- if(action==="reference"){
-  if(c.status==="rejected"||!(c.imageUrl||c.sourceThumbnail)){alert("표시 가능한 이미지 URL이 있는 후보만 대표 참고사진으로 지정할 수 있습니다.");return;}
-  p.referenceImageId=c.id;p.updatedAt=stamp();localSave("대표 참고사진을 이 기기에 저장했습니다");render();return;
+ const p=getPlace(placeId),c=(p&&p.imageCandidates||[]).find(x=>x.id===cid);if(!p||!c)return;
+ if(action==="select"||action==="reference"){
+  if(c.status==="rejected"||!(c.imageUrl||c.sourceThumbnail||c.pendingAsset||c.assetPath)){alert("표시할 수 있는 이미지가 있는 후보만 대표사진으로 지정할 수 있습니다.");return;}
+  if(p.primaryImageId&&p.primaryImageId!==cid){const previous=p.imageCandidates.find(x=>x.id===p.primaryImageId);if(previous&&previous.status==="selected")previous.status="candidate";}
+  p.primaryImageId=c.id;p.referenceImageId=c.id;p.photoSelectionCleared=false;c.status="selected";p.imageStatus="대표사진 선택됨";p.updatedAt=stamp();
+  localSave("대표사진을 변경했습니다");render();renderLanding();return;
  }
- if(action==="download"){
-  if(!c.imageUrl){alert("이 후보에는 이미지 주소가 없습니다. 사진 파일을 직접 선택해 등록하세요.");return;}
-  try{
-   const response=await fetch(c.imageUrl,{mode:"cors",cache:"no-store"});
-   if(!response.ok)throw new Error("원본 이미지 응답 HTTP "+response.status);
-   const raw=await response.blob();
-   let mime=(raw.type||response.headers.get("content-type")||"").split(";")[0].toLowerCase();
-   if(mime==="image/pjpeg"||mime==="image/jpg")mime="image/jpeg";
-   if(!["image/jpeg","image/png","image/webp","image/avif"].includes(mime))throw new Error("이미지 형식을 확인할 수 없습니다: "+(mime||"형식 미확인"));
-   if(raw.size>8*1024*1024)throw new Error("이미지가 8MB를 초과합니다. 원본 이미지를 내려받은 뒤 크기를 줄여 등록하세요.");
-   const blob=new Blob([raw],{type:mime});
-   await putPendingPhoto(pendingKey(p.id,c.id),blob);
-   c.pendingAsset=true;c.localFileName=(c.title||"photo").slice(0,45)+"."+({"image/jpeg":"jpg","image/png":"png","image/webp":"webp","image/avif":"avif"}[mime]);c.localFileSize=blob.size;
-   c.updatedAt=stamp();p.updatedAt=stamp();localSave("이미지 파일을 이 기기에 임시보관했습니다");render();
-   return;
-  }catch(e){
-   alert("원본 사이트가 브라우저 파일 접근을 허용하지 않았거나 다운로드할 수 없습니다.\n\n"+e.message+"\n\n원본 페이지를 열고 사진 파일을 기기에 저장한 뒤 '사진 후보 직접 등록'의 파일 선택을 이용하세요.");
-   return;
-  }
+ if(action==="edit-url"){
+  const value=prompt("이 사진의 이미지 주소를 입력하세요.",c.imageUrl||"");
+  if(value===null)return;
+  const url=value.trim();
+  if(!/^https?:\\/\\//i.test(url)){alert("http:// 또는 https://로 시작하는 이미지 주소를 입력하세요.");return;}
+  if(c.assetPath){catalog.deletedAssetPaths=Array.from(new Set([...(catalog.deletedAssetPaths||[]),c.assetPath]));c.assetPath=null;}
+  if(c.pendingAsset){try{await deletePendingPhoto(pendingKey(p.id,c.id));}catch(_){}c.pendingAsset=false;}
+  c.imageUrl=url;c.sourceThumbnail="";c.localFileName="";c.updatedAt=stamp();p.updatedAt=stamp();
+  localSave("이미지 주소를 변경했습니다");render();renderLanding();return;
  }
- if(action==="approve"){
-  if(!PERMITTED.has(c.rights)||c.placeMatch!=="confirmed"||!((c.rights==="self-owned")||(c.sourcePageUrl&&c.licenseUrl))||!(c.pendingAsset||c.assetPath)){alert("대표사진은 실제 이미지 파일을 이 기기에 저장했거나 이미 저장소에 보관한 상태여야 합니다. URL만 등록한 사진은 후보로 남겨 두세요.");return;}
-  p.imageCandidates.forEach(x=>{if(x.id!==cid&&x.status==="approved")x.status="candidate";});
-  c.status="approved";p.primaryImageId=c.id;p.imageStatus="대표사진 확정";p.verification.photoMatch="확인 완료";p.verification.rights="확인 완료";p.verification.lastCheckedAt=stamp().slice(0,10);
- }else if(action==="unapprove"){c.status="candidate";if(p.primaryImageId===cid)p.primaryImageId=null;p.imageStatus="미등록";}
- else if(action==="reject"){c.status="rejected";if(p.primaryImageId===cid)p.primaryImageId=null;p.imageStatus="미등록";}
- else if(action==="delete"){if(!confirm("이 사진 후보를 삭제할까요?"))return;try{await deletePendingPhoto(pendingKey(p.id,c.id));}catch(_){}p.imageCandidates=p.imageCandidates.filter(x=>x.id!==cid);if(p.primaryImageId===cid)p.primaryImageId=null;p.imageStatus=isImageReady(p)?"대표사진 확정":"미등록";}
- p.updatedAt=stamp();localSave("사진 검토 변경사항을 저장했습니다");render();
+ if(action==="replace-file"){
+  const picker=document.createElement("input");picker.type="file";picker.accept="image/jpeg,image/png,image/webp,image/avif";
+  picker.addEventListener("change",async()=>{
+   const file=picker.files&&picker.files[0];if(!file)return;
+   if(file.size>8*1024*1024){alert("사진 파일은 8MB 이하로 선택하세요.");return;}
+   try{
+    await putPendingPhoto(pendingKey(p.id,c.id),file);
+    if(c.assetPath)catalog.deletedAssetPaths=Array.from(new Set([...(catalog.deletedAssetPaths||[]),c.assetPath]));
+    c.assetPath=null;c.pendingAsset=true;c.localFileName=file.name;c.localFileSize=file.size;c.imageUrl="";c.sourceThumbnail="";c.updatedAt=stamp();
+    p.primaryImageId=c.id;p.referenceImageId=c.id;p.photoSelectionCleared=false;p.imageStatus="대표사진 변경됨";p.updatedAt=stamp();
+    localSave("사진 파일로 교체했습니다 · 이 기기에 임시저장");render();renderLanding();
+   }catch(e){alert("사진 파일 저장에 실패했습니다: "+e.message);}
+  });
+  picker.click();return;
+ }
+ if(action==="delete"){
+  if(!confirm("이 사진을 이 장소의 후보 목록에서 삭제할까요?"))return;
+  if(c.assetPath)catalog.deletedAssetPaths=Array.from(new Set([...(catalog.deletedAssetPaths||[]),c.assetPath]));
+  try{await deletePendingPhoto(pendingKey(p.id,c.id));}catch(_){}
+  p.imageCandidates=p.imageCandidates.filter(x=>x.id!==cid);
+  if(p.primaryImageId===cid)p.primaryImageId=null;
+  if(p.referenceImageId===cid)p.referenceImageId=null;
+  const any=p.imageCandidates.some(x=>x.status!=="rejected"&&(x.imageUrl||x.sourceThumbnail||x.pendingAsset||x.assetPath));
+  p.photoSelectionCleared=!any;
+  if(!any){p.referenceImageStatus="사진 없음";p.imageStatus="사진 없음";}
+  else if(!p.referenceImageId){const next=referenceImage(p);p.referenceImageId=next?next.id:null;}
+  p.updatedAt=stamp();localSave("사진을 삭제했습니다");render();renderLanding();return;
+ }
 }
 function deletePlace(id){if(!confirm("이 장소와 사진 후보 기록을 이 기기의 카탈로그에서 삭제할까요? 배포된 원본 자료는 바뀌지 않습니다."))return;catalog.places=catalog.places.filter(p=>p.id!==id);selectedId=catalog.places[0]?.id||null;localSave("장소 삭제를 이 기기에 임시저장");render();}
 function addNewPlace(){
@@ -449,9 +458,9 @@ function addNewPlace(){
  catalog.places.unshift(p);selectedId=id;localSave("새 장소를 이 기기에 임시저장");render();
 }
 async function searchOpenverse(p){
- const status=$("autoSearchStatus"),host=$("autoResults");status.classList.remove("hidden");status.textContent="Openverse의 열린 라이선스 이미지 검색 중…";host.innerHTML="";
+ const status=$("autoSearchStatus"),host=$("autoResults");status.classList.remove("hidden");status.textContent="Openverse에서 장소 사진 후보를 검색 중…";host.innerHTML="";
  try{
-  const mode=$("photoSearchMode")?.value||"place";const query=photoQuery(p,mode);const url="https://api.openverse.org/v1/images/?q="+encodeURIComponent(query)+"&license_type=commercial&page_size=30";
+  const mode=$("photoSearchMode")?.value||"place";const query=photoQuery(p,mode);const url="https://api.openverse.org/v1/images/?q="+encodeURIComponent(query)+"&page_size=30";
   const r=await fetch(url);if(!r.ok)throw new Error("HTTP "+r.status);
   const data=await r.json();const items=data.results||[];searchCache=items.map(x=>({provider:"Openverse",x}));
   if(!items.length){status.textContent="검색 결과가 없습니다. Google·Bing·네이버·다음·공식 출처 검색도 확인하세요.";return;}
@@ -478,7 +487,7 @@ async function searchCommons(p){
 }
 function stripHtml(s){const d=document.createElement("div");d.innerHTML=String(s||"");return d.textContent||d.innerText||"";}
 function renderAutoCard(x){
- return '<article class="result"><img loading="lazy" referrerpolicy="no-referrer" src="'+esc(x.thumb||"")+'" alt=""><div class="rtitle">'+esc(x.title)+'</div><div class="rmeta">'+esc(x.source)+'<br>작가: '+esc(x.creator)+'<br>라이선스: '+esc(x.license)+'</div><p class="rmeta">'+esc(x.attribution||"")+'</p><p><a target="_blank" rel="noopener noreferrer" href="'+esc(x.pageUrl||"#")+'">원본 페이지 ↗</a></p><div class="toolbar"><button class="btn small" data-auto-save="'+x.idx+'">후보 저장</button><button class="btn small primary" data-auto-download="'+x.idx+'">파일까지 저장</button></div></article>';
+ return '<article class="result"><img loading="lazy" referrerpolicy="no-referrer" src="'+esc(x.thumb||"")+'" alt=""><div class="rtitle">'+esc(x.title)+'</div><div class="rmeta">'+esc(x.source)+'<br>사진 후보 · 실제 장소와 일치하는지 확인하세요.</div><p><a target="_blank" rel="noopener noreferrer" href="'+esc(x.pageUrl||"#")+'">사진 원문 열기 ↗</a></p><div class="toolbar"><button class="btn small" data-auto-save="'+x.idx+'">후보 저장</button><button class="btn small primary" data-auto-download="'+x.idx+'">파일까지 저장</button></div></article>';
 }
 function autoCandidateFrom(x,provider){
  let rights="unknown",label=x.license||"미확인";
@@ -497,7 +506,7 @@ function attachAutoButtons(host,items,provider,p){
   const x=items[Number(btn.dataset.autoSave)],candidate=autoCandidateFrom(x,provider);
   if(!candidate.imageUrl){alert("원본 이미지 주소가 없어 후보 등록할 수 없습니다.");return;}
   addCandidate(p.id,candidate);
-  alert("사진 후보를 저장했습니다. 장소 일치와 권리 상태를 확인한 뒤 대표사진을 승인하세요.");
+  alert("사진 후보를 저장했습니다. 실제 장소와 일치하는지 확인한 뒤 대표사진으로 선택할 수 있습니다.");
  }));
  host.querySelectorAll("[data-auto-download]").forEach(btn=>btn.addEventListener("click",async()=>{
   const x=items[Number(btn.dataset.autoDownload)],candidate=autoCandidateFrom(x,provider);
@@ -515,7 +524,7 @@ function attachAutoButtons(host,items,provider,p){
    candidate.localFileName=(candidate.title||"photo").slice(0,45)+"."+({"image/jpeg":"jpg","image/png":"png","image/webp":"webp","image/avif":"avif"}[mime]);
    candidate.localFileSize=blob.size;
    addCandidate(p.id,candidate);
-   alert("이미지 파일을 이 기기에 저장하고 사진 후보로 등록했습니다. 장소 일치·사용 권리를 확인한 뒤 승인하세요.");
+   alert("이미지 파일을 이 기기에 저장하고 사진 후보로 등록했습니다. 장소 일치·사진 일치 여부를 확인한 뒤 승인하세요.");
   }catch(e){
    alert("브라우저가 원본 이미지 파일을 가져오지 못했습니다. 외부 사이트의 접근 제한(CORS)일 수 있습니다.\n\n"+e.message+"\n\n원본 페이지를 열고 사진 파일을 기기에 저장한 뒤 '사진 후보 직접 등록'의 파일 선택을 이용하세요.");
   }finally{btn.disabled=false;btn.textContent=oldText;}
@@ -538,7 +547,7 @@ async function batchSearch(scope){
     const mode=modes[mi],query=photoQuery(p,mode);
     status.textContent="사진 후보 다중검색 "+(i+1)+"/"+targets.length+" · "+p.name+" · "+modeLabel[mode]+" ("+(mi+1)+"/"+modes.length+") · 후보 "+found+"개 · 오류 "+failures+"건";
     const tasks=[
-     {provider:"openverse",url:"https://api.openverse.org/v1/images/?q="+encodeURIComponent(query)+"&license_type=commercial&page_size=8"},
+     {provider:"openverse",url:"https://api.openverse.org/v1/images/?q="+encodeURIComponent(query)+"&page_size=8"},
      {provider:"commons",url:"https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch="+encodeURIComponent(query)+"&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=480&format=json&origin=*"}
     ];
     for(const task of tasks){
@@ -609,7 +618,7 @@ $("confirmPublishBtn").addEventListener("click",publishCatalog);
 async function publishCatalog(){
  const token=$("publishToken").value.trim(),status=$("publishStatus"),btn=$("confirmPublishBtn");
  if(!token){alert("GitHub 토큰을 입력하세요.");return;}
- status.classList.remove("hidden");status.textContent="승인된 사진 파일과 카탈로그를 준비 중…";btn.disabled=true;
+ status.classList.remove("hidden");status.textContent="선택한 사진 파일과 장소 카탈로그를 게시할 준비 중…";btn.disabled=true;
  try{
   const repo="https://api.github.com/repos/casio8000/FRAME_ATLAS/contents/";
   const headers={"Accept":"application/vnd.github+json","Authorization":"Bearer "+token,"X-GitHub-Api-Version":"2022-11-28"};
@@ -620,40 +629,45 @@ async function publishCatalog(){
   const staged=[];
   for(const p of catalog.places){
    for(const c of (p.imageCandidates||[])){
-    if(c.status!=="approved"||!c.pendingAsset||c.assetPath)continue;
+    if(!c.pendingAsset||c.assetPath||!(c.id===p.primaryImageId||c.id===p.referenceImageId||c.status==="approved"))continue;
     const key=pendingKey(p.id,c.id),photo=await getPendingPhoto(key);
-    if(!photo||!photo.blob)throw new Error("승인된 로컬 사진 파일을 찾지 못했습니다: "+p.name+" / "+(c.title||c.id)+" · 이 기기에서 파일을 다시 선택하세요.");
+    if(!photo||!photo.blob)throw new Error("선택한 사진 파일을 찾지 못했습니다: "+p.name+" / "+(c.title||c.id)+" · 이 기기에서 파일을 다시 선택하세요.");
     const mime=photo.type||photo.blob.type||"image/jpeg";
     const extByMime={"image/jpeg":"jpg","image/png":"png","image/webp":"webp","image/avif":"avif"};
-    const ext=extByMime[mime];
-    if(!ext)throw new Error("지원하지 않는 이미지 형식입니다: "+mime);
+    const ext=extByMime[mime];if(!ext)throw new Error("지원하지 않는 이미지 형식입니다: "+mime);
     const path="v2/assets/places/"+p.id+"/"+c.id+"."+ext;
     const encodedPath=path.split("/").map(encodeURIComponent).join("/");
     let existingSha=null;
     const ex=await fetch(repo+encodedPath+"?ref=main",{headers,cache:"no-store"});
     if(ex.ok){const exj=await ex.json();existingSha=exj.sha;}
     else if(ex.status!==404)throw new Error("사진 파일 경로 확인 실패 (HTTP "+ex.status+"): "+p.name);
-    const arr=new Uint8Array(await photo.blob.arrayBuffer());let binary="";for(let i=0;i<arr.length;i++)binary+=String.fromCharCode(arr[i]);
-    const data={message:"Add approved FRAME ATLAS location photo",content:btoa(binary),branch:"main"};
-    if(existingSha)data.sha=existingSha;
-    const up=await fetch(repo+encodedPath,{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},headers),body:JSON.stringify(data)});
+    const bytes=new Uint8Array(await photo.blob.arrayBuffer());let binary="";for(let i=0;i<bytes.length;i++)binary+=String.fromCharCode(bytes[i]);
+    const payload={message:"Add FRAME ATLAS location photo",content:btoa(binary),branch:"main"};
+    if(existingSha)payload.sha=existingSha;
+    const up=await fetch(repo+encodedPath,{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},headers),body:JSON.stringify(payload)});
     const upj=await up.json();
     if(!up.ok)throw new Error("사진 파일 업로드 실패 (HTTP "+up.status+"): "+String(upj.message||p.name));
     c.originalImageUrl=c.originalImageUrl||c.imageUrl||"";
     c.assetPath=path;c.imageUrl="./assets/places/"+p.id+"/"+c.id+"."+ext;c.pendingAsset=false;c.assetStoredAt=stamp();
-    staged.push(key);p.imageStatus="대표사진 확정";p.updatedAt=stamp();
-    localSave("사진 파일 업로드 완료 · 카탈로그 게시 준비 중");
-    status.textContent="승인된 사진 업로드 중… "+staged.length+"개 완료";
+    staged.push(key);p.imageStatus=(p.primaryImageId===c.id?"대표사진 선택됨":"사진 파일 저장됨");p.updatedAt=stamp();
+    localSave("선택 사진 파일 업로드 완료 · 카탈로그 게시 준비 중");
+    status.textContent="선택한 사진 업로드 중… "+staged.length+"개 완료";
    }
   }
   const publishedCatalog=JSON.parse(JSON.stringify(catalog));
   for(const p of publishedCatalog.places){
-   p.imageCandidates=(p.imageCandidates||[]).filter(c=>
-    c.status==="approved"&&c.assetPath&&c.imageUrl&&c.placeMatch==="confirmed"&&PERMITTED.has(c.rights)
-   );
-   if(!p.imageCandidates.some(c=>c.id===p.primaryImageId)){
-    p.primaryImageId=null;p.imageStatus="미등록";
-   }else p.imageStatus="대표사진 확정";
+   p.imageCandidates=(p.imageCandidates||[]).filter(c=>c.status!=="rejected"&&(!!c.imageUrl||!!c.sourceThumbnail||!!c.assetPath));
+   if(!p.imageCandidates.some(c=>c.id===p.primaryImageId)){p.primaryImageId=null;if(!p.imageStatus)p.imageStatus="사진 후보 있음";}
+   p.deletedAssetPaths=[];
+  }
+  for(const assetPath of (catalog.deletedAssetPaths||[])){
+   const encodedPath=assetPath.split("/").map(encodeURIComponent).join("/");
+   const existing=await fetch(repo+encodedPath+"?ref=main",{headers,cache:"no-store"});
+   if(existing.status===404)continue;
+   if(!existing.ok)throw new Error("삭제할 이미지 파일 확인 실패 (HTTP "+existing.status+"): "+assetPath);
+   const info=await existing.json();
+   const del=await fetch(repo+encodedPath,{method:"DELETE",headers:Object.assign({"Content-Type":"application/json"},headers),body:JSON.stringify({message:"Remove deleted FRAME ATLAS location photo",sha:info.sha,branch:"main"})});
+   if(!del.ok){const err=await del.json().catch(()=>({}));throw new Error("사진 파일 삭제 실패: "+String(err.message||assetPath));}
   }
   publishedCatalog.updatedAt=stamp();
   const bodyText=JSON.stringify(publishedCatalog,null,2),bytes=new TextEncoder().encode(bodyText);
@@ -663,13 +677,13 @@ async function publishCatalog(){
   const result=await put.json();
   if(!put.ok)throw new Error("카탈로그 저장 실패 (HTTP "+put.status+"): "+String(result.message||"응답 오류"));
   for(const key of staged){try{await deletePendingPhoto(key);}catch(_){}}
-  localSave("GitHub 개발 브랜치에 카탈로그와 승인 사진을 게시했습니다");
-  render();
+  catalog.deletedAssetPaths=[];
+  localSave("GitHub에 장소 카탈로그와 선택 사진을 게시했습니다");
+  render();renderLanding();
   status.classList.remove("hidden");
-  status.textContent="게시 완료. 커밋: "+String(result.commit&&result.commit.sha||"성공")+" · 검증·승인된 사진 파일과 카탈로그만 main에 저장했습니다. 미승인 검색 후보와 외부 이미지 주소는 공개 카탈로그에서 제외했습니다. GitHub Pages 배포 후 PC와 iPhone에서 동일한 승인자료를 보게 됩니다.";
-  $("publishToken").value="";
-  btn.textContent="게시 완료";
- }catch(e){status.textContent="게시 실패: "+e.message+" · 토큰은 저장하지 않았습니다. 중간에 업로드된 사진은 다시 게시하면 재사용됩니다.";}
+  status.textContent="게시 완료. 커밋: "+String(result.commit&&result.commit.sha||"성공")+" · 장소 정보, 사진 선택, 사진 URL 및 저장된 이미지 파일을 반영했습니다. GitHub Pages 배포 후 PC와 아이폰에서 같은 카탈로그를 볼 수 있습니다.";
+  $("publishToken").value="";btn.textContent="게시 완료";
+ }catch(e){status.textContent="게시 실패: "+e.message+" · 토큰은 저장하지 않았습니다.";}
  finally{btn.disabled=false;}
 }
 $("query").addEventListener("input",render);
