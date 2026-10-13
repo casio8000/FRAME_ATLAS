@@ -160,7 +160,7 @@ function render(){
   if(filter==="ready"&&!isImageReady(p))return false;
   return true;
  }).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||["서울","경기","인천"].indexOf(a.region)-["서울","경기","인천"].indexOf(b.region)||a.name.localeCompare(b.name,"ko"));
- $("countAll").textContent=catalog.places.length;
+ $("countAll").textContent=catalog.places.length;if($("workspaceTitle"))$("workspaceTitle").textContent=archiveMode==="favorites"?"내 저장 장소":"촬영 장소 아카이브";
  $("countNoImage").textContent=catalog.places.filter(p=>!isImageReady(p)).length;
  $("countReview").textContent=catalog.places.filter(hasPending).length;
  $("listCount").textContent=places.length+"곳";
@@ -182,16 +182,16 @@ function render(){
  renderDetail();
 }
 function showAppView(view,scroll=true){
- const workspaceViews=["workspace","detail"];
+ const workspaceViews=["workspace","detail","favorites"];
  $("homeView").hidden=view!=="home";$("workspaceView").hidden=!workspaceViews.includes(view);
  $("welcomeView").hidden=view!=="welcome";$("mapView").hidden=view!=="map";$("photosView").hidden=view!=="photos";$("analysisView").hidden=view!=="analysis";$("moreView").hidden=view!=="more";$("appNav").hidden=view==="welcome";
  document.body.dataset.appView=view;
  if(workspaceViews.includes(view))render();
  if(view==="home")renderLanding();if(view==="welcome")renderWelcomeView();if(view==="map")renderMapScreen();if(view==="photos")renderPhotosScreen();if(view==="analysis")renderAnalysisScreen();if(view==="more")renderMoreScreen();
- document.querySelectorAll("[data-nav-view]").forEach(button=>{const target=button.dataset.navView,active=(view==="detail"&&target==="workspace")||target===view;button.classList.toggle("active",active);if(active)button.setAttribute("aria-current","page");else button.removeAttribute("aria-current");});
+ document.querySelectorAll("[data-nav-view]").forEach(button=>{const target=button.dataset.navView,active=(view==="detail"&&(target==="home"||(target==="favorites"&&archiveMode==="favorites")))||(view==="favorites"&&target==="favorites")||((view==="workspace"||view==="photos"||view==="analysis")&&target==="more")||target===view;button.classList.toggle("active",active);if(active)button.setAttribute("aria-current","page");else button.removeAttribute("aria-current");});
  if(scroll)window.scrollTo({top:0,behavior:"auto"});
 }
-function goToWorkspace(query="",region=""){selectedId=null;$("query").value=query;$("regionFilter").value=region||"";$("imageFilter").value="";showAppView("workspace");}
+function goToWorkspace(query="",region=""){archiveMode="all";selectedId=null;$("query").value=query;$("regionFilter").value=region||"";$("imageFilter").value="";showAppView("workspace");}
 const FAVORITES_KEY="frameAtlas2FavoritePlaces";
 let favorites=[];try{favorites=JSON.parse(localStorage.getItem(FAVORITES_KEY)||"[]");if(!Array.isArray(favorites))favorites=[];}catch(_){favorites=[];}
 let archiveMode="all";
@@ -804,7 +804,7 @@ $("homeSearchBtn").addEventListener("click",()=>goToWorkspace($("homeSearchInput
 $("homeView").querySelectorAll("[data-home-region]").forEach(button=>button.addEventListener("click",()=>goToWorkspace("",button.dataset.homeRegion||"")));$("goHomeBtn").addEventListener("click",()=>showAppView("home"));
 $("homeAllSearchInput").addEventListener("input",renderLanding);$("homeAllRegionFilter").addEventListener("change",renderLanding);
 $("mapRegionFilter").addEventListener("change",renderMapScreen);$("mapAccessFilter").addEventListener("change",renderMapScreen);$("photosSearchInput").addEventListener("input",renderPhotosScreen);$("photosMatchFilter").addEventListener("change",renderPhotosScreen);document.querySelectorAll("[data-photo-category]").forEach(button=>button.addEventListener("click",()=>{photoCategoryFilter=button.dataset.photoCategory;document.querySelectorAll("[data-photo-category]").forEach(item=>{const active=item===button;item.classList.toggle("active",active);item.setAttribute("aria-pressed",active?"true":"false");});renderPhotosScreen();}));$("analysisSearchInput").addEventListener("input",renderAnalysisScreen);$("analysisRegionFilter").addEventListener("change",renderAnalysisScreen);
-$("appNav").querySelectorAll("[data-nav-view]").forEach(button=>button.addEventListener("click",()=>{const target=button.dataset.navView;if(target==="workspace"){archiveMode="all";$("query").value="";$("regionFilter").value="";$("imageFilter").value="";selectedId=null;}showAppView(target);}));
+$("appNav").querySelectorAll("[data-nav-view]").forEach(button=>button.addEventListener("click",()=>{const target=button.dataset.navView;if(target==="favorites"){archiveMode="favorites";$("query").value="";$("regionFilter").value="";$("imageFilter").value="";selectedId=null;showAppView("favorites");return;}if(target==="home")archiveMode="all";showAppView(target);}));
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")refreshSharedCatalogIfClean();});
 window.addEventListener("pageshow",refreshSharedCatalogIfClean);
 
