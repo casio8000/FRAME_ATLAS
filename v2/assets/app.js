@@ -200,9 +200,13 @@ function renderLanding(){
   if(hero&&photo){
    hero.dataset.fallbackThumbnail=photo.sourceThumbnail||"";
    hero.dataset.fallbackBound="";
+   hero.classList.remove("image-missing");
    hero.src=photo.imageUrl||photo.sourceThumbnail||"";
    const cap=$("landingHeroCaption");if(cap)cap.textContent=heroPlace.name+" / "+heroPlace.region;
    bindImageFallbacks($("homeView"));
+  }else if(hero){
+   hero.removeAttribute("src");hero.classList.add("image-missing");
+   const cap=$("landingHeroCaption");if(cap)cap.textContent="PLACE PHOTO UNAVAILABLE";
   }
  }
  grid.innerHTML=featured.length?featured.map((p,index)=>{
@@ -660,6 +664,8 @@ async function publishCatalog(){
     const upj=await up.json();
     if(!up.ok)throw new Error("사진 파일 업로드 실패 (HTTP "+up.status+"): "+String(upj.message||p.name));
     c.originalImageUrl=c.originalImageUrl||c.imageUrl||"";
+    // If replacing a repository image with the same path/extension, do not delete the newly uploaded file later.
+    catalog.deletedAssetPaths=(catalog.deletedAssetPaths||[]).filter(oldPath=>oldPath!==path);
     c.assetPath=path;c.imageUrl="./assets/places/"+p.id+"/"+c.id+"."+ext;c.pendingAsset=false;c.assetStoredAt=stamp();
     staged.push(key);p.imageStatus=(p.primaryImageId===c.id?"대표사진 선택됨":"사진 파일 저장됨");p.updatedAt=stamp();
     localSave("선택 사진 파일 업로드 완료 · 카탈로그 게시 준비 중");
