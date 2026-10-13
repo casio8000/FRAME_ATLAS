@@ -271,15 +271,35 @@ async function addCandidate(placeId,record){
  }
  p.imageCandidates.unshift(c);p.imageStatus="검토 대기";p.updatedAt=stamp();localSave(file?"사진 후보와 로컬 파일을 임시보관했습니다":"사진 후보를 이 기기에 저장했습니다");render();
 }
-function candidateAction(placeId,cid,action){
+async function candidateAction(placeId,cid,action){
  const p=getPlace(placeId),c=(p.imageCandidates||[]).find(x=>x.id===cid);if(!c)return;
+ if(action==="download"){
+  if(!c.imageUrl){alert("이 후보에는 이미지 주소가 없습니다. 사진 파일을 직접 선택해 등록하세요.");return;}
+  try{
+   const response=await fetch(c.imageUrl,{mode:"cors",cache:"no-store"});
+   if(!response.ok)throw new Error("원본 이미지 응답 HTTP "+response.status);
+   const raw=await response.blob();
+   let mime=(raw.type||response.headers.get("content-type")||"").split(";")[0].toLowerCase();
+   if(mime==="image/pjpeg"||mime==="image/jpg")mime="image/jpeg";
+   if(!["image/jpeg","image/png","image/webp","image/avif"].includes(mime))throw new Error("이미지 형식을 확인할 수 없습니다: "+(mime||"형식 미확인"));
+   if(raw.size>8*1024*1024)throw new Error("이미지가 8MB를 초과합니다. 원본 이미지를 내려받은 뒤 크기를 줄여 등록하세요.");
+   const blob=new Blob([raw],{type:mime});
+   await putPendingPhoto(pendingKey(p.id,c.id),blob);
+   c.pendingAsset=true;c.localFileName=(c.title||"photo").slice(0,45)+"."+({"image/jpeg":"jpg","image/png":"png","image/webp":"webp","image/avif":"avif"}[mime]);c.localFileSize=blob.size;
+   c.updatedAt=stamp();p.updatedAt=stamp();localSave("이미지 파일을 이 기기에 임시보관했습니다");render();
+   return;
+  }catch(e){
+   alert("원본 사이트가 브라우저 파일 접근을 허용하지 않았거나 다운로드할 수 없습니다.\n\n"+e.message+"\n\n원본 페이지를 열고 사진 파일을 기기에 저장한 뒤 '사진 후보 직접 등록'의 파일 선택을 이용하세요.");
+   return;
+  }
+ }
  if(action==="approve"){
   if(!PERMITTED.has(c.rights)||c.placeMatch!=="confirmed"||!((c.rights==="self-owned")||(c.sourcePageUrl&&c.licenseUrl))||!(c.pendingAsset||c.assetPath)){alert("대표사진은 실제 이미지 파일을 이 기기에 저장했거나 이미 저장소에 보관한 상태여야 합니다. URL만 등록한 사진은 후보로 남겨 두세요.");return;}
   p.imageCandidates.forEach(x=>{if(x.id!==cid&&x.status==="approved")x.status="candidate";});
   c.status="approved";p.primaryImageId=c.id;p.imageStatus="대표사진 확정";p.verification.photoMatch="확인 완료";p.verification.rights="확인 완료";p.verification.lastCheckedAt=stamp().slice(0,10);
  }else if(action==="unapprove"){c.status="candidate";if(p.primaryImageId===cid)p.primaryImageId=null;p.imageStatus="미등록";}
  else if(action==="reject"){c.status="rejected";if(p.primaryImageId===cid)p.primaryImageId=null;p.imageStatus="미등록";}
- else if(action==="delete"){if(!confirm("이 사진 후보를 삭제할까요?"))return;p.imageCandidates=p.imageCandidates.filter(x=>x.id!==cid);if(p.primaryImageId===cid)p.primaryImageId=null;p.imageStatus=isImageReady(p)?"대표사진 확정":"미등록";}
+ else if(action==="delete"){if(!confirm("이 사진 후보를 삭제할까요?"))return;try{await deletePendingPhoto(pendingKey(p.id,c.id));}catch(_){}p.imageCandidates=p.imageCandidates.filter(x=>x.id!==cid);if(p.primaryImageId===cid)p.primaryImageId=null;p.imageStatus=isImageReady(p)?"대표사진 확정":"미등록";}
  p.updatedAt=stamp();localSave("사진 검토 변경사항을 저장했습니다");render();
 }
 function deletePlace(id){if(!confirm("이 장소와 사진 후보 기록을 이 기기의 카탈로그에서 삭제할까요? 배포된 원본 자료는 바뀌지 않습니다."))return;catalog.places=catalog.places.filter(p=>p.id!==id);selectedId=catalog.places[0]?.id||null;localSave("장소 삭제를 이 기기에 임시저장");render();}
@@ -349,7 +369,7 @@ function attachAutoButtons(host,items,provider,p){
   try{
    const response=await fetch(candidate.imageUrl,{mode:"cors",cache:"no-store"});
    if(!response.ok)throw new Error("원본 이미지 응답 HTTP "+response.status);
-   const blob=await response.blob(),mime=(blob.type||response.headers.get("content-type")||"").split(";")[0].toLowerCase();
+   const raw=await response.blob();let mime=(raw.type||response.headers.get("content-type")||"").split(";")[0].toLowerCase();if(mime==="image/pjpeg"||mime==="image/jpg")mime="image/jpeg";const blob=new Blob([raw],{type:mime});
    if(!["image/jpeg","image/png","image/webp","image/avif"].includes(mime))throw new Error("이 원본은 지원하지 않는 이미지 형식입니다: "+(mime||"형식 미확인"));
    if(blob.size>8*1024*1024)throw new Error("이미지가 8MB를 초과합니다. 원본 이미지를 내려받은 뒤 크기를 줄여 직접 등록하세요.");
    await putPendingPhoto(pendingKey(p.id,candidate.id),blob);
