@@ -42,3 +42,13 @@ Last updated: 2026-10-14 (Korea Standard Time)
 2. GitHub Actions: `pages build and deployment`
 3. Confirm the mobile 16:9 archive frame and both floating controls in browser screenshots.
 4. Confirm the Incheon Open Port image loads and that no page errors are recorded.
+
+
+## Release 2026-10-14 · 2.0.32 changes
+- Added four design/architecture candidates in Seoul: Peace Culture Bunker, Seoul Upcycling Plaza, Seoul Urban Life Museum, and Seoul City Hall's new-building facade (34 → 38).
+- Incheon Open Port now starts from a static official-tourism JPG and has two secondary candidates for the normal fallback chain. Image reuse rights remain unverified.
+- Map/directions buttons open an in-app chooser with an X close control. Only Naver Map and TMAP are offered; where coordinates are missing, place/address search is used.
+- Image-source links reduced from 11 to 4. Openverse and Wikimedia Commons remain separate automatic searches with smaller result batches.
+- Address, phone, and official website display when data exists; phone can be edited in place details.
+- Unconfirmed checklist values are faded and selected on focus for direct replacement.
+- Existing local draft catalogs append newly published baseline places without overwriting user edits, and fill only blank address/site/phone/map fields from the baseline.
