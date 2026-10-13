@@ -1492,7 +1492,7 @@ window.bkSaveShared=faSaveSharedSnapshotFile;
 (function(){try{const msg=localStorage.getItem('fa532SharedSnapshotNotice')||localStorage.getItem('fa532SharedSnapshotPendingNotice');if(!msg)return;localStorage.removeItem('fa532SharedSnapshotNotice');localStorage.removeItem('fa532SharedSnapshotPendingNotice');const host=document.querySelector('.top')||document.querySelector('main')||document.body;const el=document.createElement('div');el.className='notice';el.style.cssText='margin:10px 14px;line-height:1.55';el.textContent=msg;host.prepend(el)}catch(e){}})();
 if(window.__faStoreReady&&typeof window.__faStoreReady.then==='function')window.__faStoreReady.then(()=>faAutoSharedPull(false)).catch(()=>{});
 </script>
-<script src="data/device-sync.js"></script>
+<script src="data/device-sync.js?v=20261013-1"></script>
 <script src="data/legacy-v6-audit.js"></script>
 
 <!-- v5.43: Removed inline local-change warning injector; it was being rendered as page text in the affected build. -->
