@@ -19,22 +19,22 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - The previous-version scout notes are separately labelled as legacy information and are not represented as current confirmed permit/fee facts.
 
 ## Hero image behavior
-- Select a random location with a usable non-mismatch photo when the app first opens.
+- Select a random location with a usable non-mismatch photo when the app first opens. On the first use, avoid the formerly fixed DDP hero if other usable photos exist.
 - Keep that hero stable while navigating within the same page session.
 - Remember the previous hero ID and avoid repeating it on the next app load whenever another usable photo exists.
 - No additional image service is needed for selection; this only changes which already-catalogued photo is used for the hero.
 
 ## Latest edits in this checkpoint
-- Random hero avoids mismatched photo candidates and consecutive repeat.
+- Random hero avoids mismatched photo candidates and consecutive repeats; the initial display avoids DDP when other eligible photos are available.
 - Browser smoke test uses deterministic randomness to prove the hero can change across a fresh reload without a flaky probability-based assertion.
-- Mobile archive photo framing is 16:9 landscape and remains above the location text.
+- Mobile archive photo framing is 16:9 landscape and remains above the location text; the “photo unavailable” message only appears after the image fallback sequence fails.
 - CSS/JS cache-busting and service-worker cache version are kept in sync.
 
 ## Remaining work / limitations
 - A ChatGPT connection interruption cannot be fixed by application code; continue from this file and the latest Git commit instead of redoing work.
 - Direct physical iPhone Safari testing remains useful in addition to automated mobile-browser emulation.
 - A standalone 2.0 GitHub repository has not yet been created; preserve the older repository until a separate 2.0 repository is copied, deployed and verified.
-- Externally hosted photo URLs may expire or block hotlinking. A successful display check does not grant image reuse rights and does not mean the image files have been copied into the repository.
+- Externally hosted photo URLs may expire or block hotlinking. A successful display check does not grant image reuse rights and does not mean the image files have been copied into the repository. The mobile archive hides its photo-failure overlay while the actual image is loading or displayed.
 - Nationwide location research, per-place image verification, and current permit/fee/contact validation remain ongoing.
 
 ## Checks to run after changes

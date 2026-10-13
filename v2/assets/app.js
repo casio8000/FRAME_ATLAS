@@ -236,6 +236,7 @@ function chooseHomeHeroPlace(places){
  let previous="";
  try{previous=localStorage.getItem("frameAtlas2HomeHeroLast")||"";}catch(_){}
  let candidates=pool.length>1?pool.filter(p=>p.id!==previous):pool;
+ if(!previous&&candidates.length>1){const alternatives=candidates.filter(p=>p.id!=="seo-ddp");if(alternatives.length)candidates=alternatives;}
  if(!candidates.length)candidates=pool;
  const chosen=candidates[Math.floor(Math.random()*candidates.length)];
  homeHeroPlaceId=chosen.id;
