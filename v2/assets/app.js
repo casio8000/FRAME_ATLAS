@@ -108,6 +108,7 @@ function mergePublishedPhotoReferences(draft,base){
   const fresh=sourceById.get(p.id);if(!fresh)continue;
   if(!Array.isArray(p.imageCandidates))p.imageCandidates=[];
   if(p.photoSelectionCleared)continue;
+  for(const sourceCandidate of (fresh.imageCandidates||[])){if(!p.imageCandidates.some(c=>c.id===sourceCandidate.id))p.imageCandidates.push(JSON.parse(JSON.stringify(sourceCandidate)));}
   const usable=c=>c&&c.status!=="rejected"&&(c.imageUrl||c.sourceThumbnail||c.pendingAsset||c.assetPath);
   let current=p.imageCandidates.find(c=>c.id===p.referenceImageId&&usable(c));
   if(!current){
