@@ -189,7 +189,7 @@ function renderLanding(){
  const get=id=>places.find(p=>p.id===id);
  const prefer=["seo-ddp","seo-oil-tank","seo-seoul-station-284","gg-mimesis","ic-tri-bowl","ic-art-platform"];
  const picked=prefer.map(get).filter(Boolean);
- const featured=[...picked,...places.filter(p=>!picked.some(x=>x.id===p.id)).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9))].slice(0,6);
+ const featured=[...picked,...places.filter(p=>!picked.some(x=>x.id===p.id)).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9))];
  const heroPlace=get("seo-ddp")||get("seo-oil-tank")||featured[0];
  if(heroPlace){
   const photo=activePhoto(heroPlace),hero=$("landingHeroImage");
@@ -756,7 +756,7 @@ $("regionFilter").addEventListener("change",render);
 $("imageFilter").addEventListener("change",render);
 $("brandHomeBtn").addEventListener("click",event=>{event.preventDefault();showAppView("welcome");});
 $("welcomeStartBtn").addEventListener("click",()=>showAppView("home"));$("welcomeHomeBtn").addEventListener("click",()=>showAppView("home"));
-$("startBrowseBtn").addEventListener("click",()=>goToWorkspace("",""));$("homeMapBtn").addEventListener("click",()=>showAppView("map"));$("seeAllPlacesBtn").addEventListener("click",()=>goToWorkspace("",""));$("homeAllPlacesBtn").addEventListener("click",()=>goToWorkspace("",""));
+$("startBrowseBtn").addEventListener("click",()=>goToWorkspace("",""));$("homeMapBtn").addEventListener("click",()=>showAppView("map"));$("seeAllPlacesBtn").addEventListener("click",()=>{$("homeFeaturedGrid").scrollIntoView({behavior:"smooth",block:"start"});});$("homeAllPlacesBtn").addEventListener("click",()=>goToWorkspace("",""));
 $("homeSearchBtn").addEventListener("click",()=>goToWorkspace($("homeSearchInput").value.trim(),""));$("homeSearchInput").addEventListener("keydown",event=>{if(event.key==="Enter"){event.preventDefault();goToWorkspace($("homeSearchInput").value.trim(),"");}});
 $("homeView").querySelectorAll("[data-home-region]").forEach(button=>button.addEventListener("click",()=>goToWorkspace("",button.dataset.homeRegion||"")));$("goHomeBtn").addEventListener("click",()=>showAppView("home"));
 $("homeAllSearchInput").addEventListener("input",renderLanding);$("homeAllRegionFilter").addEventListener("change",renderLanding);
