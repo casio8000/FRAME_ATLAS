@@ -184,7 +184,7 @@ function toggleFavorite(id){if(isFavorite(id))favorites=favorites.filter(x=>x!==
 function renderLanding(){
  const grid=$("homeFeaturedGrid");if(!grid)return;
  const places=Array.isArray(catalog.places)?catalog.places:[];
- $("homeCountPlaces").textContent=places.length;
+ $("homeCountPlaces").textContent=places.length;if($("homeFeaturedCount"))$("homeFeaturedCount").textContent=places.length;
  $("homeCountPhotos").textContent=places.filter(p=>!!activePhoto(p)).length;
  const get=id=>places.find(p=>p.id===id);
  const prefer=["seo-ddp","seo-oil-tank","seo-seoul-station-284","gg-mimesis","ic-tri-bowl","ic-art-platform"];
