@@ -735,3 +735,6 @@ button,input,select,textarea{font-family:inherit}
 /* Always keep the splash photographic even when remote location URLs are unavailable. */
 .welcome-photo-layer{background-image:url("../../assets/images/frame-atlas-launch.png");background-size:cover;background-position:center;background-repeat:no-repeat}
 .welcome-photo-layer img[aria-hidden="true"]{display:none}
+
+#detail .shooting-checklist .searchnote{font-size:15px;line-height:1.75;color:#334155}
+@media(max-width:620px){#detail .shooting-checklist .searchnote{font-size:14px}}
