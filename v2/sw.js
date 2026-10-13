@@ -1,4 +1,4 @@
-const CACHE_NAME="frame-atlas-v2-shell-20261013-19";
+const CACHE_NAME="frame-atlas-v2-shell-20261013-20";
 const CORE_FILES=["./","./index.html","./assets/app.css","./assets/app.js","./data/places.json","./manifest.webmanifest","./icons/atlas-mark.svg","./icons/icon-192.png","./icons/icon-180.png"];
 const APP_BASE=new URL("./",self.location.href);
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(CORE_FILES)).then(()=>self.skipWaiting())));
@@ -10,5 +10,5 @@ self.addEventListener("fetch",event=>{
   event.respondWith(fetch(request).then(response=>{if(response&&response.ok){const copy=response.clone();caches.open(CACHE_NAME).then(cache=>cache.put("./data/places.json",copy));}return response;}).catch(async()=> (await caches.match("./data/places.json"))||Response.error()));
   return;
  }
- event.respondWith(caches.match(request).then(cached=>{if(cached)return cached;return fetch(request).then(response=>{if(response&&response.ok&&response.type==="basic"){const copy=response.clone();caches.open(CACHE_NAME).then(cache=>cache.put(request,copy));}return response;}).catch(()=>request.mode==="navigate"?caches.match("./index.html"):Response.error());}));
+ event.respondWith(fetch(request).then(response=>{if(response&&response.ok&&response.type==="basic"){const copy=response.clone();caches.open(CACHE_NAME).then(cache=>cache.put(request,copy));}return response;}).catch(async()=> (await caches.match(request)) || (request.mode==="navigate" ? (await caches.match("./index.html")) : Response.error()));
 });
