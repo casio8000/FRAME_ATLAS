@@ -30,6 +30,8 @@ for (const p of catalog.places) {
     if (c.status === "approved") {
       assert.ok(allowedRights.has(c.rights), "approved image must have an allowed rights class");
       assert.equal(c.placeMatch, "confirmed", "approved image must be location-confirmed");
+      assert.ok(c.assetPath && String(c.imageUrl || "").startsWith("./assets/places/"),
+        "approved representative image must be copied into the repository and use its local asset path");
       if (c.rights !== "self-owned") {
         assert.ok(c.sourcePageUrl, "approved external image must have an original page URL");
         assert.ok(c.licenseUrl, "approved external image must have rights evidence URL");
