@@ -84,6 +84,25 @@ const peerReportsConflict = core.peerReportsConflict;
     setItem(k, v) { this.map.set(String(k), String(v)); }
     removeItem(k) { this.map.delete(String(k)); }
   }
+  // Regression: the browser entrypoint must not call a factory-scoped helper.
+  // This reproduces the startup path with no saved GitHub settings; it should
+  // report the missing settings, not a ReferenceError for safeStatus.
+  const startupStorage = new MemoryStorage();
+  startupStorage.setItem("faGH", JSON.stringify({ repo: "", token: "" }));
+  const startupStatus = { textContent: "" };
+  global.localStorage = startupStorage;
+  global.document = {
+    getElementById: id => id === "fa_device_sync_status" ? startupStatus : null
+  };
+  global.faDeviceSyncEnable();
+  await new Promise(resolve => setImmediate(resolve));
+  const startupMessage = startupStorage.getItem("faDeviceSyncLastStatus") || "";
+  assert.doesNotMatch(startupMessage, /safeStatus/i,
+    "safe sync start must not reference a helper outside its scope");
+  assert.match(startupMessage, /저장소와 토큰/,
+    "safe sync startup should show the normal missing-settings message");
+  delete global.document;
+
   const files = new Map();
   let serial = 0;
   let repoPrivate = true;
