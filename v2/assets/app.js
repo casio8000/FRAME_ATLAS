@@ -81,6 +81,7 @@ function normalizeCatalog(obj){
   if(![1,2,3].includes(p.scoutPriority))p.scoutPriority=3;
   if(!Array.isArray(p.searchTerms)||!p.searchTerms.length)p.searchTerms=[p.name+" 사진 촬영 장소"];
   if(!p.verification)p.verification={location:"미확인",photoMatch:"미확인",rights:"미확인",shootingPermission:"미확인",lastCheckedAt:null};
+  p.shootingDetails=Object.assign({parking:"미확인",publicTransport:"미확인",loadIn:"미확인",stairsElevator:"미확인",accessibleRoute:"미확인",restroom:"미확인",changingRoom:"미확인",power:"미확인",lighting:"미확인",indoorBackup:"미확인",crowdTiming:"미확인",equipmentRestrictions:"미확인",permitCost:"미확인",contact:"미확인",fieldNotes:"",lastFieldCheck:"미확인"},p.shootingDetails||{});
   p.updatedAt=p.updatedAt||stamp();
  });
  return obj;
@@ -366,7 +367,22 @@ function renderDetail(){
   else if(field==="placeMatch"||field==="viewType"||field==="notes"){c[field]=value;}
   c.updatedAt=stamp();p.updatedAt=stamp();localSave("사진 정보를 저장했습니다");render();renderLanding();
  }));
+ renderShootingDetails(p);
+ $("saveShootingDetailsBtn").addEventListener("click",()=>saveShootingDetails(p.id));
  hydratePendingPreviews(p);
+}
+function renderShootingDetails(p){
+ const d=p.shootingDetails||{};
+ const fields=[["parking","주차·하차 위치"],["publicTransport","대중교통·도보 접근"],["loadIn","장비 반입·이동 동선"],["stairsElevator","계단·엘리베이터·층간 이동"],["accessibleRoute","휠체어·접근성"],["restroom","화장실"],["changingRoom","탈의·대기 공간"],["power","전원·콘센트"],["lighting","자연광·조명 조건"],["indoorBackup","우천·실내 대체 공간"],["crowdTiming","혼잡 시간·추천 시간대"],["equipmentRestrictions","장비·삼각대·조명 제한"],["permitCost","촬영 허가·예약·비용"],["contact","관리 부서·연락처"]];
+ const markup='<div class="section shooting-checklist"><div class="shooting-section-head"><div><p class="eyebrow">FIELD CHECK / PRODUCTION LOGISTICS</p><h3>현장 촬영 체크리스트</h3></div><span class="checklist-note">미확인 항목은 방문 전 확인</span></div><p class="searchnote">확인되지 않은 사항을 임의로 가능하다고 표시하지 않습니다. 공식 안내·전화 확인·현장 확인 결과를 기록하세요.</p><div class="catalogform shooting-form">'+fields.map(([key,label])=>'<label>'+label+'<input id="sd_'+key+'" value="'+esc(d[key]||"미확인")+'" placeholder="미확인 또는 확인 내용"></label>').join('')+'<label class="wide">현장 답사·촬영 메모<textarea id="sd_fieldNotes" rows="4" placeholder="빛의 방향, 촬영 포인트, 혼잡도, 허가 담당자 답변 등">'+esc(d.fieldNotes||"")+'</textarea></label><label>마지막 확인일<input id="sd_lastFieldCheck" value="'+esc(d.lastFieldCheck||"미확인")+'" placeholder="YYYY-MM-DD"></label><div class="wide"><button class="btn primary" type="button" id="saveShootingDetailsBtn">현장 체크리스트 저장</button></div></div></div>';
+ $("detail").insertAdjacentHTML("beforeend",markup);
+}
+function saveShootingDetails(id){
+ const p=getPlace(id);if(!p)return;
+ const keys=["parking","publicTransport","loadIn","stairsElevator","accessibleRoute","restroom","changingRoom","power","lighting","indoorBackup","crowdTiming","equipmentRestrictions","permitCost","contact","fieldNotes","lastFieldCheck"];
+ p.shootingDetails=p.shootingDetails||{};
+ keys.forEach(key=>{const el=$("sd_"+key);if(el)p.shootingDetails[key]=el.value.trim()||(key==="fieldNotes"?"":"미확인");});
+ p.updatedAt=stamp();localSave("현장 촬영 체크리스트를 이 기기에 저장했습니다");render();
 }
 function renderCandidates(p){
  if(!imageCount(p))return '<div class="empty">사진 후보가 없습니다. 위에서 이미지 주소를 입력하거나 사진 파일을 추가하세요.</div>';
