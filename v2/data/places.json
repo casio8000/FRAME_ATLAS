@@ -41,10 +41,10 @@
       ],
       "aliases": [],
       "summary": "폐산업시설의 대형 원형 구조와 거친 재료감, 강한 명암을 활용할 수 있는 에디토리얼 후보",
-      "address": "",
+      "address": "서울특별시 마포구 증산로 87",
       "coordinates": null,
       "officialUrl": "https://parks.seoul.go.kr/content.do?key=2604300014",
-      "openingStatus": "미확인",
+      "openingStatus": "야외공원 24시간 개방 · T1~T6 내부는 2025년 4월부터 상시 관람 불가",
       "shootingPermission": "공간 점유형 촬영은 사전 승인 필요 · 최신 운영기관 확인",
       "parking": "미확인",
       "fee": "미확인",
@@ -72,7 +72,7 @@
         "https://parks.seoul.go.kr/content.do?key=2604300014"
       ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "공식 안내 확인 · 촬영 전 재확인 필요",
@@ -140,9 +140,9 @@
       ],
       "aliases": [],
       "summary": "재생 콘크리트 구조와 식생이 함께 있어 인물과 건축을 겹쳐 구성하기 좋은 공간 후보",
-      "address": "",
+      "address": "서울특별시 영등포구 선유로 343",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -167,13 +167,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://parks.seoul.go.kr/content.do?key=2604070017"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -285,7 +287,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:31:29.235Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 95,
       "photoScoreBreakdown": {
         "distinctiveness": 30,
@@ -301,7 +303,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "곡선형 외피와 스케일감 있는 건축면으로 그래픽한 패션 이미지와 실루엣을 만들 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "서울특별시 중구 을지로 281 동대문디자인플라자 DDP"
     },
     {
       "id": "seo-sema-bunker",
@@ -327,7 +330,7 @@
         "촬영 허가",
         "플래시·삼각대 제한"
       ],
-      "scoutPriority": 1,
+      "scoutPriority": 3,
       "searchTerms": [
         "SeMA 벙커 내부 공간 사진",
         "서울시립미술관 벙커 실내",
@@ -335,11 +338,11 @@
       ],
       "aliases": [],
       "summary": "낮은 천장과 원형·거친 실내 구조를 활용할 수 있는 특수 분위기 공간 후보",
-      "address": "",
+      "address": "서울특별시 영등포구 여의대로 지하 76",
       "coordinates": null,
-      "officialUrl": "",
-      "openingStatus": "미확인",
-      "shootingPermission": "미확인",
+      "officialUrl": "https://sema.seoul.go.kr/kr/sema/landing",
+      "openingStatus": "운영 종료 (2025-01-13) · 재개관 여부 확인 필요",
+      "shootingPermission": "운영 종료 확인 · 재개관 및 촬영 허가 확인 전 후보에서 제외",
       "parking": "미확인",
       "fee": "미확인",
       "imageStatus": "미등록",
@@ -362,15 +365,17 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://sema.seoul.go.kr/kr/sema/landing"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "운영 종료 확인 · 재개관 전 촬영 후보에서 제외",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -380,9 +385,9 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.\n서울시립미술관 공식 공지에서 2025-01-13 운영 종료를 확인함. 재개관 및 일반 접근 가능 여부가 확인되기 전까지 촬영 계획 후보로 추천하지 않음.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:33:34.518Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 87,
       "photoScoreBreakdown": {
         "distinctiveness": 28,
@@ -392,7 +397,7 @@
         "indoorOutdoorFlexibility": 5
       },
       "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
-      "priorityLabel": "A · 최우선 촬영 탐색",
+      "priorityLabel": "C · 운영 재확인 후 재평가",
       "selectionGate": {
         "passesPhotoSpecificity": true,
         "tourismPopularityUsedAsScore": false,
@@ -485,7 +490,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:33:34.518Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 87,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -501,7 +506,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "오래된 상업·산업 건축, 난간과 반복되는 수평선으로 도시형 인물화보를 구성할 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "서울특별시 중구 청계천로 세운상가 일대"
     },
     {
       "id": "seo-mullae",
@@ -582,7 +588,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:31:29.235Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 88,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -598,7 +604,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "철공소와 창작공간이 만나는 골목의 금속 질감·낡은 표면·색 대비를 살릴 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "서울특별시 영등포구 도림로128길 문래창작촌 일대"
     },
     {
       "id": "seo-seongsu",
@@ -679,7 +686,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:33:34.518Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 85,
       "photoScoreBreakdown": {
         "distinctiveness": 24,
@@ -695,7 +702,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "벽돌·철문·적재 구조 등 산업도시의 배경을 짧은 동선에서 다양하게 찾을 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "서울특별시 성동구 성수이로 성수동 옛 공장 골목"
     },
     {
       "id": "seo-seoul-station-284",
@@ -732,9 +740,9 @@
       ],
       "aliases": [],
       "summary": "역사적 건축 디테일과 높은 실내 공간의 선·비례가 돋보이는 인물·패션 촬영 후보",
-      "address": "",
+      "address": "서울특별시 중구 통일로 1",
       "coordinates": null,
-      "officialUrl": "https://www.seoul284.org/space/menu/256",
+      "officialUrl": "https://www.seoul284.org/cms/content/view/250",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -776,14 +784,15 @@
         }
       ],
       "sourceRefs": [
-        "https://www.seoul284.org/space/menu/256"
+        "https://www.seoul284.org/space/menu/256",
+        "https://www.seoul284.org/cms/content/view/250"
       ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -797,7 +806,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:31:29.235Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 91,
       "photoScoreBreakdown": {
         "distinctiveness": 28,
@@ -847,9 +856,9 @@
       ],
       "aliases": [],
       "summary": "유리·철골 구조와 이국적인 식생을 레이어로 사용할 수 있는 실내 자연 배경 후보",
-      "address": "",
+      "address": "서울특별시 강서구 마곡동로 161",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://botanicpark.seoul.go.kr/",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -874,13 +883,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://botanicpark.seoul.go.kr/front/wbook/upload/12_SBP.pdf"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -894,7 +905,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:31:29.235Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 89,
       "photoScoreBreakdown": {
         "distinctiveness": 26,
@@ -945,9 +956,9 @@
       ],
       "aliases": [],
       "summary": "도시 구조물과 강변 여백을 함께 활용해 건축·인물·무대형 이미지를 만들 후보",
-      "address": "",
+      "address": "서울특별시 용산구 양녕로 445",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://nodeul.org/location/",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -972,13 +983,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://nodeul.org/location/"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -992,7 +1005,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:33:34.518Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 83,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -1043,7 +1056,7 @@
       ],
       "aliases": [],
       "summary": "현대적 외벽과 전통 건축 요소가 만나는 대비를 활용할 후보",
-      "address": "",
+      "address": "서울특별시 종로구 율곡로3길 4",
       "coordinates": null,
       "officialUrl": "",
       "openingStatus": "미확인",
@@ -1070,13 +1083,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?reSvc=N&rsv_svc_id=S260910184904622426"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -1090,7 +1105,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:31:29.235Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 82,
       "photoScoreBreakdown": {
         "distinctiveness": 24,
@@ -1141,9 +1156,9 @@
       ],
       "aliases": [],
       "summary": "현대 미술관의 낮은 수평선과 중정·벽면을 활용하는 절제된 건축 인물화보 후보",
-      "address": "",
+      "address": "서울특별시 종로구 삼청로 30",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://www.mmca.go.kr/visitingInfo/seoulInfo.do",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -1168,13 +1183,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://www.mmca.go.kr/civil/policy230802.do"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -1188,7 +1205,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:35:23.851Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 83,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -1240,7 +1257,7 @@
       ],
       "aliases": [],
       "summary": "역사적 석재 외관과 계단·창호를 배경으로 클래식한 인물 이미지를 구성할 후보",
-      "address": "",
+      "address": "서울특별시 관악구 남부순환로 2076",
       "coordinates": null,
       "officialUrl": "https://sema.seoul.go.kr/kr/visit/namseoul",
       "openingStatus": "미확인",
@@ -1272,11 +1289,11 @@
         "https://mediahub.seoul.go.kr/archives/1198657"
       ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -1290,7 +1307,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:39:58.822Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 82,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -1391,7 +1408,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:33:34.518Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 86,
       "photoScoreBreakdown": {
         "distinctiveness": 24,
@@ -1407,7 +1424,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "낮은 간판·금속 셔터·혼합 조명이 만드는 다층적인 도심 질감을 활용할 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "서울특별시 중구 을지로3가역 을지로 인쇄·금속 골목"
     },
     {
       "id": "seo-gyeongchun",
@@ -1488,7 +1506,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:39:58.822Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 72,
       "photoScoreBreakdown": {
         "distinctiveness": 20,
@@ -1504,7 +1522,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "철길 흔적과 길게 이어지는 수목·난간의 선을 이용할 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "서울특별시 노원구 화랑로 경춘선숲길 화랑대철도공원 입구"
     },
     {
       "id": "seo-naksan-wall",
@@ -1585,7 +1604,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T10:00:38.940Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 75,
       "photoScoreBreakdown": {
         "distinctiveness": 22,
@@ -1601,7 +1620,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "성곽의 돌 질감과 도시 지붕선을 함께 담아 고전적·도시적 분위기를 겹칠 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "서울특별시 종로구 낙산길 낙산공원 한양도성 구간"
     },
     {
       "id": "seo-hangang-under-bridge",
@@ -1682,7 +1702,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:39:58.822Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 65,
       "photoScoreBreakdown": {
         "distinctiveness": 20,
@@ -1698,7 +1718,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "교량의 리듬감 있는 구조와 반복선을 활용하는 그래픽한 촬영을 위한 조사 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "서울특별시 한강공원 교량 하부 접근 가능한 공공 구간"
     },
     {
       "id": "gg-paju-bookcity",
@@ -1780,7 +1801,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:31:29.235Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 91,
       "photoScoreBreakdown": {
         "distinctiveness": 29,
@@ -1796,7 +1817,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "기하학적 파사드와 건물 사이의 보이드·직선을 활용한 건축 중심 화보 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "경기도 파주시 회동길 파주출판도시 아시아출판문화정보센터"
     },
     {
       "id": "gg-mimesis",
@@ -1894,7 +1916,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:31:29.235Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 94,
       "photoScoreBreakdown": {
         "distinctiveness": 30,
@@ -1910,7 +1932,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "화이트 곡면과 조각적인 실내외 볼륨을 통해 인물과 건축을 단순한 형태로 구성할 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "경기도 파주시 문발로 미메시스 아트 뮤지엄"
     },
     {
       "id": "gg-heyri",
@@ -1992,7 +2015,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:35:23.851Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 82,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -2008,7 +2031,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "서로 다른 건축 언어와 외장 재료가 모여 있어 콘셉트에 맞는 건물을 선별할 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "경기도 파주시 탄현면 헤이리마을길 헤이리 예술마을 안내센터"
     },
     {
       "id": "gg-anyang-artpark",
@@ -2094,7 +2118,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:31:29.235Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 91,
       "photoScoreBreakdown": {
         "distinctiveness": 28,
@@ -2110,7 +2134,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "산책로 주변의 설치미술과 지형을 하나씩 조사해 조형적 배경을 만들 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "경기도 안양시 만안구 예술공원로 안양예술공원"
     },
     {
       "id": "gg-pocheon-artvalley",
@@ -2144,9 +2169,9 @@
       ],
       "aliases": [],
       "summary": "절벽의 층리와 수면·암벽의 대비로 다른 도시 촬영지와 구분되는 배경을 만들 후보",
-      "address": "",
+      "address": "경기도 포천시 신북면 아트밸리로 234",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://artvalley.pcfac.or.kr/",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -2171,13 +2196,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://artvalley.pcfac.or.kr/sub01/sub02_02.html"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -2191,7 +2218,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:35:23.851Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 80,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -2292,7 +2319,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:39:58.822Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 73,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -2308,7 +2335,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "성문·여장·돌·흙의 재료감과 길게 이어지는 성곽선을 활용할 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "경기도 수원시 팔달구 정조로 825 화성행궁 수원화성 성곽"
     },
     {
       "id": "gg-suwon-haenggung",
@@ -2389,7 +2417,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:39:58.822Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 69,
       "photoScoreBreakdown": {
         "distinctiveness": 20,
@@ -2405,7 +2433,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "낮은 상가와 오래된 골목, 전통 건축 주변의 현대적 요소를 섞어 구성할 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "경기도 수원시 팔달구 행궁동 공방거리 행리단길"
     },
     {
       "id": "gg-mmca-gwacheon",
@@ -2440,9 +2469,9 @@
       ],
       "aliases": [],
       "summary": "현대 건축과 야외 작품·숲의 스케일을 조합하는 조형적 인물화보 후보",
-      "address": "",
+      "address": "경기도 과천시 광명로 313",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://www.mmca.go.kr/visitingInfo/gwacheonInfo.do",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -2467,13 +2496,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://www.mmca.go.kr/visitingInfo/gwacheonInfo.do"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -2487,7 +2518,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:33:34.518Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 86,
       "photoScoreBreakdown": {
         "distinctiveness": 26,
@@ -2585,7 +2616,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:39:58.822Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 72,
       "photoScoreBreakdown": {
         "distinctiveness": 21,
@@ -2601,7 +2632,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "현대적 건물 면과 공원의 열린 공간을 배경으로 단정한 상업·인물 이미지를 만들 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "경기도 안산시 단원구 동산로 268 경기도미술관"
     },
     {
       "id": "gg-gwangmyeong-cave",
@@ -2635,7 +2667,7 @@
       ],
       "aliases": [],
       "summary": "어둠과 컬러 조명, 암석 표면을 활용해 일반 스튜디오와 다른 분위기를 연구할 후보",
-      "address": "",
+      "address": "경기도 광명시 가학로85번길 142",
       "coordinates": null,
       "officialUrl": "",
       "openingStatus": "미확인",
@@ -2662,13 +2694,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://www.gm.go.kr/cv/gc/CVGC_30001.jsp"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -2682,7 +2716,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:39:58.822Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 70,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -2733,9 +2767,9 @@
       ],
       "aliases": [],
       "summary": "공연장 외부 구조와 광장을 활용해 대칭·직선형 인물 이미지를 구성할 후보",
-      "address": "",
+      "address": "경기도 고양시 일산동구 중앙로 1286",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://www.artgy.or.kr/aram/location.aspx",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -2760,13 +2794,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://www.artgy.or.kr/aram/location.aspx"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -2780,7 +2816,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:39:58.822Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 70,
       "photoScoreBreakdown": {
         "distinctiveness": 21,
@@ -2832,7 +2868,7 @@
       ],
       "aliases": [],
       "summary": "높은 수직 공간과 층별 반복 구조로 인물의 크기를 대비시키기 좋은 실내 건축 후보",
-      "address": "",
+      "address": "경기도 수원시 장안구 수성로 175",
       "coordinates": null,
       "officialUrl": "https://www.starfield.co.kr/suwon/about/rentalInfo.do",
       "openingStatus": "미확인",
@@ -2859,13 +2895,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://www.starfield.co.kr/suwon/about/rentalInfo.do"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -2879,7 +2917,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T10:00:38.940Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 67,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -2930,9 +2968,9 @@
       ],
       "aliases": [],
       "summary": "붉은 벽돌의 반복과 창고형 구조를 활용해 인물·패션에 강한 재료감을 더할 후보",
-      "address": "",
+      "address": "인천광역시 제물포구 제물량로218번길 3",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://inartplatform.kr/intro/location",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -2957,13 +2995,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://inartplatform.kr/intro/location"
+      ],
       "verification": {
-        "location": "미확인",
+        "location": "공식 출처 확인",
         "photoMatch": "미확인",
         "rights": "미확인",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -3074,7 +3114,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:35:23.851Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 92,
       "photoScoreBreakdown": {
         "distinctiveness": 30,
@@ -3090,7 +3130,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "곡면과 부유하는 듯한 하부 구조를 이용해 미래적이고 조형적인 프레임을 만들 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "인천광역시 연수구 인천타워대로 250 송도 트라이보울"
     },
     {
       "id": "ic-open-port",
@@ -3172,7 +3213,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:35:23.851Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 77,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -3188,7 +3229,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "근대 건축 외벽과 골목을 활용해 유럽풍·레트로 에디토리얼 배경을 조사할 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "인천광역시 중구 개항장 문화지구 인천개항박물관"
     },
     {
       "id": "ic-baedari",
@@ -3275,7 +3317,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:39:58.822Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 66,
       "photoScoreBreakdown": {
         "distinctiveness": 20,
@@ -3291,7 +3333,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "낡은 간판·책방 창·좁은 도로의 정서를 이용해 문학적이고 서사적인 인물 이미지를 만들 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "인천광역시 동구 금곡로 배다리 헌책방거리"
     },
     {
       "id": "ic-sorae-saltfield",
@@ -3372,7 +3415,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13T09:39:58.822Z",
+      "updatedAt": "2026-10-13",
       "photoPotentialScore": 73,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -3388,7 +3431,8 @@
         "tourismPopularityUsedAsScore": false,
         "rationale": "갈대·염전 흔적·수평선과 구조물의 반복을 활용해 미니멀한 야외 이미지를 연구할 후보",
         "status": "desk-review"
-      }
+      },
+      "mapSearchQuery": "인천광역시 남동구 소래로154번길 77 소래습지생태공원"
     }
   ],
   "selectionRubric": {

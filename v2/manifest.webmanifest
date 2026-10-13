@@ -18,6 +18,12 @@
       "purpose": "any"
     },
     {
+      "src": "icons/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
       "src": "icons/atlas-mark.svg",
       "sizes": "any",
       "type": "image/svg+xml",

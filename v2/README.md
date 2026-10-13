@@ -112,3 +112,10 @@ CC BY-NC 등 비상업 조건, CC BY-ND 등 파생 저작물 제한이 있는 �
 - Added keyboard activation and mobile scrolling from selected place to its detail.
 - Offline caching does not sync device-local drafts/photos between devices. Only deliberately published catalog data is shared.
 - Catalog currently has 34 locations and 36 image candidates; representative photos are not automatically approved.
+
+
+## 2026-10-13 — Navigation accuracy and operating-status checks
+- Place details now use a verified street address when available; neighborhood/district-style locations use an explicit map-search target instead of a fabricated address.
+- Added source references for official address checks.
+- SeMA Bunker is marked as closed from 2025-01-13 based on the Seoul Museum of Art notice. The app now displays a closed-status warning and advises against scheduling a shoot before reopening is confirmed.
+- Updated service-worker cache version so installed devices refresh changed app UI.

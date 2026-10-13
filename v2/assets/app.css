@@ -147,3 +147,7 @@ body{background:radial-gradient(ellipse at 100% 0%,rgba(232,91,60,.055),transpar
  dialog{padding:17px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+.chip.closed{background:#f7ded7;color:#8d3326;border:1px solid #e8b8ad}
+.map-note{overflow-wrap:anywhere}
+.location-actions .btn:active{transform:translateY(1px)}
