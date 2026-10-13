@@ -5,6 +5,9 @@ import assert from "node:assert/strict";
 const catalog = JSON.parse(fs.readFileSync(new URL("../data/places.json", import.meta.url), "utf8"));
 assert.equal(catalog.schemaVersion, 2, "catalog schemaVersion must be 2");
 assert.ok(typeof catalog.selectionMethod === "string" && catalog.selectionMethod.length > 0, "catalog must document its photo-first selection method");
+assert.equal(catalog.selectionRubric?.total, 100, "catalog must document the 100-point photo-selection rubric");
+assert.equal(catalog.selectionRubric?.productionFeasibilitySeparate, true,
+  "artistic photo potential and shooting/access feasibility must be evaluated separately");
 assert.ok(Array.isArray(catalog.places), "catalog places must be an array");
 assert.ok(catalog.places.length >= 1, "catalog must have starter records");
 const ids = new Set();
@@ -21,6 +24,26 @@ for (const p of catalog.places) {
   assert.ok(Array.isArray(p.bestConcepts) && p.bestConcepts.length >= 2, "place needs suitable shoot concepts: " + p.name);
   assert.ok(Array.isArray(p.constraints) && p.constraints.length >= 2, "place needs scouting constraints: " + p.name);
   assert.ok([1, 2, 3].includes(p.scoutPriority), "place needs a 1-3 scout priority: " + p.name);
+  assert.ok(Number.isInteger(p.photoPotentialScore) && p.photoPotentialScore >= 0 && p.photoPotentialScore <= 100,
+    "place needs an explicit 0-100 photographer-first potential score: " + p.name);
+  assert.ok(p.photoScoreBreakdown && typeof p.photoScoreBreakdown === "object",
+    "place needs a score breakdown: " + p.name);
+  const scoreValues = [
+    p.photoScoreBreakdown.distinctiveness,
+    p.photoScoreBreakdown.compositionVariety,
+    p.photoScoreBreakdown.lightAndTexture,
+    p.photoScoreBreakdown.editorialVersatility,
+    p.photoScoreBreakdown.indoorOutdoorFlexibility
+  ];
+  assert.ok(scoreValues.every(Number.isInteger), "all score components must be integers: " + p.name);
+  assert.equal(scoreValues.reduce((sum, n) => sum + n, 0), p.photoPotentialScore,
+    "score breakdown must add up to total score: " + p.name);
+  assert.ok(p.scoreStatus && /현장/.test(p.scoreStatus),
+    "desk scores must clearly disclose that site verification is pending: " + p.name);
+  assert.equal(p.selectionGate?.tourismPopularityUsedAsScore, false,
+    "tourism popularity must not be used as a photo-selection score: " + p.name);
+  assert.equal(p.scoutPriority, p.photoPotentialScore >= 85 ? 1 : p.photoPotentialScore >= 74 ? 2 : 3,
+    "A/B/C priority must be derived from photo potential, not popularity: " + p.name);
   assert.ok(Array.isArray(p.searchTerms) && p.searchTerms.length >= 1, "place needs targeted photo-search terms: " + p.name);
   const candidateIds = new Set();
   for (const c of p.imageCandidates) {
