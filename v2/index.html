@@ -123,11 +123,11 @@ function photoQuery(p,mode){
  const base=[p.name,p.region,"Korea"].filter(Boolean).join(" ");
  const extras={
   place:searchTerms[0]||p.name+" 현장 외관 사진",
-  fashion:"fashion editorial portrait photoshoot",
-  architecture:"architecture facade geometry texture photography",
-  interior:"interior architecture natural light photography",
-  outdoor:"outdoor location portrait photography",
-  details:"architectural details material texture shadow photography"
+  fashion:"패션 화보 인물 촬영 editorial fashion portrait photoshoot",
+  architecture:"건축 파사드 기하학 질감 architecture facade geometry texture photography",
+  interior:"실내 건축 자연광 interior architecture natural light",
+  outdoor:"야외 인물 화보 outdoor portrait location",
+  details:"건축 디테일 재료 질감 그림자 architectural details texture shadows"
  };
  return (base+" "+(extras[mode]||extras.place)).trim();
 }
