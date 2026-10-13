@@ -29,6 +29,7 @@
  <div class="notice"><b>중요:</b> 이 사이트는 공개 GitHub Pages에 배포될 예정입니다. 웹에서 찾은 사진을 개인적으로 참고하는 것과 공개 사이트에 복제·전시하는 것은 다릅니다. 권리 확인이 안 된 사진은 후보로만 보관하며, 출처·작가·라이선스/허가 근거가 확인되기 전에는 대표 이미지로 확정하지 않습니다.</div>
  <div class="toolbar">
   <button class="btn primary" id="addPlaceBtn">＋ 장소 등록</button>
+  <button class="btn" id="nextUnphotographedBtn">다음 사진 미등록 장소 →</button>
   <button class="btn" id="exportBtn">카탈로그 JSON 내보내기</button>
   <button class="btn orange" id="publishBtn">GitHub에 게시</button>
   <label class="btn filelabel">JSON 가져오기<input id="importInput" type="file" accept=".json,application/json"></label>
@@ -104,7 +105,7 @@ function render(){
   if(filter==="review"&&!hasPending(p))return false;
   if(filter==="ready"&&!isImageReady(p))return false;
   return true;
- });
+ }).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||["서울","경기","인천"].indexOf(a.region)-["서울","경기","인천"].indexOf(b.region)||a.name.localeCompare(b.name,"ko"));
  $("countAll").textContent=catalog.places.length;
  $("countNoImage").textContent=catalog.places.filter(p=>!isImageReady(p)).length;
  $("countReview").textContent=catalog.places.filter(hasPending).length;
@@ -346,6 +347,14 @@ function importCatalog(file){
  const reader=new FileReader();reader.onload=()=>{try{catalog=normalizeCatalog(JSON.parse(reader.result));selectedId=catalog.places[0]?.id||null;localSave("가져온 카탈로그를 이 기기에 임시저장");render();alert("가져오기 완료. 장소 "+catalog.places.length+"곳");}catch(e){alert("가져오기 실패: "+e.message);}};reader.readAsText(file,"utf-8");
 }
 $("addPlaceBtn").addEventListener("click",addNewPlace);
+$("nextUnphotographedBtn").addEventListener("click",()=>{
+ const start=catalog.places.findIndex(p=>p.id===selectedId);
+ for(let n=1;n<=catalog.places.length;n++){
+  const p=catalog.places[(start+n+catalog.places.length)%catalog.places.length];
+  if(!isImageReady(p)){selectedId=p.id;$("imageFilter").value="";render();return;}
+ }
+ alert("모든 장소에 대표사진 후보가 확정되어 있습니다.");
+});
 $("exportBtn").addEventListener("click",exportCatalog);
 $("importInput").addEventListener("change",e=>{if(e.target.files&&e.target.files[0])importCatalog(e.target.files[0]);e.target.value="";});
 $("reloadBtn").addEventListener("click",async()=>{if(!confirm("이 기기에 저장된 임시 수정사항을 버리고 배포된 기본자료를 다시 읽을까요? 먼저 JSON을 내보내 백업하는 것이 안전합니다."))return;localStorage.removeItem(LOCAL_KEY);await loadBase();});
