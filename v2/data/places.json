@@ -4,7 +4,7 @@
   "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
   "dataStatus": "편집 기획을 바탕으로 한 후보 목록. 장소별 현재 운영·출입·촬영 허가·사진은 공식 출처와 현장/이미지 검토 전",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-13T06:51:03.624Z",
+  "updatedAt": "2026-10-13T09:29:10.436Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -29,7 +29,9 @@
       "constraints": [
         "탱크 내부 개방 여부",
         "상업촬영 허가",
-        "장비·조명 반입"
+        "장비·조명 반입",
+        "2025년 4월부터 T1~T6 실내공간·T2 야외무대는 별도 운영·사용수익허가시설로 전환된 안내가 있음",
+        "영리목적 촬영 및 대규모 촬영은 사전 승인 여부를 운영기관에 확인"
       ],
       "scoutPriority": 1,
       "searchTerms": [
@@ -41,9 +43,9 @@
       "summary": "폐산업시설의 대형 원형 구조와 거친 재료감, 강한 명암을 활용할 수 있는 에디토리얼 후보",
       "address": "",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://parks.seoul.go.kr/content.do?key=2604300014",
       "openingStatus": "미확인",
-      "shootingPermission": "미확인",
+      "shootingPermission": "공간 점유형 촬영은 사전 승인 필요 · 최신 운영기관 확인",
       "parking": "미확인",
       "fee": "미확인",
       "imageStatus": "미등록",
@@ -66,13 +68,15 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://parks.seoul.go.kr/content.do?key=2604300014"
+      ],
       "verification": {
         "location": "미확인",
         "photoMatch": "미확인",
         "rights": "미확인",
-        "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "shootingPermission": "공식 안내 확인 · 촬영 전 재확인 필요",
+        "lastCheckedAt": "2026-10-13"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -86,7 +90,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 92,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 19,
+        "lightAndTexture": 19,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "폐산업시설의 대형 원형 구조와 거친 재료감, 강한 명암을 활용할 수 있는 에디토리얼 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-seonyudo",
@@ -167,7 +187,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 90,
+      "photoScoreBreakdown": {
+        "distinctiveness": 26,
+        "compositionVariety": 18,
+        "lightAndTexture": 19,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 9
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "재생 콘크리트 구조와 식생이 함께 있어 인물과 건축을 겹쳐 구성하기 좋은 공간 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-ddp",
@@ -232,7 +268,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 95,
+      "photoScoreBreakdown": {
+        "distinctiveness": 30,
+        "compositionVariety": 20,
+        "lightAndTexture": 18,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "곡선형 외피와 스케일감 있는 건축면으로 그래픽한 패션 이미지와 실루엣을 만들 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-sema-bunker",
@@ -296,7 +348,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 87,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 18,
+        "lightAndTexture": 19,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 5
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "낮은 천장과 원형·거친 실내 구조를 활용할 수 있는 특수 분위기 공간 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-sewoon",
@@ -361,7 +429,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 87,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 19,
+        "lightAndTexture": 17,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "오래된 상업·산업 건축, 난간과 반복되는 수평선으로 도시형 인물화보를 구성할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-mullae",
@@ -425,7 +509,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 88,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 18,
+        "lightAndTexture": 18,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "철공소와 창작공간이 만나는 골목의 금속 질감·낡은 표면·색 대비를 살릴 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-seongsu",
@@ -489,7 +589,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 85,
+      "photoScoreBreakdown": {
+        "distinctiveness": 24,
+        "compositionVariety": 17,
+        "lightAndTexture": 17,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "벽돌·철문·적재 구조 등 산업도시의 배경을 짧은 동선에서 다양하게 찾을 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-seoul-station-284",
@@ -514,7 +630,9 @@
       "constraints": [
         "운영·전시 일정",
         "실내 촬영 허가",
-        "삼각대·조명 허용 여부"
+        "삼각대·조명 허용 여부",
+        "전시 및 행사에 따라 실내 구역과 동선이 달라질 수 있음",
+        "상업·패션 촬영은 시설 운영 규정과 사전 허가 여부 확인"
       ],
       "scoutPriority": 1,
       "searchTerms": [
@@ -526,7 +644,7 @@
       "summary": "역사적 건축 디테일과 높은 실내 공간의 선·비례가 돋보이는 인물·패션 촬영 후보",
       "address": "",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://www.seoul284.org/space/menu/256",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -551,7 +669,9 @@
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://www.seoul284.org/space/menu/256"
+      ],
       "verification": {
         "location": "미확인",
         "photoMatch": "미확인",
@@ -571,7 +691,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 91,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 18,
+        "lightAndTexture": 18,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "역사적 건축 디테일과 높은 실내 공간의 선·비례가 돋보이는 인물·패션 촬영 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-botanic",
@@ -635,7 +771,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 89,
+      "photoScoreBreakdown": {
+        "distinctiveness": 26,
+        "compositionVariety": 17,
+        "lightAndTexture": 19,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 9
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "유리·철골 구조와 이국적인 식생을 레이어로 사용할 수 있는 실내 자연 배경 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-nodeul",
@@ -662,7 +814,7 @@
         "공간별 이용 조건",
         "상업촬영 허가"
       ],
-      "scoutPriority": 1,
+      "scoutPriority": 2,
       "searchTerms": [
         "노들섬 건축 계단 플랫폼 사진",
         "Nodeul Island architecture photography",
@@ -700,7 +852,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 83,
+      "photoScoreBreakdown": {
+        "distinctiveness": 23,
+        "compositionVariety": 17,
+        "lightAndTexture": 16,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "B · 유망한 보완 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "도시 구조물과 강변 여백을 함께 활용해 건축·인물·무대형 이미지를 만들 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-craft-museum",
@@ -765,7 +933,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 82,
+      "photoScoreBreakdown": {
+        "distinctiveness": 24,
+        "compositionVariety": 17,
+        "lightAndTexture": 16,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "B · 유망한 보완 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "현대적 외벽과 전통 건축 요소가 만나는 대비를 활용할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-mmca",
@@ -830,7 +1014,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 83,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 17,
+        "lightAndTexture": 16,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "B · 유망한 보완 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "현대 미술관의 낮은 수평선과 중정·벽면을 활용하는 절제된 건축 인물화보 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-sema-namseoul",
@@ -894,7 +1094,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 82,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 17,
+        "lightAndTexture": 16,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "B · 유망한 보완 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "역사적 석재 외관과 계단·창호를 배경으로 클래식한 인물 이미지를 구성할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-euljiro",
@@ -958,7 +1174,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 86,
+      "photoScoreBreakdown": {
+        "distinctiveness": 24,
+        "compositionVariety": 18,
+        "lightAndTexture": 18,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "낮은 간판·금속 셔터·혼합 조명이 만드는 다층적인 도심 질감을 활용할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-gyeongchun",
@@ -984,7 +1216,7 @@
         "보행자 혼잡",
         "상업촬영 허가"
       ],
-      "scoutPriority": 2,
+      "scoutPriority": 3,
       "searchTerms": [
         "경춘선숲길 옛 철길 선형 사진",
         "Gyeongchun Line Forest Park photography",
@@ -1022,7 +1254,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 72,
+      "photoScoreBreakdown": {
+        "distinctiveness": 20,
+        "compositionVariety": 15,
+        "lightAndTexture": 16,
+        "editorialVersatility": 15,
+        "indoorOutdoorFlexibility": 6
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "C · 조건부 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "철길 흔적과 길게 이어지는 수목·난간의 선을 이용할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-naksan-wall",
@@ -1086,7 +1334,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 75,
+      "photoScoreBreakdown": {
+        "distinctiveness": 22,
+        "compositionVariety": 16,
+        "lightAndTexture": 17,
+        "editorialVersatility": 15,
+        "indoorOutdoorFlexibility": 5
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "B · 유망한 보완 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "성곽의 돌 질감과 도시 지붕선을 함께 담아 고전적·도시적 분위기를 겹칠 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "seo-hangang-under-bridge",
@@ -1150,7 +1414,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 65,
+      "photoScoreBreakdown": {
+        "distinctiveness": 20,
+        "compositionVariety": 15,
+        "lightAndTexture": 16,
+        "editorialVersatility": 10,
+        "indoorOutdoorFlexibility": 4
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "C · 조건부 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "교량의 리듬감 있는 구조와 반복선을 활용하는 그래픽한 촬영을 위한 조사 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-paju-bookcity",
@@ -1215,7 +1495,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 91,
+      "photoScoreBreakdown": {
+        "distinctiveness": 29,
+        "compositionVariety": 19,
+        "lightAndTexture": 18,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "기하학적 파사드와 건물 사이의 보이드·직선을 활용한 건축 중심 화보 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-mimesis",
@@ -1297,7 +1593,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 94,
+      "photoScoreBreakdown": {
+        "distinctiveness": 30,
+        "compositionVariety": 18,
+        "lightAndTexture": 19,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "화이트 곡면과 조각적인 실내외 볼륨을 통해 인물과 건축을 단순한 형태로 구성할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-heyri",
@@ -1362,7 +1674,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 82,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 18,
+        "lightAndTexture": 16,
+        "editorialVersatility": 16,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "B · 유망한 보완 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "서로 다른 건축 언어와 외장 재료가 모여 있어 콘셉트에 맞는 건물을 선별할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-anyang-artpark",
@@ -1386,7 +1714,9 @@
       "constraints": [
         "작품별 접근·촬영 조건",
         "작품 보호와 관람객 동선",
-        "상업촬영 허가"
+        "상업촬영 허가",
+        "공공예술 작품마다 위치·접근 동선·촬영 시 주변 이용자 간섭을 확인",
+        "APAP 투어·행사 일정 및 개별 작품 접근 가능 여부 재확인"
       ],
       "scoutPriority": 1,
       "searchTerms": [
@@ -1398,7 +1728,7 @@
       "summary": "산책로 주변의 설치미술과 지형을 하나씩 조사해 조형적 배경을 만들 후보",
       "address": "",
       "coordinates": null,
-      "officialUrl": "",
+      "officialUrl": "https://www.apap.or.kr",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -1406,7 +1736,10 @@
       "imageStatus": "미등록",
       "primaryImageId": null,
       "imageCandidates": [],
-      "sourceRefs": [],
+      "sourceRefs": [
+        "https://www.apap.or.kr",
+        "https://m.ayac.or.kr/base/ayac/performance/read?menuLevel=2&menuNo=1&performanceNo=3003"
+      ],
       "verification": {
         "location": "미확인",
         "photoMatch": "미확인",
@@ -1426,7 +1759,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 91,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 18,
+        "lightAndTexture": 18,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "산책로 주변의 설치미술과 지형을 하나씩 조사해 조형적 배경을 만들 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-pocheon-artvalley",
@@ -1490,7 +1839,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 80,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 16,
+        "lightAndTexture": 18,
+        "editorialVersatility": 15,
+        "indoorOutdoorFlexibility": 6
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "B · 유망한 보완 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "절벽의 층리와 수면·암벽의 대비로 다른 도시 촬영지와 구분되는 배경을 만들 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-suwon-hwaseong",
@@ -1516,7 +1881,7 @@
         "문화유산 촬영 조건",
         "상업촬영 허가"
       ],
-      "scoutPriority": 2,
+      "scoutPriority": 3,
       "searchTerms": [
         "수원화성 성문 성곽 디테일 사진",
         "Suwon Hwaseong fortress architecture photography",
@@ -1554,7 +1919,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 73,
+      "photoScoreBreakdown": {
+        "distinctiveness": 23,
+        "compositionVariety": 17,
+        "lightAndTexture": 16,
+        "editorialVersatility": 13,
+        "indoorOutdoorFlexibility": 4
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "C · 조건부 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "성문·여장·돌·흙의 재료감과 길게 이어지는 성곽선을 활용할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-suwon-haenggung",
@@ -1580,7 +1961,7 @@
         "영업장 촬영 동의",
         "혼잡 시간 피하기"
       ],
-      "scoutPriority": 2,
+      "scoutPriority": 3,
       "searchTerms": [
         "수원 행궁동 오래된 골목 건축 사진",
         "Suwon Haenggung-dong alley photography",
@@ -1618,7 +1999,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 69,
+      "photoScoreBreakdown": {
+        "distinctiveness": 20,
+        "compositionVariety": 14,
+        "lightAndTexture": 15,
+        "editorialVersatility": 15,
+        "indoorOutdoorFlexibility": 5
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "C · 조건부 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "낮은 상가와 오래된 골목, 전통 건축 주변의 현대적 요소를 섞어 구성할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-mmca-gwacheon",
@@ -1645,7 +2042,7 @@
         "상업촬영 승인",
         "실내 플래시 제한 여부"
       ],
-      "scoutPriority": 2,
+      "scoutPriority": 1,
       "searchTerms": [
         "국립현대미술관 과천 조각공원 건축 사진",
         "MMCA Gwacheon sculpture garden",
@@ -1683,7 +2080,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 86,
+      "photoScoreBreakdown": {
+        "distinctiveness": 26,
+        "compositionVariety": 17,
+        "lightAndTexture": 17,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "현대 건축과 야외 작품·숲의 스케일을 조합하는 조형적 인물화보 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-gyeonggi-museum-art",
@@ -1748,7 +2161,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 72,
+      "photoScoreBreakdown": {
+        "distinctiveness": 21,
+        "compositionVariety": 15,
+        "lightAndTexture": 14,
+        "editorialVersatility": 16,
+        "indoorOutdoorFlexibility": 6
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "C · 조건부 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "현대적 건물 면과 공원의 열린 공간을 배경으로 단정한 상업·인물 이미지를 만들 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-gwangmyeong-cave",
@@ -1812,7 +2241,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 70,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 15,
+        "lightAndTexture": 18,
+        "editorialVersatility": 9,
+        "indoorOutdoorFlexibility": 3
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "C · 조건부 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "어둠과 컬러 조명, 암석 표면을 활용해 일반 스튜디오와 다른 분위기를 연구할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-goyang-aram",
@@ -1877,7 +2322,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 70,
+      "photoScoreBreakdown": {
+        "distinctiveness": 21,
+        "compositionVariety": 15,
+        "lightAndTexture": 14,
+        "editorialVersatility": 15,
+        "indoorOutdoorFlexibility": 5
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "C · 조건부 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "공연장 외부 구조와 광장을 활용해 대칭·직선형 인물 이미지를 구성할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "gg-starfield-suwon",
@@ -1941,7 +2402,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 67,
+      "photoScoreBreakdown": {
+        "distinctiveness": 23,
+        "compositionVariety": 15,
+        "lightAndTexture": 12,
+        "editorialVersatility": 13,
+        "indoorOutdoorFlexibility": 4
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "C · 조건부 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "높은 수직 공간과 층별 반복 구조로 인물의 크기를 대비시키기 좋은 실내 건축 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "ic-art-platform",
@@ -2023,7 +2500,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 90,
+      "photoScoreBreakdown": {
+        "distinctiveness": 27,
+        "compositionVariety": 18,
+        "lightAndTexture": 18,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "붉은 벽돌의 반복과 창고형 구조를 활용해 인물·패션에 강한 재료감을 더할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "ic-tri-bowl",
@@ -2087,7 +2580,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 92,
+      "photoScoreBreakdown": {
+        "distinctiveness": 30,
+        "compositionVariety": 19,
+        "lightAndTexture": 17,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "곡면과 부유하는 듯한 하부 구조를 이용해 미래적이고 조형적인 프레임을 만들 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "ic-open-port",
@@ -2152,7 +2661,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 77,
+      "photoScoreBreakdown": {
+        "distinctiveness": 23,
+        "compositionVariety": 16,
+        "lightAndTexture": 16,
+        "editorialVersatility": 16,
+        "indoorOutdoorFlexibility": 6
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "B · 유망한 보완 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "근대 건축 외벽과 골목을 활용해 유럽풍·레트로 에디토리얼 배경을 조사할 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "ic-baedari",
@@ -2217,7 +2742,23 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 66,
+      "photoScoreBreakdown": {
+        "distinctiveness": 20,
+        "compositionVariety": 13,
+        "lightAndTexture": 15,
+        "editorialVersatility": 14,
+        "indoorOutdoorFlexibility": 4
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "C · 조건부 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "낡은 간판·책방 창·좁은 도로의 정서를 이용해 문학적이고 서사적인 인물 이미지를 만들 후보",
+        "status": "desk-review"
+      }
     },
     {
       "id": "ic-sorae-saltfield",
@@ -2281,7 +2822,67 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-13",
+      "photoPotentialScore": 73,
+      "photoScoreBreakdown": {
+        "distinctiveness": 23,
+        "compositionVariety": 17,
+        "lightAndTexture": 18,
+        "editorialVersatility": 11,
+        "indoorOutdoorFlexibility": 4
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
+      "priorityLabel": "C · 조건부 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "갈대·염전 흔적·수평선과 구조물의 반복을 활용해 미니멀한 야외 이미지를 연구할 후보",
+        "status": "desk-review"
+      }
     }
-  ]
+  ],
+  "selectionRubric": {
+    "status": "기획 점수이며 현장 검증 전",
+    "total": 100,
+    "dimensions": [
+      {
+        "key": "distinctiveness",
+        "label": "시각적 고유성",
+        "max": 30
+      },
+      {
+        "key": "compositionVariety",
+        "label": "구도·촬영 각도 다양성",
+        "max": 20
+      },
+      {
+        "key": "lightAndTexture",
+        "label": "빛·그림자·재료 질감",
+        "max": 20
+      },
+      {
+        "key": "editorialVersatility",
+        "label": "패션·인물·예술 에디토리얼 활용도",
+        "max": 20
+      },
+      {
+        "key": "indoorOutdoorFlexibility",
+        "label": "실내·야외/날씨 대안",
+        "max": 10
+      }
+    ],
+    "tiers": {
+      "A": "85–100: 우선 조사",
+      "B": "74–84: 보완 조사",
+      "C": "0–73: 조건부·후순위"
+    },
+    "excludedFactors": [
+      "관광객 수",
+      "SNS 인증샷 인기",
+      "단순한 인지도",
+      "랜드마크라는 이유만으로 부여하는 가산점"
+    ],
+    "productionFeasibilitySeparate": true,
+    "note": "점수는 공개·접근·영업 운영 상태 및 촬영 허가를 의미하지 않는다. 생산 가능성은 증거 확인 후 별도 평가한다."
+  }
 }
