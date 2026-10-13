@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#18211d">
+<title>FRAME ATLAS 2.0 · 서울·수도권 촬영 로케이션</title>
+<style>
+:root{--bg:#f3f2ec;--card:#fff;--ink:#202820;--muted:#70786e;--line:#dedfd6;--dark:#1d2922;--accent:#e95b3c;--green:#315b42;--soft:#e8eadf;--warn:#fff0d6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif}button,input,select,textarea{font:inherit}button,a{cursor:pointer}a{color:inherit}.wrap{max-width:1540px;margin:auto;padding:22px}.head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:17px}.brand{font-weight:950;font-size:25px;letter-spacing:-1px}.brand small{display:block;font-size:11px;letter-spacing:2px;color:var(--muted);margin-top:5px}.pill{font-size:11px;font-weight:800;border-radius:999px;padding:6px 9px;background:#e4eadf;color:#315b42}.intro{display:flex;align-items:center;justify-content:space-between;gap:22px;background:#e5e7dd;border-radius:18px;padding:22px 24px;margin-bottom:14px}.intro h1{margin:0 0 7px;font-size:clamp(22px,3vw,32px);letter-spacing:-1.2px}.intro p{margin:0;color:#5c675d;line-height:1.65;font-size:13px}.stats{display:flex;gap:18px;flex-wrap:wrap}.stat b{display:block;font-size:23px}.stat span{display:block;color:#697267;font-size:11px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.btn{border:1px solid var(--line);background:#fff;border-radius:9px;padding:10px 13px;font-size:12px;font-weight:850;color:var(--ink)}.btn.primary{background:var(--dark);border-color:var(--dark);color:#fff}.btn.orange{background:var(--accent);color:white;border-color:var(--accent)}.btn.small{padding:7px 9px;font-size:11px}.btn:disabled{opacity:.45;cursor:not-allowed}.searchbar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.searchbar input{flex:1;min-width:200px}.field,input,select,textarea{border:1px solid var(--line);border-radius:8px;padding:10px;background:white;color:var(--ink);min-width:0;width:100%}.filters{display:grid;grid-template-columns:minmax(180px,1fr) 180px 180px;gap:8px;flex:1}.workspace{display:grid;grid-template-columns:minmax(300px,.92fr) minmax(400px,1.35fr);gap:14px;align-items:start}.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}.panelhead{padding:15px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px}.panelhead h2{font-size:15px;margin:0}.panelhead span{font-size:11px;color:var(--muted)}.list{padding:8px;max-height:72vh;overflow:auto}.place{display:grid;grid-template-columns:80px 1fr;gap:11px;padding:10px;border-radius:10px;border:1px solid transparent;cursor:pointer;margin-bottom:4px}.place:hover{background:#f7f7f2}.place.active{border-color:#a2b19e;background:#edf1e8}.thumb{width:80px;height:72px;border-radius:8px;background:#e6e8e0;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#858d80}.thumb img{width:100%;height:100%;object-fit:cover}.place h3{margin:2px 0 6px;font-size:14px}.place p{margin:0 0 6px;font-size:11px;color:var(--muted)}.chips{display:flex;gap:5px;flex-wrap:wrap}.chip{font-size:10px;border-radius:5px;background:#eeeFE8;padding:4px 6px;color:#525c50}.chip.need{background:#fff0d7;color:#8b5a14}.detail{padding:16px}.empty{padding:44px 20px;color:var(--muted);text-align:center}.detailtitle{display:flex;justify-content:space-between;gap:10px;align-items:start}.detailtitle h2{margin:0 0 6px;font-size:24px;letter-spacing:-.7px}.detailtitle p{margin:0;color:var(--muted);font-size:12px}.section{border-top:1px solid var(--line);padding:16px 0}.section h3{font-size:13px;margin:0 0 10px}.sourcegrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.source{display:block;text-decoration:none;padding:10px 6px;border:1px solid var(--line);border-radius:8px;text-align:center;background:#fff;font-size:11px;font-weight:800}.source:hover{border-color:#81917f;background:#f7f8f3}.source small{display:block;font-size:9px;font-weight:500;color:var(--muted);margin-top:4px}.searchnote{font-size:11px;line-height:1.6;color:var(--muted);margin:9px 0 0}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row>*{flex:1}.split{display:grid;grid-template-columns:1fr 1fr;gap:9px}.catalogform{display:grid;grid-template-columns:1fr 1fr;gap:9px}.catalogform label,.candidateform label{font-size:11px;font-weight:800;color:#535e53;display:block}.catalogform label input,.catalogform label select,.catalogform label textarea,.candidateform label input,.candidateform label select{margin-top:5px}.wide{grid-column:1/-1}.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:12px}.result{border:1px solid var(--line);border-radius:10px;padding:8px;overflow:hidden;min-width:0}.result img{width:100%;height:120px;object-fit:cover;border-radius:6px;background:#eee}.result .rtitle{font-size:11px;font-weight:850;line-height:1.4;margin:7px 0 4px;overflow-wrap:anywhere}.result .rmeta{font-size:10px;line-height:1.45;color:var(--muted);overflow-wrap:anywhere}.result a{font-size:10px}.candidate{border:1px solid var(--line);border-radius:10px;padding:10px;margin:8px 0}.candidategrid{display:grid;grid-template-columns:145px 1fr;gap:12px}.candidate img{width:145px;height:120px;object-fit:contain;background:#f2f2ec;border-radius:6px}.candidate h4{margin:0 0 7px;font-size:12px}.candidate p{font-size:11px;line-height:1.5;color:var(--muted);margin:4px 0;overflow-wrap:anywhere}.candidateform{display:grid;grid-template-columns:1fr 1fr;gap:9px}.statusbar{padding:9px 11px;border-radius:8px;background:#f0f2eb;font-size:11px;line-height:1.5;color:#435140;margin:8px 0}.warn{background:var(--warn);color:#775116}.tiny{font-size:10px;color:var(--muted);line-height:1.6}.footer{padding:23px 0;color:#7d847a;font-size:11px;line-height:1.7}.hidden{display:none!important}.filelabel{display:inline-flex;align-items:center;justify-content:center;gap:7px}.filelabel input{display:none}.tagline{font-size:11px;color:var(--muted)}.notice{padding:11px;border:1px solid #e2d7b9;background:#fff7e7;border-radius:9px;font-size:11px;line-height:1.65;margin-bottom:13px}
+@media(max-width:1050px){.workspace{grid-template-columns:1fr}.list{max-height:420px}.intro{align-items:flex-start;flex-direction:column}.sourcegrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:620px){.wrap{padding:12px}.head{align-items:flex-start}.brand{font-size:21px}.intro{padding:16px}.stats{gap:14px}.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.sourcegrid{grid-template-columns:repeat(2,minmax(0,1fr))}.results{grid-template-columns:repeat(2,minmax(0,1fr))}.candidategrid{grid-template-columns:1fr}.candidate img{width:100%;height:160px}.catalogform,.candidateform,.split{grid-template-columns:1fr}.detailtitle{display:block}.detailtitle .toolbar{margin-top:10px}.panelhead{padding:12px}.detail{padding:12px}.place{grid-template-columns:68px 1fr}.thumb{width:68px;height:66px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <header class="head">
+  <div class="brand">FRAME ATLAS 2.0 <small>PHOTO LOCATION RESEARCH WORKSPACE</small></div>
+  <span class="pill">2세대 · 서울·수도권</span>
+ </header>
+ <section class="intro">
+  <div><h1>좋은 촬영 장소를 찾고, 실제 사진으로 검증한다.</h1><p>검색원을 위키미디어에 한정하지 않습니다. 오픈 라이선스 이미지 자동 검색과 Google·Bing·네이버·다음·Flickr·공식 관광 사이트 검색을 함께 사용합니다.<br>검색 결과는 후보일 뿐입니다. 장소 일치와 공개 사용 권한이 확인된 사진만 대표 이미지로 확정합니다.</p></div>
+  <div class="stats">
+   <div class="stat"><b id="countAll">0</b><span>장소 후보</span></div>
+   <div class="stat"><b id="countNoImage">0</b><span>대표사진 없음</span></div>
+   <div class="stat"><b id="countReview">0</b><span>사진 검토 대기</span></div>
+  </div>
+ </section>
+ <div class="notice"><b>중요:</b> 이 사이트는 공개 GitHub Pages에 배포될 예정입니다. 웹에서 찾은 사진을 개인적으로 참고하는 것과 공개 사이트에 복제·전시하는 것은 다릅니다. 권리 확인이 안 된 사진은 후보로만 보관하며, 출처·작가·라이선스/허가 근거가 확인되기 전에는 대표 이미지로 확정하지 않습니다.</div>
+ <div class="toolbar">
+  <button class="btn primary" id="addPlaceBtn">＋ 장소 등록</button>
+  <button class="btn" id="exportBtn">카탈로그 JSON 내보내기</button>
+  <label class="btn filelabel">JSON 가져오기<input id="importInput" type="file" accept=".json,application/json"></label>
+  <button class="btn" id="reloadBtn">배포된 기본자료 다시 읽기</button>
+  <span class="tagline" id="saveStatus">불러오는 중…</span>
+ </div>
+ <div class="searchbar">
+  <div class="filters">
+   <input id="query" class="field" placeholder="장소명·별칭·지역·촬영 콘셉트 검색">
+   <select id="regionFilter" class="field"><option value="">서울·수도권 전체</option><option>서울</option><option>경기</option><option>인천</option></select>
+   <select id="imageFilter" class="field"><option value="">모든 사진 상태</option><option value="none">대표사진 없음</option><option value="review">사진 검토 대기</option><option value="ready">대표사진 확정</option></select>
+  </div>
+ </div>
+ <main class="workspace">
+  <section class="panel">
+   <div class="panelhead"><h2>장소 후보 목록</h2><span id="listCount">0곳</span></div>
+   <div id="placeList" class="list"><div class="empty">장소자료를 불러오는 중입니다.</div></div>
+  </section>
+  <section class="panel">
+   <div class="panelhead"><h2>장소 정보 · 이미지 연구</h2><span id="selectedMeta">장소를 선택하세요</span></div>
+   <div id="detail" class="detail"><div class="empty">왼쪽 목록에서 장소를 선택하면 이미지 검색과 사진 등록 도구가 열립니다.</div></div>
+  </section>
+ </main>
+ <footer class="footer">FRAME ATLAS 2.0 · Co-created by 지혜의 쉼터 with Claude &amp; Chat GPT · ⓒ 2026<br>개발 단계: 검색·검토·내보내기 흐름을 만드는 초기 버전입니다. 자동 검색 결과의 장소 일치·권리 확인은 별도 검증이 필요합니다.</footer>
+</div>
+<script>
+(function(){
+"use strict";
+const DATA_URL="./data/places.json";
+const LOCAL_KEY="frameAtlas2CatalogDraft";
+const PERMITTED=new Set(["cc0","public-domain","cc-by","cc-by-sa","permission","self-owned"]);
+const $=id=>document.getElementById(id);
+let catalog={schemaVersion:1,places:[]},selectedId=null,searchCache=[];
+const esc=v=>String(v==null?"":v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const getPlace=id=>catalog.places.find(p=>p.id===id);
+const imageCount=p=>(p.imageCandidates||[]).length;
+const approvedImage=p=>(p.imageCandidates||[]).find(i=>i.id===p.primaryImageId&&i.status==="approved"&&PERMITTED.has(i.rights)&&i.placeMatch==="confirmed");
+const isImageReady=p=>!!approvedImage(p);
+const hasPending=p=>(p.imageCandidates||[]).some(i=>i.status!=="rejected"&&! (i.status==="approved"&&PERMITTED.has(i.rights)&&i.placeMatch==="confirmed"));
+function stamp(){return new Date().toISOString();}
+function localSave(msg){try{localStorage.setItem(LOCAL_KEY,JSON.stringify(catalog));$("saveStatus").textContent=msg||("이 기기에 임시저장 · "+new Date().toLocaleTimeString("ko-KR"));}catch(e){$("saveStatus").textContent="임시저장 실패: "+e.message;}}
+function normalizeCatalog(obj){
+ if(!obj||!Array.isArray(obj.places))throw new Error("places 배열이 없는 카탈로그 파일입니다.");
+ const seen=new Set();
+ obj.places.forEach((p,index)=>{
+  if(!p||!p.id||!p.name)throw new Error((index+1)+"번째 장소에 id 또는 name이 없습니다.");
+  if(seen.has(p.id))throw new Error("중복 장소 ID: "+p.id);seen.add(p.id);
+  if(!Array.isArray(p.imageCandidates))p.imageCandidates=[];
+  if(!Array.isArray(p.aliases))p.aliases=[];
+  if(!p.verification)p.verification={location:"미확인",photoMatch:"미확인",rights:"미확인",shootingPermission:"미확인",lastCheckedAt:null};
+ });
+ return obj;
+}
+async function loadBase(){
+ try{
+  const r=await fetch(DATA_URL+"?v=1",{cache:"no-store"});if(!r.ok)throw new Error("기본 카탈로그를 읽지 못했습니다 (HTTP "+r.status+")");
+  const base=normalizeCatalog(await r.json());
+  let draft=null;try{draft=JSON.parse(localStorage.getItem(LOCAL_KEY)||"null");}catch(_){}
+  catalog=normalizeCatalog(draft&&Array.isArray(draft.places)?draft:base);
+  if(!selectedId||!getPlace(selectedId))selectedId=catalog.places[0]?.id||null;
+  localSave(draft?"이 기기의 초안 불러옴":"기본자료 불러옴");render();
+ }catch(e){$("saveStatus").textContent="자료 불러오기 실패: "+e.message;$("placeList").innerHTML='<div class="empty">기본 자료를 불러오지 못했습니다.<br>GitHub Pages URL에서 열었는지 확인하세요.</div>';}
+}
+function render(){
+ const q=$("query").value.trim().toLowerCase(),region=$("regionFilter").value,filter=$("imageFilter").value;
+ const places=catalog.places.filter(p=>{
+  const text=[p.name,p.region,p.category,p.summary,...(p.aliases||[])].join(" ").toLowerCase();
+  if(q&&!text.includes(q))return false;if(region&&p.region!==region)return false;
+  if(filter==="none"&&isImageReady(p))return false;
+  if(filter==="review"&&!hasPending(p))return false;
+  if(filter==="ready"&&!isImageReady(p))return false;
+  return true;
+ });
+ $("countAll").textContent=catalog.places.length;
+ $("countNoImage").textContent=catalog.places.filter(p=>!isImageReady(p)).length;
+ $("countReview").textContent=catalog.places.filter(hasPending).length;
+ $("listCount").textContent=places.length+"곳";
+ $("placeList").innerHTML=places.length?places.map(p=>{
+  const im=approvedImage(p);
+  const state=im?'<span class="chip">대표사진 확정</span>':imageCount(p)?'<span class="chip need">사진 후보 '+imageCount(p)+'개</span>':'<span class="chip need">사진 미등록</span>';
+  return '<article class="place '+(p.id===selectedId?'active':'')+'" data-select="'+esc(p.id)+'"><div class="thumb">'+(im?'<img loading="lazy" alt="" src="'+esc(im.imageUrl)+'" referrerpolicy="no-referrer">':'<span>NO PHOTO</span>')+'</div><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+'</p><div class="chips">'+state+'</div></div></article>';
+ }).join(""):'<div class="empty">검색 조건에 맞는 장소가 없습니다.</div>';
+ $("placeList").querySelectorAll("[data-select]").forEach(el=>el.addEventListener("click",()=>{selectedId=el.dataset.select;render();}));
+ renderDetail();
+}
+function sourceLinks(p){
+ const q=p.name+" "+p.region+" 한국 장소 사진";
+ const links=[
+  ["Google 이미지","https://www.google.com/search?tbm=isch&q="+encodeURIComponent(q),"폭넓은 이미지"],
+  ["Bing 이미지","https://www.bing.com/images/search?q="+encodeURIComponent(q),"다른 검색 색인"],
+  ["네이버 이미지","https://search.naver.com/search.naver?where=image&query="+encodeURIComponent(q),"국내 자료"],
+  ["다음 이미지","https://search.daum.net/search?w=img&q="+encodeURIComponent(q),"국내 자료"],
+  ["Flickr","https://www.flickr.com/search/?text="+encodeURIComponent(p.name+" Korea"),"작가·라이선스 확인"],
+  ["Openverse","https://openverse.org/search/image?q="+encodeURIComponent(p.name),"열린 라이선스"],
+  ["Wikimedia Commons","https://commons.wikimedia.org/w/index.php?search="+encodeURIComponent(p.name)+"&title=Special:MediaSearch&type=image","열린 라이선스 후보"],
+  ["공식·관광 출처","https://www.google.com/search?q="+encodeURIComponent('"'+p.name+'" 공식 사진 OR 관광'),"공식 홈페이지·관광기관"]
+ ];
+ return '<div class="sourcegrid">'+links.map(x=>'<a class="source" target="_blank" rel="noopener noreferrer" href="'+esc(x[1])+'">'+esc(x[0])+'<small>'+esc(x[2])+'</small></a>').join("")+'</div>';
+}
+function renderDetail(){
+ const p=getPlace(selectedId);
+ if(!p){$("detail").innerHTML='<div class="empty">장소를 선택하세요.</div>';$("selectedMeta").textContent="";return;}
+ $("selectedMeta").textContent=p.region+" · "+(p.imageCandidates||[]).length+"개 사진 후보";
+ const prim=approvedImage(p);
+ $("detail").innerHTML=
+ '<div class="detailtitle"><div><h2>'+esc(p.name)+'</h2><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+' · ID '+esc(p.id)+'</p></div><div class="toolbar"><button class="btn small" id="editPlaceBtn">정보 수정</button><button class="btn small" id="deletePlaceBtn">장소 삭제</button></div></div>'+
+ (prim?'<div class="section"><img src="'+esc(prim.imageUrl)+'" alt="'+esc(p.name)+' 대표 사진" style="width:100%;max-height:280px;object-fit:contain;background:#eee;border-radius:9px"><div class="tiny">출처: <a target="_blank" rel="noopener" href="'+esc(prim.sourcePageUrl)+'">'+esc(prim.sourceName||"사진 출처")+'</a> · '+esc(prim.rightsLabel||prim.rights)+'</div></div>':'<div class="statusbar warn">정식 대표 사진이 아직 없습니다. 검색 결과를 후보로 모은 뒤 장소 일치 및 사용 권한을 검토하세요.</div>')+
+ '<div class="section"><h3>여러 검색원에서 사진 찾기</h3>'+sourceLinks(p)+'<p class="searchnote">위 검색 서비스는 새 탭에서 열립니다. 검색 결과 전체를 자동 수집할 수 없는 서비스도 있으므로 이미지 원본 주소와 원본 페이지 주소를 후보 등록에 붙여 넣으세요. 자동으로 모아진 후보도 사람이 장소 일치를 확인해야 합니다.</p></div>'+
+ '<div class="section"><h3>열린 라이선스 이미지 자동 검색</h3><div class="row"><button class="btn primary" id="searchOpenverseBtn">Openverse 검색</button><button class="btn" id="searchCommonsBtn">Wikimedia Commons 검색</button><button class="btn" id="clearSearchBtn">검색 결과 지우기</button></div><div class="searchnote">Openverse와 Commons에서 제목·썸네일·출처·라이선스 정보를 불러옵니다. 결과에 다른 장소가 섞일 수 있으므로 실제 사진을 확인한 뒤 후보로 저장하세요.</div><div id="autoSearchStatus" class="statusbar hidden"></div><div id="autoResults" class="results"></div></div>'+
+ '<div class="section"><h3>장소 기본 정보</h3><div class="catalogform"><label>장소명<input id="f_name" value="'+esc(p.name)+'"></label><label>지역<select id="f_region">'+["서울","경기","인천"].map(r=>'<option '+(p.region===r?'selected':'')+'>'+r+'</option>').join("")+'</select></label><label>분류<input id="f_category" value="'+esc(p.category||"")+'"></label><label>별칭(쉼표 구분)<input id="f_aliases" value="'+esc((p.aliases||[]).join(", "))+'"></label><label class="wide">주소<input id="f_address" value="'+esc(p.address||"")+'" placeholder="공식 출처로 확인된 주소"></label><label class="wide">공식 홈페이지·근거 링크<input id="f_official" value="'+esc(p.officialUrl||"")+'" placeholder="https://..."></label><label>운영 상태<select id="f_open">'+["미확인","운영 확인","운영시간 확인","휴관·폐쇄 확인"].map(v=>'<option '+((p.openingStatus||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>촬영 허가<select id="f_permission">'+["미확인","사전 허가 필요","제한 있음","허가 불필요 근거 확인","촬영 불가 근거 확인"].map(v=>'<option '+((p.shootingPermission||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label class="wide">촬영·조사 메모<textarea id="f_summary" rows="3">'+esc(p.summary||p.notes||"")+'</textarea></label><div class="wide"><button class="btn primary" id="savePlaceBtn">장소 정보 저장</button></div></div></div>'+
+ '<div class="section"><h3>사진 후보 직접 등록</h3><div class="candidateform"><label>이미지 직접 주소(URL)<input id="c_image" placeholder="https://...jpg 또는 이미지 직접 주소"></label><label>원본 페이지 주소<input id="c_page" placeholder="사진이 소개된 원본 웹페이지"></label><label>출처·사이트명<input id="c_source" placeholder="예: 서울시, Flickr 작가명"></label><label>작가·저작자<input id="c_creator" placeholder="확인된 경우 기록"></label><label>라이선스 상태<select id="c_rights"><option value="unknown">미확인</option><option value="cc0">CC0</option><option value="public-domain">퍼블릭 도메인</option><option value="cc-by">CC BY</option><option value="cc-by-sa">CC BY-SA</option><option value="permission">이용 허가 확인</option><option value="self-owned">직접 촬영·소유</option><option value="reference-only">개인 참고용·공개 불가</option></select></label><label>라이선스/허가 근거 URL<input id="c_license" placeholder="라이선스 설명 또는 허가 근거 페이지"></label><label>실제 장소 일치<select id="c_match"><option value="unverified">미확인</option><option value="confirmed">사진의 장소 확인</option><option value="mismatch">다른 장소</option></select></label><label>이미지 구도<select id="c_view"><option>현장 시점 사진</option><option>건물·장소 전경</option><option>실내</option><option>디테일</option><option>항공·드론</option><option>지도·포스터</option></select></label><label class="wide">검토 메모<input id="c_notes" placeholder="예: 간판·주변 구조물로 장소 확인, 계절/공사 여부"></label><div class="wide"><button class="btn primary" id="addCandidateBtn">사진 후보 저장</button></div></div><p class="tiny">후보는 출처와 함께 저장됩니다. 라이선스 상태만 선택했다고 법적 권리가 자동으로 확인되는 것은 아닙니다. 대표사진 확정은 사용 권한, 장소 일치, 원본 페이지를 모두 점검한 뒤 진행합니다.</p></div>'+
+ '<div class="section"><h3>저장된 사진 후보 ('+imageCount(p)+')</h3><div id="candidateList">'+renderCandidates(p)+'</div></div>'+
+ '<div class="section"><h3>검증 상태</h3><div class="catalogform"><label>장소 정보<select id="v_location">'+["미확인","공식 출처 확인","현장 확인"].map(v=>'<option '+((p.verification?.location||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>사진 일치<select id="v_photo">'+["미확인","검토 중","확인 완료"].map(v=>'<option '+((p.verification?.photoMatch||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>사용 권한<select id="v_rights">'+["미확인","검토 중","확인 완료"].map(v=>'<option '+((p.verification?.rights||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>촬영 허가 근거<select id="v_permission">'+["미확인","공식 근거 확인","서면 확인","현장 확인 필요"].map(v=>'<option '+((p.verification?.shootingPermission||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><div class="wide"><button class="btn" id="saveVerificationBtn">검증 상태 저장</button></div></div></div>'+
+ '<div class="section"><h3>이 장소의 출처·작업 기록</h3><p class="tiny">최종 확인일: '+esc(p.verification?.lastCheckedAt||"미기록")+' · 최근 수정: '+esc(p.updatedAt||"미기록")+'</p></div>';
+ $("editPlaceBtn").addEventListener("click",()=>{$("f_name").focus();$("f_name").scrollIntoView({behavior:"smooth",block:"center"});});
+ $("deletePlaceBtn").addEventListener("click",()=>deletePlace(p.id));
+ $("savePlaceBtn").addEventListener("click",()=>savePlace(p.id));
+ $("addCandidateBtn").addEventListener("click",()=>addCandidate(p.id));
+ $("saveVerificationBtn").addEventListener("click",()=>saveVerification(p.id));
+ $("searchOpenverseBtn").addEventListener("click",()=>searchOpenverse(p));
+ $("searchCommonsBtn").addEventListener("click",()=>searchCommons(p));
+ $("clearSearchBtn").addEventListener("click",()=>{$("autoResults").innerHTML="";$("autoSearchStatus").classList.add("hidden");searchCache=[];});
+ $("candidateList").querySelectorAll("[data-cand-action]").forEach(el=>el.addEventListener("click",()=>candidateAction(p.id,el.dataset.candId,el.dataset.candAction)));
+}
+function renderCandidates(p){
+ if(!imageCount(p))return '<div class="empty">아직 등록된 사진 후보가 없습니다. 위의 여러 검색원에서 이미지를 찾고 자동 검색 결과를 저장하세요.</div>';
+ return p.imageCandidates.map(c=>{
+  const safe=esc(c.imageUrl||"");
+  const licensed=PERMITTED.has(c.rights);
+  const badges=(c.status==="approved"&&licensed&&c.placeMatch==="confirmed")?'<span class="chip">대표사진 승인</span>':c.status==="rejected"?'<span class="chip">제외</span>':'<span class="chip need">검토 대기</span>';
+  return '<article class="candidate"><div class="candidategrid">'+(c.imageUrl?'<div><img loading="lazy" alt="사진 후보 미리보기" src="'+safe+'" referrerpolicy="no-referrer" onerror="this.style.display=\'none\';this.parentNode.insertAdjacentHTML(\'beforeend\',\'<div class=&quot;tiny&quot;>이미지 미리보기를 불러올 수 없습니다. 원본 페이지에서 확인하세요.</div>\')"></div>':'<div class="thumb">NO IMAGE</div>')+'<div><h4>'+esc(c.title||c.sourceName||"사진 후보")+' '+badges+'</h4><p>출처: '+esc(c.sourceName||"미상")+' · 저작자: '+esc(c.creator||"미확인")+'</p><p>권리: '+esc(c.rightsLabel||c.rights||"미확인")+' · 장소 일치: '+esc(c.placeMatch||"미확인")+' · 구도: '+esc(c.viewType||"미확인")+'</p><p>'+esc(c.notes||"")+'</p>'+(c.sourcePageUrl?'<p><a target="_blank" rel="noopener noreferrer" href="'+esc(c.sourcePageUrl)+'">원본 페이지 열기 ↗</a></p>':'')+(c.licenseUrl?'<p><a target="_blank" rel="noopener noreferrer" href="'+esc(c.licenseUrl)+'">라이선스·허가 근거 ↗</a></p>':'')+'<div class="toolbar">'+(c.status!=="approved"?'<button class="btn small primary" data-cand-action="approve" data-cand-id="'+esc(c.id)+'" '+((licensed&&c.placeMatch==="confirmed"&&c.sourcePageUrl&&c.licenseUrl)?'':'disabled')+'>대표사진 승인</button>':'<button class="btn small" data-cand-action="unapprove" data-cand-id="'+esc(c.id)+'">대표사진 해제</button>')+'<button class="btn small" data-cand-action="reject" data-cand-id="'+esc(c.id)+'">제외</button><button class="btn small" data-cand-action="delete" data-cand-id="'+esc(c.id)+'">삭제</button></div>'+((!licensed||c.placeMatch!=="confirmed"||!c.sourcePageUrl||!c.licenseUrl)?'<p class="tiny">대표사진 승인 조건: 공개 사용 가능한 권리 상태, 실제 장소 일치 확인, 원본 페이지, 라이선스/허가 근거를 모두 입력해야 합니다.</p>':'')+'</div></div></article>';
+ }).join("");
+}
+function savePlace(id){
+ const p=getPlace(id);if(!p)return;
+ const name=$("f_name").value.trim();if(!name){alert("장소 이름을 입력하세요.");return;}
+ p.name=name;p.region=$("f_region").value;p.category=$("f_category").value.trim();p.aliases=$("f_aliases").value.split(",").map(x=>x.trim()).filter(Boolean);p.address=$("f_address").value.trim();p.officialUrl=$("f_official").value.trim();p.openingStatus=$("f_open").value;p.shootingPermission=$("f_permission").value;p.summary=$("f_summary").value.trim();p.updatedAt=stamp();localSave("장소정보 임시저장 완료");render();
+}
+function saveVerification(id){
+ const p=getPlace(id);p.verification=p.verification||{};p.verification.location=$("v_location").value;p.verification.photoMatch=$("v_photo").value;p.verification.rights=$("v_rights").value;p.verification.shootingPermission=$("v_permission").value;p.verification.lastCheckedAt=stamp().slice(0,10);p.updatedAt=stamp();localSave("검증상태 임시저장 완료");render();
+}
+function addCandidate(placeId,record){
+ const p=getPlace(placeId);let c=record;
+ if(!c){
+  const imageUrl=$("c_image").value.trim(),sourcePageUrl=$("c_page").value.trim();
+  if(!imageUrl){alert("이미지 직접 주소(URL)를 입력하세요.");return;}
+  try{new URL(imageUrl);if(sourcePageUrl)new URL(sourcePageUrl);}catch(_){alert("이미지 URL과 원본 페이지 URL은 https:// 형식으로 입력하세요.");return;}
+  const rights=$("c_rights").value;
+  c={id:"img-"+Math.random().toString(36).slice(2,10),imageUrl,sourcePageUrl,sourceName:$("c_source").value.trim(),creator:$("c_creator").value.trim(),rights,rightsLabel:$("c_rights").selectedOptions[0].textContent,licenseUrl:$("c_license").value.trim(),placeMatch:$("c_match").value,viewType:$("c_view").value,notes:$("c_notes").value.trim(),status:"candidate",createdAt:stamp(),title:"수동 등록 후보"};
+ }
+ if(!p.imageCandidates)p.imageCandidates=[];
+ if(p.imageCandidates.some(x=>x.imageUrl===c.imageUrl)){alert("같은 이미지 URL이 이미 등록돼 있습니다.");return;}
+ p.imageCandidates.unshift(c);p.imageStatus="검토 대기";p.updatedAt=stamp();localSave("사진 후보를 이 기기에 저장했습니다");render();
+}
+function candidateAction(placeId,cid,action){
+ const p=getPlace(placeId),c=(p.imageCandidates||[]).find(x=>x.id===cid);if(!c)return;
+ if(action==="approve"){
+  if(!PERMITTED.has(c.rights)||c.placeMatch!=="confirmed"||!c.sourcePageUrl||!c.licenseUrl){alert("공개 사용 권리·장소 일치·원본 페이지·라이선스/허가 근거가 모두 확인되어야 대표사진으로 승인할 수 있습니다.");return;}
+  p.imageCandidates.forEach(x=>{if(x.id!==cid&&x.status==="approved")x.status="candidate";});
+  c.status="approved";p.primaryImageId=c.id;p.imageStatus="대표사진 확정";p.verification.photoMatch="확인 완료";p.verification.rights="확인 완료";p.verification.lastCheckedAt=stamp().slice(0,10);
+ }else if(action==="unapprove"){c.status="candidate";if(p.primaryImageId===cid)p.primaryImageId=null;p.imageStatus="미등록";}
+ else if(action==="reject"){c.status="rejected";if(p.primaryImageId===cid)p.primaryImageId=null;p.imageStatus="미등록";}
+ else if(action==="delete"){if(!confirm("이 사진 후보를 삭제할까요?"))return;p.imageCandidates=p.imageCandidates.filter(x=>x.id!==cid);if(p.primaryImageId===cid)p.primaryImageId=null;p.imageStatus=isImageReady(p)?"대표사진 확정":"미등록";}
+ p.updatedAt=stamp();localSave("사진 검토 변경사항을 저장했습니다");render();
+}
+function deletePlace(id){if(!confirm("이 장소와 사진 후보 기록을 이 기기의 카탈로그에서 삭제할까요? 배포된 원본 자료는 바뀌지 않습니다."))return;catalog.places=catalog.places.filter(p=>p.id!==id);selectedId=catalog.places[0]?.id||null;localSave("장소 삭제를 이 기기에 임시저장");render();}
+function addNewPlace(){
+ const name=prompt("새 장소 이름을 입력하세요.");if(!name||!name.trim())return;
+ const region=prompt("지역을 입력하세요: 서울 / 경기 / 인천","서울");if(!["서울","경기","인천"].includes(region)){alert("지역은 서울, 경기, 인천 중 하나로 입력하세요.");return;}
+ const slug=name.trim().toLowerCase().replace(/[^a-z0-9가-힣]+/g,"-").replace(/^-|-$/g,"").slice(0,48)||"place";
+ let id=region.toLowerCase()+"-"+slug;let n=2;while(catalog.places.some(p=>p.id===id))id=region.toLowerCase()+"-"+slug+"-"+(n++);
+ const p={id,name:name.trim(),region,category:"미분류",aliases:[],summary:"",address:"",coordinates:null,officialUrl:"",openingStatus:"미확인",shootingPermission:"미확인",parking:"미확인",fee:"미확인",imageStatus:"미등록",primaryImageId:null,imageCandidates:[],sourceRefs:[],verification:{location:"미확인",photoMatch:"미확인",rights:"미확인",shootingPermission:"미확인",lastCheckedAt:null},notes:"새로 등록한 장소. 정확한 정보 검증 필요.",createdAt:stamp(),updatedAt:stamp()};
+ catalog.places.unshift(p);selectedId=id;localSave("새 장소를 이 기기에 임시저장");render();
+}
+async function searchOpenverse(p){
+ const status=$("autoSearchStatus"),host=$("autoResults");status.classList.remove("hidden");status.textContent="Openverse의 열린 라이선스 이미지 검색 중…";host.innerHTML="";
+ try{
+  const url="https://api.openverse.org/v1/images/?q="+encodeURIComponent(p.name+" Korea")+"&license_type=commercial&page_size=20";
+  const r=await fetch(url);if(!r.ok)throw new Error("HTTP "+r.status);
+  const data=await r.json();const items=data.results||[];searchCache=items.map(x=>({provider:"Openverse",x}));
+  if(!items.length){status.textContent="검색 결과가 없습니다. Google·Bing·네이버·다음·공식 출처 검색도 확인하세요.";return;}
+  status.textContent=items.length+"개 후보를 찾았습니다. 자동 결과에는 다른 장소가 포함될 수 있습니다. 장소와 라이선스 근거를 확인한 뒤 후보 저장을 누르세요.";
+  host.innerHTML=items.map((x,i)=>renderAutoCard({
+   idx:i,title:x.title||"제목 없음",thumb:x.thumbnail||x.url,source:x.source||x.provider||"Openverse",
+   creator:x.creator||"미확인",imageUrl:x.url||"",pageUrl:x.foreign_landing_url||x.detail_url||"",license:x.license||"unknown",
+   licenseUrl:x.license_url||"",attribution:x.attribution||"",provider:"Openverse"
+  })).join("");attachAutoButtons(host,items,"openverse",p);
+ }catch(e){status.textContent="Openverse 검색 실패: "+e.message+" · 아래 Google/Bing/네이버/다음 링크로 계속 검색할 수 있습니다.";}
+}
+async function searchCommons(p){
+ const status=$("autoSearchStatus"),host=$("autoResults");status.classList.remove("hidden");status.textContent="Wikimedia Commons 검색 중…";host.innerHTML="";
+ try{
+  const url="https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch="+encodeURIComponent(p.name+" Korea")+"&gsrnamespace=6&gsrlimit=20&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=480&format=json&origin=*";
+  const r=await fetch(url);if(!r.ok)throw new Error("HTTP "+r.status);
+  const data=await r.json();const pages=Object.values((data.query&&data.query.pages)||{});
+  const items=pages.map(x=>{const info=(x.imageinfo||[])[0]||{},m=info.extmetadata||{};const val=k=>(m[k]&&m[k].value)||"";return{title:x.title,thumb:info.thumburl||info.url,imageUrl:info.url||"",pageUrl:info.descriptionurl||("https://commons.wikimedia.org/wiki/"+encodeURIComponent(x.title.replace(/^File:/,"File:"))),creator:stripHtml(val("Artist")||val("Credit")),license:stripHtml(val("LicenseShortName"))||"unknown",licenseUrl:val("LicenseUrl"),provider:"Wikimedia Commons",attribution:stripHtml(val("Attribution"))};});
+  searchCache=items.map(x=>({provider:"Wikimedia Commons",x}));
+  if(!items.length){status.textContent="검색 결과가 없습니다. 다른 검색원 링크로 계속 검색하세요.";return;}
+  status.textContent=items.length+"개 후보를 찾았습니다. 장소 일치 여부와 라이선스 상세를 반드시 확인하세요.";
+  host.innerHTML=items.map((x,i)=>renderAutoCard({idx:i,title:x.title,thumb:x.thumb,source:"Wikimedia Commons",creator:x.creator,imageUrl:x.imageUrl,pageUrl:x.pageUrl,license:x.license,licenseUrl:x.licenseUrl,attribution:x.attribution,provider:x.provider})).join("");attachAutoButtons(host,items,"commons",p);
+ }catch(e){status.textContent="Wikimedia Commons 검색 실패: "+e.message+" · 웹 검색 링크는 계속 사용할 수 있습니다.";}
+}
+function stripHtml(s){const d=document.createElement("div");d.innerHTML=String(s||"");return d.textContent||d.innerText||"";}
+function renderAutoCard(x){
+ return '<article class="result"><img loading="lazy" referrerpolicy="no-referrer" src="'+esc(x.thumb||"")+'" alt=""><div class="rtitle">'+esc(x.title)+'</div><div class="rmeta">'+esc(x.source)+'<br>작가: '+esc(x.creator)+'<br>라이선스: '+esc(x.license)+'</div><p class="rmeta">'+esc(x.attribution||"")+'</p><p><a target="_blank" rel="noopener noreferrer" href="'+esc(x.pageUrl||"#")+'">원본 페이지 ↗</a></p><button class="btn small" data-auto-save="'+x.idx+'">후보로 저장</button></article>';
+}
+function attachAutoButtons(host,items,provider,p){
+ host.querySelectorAll("[data-auto-save]").forEach(btn=>btn.addEventListener("click",()=>{
+  const x=items[Number(btn.dataset.autoSave)];let rights="unknown",label=x.license||"미확인";
+  const lic=String(x.license||"").toLowerCase().replace(/\s+/g,"");
+  if(lic.includes("cc0")||lic==="zero")rights="cc0";
+  else if(lic.includes("publicdomain")||lic==="pdm")rights="public-domain";
+  else if(lic==="by"||lic==="ccby"||lic.includes("creativecommons.org/licenses/by/"))rights="cc-by";
+  else if(lic.includes("by-sa")||lic.includes("ccby-sa"))rights="cc-by-sa";
+  const candidate={id:"img-"+Math.random().toString(36).slice(2,10),title:x.title||"검색 후보",imageUrl:x.imageUrl||x.url||"",sourcePageUrl:x.pageUrl||x.foreign_landing_url||x.detail_url||"",sourceName:provider==="commons"?"Wikimedia Commons":"Openverse",creator:x.creator||"미확인",rights,rightsLabel:label,licenseUrl:x.licenseUrl||x.license_url||"",placeMatch:"unverified",viewType:"미확인",notes:"자동 검색 후보. 실제 장소 일치·라이선스 문구·공개 사용 가능 여부를 다시 확인하세요. "+(x.attribution||""),status:"candidate",createdAt:stamp()};
+  if(!candidate.imageUrl){alert("원본 이미지 주소가 없어 후보 등록할 수 없습니다.");return;}
+  addCandidate(p.id,candidate);
+  alert("사진 후보를 저장했습니다. 장소 일치와 권리 상태를 확인한 뒤 대표사진을 승인하세요.");
+ }));
+}
+function exportCatalog(){
+ const blob=new Blob([JSON.stringify(catalog,null,2)],{type:"application/json;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
+ a.href=url;a.download="frame-atlas-v2-catalog-"+new Date().toISOString().slice(0,10)+".json";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+ $("saveStatus").textContent="카탈로그 JSON 내보내기 완료";
+}
+function importCatalog(file){
+ const reader=new FileReader();reader.onload=()=>{try{catalog=normalizeCatalog(JSON.parse(reader.result));selectedId=catalog.places[0]?.id||null;localSave("가져온 카탈로그를 이 기기에 임시저장");render();alert("가져오기 완료. 장소 "+catalog.places.length+"곳");}catch(e){alert("가져오기 실패: "+e.message);}};reader.readAsText(file,"utf-8");
+}
+$("addPlaceBtn").addEventListener("click",addNewPlace);
+$("exportBtn").addEventListener("click",exportCatalog);
+$("importInput").addEventListener("change",e=>{if(e.target.files&&e.target.files[0])importCatalog(e.target.files[0]);e.target.value="";});
+$("reloadBtn").addEventListener("click",async()=>{if(!confirm("이 기기에 저장된 임시 수정사항을 버리고 배포된 기본자료를 다시 읽을까요? 먼저 JSON을 내보내 백업하는 것이 안전합니다."))return;localStorage.removeItem(LOCAL_KEY);await loadBase();});
+$("query").addEventListener("input",render);
+$("regionFilter").addEventListener("change",render);
+$("imageFilter").addEventListener("change",render);
+loadBase();
+})();
+</script>
+</body>
+</html>
