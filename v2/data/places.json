@@ -4,7 +4,7 @@
   "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
   "dataStatus": "서울·경기·인천 34개 현재 촬영 후보. 장소별 대표 참고사진은 이미지 후보 중 하나를 선정해 표시하며 정식 대표사진 승인과 구분합니다. 이미지 출처·실제 장소 일치·공개 사용 권리는 별도 확인 대상.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-13T13:54:52.898Z",
+  "updatedAt": "2026-10-13T13:56:46.812Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -269,6 +269,20 @@
           "notes": "사진가 관점의 시각 참고 후보. DDP 곡면 외피가 보이는 사진으로 식별 가능. 상업/공개 재사용 권리 미확인; 대표사진으로 사용하지 말고 원본에서 조건을 별도 확인.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "legacy-l117-ddp",
+          "title": "DDP 건축 외관 참고사진",
+          "viewType": "건축·곡면 외피",
+          "imageUrl": "https://worldarchitecture.org/cdnimgfiles/extupload/14-21-.jpg",
+          "sourceThumbnail": "https://worldarchitecture.org/cdnimgfiles/extupload/14-21-.jpg",
+          "sourcePageUrl": "https://ddp.or.kr/",
+          "sourceName": "World Architecture",
+          "license": "이용조건 확인 필요",
+          "rightsStatus": "review-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "기존 아카이브에서 장소 일치 확인된 대체 후보. 이미지 저작권과 재사용 조건은 별도 확인 필요."
         }
       ],
       "sourceRefs": [],
@@ -1231,6 +1245,20 @@
           "notes": "국립현대미술관 서울관의 공간 구성과 중정 참고 후보. 촬영 가능한 외부/실내 구역과 사진 권리를 별도 확인.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "legacy-l118-mmca-seoul",
+          "title": "국립현대미술관 서울관 참고사진",
+          "viewType": "건축·실내외",
+          "imageUrl": "https://img1.newsis.com/2025/04/30/NISI20250430_0020792358_web.jpg?rnd=20250430163634",
+          "sourceThumbnail": "https://img1.newsis.com/2025/04/30/NISI20250430_0020792358_web.jpg?rnd=20250430163634",
+          "sourcePageUrl": "https://www.mmca.go.kr/",
+          "sourceName": "뉴시스",
+          "license": "이용조건 확인 필요",
+          "rightsStatus": "review-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "기존 아카이브에서 장소 일치 확인된 대체 후보. 기사 사진 재사용 조건은 별도 확인 필요."
         }
       ],
       "sourceRefs": [
@@ -3107,6 +3135,20 @@
           "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "legacy-l087-incheon-art-platform",
+          "title": "인천아트플랫폼 참고사진",
+          "viewType": "야외·붉은 벽돌 창고",
+          "imageUrl": "https://img.trippose.com/thum/1091000/800/533",
+          "sourceThumbnail": "https://img.trippose.com/thum/1091000/800/533",
+          "sourcePageUrl": "https://inartplatform.kr/notice/view?no=404",
+          "sourceName": "Tripose 이미지",
+          "license": "이용조건 확인 필요",
+          "rightsStatus": "review-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "기존 아카이브에서 장소 일치 확인된 대체 후보. 이미지 이용 조건은 별도 확인 필요."
         }
       ],
       "sourceRefs": [
