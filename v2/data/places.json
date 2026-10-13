@@ -4,7 +4,7 @@
   "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
   "dataStatus": "서울·경기·인천 34개 현재 촬영 후보. 장소별 대표 참고사진은 이미지 후보 중 하나를 선정해 표시하며 정식 대표사진 승인과 구분합니다. 이미지 출처·실제 장소 일치·공개 사용 권리는 별도 확인 대상.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-13T11:09:11.191Z",
+  "updatedAt": "2026-10-13T13:54:52.898Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -795,6 +795,20 @@
           "notes": "기둥, 아치, 채광창과 깊이감이 보이는 장소 확인용 후보. 대표사진으로 공개하기 전 원본 페이지의 이미지별 KOGL/저작권 표기를 확인.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "legacy-l063-culture-station",
+          "title": "문화역서울284 외관 참고사진",
+          "viewType": "역사건축·외관",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/%EB%AC%B8%ED%99%94%EC%97%AD%EC%84%9C%EC%9A%B8284_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "sourceThumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/98/%EB%AC%B8%ED%99%94%EC%97%AD%EC%84%9C%EC%9A%B8284_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%EB%AC%B8%ED%99%94%EC%97%AD%EC%84%9C%EC%9A%B8284_2024.jpg",
+          "sourceName": "Narubaru7 / Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "rightsStatus": "license-attribution-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY 4.0 출처·저자 표시 필요."
         }
       ],
       "sourceRefs": [
@@ -999,6 +1013,20 @@
           "notes": "노들섬의 레벨 차이와 조명, 광장 구성 참고 후보. 건축 플랫폼 사진의 저작권 및 현장 접근 가능 구역을 별도 확인.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "legacy-l200-nodeul-island",
+          "title": "노들섬 상부 공간 참고사진",
+          "viewType": "야외·건축·수변",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Nodeulseom_%2814005438206%29.jpg/960px-Nodeulseom_%2814005438206%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceThumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Nodeulseom_%2814005438206%29.jpg/960px-Nodeulseom_%2814005438206%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Nodeulseom_(14005438206).jpg",
+          "sourceName": "travel oriented from Seoul / Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "rightsStatus": "license-attribution-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 2.0 출처·저자 표시 및 동일조건 공유 검토 필요."
         }
       ],
       "sourceRefs": [
@@ -2744,6 +2772,20 @@
           "notes": "암석 표면과 따뜻한 조명을 참고하는 후보. 2017년 자료여서 현재 동굴 전시·조명·동선과 다를 수 있으며, 인물 촬영 가능 여부와 이미지 권리는 확인 전.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "legacy-l194-gwangmyeong-cave",
+          "title": "광명동굴 내부 참고사진",
+          "viewType": "실내·암석 질감·조명",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Gwangmyeong_Cave.jpg/960px-Gwangmyeong_Cave.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceThumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Gwangmyeong_Cave.jpg/960px-Gwangmyeong_Cave.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Gwangmyeong_Cave.jpg",
+          "sourceName": "S099001 / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "rightsStatus": "license-attribution-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요."
         }
       ],
       "sourceRefs": [
@@ -2949,6 +2991,20 @@
           "notes": "수원 별마당도서관 실제 실내 공간을 보여주는 시각 조사 후보이며 조감도가 아닌 현장 사진으로 보임. 다층 서가·중앙 계단·천창을 통해 인물 스케일과 대칭 구도를 연구할 수 있음. 사진 저작자와 공개 재사용 권리는 확인 전이며, 상업촬영·장비 사용은 운영자 별도 협의 필요.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "legacy-l157-starfield-library",
+          "title": "별마당도서관 서가·계단 참고사진",
+          "viewType": "실내·건축·서가",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg/960px-%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceThumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg/960px-%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg",
+          "sourceName": "LR0725 / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "rightsStatus": "license-attribution-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요."
         }
       ],
       "sourceRefs": [
@@ -3459,6 +3515,20 @@
           "notes": "인천시 공원 갤러리의 풍차·습지 이미지. 반사·수평선·풍차의 실루엣을 활용하는 야외 촬영 참고 후보. 공공누리 유형 또는 별도 허가를 확인하기 전에는 대표사진 승인을 하지 않는다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "legacy-l195-sorae-saltfield",
+          "title": "소래 염전 재현 공간 참고사진",
+          "viewType": "야외·염전·풍경",
+          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Replica_of_Sorae_Salt_Field.jpg/960px-Replica_of_Sorae_Salt_Field.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourceThumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Replica_of_Sorae_Salt_Field.jpg/960px-Replica_of_Sorae_Salt_Field.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Replica_of_Sorae_Salt_Field.jpg",
+          "sourceName": "오모군 / Wikimedia Commons",
+          "license": "CC BY 3.0",
+          "rightsStatus": "license-attribution-required",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "notes": "소래 염전 재현 공간의 참고사진이며 공원 내 특정 촬영 포인트와 동일한지는 방문 전 확인. CC BY 3.0 출처·저자 표시 필요."
         }
       ],
       "sourceRefs": [],
