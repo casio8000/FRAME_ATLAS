@@ -7,7 +7,7 @@ const PENDING_DB="frameAtlas2PendingPhotos";
 const objectUrls=new Map();
 const PERMITTED=new Set(["cc0","public-domain","cc-by","cc-by-sa","permission","self-owned"]);
 const $=id=>document.getElementById(id);
-let catalog={schemaVersion:1,places:[]},selectedId=null,searchCache=[];
+let catalog={schemaVersion:1,places:[]},selectedId=null,searchCache=[],homeHeroPlaceId=null;
 const esc=v=>String(v==null?"":v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const getPlace=id=>catalog.places.find(p=>p.id===id);
 const imageCount=p=>(p.imageCandidates||[]).length;
@@ -225,6 +225,17 @@ if(backToArchiveBtn)backToArchiveBtn.addEventListener("click",()=>{
 
 function isFavorite(id){return favorites.includes(id);}
 function toggleFavorite(id){if(isFavorite(id))favorites=favorites.filter(x=>x!==id);else favorites.push(id);try{localStorage.setItem(FAVORITES_KEY,JSON.stringify(favorites));}catch(_){}render();renderLanding();renderMoreScreen();renderPhotosScreen();}
+function chooseHomeHeroPlace(places){
+ const pool=places.filter(p=>{
+  const photo=activePhoto(p),url=photo&&(photo.imageUrl||photo.sourceThumbnail||"");
+  return !!url && /^https?:\/\//i.test(String(url));
+ });
+ if(!pool.length)return null;
+ const existing=pool.find(p=>p.id===homeHeroPlaceId);
+ const chosen=existing||pool[Math.floor(Math.random()*pool.length)];
+ homeHeroPlaceId=chosen.id;
+ return chosen;
+}
 function renderLanding(){
  const grid=$("homeFeaturedGrid");if(!grid)return;
  const places=Array.isArray(catalog.places)?catalog.places:[];
@@ -234,10 +245,11 @@ function renderLanding(){
  const prefer=["seo-ddp","seo-oil-tank","seo-seoul-station-284","gg-mimesis","ic-tri-bowl","ic-art-platform"];
  const picked=prefer.map(get).filter(Boolean);
  const featured=[...picked,...places.filter(p=>!picked.some(x=>x.id===p.id)).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9))];
- const heroPlace=get("seo-ddp")||get("seo-oil-tank")||featured[0];
+ const heroPlace=chooseHomeHeroPlace(places)||featured.find(p=>activePhoto(p))||featured[0];
  if(heroPlace){
   const photo=activePhoto(heroPlace),hero=$("landingHeroImage");
   if(hero&&photo){
+   hero.dataset.homeHeroPlace=heroPlace.id;
    hero.dataset.fallbackThumbnail=photo.sourceThumbnail||"";
    hero.dataset.fallbackBound="";
    hero.classList.remove("image-missing");
@@ -253,7 +265,7 @@ function renderLanding(){
   const photo=activePhoto(p),url=photo?(photo.imageUrl||photo.sourceThumbnail||""):"";
   const status=photo&&photo.placeMatch==="confirmed"?"장소 일치 후보":"실제 장소 확인 필요";
   const image=photo?'<img data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" data-home-preview="'+esc(p.id)+'" src="'+esc(url)+'" loading="lazy" alt="'+esc(p.name)+' 촬영 참고사진" referrerpolicy="no-referrer"><span class="featured-photo-label">'+(p.primaryImageId===photo.id?"대표사진":"장소 사진")+'</span><span class="featured-photo-missing">사진을 불러올 수 없습니다</span>':'<div class="featured-no-photo">사진 후보를 찾는 중입니다</div>';
-  return '<button type="button" class="scout-feature-card" data-home-place="'+esc(p.id)+'"><span class="scout-feature-image">'+image+'</span><span class="scout-feature-body"><span class="scout-feature-top"><span class="scout-feature-index">'+String(index+1).padStart(2,"0")+'</span><span>'+esc(p.region||"수도권")+'</span></span><b>'+esc(p.name)+'</b><span class="scout-feature-desc">'+esc(p.photoProfile||p.summary||"사진가 관점에서 검토할 촬영 장소")+'</span><span class="scout-feature-bottom"><span>'+esc(status)+'</span><span class="scout-feature-arrow">↗</span></span></span></button>';
+  return '<button type="button" class="scout-feature-card" data-home-place="'+esc(p.id)+'"><span class="scout-feature-image">'+image+'</span><span class="scout-feature-body"><span class="scout-feature-top"><span class="scout-feature-index">'+String(index+1).padStart(2,"0")+'</span><span>'+esc(p.region||"지역 미등록")+'</span></span><b>'+esc(p.name)+'</b><span class="scout-feature-desc">'+esc(p.photoProfile||p.summary||"사진가 관점에서 검토할 촬영 장소")+'</span><span class="scout-feature-bottom"><span>'+esc(status)+'</span><span class="scout-feature-arrow">↗</span></span></span></button>';
  }).join(""):'<div class="landing-empty">장소 자료를 불러오지 못했습니다.</div>';
  bindImageFallbacks(grid);
  grid.querySelectorAll("[data-home-place]").forEach(card=>card.addEventListener("click",()=>{selectedId=card.dataset.homePlace;showAppView("detail");}));
@@ -273,7 +285,7 @@ function renderLanding(){
  }
 }
 
-function renderWelcomeView(){const p=catalog.places.find(x=>x.id==="seo-ddp")||catalog.places.find(x=>activePhoto(x)),photo=p&&activePhoto(p),img=$("welcomeHeroImage");if(img&&photo){img.dataset.fallbackThumbnail=photo.sourceThumbnail||"";img.dataset.fallbackBound="";img.src=photo.imageUrl||photo.sourceThumbnail||"";bindImageFallbacks($("welcomeView"));}}
+function renderWelcomeView(){const p=chooseHomeHeroPlace(catalog.places)||catalog.places.find(x=>activePhoto(x)),photo=p&&activePhoto(p),img=$("welcomeHeroImage");if(img&&photo){img.dataset.homeHeroPlace=p.id;img.dataset.fallbackThumbnail=photo.sourceThumbnail||"";img.dataset.fallbackBound="";img.src=photo.imageUrl||photo.sourceThumbnail||"";bindImageFallbacks($("welcomeView"));}}
 function renderMapScreen(){
  const region=$("mapRegionFilter").value,filter=$("mapAccessFilter").value;
  const places=catalog.places.filter(p=>{if(region&&p.region!==region)return false;const permission=String(p.shootingPermission||"")+" "+String(p.verification&&p.verification.shootingPermission||""),closed=/운영 종료|휴관|폐쇄/.test(String(p.openingStatus||"")),verified=/촬영 가능|허가 불필요|공식 근거 확인|서면 확인/.test(permission);if(filter==="closed"&&!closed)return false;if(filter==="verified"&&!verified)return false;if(filter==="unknown"&&(closed||verified))return false;return true;}).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||a.name.localeCompare(b.name,"ko"));

@@ -906,3 +906,17 @@ body[data-app-view="welcome"] .footer{display:block;flex:0 0 auto;max-width:none
  body[data-app-view="welcome"] .welcome-secondary{padding:5px 0}
  body[data-app-view="welcome"] .footer{font-size:7px;line-height:1.25}
 }
+
+
+/* Mobile archive photo framing: wide 16:9 landscape image above each location title */
+@media(max-width:620px){
+ #placeList .place .thumb{
+  display:block;width:100%;height:auto!important;min-height:0;max-height:none;
+  aspect-ratio:16/9;grid-column:1/-1;grid-row:1;border-radius:11px;overflow:hidden;
+ }
+ #placeList .place .thumb img{
+  display:block;width:100%;height:100%;min-height:0;object-fit:cover;object-position:center;
+ }
+ #placeList .place .thumb .thumb-flag{position:absolute;left:8px;bottom:8px}
+ #placeList .place .thumb .thumb-missing{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:14px;text-align:center}
+}
