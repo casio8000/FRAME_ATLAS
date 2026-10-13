@@ -4,7 +4,7 @@
   "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
   "dataStatus": "편집 기획을 바탕으로 한 후보 목록. 장소별 현재 운영·출입·촬영 허가·사진은 공식 출처와 현장/이미지 검토 전",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-13T09:33:34.519Z",
+  "updatedAt": "2026-10-13T09:35:23.851Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -1150,7 +1150,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-mmca-seoul-courtyard-glass",
+          "title": "국립현대미술관 서울관 유리 중정과 떠 있는 매스",
+          "imageUrl": "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2FzKk%2Fimage%2Fc_r1218Tq12xZru04XANfk1FEJ8.jpg",
+          "sourcePageUrl": "https://brunch.co.kr/%40%40zKk/99",
+          "sourceName": "Brunch · 소격동·삼청동 공간 기록",
+          "creator": "미확인",
+          "rights": "unknown",
+          "rightsLabel": "공개 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "중정·유리·부유하는 볼륨",
+          "notes": "국립현대미술관 서울관의 공간 구성과 중정 참고 후보. 촬영 가능한 외부/실내 구역과 사진 권리를 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -1171,7 +1188,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T09:35:23.851Z",
       "photoPotentialScore": 83,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -1864,7 +1881,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-heyri-chronotope-wall",
+          "title": "헤이리 시간의 벽 건축물의 반복 벽체",
+          "imageUrl": "https://oss.gooood.cn/uploads/2021/07/003-Heyri-Chronotope-Wall-by-UNSANGDONG-Architects-Cooperation.jpg",
+          "sourcePageUrl": "https://www.gooood.cn/heyri-chronotope-wall-by-unsangdong-architects-cooperation.htm",
+          "sourceName": "gooood · Heyri Chronotope Wall",
+          "creator": "건축 사진 저작자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "공개 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "건축·반복 벽·원근·반야외",
+          "notes": "헤이리 내 특정 건축물(시간의 벽) 참고 후보. 마을 전체를 포괄적으로 촬영지로 취급하지 않고 건물별 출입/허가 여부를 확인해야 함. 사진 재사용 권리 미확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -1885,7 +1919,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T09:35:23.851Z",
       "photoPotentialScore": 82,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -2046,7 +2080,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-pocheon-quarry-lake-mist",
+          "title": "포천아트밸리 채석장 암벽과 수면",
+          "imageUrl": "https://cf.creatrip.com/original/blog/11888/rybwt0pivobuly2b5w08g1r2gn6cforz.jpg",
+          "sourcePageUrl": "https://creatrip.com/en/blog/11888",
+          "sourceName": "Creatrip · 포천아트밸리 로케이션 소개",
+          "creator": "미확인",
+          "rights": "unknown",
+          "rightsLabel": "공개 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "채석장·암벽·수면·안개",
+          "notes": "암벽의 층리와 물의 반사를 보여주는 장소 참고 후보. 사진 권리는 미확인; 현장의 허용 동선 및 안전 구역을 따로 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -2067,7 +2118,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T09:35:23.851Z",
       "photoPotentialScore": 80,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -2804,7 +2855,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-tribowl-designers-curved-shell",
+          "title": "송도 트라이보울의 역쉘 곡면·수면 반사",
+          "imageUrl": "https://static.wixstatic.com/media/d7f0f9_e0a913b41763462bbe86b455f02dbe78~mv2.jpg/v1/fit/w_846%2Ch_564%2Cq_90/d7f0f9_e0a913b41763462bbe86b455f02dbe78~mv2.jpg",
+          "sourcePageUrl": "https://www.yeonhan.com/tribowl",
+          "sourceName": "yeonhan architects · 트라이보울 프로젝트",
+          "creator": "건축 사진 저작자/제공자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "공개 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "건축·곡면 역쉘·수면 반사",
+          "notes": "설계자/건축 프로젝트 페이지에서 찾은 시각 참고 후보. 곡면 하부와 물의 반사를 보여주며 예술적 잠재력이 높음. 공개 재사용 권리는 미확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -2825,7 +2893,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T09:35:23.851Z",
       "photoPotentialScore": 92,
       "photoScoreBreakdown": {
         "distinctiveness": 30,
@@ -2885,7 +2953,24 @@
       "fee": "미확인",
       "imageStatus": "미등록",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-incheon-openport-brick-street",
+          "title": "인천 개항장 근대건축의 벽돌 파사드와 좁은 도로",
+          "imageUrl": "https://blog.kakaocdn.net/dna/bvfci3/btqB3pcH2oc/AAAAAAAAAAAAAAAAAAAAAJJcm6QG-Et1IctEnBzjLw29-f0Pk-ebB6O6re5141HR/img.jpg?allow_ip=&allow_referer=&credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1774969199&signature=cxN6JTZa6%2FhUdweeBkpDaiOCd%2FA%3D",
+          "sourcePageUrl": "https://incheonport.tistory.com/5290",
+          "sourceName": "인천 근대화거리 장소 기록",
+          "creator": "미확인",
+          "rights": "unknown",
+          "rightsLabel": "공개 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "근대건축·벽돌·원근",
+          "notes": "근대건축 구역을 식별하고 구도를 찾기 위한 후보. 이미지 URL에 기간 제한이 있을 수 있으므로 원본 페이지에서 확인. 대표사진 공개 사용에는 적합성/권리 확인이 별도 필요.",
+          "status": "candidate",
+          "createdAt": "2026-10-13T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
@@ -2906,7 +2991,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-13T09:35:23.851Z",
       "photoPotentialScore": 77,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
