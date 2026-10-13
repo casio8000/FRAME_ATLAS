@@ -17,6 +17,8 @@ const peerReportsConflict = core.peerReportsConflict;
 
   assert.equal(core.isRetryableError(Object.assign(new Error("GitHub 응답 503"), { status: 503 })), true,
     "server errors should be retried automatically");
+  assert.equal(core.isRetryableError(Object.assign(new Error("GitHub 응답 대기 시간 초과"), { status: 408, name: "TimeoutError" })), true,
+    "timed-out GitHub requests should be retried automatically");
   assert.equal(core.isRetryableError(Object.assign(new Error("업로드 충돌 409"), { status: 409 })), false,
     "optimistic write conflicts must not be blindly retried against a stale SHA");
   assert.equal(core.isRetryableError(Object.assign(new Error("유효성 충돌 422"), { status: 422 })), false,
