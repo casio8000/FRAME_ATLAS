@@ -20,7 +20,7 @@
 <body>
 <div class="wrap">
  <header class="head">
-  <a class="brandlock" href="./index.html" aria-label="FRAME ATLAS 홈으로">
+  <a class="brandlock" href="#welcome" id="brandHomeBtn" aria-label="FRAME ATLAS 시작 화면">
    <img class="brand-icon" src="icons/atlas-mark.svg" alt="">
    <span class="brand">FRAME ATLAS 2.0 <small>FIELD NOTES · LOCATION SCOUT</small></span>
   </a>
@@ -29,6 +29,13 @@
    <button class="btn install-btn" id="installAppBtn" type="button">홈 화면에 추가</button>
   </div>
  </header>
+<nav class="app-nav" id="appNav" aria-label="주요 화면">
+  <button type="button" data-nav-view="home"><span class="nav-icon">⌂</span><span>홈</span></button>
+  <button type="button" data-nav-view="workspace"><span class="nav-icon">▤</span><span>아카이브</span></button>
+  <button type="button" data-nav-view="map"><span class="nav-icon">⌖</span><span>지도</span></button>
+  <button type="button" data-nav-view="photos"><span class="nav-icon">▧</span><span>사진 후보</span></button>
+  <button type="button" data-nav-view="more"><span class="nav-icon">•••</span><span>더보기</span></button>
+ </nav>
  
  <section id="homeView" class="landing-view">
   <div class="landing-eyebrow"><span>FIELD GUIDE / SEOUL METROPOLITAN AREA</span><span>FRAME ATLAS · 2.0</span></div>
@@ -59,6 +66,11 @@
   <section class="landing-feature-section">
    <div class="landing-section-head"><div><span class="landing-section-kicker">CURATED FOR PHOTOGRAPHY</span><h2>먼저 살펴볼 장소</h2><p>관광 순위가 아니라 사진의 구도와 공간적 개성을 기준으로 골랐습니다.</p></div><button id="seeAllPlacesBtn" type="button">전체 장소 보기 <span>↗</span></button></div>
    <div id="homeFeaturedGrid" class="landing-feature-grid"><div class="landing-empty">장소 사진을 불러오는 중입니다…</div></div>
+  </section>
+  <section class="home-all-section" id="homeAllLocations">
+   <div class="landing-section-head"><div><span class="landing-section-kicker">FULL LOCATION ARCHIVE</span><h2>전체 촬영 장소 <span id="homeAllPlaceCount">34</span></h2><p>추천 장소 외의 등록 장소도 사진을 보고 바로 열어볼 수 있습니다.</p></div><button id="homeAllPlacesBtn" type="button">전체 목록에서 찾기 <span>↗</span></button></div>
+   <div class="home-all-controls"><input id="homeAllSearchInput" type="search" class="field" placeholder="전체 장소 이름·지역 검색"><select id="homeAllRegionFilter" class="field" aria-label="전체 장소 지역 필터"><option value="">서울·수도권 전체</option><option>서울</option><option>경기</option><option>인천</option></select></div>
+   <div id="homeAllPlacesGrid" class="home-all-places-grid"><div class="landing-empty">전체 장소 목록을 불러오는 중입니다…</div></div>
   </section>
   <div class="landing-bottomline"><span>FRAME ATLAS / FIELD NOTES</span><span>SEOUL · GYEONGGI · INCHEON</span></div>
  </section>
@@ -109,7 +121,42 @@
  </main>
 
  </section>
- <dialog id="installDialog" class="install-dialog">
+ 
+ 
+ <section id="welcomeView" class="welcome-screen" hidden>
+  <div class="welcome-photo-layer"><img id="welcomeHeroImage" data-image-fallback="true" src="" alt="" referrerpolicy="no-referrer"><div class="welcome-photo-shade"></div></div>
+  <div class="welcome-content"><div class="welcome-logo-mark">▢</div><p class="welcome-kicker">PHOTO LOCATION SCOUT</p><h1>FRAME<br>ATLAS <span>2.0</span></h1><p class="welcome-tagline">좋은 장소는,<br>좋은 사진을 만듭니다.</p><p class="welcome-copy">서울·경기·인천의 공간을 사진가의 시선으로 탐색하고, 촬영 참고사진과 장소 정보를 기록하세요.</p><button class="welcome-start" id="welcomeStartBtn" type="button">시작하기 <span>↗</span></button><button class="welcome-secondary" id="welcomeHomeBtn" type="button">메인 화면 둘러보기</button></div>
+ </section>
+ <section id="mapView" class="app-screen" hidden>
+  <div class="screen-heading"><div><p class="eyebrow">EXPLORE / NAVIGATION</p><h1>지도 보기</h1><p>장소를 선택하면 해당 장소의 지도 검색으로 이동합니다.</p></div><span class="screen-count" id="mapCount">34곳</span></div>
+  <div class="screen-filter-row"><select id="mapRegionFilter" class="field" aria-label="지도 지역 필터"><option value="">서울·수도권 전체</option><option>서울</option><option>경기</option><option>인천</option></select><select id="mapAccessFilter" class="field" aria-label="촬영 조건 필터"><option value="">모든 장소</option><option value="verified">촬영 조건 근거 있음</option><option value="unknown">사전 확인 필요</option><option value="closed">운영 종료·휴관 확인</option></select></div>
+  <div class="map-layout"><div class="map-frame-wrap"><iframe id="mapFrame" title="촬영 장소 지도" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Seoul%20Metropolitan%20Area&output=embed"></iframe><div class="map-frame-caption"><b id="mapPlaceTitle">서울·수도권 촬영 장소</b><span id="mapPlaceCaption">목록에서 장소를 선택하세요.</span></div></div><aside class="map-place-panel"><div class="panelhead"><h2>지도에서 확인할 장소</h2><span id="mapListCount">34곳</span></div><div id="mapPlaceList" class="map-place-list"></div></aside></div>
+ </section>
+ <section id="photosView" class="app-screen" hidden>
+  <div class="screen-heading"><div><p class="eyebrow">PHOTO CANDIDATES / REVIEW</p><h1>사진 후보</h1><p>장소별 사진을 비교하고, 실제 장소와 맞는 사진을 대표사진으로 지정하세요.</p></div><span class="screen-count" id="photoCandidateCount">0장</span></div>
+  <div class="screen-filter-row"><input id="photosSearchInput" class="field" type="search" placeholder="장소명·지역·사진 설명 검색"><select id="photosMatchFilter" class="field" aria-label="사진 일치 필터"><option value="">모든 후보</option><option value="confirmed">장소 일치 확인됨</option><option value="unverified">일치 여부 확인 필요</option><option value="mismatch">다른 장소 사진</option></select></div>
+  <div id="photosGrid" class="photos-grid"><div class="landing-empty">사진 후보를 불러오는 중입니다…</div></div>
+ </section>
+ <section id="analysisView" class="app-screen" hidden>
+  <div class="screen-heading"><div><p class="eyebrow">SCOUTING SCORE / ANALYSIS</p><h1>촬영 분석</h1><p>관광 인지도가 아니라 조형성·구도·빛·에디토리얼 활용도를 기준으로 비교합니다.</p></div><span class="screen-count" id="analysisCount">34곳</span></div>
+  <div class="screen-filter-row"><input id="analysisSearchInput" class="field" type="search" placeholder="장소명·지역 검색"><select id="analysisRegionFilter" class="field" aria-label="분석 지역 필터"><option value="">모든 지역</option><option>서울</option><option>경기</option><option>인천</option></select></div><div id="analysisGrid" class="analysis-grid"></div>
+ </section>
+ <section id="moreView" class="app-screen" hidden>
+  <div class="more-profile"><div class="more-avatar">FA</div><div><p class="eyebrow">YOUR FIELD ATLAS</p><h1>사진가는 여행자</h1><p>개인 촬영 장소 아카이브</p></div><span class="more-premium">PERSONAL</span></div>
+  <div class="screen-heading more-heading"><div><p class="eyebrow">LIBRARY / SETTINGS</p><h2>내 기록과 설정</h2><p>저장한 장소, 사진 후보와 백업을 관리합니다.</p></div></div>
+  <div class="more-menu-grid">
+   <button type="button" data-more-action="archive"><span class="more-icon">▤</span><span><b>내 아카이브</b><small>등록 장소 전체 보기</small></span><span class="more-arrow">›</span></button>
+   <button type="button" data-more-action="favorites"><span class="more-icon">♡</span><span><b>저장한 장소</b><small><span id="moreFavoriteCount">0</span>곳 즐겨찾기</small></span><span class="more-arrow">›</span></button>
+   <button type="button" data-more-action="analysis"><span class="more-icon">◌</span><span><b>촬영 분석</b><small>사진적 잠재력 비교</small></span><span class="more-arrow">›</span></button>
+   <button type="button" data-more-action="photos"><span class="more-icon">▧</span><span><b>사진 후보</b><small>대표사진 선택·교체·삭제</small></span><span class="more-arrow">›</span></button>
+   <button type="button" data-more-action="export"><span class="more-icon">⇩</span><span><b>백업 내보내기</b><small>현재 카탈로그 JSON 저장</small></span><span class="more-arrow">›</span></button>
+   <button type="button" data-more-action="import"><span class="more-icon">⇧</span><span><b>백업 가져오기</b><small>JSON 백업 불러오기</small></span><span class="more-arrow">›</span></button>
+   <button type="button" data-more-action="settings"><span class="more-icon">⚙</span><span><b>설정</b><small>설치 및 기본자료 다시 읽기</small></span><span class="more-arrow">›</span></button>
+   <button type="button" data-more-action="welcome"><span class="more-icon">▢</span><span><b>앱 소개</b><small>시작 화면 열기</small></span><span class="more-arrow">›</span></button>
+  </div>
+  <div class="more-banner"><b>좋은 장면은,<br>좋은 장소에서 시작됩니다.</b><span>FRAME ATLAS · SEOUL / GYEONGGI / INCHEON</span></div>
+ </section>
+<dialog id="installDialog" class="install-dialog">
   <div class="dialog-kicker">YOUR FIELD ATLAS</div>
   <h2>FRAME ATLAS를 홈 화면에 추가</h2>
   <p class="dialog-lead">브라우저 주소를 매번 입력하지 않고 아이콘으로 바로 열 수 있습니다.</p>
@@ -122,6 +169,6 @@
  <dialog id="publishDialog"><h2>카탈로그를 GitHub에 게시</h2><p>이 동작은 장소 목록과 사진 후보 정보를 개발 브랜치의 v2/data/places.json에 커밋합니다. 이미지 파일 자체를 업로드하는 기능은 다음 단계에서 연결합니다.</p><div class="statusbar warn">Fine-grained Personal Access Token을 사용하고, casio8000/FRAME_ATLAS 저장소 하나에만 Contents 읽기/쓰기 권한을 부여하세요. 토큰은 이 입력창에서만 사용하며 브라우저 저장소에 보관하지 않습니다. 신뢰하는 기기에서만 사용하세요.</div><label>GitHub 토큰<input type="password" id="publishToken" autocomplete="off" spellcheck="false" placeholder="github_pat_..." /></label><div id="publishStatus" class="statusbar hidden"></div><div class="toolbar"><button type="button" class="btn" id="cancelPublishBtn">취소</button><button type="button" class="btn primary" id="confirmPublishBtn">게시 시작</button></div></dialog>
  <footer class="footer">FRAME ATLAS 2.0 · Co-created by 지혜의 쉼터 with Claude &amp; Chat GPT · ⓒ 2026<br>2.0 PREVIEW · 장소 조사 · 이미지 검토 · 지도 연결 · 개인 기기 설치를 단계적으로 강화 중입니다.</footer>
 </div>
-<script defer src="assets/app.js?v=20261013-14"></script>
+<script defer src="assets/app.js?v=20261013-15"></script>
 </body>
 </html>
