@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "구버전 214곳과 대조해 2.0을 133곳으로 확장했습니다. 폐공장·창고·벙커·선박수리 산업유산과 실제 항공기·자동차 전시 아트리움 등 재료감·스케일·구조가 차별적인 장소를 추가했습니다. 사용권·대표사진 승인·상업촬영 허가는 별도 후속 검토이며, 직접 이미지 URL이 없는 곳은 사진 보강 대상으로 명시했습니다.",
+  "dataStatus": "구버전 214곳과 대조해 현재 133곳. 실제 PC/모바일 자동 검사에서 표시 링크가 로드되지 않은 사진 후보는 원본·출처를 삭제하지 않고 참조 표시만 보류했습니다. 열리지 않는 링크는 새 사진을 확보한 뒤 되살리고, 대체 URL이 있는 SeMA 벙커·별마당도서관·인천개항장은 다른 출처의 실제 장소 사진으로 전환했습니다. 사용권은 후속 검토 상태로 유지합니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T08:50:00.000Z",
+  "updatedAt": "2026-10-15T09:05:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -559,7 +559,7 @@
       "shootingPermission": "전시·시설 이용 시기별 운영 상태와 촬영 조건을 공식 홈페이지·관리부서에서 사전 확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -582,15 +582,15 @@
           "id": "commons-sema-bunker-ccby-sa3",
           "title": "여의도 SeMA 벙커 외부·출입구 (Wikimedia Commons)",
           "viewType": "실내외·산업공간",
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Yeouido_SeMA_Bunker.jpg/960px-Yeouido_SeMA_Bunker.jpg",
-          "sourceThumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Yeouido_SeMA_Bunker.jpg/960px-Yeouido_SeMA_Bunker.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Yeouido_SeMA_Bunker.jpg/960px-Yeouido_SeMA_Bunker.jpg",
+          "sourceThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Yeouido_SeMA_Bunker.jpg/960px-Yeouido_SeMA_Bunker.jpg",
           "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Yeouido_SeMA_Bunker.jpg",
           "sourceName": "Wikiwater2020 / Wikimedia Commons",
           "license": "CC BY-SA 3.0",
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "여의도 SeMA 벙커 사진. 저자·출처 표시 및 동일조건 공유 검토 필요."
+          "notes": "여의도 SeMA 벙커 사진. 저자·출처 표시 및 동일조건 공유 검토 필요. Wikimedia 표준 upload.wikimedia.org 썸네일 경로로 변경했습니다."
         }
       ],
       "sourceRefs": [
@@ -615,7 +615,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.\n서울시립미술관 공식 공지에서 2025-01-13 운영 종료를 확인함. 재개관 및 일반 접근 가능 여부가 확인되기 전까지 촬영 계획 후보로 추천하지 않음.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-14T00:00:00.000Z",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 87,
       "photoScoreBreakdown": {
         "distinctiveness": 28,
@@ -632,8 +632,8 @@
         "rationale": "낮은 천장과 원형·거친 실내 구조를 활용할 수 있는 특수 분위기 공간 후보",
         "status": "desk-review"
       },
-      "referenceImageId": "ref-sema-bunker-gallery-grid",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageId": "commons-sema-bunker-ccby-sa3",
+      "referenceImageStatus": "Wikimedia 실제 장소 참고사진 · 이용조건 후속 검토",
       "phone": ""
     },
     {
@@ -2161,7 +2161,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -2174,9 +2174,9 @@
           "rights": "unknown",
           "rightsLabel": "공개 재사용 권리 미확인",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "선형 구도·철길·수목·인물 스케일",
-          "notes": "옛 철길의 소실점, 평행선, 나무 그늘을 참고하기 위한 후보. 2021년 보도사진이므로 현재 식생·동선 상태와 저작권을 별도 확인.",
+          "notes": "옛 철길의 소실점, 평행선, 나무 그늘을 참고하기 위한 후보. 2021년 보도사진이므로 현재 식생·동선 상태와 저작권을 별도 확인. 2026-10-15 자동 브라우저 검증에서 사진 URL이 로드되지 않아 활성 표시를 보류했습니다. 장소 정보와 기사 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
@@ -2201,7 +2201,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 72,
       "photoScoreBreakdown": {
         "distinctiveness": 20,
@@ -2219,8 +2219,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "서울특별시 노원구 화랑로 경춘선숲길 화랑대철도공원 입구",
-      "referenceImageId": "ref-gyeongchun-rail-axis",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보"
     },
     {
       "id": "seo-naksan-wall",
@@ -2261,7 +2261,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -2274,9 +2274,9 @@
           "rights": "unknown",
           "rightsLabel": "언론 사진 · 공개 재사용 권리 미확인",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야간·성곽·도시 조망",
-          "notes": "기사의 한양도성 순성 관련 사진으로 성곽선·야간 조명·도심 원근을 확인하는 후보. 이미지 사용 권리 미확인, 실제 촬영 지점과 현장 접근 동선을 별도 검증해야 함.",
+          "notes": "기사의 한양도성 순성 관련 사진으로 성곽선·야간 조명·도심 원근을 확인하는 후보. 이미지 사용 권리 미확인, 실제 촬영 지점과 현장 접근 동선을 별도 검증해야 함. 2026-10-15 자동 브라우저 검증에서 이미지 링크가 로드되지 않아 활성 표시를 보류했습니다. 장소·기사 출처는 보존하고 대체 사진을 후속 확보합니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
@@ -2301,7 +2301,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 75,
       "photoScoreBreakdown": {
         "distinctiveness": 22,
@@ -2319,8 +2319,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "서울특별시 종로구 낙산길 낙산공원 한양도성 구간",
-      "referenceImageId": "ref-naksan-wall-news-night",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보"
     },
     {
       "id": "gg-paju-bookcity",
@@ -3556,7 +3556,7 @@
       "shootingPermission": "개인 방문 촬영과 상업·장비 촬영을 구분해 운영자 확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -3569,9 +3569,9 @@
           "rights": "unknown",
           "rightsLabel": "공개 재사용 권리 미확인",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "실내·다층 서가·계단·천창",
-          "notes": "수원 별마당도서관 실제 실내 공간을 보여주는 시각 조사 후보이며 조감도가 아닌 현장 사진으로 보임. 다층 서가·중앙 계단·천창을 통해 인물 스케일과 대칭 구도를 연구할 수 있음. 사진 저작자와 공개 재사용 권리는 확인 전이며, 상업촬영·장비 사용은 운영자 별도 협의 필요.",
+          "notes": "수원 별마당도서관 실제 실내 공간을 보여주는 시각 조사 후보이며 조감도가 아닌 현장 사진으로 보임. 다층 서가·중앙 계단·천창을 통해 인물 스케일과 대칭 구도를 연구할 수 있음. 사진 저작자와 공개 재사용 권리는 확인 전이며, 상업촬영·장비 사용은 운영자 별도 협의 필요. 2026-10-15 자동 브라우저 검증에서 URL이 열리지 않아 대체 참조사진으로 교체했습니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
@@ -3579,15 +3579,15 @@
           "id": "legacy-l157-starfield-library",
           "title": "별마당도서관 서가·계단 참고사진",
           "viewType": "실내·건축·서가",
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg/960px-%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "sourceThumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg/960px-%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/%EB%B3%84%EB%85%BC%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg/960px-%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg",
+          "sourceThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/%EB%B3%84%EB%85%BC%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg/960px-%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg",
           "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg",
           "sourceName": "LR0725 / Wikimedia Commons",
           "license": "CC BY-SA 4.0",
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요."
+          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요. Wikimedia 표준 upload.wikimedia.org 썸네일 경로로 수정했습니다."
         }
       ],
       "sourceRefs": [
@@ -3612,7 +3612,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 67,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -3629,8 +3629,8 @@
         "rationale": "높은 수직 공간과 층별 반복 구조로 인물의 크기를 대비시키기 좋은 실내 건축 후보",
         "status": "desk-review"
       },
-      "referenceImageId": "ref-starfield-suwon-library-interior",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageId": "legacy-l157-starfield-library",
+      "referenceImageStatus": "Wikimedia 실제 장소 참고사진 · 이용조건 후속 검토"
     },
     {
       "id": "ic-art-platform",
@@ -3994,7 +3994,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -4045,9 +4045,9 @@
           "rights": "unknown",
           "rightsLabel": "이용조건 확인 필요",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "근대건축·거리",
-          "notes": "외부 관광정보 사진 후보로 실제 장소 일치·사용권을 다시 확인해야 합니다. 대표사진으로 승인된 상태는 아닙니다.",
+          "notes": "외부 관광정보 사진 후보로 실제 장소 일치·사용권을 다시 확인해야 합니다. 대표사진으로 승인된 상태는 아닙니다. 2026-10-15 자동 브라우저 검증에서 URL이 로드되지 않아 활성 참조로 사용하지 않습니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T00:00:00.000Z",
           "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.trippose.com%2Fthum%2F1090999%2F800%2F533&w=900&h=650&fit=inside&output=webp",
@@ -4093,8 +4093,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "인천광역시 제물포구 관동1가 개항장 거리 인천개항박물관",
-      "referenceImageId": "ref-incheon-openport-trippose",
-      "referenceImageStatus": "실제 장소 참고사진 후보 · 사용권 후속 검토",
+      "referenceImageId": "ref-incheon-openport-brick-street",
+      "referenceImageStatus": "인천투어 실제 장소 사진 후보 · 사용권 후속 검토",
       "shootingDetails": {
         "parking": "이전 조사 항목: 주차·하차 위치와 좁은 도로에서 장비 이동·보행 동선을 확인",
         "loadIn": "좁은 거리·일방통행 구간이 있을 수 있음. 장비 하차점과 케이스 이동 경로를 현장 확인",
@@ -5322,7 +5322,7 @@
       "shootingPermission": "상업촬영 및 장비 사용 사전 확인",
       "parking": "공식 안내 확인 필요",
       "fee": "촬영 목적·공간별 확인 필요",
-      "imageStatus": "참고사진 후보 있음 · 권리와 대표사진 검증 전",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -5335,9 +5335,9 @@
           "rights": "unknown",
           "rightsLabel": "사용권 미확인",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "실내·미디어아트·산업건축",
-          "notes": "장생포문화창고의 과거 미디어아트 전시를 촬영한 기사 사진 후보입니다. 전시 콘텐츠는 변경되었을 수 있어 시설의 현재 전시를 보장하지 않습니다. 실제 공간 참고용 후보이며 저작권·재사용 권리와 최신 전시 상태 확인 전입니다. 대표사진 승인은 보류합니다.",
+          "notes": "장생포문화창고의 과거 미디어아트 전시를 촬영한 기사 사진 후보입니다. 전시 콘텐츠는 변경되었을 수 있어 시설의 현재 전시를 보장하지 않습니다. 실제 공간 참고용 후보이며 저작권·재사용 권리와 최신 전시 상태 확인 전입니다. 대표사진 승인은 보류합니다. 2026-10-15 자동 브라우저 검증에서 이미지 링크가 로드되지 않아 활성 표시를 보류했습니다. 기사 출처와 사진 후보는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14"
         }
@@ -5358,9 +5358,9 @@
       "priorityLabel": "B · 조건 확인 후 탐색",
       "notes": "항만 산업도시와 창고형 공간의 조형성을 기준으로 선정했습니다. 시설 운영·촬영 가능 범위는 별도 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
-      "referenceImageId": "img-jangsaengpo-mediaart-mk",
-      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
+      "updatedAt": "2026-10-15",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보"
     },
     {
       "id": "daejeon-old-chungnam-office",
@@ -6271,7 +6271,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -6286,7 +6286,7 @@
           "licenseUrl": "",
           "placeMatch": "unverified",
           "viewType": "골목·낡은 표면·도시 생활감",
-          "notes": "2016년 기사 속 구도심 참고 사진. 행궁동 안의 정확한 위치가 확인되지 않아 현장 지도·간판·건물과 대조해야 하며, 오래된 이미지의 현재성 및 공개 사용 권리는 미확인.",
+          "notes": "2016년 기사 속 구도심 참고 사진. 행궁동 안의 정확한 위치가 확인되지 않아 현장 지도·간판·건물과 대조해야 하며, 오래된 이미지의 현재성 및 공개 사용 권리는 미확인. 2026-10-15 자동 브라우저 검사에서 해당 링크를 로드하지 못했으며, 두 번째 후보는 정확한 골목 위치도 미확인이라 활성 대표·참고사진 표시를 보류합니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
@@ -6300,9 +6300,9 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·골목·벽면 패턴",
-          "notes": "특정 골목 사진을 장소 후보 참고로 등록. 방문객 중심 관광 포인트가 아니라 촬영에 적합한 골목 구간을 현장에서 다시 선별.",
+          "notes": "특정 골목 사진을 장소 후보 참고로 등록. 방문객 중심 관광 포인트가 아니라 촬영에 적합한 골목 구간을 현장에서 다시 선별. 2026-10-15 자동 브라우저 검사에서 해당 링크를 로드하지 못했으며, 두 번째 후보는 정확한 골목 위치도 미확인이라 활성 대표·참고사진 표시를 보류합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14"
         }
@@ -6329,7 +6329,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 82,
       "photoScoreBreakdown": {
         "distinctiveness": 20,
@@ -6347,8 +6347,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "경기도 수원시 팔달구 행궁동 공방거리 행리단길",
-      "referenceImageId": "img-suwon-haenggung-mural-alley-visitkorea",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권·대표사진 승인 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "shootingDetails": {
         "parking": "이전 조사 항목: 스태프 차량·장비 차량 주차 분리와 요금·높이 제한 확인 필요",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -6486,7 +6486,7 @@
       "shootingPermission": "전시·공간·상업촬영 조건 사전 문의",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -6501,7 +6501,7 @@
           "licenseUrl": "",
           "placeMatch": "unverified",
           "viewType": "현대건축·외관",
-          "notes": "서울시 미디어허브의 시설 외관 참고 이미지 후보. 재사용 권리 확인 전입니다.",
+          "notes": "서울시 미디어허브의 시설 외관 참고 이미지 후보. 재사용 권리 확인 전입니다. 2026-10-15 자동 브라우저 검증에서 서울시 미디어허브 사진이 로드되지 않아 참조 표시를 보류했습니다. 장소·공식 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T00:00:00.000Z",
           "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2026%2F01%2FxYCJhTTFBIHFiaabWfoXweLeZzNtQpSn.jpg&w=900&h=650&fit=inside&output=webp",
@@ -6518,9 +6518,9 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·건축·계단",
-          "notes": "서울시 공식 미디어허브의 실제 시설 사진을 우선 등록. 상세 공간과 촬영 가능 구역은 후속 확인.",
+          "notes": "서울시 공식 미디어허브의 실제 시설 사진을 우선 등록. 상세 공간과 촬영 가능 구역은 후속 확인. 2026-10-15 자동 브라우저 검증에서 서울시 미디어허브 사진이 로드되지 않아 참조 표시를 보류했습니다. 장소·공식 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14"
         }
@@ -6550,7 +6550,7 @@
       ],
       "notes": "사진적 잠재력을 기준으로 선정한 1차 후보입니다. 참고사진의 재사용 권리와 상업 촬영 허가 여부는 확인되지 않았습니다. 실제 촬영 전 운영기관에 별도로 확인하세요.",
       "createdAt": "2026-10-14T00:00:00.000Z",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 84,
       "photoScoreBreakdown": {
         "distinctiveness": 24,
@@ -6568,8 +6568,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "서울특별시 성동구 자동차시장길 49",
-      "referenceImageId": "img-seoul-upcycling-plaza-mediahub",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권·대표사진 승인 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "shootingDetails": {
         "parking": "주차·장비 하차 위치와 촬영 지점까지의 이동 확인",
         "publicTransport": "공식 홈페이지에서 대중교통·도보 접근 확인",
@@ -6815,7 +6815,7 @@
       "shootingPermission": "청사·광장 점유형 촬영, 삼각대·조명 설치 및 상업 촬영은 서울시·현장 관리 주체에 사전 확인.",
       "parking": "미확인 · 도심 주차·장비 하차 조건 확인",
       "fee": "촬영 목적·인원·장비에 따른 최신 조건 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -6829,9 +6829,9 @@
           "rights": "unknown",
           "rightsLabel": "공공 사진의 재사용 조건 별도 확인 필요",
           "licenseUrl": "",
-          "placeMatch": "unconfirmed",
+          "placeMatch": "unverified",
           "viewType": "현대건축·유리 파사드·반사·기하학",
-          "notes": "이 장소를 추가한 핵심 이유는 단순한 명소성이 아니라 곡면 유리 파사드, 반사되는 하늘, 반복되는 수직·수평 그리드를 인물과 분리해 구성할 수 있기 때문입니다. 광각으로 건물의 스케일을 담거나 망원으로 그리드와 반사 패턴을 압축하는 촬영을 검토하세요. 서울시 미디어허브 참고 이미지이며 재사용 권리·현장 촬영 허가는 별도 확인 대상입니다. 현재 이미지는 장소 소개/참고 후보일 뿐, 추천 촬영 구도와 실제 장소 일치를 직접 검증하지 못했습니다. 확인 전에는 메인 대표사진으로 노출하지 않습니다.",
+          "notes": "이 장소를 추가한 핵심 이유는 단순한 명소성이 아니라 곡면 유리 파사드, 반사되는 하늘, 반복되는 수직·수평 그리드를 인물과 분리해 구성할 수 있기 때문입니다. 광각으로 건물의 스케일을 담거나 망원으로 그리드와 반사 패턴을 압축하는 촬영을 검토하세요. 서울시 미디어허브 참고 이미지이며 재사용 권리·현장 촬영 허가는 별도 확인 대상입니다. 현재 이미지는 장소 소개/참고 후보일 뿐, 추천 촬영 구도와 실제 장소 일치를 직접 검증하지 못했습니다. 확인 전에는 메인 대표사진으로 노출하지 않습니다. 2026-10-15 자동 브라우저 검증에서 서울시청 사진 URL이 로드되지 않아 활성 표시를 보류했습니다. 동일 링크를 가리키는 중복 후보는 모두 비활성화하고 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T00:00:00.000Z"
         },
@@ -6845,9 +6845,9 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·유리 건축·도시 반사",
-          "notes": "서울시 공식 게시 사진을 실제 신청사 참고사진으로 우선 등록. 사용권 및 상업촬영 범위는 추후 검토.",
+          "notes": "서울시 공식 게시 사진을 실제 신청사 참고사진으로 우선 등록. 사용권 및 상업촬영 범위는 추후 검토. 2026-10-15 자동 브라우저 검증에서 서울시청 사진 URL이 로드되지 않아 활성 표시를 보류했습니다. 동일 링크를 가리키는 중복 후보는 모두 비활성화하고 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14"
         },
@@ -6861,9 +6861,9 @@
           "rights": "unknown",
           "rightsLabel": "이용조건 확인 필요",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "유리 파사드·현대건축",
-          "notes": "서울시청 신청사 외관 참고사진 후보입니다. 이용권과 상업 재사용 권리는 별도 확인 대상.",
+          "notes": "서울시청 신청사 외관 참고사진 후보입니다. 이용권과 상업 재사용 권리는 별도 확인 대상. 2026-10-15 자동 브라우저 검증에서 서울시청 사진 URL이 로드되지 않아 활성 표시를 보류했습니다. 동일 링크를 가리키는 중복 후보는 모두 비활성화하고 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T00:00:00.000Z",
           "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2023%2F11%2FXREnAbuGArLmKheGNhoDnztvWnfJFsgD.jpg&w=900&h=650&fit=inside&output=webp",
@@ -6893,7 +6893,7 @@
       ],
       "notes": "관광 목적의 장소가 아니라 유리 파사드·반사·그리드가 패션·인물 에디토리얼에 주는 조형적 가능성을 기준으로 추가했습니다. 참고사진은 서울시 미디어허브 이미지이며, 재사용 권리와 현장 촬영 가능 범위는 별도로 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 80,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -6911,8 +6911,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "서울특별시 중구 세종대로 110 서울시청 신청사",
-      "referenceImageId": "img-seoul-city-hall-mediahub",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권·대표사진 승인 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "phone": "02-120",
       "shootingDetails": {
         "fieldNotes": "곡면 유리 파사드의 반사와 그리드를 중심으로 촬영합니다. 광각 건축 전경과 망원 압축 구도를 모두 테스트하고, 반사면에 불필요한 주변 요소가 들어오는지 확인하세요. 광장 점유·삼각대·조명 설치는 관리 주체에 사전 문의가 필요합니다.",
@@ -6962,9 +6962,9 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "실내·공연장·원형 통로",
-          "notes": "공식 건축 투어가 소개하는 실제 TUBE 공간 사진. 사용권·공연장 상업촬영 여부는 후속 검토.",
+          "notes": "공식 건축 투어가 소개하는 실제 TUBE 공간 사진. 사용권·공연장 상업촬영 여부는 후속 검토. 2026-10-15 자동 브라우저 검증에서 이미지 링크가 로드되지 않아 활성 표시를 보류했습니다. 공식 건축 출처와 이미지 후보는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14"
         }
@@ -7005,9 +7005,9 @@
         }
       ],
       "primaryImageId": null,
-      "referenceImageId": "img-lg-arts-center-tube-official",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권·대표사진 승인 후속 검토",
+      "referenceImageId": null,
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "visualCurationStatus": "candidate",
       "sourceRefs": [
         "https://lgart.com/home/display/region/content/JSVFelN3a2tTendqd1FGWHRaQTNQNU15c2N4eW1wSkppNjdDSW9JK0xkTEFhND0="
@@ -7019,7 +7019,7 @@
         "shootingPermission": "촬영 가능 구역·상업촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-15"
     },
     {
       "id": "seo-peace-culture-bunker",
@@ -7958,7 +7958,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -7971,15 +7971,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·수변·컬러건축",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 장소 설명과 출처를 보존하고 대체 실제 사진을 후속 확보합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "legacy-image-l-106",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://www.visitbusan.net/archive/dataSearch/view.nm?dataSid=METADATA005725",
         "https://www.wondertour.kr/TravelGuide/?bmode=view&idx=167528176"
@@ -8047,7 +8047,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -8060,15 +8060,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·한옥·마당",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 공식 관광 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "legacy-image-l-103",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://daejeontour.co.kr/sights_djt/44?page=2",
         "https://daejeontour.co.kr/data/file/sights_djt/1935377306_687ddc5ec6a52_9.jpg"
@@ -8313,7 +8313,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -8326,15 +8326,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "실내·미디어아트·저조도",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 공식 전시·운영 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "legacy-image-l-126",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://artemuseum.com/GANGNEUNG"
       ],
@@ -8489,7 +8489,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -8502,15 +8502,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "실내·산업건축·개방수장고",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 뉴스 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "legacy-image-l-130",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://www.mmca.go.kr/"
       ],
@@ -8577,7 +8577,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -8590,15 +8590,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·공연장·LED 지붕·야경",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 한국관광공사 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "legacy-image-l-134",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://www.dureraum.org/",
         "https://english.visitkorea.or.kr/svc/contents/infoBscView.do?dataSetId=76&menuSn=229&vcontsId=177333"
@@ -8932,7 +8932,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -8945,15 +8945,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·조각·공원",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 장소 정보와 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "legacy-image-l-108",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=35b540c7-13bb-486c-9f03-1e7be998ce4e",
         "https://tong.visitkorea.or.kr/cms/resource/73/2945373_image2_1.jpg"
@@ -9022,7 +9022,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -9035,15 +9035,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·금속 파사드·야간",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 건축 기사 출처와 장소 정보는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "legacy-image-l-187",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://sema.seoul.go.kr/kr/visit/seoseoul",
         "https://magazine.brique.co/brq-news/seoseoul-museum-opening-geumnarae-park-kimchanjoong-thesystemlab/",
@@ -9113,7 +9113,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -9126,15 +9126,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·조형건축·고천장 로비",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 SBS 기사 이미지가 로드되지 않아 활성 표시를 보류했습니다. 개관·건축 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "legacy-image-l-188",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://sema.seoul.go.kr/kr/visit/photosema",
         "https://news.sbs.co.kr/news/endPage.do?news_id=N1008118211"
@@ -9203,7 +9203,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -9216,15 +9216,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "실내·버추얼 프로덕션·LED 월",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 FNN 기사 이미지가 로드되지 않아 활성 표시를 보류했습니다. 버추얼 프로덕션 시설과 보도 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "legacy-image-l-184",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://www.fnn.jp/articles/-/385893?display=full",
         "https://www.cjenm.com/"
@@ -9296,7 +9296,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -9309,15 +9309,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·사극 오픈세트·한옥 거리",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 사진 URL이 로드되지 않아 활성 표시를 보류했습니다. 공식 촬영세트 출처와 장소정보는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "legacy-image-l-218",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://www.segye.com/view/20230205504831",
         "https://thetravelnews.co.kr/2026/06/mungyeong-saejae-153-million-visitors-heritage-trail/",
@@ -11357,7 +11357,7 @@
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -11370,15 +11370,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·폐역·목조건축",
-          "notes": "구버전 214곳 자료에 구 서도역 사진으로 기록된 직접 이미지입니다. 실제 장소 참고용으로 우선 연결하고 사용권은 후속 확인합니다.",
+          "notes": "구버전 214곳 자료에 구 서도역 사진으로 기록된 직접 이미지입니다. 실제 장소 참고용으로 우선 연결하고 사용권은 후속 확인합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 구 서도역 장소와 기사 출처를 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "img-seodo-station-segye",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://www.namwon.go.kr/tour/index.do",
         "https://www.segye.com/"
@@ -11446,7 +11446,7 @@
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -11459,15 +11459,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "실내·영화세트·교도소 복도",
-          "notes": "구버전 자료에서 실제 익산 교도소세트장 이미지로 연결된 사진 후보입니다. 상업 재사용 조건은 후속 확인합니다.",
+          "notes": "구버전 자료에서 실제 익산 교도소세트장 이미지로 연결된 사진 후보입니다. 상업 재사용 조건은 후속 확인합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 실제 교도소 세트장 정보는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "img-iksan-prison-set-wello",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://www.iksan.go.kr/"
       ],
@@ -11526,7 +11526,7 @@
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -11539,15 +11539,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·벽돌·창고 건축",
-          "notes": "구버전 DB에서 대림창고 이미지로 기록된 사진을 장소 참고자료로 연결했습니다. 재사용 권리는 후속 확인합니다.",
+          "notes": "구버전 DB에서 대림창고 이미지로 기록된 사진을 장소 참고자료로 연결했습니다. 재사용 권리는 후속 확인합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 실제 장소 정보와 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "img-daelim-changgo-sekainavi",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://search.naver.com/search.naver?query=%EC%84%B1%EC%88%98%20%EB%8C%80%EB%A6%BC%EC%B0%BD%EA%B3%A0"
       ],
@@ -11606,7 +11606,7 @@
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 촬영 대관료를 구분해 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -11619,15 +11619,15 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·근현대 생활건축·골목",
-          "notes": "서울시 공식 소개 페이지의 실제 장소 사진을 참고자료로 우선 등록했습니다. 사용권·상업촬영 허가는 별도 후속 확인합니다.",
+          "notes": "서울시 공식 소개 페이지의 실제 장소 사진을 참고자료로 우선 등록했습니다. 사용권·상업촬영 허가는 별도 후속 확인합니다. 2026-10-15 자동 브라우저 검증에서 공식 사진 URL이 로드되지 않아 활성 표시를 보류했습니다. 서울시 공식 페이지와 장소 정보는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "img-donuimun-seoul-official",
-      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "referenceImageId": null,
+      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
       "sourceRefs": [
         "https://dmuseum.seoul.go.kr/",
         "https://english.seoul.go.kr/donuimun-museum-village-5/"
