@@ -150,19 +150,13 @@ async function loadBase(){
   let draft=null;try{draft=JSON.parse(localStorage.getItem(LOCAL_KEY)||"null");}catch(_){}
   const source=draft&&Array.isArray(draft.places)?mergePublishedPhotoReferences(draft,base):base;
   catalog=normalizeCatalog(source);
-  const forceAllPlaces=new URLSearchParams(window.location.search).get("view")==="all";
-  const routeAfterLoad=forceAllPlaces?"home":document.body.dataset.appView||"home";
+  const routeAfterLoad=document.body.dataset.appView||"home";
   if(selectedId&&!getPlace(selectedId))selectedId=null;
   if(draft){
    try{localStorage.setItem(LOCAL_KEY,JSON.stringify(catalog));}catch(_){}
    $("saveStatus").textContent="이 기기의 작업 초안 불러옴 · 사진 연결 확인";
   }else $("saveStatus").textContent="공통 카탈로그 최신본 불러옴";
   render();renderLanding();showAppView(routeAfterLoad,false);
-  if(forceAllPlaces){
-   showHomeAllPlaces();
-   /* The return intent is one-shot: later reloads should not force the archive over the user's current view. */
-   history.replaceState(null,"",window.location.pathname+window.location.hash);
-  }
  }catch(e){$("saveStatus").textContent="자료 불러오기 실패: "+e.message;$("placeList").innerHTML='<div class="empty">기본 자료를 불러오지 못했습니다.<br>GitHub Pages URL에서 열었는지 확인하세요.</div>';renderLanding();}
 }
 function refreshSharedCatalogIfClean(){
@@ -257,7 +251,7 @@ function showHomeAllPlaces(){
  renderLanding();
  updateFloatingControls();
  requestAnimationFrame(()=>{
-  const grid=$("homeAllPlacesGrid");
+  const grid=$("homeFeaturedGrid");
   if(grid)grid.scrollIntoView({behavior:"auto",block:"start"});
   if(document.body.dataset.appView!=="home"||$("workspaceView").hidden===false){
    showAppView("home",false);renderLanding();
@@ -267,11 +261,8 @@ function showHomeAllPlaces(){
 }
 function showPlaceArchive(event){
  if(event){event.preventDefault();event.stopPropagation();}
- /* Reload the current v2 entry point explicitly. This bypasses stale in-memory views and never routes to the legacy root app. */
- const target=new URL("./index.html",window.location.href);
- target.searchParams.set("view","all");
- target.searchParams.set("build","20261014-38");
- window.location.assign(target.href);
+ /* Stay in the current 2.0 page so unsaved editing context is not lost; showHomeAllPlaces scrolls to the visible full catalog. */
+ showHomeAllPlaces();
 }
 if(backToArchiveBtn)backToArchiveBtn.addEventListener("click",showPlaceArchive);
 
