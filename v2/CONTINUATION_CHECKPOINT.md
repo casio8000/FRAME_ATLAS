@@ -75,3 +75,10 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Primary/reference photos and automatic fallback candidates now require explicit place-match confirmation. Unverified photos stay in the photo-candidate manager and are not displayed as if they were confirmed location images.
 - Existing local drafts honor the new excluded IDs and inherit the shared review queue while preserving user edits to active places.
 - Browser tests updated for 36 active places, seven queue entries, and the archive-return behavior on desktop/mobile.
+
+
+## Release 2026-10-14 · 2.0.36 navigation and photo-evidence refinement
+- The floating return control now goes to the current 2.0 home page and scrolls directly to the full all-places list. It no longer opens the legacy-looking workspace/archive screen.
+- The random hero selector now excludes locations explicitly marked closed, permanently closed, or indefinitely suspended.
+- The detail's photo panel displays the image's intended view/shot type, notes explaining why the image was chosen, source name, and a clear reuse-rights warning when the license is unknown. This makes it easier to judge whether the photograph actually supports the location's photographic rationale.
+- Do not promote new places into the active list until an exact-place photo can be identified. LG Arts Center Seoul remains in the review queue because the architecture is promising but a stable direct photo URL for the exact TUBE/STEP ATRIUM/GATE ARC space has not yet been confirmed; this is intentional quality control, not a dropped candidate.
