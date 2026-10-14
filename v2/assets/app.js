@@ -335,7 +335,7 @@ function renderLanding(){
  const prefer=["seo-ddp","seo-oil-tank","seo-seoul-station-284","gg-mimesis","ic-tri-bowl","ic-art-platform"];
  const picked=prefer.map(get).filter(Boolean);
  const baseFeatured=[...picked,...places.filter(p=>!picked.some(x=>x.id===p.id)).sort((a,b)=>{
-  const aClosed=/운영 종료|폐쇄|영구 휴관/.test(String(a.openingStatus||""))?1:0,bClosed=/운영 종료|폐쇄|영구 휴관/.test(String(b.openingStatus||""))?1:0;
+  const aClosed=/^(?:운영 종료|영구 휴관|휴관(?:중|·|$)|폐쇄)/.test(String(a.openingStatus||"").trim())?1:0,bClosed=/^(?:운영 종료|영구 휴관|휴관(?:중|·|$)|폐쇄)/.test(String(b.openingStatus||"").trim())?1:0;
   return aClosed-bClosed+(a.visualCurationStatus==="conditional"?1:0)-(b.visualCurationStatus==="conditional"?1:0)||(a.scoutPriority||9)-(b.scoutPriority||9);
  })];
  const heroPlace=chooseHomeHeroPlace(places)||baseFeatured.find(p=>activePhoto(p))||baseFeatured[0];
@@ -375,7 +375,8 @@ function renderLanding(){
   allGrid.innerHTML=all.map((p,index)=>{
    const photo=activePhoto(p),url=photo?(photo.imageUrl||photo.sourceThumbnail||""):"";
    const held=p.visualCurationStatus==="conditional"||p.visualCurationStatus==="rejected"||p.photoReviewStatus==="pending-place-photo-review";
-   const status=held?"대표사진·장소 일치 검토 보류":/운영 종료|휴관|폐쇄/.test(String(p.openingStatus||""))?"운영 상태 재확인":photo&&photo.placeMatch==="confirmed"?(p.primaryImageId===photo.id?"대표사진 승인":"장소 사진 참고 · 대표사진 미선정"):"사진 후보 미등록";
+   const closedStatus=/^(?:운영 종료|영구 휴관|휴관(?:중|·|$)|폐쇄)/.test(String(p.openingStatus||"").trim());
+   const status=held?"대표사진·장소 일치 검토 보류":closedStatus?"운영 상태 재확인":photo&&photo.placeMatch==="confirmed"?(p.primaryImageId===photo.id?"대표사진 승인":"장소 사진 참고 · 대표사진 미선정"):"사진 후보 미등록";
    return '<button type="button" class="home-place-row" data-home-all-place="'+esc(p.id)+'"><span class="home-place-thumb">'+(photo&&!held?'<img loading="lazy" data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" src="'+esc(url)+'" alt="'+esc(p.name)+' 촬영 참고사진" referrerpolicy="no-referrer">':'<span class="home-place-placeholder">'+(held?"사진 검토 보류":"▧")+'</span>')+'</span><span class="home-place-info"><small>'+String(index+1).padStart(2,"0")+' / '+esc(p.region||"수도권")+'</small><b>'+esc(p.name)+'</b><span>'+esc(p.category||"장소 유형 조사 필요")+'</span><em>'+esc(status)+'</em></span><span class="home-place-chevron">↗</span></button>';
   }).join("")||'<div class="landing-empty">조건에 맞는 장소가 없습니다.</div>';
   bindImageFallbacks(allGrid);
