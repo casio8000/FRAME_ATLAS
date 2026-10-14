@@ -139,7 +139,7 @@
         "lastFieldCheck": "현장 확인 전 · 공식 운영 정보와 조건 재확인 필요"
       },
       "province": "강원",
-      "regionGroup": "강원권"
+      "regionGroup": "gangwon"
     },
     {
       "id": "nat-museum-san",
@@ -363,7 +363,7 @@
       "visualCurationStatus": "curated",
       "reviewedOn": "2026-10-14",
       "province": "강원",
-      "regionGroup": "강원권"
+      "regionGroup": "gangwon"
     },
     {
       "id": "nat-mungyeong-saejae-open-set",
@@ -495,7 +495,7 @@
       },
       "mediaExposureStatus": "역사극·시대극 촬영장으로 알려진 전문 야외세트. 개별 영화·드라마 크레딧은 공식 운영자료와 제작사 자료로 대조한 뒤 구체적으로 표시합니다.",
       "province": "경북",
-      "regionGroup": "경상권"
+      "regionGroup": "gyeongsang"
     },
     {
       "id": "nat-busan-cinema-center",
@@ -611,14 +611,14 @@
         "lastFieldCheck": "미확인 · 방문 전 운영·허가 재확인 필요"
       },
       "province": "부산",
-      "regionGroup": "경상권"
+      "regionGroup": "gyeongsang"
     },
     {
       "id": "bs-busan-cinema-center",
       "name": "부산 영화의전당",
       "region": "부산",
       "province": "부산",
-      "regionGroup": "경상권",
+      "regionGroup": "gyeongsang",
       "locality": "해운대구 센텀시티",
       "category": "세계적 조형 건축·공연·영화 공간",
       "spaceTypes": [
@@ -821,7 +821,7 @@
       "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
       "mediaExposureStatus": "경남영상자료관 로케이션 DB에 촬영작 목록이 함께 등록되어 있습니다(예: 메이드 인 코리아 시즌2, 정년이, 구미호뎐 1938, 암살, 써니, 태극기 휘날리며). 개별 작품의 구체적인 장면·세트는 공식 목록과 현장 구역을 대조해야 합니다.",
       "province": "경남",
-      "regionGroup": "경상권"
+      "regionGroup": "gyeongsang"
     },
     {
       "id": "nat-f1963",
@@ -967,7 +967,7 @@
       "visualCurationStatus": "curated",
       "reviewedOn": "2026-10-14",
       "province": "부산",
-      "regionGroup": "경상권"
+      "regionGroup": "gyeongsang"
     },
     {
       "id": "seo-ddp",
@@ -1085,7 +1085,7 @@
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "phone": "02-2153-0000",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "candidate-leeum-museum",
@@ -1197,7 +1197,7 @@
       "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
       "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-mullae",
@@ -1388,7 +1388,7 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-oil-tank",
@@ -1597,7 +1597,7 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-seoul-station-284",
@@ -1838,7 +1838,7 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-botanic",
@@ -1941,7 +1941,7 @@
       "referenceImageId": "ref-botanic-greenhouse-walkway",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-seonyudo",
@@ -2133,7 +2133,7 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-seongsu",
@@ -2324,7 +2324,7 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-sewoon",
@@ -2521,7 +2521,7 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-euljiro",
@@ -2627,7 +2627,7 @@
       "referenceImageId": "ref-euljiro-rooftop-city-texture",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "candidate-seoul-lg-arts-center",
@@ -2739,7 +2739,7 @@
       "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
       "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "gg-mmca-gwacheon",
@@ -2843,7 +2843,7 @@
       "referenceImageId": "ref-mmca-gwacheon-circular-ramp",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "gg-mimesis",
@@ -3054,7 +3054,7 @@
         ]
       },
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "ic-tri-bowl",
@@ -3156,7 +3156,7 @@
       "referenceImageId": "ref-tribowl-designers-curved-shell",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "인천",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "gg-anyang-artpark",
@@ -3263,7 +3263,7 @@
       "referenceImageId": "ref-anyang-glass-walkway",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "ic-art-platform",
@@ -3487,7 +3487,7 @@
         ]
       },
       "province": "인천",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "nat-kfilm-studio-paju-5",
@@ -3594,7 +3594,7 @@
       "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
       "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "gg-paju-bookcity",
@@ -3697,7 +3697,7 @@
       "referenceImageId": "ref-paju-samho-building",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "nat-cjenm-studio-center",
@@ -3807,14 +3807,14 @@
         "lastFieldCheck": "미확인 · 방문 전 운영·허가 재확인 필요"
       },
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "gg-cj-enm-studio-center",
       "name": "CJ ENM 스튜디오 센터",
       "region": "경기",
       "province": "경기",
-      "regionGroup": "수도권",
+      "regionGroup": "capital",
       "locality": "파주 탄현면·통일동산",
       "category": "대형 영상제작 스튜디오·버추얼 프로덕션",
       "spaceTypes": [
@@ -4057,7 +4057,7 @@
       "photoReviewStatus": "실제 장소 일치·사진 사용권·촬영 허가는 별도 확인 대상",
       "visualCurationStatus": "curated",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "nat-team-studios-xr-pangyo",
@@ -4168,7 +4168,7 @@
       "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
       "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "nat-acc-gwangju",
@@ -4320,7 +4320,7 @@
       "visualCurationStatus": "curated",
       "reviewedOn": "2026-10-14",
       "province": "광주",
-      "regionGroup": "전라권"
+      "regionGroup": "jeolla"
     },
     {
       "id": "nat-jeonju-film-studios",
@@ -4430,14 +4430,14 @@
         "lastFieldCheck": "미확인 · 방문 전 운영·허가 재확인 필요"
       },
       "province": "전북",
-      "regionGroup": "전라권"
+      "regionGroup": "jeolla"
     },
     {
       "id": "jj-glass-house",
       "name": "글라스하우스 · 섭지코지",
       "region": "제주",
       "province": "제주",
-      "regionGroup": "제주권",
+      "regionGroup": "jeju",
       "locality": "서귀포시 성산읍",
       "category": "안도 다다오 건축·해안 파빌리온",
       "spaceTypes": [
@@ -4535,7 +4535,7 @@
       "name": "본태박물관",
       "region": "제주",
       "province": "제주",
-      "regionGroup": "제주권",
+      "regionGroup": "jeju",
       "locality": "서귀포시 안덕면",
       "category": "안도 다다오 건축·중정·수면 반사",
       "spaceTypes": [
@@ -4738,7 +4738,7 @@
       "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
       "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
       "province": "제주",
-      "regionGroup": "제주권"
+      "regionGroup": "jeju"
     },
     {
       "id": "nat-studio-cube-daejeon",
@@ -4853,14 +4853,14 @@
         "lastFieldCheck": "미확인 · 방문 전 운영·허가 재확인 필요"
       },
       "province": "대전",
-      "regionGroup": "충청권"
+      "regionGroup": "chungcheong"
     },
     {
       "id": "dae-studio-cube",
       "name": "스튜디오 큐브",
       "region": "대전",
       "province": "대전",
-      "regionGroup": "충청권",
+      "regionGroup": "chungcheong",
       "locality": "유성구",
       "category": "대형 방송·가상 프로덕션 스튜디오",
       "spaceTypes": [
@@ -5061,14 +5061,14 @@
         "lastFieldCheck": "미확인 · 방문 전 운영·허가 재확인 필요"
       },
       "province": "강원",
-      "regionGroup": "강원권"
+      "regionGroup": "gangwon"
     },
     {
       "id": "gn-hapcheon-video-themepark",
       "name": "합천 영상테마파크",
       "region": "경남",
       "province": "경남",
-      "regionGroup": "경상권",
+      "regionGroup": "gyeongsang",
       "locality": "합천군",
       "category": "영화·드라마 대형 오픈세트",
       "spaceTypes": [
@@ -5291,7 +5291,7 @@
       "referenceImageId": "ref-mmca-seoul-courtyard-glass",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-naksan-wall",
@@ -5393,7 +5393,7 @@
       "referenceImageId": "ref-naksan-wall-news-night",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-nodeul",
@@ -5511,7 +5511,7 @@
       "referenceImageId": "ref-nodeul-island-sunken-plaza-dusk",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-craft-museum",
@@ -5616,7 +5616,7 @@
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "phone": "02-6450-7000",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-sema-namseoul",
@@ -5722,14 +5722,14 @@
       "referenceImageId": "ref-namseoul-belgian-consulate",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-kbs-arena",
       "name": "KBS아레나",
       "region": "서울",
       "province": "서울",
-      "regionGroup": "서울",
+      "regionGroup": "seoul",
       "locality": "강서구 화곡동",
       "category": "대형 다목적 공연장",
       "spaceTypes": [
@@ -6058,7 +6058,7 @@
       },
       "phone": "",
       "province": "인천",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "gg-pocheon-artvalley",
@@ -6161,7 +6161,7 @@
       "referenceImageId": "ref-pocheon-quarry-lake-mist",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "gg-heyri",
@@ -6264,7 +6264,7 @@
       "referenceImageId": "ref-heyri-chronotope-wall",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "nat-suncheon-drama-set",
@@ -6374,14 +6374,14 @@
         "lastFieldCheck": "미확인 · 방문 전 운영·허가 재확인 필요"
       },
       "province": "전남",
-      "regionGroup": "전라권"
+      "regionGroup": "jeolla"
     },
     {
       "id": "jn-suncheon-drama-set",
       "name": "순천 드라마촬영장",
       "region": "전남",
       "province": "전남",
-      "regionGroup": "전라권",
+      "regionGroup": "jeolla",
       "locality": "순천시",
       "category": "영화·드라마 오픈세트",
       "spaceTypes": [
@@ -6479,7 +6479,7 @@
       "name": "전주영화종합촬영소",
       "region": "전북",
       "province": "전북",
-      "regionGroup": "전라권",
+      "regionGroup": "jeolla",
       "locality": "전주시",
       "category": "영화 제작·촬영 스튜디오",
       "spaceTypes": [
@@ -6577,7 +6577,7 @@
       "name": "방주교회",
       "region": "제주",
       "province": "제주",
-      "regionGroup": "제주권",
+      "regionGroup": "jeju",
       "locality": "서귀포시 안덕면",
       "category": "이타미 준 건축·수면 반사 조형",
       "spaceTypes": [
@@ -6784,7 +6784,7 @@
         "lastFieldCheck": "미확인 · 방문 전 운영·허가 재확인 필요"
       },
       "province": "제주",
-      "regionGroup": "제주권"
+      "regionGroup": "jeju"
     },
     {
       "id": "nat-mmca-cheongju",
@@ -6894,7 +6894,7 @@
         "lastFieldCheck": "미확인 · 방문 전 운영·허가 재확인 필요"
       },
       "province": "충북",
-      "regionGroup": "충청권"
+      "regionGroup": "chungcheong"
     },
     {
       "id": "seo-gyeongchun",
@@ -6996,7 +6996,7 @@
       "referenceImageId": "ref-gyeongchun-rail-axis",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-sema-bunker",
@@ -7115,7 +7115,7 @@
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "phone": "",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "gg-gyeonggi-museum-art",
@@ -7218,7 +7218,7 @@
       "referenceImageId": "ref-gyeonggi-museum-reflecting-pool",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "gg-goyang-aram",
@@ -7322,7 +7322,7 @@
       "referenceImageId": "ref-aramnuri-glass-grid-facade",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "gg-gwangmyeong-cave",
@@ -7439,7 +7439,7 @@
       "referenceImageId": "legacy-l194-gwangmyeong-cave",
       "referenceImageStatus": "Wikimedia Commons 현장 사진 후보 · 재사용 조건 확인 필요",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "ic-sorae-saltfield",
@@ -7555,7 +7555,7 @@
       "referenceImageId": "ref-sorae-windmill-shallow-reflection",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "인천",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "gg-suwon-hwaseong",
@@ -7661,7 +7661,7 @@
       "referenceImageId": "ref-hwaseong-wall-slope",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "gg-starfield-suwon",
@@ -7780,7 +7780,7 @@
       "referenceImageId": "ref-starfield-suwon-library-interior",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "ic-baedari",
@@ -7948,7 +7948,7 @@
         ]
       },
       "province": "인천",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     }
   ],
   "selectionRubric": {
@@ -8021,7 +8021,7 @@
       "imageCandidates": [],
       "createdAt": "2026-10-14T00:00:00.000Z",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "candidate-seoul-urban-architecture-center",
@@ -8041,7 +8041,7 @@
       "imageCandidates": [],
       "createdAt": "2026-10-14T00:00:00.000Z",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-hangang-under-bridge",
@@ -8146,7 +8146,7 @@
       "curationQueueReason": "보류: 특정 교량·촬영 지점이 지정되지 않았고 현재 이미지의 장소 일치가 미확인입니다. 정확한 교량명·접근 구역·안전 동선이 검증될 때까지 일반 추천 목록에서 제외합니다.",
       "reviewedOn": "2026-10-14",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "gg-suwon-haenggung",
@@ -8340,7 +8340,7 @@
       "curationQueueReason": "보류: 넓은 골목 권역을 대표하는 이미지의 장소 일치가 미확인이고 추천 촬영 포인트를 특정하기 어렵습니다. 구체적인 거리·벽면과 일치하는 실제 사진을 확인한 뒤 재검토합니다.",
       "reviewedOn": "2026-10-14",
       "province": "경기",
-      "regionGroup": "수도권"
+      "regionGroup": "capital"
     },
     {
       "id": "seo-upcycling-plaza",
@@ -8489,7 +8489,7 @@
       "curationQueueReason": "보류: 대표사진의 해당 시설 일치가 미확인이고, 현재 사진만으로는 전문 촬영 배경으로서의 고유성이 충분히 입증되지 않았습니다. 더 적합한 실제 외관·중정 사진과 촬영 가능한 구역을 확인한 뒤 재평가합니다.",
       "reviewedOn": "2026-10-14",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-urban-life-museum",
@@ -8638,7 +8638,7 @@
       "curationQueueReason": "보류: 현재 외관 참고사진의 장소 일치가 미확인이고, 실내 상업촬영·플래시·삼각대 제한으로 활용 범위가 좁습니다. 정확한 외관 사진과 외부 촬영 가능 범위를 확인한 뒤 재평가합니다.",
       "reviewedOn": "2026-10-14",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-city-hall-facade",
@@ -8787,7 +8787,7 @@
       "curationQueueReason": "보류: 유리 파사드는 시각적으로 흥미롭지만 현재 이미지/촬영 가능 구역만으로는 기존 건축 장소보다 높은 고유성이 입증되지 않았습니다. 더 차별적인 실제 장소 사진을 찾으면 재검토합니다.",
       "reviewedOn": "2026-10-14",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-peace-culture-bunker",
@@ -8935,7 +8935,7 @@
       "reviewedOn": "2026-10-14",
       "curationQueueReason": "장소 자체는 산업유산·콘크리트 구조라는 사진적 잠재력이 높지만, 현재 연결된 사진의 실제 촬영 구간과 추천 구도를 대조하지 못했습니다. 실제 공간을 보여주는 원문 사진과 공개·상업 재사용 조건을 확인할 때까지 메인 추천에서 보류합니다.",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     },
     {
       "id": "seo-city-hall-new-building",
@@ -9057,7 +9057,7 @@
       "reviewedOn": "2026-10-14",
       "curationQueueReason": "곡면 유리와 반사·그리드 구조는 후보 가치가 있지만, 현재 이미지가 추천한 촬영 지점과 정확히 일치하는지 확인하지 못했습니다. 보다 차별적인 지상 시점 사진과 현장 촬영 가능 구역을 확인할 때까지 메인 추천에서 보류합니다.",
       "province": "서울",
-      "regionGroup": "서울"
+      "regionGroup": "seoul"
     }
   ],
   "excludedLocationIds": [
@@ -9071,29 +9071,29 @@
   ],
   "regionGroups": [
     {
-      "id": "서울",
+      "id": "seoul",
       "label": "서울",
       "provinces": [
         "서울"
       ]
     },
     {
-      "id": "수도권",
-      "label": "경기·인천 (수도권)",
+      "id": "capital",
+      "label": "경기·인천 수도권",
       "provinces": [
         "경기",
         "인천"
       ]
     },
     {
-      "id": "강원권",
+      "id": "gangwon",
       "label": "강원권",
       "provinces": [
         "강원"
       ]
     },
     {
-      "id": "충청권",
+      "id": "chungcheong",
       "label": "충청권",
       "provinces": [
         "대전",
@@ -9103,7 +9103,7 @@
       ]
     },
     {
-      "id": "전라권",
+      "id": "jeolla",
       "label": "전라권",
       "provinces": [
         "광주",
@@ -9112,7 +9112,7 @@
       ]
     },
     {
-      "id": "경상권",
+      "id": "gyeongsang",
       "label": "경상권",
       "provinces": [
         "부산",
@@ -9123,8 +9123,8 @@
       ]
     },
     {
-      "id": "제주권",
-      "label": "제주권",
+      "id": "jeju",
+      "label": "제주",
       "provinces": [
         "제주"
       ]
