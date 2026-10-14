@@ -555,8 +555,8 @@
       "address": "서울특별시 영등포구 여의대로 지하 76",
       "coordinates": null,
       "officialUrl": "https://sema.seoul.go.kr/kr/",
-      "openingStatus": "운영 종료 (2025-01-13) · 재개관 여부 확인 필요",
-      "shootingPermission": "SeMA 벙커는 전시 개최 기간에만 관람 가능. 촬영·시설 이용은 공식 안내와 관리부서 확인 필요.",
+      "openingStatus": "전시 개최 기간에만 관람 가능 — 현재 전시 일정과 개방 여부를 공식 홈페이지에서 확인",
+      "shootingPermission": "전시·시설 이용 시기별 운영 상태와 촬영 조건을 공식 홈페이지·관리부서에서 사전 확인",
       "parking": "미확인",
       "fee": "미확인",
       "imageStatus": "미등록",
@@ -615,7 +615,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.\n서울시립미술관 공식 공지에서 2025-01-13 운영 종료를 확인함. 재개관 및 일반 접근 가능 여부가 확인되기 전까지 촬영 계획 후보로 추천하지 않음.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-14T00:00:00.000Z",
       "photoPotentialScore": 87,
       "photoScoreBreakdown": {
         "distinctiveness": 28,
@@ -634,7 +634,7 @@
       },
       "referenceImageId": "ref-sema-bunker-gallery-grid",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
-      "phone": "02-2124-8817"
+      "phone": ""
     },
     {
       "id": "seo-sewoon",
