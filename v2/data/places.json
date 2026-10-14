@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 장소 참고사진, 대표사진 편집 판단, 재사용 권리와 촬영 허가를 독립 관리",
-  "dataStatus": "전국 권역 구조 적용. 활성 장소 62곳, 검토 대기 후보 9곳. 검토 대기 후보는 삭제하지 않고 별도 보관합니다. 사진은 장소 일치가 확인된 경우 참고 이미지로 활용할 수 있으나 대표사진 선정·재사용 권리·상업촬영 허가는 각각 별도로 판단합니다.",
+  "dataStatus": "전국 권역 확장판. 활성 장소 54곳, 검토 대기 후보 9곳. 장소 일치가 확인된 사진은 참고 이미지로 활용할 수 있지만 대표사진 선정, 이미지 재사용 권리, 상업촬영 허가는 각각 별도로 판단합니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T10:30:00.000Z",
+  "updatedAt": "2026-10-14T11:00:00.000Z",
   "places": [
     {
       "id": "nat-solol-art-museum",
@@ -555,6 +555,22 @@
           "status": "candidate",
           "createdAt": "2026-10-14T05:00:00.000Z",
           "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/51/3021751_image2_1.jpg"
+        },
+        {
+          "id": "ref-busan-cinema-center-visitbusan",
+          "title": "부산 영화의전당 빅루프 야간 조명",
+          "imageUrl": "https://www.visitbusan.net/archive/upload/2025/02/20/20250220170806136248_m.png",
+          "sourceThumbnail": "https://www.visitbusan.net/archive/upload/2025/02/20/20250220170806136248_m.png",
+          "sourcePageUrl": "https://www.visitbusan.net/archive/dataSearch/view.nm?dataSid=METADATA005306",
+          "sourceName": "부산관광아카이브 · 부산광역시",
+          "rights": "unknown",
+          "rightsLabel": "공공누리 제1유형 표기 · 출처·이용조건 확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "빅루프·야간 LED·건축 입면",
+          "notes": "부산관광아카이브에 공개된 실제 장소 사진. 출처 표기 및 해당 이미지의 공공누리 이용 조건을 최종 확인합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -569,6 +585,14 @@
         {
           "name": "희림건축 부산 영화의전당 프로젝트",
           "url": "https://www.heerim.com/kr/project/project_view.php?idx=371"
+        },
+        {
+          "name": "부산관광아카이브 · 영화의전당",
+          "url": "https://www.visitbusan.net/archive/dataSearch/view.nm?dataSid=METADATA005306"
+        },
+        {
+          "name": "영화의전당 공식 사이트",
+          "url": "https://www.dureraum.org/"
         }
       ],
       "verification": {
@@ -612,108 +636,6 @@
       },
       "province": "부산",
       "regionGroup": "gyeongsang"
-    },
-    {
-      "id": "bs-busan-cinema-center",
-      "name": "부산 영화의전당",
-      "region": "부산",
-      "province": "부산",
-      "regionGroup": "gyeongsang",
-      "locality": "해운대구 센텀시티",
-      "category": "세계적 조형 건축·공연·영화 공간",
-      "spaceTypes": [
-        "실내·외 촬영 조사 후보"
-      ],
-      "photoProfile": "거대한 떠 있는 지붕, 구조 트러스와 야간 LED를 프레임으로 활용하는 건축·야간·환경인물 촬영 후보.",
-      "visualStrengths": [
-        "대형 캔틸레버 빅루프",
-        "야간 색채 조명과 반사",
-        "하부 광장과 구조의 스케일"
-      ],
-      "bestConcepts": [
-        "미래적·기하학 패션",
-        "야간 인물 에디토리얼",
-        "건축과 퍼포먼스"
-      ],
-      "scoutPriority": 1,
-      "searchTerms": [
-        "부산 영화의전당 건축 공간 사진",
-        "부산 영화의전당 촬영 허가 상업촬영",
-        "부산 영화의전당 interior exterior photography"
-      ],
-      "aliases": [],
-      "summary": "대형 캔틸레버형 빅루프와 야외극장, 영상·공연 프로그램을 함께 갖춘 건축적 장소. 주간 구조와 야간 조명, 하부 공간의 레이어를 촬영 관점에서 살펴볼 가치가 있음.",
-      "address": "부산광역시 해운대구 수영강변대로 120",
-      "coordinates": null,
-      "officialUrl": "https://www.dureraum.org/",
-      "mapSearchQuery": "부산 영화의전당 부산 해운대구 수영강변대로 120",
-      "openingStatus": "운영·출입 조건 재확인 필요",
-      "shootingPermission": "공공 광장 이용과 전문·상업촬영은 다를 수 있으므로 시설별 촬영 허가·장비 제한 문의",
-      "parking": "미확인 · 운영기관 확인 필요",
-      "fee": "미확인 · 운영기관 확인 필요",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
-      "referenceImageId": "ref-busan-cinema-center-big-roof",
-      "imageCandidates": [
-        {
-          "id": "ref-busan-cinema-center-big-roof",
-          "title": "부산 영화의전당 빅루프 야간 조명",
-          "imageUrl": "https://www.visitbusan.net/archive/upload/2025/02/20/20250220170806136248_m.png",
-          "sourceThumbnail": "https://www.visitbusan.net/archive/upload/2025/02/20/20250220170806136248_m.png",
-          "sourcePageUrl": "https://www.visitbusan.net/archive/dataSearch/view.nm?dataSid=METADATA005306",
-          "sourceName": "부산관광아카이브 · 부산광역시",
-          "rights": "unknown",
-          "rightsLabel": "공공누리 제1유형 표기 · 출처·이용조건 확인",
-          "licenseUrl": "",
-          "placeMatch": "confirmed",
-          "viewType": "빅루프·야간 LED·건축 입면",
-          "notes": "부산관광아카이브에 공개된 실제 장소 사진. 출처 표기 및 해당 이미지의 공공누리 이용 조건을 최종 확인합니다.",
-          "status": "candidate",
-          "createdAt": "2026-10-14T00:00:00.000Z"
-        }
-      ],
-      "sourceRefs": [
-        {
-          "name": "부산관광아카이브 · 영화의전당",
-          "url": "https://www.visitbusan.net/archive/dataSearch/view.nm?dataSid=METADATA005306"
-        },
-        {
-          "name": "영화의전당 공식 사이트",
-          "url": "https://www.dureraum.org/"
-        }
-      ],
-      "verification": {
-        "location": "공식 또는 관리기관 출처 확인",
-        "photoMatch": "직접 장소 사진 후보 · 대표성 별도 판단",
-        "rights": "공공누리 제1유형 표기 · 출처·이용조건 확인",
-        "shootingPermission": "미확인 · 촬영 전 문의",
-        "lastCheckedAt": "2026-10-14"
-      },
-      "selectionStatus": "1차 조사 후보 · 현장 촬영 조건 확인 필요",
-      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다.",
-      "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
-      "photoPotentialScore": 94,
-      "photoScoreBreakdown": {
-        "distinctiveness": 30,
-        "compositionVariety": 19,
-        "lightAndTexture": 19,
-        "editorialVersatility": 18,
-        "indoorOutdoorFlexibility": 8
-      },
-      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/허가 검증 전",
-      "priorityLabel": "A · 우선 조사",
-      "selectionGate": {
-        "passesPhotoSpecificity": true,
-        "tourismPopularityUsedAsScore": false,
-        "rationale": "거대한 떠 있는 지붕, 구조 트러스와 야간 LED를 프레임으로 활용하는 건축·야간·환경인물 촬영 후보.",
-        "status": "desk-review"
-      },
-      "referenceImageStatus": "장소 참고사진 · 대표사진 승인 아님",
-      "shootingDetails": {
-        "permitCost": "상업촬영 허가 주체·예약 기한·촬영료·장비 반입 조건 확인",
-        "fieldNotes": "현장 동선과 촬영 가능 구역을 조사해야 합니다."
-      }
     },
     {
       "id": "nat-hapcheon-image-theme-park",
@@ -788,6 +710,10 @@
         {
           "name": "합천군 — 영상테마파크 이용 안내·사용료",
           "url": "https://www.hc.go.kr/06572/06699/06744.web"
+        },
+        {
+          "name": "경남영상자료관 장소 정보",
+          "url": "https://gnfilm.or.kr/location/show/787"
         }
       ],
       "verification": {
@@ -3755,6 +3681,22 @@
           "notes": "공식 드라마 스튜디오 시설 안내의 내부 사진입니다. 실제 시설과의 일치는 확인했지만 재사용 권리와 특정 촬영 구역의 대관 가능 여부는 별도 확인이 필요합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T05:00:00.000Z"
+        },
+        {
+          "id": "ref-cjenm-center-exterior-etoday",
+          "title": "CJ ENM 스튜디오 센터의 곡선형 진입 건축",
+          "imageUrl": "https://img.etoday.co.kr/pto_db/2022/07/20220705161747_1772743_1200_800.jpg",
+          "sourceThumbnail": "https://img.etoday.co.kr/pto_db/2022/07/20220705161747_1772743_1200_800.jpg",
+          "sourcePageUrl": "https://cjnews.cj.net/%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%96%A5-k%EC%BD%98%ED%85%90%EC%B8%A0-%EC%A0%9C%EC%9E%91%EC%9D%98-%EC%A4%91%EC%8B%AC%EC%A7%80brcj-enm-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-%EC%84%BC/",
+          "sourceName": "이투데이 · CJ ENM 스튜디오 센터 현장 사진",
+          "rights": "unknown",
+          "rightsLabel": "기사 이미지 · 재사용 권한 별도 확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "곡선 외피·산업건축",
+          "notes": "장소 외관을 보여주는 참고사진입니다. 제작 스테이지 내부를 대표하는 사진으로 간주하지 않습니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -3765,6 +3707,10 @@
         {
           "name": "CJ ENM Studio Center 오픈세트 안내",
           "url": "https://cjenmstudiocenter.com/html/facility/facility-openset.html"
+        },
+        {
+          "name": "CJ ENM Newsroom",
+          "url": "https://cjnews.cj.net/%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%96%A5-k%EC%BD%98%ED%85%90%EC%B8%A0-%EC%A0%9C%EC%9E%91%EC%9D%98-%EC%A4%91%EC%8B%AC%EC%A7%80brcj-enm-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-%EC%84%BC/"
         }
       ],
       "verification": {
@@ -3808,104 +3754,6 @@
       },
       "province": "경기",
       "regionGroup": "capital"
-    },
-    {
-      "id": "gg-cj-enm-studio-center",
-      "name": "CJ ENM 스튜디오 센터",
-      "region": "경기",
-      "province": "경기",
-      "regionGroup": "capital",
-      "locality": "파주 탄현면·통일동산",
-      "category": "대형 영상제작 스튜디오·버추얼 프로덕션",
-      "spaceTypes": [
-        "실내·외 촬영 조사 후보"
-      ],
-      "photoProfile": "대규모 미디어 제작 인프라, 스튜디오 외피와 가상 프로덕션 환경을 활용한 산업·기술·미래적 콘셉트 촬영 후보.",
-      "visualStrengths": [
-        "곡면 금속 외피와 큰 스케일",
-        "LED 기반 버추얼 프로덕션",
-        "실내 세트·도로형 촬영 인프라"
-      ],
-      "bestConcepts": [
-        "테크·미래적 패션 에디토리얼",
-        "프로덕션 비하인드·브랜드 영상",
-        "대형 무대형 세트"
-      ],
-      "scoutPriority": 1,
-      "searchTerms": [
-        "CJ ENM 스튜디오 센터 건축 공간 사진",
-        "CJ ENM 스튜디오 센터 촬영 허가 상업촬영",
-        "CJ ENM 스튜디오 센터 interior exterior photography"
-      ],
-      "aliases": [],
-      "summary": "실내 스튜디오, 오픈 세트, 멀티로드와 버추얼 프로덕션을 갖춘 대형 콘텐츠 제작 단지. 공개 관광지로 간주하지 않고 제작 협의·승인 가능성을 확인할 대상.",
-      "address": "경기도 파주시 탄현면 법흥리 통일동산 일대 · 정확한 진입구 및 동별 주소 문의",
-      "coordinates": null,
-      "officialUrl": "https://cjnews.cj.net/%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%96%A5-k%EC%BD%98%ED%85%90%EC%B8%A0-%EC%A0%9C%EC%9E%91%EC%9D%98-%EC%A4%91%EC%8B%AC%EC%A7%80brcj-enm-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-%EC%84%BC/",
-      "mapSearchQuery": "CJ ENM 스튜디오 센터 경기도 파주시 탄현면",
-      "openingStatus": "운영·출입 조건 재확인 필요",
-      "shootingPermission": "제작시설·대관·출입 승인 필요 여부를 운영기관에 문의",
-      "parking": "미확인 · 운영기관 확인 필요",
-      "fee": "미확인 · 운영기관 확인 필요",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
-      "referenceImageId": "ref-cj-enm-studio-center-exterior",
-      "imageCandidates": [
-        {
-          "id": "ref-cj-enm-studio-center-exterior",
-          "title": "CJ ENM 스튜디오 센터의 곡선형 진입 건축",
-          "imageUrl": "https://img.etoday.co.kr/pto_db/2022/07/20220705161747_1772743_1200_800.jpg",
-          "sourceThumbnail": "https://img.etoday.co.kr/pto_db/2022/07/20220705161747_1772743_1200_800.jpg",
-          "sourcePageUrl": "https://cjnews.cj.net/%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%96%A5-k%EC%BD%98%ED%85%90%EC%B8%A0-%EC%A0%9C%EC%9E%91%EC%9D%98-%EC%A4%91%EC%8B%AC%EC%A7%80brcj-enm-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-%EC%84%BC/",
-          "sourceName": "이투데이 · CJ ENM 스튜디오 센터 현장 사진",
-          "rights": "unknown",
-          "rightsLabel": "기사 이미지 · 재사용 권한 별도 확인",
-          "licenseUrl": "",
-          "placeMatch": "confirmed",
-          "viewType": "곡선 외피·산업건축",
-          "notes": "장소 외관을 보여주는 참고사진입니다. 제작 스테이지 내부를 대표하는 사진으로 간주하지 않습니다.",
-          "status": "candidate",
-          "createdAt": "2026-10-14T00:00:00.000Z"
-        }
-      ],
-      "sourceRefs": [
-        {
-          "name": "CJ ENM Newsroom",
-          "url": "https://cjnews.cj.net/%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%96%A5-k%EC%BD%98%ED%85%90%EC%B8%A0-%EC%A0%9C%EC%9E%91%EC%9D%98-%EC%A4%91%EC%8B%AC%EC%A7%80brcj-enm-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-%EC%84%BC/"
-        }
-      ],
-      "verification": {
-        "location": "공식 또는 관리기관 출처 확인",
-        "photoMatch": "직접 장소 사진 후보 · 대표성 별도 판단",
-        "rights": "기사 이미지 · 재사용 권한 별도 확인",
-        "shootingPermission": "미확인 · 촬영 전 문의",
-        "lastCheckedAt": "2026-10-14"
-      },
-      "selectionStatus": "1차 조사 후보 · 현장 촬영 조건 확인 필요",
-      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다.",
-      "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
-      "photoPotentialScore": 91,
-      "photoScoreBreakdown": {
-        "distinctiveness": 28,
-        "compositionVariety": 18,
-        "lightAndTexture": 18,
-        "editorialVersatility": 19,
-        "indoorOutdoorFlexibility": 8
-      },
-      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/허가 검증 전",
-      "priorityLabel": "A · 우선 조사",
-      "selectionGate": {
-        "passesPhotoSpecificity": true,
-        "tourismPopularityUsedAsScore": false,
-        "rationale": "대규모 미디어 제작 인프라, 스튜디오 외피와 가상 프로덕션 환경을 활용한 산업·기술·미래적 콘셉트 촬영 후보.",
-        "status": "desk-review"
-      },
-      "referenceImageStatus": "장소 참고사진 · 대표사진 승인 아님",
-      "shootingDetails": {
-        "permitCost": "상업촬영 허가 주체·예약 기한·촬영료·장비 반입 조건 확인",
-        "fieldNotes": "현장 동선과 촬영 가능 구역을 조사해야 합니다."
-      }
     },
     {
       "id": "nat-kikai-studio",
@@ -4378,6 +4226,22 @@
           "notes": "씨네21 현장 기사에서 전주영화종합촬영소를 식별할 수 있는 참고 이미지입니다. 시설 장소 확인용이며 대표사진 승인·재사용 권리 허가 상태는 아닙니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T05:00:00.000Z"
+        },
+        {
+          "id": "ref-jeonju-studio-exterior-filmkorea",
+          "title": "전주영화종합촬영소 J1 스튜디오 외관",
+          "imageUrl": "https://filmkorea.ecn.cdn.infralab.net/12/studio/dest/202306/10062.png",
+          "sourceThumbnail": "https://filmkorea.ecn.cdn.infralab.net/12/studio/dest/202306/10062.png",
+          "sourcePageUrl": "https://gfc.filmkorea.or.kr/studio/studio_view.jsp?id=10015",
+          "sourceName": "필름코리아 · 전주영화종합촬영소",
+          "rights": "unknown",
+          "rightsLabel": "사진 재사용 권한 별도 확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "촬영동 입면·산업시설",
+          "notes": "해당 촬영소의 스튜디오 건물을 보여주는 참고사진. 내부 이용이나 촬영 대관이 가능하다는 뜻은 아닙니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -4388,6 +4252,10 @@
         {
           "name": "씨네21 촬영소 현장 기사",
           "url": "https://cine21.com/news/view/?mag_id=108000"
+        },
+        {
+          "name": "필름코리아 · 전주영화종합촬영소",
+          "url": "https://gfc.filmkorea.or.kr/studio/studio_view.jsp?id=10015"
         }
       ],
       "verification": {
@@ -4431,206 +4299,6 @@
       },
       "province": "전북",
       "regionGroup": "jeolla"
-    },
-    {
-      "id": "jj-glass-house",
-      "name": "글라스하우스 · 섭지코지",
-      "region": "제주",
-      "province": "제주",
-      "regionGroup": "jeju",
-      "locality": "서귀포시 성산읍",
-      "category": "안도 다다오 건축·해안 파빌리온",
-      "spaceTypes": [
-        "실내·외 촬영 조사 후보"
-      ],
-      "photoProfile": "수평 유리 매스와 노출 콘크리트, 해안의 자연 지형이 만드는 대비를 이용하는 건축·패션·환경인물 촬영 후보.",
-      "visualStrengths": [
-        "수평으로 뻗은 유리 매스",
-        "노출 콘크리트와 해안 초지",
-        "건축과 수평선의 대비"
-      ],
-      "bestConcepts": [
-        "건축적 패션 에디토리얼",
-        "해안 환경인물",
-        "미니멀 캠페인·브랜드 영상"
-      ],
-      "scoutPriority": 1,
-      "searchTerms": [
-        "글라스하우스 · 섭지코지 건축 공간 사진",
-        "글라스하우스 · 섭지코지 촬영 허가 상업촬영",
-        "글라스하우스 · 섭지코지 interior exterior photography"
-      ],
-      "aliases": [],
-      "summary": "바다를 향해 열린 긴 유리·콘크리트 매스와 주변 해안 지형이 만나는 건축. 건축의 선, 바람과 빛, 바다 배경을 함께 프레이밍할 수 있는 후보.",
-      "address": "제주특별자치도 서귀포시 성산읍 섭지코지로 107 일대 · 시설 내 정확한 이용 구역 확인",
-      "coordinates": null,
-      "officialUrl": "https://www.phoenixhnr.co.kr/",
-      "mapSearchQuery": "섭지코지 글라스하우스 제주 서귀포시",
-      "openingStatus": "운영·출입 조건 재확인 필요",
-      "shootingPermission": "리조트·카페 운영공간의 영리 촬영, 조명·삼각대 및 내부 촬영 가능 여부를 사전 문의",
-      "parking": "미확인 · 운영기관 확인 필요",
-      "fee": "미확인 · 운영기관 확인 필요",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
-      "referenceImageId": "ref-glass-house-seopjikoji",
-      "imageCandidates": [
-        {
-          "id": "ref-glass-house-seopjikoji",
-          "title": "섭지코지 글라스하우스 외관",
-          "imageUrl": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202506%2F27%2Fjoongang%2F20250627003502383lywp.jpg",
-          "sourceThumbnail": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202506%2F27%2Fjoongang%2F20250627003502383lywp.jpg",
-          "sourcePageUrl": "https://www.joongang.co.kr/article/25332596",
-          "sourceName": "중앙일보 · 섭지코지 글라스하우스 건축 사진",
-          "rights": "unknown",
-          "rightsLabel": "재사용 권한 미확인",
-          "licenseUrl": "",
-          "placeMatch": "confirmed",
-          "viewType": "유리 파사드·수평 매스·해안 지형",
-          "notes": "글라스하우스 실제 외관을 보여주는 참고사진. 현재 운영 중인 내부 공간과 촬영 허가 여부는 별도 확인합니다.",
-          "status": "candidate",
-          "createdAt": "2026-10-14T00:00:00.000Z"
-        }
-      ],
-      "sourceRefs": [
-        {
-          "name": "중앙일보 · 글라스하우스 소개",
-          "url": "https://www.joongang.co.kr/article/25332596"
-        }
-      ],
-      "verification": {
-        "location": "공식 또는 관리기관 출처 확인",
-        "photoMatch": "직접 장소 사진 후보 · 대표성 별도 판단",
-        "rights": "재사용 권한 미확인",
-        "shootingPermission": "미확인 · 촬영 전 문의",
-        "lastCheckedAt": "2026-10-14"
-      },
-      "selectionStatus": "1차 조사 후보 · 현장 촬영 조건 확인 필요",
-      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다.",
-      "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
-      "photoPotentialScore": 91,
-      "photoScoreBreakdown": {
-        "distinctiveness": 29,
-        "compositionVariety": 18,
-        "lightAndTexture": 18,
-        "editorialVersatility": 18,
-        "indoorOutdoorFlexibility": 8
-      },
-      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/허가 검증 전",
-      "priorityLabel": "A · 우선 조사",
-      "selectionGate": {
-        "passesPhotoSpecificity": true,
-        "tourismPopularityUsedAsScore": false,
-        "rationale": "수평 유리 매스와 노출 콘크리트, 해안의 자연 지형이 만드는 대비를 이용하는 건축·패션·환경인물 촬영 후보.",
-        "status": "desk-review"
-      },
-      "referenceImageStatus": "장소 참고사진 · 대표사진 승인 아님",
-      "shootingDetails": {
-        "permitCost": "상업촬영 허가 주체·예약 기한·촬영료·장비 반입 조건 확인",
-        "fieldNotes": "현장 동선과 촬영 가능 구역을 조사해야 합니다."
-      }
-    },
-    {
-      "id": "jj-bonte-museum",
-      "name": "본태박물관",
-      "region": "제주",
-      "province": "제주",
-      "regionGroup": "jeju",
-      "locality": "서귀포시 안덕면",
-      "category": "안도 다다오 건축·중정·수면 반사",
-      "spaceTypes": [
-        "실내·외 촬영 조사 후보"
-      ],
-      "photoProfile": "수면·콘크리트 벽·격자 지붕의 대비와 기하학적 원근을 활용하는 미니멀 건축·패션 에디토리얼 후보.",
-      "visualStrengths": [
-        "수면 반사와 긴 원근",
-        "노출 콘크리트와 전통 기와의 대비",
-        "프레임형 입구와 반복선"
-      ],
-      "bestConcepts": [
-        "미니멀 패션·인물화보",
-        "건축 디테일·반사",
-        "정적이고 명상적인 에디토리얼"
-      ],
-      "scoutPriority": 1,
-      "searchTerms": [
-        "본태박물관 건축 공간 사진",
-        "본태박물관 촬영 허가 상업촬영",
-        "본태박물관 interior exterior photography"
-      ],
-      "aliases": [],
-      "summary": "노출 콘크리트, 전통 지붕의 변주, 수면 반사와 프레임형 개구부가 함께 나타나는 건축 공간. 건물의 선과 빛·물의 관계를 촬영 관점에서 조사할 가치가 높음.",
-      "address": "제주특별자치도 서귀포시 안덕면 산록남로762번길 69",
-      "coordinates": null,
-      "officialUrl": "https://www.bontemuseum.com/",
-      "mapSearchQuery": "본태박물관 제주 서귀포시 안덕면 산록남로762번길 69",
-      "openingStatus": "운영·출입 조건 재확인 필요",
-      "shootingPermission": "박물관 관람 규정과 상업 촬영·삼각대·조명 사용 가능 여부를 운영기관에 문의",
-      "parking": "미확인 · 운영기관 확인 필요",
-      "fee": "미확인 · 운영기관 확인 필요",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
-      "referenceImageId": "ref-bonte-museum-reflecting-pool",
-      "imageCandidates": [
-        {
-          "id": "ref-bonte-museum-reflecting-pool",
-          "title": "본태박물관 수면 반사와 콘크리트 건축",
-          "imageUrl": "https://www.jungle.co.kr/image/108f2f90476cad325fb82664",
-          "sourceThumbnail": "https://www.jungle.co.kr/image/108f2f90476cad325fb82664",
-          "sourcePageUrl": "https://www.jungle.co.kr/magazine/203161",
-          "sourceName": "Jungle · 본태박물관 건축 사진",
-          "rights": "unknown",
-          "rightsLabel": "재사용 권한 미확인",
-          "licenseUrl": "",
-          "placeMatch": "confirmed",
-          "viewType": "수면 반사·콘크리트·전통 지붕",
-          "notes": "본태박물관 건축과 반사 수면을 보여주는 참고사진. 대표사진 여부와 이미지 재사용 권한은 별도 판단합니다.",
-          "status": "candidate",
-          "createdAt": "2026-10-14T00:00:00.000Z"
-        }
-      ],
-      "sourceRefs": [
-        {
-          "name": "본태박물관 안내 채널",
-          "url": "https://pf.kakao.com/_qKbgxj"
-        },
-        {
-          "name": "Jungle · 제주 건축 소개",
-          "url": "https://www.jungle.co.kr/magazine/203161"
-        }
-      ],
-      "verification": {
-        "location": "공식 또는 관리기관 출처 확인",
-        "photoMatch": "직접 장소 사진 후보 · 대표성 별도 판단",
-        "rights": "재사용 권한 미확인",
-        "shootingPermission": "미확인 · 촬영 전 문의",
-        "lastCheckedAt": "2026-10-14"
-      },
-      "selectionStatus": "1차 조사 후보 · 현장 촬영 조건 확인 필요",
-      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다.",
-      "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
-      "photoPotentialScore": 93,
-      "photoScoreBreakdown": {
-        "distinctiveness": 29,
-        "compositionVariety": 18,
-        "lightAndTexture": 20,
-        "editorialVersatility": 18,
-        "indoorOutdoorFlexibility": 8
-      },
-      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/허가 검증 전",
-      "priorityLabel": "A · 우선 조사",
-      "selectionGate": {
-        "passesPhotoSpecificity": true,
-        "tourismPopularityUsedAsScore": false,
-        "rationale": "수면·콘크리트 벽·격자 지붕의 대비와 기하학적 원근을 활용하는 미니멀 건축·패션 에디토리얼 후보.",
-        "status": "desk-review"
-      },
-      "referenceImageStatus": "장소 참고사진 · 대표사진 승인 아님",
-      "shootingDetails": {
-        "permitCost": "상업촬영 허가 주체·예약 기한·촬영료·장비 반입 조건 확인",
-        "fieldNotes": "현장 동선과 촬영 가능 구역을 조사해야 합니다."
-      }
     },
     {
       "id": "nat-jeju-glass-house-seopjikoji",
@@ -4696,6 +4364,22 @@
           "notes": "학술 논문에 수록된 글라스하우스 실물 사진으로, 건축과 해안 위치를 식별하기 위한 참고 이미지입니다. 사진 저작권은 학술지 정책을 따라 별도 확인하고, 대표사진은 후속 선정합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T09:30:00.000Z"
+        },
+        {
+          "id": "ref-jeju-glass-house-joongang-2025",
+          "title": "섭지코지 글라스하우스 외관",
+          "imageUrl": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202506%2F27%2Fjoongang%2F20250627003502383lywp.jpg",
+          "sourceThumbnail": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fnews%2F202506%2F27%2Fjoongang%2F20250627003502383lywp.jpg",
+          "sourcePageUrl": "https://www.joongang.co.kr/article/25332596",
+          "sourceName": "중앙일보 · 섭지코지 글라스하우스 건축 사진",
+          "rights": "unknown",
+          "rightsLabel": "재사용 권한 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "유리 파사드·수평 매스·해안 지형",
+          "notes": "글라스하우스 실제 외관을 보여주는 참고사진. 현재 운영 중인 내부 공간과 촬영 허가 여부는 별도 확인합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -4706,6 +4390,10 @@
         {
           "name": "한국생태환경건축학회지 — 안도 다다오의 글래스 하우스의 건축계획 특성",
           "url": "https://kieae.kr/_PR/view/?aidx=38891&bidx=3719"
+        },
+        {
+          "name": "중앙일보 · 글라스하우스 소개",
+          "url": "https://www.joongang.co.kr/article/25332596"
         }
       ],
       "verification": {
@@ -4856,104 +4544,6 @@
       "regionGroup": "chungcheong"
     },
     {
-      "id": "dae-studio-cube",
-      "name": "스튜디오 큐브",
-      "region": "대전",
-      "province": "대전",
-      "regionGroup": "chungcheong",
-      "locality": "유성구",
-      "category": "대형 방송·가상 프로덕션 스튜디오",
-      "spaceTypes": [
-        "실내·외 촬영 조사 후보"
-      ],
-      "photoProfile": "대형 LED 스테이지, 반사 바닥, 조명·리깅 구조를 활용하는 버추얼 프로덕션과 기술 기반 촬영 후보.",
-      "visualStrengths": [
-        "대형 곡면 LED 월",
-        "광택 바닥 반사",
-        "오버헤드 리깅과 조명 구조"
-      ],
-      "bestConcepts": [
-        "SF·미래적 패션 에디토리얼",
-        "가상 프로덕션 브랜드 영상",
-        "실내 환경인물"
-      ],
-      "scoutPriority": 1,
-      "searchTerms": [
-        "스튜디오 큐브 건축 공간 사진",
-        "스튜디오 큐브 촬영 허가 상업촬영",
-        "스튜디오 큐브 interior exterior photography"
-      ],
-      "aliases": [],
-      "summary": "대전의 전문 영상 제작시설로, 가상 프로덕션과 대형 LED 월을 활용한 실내 촬영 후보. 일반 방문·개인 촬영 장소로 가정하지 않고 제작 협의·출입 조건을 확인해야 함.",
-      "address": "대전광역시 유성구 일대 · 세부 출입구·대관 문의",
-      "coordinates": null,
-      "officialUrl": "https://www.kofic.or.kr/",
-      "mapSearchQuery": "스튜디오 큐브 대전 유성구",
-      "openingStatus": "운영·출입 조건 재확인 필요",
-      "shootingPermission": "전문 제작시설이므로 대관·시설 사용·촬영 허가를 사전 문의",
-      "parking": "미확인 · 운영기관 확인 필요",
-      "fee": "미확인 · 운영기관 확인 필요",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
-      "referenceImageId": "ref-studio-cube-virtual-stage",
-      "imageCandidates": [
-        {
-          "id": "ref-studio-cube-virtual-stage",
-          "title": "스튜디오 큐브 가상 프로덕션 스테이지",
-          "imageUrl": "https://news.nateimg.co.kr/orgImg/na/2025/12/03/7631606_high.jpg",
-          "sourceThumbnail": "https://news.nateimg.co.kr/orgImg/na/2025/12/03/7631606_high.jpg",
-          "sourcePageUrl": "https://news.nate.com/view/20251203n04871",
-          "sourceName": "뉴스1 보도 · 스튜디오 큐브 가상 스튜디오",
-          "rights": "unknown",
-          "rightsLabel": "기사 이미지 · 재사용 권한 별도 확인",
-          "licenseUrl": "",
-          "placeMatch": "confirmed",
-          "viewType": "곡면 LED 스테이지·반사 바닥",
-          "notes": "스튜디오 큐브의 실제 가상 프로덕션 스테이지 참고 이미지. 장비 배치와 이용 가능 여부는 현장 확인 전입니다.",
-          "status": "candidate",
-          "createdAt": "2026-10-14T00:00:00.000Z"
-        }
-      ],
-      "sourceRefs": [
-        {
-          "name": "스튜디오 큐브 관련 보도(2025)",
-          "url": "https://news.nate.com/view/20251203n04871"
-        }
-      ],
-      "verification": {
-        "location": "공식 또는 관리기관 출처 확인",
-        "photoMatch": "직접 장소 사진 후보 · 대표성 별도 판단",
-        "rights": "기사 이미지 · 재사용 권한 별도 확인",
-        "shootingPermission": "미확인 · 촬영 전 문의",
-        "lastCheckedAt": "2026-10-14"
-      },
-      "selectionStatus": "1차 조사 후보 · 현장 촬영 조건 확인 필요",
-      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다.",
-      "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
-      "photoPotentialScore": 90,
-      "photoScoreBreakdown": {
-        "distinctiveness": 27,
-        "compositionVariety": 18,
-        "lightAndTexture": 18,
-        "editorialVersatility": 19,
-        "indoorOutdoorFlexibility": 8
-      },
-      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/허가 검증 전",
-      "priorityLabel": "A · 우선 조사",
-      "selectionGate": {
-        "passesPhotoSpecificity": true,
-        "tourismPopularityUsedAsScore": false,
-        "rationale": "대형 LED 스테이지, 반사 바닥, 조명·리깅 구조를 활용하는 버추얼 프로덕션과 기술 기반 촬영 후보.",
-        "status": "desk-review"
-      },
-      "referenceImageStatus": "장소 참고사진 · 대표사진 승인 아님",
-      "shootingDetails": {
-        "permitCost": "상업촬영 허가 주체·예약 기한·촬영료·장비 반입 조건 확인",
-        "fieldNotes": "현장 동선과 촬영 가능 구역을 조사해야 합니다."
-      }
-    },
-    {
       "id": "nat-haslla-artworld",
       "name": "하슬라아트월드",
       "region": "강원 강릉",
@@ -5062,104 +4652,6 @@
       },
       "province": "강원",
       "regionGroup": "gangwon"
-    },
-    {
-      "id": "gn-hapcheon-video-themepark",
-      "name": "합천 영상테마파크",
-      "region": "경남",
-      "province": "경남",
-      "regionGroup": "gyeongsang",
-      "locality": "합천군",
-      "category": "영화·드라마 대형 오픈세트",
-      "spaceTypes": [
-        "실내·외 촬영 조사 후보"
-      ],
-      "photoProfile": "세트 거리, 복고 건축 입면, 노면 선형과 빈 공간을 이용해 장면을 구성하는 시대극·광고 촬영 후보.",
-      "visualStrengths": [
-        "시대극용 거리 세트",
-        "벽돌·석재·간판의 재료감",
-        "골목과 도로의 소실점"
-      ],
-      "bestConcepts": [
-        "시대극 인물화보",
-        "레트로 광고·뮤직비디오",
-        "영화적 환경인물"
-      ],
-      "scoutPriority": 2,
-      "searchTerms": [
-        "합천 영상테마파크 건축 공간 사진",
-        "합천 영상테마파크 촬영 허가 상업촬영",
-        "합천 영상테마파크 interior exterior photography"
-      ],
-      "aliases": [],
-      "summary": "시대별 건물과 거리 세트를 활용할 수 있는 영상 촬영 시설. 세트의 미장센을 바탕으로 시대극·광고·뮤직비디오의 장면 구성 가능성을 살펴봄.",
-      "address": "경상남도 합천군 용주면 합천호수로 757 일대 · 현 운영 주소 재확인",
-      "coordinates": null,
-      "officialUrl": "https://www.hc.go.kr/",
-      "mapSearchQuery": "합천 영상테마파크 경남 합천군",
-      "openingStatus": "운영·출입 조건 재확인 필요",
-      "shootingPermission": "세트별 출입 통제·촬영 대관·상업 이용과 장비 반입을 사전 문의",
-      "parking": "미확인 · 운영기관 확인 필요",
-      "fee": "미확인 · 운영기관 확인 필요",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
-      "referenceImageId": "ref-hapcheon-video-themepark-street",
-      "imageCandidates": [
-        {
-          "id": "ref-hapcheon-video-themepark-street",
-          "title": "합천 영상테마파크 시대극 거리 세트",
-          "imageUrl": "https://d3dw8tcr45iwl6.cloudfront.net/upload/20211002132934hp-themepark_02.jpg",
-          "sourceThumbnail": "https://d3dw8tcr45iwl6.cloudfront.net/upload/20211002132934hp-themepark_02.jpg",
-          "sourcePageUrl": "https://gnfilm.or.kr/location/show/787",
-          "sourceName": "경남영상자료관 · 합천 영상테마파크 사진",
-          "rights": "unknown",
-          "rightsLabel": "재사용 권한 미확인",
-          "licenseUrl": "",
-          "placeMatch": "confirmed",
-          "viewType": "시대극 거리·전차 선로형 소실점",
-          "notes": "실제 세트 거리의 참고사진이며, 개별 세트 이용·상업촬영 허가를 의미하지 않습니다.",
-          "status": "candidate",
-          "createdAt": "2026-10-14T00:00:00.000Z"
-        }
-      ],
-      "sourceRefs": [
-        {
-          "name": "경남영상자료관 장소 정보",
-          "url": "https://gnfilm.or.kr/location/show/787"
-        }
-      ],
-      "verification": {
-        "location": "공식 또는 관리기관 출처 확인",
-        "photoMatch": "직접 장소 사진 후보 · 대표성 별도 판단",
-        "rights": "재사용 권한 미확인",
-        "shootingPermission": "미확인 · 촬영 전 문의",
-        "lastCheckedAt": "2026-10-14"
-      },
-      "selectionStatus": "1차 조사 후보 · 현장 촬영 조건 확인 필요",
-      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다.",
-      "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
-      "photoPotentialScore": 83,
-      "photoScoreBreakdown": {
-        "distinctiveness": 24,
-        "compositionVariety": 17,
-        "lightAndTexture": 17,
-        "editorialVersatility": 18,
-        "indoorOutdoorFlexibility": 7
-      },
-      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/허가 검증 전",
-      "priorityLabel": "B · 보완 조사",
-      "selectionGate": {
-        "passesPhotoSpecificity": true,
-        "tourismPopularityUsedAsScore": false,
-        "rationale": "세트 거리, 복고 건축 입면, 노면 선형과 빈 공간을 이용해 장면을 구성하는 시대극·광고 촬영 후보.",
-        "status": "desk-review"
-      },
-      "referenceImageStatus": "장소 참고사진 · 대표사진 승인 아님",
-      "shootingDetails": {
-        "permitCost": "상업촬영 허가 주체·예약 기한·촬영료·장비 반입 조건 확인",
-        "fieldNotes": "현장 동선과 촬영 가능 구역을 조사해야 합니다."
-      }
     },
     {
       "id": "seo-mmca",
@@ -6322,6 +5814,22 @@
           "notes": "기사 사진에서 순천 드라마촬영장의 시대극용 거리 세트를 식별할 수 있습니다. 세트 내 촬영 가능 여부와 사진 재사용 권리는 별도 확인해야 합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T05:00:00.000Z"
+        },
+        {
+          "id": "ref-suncheon-drama-set-kto",
+          "title": "순천 드라마촬영장 시대극 거리 세트",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/26/4066426_image2_1.jpg",
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/26/4066426_image2_1.jpg",
+          "sourcePageUrl": "https://www.wegive.co.kr/contents/wetownDetail/2469439",
+          "sourceName": "한국관광공사 사진 자료 · 순천 드라마촬영장",
+          "rights": "unknown",
+          "rightsLabel": "재사용 권한 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "레트로 거리 세트·상점 파사드",
+          "notes": "드라마촬영장으로 확인되는 거리 세트의 참고 이미지. 실제 세부 구역과 현재 촬영 조건은 별도 확인합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -6332,6 +5840,10 @@
         {
           "name": "순천 드라마촬영장 기사",
           "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=920328"
+        },
+        {
+          "name": "순천 드라마촬영장 정보",
+          "url": "https://www.wegive.co.kr/contents/wetownDetail/2469439"
         }
       ],
       "verification": {
@@ -6375,202 +5887,6 @@
       },
       "province": "전남",
       "regionGroup": "jeolla"
-    },
-    {
-      "id": "jn-suncheon-drama-set",
-      "name": "순천 드라마촬영장",
-      "region": "전남",
-      "province": "전남",
-      "regionGroup": "jeolla",
-      "locality": "순천시",
-      "category": "영화·드라마 오픈세트",
-      "spaceTypes": [
-        "실내·외 촬영 조사 후보"
-      ],
-      "photoProfile": "낡은 상가 입면, 좁은 거리, 전선과 간판의 레이어를 이용하는 레트로·시대극·환경인물 촬영 후보.",
-      "visualStrengths": [
-        "시대별 거리와 상점 파사드",
-        "좁은 골목의 소실점",
-        "낡은 재료와 간판 레이어"
-      ],
-      "bestConcepts": [
-        "레트로 패션·시대극 콘셉트",
-        "뮤직비디오·광고 장면",
-        "환경인물과 거리 서사"
-      ],
-      "scoutPriority": 2,
-      "searchTerms": [
-        "순천 드라마촬영장 건축 공간 사진",
-        "순천 드라마촬영장 촬영 허가 상업촬영",
-        "순천 드라마촬영장 interior exterior photography"
-      ],
-      "aliases": [],
-      "summary": "시대별 골목과 건축 세트가 조성된 촬영 장소. 단순 관광지라기보다 시대극·레트로 장면을 구성할 수 있는 제작 세트라는 목적을 중심으로 촬영 구간을 조사.",
-      "address": "전라남도 순천시 비례골길 24 · 정확한 운영·출입 조건 재확인",
-      "coordinates": null,
-      "officialUrl": "https://www.wegive.co.kr/contents/wetownDetail/2469439",
-      "mapSearchQuery": "순천 드라마촬영장 전라남도 순천시",
-      "openingStatus": "운영·출입 조건 재확인 필요",
-      "shootingPermission": "일반 관람·현장 스냅과 상업촬영·세트 점유·장비 반입은 별도 조건 확인",
-      "parking": "미확인 · 운영기관 확인 필요",
-      "fee": "미확인 · 운영기관 확인 필요",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
-      "referenceImageId": "ref-suncheon-drama-set-street",
-      "imageCandidates": [
-        {
-          "id": "ref-suncheon-drama-set-street",
-          "title": "순천 드라마촬영장 시대극 거리 세트",
-          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/26/4066426_image2_1.jpg",
-          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/26/4066426_image2_1.jpg",
-          "sourcePageUrl": "https://www.wegive.co.kr/contents/wetownDetail/2469439",
-          "sourceName": "한국관광공사 사진 자료 · 순천 드라마촬영장",
-          "rights": "unknown",
-          "rightsLabel": "재사용 권한 미확인",
-          "licenseUrl": "",
-          "placeMatch": "confirmed",
-          "viewType": "레트로 거리 세트·상점 파사드",
-          "notes": "드라마촬영장으로 확인되는 거리 세트의 참고 이미지. 실제 세부 구역과 현재 촬영 조건은 별도 확인합니다.",
-          "status": "candidate",
-          "createdAt": "2026-10-14T00:00:00.000Z"
-        }
-      ],
-      "sourceRefs": [
-        {
-          "name": "순천 드라마촬영장 정보",
-          "url": "https://www.wegive.co.kr/contents/wetownDetail/2469439"
-        }
-      ],
-      "verification": {
-        "location": "공식 또는 관리기관 출처 확인",
-        "photoMatch": "직접 장소 사진 후보 · 대표성 별도 판단",
-        "rights": "재사용 권한 미확인",
-        "shootingPermission": "미확인 · 촬영 전 문의",
-        "lastCheckedAt": "2026-10-14"
-      },
-      "selectionStatus": "1차 조사 후보 · 현장 촬영 조건 확인 필요",
-      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다.",
-      "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
-      "photoPotentialScore": 82,
-      "photoScoreBreakdown": {
-        "distinctiveness": 23,
-        "compositionVariety": 17,
-        "lightAndTexture": 17,
-        "editorialVersatility": 18,
-        "indoorOutdoorFlexibility": 7
-      },
-      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/허가 검증 전",
-      "priorityLabel": "B · 보완 조사",
-      "selectionGate": {
-        "passesPhotoSpecificity": true,
-        "tourismPopularityUsedAsScore": false,
-        "rationale": "낡은 상가 입면, 좁은 거리, 전선과 간판의 레이어를 이용하는 레트로·시대극·환경인물 촬영 후보.",
-        "status": "desk-review"
-      },
-      "referenceImageStatus": "장소 참고사진 · 대표사진 승인 아님",
-      "shootingDetails": {
-        "permitCost": "상업촬영 허가 주체·예약 기한·촬영료·장비 반입 조건 확인",
-        "fieldNotes": "현장 동선과 촬영 가능 구역을 조사해야 합니다."
-      }
-    },
-    {
-      "id": "jb-jeonju-film-studio",
-      "name": "전주영화종합촬영소",
-      "region": "전북",
-      "province": "전북",
-      "regionGroup": "jeolla",
-      "locality": "전주시",
-      "category": "영화 제작·촬영 스튜디오",
-      "spaceTypes": [
-        "실내·외 촬영 조사 후보"
-      ],
-      "photoProfile": "대형 제작시설의 입면과 촬영 인프라를 기록하고, 제작 승인 시 실내 세트·현장 동선 기반 촬영을 검토할 후보.",
-      "visualStrengths": [
-        "전문 촬영동의 산업적 입면",
-        "제작시설과 장비 이동 동선",
-        "세트·실내 촬영 인프라(접근 승인 필요)"
-      ],
-      "bestConcepts": [
-        "영화 제작 비하인드",
-        "산업·프로덕션 공간 사진",
-        "세트 기반 콘셉트 촬영"
-      ],
-      "scoutPriority": 2,
-      "searchTerms": [
-        "전주영화종합촬영소 건축 공간 사진",
-        "전주영화종합촬영소 촬영 허가 상업촬영",
-        "전주영화종합촬영소 interior exterior photography"
-      ],
-      "aliases": [],
-      "summary": "영화 촬영을 위한 전문 시설. 일반 실외 촬영지와 달리 스튜디오·세트 이용은 사전 협의가 필요한 제작 기반 시설로 분리해 기록.",
-      "address": "전북특별자치도 전주시 일대 · 세부 진입 주소와 대관은 운영기관 확인",
-      "coordinates": null,
-      "officialUrl": "https://gfc.filmkorea.or.kr/studio/studio_view.jsp?id=10015",
-      "mapSearchQuery": "전주영화종합촬영소 전주시",
-      "openingStatus": "운영·출입 조건 재확인 필요",
-      "shootingPermission": "촬영 시설 이용 및 내부 진입은 운영기관·제작 일정에 따라 사전 승인 필요",
-      "parking": "미확인 · 운영기관 확인 필요",
-      "fee": "미확인 · 운영기관 확인 필요",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
-      "referenceImageId": "ref-jeonju-film-studio-exterior",
-      "imageCandidates": [
-        {
-          "id": "ref-jeonju-film-studio-exterior",
-          "title": "전주영화종합촬영소 J1 스튜디오 외관",
-          "imageUrl": "https://filmkorea.ecn.cdn.infralab.net/12/studio/dest/202306/10062.png",
-          "sourceThumbnail": "https://filmkorea.ecn.cdn.infralab.net/12/studio/dest/202306/10062.png",
-          "sourcePageUrl": "https://gfc.filmkorea.or.kr/studio/studio_view.jsp?id=10015",
-          "sourceName": "필름코리아 · 전주영화종합촬영소",
-          "rights": "unknown",
-          "rightsLabel": "사진 재사용 권한 별도 확인",
-          "licenseUrl": "",
-          "placeMatch": "confirmed",
-          "viewType": "촬영동 입면·산업시설",
-          "notes": "해당 촬영소의 스튜디오 건물을 보여주는 참고사진. 내부 이용이나 촬영 대관이 가능하다는 뜻은 아닙니다.",
-          "status": "candidate",
-          "createdAt": "2026-10-14T00:00:00.000Z"
-        }
-      ],
-      "sourceRefs": [
-        {
-          "name": "필름코리아 · 전주영화종합촬영소",
-          "url": "https://gfc.filmkorea.or.kr/studio/studio_view.jsp?id=10015"
-        }
-      ],
-      "verification": {
-        "location": "공식 또는 관리기관 출처 확인",
-        "photoMatch": "직접 장소 사진 후보 · 대표성 별도 판단",
-        "rights": "사진 재사용 권한 별도 확인",
-        "shootingPermission": "미확인 · 촬영 전 문의",
-        "lastCheckedAt": "2026-10-14"
-      },
-      "selectionStatus": "1차 조사 후보 · 현장 촬영 조건 확인 필요",
-      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다.",
-      "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
-      "photoPotentialScore": 79,
-      "photoScoreBreakdown": {
-        "distinctiveness": 20,
-        "compositionVariety": 16,
-        "lightAndTexture": 15,
-        "editorialVersatility": 19,
-        "indoorOutdoorFlexibility": 9
-      },
-      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/허가 검증 전",
-      "priorityLabel": "B · 보완 조사",
-      "selectionGate": {
-        "passesPhotoSpecificity": true,
-        "tourismPopularityUsedAsScore": false,
-        "rationale": "대형 제작시설의 입면과 촬영 인프라를 기록하고, 제작 승인 시 실내 세트·현장 동선 기반 촬영을 검토할 후보.",
-        "status": "desk-review"
-      },
-      "referenceImageStatus": "장소 참고사진 · 대표사진 승인 아님",
-      "shootingDetails": {
-        "permitCost": "상업촬영 허가 주체·예약 기한·촬영료·장비 반입 조건 확인",
-        "fieldNotes": "현장 동선과 촬영 가능 구역을 조사해야 합니다."
-      }
     },
     {
       "id": "jj-bangju-church",
@@ -6742,6 +6058,10 @@
         {
           "name": "Jungle 건축·디자인 매거진",
           "url": "https://www.jungle.co.kr/magazine/203161"
+        },
+        {
+          "name": "본태박물관 안내 채널",
+          "url": "https://pf.kakao.com/_qKbgxj"
         }
       ],
       "verification": {
