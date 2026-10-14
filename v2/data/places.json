@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "서울·수도권 전문 사진촬영 로케이션 1차 후보",
-  "dataStatus": "서울·경기·인천 38개 현재 촬영 후보. 장소별 사진은 참고 이미지 후보이며, 실제 장소 일치·재사용 권리·운영·촬영 허가는 각각 별도 확인 대상.",
+  "dataStatus": "서울·경기·인천 38개 현재 촬영 후보. 장소별 사진은 참고 이미지 후보이며, 실제 장소 일치·재사용 권리·운영·촬영 허가는 각각 별도 확인 대상. 서울생활사박물관 실내 상업촬영·플래시·삼각대 금지 등 확인된 제약을 반영.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
   "updatedAt": "2026-10-14T00:00:00.000Z",
   "places": [
@@ -541,7 +541,8 @@
       "constraints": [
         "현재 운영·전시 여부",
         "촬영 허가",
-        "플래시·삼각대 제한"
+        "플래시·삼각대 제한",
+        "전시 개최 기간에만 방문 가능 — 운영 중인 전시를 공식 홈페이지에서 확인"
       ],
       "scoutPriority": 3,
       "searchTerms": [
@@ -551,11 +552,11 @@
       ],
       "aliases": [],
       "summary": "낮은 천장과 원형·거친 실내 구조를 활용할 수 있는 특수 분위기 공간 후보",
-      "address": "서울특별시 영등포구 여의도동 2-11",
+      "address": "서울특별시 영등포구 여의대로 지하 76",
       "coordinates": null,
-      "officialUrl": "https://sema.seoul.go.kr/kr/visit/sema_bunker",
+      "officialUrl": "https://sema.seoul.go.kr/kr/",
       "openingStatus": "운영 종료 (2025-01-13) · 재개관 여부 확인 필요",
-      "shootingPermission": "운영 종료 확인 · 재개관 및 촬영 허가 확인 전 후보에서 제외",
+      "shootingPermission": "SeMA 벙커는 전시 개최 기간에만 관람 가능. 촬영·시설 이용은 공식 안내와 관리부서 확인 필요.",
       "parking": "미확인",
       "fee": "미확인",
       "imageStatus": "미등록",
@@ -633,7 +634,7 @@
       },
       "referenceImageId": "ref-sema-bunker-gallery-grid",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
-      "phone": "02-2124-8946"
+      "phone": "02-2124-8817"
     },
     {
       "id": "seo-sewoon",
@@ -4207,9 +4208,9 @@
       ],
       "aliases": [],
       "summary": "근대 건축 외벽과 골목을 활용해 유럽풍·레트로 에디토리얼 배경을 조사할 후보",
-      "address": "인천광역시 중구 중앙동1가 개항장 문화지구 일대",
+      "address": "인천광역시 제물포구 관동1가 개항장 거리 일대",
       "coordinates": null,
-      "officialUrl": "https://eng-itour.incheon.go.kr/cmn/board/BBSMSTR_000000000080/3009bbsDetail.do",
+      "officialUrl": "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=APD21112609214993209",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -4221,7 +4222,7 @@
           "id": "ref-incheon-openport-brick-street",
           "title": "인천 개항장 거리의 근대건축·벽돌 골목",
           "imageUrl": "https://eng-itour.incheon.go.kr/storytelling/storytelling_db/2/1.jpg",
-          "sourcePageUrl": "https://eng-itour.incheon.go.kr/cmn/board/BBSMSTR_000000000080/3009bbsDetail.do",
+          "sourcePageUrl": "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=APD21112609214993209",
           "sourceName": "인천투어 공식 · 개항 누리길",
           "creator": "인천관광공사",
           "rights": "unknown",
@@ -4229,7 +4230,7 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "근대건축·벽돌·골목",
-          "notes": "인천투어 공식 소개 페이지의 고정 JPG 경로로 교체했습니다. 기존 API 이미지 주소보다 변동성이 낮은 정적 이미지 주소를 우선하되, 이미지 로드와 재사용 권리는 별도로 확인합니다.",
+          "notes": "인천투어 공식 개항장 거리 소개의 정적 JPG 경로를 사용합니다. 직접 JPG는 현재 확인했으며, 로드 실패 시 이미지 대체 로직으로 다음 후보를 시도합니다. 실제 장소 일치/재사용 권리는 별도 확인 대상입니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z",
           "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Feng-itour.incheon.go.kr%2Fstorytelling%2Fstorytelling_db%2F2%2F1.jpg&w=900&h=650&fit=inside&output=webp",
@@ -4312,7 +4313,7 @@
         "rationale": "근대 건축 외벽과 골목을 활용해 유럽풍·레트로 에디토리얼 배경을 조사할 후보",
         "status": "desk-review"
       },
-      "mapSearchQuery": "인천광역시 중구 중앙동1가 개항장 문화지구 인천개항박물관",
+      "mapSearchQuery": "인천광역시 제물포구 관동1가 개항장 거리 인천개항박물관",
       "referenceImageId": "ref-incheon-openport-brick-street",
       "referenceImageStatus": "인천투어 공식 참고사진 · 로드 대체 후보 3종 · 재사용 권리 미확인",
       "shootingDetails": {
@@ -4404,7 +4405,7 @@
           "85mm: 창호·벽돌·간판 디테일"
         ]
       },
-      "phone": "032-760-6448"
+      "phone": ""
     },
     {
       "id": "ic-baedari",
@@ -4975,9 +4976,9 @@
       "region": "서울",
       "category": "공공건축 재생·도시생활 아카이브",
       "spaceTypes": [
-        "실내",
-        "외관",
-        "마당"
+        "야외 외관",
+        "마당·입구",
+        "실내 관람(촬영 제한)"
       ],
       "photoProfile": "옛 공공시설을 문화공간으로 전환한 건축과 단정한 입면, 실내 아카이브 전시를 배경으로 기록·에디토리얼 촬영을 검토할 장소.",
       "visualStrengths": [
@@ -4991,9 +4992,9 @@
         "건축선·창호 중심 환경 인물 사진"
       ],
       "constraints": [
-        "전시실 촬영 및 삼각대·플래시 제한 확인",
-        "관람객·전시물 촬영 조건 확인",
-        "상업 촬영과 공간 대관은 박물관에 별도 문의"
+        "공식 관람안내: 박물관 실내의 상업적 촬영 금지",
+        "공식 관람안내: 플래시·삼각대 촬영 금지",
+        "외관·공공 영역 촬영은 장소 및 관리 주체의 규정에 따라 별도 확인"
       ],
       "scoutPriority": 2,
       "searchTerms": [
@@ -5008,7 +5009,7 @@
       "officialUrl": "https://museum.seoul.go.kr/sulm/index.do",
       "phone": "02-3399-2900",
       "openingStatus": "화~일 09:00~18:00 안내 · 월요일 휴관, 최신 운영정보 확인",
-      "shootingPermission": "전시실·상업촬영·장비 사용 사전 문의",
+      "shootingPermission": "실내 상업촬영·플래시·삼각대 사용 금지(공식 관람안내). 외관 등 촬영은 관리 주체에 사전 확인.",
       "parking": "미확인",
       "fee": "미확인",
       "imageStatus": "미등록",
@@ -5036,8 +5037,8 @@
       ],
       "sourceRefs": [
         {
-          "name": "공식 운영정보",
-          "url": "https://museum.seoul.go.kr/sulm/index.do"
+          "name": "서울생활사박물관 공식 홈페이지·관람안내",
+          "url": "https://museum.seoul.go.kr/sulm/information/viewGuide/viewGuide2th.jsp"
         }
       ],
       "verification": {
@@ -5104,9 +5105,9 @@
         "indoorBackup": "우천·강풍 대체 장소 검토",
         "crowdTiming": "혼잡 시간 및 행사 일정 확인",
         "equipmentRestrictions": "삼각대·조명·드론 반입 조건 확인",
-        "permitCost": "허가 주체·예약·촬영료·보증금 조건 확인",
+        "permitCost": "실내 상업 촬영·플래시·삼각대 사용 금지(공식 관람안내). 외부 공간 촬영도 현장 규정과 관리 주체 확인.",
         "restoration": "청소·원상복구·시설물 접촉 조건 확인",
-        "contact": "촬영 허가와 장비 반입 조건을 담당 부서에 확인",
+        "contact": "공식 홈페이지 관람안내 확인: 실내 상업촬영·플래시·삼각대 제한. 외관 촬영 문의는 박물관 안내전화 02-3399-2900.",
         "fieldNotes": "참고사진은 촬영 기획용 후보입니다. 재사용 권리와 촬영 허가를 확인하기 전에는 확정하지 마세요.",
         "lastFieldCheck": "미확인"
       }
