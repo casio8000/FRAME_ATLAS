@@ -32,6 +32,10 @@ const $=id=>document.getElementById(id);
 let catalog={schemaVersion:1,places:[]},selectedId=null,searchCache=[],homeHeroPlaceId=null;
 const esc=v=>String(v==null?"":v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const getPlace=id=>catalog.places.find(p=>p.id===id);
+function searchableText(p){
+ const values=[p.name,p.region,p.category,p.summary,p.photoProfile,p.mediaExposureStatus,p.mediaExposure,p.mediaCredits,p.productionTitles,p.filmingWorks,p.selectionStatus,p.openingStatus,p.shootingPermission,p.notes,p.mapSearchQuery,...(p.aliases||[]),...(p.bestConcepts||[]),...(p.visualStrengths||[]),...(p.searchTerms||[]),(p.sourceRefs||[]).map(ref=>ref&&ref.name||"").join(" "),(p.imageCandidates||[]).map(c=>[c.title,c.viewType,c.sourceName,c.notes].filter(Boolean).join(" ")).join(" ")];
+ return values.filter(Boolean).map(value=>Array.isArray(value)?value.join(" "):String(value)).join(" ").toLocaleLowerCase("ko");
+}
 const imageCount=p=>(p.imageCandidates||[]).length;
 const approvedImage=p=>(p.imageCandidates||[]).find(i=>i.id===p.primaryImageId&&i.status!=="rejected"&&i.placeMatch==="confirmed"&&(!!i.imageUrl||!!i.sourceThumbnail||!!i.pendingAsset||!!i.assetPath));
 const isImageReady=p=>!!approvedImage(p);
@@ -192,7 +196,7 @@ function render(){
  syncRegionFilters();
  const q=$("query").value.trim().toLowerCase(),region=$("regionFilter").value,filter=$("imageFilter").value;
  const places=catalog.places.filter(p=>{
-  const text=[p.name,p.region,p.category,p.summary,...(p.aliases||[])].join(" ").toLowerCase();
+  const text=searchableText(p);
   if(archiveMode==="favorites"&&!favorites.includes(p.id))return false;
   if(q&&!text.includes(q))return false;if(!regionMatches(p.region,region))return false;
   if(filter==="none"&&activePhoto(p))return false;
@@ -369,7 +373,7 @@ function renderLanding(){
  const allGrid=$("homeAllPlacesGrid");
  if(allGrid){
   const q=($("homeAllSearchInput")?.value||"").trim().toLowerCase(),region=$("homeAllRegionFilter")?.value||"";
-  const all=places.filter(p=>(!q||[p.name,p.region,p.category,p.summary,...(p.aliases||[])].join(" ").toLowerCase().includes(q))&&regionMatches(p.region,region))
+  const all=places.filter(p=>(!q||searchableText(p).includes(q))&&regionMatches(p.region,region))
    .sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||regionOrder(a.region)-regionOrder(b.region)||a.name.localeCompare(b.name,"ko"));
   $("homeAllPlaceCount").textContent=all.length;
   allGrid.innerHTML=all.map((p,index)=>{
@@ -423,7 +427,7 @@ function renderMapScreen(){
 let photoCategoryFilter="all";
 function renderPhotosScreen(){
  const query=$("photosSearchInput").value.trim().toLowerCase(),match=$("photosMatchFilter").value,items=[];
- for(const place of catalog.places)for(const candidate of (place.imageCandidates||[])){if(candidate.status==="rejected"||!(candidate.imageUrl||candidate.sourceThumbnail||candidate.pendingAsset||candidate.assetPath))continue;if(match&&String(candidate.placeMatch||"unverified")!==match)continue;const kind=String(candidate.viewType||"")+" "+String(candidate.title||"")+" "+String(candidate.notes||"");if(photoCategoryFilter==="portrait"&&!/인물|패션|모델|portrait|fashion/i.test(kind))continue;if(photoCategoryFilter==="landscape"&&!/풍경|야외|자연|공원|거리|landscape|outdoor|nature/i.test(kind))continue;if(photoCategoryFilter==="architecture"&&!/건축|실내|구조|외관|전경|디테일|architecture|interior|building/i.test(kind))continue;if(query&&![place.name,place.region,place.category,candidate.title,candidate.viewType].join(" ").toLowerCase().includes(query))continue;items.push({place,candidate});}
+ for(const place of catalog.places)for(const candidate of (place.imageCandidates||[])){if(candidate.status==="rejected"||!(candidate.imageUrl||candidate.sourceThumbnail||candidate.pendingAsset||candidate.assetPath))continue;if(match&&String(candidate.placeMatch||"unverified")!==match)continue;const kind=String(candidate.viewType||"")+" "+String(candidate.title||"")+" "+String(candidate.notes||"");if(photoCategoryFilter==="portrait"&&!/인물|패션|모델|portrait|fashion/i.test(kind))continue;if(photoCategoryFilter==="landscape"&&!/풍경|야외|자연|공원|거리|landscape|outdoor|nature/i.test(kind))continue;if(photoCategoryFilter==="architecture"&&!/건축|실내|구조|외관|전경|디테일|architecture|interior|building/i.test(kind))continue;if(query&&!(searchableText(place)+" "+[candidate.title,candidate.viewType,candidate.sourceName,candidate.notes].filter(Boolean).join(" ").toLocaleLowerCase("ko")).includes(query))continue;items.push({place,candidate});}
  items.sort((a,b)=>Number(b.place.primaryImageId===b.candidate.id)-Number(a.place.primaryImageId===a.candidate.id)||(a.place.scoutPriority||9)-(b.place.scoutPriority||9)||a.place.name.localeCompare(b.place.name,"ko"));
  $("photoCandidateCount").textContent=items.length+"장";
  $("photosGrid").innerHTML=items.map(({place:p,candidate:c})=>{const selected=p.primaryImageId===c.id,reference=p.referenceImageId===c.id,src=c.imageUrl||c.sourceThumbnail||"",status=c.placeMatch==="confirmed"?"장소 일치 확인됨":c.placeMatch==="mismatch"?"다른 장소 사진":"장소 일치 확인 필요";
@@ -433,7 +437,7 @@ function renderPhotosScreen(){
 }
 function renderAnalysisScreen(){
  syncRegionFilters();
- const query=$("analysisSearchInput").value.trim().toLowerCase(),region=$("analysisRegionFilter").value,places=catalog.places.filter(p=>(!query||[p.name,p.region,p.category,p.photoProfile].join(" ").toLowerCase().includes(query))&&regionMatches(p.region,region));
+ const query=$("analysisSearchInput").value.trim().toLowerCase(),region=$("analysisRegionFilter").value,places=catalog.places.filter(p=>(!query||searchableText(p).includes(query))&&regionMatches(p.region,region));
  places.sort((a,b)=>(Number(b.photoPotentialScore)||0)-(Number(a.photoPotentialScore)||0)||(a.scoutPriority||9)-(b.scoutPriority||9));$("analysisCount").textContent=places.length+"곳";
  $("analysisGrid").innerHTML=places.map(p=>{const score=Math.max(0,Math.min(100,Number(p.photoPotentialScore)||0)),photo=activePhoto(p);return '<button class="analysis-card" type="button" data-analysis-place="'+esc(p.id)+'"><span class="analysis-image">'+(photo?'<img loading="lazy" data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" src="'+esc(photo.imageUrl||photo.sourceThumbnail||"")+'" alt="" referrerpolicy="no-referrer">':'<span>⌖</span>')+'</span><span class="analysis-text"><small>'+esc(p.region)+' · '+(p.scoutPriority===1?"A 우선 조사":p.scoutPriority===2?"B 조사":"C 조건부")+'</small><b>'+esc(p.name)+'</b><span>'+esc(p.photoProfile||p.summary||"사진적 활용도 확인 필요")+'</span><em>시각적 잠재력 <strong>'+score+'</strong> / 100</em></span></button>';}).join("")||'<div class="empty">조건에 맞는 장소가 없습니다.</div>';
  bindImageFallbacks($("analysisGrid"));$("analysisGrid").querySelectorAll("[data-analysis-place]").forEach(button=>button.addEventListener("click",()=>{selectedId=button.dataset.analysisPlace;showAppView("detail");}));
