@@ -2,10 +2,143 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 장소 일치 이미지 우선 표시 · 대표사진·권리·촬영 허가는 별도 검증",
-  "dataStatus": "전국 43곳. 장소 일치가 확인된 이미지는 '장소 참고 이미지'로 표시하며 대표사진은 별도로 선정합니다. 촬영 허가·대관·사진 재사용 권리는 별도 확인이 필요합니다. 검토 대기 후보 12곳.",
+  "dataStatus": "전국 45곳. 장소 일치가 확인된 이미지는 '장소 참고 이미지'로 표시하며 대표사진은 별도로 선정합니다. 촬영 허가·대관·사진 재사용 권리는 별도 확인이 필요합니다. 검토 대기 후보 12곳.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T05:00:00.000Z",
+  "updatedAt": "2026-10-14T08:00:00.000Z",
   "places": [
+    {
+      "id": "nat-solol-art-museum",
+      "name": "강릉시립미술관 솔올",
+      "region": "강원 강릉",
+      "category": "리처드 마이어 건축·백색 기하학·유리·수공간",
+      "spaceTypes": [
+        "미술관 건축",
+        "실내외 연결 공간",
+        "조각·정원"
+      ],
+      "photoProfile": "프리츠커상 수상 건축가 리처드 마이어와 Meier Partners가 설계한 미술관. 백색 입면·유리 벽·자연광·야외 공간과 정원이 만드는 기하학적 구도와 반영을 건축·패션 에디토리얼 후보로 활용할 수 있습니다.",
+      "visualStrengths": [
+        "백색 기하학과 유리 파사드",
+        "유리·물·하늘이 만드는 반영",
+        "자연광이 만드는 내부외부의 시각적 연결",
+        "직선·코너·캔틸레버와 인물의 대비",
+        "정원·수목·건축이 함께 만드는 프레임"
+      ],
+      "bestConcepts": [
+        "미니멀 패션 에디토리얼",
+        "건축·디자인 브랜드 캠페인",
+        "빛과 반영 중심의 인물화보",
+        "조형적 공간을 활용한 현대미술 콘셉트"
+      ],
+      "constraints": [
+        "일반 관람객의 촬영과 전문·상업촬영 허가를 구분",
+        "전시실 작품 촬영·플래시·삼각대 규정 확인",
+        "외부 수공간·정원·광장별 촬영 가능 구역 확인",
+        "휴관일·전시 교체·관람시간 최신 확인",
+        "건축 사진의 저작권과 이미지 재사용 권리 별도 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "강릉시립미술관 솔올 공식 사진",
+        "'강릉시립미술관 솔올' 영화 드라마 촬영 또는 촬영 허가",
+        "강릉시립미술관 솔올 상업촬영 규정"
+      ],
+      "aliases": [],
+      "summary": "프리츠커상 수상 건축가 리처드 마이어와 Meier Partners가 설계한 미술관. 백색 입면·유리 벽·자연광·야외 공간과 정원이 만드는 기하학적 구도와 반영을 건축·패션 에디토리얼 후보로 활용할 수 있습니다.",
+      "address": "강원특별자치도 강릉시 원대로 45",
+      "coordinates": null,
+      "officialUrl": "https://www.gn.go.kr/mu/contents.do?key=6702",
+      "mapSearchQuery": "강릉시립미술관 솔올 강원특별자치도 강릉시 원대로 45",
+      "openingStatus": "강릉시립미술관 공식 건축 안내 확인 · 전시·관람시간 및 휴관일 방문 전 재확인",
+      "shootingPermission": "공식 관람과 전문·상업촬영·조명 장비는 다른 조건일 수 있으므로 운영자에게 사전 확인",
+      "parking": "현행 주차·대형 차량·장비 하차 조건 재확인 필요",
+      "fee": "관람료·촬영료·대관료는 목적·인원·장비별 공식 문의 필요",
+      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
+      "primaryImageId": null,
+      "referenceImageId": "ref-solol-art-museum-reflecting-pool",
+      "imageCandidates": [
+        {
+          "id": "ref-solol-art-museum-reflecting-pool",
+          "title": "솔올미술관 백색 건축·유리 파사드와 반영",
+          "imageUrl": "https://media.triple.guide/triple-cms/c_limit%2Cf_auto%2Ch_2048%2Cw_2048/11842406-0440-4181-8597-8ca214e1cd57.jpeg",
+          "sourceThumbnail": "https://media.triple.guide/triple-cms/c_limit%2Cf_auto%2Ch_2048%2Cw_2048/11842406-0440-4181-8597-8ca214e1cd57.jpeg",
+          "sourcePageUrl": "https://triple.guide/attractions/52b639e1-5b87-4890-bdc1-d1bb2c1f2d05",
+          "sourceName": "트리플 장소 안내 · 솔올미술관",
+          "creator": "사진 저작자·사용 조건 별도 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "이미지 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "백색 건축·유리·수면 반영·기하학",
+          "notes": "해당 장소의 백색 건축과 유리벽, 반영 수공간이 보이는 장소 참고 이미지. 강릉시 공식 안내는 건축가와 주소를 확인하는 근거이며, 사진 저작권은 별도 확인 필요.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T08:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "강릉시립미술관 솔올 공식 건축 소개",
+          "url": "https://www.gn.go.kr/mu/contents.do?key=6702"
+        },
+        {
+          "name": "강릉시립미술관 솔올 시설 안내",
+          "url": "https://www.gn.go.kr/mu/contents.do?key=6606"
+        },
+        {
+          "name": "솔올미술관 장소·참고사진 안내",
+          "url": "https://triple.guide/attractions/52b639e1-5b87-4890-bdc1-d1bb2c1f2d05"
+        }
+      ],
+      "verification": {
+        "location": "공식 관광·시설 출처 확인",
+        "photoMatch": "출처 페이지와 장소 대조 확인 · 대표사진 검토 전",
+        "rights": "미확인",
+        "shootingPermission": "현행 구역별 규정·상업촬영 허가 재확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
+      "scoutingChecklist": [
+        "실제 장소·촬영 구역과 이미지 일치",
+        "현재 운영 및 출입 가능 범위",
+        "영화·드라마 촬영 구역의 안전·보안",
+        "상업촬영 허가 및 대관 절차",
+        "촬영료·보증금·예약 기한",
+        "조명·삼각대·전력·드론 등 장비 규정",
+        "주차·장비 반입·스태프 대기 공간",
+        "사진 저작권·재사용 권한"
+      ],
+      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 대표사진 적합성, 이미지 재사용 권리, 실제 상업촬영·장비 반입 허가는 각각 별도로 확인해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14",
+      "photoPotentialScore": 92,
+      "photoScoreBreakdown": {
+        "distinctiveness": 29,
+        "compositionVariety": 19,
+        "lightAndTexture": 19,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 현장 답사/권리/촬영 허가 확인 전",
+      "priorityLabel": "A · 우선 조사",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "프리츠커상 수상 건축가 리처드 마이어와 Meier Partners가 설계한 미술관. 백색 입면·유리 벽·자연광·야외 공간과 정원이 만드는 기하학적 구도와 반영을 건축·패션 에디토리얼 후보로 활용할 수 있습니다."
+      },
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "shootingDetails": {
+        "parking": "촬영 장비 차량의 주차·하차 지점과 촬영 구역까지 이동 거리 확인",
+        "loadIn": "출입구·장비 반입 동선·세트/전시 구역 규정 확인",
+        "power": "전원·조명·콘센트 사용에 대한 운영자 승인 확인",
+        "equipmentRestrictions": "삼각대·플래시·조명·드론·연막·세트 접촉 가능 여부 확인",
+        "crewBase": "출연자 탈의·분장·스태프 대기 공간 및 화장실 확인",
+        "permitCost": "촬영 목적·인원·장비별 허가, 대관료, 보증금, 예약 기한 확인",
+        "fieldNotes": "강릉시 공식 건축 안내는 리처드 마이어와 Meier Partners의 설계, 백색 건축과 자연광·외부 정원을 명시합니다. 전시 중 작품 촬영·상업촬영·삼각대·조명 규정은 안내 페이지가 자동으로 허가를 뜻하지 않으므로 운영자에 재확인합니다.",
+        "lastFieldCheck": "현장 확인 전 · 공식 운영 정보와 조건 재확인 필요"
+      }
+    },
     {
       "id": "nat-acc-gwangju",
       "name": "국립아시아문화전당(ACC)",
@@ -486,6 +619,136 @@
       "referenceImageId": "ref-ddp-night-curved",
       "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
       "phone": "02-2153-0000"
+    },
+    {
+      "id": "nat-mungyeong-saejae-open-set",
+      "name": "문경새재 오픈세트",
+      "region": "경북 문경",
+      "category": "사극·역사극 영화·드라마 오픈세트",
+      "spaceTypes": [
+        "야외 세트",
+        "전문 촬영 시설",
+        "시대별 건축물"
+      ],
+      "photoProfile": "궁궐·관아·양반가·주막·민가와 골목을 묶은 대형 야외 시대극 세트. 자연 지형과 전통 목조건축, 돌담·문루·마당의 깊이를 활용해 사극·시대극·레트로 캠페인에 적합한 전문 로케이션 후보.",
+      "visualStrengths": [
+        "전통 목조건축과 기와지붕의 반복 리듬",
+        "문루와 골목의 깊은 소실점",
+        "돌담·흙마당·목재의 실제 질감",
+        "산과 숲을 배경으로 한 넓은 외부 전경",
+        "인물과 세트의 스케일 대비"
+      ],
+      "bestConcepts": [
+        "사극·역사극·시대극",
+        "한국적 패션 에디토리얼",
+        "전통·공예·관광 광고",
+        "뮤직비디오·브랜드 필름"
+      ],
+      "constraints": [
+        "세트별 현재 개방 상태와 복원·공사 구간 확인",
+        "관람 동선과 별도 제작 촬영 동선 구분",
+        "상업촬영·세트 점유·출연 인원·장비는 허가 필요",
+        "문화재·세트 구조물 접촉 및 야간 촬영 규정",
+        "운영일·대관료·예약 조건 최신 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "문경새재 오픈세트 공식 사진",
+        "'문경새재 오픈세트' 영화 드라마 촬영 또는 촬영 허가",
+        "문경새재 오픈세트 상업촬영 규정"
+      ],
+      "aliases": [],
+      "summary": "궁궐·관아·양반가·주막·민가와 골목을 묶은 대형 야외 시대극 세트. 자연 지형과 전통 목조건축, 돌담·문루·마당의 깊이를 활용해 사극·시대극·레트로 캠페인에 적합한 전문 로케이션 후보.",
+      "address": "경상북도 문경시 문경읍 새재로 932",
+      "coordinates": null,
+      "officialUrl": "https://www.gbmg.go.kr/tour/contents.do?mId=0206020100",
+      "mapSearchQuery": "문경새재 오픈세트 경상북도 문경시 문경읍 새재로 932",
+      "openingStatus": "문경시 관광 안내에 등재 · 현재 개방 구역·운영시간·대관 조건 재확인 필요",
+      "shootingPermission": "일반 관람과 영화·드라마·상업촬영은 구분. 세트 점유·장비 반입은 운영기관에 사전 허가 문의",
+      "parking": "현행 주차·대형 차량·장비 하차 조건 재확인 필요",
+      "fee": "관람료·촬영료·대관료는 목적·인원·장비별 공식 문의 필요",
+      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
+      "primaryImageId": null,
+      "referenceImageId": "ref-mungyeong-saejae-open-set-official",
+      "imageCandidates": [
+        {
+          "id": "ref-mungyeong-saejae-open-set-official",
+          "title": "문경새재 오픈세트 전통 목조건축·문루 구간",
+          "imageUrl": "https://english.visitkorea.or.kr/public/images/2024/09/04/047718cfe2244ad58be49c20f6451151.jpg",
+          "sourceThumbnail": "https://english.visitkorea.or.kr/public/images/2024/09/04/047718cfe2244ad58be49c20f6451151.jpg",
+          "sourcePageUrl": "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=399166&menuSn=217",
+          "sourceName": "한국관광공사 VisitKorea 장소 안내",
+          "creator": "사진 저작자·사용 조건 별도 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "이미지 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실제 오픈세트·문루·전통 목조건축",
+          "notes": "문경새재 오픈세트 장소를 보여주는 한국관광공사 관광 안내 이미지. 특정 작품의 촬영 장면이나 대표사진으로 간주하지 않으며, 재사용 권리는 별도 확인 필요.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T08:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "문경시 관광 안내 — 문경새재 오픈세트",
+          "url": "https://www.gbmg.go.kr/tour/contents.do?mId=0206020100"
+        },
+        {
+          "name": "한국관광공사 — Mungyeong Saejae Open Set",
+          "url": "https://english.visitkorea.or.kr/svc/whereToGo/hdrdslt/hdrdsltView.do?crsSn=399166&menuSn=217"
+        }
+      ],
+      "verification": {
+        "location": "공식 관광·시설 출처 확인",
+        "photoMatch": "출처 페이지와 장소 대조 확인 · 대표사진 검토 전",
+        "rights": "미확인",
+        "shootingPermission": "현행 구역별 규정·상업촬영 허가 재확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
+      "scoutingChecklist": [
+        "실제 장소·촬영 구역과 이미지 일치",
+        "현재 운영 및 출입 가능 범위",
+        "영화·드라마 촬영 구역의 안전·보안",
+        "상업촬영 허가 및 대관 절차",
+        "촬영료·보증금·예약 기한",
+        "조명·삼각대·전력·드론 등 장비 규정",
+        "주차·장비 반입·스태프 대기 공간",
+        "사진 저작권·재사용 권한"
+      ],
+      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 대표사진 적합성, 이미지 재사용 권리, 실제 상업촬영·장비 반입 허가는 각각 별도로 확인해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14",
+      "photoPotentialScore": 91,
+      "photoScoreBreakdown": {
+        "distinctiveness": 29,
+        "compositionVariety": 18,
+        "lightAndTexture": 18,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 현장 답사/권리/촬영 허가 확인 전",
+      "priorityLabel": "A · 우선 조사",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "궁궐·관아·양반가·주막·민가와 골목을 묶은 대형 야외 시대극 세트. 자연 지형과 전통 목조건축, 돌담·문루·마당의 깊이를 활용해 사극·시대극·레트로 캠페인에 적합한 전문 로케이션 후보."
+      },
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "shootingDetails": {
+        "parking": "촬영 장비 차량의 주차·하차 지점과 촬영 구역까지 이동 거리 확인",
+        "loadIn": "출입구·장비 반입 동선·세트/전시 구역 규정 확인",
+        "power": "전원·조명·콘센트 사용에 대한 운영자 승인 확인",
+        "equipmentRestrictions": "삼각대·플래시·조명·드론·연막·세트 접촉 가능 여부 확인",
+        "crewBase": "출연자 탈의·분장·스태프 대기 공간 및 화장실 확인",
+        "permitCost": "촬영 목적·인원·장비별 허가, 대관료, 보증금, 예약 기한 확인",
+        "fieldNotes": "문경시가 관리하는 대표적인 시대극 촬영 세트 후보. 문경시 관광 안내에는 세트 소개와 촬영작·시설 정보가 있으나, 최신 대관 요금·개방 세트·현재 촬영 허가 절차는 방문 전 운영기관에 문의해야 합니다. 특정 작품명은 제작사·시설 공식 기록을 재대조한 뒤 등록합니다.",
+        "lastFieldCheck": "현장 확인 전 · 공식 운영 정보와 조건 재확인 필요"
+      },
+      "mediaExposureStatus": "역사극·시대극 촬영장으로 알려진 전문 야외세트. 개별 영화·드라마 크레딧은 공식 운영자료와 제작사 자료로 대조한 뒤 구체적으로 표시합니다."
     },
     {
       "id": "seo-mullae",
