@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "전국 17개 시·도에 48곳의 촬영 장소 후보가 등록되어 있습니다. 신규 확장 8개 지역의 장소 참고사진을 추가 조사해 후보를 반영했습니다. 저작권·재사용 허가와 현장 촬영 조건을 확인하지 않은 사진은 대표사진으로 승인하지 않았습니다.",
+  "dataStatus": "전국 17개 시·도에 48곳의 촬영 장소 후보가 등록되어 있습니다. 실제 브라우저 점검에서 로드되지 않은 기존 외부 이미지 링크 7곳을 대체 참고사진으로 교체 또는 후보 전환했습니다. 저작권·대표사진·촬영 허가가 확인되지 않은 사진은 승인 처리하지 않았습니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T12:28:00.000Z",
+  "updatedAt": "2026-10-14T12:35:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -1589,7 +1589,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "대체 사진 참고 후보 · 권리·대표사진 검증 전",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -1604,8 +1604,8 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "현대건축·선큰·황혼·조명",
-          "notes": "노들섬의 레벨 차이와 조명, 광장 구성 참고 후보. 건축 플랫폼 사진의 저작권 및 현장 접근 가능 구역을 별도 확인.",
-          "status": "candidate",
+          "notes": "노들섬의 레벨 차이와 조명, 광장 구성 참고 후보. 건축 플랫폼 사진의 저작권 및 현장 접근 가능 구역을 별도 확인. 2026-10-14 브라우저 검증에서 이미지가 로드되지 않아 활성 참고 후보에서 제외했습니다.",
+          "status": "rejected",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
         {
@@ -1621,6 +1621,22 @@
           "placeMatch": "confirmed",
           "status": "candidate",
           "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 2.0 출처·저자 표시 및 동일조건 공유 검토 필요."
+        },
+        {
+          "id": "img-nodeul-island-night-promenade-ar",
+          "title": "노들섬 야간 산책로와 발광 파사드",
+          "imageUrl": "https://www.architecturalrecord.com/ext/resources/Issues/2022/03-March/Nodeul-Island-11.jpg",
+          "sourceThumbnail": "https://www.architecturalrecord.com/ext/resources/Issues/2022/03-March/Nodeul-Island-11.jpg",
+          "sourcePageUrl": "https://www.architecturalrecord.com/articles/15549-nodeul-island-by-mmk",
+          "sourceName": "Architectural Record · Nodeul Island",
+          "rights": "unknown",
+          "rightsLabel": "건축 매체 사진 · 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·건축·야간",
+          "notes": "노들섬 건축 프로젝트를 다룬 Architectural Record의 야간 보행로 사진 후보. 건축 참고용이며 이미지 재사용 권한·현행 공간 상태·상업촬영 허가는 확인 전입니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
         }
       ],
       "sourceRefs": [
@@ -1645,7 +1661,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-14",
       "photoPotentialScore": 83,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -1662,8 +1678,8 @@
         "rationale": "도시 구조물과 강변 여백을 함께 활용해 건축·인물·무대형 이미지를 만들 후보",
         "status": "desk-review"
       },
-      "referenceImageId": "ref-nodeul-island-sunken-plaza-dusk",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageId": "img-nodeul-island-night-promenade-ar",
+      "referenceImageStatus": "대체 참고사진 · 재사용 권리 검증 전"
     },
     {
       "id": "seo-craft-museum",
@@ -2964,7 +2980,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "대체 사진 참고 후보 · 권리·대표사진 검증 전",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -2979,9 +2995,25 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "성곽·원근·도시 레이어",
-          "notes": "공식 수원화성 자료의 성곽과 도심 원경. 성벽의 대각선과 도심 레이어를 참고하되, 공개 재사용 조건을 확인하기 전까지 대표사진 승인은 하지 않는다.",
-          "status": "candidate",
+          "notes": "공식 수원화성 자료의 성곽과 도심 원경. 성벽의 대각선과 도심 레이어를 참고하되, 공개 재사용 조건을 확인하기 전까지 대표사진 승인은 하지 않는다. 2026-10-14 브라우저 검증에서 이미지가 로드되지 않아 활성 참고 후보에서 제외했습니다.",
+          "status": "rejected",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "img-suwon-hwaseong-gate-nculture",
+          "title": "수원화성 장안문 성곽과 성문",
+          "imageUrl": "https://minio.nculture.org/amsweb-opt/multimedia_assets/17/72599/66112/c/JKH_0014-full-size.jpg",
+          "sourceThumbnail": "https://minio.nculture.org/amsweb-opt/multimedia_assets/17/72599/66112/c/JKH_0014-full-size.jpg",
+          "sourcePageUrl": "https://ncms.nculture.org/castle-road/story/2252",
+          "sourceName": "지역N문화 · 수원화성 성곽 자료",
+          "rights": "unknown",
+          "rightsLabel": "문화자료 사진 · 재사용 조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·성문·석조와 목조건축",
+          "notes": "수원화성 장안문의 석조 성벽과 목조 문루를 보여주는 문화자료 사진 후보. 위치·구도 확인용이며 원저작물의 이용조건과 촬영 허가는 확인 전입니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
         }
       ],
       "sourceRefs": [
@@ -3006,7 +3038,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-14",
       "photoPotentialScore": 73,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -3024,8 +3056,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "경기도 수원시 팔달구 정조로 825 화성행궁 수원화성 성곽",
-      "referenceImageId": "ref-hwaseong-wall-slope",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageId": "img-suwon-hwaseong-gate-nculture",
+      "referenceImageStatus": "대체 참고사진 · 재사용 권리 검증 전"
     },
     {
       "id": "gg-mmca-gwacheon",
@@ -3169,7 +3201,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "대체 사진 참고 후보 · 권리·대표사진 검증 전",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -3184,9 +3216,25 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "미니멀 건축·반사·사선 지붕",
-          "notes": "미술관 외관의 경사진 지붕과 반사 수면을 보여주는 시각 후보. 출처가 언론 기사이므로 재사용 권리 및 현재 수면·동선 상태를 별도 확인.",
-          "status": "candidate",
+          "notes": "미술관 외관의 경사진 지붕과 반사 수면을 보여주는 시각 후보. 출처가 언론 기사이므로 재사용 권리 및 현재 수면·동선 상태를 별도 확인. 2026-10-14 브라우저 검증에서 이미지가 로드되지 않아 활성 참고 후보에서 제외했습니다.",
+          "status": "rejected",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "img-gyeonggi-museum-exterior-koreaartguide",
+          "title": "경기도미술관 경사진 지붕과 유리 아트리움",
+          "imageUrl": "https://koreaartguide.com/data/file/museum/1982101757_gMOElZTV_2c6fc6658e5ecd6e145a0f63b42c9b20d3e4e2a3.jpg",
+          "sourceThumbnail": "https://koreaartguide.com/data/file/museum/1982101757_gMOElZTV_2c6fc6658e5ecd6e145a0f63b42c9b20d3e4e2a3.jpg",
+          "sourcePageUrl": "https://koreaartguide.com/bbs/board.php?bo_table=museum&wr_id=70",
+          "sourceName": "Korea Art Guide · 경기도미술관 소개",
+          "rights": "unknown",
+          "rightsLabel": "미술관 정보 사진 · 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·현대건축·유리 파사드",
+          "notes": "경기도미술관의 실제 외관과 유리 아트리움을 보여주는 장소 사진 후보. 이미지 출처 확인은 가능하지만 재사용 권리와 상업촬영 조건은 확인 전입니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
         }
       ],
       "sourceRefs": [],
@@ -3209,7 +3257,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-14",
       "photoPotentialScore": 72,
       "photoScoreBreakdown": {
         "distinctiveness": 21,
@@ -3227,8 +3275,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "경기도 안산시 단원구 동산로 268 경기도미술관",
-      "referenceImageId": "ref-gyeonggi-museum-reflecting-pool",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageId": "img-gyeonggi-museum-exterior-koreaartguide",
+      "referenceImageStatus": "대체 참고사진 · 재사용 권리 검증 전"
     },
     {
       "id": "gg-gwangmyeong-cave",
@@ -3385,7 +3433,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "대체 사진 참고 후보 · 권리·대표사진 검증 전",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -3400,9 +3448,25 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "현대건축·격자·유리·광장",
-          "notes": "설계·사진 정보가 소개된 건축 프로젝트 페이지의 외관 사진. 유리 격자와 광장의 단순한 기하학이 사진적 후보지만, 사진 재사용 권리는 확인 전.",
-          "status": "candidate",
+          "notes": "설계·사진 정보가 소개된 건축 프로젝트 페이지의 외관 사진. 유리 격자와 광장의 단순한 기하학이 사진적 후보지만, 사진 재사용 권리는 확인 전. 2026-10-14 브라우저 검증에서 이미지가 로드되지 않아 활성 참고 후보에서 제외했습니다.",
+          "status": "rejected",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "img-aramnuri-exterior-visitkorea",
+          "title": "고양아람누리 공연장 유리 파사드와 야간 광장",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/07/1729907_image2_1.jpg",
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/07/1729907_image2_1.jpg",
+          "sourcePageUrl": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=88080",
+          "sourceName": "한국관광공사 · VisitKorea",
+          "rights": "unknown",
+          "rightsLabel": "관광정보 사진 · 앱 재사용 조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·현대건축·야간",
+          "notes": "한국관광공사 VisitKorea의 고양아람누리 소개 페이지에 연결된 야간 건축 사진 후보. 원본 사용 조건과 상업촬영 허가는 별도 확인 전이며 대표사진 승인은 보류합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
         }
       ],
       "sourceRefs": [
@@ -3427,7 +3491,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-14",
       "photoPotentialScore": 70,
       "photoScoreBreakdown": {
         "distinctiveness": 21,
@@ -3444,8 +3508,8 @@
         "rationale": "공연장 외부 구조와 광장을 활용해 대칭·직선형 인물 이미지를 구성할 후보",
         "status": "desk-review"
       },
-      "referenceImageId": "ref-aramnuri-glass-grid-facade",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageId": "img-aramnuri-exterior-visitkorea",
+      "referenceImageStatus": "대체 참고사진 · 재사용 권리 검증 전"
     },
     {
       "id": "gg-starfield-suwon",
@@ -4160,7 +4224,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "대체 사진 참고 후보 · 권리·대표사진 검증 전",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -4175,9 +4239,25 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "실제 거리·책방·생활 질감",
-          "notes": "인천투어가 배다리 헌책방 골목 사진으로 제공하는 이미지. 책장·간판·자전거·입면이 담겨 있어 장소와 생활감 참고에 유효함. 사이트의 콘텐츠 이용 협의 문구와 이미지별 권리 확인 전까지 공개 대표사진으로 승인하지 않는다.",
-          "status": "candidate",
+          "notes": "인천투어가 배다리 헌책방 골목 사진으로 제공하는 이미지. 책장·간판·자전거·입면이 담겨 있어 장소와 생활감 참고에 유효함. 사이트의 콘텐츠 이용 협의 문구와 이미지별 권리 확인 전까지 공개 대표사진으로 승인하지 않는다. 2026-10-14 브라우저 검증에서 이미지가 로드되지 않아 활성 참고 후보에서 제외했습니다.",
+          "status": "rejected",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "img-baedari-bookshop-incheon-tour",
+          "title": "인천 배다리 헌책방 서가와 오래된 서점 외관",
+          "imageUrl": "https://itour.incheon.go.kr/common/viewImg.do?imgId=DBI21122913113928285",
+          "sourceThumbnail": "https://itour.incheon.go.kr/common/viewImg.do?imgId=DBI21122913113928285",
+          "sourcePageUrl": "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD21122911365999349",
+          "sourceName": "인천투어 공식 관광자료",
+          "rights": "unknown",
+          "rightsLabel": "지자체 관광 사진 · 재사용 조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·서점·생활문화",
+          "notes": "인천투어의 배다리 헌책방 골목 장소 페이지에 연결된 다른 사진 후보. 낡은 책장과 서점 파사드를 확인하기 위한 참고 자료이며 이미지 이용 조건과 상업촬영 허가는 확인 전입니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
         }
       ],
       "sourceRefs": [
@@ -4203,7 +4283,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-14",
       "photoPotentialScore": 66,
       "photoScoreBreakdown": {
         "distinctiveness": 20,
@@ -4221,8 +4301,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "인천광역시 동구 금곡로 배다리 헌책방거리",
-      "referenceImageId": "ref-baedari-used-book-facade",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageId": "img-baedari-bookshop-incheon-tour",
+      "referenceImageStatus": "대체 참고사진 · 재사용 권리 검증 전",
       "legacyScout": {
         "sourceVersion": "FRAME ATLAS 이전 버전(v5 계열) 스카우팅 데이터",
         "sourceLocationId": "L-017",
@@ -4323,7 +4403,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "대체 사진 참고 후보 · 권리·대표사진 검증 전",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -4338,8 +4418,8 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "야외·실루엣·수면 반영·수평선",
-          "notes": "인천시 공원 갤러리의 풍차·습지 이미지. 반사·수평선·풍차의 실루엣을 활용하는 야외 촬영 참고 후보. 공공누리 유형 또는 별도 허가를 확인하기 전에는 대표사진 승인을 하지 않는다.",
-          "status": "candidate",
+          "notes": "인천시 공원 갤러리의 풍차·습지 이미지. 반사·수평선·풍차의 실루엣을 활용하는 야외 촬영 참고 후보. 공공누리 유형 또는 별도 허가를 확인하기 전에는 대표사진 승인을 하지 않는다. 2026-10-14 브라우저 검증에서 이미지가 로드되지 않아 활성 참고 후보에서 제외했습니다.",
+          "status": "rejected",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
         {
@@ -4377,7 +4457,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-14",
       "photoPotentialScore": 73,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -4395,8 +4475,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "인천광역시 남동구 소래로154번길 77 소래습지생태공원",
-      "referenceImageId": "ref-sorae-windmill-shallow-reflection",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageId": "legacy-l195-sorae-saltfield",
+      "referenceImageStatus": "Wikimedia 참고사진 후보 · 이용조건 재확인 필요"
     },
     {
       "id": "nat-kikai-studio",
@@ -4997,7 +5077,7 @@
       "shootingPermission": "상업촬영·삼각대·조명 사용 여부 사전 확인",
       "parking": "공식 안내 확인 필요",
       "fee": "촬영 목적·구역별 확인 필요",
-      "imageStatus": "참고사진 후보 있음 · 권리·대표사진 검증 전",
+      "imageStatus": "대체 사진 참고 후보 · 권리·대표사진 검증 전",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -5012,7 +5092,23 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "실내·명상관·건축",
-          "notes": "뮤지엄 SAN 공식 홈페이지에 게시된 명상관 사진 후보. 곡면 콘크리트와 선형 자연광을 보여주는 공간 참고 자료이며 사진 사용·재게시 권리 및 내부 촬영 허가는 별도 확인 전입니다. 대표사진 승인은 보류합니다.",
+          "notes": "뮤지엄 SAN 공식 홈페이지에 게시된 명상관 사진 후보. 곡면 콘크리트와 선형 자연광을 보여주는 공간 참고 자료이며 사진 사용·재게시 권리 및 내부 촬영 허가는 별도 확인 전입니다. 대표사진 승인은 보류합니다. 2026-10-14 브라우저 검증에서 이미지가 로드되지 않아 활성 참고 후보에서 제외했습니다.",
+          "status": "rejected",
+          "createdAt": "2026-10-14"
+        },
+        {
+          "id": "img-museumsan-space-light-wallpaper",
+          "title": "뮤지엄 SAN ‘빛의 공간’ 수공간과 콘크리트 구조",
+          "imageUrl": "https://cdn.mos.cms.futurecdn.net/fvhdkXtQ52jS87QaDMzwXB-1024-80.jpg",
+          "sourceThumbnail": "https://cdn.mos.cms.futurecdn.net/fvhdkXtQ52jS87QaDMzwXB-1024-80.jpg",
+          "sourcePageUrl": "https://www.wallpaper.com/architecture/space-of-light-tadao-ando-museum-san-south-korea",
+          "sourceName": "Wallpaper* · Museum SAN Space of Light",
+          "rights": "unknown",
+          "rightsLabel": "건축 매체 사진 · 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·수공간·콘크리트 건축",
+          "notes": "공식 홈페이지 이미지 링크는 브라우저 검사에서 로드되지 않아 대체한 건축 매체 사진 후보. 뮤지엄 SAN의 ‘빛의 공간’ 수공간과 콘크리트 구조를 보여주지만 사진 재사용 권리와 촬영 규정은 별도 확인 전이며 대표사진으로 승인하지 않습니다.",
           "status": "candidate",
           "createdAt": "2026-10-14"
         }
@@ -5034,8 +5130,8 @@
       "notes": "조형성과 빛·반사·재료감이 뚜렷한 후보입니다. 실내 전시 작품과 공간의 촬영은 별도 규정을 확인해야 합니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
-      "referenceImageId": "img-museumsan-meditationhall-official",
-      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
+      "referenceImageId": "img-museumsan-space-light-wallpaper",
+      "referenceImageStatus": "대체 참고사진 · 재사용 권리 검증 전"
     },
     {
       "id": "jeju-bangju",
