@@ -245,10 +245,8 @@ function showHomeAllPlaces(){
  requestAnimationFrame(()=>{const grid=$("homeAllPlacesGrid");if(grid)grid.scrollIntoView({behavior:"auto",block:"start"});});
 }
 function showPlaceArchive(){
- archiveMode="all";selectedId=null;
- $("query").value="";$("regionFilter").value="";$("imageFilter").value="";
- showAppView("workspace");
- requestAnimationFrame(()=>{const workspace=$("workspaceView");if(workspace)workspace.scrollIntoView({behavior:"auto",block:"start"});});
+ /* The floating return action belongs to the current 2.0 design, not the legacy archive workspace. */
+ showHomeAllPlaces();
 }
 if(backToArchiveBtn)backToArchiveBtn.addEventListener("click",showPlaceArchive);
 
@@ -257,6 +255,7 @@ function toggleFavorite(id){if(isFavorite(id))favorites=favorites.filter(x=>x!==
 function chooseHomeHeroPlace(places){
  const pool=places.filter(p=>{
   if(p.visualCurationStatus==="conditional"||p.visualCurationStatus==="rejected")return false;
+  if(/운영 종료|폐쇄|영구 휴관/.test(String(p.openingStatus||"")))return false;
   const photo=activePhoto(p),url=photo&&(photo.imageUrl||photo.sourceThumbnail||"");
   return !!url && /^https?:\/\//i.test(String(url)) && photo.placeMatch==="confirmed" && photo.status!=="rejected";
  });
@@ -282,7 +281,10 @@ function renderLanding(){
  const get=id=>places.find(p=>p.id===id);
  const prefer=["seo-ddp","seo-oil-tank","seo-seoul-station-284","gg-mimesis","ic-tri-bowl","ic-art-platform"];
  const picked=prefer.map(get).filter(Boolean);
- const baseFeatured=[...picked,...places.filter(p=>!picked.some(x=>x.id===p.id)).sort((a,b)=>(a.visualCurationStatus==="conditional"?1:0)-(b.visualCurationStatus==="conditional"?1:0)||(a.scoutPriority||9)-(b.scoutPriority||9))];
+ const baseFeatured=[...picked,...places.filter(p=>!picked.some(x=>x.id===p.id)).sort((a,b)=>{
+  const aClosed=/운영 종료|폐쇄|영구 휴관/.test(String(a.openingStatus||""))?1:0,bClosed=/운영 종료|폐쇄|영구 휴관/.test(String(b.openingStatus||""))?1:0;
+  return aClosed-bClosed+(a.visualCurationStatus==="conditional"?1:0)-(b.visualCurationStatus==="conditional"?1:0)||(a.scoutPriority||9)-(b.scoutPriority||9);
+ })];
  const heroPlace=chooseHomeHeroPlace(places)||baseFeatured.find(p=>activePhoto(p))||baseFeatured[0];
  /* The first visible card is the same random location as the hero; on mobile the photo banner is compacted into this first card. */
  const featured=heroPlace?[heroPlace,...baseFeatured.filter(p=>p.id!==heroPlace.id)]:baseFeatured;
@@ -425,8 +427,12 @@ function referencePhotoPanel(p,approved,ref){
   return '<div class="statusbar warn">'+(waiting?'등록된 사진 후보는 실제 장소와의 일치 여부가 아직 확인되지 않아 기본 참고사진으로 표시하지 않습니다. 사진 후보 목록에서 장소·구도 일치를 확인한 뒤 대표사진으로 지정하세요.':'확인된 사진 후보가 없습니다. 아래에서 이미지 주소를 넣거나 사진 파일을 추가하세요.')+'</div>';
  }
  const chosen=!!approved;
- const matchText=photo.placeMatch==="confirmed"?"장소 일치 확인됨":photo.placeMatch==="mismatch"?"다른 장소 사진으로 표시됨":"실제 장소의 사진인지 확인해 주세요";
- return '<div class="section reference-hero"><div class="reference-photo-wrap"><img data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" data-reference-preview="'+esc(photo.id)+'" '+(chosen?'data-primary-preview="'+esc(photo.id)+'"':'')+' src="'+esc(photo.imageUrl||photo.sourceThumbnail||"")+'" alt="'+esc(p.name)+' '+(chosen?'대표사진':'촬영 참고사진')+'" loading="lazy" referrerpolicy="no-referrer"><span class="reference-stamp">'+(chosen?'CURRENT COVER PHOTO':'LOCATION PHOTO · REVIEWABLE')+'</span><span class="reference-missing">사진 연결을 확인할 수 없습니다</span></div><div class="reference-info"><div class="reference-kicker">'+(chosen?'SELECTED PHOTO':'SUGGESTED PHOTO')+' / '+esc(p.region||"수도권")+'</div><h3>'+(chosen?'현재 대표사진':'기본 참고사진')+'</h3><p>'+esc(photo.title||p.name+" 장소 사진")+'</p><div class="reference-meta">'+esc(matchText)+' · 다른 사진으로 바꿀 수 있습니다</div><div class="toolbar">'+(photo.sourcePageUrl?'<a class="btn small" href="'+esc(photo.sourcePageUrl)+'" target="_blank" rel="noopener noreferrer">사진 원문 ↗</a>':"")+'<a class="btn small" href="#candidateList">사진 변경·삭제 ↓</a></div><p class="tiny">실제 장소와 일치하지 않으면 아래 후보 중 다른 사진을 대표사진으로 지정하거나 사진을 삭제하세요.</p></div></div>';
+ const matchText=photo.placeMatch==="confirmed"?"장소 일치 확인 후보":photo.placeMatch==="mismatch"?"장소 불일치 · 대표사진 사용 금지":"실제 장소의 사진인지 확인해 주세요";
+ const rightsUnknown=!photo.rights||photo.rights==="unknown"||/미확인|확인 필요/i.test(String(photo.rightsLabel||""));
+ const imageRationale=String(photo.viewType||"").trim();
+ const photoNotes=String(photo.notes||"").trim();
+ const sourceName=String(photo.sourceName||photo.creator||"").trim();
+ return '<div class="section reference-hero"><div class="reference-photo-wrap"><img data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" data-reference-preview="'+esc(photo.id)+'" '+(chosen?'data-primary-preview="'+esc(photo.id)+'"':'')+' src="'+esc(photo.imageUrl||photo.sourceThumbnail||"")+'" alt="'+esc(p.name)+' '+(chosen?'대표사진':'촬영 참고사진')+'" loading="lazy" referrerpolicy="no-referrer"><span class="reference-stamp">'+(chosen?'CURRENT COVER PHOTO':'LOCATION PHOTO · REVIEWABLE')+'</span><span class="reference-missing">사진 연결을 확인할 수 없습니다</span></div><div class="reference-info"><div class="reference-kicker">'+(chosen?'SELECTED PHOTO':'SUGGESTED PHOTO')+' / '+esc(p.region||"수도권")+'</div><h3>'+(chosen?'현재 대표사진':'기본 참고사진')+'</h3><p>'+esc(photo.title||p.name+" 장소 사진")+'</p>'+(imageRationale?'<div class="photo-rationale"><b>이 사진에서 볼 촬영 포인트</b><span>'+esc(imageRationale)+'</span></div>':"")+(photoNotes?'<p class="photo-evidence-note">'+esc(photoNotes)+'</p>':"")+'<div class="reference-meta">'+esc(matchText)+(sourceName?' · 출처: '+esc(sourceName):'')+'</div>'+(rightsUnknown?'<div class="photo-rights-warning">이미지 이용권은 미확인입니다. 사진 참고용으로만 보고, 외부 공개·상업적 재사용 전 원문 이용조건을 확인하세요.</div>':'')+'<div class="toolbar">'+(photo.sourcePageUrl?'<a class="btn small" href="'+esc(photo.sourcePageUrl)+'" target="_blank" rel="noopener noreferrer">사진 원문 ↗</a>':"")+'<a class="btn small" href="#candidateList">사진 변경·삭제 ↓</a></div><p class="tiny">사진의 구도·장소가 추천 사유와 맞지 않으면 대표사진으로 확정하지 말고 다른 후보로 바꾸거나 삭제하세요.</p></div></div>';
 }
 function renderMediaExposureCard(p){
  const entries=Array.isArray(p.mediaAppearances)?p.mediaAppearances.filter(x=>x&&String(x.title||"").trim()):[];
