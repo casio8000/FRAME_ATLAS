@@ -242,9 +242,10 @@ body{background:#f1f0e9;color:#1b2820}
 .landing-search-control input{min-height:45px;background:#f8f8f2;border-color:#e1e2d8;border-radius:8px;font-size:12px;padding:11px 13px}
 .landing-search-control button{flex:0 0 auto;display:flex;align-items:center;gap:18px;background:#203629;color:white;border:1px solid #203629;border-radius:8px;padding:0 15px;font-size:12px;font-weight:900}
 .landing-search-control button span{font-size:17px}
-.landing-region-shortcuts{display:flex;gap:6px}
+.landing-region-shortcuts{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:6px}
 .landing-region-shortcuts button{background:#f7f7f1;border:1px solid #e2e3d9;border-radius:7px;padding:9px 11px;font-size:11px;font-weight:800;color:#536050}
 .landing-region-shortcuts button:hover{background:#eaf0e6;border-color:#a6b5a2}
+.landing-region-shortcuts button:focus-visible{outline:2px solid #395a42;outline-offset:2px}
 .landing-section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin:0 0 15px}
 .landing-section-kicker{font-size:9px;color:#d45b40;font-weight:900;letter-spacing:1.9px}
 .landing-section-head h2{font-size:clamp(22px,2.6vw,30px);font-weight:900;letter-spacing:-1px;margin:5px 0 4px}
@@ -977,6 +978,9 @@ dialog.map-links-dialog{position:relative;max-width:min(560px,calc(100% - 24px))
 .review-count>span{font-size:18px;color:var(--muted)}
 #curationReviewDetails[open] .review-count>span{transform:rotate(45deg)}
 .review-queue-intro{margin:0;padding:0 17px 14px;font-size:12px;line-height:1.7;color:var(--muted)}
+.review-queue-filterbar{display:grid;grid-template-columns:auto minmax(180px,250px) 1fr;align-items:center;gap:10px;padding:0 14px 13px;color:var(--muted);font-size:11px;font-weight:800}
+.review-queue-filterbar .field{padding:8px 10px;font-size:12px}
+#reviewQueueFilterSummary{font-weight:650;text-align:right}
 .review-queue-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0 14px 14px}
 .review-queue-card{min-width:0;border:1px solid var(--line);border-radius:12px;background:#fff;padding:12px}
 .review-queue-kicker{display:flex;justify-content:space-between;gap:8px;font-size:10px;line-height:1.5;color:var(--muted);font-weight:800}
@@ -985,7 +989,7 @@ dialog.map-links-dialog{position:relative;max-width:min(560px,calc(100% - 24px))
 .review-queue-card p{font-size:11px;line-height:1.65;color:var(--muted);margin:0 0 9px}
 .review-queue-links{display:flex;gap:12px;flex-wrap:wrap}
 .review-queue-links a{font-size:11px;font-weight:800;color:var(--green);text-decoration:underline;text-underline-offset:3px}
-@media(max-width:620px){#curationReviewDetails>summary{padding:13px}.review-queue-grid{grid-template-columns:1fr;padding:0 10px 10px}.review-queue-intro{padding:0 13px 12px}}
+@media(max-width:620px){.landing-region-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr))}.landing-region-shortcuts button{padding:10px 6px;font-size:11px}#curationReviewDetails>summary{padding:13px}.review-queue-grid{grid-template-columns:1fr;padding:0 10px 10px}.review-queue-intro{padding:0 13px 12px}.review-queue-filterbar{grid-template-columns:1fr;padding:0 10px 12px;gap:6px}#reviewQueueFilterSummary{text-align:left}}
 
 /* Quality-first photo evidence: make the image's intended composition and reuse status visible */
 .photo-rationale{display:flex;flex-direction:column;gap:4px;margin:12px 0 8px;padding:11px 12px;border-left:3px solid #6b7f70;background:#f3f5f0;border-radius:0 9px 9px 0}

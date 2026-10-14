@@ -8,9 +8,9 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - The older root app is preserved; do not edit or delete it while validating 2.0.
 - This checkpoint records the work so a dropped ChatGPT connection does not require restarting the project from the beginning. Code changes are stored in Git commits, not only in the conversation.
 
-## Current verified UI state
-- The home/featured screen and archive render 34 locations.
-- The latest browser smoke test checks 34/34 images on desktop and the mobile archive, reports no uncaught JavaScript errors, and verifies the mobile archive image frame is landscape 16:9 (336×189 in a 390px viewport).
+## Previous baseline (v2.41; historical verification only)
+- The prior checkpoint reported a browser smoke test for the then-current catalog and desktop/mobile navigation.
+- Those prior results do **not** validate later changes to the 43-place development catalog. Run the current branch's updated browser smoke test before treating v2.42 as verified.
 - A floating “맨 위로” control appears after scrolling.
 - A floating “전체 촬영장소로 돌아가기” control is available from a selected place detail.
 - The first screen fits the version header, splash copy and creator credits into a fixed viewport, with nationwide (not Seoul-area-only) wording.
@@ -109,3 +109,71 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Added LEEUM Museum as a high-potential Seoul candidate for architectural scouting, but it remains unpromoted until exact-location photos, filming access and image reuse conditions are verified. Seoul Urban Architecture Exhibition Hall, Seosomun Shrine History Museum and LG Arts Center Seoul remain in the review queue for the same reason.
 
 - Browser smoke test follow-up (v2.41): the active-detail test now checks Museum SAN's source link in the review queue rather than trying to open a deliberately held location from the active archive. The Gwangmyeong Cave reference is switched to its same-location Wikimedia Commons photo after the earlier news-host URL failed the real-browser load audit. The new image remains a candidate with licence attribution still to be checked.
+
+
+## Current development checkpoint — v2.42 (2026-10-14, not deployed)
+- Development branch: `FRAME_ATLAS-v2.0-development`.
+- Current files updated: `v2/index.html`, `v2/assets/app.js`, `v2/assets/app.css`, `v2/data/places.json`, `v2/sw.js`, and `tests/v2-browser-smoke.cjs`.
+- Catalog: 43 active locations and 12 review-only candidates, with seven top-level regional filters: Seoul, Gyeonggi/Incheon Capital Area, Gangwon, Chungcheong, Jeolla, Gyeongsang, Jeju.
+- Promoted Museum SAN and Asia Culture Center (Gwangju) from the review queue after adding matching location-reference photos. Their `primaryImageId` values remain empty.
+- Added CJ ENM Studio Center, Daejeon Studio Cube, Busan Cinema Center, Haslla Art World, MMCA Cheongju / Culture Factory, Jeonju Film Studios, Suncheon Drama Film Set, and Bonte Museum.
+- The photo policy separates (1) place/photo match, (2) cover/representative-photo selection, (3) image reuse rights, and (4) actual location/production permission. New reference images are not marked as approved covers.
+- Regional filter logic includes the home shortcuts, home archive, list workspace, map, analysis and review queue. Region labels retain city-level detail in each place record.
+- PWA update: service-worker cache and CSS/JS query versions bumped to `20261014-42`.
+- Static source checks passed when the changes were authored: `v2/assets/app.js` parses as JavaScript, `v2/data/places.json` parses as JSON, and unique location IDs were checked.
+- **Pending:** run browser smoke tests on desktop/mobile, verify the remote image loads, inspect screenshots and test-results artifacts, then fix failures. Direct iPhone Safari testing remains necessary after automated tests.
+- No deployment change has been made to `main`; the legacy root app and the existing live site remain untouched.
+
+
+## Current development checkpoint — v2.44 (2026-10-14, not deployed)
+
+- Development branch: `FRAME_ATLAS-v2.0-development`. No changes were made to production `main` or the legacy root v5.x app.
+- Catalog: 52 active places and 9 review-only candidates. Active region groups: Seoul 18, Gyeonggi/Incheon Capital Area 20, Gangwon 3, Chungcheong 2, Jeolla 3, Gyeongsang 4, Jeju 2.
+- Newly activated/added records: F1963, LG Arts Center Seoul, LEEUM Museum, K-Film Studio 5 in Paju, SKT TEAM Studios XR/Volume Stage in Seongnam, Hapcheon Image Theme Park, Jeju Glass House/Seopjikoji. Existing Museum SAN was retained once, not duplicated.
+- Confirmed place-matching images can be displayed as location-reference images. Representative/cover selection remains separate (`primaryImageId: null` for newly added records). Image-reuse rights, current operation/access, and commercial shooting/venue permission are separate and may still be unknown.
+- Catalog structural checks: 52 active IDs are unique, each active record has a confirmed reference image candidate, each active record has no automatically approved primary photo, and regional totals sum to 52.
+- HTML counters changed to 52 active places, 52 location-reference images, and 9 review-queue candidates. HTML asset query strings and service-worker cache are set to `20261014-44`.
+- Browser regression test's required-location list now includes the seven new/promoted locations and verifies that the reference image has a source and an explicit rights status.
+- **Still pending:** execute `node tests/v2-browser-smoke.cjs` in a working checkout with Playwright, review all desktop/mobile screenshots and image-load audit, inspect actual GitHub Pages deployment for the development preview, and conduct physical iPhone Safari checks. Do not mark v2.44 fully verified based solely on static source checks.
+- No merge/deployment to `main` has been made. Root v5.x is unchanged.
+
+
+## Current development checkpoint — v2.47 (2026-10-14 KST, not deployed)
+
+### Current state
+- Development branch: FRAME_ATLAS-v2.0-development in casio8000/FRAME_ATLAS. This is a branch, not an independent repository, and the changes are not live on production main.
+- Active locations: 58. Review-only candidates: 9.
+- Active counts by UI region: Seoul 19; Gyeonggi/Incheon Capital Area 20; Gangwon 3; Chungcheong 3; Jeolla 4; Gyeongsang 6; Jeju 3.
+- Six unique additions relative to the 52-place checkpoint: KBS Arena, Bangju Church, Busan Cinema Studio, Daegu Opera House, Sejong Arts Center, and Jeonju Palbok Art Factory. The earlier 10-record add pass was deduplicated; same-place image candidates were merged into existing records rather than keeping duplicate places.
+- Museum SAN remains active in Gangwon with a location-reference image and no automatically approved cover image.
+
+### Photo policy
+- A location-matched reference image can be shown as a place photo before the final editorial cover decision.
+- A reference image does not imply approval as the representative cover. For the listed newly added/curated records, primaryImageId remains null.
+- Rights/reuse permission and commercial shooting/venue permission are independent metadata. Unknown rights remain explicitly unknown. Jeonju Palbok Art Factory's Visit Jeonju image is marked as KOGL Type 2 (attribution required; commercial use prohibited).
+- External links may block hotlinking or change. Static source availability is not a guarantee of browser-time image loading.
+
+### Changes saved to this branch
+- v2/data/places.json: added four unique records, retained existing KBS Arena and Bangju Church, added source/rights metadata, corrected CJ ENM exterior-photo attribution, normalized all regionGroup keys, and removed duplicate location records while retaining useful alternate image references.
+- v2/assets/app.js, v2/index.html, v2/sw.js: unified Jeju label to 제주권 and bumped CSS/JS/service-worker cache versions to 20261014-47; initial counters updated to 58 active and 9 queued.
+- tests/v2-browser-smoke.cjs: now asserts unique IDs, unique normalized names, schema agreement for seven region groups and all new/selected nationwide locations.
+- tools/validate-catalog.mjs: deterministic static data/UI/cache validation.
+- .github/workflows/v2-quality.yml: automated Node syntax, catalog validation, Playwright browser smoke test, and screenshot/image-audit artifact upload.
+- This checkpoint and the README must be updated again after the first actual workflow run and any failure corrections.
+
+### Validation evidence available now
+- JSON parsing succeeded through the GitHub connector.
+- Unique record ID check: passed.
+- Duplicate normalized location-name check: passed.
+- All 7 region groups present: passed.
+- All 58 active records have a matching reference image candidate and explicit rights status: passed.
+- Required locations checked in the smoke-test catalog list: each reference image match and rights metadata present; cover approval unset for the 14 core/new scouting records: passed.
+- HTML button labels, initial counters and service-worker/CSS/JS cache version agreement: passed by source checks.
+- Not yet verified: execution of node tools/validate-catalog.mjs in a runner, actual Playwright desktop/mobile smoke test, screenshot review, remote-image loading on the test browser, and physical iPhone Safari behavior. Do not mark the build tested or production-ready until the workflow logs confirm these results.
+- No merge/deployment to main and no change to the legacy root v5.x app.
+
+### Resume instructions
+1. Read this section first.
+2. Inspect latest commit and the v2-quality.yml workflow result before making more code edits.
+3. Fix only concrete test failures; preserve source data and stable IDs.
+4. Update this section with test results before ending the work session.
