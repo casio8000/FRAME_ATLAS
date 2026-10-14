@@ -4,7 +4,7 @@
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
   "dataStatus": "구버전 214곳과 대조해 현재 133곳. 실제 PC/모바일 자동 검사에서 표시 링크가 로드되지 않은 사진 후보는 원본·출처를 삭제하지 않고 참조 표시만 보류했습니다. 열리지 않는 링크는 새 사진을 확보한 뒤 되살리고, 대체 URL이 있는 SeMA 벙커·별마당도서관·인천개항장은 다른 출처의 실제 장소 사진으로 전환했습니다. 사용권은 후속 검토 상태로 유지합니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T09:05:00.000Z",
+  "updatedAt": "2026-10-15T09:10:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -3579,15 +3579,15 @@
           "id": "legacy-l157-starfield-library",
           "title": "별마당도서관 서가·계단 참고사진",
           "viewType": "실내·건축·서가",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/%EB%B3%84%EB%85%BC%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg/960px-%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg",
-          "sourceThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/%EB%B3%84%EB%85%BC%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg/960px-%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg/960px-%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg",
+          "sourceThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg/960px-%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg",
           "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg",
           "sourceName": "LR0725 / Wikimedia Commons",
           "license": "CC BY-SA 4.0",
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요. Wikimedia 표준 upload.wikimedia.org 썸네일 경로로 수정했습니다."
+          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요. Wikimedia 표준 upload.wikimedia.org 썸네일 경로로 수정했습니다. Wikimedia 표준 upload.wikimedia.org 경로로 수정; 이전 경로의 파일명 인코딩 오류를 바로잡았습니다."
         }
       ],
       "sourceRefs": [
