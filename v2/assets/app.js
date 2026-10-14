@@ -111,7 +111,12 @@ function mergePublishedPhotoReferences(draft,base){
  draft.places=draft.places.filter(p=>p&&!excluded.has(p.id));
  draft.excludedLocationIds=[...excluded];
  const queueById=new Map((Array.isArray(draft.reviewQueue)?draft.reviewQueue:[]).map(p=>[p.id,p]));
- for(const item of (base.reviewQueue||[])){if(item&&item.id&&!queueById.has(item.id))queueById.set(item.id,JSON.parse(JSON.stringify(item)));}
+ for(const item of (base.reviewQueue||[])){
+  if(!item||!item.id)continue;
+  const prior=queueById.get(item.id);
+  if(!prior){queueById.set(item.id,JSON.parse(JSON.stringify(item)));continue;}
+  for(const key of ["curationQueueStatus","catalogPlaceId","reviewedOn","curationQueueReason"]){if(item[key])prior[key]=item[key];}
+ }
  draft.reviewQueue=[...queueById.values()];
  const draftIds=new Set(draft.places.map(p=>p&&p.id).filter(Boolean));
  for(const freshPlace of (base.places||[])){if(freshPlace&&freshPlace.id&&!draftIds.has(freshPlace.id)){draft.places.push(JSON.parse(JSON.stringify(freshPlace)));draftIds.add(freshPlace.id);}}
@@ -346,7 +351,7 @@ function renderLanding(){
   bindImageFallbacks(allGrid);
   allGrid.querySelectorAll("[data-home-all-place]").forEach(card=>card.addEventListener("click",()=>{selectedId=card.dataset.homeAllPlace;showAppView("detail");}));
  }
- const queue=Array.isArray(catalog.reviewQueue)?catalog.reviewQueue:[];
+ const queue=(Array.isArray(catalog.reviewQueue)?catalog.reviewQueue:[]).filter(item=>!["registered-in-catalog","merged-into-catalog"].includes(item.curationQueueStatus));
  const queueCount=$("homeCountReviewQueue");if(queueCount)queueCount.textContent=queue.length;
  const queueCountLabel=$("reviewQueueCount");if(queueCountLabel)queueCountLabel.textContent=queue.length;
  const queueHost=$("reviewQueueGrid");
