@@ -55,21 +55,24 @@ function bindImageFallbacks(root){
   if(img.dataset.fallbackBound==="1")return;
   img.dataset.fallbackBound="1";
   img.dataset.originalImageUrl=img.getAttribute("src")||img.currentSrc||img.src||"";
+  const armLoadTimeout=()=>{clearTimeout(img.__faLoadTimer);img.__faLoadTimer=setTimeout(()=>{if(!img.complete||img.naturalWidth===0)img.dispatchEvent(new Event("error"));},7500);};
   const initialFrame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");
   if(initialFrame){if(img.complete&&img.naturalWidth>0)initialFrame.classList.remove("image-loading");else initialFrame.classList.add("image-loading");}
   img.addEventListener("load",()=>{
+   clearTimeout(img.__faLoadTimer);
    const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");
    if(frame)frame.classList.remove("image-loading","image-missing","proxy-loading");
    img.removeAttribute("aria-hidden");
   });
   img.addEventListener("error",()=>{
+   clearTimeout(img.__faLoadTimer);
    const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");
    const original=img.dataset.originalImageUrl||"";
    const thumbnail=img.dataset.fallbackThumbnail||"";
    // Some host sites reject direct hotlink requests. Try an alternate preview if supplied.
    if(!img.dataset.thumbnailTried && thumbnail && thumbnail!==original){
     img.dataset.thumbnailTried="1";
-    img.src=thumbnail;
+    img.src=thumbnail;armLoadTimeout();
     return;
    }
    // Retry only remote HTTP(S) image URLs through an image resize/cache proxy.
@@ -80,7 +83,7 @@ function bindImageFallbacks(root){
     const width=frame&&frame.classList.contains("thumb")?240:900;
     const height=frame&&frame.classList.contains("thumb")?180:650;
     img.referrerPolicy="no-referrer";
-    img.src="https://images.weserv.nl/?url="+encodeURIComponent(original)+"&w="+width+"&h="+height+"&fit=inside&output=webp";
+    img.src="https://images.weserv.nl/?url="+encodeURIComponent(original)+"&w="+width+"&h="+height+"&fit=inside&output=webp";armLoadTimeout();
     return;
    }
    // If the first URL and its proxy fail, try another non-rejected candidate for the same place.
@@ -93,7 +96,7 @@ function bindImageFallbacks(root){
      const alt=alternatives[index];img.dataset.alternateCandidateIndex=String(index+1);img.dataset.alternateCandidatesTried="1";
      img.dataset.originalImageUrl=alt.imageUrl||alt.sourceThumbnail||"";img.dataset.thumbnailTried="1";img.dataset.proxyTried="";img.removeAttribute("aria-hidden");
      if(frame)frame.classList.remove("image-missing","proxy-loading");
-     img.src=img.dataset.originalImageUrl;
+     img.src=img.dataset.originalImageUrl;armLoadTimeout();
      return;
     }
    }
@@ -101,9 +104,12 @@ function bindImageFallbacks(root){
    if(frame)frame.classList.add("image-missing");
    img.setAttribute("aria-hidden","true");
   });
+  // Some image hosts leave requests pending indefinitely without emitting an error event.
+  // A timeout starts the existing thumbnail/proxy/alternate-candidate fallback chain.
+  armLoadTimeout();
   // Cached images can fail before the error listener has finished binding.
   if(img.complete&&img.naturalWidth===0)queueMicrotask(()=>img.dispatchEvent(new Event("error")));
-  else if(img.complete&&img.naturalWidth>0){const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");if(frame)frame.classList.remove("image-loading","image-missing","proxy-loading");}
+  else if(img.complete&&img.naturalWidth>0){clearTimeout(img.__faLoadTimer);const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");if(frame)frame.classList.remove("image-loading","image-missing","proxy-loading");}
  });
 }
 function stamp(){return new Date().toISOString();}
