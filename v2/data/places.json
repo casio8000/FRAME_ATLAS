@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "전국 17개 시·도 모두에 촬영 장소 후보를 확보했습니다. 기존 33곳과 첫 확장 8곳을 유지하고 7개 시·도 신규 후보를 더해 총 48곳. 신규 장소는 조형성·건축·재료감·빛을 기준으로 기획 선별했으며 대표사진·권리·촬영 허가는 검증 전 상태로 분리했습니다.",
+  "dataStatus": "전국 17개 시·도에 48곳의 촬영 장소 후보가 등록되어 있습니다. 최근 확장 지역 중 대전·세종·경북·경남에 장소별 사진 참고 후보를 추가했으며, 모든 권리 미확인 사진은 대표사진으로 승인하지 않았습니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T12:15:00.000Z",
+  "updatedAt": "2026-10-14T12:20:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -5182,9 +5182,26 @@
       "shootingPermission": "전시관·공공건물 내부 촬영 및 상업촬영은 사전 문의",
       "parking": "주변 주차시설과 장비 하차 지점 확인 필요",
       "fee": "촬영 목적·구역별 확인 필요",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-daejeon-old-office-stair-jjan",
+          "title": "옛 충남도청사 내부 계단과 근대건축 디테일",
+          "imageUrl": "https://cdn.jjan.kr/data2/content/image/2024/02/19/.cache/512/20240219580245.jpg",
+          "sourceThumbnail": "https://cdn.jjan.kr/data2/content/image/2024/02/19/.cache/512/20240219580245.jpg",
+          "sourcePageUrl": "https://www.jjan.kr/article/20240219580248",
+          "sourceName": "전북일보 · 옛 충남도청사 건축 소개",
+          "rights": "unknown",
+          "rightsLabel": "언론 사진 · 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·근대건축·계단",
+          "notes": "옛 충남도청사 내부 계단의 대칭과 목재 창호를 보여주는 언론 기사 사진 참고 후보. 이미지 재사용 권한은 확인되지 않았으며 대표사진으로 승인하지 않습니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.daejeon.go.kr/djBrand/djBrand50View.do?menuSeq=7863&ntatcSeq=1496616596"
       ],
@@ -5201,7 +5218,9 @@
       "priorityLabel": "A · 촬영 탐색 우선",
       "notes": "대전시 공식 자료는 옛 충남도청사 본관을 활용한 전시공간이며 건축 원형이 보존된 장소로 소개합니다. 촬영 구역과 현재 운영 조건은 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-daejeon-old-office-stair-jjan",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "sejong-national-arboretum",
@@ -5246,9 +5265,26 @@
       "shootingPermission": "상업촬영·삼각대·조명 사용 여부 사전 문의",
       "parking": "공식 방문 안내 확인 필요",
       "fee": "입장료와 촬영료는 별도 확인",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-sejong-greenhouse-interior-blog",
+          "title": "국립세종수목원 사계절전시온실의 철골·유리 구조와 식재",
+          "imageUrl": "https://img1.daumcdn.net/thumb/R800x0/?fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fu0amp%2FbtsNLsmzV61%2FXusuH5Iuu2QiEattbNpaU0%2Fimg.png&scode=mtistory2",
+          "sourceThumbnail": "https://img1.daumcdn.net/thumb/R800x0/?fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fu0amp%2FbtsNLsmzV61%2FXusuH5Iuu2QiEattbNpaU0%2Fimg.png&scode=mtistory2",
+          "sourcePageUrl": "https://jamina-11.tistory.com/entry/%EA%B5%AD%EB%A6%BD%EC%84%B8%EC%A2%85%EC%88%98%EB%AA%A9%EC%9B%90-%EC%82%AC%EA%B3%84%EC%A0%88%EC%A0%84%EC%8B%9C%EC%98%A8%EC%8B%A4-%ED%83%90%EB%B0%A9%EA%B8%B0",
+          "sourceName": "방문 후기 블로그",
+          "rights": "unknown",
+          "rightsLabel": "개인 게시 사진 · 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·온실·철골 유리 구조",
+          "notes": "사계절전시온실의 유리·철골 구조를 보여주는 방문 후기 사진 참고 후보. 저작권자가 별도로 표시되지 않아 앱 내 장기 재사용은 확인 전이며 대표사진 승인을 보류합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.sjna.or.kr/"
       ],
@@ -5265,7 +5301,9 @@
       "priorityLabel": "B · 조건 확인 후 탐색",
       "notes": "일반 정원 산책이 아닌 온실의 유리·철골 구조와 식물 레이어를 촬영 자원으로 평가했습니다. 상업촬영 가능 여부는 미확인입니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-sejong-greenhouse-interior-blog",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "chungbuk-culture-factory",
@@ -5498,9 +5536,26 @@
       "shootingPermission": "전시실·작품·상업촬영 및 장비 사용 사전 확인",
       "parking": "경주엑스포대공원 주차장 이용 조건 공식 안내 확인",
       "fee": "통합권·전시별 요금 확인 필요",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-solgeo-window-visitkorea",
+          "title": "솔거미술관 대형 창과 수변 풍경",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/52/2752152_image2_1.jpg",
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/52/2752152_image2_1.jpg",
+          "sourcePageUrl": "https://ontrip.kr/travel-guides/details/2752134",
+          "sourceName": "대한민국 구석구석 관광정보를 활용한 OnTrip 장소 페이지",
+          "rights": "unknown",
+          "rightsLabel": "관광정보 사진 · 앱 재사용 권리 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·대형 창·수변",
+          "notes": "솔거미술관의 대형 창과 수변 풍경을 보여주는 장소 사진 후보. 인물 포함 사진이며, 이미지 제공·재사용 조건을 별도 확인하기 전 대표사진으로 승인하지 않습니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://gyeongju.go.kr/tour/page.do?mnu_uid=4723",
         "http://www.gjsam.or.kr/"
@@ -5518,7 +5573,9 @@
       "priorityLabel": "A · 촬영 탐색 우선",
       "notes": "경주시 공식 관광정보는 솔거미술관을 건축가 승효상이 설계한 공립미술관으로 소개하고, 자연광이 들어오는 큰 창을 사진적 요소로 설명합니다. 전시 작품과 내부 촬영 허용 범위는 별도 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-solgeo-window-visitkorea",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "gyeongnam-clayarch",
@@ -5563,9 +5620,26 @@
       "shootingPermission": "상업촬영·삼각대·조명 사용 및 작품 촬영 사전 확인",
       "parking": "공식 방문 안내 확인 필요",
       "fee": "입장료와 별도 촬영료 여부 확인",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-clayarch-exterior-yna-2026",
+          "title": "클레이아크 김해미술관 원형 세라믹 타일 외관",
+          "imageUrl": "https://img4.yna.co.kr/etc/inner/KR/2026/02/04/AKR20260204125700052_01_i_P4.jpg",
+          "sourceThumbnail": "https://img4.yna.co.kr/etc/inner/KR/2026/02/04/AKR20260204125700052_01_i_P4.jpg",
+          "sourcePageUrl": "https://www.yna.co.kr/view/AKR20260204125700052",
+          "sourceName": "연합뉴스 · 2026년 클레이아크 김해미술관 보도",
+          "rights": "unknown",
+          "rightsLabel": "언론 사진 · 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·세라믹 건축 외관",
+          "notes": "클레이아크 김해미술관의 타일 외피와 원형 건축을 보여주는 2026년 언론 사진 후보. 건축 형태 검토용으로만 등록하며 저작권·재사용 권리 확인 전 대표사진으로 승인하지 않습니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://clayarch.ghct.or.kr/home/main"
       ],
@@ -5582,7 +5656,9 @@
       "priorityLabel": "A · 촬영 탐색 우선",
       "notes": "김해문화관광재단 공식 미술관 사이트와 2026년 문화정보 자료에서 확인되는 예술공간입니다. 세라믹 건축과 전시공간을 우선 평가했으며 촬영 규정은 직접 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-clayarch-exterior-yna-2026",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     }
   ],
   "selectionRubric": {
