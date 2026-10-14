@@ -1544,19 +1544,19 @@
         {
           "id": "ref-busan-cinema-center-big-roof",
           "title": "부산 영화의전당 빅루프와 야간 조명",
-          "imageUrl": "https://www.heerim.com/data/goodsImages/3b87e08b9dead6d608a32c0c9ec47676.jpg",
-          "sourcePageUrl": "https://www.heerim.com/kr/project/project_view.php?idx=371",
-          "sourceName": "희림건축 · 부산 영화의전당 프로젝트",
-          "creator": "희림건축 프로젝트 페이지 · 개별 사진 저작자 확인 필요",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/51/3021751_image2_1.jpg",
+          "sourcePageUrl": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=66231",
+          "sourceName": "한국관광공사 VisitKorea · 부산 영화의전당 안내",
+          "creator": "한국관광공사 게시 이미지 · 세부 저작자 표시 확인 필요",
           "rights": "unknown",
           "rightsLabel": "재사용 권리 미확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "빅루프·곡면 메탈 지붕·야간 조명·건축 원근",
-          "notes": "건축설계사 프로젝트 페이지에서 확인한 영화의전당의 곡면 지붕과 야간 조명 이미지입니다. 촬영 활용도가 높은 공간 형태를 보여주는 참고 사진이며 재사용 권리와 현장 촬영 허가는 별도 확인해야 합니다.",
+          "viewType": "빅루프·공연장 외관·건축 스케일",
+          "notes": "한국관광공사 장소 소개 페이지에서 연결된 영화의전당 이미지입니다. 장소 참고 이미지로 사용하며 대표사진 승인, 사진 재사용 권리, 상업 촬영 허가 상태는 서로 별개로 확인합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T05:00:00.000Z",
-          "sourceThumbnail": "https://www.heerim.com/data/goodsImages/3b87e08b9dead6d608a32c0c9ec47676.jpg"
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/51/3021751_image2_1.jpg"
         }
       ],
       "sourceRefs": [
@@ -1565,12 +1565,12 @@
           "url": "https://www.dureraum.org/bccen/"
         },
         {
-          "name": "희림건축 부산 영화의전당 프로젝트",
-          "url": "https://www.heerim.com/kr/project/project_view.php?idx=371"
+          "name": "한국관광공사 영화의전당 안내 및 참고 이미지",
+          "url": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=66231"
         },
         {
-          "name": "한국관광공사 영화의전당 안내",
-          "url": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=66231"
+          "name": "희림건축 부산 영화의전당 프로젝트",
+          "url": "https://www.heerim.com/kr/project/project_view.php?idx=371"
         }
       ],
       "verification": {
