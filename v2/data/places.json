@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "전국 17개 시·도 전체 장소 목록. 기존 48곳에 검토 대기 14건을 모두 처리(고유 신규 10곳 등록, ACC·뮤지엄 SAN·F1963·서울시청 4건은 중복 기록 통합)하고, MBC 방송 스튜디오·용인 대장금파크·논산 선샤인스튜디오를 추가해 총 61곳. 장소별 실제 사진 참고 후보와 이미지 출처·영상 작품 출처를 우선 등록했으며 사용권·상업촬영 승인 여부는 후속 검토 상태로 분리.",
+  "dataStatus": "구버전 FRAME ATLAS v5.23의 214곳을 2.0의 98곳과 대조했습니다. 예술적 건축·산업유산·대형 스튜디오·공연장·영화/드라마 로케이션 중 2.0에 없던 곳을 추가하고, DDP·솔거미술관·선샤인랜드/MBC 등의 중복은 기존 기록에 합쳤습니다. 사진 후보는 우선 등록하고 사용권·최종 대표사진·현장 촬영 허가는 별도 후속 검토로 관리합니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T21:45:00.000Z",
+  "updatedAt": "2026-10-15T07:25:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -5830,11 +5830,28 @@
           "notes": "솔거미술관의 대형 창과 수변 풍경을 보여주는 장소 사진 후보. 인물 포함 사진이며, 이미지 제공·재사용 조건을 별도 확인하기 전 대표사진으로 승인하지 않습니다.",
           "status": "candidate",
           "createdAt": "2026-10-14"
+        },
+        {
+          "id": "legacy-image-l-139",
+          "title": "솔거미술관 실내·자연채광 참고사진",
+          "imageUrl": "https://media.triple.guide/triple-cms/c_limit%2Cf_auto%2Ch_2048%2Cw_2048/b49a9855-eac6-48db-9821-57488448f4bd.jpeg",
+          "sourceThumbnail": "https://media.triple.guide/triple-cms/c_limit%2Cf_auto%2Ch_2048%2Cw_2048/b49a9855-eac6-48db-9821-57488448f4bd.jpeg",
+          "sourcePageUrl": "웹 이미지 검색",
+          "sourceName": "웹 이미지 검색",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "unverified",
+          "viewType": "실내·미술관·자연채광",
+          "notes": "구버전 214곳 자료에서 보유한 솔거미술관 사진 후보를 기존 장소 기록에 추가했습니다. 장소 구도와 실제 이미지 일치는 후속 대조가 필요합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
         }
       ],
       "sourceRefs": [
         "https://gyeongju.go.kr/tour/page.do?mnu_uid=4723",
-        "http://www.gjsam.or.kr/"
+        "http://www.gjsam.or.kr/",
+        "https://gyeongju.museum.go.kr/"
       ],
       "verification": {
         "location": "경주시 공식 관광정보 확인",
@@ -5849,7 +5866,7 @@
       "priorityLabel": "A · 촬영 탐색 우선",
       "notes": "경주시 공식 관광정보는 솔거미술관을 건축가 승효상이 설계한 공립미술관으로 소개하고, 자연광이 들어오는 큰 창을 사진적 요소로 설명합니다. 전시 작품과 내부 촬영 허용 범위는 별도 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "referenceImageId": "img-solgeo-window-visitkorea",
       "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
@@ -7276,7 +7293,10 @@
       "aliases": [
         "MBC 스튜디오",
         "상암 MBC 대관",
-        "MBC 일산 드림센터"
+        "MBC 일산 드림센터",
+        "MBC 드림센터",
+        "일산 MBC 드림센터",
+        "상암 MBC 스튜디오"
       ],
       "summary": "방송용 조명 그리드·카메라·변형 가능한 무대 세트가 있는 제작시설. 단순 관광지가 아니라 실제 제작공간 대관 및 연출 가능한 환경으로 선정.",
       "photoProfile": "높은 천장, 조명 리그, 촬영 카메라와 세트 플랫폼을 이용하는 상업·방송·패션 영상 촬영 후보.",
@@ -7359,7 +7379,7 @@
       "visualCurationStatus": "candidate",
       "curationQueueStatus": "registered-in-catalog",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "notes": "대형 스튜디오 및 공연장 유형을 보강하기 위해 추가. 페이지는 상암 MBC 신사옥과 일산 드림센터 시설 대관을 함께 안내하므로 사진 속 세부 스튜디오와 실제 대관 장소는 별도 확인."
     },
     {
@@ -7499,7 +7519,9 @@
       "officialUrl": "https://www.sunshinestudio.co.kr/",
       "aliases": [
         "선샤인스튜디오",
-        "미스터 션샤인 촬영지"
+        "미스터 션샤인 촬영지",
+        "논산 선샤인랜드",
+        "선샤인랜드"
       ],
       "summary": "1900년대 초 한성의 근대거리를 재현한 약 6,000평 규모의 드라마 세트. 근대 양옥·한옥·적산가옥과 좁은 골목, 전신주·간판의 질감이 실제 시대 배경의 사진과 영상에 적합해 선정.",
       "photoProfile": "근대 간판·전차 거리·벽돌·한옥과 적산가옥의 대비, 조명으로 만든 저녁 거리 분위기를 이용.",
@@ -7561,7 +7583,8 @@
       "sourceRefs": [
         "https://www.sunshinestudio.co.kr/",
         "https://tour.chungnam.go.kr/prog/trsrcn/kor/sub02_01_01/view.do?trsrcnNo=36",
-        "https://access.visitkorea.or.kr/ms/detail.do?cotId=f53add75-2e60-4c30-b024-71fac488d4d6"
+        "https://access.visitkorea.or.kr/ms/detail.do?cotId=f53add75-2e60-4c30-b024-71fac488d4d6",
+        "https://www.segye.com/view/20230205504831"
       ],
       "verification": {
         "location": "선샤인스튜디오·충남관광·한국관광공사 공식 정보",
@@ -7591,6 +7614,13 @@
           "publisher": "한국관광공사 · 열린관광 모두의 여행",
           "url": "https://access.visitkorea.or.kr/ms/detail.do?cotId=f53add75-2e60-4c30-b024-71fac488d4d6",
           "notes": "한국관광공사 장소 소개에서 촬영지로 언급."
+        },
+        {
+          "kind": "드라마",
+          "title": "미스터 션샤인",
+          "publisher": "구버전 FRAME ATLAS 및 언론 보도",
+          "url": "https://www.segye.com/view/20230205504831",
+          "notes": "개화기 거리 오픈세트"
         }
       ],
       "selectionStatus": "등록 · 실제 드라마 촬영지 및 작품 출처 포함, 대관 조건 후속 확인",
@@ -7598,8 +7628,3234 @@
       "visualCurationStatus": "candidate",
       "curationQueueStatus": "registered-in-catalog",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
-      "notes": "논산시·한국관광공사·공식 선샤인스튜디오의 작품·시설 정보를 근거로 포함했습니다. 선샤인랜드의 1950 스튜디오와 선샤인스튜디오는 별개 시설이므로 혼동하지 않도록 주소와 출처를 분리했습니다."
+      "updatedAt": "2026-10-15",
+      "notes": "논산시·한국관광공사·공식 선샤인스튜디오의 작품·시설 정보를 근거로 포함했습니다. 선샤인랜드의 1950 스튜디오와 선샤인스튜디오는 별개 시설이므로 혼동하지 않도록 주소와 출처를 분리했습니다. 구버전 214곳에 있던 ‘논산 선샤인랜드’ 명칭을 이 기록에 별칭으로 통합했습니다. 선샤인랜드 단지와 선샤인스튜디오 세부 구역은 현장 안내에서 구분합니다."
+    },
+    {
+      "id": "bucheon-art-bunker-b39",
+      "name": "부천아트벙커 B39",
+      "region": "경기",
+      "category": "폐소각장 재생·산업건축·촬영 대관",
+      "aliases": [],
+      "summary": "산업시설 재생, 대형 벙커",
+      "photoProfile": "산업적·어둠·거대함 분위기와 폐소각장 재생의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "야외",
+        "환경 인물"
+      ],
+      "visualStrengths": [
+        "39m 벙커와 거대한 콘크리트 구조",
+        "기존 소각시설·배관·크레인",
+        "중앙제어실·에어갤러리의 강한 원근"
+      ],
+      "bestConcepts": [
+        "인더스트리얼 패션",
+        "뮤직비디오·광고",
+        "시네마틱 화보"
+      ],
+      "constraints": [
+        "확인 필요",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 1,
+      "photoPotentialScore": 91,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 사진적 잠재력 높음",
+      "address": "경기 부천",
+      "coordinates": null,
+      "officialUrl": "https://artbunkerb39.org/ko/main/main.html",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-020",
+          "title": "아트벙커 B39 산업설비·벙커 공간",
+          "imageUrl": "https://artbunkerb39.org/ko/img/sub/sub02_img02.jpg",
+          "sourceThumbnail": "https://artbunkerb39.org/ko/img/sub/sub02_img02.jpg",
+          "sourcePageUrl": "https://artbunkerb39.org/ko/sub/sub10.html",
+          "sourceName": "부천아트벙커B39 공식 공간소개",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·폐소각장·산업설비",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-020",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://artbunkerb39.org/ko/sub/sub10.html",
+        "https://artbunkerb39.org/ko/main/main.html"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "공식 촬영·대관 기록",
+          "title": "영화: 고인아파트 · 슈가 · 굿뉴스 · 왕을 찾아서 · 길복순 · 헤어질 결심 · 승리호",
+          "publisher": "부천아트벙커 B39 공식 대관안내",
+          "url": "https://artbunkerb39.org/ko/sub/sub10.html",
+          "notes": "시설 공식 촬영 대관 기록에 기재된 작품."
+        },
+        {
+          "kind": "공식 촬영·대관 기록",
+          "title": "드라마: 데드라인 · 사마귀 · 힘쎈여자 강남순 · 스위트홈2 · 경성크리처 · 보이스4",
+          "publisher": "부천아트벙커 B39 공식 대관안내",
+          "url": "https://artbunkerb39.org/ko/sub/sub10.html",
+          "notes": "시설 공식 촬영 대관 기록에 기재된 작품."
+        },
+        {
+          "kind": "공식 촬영·대관 기록",
+          "title": "광고·방송·뮤직비디오·패션 화보 촬영",
+          "publisher": "부천아트벙커 B39 공식 대관안내",
+          "url": "https://artbunkerb39.org/ko/sub/sub10.html",
+          "notes": "기아자동차, 미즈노, 데블스 플랜, BOYS II PLANET C, 비비·엔하이픈 등의 촬영 기록이 기재되어 있습니다."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-020",
+      "legacyCatalogScore": 91,
+      "legacyVisualTags": [
+        "환경인물",
+        "에디토리얼"
+      ],
+      "legacyMood": "산업적·어둠·거대함",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "폐소각장을 재생한 산업문화공간. 공식 대관 기록에 영화·드라마·광고·방송·화보·뮤직비디오 촬영작품이 기재되어 있습니다. 상업촬영은 대관·승인 절차가 필요합니다."
+    },
+    {
+      "id": "taebaek-cheoram-coal-sorting",
+      "name": "철암역두 선탄시설",
+      "region": "강원",
+      "category": "산업유산·탄광시설·콘크리트 구조",
+      "aliases": [],
+      "summary": "1930년대 탄광 산업시설의 덩치와 반복 구조, 낡은 콘크리트·철골의 질감이 강한 산업유산 촬영 후보. 기존 자료에는 내부 탐방 중단·외부 중심 관람으로 기록되어 있어 접근 범위를 확인해야 합니다.",
+      "photoProfile": "거칠음·산업적·다큐·시간감 분위기와 산업유산·탄광시설의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "야외",
+        "환경 인물"
+      ],
+      "visualStrengths": [
+        "거대한 선탄시설 골조와 수직 구조",
+        "석탄 산업의 낡은 재료감",
+        "철도·광산마을의 시간감"
+      ],
+      "bestConcepts": [
+        "산업·다크 패션",
+        "다큐멘터리 에디토리얼",
+        "영화·뮤직비디오 로케이션"
+      ],
+      "constraints": [
+        "촬영 전 최신 조건 및 상업촬영 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 1,
+      "photoPotentialScore": 93,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 산업유산 촬영 후보",
+      "address": "강원 태백",
+      "coordinates": null,
+      "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=6bcb0418-e772-4fcd-8a18-dab8c3234c18",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-109",
+          "title": "철암역두 선탄시설 콘크리트·철골 외부 전경",
+          "imageUrl": "https://cdn.iminju.net/news/photo/201612/22577_27802_5152.jpg",
+          "sourceThumbnail": "https://cdn.iminju.net/news/photo/201612/22577_27802_5152.jpg",
+          "sourcePageUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=6bcb0418-e772-4fcd-8a18-dab8c3234c18",
+          "sourceName": "민주신문 기사 이미지 · 외부 전경 / 한국관광공사 장소 정보",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·탄광 산업유산",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-109",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=6bcb0418-e772-4fcd-8a18-dab8c3234c18"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-109",
+      "legacyCatalogScore": 93,
+      "legacyVisualTags": [
+        "거칠음",
+        "산업적",
+        "다큐",
+        "시간감"
+      ],
+      "legacyMood": "거칠음·산업적·다큐·시간감",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "구버전 자료의 93점 창작 적합도 평가를 이관했습니다. 해당 점수는 현장 허가나 안전 승인을 뜻하지 않으며, 시설 내부 접근은 별도 확인이 필요합니다."
+    },
+    {
+      "id": "daejeon-jangtaesan-skyway",
+      "name": "장태산자연휴양림 메타세쿼이아 숲·스카이웨이",
+      "region": "대전",
+      "category": "메타세쿼이아 숲·스카이웨이·선형 구도",
+      "aliases": [],
+      "summary": "국내에서도 드문 대규모 메타세쿼이아 숲과 스카이웨이가 결합된 공간. 수직선과 인물의 크기 대비를 만들기 좋습니다.",
+      "photoProfile": "이국적·웅장함·청량·몽환적 분위기와 메타세쿼이아숲·스카이웨이의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "야외",
+        "환경 인물"
+      ],
+      "visualStrengths": [
+        "키 큰 메타세쿼이아의 수직 반복",
+        "스카이웨이 구조와 인물의 스케일 대비",
+        "숲 속 확산광과 깊은 원근"
+      ],
+      "bestConcepts": [
+        "환경 인물",
+        "패션·웨딩 에디토리얼",
+        "몽환적 뮤직비디오"
+      ],
+      "constraints": [
+        "촬영 전 최신 조건 및 상업촬영 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 1,
+      "photoPotentialScore": 92,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 사진적 잠재력 높음",
+      "address": "대전 서구",
+      "coordinates": null,
+      "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=ee78a56f-8fb0-421e-b714-b20472df9e00",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "사진 참고 후보 등록 · 장소 일치 확인 후 대표 적용",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-112",
+          "title": "장태산 메타세쿼이아 수직선과 스카이웨이",
+          "imageUrl": "https://t1.daumcdn.net/news/202507/16/551806-wgXWzV3/20250716090007043bqii.jpg",
+          "sourceThumbnail": "https://t1.daumcdn.net/news/202507/16/551806-wgXWzV3/20250716090007043bqii.jpg",
+          "sourcePageUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=ee78a56f-8fb0-421e-b714-b20472df9e00",
+          "sourceName": "구버전 FRAME ATLAS 장소자료 · 관광 출처 연결",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "unverified",
+          "viewType": "야외·숲길·스카이웨이",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": null,
+      "referenceImageStatus": "사진 후보 등록 · 장소 일치 확인 후 참조 전환",
+      "sourceRefs": [
+        "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=ee78a56f-8fb0-421e-b714-b20472df9e00"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "이미지 후보 이관·장소 대조 필요",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-112",
+      "legacyCatalogScore": 92,
+      "legacyVisualTags": [
+        "이국적",
+        "웅장함",
+        "청량",
+        "몽환적"
+      ],
+      "legacyMood": "이국적·웅장함·청량·몽환적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "숲길 전체를 관광지로 추천하기보다 나무의 수직선과 스카이웨이 구조가 함께 잡히는 프레임을 우선 조사합니다. 사진 링크는 후보로 등록하고 실제 구도 대조 후 대표 참조로 전환합니다."
+    },
+    {
+      "id": "busan-jangnim-port",
+      "name": "부산 장림포구 컬러 하버·수변 건축",
+      "region": "부산",
+      "category": "항구·컬러건축·수면 반사",
+      "aliases": [],
+      "summary": "형형색색 건물과 작은 배, 수면 반사가 함께 만드는 부산의 항구형 로케이션. 선셋 촬영에 특히 유리합니다.",
+      "photoProfile": "컬러풀·생활감·해질녘·이국적 분위기와 항구·어촌·컬러건축의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "야외",
+        "환경 인물"
+      ],
+      "visualStrengths": [
+        "다채로운 파사드의 반복",
+        "작은 배와 수면 반사",
+        "해질녘 컬러 대비와 항구 레이어"
+      ],
+      "bestConcepts": [
+        "컬러 패션",
+        "라이프스타일 광고",
+        "해안 로케이션 영상"
+      ],
+      "constraints": [
+        "촬영 전 최신 조건 및 상업촬영 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 89,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "B · 촬영 포인트 선별",
+      "address": "부산 사하구",
+      "coordinates": null,
+      "officialUrl": "https://www.visitbusan.net/archive/dataSearch/view.nm?dataSid=METADATA005725",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-106",
+          "title": "장림포구 컬러 하우스와 어선·수면",
+          "imageUrl": "https://cdn.imweb.me/upload/S202508078bad0199d6143/ffd887e599cb0.png",
+          "sourceThumbnail": "https://cdn.imweb.me/upload/S202508078bad0199d6143/ffd887e599cb0.png",
+          "sourcePageUrl": "https://www.wondertour.kr/TravelGuide/?bmode=view&idx=167528176",
+          "sourceName": "Wonder Tour · 장림포구 장소 사진",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·수변·컬러건축",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-106",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://www.visitbusan.net/archive/dataSearch/view.nm?dataSid=METADATA005725",
+        "https://www.wondertour.kr/TravelGuide/?bmode=view&idx=167528176"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-106",
+      "legacyCatalogScore": 89,
+      "legacyVisualTags": [
+        "컬러풀",
+        "생활감",
+        "해질녘",
+        "이국적"
+      ],
+      "legacyMood": "컬러풀·생활감·해질녘·이국적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "색채 건축과 실제 어항의 레이어가 사진적 이유입니다. 부두 작업·주민 동선을 방해하지 않는 촬영 위치를 선정해야 합니다."
+    },
+    {
+      "id": "daejeon-sodaeheon-hoyeonjae",
+      "name": "대전 소대헌·호연재 고택",
+      "region": "대전",
+      "category": "전통한옥·고택·마당",
+      "aliases": [],
+      "summary": "조선시대 고택의 마당·기와·목재와 계절 꽃을 함께 활용할 수 있는 한옥 로케이션.",
+      "photoProfile": "고전적·정갈함·서정·봄빛 분위기와 전통한옥·고택의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "야외",
+        "환경 인물"
+      ],
+      "visualStrengths": [
+        "조선시대 고택의 목재·기와",
+        "마당과 처마가 만드는 프레임",
+        "계절 꽃과 정제된 전통미"
+      ],
+      "bestConcepts": [
+        "한복·전통패션",
+        "웨딩·에디토리얼",
+        "한국적 브랜드 화보"
+      ],
+      "constraints": [
+        "촬영 전 최신 조건 및 상업촬영 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 88,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 전통건축 사진 후보",
+      "address": "대전 대덕구",
+      "coordinates": null,
+      "officialUrl": "https://daejeontour.co.kr/sights_djt/44?page=2",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-103",
+          "title": "소대헌·호연재 고택의 마당·기와·목재",
+          "imageUrl": "https://daejeontour.co.kr/data/file/sights_djt/1935377306_687ddc5ec6a52_9.jpg",
+          "sourceThumbnail": "https://daejeontour.co.kr/data/file/sights_djt/1935377306_687ddc5ec6a52_9.jpg",
+          "sourcePageUrl": "https://daejeontour.co.kr/data/file/sights_djt/1935377306_687ddc5ec6a52_9.jpg",
+          "sourceName": "대전관광 공식 이미지",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·한옥·마당",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-103",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://daejeontour.co.kr/sights_djt/44?page=2",
+        "https://daejeontour.co.kr/data/file/sights_djt/1935377306_687ddc5ec6a52_9.jpg"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-103",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "고전적",
+        "정갈함",
+        "서정",
+        "봄빛"
+      ],
+      "legacyMood": "고전적·정갈함·서정·봄빛",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "대전관광 공식 이미지가 연결된 전통 고택입니다. 방문 시 거주·보존구역과 상업촬영 가능 범위를 확인해야 합니다."
+    },
+    {
+      "id": "busan-cheongsapo-dallitdol",
+      "name": "부산 청사포 다릿돌전망대",
+      "region": "부산",
+      "category": "해상전망대·해안선·U자형 구조",
+      "aliases": [],
+      "summary": "바다 위로 길게 뻗은 U자형 전망대와 등대·암초가 함께 보이는 장소. 인물을 작게 배치한 시네마틱 구도가 좋습니다.",
+      "photoProfile": "청량·개방감·바다·일출·노을 분위기와 해상전망대·해안의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "야외",
+        "환경 인물"
+      ],
+      "visualStrengths": [
+        "바다 위로 뻗는 U자형 전망대",
+        "등대·암초·수평선",
+        "인물과 구조물의 규모 대비"
+      ],
+      "bestConcepts": [
+        "시네마틱 환경 인물",
+        "미니멀 패션",
+        "해안 브랜드 영상"
+      ],
+      "constraints": [
+        "촬영 전 최신 조건 및 상업촬영 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 88,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 구조미 촬영 후보",
+      "address": "부산 해운대구",
+      "coordinates": null,
+      "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=d24fc1d9-56ee-4cec-b8c5-8ba1f20101ee",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-111",
+          "title": "청사포 다릿돌전망대 U자형 보행 구조",
+          "imageUrl": "https://www.busan.go.kr/comm/getImage?fileNo=1&fileTy=MEDIA&srvcId=MEDIA&upperNo=2904",
+          "sourceThumbnail": "https://www.busan.go.kr/comm/getImage?fileNo=1&fileTy=MEDIA&srvcId=MEDIA&upperNo=2904",
+          "sourcePageUrl": "https://www.busan.go.kr/comm/getImage?fileNo=1&fileTy=MEDIA&srvcId=MEDIA&upperNo=2904",
+          "sourceName": "부산광역시 공식 이미지",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·해안·전망대 구조",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-111",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=d24fc1d9-56ee-4cec-b8c5-8ba1f20101ee",
+        "https://www.busan.go.kr/comm/getImage?fileNo=1&fileTy=MEDIA&srvcId=MEDIA&upperNo=2904"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-111",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "청량",
+        "개방감",
+        "바다",
+        "일출/노을"
+      ],
+      "legacyMood": "청량·개방감·바다·일출·노을",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "전망대의 선형 구조와 해안선이 겹치는 구도를 기준으로 선정했습니다. 강풍·파랑·운영 통제에 유의합니다."
+    },
+    {
+      "id": "suwon-art-museum-haenggung",
+      "name": "수원시립미술관 행궁본관",
+      "region": "경기",
+      "category": "현대미술관·노출 콘크리트·가변 전시공간",
+      "aliases": [],
+      "summary": "노출 콘크리트 기둥, 검은 천장, 넓은 바닥과 가변 전시 구조가 있어 현대적 패션 촬영에 유리.",
+      "photoProfile": "미니멀·산업적·세련됨 분위기와 현대미술관·콘크리트 공간의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "실내·외 연결"
+      ],
+      "visualStrengths": [
+        "노출 콘크리트 기둥과 검은 천장",
+        "넓은 바닥과 전시 벽의 여백",
+        "현대 미술과 인물의 대비"
+      ],
+      "bestConcepts": [
+        "현대 패션·아이돌 콘셉트",
+        "건축 에디토리얼",
+        "브랜드 룩북"
+      ],
+      "constraints": [
+        "사전 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 88,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 현대건축 사진 후보",
+      "address": "경기 수원",
+      "coordinates": null,
+      "officialUrl": "https://suma.suwon.go.kr/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-124",
+          "title": "수원시립미술관 행궁본관 노출 콘크리트와 전시 공간",
+          "imageUrl": "https://suma.suwon.go.kr/upfilePath/bd/EXHI_202504140958451817.jpg",
+          "sourceThumbnail": "https://suma.suwon.go.kr/upfilePath/bd/EXHI_202504140958451817.jpg",
+          "sourcePageUrl": "수원시립미술관 공식 이미지",
+          "sourceName": "수원시립미술관 공식 이미지",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·현대건축·미술관",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-124",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://suma.suwon.go.kr/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-124",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "미니멀",
+        "산업적",
+        "세련됨"
+      ],
+      "legacyMood": "미니멀·산업적·세련됨",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "구버전 자료는 공식 미술관 이미지로 기록한 사진을 이관했습니다. 전시 일정·작품 촬영·상업촬영 허가는 별도 확인합니다."
+    },
+    {
+      "id": "gangneung-arte-museum",
+      "name": "아르떼뮤지엄 강릉",
+      "region": "강원",
+      "category": "몰입형 미디어아트·프로젝션·반사 바닥",
+      "aliases": [],
+      "summary": "대형 프로젝션과 반사 바닥을 활용해 일반 스튜디오와 다른 움직이는 빛의 인물사진을 만들 수 있는 후보.",
+      "photoProfile": "몽환적·컬러풀·몰입 분위기와 몰입형 미디어아트의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "야외",
+        "환경 인물"
+      ],
+      "visualStrengths": [
+        "대형 프로젝션과 공간 전체의 컬러",
+        "반사 바닥과 실루엣 인물",
+        "암부 속 발광 이미지"
+      ],
+      "bestConcepts": [
+        "콘셉트 패션",
+        "뮤직비디오·콘텐츠",
+        "실루엣 인물화보"
+      ],
+      "constraints": [
+        "사전 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 88,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 미디어아트 촬영 후보",
+      "address": "강원 강릉",
+      "coordinates": null,
+      "officialUrl": "https://artemuseum.com/GANGNEUNG",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-126",
+          "title": "아르떼뮤지엄 강릉 몰입형 프로젝션 공간",
+          "imageUrl": "https://cdn.imweb.me/thumbnail/20251218/bc7450df1fa24.png",
+          "sourceThumbnail": "https://cdn.imweb.me/thumbnail/20251218/bc7450df1fa24.png",
+          "sourcePageUrl": "아르떼뮤지엄 공식 이미지",
+          "sourceName": "아르떼뮤지엄 공식 이미지",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·미디어아트·저조도",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-126",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://artemuseum.com/GANGNEUNG"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-126",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "몽환적",
+        "컬러풀",
+        "몰입"
+      ],
+      "legacyMood": "몽환적·컬러풀·몰입",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "전시 콘텐츠는 교체될 수 있으며 일반 관람 사진촬영과 상업 촬영·플래시 사용은 구분해 확인해야 합니다."
+    },
+    {
+      "id": "daejeon-leeungno-museum",
+      "name": "대전 이응노미술관",
+      "region": "대전",
+      "category": "현대미술관·유리 파사드·중정",
+      "aliases": [],
+      "summary": "유리창과 중정, 목재 바닥, 곡선형 벤치가 결합되어 자연광 인물사진에 특히 유리.",
+      "photoProfile": "자연광·정제됨·동양적 분위기와 현대미술관·유리 파사드의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "실내·외 연결"
+      ],
+      "visualStrengths": [
+        "유리창과 중정의 자연광",
+        "곡선형 벤치와 목재 바닥",
+        "정제된 동양적 공간감"
+      ],
+      "bestConcepts": [
+        "자연광 인물화보",
+        "미니멀 패션",
+        "문화 브랜드 캠페인"
+      ],
+      "constraints": [
+        "사전 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 88,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 건축·자연광 촬영 후보",
+      "address": "대전 유성구",
+      "coordinates": null,
+      "officialUrl": "https://www.leeungnomuseum.or.kr/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "사진 참고 후보 등록 · 장소 일치 확인 후 대표 적용",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-128",
+          "title": "이응노미술관 유리면·중정·목재 바닥",
+          "imageUrl": "https://www.esquirekorea.co.kr/resources/place/old/eee_hotplace1/IMG_2023_02_02/054716211001.jpg",
+          "sourceThumbnail": "https://www.esquirekorea.co.kr/resources/place/old/eee_hotplace1/IMG_2023_02_02/054716211001.jpg",
+          "sourcePageUrl": "에스콰이어 이미지",
+          "sourceName": "에스콰이어 장소 사진",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "unverified",
+          "viewType": "실내·외·유리 파사드",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": null,
+      "referenceImageStatus": "사진 후보 등록 · 장소 일치 확인 후 참조 전환",
+      "sourceRefs": [
+        "https://www.leeungnomuseum.or.kr/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "이미지 후보 이관·장소 대조 필요",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-128",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "자연광",
+        "정제됨",
+        "동양적"
+      ],
+      "legacyMood": "자연광·정제됨·동양적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "건축·공간 사진 후보를 등록하되 실제 장소 일치와 이미지 로드를 재확인한 뒤 대표참조로 전환합니다."
+    },
+    {
+      "id": "mmca-cheongju-storage-museum",
+      "name": "국립현대미술관 청주",
+      "region": "충북",
+      "category": "수장형 미술관·산업건축·반복 선반",
+      "aliases": [],
+      "summary": "옛 연초제조창을 활용한 수장형 미술관으로 개방형 수장고의 반복 선반과 작품 배열이 독특한 배경을 제공.",
+      "photoProfile": "산업적·정제됨·그래픽 분위기와 수장형 미술관·산업건축의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "실내·외 연결"
+      ],
+      "visualStrengths": [
+        "옛 제조창 산업건축",
+        "개방형 수장고의 반복선",
+        "금속·콘크리트·전시작품 레이어"
+      ],
+      "bestConcepts": [
+        "인더스트리얼 패션",
+        "예술·문화 에디토리얼",
+        "건축 브랜드 영상"
+      ],
+      "constraints": [
+        "사전 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 88,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 산업·문화공간 촬영 후보",
+      "address": "충북 청주",
+      "coordinates": null,
+      "officialUrl": "https://www.mmca.go.kr/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-130",
+          "title": "국립현대미술관 청주 옛 연초제조창과 개방수장고",
+          "imageUrl": "https://img.newspim.com/news/2018/12/27/1812271540169850.jpg",
+          "sourceThumbnail": "https://img.newspim.com/news/2018/12/27/1812271540169850.jpg",
+          "sourcePageUrl": "뉴스핌 이미지",
+          "sourceName": "뉴스핌 · 국립현대미술관 청주 보도사진",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·산업건축·개방수장고",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-130",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://www.mmca.go.kr/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-130",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "산업적",
+        "정제됨",
+        "그래픽"
+      ],
+      "legacyMood": "산업적·정제됨·그래픽",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "옛 연초제조창을 활용한 수장형 미술관으로 사진적 독자성이 있습니다. 작품 촬영·수장고 진입·장비 반입 허가를 별도 확인합니다."
+    },
+    {
+      "id": "busan-cinema-center",
+      "name": "부산 영화의전당",
+      "region": "부산",
+      "category": "대형 공연문화시설·초대형 캔틸레버 지붕·LED 캐노피",
+      "aliases": [],
+      "summary": "대형 공연장과 로비, 거대한 구조물의 실내외 경계가 강한 장소. 영화·음악 콘셉트에 특히 적합.",
+      "photoProfile": "시네마틱·미래적·웅장함 분위기와 현대건축·공연문화공간의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "실내·외 연결"
+      ],
+      "visualStrengths": [
+        "거대한 캔틸레버 지붕의 스케일",
+        "색이 변하는 LED 캐노피",
+        "건축·광장·반사 조명"
+      ],
+      "bestConcepts": [
+        "하이패션 에디토리얼",
+        "음악·영화 캠페인",
+        "야간 광고·브랜드 영상"
+      ],
+      "constraints": [
+        "사전 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 95,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 조형건축·공연장",
+      "address": "부산 해운대구",
+      "coordinates": null,
+      "officialUrl": "https://www.dureraum.org/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-134",
+          "title": "영화의전당 대형 LED 캐노피와 광장 야경",
+          "imageUrl": "https://english.visitkorea.or.kr/public/images/2023/10/17/fe9cf2fe929342b492bea8c2e87ea8fc.jpg",
+          "sourceThumbnail": "https://english.visitkorea.or.kr/public/images/2023/10/17/fe9cf2fe929342b492bea8c2e87ea8fc.jpg",
+          "sourcePageUrl": "https://english.visitkorea.or.kr/svc/contents/infoBscView.do?dataSetId=76&menuSn=229&vcontsId=177333",
+          "sourceName": "한국관광공사 VisitKorea · 부산 영화의전당 야경",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·공연장·LED 지붕·야경",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-134",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://www.dureraum.org/",
+        "https://english.visitkorea.or.kr/svc/contents/infoBscView.do?dataSetId=76&menuSn=229&vcontsId=177333"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-134",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "시네마틱",
+        "미래적",
+        "웅장함"
+      ],
+      "legacyMood": "시네마틱·미래적·웅장함",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "대형 지붕과 색채 조명, 공연 광장 경계가 사진적 차별점입니다. 공연 운영·행사 통제·상업 촬영 허가를 별도 확인합니다."
+    },
+    {
+      "id": "jeju-bonte-museum",
+      "name": "제주 본태박물관",
+      "region": "제주",
+      "category": "안도 다다오 건축·노출 콘크리트·반영 수공간",
+      "aliases": [],
+      "summary": "노출 콘크리트, 긴 복도, 계단, 전시벽이 결합된 안도 다다오 계열의 건축미를 활용할 수 있는 후보.",
+      "photoProfile": "콘크리트·미니멀·동양적 분위기와 현대건축·미술관의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "실내·외 연결"
+      ],
+      "visualStrengths": [
+        "노출 콘크리트와 물의 반사",
+        "긴 복도와 정제된 개구부",
+        "전통 지붕 요소와 현대 건축의 대비"
+      ],
+      "bestConcepts": [
+        "건축·패션 에디토리얼",
+        "미니멀 브랜드 광고",
+        "자연광 인물화보"
+      ],
+      "constraints": [
+        "사전 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 96,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 거장 건축 우선 조사",
+      "address": "제주 서귀포",
+      "coordinates": null,
+      "officialUrl": "https://www.bontemuseum.com/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-140",
+          "title": "본태박물관 반영 수공간과 안도 다다오 건축",
+          "imageUrl": "https://www.jungle.co.kr/image/108f2f90476cad325fb82664",
+          "sourceThumbnail": "https://www.jungle.co.kr/image/108f2f90476cad325fb82664",
+          "sourcePageUrl": "https://www.jungle.co.kr/magazine/203161",
+          "sourceName": "정글 · 본태박물관 건축·예술공간 소개 사진",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·외·수공간·콘크리트 건축",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-140",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://bontemuseum.com/",
+        "https://www.jungle.co.kr/magazine/203161",
+        "https://www.bontemuseum.com/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-140",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "콘크리트",
+        "미니멀",
+        "동양적"
+      ],
+      "legacyMood": "콘크리트·미니멀·동양적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "안도 다다오가 설계한 건축물로 노출 콘크리트·빛·물의 조합을 촬영 배경으로 선정했습니다. 상업촬영은 미술관 승인 및 전시별 조건을 확인해야 합니다."
+    },
+    {
+      "id": "seoul-jeongdong1928-art-center",
+      "name": "정동1928 아트센터",
+      "region": "서울",
+      "category": "근대문화재·복합문화공간·고전 홀",
+      "aliases": [],
+      "summary": "근대문화재·복합문화공간의 구조와 고전적·우아함·빈티지·서정 분위기를 활용할 수 있는 로케이션 후보.",
+      "photoProfile": "고전적·우아함·빈티지·서정 분위기와 근대문화재·복합문화공간의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "야외",
+        "환경 인물"
+      ],
+      "visualStrengths": [
+        "고전 건축의 목재 트러스",
+        "창광이 들어오는 긴 홀",
+        "피아노·의자·행사 공간의 스테이징"
+      ],
+      "bestConcepts": [
+        "빈티지 패션 화보",
+        "웨딩·클래식 프로필",
+        "광고·공연 브랜드 이미지"
+      ],
+      "constraints": [
+        "24시간 연중무휴 대관 가능하다고 공식 FAQ에 안내. 별도 주차공간은 없고 유료주차 이용 권장. 대관은 신청·심사·계약 절차.",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 86,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 근대건축·홀",
+      "address": "서울",
+      "coordinates": null,
+      "officialUrl": "https://www.jeongdong1928.com/blank-2",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-100",
+          "title": "정동1928 아트센터 고전 홀·목재 트러스",
+          "imageUrl": "https://static.wixstatic.com/media/7858f8_a65d2c6397644ede969840d06a77dceb~mv2.png/v1/fill/w_1188%2Ch_715%2Cq_90/7858f8_a65d2c6397644ede969840d06a77dceb~mv2.png",
+          "sourceThumbnail": "https://static.wixstatic.com/media/7858f8_a65d2c6397644ede969840d06a77dceb~mv2.png/v1/fill/w_1188%2Ch_715%2Cq_90/7858f8_a65d2c6397644ede969840d06a77dceb~mv2.png",
+          "sourcePageUrl": "https://www.jeongdong1928.com/blank-2",
+          "sourceName": "정동1928 아트센터 공식 대관 페이지",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·근대건축·공연/행사 홀",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-100",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://www.jeongdong1928.com/blank-2"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-100",
+      "legacyCatalogScore": 86,
+      "legacyVisualTags": [
+        "벽돌",
+        "아치",
+        "스테인드글라스",
+        "목재",
+        "홀"
+      ],
+      "legacyMood": "고전적·우아함·빈티지·서정",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "근대 건축 요소와 정돈된 공연·행사홀이 결합된 공간. 대관·상업촬영은 공식 신청과 승인 절차를 거쳐야 합니다."
+    },
+    {
+      "id": "busan-nakdong-estuary-eco-center",
+      "name": "부산 낙동강하구에코센터",
+      "region": "부산",
+      "category": "현대건축·생태공간·유리면",
+      "aliases": [],
+      "summary": "큰 유리면과 기하학적 외관, 을숙도 습지 주변을 함께 활용할 수 있는 건축·생태형 장소.",
+      "photoProfile": "모던·생태·미니멀·확산광 분위기와 현대건축·생태공간의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "야외",
+        "환경 인물"
+      ],
+      "visualStrengths": [
+        "대형 유리면과 기하학적 외관",
+        "건축과 습지의 대비",
+        "하늘·물·식생의 자연 레이어"
+      ],
+      "bestConcepts": [
+        "건축·환경인물",
+        "에코·라이프스타일 캠페인",
+        "자연광 에디토리얼"
+      ],
+      "constraints": [
+        "촬영 전 최신 조건 및 상업촬영 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 84,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "B · 건축·습지 촬영 후보",
+      "address": "부산 사하구",
+      "coordinates": null,
+      "officialUrl": "https://www.busan.go.kr/wetland/ndeintroduce",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "사진 참고 후보 등록 · 장소 일치 확인 후 대표 적용",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-107",
+          "title": "낙동강하구에코센터 유리 파사드와 습지 환경",
+          "imageUrl": "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/OEA4N2HR6ZDWXPOXVMY54D6CAY.JPG",
+          "sourceThumbnail": "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/OEA4N2HR6ZDWXPOXVMY54D6CAY.JPG",
+          "sourcePageUrl": "https://www.busan.go.kr/wetland/ndeintroduce",
+          "sourceName": "시설 외관 보도사진 · 부산광역시 공식 운영정보",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "unverified",
+          "viewType": "야외·유리건축·습지",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": null,
+      "referenceImageStatus": "사진 후보 등록 · 장소 일치 확인 후 참조 전환",
+      "sourceRefs": [
+        "https://www.busan.go.kr/wetland/ndeintroduce"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "이미지 후보 이관·장소 대조 필요",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-107",
+      "legacyCatalogScore": 84,
+      "legacyVisualTags": [
+        "모던",
+        "생태",
+        "미니멀",
+        "확산광"
+      ],
+      "legacyMood": "모던·생태·미니멀·확산광",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "센터 건축과 을숙도 습지가 함께 구성되는 촬영 후보. 사진 링크의 장소 일치는 등록 후 재확인하며, 실내·상업촬영 구역은 별도 문의합니다."
+    },
+    {
+      "id": "busan-un-sculpture-park",
+      "name": "부산 UN조각공원",
+      "region": "부산",
+      "category": "야외조각·공원·예술 레이어",
+      "aliases": [],
+      "summary": "조각 작품과 소나무·벽돌·산책로가 겹쳐지는 야외 공간. 인물과 조형물을 함께 구성하기 좋습니다.",
+      "photoProfile": "예술적·정제됨·자연·기념비적 분위기와 조각공원·야외예술의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "야외",
+        "환경 인물"
+      ],
+      "visualStrengths": [
+        "조각 작품과 소나무의 레이어",
+        "벽돌·산책로·기념비적 구조",
+        "인물과 조형물의 비례"
+      ],
+      "bestConcepts": [
+        "미니멀 패션",
+        "조각 중심 에디토리얼",
+        "환경 인물화보"
+      ],
+      "constraints": [
+        "촬영 전 최신 조건 및 상업촬영 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 83,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "B · 야외 조형예술",
+      "address": "부산 남구",
+      "coordinates": null,
+      "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=35b540c7-13bb-486c-9f03-1e7be998ce4e",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-108",
+          "title": "부산 UN조각공원 조형물과 소나무·산책로",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/73/2945373_image2_1.jpg",
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/73/2945373_image2_1.jpg",
+          "sourcePageUrl": "https://tong.visitkorea.or.kr/cms/resource/73/2945373_image2_1.jpg",
+          "sourceName": "한국관광공사 관광자료",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·조각·공원",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-108",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=35b540c7-13bb-486c-9f03-1e7be998ce4e",
+        "https://tong.visitkorea.or.kr/cms/resource/73/2945373_image2_1.jpg"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-108",
+      "legacyCatalogScore": 83,
+      "legacyVisualTags": [
+        "예술적",
+        "정제됨",
+        "자연",
+        "기념비적"
+      ],
+      "legacyMood": "예술적·정제됨·자연·기념비적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "단순 공원 경관이 아니라 조각과 식생이 겹쳐지는 프레임을 촬영 목표로 선별했습니다. 조형물별 촬영 제약과 상업촬영 조건은 확인합니다."
+    },
+    {
+      "id": "seoul-seoseoul-museum",
+      "name": "서울시립 서서울미술관",
+      "region": "서울",
+      "category": "뉴미디어 미술관·반사 금속 건축·공원 경계",
+      "aliases": [],
+      "summary": "물결치는 은빛 외관과 지하·지상 공간의 대비를 활용하는 신규 건축 에디토리얼 후보.",
+      "photoProfile": "미래적·메탈릭·미니멀·도시적 분위기와 뉴미디어 미술관·반사 금속 건축의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "실내·외 연결"
+      ],
+      "visualStrengths": [
+        "물결치는 은빛 금속 외피",
+        "지하·지상 공간과 공원의 대비",
+        "반사면·수평 보행 동선"
+      ],
+      "bestConcepts": [
+        "미래지향 패션",
+        "모노크롬·메탈릭 에디토리얼",
+        "건축 브랜드 캠페인"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 82,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 신규 거장/현대건축",
+      "address": "서울 금천구",
+      "coordinates": null,
+      "officialUrl": "https://sema.seoul.go.kr/kr/visit/seoseoul",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-187",
+          "title": "서서울미술관 망치드 스테인리스 외관",
+          "imageUrl": "https://media.brique.co/2026/03/seoseoul-museum-of-art-12-1536x864.jpg",
+          "sourceThumbnail": "https://media.brique.co/2026/03/seoseoul-museum-of-art-12-1536x864.jpg",
+          "sourcePageUrl": "https://magazine.brique.co/brq-news/seoseoul-museum-opening-geumnarae-park-kimchanjoong-thesystemlab/",
+          "sourceName": "브리크매거진 · 서서울미술관 개관 건축 사진",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·금속 파사드·야간",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-187",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://sema.seoul.go.kr/kr/visit/seoseoul",
+        "https://magazine.brique.co/brq-news/seoseoul-museum-opening-geumnarae-park-kimchanjoong-thesystemlab/",
+        "https://news.seoul.go.kr/culture/archives/531825"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-187",
+      "legacyCatalogScore": 82,
+      "legacyVisualTags": [
+        "반사 메탈 외관",
+        "뉴미디어 에디토리얼",
+        "기하학적 파사드",
+        "도시 건축 인물"
+      ],
+      "legacyMood": "미래적·메탈릭·미니멀·도시적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "시스템랩의 공식 건축 프로젝트 자료와 서울시립미술관 방문 정보를 연결했습니다. 외부 보행구간 중심으로 촬영 지점을 잡고 상업촬영·장비 사용 조건은 현장 확인합니다."
+    },
+    {
+      "id": "seoul-photo-museum",
+      "name": "서울시립 사진미술관",
+      "region": "서울",
+      "category": "사진 전문 미술관·비틀린 큐브 건축·고천장 로비",
+      "aliases": [],
+      "summary": "사진 매체를 주제로 한 비틀린 큐브형 건축과 10m 로비가 만드는 스케일 대비를 활용하는 후보.",
+      "photoProfile": "미니멀·모노크롬·실험적·현대적 분위기와 사진 전문 미술관·조형적 큐브 건축의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "실내·외 연결"
+      ],
+      "visualStrengths": [
+        "비틀린 큐브형 건축",
+        "10m 로비의 스케일 대비",
+        "모노크롬 파사드와 깊은 음영"
+      ],
+      "bestConcepts": [
+        "사진·아트 패션",
+        "뷰티·아티스트 프로필",
+        "건축 에디토리얼"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 3,
+      "photoPotentialScore": 81,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 조형건축·사진 전문시설",
+      "address": "서울 도봉구",
+      "coordinates": null,
+      "officialUrl": "https://sema.seoul.go.kr/kr/visit/photosema",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-188",
+          "title": "서울시립 사진미술관 회전 큐브형 파사드",
+          "imageUrl": "https://img.sbs.co.kr/newimg/news/20250528/202075873.jpg",
+          "sourceThumbnail": "https://img.sbs.co.kr/newimg/news/20250528/202075873.jpg",
+          "sourcePageUrl": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008118211",
+          "sourceName": "SBS 뉴스 · 사진미술관 개관 건축 보도사진",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·조형건축·고천장 로비",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-188",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://sema.seoul.go.kr/kr/visit/photosema",
+        "https://news.sbs.co.kr/news/endPage.do?news_id=N1008118211"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-188",
+      "legacyCatalogScore": 81,
+      "legacyVisualTags": [
+        "회전 큐브 건축",
+        "고천장 로비",
+        "모노크롬 파사드",
+        "사진 매체 콘셉트"
+      ],
+      "legacyMood": "미니멀·모노크롬·실험적·현대적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "공식 방문 안내와 SBS 개관 보도사진을 연결했습니다. 실내 로비와 전시 공간 촬영은 별도 승인 전제로 검토합니다."
+    },
+    {
+      "id": "paju-cjenm-studio-center",
+      "name": "파주 CJ ENM 스튜디오 센터",
+      "region": "경기",
+      "category": "대형 영상제작단지·LED 버추얼 프로덕션·대형 스테이지",
+      "aliases": [],
+      "summary": "파주 탄현의 국내 최대급 제작 단지. 13개 스튜디오(단일 최대 1,600평 스테이지), LED 버추얼 프로덕션 스테이지, 멀티 로드, 오픈 세트가 있다.",
+      "photoProfile": "영화적·대형·가상 분위기와 대형 스튜디오·제작단지의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "실내",
+        "대형 스튜디오",
+        "LED 버추얼 프로덕션"
+      ],
+      "visualStrengths": [
+        "대형 LED 월과 몰입형 배경",
+        "카메라·조명·스테이지 장비",
+        "실제 로케이션 대신 확장 가능한 가상 환경"
+      ],
+      "bestConcepts": [
+        "광고·뮤직비디오",
+        "버추얼 프로덕션·브랜드 필름",
+        "대형 패션 영상"
+      ],
+      "constraints": [
+        "사전 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 3,
+      "photoPotentialScore": 94,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 대형 스튜디오",
+      "address": "경기 파주시",
+      "coordinates": null,
+      "officialUrl": "https://www.cjenm.com/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-184",
+          "title": "CJ ENM 스튜디오 센터 LED 버추얼 프로덕션 무대",
+          "imageUrl": "https://fnn.ismcdn.jp/mwimgs/4/0/1200/img_407db77df599c9eb1c1186803ac22bef2442033.jpg",
+          "sourceThumbnail": "https://fnn.ismcdn.jp/mwimgs/4/0/1200/img_407db77df599c9eb1c1186803ac22bef2442033.jpg",
+          "sourcePageUrl": "https://www.fnn.jp/articles/-/385893?display=full",
+          "sourceName": "FNN 프라임 온라인 · CJ ENM 버추얼 프로덕션 스테이지 보도사진",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·버추얼 프로덕션·LED 월",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-184",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://www.fnn.jp/articles/-/385893?display=full",
+        "https://www.cjenm.com/"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "제작시설·기술 보도",
+          "title": "CJ ENM 고도화 버추얼 프로덕션 스테이지",
+          "publisher": "FNN 프라임 온라인",
+          "url": "https://www.fnn.jp/articles/-/385893?display=full",
+          "notes": "LED 월과 영상 제작 장비를 갖춘 버추얼 스테이지에 관한 보도. 특정 영화·드라마가 이 스테이지에서 촬영됐다는 크레딧을 의미하지 않습니다."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-184",
+      "legacyCatalogScore": 70,
+      "legacyVisualTags": [],
+      "legacyMood": "영화적·대형·가상",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "구버전 목록의 대형 제작단지 후보를 사진자료와 함께 보강합니다. 보도사진은 스튜디오 설비 참고용이며 대관 가능 시설·규모·사용료는 운영사에 확인해야 합니다."
+    },
+    {
+      "id": "mungyeong-saejae-open-set",
+      "name": "문경새재 오픈세트장",
+      "region": "경북",
+      "category": "사극 영화·드라마 오픈세트·전통 거리",
+      "aliases": [],
+      "summary": "'킹덤', '슈룹' 등 사극 드라마가 촬영된 문경새재 오픈세트장으로 소개됨. 기존에 등록된 다른 문경 세트장과는 별개의 장소.",
+      "photoProfile": "시대극·영화적 분위기와 영화세트·사극 오픈세트의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "실내·외 연결"
+      ],
+      "visualStrengths": [
+        "기와집·주막·관아의 연속 파사드",
+        "흙길과 전통건축의 원근",
+        "시대극 장면을 구성하는 세트 거리"
+      ],
+      "bestConcepts": [
+        "시대극 패션·한복",
+        "영화적 인물 에디토리얼",
+        "드라마·광고 콘셉트 영상"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 3,
+      "photoPotentialScore": 91,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 사극 로케이션",
+      "address": "경북 문경",
+      "coordinates": null,
+      "officialUrl": "https://www.gbmg.go.kr/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-218",
+          "title": "문경새재 오픈세트장 조선시대 거리",
+          "imageUrl": "https://img.thetravelnews.co.kr/2026/06/mungyeong-saejae-open-set-village.png",
+          "sourceThumbnail": "https://img.thetravelnews.co.kr/2026/06/mungyeong-saejae-open-set-village.png",
+          "sourcePageUrl": "https://thetravelnews.co.kr/2026/06/mungyeong-saejae-153-million-visitors-heritage-trail/",
+          "sourceName": "더트래블뉴스 · 문경새재 오픈세트장 사진",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·사극 오픈세트·한옥 거리",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": "legacy-image-l-218",
+      "referenceImageStatus": "실제 장소 참고사진 · 사용권 후속 검토",
+      "sourceRefs": [
+        "https://www.segye.com/view/20230205504831",
+        "https://thetravelnews.co.kr/2026/06/mungyeong-saejae-153-million-visitors-heritage-trail/",
+        "https://www.gbmg.go.kr/"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "장소별 참고사진 이관",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "드라마",
+          "title": "킹덤",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.segye.com/view/20230205504831",
+          "notes": "문경새재오픈세트장 보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "드라마",
+          "title": "슈룹",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.segye.com/view/20230205504831",
+          "notes": "문경새재오픈세트장 보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-218",
+      "legacyCatalogScore": 75,
+      "legacyVisualTags": [
+        "환경인물",
+        "시대극"
+      ],
+      "legacyMood": "시대극·영화적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "구버전 목록에 있던 촬영 세트장으로 등록. legacy source가 기록한 '킹덤'·'슈룹' 촬영 크레딧은 보도 자료 기반이며 세트 구역별 촬영작품은 현장·출처를 추가 대조합니다."
+    },
+    {
+      "id": "gangneung-yeongjin-breakwater",
+      "name": "강릉 주문진 영진해변 방사제 — 《도깨비》 촬영지",
+      "region": "강원",
+      "category": "드라마 로케이션·해안 방사제·미니멀 수평선",
+      "aliases": [],
+      "summary": "드라마 《도깨비》 첫 만남 장면의 배경으로 알려진 주문진 영진해변 인근 방사제. 단순 해변보다 길게 뻗은 방사제 선형과 바다·하늘의 여백을 인물 프레임으로 활용하는 촬영 후보.",
+      "photoProfile": "낮은 방사제의 원근, 수평선과 파도, 인물의 작은 실루엣으로 이야기가 있는 환경인물 컷을 구성.",
+      "spaceTypes": [
+        "야외",
+        "해안",
+        "방사제"
+      ],
+      "visualStrengths": [
+        "길게 뻗은 방사제의 선형",
+        "하늘·바다의 넓은 여백",
+        "드라마 장면을 연상시키는 인물 배치"
+      ],
+      "bestConcepts": [
+        "시네마틱 인물화보",
+        "로맨틱 패션",
+        "해안 브랜드 필름"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 1,
+      "photoPotentialScore": 86,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 영상 로케이션",
+      "address": "강원 강릉",
+      "coordinates": null,
+      "officialUrl": "https://www.kukinews.com/article/view/kuk202602250064",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://www.kukinews.com/article/view/kuk202602250064",
+        "https://www.heraldk.com/article/2026011016445704034",
+        "https://jjan.kr/article/20190704680784"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "드라마",
+          "title": "도깨비",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.kukinews.com/article/view/kuk202602250064",
+          "notes": "tvN 2016, 영진해변 방사제 보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "드라마 촬영지·언론 보도",
+          "title": "도깨비",
+          "publisher": "쿠키뉴스·한국일보 등 촬영지 보도",
+          "url": "https://www.kukinews.com/article/view/kuk202602250064",
+          "notes": "구버전 기록 및 언론 보도에 따라 주문진 영진해변 인근 방사제로 등록. 촬영 장면의 정확한 방사제와 현재 소품 상태는 현장 대조 필요."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-211",
+      "legacyCatalogScore": 75,
+      "legacyVisualTags": [
+        "환경인물",
+        "해안"
+      ],
+      "legacyMood": "서정·로맨틱·쓸쓸함",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "드라마 '도깨비' 주인공이 처음 만나는 장면의 촬영지로 알려진 영진해변 방사제. 바다와 낮은 방사제 구조물을 배경으로 한 환경인물 컷 후보."
+    },
+    {
+      "id": "gangneung-sodol-breakwater",
+      "name": "강릉 소돌 방파제 — 《더 글로리》 촬영지 후보",
+      "region": "강원",
+      "category": "드라마 로케이션·방파제·강한 해안선",
+      "aliases": [],
+      "summary": "드라마 《더 글로리》 촬영지로 보도된 강릉 소돌 방파제. 바다와 인공 구조물의 선형, 거친 파도와 회색 하늘을 활용한 시네마틱 인물·영상 후보.",
+      "photoProfile": "방파제의 직선·사선과 열린 바다를 함께 구성하고, 인물 규모를 조절해 긴장감과 여백을 만든다.",
+      "spaceTypes": [
+        "야외",
+        "해안",
+        "방파제"
+      ],
+      "visualStrengths": [
+        "방파제 선형과 파도 대비",
+        "단순한 수평선과 거친 텍스처",
+        "긴장감 있는 영상 구도"
+      ],
+      "bestConcepts": [
+        "다크 패션",
+        "시네마틱 인물",
+        "드라마형 브랜드 영상"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 82,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "B · 영상 로케이션",
+      "address": "강원 강릉",
+      "coordinates": null,
+      "officialUrl": "https://www.kukinews.com/article/view/kuk202602250064",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://www.kukinews.com/article/view/kuk202602250064"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "드라마",
+          "title": "더 글로리",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.kukinews.com/article/view/kuk202602250064",
+          "notes": "소돌 방파제 보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "드라마 촬영지·보도",
+          "title": "더 글로리",
+          "publisher": "쿠키뉴스 · 촬영지 보도",
+          "url": "https://www.kukinews.com/article/view/kuk202602250064",
+          "notes": "보도 기반 후보 등록. 실제 장면의 정확한 방파제 구역은 현장과 원문을 대조할 필요가 있습니다."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-212",
+      "legacyCatalogScore": 75,
+      "legacyVisualTags": [
+        "환경인물",
+        "해안"
+      ],
+      "legacyMood": "차가움·긴장감·영화적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "드라마 '더 글로리' 촬영지로 소개된 소돌 방파제. 방파제 선과 바다를 활용하는 시네마틱 컷 후보."
+    },
+    {
+      "id": "gangneung-hyangho-bts-bus-stop",
+      "name": "강릉 향호해변 버스정류장 — BTS 관련 영상 로케이션",
+      "region": "강원",
+      "category": "해변·미니멀 버스정류장·앨범/영상 로케이션",
+      "aliases": [],
+      "summary": "방탄소년단 뮤직비디오·앨범재킷 촬영지로 알려진 향호해변 버스정류장(보도에 따르면 다시 제작된 구조물). 단순한 구조물과 바다의 대비.",
+      "photoProfile": "몽환·청량·미니멀 분위기와 해변·버스정류장·뮤직비디오 촬영지의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "야외",
+        "환경 인물"
+      ],
+      "visualStrengths": [
+        "간결한 금속 프레임과 벤치",
+        "푸른 바다와 밝은 하늘의 여백",
+        "인물과 작은 구조물의 미니멀 대비"
+      ],
+      "bestConcepts": [
+        "미니멀 아이돌 콘셉트",
+        "청량 패션·앨범 룩",
+        "해변 인물화보"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 82,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "B · 미디어 로케이션",
+      "address": "강원 강릉",
+      "coordinates": null,
+      "officialUrl": "https://www.kukinews.com/article/view/kuk202602250064",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "사진 참고 후보 등록 · 장소 일치 확인 후 대표 적용",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-213",
+          "title": "향호해변 버스정류장과 바다 참고사진",
+          "imageUrl": "https://res.klook.com/images/fl_lossy.progressive%2Cq_65/c_fill%2Cw_1295%2Ch_863/w_80%2Cx_15%2Cy_15%2Cg_south_west%2Cl_Klook_water_br_trans_yhcmh3/activities/l1i3seze2dsjouxpvh00/SeoulPyeongchangBTSInTheSoopFilmingLocationTour.jpg",
+          "sourceThumbnail": "https://res.klook.com/images/fl_lossy.progressive%2Cq_65/c_fill%2Cw_1295%2Ch_863/w_80%2Cx_15%2Cy_15%2Cg_south_west%2Cl_Klook_water_br_trans_yhcmh3/activities/l1i3seze2dsjouxpvh00/SeoulPyeongchangBTSInTheSoopFilmingLocationTour.jpg",
+          "sourcePageUrl": "https://www.klook.com/en-US/activity/88452-in-the-soop-filming-location-tour/",
+          "sourceName": "Klook · BTS In the SOOP filming location tour",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "unverified",
+          "viewType": "야외·해변·버스정류장 구조",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": null,
+      "referenceImageStatus": "사진 후보 등록 · 장소 일치 확인 후 참조 전환",
+      "sourceRefs": [
+        "https://www.kukinews.com/article/view/kuk202602250064",
+        "https://www.heraldk.com/article/2026011016445704034",
+        "https://www.klook.com/en-US/activity/88452-in-the-soop-filming-location-tour/"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "이미지 후보 이관·장소 대조 필요",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "뮤직비디오·앨범",
+          "title": "BTS 뮤직비디오·앨범재킷",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.kukinews.com/article/view/kuk202602250064",
+          "notes": "주문진 향호해변 버스정류장 보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "BTS 관련 촬영지 안내",
+          "title": "BTS In the SOOP filming location tour",
+          "publisher": "Klook 여행정보",
+          "url": "https://www.klook.com/en-US/activity/88452-in-the-soop-filming-location-tour/",
+          "notes": "여행 상품 페이지에 향호해변 버스정류장 관련 이미지가 포함되어 있습니다. 앨범 재킷 촬영 지점과 실제 구조물이 동일한지는 별도 확인합니다."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-213",
+      "legacyCatalogScore": 75,
+      "legacyVisualTags": [
+        "환경인물",
+        "해안"
+      ],
+      "legacyMood": "몽환·청량·미니멀",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "방탄소년단 뮤직비디오·앨범재킷 촬영지로 알려진 향호해변 버스정류장(보도에 따르면 다시 제작된 구조물). 단순한 구조물과 바다의 대비."
+    },
+    {
+      "id": "andong-manhyujeong",
+      "name": "안동 만휴정·외나무다리",
+      "region": "경북",
+      "category": "전통 정자·계곡·숲·드라마 로케이션",
+      "aliases": [],
+      "summary": "계곡·숲·외나무다리와 고택 정자가 한 프레임에 들어오는 전통 건축 촬영 후보. 《미스터 션샤인》의 배경으로 소개돼 서사적 인물 사진과 한복·시대극 콘셉트에 활용성이 있습니다.",
+      "photoProfile": "외나무다리의 선형을 정자와 숲에 연결하고, 계곡과 나무의 레이어를 살리는 전통 환경 인물 구도.",
+      "spaceTypes": [
+        "야외",
+        "전통 정자",
+        "계곡·숲"
+      ],
+      "visualStrengths": [
+        "외나무다리의 단일 선형",
+        "정자·계곡·숲의 깊이",
+        "목재와 자연의 재료 대비"
+      ],
+      "bestConcepts": [
+        "시대극·한복 에디토리얼",
+        "고전적 인물화보",
+        "서정적 브랜드 필름"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 1,
+      "photoPotentialScore": 90,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 전통·영상 로케이션",
+      "address": "경북 안동",
+      "coordinates": null,
+      "officialUrl": "https://v.daum.net/v/ZY2iMcloMN",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://v.daum.net/v/ZY2iMcloMN"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "드라마",
+          "title": "미스터 션샤인",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://v.daum.net/v/ZY2iMcloMN",
+          "notes": "만휴정 일대 보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "드라마 촬영지·보도",
+          "title": "미스터 션샤인",
+          "publisher": "다음 뉴스·언론 보도",
+          "url": "https://v.daum.net/v/ZY2iMcloMN",
+          "notes": "구버전 DB의 드라마 촬영지 근거를 이관. 세부 촬영 포인트와 현재 방문 통제는 확인 필요."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-215",
+      "legacyCatalogScore": 75,
+      "legacyVisualTags": [
+        "환경인물",
+        "전통"
+      ],
+      "legacyMood": "고요·서정·시대극",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "드라마 '미스터 션샤인'의 중요한 배경으로 소개된 안동 만휴정. 외나무다리와 숲, 고택 분위기를 활용하는 전통·시대극 콘셉트 후보."
+    },
+    {
+      "id": "samcheok-maengbang-bts-butter",
+      "name": "삼척 맹방해변 — BTS 《Butter》 앨범재킷 촬영지",
+      "region": "강원",
+      "category": "해변·앨범재킷 로케이션·넓은 모래사장",
+      "aliases": [],
+      "summary": "BTS 《Butter》 앨범재킷 촬영지로 보도된 맹방해변. 넓은 모래사장과 짙푸른 바다, 파도 포말과 하늘의 색면을 활용하는 청량·미니멀 촬영 후보.",
+      "photoProfile": "해변의 긴 수평선과 파도 포말, 넓은 모래사장 여백에 피사체를 작게 배치한 앨범·패션 구도.",
+      "spaceTypes": [
+        "야외",
+        "해변",
+        "넓은 모래사장"
+      ],
+      "visualStrengths": [
+        "넓은 모래사장의 비어 있는 여백",
+        "짙푸른 바다와 하얀 파도",
+        "앨범재킷·영상 스타일을 재구성할 배경"
+      ],
+      "bestConcepts": [
+        "청량 패션·아이돌 콘셉트",
+        "앨범재킷 스타일",
+        "해변 브랜드 캠페인"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 84,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "B · 영상/앨범 로케이션",
+      "address": "강원 삼척",
+      "coordinates": null,
+      "officialUrl": "https://www.segye.com/view/20230205504831",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://www.segye.com/view/20230205504831"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "뮤직비디오·앨범",
+          "title": "BTS 버터 앨범재킷",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.segye.com/view/20230205504831",
+          "notes": "삼척 근덕면 맹방해변 보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "앨범재킷 촬영지·언론 보도",
+          "title": "BTS Butter 앨범재킷",
+          "publisher": "세계일보 · 촬영지 보도",
+          "url": "https://www.segye.com/view/20230205504831",
+          "notes": "구버전 자료와 언론 보도에 따라 촬영지 후보로 등록. 현재 현장 표식·시설은 방문 전에 확인해야 합니다."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-216",
+      "legacyCatalogScore": 75,
+      "legacyVisualTags": [
+        "환경인물",
+        "해변"
+      ],
+      "legacyMood": "밝음·청량·활기",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "방탄소년단 '버터' 앨범 재킷 촬영지로 알려진 삼척 맹방해변. 넓은 모래사장과 짙푸른 바다, 파도 포말."
+    },
+    {
+      "id": "samcheok-bunam-beach",
+      "name": "삼척 부남해변 — 《헤어질 결심》 촬영지",
+      "region": "강원",
+      "category": "해안·영화 로케이션·쓸쓸한 수평선",
+      "aliases": [],
+      "summary": "영화 《헤어질 결심》의 마지막 장면 배경으로 소개된 부남해변. 쓸쓸한 해안의 곡선과 바다·하늘의 여백을 활용하는 정적인 시네마틱 촬영 후보.",
+      "photoProfile": "인물은 작게 배치하고 해안선·파도·암석이 만드는 큰 여백으로 정적인 서사를 구성.",
+      "spaceTypes": [
+        "야외",
+        "해변",
+        "해안 암석"
+      ],
+      "visualStrengths": [
+        "쓸쓸한 해안의 곡선",
+        "파도·암석과 하늘의 여백",
+        "인물 실루엣과 환경의 비례"
+      ],
+      "bestConcepts": [
+        "영화적 인물화보",
+        "다크·서정 패션",
+        "브랜드 필름"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 83,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "B · 영화 로케이션",
+      "address": "강원 삼척",
+      "coordinates": null,
+      "officialUrl": "https://www.segye.com/view/20230205504831",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://www.segye.com/view/20230205504831"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "영화",
+          "title": "헤어질 결심",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.segye.com/view/20230205504831",
+          "notes": "라스트신 등장 해변 보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "영화 촬영지·언론 보도",
+          "title": "헤어질 결심",
+          "publisher": "세계일보 · 촬영지 보도",
+          "url": "https://www.segye.com/view/20230205504831",
+          "notes": "구버전 자료와 언론 보도에서 촬영지로 소개된 장소. 특정 장면 위치와 접근 경로는 현장 확인이 필요합니다."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-217",
+      "legacyCatalogScore": 75,
+      "legacyVisualTags": [
+        "환경인물",
+        "해변"
+      ],
+      "legacyMood": "쓸쓸·서정·영화적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "영화 '헤어질 결심' 마지막 장면에 등장하는 부남해변으로 소개됨. 쓸쓸하고 정적인 해안 분위기."
+    },
+    {
+      "id": "incheon-yeolumul-mural-village",
+      "name": "인천 십정동 열우물 벽화마을",
+      "region": "인천",
+      "category": "구도심·벽화골목·생활 흔적·영상 로케이션",
+      "aliases": [],
+      "summary": "좁은 산동네 골목과 벽화, 계단·담장·생활 흔적이 중첩되는 스트리트 촬영 후보. 영화·드라마 촬영지로 보도돼 레트로·다큐·시네마틱 배경을 찾을 때 검토할 가치가 있습니다.",
+      "photoProfile": "골목의 소실점, 벽화의 색면, 오래된 벽과 계단을 이어 환경 인물·다큐 컷으로 구성.",
+      "spaceTypes": [
+        "야외",
+        "골목",
+        "계단·벽화"
+      ],
+      "visualStrengths": [
+        "비탈 골목의 원근",
+        "벽화·담장과 생활 질감",
+        "작은 프레임이 연속되는 골목 구조"
+      ],
+      "bestConcepts": [
+        "스트리트 패션",
+        "다큐멘터리 에디토리얼",
+        "영화적 인물화보"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 80,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "B · 거리 로케이션",
+      "address": "인천 부평구",
+      "coordinates": null,
+      "officialUrl": "https://www.kyeonggi.com/article/201805020984645",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://www.kyeonggi.com/article/201805020984645"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "영화",
+          "title": "은밀하게 위대하게",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.kyeonggi.com/article/201805020984645",
+          "notes": "보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "드라마",
+          "title": "나쁜 녀석들",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.kyeonggi.com/article/201805020984645",
+          "notes": "보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "드라마",
+          "title": "가면",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.kyeonggi.com/article/201805020984645",
+          "notes": "보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "영화",
+          "title": "악의 연대기",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.kyeonggi.com/article/201805020984645",
+          "notes": "보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "영화·드라마 촬영지·보도",
+          "title": "은밀하게 위대하게 · 악의 연대기",
+          "publisher": "경기일보 · 열우물마을 촬영지 보도",
+          "url": "https://www.kyeonggi.com/article/201805020984645",
+          "notes": "구버전 DB와 언론 보도에 기재된 작품명. 세부 골목과 현재 벽화 상태는 현장 확인이 필요."
+        },
+        {
+          "kind": "드라마 촬영지·보도",
+          "title": "나쁜 녀석들 · 가면",
+          "publisher": "경기일보 · 열우물마을 촬영지 보도",
+          "url": "https://www.kyeonggi.com/article/201805020984645",
+          "notes": "촬영지 출처 자료 기반 기록."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-219",
+      "legacyCatalogScore": 75,
+      "legacyVisualTags": [
+        "환경인물",
+        "골목"
+      ],
+      "legacyMood": "레트로·생활감·거칠음",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "영화 '은밀하게 위대하게'를 비롯해 '나쁜 녀석들', '가면', '악의 연대기' 등 영화·드라마 촬영지로 소개된 산동네 벽화마을."
+    },
+    {
+      "id": "incheon-songdo-central-park",
+      "name": "인천 송도센트럴파크 수변·도시 스카이라인",
+      "region": "인천",
+      "category": "도시공원·수변·고층건축·드라마 로케이션",
+      "aliases": [],
+      "summary": "운하형 수변과 고층 건축, 보행교·도시 녹지가 결합되는 도시 촬영 후보. 여러 드라마의 수변 장면 배경으로 보도되어 현대적 로맨스·도시 패션 구도에 적합합니다.",
+      "photoProfile": "운하·보행교·고층 스카이라인의 겹치는 선을 이용해 인물을 도시와 수변 사이에 배치.",
+      "spaceTypes": [
+        "야외",
+        "수변",
+        "도시 스카이라인"
+      ],
+      "visualStrengths": [
+        "운하형 수변과 반사",
+        "고층건물의 이국적 스카이라인",
+        "보행교와 녹지 레이어"
+      ],
+      "bestConcepts": [
+        "도시형 패션",
+        "로맨틱 에디토리얼",
+        "드라마형 브랜드 영상"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 80,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "B · 도시 로케이션",
+      "address": "인천 연수구",
+      "coordinates": null,
+      "officialUrl": "https://www.kyeonggi.com/article/201805020984645",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://www.kyeonggi.com/article/201805020984645"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "드라마",
+          "title": "도깨비",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.kyeonggi.com/article/201805020984645",
+          "notes": "송도 일대 보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "드라마",
+          "title": "태양의 후예",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.kyeonggi.com/article/201805020984645",
+          "notes": "보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "드라마",
+          "title": "화유기",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.kyeonggi.com/article/201805020984645",
+          "notes": "보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "드라마",
+          "title": "밥 잘 사주는 예쁜 누나",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.kyeonggi.com/article/201805020984645",
+          "notes": "보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "드라마 촬영지·언론 보도",
+          "title": "도깨비 · 태양의 후예 · 화유기 · 밥 잘 사주는 예쁜 누나",
+          "publisher": "경기일보 · 송도 촬영지 보도",
+          "url": "https://www.kyeonggi.com/article/201805020984645",
+          "notes": "구버전 DB의 작품 기록을 이관했습니다. 작품별 촬영 위치는 송도 내 여러 지점일 수 있어 특정 샷과 장소를 대조해야 합니다."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-220",
+      "legacyCatalogScore": 75,
+      "legacyVisualTags": [
+        "환경인물",
+        "수변"
+      ],
+      "legacyMood": "도시적·로맨틱·청량",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "'도깨비', '태양의 후예', '화유기', '밥 잘 사주는 예쁜 누나' 등 로맨틱 장면이 촬영된 곳으로 소개된 송도 수변공원. 이국적 고층건물과 한옥마을이 어우러짐."
+    },
+    {
+      "id": "sokcho-abai-village-gaetbae",
+      "name": "속초 아바이마을 갯배",
+      "region": "강원",
+      "category": "어촌·갯배·구도심·드라마 로케이션",
+      "aliases": [],
+      "summary": "갯배와 어촌 골목의 생활 질감이 남아 있는 수변 로케이션. 드라마 《가을동화》의 대표적 배경으로 기록되어 레트로·다큐·서정적 환경 인물 촬영 후보입니다.",
+      "photoProfile": "갯배를 foreground에 놓고 수면·선착장·마을 파사드를 겹쳐 생활감 있는 프레임으로 구성.",
+      "spaceTypes": [
+        "야외",
+        "수변",
+        "어촌 골목"
+      ],
+      "visualStrengths": [
+        "갯배의 독특한 운송 방식",
+        "수면·선착장·마을의 레이어",
+        "생활 흔적과 시간감"
+      ],
+      "bestConcepts": [
+        "다큐 에디토리얼",
+        "레트로 인물화보",
+        "지역·문화 브랜드 영상"
+      ],
+      "constraints": [
+        "상업촬영 조건 미확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 3,
+      "photoPotentialScore": 78,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "C · 생활문화 로케이션",
+      "address": "강원 속초",
+      "coordinates": null,
+      "officialUrl": "https://www.heraldk.com/article/2026011016445704034",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://www.heraldk.com/article/2026011016445704034"
+      ],
+      "verification": {
+        "location": "장소 식별 출처 후속 확인",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "드라마",
+          "title": "가을동화",
+          "publisher": "구버전 FRAME ATLAS 자료 · 보도 출처",
+          "url": "https://www.heraldk.com/article/2026011016445704034",
+          "notes": "갯배 보도·관광 자료에 따른 촬영지 기록; 촬영 장면의 세부 지점은 현장 대조가 필요."
+        },
+        {
+          "kind": "드라마 촬영지·보도",
+          "title": "가을동화",
+          "publisher": "헤럴드경제 계열 지역 보도",
+          "url": "https://www.heraldk.com/article/2026011016445704034",
+          "notes": "구버전 DB에서 드라마 배경지로 기록된 장소. 장면과 세부 촬영 지점은 후속 확인 대상."
+        }
+      ],
+      "mediaExposureStatus": "구버전·관광·언론 출처에 기록된 작품/시설 이력. 상세 촬영 지점은 출처별 대조 필요.",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-221",
+      "legacyCatalogScore": 75,
+      "legacyVisualTags": [
+        "환경인물",
+        "어촌"
+      ],
+      "legacyMood": "레트로·서정·생활감",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "드라마 '가을동화'의 대표 아이콘으로 소개된 갯배와 아바이마을. 문화예술 재생사업이 진행 중인 곳으로 보도됨."
+    },
+    {
+      "id": "seoul-book-bogo",
+      "name": "서울책보고 대형서가 공간",
+      "region": "서울",
+      "category": "대형서가·곡선 아카이브·반복 패턴",
+      "aliases": [],
+      "summary": "곡선형 대형 서가와 반복되는 책등의 질감을 활용하는 실내 에디토리얼 후보. 단순 도서관보다 책의 그래픽 패턴과 아카이브 구도가 사진의 핵심입니다.",
+      "photoProfile": "곡선 서가를 소실점으로 삼고 인물·책의 크기 대비를 구성하는 패션·에디토리얼 촬영.",
+      "spaceTypes": [
+        "실내",
+        "대형서가",
+        "문화공간"
+      ],
+      "visualStrengths": [
+        "곡선형 대형 서가",
+        "책등의 색·패턴 반복",
+        "아카이브적 깊이"
+      ],
+      "bestConcepts": [
+        "지적 패션 에디토리얼",
+        "서적·문화 브랜드 화보",
+        "실내 인물화보"
+      ],
+      "constraints": [
+        "공간 운영 목적에 맞는 행사·드라마·유튜브 촬영 등이 검토 대상. 일반 상업촬영은 별도 승인 필요.",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 86,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 그래픽 실내 공간",
+      "address": "서울",
+      "coordinates": null,
+      "officialUrl": "https://culture.seoul.go.kr/culture/bbs/B0000000/view.do?menuNo=200050&nttId=15851",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://culture.seoul.go.kr/culture/bbs/B0000000/view.do?menuNo=200050&nttId=15851"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-090",
+      "legacyCatalogScore": 86,
+      "legacyVisualTags": [
+        "서가",
+        "곡선",
+        "종이",
+        "목재",
+        "반복패턴"
+      ],
+      "legacyMood": "지적·그래픽·아카이브·미니멀",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "대형서가·문화공간의 구조와 지적·그래픽·아카이브·미니멀 분위기를 활용할 수 있는 로케이션 후보."
+    },
+    {
+      "id": "chuncheon-sangsangmadang",
+      "name": "KT&G 상상마당 춘천",
+      "region": "강원",
+      "category": "복합문화예술공간·갤러리·사운드홀",
+      "aliases": [],
+      "summary": "공연·갤러리·야외공간이 연결된 복합문화예술시설. 예술·공연·도시의 조합을 배경으로 문화 브랜드와 음악 콘텐츠 촬영을 검토할 수 있습니다.",
+      "photoProfile": "공연장과 갤러리, 야외 공간의 구조적 차이를 활용하는 공연·패션·문화 촬영 후보.",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "공연장",
+        "갤러리"
+      ],
+      "visualStrengths": [
+        "사운드홀·공연 공간",
+        "갤러리와 야외공간의 연결",
+        "콘크리트·공연·문화의 대비"
+      ],
+      "bestConcepts": [
+        "음악·공연 브랜드",
+        "패션 에디토리얼",
+        "뮤직비디오·문화 캠페인"
+      ],
+      "constraints": [
+        "사운드홀·야외공연장·갤러리·워크룸 등 대관 시설이 확인되며 일정별 협의 필요.",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 86,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 문화공연 공간",
+      "address": "강원 춘천",
+      "coordinates": null,
+      "officialUrl": "https://sangsangmadang.com/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://sangsangmadang.com/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-094",
+      "legacyCatalogScore": 86,
+      "legacyVisualTags": [
+        "콘크리트",
+        "공연장",
+        "갤러리",
+        "야외공간"
+      ],
+      "legacyMood": "예술·도시적·컬러풀·공연적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "복합문화예술공간의 구조와 예술·도시·컬러풀·공연적 분위기를 활용할 수 있는 로케이션 후보."
+    },
+    {
+      "id": "jeju-bunker-de-lumieres",
+      "name": "제주 빛의 벙커",
+      "region": "제주",
+      "category": "지하 산업건축·몰입형 미디어아트",
+      "aliases": [],
+      "summary": "폐쇄된 시설의 어두운 내부를 몰입형 미디어아트 공간으로 활용하는 촬영 후보. 벽·바닥 전체에 투사되는 색과 실루엣으로 일반 스튜디오와 다른 이미지를 만들 수 있지만 현재 전시 콘텐츠와 촬영 제한을 확인해야 합니다.",
+      "photoProfile": "어두운 공간의 빛·색·실루엣을 이용하되 저작권이 있는 투사 작품을 촬영·사용할 수 있는지는 별도 확인.",
+      "spaceTypes": [
+        "실내",
+        "지하",
+        "몰입형 미디어아트"
+      ],
+      "visualStrengths": [
+        "벽·바닥을 채우는 프로젝션",
+        "어두운 내부의 실루엣",
+        "산업시설의 구조·색광"
+      ],
+      "bestConcepts": [
+        "콘셉트 패션",
+        "뮤직비디오·영상",
+        "미디어아트 캠페인"
+      ],
+      "constraints": [
+        "전시 작품 촬영·플래시·삼각대 규정 확인",
+        "상업촬영은 운영사 사전 승인 필요",
+        "방문일 전시와 개방 공간 확인"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 86,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 몰입형 미디어 공간",
+      "address": "제주",
+      "coordinates": null,
+      "officialUrl": "https://www.visitjeju.net/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://www.visitjeju.net/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-097",
+      "legacyCatalogScore": 86,
+      "legacyVisualTags": [
+        "콘크리트",
+        "지하",
+        "프로젝션",
+        "암부"
+      ],
+      "legacyMood": "다크·몰입·컬러풀·미스터리",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "지하·몰입형 전시공간의 구조와 다크·몰입·컬러·미스터리 분위기를 활용할 수 있는 로케이션 후보."
+    },
+    {
+      "id": "gunsan-modern-art-museum",
+      "name": "군산근대미술관",
+      "region": "전북",
+      "category": "근대건축·벽돌·아치·전시공간",
+      "aliases": [],
+      "summary": "군산 근대건축과 벽돌·아치의 역사적 재료감을 활용하는 실내외 로케이션 후보. 지역의 근대 산업·항만 역사와 연결된 이미지에 적합합니다.",
+      "photoProfile": "벽돌 파사드와 아치, 목재·금속 디테일을 중심으로 한 빈티지·다큐 에디토리얼.",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "근대건축"
+      ],
+      "visualStrengths": [
+        "벽돌과 아치의 반복",
+        "개항기·근대산업의 재료감",
+        "역사적 실내와 거리 레이어"
+      ],
+      "bestConcepts": [
+        "빈티지 패션",
+        "역사·문화 에디토리얼",
+        "근대 도시 다큐"
+      ],
+      "constraints": [
+        "근대건축물 내부의 상업촬영은 시설 허가를 확인해야 함.",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 86,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 근대건축 후보",
+      "address": "전북 군산",
+      "coordinates": null,
+      "officialUrl": "https://www.gunsan.go.kr/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://www.gunsan.go.kr/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-099",
+      "legacyCatalogScore": 86,
+      "legacyVisualTags": [
+        "벽돌",
+        "아치",
+        "목재",
+        "근대건축"
+      ],
+      "legacyMood": "레트로·벽돌·역사·서정",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "근대건축·전시공간의 구조와 레트로·벽돌·역사·서정 분위기를 활용할 수 있는 로케이션 후보."
+    },
+    {
+      "id": "busan-hongti-art-center",
+      "name": "부산 홍티아트센터",
+      "region": "부산",
+      "category": "산업재생·예술창작공간·창고 구조",
+      "aliases": [],
+      "summary": "산업재생과 예술 창작이 결합된 공간. 거친 재료와 작업공간의 질감이 살아 있어 일반 갤러리보다 산업·예술 에디토리얼에 적합한 후보입니다.",
+      "photoProfile": "산업 공간의 금속·콘크리트·창고 구조와 예술작업의 레이어를 활용.",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "산업재생",
+        "창작공간"
+      ],
+      "visualStrengths": [
+        "산업·창고 재료감",
+        "금속과 콘크리트의 대비",
+        "창작·설치미술 환경"
+      ],
+      "bestConcepts": [
+        "인더스트리얼 패션",
+        "에디토리얼",
+        "설치·영상 작업"
+      ],
+      "constraints": [
+        "예술창작 공간 성격이 강하므로 촬영 가능 범위와 시설 운영 일정을 사전 확인.",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 86,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 산업예술 공간",
+      "address": "부산",
+      "coordinates": null,
+      "officialUrl": "https://bscf.or.kr/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://bscf.or.kr/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-088",
+      "legacyCatalogScore": 86,
+      "legacyVisualTags": [
+        "콘크리트",
+        "금속",
+        "창고",
+        "작업공간"
+      ],
+      "legacyMood": "산업적·거칠음·예술·다크",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "산업재생·예술창작공간의 구조와 산업·거침·예술·다크 분위기를 활용할 수 있는 로케이션 후보."
+    },
+    {
+      "id": "gimpo-cica-museum",
+      "name": "김포 CICA미술관",
+      "region": "경기",
+      "category": "현대미술관·전원형 갤러리·미니멀 건축",
+      "aliases": [],
+      "summary": "전원형 갤러리의 단순한 건축과 전시 환경을 활용하는 실험적 이미지 촬영 후보. 도심형 화이트큐브와 다른 주변 풍경·건축·작품의 관계를 조사할 가치가 있습니다.",
+      "photoProfile": "전시공간의 흰 벽과 외부 자연을 대비해 인물과 작품을 최소 요소로 구성.",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "갤러리"
+      ],
+      "visualStrengths": [
+        "미니멀 전시 벽면",
+        "전원형 건축과 외부 자연",
+        "작품·인물의 단순한 배치"
+      ],
+      "bestConcepts": [
+        "실험적 패션",
+        "현대미술 에디토리얼",
+        "뷰티·브랜드 캠페인"
+      ],
+      "constraints": [
+        "사전 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 88,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 전원형 미술관",
+      "address": "경기 김포",
+      "coordinates": null,
+      "officialUrl": "https://cicamuseum.com/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://cicamuseum.com/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-125",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "실험적",
+        "미니멀",
+        "화이트"
+      ],
+      "legacyMood": "실험적·미니멀·화이트",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "도심형 미술관과 다른 전원형 건축·전시 환경으로 인물과 작품을 함께 프레임에 넣기 좋음."
+    },
+    {
+      "id": "daegu-art-museum",
+      "name": "대구미술관",
+      "region": "대구",
+      "category": "현대미술관·대형 아트리움·설치미술",
+      "aliases": [],
+      "summary": "높은 천장과 넓은 아트리움, 대형 설치작품을 수용하는 공간을 활용하는 현대미술관 촬영 후보. 전시별 구도와 촬영 가능한 구역을 따로 조사해야 합니다.",
+      "photoProfile": "밝음·대형·미니멀 분위기와 현대미술관·아트리움의 구조·재료·빛을 인물·패션·에디토리얼 프레임에 활용.",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "실내·외 연결"
+      ],
+      "visualStrengths": [
+        "밝음",
+        "대형",
+        "미니멀",
+        "현대미술관·아트리움"
+      ],
+      "bestConcepts": [
+        "아이돌",
+        "패션",
+        "광고",
+        "에디토리얼"
+      ],
+      "constraints": [
+        "사전 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 88,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 현대미술관",
+      "address": "대구 수성구",
+      "coordinates": null,
+      "officialUrl": "https://artmuseum.daegu.go.kr/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "사진 참고 후보 등록 · 장소 일치 확인 후 대표 적용",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-137",
+          "title": "대구미술관 아트리움·전시 공간 후보",
+          "imageUrl": "https://cdn.mania.kr/dvdprime/file/2511/comm_30966673_20251119095801_f5225b9586f0a599.jpg",
+          "sourceThumbnail": "https://cdn.mania.kr/dvdprime/file/2511/comm_30966673_20251119095801_f5225b9586f0a599.jpg",
+          "sourcePageUrl": "웹 이미지 검색",
+          "sourceName": "구버전 FRAME ATLAS 웹 이미지 후보",
+          "rights": "unknown",
+          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "licenseUrl": "",
+          "placeMatch": "unverified",
+          "viewType": "실내·아트리움·미술관",
+          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "referenceImageId": null,
+      "referenceImageStatus": "사진 후보 등록 · 장소 일치 확인 후 참조 전환",
+      "sourceRefs": [
+        "https://artmuseum.daegu.go.kr/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "이미지 후보 이관·장소 대조 필요",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-137",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "밝음",
+        "대형",
+        "미니멀"
+      ],
+      "legacyMood": "밝음·대형·미니멀",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "높은 천장과 넓은 아트리움, 대형 설치작품이 들어갈 수 있는 구조가 특징."
+    },
+    {
+      "id": "daejeon-museum-of-art",
+      "name": "대전시립미술관",
+      "region": "대전",
+      "category": "현대미술관·아트리움·대형 전시공간",
+      "aliases": [],
+      "summary": "대형 전시실·로비·아트라운지 등 다양한 실내 스케일을 보유한 현대미술관 후보. 단순 관광 목적이 아니라 실내 대형 공간과 작품·인물의 비례를 사진적으로 활용하기 위해 추가합니다.",
+      "photoProfile": "아트리움과 전시공간의 큰 여백을 활용한 현대 패션·문화 콘텐츠 촬영.",
+      "spaceTypes": [
+        "실내",
+        "아트리움",
+        "전시공간"
+      ],
+      "visualStrengths": [
+        "대형 전시실과 높은 층고",
+        "로비·아트라운지의 넓은 여백",
+        "작품·인물의 비례"
+      ],
+      "bestConcepts": [
+        "현대 패션 에디토리얼",
+        "문화 브랜드 영상",
+        "인물 프로필"
+      ],
+      "constraints": [
+        "사전 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 88,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 대형 실내 공간",
+      "address": "대전 서구",
+      "coordinates": null,
+      "officialUrl": "https://www.daejeon.go.kr/dma/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://www.daejeon.go.kr/dma/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-129",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "현대적",
+        "넓음",
+        "중성적"
+      ],
+      "legacyMood": "현대적·넓음·중성적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "대형 전시실, 로비, 아트라운지 등 실내 공간 선택지가 많아 팀 촬영의 백업 장소로 유용."
+    },
+    {
+      "id": "busan-museum-of-contemporary-art",
+      "name": "부산현대미술관",
+      "region": "부산",
+      "category": "현대미술관·대형 로비·식생/건축 대비",
+      "aliases": [],
+      "summary": "지하·지상 전시실과 대형 내부 동선이 있는 현대미술관. 건축과 설치미술, 을숙도 생태 환경의 대비를 활용할 수 있어 실내외 연계 촬영 후보로 등록합니다.",
+      "photoProfile": "반복되는 실내 동선과 넓은 전시 벽면, 외부의 식생·빛 대비를 활용.",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "전시공간"
+      ],
+      "visualStrengths": [
+        "대형 로비와 전시 동선",
+        "건축과 설치미술의 대비",
+        "주변 생태 공간"
+      ],
+      "bestConcepts": [
+        "현대 패션",
+        "문화 에디토리얼",
+        "아티스트 프로필"
+      ],
+      "constraints": [
+        "사전 허가 확인",
+        "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
+        "방문객·시설 운영·안전 동선 준수"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 87,
+      "scoreStatus": "구버전 선별점수 이관 · 현장평가가 아닌 기획상 시각 잠재력",
+      "priorityLabel": "A · 현대건축·전시공간",
+      "address": "부산 사하구",
+      "coordinates": null,
+      "officialUrl": "https://www.busan.go.kr/moca/",
+      "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "입장료와 상업촬영 대관료를 구분해 확인",
+      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://www.busan.go.kr/moca/"
+      ],
+      "verification": {
+        "location": "공식/관광 출처 URL 기록",
+        "photoMatch": "사진 출처 후속 추가",
+        "rights": "사용권 후속 검토",
+        "shootingPermission": "현장·상업촬영 조건 후속 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [],
+      "mediaExposureStatus": "",
+      "selectionStatus": "구버전 214곳에서 2.0으로 이관 · 예술적 촬영 활용성 기준 후속 답사",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "registered-from-v523-214-catalog",
+      "legacyCatalogId": "L-133",
+      "legacyCatalogScore": 88,
+      "legacyVisualTags": [
+        "미니멀",
+        "현대적",
+        "산업적"
+      ],
+      "legacyMood": "미니멀·현대적·산업적",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "지하·지상 전시실과 복도·계단 등 넓은 실내 동선이 있어 인물 촬영의 다양한 스케일을 확보하기 좋음."
     }
   ],
   "selectionRubric": {
