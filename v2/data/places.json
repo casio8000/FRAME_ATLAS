@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "기존 서울·수도권 자료 33곳 유지, 전국 확장 후보 8곳 추가로 총 41곳. F1963·팔복예술공장·국립아시아문화전당·흰여울문화마을·장생포문화창고에 사진 참고 후보를 추가했습니다. 권리 미확인 사진은 대표사진 승인 전 보류하고, 워터마크가 있는 참고 이미지는 제외했습니다.",
+  "dataStatus": "전국 17개 시·도 모두에 촬영 장소 후보를 확보했습니다. 기존 33곳과 첫 확장 8곳을 유지하고 7개 시·도 신규 후보를 더해 총 48곳. 신규 장소는 조형성·건축·재료감·빛을 기준으로 기획 선별했으며 대표사진·권리·촬영 허가는 검증 전 상태로 분리했습니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T12:08:00.000Z",
+  "updatedAt": "2026-10-14T12:15:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -5138,6 +5138,451 @@
       "updatedAt": "2026-10-14",
       "referenceImageId": "img-jangsaengpo-mediaart-mk",
       "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
+    },
+    {
+      "id": "daejeon-old-chungnam-office",
+      "name": "대전근현대사전시관·옛 충남도청사",
+      "region": "대전",
+      "category": "근대건축·역사적 공공건축",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "1930년대 근대 관공서의 정면 대칭, 창호 반복, 긴 복도와 오래된 재료감을 이용한 건축·에디토리얼 촬영 후보",
+      "visualStrengths": [
+        "근대 건축의 대칭 파사드",
+        "복도·창호의 반복 리듬",
+        "원도심 골목과 역사적 맥락"
+      ],
+      "bestConcepts": [
+        "빈티지 패션 에디토리얼",
+        "모노톤 인물 화보",
+        "시네마틱 시대극·브랜드 촬영"
+      ],
+      "constraints": [
+        "전시실·복도별 촬영 허용 범위 확인",
+        "상업촬영·조명 장비 사전 승인 확인",
+        "관람객과 전시물 보호 규정 준수"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "대전근현대사전시관 옛 충남도청사 건축 사진",
+        "옛 충남도청 복도 근대건축",
+        "대전근현대사전시관 상업촬영 허가"
+      ],
+      "aliases": [
+        "옛 충남도청사"
+      ],
+      "summary": "1930년대 근대 관공서의 대칭 파사드와 반복 창호, 긴 복도와 원도심 역사적 맥락을 활용할 수 있는 건축 촬영 후보",
+      "address": "대전광역시 중구 중앙로 101",
+      "coordinates": null,
+      "officialUrl": "https://www.daejeon.go.kr/djBrand/djBrand50View.do?menuSeq=7863&ntatcSeq=1496616596",
+      "openingStatus": "공식 운영 일정과 개방 구역을 방문일 기준 확인",
+      "shootingPermission": "전시관·공공건물 내부 촬영 및 상업촬영은 사전 문의",
+      "parking": "주변 주차시설과 장비 하차 지점 확인 필요",
+      "fee": "촬영 목적·구역별 확인 필요",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.daejeon.go.kr/djBrand/djBrand50View.do?menuSeq=7863&ntatcSeq=1496616596"
+      ],
+      "verification": {
+        "location": "대전광역시 공식 페이지 확인",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진·촬영 조건 검증 전",
+      "photoPotentialScore": 89,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "A · 촬영 탐색 우선",
+      "notes": "대전시 공식 자료는 옛 충남도청사 본관을 활용한 전시공간이며 건축 원형이 보존된 장소로 소개합니다. 촬영 구역과 현재 운영 조건은 별도 확인 대상입니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "sejong-national-arboretum",
+      "name": "국립세종수목원 사계절전시온실",
+      "region": "세종",
+      "category": "유리건축·식물·자연광",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "대형 온실의 철골·유리 구조와 식물 군락, 습도와 빛의 차이를 활용해 인물과 자연을 함께 구성할 수 있는 촬영 후보",
+      "visualStrengths": [
+        "유리·철골의 반복 구조",
+        "식물 레이어와 깊이감",
+        "자연광·확산광 변화"
+      ],
+      "bestConcepts": [
+        "보태니컬 패션 화보",
+        "자연주의 뷰티 촬영",
+        "건축·라이프스타일 에디토리얼"
+      ],
+      "constraints": [
+        "온실별 삼각대·조명 사용 제한 확인",
+        "상업촬영·장비 반입 사전 승인 확인",
+        "식물·관람 동선 훼손 금지"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "국립세종수목원 사계절전시온실 사진",
+        "국립세종수목원 유리온실 건축",
+        "국립세종수목원 상업촬영 허가"
+      ],
+      "aliases": [
+        "국립세종수목원"
+      ],
+      "summary": "대형 온실의 철골·유리 구조와 식물 군락, 확산광을 활용할 수 있는 자연·건축 촬영 후보",
+      "address": "세종특별자치시 수목원로 136",
+      "coordinates": null,
+      "officialUrl": "https://www.sjna.or.kr/",
+      "openingStatus": "방문일 기준 운영시간·휴관일 확인",
+      "shootingPermission": "상업촬영·삼각대·조명 사용 여부 사전 문의",
+      "parking": "공식 방문 안내 확인 필요",
+      "fee": "입장료와 촬영료는 별도 확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.sjna.or.kr/"
+      ],
+      "verification": {
+        "location": "국립세종수목원 공식 사이트 기록",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진·촬영 조건 검증 전",
+      "photoPotentialScore": 86,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "B · 조건 확인 후 탐색",
+      "notes": "일반 정원 산책이 아닌 온실의 유리·철골 구조와 식물 레이어를 촬영 자원으로 평가했습니다. 상업촬영 가능 여부는 미확인입니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "chungbuk-culture-factory",
+      "name": "청주 문화제조창",
+      "region": "충북",
+      "category": "산업유산·문화재생 건축",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "옛 연초 제조창의 기둥·벽체·굴뚝과 재생된 전시·공예 공간의 대비를 활용하는 인더스트리얼 촬영 후보",
+      "visualStrengths": [
+        "옛 공장 골격과 높은 층고",
+        "벽돌·콘크리트·금속 재료감",
+        "산업공간과 현대 전시의 대비"
+      ],
+      "bestConcepts": [
+        "인더스트리얼 패션",
+        "아트·뮤직 에디토리얼",
+        "브랜드 캠페인"
+      ],
+      "constraints": [
+        "전시·상업시설별 촬영 허가 확인",
+        "방문객 동선과 영업 구역 준수",
+        "조명·삼각대·장비 반입 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "청주 문화제조창 옛 연초제조창 건축 사진",
+        "청주 문화제조창 실내 공간",
+        "문화제조창 상업촬영 허가"
+      ],
+      "aliases": [
+        "문화제조창 본관"
+      ],
+      "summary": "옛 연초 제조창의 공장 골격과 새 문화공간의 대비를 활용할 수 있는 산업건축 촬영 후보",
+      "address": "충청북도 청주시 청원구 상당로 314",
+      "coordinates": null,
+      "officialUrl": "https://www.cheongju.go.kr/ktour/selectClturCntnts2019View.do?key=20328&clturCntntsNo=2128&clturCode",
+      "openingStatus": "시설·전시·상업공간별 운영시간 확인",
+      "shootingPermission": "상업촬영과 장비 설치는 시설별 사전 문의",
+      "parking": "현장 주차·장비 하차 동선 확인 필요",
+      "fee": "공간·촬영 목적별 확인 필요",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.cheongju.go.kr/ktour/selectClturCntnts2019View.do?key=20328&clturCntntsNo=2128&clturCode"
+      ],
+      "verification": {
+        "location": "청주시 공식 관광정보 확인",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진·촬영 조건 검증 전",
+      "photoPotentialScore": 91,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "A · 촬영 탐색 우선",
+      "notes": "공식 관광정보는 이곳을 1946~2004년 연초 제조창이던 산업시설을 재생한 복합문화공간으로 설명합니다. 방문객·상업시설과 구분해 촬영 구역을 확인해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "chungnam-jemincheon",
+      "name": "공주 제민천·근대건축 골목",
+      "region": "충남",
+      "category": "수변·근대건축·원도심 골목",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "도심 하천의 선형 원근과 오래된 성당·읍사무소 등 근대 건축, 주거 골목이 겹치는 환경 인물 촬영 후보",
+      "visualStrengths": [
+        "수변 산책로의 원근감",
+        "근대건축 파사드와 골목 질감",
+        "물·벽돌·식생의 레이어"
+      ],
+      "bestConcepts": [
+        "다큐멘터리형 에디토리얼",
+        "라이프스타일 패션",
+        "거리 인물·로케이션 촬영"
+      ],
+      "constraints": [
+        "주민 생활과 사생활 존중",
+        "상업촬영·삼각대·조명 설치 여부 확인",
+        "하천변 미끄럼·수위·보행자 동선 주의"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "공주 제민천 근대건축 골목 사진",
+        "제민천 옛 공주읍사무소 중동성당",
+        "공주 제민천 상업촬영"
+      ],
+      "aliases": [
+        "제민천"
+      ],
+      "summary": "수변의 원근과 근대 건축, 골목의 생활 질감이 결합된 환경 인물 촬영 후보",
+      "address": "충청남도 공주시 무령로 201 일대",
+      "coordinates": null,
+      "officialUrl": "https://tour.chungnam.go.kr/prog/trsrcn/kor/sub02_01_01/view.do?trsrcnNo=248",
+      "openingStatus": "공공 보행 구간은 현장 상황 확인",
+      "shootingPermission": "주민·상점 영업 구역과 별개로 상업촬영·장비 사용 확인",
+      "parking": "주변 공영주차장과 도보 이동 확인 필요",
+      "fee": "공공 구간 여부·촬영 목적별 확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://tour.chungnam.go.kr/prog/trsrcn/kor/sub02_01_01/view.do?trsrcnNo=248"
+      ],
+      "verification": {
+        "location": "충남관광 공식 정보 확인",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진·촬영 조건 검증 전",
+      "photoPotentialScore": 84,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "B · 조건 확인 후 탐색",
+      "notes": "관광 순위가 아니라 하천의 선형 구도와 원도심 근대건축의 레이어를 사진적 이유로 선정했습니다. 주민 생활 공간에서의 촬영은 반드시 배려와 사전 확인이 필요합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "jeonnam-jangdo-art-island",
+      "name": "여수 예술의 섬 장도",
+      "region": "전남",
+      "category": "해안·현대예술·조경",
+      "spaceTypes": [
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "해안선과 보행교, 숲길에 배치된 예술작품·창작공간을 연결해 자연과 건축, 피사체의 스케일을 함께 구성하는 촬영 후보",
+      "visualStrengths": [
+        "해안선·수면과 보행교의 선형",
+        "예술작품과 자연 배경의 대비",
+        "숲길·전망데크·창작공간의 다층 구도"
+      ],
+      "bestConcepts": [
+        "아트 에디토리얼",
+        "환경 인물·패션 화보",
+        "조형물·자연을 활용한 브랜드 촬영"
+      ],
+      "constraints": [
+        "장도교가 만조 때 잠길 수 있어 출입 시간 확인",
+        "전시관·창작스튜디오 촬영 별도 문의",
+        "해안 추락·미끄럼 등 안전 위험 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "여수 예술의 섬 장도 보행교 사진",
+        "장도 창작스튜디오 해안 예술작품",
+        "여수 장도 상업촬영 허가"
+      ],
+      "aliases": [
+        "장도",
+        "예술의 섬 장도"
+      ],
+      "summary": "해안선과 보행교, 숲길의 예술작품·창작공간을 자연·건축의 레이어로 연결할 수 있는 촬영 후보",
+      "address": "전라남도 여수시 웅천동 산 272 일대",
+      "coordinates": null,
+      "officialUrl": "https://www.yeosu.go.kr/tour/travel/info_each_area?idx=501&mode=view",
+      "openingStatus": "연중 개방 안내이나 만조 시 장도교 통제 가능 — 당일 공지 확인",
+      "shootingPermission": "야외·전시관·작업실별 촬영 권한 사전 확인",
+      "parking": "장도 내 차량 진입 제한 안내 — 웅천 공영주차장·예울마루 주차장 확인",
+      "fee": "야외 입장료 안내 무료 · 별도 촬영료·시설 사용 확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.yeosu.go.kr/tour/travel/info_each_area?idx=501&mode=view"
+      ],
+      "verification": {
+        "location": "여수시 공식 관광정보 확인",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진·촬영 조건 검증 전",
+      "photoPotentialScore": 90,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "A · 촬영 탐색 우선",
+      "notes": "여수시 공식 정보에 따르면 장도는 창작스튜디오·다목적 전시장·정원·전망데크가 있는 예술공간이며 장도교는 만조 시 출입 제한이 있을 수 있습니다. 방문 전 물때와 공식 통제를 반드시 확인해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "gyeongbuk-solgeo-art-museum",
+      "name": "경주 솔거미술관",
+      "region": "경북",
+      "category": "현대건축·자연·자연광",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "건축과 자연의 경계, 큰 창의 자연광과 외부 풍경을 프레임 안에 담는 공간 구성을 활용하는 건축·인물 촬영 후보",
+      "visualStrengths": [
+        "큰 창과 자연광",
+        "건축 매스와 숲·수면의 대비",
+        "전시 공간의 절제된 여백"
+      ],
+      "bestConcepts": [
+        "미니멀 패션 에디토리얼",
+        "예술·문화 브랜드 촬영",
+        "환경 인물·자연광 인물화보"
+      ],
+      "constraints": [
+        "전시실 촬영 규정과 작품 저작권 확인",
+        "상업촬영·삼각대·조명 사전 문의",
+        "입장권·통합권 및 전시별 제한 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "경주 솔거미술관 건축 큰 창 사진",
+        "솔거미술관 자연광 창 풍경",
+        "솔거미술관 상업촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "건축과 자연의 경계 및 대형 창의 자연광을 활용하는 현대건축 촬영 후보",
+      "address": "경상북도 경주시 경감로 614",
+      "coordinates": null,
+      "officialUrl": "http://www.gjsam.or.kr/",
+      "openingStatus": "공식 홈페이지에서 방문일 운영시간·휴관·입장 조건 확인",
+      "shootingPermission": "전시실·작품·상업촬영 및 장비 사용 사전 확인",
+      "parking": "경주엑스포대공원 주차장 이용 조건 공식 안내 확인",
+      "fee": "통합권·전시별 요금 확인 필요",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://gyeongju.go.kr/tour/page.do?mnu_uid=4723",
+        "http://www.gjsam.or.kr/"
+      ],
+      "verification": {
+        "location": "경주시 공식 관광정보 확인",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진·촬영 조건 검증 전",
+      "photoPotentialScore": 90,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "A · 촬영 탐색 우선",
+      "notes": "경주시 공식 관광정보는 솔거미술관을 건축가 승효상이 설계한 공립미술관으로 소개하고, 자연광이 들어오는 큰 창을 사진적 요소로 설명합니다. 전시 작품과 내부 촬영 허용 범위는 별도 확인해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "gyeongnam-clayarch",
+      "name": "클레이아크 김해미술관",
+      "region": "경남",
+      "category": "세라믹 건축·조형·예술공간",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "세라믹을 활용한 독특한 건축 표면과 전시동의 기하학, 주변 조경을 활용하는 디자인·건축 촬영 후보",
+      "visualStrengths": [
+        "세라믹 패널의 재료감",
+        "건축 외피의 반복 패턴",
+        "조형물과 전시공간의 대비"
+      ],
+      "bestConcepts": [
+        "건축·디자인 에디토리얼",
+        "조형 중심 패션 화보",
+        "브랜드·문화 캠페인"
+      ],
+      "constraints": [
+        "전시별 촬영·작품 촬영 조건 확인",
+        "상업촬영·삼각대·조명 사전 문의",
+        "행사 일정과 휴관일 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "클레이아크 김해미술관 건축 외관 사진",
+        "클레이아크 김해미술관 세라믹 건축",
+        "클레이아크 김해미술관 상업촬영 허가"
+      ],
+      "aliases": [
+        "클레이아크 김해미술관"
+      ],
+      "summary": "세라믹 건축 외피와 전시 공간의 기하학을 활용할 수 있는 디자인·건축 촬영 후보",
+      "address": "경상남도 김해시 진례면 진례로 275-51",
+      "coordinates": null,
+      "officialUrl": "https://clayarch.ghct.or.kr/home/main",
+      "openingStatus": "화~일 운영 안내 · 방문일 운영시간·휴관 확인",
+      "shootingPermission": "상업촬영·삼각대·조명 사용 및 작품 촬영 사전 확인",
+      "parking": "공식 방문 안내 확인 필요",
+      "fee": "입장료와 별도 촬영료 여부 확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://clayarch.ghct.or.kr/home/main"
+      ],
+      "verification": {
+        "location": "공식 미술관 정보 확인",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진·촬영 조건 검증 전",
+      "photoPotentialScore": 89,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "A · 촬영 탐색 우선",
+      "notes": "김해문화관광재단 공식 미술관 사이트와 2026년 문화정보 자료에서 확인되는 예술공간입니다. 세라믹 건축과 전시공간을 우선 평가했으며 촬영 규정은 직접 확인해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
     }
   ],
   "selectionRubric": {
