@@ -13,7 +13,7 @@ const REGION_GROUPS=[
  {key:"chungcheong",label:"충청권",aliases:["충청북도","충청남도","세종특별자치시","대전광역시","충북","충남","충청","대전","세종"]},
  {key:"jeolla",label:"전라권",aliases:["전북특별자치도","전라북도","전라남도","광주광역시","전북","전남","전라","광주"]},
  {key:"gyeongsang",label:"경상권",aliases:["경상북도","경상남도","부산광역시","대구광역시","울산광역시","경북","경남","경상","부산","대구","울산"]},
- {key:"jeju",label:"제주",aliases:["제주특별자치도","제주도","제주"]}
+ {key:"jeju",label:"제주권",aliases:["제주특별자치도","제주도","제주"]}
 ];
 function regionGroupKey(value){
  const v=String(value||"").replace(/\s+/g," ").trim();if(!v)return"";
