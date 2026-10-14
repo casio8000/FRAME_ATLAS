@@ -964,3 +964,25 @@ dialog.map-links-dialog{position:relative;max-width:min(560px,calc(100% - 24px))
 .media-appearance-item>p{margin:8px 0;font-size:12px;line-height:1.65;color:#56616a}.media-appearance-item>a{display:inline-block;margin-top:3px;color:#234a37;font-weight:800;font-size:12px;text-decoration:underline;text-underline-offset:3px}
 .media-exposure-status{padding:10px;border-radius:9px;background:#f1f2ee;color:#59635f;font-size:12px;line-height:1.65}
 @media(max-width:620px){.map-choose-panel{min-height:255px;padding:20px 12px}.map-choose-panel>b{font-size:19px}.map-choose-panel .btn{min-width:105px}}
+
+/* v2.35: place curation review queue */
+.curation-review-section{margin:20px 0 30px;border-top:1px solid var(--line);padding-top:12px}
+#curationReviewDetails{border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.62);overflow:hidden}
+#curationReviewDetails>summary{display:flex;justify-content:space-between;align-items:center;gap:14px;list-style:none;cursor:pointer;padding:15px 17px}
+#curationReviewDetails>summary::-webkit-details-marker{display:none}
+#curationReviewDetails>summary>span:first-child{display:flex;flex-direction:column;gap:4px}
+#curationReviewDetails>summary b{font-size:14px;color:var(--ink)}
+#curationReviewDetails>summary small{font-size:11px;line-height:1.5;color:var(--muted);font-weight:500}
+.review-count{display:flex;align-items:center;gap:8px;white-space:nowrap;font-size:12px;font-weight:900;color:var(--green)}
+.review-count>span{font-size:18px;color:var(--muted)}
+#curationReviewDetails[open] .review-count>span{transform:rotate(45deg)}
+.review-queue-intro{margin:0;padding:0 17px 14px;font-size:12px;line-height:1.7;color:var(--muted)}
+.review-queue-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0 14px 14px}
+.review-queue-card{min-width:0;border:1px solid var(--line);border-radius:12px;background:#fff;padding:12px}
+.review-queue-kicker{display:flex;justify-content:space-between;gap:8px;font-size:10px;line-height:1.5;color:var(--muted);font-weight:800}
+.review-queue-kicker span:last-child{color:#9a6b36}
+.review-queue-card h3{margin:8px 0 5px;font-size:14px;line-height:1.45}
+.review-queue-card p{font-size:11px;line-height:1.65;color:var(--muted);margin:0 0 9px}
+.review-queue-links{display:flex;gap:12px;flex-wrap:wrap}
+.review-queue-links a{font-size:11px;font-weight:800;color:var(--green);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:620px){#curationReviewDetails>summary{padding:13px}.review-queue-grid{grid-template-columns:1fr;padding:0 10px 10px}.review-queue-intro{padding:0 13px 12px}}
