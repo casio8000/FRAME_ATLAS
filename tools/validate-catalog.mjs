@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 "use strict";
 
-const assert = require("node:assert/strict");
-const fs = require("node:fs");
-const path = require("node:path");
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const data = JSON.parse(fs.readFileSync(path.join(root, "v2", "data", "places.json"), "utf8"));
 const html = fs.readFileSync(path.join(root, "v2", "index.html"), "utf8");
