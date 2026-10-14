@@ -950,3 +950,17 @@ dialog.map-links-dialog{position:relative;max-width:min(560px,calc(100% - 24px))
 #detail .shooting-form input.unconfirmed-field::placeholder{color:#abb4c1;opacity:1}
 #detail .shooting-form input.unconfirmed-field:focus{color:var(--ink);background:#fff;border-style:solid}
 @media(max-width:620px){.venue-info-grid{grid-template-columns:1fr}dialog.map-links-dialog{padding:22px 15px}.map-links-dialog h2{font-size:20px}.map-option{padding:11px}}
+
+/* v2.34 nationwide region selectors, media credits and map chooser */
+.map-choose-panel{min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:28px;text-align:center;background:linear-gradient(140deg,#101820,#26383b);color:#fff;border-radius:16px}
+.map-choose-mark{display:grid;place-items:center;width:56px;height:56px;border:1px solid rgba(255,255,255,.32);border-radius:50%;font-size:29px;color:#d1e5d6}
+.map-choose-panel>b{font-size:21px;letter-spacing:-.4px}.map-choose-panel>p{max-width:330px;margin:0;color:#d3dbd9;font-size:13px;line-height:1.6}
+.map-choose-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:5px}.map-choose-panel .btn{min-width:120px}
+.media-exposure-card{border:1px solid var(--line);border-radius:15px;padding:15px;background:#fbfbf8}.media-exposure-card h3{margin:0 0 8px}
+.media-appearance-list{display:grid;gap:10px;margin:12px 0}.media-appearance-item{padding:12px;background:#fff;border:1px solid var(--line);border-radius:11px;min-width:0}
+.media-appearance-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.media-appearance-meta span{font-size:11px;color:#34594a;font-weight:800;background:#edf3ed;border-radius:5px;padding:3px 6px}.media-appearance-meta time{font-size:11px;color:var(--muted)}
+.media-appearance-item>b{display:block;font-size:14px;line-height:1.55}.media-appearance-item>small{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+.media-appearance-item>p{margin:8px 0;font-size:12px;line-height:1.65;color:#56616a}.media-appearance-item>a{display:inline-block;margin-top:3px;color:#234a37;font-weight:800;font-size:12px;text-decoration:underline;text-underline-offset:3px}
+.media-exposure-status{padding:10px;border-radius:9px;background:#f1f2ee;color:#59635f;font-size:12px;line-height:1.65}
+@media(max-width:620px){.map-choose-panel{min-height:255px;padding:20px 12px}.map-choose-panel>b{font-size:19px}.map-choose-panel .btn{min-width:105px}}
