@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "전국 17개 시·도에 48곳의 촬영 장소 후보가 등록되어 있습니다. 최근 확장 지역 중 대전·세종·충북·충남·전남·경북·경남에 장소별 사진 참고 후보를 추가했습니다. 권리 미확인 사진은 대표사진으로 승인하지 않았습니다.",
+  "dataStatus": "전국 17개 시·도에 48곳의 촬영 장소 후보가 등록되어 있습니다. 신규 확장 8개 지역의 장소 참고사진을 추가 조사해 후보를 반영했습니다. 저작권·재사용 허가와 현장 촬영 조건을 확인하지 않은 사진은 대표사진으로 승인하지 않았습니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T12:25:00.000Z",
+  "updatedAt": "2026-10-14T12:28:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -4750,9 +4750,26 @@
       "shootingPermission": "전시·공간별 촬영 및 상업 이용 사전 확인",
       "parking": "현장 확인 필요",
       "fee": "촬영 목적·공간별 확인 필요",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-daegu-artfactory-atrium-cnn-kto",
+          "title": "대구예술발전소 아트리움의 산업건축·계단 구조",
+          "imageUrl": "https://sponsorcontent.cnn.io/int/wp-content/uploads/2021/07/KTO_AF1_Daegu_Art_Factory_02.jpg",
+          "sourceThumbnail": "https://sponsorcontent.cnn.io/int/wp-content/uploads/2021/07/KTO_AF1_Daegu_Art_Factory_02.jpg",
+          "sourcePageUrl": "https://sponsorcontent.cnn.com/int/kto/reinventing-business/",
+          "sourceName": "CNN × 한국관광공사",
+          "rights": "unknown",
+          "rightsLabel": "관광공사 협업 콘텐츠 · 재사용 조건 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·아트리움·산업건축",
+          "notes": "CNN과 한국관광공사의 관광 콘텐츠에 실린 대구예술발전소 내부 사진 후보. 산업건축과 다층 계단 구조를 보여주는 참고용이며, 이미지 앱 내 재사용 권리와 촬영 허가는 확인 전입니다. 대표사진 승인은 보류합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.daeguartfactory.kr/"
       ],
@@ -4770,8 +4787,8 @@
       "notes": "산업건축과 전시 공간의 조형성을 우선 평가했습니다. 현재 개방·촬영 허가 여부는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
-      "referenceImageId": null,
-      "referenceImageStatus": ""
+      "referenceImageId": "img-daegu-artfactory-atrium-cnn-kto",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "jeonju-palbok",
@@ -4980,9 +4997,26 @@
       "shootingPermission": "상업촬영·삼각대·조명 사용 여부 사전 확인",
       "parking": "공식 안내 확인 필요",
       "fee": "촬영 목적·구역별 확인 필요",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-museumsan-meditationhall-official",
+          "title": "뮤지엄 SAN 명상관의 곡면 콘크리트와 선형 자연광",
+          "imageUrl": "https://www.museumsan.org/static/media/%EB%AA%85%EC%83%81%EA%B4%80_2.8aa242dff2d08519f78c.jpg",
+          "sourceThumbnail": "https://www.museumsan.org/static/media/%EB%AA%85%EC%83%81%EA%B4%80_2.8aa242dff2d08519f78c.jpg",
+          "sourcePageUrl": "https://www.museumsan.org/meditation?tab=permanent",
+          "sourceName": "뮤지엄 SAN 공식 홈페이지",
+          "rights": "unknown",
+          "rightsLabel": "공식 홈페이지 사진 · 재사용 권리 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·명상관·건축",
+          "notes": "뮤지엄 SAN 공식 홈페이지에 게시된 명상관 사진 후보. 곡면 콘크리트와 선형 자연광을 보여주는 공간 참고 자료이며 사진 사용·재게시 권리 및 내부 촬영 허가는 별도 확인 전입니다. 대표사진 승인은 보류합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.museumsan.org/"
       ],
@@ -4999,7 +5033,9 @@
       "priorityLabel": "A · 촬영 탐색 우선",
       "notes": "조형성과 빛·반사·재료감이 뚜렷한 후보입니다. 실내 전시 작품과 공간의 촬영은 별도 규정을 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-museumsan-meditationhall-official",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "jeju-bangju",
@@ -5040,9 +5076,26 @@
       "shootingPermission": "종교시설 및 상업촬영 허가 사전 확인",
       "parking": "현장 확인 필요",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-bangju-church-reflecting-pool-visitjeju",
+          "title": "제주 방주교회 유리·금속 외피와 수면 반사",
+          "imageUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/268891a2-bc33-4089-b026-6f1982cc7ac1.webp",
+          "sourceThumbnail": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/268891a2-bc33-4089-b026-6f1982cc7ac1.webp",
+          "sourcePageUrl": "https://m.visitjeju.net/en/detail/view?contentsid=CNTS_000000000018384",
+          "sourceName": "Visit Jeju · 제주관광공사",
+          "rights": "unknown",
+          "rightsLabel": "공식 관광 사진 · 재사용 권리 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·현대건축·수면 반사",
+          "notes": "Visit Jeju의 방주교회 장소 소개에 게재된 건축 사진 후보. 실제 장소와 건축 형태를 확인할 수 있는 참고용 이미지이며, 이미지 재사용 권리와 종교시설 상업촬영 허가는 별도 확인 전입니다. 대표사진 승인을 보류합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [],
       "verification": {
         "location": "장소 정보 기록 · 공식 출처 추가 확인 필요",
@@ -5057,7 +5110,9 @@
       "priorityLabel": "B · 조건 확인 후 탐색",
       "notes": "건축적 실루엣과 수면 반사를 사진적 강점으로 평가했습니다. 사유·종교 공간의 출입과 촬영 권한을 반드시 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-bangju-church-reflecting-pool-visitjeju",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "ulsan-jangsaengpo",
