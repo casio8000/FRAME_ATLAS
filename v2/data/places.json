@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 장소 참고사진, 대표사진 편집 판단, 재사용 권리와 촬영 허가를 독립 관리",
-  "dataStatus": "전국 권역 확장판. 활성 장소 54곳, 검토 대기 후보 9곳. 장소 일치가 확인된 사진은 참고 이미지로 활용할 수 있지만 대표사진 선정, 이미지 재사용 권리, 상업촬영 허가는 각각 별도로 판단합니다.",
+  "dataStatus": "전국 권역 확장판. 활성 장소 58곳, 검토 대기 후보 9곳. 장소 일치 사진은 참고 이미지로 표시하고 대표사진 승인 여부, 이미지 재사용 권리, 상업촬영 허가는 별도 상태로 관리합니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T11:00:00.000Z",
+  "updatedAt": "2026-10-14T11:35:00.000Z",
   "places": [
     {
       "id": "nat-solol-art-museum",
@@ -7269,6 +7269,315 @@
       },
       "province": "인천",
       "regionGroup": "capital"
+    },
+    {
+      "id": "nat-busan-film-studio",
+      "name": "부산영화촬영스튜디오",
+      "region": "부산 해운대",
+      "province": "부산",
+      "regionGroup": "gyeongsang",
+      "locality": "해운대구 우동",
+      "category": "대형 영화·드라마 촬영 스튜디오",
+      "summary": "250평·500평 규모의 실내 스테이지와 특수촬영 설비, 제작 지원 공간을 갖춘 전문 스튜디오. 일반 외부 로케이션과 달리 시설 방문과 상업 촬영은 운영기관 협의가 필요한 제작 인프라입니다.",
+      "photoProfile": "대형 사운드 스테이지, 세트 구축, 조명·카메라 리그와 촬영팀 동선을 중심으로 영화·드라마·광고 제작의 실제 공간을 조사할 후보.",
+      "visualStrengths": [
+        "대형 실내 사운드 스테이지",
+        "기차 내부 등 세트 재현과 카메라 이동 동선",
+        "조명 리그·장비·세트 구조"
+      ],
+      "bestConcepts": [
+        "영화 제작 현장 기록",
+        "제작 기반 인물·프로덕션 사진",
+        "세트 디자인·미장센 조사"
+      ],
+      "scoutPriority": 1,
+      "photoPotentialScore": 88,
+      "photoScoreBreakdown": {
+        "distinctiveness": 26,
+        "compositionVariety": 18,
+        "lightAndTexture": 17,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "address": "부산광역시 해운대구 해운대해변로 52 (우동)",
+      "officialUrl": "http://www.bfc.or.kr",
+      "mapSearchQuery": "부산영화촬영스튜디오 부산 해운대구 해운대해변로 52",
+      "openingStatus": "일반 이용·견학 운영시간은 자료상 평일 09:00–18:00이며 최신 예약·휴관 여부 재확인 필요",
+      "shootingPermission": "전문 제작 시설입니다. 견학 가능 여부와 별개로 개인·상업 촬영, 세트 이용 및 조명·장비 반입은 운영기관 승인 확인 필요",
+      "parking": "시설 방문 시 주차 가능 여부·대형 차량 및 장비 하차는 사전 확인",
+      "fee": "미확인 · 촬영 대관료 별도 문의",
+      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-busan-film-studio-cine21-train-set",
+      "imageCandidates": [
+        {
+          "id": "ref-busan-film-studio-cine21-train-set",
+          "title": "부산영화촬영스튜디오 내부 기차 세트 촬영 장면",
+          "imageUrl": "https://image.cine21.com/resize/cine21/article/2021/1220/14_32_59__61c0158b4446a%5BH800-%5D.jpg",
+          "sourceThumbnail": "https://image.cine21.com/resize/cine21/article/2021/1220/14_32_59__61c0158b4446a%5BH800-%5D.jpg",
+          "sourcePageUrl": "https://cine21.com/news/view/?mag_id=99345",
+          "sourceName": "씨네21 · 개관 20주년 맞은 부산영화촬영스튜디오",
+          "rights": "unknown",
+          "rightsLabel": "재사용 권한 미확인 · 원문 출처 유지",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내 촬영 세트·열차 내부·카메라 리그",
+          "notes": "장소 관련 기사에 수록된 실제 촬영 세트 장면을 장소 참고 이미지로 사용합니다. 촬영소 전체 대표사진이나 공개 재사용 허가를 의미하지 않습니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "한국관광공사 열린관광 모두의 여행 · 부산영화촬영스튜디오",
+          "url": "https://access.visitkorea.or.kr/ms/detail.do?cotId=512c7ccc-683b-4674-a61b-eb1c6482a660"
+        },
+        {
+          "name": "씨네21 · 부산영화촬영스튜디오",
+          "url": "https://cine21.com/news/view/?mag_id=99345"
+        }
+      ],
+      "verification": {
+        "location": "공식·관광정보 출처 확인",
+        "photoMatch": "장소 관련 기사 내 촬영소 사진 후보 확인",
+        "rights": "재사용 권한 미확인",
+        "shootingPermission": "견학과 상업 촬영 허가 구분 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 조사 후보 · 시설 운영·촬영 승인 필요",
+      "notes": "한국관광공사 안내에는 250평·500평 규모의 실내 스튜디오와 부대시설이 소개되어 있습니다. 실제 촬영 가능 구역, 예약, 세트 사용, 장비 반입은 별도 문의합니다.",
+      "sourceVersion": "2026-10-14"
+    },
+    {
+      "id": "nat-daegu-opera-house",
+      "name": "대구오페라하우스",
+      "region": "대구 북구",
+      "province": "대구",
+      "regionGroup": "gyeongsang",
+      "locality": "북구 칠성동",
+      "category": "오페라 전용극장·곡면 유리 파사드·대형 무대",
+      "summary": "그랜드 피아노를 연상시키는 곡선 형태와 투명 유리 외피, 무대·객석·조명 시스템을 함께 갖춘 공연장. 외관 건축과 공연 연출 공간 모두 사진적 탐색 가치가 있습니다.",
+      "photoProfile": "밤에 빛나는 유리 입면과 곡선 외형, 무대의 정면성, 발코니·객석의 반복을 이용하는 건축·퍼포먼스 촬영 후보.",
+      "visualStrengths": [
+        "곡선형 건축 매스와 유리 입면",
+        "야간 조명과 실내외 반사",
+        "말발굽형 객석 및 발코니 구조"
+      ],
+      "bestConcepts": [
+        "공연·무대 기반 패션 에디토리얼",
+        "건축 야간 촬영",
+        "퍼포먼스·댄스 프로필"
+      ],
+      "scoutPriority": 1,
+      "photoPotentialScore": 91,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 18,
+        "lightAndTexture": 19,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "address": "대구광역시 북구 호암로 15",
+      "officialUrl": "https://www.daeguoperahouse.org/contents/05_guide/page.html?mid=060062067",
+      "mapSearchQuery": "대구오페라하우스 대구광역시 북구 호암로 15",
+      "openingStatus": "공연 일정·시설 운영시간에 따라 이용 가능 구역이 다름",
+      "shootingPermission": "관람객 촬영과 무대·객석의 상업촬영은 다를 수 있으며 대관·촬영·조명 사용을 운영기관에 문의",
+      "parking": "주차 안내 및 공연일 혼잡 확인 필요",
+      "fee": "촬영 대관료·장비 반입 조건 미확인",
+      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-daegu-opera-house-night-visitkorea",
+      "imageCandidates": [
+        {
+          "id": "ref-daegu-opera-house-night-visitkorea",
+          "title": "대구오페라하우스 유리 파사드 야간 참고사진",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/78/3376278_image2_1.jpg",
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/78/3376278_image2_1.jpg",
+          "sourcePageUrl": "https://data.visitkorea.or.kr/page/130665",
+          "sourceName": "한국관광공사 관광데이터랩 · 대구오페라하우스",
+          "rights": "unknown",
+          "rightsLabel": "재사용 권한 미확인 · 원문 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야간 외관·곡선 유리 파사드·입구",
+          "notes": "해당 공연장의 실제 야간 외관 참고 이미지입니다. 대표사진 최종 채택 및 이미지 재사용 권한은 별도 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "대구오페라하우스 공식 건축·시설 안내",
+          "url": "https://www.daeguoperahouse.org/contents/05_guide/page.html?mid=060062067"
+        },
+        {
+          "name": "한국관광공사 관광데이터랩 · 대구오페라하우스",
+          "url": "https://data.visitkorea.or.kr/page/130665"
+        }
+      ],
+      "verification": {
+        "location": "공식 시설 안내 확인",
+        "photoMatch": "해당 공연장 야간 외관 참고 이미지",
+        "rights": "재사용 권한 미확인",
+        "shootingPermission": "공연 대관과 촬영 허가는 별도 문의",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 조사 후보 · 공연장 내부 촬영 허가 확인 필요",
+      "notes": "공식 안내는 국내 최초 단독 오페라 전용극장으로 설명하고 있으며, 외관 건축과 객석·무대 공간의 사진적 활용을 따로 검토합니다."
+    },
+    {
+      "id": "nat-sejong-arts-center",
+      "name": "세종예술의전당",
+      "region": "세종 나성동",
+      "province": "세종",
+      "regionGroup": "chungcheong",
+      "locality": "나성동",
+      "category": "공연예술센터·유리 파사드·조형 광장",
+      "summary": "긴 유리 파사드와 넓은 콘크리트 광장, 대형 객석·무대를 갖춘 현대 공연장. 건축의 낮은 수평선과 광장 여백, 공연장의 내부 공간을 함께 탐색할 수 있습니다.",
+      "photoProfile": "수평형 유리 입면, 사선 지붕과 광장, 조형물 주변을 활용하는 건축·브랜드·퍼포먼스 촬영 후보.",
+      "visualStrengths": [
+        "긴 유리 파사드와 낮은 수평 지붕",
+        "넓은 진입 광장과 건물의 사선",
+        "공연장 객석·무대·대기공간"
+      ],
+      "bestConcepts": [
+        "현대 건축·미니멀 패션",
+        "광장 기반 환경인물",
+        "공연·퍼포먼스 포스터 촬영"
+      ],
+      "scoutPriority": 2,
+      "photoPotentialScore": 87,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 18,
+        "lightAndTexture": 18,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "address": "세종특별자치시 국립박물관로 21 (나성동 267)",
+      "officialUrl": "https://www.sjac.or.kr/base/contents/view?contentsNo=42&menuLevel=2&menuNo=85",
+      "mapSearchQuery": "세종예술의전당 세종특별자치시 국립박물관로 21",
+      "openingStatus": "공연·행사 일정에 따라 출입과 이용 가능 구역이 다름",
+      "shootingPermission": "공공 광장 이용과 공연장·로비의 상업촬영은 구분하여 운영기관에 사전 문의",
+      "parking": "공식 안내 기준 주차 292대. 공연일 혼잡 및 장비 차량 주차는 재확인",
+      "fee": "촬영 대관료 미확인",
+      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-sejong-arts-center-culturelamp-exterior",
+      "imageCandidates": [
+        {
+          "id": "ref-sejong-arts-center-culturelamp-exterior",
+          "title": "세종예술의전당 유리 외벽과 진입 광장",
+          "imageUrl": "https://cdn.culturelamp.kr/news/photo/202302/218_425_325.jpg",
+          "sourceThumbnail": "https://cdn.culturelamp.kr/news/photo/202302/218_425_325.jpg",
+          "sourcePageUrl": "https://www.culturelamp.kr/news/articleView.html?idxno=218",
+          "sourceName": "컬처램프 · 디엠피건축 프로젝트 소개",
+          "rights": "unknown",
+          "rightsLabel": "재사용 권한 미확인 · 출처 페이지 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "유리 파사드·사선 지붕·진입 광장",
+          "notes": "해당 공연장의 실제 외관을 보여주는 지상 시점 이미지입니다. 항공사진을 대표 참고 이미지로 쓰지 않으며, 대표사진 승인과 재사용 권리는 별도로 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "세종예술의전당 공식 오시는 길",
+          "url": "https://www.sjac.or.kr/base/contents/view?contentsNo=42&menuLevel=2&menuNo=85"
+        },
+        {
+          "name": "컬처램프 · 디엠피건축 프로젝트",
+          "url": "https://www.culturelamp.kr/news/articleView.html?idxno=218"
+        }
+      ],
+      "verification": {
+        "location": "공식 주소 확인",
+        "photoMatch": "해당 공연장 외관 참고 이미지",
+        "rights": "재사용 권한 미확인",
+        "shootingPermission": "공연장 대관과 촬영 허가는 별도 문의",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 조사 후보 · 출입·촬영 조건 확인 필요",
+      "notes": "공식 안내 기준 주소 및 주차 안내를 기록했습니다. 실제 촬영 가능 구역과 장비 반입·상업촬영 조건은 운영기관에 확인해야 합니다."
+    },
+    {
+      "id": "nat-jeonju-palbok-art-factory",
+      "name": "전주 팔복예술공장",
+      "region": "전북 전주",
+      "province": "전북",
+      "regionGroup": "jeolla",
+      "locality": "덕진구 팔복동",
+      "category": "폐산업시설 문화재생·산업건축·현대 예술공간",
+      "summary": "카세트테이프 공장을 문화예술 공간으로 재생한 장소. 오래된 공장 재료감, 산업 흔적과 현대 전시·벽화·조형 요소가 공존해 산업·레트로·에디토리얼 촬영을 탐색하기 좋습니다.",
+      "photoProfile": "낡은 산업건축과 컬러풀한 전시 파사드, 넓은 야외 여백과 조형물을 대비시켜 촬영할 수 있는 산업유산·예술 공간 후보.",
+      "visualStrengths": [
+        "오래된 공장 구조와 거친 재료감",
+        "강한 색의 파사드·벽화·조형물",
+        "실내 전시와 야외 공간의 대비"
+      ],
+      "bestConcepts": [
+        "레트로·산업 패션 에디토리얼",
+        "컬러 블록 기반 인물화보",
+        "공간 재생·문화 브랜드 촬영"
+      ],
+      "scoutPriority": 1,
+      "photoPotentialScore": 88,
+      "photoScoreBreakdown": {
+        "distinctiveness": 27,
+        "compositionVariety": 18,
+        "lightAndTexture": 18,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 7
+      },
+      "address": "전북특별자치도 전주시 덕진구 구렛들1길 46 (팔복동1가)",
+      "officialUrl": "https://www.palbokart.kr/",
+      "mapSearchQuery": "전주 팔복예술공장 전북특별자치도 전주시 덕진구 구렛들1길 46",
+      "openingStatus": "공식 관광 안내 기준 전시장 10:00–18:00, 월요일·명절 당일 휴관. 최신 운영시간 재확인 필요",
+      "shootingPermission": "일반 관람·전시 촬영과 상업촬영·삼각대·조명 사용은 다를 수 있으므로 공간별 사전 문의",
+      "parking": "현장 주차 및 장비 하차 동선 재확인",
+      "fee": "촬영·공간 대관료 및 상업 이용 조건 미확인",
+      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-palbok-art-factory-visitjeonju",
+      "imageCandidates": [
+        {
+          "id": "ref-palbok-art-factory-visitjeonju",
+          "title": "팔복예술공장 옛 공장동과 컬러 파사드",
+          "imageUrl": "https://tour.jeonju.go.kr/upload_data/board_data/BBS_0000003/175066192675612.jpg",
+          "sourceThumbnail": "https://tour.jeonju.go.kr/upload_data/board_data/BBS_0000003/175066192675612.jpg",
+          "sourcePageUrl": "https://tour.jeonju.go.kr/board/view.jeonju?boardId=BBS_0000003&contentsSid=1&dataSid=9769&paging=ok&startPage=1",
+          "sourceName": "비짓전주 · 팔복예술공장 소개",
+          "rights": "kogl-type-2",
+          "rightsLabel": "공공누리 제2유형 · 출처표시 필수, 상업적 이용 금지",
+          "licenseUrl": "https://tour.jeonju.go.kr/board/view.jeonju?boardId=BBS_0000003&contentsSid=1&dataSid=9769&paging=ok&startPage=1",
+          "placeMatch": "confirmed",
+          "viewType": "산업건축·컬러 파사드·야외 광장",
+          "notes": "비짓전주 장소 소개에 포함된 실제 팔복예술공장 사진입니다. 페이지 하단에 공공누리 제2유형(출처표시·상업적 이용 금지)이 표시되어 있어 그 조건을 유지해야 합니다. 대표사진 판단은 별도입니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "비짓전주 · 팔복예술공장",
+          "url": "https://tour.jeonju.go.kr/board/view.jeonju?boardId=BBS_0000003&contentsSid=1&dataSid=9769&paging=ok&startPage=1"
+        },
+        {
+          "name": "팔복예술공장 공식 홈페이지",
+          "url": "https://www.palbokart.kr/"
+        }
+      ],
+      "verification": {
+        "location": "전주시 관광 안내 및 공식 안내 채널 확인",
+        "photoMatch": "공식 관광 안내에 포함된 해당 장소 외관",
+        "rights": "공공누리 제2유형 · 상업적 이용 금지",
+        "shootingPermission": "공간별·촬영 종류별 별도 문의",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 조사 후보 · 전시·산업건축 촬영 적합성 및 허가 확인 필요",
+      "notes": "전주시 관광 안내는 1979년부터 카세트테이프를 생산하던 공장이 문화예술 공간으로 재생된 이력을 소개합니다. 원본 자료의 이미지 이용 조건을 준수하고, 영리 촬영 전 운영기관에 문의해야 합니다."
     }
   ],
   "selectionRubric": {
@@ -8444,7 +8753,7 @@
     },
     {
       "id": "jeju",
-      "label": "제주",
+      "label": "제주권",
       "provinces": [
         "제주"
       ]
