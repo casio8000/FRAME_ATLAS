@@ -354,7 +354,7 @@ function sourceLinks(p,mode){
 function openMapLinksDialog(p,purpose){
  const dlg=$("mapLinksDialog");if(!dlg||!p)return;
  const address=String(p.address||"").trim(),area=String(p.mapSearchQuery||"").trim(),query=address||area||[p.name,p.region,"대한민국"].filter(Boolean).join(" "),encoded=encodeURIComponent(query),name=String(p.name||"촬영 장소");
- const naverMap="https://map.naver.com/p/search/"+encoded,naverRoute="https://map.naver.com/p/directions/-/-/"+encoded+"/-/car";
+ const naverMap="https://map.naver.com/p/search/"+encoded,naverRoute=naverMap;
  const coords=p.coordinates||{},lat=Number(Array.isArray(coords)?coords[0]:(coords.lat??coords.latitude)),lng=Number(Array.isArray(coords)?coords[1]:(coords.lng??coords.lon??coords.longitude));
  let tmap="tmap://search?name="+encodeURIComponent(name+" "+String(p.region||""));
  if(purpose==="route"&&Number.isFinite(lat)&&Number.isFinite(lng)&&lat!==0&&lng!==0)tmap="tmap://route?goalname="+encodeURIComponent(name)+"&goalx="+encodeURIComponent(lng)+"&goaly="+encodeURIComponent(lat);
@@ -362,6 +362,8 @@ function openMapLinksDialog(p,purpose){
  $("mapLinksAddress").textContent=(address||area||query)+" · "+(purpose==="route"?"목적지 검색 결과를 확인한 뒤 안내를 시작하세요.":"실제 촬영 구간·출입구를 확인하세요.");
  $("mapNaverMapLink").href=naverMap;$("mapNaverRouteLink").href=naverRoute;$("mapTmapLink").href=tmap;
  $("mapNaverMapLink").hidden=purpose==="route";$("mapNaverRouteLink").hidden=purpose!=="route";
+ $("mapNaverRouteLink").querySelector("b").textContent="네이버 지도에서 목적지 확인";
+ $("mapNaverRouteLink").querySelector("small").textContent="장소를 선택한 뒤 지도에서 길찾기를 누르세요";
  $("mapTmapLink").textContent=purpose==="route"?"티맵에서 검색·길찾기":"티맵에서 장소 찾기";
  $("mapLinksNote").textContent=Number.isFinite(lat)&&Number.isFinite(lng)&&lat!==0&&lng!==0?"등록 좌표를 사용할 수 있습니다. 지도 서비스에서 위치와 경로를 확인하세요.":"현재 등록 좌표가 없는 장소는 이름·주소 검색으로 열립니다. 티맵은 앱 설치·기기 환경에 따라 열리는 방식이 다를 수 있습니다.";
  if(typeof dlg.showModal==="function"){if(!dlg.open)dlg.showModal();}else dlg.setAttribute("open","open");
@@ -431,7 +433,10 @@ function renderDetail(){
   c.updatedAt=stamp();p.updatedAt=stamp();localSave("사진 정보를 저장했습니다");render();renderLanding();
  }));
  renderShootingDetails(p);
- $("detail").querySelectorAll(".shooting-form input.unconfirmed-field").forEach(input=>input.addEventListener("focus",()=>input.select()));
+ $("detail").querySelectorAll(".shooting-form input.unconfirmed-field").forEach(input=>{
+  input.addEventListener("focus",()=>input.select());
+  input.addEventListener("input",()=>input.classList.toggle("unconfirmed-field",isUnconfirmed(input.value)));
+ });
  $("saveShootingDetailsBtn").addEventListener("click",()=>saveShootingDetails(p.id));
  hydratePendingPreviews(p);
 }
