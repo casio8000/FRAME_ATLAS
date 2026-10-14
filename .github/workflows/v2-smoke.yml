@@ -44,7 +44,7 @@ jobs:
         run: |
           node --check v2/assets/app.js
           node --check tests/v2-browser-smoke.cjs
-          node -e "const d=require('./v2/data/places.json'); if(d.places.length!==45) throw new Error('Expected 45 places'); if(d.reviewQueue.length!==12) throw new Error('Expected 12 review candidates'); const all=[...d.places,...d.reviewQueue]; const ids=all.map(x=>x.id); if(new Set(ids).size!==ids.length) throw new Error('Duplicate location IDs'); console.log(JSON.stringify({active:d.places.length,reviewQueue:d.reviewQueue.length},null,2));"
+          node -e "const d=require('./v2/data/places.json'); if(!Array.isArray(d.places)||!Array.isArray(d.reviewQueue)) throw new Error('Catalog arrays missing'); if(d.places.length===0) throw new Error('Active catalog is empty'); const all=[...d.places,...d.reviewQueue]; const ids=all.map(x=>x.id); if(new Set(ids).size!==ids.length) throw new Error('Duplicate location IDs'); for(const p of d.places){if(!p.id||!p.name||!p.region) throw new Error('Required place fields missing: '+JSON.stringify(p)); const c=(p.imageCandidates||[]).find(x=>x.id===p.referenceImageId); if(!c||c.placeMatch!=='confirmed'||!(c.imageUrl||c.sourceThumbnail||c.pendingAsset||c.assetPath)) throw new Error('Confirmed location-reference image missing for '+p.id); } console.log(JSON.stringify({active:d.places.length,reviewQueue:d.reviewQueue.length,uniqueIds:ids.length,referenceImagesChecked:d.places.length},null,2));"
 
       - name: Run desktop/mobile browser smoke test
         run: node tests/v2-browser-smoke.cjs
