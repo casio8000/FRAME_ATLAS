@@ -8,9 +8,9 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - The older root app is preserved; do not edit or delete it while validating 2.0.
 - This checkpoint records the work so a dropped ChatGPT connection does not require restarting the project from the beginning. Code changes are stored in Git commits, not only in the conversation.
 
-## Current verified UI state
-- The home/featured screen and archive render 34 locations.
-- The latest browser smoke test checks 34/34 images on desktop and the mobile archive, reports no uncaught JavaScript errors, and verifies the mobile archive image frame is landscape 16:9 (336×189 in a 390px viewport).
+## Previous baseline (v2.41; historical verification only)
+- The prior checkpoint reported a browser smoke test for the then-current catalog and desktop/mobile navigation.
+- Those prior results do **not** validate later changes to the 43-place development catalog. Run the current branch's updated browser smoke test before treating v2.42 as verified.
 - A floating “맨 위로” control appears after scrolling.
 - A floating “전체 촬영장소로 돌아가기” control is available from a selected place detail.
 - The first screen fits the version header, splash copy and creator credits into a fixed viewport, with nationwide (not Seoul-area-only) wording.
@@ -109,3 +109,17 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Added LEEUM Museum as a high-potential Seoul candidate for architectural scouting, but it remains unpromoted until exact-location photos, filming access and image reuse conditions are verified. Seoul Urban Architecture Exhibition Hall, Seosomun Shrine History Museum and LG Arts Center Seoul remain in the review queue for the same reason.
 
 - Browser smoke test follow-up (v2.41): the active-detail test now checks Museum SAN's source link in the review queue rather than trying to open a deliberately held location from the active archive. The Gwangmyeong Cave reference is switched to its same-location Wikimedia Commons photo after the earlier news-host URL failed the real-browser load audit. The new image remains a candidate with licence attribution still to be checked.
+
+
+## Current development checkpoint — v2.42 (2026-10-14, not deployed)
+- Development branch: `FRAME_ATLAS-v2.0-development`.
+- Current files updated: `v2/index.html`, `v2/assets/app.js`, `v2/assets/app.css`, `v2/data/places.json`, `v2/sw.js`, and `tests/v2-browser-smoke.cjs`.
+- Catalog: 43 active locations and 12 review-only candidates, with seven top-level regional filters: Seoul, Gyeonggi/Incheon Capital Area, Gangwon, Chungcheong, Jeolla, Gyeongsang, Jeju.
+- Promoted Museum SAN and Asia Culture Center (Gwangju) from the review queue after adding matching location-reference photos. Their `primaryImageId` values remain empty.
+- Added CJ ENM Studio Center, Daejeon Studio Cube, Busan Cinema Center, Haslla Art World, MMCA Cheongju / Culture Factory, Jeonju Film Studios, Suncheon Drama Film Set, and Bonte Museum.
+- The photo policy separates (1) place/photo match, (2) cover/representative-photo selection, (3) image reuse rights, and (4) actual location/production permission. New reference images are not marked as approved covers.
+- Regional filter logic includes the home shortcuts, home archive, list workspace, map, analysis and review queue. Region labels retain city-level detail in each place record.
+- PWA update: service-worker cache and CSS/JS query versions bumped to `20261014-42`.
+- Static source checks passed when the changes were authored: `v2/assets/app.js` parses as JavaScript, `v2/data/places.json` parses as JSON, and unique location IDs were checked.
+- **Pending:** run browser smoke tests on desktop/mobile, verify the remote image loads, inspect screenshots and test-results artifacts, then fix failures. Direct iPhone Safari testing remains necessary after automated tests.
+- No deployment change has been made to `main`; the legacy root app and the existing live site remain untouched.
