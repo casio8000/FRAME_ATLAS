@@ -1,4 +1,4 @@
-const BUILD_ID="20261015-48";
+const BUILD_ID="20261015-49";
 const CACHE_NAME="frame-atlas-v2-shell-"+BUILD_ID;
 const CORE_FILES=["./?fa_build="+BUILD_ID,"./index.html?fa_build="+BUILD_ID,"./assets/app.css?v="+BUILD_ID,"./assets/app.js?v="+BUILD_ID,"./data/places.json","./manifest.webmanifest","./icons/atlas-mark.svg","./icons/icon-192.png","./icons/icon-180.png"];
 const APP_BASE=new URL("./",self.location.href);
