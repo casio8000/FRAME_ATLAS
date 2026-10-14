@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "전국 17개 시·도에 48곳의 촬영 장소 후보가 등록되어 있습니다. 최근 확장 지역 중 대전·세종·경북·경남에 장소별 사진 참고 후보를 추가했으며, 모든 권리 미확인 사진은 대표사진으로 승인하지 않았습니다.",
+  "dataStatus": "전국 17개 시·도에 48곳의 촬영 장소 후보가 등록되어 있습니다. 최근 확장 지역 중 대전·세종·충북·충남·전남·경북·경남에 장소별 사진 참고 후보를 추가했습니다. 권리 미확인 사진은 대표사진으로 승인하지 않았습니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T12:20:00.000Z",
+  "updatedAt": "2026-10-14T12:25:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -5348,9 +5348,26 @@
       "shootingPermission": "상업촬영과 장비 설치는 시설별 사전 문의",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "공간·촬영 목적별 확인 필요",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-culture-factory-official-tourism",
+          "title": "청주 문화제조창 외관·구조 참고사진",
+          "imageUrl": "https://www.kctg.or.kr/common/attachFile/getAttachFileDownLoad.do?file_id=FILE_ID00026718&width=806",
+          "sourceThumbnail": "https://www.kctg.or.kr/common/attachFile/getAttachFileDownLoad.do?file_id=FILE_ID00026718&width=806",
+          "sourcePageUrl": "https://www.kctg.or.kr/tour/touristSiteView.do?tourist_cd=TOURIST_ID00011541",
+          "sourceName": "문화관광해설사 통합예약 · 관광지 정보",
+          "rights": "unknown",
+          "rightsLabel": "관광지 정보 사진 · 재사용 권리 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·산업건축·외관",
+          "notes": "문화관광해설사 통합예약의 문화제조창 관광지 페이지에서 연결되는 장소 사진 후보. 페이지는 옛 연초제조창의 기둥·벽체·굴뚝이 남은 재생공간임을 설명합니다. 원본 파일 전달 방식과 앱 내 재사용 조건은 확인 전이며 대표사진 승인은 보류합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.cheongju.go.kr/ktour/selectClturCntnts2019View.do?key=20328&clturCntntsNo=2128&clturCode"
       ],
@@ -5367,7 +5384,9 @@
       "priorityLabel": "A · 촬영 탐색 우선",
       "notes": "공식 관광정보는 이곳을 1946~2004년 연초 제조창이던 산업시설을 재생한 복합문화공간으로 설명합니다. 방문객·상업시설과 구분해 촬영 구역을 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-culture-factory-official-tourism",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "chungnam-jemincheon",
@@ -5410,9 +5429,26 @@
       "shootingPermission": "주민·상점 영업 구역과 별개로 상업촬영·장비 사용 확인",
       "parking": "주변 공영주차장과 도보 이동 확인 필요",
       "fee": "공공 구간 여부·촬영 목적별 확인",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-jemincheon-riverside-hanok-community",
+          "title": "공주 제민천 물길과 한옥형 근대 골목",
+          "imageUrl": "https://cdn.welfarehello.com/naver-blog/production/cyber_gongju/2024-03/223387145667/cyber_gongju_223387145667_7.jpg?f=webp&q=80&w=800",
+          "sourceThumbnail": "https://cdn.welfarehello.com/naver-blog/production/cyber_gongju/2024-03/223387145667/cyber_gongju_223387145667_7.jpg?f=webp&q=80&w=800",
+          "sourcePageUrl": "https://www.welfarehello.com/community/hometownNews/7ce83479-8dcb-405a-bdfc-a9ae90eccbb7",
+          "sourceName": "웰로 · 공주 지역 소식",
+          "rights": "unknown",
+          "rightsLabel": "지역 소식 사진 · 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·수변·골목",
+          "notes": "제민천 수변과 한옥형 건축이 보이는 지역 소식 사진 후보입니다. 구도와 실제 공간 확인을 위한 참고 자료이며 재사용 권리와 상업촬영 허가 여부는 확인 전입니다. 대표사진으로 승인하지 않습니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://tour.chungnam.go.kr/prog/trsrcn/kor/sub02_01_01/view.do?trsrcnNo=248"
       ],
@@ -5429,7 +5465,9 @@
       "priorityLabel": "B · 조건 확인 후 탐색",
       "notes": "관광 순위가 아니라 하천의 선형 구도와 원도심 근대건축의 레이어를 사진적 이유로 선정했습니다. 주민 생활 공간에서의 촬영은 반드시 배려와 사전 확인이 필요합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-jemincheon-riverside-hanok-community",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "jeonnam-jangdo-art-island",
@@ -5474,9 +5512,26 @@
       "shootingPermission": "야외·전시관·작업실별 촬영 권한 사전 확인",
       "parking": "장도 내 차량 진입 제한 안내 — 웅천 공영주차장·예울마루 주차장 확인",
       "fee": "야외 입장료 안내 무료 · 별도 촬영료·시설 사용 확인",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-yeosu-jangdo-coastal-walkway-khan",
+          "title": "여수 예술의 섬 장도 연결 보행교와 해안선",
+          "imageUrl": "https://img.khan.co.kr/news/2025/05/24/l_2025052301000482900062361.jpg",
+          "sourceThumbnail": "https://img.khan.co.kr/news/2025/05/24/l_2025052301000482900062361.jpg",
+          "sourcePageUrl": "https://www.khan.co.kr/article/202505240600015",
+          "sourceName": "경향신문 · 여수 해안 보행교 기사",
+          "rights": "unknown",
+          "rightsLabel": "언론 사진 · 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·해안 보행교·섬",
+          "notes": "여수 예술의 섬 장도 방향의 해안 보행교와 물길을 보여주는 언론 사진 후보입니다. 장소 참고·촬영 구도 검토용으로만 등록하며 저작권·재사용 권리와 촬영 허가는 별도 확인 전입니다. 대표사진 승인은 보류합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.yeosu.go.kr/tour/travel/info_each_area?idx=501&mode=view"
       ],
@@ -5493,7 +5548,9 @@
       "priorityLabel": "A · 촬영 탐색 우선",
       "notes": "여수시 공식 정보에 따르면 장도는 창작스튜디오·다목적 전시장·정원·전망데크가 있는 예술공간이며 장도교는 만조 시 출입 제한이 있을 수 있습니다. 방문 전 물때와 공식 통제를 반드시 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-yeosu-jangdo-coastal-walkway-khan",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "gyeongbuk-solgeo-art-museum",
