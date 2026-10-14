@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "서울·수도권 중심의 현재 추천 33곳. 사진·구도 검증이 덜 된 장소 4곳은 검토 대기 목록으로 이동했으며, 사진 직접 URL과 현장 촬영 가능 구역이 확인되기 전에는 대표사진으로 노출하지 않습니다. 검토 대기 후보 14곳.",
+  "dataStatus": "서울·수도권 기존 33곳 유지 + 전국 확장 1차 후보 8곳 추가. 신규 후보는 대표사진·촬영 허가·현장 조건 검증 전이며 사진 미등록 상태로 구분.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T00:00:00.000Z",
+  "updatedAt": "2026-10-14T10:00:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -4547,6 +4547,500 @@
       "mediaExposureStatus": "공식 홈페이지는 여러 영상·화보 촬영 용도를 안내하지만 개별 공개 작품명은 확인되지 않았습니다. 특정 영화·드라마·광고의 출연 장소라고 단정하지 않습니다.",
       "photoReviewStatus": "실제 장소 일치·사진 사용권·촬영 허가는 별도 확인 대상",
       "visualCurationStatus": "curated"
+    },
+    {
+      "id": "bus-f1963",
+      "name": "F1963",
+      "region": "부산",
+      "category": "산업유산·문화공간",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "폐공장 구조와 문화공간의 재생 흔적, 긴 동선과 금속·콘크리트 재료감을 활용하는 에디토리얼 촬영 후보",
+      "visualStrengths": [
+        "산업시설의 긴 선형 구조",
+        "노출 재료와 반복 패턴",
+        "실내외 공간 전환"
+      ],
+      "bestConcepts": [
+        "산업 패션 에디토리얼",
+        "모노톤 인물 화보",
+        "건축·브랜드 캠페인"
+      ],
+      "constraints": [
+        "행사·전시별 촬영 제한 확인",
+        "상업촬영 및 장비 반입 사전 문의",
+        "방문객 동선과 운영시간 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "부산 F1963 건축 사진",
+        "F1963 부산 산업유산 실내",
+        "F1963 패션 화보 촬영"
+      ],
+      "aliases": [],
+      "summary": "폐공장 구조와 문화공간의 재생 흔적, 긴 동선과 금속·콘크리트 재료감을 활용하는 에디토리얼 촬영 후보",
+      "address": "부산광역시 수영구 구락로123번길 20",
+      "coordinates": null,
+      "officialUrl": "https://www.f1963.org/",
+      "openingStatus": "방문 전 공식 운영 일정 확인",
+      "shootingPermission": "상업촬영·장비 사용 가능 여부 사전 확인",
+      "parking": "공식 안내 확인 필요",
+      "fee": "촬영 목적·공간별 확인 필요",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.f1963.org/"
+      ],
+      "verification": {
+        "location": "공식 사이트 기록",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진과 촬영 조건 검증 전",
+      "photoPotentialScore": 91,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "A · 촬영 탐색 우선",
+      "notes": "장소 자체의 산업건축·재생 공간성이 선정 이유이며, 대표사진은 장소 일치와 권리 확인 후 추가해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "bus-huinnyeoul",
+      "name": "흰여울문화마을 해안 골목",
+      "region": "부산",
+      "category": "해안·골목·도시 레이어",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "절벽 지형과 바다, 좁은 골목과 주거 건축이 겹쳐져 환경 인물과 원근 레이어를 구성할 수 있는 후보",
+      "visualStrengths": [
+        "해안 절벽과 수평선",
+        "골목의 원근감",
+        "벽면 색과 그림자"
+      ],
+      "bestConcepts": [
+        "환경 인물 에디토리얼",
+        "여행 패션 화보",
+        "자연광 인물 촬영"
+      ],
+      "constraints": [
+        "주거지 사생활과 통행 방해 주의",
+        "상업촬영 허가 여부 확인",
+        "강풍·염분·계단 동선 확인"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "부산 흰여울문화마을 골목 사진",
+        "흰여울문화마을 해안 건축",
+        "흰여울문화마을 상업촬영"
+      ],
+      "aliases": [
+        "흰여울길"
+      ],
+      "summary": "절벽 지형과 바다, 좁은 골목과 주거 건축이 겹쳐져 환경 인물과 원근 레이어를 구성할 수 있는 후보",
+      "address": "부산광역시 영도구 흰여울길 일대",
+      "coordinates": null,
+      "officialUrl": "https://www.visitbusan.net/",
+      "openingStatus": "주거지·공공 보행로 운영 상황 현장 확인",
+      "shootingPermission": "공공장소라도 상업촬영·장비 사용은 사전 확인",
+      "parking": "골목 내 주차 제한 가능 · 외곽 주차 확인",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.visitbusan.net/"
+      ],
+      "verification": {
+        "location": "지역 관광 공식 포털 참고",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진과 촬영 조건 검증 전",
+      "photoPotentialScore": 84,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "B · 조건 확인 후 탐색",
+      "notes": "단순 관광 명소로 추천한 것이 아니라 해안 지형과 골목 원근을 사진적 강점으로 평가했습니다. 주민 생활 공간을 존중하고 촬영 가능 구역을 확인해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "daegu-artfactory",
+      "name": "대구예술발전소",
+      "region": "대구",
+      "category": "산업건축·예술공간",
+      "spaceTypes": [
+        "실내",
+        "야외"
+      ],
+      "photoProfile": "옛 산업시설의 구조와 전시 공간의 비정형 구성을 활용할 수 있는 현대적 에디토리얼 후보",
+      "visualStrengths": [
+        "산업건축의 흔적",
+        "전시 공간의 큰 여백",
+        "구조와 인물의 대비"
+      ],
+      "bestConcepts": [
+        "아트 패션 화보",
+        "미니멀 인물 사진",
+        "문화·브랜드 캠페인"
+      ],
+      "constraints": [
+        "전시별 촬영 허용 범위 확인",
+        "상업촬영·조명 장비 사전 문의",
+        "휴관일과 행사 일정 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "대구예술발전소 건축 사진",
+        "대구예술발전소 실내 공간",
+        "대구예술발전소 촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "옛 산업시설의 구조와 전시 공간의 비정형 구성을 활용할 수 있는 현대적 에디토리얼 후보",
+      "address": "대구광역시 중구 달성로22길 31-12",
+      "coordinates": null,
+      "officialUrl": "https://www.daeguartfactory.kr/",
+      "openingStatus": "공식 운영 일정 확인 필요",
+      "shootingPermission": "전시·공간별 촬영 및 상업 이용 사전 확인",
+      "parking": "현장 확인 필요",
+      "fee": "촬영 목적·공간별 확인 필요",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.daeguartfactory.kr/"
+      ],
+      "verification": {
+        "location": "공식 사이트 기록",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진과 촬영 조건 검증 전",
+      "photoPotentialScore": 88,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "A · 촬영 탐색 우선",
+      "notes": "산업건축과 전시 공간의 조형성을 우선 평가했습니다. 현재 개방·촬영 허가 여부는 별도 확인 대상입니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "jeonju-palbok",
+      "name": "팔복예술공장",
+      "region": "전북",
+      "category": "산업유산·복합예술공간",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "옛 공장 건축과 재생 공간, 전시·야외 구조의 대비를 활용할 수 있는 산업 에디토리얼 후보",
+      "visualStrengths": [
+        "노후 산업재료의 질감",
+        "건축과 예술 설치의 대비",
+        "공간별 다른 배경"
+      ],
+      "bestConcepts": [
+        "산업 패션 화보",
+        "아트·뮤직 에디토리얼",
+        "텍스처 중심 인물 사진"
+      ],
+      "constraints": [
+        "전시·행사 운영에 따른 구역 제한",
+        "상업촬영·조명·삼각대 사전 확인",
+        "공장 구조물 접근 안전 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "전주 팔복예술공장 건축 사진",
+        "팔복예술공장 실내 전시 공간",
+        "팔복예술공장 촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "옛 공장 건축과 재생 공간, 전시·야외 구조의 대비를 활용할 수 있는 산업 에디토리얼 후보",
+      "address": "전북특별자치도 전주시 덕진구 구렛들1길 46",
+      "coordinates": null,
+      "officialUrl": "https://www.palbokart.kr/",
+      "openingStatus": "공식 운영 일정 확인 필요",
+      "shootingPermission": "상업촬영·전시 공간 사용 사전 문의",
+      "parking": "공식 안내 확인 필요",
+      "fee": "촬영 목적·공간별 확인 필요",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.palbokart.kr/"
+      ],
+      "verification": {
+        "location": "공식 사이트 기록",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진과 촬영 조건 검증 전",
+      "photoPotentialScore": 92,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "A · 촬영 탐색 우선",
+      "notes": "전국 확장 1차 후보. 사진을 대표 이미지로 확정하기 전 실제 장소 일치·이용권·촬영 조건을 확인해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "gwangju-acc",
+      "name": "국립아시아문화전당 건축·외부공간",
+      "region": "광주",
+      "category": "현대건축·공공문화공간",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "대형 수평 구조, 지하·지상 레벨 차, 빛과 그림자 및 기하학적 공간을 활용하는 건축·패션 촬영 후보",
+      "visualStrengths": [
+        "대형 기하학 구조",
+        "레벨 차와 긴 선형 구도",
+        "빛·그림자와 넓은 여백"
+      ],
+      "bestConcepts": [
+        "건축 에디토리얼",
+        "미니멀 패션",
+        "현대적 브랜드 캠페인"
+      ],
+      "constraints": [
+        "구역별 촬영 규정 확인",
+        "상업촬영·장비 반입 허가 확인",
+        "행사·전시 일정과 관람객 동선 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "국립아시아문화전당 건축 외부 사진",
+        "ACC 광주 건축 공간",
+        "국립아시아문화전당 촬영 허가"
+      ],
+      "aliases": [
+        "ACC"
+      ],
+      "summary": "대형 수평 구조, 지하·지상 레벨 차, 빛과 그림자 및 기하학적 공간을 활용하는 건축·패션 촬영 후보",
+      "address": "광주광역시 동구 문화전당로 38",
+      "coordinates": null,
+      "officialUrl": "https://www.acc.go.kr/",
+      "openingStatus": "공식 운영 일정 확인 필요",
+      "shootingPermission": "상업촬영·조명 장비·삼각대 사용 여부 사전 확인",
+      "parking": "공식 안내 확인 필요",
+      "fee": "촬영 목적·구역별 확인 필요",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.acc.go.kr/"
+      ],
+      "verification": {
+        "location": "공식 사이트 기록",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진과 촬영 조건 검증 전",
+      "photoPotentialScore": 90,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "A · 촬영 탐색 우선",
+      "notes": "공공 문화공간의 건축적 선과 레벨 차를 중심으로 선정했습니다. 실내 촬영은 별도 허가를 전제로 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "gangwon-museum-san",
+      "name": "뮤지엄 SAN 건축·수공간",
+      "region": "강원",
+      "category": "현대건축·자연·수공간",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "실내·외 연결"
+      ],
+      "photoProfile": "건축가의 기하학적 구성과 물·돌·산의 여백이 강한 시각적 질서를 만드는 건축 촬영 후보",
+      "visualStrengths": [
+        "기하학적 건축선",
+        "수면 반사와 여백",
+        "돌·물·산의 재료 대비"
+      ],
+      "bestConcepts": [
+        "건축·디자인 에디토리얼",
+        "절제된 패션 화보",
+        "미니멀 인물 촬영"
+      ],
+      "constraints": [
+        "미술관 내 촬영 규정 확인",
+        "상업촬영·삼각대·조명 사용 사전 문의",
+        "실내외 구역별 관람 및 접근 조건 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "뮤지엄 SAN 건축 사진",
+        "뮤지엄 SAN 수공간 외부",
+        "뮤지엄 SAN 상업촬영 허가"
+      ],
+      "aliases": [
+        "뮤지엄산"
+      ],
+      "summary": "건축가의 기하학적 구성과 물·돌·산의 여백이 강한 시각적 질서를 만드는 건축 촬영 후보",
+      "address": "강원특별자치도 원주시 지정면 오크밸리2길 260",
+      "coordinates": null,
+      "officialUrl": "https://www.museumsan.org/",
+      "openingStatus": "공식 운영 일정 확인 필요",
+      "shootingPermission": "상업촬영·삼각대·조명 사용 여부 사전 확인",
+      "parking": "공식 안내 확인 필요",
+      "fee": "촬영 목적·구역별 확인 필요",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.museumsan.org/"
+      ],
+      "verification": {
+        "location": "공식 사이트 기록",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진과 촬영 조건 검증 전",
+      "photoPotentialScore": 94,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "A · 촬영 탐색 우선",
+      "notes": "조형성과 빛·반사·재료감이 뚜렷한 후보입니다. 실내 전시 작품과 공간의 촬영은 별도 규정을 확인해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "jeju-bangju",
+      "name": "방주교회 건축 외관",
+      "region": "제주",
+      "category": "현대건축·수면 반사",
+      "spaceTypes": [
+        "야외"
+      ],
+      "photoProfile": "물 위에 떠 있는 듯한 지붕과 수면 반사, 낮은 수평선이 강한 그래픽 구도를 만드는 건축 촬영 후보",
+      "visualStrengths": [
+        "독특한 지붕 실루엣",
+        "수면 반사와 대칭",
+        "하늘과 건축의 단순한 면"
+      ],
+      "bestConcepts": [
+        "건축 에디토리얼",
+        "미니멀 패션 화보",
+        "실루엣 중심 인물 사진"
+      ],
+      "constraints": [
+        "종교시설 운영과 방문 가능 범위 존중",
+        "예배·행사 중 촬영 금지 여부 확인",
+        "상업촬영·삼각대·드론 등 사전 문의"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "제주 방주교회 건축 외관 사진",
+        "방주교회 수면 반사",
+        "방주교회 상업촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "물 위에 떠 있는 듯한 지붕과 수면 반사, 낮은 수평선이 강한 그래픽 구도를 만드는 건축 촬영 후보",
+      "address": "제주특별자치도 서귀포시 안덕면 산록남로762번길 113",
+      "coordinates": null,
+      "officialUrl": "",
+      "openingStatus": "방문·출입 가능 시간 확인 필요",
+      "shootingPermission": "종교시설 및 상업촬영 허가 사전 확인",
+      "parking": "현장 확인 필요",
+      "fee": "미확인",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [],
+      "verification": {
+        "location": "장소 정보 기록 · 공식 출처 추가 확인 필요",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 공식 정보와 대표사진 검증 전",
+      "photoPotentialScore": 89,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "B · 조건 확인 후 탐색",
+      "notes": "건축적 실루엣과 수면 반사를 사진적 강점으로 평가했습니다. 사유·종교 공간의 출입과 촬영 권한을 반드시 확인해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
+    },
+    {
+      "id": "ulsan-jangsaengpo",
+      "name": "장생포문화창고",
+      "region": "울산",
+      "category": "산업유산·문화공간",
+      "spaceTypes": [
+        "실내",
+        "야외"
+      ],
+      "photoProfile": "항만·산업도시의 흔적과 창고형 문화공간의 구조적 여백을 활용할 수 있는 촬영 후보",
+      "visualStrengths": [
+        "창고형 공간의 큰 스케일",
+        "산업 재료와 구조",
+        "항만 지역의 도시적 배경"
+      ],
+      "bestConcepts": [
+        "인더스트리얼 패션",
+        "다큐멘터리형 에디토리얼",
+        "브랜드·음악 화보"
+      ],
+      "constraints": [
+        "전시·프로그램 운영 확인",
+        "상업촬영·조명·삼각대 사전 문의",
+        "항만·산업시설 출입 제한 준수"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "울산 장생포문화창고 내부 사진",
+        "장생포문화창고 건축",
+        "장생포문화창고 촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "항만·산업도시의 흔적과 창고형 문화공간의 구조적 여백을 활용할 수 있는 촬영 후보",
+      "address": "울산광역시 남구 장생포고래로 110",
+      "coordinates": null,
+      "officialUrl": "https://www.ulsan.go.kr/",
+      "openingStatus": "공식 운영 일정 확인 필요",
+      "shootingPermission": "상업촬영 및 장비 사용 사전 확인",
+      "parking": "공식 안내 확인 필요",
+      "fee": "촬영 목적·공간별 확인 필요",
+      "imageStatus": "미등록",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.ulsan.go.kr/"
+      ],
+      "verification": {
+        "location": "지자체 공식 포털 참고",
+        "photoMatch": "사진 후보 미등록",
+        "rights": "미확인",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-14"
+      },
+      "selectionStatus": "1차 후보 · 대표사진과 촬영 조건 검증 전",
+      "photoPotentialScore": 85,
+      "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
+      "priorityLabel": "B · 조건 확인 후 탐색",
+      "notes": "항만 산업도시와 창고형 공간의 조형성을 기준으로 선정했습니다. 시설 운영·촬영 가능 범위는 별도 확인해야 합니다.",
+      "createdAt": "2026-10-14",
+      "updatedAt": "2026-10-14"
     }
   ],
   "selectionRubric": {
