@@ -11,15 +11,15 @@ let catalog={schemaVersion:1,places:[]},selectedId=null,searchCache=[],homeHeroP
 const esc=v=>String(v==null?"":v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const getPlace=id=>catalog.places.find(p=>p.id===id);
 const imageCount=p=>(p.imageCandidates||[]).length;
-const approvedImage=p=>(p.imageCandidates||[]).find(i=>i.id===p.primaryImageId&&i.status!=="rejected"&&(!!i.imageUrl||!!i.sourceThumbnail||!!i.pendingAsset||!!i.assetPath));
+const approvedImage=p=>(p.imageCandidates||[]).find(i=>i.id===p.primaryImageId&&i.status!=="rejected"&&i.placeMatch==="confirmed"&&(!!i.imageUrl||!!i.sourceThumbnail||!!i.pendingAsset||!!i.assetPath));
 const isImageReady=p=>!!approvedImage(p);
 const hasPending=p=>(p.imageCandidates||[]).some(i=>i.status!=="rejected"&&i.id!==p.primaryImageId&&(!!i.imageUrl||!!i.sourceThumbnail||!!i.pendingAsset||!!i.assetPath));
 function referenceImage(p){
- const candidates=(p.imageCandidates||[]).filter(c=>c&&c.status!=="rejected"&&(c.imageUrl||c.sourceThumbnail||c.pendingAsset||c.assetPath));
+ const candidates=(p.imageCandidates||[]).filter(c=>c&&c.status!=="rejected"&&c.placeMatch==="confirmed"&&(c.imageUrl||c.sourceThumbnail||c.pendingAsset||c.assetPath));
  const selected=candidates.find(c=>c.id===p.referenceImageId);
  if(selected)return selected;
  const usable=c=>!/(항공|드론|지도|포스터|렌더링|aerial|drone|map|poster|render)/i.test(String(c.viewType||"")+" "+String(c.title||""));
- return candidates.find(c=>c.placeMatch==="confirmed"&&usable(c))||candidates.find(usable)||candidates[0]||null;
+ return candidates.find(usable)||null;
 }
 function activePhoto(p){return approvedImage(p)||referenceImage(p);}
 function clearObjectUrl(cid){const old=objectUrls.get(cid);if(old){URL.revokeObjectURL(old);objectUrls.delete(cid);}}
@@ -61,7 +61,7 @@ function bindImageFallbacks(root){
    if(Number(img.dataset.alternateCandidateIndex||0)<8){
     const placeId=img.dataset.homePreview||img.dataset.placePreview||img.closest("[data-home-place]")?.dataset.homePlace||img.closest("[data-select]")?.dataset.select||img.closest("[data-photos-detail]")?.dataset.photosDetail||img.closest("[data-map-place]")?.dataset.mapPlace||img.closest("[data-analysis-place]")?.dataset.analysisPlace||selectedId;
     const place=getPlace(placeId);
-    const alternatives=(place?.imageCandidates||[]).filter(c=>c&&c.status!=="rejected"&&c.placeMatch!=="mismatch"&&(c.imageUrl||c.sourceThumbnail)&&![(img.dataset.originalImageUrl||""),thumbnail].includes(c.imageUrl||c.sourceThumbnail));
+    const alternatives=(place?.imageCandidates||[]).filter(c=>c&&c.status!=="rejected"&&c.placeMatch==="confirmed"&&(c.imageUrl||c.sourceThumbnail)&&![(img.dataset.originalImageUrl||""),thumbnail].includes(c.imageUrl||c.sourceThumbnail));
     const index=Number(img.dataset.alternateCandidateIndex||0);
     if(index<alternatives.length){
      const alt=alternatives[index];img.dataset.alternateCandidateIndex=String(index+1);img.dataset.alternateCandidatesTried="1";
@@ -107,6 +107,12 @@ function normalizeCatalog(obj){
 let lastCleanRefresh=0;
 function mergePublishedPhotoReferences(draft,base){
  if(!draft||!Array.isArray(draft.places))return base;
+ const excluded=new Set(base.excludedLocationIds||[]);
+ draft.places=draft.places.filter(p=>p&&!excluded.has(p.id));
+ draft.excludedLocationIds=[...excluded];
+ const queueById=new Map((Array.isArray(draft.reviewQueue)?draft.reviewQueue:[]).map(p=>[p.id,p]));
+ for(const item of (base.reviewQueue||[])){if(item&&item.id&&!queueById.has(item.id))queueById.set(item.id,JSON.parse(JSON.stringify(item)));}
+ draft.reviewQueue=[...queueById.values()];
  const draftIds=new Set(draft.places.map(p=>p&&p.id).filter(Boolean));
  for(const freshPlace of (base.places||[])){if(freshPlace&&freshPlace.id&&!draftIds.has(freshPlace.id)){draft.places.push(JSON.parse(JSON.stringify(freshPlace)));draftIds.add(freshPlace.id);}}
  const sourceById=new Map((base.places||[]).map(p=>[p.id,p]));
@@ -238,7 +244,13 @@ function showHomeAllPlaces(){
  showAppView("home");
  requestAnimationFrame(()=>{const grid=$("homeAllPlacesGrid");if(grid)grid.scrollIntoView({behavior:"auto",block:"start"});});
 }
-if(backToArchiveBtn)backToArchiveBtn.addEventListener("click",showHomeAllPlaces);
+function showPlaceArchive(){
+ archiveMode="all";selectedId=null;
+ $("query").value="";$("regionFilter").value="";$("imageFilter").value="";
+ showAppView("workspace");
+ requestAnimationFrame(()=>{const workspace=$("workspaceView");if(workspace)workspace.scrollIntoView({behavior:"auto",block:"start"});});
+}
+if(backToArchiveBtn)backToArchiveBtn.addEventListener("click",showPlaceArchive);
 
 function isFavorite(id){return favorites.includes(id);}
 function toggleFavorite(id){if(isFavorite(id))favorites=favorites.filter(x=>x!==id);else favorites.push(id);try{localStorage.setItem(FAVORITES_KEY,JSON.stringify(favorites));}catch(_){}render();renderLanding();renderMoreScreen();renderPhotosScreen();}
@@ -310,6 +322,18 @@ function renderLanding(){
   }).join("")||'<div class="landing-empty">조건에 맞는 장소가 없습니다.</div>';
   bindImageFallbacks(allGrid);
   allGrid.querySelectorAll("[data-home-all-place]").forEach(card=>card.addEventListener("click",()=>{selectedId=card.dataset.homeAllPlace;showAppView("detail");}));
+ }
+ const queue=Array.isArray(catalog.reviewQueue)?catalog.reviewQueue:[];
+ const queueCount=$("homeCountReviewQueue");if(queueCount)queueCount.textContent=queue.length;
+ const queueCountLabel=$("reviewQueueCount");if(queueCountLabel)queueCountLabel.textContent=queue.length;
+ const queueHost=$("reviewQueueGrid");
+ if(queueHost){
+  queueHost.innerHTML=queue.length?queue.map(item=>{
+   const reason=String(item.curationQueueReason||item.photoReviewStatus||item.summary||"사진과 촬영 적합성을 추가 확인해야 합니다.");
+   const official=String(item.officialUrl||"").trim();
+   const source=(item.imageCandidates||[]).find(c=>c&&c.sourcePageUrl);
+   return '<article class="review-queue-card"><div class="review-queue-kicker"><span>'+esc(item.region||"전국")+'</span><span>검증 전 보류</span></div><h3>'+esc(item.name||"이름 미등록 후보")+'</h3><p>'+esc(reason)+'</p><div class="review-queue-links">'+(official&&/^https?:\/\//i.test(official)?'<a target="_blank" rel="noopener noreferrer" href="'+esc(official)+'">공식 정보 ↗</a>':'')+(source&&/^https?:\/\//i.test(String(source.sourcePageUrl||""))?'<a target="_blank" rel="noopener noreferrer" href="'+esc(source.sourcePageUrl)+'">사진 원문 ↗</a>':'')+'</div></article>';
+  }).join(""):'<div class="landing-empty">현재 검토 대기 후보가 없습니다.</div>';
  }
 }
 
@@ -396,7 +420,10 @@ function locationActions(p){
 }
 function referencePhotoPanel(p,approved,ref){
  const photo=approved||ref;
- if(!photo)return '<div class="statusbar warn">이 장소의 사진 후보가 없습니다. 아래에서 이미지 주소를 넣거나 사진 파일을 추가하세요.</div>';
+ if(!photo){
+  const waiting=(p.imageCandidates||[]).some(c=>c&&c.status!=="rejected"&&c.placeMatch!=="mismatch"&&(c.imageUrl||c.sourceThumbnail||c.pendingAsset||c.assetPath));
+  return '<div class="statusbar warn">'+(waiting?'등록된 사진 후보는 실제 장소와의 일치 여부가 아직 확인되지 않아 기본 참고사진으로 표시하지 않습니다. 사진 후보 목록에서 장소·구도 일치를 확인한 뒤 대표사진으로 지정하세요.':'확인된 사진 후보가 없습니다. 아래에서 이미지 주소를 넣거나 사진 파일을 추가하세요.')+'</div>';
+ }
  const chosen=!!approved;
  const matchText=photo.placeMatch==="confirmed"?"장소 일치 확인됨":photo.placeMatch==="mismatch"?"다른 장소 사진으로 표시됨":"실제 장소의 사진인지 확인해 주세요";
  return '<div class="section reference-hero"><div class="reference-photo-wrap"><img data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" data-reference-preview="'+esc(photo.id)+'" '+(chosen?'data-primary-preview="'+esc(photo.id)+'"':'')+' src="'+esc(photo.imageUrl||photo.sourceThumbnail||"")+'" alt="'+esc(p.name)+' '+(chosen?'대표사진':'촬영 참고사진')+'" loading="lazy" referrerpolicy="no-referrer"><span class="reference-stamp">'+(chosen?'CURRENT COVER PHOTO':'LOCATION PHOTO · REVIEWABLE')+'</span><span class="reference-missing">사진 연결을 확인할 수 없습니다</span></div><div class="reference-info"><div class="reference-kicker">'+(chosen?'SELECTED PHOTO':'SUGGESTED PHOTO')+' / '+esc(p.region||"수도권")+'</div><h3>'+(chosen?'현재 대표사진':'기본 참고사진')+'</h3><p>'+esc(photo.title||p.name+" 장소 사진")+'</p><div class="reference-meta">'+esc(matchText)+' · 다른 사진으로 바꿀 수 있습니다</div><div class="toolbar">'+(photo.sourcePageUrl?'<a class="btn small" href="'+esc(photo.sourcePageUrl)+'" target="_blank" rel="noopener noreferrer">사진 원문 ↗</a>':"")+'<a class="btn small" href="#candidateList">사진 변경·삭제 ↓</a></div><p class="tiny">실제 장소와 일치하지 않으면 아래 후보 중 다른 사진을 대표사진으로 지정하거나 사진을 삭제하세요.</p></div></div>';
