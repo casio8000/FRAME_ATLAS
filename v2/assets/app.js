@@ -325,7 +325,8 @@ function renderLanding(){
   const photo=activePhoto(p),url=photo?(photo.imageUrl||photo.sourceThumbnail||""):"";
   const status=p.visualCurationStatus==="conditional"||p.visualCurationStatus==="rejected"||p.photoReviewStatus==="pending-place-photo-review"?"대표사진 검토 보류":photo&&photo.placeMatch==="confirmed"?"장소 일치 후보":"실제 장소 확인 필요";
   const holdPhoto=p.visualCurationStatus==="conditional"||p.visualCurationStatus==="rejected"||p.photoReviewStatus==="pending-place-photo-review";
-  const image=photo&&!holdPhoto?'<img data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" data-home-preview="'+esc(p.id)+'" src="'+esc(url)+'" loading="lazy" alt="'+esc(p.name)+' 촬영 참고사진" referrerpolicy="no-referrer"><span class="featured-photo-label">'+(p.primaryImageId===photo.id?"대표사진":"장소 사진")+'</span><span class="featured-photo-missing">사진을 불러올 수 없습니다</span>':'<div class="featured-no-photo">'+(holdPhoto?"대표사진 검토 보류":"사진 후보를 찾는 중입니다")+'</div>';
+  const photoLabel=photo&&(p.primaryImageId===photo.id?"승인 대표사진":"참고사진 · 후보 "+imageCount(p)+"개");
+  const image=photo&&!holdPhoto?'<img data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" data-home-preview="'+esc(p.id)+'" src="'+esc(url)+'" loading="lazy" alt="'+esc(p.name)+' 촬영 참고사진" referrerpolicy="no-referrer"><span class="featured-photo-label">'+esc(photoLabel)+'</span><span class="featured-photo-missing">사진을 불러올 수 없습니다</span>':'<div class="featured-no-photo">'+(holdPhoto?"대표사진 검토 보류":"사진 후보를 찾는 중입니다")+'</div>';
   return '<button type="button" class="scout-feature-card" data-home-place="'+esc(p.id)+'"><span class="scout-feature-image">'+image+'</span><span class="scout-feature-body"><span class="scout-feature-top"><span class="scout-feature-index">'+String(index+1).padStart(2,"0")+'</span><span>'+esc(p.region||"지역 미등록")+'</span></span><b>'+esc(p.name)+'</b><span class="scout-feature-desc">'+esc(p.photoProfile||p.summary||"사진가 관점에서 검토할 촬영 장소")+'</span><span class="scout-feature-bottom"><span>'+esc(status)+'</span><span class="scout-feature-arrow">↗</span></span></span></button>';
  }).join(""):'<div class="landing-empty">장소 자료를 불러오지 못했습니다.</div>';
  bindImageFallbacks(grid);
@@ -354,8 +355,13 @@ function renderLanding(){
    const reason=String(item.curationQueueReason||item.photoReviewStatus||item.summary||"사진과 촬영 적합성을 추가 확인해야 합니다.");
    const official=String(item.officialUrl||"").trim();
    const source=(item.imageCandidates||[]).find(c=>c&&c.sourcePageUrl);
-   return '<article class="review-queue-card"><div class="review-queue-kicker"><span>'+esc(item.region||"전국")+'</span><span>검증 전 보류</span></div><h3>'+esc(item.name||"이름 미등록 후보")+'</h3><p>'+esc(reason)+'</p><div class="review-queue-links">'+(official&&/^https?:\/\//i.test(official)?'<a target="_blank" rel="noopener noreferrer" href="'+esc(official)+'">공식 정보 ↗</a>':'')+(source&&/^https?:\/\//i.test(String(source.sourcePageUrl||""))?'<a target="_blank" rel="noopener noreferrer" href="'+esc(source.sourcePageUrl)+'">사진 원문 ↗</a>':'')+'</div></article>';
+   const photo=(item.imageCandidates||[]).find(c=>c&&/^https?:\/\//i.test(String(c.imageUrl||c.sourceThumbnail||""))&&c.placeMatch!=="mismatch");
+   const photoUrl=photo&&(photo.imageUrl||photo.sourceThumbnail)||"";
+   const photoMarkup=photoUrl?'<div class="review-queue-media"><img data-image-fallback="true" data-place-preview="'+esc(item.id||"")+'" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" src="'+esc(photoUrl)+'" alt="'+esc(item.name||"촬영 장소")+' 검토 후보 사진" loading="lazy" referrerpolicy="no-referrer"><span>검토 후보 · 대표사진 아님</span></div>':'<div class="review-queue-no-photo">직접 확인 가능한 대표사진 미등록</div>';
+   const candidateCount=(item.imageCandidates||[]).filter(c=>/^https?:\/\//i.test(String(c.imageUrl||c.sourceThumbnail||""))).length;
+   return '<article class="review-queue-card" data-review-queue-id="'+esc(item.id||"")+'">'+photoMarkup+'<div class="review-queue-card-body"><div class="review-queue-kicker"><span>'+esc(item.region||"전국")+'</span><span>검증 전 보류</span></div><h3>'+esc(item.name||"이름 미등록 후보")+'</h3><p>'+esc(reason)+'</p><div class="review-queue-meta">직접 사진 후보 '+candidateCount+'개 · 대표사진 승인 0개</div><div class="review-queue-links">'+(official&&/^https?:\/\//i.test(official)?'<a target="_blank" rel="noopener noreferrer" href="'+esc(official)+'">공식 정보 ↗</a>':'')+(source&&/^https?:\/\//i.test(String(source.sourcePageUrl||""))?'<a target="_blank" rel="noopener noreferrer" href="'+esc(source.sourcePageUrl)+'">사진 원문 ↗</a>':'')+'</div></div></article>';
   }).join(""):'<div class="landing-empty">현재 검토 대기 후보가 없습니다.</div>';
+  bindImageFallbacks(queueHost);
  }
 }
 
