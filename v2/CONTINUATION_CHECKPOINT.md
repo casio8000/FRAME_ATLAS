@@ -52,3 +52,5 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Address, phone, and official website display when data exists; phone can be edited in place details.
 - Unconfirmed checklist values are faded and selected on focus for direct replacement.
 - Existing local draft catalogs append newly published baseline places without overwriting user edits, and fill only blank address/site/phone/map fields from the baseline.
+
+- Follow-up factual correction: Seoul Urban Life Museum's official visitor guide prohibits indoor commercial filming and flash/tripod photography; the scouting record now states those restrictions explicitly. Naver navigation links use the stable place-search route, with directions selected on the place result rather than relying on an unverified deep path. Incheon Open Port now links to the current official Korean tourism place page and uses its current administrative address.
