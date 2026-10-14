@@ -150,13 +150,19 @@ async function loadBase(){
   let draft=null;try{draft=JSON.parse(localStorage.getItem(LOCAL_KEY)||"null");}catch(_){}
   const source=draft&&Array.isArray(draft.places)?mergePublishedPhotoReferences(draft,base):base;
   catalog=normalizeCatalog(source);
-  const routeAfterLoad=document.body.dataset.appView||"home";
+  const forceAllPlaces=new URLSearchParams(window.location.search).get("view")==="all";
+  const routeAfterLoad=forceAllPlaces?"home":document.body.dataset.appView||"home";
   if(selectedId&&!getPlace(selectedId))selectedId=null;
   if(draft){
    try{localStorage.setItem(LOCAL_KEY,JSON.stringify(catalog));}catch(_){}
    $("saveStatus").textContent="이 기기의 작업 초안 불러옴 · 사진 연결 확인";
   }else $("saveStatus").textContent="공통 카탈로그 최신본 불러옴";
   render();renderLanding();showAppView(routeAfterLoad,false);
+  if(forceAllPlaces){
+   showHomeAllPlaces();
+   /* The return intent is one-shot: later reloads should not force the archive over the user's current view. */
+   history.replaceState(null,"",window.location.pathname+window.location.hash);
+  }
  }catch(e){$("saveStatus").textContent="자료 불러오기 실패: "+e.message;$("placeList").innerHTML='<div class="empty">기본 자료를 불러오지 못했습니다.<br>GitHub Pages URL에서 열었는지 확인하세요.</div>';renderLanding();}
 }
 function refreshSharedCatalogIfClean(){
@@ -185,7 +191,7 @@ function render(){
   const closed=/운영 종료/.test(String(p.openingStatus||""));
   const state=(closed?'<span class="chip closed">운영 종료 · 재개관 확인</span>':'')+
    (im?'<span class="chip selected-photo">대표사진 선택됨</span>':ref?'<span class="chip need">기본 사진 · 변경 가능</span>':imageCount(p)?'<span class="chip need">사진 후보 '+imageCount(p)+'개</span>':'<span class="chip need">사진 없음</span>');
-  const thumb=shown?'<img data-image-fallback="true" data-fallback-thumbnail="'+esc(shown.sourceThumbnail||"")+'" data-place-preview="'+esc(p.id)+'" loading="lazy" alt="'+esc(p.name)+' '+(im?'대표사진':'장소 사진 후보')+'" src="'+esc(shown.imageUrl||shown.sourceThumbnail||"")+'" referrerpolicy="no-referrer"><span class="thumb-flag '+(im?'approved':'reference')+'">'+(im?'대표사진':'장소 사진')+'</span><span class="thumb-missing">사진 연결을 확인할 수 없습니다</span>':'<span>사진 후보 없음</span>';
+  const thumb=shown?'<img data-image-fallback="true" data-fallback-thumbnail="'+esc(shown.sourceThumbnail||"")+'" data-place-preview="'+esc(p.id)+'" loading="lazy" alt="'+esc(p.name)+' '+(im?'대표사진':'장소 사진 후보')+'" src="'+esc(shown.imageUrl||shown.sourceThumbnail||"")+'" referrerpolicy="no-referrer"><span class="thumb-flag '+(im?'approved':'reference')+'">'+(im?'대표사진':'장소 사진')+'</span><span class="thumb-missing">사진 연결을 확인할 수 없습니다</span>':'<span>'+(imageCount(p)?(p.visualCurationStatus==="conditional"||p.photoReviewStatus==="pending-place-photo-review"?"사진 검토 보류":"사진 후보 검토 중"):"사진 후보 없음")+'</span>';
   return '<article class="place '+(p.id===selectedId?'active':'')+'" data-select="'+esc(p.id)+'" tabindex="0" role="button" aria-pressed="'+(p.id===selectedId?'true':'false')+'"><div class="thumb '+(im?'thumb-approved':ref?'thumb-reference':'')+'">'+thumb+'</div><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+'</p><div class="chips"><span class="chip">'+esc((p.spaceTypes||[]).join(" · "))+'</span><span class="chip '+(p.scoutPriority===1?'':'need')+'">조사 '+(p.scoutPriority===1?'A':p.scoutPriority===2?'B':'C')+'</span><span class="chip">사진잠재력 '+esc(p.photoPotentialScore||"—")+'/100</span>'+state+'</div><div class="place-photo-title">'+esc(shown?(shown.title||"장소 사진 후보"):"사진 후보 없음")+'</div></div><span class="place-chevron" aria-hidden="true">↗</span></article>';
  }).join(""):'<div class="empty">검색 조건에 맞는 장소가 없습니다.</div>';
  bindImageFallbacks($("placeList"));
@@ -259,14 +265,20 @@ function showHomeAllPlaces(){
 }
 function showPlaceArchive(event){
  if(event){event.preventDefault();event.stopPropagation();}
- showHomeAllPlaces();
+ /* Reload the current v2 entry point explicitly. This bypasses stale in-memory views and never routes to the legacy root app. */
+ const target=new URL("./index.html",window.location.href);
+ target.searchParams.set("view","all");
+ target.searchParams.set("build","20261014-38");
+ window.location.assign(target.href);
 }
 if(backToArchiveBtn)backToArchiveBtn.addEventListener("click",showPlaceArchive);
 
 function isFavorite(id){return favorites.includes(id);}
 function toggleFavorite(id){if(isFavorite(id))favorites=favorites.filter(x=>x!==id);else favorites.push(id);try{localStorage.setItem(FAVORITES_KEY,JSON.stringify(favorites));}catch(_){}render();renderLanding();renderMoreScreen();renderPhotosScreen();}
 function chooseHomeHeroPlace(places){
+ const manuallyHeld=new Set(["seo-peace-culture-bunker","seo-city-hall-new-building"]);
  const pool=places.filter(p=>{
+  if(manuallyHeld.has(p.id))return false;
   if(p.visualCurationStatus==="conditional"||p.visualCurationStatus==="rejected")return false;
   if(/운영 종료|폐쇄|영구 휴관/.test(String(p.openingStatus||"")))return false;
   const photo=activePhoto(p),url=photo&&(photo.imageUrl||photo.sourceThumbnail||"");
@@ -318,8 +330,9 @@ function renderLanding(){
  }
  grid.innerHTML=featured.length?featured.map((p,index)=>{
   const photo=activePhoto(p),url=photo?(photo.imageUrl||photo.sourceThumbnail||""):"";
-  const status=photo&&photo.placeMatch==="confirmed"?"장소 일치 후보":"실제 장소 확인 필요";
-  const image=photo?'<img data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" data-home-preview="'+esc(p.id)+'" src="'+esc(url)+'" loading="lazy" alt="'+esc(p.name)+' 촬영 참고사진" referrerpolicy="no-referrer"><span class="featured-photo-label">'+(p.primaryImageId===photo.id?"대표사진":"장소 사진")+'</span><span class="featured-photo-missing">사진을 불러올 수 없습니다</span>':'<div class="featured-no-photo">사진 후보를 찾는 중입니다</div>';
+  const status=p.visualCurationStatus==="conditional"||p.visualCurationStatus==="rejected"||p.photoReviewStatus==="pending-place-photo-review"?"대표사진 검토 보류":photo&&photo.placeMatch==="confirmed"?"장소 일치 후보":"실제 장소 확인 필요";
+  const holdPhoto=p.visualCurationStatus==="conditional"||p.visualCurationStatus==="rejected"||p.photoReviewStatus==="pending-place-photo-review";
+  const image=photo&&!holdPhoto?'<img data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" data-home-preview="'+esc(p.id)+'" src="'+esc(url)+'" loading="lazy" alt="'+esc(p.name)+' 촬영 참고사진" referrerpolicy="no-referrer"><span class="featured-photo-label">'+(p.primaryImageId===photo.id?"대표사진":"장소 사진")+'</span><span class="featured-photo-missing">사진을 불러올 수 없습니다</span>':'<div class="featured-no-photo">'+(holdPhoto?"대표사진 검토 보류":"사진 후보를 찾는 중입니다")+'</div>';
   return '<button type="button" class="scout-feature-card" data-home-place="'+esc(p.id)+'"><span class="scout-feature-image">'+image+'</span><span class="scout-feature-body"><span class="scout-feature-top"><span class="scout-feature-index">'+String(index+1).padStart(2,"0")+'</span><span>'+esc(p.region||"지역 미등록")+'</span></span><b>'+esc(p.name)+'</b><span class="scout-feature-desc">'+esc(p.photoProfile||p.summary||"사진가 관점에서 검토할 촬영 장소")+'</span><span class="scout-feature-bottom"><span>'+esc(status)+'</span><span class="scout-feature-arrow">↗</span></span></span></button>';
  }).join(""):'<div class="landing-empty">장소 자료를 불러오지 못했습니다.</div>';
  bindImageFallbacks(grid);
@@ -332,7 +345,7 @@ function renderLanding(){
   $("homeAllPlaceCount").textContent=all.length;
   allGrid.innerHTML=all.map((p,index)=>{
    const photo=activePhoto(p),url=photo?(photo.imageUrl||photo.sourceThumbnail||""):"";
-   const status=/운영 종료|휴관|폐쇄/.test(String(p.openingStatus||""))?"운영 상태 재확인":"촬영 조건 사전 확인";
+   const status=p.visualCurationStatus==="conditional"||p.visualCurationStatus==="rejected"||p.photoReviewStatus==="pending-place-photo-review"?"대표사진·장소 일치 검토 보류":/운영 종료|휴관|폐쇄/.test(String(p.openingStatus||""))?"운영 상태 재확인":"촬영 조건 사전 확인";
    return '<button type="button" class="home-place-row" data-home-all-place="'+esc(p.id)+'"><span class="home-place-thumb">'+(photo?'<img loading="lazy" data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" src="'+esc(url)+'" alt="'+esc(p.name)+' 촬영 참고사진" referrerpolicy="no-referrer">':'<span class="home-place-placeholder">▧</span>')+'</span><span class="home-place-info"><small>'+String(index+1).padStart(2,"0")+' / '+esc(p.region||"수도권")+'</small><b>'+esc(p.name)+'</b><span>'+esc(p.category||"장소 유형 조사 필요")+'</span><em>'+esc(status)+'</em></span><span class="home-place-chevron">↗</span></button>';
   }).join("")||'<div class="landing-empty">조건에 맞는 장소가 없습니다.</div>';
   bindImageFallbacks(allGrid);
