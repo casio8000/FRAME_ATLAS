@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "구버전 214곳과 대조해 2.0을 현재 123곳으로 확대했습니다. 이번 추가는 마곡문화관(1928년 산업유산), 한성1918(근대 벽돌건축), 대청호 명상정원(수변 곡선·환경 인물)입니다. 실제 장소 참고사진·건축/운영 출처는 우선 반영했고, 사용권·최종 대표사진·상업촬영 허가는 후속 검토로 관리합니다.",
+  "dataStatus": "구버전 214곳과 대조해 2.0을 125곳으로 확장했습니다. 최근 추가한 마곡문화관·한성1918에 이어 부산시립미술관(2026 재개관)과 울산시립미술관(XR Lab)을 촬영 활용성이 높은 대형 예술시설로 보강했습니다. 조감사진은 메인 참조로 쓰지 않고, 지상 시점의 실제 장소 사진 확보 대상으로 구분했습니다. 사용권·대표사진·촬영허가는 별도 후속 검토로 관리합니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T08:25:00.000Z",
+  "updatedAt": "2026-10-15T08:35:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -12653,7 +12653,7 @@
       "shootingPermission": "상업촬영과 장비 설치 여부는 관할기관에 확인",
       "parking": "공식 방문정보와 인근 주차 공간 확인 필요",
       "fee": "공공공간 이용 및 상업촬영 조건 확인",
-      "imageStatus": "실제 장소 참고사진 등록 · 사용권 후속 검토",
+      "imageStatus": "조감 참고사진 보류 · 지상 시점 사진 후속 확보",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -12666,15 +12666,15 @@
           "rights": "unknown",
           "rightsLabel": "실제 장소 참고사진 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unverified",
           "viewType": "야외·호수·수변 정원",
-          "notes": "중도일보가 보도한 대청호 명상정원 실제 장소 사진. 기사 이미지가 높은 시점에서 촬영된 것으로 보여 대표사진보다는 지형과 장소 확인용 참고자료로 우선 등록합니다.",
+          "notes": "기사 사진은 실제 정원 위치를 식별하는 참고자료로 보관합니다. 사진은 높은 시점/조감 구도여서 사용자 취향에 맞는 지상 촬영 대표사진으로 쓰지 않으며, 지상 시점 사진 확보 후 참조 후보로 전환합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         }
       ],
-      "referenceImageId": "img-daecheong-meditation-garden-ground-joongdo",
-      "referenceImageStatus": "실제 장소 참고사진 · 현장 지상 구도 후속 보강",
+      "referenceImageId": null,
+      "referenceImageStatus": "지상 시점 실제 사진 후속 확보 · 조감 참고사진은 메인에 쓰지 않음",
       "sourceRefs": [
         "https://access.visitkorea.or.kr/opentour/detail.do?cotId=71fb781c-962a-48ab-8d36-b27280556072",
         "https://m.joongdo.co.kr/view.php?key=20250503010000745"
@@ -12693,6 +12693,157 @@
       "createdAt": "2026-10-15",
       "updatedAt": "2026-10-15",
       "notes": "구버전 L-101을 이관했습니다. 현재 연결 사진은 지형과 실제 장소 식별에 유용하지만 지상 시점으로 촬영 포인트를 보여주지는 않으므로, 대표사진은 지상 시점 사진을 확보한 뒤 선택합니다."
+    },
+    {
+      "id": "busan-museum-of-art",
+      "name": "부산시립미술관",
+      "region": "부산",
+      "category": "현대미술관·대형 전시실·미디어 조형",
+      "aliases": [
+        "부산시립미술관"
+      ],
+      "address": "부산광역시 해운대구 APEC로 58",
+      "coordinates": null,
+      "officialUrl": "https://art.busan.go.kr/",
+      "summary": "대형 전시실·로비·복도와 전시 설치가 결합된 부산의 공립 현대미술관. 2026년 리노베이션 후 재개관한 미술관으로, 전시 공간의 높이와 미디어 조형을 활용하는 실내 촬영 후보입니다.",
+      "photoProfile": "큰 전시 벽면과 대형 설치물, 공간 스케일과 인물의 대비를 활용해 현대미술·문화 에디토리얼을 구성.",
+      "spaceTypes": [
+        "실내",
+        "현대미술관",
+        "미디어 설치",
+        "전시 공간"
+      ],
+      "visualStrengths": [
+        "대형 전시실과 넓은 실내 스케일",
+        "전시 설치·미디어 조형물",
+        "로비·복도와 전시 공간의 전이"
+      ],
+      "bestConcepts": [
+        "현대 패션 에디토리얼",
+        "아티스트·문화 브랜드 프로필",
+        "설치미술 기반 콘셉트 촬영"
+      ],
+      "constraints": [
+        "전시 작품 및 설치미술 촬영 제한 확인",
+        "플래시·삼각대·조명 사용은 사전 승인 확인",
+        "재개관 후 운영 일정·전시 구역·관람 동선 확인"
+      ],
+      "scoutPriority": 1,
+      "photoPotentialScore": 88,
+      "scoreStatus": "전시공간·미디어 설치의 사진적 잠재력 평가 · 현장 조건 후속 확인",
+      "priorityLabel": "A · 대형 현대미술관",
+      "openingStatus": "공식 홈페이지에서 재개관 일정·방문일 전시·휴관일 확인",
+      "shootingPermission": "전시실·작품 촬영과 상업 촬영은 미술관에 사전 문의",
+      "parking": "공식 방문 안내에서 주차·장비 하차 동선 확인",
+      "fee": "입장료와 상업촬영·대관 비용 구분 확인",
+      "imageStatus": "실제 장소 사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://art.busan.go.kr/",
+        "https://art.busan.go.kr/tblTsite07Bbs/viewNewsClient.nm?idx=2413"
+      ],
+      "verification": {
+        "location": "부산시립미술관 공식 홈페이지·2026 재개관 안내",
+        "photoMatch": "직접 이미지 URL 후속 확보 필요",
+        "rights": "사진 미등록",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "공식 운영·전시정보",
+          "title": "부산시립미술관 2026년 9월 17일 재개관",
+          "publisher": "부산시립미술관 공식 홈페이지",
+          "url": "https://art.busan.go.kr/tblTsite07Bbs/viewNewsClient.nm?idx=2413",
+          "notes": "공식 재개관 안내 및 전시계획의 출처입니다. 영화·드라마 촬영 크레딧으로 분류하지 않습니다."
+        }
+      ],
+      "selectionStatus": "등록 · 현대미술관·대형 실내 촬영 후보, 사진 URL 후속 확보",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "legacy-214-audit",
+      "legacyCatalogId": "L-132",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "구버전 L-132에서 추가했습니다. 부산시립미술관 공식 안내에 따르면 2026년 9월 17일 재개관했으며 대형 미디어 조형물 등 새로운 전시 계획이 소개되었습니다. 실제 장소 사진은 별도 확보 후 연결합니다."
+    },
+    {
+      "id": "ulsan-museum-of-art",
+      "name": "울산시립미술관",
+      "region": "울산",
+      "category": "현대미술관·XR 미디어아트·지하 대형 전시실",
+      "aliases": [
+        "울산시립미술관",
+        "Ulsan Art Museum"
+      ],
+      "address": "울산광역시 중구 미술관길 72",
+      "coordinates": null,
+      "officialUrl": "https://ulsan.go.kr/s/uam/main.ulsan",
+      "summary": "지하 2층의 개방감 있는 대형 전시실과 별도 XR Lab을 갖춘 현대미술관. 화이트큐브와 실감 미디어아트 공간을 함께 탐색할 수 있어 인물·패션·뉴미디어 영상 배경 후보입니다.",
+      "photoProfile": "대형 전시실의 높이와 여백, XR Lab의 발광·디지털 장면을 활용하되 전시작품을 촬영 배경으로 쓸 수 있는지 별도 확인.",
+      "spaceTypes": [
+        "실내",
+        "대형 전시실",
+        "XR Lab",
+        "미디어아트"
+      ],
+      "visualStrengths": [
+        "지하 2층의 높은 층고와 넓은 개방형 전시실",
+        "XR Lab의 실감 미디어아트 공간",
+        "대형 작품과 인물의 스케일 대비"
+      ],
+      "bestConcepts": [
+        "미래지향 패션·아이돌 콘셉트",
+        "미디어아트 에디토리얼",
+        "아티스트 프로필·브랜드 영상"
+      ],
+      "constraints": [
+        "전시작품 저작권 및 촬영 허용 구역 확인",
+        "XR Lab·전시실 별 상업촬영 허가 확인",
+        "플래시·삼각대·조명 설치 조건 사전 문의"
+      ],
+      "scoutPriority": 1,
+      "photoPotentialScore": 89,
+      "scoreStatus": "대형 전시·XR 공간의 사진적 잠재력 평가 · 현장 조건 후속 확인",
+      "priorityLabel": "A · 미디어아트·화이트큐브",
+      "openingStatus": "공식 홈페이지에서 방문일 전시·운영시간·휴관일 확인",
+      "shootingPermission": "전시실·XR Lab 상업촬영은 운영기관에 사전 문의",
+      "parking": "공식 방문 안내에서 주차 및 장비 반입 동선 확인",
+      "fee": "입장료와 별도 촬영료·대관 여부 확인",
+      "imageStatus": "실제 장소 사진 추가 조사 필요",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "referenceImageId": null,
+      "referenceImageStatus": "",
+      "sourceRefs": [
+        "https://ulsan.go.kr/s/uam/main.ulsan",
+        "https://ulsan.go.kr/s/uam/contents.ulsan?mId=001001002001000000"
+      ],
+      "verification": {
+        "location": "울산광역시 공식 미술관·시설안내",
+        "photoMatch": "직접 이미지 URL 후속 확보 필요",
+        "rights": "사진 미등록",
+        "shootingPermission": "사전 확인 필요",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "mediaAppearances": [
+        {
+          "kind": "공식 운영·전시정보",
+          "title": "울산시립미술관 대형 전시실 및 XR Lab 안내",
+          "publisher": "울산광역시·울산시립미술관",
+          "url": "https://ulsan.go.kr/s/uam/contents.ulsan?mId=001001002001000000",
+          "notes": "공식 시설안내에는 지하 2층 대형 전시실과 지하 1층 XR Lab이 소개되어 있습니다. 작품 노출·촬영 허가와는 별개입니다."
+        }
+      ],
+      "selectionStatus": "등록 · 대형 전시·XR 공간 후보, 사진 URL 후속 확보",
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "legacy-214-audit",
+      "legacyCatalogId": "L-138",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "notes": "구버전 L-138에서 추가했습니다. 울산시립미술관 공식 시설안내에는 넓은 전시실과 실감 미디어아트 XR Lab이 있어 시각적 활용성이 높습니다. 구버전 블로그 사진은 만료된 주소라 재사용하지 않고 공식 실제 장소 사진을 다시 연결해야 합니다."
     }
   ],
   "selectionRubric": {
