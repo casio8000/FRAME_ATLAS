@@ -175,7 +175,7 @@ function render(){
   if(filter==="review"&&!hasPending(p))return false;
   if(filter==="ready"&&!isImageReady(p))return false;
   return true;
- }).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||["서울","경기","인천","강원","광주","부산","제주"].indexOf(a.region)-["서울","경기","인천","강원","광주","부산","제주"].indexOf(b.region)||a.name.localeCompare(b.name,"ko"));
+ }).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(a.region)-["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(b.region)||a.name.localeCompare(b.name,"ko"));
  $("countAll").textContent=catalog.places.length;if($("workspaceTitle"))$("workspaceTitle").textContent=archiveMode==="favorites"?"내 저장 장소":"촬영 장소 아카이브";
  $("countNoImage").textContent=catalog.places.filter(p=>!isImageReady(p)).length;
  $("countReview").textContent=catalog.places.filter(hasPending).length;
@@ -335,7 +335,7 @@ function renderLanding(){
  if(allGrid){
   const q=($("homeAllSearchInput")?.value||"").trim().toLowerCase(),region=$("homeAllRegionFilter")?.value||"";
   const all=places.filter(p=>(!q||[p.name,p.region,p.category,p.summary,...(p.aliases||[])].join(" ").toLowerCase().includes(q))&&(!region||p.region===region))
-   .sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||["서울","경기","인천","강원","광주","부산","제주"].indexOf(a.region)-["서울","경기","인천","강원","광주","부산","제주"].indexOf(b.region)||a.name.localeCompare(b.name,"ko"));
+   .sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(a.region)-["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(b.region)||a.name.localeCompare(b.name,"ko"));
   $("homeAllPlaceCount").textContent=all.length;
   allGrid.innerHTML=all.map((p,index)=>{
    const photo=activePhoto(p),url=photo?(photo.imageUrl||photo.sourceThumbnail||""):"";
