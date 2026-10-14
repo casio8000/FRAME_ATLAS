@@ -1,0 +1,67 @@
+name: FRAME ATLAS v2 quality gate
+
+on:
+  push:
+    branches:
+      - FRAME_ATLAS-v2.0-development
+    paths:
+      - "v2/**"
+      - "tests/v2-browser-smoke.cjs"
+      - "tools/validate-catalog.mjs"
+      - ".github/workflows/v2-quality.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "v2/**"
+      - "tests/v2-browser-smoke.cjs"
+      - "tools/validate-catalog.mjs"
+      - ".github/workflows/v2-quality.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: frame-atlas-v2-quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Catalog, cache, desktop and mobile smoke tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check v2/assets/app.js
+          node --check tests/v2-browser-smoke.cjs
+          node --check tools/validate-catalog.mjs
+
+      - name: Validate nationwide catalog and cache consistency
+        run: node tools/validate-catalog.mjs
+
+      - name: Install Playwright
+        run: npm install --no-save playwright
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run desktop and mobile browser smoke tests
+        run: node tests/v2-browser-smoke.cjs
+
+      - name: Save browser screenshots and image audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: frame-atlas-v2-browser-audit
+          path: test-results/
+          if-no-files-found: ignore
+          retention-days: 14
