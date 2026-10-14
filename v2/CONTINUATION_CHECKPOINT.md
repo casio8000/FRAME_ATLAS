@@ -92,8 +92,9 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Browser smoke-test place counts updated to 37 and the mobile return test now asserts `body[data-app-view="home"]`, visible `homeView`, hidden legacy `workspaceView`, and visible `homeAllPlacesGrid`.
 
 
-## 2026-10-14 · v2.38 return-flow and photo-quality review
-- Floating “전체 촬영장소로 돌아가기” now reloads the explicit `./index.html?view=all&build=20261014-38` v2 entry point. On load, the route intent opens the v2 all-places catalog, clears the one-shot query, and never navigates to the legacy root app. This also forces fresh JS/CSS/SW assets.
-- `seo-peace-culture-bunker` and `seo-city-hall-new-building` are now conditional and their reference candidates are marked `unconfirmed`; those photos are not used as the home hero or as confirmed reference photos until actual place/composition matching is reviewed. They remain accessible for further source inspection.
+## 2026-10-14 · v2.39 return-flow and photo-quality review
+- Root cause for the return button: the code tried to scroll to `#homeAllPlacesGrid`, but the design intentionally hides its parent `#homeAllLocations` with `display:none!important`. The visible full 37-place catalog is `#homeFeaturedGrid`. Return now stays in the current v2 app, preserves the current editing context, and scrolls to that visible catalog.
+- Added regression assertions on desktop and mobile that the button returns to `/v2/index.html`, shows the 2.0 home, and reveals the visible 37-place catalog instead of the hidden duplicate archive.
+- `seo-peace-culture-bunker` and `seo-city-hall-new-building` remain conditional and their photo candidates are marked `unconfirmed`; they are not used as the home hero or displayed as confirmed reference photos until actual place/composition matching is reviewed.
 - Added two architecture-led Seoul prospects to the review queue only: Seoul Hall of Urbanism & Architecture and Seosomun Shrine History Museum. They are deliberately not promoted to the main catalog because direct location-specific photographs and permitted shooting zones are not yet verified.
-- The review queue remains the safe staging area: no fabricated/stock-like image is used to make a new place appear photo-ready. The active catalog count remains unchanged until image and access evidence are adequate.
+- Review queue is the safe staging area: no fabricated/stock-like image is used to make a new place appear photo-ready. Active catalog remains 37 until image and access evidence is adequate.
