@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "서울·경기·인천 등 37개 촬영 후보. 장소별 사진은 참고 이미지 후보이며, 실제 장소 일치·재사용 권리·운영·촬영 허가는 각각 별도 확인 대상.",
+  "dataStatus": "서울·경기·인천 등 37개 촬영 후보. 장소별 사진은 참고 이미지 후보이며, 실제 장소 일치·재사용 권리·운영·촬영 허가는 각각 별도 확인 대상.\n2026-10-14 품질 재검토: 평화문화진지·서울시청 신청사 대표사진은 장소·구도 확인 전 보류 처리. 서울도시건축전시관과 서소문성지 역사박물관은 가치 있는 신규 조사 후보로 검증 대기에 추가했으며, 직접 확인한 사진이 확보되기 전에는 공개 추천 목록에 포함하지 않음.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14",
+  "updatedAt": "2026-10-14T00:00:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -4452,9 +4452,9 @@
           "rights": "unknown",
           "rightsLabel": "이용조건 확인 필요",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unconfirmed",
           "viewType": "산업유산·콘크리트 외관",
-          "notes": "프로젝트 소개 페이지의 외관 참고사진 후보. 재사용 전 원문·권리 조건을 확인하세요. 사진의 조형적 적합성과 실제 촬영 구간을 확인할 때까지 대표사진 추천에서는 보류합니다.",
+          "notes": "프로젝트 소개 페이지의 외관 참고사진 후보. 재사용 전 원문·권리 조건을 확인하세요. 사진의 조형적 적합성과 실제 촬영 구간을 확인할 때까지 대표사진 추천에서는 보류합니다. 현재 이미지는 장소 소개/참고 후보일 뿐, 추천 촬영 구도와 실제 장소 일치를 직접 검증하지 못했습니다. 확인 전에는 메인 대표사진으로 노출하지 않습니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T00:00:00.000Z",
           "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F5f085a73b2f0757937e7ac32%2F1594455409754-Z7N2UI3C8KP4JVU3VGAP%2F_DSC8155.jpg&w=900&h=650&fit=inside&output=webp",
@@ -4475,7 +4475,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "장소의 산업유산 가치는 있으나 대표사진 구도·장소 일치 검토 전 보류",
+      "selectionStatus": "장소·대표사진의 실제 일치와 촬영 구도 확인 전 보류",
       "scoutingChecklist": [
         "공식 운영정보·휴관일 확인",
         "실제 방문 시점의 사진",
@@ -4506,7 +4506,7 @@
       },
       "mapSearchQuery": "서울특별시 도봉구 마들로 932 평화문화진지",
       "referenceImageId": "ref-seoul-peace-culture-bunker",
-      "referenceImageStatus": "참고사진 후보 · 사용 권리 및 장소 현장 확인 전",
+      "referenceImageStatus": "검토 보류 · 실제 장소 일치·촬영 포인트·이용권 확인 후에만 대표사진 지정",
       "shootingDetails": {
         "parking": "주차·장비 하차 위치와 촬영 지점까지의 이동 확인",
         "publicTransport": "공식 홈페이지에서 대중교통·도보 접근 확인",
@@ -4539,7 +4539,7 @@
         "lastFieldCheck": "미확인"
       },
       "visualCurationStatus": "conditional",
-      "photoReviewStatus": "대표사진이 촬영 목적에 맞는지 추가 검토 필요 · 사진 재사용 권리 미확인"
+      "photoReviewStatus": "pending-place-photo-review"
     },
     {
       "id": "nat-museum-san",
@@ -5045,9 +5045,9 @@
           "rights": "unknown",
           "rightsLabel": "공공 사진의 재사용 조건 별도 확인 필요",
           "licenseUrl": "",
-          "placeMatch": "confirmed",
+          "placeMatch": "unconfirmed",
           "viewType": "현대건축·유리 파사드·반사·기하학",
-          "notes": "이 장소를 추가한 핵심 이유는 단순한 명소성이 아니라 곡면 유리 파사드, 반사되는 하늘, 반복되는 수직·수평 그리드를 인물과 분리해 구성할 수 있기 때문입니다. 광각으로 건물의 스케일을 담거나 망원으로 그리드와 반사 패턴을 압축하는 촬영을 검토하세요. 서울시 미디어허브 참고 이미지이며 재사용 권리·현장 촬영 허가는 별도 확인 대상입니다.",
+          "notes": "이 장소를 추가한 핵심 이유는 단순한 명소성이 아니라 곡면 유리 파사드, 반사되는 하늘, 반복되는 수직·수평 그리드를 인물과 분리해 구성할 수 있기 때문입니다. 광각으로 건물의 스케일을 담거나 망원으로 그리드와 반사 패턴을 압축하는 촬영을 검토하세요. 서울시 미디어허브 참고 이미지이며 재사용 권리·현장 촬영 허가는 별도 확인 대상입니다. 현재 이미지는 장소 소개/참고 후보일 뿐, 추천 촬영 구도와 실제 장소 일치를 직접 검증하지 못했습니다. 확인 전에는 메인 대표사진으로 노출하지 않습니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T00:00:00.000Z"
         }
@@ -5063,7 +5063,7 @@
         "shootingPermission": "사전 확인 필요",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "건축의 사진적 특성으로 선별한 후보 · 현장·사진·허가 검증 전",
+      "selectionStatus": "장소·대표사진의 실제 일치와 촬영 구도 확인 전 보류",
       "scoutingChecklist": [
         "서울시청 신청사 외관·광장 구역 확인",
         "반사면에 촬영팀·주변 건물이 어떻게 비치는지 확인",
@@ -5093,7 +5093,7 @@
       },
       "mapSearchQuery": "서울특별시 중구 세종대로 110 서울시청 신청사",
       "referenceImageId": "ref-seoul-city-hall-facade",
-      "referenceImageStatus": "서울시 미디어허브 참고사진 후보 · 촬영 포인트·재사용 권리 확인 전",
+      "referenceImageStatus": "검토 보류 · 실제 장소 일치·촬영 포인트·이용권 확인 후에만 대표사진 지정",
       "phone": "02-120",
       "shootingDetails": {
         "fieldNotes": "곡면 유리 파사드의 반사와 그리드를 중심으로 촬영합니다. 광각 건축 전경과 망원 압축 구도를 모두 테스트하고, 반사면에 불필요한 주변 요소가 들어오는지 확인하세요. 광장 점유·삼각대·조명 설치는 관리 주체에 사전 문의가 필요합니다.",
@@ -5101,8 +5101,8 @@
         "contact": "서울시 대표번호 02-120 또는 공식 홈페이지에서 청사·광장 촬영 담당 부서를 확인.",
         "lastFieldCheck": "미확인"
       },
-      "visualCurationStatus": "curated",
-      "photoReviewStatus": "참고사진 후보 · 실제 장소 대조·재사용 권리·촬영 허가는 별도 확인 대상"
+      "visualCurationStatus": "conditional",
+      "photoReviewStatus": "pending-place-photo-review"
     }
   ],
   "selectionRubric": {
@@ -5157,6 +5157,42 @@
     "note": "기존 proScout·shootingChecklist·expertScout 메모를 2.0 상세 화면의 참고 패널로 이관했습니다. 이전 데이터이므로 최신 운영·허가·비용·접근 조건이 확인되었다는 뜻은 아닙니다."
   },
   "reviewQueue": [
+    {
+      "id": "candidate-seosomun-history-museum",
+      "name": "서소문성지 역사박물관",
+      "region": "서울",
+      "category": "지하 건축·빛의 중정·노출 콘크리트",
+      "summary": "지하 공간과 중정, 콘크리트 면과 자연광의 대비를 활용할 가능성이 있는 건축 촬영 후보입니다.",
+      "officialUrl": "https://www.seosomun.org/",
+      "curationQueueReason": "공간의 조형적 잠재력 때문에 조사 후보로 추가했습니다. 실제 대표사진이 해당 시설의 중정·지하 공간을 보여주는지, 촬영 허용 구역과 상업촬영 조건이 어떤지 확인되기 전에는 일반 추천 장소로 공개하지 않습니다.",
+      "photoReviewStatus": "pending-direct-image-and-access-verification",
+      "sourceRefs": [
+        {
+          "name": "서소문성지 역사박물관 공식 사이트",
+          "url": "https://www.seosomun.org/"
+        }
+      ],
+      "imageCandidates": [],
+      "createdAt": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "candidate-seoul-urban-architecture-center",
+      "name": "서울도시건축전시관",
+      "region": "서울",
+      "category": "도시건축·노출 콘크리트·옥상정원",
+      "summary": "도심의 건축 전시와 지하 전시공간, 옥상 정원을 함께 검토할 수 있어 건축·미니멀 패션 촬영 후보로 가치가 있습니다.",
+      "officialUrl": "https://sca.seoul.go.kr/",
+      "curationQueueReason": "사진가 관점의 후보 가치가 높아 추가 조사 대상으로 선정했습니다. 다만 현재 공개된 직접 이미지에서 실제 촬영 포인트와 구도가 확인되지 않아 대표사진 없이 검토 대기합니다. 공식 외관·옥상정원 사진과 실제 촬영 가능 구역을 확인한 뒤에만 본 장소 목록으로 승격합니다.",
+      "photoReviewStatus": "pending-direct-image-and-access-verification",
+      "sourceRefs": [
+        {
+          "name": "서울도시건축전시관 공식 사이트",
+          "url": "https://sca.seoul.go.kr/"
+        }
+      ],
+      "imageCandidates": [],
+      "createdAt": "2026-10-14T00:00:00.000Z"
+    },
     {
       "id": "seo-hangang-under-bridge",
       "name": "한강 교량 하부·접근 가능한 공공 구간",
