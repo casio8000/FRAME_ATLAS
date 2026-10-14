@@ -241,11 +241,24 @@ function showHomeAllPlaces(){
  archiveMode="all";selectedId=null;
  $("query").value="";$("regionFilter").value="";$("imageFilter").value="";
  $("homeAllSearchInput").value="";$("homeAllRegionFilter").value="";
- showAppView("home");
- requestAnimationFrame(()=>{const grid=$("homeAllPlacesGrid");if(grid)grid.scrollIntoView({behavior:"auto",block:"start"});});
+ /* Force the 2.0 home container visible before rendering; never route this control through the legacy workspace. */
+ const home=$("homeView"),workspace=$("workspaceView");
+ if(home)home.hidden=false;
+ if(workspace)workspace.hidden=true;
+ showAppView("home",false);
+ renderLanding();
+ updateFloatingControls();
+ requestAnimationFrame(()=>{
+  const grid=$("homeAllPlacesGrid");
+  if(grid)grid.scrollIntoView({behavior:"auto",block:"start"});
+  if(document.body.dataset.appView!=="home"||$("workspaceView").hidden===false){
+   showAppView("home",false);renderLanding();
+  }
+  updateFloatingControls();
+ });
 }
-function showPlaceArchive(){
- /* The floating return action belongs to the current 2.0 design, not the legacy archive workspace. */
+function showPlaceArchive(event){
+ if(event){event.preventDefault();event.stopPropagation();}
  showHomeAllPlaces();
 }
 if(backToArchiveBtn)backToArchiveBtn.addEventListener("click",showPlaceArchive);
