@@ -302,24 +302,29 @@
         {
           "id": "ref-studio-cube-stage",
           "title": "대전 스튜디오큐브 대형 실내 스튜디오",
-          "imageUrl": "https://m.haeahn.com/upload/prjctmain/20181106105229238493.jpg",
-          "sourcePageUrl": "https://m.haeahn.com/en/project/detail.do?prjctSeq=1706",
-          "sourceName": "해안건축 공식 프로젝트 아카이브",
+          "imageUrl": "https://news.nateimg.co.kr/orgImg/na/2025/12/03/7631606_high.jpg",
+          "sourcePageUrl": "https://news.nate.com/view/20251203n04871",
+          "sourceName": "2025년 Studio Cube 버추얼 스튜디오 시설 기사",
           "creator": "원저작자 확인 필요",
           "rights": "unknown",
           "rightsLabel": "재사용 권리 미확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "대형 실내 스튜디오·조명 트러스",
-          "notes": "설계사 프로젝트 아카이브에 게시된 스튜디오큐브 내부 참고 이미지입니다. 장소 식별용이며 대표사진 확정과 재사용 권리 승인 상태는 아닙니다.",
+          "viewType": "대형 LED 월·버추얼 프로덕션·조명 리깅",
+          "notes": "2025년 12월 Studio Cube의 다목적 버추얼 스튜디오 개편을 다룬 기사에 연결된 실제 내부 사진입니다. 장소 참고 이미지로 사용하며 사진 저작권과 재사용 조건은 별도 확인해야 합니다.",
           "status": "candidate",
-          "createdAt": "2026-10-14T05:00:00.000Z"
+          "createdAt": "2026-10-14T05:00:00.000Z",
+          "sourceThumbnail": "https://news.nateimg.co.kr/orgImg/na/2025/12/03/7631606_high.jpg"
         }
       ],
       "sourceRefs": [
         {
           "name": "필름코리아 대전 스튜디오큐브 시설 정보",
           "url": "https://www.filmkorea.or.kr/studio/studio_view.jsp?id=10028"
+        },
+        {
+          "name": "2025년 Studio Cube 버추얼 스튜디오 현장 기사",
+          "url": "https://news.nate.com/view/20251203n04871"
         },
         {
           "name": "해안건축 Studio Cube 프로젝트",
@@ -1539,18 +1544,19 @@
         {
           "id": "ref-busan-cinema-center-big-roof",
           "title": "부산 영화의전당 빅루프와 야간 조명",
-          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/51/3021751_image2_1.jpg",
-          "sourcePageUrl": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=66231",
-          "sourceName": "한국관광공사 VisitKorea",
-          "creator": "원저작자 확인 필요",
+          "imageUrl": "https://www.heerim.com/data/goodsImages/3b87e08b9dead6d608a32c0c9ec47676.jpg",
+          "sourcePageUrl": "https://www.heerim.com/kr/project/project_view.php?idx=371",
+          "sourceName": "희림건축 · 부산 영화의전당 프로젝트",
+          "creator": "희림건축 프로젝트 페이지 · 개별 사진 저작자 확인 필요",
           "rights": "unknown",
           "rightsLabel": "재사용 권리 미확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "캔틸레버 지붕·야외극장·야간 조명",
-          "notes": "한국관광공사의 영화의전당 장소 소개에 연결된 사진입니다. 장소 참고 이미지이며 공개·상업 재사용 권리는 별도 확인해야 합니다.",
+          "viewType": "빅루프·곡면 메탈 지붕·야간 조명·건축 원근",
+          "notes": "건축설계사 프로젝트 페이지에서 확인한 영화의전당의 곡면 지붕과 야간 조명 이미지입니다. 촬영 활용도가 높은 공간 형태를 보여주는 참고 사진이며 재사용 권리와 현장 촬영 허가는 별도 확인해야 합니다.",
           "status": "candidate",
-          "createdAt": "2026-10-14T05:00:00.000Z"
+          "createdAt": "2026-10-14T05:00:00.000Z",
+          "sourceThumbnail": "https://www.heerim.com/data/goodsImages/3b87e08b9dead6d608a32c0c9ec47676.jpg"
         }
       ],
       "sourceRefs": [
@@ -1559,12 +1565,12 @@
           "url": "https://www.dureraum.org/bccen/"
         },
         {
-          "name": "한국관광공사 영화의전당 안내",
-          "url": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=66231"
+          "name": "희림건축 부산 영화의전당 프로젝트",
+          "url": "https://www.heerim.com/kr/project/project_view.php?idx=371"
         },
         {
-          "name": "코리아 유니크 베뉴 대관 안내",
-          "url": "https://k-mice.visitkorea.or.kr/uniquevenue/main/sub.kto?lang=ko&uvid=40"
+          "name": "한국관광공사 영화의전당 안내",
+          "url": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=66231"
         }
       ],
       "verification": {
