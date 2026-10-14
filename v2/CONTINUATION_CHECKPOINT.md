@@ -90,3 +90,10 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Added one carefully scoped Seoul City Hall new-building facade candidate for its curved glass, reflection, and grid geometry, with an official Seoul Mediahub reference image. Reuse rights and shooting permissions remain unverified.
 - Marked Peace Culture Bunker as conditional in random hero rotation until its exact representative framing is reviewed. Museum SAN and F1963 reference-image notes now explicitly distinguish space-reference thumbnails from final editorial-quality representative images.
 - Browser smoke-test place counts updated to 37 and the mobile return test now asserts `body[data-app-view="home"]`, visible `homeView`, hidden legacy `workspaceView`, and visible `homeAllPlacesGrid`.
+
+
+## 2026-10-14 · v2.38 return-flow and photo-quality review
+- Floating “전체 촬영장소로 돌아가기” now reloads the explicit `./index.html?view=all&build=20261014-38` v2 entry point. On load, the route intent opens the v2 all-places catalog, clears the one-shot query, and never navigates to the legacy root app. This also forces fresh JS/CSS/SW assets.
+- `seo-peace-culture-bunker` and `seo-city-hall-new-building` are now conditional and their reference candidates are marked `unconfirmed`; those photos are not used as the home hero or as confirmed reference photos until actual place/composition matching is reviewed. They remain accessible for further source inspection.
+- Added two architecture-led Seoul prospects to the review queue only: Seoul Hall of Urbanism & Architecture and Seosomun Shrine History Museum. They are deliberately not promoted to the main catalog because direct location-specific photographs and permitted shooting zones are not yet verified.
+- The review queue remains the safe staging area: no fabricated/stock-like image is used to make a new place appear photo-ready. The active catalog count remains unchanged until image and access evidence are adequate.
