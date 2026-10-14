@@ -4931,7 +4931,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "장소 참고 이미지 등록 · 대표사진 판단 전",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -4963,6 +4963,23 @@
           "placeMatch": "confirmed",
           "status": "candidate",
           "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 2.0 출처·저자 표시 및 동일조건 공유 검토 필요."
+        },
+        {
+          "id": "ref-nodeul-island-step-garden-seoulmediahub",
+          "title": "노들섬 계단형 틈새정원·조형 공간",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/09/QJLZkEnibSHLpsSFLqAzhGASakOgWBNQ.jpg",
+          "sourceThumbnail": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/09/QJLZkEnibSHLpsSFLqAzhGASakOgWBNQ.jpg",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2019435",
+          "sourceName": "서울시 미디어허브 · 노들섬 수변문화공간",
+          "creator": "조수봉",
+          "rights": "unknown",
+          "rightsLabel": "재사용 권리 미확인 · 사진 저작자·공공누리/이용 조건 별도 확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "계단형 정원·반복 아치·건축 기하학",
+          "notes": "2026년 서울시 미디어허브의 노들섬 수변문화공간 기사에서 제공한 해당 장소의 계단형 틈새정원 사진. 실제 장소를 보여주는 참고 이미지이며 대표사진 채택과 재사용 권한은 별도 검토합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14T11:55:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -4987,7 +5004,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-14",
       "photoPotentialScore": 83,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -5004,8 +5021,8 @@
         "rationale": "도시 구조물과 강변 여백을 함께 활용해 건축·인물·무대형 이미지를 만들 후보",
         "status": "desk-review"
       },
-      "referenceImageId": "ref-nodeul-island-sunken-plaza-dusk",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageId": "ref-nodeul-island-step-garden-seoulmediahub",
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
       "province": "서울",
       "regionGroup": "seoul"
     },
