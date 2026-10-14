@@ -14,7 +14,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="icons/atlas-mark.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
-<link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"><link rel="stylesheet" href="assets/app.css?v=20261014-34">
+<link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"><link rel="stylesheet" href="assets/app.css?v=20261014-35">
 
 </head>
 <body data-app-view="welcome">
@@ -50,9 +50,9 @@
      <button class="landing-secondary" id="homeMapBtn" type="button">장소 지도 열기 <span>⌖</span></button>
     </div>
     <div class="landing-metrics">
-     <div><b id="homeCountPlaces">42</b><span>등록 장소</span></div>
-     <div><b id="homeCountPhotos">42</b><span>사진 참고 후보</span></div>
-     <div><b>03</b><span>수도권 권역</span></div>
+     <div><b id="homeCountPlaces">36</b><span>활성 장소</span></div>
+     <div><b id="homeCountPhotos">36</b><span>확인된 사진 후보</span></div>
+     <div><b id="homeCountReviewQueue">7</b><span>검토 대기 후보</span></div>
     </div>
    </div>
    <div class="landing-image-caption"><span>01 / SELECTED LOCATION</span><b id="landingHeroCaption">LOCATION ARCHIVE</b></div>
@@ -63,13 +63,20 @@
    <div class="landing-region-shortcuts"><button type="button" data-home-region="">전체</button><button type="button" data-home-region="서울">서울</button><button type="button" data-home-region="경기">경기</button><button type="button" data-home-region="인천">인천</button></div>
   </section>
   <section class="landing-feature-section">
-   <div class="landing-section-head"><div><span class="landing-section-kicker">CURATED FOR PHOTOGRAPHY</span><h2>전체 촬영 장소 <span id="homeFeaturedCount">42</span></h2><p>추천순으로 정렬된 모든 등록 장소입니다. 관광 순위가 아니라 사진의 구도와 공간적 개성을 기준으로 선별했습니다.</p></div><button id="seeAllPlacesBtn" type="button">전체 장소 보기 <span>↗</span></button></div>
+   <div class="landing-section-head"><div><span class="landing-section-kicker">CURATED FOR PHOTOGRAPHY</span><h2>전체 촬영 장소 <span id="homeFeaturedCount">36</span></h2><p>추천순으로 정렬된 모든 등록 장소입니다. 관광 순위가 아니라 사진의 구도와 공간적 개성을 기준으로 선별했습니다.</p></div><button id="seeAllPlacesBtn" type="button">전체 장소 보기 <span>↗</span></button></div>
    <div id="homeFeaturedGrid" class="landing-feature-grid"><div class="landing-empty">장소 사진을 불러오는 중입니다…</div></div>
   </section>
   <section class="home-all-section" id="homeAllLocations">
-   <div class="landing-section-head"><div><span class="landing-section-kicker">FULL LOCATION ARCHIVE</span><h2>전체 촬영 장소 <span id="homeAllPlaceCount">42</span></h2><p>추천 장소 외의 등록 장소도 사진을 보고 바로 열어볼 수 있습니다.</p></div><button id="homeAllPlacesBtn" type="button">전체 목록에서 찾기 <span>↗</span></button></div>
+   <div class="landing-section-head"><div><span class="landing-section-kicker">FULL LOCATION ARCHIVE</span><h2>전체 촬영 장소 <span id="homeAllPlaceCount">36</span></h2><p>추천 장소 외의 등록 장소도 사진을 보고 바로 열어볼 수 있습니다.</p></div><button id="homeAllPlacesBtn" type="button">전체 목록에서 찾기 <span>↗</span></button></div>
    <div class="home-all-controls"><input id="homeAllSearchInput" type="search" class="field" placeholder="전체 장소 이름·지역 검색"><select id="homeAllRegionFilter" class="field" aria-label="전체 장소 지역 필터"><option value="">전국 전체</option><option>서울</option><option>경기</option><option>인천</option></select></div>
    <div id="homeAllPlacesGrid" class="home-all-places-grid"><div class="landing-empty">전체 장소 목록을 불러오는 중입니다…</div></div>
+  </section>
+  <section class="curation-review-section">
+   <details id="curationReviewDetails">
+    <summary><span><b>장소 후보 검토 대기</b><small>사진·장소 일치가 확인되지 않아 일반 추천 목록에서 잠정 보류한 기록</small></span><span class="review-count"><b id="reviewQueueCount">7</b>건 <span>＋</span></span></summary>
+    <p class="review-queue-intro">아래 장소는 삭제하지 않고 별도 보관했습니다. 실제 장소와 일치하는 사진, 예술적·디자인적 구도, 촬영 가능한 범위를 확인한 뒤 활성 장소로 다시 등록합니다. 검토 대기 항목은 활성 장소 수와 랜덤 대표사진에서 제외됩니다.</p>
+    <div id="reviewQueueGrid" class="review-queue-grid"><div class="landing-empty">검토 대기 목록을 불러오는 중입니다…</div></div>
+   </details>
   </section>
   <div class="landing-bottomline"><span>FRAME ATLAS / FIELD NOTES</span><span>NATIONWIDE · KOREA</span></div>
  </section>
@@ -182,6 +189,6 @@
  <dialog id="publishDialog"><h2>카탈로그를 GitHub에 게시</h2><p>이 동작은 장소 목록과 사진 후보 정보를 개발 브랜치의 v2/data/places.json에 커밋합니다. 이미지 파일 자체를 업로드하는 기능은 다음 단계에서 연결합니다.</p><div class="statusbar warn">Fine-grained Personal Access Token을 사용하고, casio8000/FRAME_ATLAS 저장소 하나에만 Contents 읽기/쓰기 권한을 부여하세요. 토큰은 이 입력창에서만 사용하며 브라우저 저장소에 보관하지 않습니다. 신뢰하는 기기에서만 사용하세요.</div><label>GitHub 토큰<input type="password" id="publishToken" autocomplete="off" spellcheck="false" placeholder="github_pat_..." /></label><div id="publishStatus" class="statusbar hidden"></div><div class="toolbar"><button type="button" class="btn" id="cancelPublishBtn">취소</button><button type="button" class="btn primary" id="confirmPublishBtn">게시 시작</button></div></dialog>
  <footer class="footer">FRAME ATLAS 2.0 · Co-created by 지혜의 쉼터 with Claude &amp; Chat GPT · ⓒ 2026<br>2.0 PREVIEW · 장소 조사 · 이미지 검토 · 지도 연결 · 개인 기기 설치를 단계적으로 강화 중입니다.</footer>
 </div>
-<script defer src="assets/app.js?v=20261014-34"></script>
+<script defer src="assets/app.js?v=20261014-35"></script>
 </body>
 </html>
