@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "서울·수도권 기존 33곳 유지 + 전국 확장 1차 후보 8곳 추가. 신규 후보는 대표사진·촬영 허가·현장 조건 검증 전이며 사진 미등록 상태로 구분.",
+  "dataStatus": "서울·수도권 기존 33곳 유지 + 전국 확장 후보 8곳 추가로 총 41곳. F1963·팔복예술공장·국립아시아문화전당은 장소별 사진 참고 후보를 추가했으며, 저작권·대표사진·촬영 허가 검증 전 상태로 보류.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T10:00:00.000Z",
+  "updatedAt": "2026-10-14T12:10:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -4589,9 +4589,26 @@
       "shootingPermission": "상업촬영·장비 사용 가능 여부 사전 확인",
       "parking": "공식 안내 확인 필요",
       "fee": "촬영 목적·공간별 확인 필요",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 저작권·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-f1963-spiral-deck",
+          "title": "F1963 나선형 철망 데크와 산업건축 내부",
+          "imageUrl": "https://cdn.travie.com/news/photo/first/201711/img_20022_4.jpg",
+          "sourceThumbnail": "https://cdn.travie.com/news/photo/first/201711/img_20022_4.jpg",
+          "sourcePageUrl": "https://www.travie.com/news/articleView.html?idxno=20022",
+          "sourceName": "트래비 매거진",
+          "rights": "unknown",
+          "rightsLabel": "사용권 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·산업건축 구조",
+          "notes": "F1963 공간 소개 기사에 게재된 사진 후보입니다. 장소 일치 참고 후보로만 등록했으며 저작권·앱 내 재사용 허가와 상업촬영 가능 여부는 별도 확인 전입니다. 대표사진으로 승인하지 않았습니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.f1963.org/"
       ],
@@ -4608,7 +4625,9 @@
       "priorityLabel": "A · 촬영 탐색 우선",
       "notes": "장소 자체의 산업건축·재생 공간성이 선정 이유이며, 대표사진은 장소 일치와 권리 확인 후 추가해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-f1963-spiral-deck",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "bus-huinnyeoul",
@@ -4774,9 +4793,26 @@
       "shootingPermission": "상업촬영·전시 공간 사용 사전 문의",
       "parking": "공식 안내 확인 필요",
       "fee": "촬영 목적·공간별 확인 필요",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 저작권·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-palbok-courtyard-triple",
+          "title": "팔복예술공장 옛 공장 외관과 마당",
+          "imageUrl": "https://media.triple.guide/triple-cms/c_limit%2Cf_auto%2Ch_2048%2Cw_2048/65b32b57-73e8-488f-8897-d045be109b80.jpeg",
+          "sourceThumbnail": "https://media.triple.guide/triple-cms/c_limit%2Cf_auto%2Ch_2048%2Cw_2048/65b32b57-73e8-488f-8897-d045be109b80.jpeg",
+          "sourcePageUrl": "https://triple.guide/attractions/dc290f92-c67d-4fe0-beb5-b94d5add784c",
+          "sourceName": "트리플 여행정보",
+          "rights": "unknown",
+          "rightsLabel": "사용권 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·산업유산·마당",
+          "notes": "팔복예술공장 장소 페이지에 게재된 외관·마당 사진 후보입니다. 사진이 해당 장소를 보여주는 참고 후보라는 뜻이며 다운로드·재게시 권한은 확인되지 않았습니다. 대표사진 승인은 보류합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.palbokart.kr/"
       ],
@@ -4793,7 +4829,9 @@
       "priorityLabel": "A · 촬영 탐색 우선",
       "notes": "전국 확장 1차 후보. 사진을 대표 이미지로 확정하기 전 실제 장소 일치·이용권·촬영 조건을 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-palbok-courtyard-triple",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "gwangju-acc",
@@ -4838,9 +4876,26 @@
       "shootingPermission": "상업촬영·조명 장비·삼각대 사용 여부 사전 확인",
       "parking": "공식 안내 확인 필요",
       "fee": "촬영 목적·구역별 확인 필요",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 저작권·대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-acc-culture-plaza-kocis",
+          "title": "국립아시아문화전당 아시아문화광장 야간 공간",
+          "imageUrl": "https://www.kocis.go.kr/CONTENTS/BOARD/images/complex-150908-1%281%29.jpg",
+          "sourceThumbnail": "https://www.kocis.go.kr/CONTENTS/BOARD/images/complex-150908-1%281%29.jpg",
+          "sourcePageUrl": "https://www.kocis.go.kr/koreanet/view.do?seq=4475",
+          "sourceName": "KOCIS 코리아넷",
+          "rights": "unknown",
+          "rightsLabel": "사용권 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·현대건축·야간",
+          "notes": "국립아시아문화전당 소개 기사에 게재된 공간 사진 후보입니다. 장소 일치 참고 후보로만 등록하며, 실제 사진 재사용 권리와 촬영 허가는 별도 확인 전입니다. 대표사진으로 자동 승인하지 않았습니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.acc.go.kr/"
       ],
@@ -4857,7 +4912,9 @@
       "priorityLabel": "A · 촬영 탐색 우선",
       "notes": "공공 문화공간의 건축적 선과 레벨 차를 중심으로 선정했습니다. 실내 촬영은 별도 허가를 전제로 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-acc-culture-plaza-kocis",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "gangwon-museum-san",
