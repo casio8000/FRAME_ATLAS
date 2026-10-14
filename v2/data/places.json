@@ -3687,14 +3687,14 @@
           "title": "CJ ENM 스튜디오 센터의 곡선형 진입 건축",
           "imageUrl": "https://img.etoday.co.kr/pto_db/2022/07/20220705161747_1772743_1200_800.jpg",
           "sourceThumbnail": "https://img.etoday.co.kr/pto_db/2022/07/20220705161747_1772743_1200_800.jpg",
-          "sourcePageUrl": "https://cjnews.cj.net/%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%96%A5-k%EC%BD%98%ED%85%90%EC%B8%A0-%EC%A0%9C%EC%9E%91%EC%9D%98-%EC%A4%91%EC%8B%AC%EC%A7%80brcj-enm-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-%EC%84%BC/",
-          "sourceName": "이투데이 · CJ ENM 스튜디오 센터 현장 사진",
+          "sourcePageUrl": "https://www.etoday.co.kr/news/view/2150611",
+          "sourceName": "이투데이 · CJ ENM 스튜디오 센터 외관 보도사진",
           "rights": "unknown",
-          "rightsLabel": "기사 이미지 · 재사용 권한 별도 확인",
+          "rightsLabel": "재사용 권한 미확인 · 원문 출처 유지",
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "곡선 외피·산업건축",
-          "notes": "장소 외관을 보여주는 참고사진입니다. 제작 스테이지 내부를 대표하는 사진으로 간주하지 않습니다.",
+          "notes": "이투데이 기사에 사용된 스튜디오 센터 외관 참고 이미지. 공식 시설 소개 이미지와 구분하며, 이미지 재사용 권한은 별도 확인해야 합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14T00:00:00.000Z"
         }
@@ -3711,6 +3711,10 @@
         {
           "name": "CJ ENM Newsroom",
           "url": "https://cjnews.cj.net/%EA%B8%80%EB%A1%9C%EB%B2%8C%ED%96%A5-k%EC%BD%98%ED%85%90%EC%B8%A0-%EC%A0%9C%EC%9E%91%EC%9D%98-%EC%A4%91%EC%8B%AC%EC%A7%80brcj-enm-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-%EC%84%BC/"
+        },
+        {
+          "name": "이투데이 · CJ ENM 스튜디오 센터 외관 보도사진",
+          "url": "https://www.etoday.co.kr/news/view/2150611"
         }
       ],
       "verification": {
