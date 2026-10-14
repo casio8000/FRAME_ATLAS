@@ -3300,7 +3300,7 @@
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요."
+          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요. 대표 참고사진으로 선택함(2026-10-14): 앞선 VOV World 이미지가 자동 브라우저 검사에서 로드되지 않아 동일 장소의 Wikimedia Commons 후보를 우선 연결했습니다. 공개 사용 시 출처·라이선스 조건을 확인하세요."
         }
       ],
       "sourceRefs": [
@@ -3342,8 +3342,8 @@
         "rationale": "어둠과 컬러 조명, 암석 표면을 활용해 일반 스튜디오와 다른 분위기를 연구할 후보",
         "status": "desk-review"
       },
-      "referenceImageId": "ref-gwangmyeong-cave-lit-rock",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전"
+      "referenceImageId": "legacy-l194-gwangmyeong-cave",
+      "referenceImageStatus": "Wikimedia Commons 현장 사진 후보 · 재사용 조건 확인 필요"
     },
     {
       "id": "gg-goyang-aram",
