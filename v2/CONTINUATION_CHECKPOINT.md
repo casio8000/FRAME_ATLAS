@@ -123,3 +123,16 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Static source checks passed when the changes were authored: `v2/assets/app.js` parses as JavaScript, `v2/data/places.json` parses as JSON, and unique location IDs were checked.
 - **Pending:** run browser smoke tests on desktop/mobile, verify the remote image loads, inspect screenshots and test-results artifacts, then fix failures. Direct iPhone Safari testing remains necessary after automated tests.
 - No deployment change has been made to `main`; the legacy root app and the existing live site remain untouched.
+
+
+## Current development checkpoint — v2.44 (2026-10-14, not deployed)
+
+- Development branch: `FRAME_ATLAS-v2.0-development`. No changes were made to production `main` or the legacy root v5.x app.
+- Catalog: 52 active places and 9 review-only candidates. Active region groups: Seoul 18, Gyeonggi/Incheon Capital Area 20, Gangwon 3, Chungcheong 2, Jeolla 3, Gyeongsang 4, Jeju 2.
+- Newly activated/added records: F1963, LG Arts Center Seoul, LEEUM Museum, K-Film Studio 5 in Paju, SKT TEAM Studios XR/Volume Stage in Seongnam, Hapcheon Image Theme Park, Jeju Glass House/Seopjikoji. Existing Museum SAN was retained once, not duplicated.
+- Confirmed place-matching images can be displayed as location-reference images. Representative/cover selection remains separate (`primaryImageId: null` for newly added records). Image-reuse rights, current operation/access, and commercial shooting/venue permission are separate and may still be unknown.
+- Catalog structural checks: 52 active IDs are unique, each active record has a confirmed reference image candidate, each active record has no automatically approved primary photo, and regional totals sum to 52.
+- HTML counters changed to 52 active places, 52 location-reference images, and 9 review-queue candidates. HTML asset query strings and service-worker cache are set to `20261014-44`.
+- Browser regression test's required-location list now includes the seven new/promoted locations and verifies that the reference image has a source and an explicit rights status.
+- **Still pending:** execute `node tests/v2-browser-smoke.cjs` in a working checkout with Playwright, review all desktop/mobile screenshots and image-load audit, inspect actual GitHub Pages deployment for the development preview, and conduct physical iPhone Safari checks. Do not mark v2.44 fully verified based solely on static source checks.
+- No merge/deployment to `main` has been made. Root v5.x is unchanged.
