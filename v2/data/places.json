@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "서울·수도권 기존 33곳 유지 + 전국 확장 후보 8곳 추가로 총 41곳. F1963·팔복예술공장·국립아시아문화전당은 장소별 사진 참고 후보를 추가했으며, 저작권·대표사진·촬영 허가 검증 전 상태로 보류.",
+  "dataStatus": "기존 서울·수도권 자료 33곳 유지, 전국 확장 후보 8곳 추가로 총 41곳. F1963·팔복예술공장·국립아시아문화전당·대구예술발전소·흰여울문화마을·장생포문화창고에 실제 장소 참고사진 후보를 추가했으나 저작권·대표사진·촬영 허가는 검증 전으로 보류.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T12:10:00.000Z",
+  "updatedAt": "2026-10-14T12:07:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -4670,9 +4670,26 @@
       "shootingPermission": "공공장소라도 상업촬영·장비 사용은 사전 확인",
       "parking": "골목 내 주차 제한 가능 · 외곽 주차 확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리와 대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-huinnyeoul-coastal-walkway-gyg",
+          "title": "흰여울문화마을 해안 보행로와 골목의 레이어",
+          "imageUrl": "https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dcenter%2Cquality%3D60%2Cwidth%3D400%2Cheight%3D265%2Cdpr%3D2/tour_img/d99e7ec6a8315631.jpeg",
+          "sourceThumbnail": "https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dcenter%2Cquality%3D60%2Cwidth%3D400%2Cheight%3D265%2Cdpr%3D2/tour_img/d99e7ec6a8315631.jpeg",
+          "sourcePageUrl": "https://www.getyourguide.com/huinnyeoul-munhwa-maul-l149985/",
+          "sourceName": "GetYourGuide 장소 안내",
+          "rights": "unknown",
+          "rightsLabel": "사용권 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "야외·해안 골목·환경 인물",
+          "notes": "흰여울문화마을 해안 산책로를 보여주는 장소 참고 후보입니다. 보행객이 포함된 여행 참고 사진이며, 촬영 배경 검토용으로만 보관합니다. 이미지 재사용 권리와 촬영 허가는 미확인이고 대표사진 승인은 보류합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.visitbusan.net/"
       ],
@@ -4689,7 +4706,9 @@
       "priorityLabel": "B · 조건 확인 후 탐색",
       "notes": "단순 관광 명소로 추천한 것이 아니라 해안 지형과 골목 원근을 사진적 강점으로 평가했습니다. 주민 생활 공간을 존중하고 촬영 가능 구역을 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-huinnyeoul-coastal-walkway-gyg",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "daegu-artfactory",
@@ -4731,9 +4750,26 @@
       "shootingPermission": "전시·공간별 촬영 및 상업 이용 사전 확인",
       "parking": "현장 확인 필요",
       "fee": "촬영 목적·공간별 확인 필요",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리와 대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-daegu-artfactory-interior-daegutour",
+          "title": "대구예술발전소 실내 전시장과 계단 구조",
+          "imageUrl": "https://tour.daegu.go.kr/resource/photo_upload/3fac1203-b2ff-4b28-bef0-6bb0928d5c1a.jpg",
+          "sourceThumbnail": "https://tour.daegu.go.kr/resource/photo_upload/3fac1203-b2ff-4b28-bef0-6bb0928d5c1a.jpg",
+          "sourcePageUrl": "https://tour.daegu.go.kr/index.do?bbsId=BBS_00184&menu_id=00002964&menu_link=%2Ficms%2Fbbs%2FselectBoardArticle.do&nttId=2608",
+          "sourceName": "대구관광 공식 홈페이지",
+          "rights": "unknown",
+          "rightsLabel": "사용권 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·계단·전시장",
+          "notes": "대구관광 공식 홈페이지의 대구예술발전소 소개 페이지에 실린 실내 사진 후보입니다. 장소가 일치하는 참고 자료로 등록했으며, 이미지 이용 조건과 작품·전시물 촬영 권리는 별도 확인 전입니다. 대표사진 승인은 보류합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.daeguartfactory.kr/"
       ],
@@ -4750,7 +4786,9 @@
       "priorityLabel": "A · 촬영 탐색 우선",
       "notes": "산업건축과 전시 공간의 조형성을 우선 평가했습니다. 현재 개방·촬영 허가 여부는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-daegu-artfactory-interior-daegutour",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     },
     {
       "id": "jeonju-palbok",
@@ -5078,9 +5116,26 @@
       "shootingPermission": "상업촬영 및 장비 사용 사전 확인",
       "parking": "공식 안내 확인 필요",
       "fee": "촬영 목적·공간별 확인 필요",
-      "imageStatus": "미등록",
+      "imageStatus": "참고사진 후보 있음 · 권리와 대표사진 검증 전",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "img-jangsaengpo-mediaart-mk",
+          "title": "장생포문화창고 내부 미디어아트 전시 공간",
+          "imageUrl": "https://pimg.mk.co.kr/news/cms/202407/29/news-p.v1.20240729.c182cbe16c7f4c2abbf69201e375419b_R.jpg",
+          "sourceThumbnail": "https://pimg.mk.co.kr/news/cms/202407/29/news-p.v1.20240729.c182cbe16c7f4c2abbf69201e375419b_R.jpg",
+          "sourcePageUrl": "https://www.mk.co.kr/news/society/11079574",
+          "sourceName": "매일경제",
+          "rights": "unknown",
+          "rightsLabel": "사용권 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·미디어아트·산업건축",
+          "notes": "장생포문화창고의 과거 미디어아트 전시를 촬영한 기사 사진 후보입니다. 전시 콘텐츠는 변경되었을 수 있어 시설의 현재 전시를 보장하지 않습니다. 실제 공간 참고용 후보이며 저작권·재사용 권리와 최신 전시 상태 확인 전입니다. 대표사진 승인은 보류합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14"
+        }
+      ],
       "sourceRefs": [
         "https://www.ulsan.go.kr/"
       ],
@@ -5097,7 +5152,9 @@
       "priorityLabel": "B · 조건 확인 후 탐색",
       "notes": "항만 산업도시와 창고형 공간의 조형성을 기준으로 선정했습니다. 시설 운영·촬영 가능 범위는 별도 확인해야 합니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-14",
+      "referenceImageId": "img-jangsaengpo-mediaart-mk",
+      "referenceImageStatus": "장소 확인 참고 후보 · 재사용 권리 검증 전"
     }
   ],
   "selectionRubric": {
