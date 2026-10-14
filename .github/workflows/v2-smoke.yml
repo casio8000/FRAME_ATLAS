@@ -1,0 +1,59 @@
+name: FRAME ATLAS v2 development smoke test
+
+on:
+  push:
+    branches:
+      - FRAME_ATLAS-v2.0-development
+    paths:
+      - "v2/**"
+      - "tests/v2-browser-smoke.cjs"
+      - ".github/workflows/v2-smoke.yml"
+  pull_request:
+    paths:
+      - "v2/**"
+      - "tests/v2-browser-smoke.cjs"
+      - ".github/workflows/v2-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-smoke:
+    name: Desktop and mobile browser regression
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout development source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Playwright
+        run: |
+          npm init -y
+          npm install --no-save playwright
+
+      - name: Install Chromium and system dependencies
+        run: npx playwright install --with-deps chromium
+
+      - name: Verify JavaScript and data syntax
+        run: |
+          node --check v2/assets/app.js
+          node --check tests/v2-browser-smoke.cjs
+          node -e "const d=require('./v2/data/places.json'); if(d.places.length!==43) throw new Error('Expected 43 places'); if(d.reviewQueue.length!==12) throw new Error('Expected 12 review candidates'); const all=[...d.places,...d.reviewQueue]; const ids=all.map(x=>x.id); if(new Set(ids).size!==ids.length) throw new Error('Duplicate location IDs'); console.log(JSON.stringify({active:d.places.length,reviewQueue:d.reviewQueue.length},null,2));"
+
+      - name: Run desktop/mobile browser smoke test
+        run: node tests/v2-browser-smoke.cjs
+
+      - name: Upload screenshots and image audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: frame-atlas-v2-browser-smoke
+          path: test-results/
+          if-no-files-found: warn
+          retention-days: 14
