@@ -1195,6 +1195,7 @@ $("nextUnphotographedBtn").addEventListener("click",()=>{
 $("exportBtn").addEventListener("click",()=>{if(requireAdminMode())exportCatalog();});
 $("importInput").addEventListener("change",e=>{if(e.target.files&&e.target.files[0]&&requireAdminMode())importCatalog(e.target.files[0]);e.target.value="";});
 $("reloadBtn").addEventListener("click",async()=>{if(!requireAdminMode())return;if(!confirm("이 기기에 저장된 임시 수정사항을 버리고 배포된 기본자료를 다시 읽을까요? 먼저 JSON을 내보내 백업하는 것이 안전합니다."))return;localStorage.removeItem(LOCAL_KEY);await loadBase();});
+function rememberedPublishToken(){try{return localStorage.getItem(PUBLISH_TOKEN_KEY)||"";}catch(_){return "";}}
 function initializePublishTokenPreference(){
  const token=$("publishToken"),remember=$("rememberPublishToken");if(!token||!remember)return;
  try{const saved=localStorage.getItem(PUBLISH_TOKEN_KEY)||"";if(saved){token.value=saved;remember.checked=true;}}catch(_){}
@@ -1202,7 +1203,7 @@ function initializePublishTokenPreference(){
  token.addEventListener("input",savePreference);remember.addEventListener("change",savePreference);
 }
 initializePublishTokenPreference();
-$("publishBtn").addEventListener("click",()=>{if(!requireAdminMode())return;$("publishStatus").classList.add("hidden");$("publishStatus").textContent="";$("publishToken").value=localStorage.getItem(PUBLISH_TOKEN_KEY)||"";$("publishDialog").showModal();});
+$("publishBtn").addEventListener("click",()=>{if(!requireAdminMode())return;$("publishStatus").classList.add("hidden");$("publishStatus").textContent="";$("publishToken").value=rememberedPublishToken();$("publishDialog").showModal();});
 $("cancelPublishBtn").addEventListener("click",()=>{if(!$("rememberPublishToken")?.checked)$("publishToken").value="";$("publishDialog").close();});
 $("confirmPublishBtn").addEventListener("click",()=>{if(requireAdminMode())publishCatalog();});
 async function publishCatalog(){
@@ -1296,7 +1297,7 @@ async function publishCatalog(){
   render();renderLanding();
   status.classList.remove("hidden");
   status.textContent="동기화·게시 완료. 커밋: "+String(result.commit&&result.commit.sha||"성공")+" · 다른 기기의 새 장소와 서로 다른 항목의 수정사항을 병합했습니다."+ (mergeResult.legacy?" 이전 버전의 초안이어서 삭제는 자동 반영하지 않았습니다.":"")+(cleanupFailed.length?" 오래된 사진 파일 "+cleanupFailed.length+"개는 삭제 재시도가 필요합니다.":"")+" PC와 모바일에서 최신 자료를 다시 열면 같은 카탈로그를 볼 수 있습니다.";
-  $("publishToken").value=localStorage.getItem(PUBLISH_TOKEN_KEY)||"";btn.textContent="동기화 완료";
+  $("publishToken").value=rememberedPublishToken();btn.textContent="동기화 완료";
  }catch(e){status.textContent="게시 실패: "+e.message+" · 토큰은 저장하지 않았습니다.";}
  finally{btn.disabled=false;}
 }
