@@ -1020,7 +1020,7 @@ if(mapLinksDialog){const closeMapLinksDialogBtn=$("closeMapLinksDialogBtn");if(c
 const closeInstallDialogBtn=$("closeInstallDialogBtn");
 if(closeInstallDialogBtn)closeInstallDialogBtn.addEventListener("click",()=>installDialog.close());
 if("serviceWorker" in navigator && /^https?:$/.test(window.location.protocol)){
- window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{scope:"./"})
+ window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{scope:"./",updateViaCache:"none"})
   .then(registration=>registration.update())
   .catch(error=>console.warn("FRAME ATLAS 오프라인 셸 등록 실패",error)));
 }
