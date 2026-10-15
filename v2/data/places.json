@@ -4,7 +4,7 @@
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
   "dataStatus": "전국 151곳. 14곳의 신규 장소를 1차 조사 레코드로 등록했습니다. 참고사진은 권리·세부 장소 일치 확인 전 후보이며 촬영 허가는 별도 확인 중.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-16T22:20:00+09:00",
+  "updatedAt": "2026-10-16T22:45:00+09:00",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -15966,16 +15966,53 @@
       "shootingPermission": "대관·외부 촬영의 사전 신청 및 운영기관 허가 필요",
       "parking": "대관 승인 시 주차·장비 하역 위치 확인",
       "fee": "공식 대관 요금표·최신 조건 확인 필요",
-      "imageStatus": "미등록 · 공개 이미지 검색 제공",
+      "imageStatus": "참고사진 후보 2장 · 이용권 미확인",
       "primaryImageId": null,
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-jeonju-film-01",
+          "title": "전주영화종합촬영소 J1 스튜디오 외관",
+          "imageUrl": "https://image.cine21.com/resize/cine21/movie/2025/0723/10_31_50__68803b8683933%5BS1000%2C1000%5D.JPG",
+          "sourceThumbnail": "https://image.cine21.com/resize/cine21/movie/2025/0723/10_31_50__68803b8683933%5BS1000%2C1000%5D.JPG",
+          "sourcePageUrl": "https://cine21.com/news/view/?mag_id=108000",
+          "sourceName": "Cine21",
+          "creator": "Cine21",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "스튜디오 외관",
+          "notes": "전주영화종합촬영소 현장 기사 사진 후보. 장소 식별은 출처 기준이며 사진 재사용 권리는 미확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "ref-jeonju-film-02",
+          "title": "전주영화종합촬영소 실내 스테이지",
+          "imageUrl": "https://cdn.jjan.kr/data2/content/image/2024/12/23/.cache/512/20241223580318.jpg",
+          "sourceThumbnail": "https://cdn.jjan.kr/data2/content/image/2024/12/23/.cache/512/20241223580318.jpg",
+          "sourcePageUrl": "https://www.jjan.kr/article/20241227580010",
+          "sourceName": "전북일보",
+          "creator": "전북일보",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내 스튜디오",
+          "notes": "전주영화종합촬영소 실내 제작공간 기사 사진 후보. 원문과 세부 구역을 확인하고 이미지 재사용 권리는 별도 문의.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
       "sourceRefs": [
         "https://www.jeonjustudio.or.kr/",
         "https://cine21.com/news/view/?mag_id=108000"
       ],
       "verification": {
         "location": "공식·신뢰 출처 1차 확인",
-        "photoMatch": "미확인 · 공개 이미지 검색으로 확인 필요",
+        "photoMatch": "장소 출처 참고사진 후보 2장 · 세부 구역 최종 확인 전",
         "rights": "미확인",
         "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
         "lastCheckedAt": "2026-10-16"
@@ -16010,8 +16047,8 @@
         "rationale": "실내 스테이지와 야외 세트·촬영센터를 조사할 수 있는 전문 제작시설입니다. 시설의 최신 구성과 외부 접근 가능 여부는 운영기관에서 재확인해야 합니다.",
         "status": "desk-review"
       },
-      "referenceImageId": null,
-      "referenceImageStatus": "미등록 · 이미지 검색으로 참고사진 조사 필요"
+      "referenceImageId": "ref-jeonju-film-01",
+      "referenceImageStatus": "대표사진 아님 · 참고사진 후보 · 이용권 검토 전"
     },
     {
       "id": "daejeon-video-special-effects-town",
@@ -16150,7 +16187,7 @@
       "shootingPermission": "시설 대관·상업촬영 사전 신청 및 승인 필요",
       "parking": "운영기관 안내에 따라 확인",
       "fee": "스튜디오 대관 및 특수시설 비용 확인 필요",
-      "imageStatus": "참고사진 후보 연결 · 이용권 미확인",
+      "imageStatus": "참고사진 후보 3장 · 이용권 미확인",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -16170,6 +16207,42 @@
           "notes": "기사 이미지 후보. 사진 재사용 권리 및 현장 구역은 별도 확인.",
           "status": "candidate",
           "createdAt": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "ref-studio-cube-02",
+          "title": "스튜디오 큐브 대형 스튜디오 내부",
+          "imageUrl": "https://img1.yna.co.kr/etc/inner/KR/2017/09/25/AKR20170925149100063_04_i_P4.jpg",
+          "sourceThumbnail": "https://img1.yna.co.kr/etc/inner/KR/2017/09/25/AKR20170925149100063_04_i_P4.jpg",
+          "sourcePageUrl": "https://www.yna.co.kr/view/AKR20170925149100063",
+          "sourceName": "연합뉴스",
+          "creator": "연합뉴스",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "대형 스튜디오 내부",
+          "notes": "스튜디오 큐브 개관 기사 사진 후보. 촬영세트가 설치되던 시기 이미지로 현재 시설상태와 재사용 권리는 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "ref-studio-cube-03",
+          "title": "스튜디오 큐브 외관·출입 동선",
+          "imageUrl": "https://image.cine21.com/resize/cine21/movie/2017/1211/16_46_16__5a2e37c84417%5BH800-%5D.jpg",
+          "sourceThumbnail": "https://image.cine21.com/resize/cine21/movie/2017/1211/16_46_16__5a2e37c84417%5BH800-%5D.jpg",
+          "sourcePageUrl": "https://cine21.com/news/view/?mag_id=88943",
+          "sourceName": "Cine21",
+          "creator": "Cine21",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "건축 외관",
+          "notes": "스튜디오 큐브 시설 소개 기사 사진 후보. 원문 출처 및 재사용 권리 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -16179,7 +16252,7 @@
       ],
       "verification": {
         "location": "공식·신뢰 출처 1차 확인",
-        "photoMatch": "장소 출처 참고사진 후보 · 세부 구역 최종 확인 전",
+        "photoMatch": "장소 출처 참고사진 후보 3장 · 세부 구역 최종 확인 전",
         "rights": "미확인",
         "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
         "lastCheckedAt": "2026-10-16"
