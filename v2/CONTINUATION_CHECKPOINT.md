@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-14 (Korea Standard Time)
+Last updated: 2026-10-15 (Korea Standard Time)
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -9,8 +9,8 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - This checkpoint records the work so a dropped ChatGPT connection does not require restarting the project from the beginning. Code changes are stored in Git commits, not only in the conversation.
 
 ## Current verified UI state
-- The home/featured screen and archive render 34 locations.
-- The latest browser smoke test checks 34/34 images on desktop and the mobile archive, reports no uncaught JavaScript errors, and verifies the mobile archive image frame is landscape 16:9 (336×189 in a 390px viewport).
+- The V2 catalog now holds 136 registered locations across the nationwide archive. The old checkpoint's 34-place figure was stale and has been superseded.
+- The last recorded browser smoke run stopped at a flaky scroll on a changing card; this commit removes that unnecessary scroll before rerunning the whole test. Do not claim end-to-end pass until the next Actions run completes.
 - A floating “맨 위로” control appears after scrolling.
 - A floating “전체 촬영장소로 돌아가기” control is available from a selected place detail.
 - The first screen fits the version header, splash copy and creator credits into a fixed viewport, with nationwide (not Seoul-area-only) wording.
@@ -109,3 +109,15 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Added LEEUM Museum as a high-potential Seoul candidate for architectural scouting, but it remains unpromoted until exact-location photos, filming access and image reuse conditions are verified. Seoul Urban Architecture Exhibition Hall, Seosomun Shrine History Museum and LG Arts Center Seoul remain in the review queue for the same reason.
 
 - Browser smoke test follow-up (v2.41): the active-detail test now checks Museum SAN's source link in the review queue rather than trying to open a deliberately held location from the active archive. The Gwangmyeong Cave reference is switched to its same-location Wikimedia Commons photo after the earlier news-host URL failed the real-browser load audit. The new image remains a candidate with licence attribution still to be checked.
+
+
+## Release 2026-10-15 · legacy 214-place comparison and curated additions
+- Read the prior root catalog `data/places.js`: 214 legacy records. V2 had 133 registered places before this release.
+- A first normalized-name comparison flags many candidates but is not a confirmed omission count; names/aliases and parent/child sublocations still need manual deduplication. Do not bulk-import the remaining records.
+- Added three photographically specific omissions after finding actual place images and supporting source pages:
+  - **삼탄아트마인** (legacy L-025): real mine-industrial structure and exhibition art; Korean Tourism Organization page names 《태양의 후예》, 《유령》, 《스파이》 and 《협상종결자》 as filming titles. Exact scene locations remain unverified.
+  - **오대호아트팩토리** (L-021): actual junk-art sculpture photos from Korea Tourism Organization and location article; selected for unusual sculptures and material texture, not film credits.
+  - **나빌레라문화센터** (L-055): official Naju Cultural Foundation confirms reused former silk factory; actual exterior and interior photos linked from regional culture archive.
+- New total: 136 places. Photo references remain candidates; image reuse rights and commercial-shooting permission are NOT confirmed.
+- Next review priority: SBS Ilsan Production Center current operational/booking status; then compare distinctive large performance spaces from the previous catalog against actual public access and architecture. Avoid generic venues unless they add real photographic value.
+- The new cache build is `20261015-51`. The browser smoke test no longer performs an unstable scroll action on a card being re-rendered.
