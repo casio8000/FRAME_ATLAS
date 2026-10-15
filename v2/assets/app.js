@@ -41,14 +41,19 @@ function bindImageFallbacks(root){
     if((img.getAttribute("src")||"")===attemptedUrl&&!(img.complete&&img.naturalWidth>0))img.dispatchEvent(new Event("error"));
    },delay);
   };
+  let imageLoadObserver=null;
   img.addEventListener("load",()=>{
    clearImageFallbackTimer();
+   if(imageLoadObserver){imageLoadObserver.disconnect();imageLoadObserver=null;}
    const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");
    if(frame)frame.classList.remove("image-loading","image-missing","proxy-loading");
    img.removeAttribute("aria-hidden");
   });
   img.addEventListener("error",()=>{
    clearImageFallbackTimer();
+   if(imageLoadObserver){imageLoadObserver.disconnect();imageLoadObserver=null;}
+   // Once a visible image has failed, make the alternate attempt eager so lazy loading cannot stall the fallback itself.
+   img.loading="eager";
    const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");
    const original=img.dataset.originalImageUrl||"";
    const thumbnail=img.dataset.fallbackThumbnail||"";
@@ -93,7 +98,13 @@ function bindImageFallbacks(root){
   // Cached images can fail before the error listener has finished binding.
   if(img.complete&&img.naturalWidth===0)queueMicrotask(()=>img.dispatchEvent(new Event("error")));
   else if(img.complete&&img.naturalWidth>0){const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");if(frame)frame.classList.remove("image-loading","image-missing","proxy-loading");}
-  else scheduleImageFallbackTimer();
+  else if(img.loading==="lazy"&&"IntersectionObserver" in window){
+   // Do not mark an off-screen native lazy image as broken before the browser attempts to fetch it.
+   imageLoadObserver=new IntersectionObserver((entries,observer)=>{
+    if(entries.some(entry=>entry.isIntersecting)){observer.disconnect();imageLoadObserver=null;scheduleImageFallbackTimer();}
+   },{rootMargin:"600px 0px"});
+   imageLoadObserver.observe(img);
+  }else scheduleImageFallbackTimer();
  });
 }
 function stamp(){return new Date().toISOString();}
