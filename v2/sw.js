@@ -1,6 +1,6 @@
-const BUILD_ID="20261015-67";
+const BUILD_ID="20261016-72";
 const CACHE_NAME="frame-atlas-v2-shell-"+BUILD_ID;
-const CORE_FILES=["./?fa_build="+BUILD_ID,"./index.html?fa_build="+BUILD_ID,"./assets/app.css?v="+BUILD_ID,"./assets/app.js?v="+BUILD_ID,"./data/places.json","./manifest.webmanifest?v="+BUILD_ID,"./icons/atlas-icon-180-20261015-64.png","./icons/atlas-icon-192-20261015-64.png","./icons/atlas-icon-512-20261015-64.png"];
+const CORE_FILES=["./?fa_build="+BUILD_ID,"./index.html?fa_build="+BUILD_ID,"./assets/app.css?v="+BUILD_ID,"./assets/app.js?v="+BUILD_ID,"./data/places.json","./data/art_locations_curated_20261016.json","./manifest.webmanifest?v="+BUILD_ID,"./icons/atlas-icon-180-20261015-64.png","./icons/atlas-icon-192-20261015-64.png","./icons/atlas-icon-512-20261015-64.png"];
 const APP_BASE=new URL("./",self.location.href);
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(CORE_FILES)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",event=>event.waitUntil(
