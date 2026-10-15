@@ -60,7 +60,7 @@ assert.ok(EXPECTED_GROUPS.every(group => activeGroupCounts[group] > 0), "Every o
 
 const requiredPlaces = [
   "nat-museum-san", "nat-cjenm-studio-center", "nat-studio-cube-daejeon", "nat-busan-cinema-center",
-  "nat-busan-film-studio", "nat-daegu-opera-house", "nat-sejong-arts-center", "nat-jeonju-palbok-art-factory",
+  "nat-busan-film-studio", "nat-daegu-opera-house", "nat-sejong-arts-center", "nat-jeonju-palbok-art-factory", "nat-bucheon-art-bunker-b39", "seo-photo-sema", "nat-daegu-art-factory", "seo-magok-culture-hall", "seo-songeun-art-space", "gg-nam-june-paik-art-center", "gg-cica-museum", "seo-amorepacific-museum", "nat-cheongju-dongbu-warehouse",
   "nat-jeonju-film-studios", "nat-suncheon-drama-set", "nat-bonte-museum",
   "nat-jeju-glass-house-seopjikoji", "seo-kbs-arena", "jj-bangju-church"
 ];
@@ -90,9 +90,9 @@ for (const key of EXPECTED_GROUPS) assert.ok(app.includes('key:"' + key + '"'), 
 
 const cache = sw.match(/CACHE_NAME="([^"]+)"/);
 assert.ok(cache, "Service worker cache name is missing");
-const shellVersion = cache[1].match(/(20261014-\d+)$/)?.[1];
+const shellVersion = cache[1].match(/(20\d{6}-\d+)$/)?.[1];
 assert.ok(shellVersion, "Service worker cache name must have a dated version suffix");
-const appVersions = [...html.matchAll(/\?v=(20261014-\d+)/g)].map(match => match[1]);
+const appVersions = [...html.matchAll(/\?v=(20\d{6}-\d+)/g)].map(match => match[1]);
 assert.ok(appVersions.length >= 2, "HTML must version both CSS and JavaScript assets");
 assert.equal(new Set(appVersions).size, 1, "CSS and JS cache versions must match");
 assert.equal(appVersions[0], shellVersion, "HTML asset query version must match service-worker cache version");
