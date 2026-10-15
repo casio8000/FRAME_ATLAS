@@ -4,7 +4,7 @@
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
   "dataStatus": "전국 136곳. 장소 식별이 가능한 참고사진을 연결하고 세부 항목에 출처·장소 일치·재사용 권리 확인 상태를 기록했습니다. 사진 최종 대표 승인과 전문 촬영 허가는 별도 확인 중입니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T16:45:00+09:00",
+  "updatedAt": "2026-10-15T16:50:00+09:00",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -14866,39 +14866,40 @@
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 별도 확인",
+      "imageStatus": "장소 참고사진 연결 · 재사용 권리 미확인",
       "primaryImageId": null,
       "imageCandidates": [
         {
           "id": "ref-aviation-museum-bizhk-2026",
           "createdAt": "2026-10-15T05:10:00.000Z",
-          "title": "국립항공박물관 유리 아트리움과 전시 항공기",
-          "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.bizhankook.com%2Fupload%2Fbk%2Farticle%2F202303%2F25305-60918.jpg&w=900&h=650&fit=inside&output=webp",
-          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.bizhankook.com%2Fupload%2Fbk%2Farticle%2F202303%2F25305-60918.jpg&w=900&h=650&fit=inside&output=webp",
-          "sourcePageUrl": "https://www.bizhankook.com/bk/article/25305",
-          "sourceName": "비즈한국 · 국립항공박물관 소개",
-          "creator": "기사 사진 크레딧 확인 필요",
+          "title": "국립항공박물관의 곡면 유리 파사드와 금속 핀 외관",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/03/EOZjVmGNcmlQesSxPLIzspSHNahoQjvV.jpg",
+          "sourceThumbnail": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/03/EOZjVmGNcmlQesSxPLIzspSHNahoQjvV.jpg",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2013607",
+          "sourceName": "서울특별시 미디어허브 · 내 손안에 서울",
+          "creator": "원문 사진 크레딧 별도 확인 필요",
           "rights": "unknown",
           "rightsStatus": "review-required",
-          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "rightsLabel": "서울시 공식 매체 사진 · 재사용 권리 확인 필요",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "항공기·유리 아트리움·금속 구조",
-          "notes": "국립항공박물관의 아트리움에 전시된 항공기와 유리·철골 천장이 보이는 참고사진. 재사용 권리는 확인 중. 2026-10-15 직접 링크 응답 불안정으로 미리보기 프록시 경로를 사용합니다. 원본 주소는 originalImageUrl에 보관; 출처·저작권 상태는 변경하지 않았습니다.",
+          "viewType": "실외·곡면 유리 파사드·금속 핀·건축",
+          "notes": "서울시 미디어허브의 국립항공박물관 소개 기사에 게시된 실제 박물관 외관 사진으로 교체했습니다. 곡면 유리 파사드, 반복 금속 핀, 터빈을 연상시키는 구조와 전면 광장이 보입니다. 사진은 장소 확인용 참고 후보이며 외부 재사용·상업 이용 권리는 별도 확인해야 합니다.",
           "status": "candidate",
-          "updatedAt": "2026-10-15T06:10:00.000Z",
-          "originalImageUrl": "https://www.bizhankook.com/upload/bk/article/202303/25305-60918.jpg"
+          "updatedAt": "2026-10-15T16:50:00+09:00",
+          "originalImageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/03/EOZjVmGNcmlQesSxPLIzspSHNahoQjvV.jpg"
         }
       ],
       "referenceImageId": "ref-aviation-museum-bizhk-2026",
-      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
+      "referenceImageStatus": "서울시 공식 기사 사진 후보 연결 · 이용권 확인 필요",
       "sourceRefs": [
-        "https://www.aviation.or.kr/"
+        "https://www.aviation.or.kr/",
+        "https://mediahub.seoul.go.kr/archives/2013607"
       ],
       "verification": {
         "location": "공식 또는 장소 출처 기록",
-        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
-        "rights": "미확인 · 재사용 조건 확인 중",
+        "photoMatch": "서울시 공식 매체의 국립항공박물관 외관 사진으로 장소 일치 확인",
+        "rights": "미확인 · 서울시 미디어허브 사진의 재사용 조건 별도 확인",
         "shootingPermission": "현장 촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -14908,8 +14909,8 @@
       "curationQueueStatus": "legacy-214-audit",
       "legacyCatalogId": "L-191",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15T06:10:00.000Z",
-      "notes": "구버전 L-191의 사진가 관점 후보를 이관했습니다. 직접 사진 URL은 아직 확보되지 않아 실제 박물관 사진을 후속 보강 대상으로 기록합니다. 전시물 촬영 규정과 상업촬영 조건은 별도 확인해야 합니다. 2026-10-15 사진 후보 보강: 국립항공박물관 유리 아트리움과 공중 전시 항공기. 출처: 비즈한국 · 국립항공박물관 소개 (https://www.bizhankook.com/bk/article/25305). 국립항공박물관의 아트리움에 전시된 항공기와 유리·철골 천장이 보이는 참고사진. 재사용 권리는 확인 중."
+      "updatedAt": "2026-10-15T16:50:00+09:00",
+      "notes": "구버전 L-191의 사진가 관점 후보를 이관했습니다. 종전 비즈한국 프록시 이미지가 지연/실패하여 서울시 미디어허브의 국립항공박물관 실제 외관 사진으로 교체했습니다. 곡면 유리 파사드와 금속 핀의 선형성이 사진적 근거입니다. 사진 재사용 권리와 전시물·상업촬영 조건은 별도 확인해야 합니다."
     },
     {
       "id": "gangwon-samtan-art-mine",
