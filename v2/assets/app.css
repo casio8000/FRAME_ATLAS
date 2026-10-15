@@ -1117,7 +1117,7 @@ body[data-app-view="welcome"] .admin-mode-toggle{display:inline-flex!important}
 }
 
 
-/* 20261016-70: public image discovery and reference-photo gallery. */
+/* 20261016-71: public image discovery and reference-photo gallery. */
 .public-photo-search{background:linear-gradient(180deg,#f8faf6 0%,#fff 100%);padding:15px;border:1px solid var(--line);border-radius:12px;margin:12px 0}
 .public-photo-search h3{font-size:14px}
 .browse-intro{margin:0 0 10px}
