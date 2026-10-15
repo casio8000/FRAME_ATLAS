@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 장소 참고사진, 대표사진 편집 판단, 재사용 권리와 촬영 허가를 독립 관리",
-  "dataStatus": "전국 권역 확장판. 활성 장소 58곳, 검토 대기 후보 9곳. 장소 일치 사진은 참고 이미지로 표시하고 대표사진 승인 여부, 이미지 재사용 권리, 상업촬영 허가는 별도 상태로 관리합니다.",
+  "dataStatus": "전국 권역 확장판. 활성 장소 67곳, 검토 대기 후보 9곳. 기존 214개 장소 DB에서 예술·건축적 가치와 시각적 고유성이 높은 장소 9곳을 추가; 모든 새 장소는 참고사진만 연결하고 대표사진 승인·이미지 권리·상업촬영 허가는 별도 관리.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-14T11:35:00.000Z",
+  "updatedAt": "2026-10-15T00:00:00.000Z",
   "places": [
     {
       "id": "nat-solol-art-museum",
@@ -179,7 +179,10 @@
         "뮤지엄 산(Museum SAN) 실내 외관",
         "뮤지엄 산(Museum SAN) 촬영 허가"
       ],
-      "aliases": [],
+      "aliases": [
+        "뮤지엄 산",
+        "Museum SAN"
+      ],
       "summary": "자연 지형과 건축·현대미술을 통합한 공간. 석재·콘크리트·수공간·정원의 구도 변화를 기준으로 선정.",
       "address": "강원특별자치도 원주시 지정면 오크밸리2길 260",
       "coordinates": null,
@@ -402,7 +405,9 @@
         "'문경새재 오픈세트' 영화 드라마 촬영 또는 촬영 허가",
         "문경새재 오픈세트 상업촬영 규정"
       ],
-      "aliases": [],
+      "aliases": [
+        "문경새재오픈세트장"
+      ],
       "summary": "궁궐·관아·양반가·주막·민가와 골목을 묶은 대형 야외 시대극 세트. 자연 지형과 전통 목조건축, 돌담·문루·마당의 깊이를 활용해 사극·시대극·레트로 캠페인에 적합한 전문 로케이션 후보.",
       "address": "경상북도 문경시 문경읍 새재로 932",
       "coordinates": null,
@@ -525,7 +530,9 @@
         "부산 영화의전당 공식 사진",
         "부산 영화의전당 촬영 허가 상업 촬영"
       ],
-      "aliases": [],
+      "aliases": [
+        "영화의전당"
+      ],
       "summary": "부산국제영화제의 주요 행사장이자 영화·공연·전시 공간. 초대형 빅루프, 메탈 패널, 야간 LED와 넓은 광장을 이용해 건축적 스케일과 인물 구도를 연구할 후보.",
       "address": "부산광역시 해운대구 수영강변대로 120",
       "coordinates": null,
@@ -926,7 +933,10 @@
         "Dongdaemun Design Plaza architecture detail",
         "DDP fashion editorial shoot"
       ],
-      "aliases": [],
+      "aliases": [
+        "DDP",
+        "동대문디자인플라자 DDP"
+      ],
       "summary": "곡선형 외피와 스케일감 있는 건축면으로 그래픽한 패션 이미지와 실루엣을 만들 후보",
       "address": "서울특별시 중구 을지로 281",
       "coordinates": null,
@@ -1349,7 +1359,9 @@
         "Oil Tank Culture Park Seoul architecture",
         "문화비축기지 패션 화보 촬영"
       ],
-      "aliases": [],
+      "aliases": [
+        "문화비축기지 T4 복합문화공간"
+      ],
       "summary": "폐산업시설의 대형 원형 구조와 거친 재료감, 강한 명암을 활용할 수 있는 에디토리얼 후보",
       "address": "서울특별시 마포구 증산로 87",
       "coordinates": null,
@@ -2285,7 +2297,9 @@
         "Sewoon Sangga architecture photography",
         "세운상가 패션 화보"
       ],
-      "aliases": [],
+      "aliases": [
+        "세운상가"
+      ],
       "summary": "오래된 상업·산업 건축, 난간과 반복되는 수평선으로 도시형 인물화보를 구성할 후보",
       "address": "",
       "coordinates": null,
@@ -2698,7 +2712,9 @@
         "MMCA Gwacheon sculpture garden",
         "국립현대미술관 과천 화보"
       ],
-      "aliases": [],
+      "aliases": [
+        "국립현대미술관 과천"
+      ],
       "summary": "현대 건축과 야외 작품·숲의 스케일을 조합하는 조형적 인물화보 후보",
       "address": "경기도 과천시 광명로 313",
       "coordinates": null,
@@ -2802,7 +2818,9 @@
         "Mimesis Art Museum interior exterior",
         "미메시스 미술관 패션 화보"
       ],
-      "aliases": [],
+      "aliases": [
+        "미메시스 아트 뮤지엄 외부·중정"
+      ],
       "summary": "화이트 곡면과 조각적인 실내외 볼륨을 통해 인물과 건축을 단순한 형태로 구성할 후보",
       "address": "",
       "coordinates": null,
@@ -3012,7 +3030,10 @@
         "Songdo Tri-Bowl architecture photography",
         "트라이보울 패션 화보"
       ],
-      "aliases": [],
+      "aliases": [
+        "송도 트라이볼",
+        "송도 트라이볼 수변 외관"
+      ],
       "summary": "곡면과 부유하는 듯한 하부 구조를 이용해 미래적이고 조형적인 프레임을 만들 후보",
       "address": "",
       "coordinates": null,
@@ -4058,7 +4079,11 @@
         "국립아시아문화전당(ACC) 실내 외관",
         "국립아시아문화전당(ACC) 촬영 허가"
       ],
-      "aliases": [],
+      "aliases": [
+        "국립아시아문화전당",
+        "ACC",
+        "국립아시아문화전당 문화창조원"
+      ],
       "summary": "대형 현대건축과 공연·전시 기능이 결합된 복합문화시설. 실내와 야외를 오가며 스케일·기하학·인물 비례를 설계할 수 있음.",
       "address": "광주광역시 동구 문화전당로 38",
       "coordinates": null,
@@ -4688,7 +4713,10 @@
         "MMCA Seoul courtyard architecture",
         "국립현대미술관 서울관 패션 화보"
       ],
-      "aliases": [],
+      "aliases": [
+        "국립현대미술관 서울관 일대",
+        "국립현대미술관 서울관"
+      ],
       "summary": "현대 미술관의 낮은 수평선과 중정·벽면을 활용하는 절제된 건축 인물화보 후보",
       "address": "서울특별시 종로구 삼청로 30",
       "coordinates": null,
@@ -5057,7 +5085,9 @@
         "Seoul Museum of Craft Art architecture",
         "서울공예박물관 외관 계단"
       ],
-      "aliases": [],
+      "aliases": [
+        "서울공예박물관 일대"
+      ],
       "summary": "현대적 외벽과 전통 건축 요소가 만나는 대비를 활용할 후보",
       "address": "서울특별시 종로구 율곡로3길 4",
       "coordinates": null,
@@ -5163,7 +5193,9 @@
         "SeMA Nam-Seoul Museum facade",
         "서울시립미술관 남서울관 화보"
       ],
-      "aliases": [],
+      "aliases": [
+        "서울시립 남서울미술관 외관"
+      ],
       "summary": "역사적 석재 외관과 계단·창호를 배경으로 클래식한 인물 이미지를 구성할 후보",
       "address": "서울특별시 관악구 남부순환로 2076",
       "coordinates": null,
@@ -5370,7 +5402,9 @@
         "Incheon Open Port architecture photography",
         "인천 개항장 패션 화보"
       ],
-      "aliases": [],
+      "aliases": [
+        "개항장 근대건축전시관 일대"
+      ],
       "summary": "근대 건축 외벽과 골목을 활용해 유럽풍·레트로 에디토리얼 배경을 조사할 후보",
       "address": "인천광역시 제물포구 관동1가 개항장 거리 일대",
       "coordinates": null,
@@ -5806,7 +5840,9 @@
         "순천 드라마촬영장 공식 사진",
         "순천 드라마촬영장 촬영 허가 상업 촬영"
       ],
-      "aliases": [],
+      "aliases": [
+        "순천 드라마촬영장"
+      ],
       "summary": "시대별 생활 공간을 재현한 야외 세트와 상점·골목 파사드가 있는 영화·드라마 촬영 후보. 반복되는 지붕선, 낡은 간판, 골목 깊이를 활용한 레트로·시대극 스타일 촬영을 검토할 수 있습니다.",
       "address": "",
       "coordinates": null,
@@ -6036,7 +6072,9 @@
         "본태박물관 공식 사진",
         "본태박물관 촬영 허가 상업 촬영"
       ],
-      "aliases": [],
+      "aliases": [
+        "본태박물관"
+      ],
       "summary": "안도 다다오의 노출 콘크리트와 빛·물의 조합, 긴 수공간과 직선 동선, 전통 공예·현대미술·야외 조각공원이 결합된 건축 촬영 후보.",
       "address": "제주특별자치도 서귀포시 안덕면 산록남로762번길 69",
       "coordinates": null,
@@ -6154,7 +6192,10 @@
         "국립현대미술관 청주·문화제조창 공식 사진",
         "국립현대미술관 청주·문화제조창 촬영 허가 상업 촬영"
       ],
-      "aliases": [],
+      "aliases": [
+        "국립현대미술관 청주",
+        "문화제조창"
+      ],
       "summary": "옛 담배공장 산업시설을 문화·미술 공간으로 전환한 장소. 반복 창호와 노출 구조, 넓은 전면 광장과 산업 건축의 재료감을 건축·패션 에디토리얼 관점에서 살펴볼 후보.",
       "address": "충청북도 청주시 청원구 상당로 314",
       "coordinates": null,
@@ -6489,7 +6530,10 @@
         "Gyeonggi Museum of Modern Art architecture",
         "경기도미술관 패션 화보"
       ],
-      "aliases": [],
+      "aliases": [
+        "경기도미술관",
+        "경기도미술관 야외 조각공원"
+      ],
       "summary": "현대적 건물 면과 공원의 열린 공간을 배경으로 단정한 상업·인물 이미지를 만들 후보",
       "address": "",
       "coordinates": null,
@@ -6592,7 +6636,9 @@
         "Goyang Aram Nuri architecture photography",
         "고양아람누리 화보 촬영"
       ],
-      "aliases": [],
+      "aliases": [
+        "고양아람누리 야외광장·건축"
+      ],
       "summary": "공연장 외부 구조와 광장을 활용해 대칭·직선형 인물 이미지를 구성할 후보",
       "address": "경기도 고양시 일산동구 중앙로 1286",
       "coordinates": null,
@@ -6695,7 +6741,9 @@
         "Gwangmyeong Cave interior photography",
         "광명동굴 상업 촬영"
       ],
-      "aliases": [],
+      "aliases": [
+        "광명동굴 웜홀광장·산업동굴 구역"
+      ],
       "summary": "어둠과 컬러 조명, 암석 표면을 활용해 일반 스튜디오와 다른 분위기를 연구할 후보",
       "address": "경기도 광명시 가학로85번길 142",
       "coordinates": null,
@@ -6930,7 +6978,9 @@
         "Suwon Hwaseong fortress architecture photography",
         "수원화성 화보 촬영"
       ],
-      "aliases": [],
+      "aliases": [
+        "수원화성 방화수류정·용연 주변"
+      ],
       "summary": "성문·여장·돌·흙의 재료감과 길게 이어지는 성곽선을 활용할 후보",
       "address": "",
       "coordinates": null,
@@ -7156,7 +7206,9 @@
         "Incheon Baedari book alley photography",
         "배다리 빈티지 화보"
       ],
-      "aliases": [],
+      "aliases": [
+        "배다리 헌책방골목"
+      ],
       "summary": "낡은 간판·책방 창·좁은 도로의 정서를 이용해 문학적이고 서사적인 인물 이미지를 만들 후보",
       "address": "",
       "coordinates": null,
@@ -7598,7 +7650,1241 @@
         "lastCheckedAt": "2026-10-14"
       },
       "selectionStatus": "1차 조사 후보 · 전시·산업건축 촬영 적합성 및 허가 확인 필요",
-      "notes": "전주시 관광 안내는 1979년부터 카세트테이프를 생산하던 공장이 문화예술 공간으로 재생된 이력을 소개합니다. 원본 자료의 이미지 이용 조건을 준수하고, 영리 촬영 전 운영기관에 문의해야 합니다."
+      "notes": "전주시 관광 안내는 1979년부터 카세트테이프를 생산하던 공장이 문화예술 공간으로 재생된 이력을 소개합니다. 원본 자료의 이미지 이용 조건을 준수하고, 영리 촬영 전 운영기관에 문의해야 합니다.",
+      "aliases": [
+        "팔복예술공장"
+      ]
+    },
+    {
+      "id": "nat-bucheon-art-bunker-b39",
+      "name": "부천아트벙커 B39",
+      "region": "경기 부천",
+      "category": "폐소각장 재생·39m 콘크리트 벙커·산업설비",
+      "spaceTypes": [
+        "산업시설 재생",
+        "대형 콘크리트 벙커",
+        "보존 설비실",
+        "복합문화공간"
+      ],
+      "photoProfile": "폐소각장의 콘크리트 구조·대형 설비·기계실을 보존한 산업재생 공간. 벙커의 수직 스케일, 배관·철골·거친 표면과 컬러 조명의 대비를 산업·다크·뮤직비디오 에디토리얼 후보로 활용할 수 있습니다.",
+      "visualStrengths": [
+        "39m 높이 콘크리트 벙커의 압도적인 수직 스케일",
+        "원형 설비·배관·철골의 강한 산업 텍스처",
+        "빛이 제한된 실내와 컬러 조명 대비",
+        "넓은 다목적홀과 설비 공간의 스케일 차이"
+      ],
+      "bestConcepts": [
+        "다크 패션 에디토리얼",
+        "산업·테크웨어 룩북",
+        "뮤직비디오·광고·브랜드 캠페인",
+        "거친 질감과 인물을 대비하는 콘셉트"
+      ],
+      "constraints": [
+        "상업 촬영은 사전 대관 신청·승인 필요; 무단 촬영 금지",
+        "공간별 개방 구역 및 안전 통제구역 구분",
+        "설비·벽면 접촉, 조명·연막·케이블 설치 가능 여부 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "부천아트벙커 B39 공식 사진",
+        "부천아트벙커 B39 건축 공간",
+        "부천아트벙커 B39 상업촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "폐소각장의 콘크리트 구조·대형 설비·기계실을 보존한 산업재생 공간. 벙커의 수직 스케일, 배관·철골·거친 표면과 컬러 조명의 대비를 산업·다크·뮤직비디오 에디토리얼 후보로 활용할 수 있습니다.",
+      "address": "경기도 부천시 오정구 삼작로 53",
+      "coordinates": null,
+      "officialUrl": "https://artbunkerb39.org/ko/sub/sub04.html",
+      "mapSearchQuery": "부천아트벙커 B39 경기도 부천시 오정구 삼작로 53 경기 부천",
+      "openingStatus": "공식 안내: 화–일 10:00–17:00, 월요일·공휴일 휴관. 프로그램에 따라 변동 가능",
+      "shootingPermission": "개인 쇼핑몰을 포함한 상업촬영은 허가 없는 촬영 금지. 공식 대관 절차 후 승인 필요.",
+      "parking": "공식 안내: 50대 이상 주차 공간, 주차요금 없음. 촬영 장비차량·하차 동선은 별도 확인",
+      "fee": "관람은 무료로 안내되지만 촬영·대관료는 신청 목적·공간별 문의 필요",
+      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
+      "primaryImageId": null,
+      "referenceImageId": "ref-b39-pump-room-20261015",
+      "imageCandidates": [
+        {
+          "id": "ref-b39-pump-room-20261015",
+          "title": "B39 보존 설비실의 펌프·배관·컬러 조명",
+          "imageUrl": "https://cphoto.asiae.co.kr/listimglink/1/2024083012062212589_1724987182.jpg",
+          "sourceThumbnail": "https://cphoto.asiae.co.kr/listimglink/1/2024083012062212589_1724987182.jpg",
+          "sourcePageUrl": "https://cm.asiae.co.kr/en/article/2024083012124283345",
+          "sourceName": "아시아경제 · 부천아트벙커 B39 설비실 소개",
+          "creator": "원저작자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "이미지 저작권·재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내 설비실·펌프·배관·산업 텍스처",
+          "notes": "아시아경제 기사가 B39의 보존 설비실로 소개한 이미지. 장소 참고용이며 저작권·재사용 권리는 별도 확인 대상.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "부천아트벙커 B39 공식 FAQ·상업촬영 규정",
+          "url": "https://artbunkerb39.org/ko/sub/sub04.html"
+        },
+        {
+          "name": "부천시 공식 시설 소개",
+          "url": "https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=172001008"
+        },
+        {
+          "name": "B39 설비실 이미지 출처",
+          "url": "https://cm.asiae.co.kr/en/article/2024083012124283345"
+        }
+      ],
+      "verification": {
+        "location": "공식 운영·방문 정보 또는 공공기관 출처 확인",
+        "photoMatch": "출처 페이지와 장소 일치 확인 · 촬영 대표사진으로는 미선정",
+        "rights": "미확인",
+        "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "scoutingChecklist": [
+        "정확한 촬영 구역·출입 가능 범위 확인",
+        "전문·상업촬영 허가 및 예약/대관 절차 확인",
+        "대표사진의 실제 장소 일치 및 사진 재사용 권리 별도 확인",
+        "삼각대·플래시·조명·영상촬영 장비 규정",
+        "촬영료·보증금·예약 기한·취소 규정",
+        "주차·장비 차량 하차·장비 반입 동선",
+        "전원·대기·분장·탈의 공간 및 화장실 확인",
+        "관람객 동선·소음·안전·원상복구 조건 확인"
+      ],
+      "notes": "구 소각장 설비를 살린 강한 산업미학의 장소. 공식 안내에서 영화·광고 등 상업촬영 공간 운영을 확인했으며, 관람 가능 구역과 촬영 승인은 분리해야 합니다.",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "photoPotentialScore": 92,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 18,
+        "lightAndTexture": 20,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 현장답사·허가·권리 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "폐소각장의 콘크리트 구조·대형 설비·기계실을 보존한 산업재생 공간. 벙커의 수직 스케일, 배관·철골·거친 표면과 컬러 조명의 대비를 산업·다크·뮤직비디오 에디토리얼 후보로 활용할 수 있습니다."
+      },
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "shootingDetails": {
+        "parking": "공식 안내: 50대 이상 주차 공간, 주차요금 없음. 촬영 장비차량·하차 동선은 별도 확인",
+        "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
+        "power": "콘센트·조명 전원 사용은 운영자 승인 확인",
+        "equipmentRestrictions": "상업 촬영은 사전 대관 신청·승인 필요; 무단 촬영 금지 · 공간별 개방 구역 및 안전 통제구역 구분 · 설비·벽면 접촉, 조명·연막·케이블 설치 가능 여부 확인",
+        "crewBase": "분장·탈의·스태프 대기 공간 확보 여부 확인",
+        "permitCost": "개인 쇼핑몰을 포함한 상업촬영은 허가 없는 촬영 금지. 공식 대관 절차 후 승인 필요. 촬영 목적·인원·장비별 촬영료·대관료·보증금 확인",
+        "fieldNotes": "구 소각장 설비를 살린 강한 산업미학의 장소. 공식 안내에서 영화·광고 등 상업촬영 공간 운영을 확인했으며, 관람 가능 구역과 촬영 승인은 분리해야 합니다.",
+        "lastFieldCheck": "현장답사 전 · 운영자 확인 필요"
+      },
+      "province": "경기",
+      "regionGroup": "capital",
+      "legacyScout": {
+        "sourceId": "L-020",
+        "sourceVersion": "FRAME ATLAS v5.23 legacy catalog",
+        "migrationStatus": "curated-addition",
+        "priorPhotoStatus": "이전 이미지 권리·장소 일치 상태는 미확정"
+      }
+    },
+    {
+      "id": "seo-photo-sema",
+      "name": "서울시립 사진미술관",
+      "region": "서울 도봉구",
+      "category": "사진 전문 공립미술관·회전 큐브·레이어드 파사드",
+      "spaceTypes": [
+        "사진 전문 미술관",
+        "조형적 외관",
+        "10m 로비",
+        "곡선 콘크리트 공간"
+      ],
+      "photoProfile": "국내 최초 사진 특화 공립미술관으로, 카메라 조리개에서 착안한 비틀린 큐브형 매스와 층층이 쌓인 외벽, 10m 높이 로비가 특징입니다. 사진 매체를 주제로 한 에디토리얼과 건축적 인물사진에 의미가 있는 장소입니다.",
+      "visualStrengths": [
+        "회전한 큐브와 층층이 쌓인 루버 파사드",
+        "시간대에 따라 달라지는 검정·회색 외관",
+        "10m 로비의 수직 스케일",
+        "곡선과 비직각 콘크리트 전시 공간"
+      ],
+      "bestConcepts": [
+        "사진·카메라 관련 브랜드 에디토리얼",
+        "건축적 인물 포트레이트",
+        "미니멀 패션·테크웨어",
+        "외관을 활용한 그래픽·기하학적 구도"
+      ],
+      "constraints": [
+        "관람 스냅과 전문·상업 촬영을 구분해 담당 부서와 사전 협의",
+        "전시 작품 촬영·플래시·삼각대·영상 촬영 규정 확인",
+        "로비·전시실·포토라이브러리의 운영 및 촬영 조건 구분"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "서울시립 사진미술관 공식 사진",
+        "서울시립 사진미술관 건축 공간",
+        "서울시립 사진미술관 상업촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "국내 최초 사진 특화 공립미술관으로, 카메라 조리개에서 착안한 비틀린 큐브형 매스와 층층이 쌓인 외벽, 10m 높이 로비가 특징입니다. 사진 매체를 주제로 한 에디토리얼과 건축적 인물사진에 의미가 있는 장소입니다.",
+      "address": "서울특별시 도봉구 마들로13길 68",
+      "coordinates": null,
+      "officialUrl": "https://sema.seoul.go.kr/kr/visit/photosema",
+      "mapSearchQuery": "서울시립 사진미술관 서울특별시 도봉구 마들로13길 68 서울 도봉구",
+      "openingStatus": "공식 안내: 화–금 10:00–20:00, 토·일·공휴일은 계절별 운영시간, 매주 월요일·1월 1일 휴관. 전시 일정 재확인",
+      "shootingPermission": "전문·상업촬영 허가 여부, 작품 촬영 및 조명·삼각대 규정은 별도 확인. 일반 관람 공개가 상업촬영 승인을 뜻하지 않음.",
+      "parking": "주차와 장비 하차 가능 구역을 미술관 공식 방문 안내로 확인",
+      "fee": "일반 입장은 무료로 안내되나 촬영 허가·대관료는 별도 확인",
+      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
+      "primaryImageId": null,
+      "referenceImageId": "ref-photo-sema-exterior-20261015",
+      "imageCandidates": [
+        {
+          "id": "ref-photo-sema-exterior-20261015",
+          "title": "서울시립 사진미술관의 카메라 조리개 모티브 파사드",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/02/CNQLnMdQdXUinFgOWVSnkeVCcZIZXIhU.jpg",
+          "sourceThumbnail": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/02/CNQLnMdQdXUinFgOWVSnkeVCcZIZXIhU.jpg",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2017210",
+          "sourceName": "서울시 공식 미디어허브 · 사진미술관 외관",
+          "creator": "원저작자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "이미지 저작권·재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "외관·레이어드 파사드·조형적 입구",
+          "notes": "서울시 미디어허브가 사진미술관 외관으로 소개한 이미지. 장소 참고용이며 사진 재사용 권리는 별도 확인 대상.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "서울시립 사진미술관 공식 방문·건축 안내",
+          "url": "https://sema.seoul.go.kr/kr/visit/photosema"
+        },
+        {
+          "name": "서울시 공식 미디어허브 사진미술관 외관",
+          "url": "https://mediahub.seoul.go.kr/archives/2017210"
+        }
+      ],
+      "verification": {
+        "location": "공식 운영·방문 정보 또는 공공기관 출처 확인",
+        "photoMatch": "출처 페이지와 장소 일치 확인 · 촬영 대표사진으로는 미선정",
+        "rights": "미확인",
+        "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "scoutingChecklist": [
+        "정확한 촬영 구역·출입 가능 범위 확인",
+        "전문·상업촬영 허가 및 예약/대관 절차 확인",
+        "대표사진의 실제 장소 일치 및 사진 재사용 권리 별도 확인",
+        "삼각대·플래시·조명·영상촬영 장비 규정",
+        "촬영료·보증금·예약 기한·취소 규정",
+        "주차·장비 차량 하차·장비 반입 동선",
+        "전원·대기·분장·탈의 공간 및 화장실 확인",
+        "관람객 동선·소음·안전·원상복구 조건 확인"
+      ],
+      "notes": "사진가를 위한 사진 특화 공립미술관이므로 주제 적합성이 높습니다. 공개 방문 정보와 전문 촬영 허가는 별도 상태로 관리합니다.",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "photoPotentialScore": 92,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 19,
+        "lightAndTexture": 19,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 현장답사·허가·권리 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "국내 최초 사진 특화 공립미술관으로, 카메라 조리개에서 착안한 비틀린 큐브형 매스와 층층이 쌓인 외벽, 10m 높이 로비가 특징입니다. 사진 매체를 주제로 한 에디토리얼과 건축적 인물사진에 의미가 있는 장소입니다."
+      },
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "shootingDetails": {
+        "parking": "주차와 장비 하차 가능 구역을 미술관 공식 방문 안내로 확인",
+        "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
+        "power": "콘센트·조명 전원 사용은 운영자 승인 확인",
+        "equipmentRestrictions": "관람 스냅과 전문·상업 촬영을 구분해 담당 부서와 사전 협의 · 전시 작품 촬영·플래시·삼각대·영상 촬영 규정 확인 · 로비·전시실·포토라이브러리의 운영 및 촬영 조건 구분",
+        "crewBase": "분장·탈의·스태프 대기 공간 확보 여부 확인",
+        "permitCost": "전문·상업촬영 허가 여부, 작품 촬영 및 조명·삼각대 규정은 별도 확인. 일반 관람 공개가 상업촬영 승인을 뜻하지 않음. 촬영 목적·인원·장비별 촬영료·대관료·보증금 확인",
+        "fieldNotes": "사진가를 위한 사진 특화 공립미술관이므로 주제 적합성이 높습니다. 공개 방문 정보와 전문 촬영 허가는 별도 상태로 관리합니다.",
+        "lastFieldCheck": "현장답사 전 · 운영자 확인 필요"
+      },
+      "province": "서울",
+      "regionGroup": "seoul",
+      "legacyScout": {
+        "sourceId": "L-188",
+        "sourceVersion": "FRAME ATLAS v5.23 legacy catalog",
+        "migrationStatus": "curated-addition",
+        "priorPhotoStatus": "이전 이미지 권리·장소 일치 상태는 미확정"
+      }
+    },
+    {
+      "id": "nat-daegu-art-factory",
+      "name": "대구예술발전소",
+      "region": "대구 중구",
+      "category": "옛 산업시설 재생·노출 벽돌·금속 계단",
+      "spaceTypes": [
+        "산업시설 재생",
+        "높은 실내홀",
+        "금속 계단",
+        "전시·창작 공간"
+      ],
+      "photoProfile": "옛 산업시설의 벽돌·콘크리트·금속 계단과 넓은 실내홀을 예술창작 공간으로 재생한 장소입니다. 산업적 재료감과 열린 계단, 전시공간의 여백을 활용해 에디토리얼 구도를 만들 수 있습니다.",
+      "visualStrengths": [
+        "노출 벽돌과 밝은 콘크리트의 대비",
+        "대형 금속 계단과 사선 구도",
+        "넓은 실내홀의 깊이와 반사 바닥",
+        "전시 설치에 따라 달라지는 공간 레이어"
+      ],
+      "bestConcepts": [
+        "인더스트리얼 패션",
+        "아티스트·뮤지션 프로필",
+        "현대 예술·크리에이터 에디토리얼",
+        "제품·디자인 룩북"
+      ],
+      "constraints": [
+        "레지던시·전시 설치 구역과 일반 개방 공간 구분",
+        "상업촬영·삼각대·조명 장비 허가 확인",
+        "행사·전시와 겹치는 시간에는 촬영 불가 구역이 생길 수 있음"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "대구예술발전소 공식 사진",
+        "대구예술발전소 건축 공간",
+        "대구예술발전소 상업촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "옛 산업시설의 벽돌·콘크리트·금속 계단과 넓은 실내홀을 예술창작 공간으로 재생한 장소입니다. 산업적 재료감과 열린 계단, 전시공간의 여백을 활용해 에디토리얼 구도를 만들 수 있습니다.",
+      "address": "대구광역시 중구 달성로22길 31-12",
+      "coordinates": null,
+      "officialUrl": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=177434",
+      "mapSearchQuery": "대구예술발전소 대구광역시 중구 달성로22길 31-12 대구 중구",
+      "openingStatus": "공식 관광 안내에서 시설·전시 공간 확인. 현재 관람시간·전시 설치일·공간별 개방은 방문 전 재확인",
+      "shootingPermission": "전문·상업촬영 및 창작자 작업공간 사용은 운영 주체에 별도 허가 확인",
+      "parking": "도심 시설이므로 공식 교통·주차 안내와 장비 하차 지점을 확인",
+      "fee": "전시 관람·공간 대관·촬영 비용은 사용 목적과 구역별 문의",
+      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
+      "primaryImageId": null,
+      "referenceImageId": "ref-daegu-art-factory-stair-hall-20261015",
+      "imageCandidates": [
+        {
+          "id": "ref-daegu-art-factory-stair-hall-20261015",
+          "title": "대구예술발전소의 금속 계단과 노출 벽돌 실내홀",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/34/3403234_image2_1.JPG",
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/34/3403234_image2_1.JPG",
+          "sourcePageUrl": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=177434",
+          "sourceName": "한국관광공사 VISITKOREA · 대구예술발전소",
+          "creator": "원저작자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "이미지 저작권·재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내홀·금속 계단·노출 벽돌",
+          "notes": "한국관광공사 VISITKOREA 시설 안내 페이지에서 대구예술발전소 실내로 소개된 사진. 사용 권리는 별도 확인 대상.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "한국관광공사 VISITKOREA 장소 안내",
+          "url": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=177434"
+        },
+        {
+          "name": "대구문화예술진흥원 2026 레지던시 모집 공고",
+          "url": "https://www.dgfca.or.kr/article/NOTICE/detail/12943"
+        }
+      ],
+      "verification": {
+        "location": "공식 운영·방문 정보 또는 공공기관 출처 확인",
+        "photoMatch": "출처 페이지와 장소 일치 확인 · 촬영 대표사진으로는 미선정",
+        "rights": "미확인",
+        "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "scoutingChecklist": [
+        "정확한 촬영 구역·출입 가능 범위 확인",
+        "전문·상업촬영 허가 및 예약/대관 절차 확인",
+        "대표사진의 실제 장소 일치 및 사진 재사용 권리 별도 확인",
+        "삼각대·플래시·조명·영상촬영 장비 규정",
+        "촬영료·보증금·예약 기한·취소 규정",
+        "주차·장비 차량 하차·장비 반입 동선",
+        "전원·대기·분장·탈의 공간 및 화장실 확인",
+        "관람객 동선·소음·안전·원상복구 조건 확인"
+      ],
+      "notes": "옛 산업시설의 높은 실내홀과 계단이 촬영 구도에 강점을 줍니다. 관광 사진이 아니라 구조·텍스처·행사 전환 공간을 중심으로 선별했습니다.",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "photoPotentialScore": 87,
+      "photoScoreBreakdown": {
+        "distinctiveness": 26,
+        "compositionVariety": 17,
+        "lightAndTexture": 19,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 현장답사·허가·권리 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "옛 산업시설의 벽돌·콘크리트·금속 계단과 넓은 실내홀을 예술창작 공간으로 재생한 장소입니다. 산업적 재료감과 열린 계단, 전시공간의 여백을 활용해 에디토리얼 구도를 만들 수 있습니다."
+      },
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "shootingDetails": {
+        "parking": "도심 시설이므로 공식 교통·주차 안내와 장비 하차 지점을 확인",
+        "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
+        "power": "콘센트·조명 전원 사용은 운영자 승인 확인",
+        "equipmentRestrictions": "레지던시·전시 설치 구역과 일반 개방 공간 구분 · 상업촬영·삼각대·조명 장비 허가 확인 · 행사·전시와 겹치는 시간에는 촬영 불가 구역이 생길 수 있음",
+        "crewBase": "분장·탈의·스태프 대기 공간 확보 여부 확인",
+        "permitCost": "전문·상업촬영 및 창작자 작업공간 사용은 운영 주체에 별도 허가 확인 촬영 목적·인원·장비별 촬영료·대관료·보증금 확인",
+        "fieldNotes": "옛 산업시설의 높은 실내홀과 계단이 촬영 구도에 강점을 줍니다. 관광 사진이 아니라 구조·텍스처·행사 전환 공간을 중심으로 선별했습니다.",
+        "lastFieldCheck": "현장답사 전 · 운영자 확인 필요"
+      },
+      "province": "경상",
+      "regionGroup": "gyeongsang",
+      "legacyScout": {
+        "sourceId": "L-058",
+        "sourceVersion": "FRAME ATLAS v5.23 legacy catalog",
+        "migrationStatus": "curated-addition",
+        "priorPhotoStatus": "이전 이미지 권리·장소 일치 상태는 미확정"
+      }
+    },
+    {
+      "id": "seo-magok-culture-hall",
+      "name": "마곡문화관",
+      "region": "서울 강서구",
+      "category": "1928년 목조 배수펌프장·근대 산업유산·수변",
+      "spaceTypes": [
+        "근대 목조건축",
+        "노출 콘크리트 기단",
+        "수변 전시 공간",
+        "창호·목재 구조"
+      ],
+      "photoProfile": "1928년 완공된 옛 양천수리조합 배수펌프장을 재생한 근대 산업유산입니다. 목조 지붕 트러스와 큰 창, 콘크리트 기단, 수변 환경이 결합되어 역사건축·에디토리얼·다큐멘터리 이미지에 적합한 후보입니다.",
+      "visualStrengths": [
+        "오래된 목재 트러스와 대형 창의 반복",
+        "콘크리트 기단과 목조 구조의 재료 대비",
+        "실내 유리 바닥과 펌프장 흔적",
+        "서울식물원 호수원·습지와 연결되는 수변 레이어"
+      ],
+      "bestConcepts": [
+        "근대건축 에디토리얼",
+        "빈티지·서정적 패션 화보",
+        "기록·아카이브 기반 인물사진",
+        "목재·콘크리트의 질감 중심 촬영"
+      ],
+      "constraints": [
+        "전시·투어 운영 및 사전예약 여부 확인",
+        "관람객과 단체 투어 동선을 방해하지 않는 촬영 범위 협의",
+        "상업촬영·조명·삼각대 설치 허가 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "마곡문화관 공식 사진",
+        "마곡문화관 건축 공간",
+        "마곡문화관 상업촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "1928년 완공된 옛 양천수리조합 배수펌프장을 재생한 근대 산업유산입니다. 목조 지붕 트러스와 큰 창, 콘크리트 기단, 수변 환경이 결합되어 역사건축·에디토리얼·다큐멘터리 이미지에 적합한 후보입니다.",
+      "address": "서울특별시 강서구 양천로 282 (서울식물원 내)",
+      "coordinates": null,
+      "officialUrl": "https://botanicpark.seoul.go.kr/",
+      "mapSearchQuery": "마곡문화관 서울특별시 강서구 양천로 282 (서울식물원 내) 서울 강서구",
+      "openingStatus": "서울식물원 내 전시공간으로 운영 공지·투어 예약·휴관일을 방문 전 재확인",
+      "shootingPermission": "공개 전시·투어 공간이더라도 전문·상업촬영은 별도 허가 및 촬영 구역 확인",
+      "parking": "서울시 소개 자료는 주차 공간이 넉넉하지 않아 대중교통 이용을 권장. 장비차량 진입은 사전 확인",
+      "fee": "투어·관람 조건과 별개로 전문촬영료·대관료 문의 필요",
+      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
+      "primaryImageId": null,
+      "referenceImageId": "ref-magok-culture-hall-interior-20261015",
+      "imageCandidates": [
+        {
+          "id": "ref-magok-culture-hall-interior-20261015",
+          "title": "마곡문화관 옛 펌프장 실내의 목재 구조와 창",
+          "imageUrl": "https://img.hani.co.kr/imgdb/resize/2019/0531/155919649815_20190531.JPG",
+          "sourceThumbnail": "https://img.hani.co.kr/imgdb/resize/2019/0531/155919649815_20190531.JPG",
+          "sourcePageUrl": "https://www.seouland.com/arti/culture/culture_general/5189.html",
+          "sourceName": "서울& · 양천수리조합 배수펌프장/마곡문화관 소개",
+          "creator": "원저작자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "이미지 저작권·재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·근대 목조건축·창호·유리 바닥",
+          "notes": "마곡문화관 옛 배수펌프장 실내로 소개된 기사 사진. 저작권·재사용 권리는 별도 확인 대상.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "서울식물원 공식 웹사이트",
+          "url": "https://botanicpark.seoul.go.kr/"
+        },
+        {
+          "name": "서울& · 마곡문화관 옛 펌프장 공간 소개",
+          "url": "https://www.seouland.com/arti/culture/culture_general/5189.html"
+        },
+        {
+          "name": "서울시 미디어허브 · 마곡문화관 역사·운영 소개",
+          "url": "https://mediahub.seoul.go.kr/archives/2004775"
+        }
+      ],
+      "verification": {
+        "location": "공식 운영·방문 정보 또는 공공기관 출처 확인",
+        "photoMatch": "출처 페이지와 장소 일치 확인 · 촬영 대표사진으로는 미선정",
+        "rights": "미확인",
+        "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "scoutingChecklist": [
+        "정확한 촬영 구역·출입 가능 범위 확인",
+        "전문·상업촬영 허가 및 예약/대관 절차 확인",
+        "대표사진의 실제 장소 일치 및 사진 재사용 권리 별도 확인",
+        "삼각대·플래시·조명·영상촬영 장비 규정",
+        "촬영료·보증금·예약 기한·취소 규정",
+        "주차·장비 차량 하차·장비 반입 동선",
+        "전원·대기·분장·탈의 공간 및 화장실 확인",
+        "관람객 동선·소음·안전·원상복구 조건 확인"
+      ],
+      "notes": "서울시 공개 자료가 근대 건축물의 구조와 문화공간 운영을 설명합니다. 조형적 이유는 목조 펌프장과 콘크리트 기단의 대비이며, 전시일·촬영 가능 구역을 재확인해야 합니다.",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "photoPotentialScore": 90,
+      "photoScoreBreakdown": {
+        "distinctiveness": 26,
+        "compositionVariety": 18,
+        "lightAndTexture": 20,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 현장답사·허가·권리 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "1928년 완공된 옛 양천수리조합 배수펌프장을 재생한 근대 산업유산입니다. 목조 지붕 트러스와 큰 창, 콘크리트 기단, 수변 환경이 결합되어 역사건축·에디토리얼·다큐멘터리 이미지에 적합한 후보입니다."
+      },
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "shootingDetails": {
+        "parking": "서울시 소개 자료는 주차 공간이 넉넉하지 않아 대중교통 이용을 권장. 장비차량 진입은 사전 확인",
+        "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
+        "power": "콘센트·조명 전원 사용은 운영자 승인 확인",
+        "equipmentRestrictions": "전시·투어 운영 및 사전예약 여부 확인 · 관람객과 단체 투어 동선을 방해하지 않는 촬영 범위 협의 · 상업촬영·조명·삼각대 설치 허가 확인",
+        "crewBase": "분장·탈의·스태프 대기 공간 확보 여부 확인",
+        "permitCost": "공개 전시·투어 공간이더라도 전문·상업촬영은 별도 허가 및 촬영 구역 확인 촬영 목적·인원·장비별 촬영료·대관료·보증금 확인",
+        "fieldNotes": "서울시 공개 자료가 근대 건축물의 구조와 문화공간 운영을 설명합니다. 조형적 이유는 목조 펌프장과 콘크리트 기단의 대비이며, 전시일·촬영 가능 구역을 재확인해야 합니다.",
+        "lastFieldCheck": "현장답사 전 · 운영자 확인 필요"
+      },
+      "province": "서울",
+      "regionGroup": "seoul",
+      "legacyScout": {
+        "sourceId": "L-189",
+        "sourceVersion": "FRAME ATLAS v5.23 legacy catalog",
+        "migrationStatus": "curated-addition",
+        "priorPhotoStatus": "이전 이미지 권리·장소 일치 상태는 미확정"
+      }
+    },
+    {
+      "id": "seo-songeun-art-space",
+      "name": "송은 아트스페이스",
+      "region": "서울 강남구",
+      "category": "헤르조그 & 드 뫼롱 건축·삼각형 콘크리트 매스·갤러리 보이드",
+      "spaceTypes": [
+        "현대 미술관 건축",
+        "콘크리트 파사드",
+        "내부 보이드·계단",
+        "도심 전시 공간"
+      ],
+      "photoProfile": "헤르조그 & 드 뫼롱이 설계한 삼각형 형태의 콘크리트 건축입니다. 외벽의 패턴과 강한 입면, 내부 보이드·계단·갤러리 공간이 결합되어 건축 패션·조형 인물화보에 적합한 후보입니다.",
+      "visualStrengths": [
+        "삼각형 매스와 제한된 도산대로 측 창",
+        "콘크리트 표면의 솔잎 패턴",
+        "지하 2층부터 지상까지 연결되는 계단·보이드",
+        "거리의 상업건축과 대비되는 묵직한 외관"
+      ],
+      "bestConcepts": [
+        "건축·럭셔리 패션 에디토리얼",
+        "현대 예술가·디자이너 프로필",
+        "콘크리트와 그림자를 활용한 모노크롬 화보",
+        "외관·계단·보이드의 기하학적 구도"
+      ],
+      "constraints": [
+        "갤러리 전시·행사 운영 시간과 폐관일을 확인",
+        "전시 작품·설치물은 별도의 저작권과 촬영 조건 적용",
+        "전문·상업 촬영·조명 장비는 재단과 사전 협의"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "송은 아트스페이스 공식 사진",
+        "송은 아트스페이스 건축 공간",
+        "송은 아트스페이스 상업촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "헤르조그 & 드 뫼롱이 설계한 삼각형 형태의 콘크리트 건축입니다. 외벽의 패턴과 강한 입면, 내부 보이드·계단·갤러리 공간이 결합되어 건축 패션·조형 인물화보에 적합한 후보입니다.",
+      "address": "서울특별시 강남구 도산대로 441",
+      "coordinates": null,
+      "officialUrl": "https://songeun.or.kr/",
+      "mapSearchQuery": "송은 아트스페이스 서울특별시 강남구 도산대로 441 서울 강남구",
+      "openingStatus": "공식 관광 안내 기준 월–토 11:00–18:30, 일요일·공휴일 휴관. 전시별 휴관 공지 재확인",
+      "shootingPermission": "일반 갤러리 관람과 패션·광고·뮤직비디오 촬영을 구분해 운영 재단과 사전 협의",
+      "parking": "도산대로 도심 시설로 주차·장비 하차 위치 별도 확인",
+      "fee": "전문촬영·대관 비용 및 사용 가능 구역은 재단 문의",
+      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
+      "primaryImageId": null,
+      "referenceImageId": "ref-songeun-architecture-entrance-20261015",
+      "imageCandidates": [
+        {
+          "id": "ref-songeun-architecture-entrance-20261015",
+          "title": "송은 아트스페이스 삼각형 콘크리트 매스와 입구",
+          "imageUrl": "https://archello.s3.eu-central-1.amazonaws.com/images/2021/10/08/473cp2106709pri.1633680777.4902.jpg",
+          "sourceThumbnail": "https://archello.s3.eu-central-1.amazonaws.com/images/2021/10/08/473cp2106709pri.1633680777.4902.jpg",
+          "sourcePageUrl": "https://archello.com/news/herzog-de-meuron-complete-their-first-work-in-korea-with-the-opening-of-the-sculptural-songeun-art-space",
+          "sourceName": "Archello · Herzog & de Meuron / SongEun Art Space",
+          "creator": "Archello 제공 이미지 · 원저작자 및 사용 범위 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "이미지 저작권·재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "외관·삼각형 입구·콘크리트 표면",
+          "notes": "송은 아트스페이스 건축으로 소개된 실제 외관 이미지. 장소 참고용이며 사진 권리는 별도 확인 대상.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "송은 공식 홈페이지",
+          "url": "https://songeun.or.kr/"
+        },
+        {
+          "name": "서울 공식 관광정보 · 송은 건축·방문 안내",
+          "url": "https://korean.visitseoul.net/attractions/%EC%86%A1%EC%9D%80%EA%B0%A4%EB%9F%AC%EB%A6%AC/KOP003778"
+        },
+        {
+          "name": "SongEun Art Space 건축 이미지 출처",
+          "url": "https://archello.com/news/herzog-de-meuron-complete-their-first-work-in-korea-with-the-opening-of-the-sculptural-songeun-art-space"
+        }
+      ],
+      "verification": {
+        "location": "공식 운영·방문 정보 또는 공공기관 출처 확인",
+        "photoMatch": "출처 페이지와 장소 일치 확인 · 촬영 대표사진으로는 미선정",
+        "rights": "미확인",
+        "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "scoutingChecklist": [
+        "정확한 촬영 구역·출입 가능 범위 확인",
+        "전문·상업촬영 허가 및 예약/대관 절차 확인",
+        "대표사진의 실제 장소 일치 및 사진 재사용 권리 별도 확인",
+        "삼각대·플래시·조명·영상촬영 장비 규정",
+        "촬영료·보증금·예약 기한·취소 규정",
+        "주차·장비 차량 하차·장비 반입 동선",
+        "전원·대기·분장·탈의 공간 및 화장실 확인",
+        "관람객 동선·소음·안전·원상복구 조건 확인"
+      ],
+      "notes": "관광객 수보다 건축 자체의 고유성이 선정 이유입니다. 서울시 공식 관광정보에 위치·건축·관람정보가 있으며, 전문촬영 허가는 별도 확인해야 합니다.",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "photoPotentialScore": 92,
+      "photoScoreBreakdown": {
+        "distinctiveness": 29,
+        "compositionVariety": 19,
+        "lightAndTexture": 20,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 6
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 현장답사·허가·권리 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "헤르조그 & 드 뫼롱이 설계한 삼각형 형태의 콘크리트 건축입니다. 외벽의 패턴과 강한 입면, 내부 보이드·계단·갤러리 공간이 결합되어 건축 패션·조형 인물화보에 적합한 후보입니다."
+      },
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "shootingDetails": {
+        "parking": "도산대로 도심 시설로 주차·장비 하차 위치 별도 확인",
+        "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
+        "power": "콘센트·조명 전원 사용은 운영자 승인 확인",
+        "equipmentRestrictions": "갤러리 전시·행사 운영 시간과 폐관일을 확인 · 전시 작품·설치물은 별도의 저작권과 촬영 조건 적용 · 전문·상업 촬영·조명 장비는 재단과 사전 협의",
+        "crewBase": "분장·탈의·스태프 대기 공간 확보 여부 확인",
+        "permitCost": "일반 갤러리 관람과 패션·광고·뮤직비디오 촬영을 구분해 운영 재단과 사전 협의 촬영 목적·인원·장비별 촬영료·대관료·보증금 확인",
+        "fieldNotes": "관광객 수보다 건축 자체의 고유성이 선정 이유입니다. 서울시 공식 관광정보에 위치·건축·관람정보가 있으며, 전문촬영 허가는 별도 확인해야 합니다.",
+        "lastFieldCheck": "현장답사 전 · 운영자 확인 필요"
+      },
+      "province": "서울",
+      "regionGroup": "seoul",
+      "legacyScout": {
+        "sourceId": "L-159",
+        "sourceVersion": "FRAME ATLAS v5.23 legacy catalog",
+        "migrationStatus": "curated-addition",
+        "priorPhotoStatus": "이전 이미지 권리·장소 일치 상태는 미확정"
+      }
+    },
+    {
+      "id": "gg-nam-june-paik-art-center",
+      "name": "백남준아트센터",
+      "region": "경기 용인",
+      "category": "유리·금속 파사드·미디어아트 건축·어두운 석재 매스",
+      "spaceTypes": [
+        "현대 미술관 건축",
+        "유리 파사드",
+        "외부 석재 매스",
+        "로비·카페·전시 공간"
+      ],
+      "photoProfile": "유리 상부 매스와 어두운 석재 베이스가 대비되는 현대 미술관입니다. 외관 반사와 각진 볼륨이 조형적이며, 백남준의 미디어아트 관련 정체성을 건축적 이미지로 연결할 수 있습니다.",
+      "visualStrengths": [
+        "반사 유리와 어두운 석재의 재료 대비",
+        "나무와 하늘을 비추는 외벽",
+        "비대칭 건축 볼륨과 입구의 그래픽",
+        "외관·로비·카페 영역의 톤 차이"
+      ],
+      "bestConcepts": [
+        "미디어·디지털 아티스트 프로필",
+        "현대 건축 에디토리얼",
+        "테크웨어·미니멀 패션",
+        "저녁의 반사·인공광 콘셉트"
+      ],
+      "constraints": [
+        "공식 FAQ: 전시실 작품 촬영과 외부·로비·카페 촬영 조건을 구분",
+        "전시실은 일반 관람 사진·영상 규정이 엄격하고 상업촬영은 별도 계획·허가 필요",
+        "플래시·삼각대·영상 촬영·작품 재사용 제한 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "백남준아트센터 공식 사진",
+        "백남준아트센터 건축 공간",
+        "백남준아트센터 상업촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "유리 상부 매스와 어두운 석재 베이스가 대비되는 현대 미술관입니다. 외관 반사와 각진 볼륨이 조형적이며, 백남준의 미디어아트 관련 정체성을 건축적 이미지로 연결할 수 있습니다.",
+      "address": "경기도 용인시 기흥구 백남준로 10",
+      "coordinates": null,
+      "officialUrl": "https://njpart.ggcf.kr/pages/information",
+      "mapSearchQuery": "백남준아트센터 경기도 용인시 기흥구 백남준로 10 경기 용인",
+      "openingStatus": "공식 안내 기준 화–일 10:00–18:00, 월요일 휴관. 전시·행사 공지 재확인",
+      "shootingPermission": "공식 FAQ상 전시실과 외부·로비·카페의 촬영 범위가 다름. 상업촬영은 촬영 계획 제출 및 사전 허가 필요",
+      "parking": "박물관 공식 방문 안내에서 주차·장비차량 출입 확인",
+      "fee": "일반 관람과 촬영·대관 비용은 구분해 담당 부서 문의",
+      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
+      "primaryImageId": null,
+      "referenceImageId": "ref-njpc-exterior-20261015",
+      "imageCandidates": [
+        {
+          "id": "ref-njpc-exterior-20261015",
+          "title": "백남준아트센터 유리 파사드와 어두운 석재 매스",
+          "imageUrl": "https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000058762/e8e45a9233f0454abafca9ef63786678.jpg",
+          "sourceThumbnail": "https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000058762/e8e45a9233f0454abafca9ef63786678.jpg",
+          "sourcePageUrl": "https://www.hyundaimotorgroup.com/ko/news/CONT0000000000169749",
+          "sourceName": "현대자동차그룹 · 백남준아트센터 외관 이미지",
+          "creator": "원저작자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "이미지 저작권·재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "외관·유리 반사·석재 파사드·수목",
+          "notes": "백남준아트센터 건물 외관으로 소개된 이미지. 건물 참고용이며 이미지 재사용 권리는 별도 확인 대상.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "백남준아트센터 공식 방문 안내",
+          "url": "https://njpart.ggcf.kr/pages/information"
+        },
+        {
+          "name": "백남준아트센터 공식 FAQ·촬영 범위",
+          "url": "https://njpart.ggcf.kr/pages/FAQ"
+        },
+        {
+          "name": "백남준아트센터 외관 이미지 출처",
+          "url": "https://www.hyundaimotorgroup.com/ko/news/CONT0000000000169749"
+        }
+      ],
+      "verification": {
+        "location": "공식 운영·방문 정보 또는 공공기관 출처 확인",
+        "photoMatch": "출처 페이지와 장소 일치 확인 · 촬영 대표사진으로는 미선정",
+        "rights": "미확인",
+        "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "scoutingChecklist": [
+        "정확한 촬영 구역·출입 가능 범위 확인",
+        "전문·상업촬영 허가 및 예약/대관 절차 확인",
+        "대표사진의 실제 장소 일치 및 사진 재사용 권리 별도 확인",
+        "삼각대·플래시·조명·영상촬영 장비 규정",
+        "촬영료·보증금·예약 기한·취소 규정",
+        "주차·장비 차량 하차·장비 반입 동선",
+        "전원·대기·분장·탈의 공간 및 화장실 확인",
+        "관람객 동선·소음·안전·원상복구 조건 확인"
+      ],
+      "notes": "기존 214개 데이터의 백남준아트센터를 고유 건축·미디어 공간으로 편입했습니다. 전시실에서 자유 촬영이 가능하다는 의미는 아니며, 구역별 촬영 규정을 명확히 적었습니다.",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "photoPotentialScore": 90,
+      "photoScoreBreakdown": {
+        "distinctiveness": 27,
+        "compositionVariety": 18,
+        "lightAndTexture": 19,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 현장답사·허가·권리 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "유리 상부 매스와 어두운 석재 베이스가 대비되는 현대 미술관입니다. 외관 반사와 각진 볼륨이 조형적이며, 백남준의 미디어아트 관련 정체성을 건축적 이미지로 연결할 수 있습니다."
+      },
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "shootingDetails": {
+        "parking": "박물관 공식 방문 안내에서 주차·장비차량 출입 확인",
+        "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
+        "power": "콘센트·조명 전원 사용은 운영자 승인 확인",
+        "equipmentRestrictions": "공식 FAQ: 전시실 작품 촬영과 외부·로비·카페 촬영 조건을 구분 · 전시실은 일반 관람 사진·영상 규정이 엄격하고 상업촬영은 별도 계획·허가 필요 · 플래시·삼각대·영상 촬영·작품 재사용 제한 확인",
+        "crewBase": "분장·탈의·스태프 대기 공간 확보 여부 확인",
+        "permitCost": "공식 FAQ상 전시실과 외부·로비·카페의 촬영 범위가 다름. 상업촬영은 촬영 계획 제출 및 사전 허가 필요 촬영 목적·인원·장비별 촬영료·대관료·보증금 확인",
+        "fieldNotes": "기존 214개 데이터의 백남준아트센터를 고유 건축·미디어 공간으로 편입했습니다. 전시실에서 자유 촬영이 가능하다는 의미는 아니며, 구역별 촬영 규정을 명확히 적었습니다.",
+        "lastFieldCheck": "현장답사 전 · 운영자 확인 필요"
+      },
+      "province": "경기",
+      "regionGroup": "capital",
+      "legacyScout": {
+        "sourceId": "L-164",
+        "sourceVersion": "FRAME ATLAS v5.23 legacy catalog",
+        "migrationStatus": "curated-addition",
+        "priorPhotoStatus": "이전 이미지 권리·장소 일치 상태는 미확정"
+      }
+    },
+    {
+      "id": "gg-cica-museum",
+      "name": "CICA미술관",
+      "region": "경기 김포",
+      "category": "전원형 현대미술관·창호·미니멀 갤러리",
+      "spaceTypes": [
+        "현대미술 갤러리",
+        "창호가 있는 전시실",
+        "전원형 실내 공간",
+        "야외 접근 공간"
+      ],
+      "photoProfile": "도시형 대형 미술관과 다른 전원형 현대미술관으로, 창으로 들어오는 자연광과 백색 벽·노출 구조·전시 설치의 조합이 특징입니다. 아티스트 프로필과 조용한 현대미술 에디토리얼에 적합한 후보입니다.",
+      "visualStrengths": [
+        "창문광과 백색 전시벽",
+        "전시 설치에 따른 다양한 전경·디테일",
+        "도시 외곽의 차분한 공간감",
+        "콘크리트 바닥과 흰 벽의 명료한 대비"
+      ],
+      "bestConcepts": [
+        "아티스트 포트레이트",
+        "미니멀 패션·주얼리 화보",
+        "현대미술·디자인 에디토리얼",
+        "자연광 중심의 정적인 인물화보"
+      ],
+      "constraints": [
+        "공식 안내: 수–일 10:30–17:30, 월·화 휴관; 설치 기간 휴관 가능",
+        "전시작품 촬영 및 전문·상업촬영 허가 여부 확인",
+        "작가·전시별 저작권 및 조명·삼각대 규정 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "CICA미술관 공식 사진",
+        "CICA미술관 건축 공간",
+        "CICA미술관 상업촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "도시형 대형 미술관과 다른 전원형 현대미술관으로, 창으로 들어오는 자연광과 백색 벽·노출 구조·전시 설치의 조합이 특징입니다. 아티스트 프로필과 조용한 현대미술 에디토리얼에 적합한 후보입니다.",
+      "address": "경기도 김포시 양촌읍 삼도로 196-30",
+      "coordinates": null,
+      "officialUrl": "https://cicamuseum.com/visit/",
+      "mapSearchQuery": "CICA미술관 경기도 김포시 양촌읍 삼도로 196-30 경기 김포",
+      "openingStatus": "공식 안내: 수–일 10:30–17:30, 월·화 휴관. 전시 설치·철수 기간 갤러리 휴관 여부 확인",
+      "shootingPermission": "관람 가능과 전문·상업촬영 승인은 별개. 갤러리 운영자 및 참여 작가/전시별 조건 확인",
+      "parking": "농촌형 입지의 주차·장비 하차 조건을 공식 방문 안내로 확인",
+      "fee": "전시 입장·공간 대관·전문촬영 비용은 운영자 문의",
+      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
+      "primaryImageId": null,
+      "referenceImageId": "ref-cica-gallery-20261015",
+      "imageCandidates": [
+        {
+          "id": "ref-cica-gallery-20261015",
+          "title": "CICA미술관 전시실의 창호광과 조형 설치",
+          "imageUrl": "https://images.squarespace-cdn.com/content/v1/643eb6be6fd55a47aeb758c4/ffb682d3-8ed2-4380-9b09-59a065bfefa5/CICA-1.jpg",
+          "sourceThumbnail": "https://images.squarespace-cdn.com/content/v1/643eb6be6fd55a47aeb758c4/ffb682d3-8ed2-4380-9b09-59a065bfefa5/CICA-1.jpg",
+          "sourcePageUrl": "https://www.dauracampos.com/exhibitions",
+          "sourceName": "Daura Campos · CICA Museum 전시 설치 사진",
+          "creator": "전시 사진 페이지의 작가·촬영자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "이미지 저작권·재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내 전시실·창문광·노출 구조·조형물",
+          "notes": "CICA미술관에서 열린 전시 설치 사진으로 확인되는 참고 이미지. 작품 및 사진 저작권은 재사용 전 확인 필요.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "CICA미술관 공식 방문·운영시간 안내",
+          "url": "https://cicamuseum.com/visit/"
+        },
+        {
+          "name": "CICA 전시 설치 사진 출처",
+          "url": "https://www.dauracampos.com/exhibitions"
+        }
+      ],
+      "verification": {
+        "location": "공식 운영·방문 정보 또는 공공기관 출처 확인",
+        "photoMatch": "출처 페이지와 장소 일치 확인 · 촬영 대표사진으로는 미선정",
+        "rights": "미확인",
+        "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "scoutingChecklist": [
+        "정확한 촬영 구역·출입 가능 범위 확인",
+        "전문·상업촬영 허가 및 예약/대관 절차 확인",
+        "대표사진의 실제 장소 일치 및 사진 재사용 권리 별도 확인",
+        "삼각대·플래시·조명·영상촬영 장비 규정",
+        "촬영료·보증금·예약 기한·취소 규정",
+        "주차·장비 차량 하차·장비 반입 동선",
+        "전원·대기·분장·탈의 공간 및 화장실 확인",
+        "관람객 동선·소음·안전·원상복구 조건 확인"
+      ],
+      "notes": "전원형 공간과 자연광을 활용하는 후보입니다. 전시 설치물과 작품의 촬영 권리를 장소 이용 허가와 별도로 확인합니다.",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "photoPotentialScore": 85,
+      "photoScoreBreakdown": {
+        "distinctiveness": 23,
+        "compositionVariety": 17,
+        "lightAndTexture": 18,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 9
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 현장답사·허가·권리 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "도시형 대형 미술관과 다른 전원형 현대미술관으로, 창으로 들어오는 자연광과 백색 벽·노출 구조·전시 설치의 조합이 특징입니다. 아티스트 프로필과 조용한 현대미술 에디토리얼에 적합한 후보입니다."
+      },
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "shootingDetails": {
+        "parking": "농촌형 입지의 주차·장비 하차 조건을 공식 방문 안내로 확인",
+        "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
+        "power": "콘센트·조명 전원 사용은 운영자 승인 확인",
+        "equipmentRestrictions": "공식 안내: 수–일 10:30–17:30, 월·화 휴관; 설치 기간 휴관 가능 · 전시작품 촬영 및 전문·상업촬영 허가 여부 확인 · 작가·전시별 저작권 및 조명·삼각대 규정 확인",
+        "crewBase": "분장·탈의·스태프 대기 공간 확보 여부 확인",
+        "permitCost": "관람 가능과 전문·상업촬영 승인은 별개. 갤러리 운영자 및 참여 작가/전시별 조건 확인 촬영 목적·인원·장비별 촬영료·대관료·보증금 확인",
+        "fieldNotes": "전원형 공간과 자연광을 활용하는 후보입니다. 전시 설치물과 작품의 촬영 권리를 장소 이용 허가와 별도로 확인합니다.",
+        "lastFieldCheck": "현장답사 전 · 운영자 확인 필요"
+      },
+      "province": "경기",
+      "regionGroup": "capital",
+      "legacyScout": {
+        "sourceId": "L-125",
+        "sourceVersion": "FRAME ATLAS v5.23 legacy catalog",
+        "migrationStatus": "curated-addition",
+        "priorPhotoStatus": "이전 이미지 권리·장소 일치 상태는 미확정"
+      }
+    },
+    {
+      "id": "seo-amorepacific-museum",
+      "name": "아모레퍼시픽미술관",
+      "region": "서울 용산구",
+      "category": "현대 미술관·콘크리트 아트리움·유리 난간·수직 공간",
+      "spaceTypes": [
+        "현대 미술관",
+        "대형 아트리움",
+        "콘크리트 기둥",
+        "유리 난간·에스컬레이터"
+      ],
+      "photoProfile": "데이비드 치퍼필드가 설계한 아모레퍼시픽 본사와 연결된 미술관입니다. 콘크리트 기둥과 유리 난간, 다층 아트리움이 만드는 수직 구도와 자연광이 특징이며, 건축·제품·패션 에디토리얼 후보로 검토할 가치가 있습니다.",
+      "visualStrengths": [
+        "다층 콘크리트 기둥과 넓은 로비",
+        "유리 난간·에스컬레이터가 만드는 선형 구도",
+        "상하층을 연결하는 아트리움의 스케일",
+        "자연광과 콘크리트 색조의 절제된 팔레트"
+      ],
+      "bestConcepts": [
+        "건축·럭셔리 브랜드 에디토리얼",
+        "미니멀 패션·주얼리",
+        "디자인·라이프스타일 캠페인",
+        "수직 공간을 활용한 전신 인물사진"
+      ],
+      "constraints": [
+        "공식 미술관 전시 예약·입장 조건 확인",
+        "미술관 작품 촬영 규정과 건축 공간의 전문촬영 허가 구분",
+        "상업촬영·삼각대·조명·인원 통제는 운영자에 사전 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "아모레퍼시픽미술관 공식 사진",
+        "아모레퍼시픽미술관 건축 공간",
+        "아모레퍼시픽미술관 상업촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "데이비드 치퍼필드가 설계한 아모레퍼시픽 본사와 연결된 미술관입니다. 콘크리트 기둥과 유리 난간, 다층 아트리움이 만드는 수직 구도와 자연광이 특징이며, 건축·제품·패션 에디토리얼 후보로 검토할 가치가 있습니다.",
+      "address": "서울특별시 용산구 한강대로 100",
+      "coordinates": null,
+      "officialUrl": "https://apma.amorepacific.com/",
+      "mapSearchQuery": "아모레퍼시픽미술관 서울특별시 용산구 한강대로 100 서울 용산구",
+      "openingStatus": "공식 안내: 화–일 10:00–18:00, 월요일·1월 1일·설·추석 연휴 휴관. 전시별 예약 확인",
+      "shootingPermission": "전시관람과 상업 촬영을 구분해 공식 담당자에 문의. 공개 관람만으로 화보·광고 촬영을 승인한 것으로 간주하지 않음",
+      "parking": "도심 사옥 시설의 주차·장비 하차·보안 출입 절차 확인",
+      "fee": "전시 예약 조건과 별도로 촬영료·장소 대관 가능 여부 확인",
+      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
+      "primaryImageId": null,
+      "referenceImageId": "ref-apma-atrium-20261015",
+      "imageCandidates": [
+        {
+          "id": "ref-apma-atrium-20261015",
+          "title": "아모레퍼시픽미술관의 다층 아트리움과 원형 안내 데스크",
+          "imageUrl": "https://images.mindtrip.ai/attractions/74cb/1d22/8a30/5835/03b5/89b4/2bcc/8a5f",
+          "sourceThumbnail": "https://images.mindtrip.ai/attractions/74cb/1d22/8a30/5835/03b5/89b4/2bcc/8a5f",
+          "sourcePageUrl": "https://mindtrip.ai/attraction/seoul-south-korea/amorepacific-museum-art/at-WoLELb1t",
+          "sourceName": "Mindtrip · Amorepacific Museum of Art 공간 사진",
+          "creator": "원저작자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "이미지 저작권·재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내 아트리움·콘크리트·유리 난간·수직 구도",
+          "notes": "아모레퍼시픽미술관으로 식별되는 아트리움 참고 이미지. 이미지 재사용 권리와 실제 촬영 가능 범위는 별도 확인 대상.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "아모레퍼시픽미술관 공식 홈페이지·관람 안내",
+          "url": "https://apma.amorepacific.com/"
+        },
+        {
+          "name": "아모레퍼시픽미술관 아트리움 참고 이미지 출처",
+          "url": "https://mindtrip.ai/attraction/seoul-south-korea/amorepacific-museum-art/at-WoLELb1t"
+        }
+      ],
+      "verification": {
+        "location": "공식 운영·방문 정보 또는 공공기관 출처 확인",
+        "photoMatch": "출처 페이지와 장소 일치 확인 · 촬영 대표사진으로는 미선정",
+        "rights": "미확인",
+        "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "scoutingChecklist": [
+        "정확한 촬영 구역·출입 가능 범위 확인",
+        "전문·상업촬영 허가 및 예약/대관 절차 확인",
+        "대표사진의 실제 장소 일치 및 사진 재사용 권리 별도 확인",
+        "삼각대·플래시·조명·영상촬영 장비 규정",
+        "촬영료·보증금·예약 기한·취소 규정",
+        "주차·장비 차량 하차·장비 반입 동선",
+        "전원·대기·분장·탈의 공간 및 화장실 확인",
+        "관람객 동선·소음·안전·원상복구 조건 확인"
+      ],
+      "notes": "기존 목록의 아모레퍼시픽미술관을 수직 아트리움과 콘크리트 구조라는 촬영 가치로 재등록했습니다. 실제 상업 촬영은 별도 허가가 필요합니다.",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "photoPotentialScore": 88,
+      "photoScoreBreakdown": {
+        "distinctiveness": 27,
+        "compositionVariety": 18,
+        "lightAndTexture": 20,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 6
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 현장답사·허가·권리 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "데이비드 치퍼필드가 설계한 아모레퍼시픽 본사와 연결된 미술관입니다. 콘크리트 기둥과 유리 난간, 다층 아트리움이 만드는 수직 구도와 자연광이 특징이며, 건축·제품·패션 에디토리얼 후보로 검토할 가치가 있습니다."
+      },
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "shootingDetails": {
+        "parking": "도심 사옥 시설의 주차·장비 하차·보안 출입 절차 확인",
+        "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
+        "power": "콘센트·조명 전원 사용은 운영자 승인 확인",
+        "equipmentRestrictions": "공식 미술관 전시 예약·입장 조건 확인 · 미술관 작품 촬영 규정과 건축 공간의 전문촬영 허가 구분 · 상업촬영·삼각대·조명·인원 통제는 운영자에 사전 확인",
+        "crewBase": "분장·탈의·스태프 대기 공간 확보 여부 확인",
+        "permitCost": "전시관람과 상업 촬영을 구분해 공식 담당자에 문의. 공개 관람만으로 화보·광고 촬영을 승인한 것으로 간주하지 않음 촬영 목적·인원·장비별 촬영료·대관료·보증금 확인",
+        "fieldNotes": "기존 목록의 아모레퍼시픽미술관을 수직 아트리움과 콘크리트 구조라는 촬영 가치로 재등록했습니다. 실제 상업 촬영은 별도 허가가 필요합니다.",
+        "lastFieldCheck": "현장답사 전 · 운영자 확인 필요"
+      },
+      "province": "서울",
+      "regionGroup": "seoul",
+      "legacyScout": {
+        "sourceId": "L-145",
+        "sourceVersion": "FRAME ATLAS v5.23 legacy catalog",
+        "migrationStatus": "curated-addition",
+        "priorPhotoStatus": "이전 이미지 권리·장소 일치 상태는 미확정"
+      }
+    },
+    {
+      "id": "nat-cheongju-dongbu-warehouse",
+      "name": "청주 동부창고",
+      "region": "충북 청주",
+      "category": "옛 담배공장 창고·산업 재생·높은 목재 트러스",
+      "spaceTypes": [
+        "산업유산 재생",
+        "창고형 실내홀",
+        "카페C·전시 공간",
+        "야외광장"
+      ],
+      "photoProfile": "옛 담배공장 창고를 시민 예술·문화 공간으로 재생한 장소입니다. 높은 목재 트러스와 넓은 바닥, 반복되는 창고 구조와 야외광장이 산업·청춘·빈티지·현대 예술 에디토리얼에 활용될 수 있습니다.",
+      "visualStrengths": [
+        "반복되는 목재 트러스와 대형 실내홀",
+        "창고 특유의 높은 천장·깊이·구조 리듬",
+        "콘크리트 바닥과 목재의 대비",
+        "카페C와 전시 팝업에 따른 색감 변화"
+      ],
+      "bestConcepts": [
+        "산업·빈티지 패션 에디토리얼",
+        "아티스트·밴드 프로필",
+        "생활문화·디자인 룩북",
+        "대형 실내 공간의 그룹 인물 촬영"
+      ],
+      "constraints": [
+        "공간별 운영·대관 시간 상이; 카페C와 타 동을 구분",
+        "공식 대관 절차와 상업촬영 사용 범위 협의",
+        "행사·전시 설치 일정과 조명·삼각대 규정 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "청주 동부창고 공식 사진",
+        "청주 동부창고 건축 공간",
+        "청주 동부창고 상업촬영 허가"
+      ],
+      "aliases": [],
+      "summary": "옛 담배공장 창고를 시민 예술·문화 공간으로 재생한 장소입니다. 높은 목재 트러스와 넓은 바닥, 반복되는 창고 구조와 야외광장이 산업·청춘·빈티지·현대 예술 에디토리얼에 활용될 수 있습니다.",
+      "address": "충청북도 청주시 청원구 상당로 314",
+      "coordinates": null,
+      "officialUrl": "https://www.dbchangko.org/sub.php?code=47",
+      "mapSearchQuery": "청주 동부창고 충청북도 청주시 청원구 상당로 314 충북 청주",
+      "openingStatus": "공식 공간 안내: 카페C는 화–일 10:30–19:00, 월요일·공휴일 휴무. 동별 개방시간·대관 가능시간 확인",
+      "shootingPermission": "공식 대관은 일정 확인·신청·심의·결제 절차. 촬영 및 조명장비 사용은 대관 담당자에게 별도 확인",
+      "parking": "공간별 주차·대형 장비차량·야외광장 하차 위치 확인",
+      "fee": "공식 안내의 대관료는 공간·시간별 차등. 촬영 목적에 맞는 대관 가능 여부와 비용 문의",
+      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
+      "primaryImageId": null,
+      "referenceImageId": "ref-dongbu-warehouse-cafec-20261015",
+      "imageCandidates": [
+        {
+          "id": "ref-dongbu-warehouse-cafec-20261015",
+          "title": "동부창고 카페C의 목재 천장과 팝업 전시 공간",
+          "imageUrl": "https://www.inews365.com/data/photos/20220518/art_16515653121358.jpg",
+          "sourceThumbnail": "https://www.inews365.com/data/photos/20220518/art_16515653121358.jpg",
+          "sourcePageUrl": "https://www.inews365.com/news/article.html?no=713316",
+          "sourceName": "iNews365 · 청주 동부창고 Cafe C 전시",
+          "creator": "원저작자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "이미지 저작권·재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내 창고·목재 천장·팝업 전시",
+          "notes": "동부창고 카페C의 전시 공간으로 소개된 사진. 장소 참고용이며 저작권·재사용 권리는 별도 확인 대상.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "동부창고 공식 공간 소개·대관 안내",
+          "url": "https://www.dbchangko.org/sub.php?code=47"
+        },
+        {
+          "name": "동부창고 Cafe C 이미지 출처",
+          "url": "https://www.inews365.com/news/article.html?no=713316"
+        }
+      ],
+      "verification": {
+        "location": "공식 운영·방문 정보 또는 공공기관 출처 확인",
+        "photoMatch": "출처 페이지와 장소 일치 확인 · 촬영 대표사진으로는 미선정",
+        "rights": "미확인",
+        "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "scoutingChecklist": [
+        "정확한 촬영 구역·출입 가능 범위 확인",
+        "전문·상업촬영 허가 및 예약/대관 절차 확인",
+        "대표사진의 실제 장소 일치 및 사진 재사용 권리 별도 확인",
+        "삼각대·플래시·조명·영상촬영 장비 규정",
+        "촬영료·보증금·예약 기한·취소 규정",
+        "주차·장비 차량 하차·장비 반입 동선",
+        "전원·대기·분장·탈의 공간 및 화장실 확인",
+        "관람객 동선·소음·안전·원상복구 조건 확인"
+      ],
+      "notes": "기존 214개 목록의 동부창고를 추가했습니다. 공식 사이트는 카페C 등 공간별 대관, 시간, 신청 절차를 안내하므로 실제 촬영 공간을 특정해 문의하도록 기록했습니다.",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "photoPotentialScore": 87,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 18,
+        "lightAndTexture": 19,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 현장답사·허가·권리 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "옛 담배공장 창고를 시민 예술·문화 공간으로 재생한 장소입니다. 높은 목재 트러스와 넓은 바닥, 반복되는 창고 구조와 야외광장이 산업·청춘·빈티지·현대 예술 에디토리얼에 활용될 수 있습니다."
+      },
+      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "shootingDetails": {
+        "parking": "공간별 주차·대형 장비차량·야외광장 하차 위치 확인",
+        "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
+        "power": "콘센트·조명 전원 사용은 운영자 승인 확인",
+        "equipmentRestrictions": "공간별 운영·대관 시간 상이; 카페C와 타 동을 구분 · 공식 대관 절차와 상업촬영 사용 범위 협의 · 행사·전시 설치 일정과 조명·삼각대 규정 확인",
+        "crewBase": "분장·탈의·스태프 대기 공간 확보 여부 확인",
+        "permitCost": "공식 대관은 일정 확인·신청·심의·결제 절차. 촬영 및 조명장비 사용은 대관 담당자에게 별도 확인 촬영 목적·인원·장비별 촬영료·대관료·보증금 확인",
+        "fieldNotes": "기존 214개 목록의 동부창고를 추가했습니다. 공식 사이트는 카페C 등 공간별 대관, 시간, 신청 절차를 안내하므로 실제 촬영 공간을 특정해 문의하도록 기록했습니다.",
+        "lastFieldCheck": "현장답사 전 · 운영자 확인 필요"
+      },
+      "province": "충청",
+      "regionGroup": "chungcheong",
+      "legacyScout": {
+        "sourceId": "L-054",
+        "sourceVersion": "FRAME ATLAS v5.23 legacy catalog",
+        "migrationStatus": "curated-addition",
+        "priorPhotoStatus": "이전 이미지 권리·장소 일치 상태는 미확정"
+      }
     }
   ],
   "selectionRubric": {
