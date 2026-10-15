@@ -1140,3 +1140,8 @@ body[data-app-view="welcome"] .admin-mode-toggle{display:inline-flex!important}
 .browse-photo-frame.image-missing::after{content:"미리보기 불가 · 원문 열기";position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:8px;color:var(--muted);font-size:10px;background:#f3f3ef}
 @media(max-width:760px){.browse-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.browse-photo-frame{height:132px}.public-photo-search{padding:12px}.public-photo-search .sourcegrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:390px){.browse-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.browse-photo-frame{height:110px}.browse-photo-caption{padding:7px}.browse-photo-caption b{font-size:10px}}
+
+
+/* 20261016-72: personal multi-device sync controls. */
+.remember-token-option{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;line-height:1.45;margin:10px 0}
+.remember-token-option input[type="checkbox"]{width:18px;min-width:18px;height:18px;margin:0;accent-color:var(--green)}
