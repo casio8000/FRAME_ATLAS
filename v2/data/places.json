@@ -4,7 +4,7 @@
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
   "dataStatus": "전국 136곳. 장소 식별이 가능한 참고사진을 연결하고 세부 항목에 출처·장소 일치·재사용 권리 확인 상태를 기록했습니다. 사진 최종 대표 승인과 전문 촬영 허가는 별도 확인 중입니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T16:50:00+09:00",
+  "updatedAt": "2026-10-15T16:55:00+09:00",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -14872,7 +14872,26 @@
         {
           "id": "ref-aviation-museum-bizhk-2026",
           "createdAt": "2026-10-15T05:10:00.000Z",
-          "title": "국립항공박물관의 곡면 유리 파사드와 금속 핀 외관",
+          "title": "국립항공박물관 곡면 유리 파사드와 금속 핀 구조",
+          "imageUrl": "https://www.haeahn.com/upload/prjctmain/20200803150841688038.jpg",
+          "sourceThumbnail": "https://www.haeahn.com/upload/prjctmain/20200803150841688038.jpg",
+          "sourcePageUrl": "https://www.haeahn.com/ko/project/detail.do?prjctSeq=2668",
+          "sourceName": "해안건축 HAEAHN · 국립항공박물관 프로젝트",
+          "creator": "설계사 프로젝트 사진 · 사진 크레딧 별도 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "설계사 공식 프로젝트 사진 · 재사용 권리 확인 필요",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실외·곡면 유리 파사드·금속 핀·건축",
+          "notes": "국립항공박물관 설계사 해안건축의 공식 프로젝트 페이지에 게재된 실제 박물관 사진으로 교체했습니다. 곡면 유리 파사드와 반복 금속 핀, 내부광이 만드는 수직 리듬이 사진적 근거입니다. 외부 재사용 권리는 별도 확인 대상입니다.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T16:55:00+09:00",
+          "originalImageUrl": "https://www.haeahn.com/upload/prjctmain/20200803150841688038.jpg"
+        },
+        {
+          "id": "ref-aviation-museum-seoul-mediahub-20261015",
+          "title": "국립항공박물관 전면 광장과 곡면 외관",
           "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/03/EOZjVmGNcmlQesSxPLIzspSHNahoQjvV.jpg",
           "sourceThumbnail": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/03/EOZjVmGNcmlQesSxPLIzspSHNahoQjvV.jpg",
           "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2013607",
@@ -14881,25 +14900,24 @@
           "rights": "unknown",
           "rightsStatus": "review-required",
           "rightsLabel": "서울시 공식 매체 사진 · 재사용 권리 확인 필요",
-          "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "실외·곡면 유리 파사드·금속 핀·건축",
-          "notes": "서울시 미디어허브의 국립항공박물관 소개 기사에 게시된 실제 박물관 외관 사진으로 교체했습니다. 곡면 유리 파사드, 반복 금속 핀, 터빈을 연상시키는 구조와 전면 광장이 보입니다. 사진은 장소 확인용 참고 후보이며 외부 재사용·상업 이용 권리는 별도 확인해야 합니다.",
+          "viewType": "실외·유리 파사드·금속 핀·전면 광장",
+          "notes": "서울시 미디어허브의 국립항공박물관 소개 기사에 게시된 실제 외관 사진. 주 후보가 표시되지 않을 때 비교할 대체 참고사진이며, 재사용 권리는 확인 전입니다.",
           "status": "candidate",
-          "updatedAt": "2026-10-15T16:50:00+09:00",
-          "originalImageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/03/EOZjVmGNcmlQesSxPLIzspSHNahoQjvV.jpg"
+          "createdAt": "2026-10-15"
         }
       ],
       "referenceImageId": "ref-aviation-museum-bizhk-2026",
-      "referenceImageStatus": "서울시 공식 기사 사진 후보 연결 · 이용권 확인 필요",
+      "referenceImageStatus": "해안건축 공식 프로젝트 사진 연결 · 이용권 확인 필요",
       "sourceRefs": [
         "https://www.aviation.or.kr/",
-        "https://mediahub.seoul.go.kr/archives/2013607"
+        "https://mediahub.seoul.go.kr/archives/2013607",
+        "https://www.haeahn.com/ko/project/detail.do?prjctSeq=2668"
       ],
       "verification": {
         "location": "공식 또는 장소 출처 기록",
-        "photoMatch": "서울시 공식 매체의 국립항공박물관 외관 사진으로 장소 일치 확인",
-        "rights": "미확인 · 서울시 미디어허브 사진의 재사용 조건 별도 확인",
+        "photoMatch": "해안건축 설계사 공식 프로젝트 페이지 및 서울시 공식 기사 사진으로 장소 일치 확인",
+        "rights": "미확인 · 두 이미지 모두 공개 재사용 조건 별도 확인",
         "shootingPermission": "현장 촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -14909,8 +14927,8 @@
       "curationQueueStatus": "legacy-214-audit",
       "legacyCatalogId": "L-191",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15T16:50:00+09:00",
-      "notes": "구버전 L-191의 사진가 관점 후보를 이관했습니다. 종전 비즈한국 프록시 이미지가 지연/실패하여 서울시 미디어허브의 국립항공박물관 실제 외관 사진으로 교체했습니다. 곡면 유리 파사드와 금속 핀의 선형성이 사진적 근거입니다. 사진 재사용 권리와 전시물·상업촬영 조건은 별도 확인해야 합니다."
+      "updatedAt": "2026-10-15T16:55:00+09:00",
+      "notes": "구버전 L-191에서 이관한 장소. 앞선 외부 이미지가 브라우저 자동 검사에서 일관되게 로드되지 않아, 설계사 해안건축의 공식 프로젝트 이미지로 기본 참고사진을 교체하고 서울시 미디어허브 이미지를 대체 후보로 보존했습니다. 둘 다 실제 장소 사진이며, 재사용 권리와 상업촬영 허가 상태는 별도 확인 대상입니다."
     },
     {
       "id": "gangwon-samtan-art-mine",
