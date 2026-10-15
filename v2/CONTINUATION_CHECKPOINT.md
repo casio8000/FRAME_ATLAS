@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time)
+Last updated: 2026-10-16 (Korea Standard Time) — build 20261016-72
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -183,3 +183,17 @@ Last updated: 2026-10-16 (Korea Standard Time)
 
 - Final image-source enhancement: the Jeonju Film Studio record now has two reference-photo candidates (exterior and sound stage), and Studio Cube has three (exterior/interior candidates). All remain non-primary candidates with unknown reuse rights; no approved primary cover was assigned.
 - Last data count check after these additions: 151 active records, 14 separate reviewQueue items, unique active IDs, and all 14 planned IDs present. Place JSON and detail-gallery data are committed. The latest Pages workflow run should be checked for its final result before claiming public deployment is complete.
+
+
+## 2026-10-16 — 15 curated art/architecture spaces and easier cross-device sync
+
+- Safety branch before this task: `backup/add-art-locations-and-sync-merge-2026-10-16` (pre-task main SHA `f97297685cbfb049aeaae9c1623e0ec14f8a53e5`).
+- Added `v2/data/art_locations_curated_20261016.json`, 15 additional places focused on sculpture, galleries, modern Korean architecture, natural materials, gardens, and Korean/global editorial potential. Thirteen have one or more place-relevant reference photo candidates; none is auto-selected as the primary/cover image.
+- New art/architecture places: Lee Jaehyo Gallery, AYU Space, Eham Campus, KOO House Museum, Art Sonje Center, Arario Museum in Space, Kim Chong Yung Museum, Whanki Museum, SOMA Museum/Olympic Park Sculpture Park, Museum Hanmi Samcheong, Moran Museum, Wooyang Museum, Jeju Kim Tschang-Yeul Museum, Itami Jun Museum, and Kukje Gallery K1-K3.
+- `v2/assets/app.js` now loads the supplemental art dataset by relative URL and appends places that are not already present by ID/name, for 166 places in the app view (core `places.json` currently holds 151 until this supplement is merged by a successful GitHub sync/publish).
+- Added a baseline snapshot key `frameAtlas2PublishedBaseline`. When there is a baseline, publishing now fetches current GitHub content, merges three ways (last-published baseline / current device / latest GitHub), preserves different field changes and different new place IDs, and aborts with a conflict message when the same field was changed differently on both sides.
+- Legacy device drafts with no saved baseline take a conservative path: locally new locations and records that appear newer can be retained, but old deletion state is not used to delete remote records or remote image assets on the first sync. The status and manual explain that deletion must be done again after first sync if needed. JSON backup before first sync is recommended.
+- Added an optional “remember GitHub token on this device” checkbox. When selected, the token is kept in that browser’s localStorage and is not shared to other devices. Do not select this on a shared/public computer; use a repository-limited token.
+- Place entry guidance is simplified: create a useful first draft with place name, region, location/address or map query, short visual profile, and a reference image or image-search terms. More detail is added gradually. The detail gallery emphasizes the source label rather than license-state wording; source/reference records remain in the data.
+- Updated user manual, 200-place roadmap (screen target 166 with nominal remaining +34), and added `v2/PLAN_ARTISTIC_SPACES_2026-10-16.md`.
+- Build keys in `v2/index.html`, JS and CSS are set to `20261016-72`. Must verify the current Pages action for the latest main commit and then open the public page to check 166-place display and cross-device merge flow. Static commit checks are not a substitute for the live browser test.
