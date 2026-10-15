@@ -1,5 +1,5 @@
 /* FRAME ATLAS v5.44: versioned shell plus safe per-device sync and legacy V6 audit. */
-const CACHE_NAME = 'frame-atlas-v5.45-20261015-icon-restore';
+const CACHE_NAME = 'frame-atlas-v5.44-20261015-icon-restore';
 const APP_FILES = ['./', './index.html', './data/places.js', './data/DB_SCHEMA.json', './data/review-workflow.js', './data/backup-merge.js', './data/device-sync.js', './data/legacy-v6-audit.js', './data/image-registry.js', './manifest.json', './assets/icons/icon-180.png', './assets/icons/icon-192.png', './assets/icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
