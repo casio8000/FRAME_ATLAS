@@ -72,3 +72,13 @@ The legacy entry is restored as `nat-nonsan-sunshine-1950-set`, specifically sco
 
 ## Current verification result — 2026-10-15
 On commit `8da40bc5a73fd17a04393de0a8581aeee002ae32`, both [development browser regression](https://github.com/casio8000/FRAME_ATLAS/actions/runs/38667330009) and [catalog quality gate](https://github.com/casio8000/FRAME_ATLAS/actions/runs/38667329986) passed. The validator confirmed 71 active locations and 10 review candidates across seven regions; desktop and mobile rendered all 71 locations, the image audits loaded 71/71 in both layouts, and no JavaScript page errors were reported. Counters/cache were aligned at `71 / 10 / 20261015-54`. No production merge/deployment occurred.
+
+
+## Latest batch — legacy-curated expansion to 90 locations (2026-10-15)
+- Activated 19 additional records from the legacy 214-place scouting list: 정동1928 아트센터, 소대헌·호연재 고택, 장림포구, UN조각공원, 서울시립미술관 서소문본관, 서울시립 북서울미술관, 한국근대문학관, 수원시립미술관 행궁본관, 아르떼뮤지엄 강릉, 이응노미술관, 대전시립미술관, 대구미술관, 울산시립미술관, 솔거미술관, 제주도립미술관, 서울도서관, MBC 드림센터, 헤이리시네마, 현대 모터스튜디오 고양.
+- Catalog is **90 active locations + 10 review-only candidates**. The 19 records retain their legacy IDs so they can be reconciled against the original catalog without recreating the review from scratch.
+- Per the user's clarified rule, each selected place has a representative image whose source identifies the actual location. Copyright/reuse permissions and location-specific commercial shoot permits remain separate detail fields.
+- The browser image audit exposed multiple host URLs that do not load reliably; the source URLs for Daejeon Museum of Art and Nodeul Island were replaced with source-identified alternates. Cache version is `20261015-57`.
+- [Browser regression PASS](https://github.com/casio8000/FRAME_ATLAS/actions/runs/38669996761): PC 90/90 images loaded, mobile 90/90 images loaded, no loading/missing overlays and zero page errors.
+- [Quality gate PASS](https://github.com/casio8000/FRAME_ATLAS/actions/runs/38669996733): JavaScript/data validation, catalog IDs, counts, cache agreement and browser tests passed.
+- These changes are on `FRAME_ATLAS-v2.0-development`; production `main` has not been merged or deployed.
