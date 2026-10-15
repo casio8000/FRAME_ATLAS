@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-15 (Korea Standard Time)
+Last updated: 2026-10-16 (Korea Standard Time)
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -161,7 +161,18 @@ Last updated: 2026-10-15 (Korea Standard Time)
 ## 2026-10-16 · Cross-device data workflow and staged 14-location research
 - Manual updated again: the actual publishing code writes the complete current browser catalog directly to `main/v2/data/places.json`, and uploads eligible selected/approved file photos. Local catalog drafts are stored per-browser; there is no safe field-by-field concurrent merge guarantee. The user manual now explicitly recommends one editing/publishing device (PC by default), JSON backups before/after batches, deployment verification, and refreshing any device with a stale local draft only after exporting it.
 - Added dedicated cross-device workflow instructions to `v2/USER_MANUAL_KO.html`; cache-busted app menu link is `USER_MANUAL_KO.html?v=20261016-69`.
-- Created `v2/PLAN_FIRST_14_CANDIDATES_2026-10-16.md` with 14 new research targets: 7 specialist production/studio facilities plus 7 architecture/art/industrial-space candidates. Each includes a research rationale, source link, and specific access/photo/permission checks. No candidate was added to the active place catalog.
+- The earlier checkpoint created `v2/PLAN_FIRST_14_CANDIDATES_2026-10-16.md` with 14 research targets. The subsequent update below added them as preliminary active records, while retaining explicit caveats about access, permission and image rights.
 - Updated `v2/PLAN_200_PLACES_2026-10-15.md` so 14 new candidates are the first research phase and the 200-place target proceeds in later batches after verification.
-- Current catalog remains 137 places plus 14 reviewQueue entries. Existing reviewQueue is separate and must not be counted as 14 net-new places because some queue entries are linked/merged with existing catalog records.
+- At the earlier checkpoint, the catalog had 137 places plus 14 reviewQueue entries. The later update below adds 14 distinct places; queue entries remain separate and are not counted as new locations.
 - Operational safety recommendation: one editor/publisher at a time. The current client can publish a stale local draft as a full catalog; it does not offer reliable concurrent field-level merge. Future engineering option is remote revision checking, conflict detection, and record-level merge/explicit conflict review before writes.
+
+
+## 2026-10-16 — 14 provisional records and public image browsing
+
+- A safety branch was created before these changes: `backup/phase1-add-14-public-image-search-2026-10-16`.
+- Added 14 distinct first-pass research records to `v2/data/places.json`: BUSAN Cinema Studios, DIMA, Goyang Aqua Studio, Jeonju Film Studios, Daejeon Video Special Effects Town, Studio Cube, K Film Studio Paju, Seoul National University Museum of Art, ARKO Art Center, Jeju Museum of Art, Arario Museum Tapdong Cinema, Korea Traditional Architecture Museum, Chilseong Shipyard, and OAR Museum.
+- Active place count is now 151. `reviewQueue` remains 14 separate items and was not merged with the new additions.
+- These are preliminary scouting records, not final recommendations or proof of visitor/shooting permission. Studio access, current operations, booking, commercial filming terms, and image reuse rights require separate confirmation.
+- Linked place-specific images are reference candidates only; no image was made an approved primary cover. Other new records retain search terms and official source links rather than invented images.
+- The normal detail screen now exposes Google Images, Naver Images, Bing Images and an official source search regardless of administrator mode. A candidate-image gallery lets users browse saved reference images and open each original source. Automatic Openverse/Wikimedia candidate fetching and image administration remain administrator-only.
+- Updated the Korean user manual, app cache build marker to `20261016-70`, the research plan, and the 200-place roadmap. Data and code changes have been committed to GitHub; GitHub Pages deployment and real-browser visual verification still need confirmation.
