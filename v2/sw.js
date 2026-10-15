@@ -1,6 +1,6 @@
-const BUILD_ID="20261015-53";
+const BUILD_ID="20261015-54";
 const CACHE_NAME="frame-atlas-v2-shell-"+BUILD_ID;
-const CORE_FILES=["./?fa_build="+BUILD_ID,"./index.html?fa_build="+BUILD_ID,"./assets/app.css?v="+BUILD_ID,"./assets/app.js?v="+BUILD_ID,"./data/places.json","./manifest.webmanifest","./icons/atlas-mark.svg","./icons/icon-192.png","./icons/icon-180.png"];
+const CORE_FILES=["./?fa_build="+BUILD_ID,"./index.html?fa_build="+BUILD_ID,"./assets/app.css?v="+BUILD_ID,"./assets/app.js?v="+BUILD_ID,"./data/places.json","./manifest.webmanifest?v="+BUILD_ID,"./icons/atlas-mark.svg?v="+BUILD_ID,"./icons/atlas-touch-"+BUILD_ID+".svg","./icons/icon-192.png","./icons/icon-180.png"];
 const APP_BASE=new URL("./",self.location.href);
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(CORE_FILES)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",event=>event.waitUntil(
@@ -20,11 +20,20 @@ self.addEventListener("fetch",event=>{
  const request=event.request;if(request.method!=="GET")return;
  const url=new URL(request.url);if(url.origin!==self.location.origin||!url.pathname.startsWith(APP_BASE.pathname))return;
  if(request.mode==="navigate"){
-  const fresh=new Request(request.url,{method:"GET",headers:request.headers,mode:"same-origin",credentials:"same-origin",cache:"reload",redirect:"follow"});
+  // Always request this deployment's versioned entry page; this avoids a stale unversioned index being reused on first open.
+  const freshUrl=new URL("./index.html?fa_build="+BUILD_ID,APP_BASE);
+  const fresh=new Request(freshUrl.toString(),{method:"GET",headers:request.headers,mode:"same-origin",credentials:"same-origin",cache:"reload",redirect:"follow"});
   event.respondWith(fetch(fresh).then(response=>{
-   if(response&&response.ok&&response.type==="basic"){const copy=response.clone();caches.open(CACHE_NAME).then(cache=>cache.put(request,copy));}
+   if(response&&response.ok&&response.type==="basic"){
+    const copy=response.clone();
+    caches.open(CACHE_NAME).then(async cache=>{
+     await cache.put(request,copy.clone());
+     await cache.put(new URL("./index.html",APP_BASE).toString(),copy.clone());
+     await cache.put(new URL("./",APP_BASE).toString(),copy.clone());
+    });
+   }
    return response;
-  }).catch(async()=> (await caches.match(request))||(await caches.match("./index.html"))||Response.error()));
+  }).catch(async()=> (await caches.match(request))||(await caches.match("./index.html?fa_build="+BUILD_ID))||(await caches.match("./index.html"))||Response.error()));
   return;
  }
  if(url.pathname.endsWith("/data/places.json")){
