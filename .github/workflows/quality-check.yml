@@ -3,8 +3,32 @@ name: FRAME ATLAS quality checks
 on:
   push:
     branches: [main]
+    paths:
+      - "index.html"
+      - "data/**"
+      - "sw.js"
+      - "manifest.json"
+      - "v2/index.html"
+      - "v2/assets/**"
+      - "v2/data/**"
+      - "v2/sw.js"
+      - "v2/manifest.webmanifest"
+      - "tools/**"
+      - "tests/**"
   pull_request:
     branches: [main]
+    paths:
+      - "index.html"
+      - "data/**"
+      - "sw.js"
+      - "manifest.json"
+      - "v2/index.html"
+      - "v2/assets/**"
+      - "v2/data/**"
+      - "v2/sw.js"
+      - "v2/manifest.webmanifest"
+      - "tools/**"
+      - "tests/**"
   workflow_dispatch:
 
 permissions:
