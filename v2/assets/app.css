@@ -1010,3 +1010,10 @@ dialog.map-links-dialog{position:relative;max-width:min(560px,calc(100% - 24px))
 .searchbar .filters{display:grid;grid-template-columns:minmax(220px,2fr) repeat(3,minmax(145px,1fr));gap:10px;align-items:center}
 @media(max-width:760px){.searchbar .filters{grid-template-columns:1fr 1fr;gap:8px}.searchbar .filters #query{grid-column:1/-1}}
 @media(max-width:420px){.searchbar .filters{grid-template-columns:1fr}.searchbar .filters #query{grid-column:auto}}
+
+/* Build 20261015-54: three combined filters on the full archive, compact on mobile. */
+.home-all-controls{grid-template-columns:minmax(0,1fr) 180px 175px}
+@media(max-width:620px){.home-all-controls{grid-template-columns:1fr;gap:7px}.home-all-controls input{grid-column:auto}}
+.searchbar .filters{grid-template-columns:minmax(190px,2fr) repeat(3,minmax(132px,1fr))}
+@media(max-width:760px){.searchbar .filters{grid-template-columns:1fr 1fr}.searchbar .filters #query{grid-column:1/-1}}
+@media(max-width:420px){.searchbar .filters{grid-template-columns:1fr}.searchbar .filters #query{grid-column:auto}}
