@@ -7,7 +7,7 @@ const PENDING_DB="frameAtlas2PendingPhotos";
 const objectUrls=new Map();
 const PERMITTED=new Set(["cc0","public-domain","cc-by","cc-by-sa","permission","self-owned"]);
 const $=id=>document.getElementById(id);
-let catalog={schemaVersion:1,places:[]},selectedId=null,searchCache=[],homeHeroPlaceId=null,adminModeUnlocked=false;
+let catalog={schemaVersion:1,places:[]},selectedId=null,searchCache=[],homeHeroPlaceId=null,adminModeUnlocked=false,homeListReturnScrollY=null;
 const esc=v=>String(v==null?"":v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const getPlace=id=>catalog.places.find(p=>p.id===id);
 const ADMIN_HASH_KEY="frameAtlas2AdminHashV1",ADMIN_SALT_KEY="frameAtlas2AdminSaltV1";
@@ -326,9 +326,16 @@ window.addEventListener("scroll",scheduleFloatingControlUpdate,{passive:true});
 window.addEventListener("resize",scheduleFloatingControlUpdate,{passive:true});
 if(scrollTopBtn)scrollTopBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}));
 function showHomeAllPlaces(){
+ const restoreScrollY=homeListReturnScrollY;
+ const shouldRestorePreviousPosition=Number.isFinite(restoreScrollY);
  archiveMode="all";selectedId=null;
- $("query").value="";$("regionFilter").value="";$("imageFilter").value="";
- $("homeAllSearchInput").value="";$("homeAllRegionFilter").value="";if($("homeAllCategoryFilter"))$("homeAllCategoryFilter").value="";if($("homeAllMoodFilter"))$("homeAllMoodFilter").value="";
+ /* Preserve the previous list filters when returning from a selected home-catalog card. */
+ if(!shouldRestorePreviousPosition){
+  $("query").value="";$("regionFilter").value="";$("imageFilter").value="";
+  $("homeAllSearchInput").value="";$("homeAllRegionFilter").value="";
+  if($("homeAllCategoryFilter"))$("homeAllCategoryFilter").value="";
+  if($("homeAllMoodFilter"))$("homeAllMoodFilter").value="";
+ }
  /* Force the 2.0 home container visible before rendering; never route this control through the legacy workspace. */
  const home=$("homeView"),workspace=$("workspaceView");
  if(home)home.hidden=false;
@@ -337,12 +344,19 @@ function showHomeAllPlaces(){
  renderLanding();
  updateFloatingControls();
  requestAnimationFrame(()=>{
-  const grid=$("homeFeaturedGrid");
-  if(grid)grid.scrollIntoView({behavior:"auto",block:"start"});
   if(document.body.dataset.appView!=="home"||$("workspaceView").hidden===false){
    showAppView("home",false);renderLanding();
   }
-  updateFloatingControls();
+  requestAnimationFrame(()=>{
+   const grid=$("homeFeaturedGrid");
+   if(shouldRestorePreviousPosition){
+    window.scrollTo({top:Math.max(0,restoreScrollY),behavior:"auto"});
+    homeListReturnScrollY=null;
+   }else if(grid){
+    grid.scrollIntoView({behavior:"auto",block:"start"});
+   }
+   updateFloatingControls();
+  });
  });
 }
 function showPlaceArchive(event){
@@ -416,7 +430,7 @@ function renderLanding(){
   return '<button type="button" class="scout-feature-card" data-home-place="'+esc(p.id)+'"><span class="scout-feature-image">'+image+'</span><span class="scout-feature-body"><span class="scout-feature-top"><span class="scout-feature-index">'+String(index+1).padStart(2,"0")+'</span><span>'+esc(p.region||"지역 미등록")+'</span></span><b>'+esc(p.name)+'</b><span class="scout-feature-desc">'+esc(p.photoProfile||p.summary||"사진가 관점에서 검토할 촬영 장소")+'</span><span class="scout-feature-bottom"><span>'+esc(status)+'</span><span class="scout-feature-arrow">↗</span></span></span></button>';
  }).join(""):'<div class="landing-empty">장소 자료를 불러오지 못했습니다.</div>';
  bindImageFallbacks(grid);
- grid.querySelectorAll("[data-home-place]").forEach(card=>card.addEventListener("click",()=>{selectedId=card.dataset.homePlace;showAppView("detail");}));
+ grid.querySelectorAll("[data-home-place]").forEach(card=>card.addEventListener("click",()=>{homeListReturnScrollY=Math.max(0,window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0);selectedId=card.dataset.homePlace;showAppView("detail");}));
  const allGrid=$("homeAllPlacesGrid");
  if(allGrid){
   const q=($("homeAllSearchInput")?.value||"").trim().toLowerCase(),region=$("homeAllRegionFilter")?.value||"",category=$("homeAllCategoryFilter")?.value||"",mood=$("homeAllMoodFilter")?.value||"";

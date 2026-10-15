@@ -1030,7 +1030,7 @@ dialog.map-links-dialog{position:relative;max-width:min(560px,calc(100% - 24px))
 /* Build 20261015-61: low-risk admin controls, passphrase dialog and original-quality icon layout. */
 .admin-mode-toggle{border-color:#315b42;background:#f5f3e9;color:#254a33;font-weight:850;white-space:nowrap}
 .admin-mode-toggle:hover{background:#e7edde}
-body[data-app-view="welcome"] .admin-mode-toggle{display:none!important}
+
 .workspace-admin-entry{display:flex;align-items:center;justify-content:flex-end;min-height:28px;margin:5px 0 10px}
 .workspace-admin-entry .tagline{font-size:11px;line-height:1.5;color:#7b8278}
 .admin-panel{margin:8px 0 14px;padding:14px;border:1px solid #d6dfd3;border-radius:14px;background:#f6f7f1}
@@ -1060,3 +1060,10 @@ body:not(.admin-mode) #homeAddPlaceBtn{display:none!important}
 .admin-advanced-tools summary{cursor:pointer;font-weight:850;font-size:12px;color:var(--muted);padding:8px 0}
 @media(max-width:760px){.admin-primary-tools{grid-template-columns:1fr 1fr}.admin-primary-tools>div{width:100%}.admin-primary-tools .btn{width:100%;text-align:center;justify-content:center}}
 @media(max-width:420px){.admin-primary-tools{grid-template-columns:1fr}.admin-primary-tools .btn{text-align:left;justify-content:flex-start}}
+
+
+/* v2.65: keep administrator access available on the mobile welcome screen. */
+body[data-app-view="welcome"] .admin-mode-toggle{display:inline-flex!important}
+@media(max-width:620px){
+ .head-actions .admin-mode-toggle{display:inline-flex!important;align-items:center;justify-content:center;white-space:nowrap;min-height:35px;font-size:10px;padding:7px 8px}
+}
