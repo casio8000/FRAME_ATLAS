@@ -156,3 +156,12 @@ Last updated: 2026-10-15 (Korea Standard Time)
 - Next: check latest GitHub Actions quality/deploy results; inspect 137 records for holds/photo mismatch; compare against the legacy 214-place list if available; then research/import in batches around 15 with validation after every batch.
 
 - Follow-up research update: expanded the 200-place plan with a separate studio-facility track using KOFIC/KoBiz source pages. Namyangju is explicitly flagged for an operations/access recheck because its public visitor experience closed, and not presented as a currently public venue.
+
+
+## 2026-10-16 · Cross-device data workflow and staged 14-location research
+- Manual updated again: the actual publishing code writes the complete current browser catalog directly to `main/v2/data/places.json`, and uploads eligible selected/approved file photos. Local catalog drafts are stored per-browser; there is no safe field-by-field concurrent merge guarantee. The user manual now explicitly recommends one editing/publishing device (PC by default), JSON backups before/after batches, deployment verification, and refreshing any device with a stale local draft only after exporting it.
+- Added dedicated cross-device workflow instructions to `v2/USER_MANUAL_KO.html`; cache-busted app menu link is `USER_MANUAL_KO.html?v=20261016-69`.
+- Created `v2/PLAN_FIRST_14_CANDIDATES_2026-10-16.md` with 14 new research targets: 7 specialist production/studio facilities plus 7 architecture/art/industrial-space candidates. Each includes a research rationale, source link, and specific access/photo/permission checks. No candidate was added to the active place catalog.
+- Updated `v2/PLAN_200_PLACES_2026-10-15.md` so 14 new candidates are the first research phase and the 200-place target proceeds in later batches after verification.
+- Current catalog remains 137 places plus 14 reviewQueue entries. Existing reviewQueue is separate and must not be counted as 14 net-new places because some queue entries are linked/merged with existing catalog records.
+- Operational safety recommendation: one editor/publisher at a time. The current client can publish a stale local draft as a full catalog; it does not offer reliable concurrent field-level merge. Future engineering option is remote revision checking, conflict detection, and record-level merge/explicit conflict review before writes.
