@@ -2,8 +2,8 @@
   "name": "FRAME ATLAS 2.0 · Photo Location Scout",
   "short_name": "FRAME ATLAS",
   "description": "서울·수도권 촬영 장소 탐색, 실제 장소 사진 확인과 사진 교체",
-  "id": "./index.html?fa_build=20261015-55",
-  "start_url": "./index.html?fa_build=20261015-55",
+  "id": "./index.html?fa_build=20261015-56",
+  "start_url": "./index.html?fa_build=20261015-56",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
@@ -12,7 +12,7 @@
   "lang": "ko-KR",
   "icons": [
     {
-      "src": "icons/atlas-touch-20261015-55.svg",
+      "src": "icons/atlas-touch-20261015-56.svg",
       "sizes": "180x180",
       "type": "image/svg+xml",
       "purpose": "any"
