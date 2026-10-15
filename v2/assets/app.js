@@ -130,16 +130,20 @@ function mergePublishedPhotoReferences(draft,base){
   if(p.photoSelectionCleared)continue;
   for(const sourceCandidate of (fresh.imageCandidates||[])){if(!p.imageCandidates.some(c=>c.id===sourceCandidate.id))p.imageCandidates.push(JSON.parse(JSON.stringify(sourceCandidate)));}
   const usable=c=>c&&c.status!=="rejected"&&(c.imageUrl||c.sourceThumbnail||c.pendingAsset||c.assetPath);
+  const publicPrimary=(fresh.imageCandidates||[]).find(c=>c&&c.id===fresh.primaryImageId&&usable(c));
+  if(publicPrimary){
+   let localPrimary=p.imageCandidates.find(c=>c.id===publicPrimary.id);
+   if(!localPrimary){localPrimary=JSON.parse(JSON.stringify(publicPrimary));p.imageCandidates.push(localPrimary);}
+   else if(!usable(localPrimary)&&!localPrimary.pendingAsset){Object.assign(localPrimary,JSON.parse(JSON.stringify(publicPrimary)));}
+   if(!usable(p.imageCandidates.find(c=>c.id===p.primaryImageId)))p.primaryImageId=publicPrimary.id;
+  }
   let current=p.imageCandidates.find(c=>c.id===p.referenceImageId&&usable(c));
   if(!current){
    const publicRef=(fresh.imageCandidates||[]).find(c=>c.id===fresh.referenceImageId&&usable(c))||(fresh.imageCandidates||[]).find(usable);
    if(publicRef){
     current=p.imageCandidates.find(c=>c.id===publicRef.id);
     if(!current){current=JSON.parse(JSON.stringify(publicRef));p.imageCandidates.push(current);}
-    else if(!usable(current)&&!current.pendingAsset){
-     current.imageUrl=publicRef.imageUrl||"";
-     current.sourceThumbnail=publicRef.sourceThumbnail||"";
-    }
+    else if(!usable(current)&&!current.pendingAsset){Object.assign(current,JSON.parse(JSON.stringify(publicRef)));}
     p.referenceImageId=current.id;
     p.referenceImageStatus="기본 사진 후보 · 대체 가능";
    }
@@ -173,10 +177,24 @@ function render(){
  syncRegionFilters();
  const q=$("query").value.trim().toLowerCase(),region=$("regionFilter").value,filter=$("imageFilter").value,category=$("categoryFilter")?$("categoryFilter").value:"";
  const places=catalog.places.filter(p=>{
-  const text=[p.name,p.region,p.category,p.summary,...(p.aliases||[])].join(" ").toLowerCase();
+  const text=[p.name,p.region,regionGroup(p.region),p.category,p.summary,p.photoProfile,p.address,p.placeType,p.indoorOutdoor,...(p.aliases||[]),...(p.searchTerms||[]),...(p.spaceTypes||[]),...(p.visualStrengths||[]),...(p.bestConcepts||[])].join(" ").toLowerCase();
   if(archiveMode==="favorites"&&!favorites.includes(p.id))return false;
-  if(q&&!text.includes(q))return false;if(region&&regionGroup(p.region)!==region)return false;
-  if(category){const tags=[p.category,p.indoorOutdoor,p.placeType,p.summary,...(p.visualStrengths||[]),...(p.bestConcepts||[])].join(" ").toLowerCase();const terms={실내:["실내","인테리어","홀","전시장","실내공간"],실외:["실외","야외","거리","광장","공원","정원"],건축:["건축","미술관","박물관","건물","구조","공간"],자연:["자연","숲","바다","산","공원","정원"],스튜디오:["스튜디오","공연장","대형스튜디오","촬영장"]}[category]||[category];if(!terms.some(t=>tags.includes(t.toLowerCase())))return false;}
+  // 공백으로 나눈 여러 검색어는 모두 일치해야 하며, 지역·유형·사진상태 필터와 함께 적용됩니다.
+  const terms=q.split(/\s+/).filter(Boolean);
+  if(terms.some(term=>!text.includes(term)))return false;
+  if(region&&regionGroup(p.region)!==region)return false;
+  if(category){
+   const tags=[p.category,p.indoorOutdoor,p.placeType,p.summary,p.photoProfile,...(p.spaceTypes||[]),...(p.visualStrengths||[]),...(p.bestConcepts||[])].join(" ").toLowerCase();
+   const termsByCategory={
+    실내:["실내","인테리어","홀","전시장","실내공간","갤러리"],
+    실외:["실외","야외","거리","광장","공원","정원","외부"],
+    건축:["건축","미술관","박물관","건물","구조","공간","콘크리트","벽돌"],
+    자연:["자연","숲","바다","산","공원","정원","강","해변"],
+    스튜디오:["스튜디오","공연장","대형스튜디오","촬영장","방송 세트"]
+   };
+   const matches=termsByCategory[category]||[category];
+   if(!matches.some(t=>tags.includes(t.toLowerCase())))return false;
+  }
   if(filter==="none"&&activePhoto(p))return false;
   if(filter==="review"&&!hasPending(p))return false;
   if(filter==="ready"&&!isImageReady(p))return false;
@@ -964,7 +982,7 @@ $("welcomeStartBtn").addEventListener("click",()=>showAppView("home"));$("welcom
 $("startBrowseBtn").addEventListener("click",()=>goToWorkspace("",""));$("homeMapBtn").addEventListener("click",()=>showAppView("map"));$("seeAllPlacesBtn").addEventListener("click",showHomeAllPlaces);$("homeAllPlacesBtn").addEventListener("click",showHomeAllPlaces);
 $("homeSearchBtn").addEventListener("click",()=>goToWorkspace($("homeSearchInput").value.trim(),""));$("homeSearchInput").addEventListener("keydown",event=>{if(event.key==="Enter"){event.preventDefault();goToWorkspace($("homeSearchInput").value.trim(),"");}});
 $("homeView").querySelectorAll("[data-home-region]").forEach(button=>button.addEventListener("click",()=>goToWorkspace("",button.dataset.homeRegion||"")));$("goHomeBtn").addEventListener("click",()=>showAppView("home"));
-$("homeAllSearchInput").addEventListener("input",renderLanding);$("homeAllRegionFilter").addEventListener("change",renderLanding);
+$("homeAllSearchInput").addEventListener("input",renderLanding);$("homeAllRegionFilter").addEventListener("change",renderLanding);if($("homeAllCategoryFilter"))$("homeAllCategoryFilter").addEventListener("change",renderLanding);
 $("mapRegionFilter").addEventListener("change",renderMapScreen);$("mapAccessFilter").addEventListener("change",renderMapScreen);$("photosSearchInput").addEventListener("input",renderPhotosScreen);$("photosMatchFilter").addEventListener("change",renderPhotosScreen);document.querySelectorAll("[data-photo-category]").forEach(button=>button.addEventListener("click",()=>{photoCategoryFilter=button.dataset.photoCategory;document.querySelectorAll("[data-photo-category]").forEach(item=>{const active=item===button;item.classList.toggle("active",active);item.setAttribute("aria-pressed",active?"true":"false");});renderPhotosScreen();}));$("analysisSearchInput").addEventListener("input",renderAnalysisScreen);$("analysisRegionFilter").addEventListener("change",renderAnalysisScreen);
 $("appNav").querySelectorAll("[data-nav-view]").forEach(button=>button.addEventListener("click",()=>{const target=button.dataset.navView;if(target==="favorites"){archiveMode="favorites";$("query").value="";$("regionFilter").value="";$("imageFilter").value="";selectedId=null;showAppView("favorites");return;}if(target==="home")archiveMode="all";showAppView(target);}));
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")refreshSharedCatalogIfClean();});
@@ -991,7 +1009,9 @@ if(mapLinksDialog){const closeMapLinksDialogBtn=$("closeMapLinksDialogBtn");if(c
 const closeInstallDialogBtn=$("closeInstallDialogBtn");
 if(closeInstallDialogBtn)closeInstallDialogBtn.addEventListener("click",()=>installDialog.close());
 if("serviceWorker" in navigator && /^https?:$/.test(window.location.protocol)){
- window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{scope:"./"}).catch(error=>console.warn("FRAME ATLAS 오프라인 셸 등록 실패",error)));
+ window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{scope:"./"})
+  .then(registration=>registration.update())
+  .catch(error=>console.warn("FRAME ATLAS 오프라인 셸 등록 실패",error)));
 }
 loadBase();
 })();
