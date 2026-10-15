@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "전국 136곳. 장소 참조사진 보강을 계속 반영 중이며 대표사진 승인·이미지 재사용 권리·전문 촬영 허가는 각각 별도 검증 상태로 유지합니다.",
+  "dataStatus": "전국 136곳. 추가 장소 참고사진은 상세 항목에 출처·장소 일치·재사용 권리 확인 상태를 기록했습니다. 대표사진 최종 승인과 전문 촬영 허가는 별도 확인 대상입니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T04:50:00.000Z",
+  "updatedAt": "2026-10-15T05:10:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -2161,7 +2161,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -2179,15 +2179,34 @@
           "notes": "옛 철길의 소실점, 평행선, 나무 그늘을 참고하기 위한 후보. 2021년 보도사진이므로 현재 식생·동선 상태와 저작권을 별도 확인. 2026-10-15 자동 브라우저 검증에서 사진 URL이 로드되지 않아 활성 표시를 보류했습니다. 장소 정보와 기사 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "ref-gyeongchun-seoultech-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "경춘선숲길 폐철길과 나란한 산책로",
+          "imageUrl": "https://times.seoultech.ac.kr/storage/null/ckfinder/images/72321FCECC354C708C6C8B79C0BF1ADF.jpg",
+          "sourceThumbnail": "https://times.seoultech.ac.kr/storage/null/ckfinder/images/72321FCECC354C708C6C8B79C0BF1ADF.jpg",
+          "sourcePageUrl": "https://times.seoultech.ac.kr/reports/?idx=21990",
+          "sourceName": "서울과학기술대학교 신문",
+          "creator": "기사 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "옛 철길·수목·원근",
+          "notes": "경춘선숲길 철길과 보행로가 함께 보이는 장소 사진. 해당 장소의 옛 철도 선형을 확인할 수 있어 참고사진으로 연결. 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
-        "photoMatch": "미확인",
-        "rights": "미확인",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-15"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -2199,9 +2218,9 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 2026-10-15 사진 후보 보강: 경춘선숲길 폐철길과 나란한 산책로. 출처: 서울과학기술대학교 신문 (https://times.seoultech.ac.kr/reports/?idx=21990). 경춘선숲길 철길과 보행로가 함께 보이는 장소 사진. 해당 장소의 옛 철도 선형을 확인할 수 있어 참고사진으로 연결. 재사용 권리 확인 중.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-15T05:10:00.000Z",
       "photoPotentialScore": 72,
       "photoScoreBreakdown": {
         "distinctiveness": 20,
@@ -2219,8 +2238,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "서울특별시 노원구 화랑로 경춘선숲길 화랑대철도공원 입구",
-      "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보"
+      "referenceImageId": "ref-gyeongchun-seoultech-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중"
     },
     {
       "id": "seo-naksan-wall",
@@ -2261,7 +2280,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -2279,15 +2298,34 @@
           "notes": "기사의 한양도성 순성 관련 사진으로 성곽선·야간 조명·도심 원근을 확인하는 후보. 이미지 사용 권리 미확인, 실제 촬영 지점과 현장 접근 동선을 별도 검증해야 함. 2026-10-15 자동 브라우저 검증에서 이미지 링크가 로드되지 않아 활성 표시를 보류했습니다. 장소·기사 출처는 보존하고 대체 사진을 후속 확보합니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z"
+        },
+        {
+          "id": "ref-naksan-wall-fnnews-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "낙산공원 한양도성 성곽길과 서울 도심 전망",
+          "imageUrl": "https://image.fnnews.com/resource/media/image/2023/06/25/202306250911007464_l.jpg",
+          "sourceThumbnail": "https://image.fnnews.com/resource/media/image/2023/06/25/202306250911007464_l.jpg",
+          "sourcePageUrl": "https://www.fnnews.com/news/202306250911562518",
+          "sourceName": "파이낸셜뉴스",
+          "creator": "기사 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "성곽·도심 전망·황혼",
+          "notes": "낙산 성곽길과 도시 전망을 함께 보여주는 사진. 장소 참고사진이며 사진 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
       "sourceRefs": [],
       "verification": {
         "location": "미확인",
-        "photoMatch": "미확인",
-        "rights": "미확인",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-15"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -2299,9 +2337,9 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 2026-10-15 사진 후보 보강: 낙산공원 한양도성 성곽길과 서울 도심 전망. 출처: 파이낸셜뉴스 (https://www.fnnews.com/news/202306250911562518). 낙산 성곽길과 도시 전망을 함께 보여주는 사진. 장소 참고사진이며 사진 재사용 권리 확인 중.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-15T05:10:00.000Z",
       "photoPotentialScore": 75,
       "photoScoreBreakdown": {
         "distinctiveness": 22,
@@ -2319,8 +2357,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "서울특별시 종로구 낙산길 낙산공원 한양도성 구간",
-      "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보"
+      "referenceImageId": "ref-naksan-wall-fnnews-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중"
     },
     {
       "id": "gg-paju-bookcity",
@@ -2983,7 +3021,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "사진 링크 검증 실패 · 대체 실제 장소 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -3017,6 +3055,25 @@
           "notes": "수원화성 장안문의 석조 성벽과 목조 문루를 보여주는 문화자료 사진 후보. 위치·구도 확인용이며 원저작물의 이용조건과 촬영 허가는 확인 전입니다. 이 외부 이미지 URL이 브라우저 검사에서 로드되지 않아 활성 사진 표시에서 제외했습니다. 장소 정보와 출처 기록은 유지합니다.",
           "status": "rejected",
           "createdAt": "2026-10-14"
+        },
+        {
+          "id": "ref-hwaseong-janganmun-mindtrip-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "수원화성 장안문과 성곽 석축",
+          "imageUrl": "https://mindtrip.ai/attractions/6366/1a9a/f32f/d9ea/dd8a/916d/8991/7c92",
+          "sourceThumbnail": "https://mindtrip.ai/attractions/6366/1a9a/f32f/d9ea/dd8a/916d/8991/7c92",
+          "sourcePageUrl": "https://mindtrip.ai/attraction/suwon-gyeonggi-do/janganmun-gate/at-ZW8oX8yD",
+          "sourceName": "Mindtrip · 장안문 장소 안내",
+          "creator": "사진 저작자 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "전통 성문·석축·기와·인물 스케일",
+          "notes": "장안문 현판과 성문, 석축이 보이는 수원화성 사진. 해당 장소 참고사진으로 연결하고 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -3025,10 +3082,10 @@
       ],
       "verification": {
         "location": "미확인",
-        "photoMatch": "미확인",
-        "rights": "미확인",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-15"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -3040,9 +3097,9 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 추가 답사 구간으로 방화수류정·용연의 성곽·연못·전통건축 레이어를 따로 확인합니다. 구버전 L-204의 공간 제안을 중복 장소가 아닌 세부 촬영 포인트로 통합했습니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 추가 답사 구간으로 방화수류정·용연의 성곽·연못·전통건축 레이어를 따로 확인합니다. 구버전 L-204의 공간 제안을 중복 장소가 아닌 세부 촬영 포인트로 통합했습니다. 2026-10-15 사진 후보 보강: 수원화성 장안문과 성곽 석축. 출처: Mindtrip · 장안문 장소 안내 (https://mindtrip.ai/attraction/suwon-gyeonggi-do/janganmun-gate/at-ZW8oX8yD). 장안문 현판과 성문, 석축이 보이는 수원화성 사진. 해당 장소 참고사진으로 연결하고 재사용 권리 확인 중.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-15T05:10:00.000Z",
       "photoPotentialScore": 73,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -3060,8 +3117,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "경기도 수원시 팔달구 정조로 825 화성행궁 수원화성 성곽",
-      "referenceImageId": null,
-      "referenceImageStatus": "사진 링크 검증 실패 · 표시 가능한 대체 이미지 확보 필요"
+      "referenceImageId": "ref-hwaseong-janganmun-mindtrip-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중"
     },
     {
       "id": "gg-mmca-gwacheon",
@@ -4228,7 +4285,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "사진 링크 검증 실패 · 대체 실제 장소 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -4262,6 +4319,25 @@
           "notes": "인천투어의 배다리 헌책방 골목 장소 페이지에 연결된 다른 사진 후보. 낡은 책장과 서점 파사드를 확인하기 위한 참고 자료이며 이미지 이용 조건과 상업촬영 허가는 확인 전입니다. 인천투어 직접 이미지 URL 두 개가 브라우저 검사에서 로드되지 않아 활성 사진 표시에서 제외했습니다. 장소 정보와 출처 기록은 유지합니다.",
           "status": "rejected",
           "createdAt": "2026-10-14"
+        },
+        {
+          "id": "ref-baedari-itour-bookshelf-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "배다리 헌책방 골목 오래된 서점과 책장",
+          "imageUrl": "https://itour.incheon.go.kr/common/viewImg.do?imgId=DBI21122913113928285",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fitour.incheon.go.kr%2Fcommon%2FviewImg.do%3FimgId%3DDBI21122913113928285&w=960&h=640&fit=inside&output=webp",
+          "sourcePageUrl": "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD21122911365999349",
+          "sourceName": "인천투어 공식 관광 안내",
+          "creator": "인천투어 페이지 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "헌책방·책장·빈티지 파사드",
+          "notes": "인천투어의 배다리 헌책방 골목 안내에 포함된 서점 사진. 장소와 서점 풍경이 일치하는 참고사진으로 연결. 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -4270,10 +4346,10 @@
       ],
       "verification": {
         "location": "미확인",
-        "photoMatch": "미확인",
-        "rights": "미확인",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-15"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -4285,9 +4361,9 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 2026-10-15 사진 후보 보강: 배다리 헌책방 골목 오래된 서점과 책장. 출처: 인천투어 공식 관광 안내 (https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD21122911365999349). 인천투어의 배다리 헌책방 골목 안내에 포함된 서점 사진. 장소와 서점 풍경이 일치하는 참고사진으로 연결. 재사용 권리 확인 중.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-15T05:10:00.000Z",
       "photoPotentialScore": 66,
       "photoScoreBreakdown": {
         "distinctiveness": 20,
@@ -4305,8 +4381,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "인천광역시 동구 금곡로 배다리 헌책방거리",
-      "referenceImageId": null,
-      "referenceImageStatus": "사진 링크 검증 실패 · 표시 가능한 대체 이미지 확보 필요",
+      "referenceImageId": "ref-baedari-itour-bookshelf-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "legacyScout": {
         "sourceVersion": "FRAME ATLAS 이전 버전(v5 계열) 스카우팅 데이터",
         "sourceLocationId": "L-017",
@@ -5322,7 +5398,7 @@
       "shootingPermission": "상업촬영 및 장비 사용 사전 확인",
       "parking": "공식 안내 확인 필요",
       "fee": "촬영 목적·공간별 확인 필요",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -5340,6 +5416,25 @@
           "notes": "장생포문화창고의 과거 미디어아트 전시를 촬영한 기사 사진 후보입니다. 전시 콘텐츠는 변경되었을 수 있어 시설의 현재 전시를 보장하지 않습니다. 실제 공간 참고용 후보이며 저작권·재사용 권리와 최신 전시 상태 확인 전입니다. 대표사진 승인은 보류합니다. 2026-10-15 자동 브라우저 검증에서 이미지 링크가 로드되지 않아 활성 표시를 보류했습니다. 기사 출처와 사진 후보는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14"
+        },
+        {
+          "id": "ref-jangsaengpo-mk-culture-warehouse-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "장생포문화창고 내부 미디어아트 공간",
+          "imageUrl": "https://pimg.mk.co.kr/news/cms/202407/29/news-p.v1.20240729.c182cbe16c7f4c2abbf69201e375419b_R.jpg",
+          "sourceThumbnail": "https://pimg.mk.co.kr/news/cms/202407/29/news-p.v1.20240729.c182cbe16c7f4c2abbf69201e375419b_R.jpg",
+          "sourcePageUrl": "https://www.mk.co.kr/news/society/11079574",
+          "sourceName": "매일경제 · 장생포문화창고 보도",
+          "creator": "기사 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·전시·미디어아트",
+          "notes": "장생포문화창고 내부 미디어아트 공간으로 소개된 참고사진. 구역별 촬영·대관 허가와 사진 재사용 권리는 별도 확인.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -5347,20 +5442,20 @@
       ],
       "verification": {
         "location": "지자체 공식 포털 참고",
-        "photoMatch": "사진 후보 미등록",
-        "rights": "미확인",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "사전 확인 필요",
-        "lastCheckedAt": "2026-10-14"
+        "lastCheckedAt": "2026-10-15"
       },
       "selectionStatus": "1차 후보 · 대표사진과 촬영 조건 검증 전",
       "photoPotentialScore": 85,
       "scoreStatus": "사진가 관점의 기획 평가 · 현장 확인 전",
       "priorityLabel": "B · 조건 확인 후 탐색",
-      "notes": "항만 산업도시와 창고형 공간의 조형성을 기준으로 선정했습니다. 시설 운영·촬영 가능 범위는 별도 확인해야 합니다.",
+      "notes": "항만 산업도시와 창고형 공간의 조형성을 기준으로 선정했습니다. 시설 운영·촬영 가능 범위는 별도 확인해야 합니다. 2026-10-15 사진 후보 보강: 장생포문화창고 내부 미디어아트 공간. 출처: 매일경제 · 장생포문화창고 보도 (https://www.mk.co.kr/news/society/11079574). 장생포문화창고 내부 미디어아트 공간으로 소개된 참고사진. 구역별 촬영·대관 허가와 사진 재사용 권리는 별도 확인.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-15",
-      "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보"
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "referenceImageId": "ref-jangsaengpo-mk-culture-warehouse-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중"
     },
     {
       "id": "daejeon-old-chungnam-office",
@@ -6271,7 +6366,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -6305,6 +6400,25 @@
           "notes": "특정 골목 사진을 장소 후보 참고로 등록. 방문객 중심 관광 포인트가 아니라 촬영에 적합한 골목 구간을 현장에서 다시 선별. 2026-10-15 자동 브라우저 검사에서 해당 링크를 로드하지 못했으며, 두 번째 후보는 정확한 골목 위치도 미확인이라 활성 대표·참고사진 표시를 보류합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14"
+        },
+        {
+          "id": "ref-haenggung-vk-mural-alley-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "수원 행궁동 벽화 골목과 오래된 주택가",
+          "imageUrl": "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=edab89bb-a55c-4c80-b345-380904b41894",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fcdn.visitkorea.or.kr%2Fimg%2Fcall%3Fcmd%3DVIEW%26id%3Dedab89bb-a55c-4c80-b345-380904b41894&w=960&h=640&fit=inside&output=webp",
+          "sourcePageUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=50c0daa1-83a7-416c-a38f-7b5257fed378",
+          "sourceName": "한국관광공사 대한민국 구석구석",
+          "creator": "페이지 내 사진 저작자 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "골목·벽화·생활건축·계단",
+          "notes": "한국관광공사의 행궁동·벽화마을 안내 사진. 골목형 촬영 배경 참고로 연결하며 사진 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -6312,10 +6426,10 @@
       ],
       "verification": {
         "location": "미확인",
-        "photoMatch": "미확인",
-        "rights": "미확인",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-15"
       },
       "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
       "scoutingChecklist": [
@@ -6327,9 +6441,9 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 2026-10-15 사진 후보 보강: 수원 행궁동 벽화 골목과 오래된 주택가. 출처: 한국관광공사 대한민국 구석구석 (https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=50c0daa1-83a7-416c-a38f-7b5257fed378). 한국관광공사의 행궁동·벽화마을 안내 사진. 골목형 촬영 배경 참고로 연결하며 사진 재사용 권리 확인 중.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-15T05:10:00.000Z",
       "photoPotentialScore": 82,
       "photoScoreBreakdown": {
         "distinctiveness": 20,
@@ -6347,8 +6461,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "경기도 수원시 팔달구 행궁동 공방거리 행리단길",
-      "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
+      "referenceImageId": "ref-haenggung-vk-mural-alley-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "shootingDetails": {
         "parking": "이전 조사 항목: 스태프 차량·장비 차량 주차 분리와 요금·높이 제한 확인 필요",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -6486,7 +6600,7 @@
       "shootingPermission": "전시·공간·상업촬영 조건 사전 문의",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -6523,6 +6637,25 @@
           "notes": "서울시 공식 미디어허브의 실제 시설 사진을 우선 등록. 상세 공간과 촬영 가능 구역은 후속 확인. 2026-10-15 자동 브라우저 검증에서 서울시 미디어허브 사진이 로드되지 않아 참조 표시를 보류했습니다. 장소·공식 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14"
+        },
+        {
+          "id": "ref-upcycling-seoulmediahub-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "서울새활용플라자 외관과 계단 구조",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/01/xYCJhTTFBIHFiaabWfoXweLeZzNtQpSn.jpg",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2026%2F01%2FxYCJhTTFBIHFiaabWfoXweLeZzNtQpSn.jpg&w=960&h=640&fit=inside&output=webp",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2018487",
+          "sourceName": "서울시 미디어허브",
+          "creator": "기사 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "현대건축·외관·계단",
+          "notes": "서울시 미디어허브의 서울새활용플라자 장소 소개 사진. 재사용 권리 및 현재 촬영 가능 공간은 별도 확인.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -6533,10 +6666,10 @@
       ],
       "verification": {
         "location": "공식 출처 참고",
-        "photoMatch": "미확인",
-        "rights": "미확인",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "미확인",
-        "lastCheckedAt": null
+        "lastCheckedAt": "2026-10-15"
       },
       "selectionStatus": "보류 · 현재 후보 사진만으로 예술적 촬영 차별성이 충분히 드러나지 않아 우선 추천에서 제외",
       "scoutingChecklist": [
@@ -6548,9 +6681,9 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "사진적 잠재력을 기준으로 선정한 1차 후보입니다. 참고사진의 재사용 권리와 상업 촬영 허가 여부는 확인되지 않았습니다. 실제 촬영 전 운영기관에 별도로 확인하세요.",
+      "notes": "사진적 잠재력을 기준으로 선정한 1차 후보입니다. 참고사진의 재사용 권리와 상업 촬영 허가 여부는 확인되지 않았습니다. 실제 촬영 전 운영기관에 별도로 확인하세요. 2026-10-15 사진 후보 보강: 서울새활용플라자 외관과 계단 구조. 출처: 서울시 미디어허브 (https://mediahub.seoul.go.kr/archives/2018487). 서울시 미디어허브의 서울새활용플라자 장소 소개 사진. 재사용 권리 및 현재 촬영 가능 공간은 별도 확인.",
       "createdAt": "2026-10-14T00:00:00.000Z",
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-15T05:10:00.000Z",
       "photoPotentialScore": 84,
       "photoScoreBreakdown": {
         "distinctiveness": 24,
@@ -6568,8 +6701,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "서울특별시 성동구 자동차시장길 49",
-      "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
+      "referenceImageId": "ref-upcycling-seoulmediahub-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "shootingDetails": {
         "parking": "주차·장비 하차 위치와 촬영 지점까지의 이동 확인",
         "publicTransport": "공식 홈페이지에서 대중교통·도보 접근 확인",
@@ -6815,7 +6948,7 @@
       "shootingPermission": "청사·광장 점유형 촬영, 삼각대·조명 설치 및 상업 촬영은 서울시·현장 관리 주체에 사전 확인.",
       "parking": "미확인 · 도심 주차·장비 하차 조건 확인",
       "fee": "촬영 목적·인원·장비에 따른 최신 조건 확인",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -6869,6 +7002,25 @@
           "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2023%2F11%2FXREnAbuGArLmKheGNhoDnztvWnfJFsgD.jpg&w=900&h=650&fit=inside&output=webp",
           "license": "이용조건 확인 필요",
           "licenseEvidenceUrl": ""
+        },
+        {
+          "id": "ref-seoul-cityhall-mediahub-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "서울시청 신청사 유리 파사드와 반사면",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2023/11/XREnAbuGArLmKheGNhoDnztvWnfJFsgD.jpg",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2023%2F11%2FXREnAbuGArLmKheGNhoDnztvWnfJFsgD.jpg&w=960&h=640&fit=inside&output=webp",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/160215",
+          "sourceName": "서울시 미디어허브",
+          "creator": "기사 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "유리 파사드·곡면·반사",
+          "notes": "서울시 신청사의 곡면 유리 외피와 반사면을 보여주는 서울시 미디어허브 사진. 장소 참고사진으로 연결하고 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
       "sourceRefs": [
@@ -6877,10 +7029,10 @@
       ],
       "verification": {
         "location": "공식 서울시 자료 참고",
-        "photoMatch": "장소 참고사진 후보 · 현장 대조 필요",
-        "rights": "미확인",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "사전 확인 필요",
-        "lastCheckedAt": "2026-10-14"
+        "lastCheckedAt": "2026-10-15"
       },
       "selectionStatus": "장소·대표사진의 실제 일치와 촬영 구도 확인 전 보류",
       "scoutingChecklist": [
@@ -6891,9 +7043,9 @@
         "주차·하차·혼잡 시간",
         "사진 재사용 권리 확인"
       ],
-      "notes": "관광 목적의 장소가 아니라 유리 파사드·반사·그리드가 패션·인물 에디토리얼에 주는 조형적 가능성을 기준으로 추가했습니다. 참고사진은 서울시 미디어허브 이미지이며, 재사용 권리와 현장 촬영 가능 범위는 별도로 확인해야 합니다.",
+      "notes": "관광 목적의 장소가 아니라 유리 파사드·반사·그리드가 패션·인물 에디토리얼에 주는 조형적 가능성을 기준으로 추가했습니다. 참고사진은 서울시 미디어허브 이미지이며, 재사용 권리와 현장 촬영 가능 범위는 별도로 확인해야 합니다. 2026-10-15 사진 후보 보강: 서울시청 신청사 유리 파사드와 반사면. 출처: 서울시 미디어허브 (https://mediahub.seoul.go.kr/archives/160215). 서울시 신청사의 곡면 유리 외피와 반사면을 보여주는 서울시 미디어허브 사진. 장소 참고사진으로 연결하고 재사용 권리 확인 중.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-15T05:10:00.000Z",
       "photoPotentialScore": 80,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -6911,8 +7063,8 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "서울특별시 중구 세종대로 110 서울시청 신청사",
-      "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
+      "referenceImageId": "ref-seoul-cityhall-mediahub-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "phone": "02-120",
       "shootingDetails": {
         "fieldNotes": "곡면 유리 파사드의 반사와 그리드를 중심으로 촬영합니다. 광각 건축 전경과 망원 압축 구도를 모두 테스트하고, 반사면에 불필요한 주변 요소가 들어오는지 확인하세요. 광장 점유·삼각대·조명 설치는 관리 주체에 사전 문의가 필요합니다.",
@@ -8067,7 +8219,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -8085,18 +8237,37 @@
           "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 공식 관광 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
+        },
+        {
+          "id": "ref-sodaeheon-daejeontour-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "대전 소대헌·호연재 고택의 기와와 마당",
+          "imageUrl": "https://daejeontour.co.kr/data/file/sights_djt/1935377306_687ddc5ec6a52_9.jpg",
+          "sourceThumbnail": "https://daejeontour.co.kr/data/file/sights_djt/1935377306_687ddc5ec6a52_9.jpg",
+          "sourcePageUrl": "https://daejeontour.co.kr/sights_djt/44?page=2",
+          "sourceName": "대전관광 공식 안내",
+          "creator": "대전관광 페이지 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "한옥·기와·마당·목재",
+          "notes": "대전관광의 소대헌·호연재 고택 안내에 포함된 고택 사진. 전통 건축 참고사진으로 연결; 재사용 권리는 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
-      "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
+      "referenceImageId": "ref-sodaeheon-daejeontour-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://daejeontour.co.kr/sights_djt/44?page=2",
         "https://daejeontour.co.kr/data/file/sights_djt/1935377306_687ddc5ec6a52_9.jpg"
       ],
       "verification": {
         "location": "공식/관광 출처 URL 기록",
-        "photoMatch": "장소별 참고사진 이관",
-        "rights": "사용권 후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "현장·상업촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -8115,8 +8286,8 @@
       ],
       "legacyMood": "고전적·정갈함·서정·봄빛",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "대전관광 공식 이미지가 연결된 전통 고택입니다. 방문 시 거주·보존구역과 상업촬영 가능 범위를 확인해야 합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "대전관광 공식 이미지가 연결된 전통 고택입니다. 방문 시 거주·보존구역과 상업촬영 가능 범위를 확인해야 합니다. 2026-10-15 사진 후보 보강: 대전 소대헌·호연재 고택의 기와와 마당. 출처: 대전관광 공식 안내 (https://daejeontour.co.kr/sights_djt/44?page=2). 대전관광의 소대헌·호연재 고택 안내에 포함된 고택 사진. 전통 건축 참고사진으로 연결; 재사용 권리는 확인 중."
     },
     {
       "id": "busan-cheongsapo-dallitdol",
@@ -8156,7 +8327,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "사진 링크 검증 실패 · 대체 실제 장소 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -8174,18 +8345,37 @@
           "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 부산시 공식 이미지 API가 브라우저에서 로드되지 않아 활성 사진 표시에서 제외했습니다. 장소 정보와 출처 기록은 유지합니다.",
           "status": "rejected",
           "createdAt": "2026-10-15"
+        },
+        {
+          "id": "ref-cheongsapo-busan-city-photo-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "청사포 다릿돌전망대 S자형 보행교",
+          "imageUrl": "https://www.busan.go.kr/comm/getImage?fileNo=1&fileTy=MEDIA&srvcId=MEDIA&upperNo=2904",
+          "sourceThumbnail": "https://www.busan.go.kr/comm/getImage?fileNo=1&fileTy=MEDIA&srvcId=MEDIA&upperNo=2904",
+          "sourcePageUrl": "https://www.busan.go.kr/news/totalnews01/view?dataNo=60399&gugun=Prev",
+          "sourceName": "부산광역시 공식 뉴스",
+          "creator": "부산시 페이지 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "바다·S자형 전망대·철골",
+          "notes": "부산시 뉴스에 게재된 청사포 다릿돌전망대 사진. 바다 위 보행 구조가 분명한 장소 참고사진으로 연결. 재사용 권리와 상업촬영 조건 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
-      "referenceImageId": null,
-      "referenceImageStatus": "사진 링크 검증 실패 · 표시 가능한 대체 이미지 확보 필요",
+      "referenceImageId": "ref-cheongsapo-busan-city-photo-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=d24fc1d9-56ee-4cec-b8c5-8ba1f20101ee",
         "https://www.busan.go.kr/comm/getImage?fileNo=1&fileTy=MEDIA&srvcId=MEDIA&upperNo=2904"
       ],
       "verification": {
         "location": "공식/관광 출처 URL 기록",
-        "photoMatch": "장소별 참고사진 이관",
-        "rights": "사용권 후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "현장·상업촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -8204,8 +8394,8 @@
       ],
       "legacyMood": "청량·개방감·바다·일출·노을",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "전망대의 선형 구조와 해안선이 겹치는 구도를 기준으로 선정했습니다. 강풍·파랑·운영 통제에 유의합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "전망대의 선형 구조와 해안선이 겹치는 구도를 기준으로 선정했습니다. 강풍·파랑·운영 통제에 유의합니다. 2026-10-15 사진 후보 보강: 청사포 다릿돌전망대 S자형 보행교. 출처: 부산광역시 공식 뉴스 (https://www.busan.go.kr/news/totalnews01/view?dataNo=60399&gugun=Prev). 부산시 뉴스에 게재된 청사포 다릿돌전망대 사진. 바다 위 보행 구조가 분명한 장소 참고사진으로 연결. 재사용 권리와 상업촬영 조건 확인 중."
     },
     {
       "id": "suwon-art-museum-haenggung",
@@ -8528,7 +8718,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -8546,17 +8736,36 @@
           "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 뉴스 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
+        },
+        {
+          "id": "ref-mmca-cheongju-artscape-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "국립현대미술관 청주 개방수장고 외관과 조각",
+          "imageUrl": "https://artscape.jp/report/review/__icsFiles/artimage/2019/10/08/c002review/191015_tk_02-1.jpg",
+          "sourceThumbnail": "https://artscape.jp/report/review/__icsFiles/artimage/2019/10/08/c002review/191015_tk_02-1.jpg",
+          "sourcePageUrl": "https://artscape.jp/report/review/10157674_1735.html",
+          "sourceName": "artscape · 국립현대미술관 청주 리뷰",
+          "creator": "기사 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "산업형 미술관·개방수장고·조각",
+          "notes": "국립현대미술관 청주 건물과 외부 조각이 함께 보이는 장소 관련 사진. 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
-      "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
+      "referenceImageId": "ref-mmca-cheongju-artscape-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://www.mmca.go.kr/"
       ],
       "verification": {
         "location": "공식/관광 출처 URL 기록",
-        "photoMatch": "장소별 참고사진 이관",
-        "rights": "사용권 후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "현장·상업촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -8574,8 +8783,8 @@
       ],
       "legacyMood": "산업적·정제됨·그래픽",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "옛 연초제조창을 활용한 수장형 미술관으로 사진적 독자성이 있습니다. 작품 촬영·수장고 진입·장비 반입 허가를 별도 확인합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "옛 연초제조창을 활용한 수장형 미술관으로 사진적 독자성이 있습니다. 작품 촬영·수장고 진입·장비 반입 허가를 별도 확인합니다. 2026-10-15 사진 후보 보강: 국립현대미술관 청주 개방수장고 외관과 조각. 출처: artscape · 국립현대미술관 청주 리뷰 (https://artscape.jp/report/review/10157674_1735.html). 국립현대미술관 청주 건물과 외부 조각이 함께 보이는 장소 관련 사진. 재사용 권리 확인 중."
     },
     {
       "id": "busan-cinema-center",
@@ -9080,7 +9289,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -9098,10 +9307,29 @@
           "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 건축 기사 출처와 장소 정보는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
+        },
+        {
+          "id": "ref-seoseoul-museum-systemlab-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "서울시립 서서울미술관 삼각형 입면과 야간 외관",
+          "imageUrl": "https://images.squarespace-cdn.com/content/v1/605d572bb11ec0469bd6e112/1780630999623-L2KRUYOXCABUD9B31HHF/%E1%84%89%E1%85%A5%E1%84%89%E1%85%A5%E1%84%8B%E1%85%AE%E1%86%AF%E1%84%86%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF%E1%84%80%E1%85%AA%E1%86%AB-photo-by-kim-yongkwan-002.jpg",
+          "sourceThumbnail": "https://images.squarespace-cdn.com/content/v1/605d572bb11ec0469bd6e112/1780630999623-L2KRUYOXCABUD9B31HHF/%E1%84%89%E1%85%A5%E1%84%89%E1%85%A5%E1%84%8B%E1%85%AE%E1%86%AF%E1%84%86%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF%E1%84%80%E1%85%AA%E1%86%AB-photo-by-kim-yongkwan-002.jpg",
+          "sourcePageUrl": "https://www.thesystemlab.com/work/seo-seoul-museum",
+          "sourceName": "The System Lab · 서울시립 서서울미술관",
+          "creator": "김용관 사진 크레딧 표기 · 라이선스 별도 확인",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "삼각형 건축·금속 파사드·야간",
+          "notes": "The System Lab의 서울시립 서서울미술관 프로젝트 사진. 외관과 시설명이 확인되는 장소 참고사진이며 사진 재사용 권리는 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
-      "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
+      "referenceImageId": "ref-seoseoul-museum-systemlab-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://sema.seoul.go.kr/kr/visit/seoseoul",
         "https://magazine.brique.co/brq-news/seoseoul-museum-opening-geumnarae-park-kimchanjoong-thesystemlab/",
@@ -9109,8 +9337,8 @@
       ],
       "verification": {
         "location": "공식/관광 출처 URL 기록",
-        "photoMatch": "장소별 참고사진 이관",
-        "rights": "사용권 후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "현장·상업촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -9129,8 +9357,8 @@
       ],
       "legacyMood": "미래적·메탈릭·미니멀·도시적",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "시스템랩의 공식 건축 프로젝트 자료와 서울시립미술관 방문 정보를 연결했습니다. 외부 보행구간 중심으로 촬영 지점을 잡고 상업촬영·장비 사용 조건은 현장 확인합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "시스템랩의 공식 건축 프로젝트 자료와 서울시립미술관 방문 정보를 연결했습니다. 외부 보행구간 중심으로 촬영 지점을 잡고 상업촬영·장비 사용 조건은 현장 확인합니다. 2026-10-15 사진 후보 보강: 서울시립 서서울미술관 삼각형 입면과 야간 외관. 출처: The System Lab · 서울시립 서서울미술관 (https://www.thesystemlab.com/work/seo-seoul-museum). The System Lab의 서울시립 서서울미술관 프로젝트 사진. 외관과 시설명이 확인되는 장소 참고사진이며 사진 재사용 권리는 확인 중."
     },
     {
       "id": "seoul-photo-museum",
@@ -9171,7 +9399,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -9189,18 +9417,37 @@
           "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 SBS 기사 이미지가 로드되지 않아 활성 표시를 보류했습니다. 개관·건축 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
+        },
+        {
+          "id": "ref-seoul-photo-museum-official-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "서울시립 사진미술관 외관",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/05/8UdKruuHjmWQwGqCbvnykYkKyqUEqRga.jpg",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2025%2F05%2F8UdKruuHjmWQwGqCbvnykYkKyqUEqRga.jpg&w=960&h=640&fit=inside&output=webp",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/",
+          "sourceName": "서울시 미디어허브",
+          "creator": "페이지 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "미술관·현대 파사드",
+          "notes": "서울시 미디어허브에서 사진미술관 시설 사진 후보로 확보. 해당 시설 식별과 이미지 내용은 최종 페이지 대조 중이라는 상태를 상세 메모에 남기며, 장소 확인 전에는 대표사진으로 승인하지 않는다.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
-      "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
+      "referenceImageId": "ref-seoul-photo-museum-official-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://sema.seoul.go.kr/kr/visit/photosema",
         "https://news.sbs.co.kr/news/endPage.do?news_id=N1008118211"
       ],
       "verification": {
         "location": "공식/관광 출처 URL 기록",
-        "photoMatch": "장소별 참고사진 이관",
-        "rights": "사용권 후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "현장·상업촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -9219,8 +9466,8 @@
       ],
       "legacyMood": "미니멀·모노크롬·실험적·현대적",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "공식 방문 안내와 SBS 개관 보도사진을 연결했습니다. 실내 로비와 전시 공간 촬영은 별도 승인 전제로 검토합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "공식 방문 안내와 SBS 개관 보도사진을 연결했습니다. 실내 로비와 전시 공간 촬영은 별도 승인 전제로 검토합니다. 2026-10-15 사진 후보 보강: 서울시립 사진미술관 외관. 출처: 서울시 미디어허브 (https://mediahub.seoul.go.kr/). 서울시 미디어허브에서 사진미술관 시설 사진 후보로 확보. 해당 시설 식별과 이미지 내용은 최종 페이지 대조 중이라는 상태를 상세 메모에 남기며, 장소 확인 전에는 대표사진으로 승인하지 않는다."
     },
     {
       "id": "paju-cjenm-studio-center",
@@ -9261,7 +9508,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "사진 후보 보류 · 장소 일치 확인 필요",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -9279,10 +9526,29 @@
           "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 FNN 기사 이미지가 로드되지 않아 활성 표시를 보류했습니다. 버추얼 프로덕션 시설과 보도 출처는 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
+        },
+        {
+          "id": "ref-cjenm-studio-center-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "파주 CJ ENM 스튜디오 센터 제작 공간 참고",
+          "imageUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=85",
+          "sourceThumbnail": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=85",
+          "sourcePageUrl": "https://www.cjenm.com/ko/",
+          "sourceName": "Unsplash · 방송·영상 스튜디오 일반 참고",
+          "creator": "Unsplash 작가 크레딧은 직접 페이지에서 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "unverified",
+          "viewType": "스튜디오·제작환경 참고",
+          "notes": "이 이미지는 CJ ENM 스튜디오 센터의 직접 사진으로 확인되지 않았으므로 장소 일치 확인용 이미지로 사용하지 않는다. 대표사진으로 승인하지 않고 일반 스튜디오 환경 참고로만 검토 대기한다.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
       "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
+      "referenceImageStatus": "사진 후보 · 장소 일치 검토 전",
       "sourceRefs": [
         "https://www.fnn.jp/articles/-/385893?display=full",
         "https://www.cjenm.com/"
@@ -9312,8 +9578,8 @@
       "legacyVisualTags": [],
       "legacyMood": "영화적·대형·가상",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "구버전 목록의 대형 제작단지 후보를 사진자료와 함께 보강합니다. 보도사진은 스튜디오 설비 참고용이며 대관 가능 시설·규모·사용료는 운영사에 확인해야 합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "구버전 목록의 대형 제작단지 후보를 사진자료와 함께 보강합니다. 보도사진은 스튜디오 설비 참고용이며 대관 가능 시설·규모·사용료는 운영사에 확인해야 합니다. 2026-10-15 사진 후보 보강: 파주 CJ ENM 스튜디오 센터 제작 공간 참고. 출처: Unsplash · 방송·영상 스튜디오 일반 참고 (https://www.cjenm.com/ko/). 이 이미지는 CJ ENM 스튜디오 센터의 직접 사진으로 확인되지 않았으므로 장소 일치 확인용 이미지로 사용하지 않는다. 대표사진으로 승인하지 않고 일반 스튜디오 환경 참고로만 검토 대기한다."
     },
     {
       "id": "mungyeong-saejae-open-set",
@@ -9629,7 +9895,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "사진 참고 후보 등록 · 장소 일치 확인 후 대표 적용",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -9647,10 +9913,29 @@
           "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
+        },
+        {
+          "id": "ref-hyangho-koreaculture-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "강릉 향호해변 BTS 버스정류장 포토존",
+          "imageUrl": "https://www.korean-culture.org/CONTENTS/editImage/20211105114011876_10P17H7D.jpg",
+          "sourceThumbnail": "https://www.korean-culture.org/CONTENTS/editImage/20211105114011876_10P17H7D.jpg",
+          "sourcePageUrl": "https://www.korean-culture.org/koreanet/view.do?seq=1039910",
+          "sourceName": "문화체육관광부 한국문화원·코리아넷뉴스",
+          "creator": "기사 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "해변·버스정류장·바다",
+          "notes": "향호해변 버스정류장과 바다가 함께 찍힌 장소 관련 사진. 해당 구조물 포토존 참고사진이며 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
-      "referenceImageId": null,
-      "referenceImageStatus": "사진 후보 등록 · 장소 일치 확인 후 참조 전환",
+      "referenceImageId": "ref-hyangho-koreaculture-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://www.kukinews.com/article/view/kuk202602250064",
         "https://www.heraldk.com/article/2026011016445704034",
@@ -9658,8 +9943,8 @@
       ],
       "verification": {
         "location": "장소 식별 출처 후속 확인",
-        "photoMatch": "이미지 후보 이관·장소 대조 필요",
-        "rights": "사용권 후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "현장·상업촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -9691,8 +9976,8 @@
       ],
       "legacyMood": "몽환·청량·미니멀",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "방탄소년단 뮤직비디오·앨범재킷 촬영지로 알려진 향호해변 버스정류장(보도에 따르면 다시 제작된 구조물). 단순한 구조물과 바다의 대비."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "방탄소년단 뮤직비디오·앨범재킷 촬영지로 알려진 향호해변 버스정류장(보도에 따르면 다시 제작된 구조물). 단순한 구조물과 바다의 대비. 2026-10-15 사진 후보 보강: 강릉 향호해변 BTS 버스정류장 포토존. 출처: 문화체육관광부 한국문화원·코리아넷뉴스 (https://www.korean-culture.org/koreanet/view.do?seq=1039910). 향호해변 버스정류장과 바다가 함께 찍힌 장소 관련 사진. 해당 구조물 포토존 참고사진이며 재사용 권리 확인 중."
     },
     {
       "id": "andong-manhyujeong",
@@ -9733,18 +10018,38 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
-      "imageCandidates": [],
-      "referenceImageId": null,
-      "referenceImageStatus": "",
+      "imageCandidates": [
+        {
+          "id": "ref-manhyujeong-kmib-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "안동 만휴정과 외나무다리 계곡 풍경",
+          "imageUrl": "https://image.kmib.co.kr/online_image/2025/0326/01400101.20250326500010.jpg",
+          "sourceThumbnail": "https://image.kmib.co.kr/online_image/2025/0326/01400101.20250326500010.jpg",
+          "sourcePageUrl": "https://www.kmib.co.kr/article/view.asp?arcid=0027902284",
+          "sourceName": "국민일보 · 만휴정 보도",
+          "creator": "기사 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "전통 정자·외나무다리·계곡",
+          "notes": "만휴정 정자와 계곡, 외나무다리가 함께 보이는 장소 사진. 장소 참고사진으로 연결하고 재사용 권리는 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
+        }
+      ],
+      "referenceImageId": "ref-manhyujeong-kmib-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://v.daum.net/v/ZY2iMcloMN"
       ],
       "verification": {
         "location": "장소 식별 출처 후속 확인",
-        "photoMatch": "사진 출처 후속 추가",
-        "rights": "사용권 후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "현장·상업촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -9776,8 +10081,8 @@
       ],
       "legacyMood": "고요·서정·시대극",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "드라마 '미스터 션샤인'의 중요한 배경으로 소개된 안동 만휴정. 외나무다리와 숲, 고택 분위기를 활용하는 전통·시대극 콘셉트 후보."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "드라마 '미스터 션샤인'의 중요한 배경으로 소개된 안동 만휴정. 외나무다리와 숲, 고택 분위기를 활용하는 전통·시대극 콘셉트 후보. 2026-10-15 사진 후보 보강: 안동 만휴정과 외나무다리 계곡 풍경. 출처: 국민일보 · 만휴정 보도 (https://www.kmib.co.kr/article/view.asp?arcid=0027902284). 만휴정 정자와 계곡, 외나무다리가 함께 보이는 장소 사진. 장소 참고사진으로 연결하고 재사용 권리는 확인 중."
     },
     {
       "id": "samcheok-maengbang-bts-butter",
@@ -9922,18 +10227,38 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "장소 등록 · 참고사진 추가 조사 필요",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
-      "imageCandidates": [],
-      "referenceImageId": null,
-      "referenceImageStatus": "",
+      "imageCandidates": [
+        {
+          "id": "ref-bunam-beach-wello-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "삼척 부남해변 바위 해안과 작은 백사장",
+          "imageUrl": "https://cdn.welfarehello.com/naver-blog/production/samcheokcityhall/2023-07/223147737669/samcheokcityhall_223147737669_6.jpg?f=webp&q=80&w=800",
+          "sourceThumbnail": "https://cdn.welfarehello.com/naver-blog/production/samcheokcityhall/2023-07/223147737669/samcheokcityhall_223147737669_6.jpg?f=webp&q=80&w=800",
+          "sourcePageUrl": "https://www.welfarehello.com/community/hometownNews/d5862544-e94f-4808-8781-7144e467f6e9",
+          "sourceName": "Wello · 삼척시청 연계 여행 안내",
+          "creator": "사진 저작자·사용조건 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "해안 암석·해변·소나무·여백",
+          "notes": "삼척 부남해변의 바위 해안과 백사장을 보여주는 장소 사진. 영화 촬영지 정보와 사진의 사용권은 각각 별도로 확인해야 한다.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
+        }
+      ],
+      "referenceImageId": "ref-bunam-beach-wello-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://www.segye.com/view/20230205504831"
       ],
       "verification": {
         "location": "장소 식별 출처 후속 확인",
-        "photoMatch": "사진 출처 후속 추가",
-        "rights": "사용권 후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "현장·상업촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -9965,8 +10290,8 @@
       ],
       "legacyMood": "쓸쓸·서정·영화적",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "영화 '헤어질 결심' 마지막 장면에 등장하는 부남해변으로 소개됨. 쓸쓸하고 정적인 해안 분위기."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "영화 '헤어질 결심' 마지막 장면에 등장하는 부남해변으로 소개됨. 쓸쓸하고 정적인 해안 분위기. 2026-10-15 사진 후보 보강: 삼척 부남해변 바위 해안과 작은 백사장. 출처: Wello · 삼척시청 연계 여행 안내 (https://www.welfarehello.com/community/hometownNews/d5862544-e94f-4808-8781-7144e467f6e9). 삼척 부남해변의 바위 해안과 백사장을 보여주는 장소 사진. 영화 촬영지 정보와 사진의 사용권은 각각 별도로 확인해야 한다."
     },
     {
       "id": "incheon-yeolumul-mural-village",
@@ -11092,7 +11417,7 @@
       "photoPotentialScore": 95,
       "scoreStatus": "건축 조형성 기획 평가 · 촬영 허가·현장 구도 후속 확인",
       "priorityLabel": "A · 거장 건축 우선 조사",
-      "imageStatus": "사진 링크 오류 · 대체 실제 장소 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -11110,10 +11435,29 @@
           "notes": "Domus 기사에 있는 실제 건축 사진이 원본 및 대체 이미지 경로에서 브라우저에 로드되지 않아 활성 표시에서 제외했습니다. 건축 출처 링크는 유지하고, 표시 가능한 사진을 확보한 뒤 다시 연결합니다.",
           "status": "rejected",
           "createdAt": "2026-10-15"
+        },
+        {
+          "id": "ref-songeun-vmspace-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "송은 아트스페이스 삼각형 노출 콘크리트 파사드",
+          "imageUrl": "https://vmspace.com/ActiveFile/spacem.org/board_img/71676058761d54bb3e605d.jpg",
+          "sourceThumbnail": "https://vmspace.com/ActiveFile/spacem.org/board_img/71676058761d54bb3e605d.jpg",
+          "sourcePageUrl": "https://vmspace.com/eng/project/project_view.html?base_seq=MTg3Nw%3D%3D&page=7",
+          "sourceName": "SPACE (월간 공간) · SONGEUN Art Space",
+          "creator": "사진 크레딧 별도 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "삼각형 매스·노출 콘크리트·그림자",
+          "notes": "SPACE 매체의 SONGEUN Art Space 및 ST International HQ 프로젝트 사진. 건축의 매스와 콘크리트 질감을 보여주는 장소 참고사진, 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
-      "referenceImageId": null,
-      "referenceImageStatus": "건축 출처 등록 · 표시 가능한 실제 외관 사진 재확보 필요",
+      "referenceImageId": "ref-songeun-vmspace-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://www.songeun.or.kr/",
         "https://www.domusweb.it/en/architecture/gallery/2021/07/16/herzog--de-meuron-seoul-office-building-cultural-center.html"
@@ -11127,8 +11471,8 @@
       ],
       "verification": {
         "location": "송은 공식 홈페이지·Domus 건축 기사",
-        "photoMatch": "건물 외관 참고사진 등록",
-        "rights": "후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "전시 및 상업촬영 사전 문의",
         "lastCheckedAt": "2026-10-15"
       },
@@ -11146,8 +11490,8 @@
       "curationQueueStatus": "legacy-214-audit",
       "legacyCatalogId": "L-159",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "구버전 214곳에서 빠진 건축적으로 차별성이 높은 후보를 별도 등록했습니다. 공공 보행 구간과 건물 관리 구역은 구분하여 촬영 가능 지점을 확인해야 합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "구버전 214곳에서 빠진 건축적으로 차별성이 높은 후보를 별도 등록했습니다. 공공 보행 구간과 건물 관리 구역은 구분하여 촬영 가능 지점을 확인해야 합니다. 2026-10-15 사진 후보 보강: 송은 아트스페이스 삼각형 노출 콘크리트 파사드. 출처: SPACE (월간 공간) · SONGEUN Art Space (https://vmspace.com/eng/project/project_view.html?base_seq=MTg3Nw%3D%3D&page=7). SPACE 매체의 SONGEUN Art Space 및 ST International HQ 프로젝트 사진. 건축의 매스와 콘크리트 질감을 보여주는 장소 참고사진, 재사용 권리 확인 중."
     },
     {
       "id": "gyeonggi-paik-nam-june-art-center",
@@ -11589,7 +11933,7 @@
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 촬영 대관료를 구분해 확인",
-      "imageStatus": "참고사진 링크 검증 실패 · 대체 실제 사진 후속 확보",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -11607,18 +11951,37 @@
           "notes": "구버전 214곳 자료에 구 서도역 사진으로 기록된 직접 이미지입니다. 실제 장소 참고용으로 우선 연결하고 사용권은 후속 확인합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 구 서도역 장소와 기사 출처를 보존합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
+        },
+        {
+          "id": "ref-seodo-visitkorea-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "남원 구 서도역 목조 역사와 선로 원근",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/32/2755832_image2_1.jpg",
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/32/2755832_image2_1.jpg",
+          "sourcePageUrl": "https://ontrip.kr/travel-guides/details/2660392",
+          "sourceName": "한국관광공사 관광 자료 / OnTrip 장소 안내",
+          "creator": "이미지 크레딧 별도 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "목조 역사·폐선·선로 원근",
+          "notes": "구 서도역의 목조 역사와 선로가 함께 보이는 장소 사진. 선로의 원근을 활용할 수 있는 참고사진으로 연결; 재사용 권리는 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
         }
       ],
-      "referenceImageId": null,
-      "referenceImageStatus": "현재 이미지 링크가 브라우저에서 열리지 않음 · 출처 후보 보존, 대체 사진 후속 확보",
+      "referenceImageId": "ref-seodo-visitkorea-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://www.namwon.go.kr/tour/index.do",
         "https://www.segye.com/"
       ],
       "verification": {
         "location": "공식 또는 장소 출처 기록",
-        "photoMatch": "장소별 참고사진 등록",
-        "rights": "후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -11637,8 +12000,8 @@
       "curationQueueStatus": "legacy-214-audit",
       "legacyCatalogId": "L-001",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "구버전 L-001을 이관했습니다. 직접 사진 후보는 세계일보 기사 이미지로 표기돼 있어 장소 참고자료로 우선 등록했으며 작품명·정확한 촬영 이력은 후속 확인 대상입니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "구버전 L-001을 이관했습니다. 직접 사진 후보는 세계일보 기사 이미지로 표기돼 있어 장소 참고자료로 우선 등록했으며 작품명·정확한 촬영 이력은 후속 확인 대상입니다. 2026-10-15 사진 후보 보강: 남원 구 서도역 목조 역사와 선로 원근. 출처: 한국관광공사 관광 자료 / OnTrip 장소 안내 (https://ontrip.kr/travel-guides/details/2660392). 구 서도역의 목조 역사와 선로가 함께 보이는 장소 사진. 선로의 원근을 활용할 수 있는 참고사진으로 연결; 재사용 권리는 확인 중."
     },
     {
       "id": "legacy-iksan-prison-set",
@@ -11919,18 +12282,38 @@
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 촬영 대관료를 구분해 확인",
-      "imageStatus": "장소 등록 · 직접 사진 확보 후 보강",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
-      "imageCandidates": [],
-      "referenceImageId": null,
-      "referenceImageStatus": "",
+      "imageCandidates": [
+        {
+          "id": "ref-temiorae-themac-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "대전 테미오래 옛 관사와 소나무 산책길",
+          "imageUrl": "https://cdn.themac.co.kr/news/photo/202401/3504_12828_4828.jpg",
+          "sourceThumbnail": "https://cdn.themac.co.kr/news/photo/202401/3504_12828_4828.jpg",
+          "sourcePageUrl": "https://www.themac.co.kr/news/articleView.html?idxno=3504",
+          "sourceName": "문화저널 맥 · 테미오래 소개",
+          "creator": "기사 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "근대 주거건축·정원·돌길",
+          "notes": "대전 테미오래 관사와 정원 길을 보여주는 장소 관련 사진. 근대 건축 촬영 참고사진으로 연결; 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
+        }
+      ],
+      "referenceImageId": "ref-temiorae-themac-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://www.temiorae.com/"
       ],
       "verification": {
         "location": "공식 또는 장소 출처 기록",
-        "photoMatch": "직접 사진 URL 후속 확보",
-        "rights": "후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -11941,8 +12324,8 @@
       "curationQueueStatus": "legacy-214-audit",
       "legacyCatalogId": "L-080",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "구버전 L-080의 공식 출처를 이관했습니다. 건물별로 내부 개방·상업촬영 조건이 다를 수 있어 시설 관리처 확인이 필요합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "구버전 L-080의 공식 출처를 이관했습니다. 건물별로 내부 개방·상업촬영 조건이 다를 수 있어 시설 관리처 확인이 필요합니다. 2026-10-15 사진 후보 보강: 대전 테미오래 옛 관사와 소나무 산책길. 출처: 문화저널 맥 · 테미오래 소개 (https://www.themac.co.kr/news/articleView.html?idxno=3504). 대전 테미오래 관사와 정원 길을 보여주는 장소 관련 사진. 근대 건축 촬영 참고사진으로 연결; 재사용 권리 확인 중."
     },
     {
       "id": "seoul-amorepacific-museum",
@@ -12645,18 +13028,38 @@
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 촬영 대관료를 구분해 확인",
-      "imageStatus": "장소 등록 · 직접 사진 확보 후 보강",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
-      "imageCandidates": [],
-      "referenceImageId": null,
-      "referenceImageStatus": "",
+      "imageCandidates": [
+        {
+          "id": "ref-paradise-city-art-paradiso-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "인천 파라다이스시티 아트 파라디소 로비 조형물",
+          "imageUrl": "https://www.uniqhotels.com/media/hotels/2f/3._kusama_yayoi_great_gigantic_pumpkin.jpg.730x486_q85_box-0%2C0%2C1000%2C667_crop_detail.jpg",
+          "sourceThumbnail": "https://www.uniqhotels.com/media/hotels/2f/3._kusama_yayoi_great_gigantic_pumpkin.jpg.730x486_q85_box-0%2C0%2C1000%2C667_crop_detail.jpg",
+          "sourcePageUrl": "https://www.uniqhotels.com/art-paradiso/",
+          "sourceName": "UNIQ Hotels · Art Paradiso / Paradise City",
+          "creator": "사진 저작자 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·대형 조형물·대리석·원형 공간",
+          "notes": "파라다이스시티 내 아트 파라디소의 대형 호박 조형물 로비 사진. 해당 시설의 한 공간을 보여주는 참고사진이며 전체 단지 대표사진과 구분, 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
+        }
+      ],
+      "referenceImageId": "ref-paradise-city-art-paradiso-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://www.p-city.com/"
       ],
       "verification": {
         "location": "공식 또는 장소 출처 기록",
-        "photoMatch": "직접 사진 URL 후속 확보",
-        "rights": "후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -12667,8 +13070,8 @@
       "curationQueueStatus": "legacy-214-audit",
       "legacyCatalogId": "L-169",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "구버전 L-169에 기록된 예술 공간·로비 촬영 후보를 이관했습니다. 리조트 운영구역과 설치작품별 상업촬영 권한은 별도로 확인해야 합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "구버전 L-169에 기록된 예술 공간·로비 촬영 후보를 이관했습니다. 리조트 운영구역과 설치작품별 상업촬영 권한은 별도로 확인해야 합니다. 2026-10-15 사진 후보 보강: 인천 파라다이스시티 아트 파라디소 로비 조형물. 출처: UNIQ Hotels · Art Paradiso / Paradise City (https://www.uniqhotels.com/art-paradiso/). 파라다이스시티 내 아트 파라디소의 대형 호박 조형물 로비 사진. 해당 시설의 한 공간을 보여주는 참고사진이며 전체 단지 대표사진과 구분, 권리 확인 중."
     },
     {
       "id": "seoul-artmuseum-seosomun",
@@ -12708,18 +13111,38 @@
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 촬영 대관료를 구분해 확인",
-      "imageStatus": "장소 등록 · 직접 사진 확보 후 보강",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
-      "imageCandidates": [],
-      "referenceImageId": null,
-      "referenceImageStatus": "",
+      "imageCandidates": [
+        {
+          "id": "ref-sema-seosomun-visitkorea-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "서울시립미술관 서소문본관 옛 법원 아치형 파사드",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/49/3061549_image2_1.png",
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/49/3061549_image2_1.png",
+          "sourcePageUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=87770",
+          "sourceName": "한국관광공사 대한민국 구석구석",
+          "creator": "페이지 내 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "역사건축·아치·석재·벽돌",
+          "notes": "한국관광공사 서울시립미술관 서소문본관 안내에 나온 아치형 현관과 역사적 파사드 사진. 장소 일치 참고사진으로 연결, 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
+        }
+      ],
+      "referenceImageId": "ref-sema-seosomun-visitkorea-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://sema.seoul.go.kr/kr/visit/seosomun"
       ],
       "verification": {
         "location": "공식 또는 장소 출처 기록",
-        "photoMatch": "직접 사진 URL 후속 확보",
-        "rights": "후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -12730,8 +13153,8 @@
       "curationQueueStatus": "legacy-214-audit",
       "legacyCatalogId": "L-114",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "구버전 L-114의 장소 설명을 이관했습니다. 구버전 연결 이미지 URL은 다른 장소에 잘못 연결됐을 가능성이 있어 재사용하지 않고 직접 사진을 다시 확보합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "구버전 L-114의 장소 설명을 이관했습니다. 구버전 연결 이미지 URL은 다른 장소에 잘못 연결됐을 가능성이 있어 재사용하지 않고 직접 사진을 다시 확보합니다. 2026-10-15 사진 후보 보강: 서울시립미술관 서소문본관 옛 법원 아치형 파사드. 출처: 한국관광공사 대한민국 구석구석 (https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=87770). 한국관광공사 서울시립미술관 서소문본관 안내에 나온 아치형 현관과 역사적 파사드 사진. 장소 일치 참고사진으로 연결, 재사용 권리 확인 중."
     },
     {
       "id": "seoul-magok-cultural-hall",
@@ -13692,18 +14115,38 @@
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "장소 등록 · 직접 사진 확보 후 보강",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
-      "imageCandidates": [],
-      "referenceImageId": null,
-      "referenceImageStatus": "직접 사진 URL 후속 확보 필요",
+      "imageCandidates": [
+        {
+          "id": "ref-hyundai-motorstudio-dmaa-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "고양 현대 모터스튜디오 다층 아트리움과 금속 계단",
+          "imageUrl": "https://www.dmaa.at/media/257_Hyundai-Motorstudio-Goyang/257_Hyundai-Motorstudio-Goyang_Raphael-Olivier_6595_exhibition.jpg",
+          "sourceThumbnail": "https://www.dmaa.at/media/257_Hyundai-Motorstudio-Goyang/257_Hyundai-Motorstudio-Goyang_Raphael-Olivier_6595_exhibition.jpg",
+          "sourcePageUrl": "https://www.dmaa.at/work/hyundai-motorstudio-goyang",
+          "sourceName": "DMAA 건축사무소 · Hyundai Motorstudio Goyang",
+          "creator": "Raphael Olivier 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "다층 아트리움·금속·계단·차량 전시",
+          "notes": "설계사 DMAA의 현대 모터스튜디오 고양 프로젝트 사진. 실제 다층 아트리움과 차량 전시가 보여 장소 참고사진으로 연결; 재사용 권리 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
+        }
+      ],
+      "referenceImageId": "ref-hyundai-motorstudio-dmaa-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://motorstudio.hyundai.com/goyang/ln/main.do?strgCd=01"
       ],
       "verification": {
         "location": "공식 또는 장소 출처 기록",
-        "photoMatch": "직접 이미지 URL 후속 확보",
-        "rights": "사용권 후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "현장 촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -13713,8 +14156,8 @@
       "curationQueueStatus": "legacy-214-audit",
       "legacyCatalogId": "L-198",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "구버전 L-198의 대형 산업·전시공간 후보를 이관했습니다. 직접 사진 주소를 확보하지 못해 사진 링크는 후속 보강 대상으로 남겨 두며, 전시장 촬영과 상업 촬영은 운영사 승인 확인이 필요합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "구버전 L-198의 대형 산업·전시공간 후보를 이관했습니다. 직접 사진 주소를 확보하지 못해 사진 링크는 후속 보강 대상으로 남겨 두며, 전시장 촬영과 상업 촬영은 운영사 승인 확인이 필요합니다. 2026-10-15 사진 후보 보강: 고양 현대 모터스튜디오 다층 아트리움과 금속 계단. 출처: DMAA 건축사무소 · Hyundai Motorstudio Goyang (https://www.dmaa.at/work/hyundai-motorstudio-goyang). 설계사 DMAA의 현대 모터스튜디오 고양 프로젝트 사진. 실제 다층 아트리움과 차량 전시가 보여 장소 참고사진으로 연결; 재사용 권리 확인 중."
     },
     {
       "id": "seoul-national-aviation-museum",
@@ -13754,18 +14197,38 @@
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "장소 등록 · 직접 사진 확보 후 보강",
+      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
       "primaryImageId": null,
-      "imageCandidates": [],
-      "referenceImageId": null,
-      "referenceImageStatus": "직접 사진 URL 후속 확보 필요",
+      "imageCandidates": [
+        {
+          "id": "ref-aviation-museum-bizhk-2026",
+          "createdAt": "2026-10-15T05:10:00.000Z",
+          "title": "국립항공박물관 유리 아트리움과 공중 전시 항공기",
+          "imageUrl": "https://www.bizhankook.com/upload/bk/article/202303/25305-60918.jpg",
+          "sourceThumbnail": "https://www.bizhankook.com/upload/bk/article/202303/25305-60918.jpg",
+          "sourcePageUrl": "https://www.bizhankook.com/bk/article/25305",
+          "sourceName": "비즈한국 · 국립항공박물관 소개",
+          "creator": "기사 사진 크레딧 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "항공기·유리 아트리움·금속 구조",
+          "notes": "국립항공박물관의 아트리움에 전시된 항공기와 유리·철골 천장이 보이는 참고사진. 재사용 권리는 확인 중.",
+          "status": "candidate",
+          "updatedAt": "2026-10-15T05:10:00.000Z"
+        }
+      ],
+      "referenceImageId": "ref-aviation-museum-bizhk-2026",
+      "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://www.aviation.or.kr/"
       ],
       "verification": {
         "location": "공식 또는 장소 출처 기록",
-        "photoMatch": "직접 이미지 URL 후속 확보",
-        "rights": "사용권 후속 검토",
+        "photoMatch": "출처 페이지와 사진 내용 확인 · 참고사진",
+        "rights": "미확인 · 재사용 조건 확인 중",
         "shootingPermission": "현장 촬영 조건 후속 확인",
         "lastCheckedAt": "2026-10-15"
       },
@@ -13775,8 +14238,8 @@
       "curationQueueStatus": "legacy-214-audit",
       "legacyCatalogId": "L-191",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15",
-      "notes": "구버전 L-191의 사진가 관점 후보를 이관했습니다. 직접 사진 URL은 아직 확보되지 않아 실제 박물관 사진을 후속 보강 대상으로 기록합니다. 전시물 촬영 규정과 상업촬영 조건은 별도 확인해야 합니다."
+      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "notes": "구버전 L-191의 사진가 관점 후보를 이관했습니다. 직접 사진 URL은 아직 확보되지 않아 실제 박물관 사진을 후속 보강 대상으로 기록합니다. 전시물 촬영 규정과 상업촬영 조건은 별도 확인해야 합니다. 2026-10-15 사진 후보 보강: 국립항공박물관 유리 아트리움과 공중 전시 항공기. 출처: 비즈한국 · 국립항공박물관 소개 (https://www.bizhankook.com/bk/article/25305). 국립항공박물관의 아트리움에 전시된 항공기와 유리·철골 천장이 보이는 참고사진. 재사용 권리는 확인 중."
     },
     {
       "id": "gangwon-samtan-art-mine",
