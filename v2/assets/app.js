@@ -73,67 +73,47 @@ function bindImageFallbacks(root){
   if(img.dataset.fallbackBound==="1")return;
   const initial=(img.getAttribute("src")||img.currentSrc||"").trim();
   if(!initial)return;
-  img.dataset.fallbackBound="1";
-  img.dataset.originalImageUrl=initial;
+  img.dataset.fallbackBound="1";img.dataset.originalImageUrl=initial;
   const frame=()=>img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");
   const firstFrame=frame();
   if(firstFrame){if(img.complete&&img.naturalWidth>0)firstFrame.classList.remove("image-loading");else firstFrame.classList.add("image-loading");}
-  const placeId=img.dataset.homePreview||img.dataset.placePreview||
-   img.closest("[data-home-place]")?.dataset.homePlace||img.closest("[data-select]")?.dataset.select||
-   img.closest("[data-photos-detail]")?.dataset.photosDetail||img.closest("[data-map-place]")?.dataset.mapPlace||
-   img.closest("[data-analysis-place]")?.dataset.analysisPlace||selectedId;
-  const place=getPlace(placeId),queue=[],seen=new Set([initial]),directSources=[initial];
-  const addUrl=value=>{
-   const url=String(value||"").trim();
-   if(!url||seen.has(url)||!(/^(https?:\/\/|blob:|data:image\/)/i.test(url)))return;
-   seen.add(url);queue.push(url);
+  const placeId=img.dataset.homePreview||img.dataset.placePreview||img.closest("[data-home-place]")?.dataset.homePlace||img.closest("[data-select]")?.dataset.select||img.closest("[data-photos-detail]")?.dataset.photosDetail||img.closest("[data-map-place]")?.dataset.mapPlace||img.closest("[data-analysis-place]")?.dataset.analysisPlace||selectedId;
+  const place=getPlace(placeId),queue=[],seen=new Set([initial]);
+  const addUrl=value=>{const url=String(value||"").trim();if(!url||seen.has(url)||!(/^(https?:\/\/|blob:|data:image\/)/i.test(url)))return;seen.add(url);queue.push(url);};
+  const proxyUrl=url=>{
+   if(!/^https?:\/\//i.test(url)||/^https:\/\/images\.weserv\.nl\//i.test(url))return "";
+   const f=frame(),w=f&&f.classList.contains("thumb")?260:900,h=f&&f.classList.contains("thumb")?190:650;
+   return "https://images.weserv.nl/?url="+encodeURIComponent(url)+"&w="+w+"&h="+h+"&fit=inside&output=webp";
   };
-  addUrl(img.dataset.fallbackThumbnail||"");
-  const alternatives=(place?.imageCandidates||[]).filter(c=>c&&c.status!=="rejected"&&c.placeMatch==="confirmed"&&(c.imageUrl||c.sourceThumbnail));
-  for(const c of alternatives){
-   const u=c.imageUrl||c.sourceThumbnail;
-   addUrl(u);addUrl(c.sourceThumbnail);
-   if(u&&!directSources.includes(u))directSources.push(u);
-   if(c.sourceThumbnail&&!directSources.includes(c.sourceThumbnail))directSources.push(c.sourceThumbnail);
-  }
-  // Try other place-matched candidates before an image proxy. A proxy improves display only;
-  // it does not confirm place match, copyright, or shooting permission.
-  const fr=frame(),w=fr&&fr.classList.contains("thumb")?260:900,h=fr&&fr.classList.contains("thumb")?190:650;
-  for(const url of directSources){
-   if(/^https?:\/\//i.test(url)&&!/^https?:\/\/images\.weserv\.nl\//i.test(url)){
-    addUrl("https://images.weserv.nl/?url="+encodeURIComponent(url)+"&w="+w+"&h="+h+"&fit=inside&output=webp");
-   }
-  }
+  // Order: thumbnail -> proxy of failed original -> other verified candidate URLs -> their proxies.
+  const thumb=img.dataset.fallbackThumbnail||"";addUrl(thumb);addUrl(proxyUrl(initial));
+  const alts=[];
+  const candidates=(place?.imageCandidates||[]).filter(c=>c&&c.status!=="rejected"&&c.placeMatch==="confirmed"&&(c.imageUrl||c.sourceThumbnail));
+  for(const c of candidates)for(const raw of [c.imageUrl,c.sourceThumbnail]){const url=String(raw||"").trim();if(url&&url!==initial&&url!==thumb&&!alts.includes(url))alts.push(url);}
+  for(const url of alts)addUrl(url);
+  for(const url of alts)addUrl(proxyUrl(url));
   img.dataset.fallbackQueue=JSON.stringify(queue);
   let timer=null,observer=null;
   const clearTimer=()=>{if(timer!==null){clearTimeout(timer);timer=null;}};
   const clearObserver=()=>{if(observer){observer.disconnect();observer=null;}};
-  const showMissing=()=>{
-   clearTimer();clearObserver();const f=frame();
-   if(f){f.classList.remove("image-loading","proxy-loading");f.classList.add("image-missing");}
-   img.setAttribute("aria-hidden","true");
-  };
+  const showMissing=()=>{clearTimer();clearObserver();const f=frame();if(f){f.classList.remove("image-loading","proxy-loading");f.classList.add("image-missing");}img.setAttribute("aria-hidden","true");};
   const nextSource=()=>{
    clearTimer();clearObserver();let pending=[];
    try{pending=JSON.parse(img.dataset.fallbackQueue||"[]");if(!Array.isArray(pending))pending=[];}catch(_){}
-   const next=pending.shift();img.dataset.fallbackQueue=JSON.stringify(pending);
-   if(!next){showMissing();return;}
+   const next=pending.shift();img.dataset.fallbackQueue=JSON.stringify(pending);if(!next){showMissing();return;}
    img.dataset.fallbackCurrentUrl=next;img.loading="eager";
-   const f=frame();
-   if(f){f.classList.remove("image-missing");f.classList.add("image-loading");if(/^https:\/\/images\.weserv\.nl\//i.test(next))f.classList.add("proxy-loading");else f.classList.remove("proxy-loading");}
+   const f=frame();if(f){f.classList.remove("image-missing");f.classList.add("image-loading");if(/^https:\/\/images\.weserv\.nl\//i.test(next))f.classList.add("proxy-loading");else f.classList.remove("proxy-loading");}
    img.removeAttribute("aria-hidden");img.src=next;
-   const wait=/^https:\/\/images\.weserv\.nl\//i.test(next)?9000:6500;
+   const wait=/^https:\/\/images\.weserv\.nl\//i.test(next)?8500:5500;
    timer=setTimeout(()=>{if((img.getAttribute("src")||"")===next&&!(img.complete&&img.naturalWidth>0))nextSource();},wait);
   };
   img.addEventListener("load",()=>{clearTimer();clearObserver();const f=frame();if(f)f.classList.remove("image-loading","image-missing","proxy-loading");img.removeAttribute("aria-hidden");});
   img.addEventListener("error",()=>nextSource());
-  const startWatch=()=>{clearObserver();timer=setTimeout(()=>{if(!(img.complete&&img.naturalWidth>0))nextSource();},7500);};
+  const startWatch=()=>{clearObserver();timer=setTimeout(()=>{if(!(img.complete&&img.naturalWidth>0))nextSource();},6000);};
   if(img.complete&&img.naturalWidth===0)queueMicrotask(nextSource);
   else if(img.complete&&img.naturalWidth>0){if(firstFrame)firstFrame.classList.remove("image-loading","image-missing","proxy-loading");}
-  else if(img.loading==="lazy"&&"IntersectionObserver" in window){
-   observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){clearObserver();startWatch();}},{rootMargin:"180px"});
-   observer.observe(img);
-  }else startWatch();
+  else if(img.loading==="lazy"&&"IntersectionObserver" in window){observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){clearObserver();startWatch();}},{rootMargin:"200px"});observer.observe(img);}
+  else startWatch();
  });
 }
 function stamp(){return new Date().toISOString();}
