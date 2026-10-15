@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 장소 참고사진, 대표사진 편집 판단, 재사용 권리와 촬영 허가를 독립 관리",
-  "dataStatus": "전국 권역 확장판. 활성 장소 67곳, 검토 대기 후보 9곳. 기존 214개 장소 DB에서 예술·건축적 가치와 시각적 고유성이 높은 장소 9곳을 추가; 모든 새 장소는 참고사진만 연결하고 대표사진 승인·이미지 권리·상업촬영 허가는 별도 관리.",
+  "dataStatus": "전국 권역 확장판. 활성 장소 67곳, 검토 대기 후보 9곳. 해당 장소 사진임이 출처로 확인된 사진은 대표사진으로 승인하며, 이미지 재사용 권리와 전문·상업촬영 허가는 별도 상태로 관리합니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T00:00:00.000Z",
+  "updatedAt": "2026-10-15T02:00:00.000Z",
   "places": [
     {
       "id": "nat-solol-art-museum",
@@ -53,8 +53,8 @@
       "shootingPermission": "공식 관람과 전문·상업촬영·조명 장비는 다른 조건일 수 있으므로 운영자에게 사전 확인",
       "parking": "현행 주차·대형 차량·장비 하차 조건 재확인 필요",
       "fee": "관람료·촬영료·대관료는 목적·인원·장비별 공식 문의 필요",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-solol-art-museum-reflecting-pool",
       "referenceImageId": "ref-solol-art-museum-reflecting-pool",
       "imageCandidates": [
         {
@@ -71,7 +71,7 @@
           "placeMatch": "confirmed",
           "viewType": "백색 건축·유리·수면 반영·기하학",
           "notes": "해당 장소의 백색 건축과 유리벽, 반영 수공간이 보이는 장소 참고 이미지. 강릉시 공식 안내는 건축가와 주소를 확인하는 근거이며, 사진 저작권은 별도 확인 필요.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T08:00:00.000Z"
         }
       ],
@@ -96,7 +96,7 @@
         "shootingPermission": "현행 구역별 규정·상업촬영 허가 재확인 필요",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "실제 장소·촬영 구역과 이미지 일치",
         "현재 운영 및 출입 가능 범위",
@@ -107,7 +107,7 @@
         "주차·장비 반입·스태프 대기 공간",
         "사진 저작권·재사용 권한"
       ],
-      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 대표사진 적합성, 이미지 재사용 권리, 실제 상업촬영·장비 반입 허가는 각각 별도로 확인해야 합니다.",
+      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 대표사진 적합성, 이미지 재사용 권리, 실제 상업촬영·장비 반입 허가는 각각 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 92,
@@ -126,8 +126,8 @@
         "status": "location-reference",
         "rationale": "프리츠커상 수상 건축가 리처드 마이어와 Meier Partners가 설계한 미술관. 백색 입면·유리 벽·자연광·야외 공간과 정원이 만드는 기하학적 구도와 반영을 건축·패션 에디토리얼 후보로 활용할 수 있습니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "parking": "촬영 장비 차량의 주차·하차 지점과 촬영 구역까지 이동 거리 확인",
         "loadIn": "출입구·장비 반입 동선·세트/전시 구역 규정 확인",
@@ -192,8 +192,8 @@
       "shootingPermission": "공식 안내상 사전 협의 없는 상업·전문 촬영은 허용되지 않음 · 정식 허가 문의",
       "parking": "미확인 · 공식 안내와 현장 동선 확인",
       "fee": "촬영 목적·인원·장비에 따른 최신 조건 확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-museum-san-water-garden",
       "imageCandidates": [
         {
           "id": "ref-museum-san-water-garden",
@@ -208,7 +208,7 @@
           "placeMatch": "confirmed",
           "viewType": "실외·워터가든·아치웨이",
           "notes": "뮤지엄 산 워터가든과 아치웨이 관련 기사에 실린 지상 시점 참고사진입니다. 장소 식별·공간 이해용으로 연결하며, 사진이 공간의 전체 촬영 활용도를 보여주는 최종 대표사진인지는 별도 판단합니다. 이미지 재사용 권리와 실제 현장 촬영 허가도 별도 확인 대상입니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T10:55:00.000Z",
           "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.koreatimes.co.kr%2Fupload%2FnewsV2%2Fimages%2F09-01%2528284%2529.jpg&w=900&h=650&fit=inside&output=webp",
           "license": "이용조건 확인 필요",
@@ -290,7 +290,7 @@
         "shootingPermission": "사전 확인 필요",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영·휴관일 확인",
         "실내·외 촬영 가능 구역 확인",
@@ -300,7 +300,7 @@
         "주차·하차·장비 이동",
         "혼잡 시간·행사 일정"
       ],
-      "notes": "장소의 건축·예술적 잠재력이 높아 활성 목록으로 이동했습니다. 기존 기사 사진은 장소 참고 이미지로만 표시하고 대표사진은 미선정 상태로 둡니다. 사진 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다.",
+      "notes": "장소의 건축·예술적 잠재력이 높아 활성 목록으로 이동했습니다. 기존 기사 사진은 장소 참고 이미지로만 표시하고 대표사진은 미선정 상태로 둡니다. 사진 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14T00:00:00.000Z",
       "updatedAt": "2026-10-14T10:55:00.000Z",
       "photoPotentialScore": 89,
@@ -321,7 +321,7 @@
       },
       "mapSearchQuery": "뮤지엄 산 강원 원주시 지정면 오크밸리2길 260",
       "referenceImageId": "ref-museum-san-water-garden",
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 스카우팅 지침: 스태프 차량·장비 차량 분리 주차 가능 여부 확인",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -362,7 +362,7 @@
         }
       ],
       "mediaExposureStatus": "확인된 매체 노출은 건축·문화 언론 소개 기사입니다. 특정 영화·드라마·광고의 촬영 작품명·회차는 확인되지 않았습니다.",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "visualCurationStatus": "curated",
       "reviewedOn": "2026-10-14",
       "province": "강원",
@@ -417,8 +417,8 @@
       "shootingPermission": "일반 관람과 영화·드라마·상업촬영은 구분. 세트 점유·장비 반입은 운영기관에 사전 허가 문의",
       "parking": "현행 주차·대형 차량·장비 하차 조건 재확인 필요",
       "fee": "관람료·촬영료·대관료는 목적·인원·장비별 공식 문의 필요",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-mungyeong-saejae-open-set-official",
       "referenceImageId": "ref-mungyeong-saejae-open-set-official",
       "imageCandidates": [
         {
@@ -435,7 +435,7 @@
           "placeMatch": "confirmed",
           "viewType": "실제 오픈세트·문루·전통 목조건축",
           "notes": "문경새재 오픈세트 장소를 보여주는 한국관광공사 관광 안내 이미지. 특정 작품의 촬영 장면이나 대표사진으로 간주하지 않으며, 재사용 권리는 별도 확인 필요.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T08:00:00.000Z"
         }
       ],
@@ -456,7 +456,7 @@
         "shootingPermission": "현행 구역별 규정·상업촬영 허가 재확인 필요",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "실제 장소·촬영 구역과 이미지 일치",
         "현재 운영 및 출입 가능 범위",
@@ -467,7 +467,7 @@
         "주차·장비 반입·스태프 대기 공간",
         "사진 저작권·재사용 권한"
       ],
-      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 대표사진 적합성, 이미지 재사용 권리, 실제 상업촬영·장비 반입 허가는 각각 별도로 확인해야 합니다.",
+      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 대표사진 적합성, 이미지 재사용 권리, 실제 상업촬영·장비 반입 허가는 각각 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 91,
@@ -486,8 +486,8 @@
         "status": "location-reference",
         "rationale": "궁궐·관아·양반가·주막·민가와 골목을 묶은 대형 야외 시대극 세트. 자연 지형과 전통 목조건축, 돌담·문루·마당의 깊이를 활용해 사극·시대극·레트로 캠페인에 적합한 전문 로케이션 후보."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "parking": "촬영 장비 차량의 주차·하차 지점과 촬영 구역까지 이동 거리 확인",
         "loadIn": "출입구·장비 반입 동선·세트/전시 구역 규정 확인",
@@ -542,8 +542,8 @@
       "shootingPermission": "광장 점유·전문/상업 촬영·조명 장비는 대관 담당자 사전 문의",
       "parking": "주차·장비 하차·이동 조건 재확인",
       "fee": "촬영료·대관료 및 보증금 재확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-busan-cinema-center-big-roof",
       "referenceImageId": "ref-busan-cinema-center-big-roof",
       "imageCandidates": [
         {
@@ -559,7 +559,7 @@
           "placeMatch": "confirmed",
           "viewType": "빅루프·공연장 외관·건축 스케일",
           "notes": "한국관광공사 장소 소개 페이지에서 연결된 영화의전당 이미지입니다. 장소 참고 이미지로 사용하며 대표사진 승인, 사진 재사용 권리, 상업 촬영 허가 상태는 서로 별개로 확인합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T05:00:00.000Z",
           "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/51/3021751_image2_1.jpg"
         },
@@ -609,8 +609,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 91,
@@ -629,8 +629,8 @@
         "status": "location-reference",
         "rationale": "부산국제영화제의 주요 행사장이자 영화·공연·전시 공간. 초대형 빅루프, 메탈 패널, 야간 LED와 넓은 광장을 이용해 건축적 스케일과 인물 구도를 연구할 후보."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "permitCost": "촬영 목적·인원·장비별 허가 주체, 예약 기한, 대관료·보증금 확인",
         "parking": "차량 주차·장비 하차점·촬영 구역까지 이동 거리 확인",
@@ -687,8 +687,8 @@
       "shootingPermission": "세트 점유·장비 반입·상업 촬영은 시설 담당자 승인과 사용료 확인 필요",
       "parking": "경남영상자료관 DB에 일반·대형 주차 정보 기재 · 현행 조건 재확인",
       "fee": "촬영료·대관료·보증금은 운영기관에 문의",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-hapcheon-image-theme-park-location-db",
       "referenceImageId": "ref-hapcheon-image-theme-park-location-db",
       "imageCandidates": [
         {
@@ -705,7 +705,7 @@
           "placeMatch": "confirmed",
           "viewType": "시대극 세트·빈티지 거리·레일",
           "notes": "경남영상자료관의 합천영상테마파크 로케이션 자료에 연결된 실제 시대극 세트 이미지입니다. 위치 식별용 참고사진이며 이미지 재사용 권리는 별도 확인해야 합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T09:30:00.000Z"
         }
       ],
@@ -730,8 +730,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 91,
@@ -750,8 +750,8 @@
         "status": "location-reference",
         "rationale": "1920년대부터 1980년대까지의 시대 배경을 재현한 대형 오픈세트입니다. 오래된 거리 파사드, 전차·도로, 간판과 인공 도시 레이어를 활용해 시대극·레트로 광고·시네마틱 인물 촬영을 계획할 수 있는 로케이션입니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "mediaExposureStatus": "경남영상자료관 로케이션 DB에 촬영작 목록이 함께 등록되어 있습니다(예: 메이드 인 코리아 시즌2, 정년이, 구미호뎐 1938, 암살, 써니, 태극기 휘날리며). 개별 작품의 구체적인 장면·세트는 공식 목록과 현장 구역을 대조해야 합니다.",
       "province": "경남",
       "regionGroup": "gyeongsang"
@@ -799,8 +799,8 @@
       "shootingPermission": "전시·공연 운영이 우선. 상업촬영·시설 독점·장비 사용은 구역별로 별도 문의.",
       "parking": "미확인 · 공식 안내와 현장 동선 확인",
       "fee": "촬영 목적·인원·장비에 따른 최신 조건 확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-f1963-industrial-space",
       "imageCandidates": [
         {
           "id": "ref-f1963-industrial-space",
@@ -815,7 +815,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내 문화공간·노출 천장·전시 동선",
           "notes": "부산문화재단 포털의 F1963 관련 공간 참고사진입니다. 실제 장소 이미지는 맞지만 현재 사진은 문화·전시 구역의 한 장면이므로, 옛 공장 규모·벽돌·철골의 다양한 구도를 판단할 사진을 추가 조사합니다. 대표사진으로 확정하지 않으며 이미지 재사용 권리도 별도 확인합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T00:00:00.000Z",
           "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.bscf.or.kr%2Fshare%2Fportal%2Fimg%2FContents%2Fspace-f1963_thumb01.jpg&w=900&h=650&fit=inside&output=webp",
           "license": "이용조건 확인 필요",
@@ -833,7 +833,7 @@
         "shootingPermission": "사전 확인 필요",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영·휴관일 확인",
         "실내·외 촬영 가능 구역 확인",
@@ -843,7 +843,7 @@
         "주차·하차·장비 이동",
         "혼잡 시간·행사 일정"
       ],
-      "notes": "산업건축·벽돌·철골 공간을 식별하기 위한 참고 이미지가 연결되어 있습니다. 공간의 규모와 다양한 촬영 구도를 충분히 보여주는 최종 대표사진은 후속 검토하고, 상업촬영 허가와 이미지 재사용 권리는 별도 확인합니다.",
+      "notes": "산업건축·벽돌·철골 공간을 식별하기 위한 참고 이미지가 연결되어 있습니다. 공간의 규모와 다양한 촬영 구도를 충분히 보여주는 최종 대표사진은 후속 검토하고, 상업촬영 허가와 이미지 재사용 권리는 별도 확인합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14T00:00:00.000Z",
       "updatedAt": "2026-10-14T10:00:00.000Z",
       "photoPotentialScore": 87,
@@ -864,7 +864,7 @@
       },
       "mapSearchQuery": "F1963 부산광역시 수영구 구락로123번길 20",
       "referenceImageId": "ref-f1963-industrial-space",
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 스카우팅 지침: 스태프 차량·장비 차량 분리 주차 가능 여부 확인",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -896,7 +896,7 @@
       },
       "mediaAppearances": [],
       "mediaExposureStatus": "특정 영화·드라마·광고 작품명과 장면 출처는 아직 검증되지 않았습니다. 공연·전시 이용 이력을 영상 매체 출연 이력으로 추정하지 않습니다.",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "visualCurationStatus": "curated",
       "reviewedOn": "2026-10-14",
       "province": "부산",
@@ -945,8 +945,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-ddp-night-curved",
       "imageCandidates": [
         {
           "id": "ref-ddp-night-curved",
@@ -961,7 +961,7 @@
           "placeMatch": "confirmed",
           "viewType": "야간·곡면 건축·빛",
           "notes": "사진가 관점의 시각 참고 후보. DDP 곡면 외피가 보이는 사진으로 식별 가능. 상업/공개 재사용 권리 미확인; 대표사진으로 사용하지 말고 원본에서 조건을 별도 확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
         {
@@ -987,7 +987,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -997,7 +997,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 95,
@@ -1018,10 +1018,11 @@
       },
       "mapSearchQuery": "서울특별시 중구 을지로 281 동대문디자인플라자 DDP",
       "referenceImageId": "ref-ddp-night-curved",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "phone": "02-2153-0000",
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "candidate-leeum-museum",
@@ -1067,8 +1068,8 @@
       "shootingPermission": "일반 관람과 상업·전문 촬영은 별개. 전시실·작품 촬영·삼각대·조명은 공식 규정 및 허가 확인",
       "parking": "주차·장비 하차·이동 동선은 방문 전 재확인",
       "fee": "촬영료·대관료·보증금은 운영기관에 문의",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-leeum-museum-m1-vogue",
       "referenceImageId": "ref-leeum-museum-m1-vogue",
       "imageCandidates": [
         {
@@ -1085,7 +1086,7 @@
           "placeMatch": "confirmed",
           "viewType": "마리오 보타 M1·테라코타 외벽·건축",
           "notes": "Vogue Japan의 리움미술관 건축 소개에 연결된 실제 M1 외관 참고 이미지입니다. 장소 식별용으로 활용하며 이미지 재사용 권리와 최종 대표사진 적합성은 별도 확인합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T09:30:00.000Z"
         }
       ],
@@ -1110,8 +1111,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14T10:00:00.000Z",
       "photoPotentialScore": 94,
@@ -1130,8 +1131,8 @@
         "status": "location-reference",
         "rationale": "마리오 보타의 M1, 장 누벨의 M2, 렘 쿨하스의 삼성아동교육문화센터가 한 단지 안에 공존합니다. 건축가마다 다른 매스·재료·표면 반사와 외부 동선을 비교할 수 있어 건축·패션 에디토리얼 촬영 후보로 가치가 높습니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "province": "서울",
       "regionGroup": "seoul"
     },
@@ -1174,8 +1175,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-mullae-lit-workshop",
       "imageCandidates": [
         {
           "id": "ref-mullae-lit-workshop",
@@ -1190,7 +1191,7 @@
           "placeMatch": "confirmed",
           "viewType": "실외·작업장·야간 혼합광",
           "notes": "작업장 불빛과 낡은 거리 질감 참고 후보. 사유 작업장 출입·영업 방해 금지. 원본 이미지 권리와 현재 현장 존재 여부를 확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -1202,7 +1203,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -1212,7 +1213,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 88,
@@ -1233,7 +1234,7 @@
       },
       "mapSearchQuery": "서울특별시 영등포구 도림로128길 문래창작촌 일대",
       "referenceImageId": "ref-mullae-lit-workshop",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 조사 항목: 스태프 차량·장비 차량 주차 분리와 요금·높이 제한 확인 필요",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -1324,7 +1325,8 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-oil-tank",
@@ -1370,8 +1372,8 @@
       "shootingPermission": "공간 점유형 촬영은 사전 승인 필요 · 최신 운영기관 확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-oil-tank-t4",
       "imageCandidates": [
         {
           "id": "ref-oil-tank-t4",
@@ -1386,7 +1388,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내·산업건축",
           "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
         {
@@ -1414,7 +1416,7 @@
         "shootingPermission": "공식 안내 확인 · 촬영 전 재확인 필요",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -1424,7 +1426,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 92,
@@ -1444,7 +1446,7 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-oil-tank-t4",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 스카우팅 지침: 스태프 차량·장비 차량 분리 주차 가능 여부 확인",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -1535,7 +1537,8 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-seoul-station-284",
@@ -1579,8 +1582,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-culture-station-hall",
       "imageCandidates": [
         {
           "id": "ref-culture-station-hall",
@@ -1595,7 +1598,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내·역사건축",
           "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
         {
@@ -1654,7 +1657,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -1664,7 +1667,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 91,
@@ -1684,7 +1687,7 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-culture-station-hall",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 조사 항목: 스태프 차량·장비 차량 주차 분리와 요금·높이 제한 확인 필요",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -1776,7 +1779,8 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-botanic",
@@ -1817,8 +1821,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-botanic-greenhouse-walkway",
       "imageCandidates": [
         {
           "id": "ref-botanic-greenhouse-walkway",
@@ -1833,7 +1837,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내·식생·구조 레이어",
           "notes": "온실의 구조와 실제 보행 동선 참고 후보. 대표사진 등록 전 원본 페이지에서 작가·사용 권리를 확인하고 현재 공간·촬영 허용 여부 재확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -1847,7 +1851,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -1857,7 +1861,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 89,
@@ -1877,9 +1881,10 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-botanic-greenhouse-walkway",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-seonyudo",
@@ -1920,8 +1925,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-seonyudo-pergola",
       "imageCandidates": [
         {
           "id": "ref-seonyudo-pergola",
@@ -1936,7 +1941,7 @@
           "placeMatch": "confirmed",
           "viewType": "야외·콘크리트 퍼골라",
           "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -1950,7 +1955,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -1960,7 +1965,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 90,
@@ -1980,7 +1985,7 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-seonyudo-pergola",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 기록: 주차 가능 여부·요금·장비 하차 지점·주차 후 보행 동선 확인",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -2071,7 +2076,8 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-seongsu",
@@ -2112,8 +2118,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-seongsu-brick-industrial-front",
       "imageCandidates": [
         {
           "id": "ref-seongsu-brick-industrial-front",
@@ -2128,7 +2134,7 @@
           "placeMatch": "confirmed",
           "viewType": "벽돌·목재·그림자·산업건축",
           "notes": "산업건축의 재료감 참고 후보. 2019년 기사 이미지로 현재 건물 상태와 주소를 다시 확인할 필요가 있음. 공개 재사용 권리 미확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -2140,7 +2146,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -2150,7 +2156,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 85,
@@ -2171,7 +2177,7 @@
       },
       "mapSearchQuery": "서울특별시 성동구 성수이로 성수동 옛 공장 골목",
       "referenceImageId": "ref-seongsu-brick-industrial-front",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 조사 항목: 스태프 차량·장비 차량 주차 분리와 요금·높이 제한 확인 필요",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -2262,7 +2268,8 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-sewoon",
@@ -2308,8 +2315,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-sewoon-citywalk-seoulmediahub",
       "imageCandidates": [
         {
           "id": "ref-sewoon-citywalk-seoulmediahub",
@@ -2324,7 +2331,7 @@
           "placeMatch": "confirmed",
           "viewType": "도시·공중보행로·수평선",
           "notes": "세운상가 및 인접 보행로의 구조 참고 후보. 서울시 기사 이미지이나 이미지별 재사용 조건 확인 전까지 대표사진 승인 불가. 2025년 이후 일대 공원화/공사 계획이 있어 현재 접근구간을 반드시 재확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -2339,7 +2346,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -2349,7 +2356,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 87,
@@ -2370,7 +2377,7 @@
       },
       "mapSearchQuery": "서울특별시 중구 청계천로 세운상가 일대",
       "referenceImageId": "ref-sewoon-citywalk-seoulmediahub",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 조사 항목: 스태프 차량·장비 차량 주차 분리와 요금·높이 제한 확인 필요",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -2461,7 +2468,8 @@
         ]
       },
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-euljiro",
@@ -2504,8 +2512,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-euljiro-rooftop-city-texture",
       "imageCandidates": [
         {
           "id": "ref-euljiro-rooftop-city-texture",
@@ -2520,7 +2528,7 @@
           "placeMatch": "confirmed",
           "viewType": "도시 텍스처·지붕·원근",
           "notes": "세운상가 인근 을지로 일대 지붕과 상업 건물의 밀도를 보여주는 참고 후보. 서울시 기사 이미지이나 재사용 권리는 별도 확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -2534,7 +2542,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -2544,7 +2552,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 86,
@@ -2565,9 +2573,10 @@
       },
       "mapSearchQuery": "서울특별시 중구 을지로3가역 을지로 인쇄·금속 골목",
       "referenceImageId": "ref-euljiro-rooftop-city-texture",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "candidate-seoul-lg-arts-center",
@@ -2613,8 +2622,8 @@
       "shootingPermission": "관람·건축 오디오 투어와 전문·상업촬영은 별개. 상업촬영·삼각대·조명은 사전 승인 여부 문의",
       "parking": "주차·장비 하차·이동 동선은 방문 전 재확인",
       "fee": "촬영료·대관료·보증금은 운영기관에 문의",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-lg-arts-center-gate-arc",
       "referenceImageId": "ref-lg-arts-center-gate-arc",
       "imageCandidates": [
         {
@@ -2631,7 +2640,7 @@
           "placeMatch": "confirmed",
           "viewType": "공연장 외관·Gate Arc·곡선 건축",
           "notes": "연합뉴스 기사에 연결된 LG아트센터 서울의 실제 외관 참고 이미지입니다. 공식 LG아트센터 건축·방문 안내를 통해 장소 특성을 별도로 확인했습니다. 외부 표시 가능한 장소 참고 이미지일 뿐, 공개 재사용 권리와 대표사진 적합성은 별도 확인합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T09:30:00.000Z"
         }
       ],
@@ -2656,8 +2665,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14T10:00:00.000Z",
       "photoPotentialScore": 93,
@@ -2676,8 +2685,8 @@
         "status": "location-reference",
         "rationale": "안도 다다오가 설계한 공연장으로 TUBE, STEP ATRIUM, GATE ARC의 서로 다른 공간 경험과 노출 콘크리트·곡선·높이 차가 공존합니다. 건축·공연·패션 에디토리얼에 활용할 시각적 가치가 있는 장소 후보입니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "province": "서울",
       "regionGroup": "seoul"
     },
@@ -2723,8 +2732,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-mmca-gwacheon-circular-ramp",
       "imageCandidates": [
         {
           "id": "ref-mmca-gwacheon-circular-ramp",
@@ -2739,7 +2748,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내·원형 램프·조각·자연광",
           "notes": "원형 램프/천창/조각의 공간 구성을 파악하기 위한 참고 후보. 실제 현재 전시·촬영 구역 및 사진 재사용 권리 미확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -2753,7 +2762,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -2763,7 +2772,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 86,
@@ -2783,9 +2792,10 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-mmca-gwacheon-circular-ramp",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "경기",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "gg-mimesis",
@@ -2829,8 +2839,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-mimesis-curved-courtyard",
       "imageCandidates": [
         {
           "id": "ref-mimesis-curved-courtyard",
@@ -2845,7 +2855,7 @@
           "placeMatch": "confirmed",
           "viewType": "야외·곡면 건축",
           "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
         {
@@ -2873,7 +2883,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -2883,7 +2893,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 94,
@@ -2904,7 +2914,7 @@
       },
       "mapSearchQuery": "경기도 파주시 문발로 미메시스 아트 뮤지엄",
       "referenceImageId": "ref-mimesis-curved-courtyard",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 조사 항목: 스태프 차량·장비 차량 주차 분리와 요금·높이 제한 확인 필요",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -2998,7 +3008,8 @@
         ]
       },
       "province": "경기",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "ic-tri-bowl",
@@ -3042,8 +3053,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-tribowl-designers-curved-shell",
       "imageCandidates": [
         {
           "id": "ref-tribowl-designers-curved-shell",
@@ -3058,7 +3069,7 @@
           "placeMatch": "confirmed",
           "viewType": "건축·곡면 역쉘·수면 반사",
           "notes": "설계자/건축 프로젝트 페이지에서 찾은 시각 참고 후보. 곡면 하부와 물의 반사를 보여주며 예술적 잠재력이 높음. 공개 재사용 권리는 미확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -3070,7 +3081,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -3080,7 +3091,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 92,
@@ -3101,9 +3112,10 @@
       },
       "mapSearchQuery": "인천광역시 연수구 인천타워대로 250 송도 트라이보울",
       "referenceImageId": "ref-tribowl-designers-curved-shell",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "인천",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "gg-anyang-artpark",
@@ -3146,8 +3158,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-anyang-glass-walkway",
       "imageCandidates": [
         {
           "id": "ref-anyang-glass-walkway",
@@ -3162,7 +3174,7 @@
           "placeMatch": "confirmed",
           "viewType": "설치물·투과광·반복 아치",
           "notes": "장소와 설치물의 시각적 구성을 확인하기 위한 참고 후보일 뿐 공개 대표사진으로 쓸 수 있다는 뜻이 아님. APAP 개별 작품명·위치, 촬영 접근성과 사진 권리를 재확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -3177,7 +3189,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -3187,7 +3199,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 91,
@@ -3208,9 +3220,10 @@
       },
       "mapSearchQuery": "경기도 안양시 만안구 예술공원로 안양예술공원",
       "referenceImageId": "ref-anyang-glass-walkway",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "경기",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "ic-art-platform",
@@ -3252,8 +3265,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-incheon-art-platform-brick",
       "imageCandidates": [
         {
           "id": "ref-incheon-art-platform-brick",
@@ -3268,7 +3281,7 @@
           "placeMatch": "confirmed",
           "viewType": "야외·붉은 벽돌 산업건축",
           "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
         {
@@ -3310,7 +3323,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -3320,7 +3333,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 90,
@@ -3340,7 +3353,7 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-incheon-art-platform-brick",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "공식 안내: 상업촬영 차량 출입·주차 금지. 장비 하차·외부 주차와 도보 반입 동선을 담당자에게 확인",
         "loadIn": "공식 안내: 촬영 차량 출입·주차 금지. 케이스 이동 거리·반입구·인력 반입 동선을 사전 협의",
@@ -3434,7 +3447,8 @@
         ]
       },
       "province": "인천",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "nat-kfilm-studio-paju-5",
@@ -3479,8 +3493,8 @@
       "shootingPermission": "스튜디오 대관·세트 제작·상업 촬영은 케이필름 운영사에 사전 예약 및 계약 필요",
       "parking": "필름코리아 안내에 주차 300대 이상 기재 · 현행 주차·대형 차량 진입 조건 재확인",
       "fee": "촬영료·대관료·보증금은 운영기관에 문의",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-kfilm-studio5-exterior",
       "referenceImageId": "ref-kfilm-studio5-exterior",
       "imageCandidates": [
         {
@@ -3497,7 +3511,7 @@
           "placeMatch": "confirmed",
           "viewType": "대형 스튜디오 외관·시설 입구",
           "notes": "필름코리아의 케이필름 제5스튜디오 시설 안내에 연결된 실제 스튜디오 외관입니다. 실내 촬영 공간의 대표사진으로 대체하지 않고 장소 참고 이미지로 표시합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T09:30:00.000Z"
         }
       ],
@@ -3518,8 +3532,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 86,
@@ -3538,8 +3552,8 @@
         "status": "location-reference",
         "rationale": "필름코리아 시설 안내 기준으로 600평대 대형 호리존, 높이 13m, 호리존과 세트 작업을 병행할 수 있는 전문 제작 스튜디오입니다. 인물·패션·광고 및 대형 세트 촬영의 실제 장비 동선과 대관 조건을 확인할 후보입니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "province": "경기",
       "regionGroup": "capital"
     },
@@ -3583,8 +3597,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-paju-samho-building",
       "imageCandidates": [
         {
           "id": "ref-paju-samho-building",
@@ -3599,7 +3613,7 @@
           "placeMatch": "confirmed",
           "viewType": "건축·정면·격자·중정",
           "notes": "출판도시 전체가 아니라 삼호빌딩이라는 구체 구역을 식별하는 조사 후보. 추후 앱에서는 건물명/진입점/촬영 각도를 별도로 기록하고 사진 사용 권리 확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -3611,7 +3625,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -3621,7 +3635,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 91,
@@ -3642,9 +3656,10 @@
       },
       "mapSearchQuery": "경기도 파주시 회동길 파주출판도시 아시아출판문화정보센터",
       "referenceImageId": "ref-paju-samho-building",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "경기",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "nat-cjenm-studio-center",
@@ -3683,8 +3698,8 @@
       "shootingPermission": "스튜디오·오픈세트는 대관 계약 및 사전 허가 필요 · 일반 자유 촬영 불가로 간주",
       "parking": "주차·장비 하차·이동 조건 재확인",
       "fee": "촬영료·대관료 및 보증금 재확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-cjenm-studio-interior",
       "referenceImageId": "ref-cjenm-studio-interior",
       "imageCandidates": [
         {
@@ -3700,7 +3715,7 @@
           "placeMatch": "confirmed",
           "viewType": "드라마 스튜디오·고천고·조명 리깅",
           "notes": "공식 드라마 스튜디오 시설 안내의 내부 사진입니다. 실제 시설과의 일치는 확인했지만 재사용 권리와 특정 촬영 구역의 대관 가능 여부는 별도 확인이 필요합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T05:00:00.000Z"
         },
         {
@@ -3745,8 +3760,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 90,
@@ -3765,8 +3780,8 @@
         "status": "location-reference",
         "rationale": "13개 동의 제작 스튜디오와 드라마 스테이지, 오픈세트, LED 버추얼 프로덕션, 멀티로드가 결합된 전문 영상 제작 시설. 스튜디오 내부 구조·대형 세트·버추얼 프로덕션을 조사할 후보."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "permitCost": "촬영 목적·인원·장비별 허가 주체, 예약 기한, 대관료·보증금 확인",
         "parking": "차량 주차·장비 하차점·촬영 구역까지 이동 거리 확인",
@@ -3823,8 +3838,8 @@
       "shootingPermission": "촬영 목적·팀 규모에 따른 대관 협의. 이용 구역·비용·장비·특수효과 조건은 계약 전 확인.",
       "parking": "미확인 · 공식 안내와 현장 동선 확인",
       "fee": "촬영 목적·인원·장비에 따른 최신 조건 확인",
-      "imageStatus": "참고사진 후보 · 대표사진 확정 전",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-kikai-studio-main",
       "imageCandidates": [
         {
           "id": "ref-kikai-studio-main",
@@ -3839,7 +3854,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내 스튜디오·산업건축",
           "notes": "공식 홈페이지의 실제 공간 갤러리 이미지. 대관 조건과 사진 사용권은 별도로 확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T00:00:00.000Z",
           "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fkikai.kr%2Fassets%2Fstudio-13-qfjSbL40.jpg&w=900&h=650&fit=inside&output=webp",
           "license": "이용조건 확인 필요",
@@ -3856,7 +3871,7 @@
         "shootingPermission": "사전 확인 필요",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "건축·공간의 사진적 특성으로 선별한 후보 · 현장·허가 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영·휴관일 확인",
         "실내·외 촬영 가능 구역 확인",
@@ -3866,7 +3881,7 @@
         "주차·하차·장비 이동",
         "혼잡 시간·행사 일정"
       ],
-      "notes": "공식 홈페이지는 웹드라마·숏폼 드라마·뮤직비디오·패션화보 등의 촬영 용도를 안내하지만 구체 작품명은 공개하지 않습니다.",
+      "notes": "공식 홈페이지는 웹드라마·숏폼 드라마·뮤직비디오·패션화보 등의 촬영 용도를 안내하지만 구체 작품명은 공개하지 않습니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14T00:00:00.000Z",
       "updatedAt": "2026-10-14T00:00:00.000Z",
       "photoPotentialScore": 91,
@@ -3887,7 +3902,7 @@
       },
       "mapSearchQuery": "KIKAI 인더스트리얼 스튜디오 파주 광탄",
       "referenceImageId": "ref-kikai-studio-main",
-      "referenceImageStatus": "참고사진 후보 · 촬영 포인트 및 재사용 권리 확인 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 스카우팅 지침: 스태프 차량·장비 차량 분리 주차 가능 여부 확인",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -3927,7 +3942,7 @@
         }
       ],
       "mediaExposureStatus": "공식 홈페이지는 여러 영상·화보 촬영 용도를 안내하지만 개별 공개 작품명은 확인되지 않았습니다. 특정 영화·드라마·광고의 출연 장소라고 단정하지 않습니다.",
-      "photoReviewStatus": "실제 장소 일치·사진 사용권·촬영 허가는 별도 확인 대상",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "visualCurationStatus": "curated",
       "province": "경기",
       "regionGroup": "capital"
@@ -3975,8 +3990,8 @@
       "shootingPermission": "버추얼 스튜디오 대관과 상업 제작은 운영사 예약·계약 및 보안 승인 필요",
       "parking": "주차·장비 하차·이동 동선은 방문 전 재확인",
       "fee": "촬영료·대관료·보증금은 운영기관에 문의",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-team-studios-volume-hankyung",
       "referenceImageId": "ref-team-studios-volume-hankyung",
       "imageCandidates": [
         {
@@ -3993,7 +4008,7 @@
           "placeMatch": "confirmed",
           "viewType": "LED 월·가상 도시 배경·촬영 장비",
           "notes": "판교 TEAM Studio의 LED 월 기반 버추얼 프로덕션 무대를 보여주는 현장 참고 이미지입니다. 이미지 재사용 권리와 현재 시설 사양은 별도 확인해야 하며, 대표사진으로 선정된 상태는 아닙니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T09:30:00.000Z"
         }
       ],
@@ -4018,8 +4033,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 88,
@@ -4038,8 +4053,8 @@
         "status": "location-reference",
         "rationale": "판교 제2테크노밸리의 전문 버추얼 프로덕션 시설로, XR 스테이지와 U자형 Volume Stage의 LED 월을 이용해 영상 속 환경을 실시간으로 연출합니다. 광고·뮤직비디오·드라마의 가상 제작 공간과 촬영 장비 구성을 살펴볼 후보입니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "province": "경기",
       "regionGroup": "capital"
     },
@@ -4093,8 +4108,8 @@
       "shootingPermission": "공식 촬영·대관 규정과 구역별 제한을 사전 확인",
       "parking": "미확인 · 공식 안내와 현장 동선 확인",
       "fee": "촬영 목적·인원·장비에 따른 최신 조건 확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-acc-official-night-courtyard",
       "imageCandidates": [
         {
           "id": "ref-acc-official-night-courtyard",
@@ -4109,7 +4124,7 @@
           "placeMatch": "confirmed",
           "viewType": "현대건축·야간 광장·유리 입면",
           "notes": "해당 시설의 광장과 건축 입면을 보여주는 장소 참고 이미지입니다. 대표사진으로 승인한 상태가 아니며 이미지 이용조건은 별도로 확인해야 합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T05:00:00.000Z"
         }
       ],
@@ -4130,7 +4145,7 @@
         "shootingPermission": "현행 규정·상업촬영 허가 재확인 필요",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영·휴관일 확인",
         "실내·외 촬영 가능 구역 확인",
@@ -4140,7 +4155,7 @@
         "주차·하차·장비 이동",
         "혼잡 시간·행사 일정"
       ],
-      "notes": "공식 공간 안내로 장소를 확인했으며, 야간 광장 사진은 장소 참고 이미지로만 사용합니다. 대표사진 적합성·재사용 권리와 상업 촬영 허가는 별도로 확인해야 합니다.",
+      "notes": "공식 공간 안내로 장소를 확인했으며, 야간 광장 사진은 장소 참고 이미지로만 사용합니다. 대표사진 적합성·재사용 권리와 상업 촬영 허가는 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14T00:00:00.000Z",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 88,
@@ -4161,7 +4176,7 @@
       },
       "mapSearchQuery": "국립아시아문화전당 광주광역시 동구 문화전당로 38",
       "referenceImageId": "ref-acc-official-night-courtyard",
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 스카우팅 지침: 스태프 차량·장비 차량 분리 주차 가능 여부 확인",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -4193,7 +4208,7 @@
       },
       "mediaAppearances": [],
       "mediaExposureStatus": "특정 영화·드라마·광고 작품명·장면 출처는 확인되지 않았습니다. 공연·전시 이력을 영상 매체 노출과 혼동하지 않습니다.",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "visualCurationStatus": "curated",
       "reviewedOn": "2026-10-14",
       "province": "광주",
@@ -4236,8 +4251,8 @@
       "shootingPermission": "대여 및 신청 절차를 통한 시설 이용 승인 필요",
       "parking": "주차·장비 하차·이동 조건 재확인",
       "fee": "촬영료·대관료 및 보증금 재확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-jeonju-film-studio-exterior",
       "referenceImageId": "ref-jeonju-film-studio-exterior",
       "imageCandidates": [
         {
@@ -4253,7 +4268,7 @@
           "placeMatch": "confirmed",
           "viewType": "영화 스튜디오 외관·제작 시설",
           "notes": "씨네21 현장 기사에서 전주영화종합촬영소를 식별할 수 있는 참고 이미지입니다. 시설 장소 확인용이며 대표사진 승인·재사용 권리 허가 상태는 아닙니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T05:00:00.000Z"
         },
         {
@@ -4294,8 +4309,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 87,
@@ -4314,8 +4329,8 @@
         "status": "location-reference",
         "rationale": "지방자치단체 기반의 영화 제작 시설로 J1·J2 스튜디오, 야외 세트장 및 버추얼 스튜디오를 운영·구축하는 전문 촬영 장소. 영화·드라마·광고의 실제 제작 동선과 대관 정보를 조사할 후보."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "permitCost": "촬영 목적·인원·장비별 허가 주체, 예약 기한, 대관료·보증금 확인",
         "parking": "차량 주차·장비 하차점·촬영 구역까지 이동 거리 확인",
@@ -4373,8 +4388,8 @@
       "shootingPermission": "공개 관람·식음시설 이용과 상업·전문촬영은 별개. 운영사에 촬영 허가·장비 규정 확인",
       "parking": "주차·장비 하차·이동 동선은 방문 전 재확인",
       "fee": "촬영료·대관료·보증금은 운영기관에 문의",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-jeju-glass-house-kieae",
       "referenceImageId": "ref-jeju-glass-house-kieae",
       "imageCandidates": [
         {
@@ -4391,7 +4406,7 @@
           "placeMatch": "confirmed",
           "viewType": "해안 건축·유리와 콘크리트·수평선",
           "notes": "학술 논문에 수록된 글라스하우스 실물 사진으로, 건축과 해안 위치를 식별하기 위한 참고 이미지입니다. 사진 저작권은 학술지 정책을 따라 별도 확인하고, 대표사진은 후속 선정합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T09:30:00.000Z"
         },
         {
@@ -4432,8 +4447,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 92,
@@ -4452,8 +4467,8 @@
         "status": "location-reference",
         "rationale": "안도 다다오가 설계한 해안 건축물로, 닫힌 콘크리트 스크린과 개방적인 유리면, 데크와 바다 전망의 극적인 대비가 특징입니다. 건축의 조형성과 제주의 해안선을 함께 활용할 수 있는 촬영 장소 후보입니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "province": "제주",
       "regionGroup": "jeju"
     },
@@ -4494,8 +4509,8 @@
       "shootingPermission": "제작시설 대관 신청 및 운영자 승인 필요",
       "parking": "주차·장비 하차·이동 조건 재확인",
       "fee": "촬영료·대관료 및 보증금 재확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-studio-cube-stage",
       "referenceImageId": "ref-studio-cube-stage",
       "imageCandidates": [
         {
@@ -4511,7 +4526,7 @@
           "placeMatch": "confirmed",
           "viewType": "대형 LED 월·버추얼 프로덕션·조명 리깅",
           "notes": "2025년 12월 Studio Cube의 다목적 버추얼 스튜디오 개편을 다룬 기사에 연결된 실제 내부 사진입니다. 장소 참고 이미지로 사용하며 사진 저작권과 재사용 조건은 별도 확인해야 합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T05:00:00.000Z",
           "sourceThumbnail": "https://news.nateimg.co.kr/orgImg/na/2025/12/03/7631606_high.jpg"
         }
@@ -4537,8 +4552,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 88,
@@ -4557,8 +4572,8 @@
         "status": "location-reference",
         "rationale": "한국콘텐츠진흥원 운영의 대형 영상 제작 기반시설. 대형 사운드 스테이지와 특수촬영, 크로마키, 수상 촬영, 버추얼 프로덕션 등 영화·드라마·광고 제작을 위한 전문 장소."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "permitCost": "촬영 목적·인원·장비별 허가 주체, 예약 기한, 대관료·보증금 확인",
         "parking": "차량 주차·장비 하차점·촬영 구역까지 이동 거리 확인",
@@ -4609,8 +4624,8 @@
       "shootingPermission": "관람 촬영과 상업 촬영·조명 장비의 허용 범위를 운영자에게 확인",
       "parking": "주차·장비 하차·이동 조건 재확인",
       "fee": "촬영료·대관료 및 보증금 재확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-haslla-wave-sculpture",
       "referenceImageId": "ref-haslla-wave-sculpture",
       "imageCandidates": [
         {
@@ -4626,7 +4641,7 @@
           "placeMatch": "confirmed",
           "viewType": "야외 조각·금속 반복선·바다",
           "notes": "기사에서 하슬라아트월드의 조각 공간을 보여주는 사진입니다. 장소 참고 이미지이며 원저작자·공개 재사용 권리 확인이 필요합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T05:00:00.000Z"
         }
       ],
@@ -4647,8 +4662,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 86,
@@ -4667,8 +4682,8 @@
         "status": "location-reference",
         "rationale": "해안 조각공원과 현대미술관, 금속 설치물과 동해 수평선이 결합된 환경인물·패션 에디토리얼 후보. 조형물 사이의 통로와 그림자, 바다를 배경으로 한 프레임을 조사할 가치가 있습니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "permitCost": "촬영 목적·인원·장비별 허가 주체, 예약 기한, 대관료·보증금 확인",
         "parking": "차량 주차·장비 하차점·촬영 구역까지 이동 거리 확인",
@@ -4725,8 +4740,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-mmca-seoul-courtyard-glass",
       "imageCandidates": [
         {
           "id": "ref-mmca-seoul-courtyard-glass",
@@ -4741,7 +4756,7 @@
           "placeMatch": "confirmed",
           "viewType": "중정·유리·부유하는 볼륨",
           "notes": "국립현대미술관 서울관의 공간 구성과 중정 참고 후보. 촬영 가능한 외부/실내 구역과 사진 권리를 별도 확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
         {
@@ -4783,7 +4798,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -4793,7 +4808,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 83,
@@ -4813,9 +4828,10 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-mmca-seoul-courtyard-glass",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-naksan-wall",
@@ -4856,8 +4872,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-naksan-wall-news-night",
       "imageCandidates": [
         {
           "id": "ref-naksan-wall-news-night",
@@ -4872,7 +4888,7 @@
           "placeMatch": "confirmed",
           "viewType": "야간·성곽·도시 조망",
           "notes": "기사의 한양도성 순성 관련 사진으로 성곽선·야간 조명·도심 원근을 확인하는 후보. 이미지 사용 권리 미확인, 실제 촬영 지점과 현장 접근 동선을 별도 검증해야 함.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -4884,7 +4900,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -4894,7 +4910,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 75,
@@ -4915,9 +4931,10 @@
       },
       "mapSearchQuery": "서울특별시 종로구 낙산길 낙산공원 한양도성 구간",
       "referenceImageId": "ref-naksan-wall-news-night",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-nodeul",
@@ -4959,8 +4976,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "장소 참고 이미지 등록 · 대표사진 판단 전",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-nodeul-island-step-garden-seoulmediahub",
       "imageCandidates": [
         {
           "id": "ref-nodeul-island-sunken-plaza-dusk",
@@ -5006,7 +5023,7 @@
           "placeMatch": "confirmed",
           "viewType": "계단형 정원·반복 아치·건축 기하학",
           "notes": "2026년 서울시 미디어허브의 노들섬 수변문화공간 기사에서 제공한 해당 장소의 계단형 틈새정원 사진. 실제 장소를 보여주는 참고 이미지이며 대표사진 채택과 재사용 권한은 별도 검토합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T11:55:00.000Z"
         }
       ],
@@ -5020,7 +5037,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -5030,7 +5047,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 83,
@@ -5050,9 +5067,10 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-nodeul-island-step-garden-seoulmediahub",
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-craft-museum",
@@ -5096,8 +5114,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-craftmuseum-courtyard",
       "imageCandidates": [
         {
           "id": "ref-craftmuseum-courtyard",
@@ -5112,7 +5130,7 @@
           "placeMatch": "confirmed",
           "viewType": "중정·파사드·곡선 패턴",
           "notes": "건축 매체에서 찾은 시각적 참고 후보. 실제 관람 동선과 촬영 가능 구역, 재사용 권리를 별도로 확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -5126,7 +5144,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -5136,7 +5154,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 82,
@@ -5156,10 +5174,11 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-craftmuseum-courtyard",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "phone": "02-6450-7000",
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-sema-namseoul",
@@ -5204,8 +5223,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-namseoul-belgian-consulate",
       "imageCandidates": [
         {
           "id": "ref-namseoul-belgian-consulate",
@@ -5220,7 +5239,7 @@
           "placeMatch": "confirmed",
           "viewType": "역사건축·대칭·벽돌·석재",
           "notes": "서울시 기사 본문에서 남서울미술관 외관으로 명시된 이미지. 벽돌과 석재 띠, 좌우 대칭, 높은 창호가 보이는 사진가용 참고 후보. 공개 재사용 권리는 미확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -5235,7 +5254,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -5245,7 +5264,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 82,
@@ -5265,9 +5284,10 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-namseoul-belgian-consulate",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-kbs-arena",
@@ -5307,8 +5327,8 @@
       "shootingPermission": "공연·행사 대관과 별도로 촬영 목적·장비·영리 여부를 운영기관에 문의",
       "parking": "미확인 · 운영기관 확인 필요",
       "fee": "미확인 · 운영기관 확인 필요",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-kbs-arena-stage",
       "referenceImageId": "ref-kbs-arena-stage",
       "imageCandidates": [
         {
@@ -5324,7 +5344,7 @@
           "placeMatch": "confirmed",
           "viewType": "무대·객석·조명 구조",
           "notes": "KBS아레나 공연장 내부의 참고 이미지. 무대 구성과 현재 설비는 대관 조건에 따라 다를 수 있습니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T00:00:00.000Z"
         }
       ],
@@ -5345,8 +5365,8 @@
         "shootingPermission": "미확인 · 촬영 전 문의",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "1차 조사 후보 · 현장 촬영 조건 확인 필요",
-      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 84,
@@ -5365,11 +5385,12 @@
         "rationale": "공연 무대의 깊이, 관객석 반복 패턴, 조명 트러스와 LED 연출을 활용할 수 있는 실내 공연장 후보.",
         "status": "desk-review"
       },
-      "referenceImageStatus": "장소 참고사진 · 대표사진 승인 아님",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "permitCost": "상업촬영 허가 주체·예약 기한·촬영료·장비 반입 조건 확인",
         "fieldNotes": "현장 동선과 촬영 가능 구역을 조사해야 합니다."
-      }
+      },
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "ic-open-port",
@@ -5413,8 +5434,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "참고사진 연결 · 권리 확인 전",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-incheon-openport-brick-street",
       "imageCandidates": [
         {
           "id": "ref-incheon-openport-brick-street",
@@ -5429,7 +5450,7 @@
           "placeMatch": "confirmed",
           "viewType": "근대건축·벽돌·골목",
           "notes": "인천투어 공식 개항장 거리 소개의 정적 JPG 경로를 사용합니다. 직접 JPG는 현재 확인했으며, 로드 실패 시 이미지 대체 로직으로 다음 후보를 시도합니다. 실제 장소 일치/재사용 권리는 별도 확인 대상입니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z",
           "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Feng-itour.incheon.go.kr%2Fstorytelling%2Fstorytelling_db%2F2%2F1.jpg&w=900&h=650&fit=inside&output=webp",
           "license": "이용조건 확인 필요",
@@ -5482,7 +5503,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -5492,7 +5513,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-14T00:00:00.000Z",
       "photoPotentialScore": 77,
@@ -5513,7 +5534,7 @@
       },
       "mapSearchQuery": "인천광역시 제물포구 관동1가 개항장 거리 인천개항박물관",
       "referenceImageId": "ref-incheon-openport-brick-street",
-      "referenceImageStatus": "인천투어 공식 참고사진 · 로드 대체 후보 3종 · 재사용 권리 미확인",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 조사 항목: 주차·하차 위치와 좁은 도로에서 장비 이동·보행 동선을 확인",
         "loadIn": "좁은 거리·일방통행 구간이 있을 수 있음. 장비 하차점과 케이스 이동 경로를 현장 확인",
@@ -5605,7 +5626,8 @@
       },
       "phone": "",
       "province": "인천",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "gg-pocheon-artvalley",
@@ -5646,8 +5668,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-pocheon-quarry-lake-mist",
       "imageCandidates": [
         {
           "id": "ref-pocheon-quarry-lake-mist",
@@ -5662,7 +5684,7 @@
           "placeMatch": "confirmed",
           "viewType": "채석장·암벽·수면·안개",
           "notes": "암벽의 층리와 물의 반사를 보여주는 장소 참고 후보. 사진 권리는 미확인; 현장의 허용 동선 및 안전 구역을 따로 확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -5676,7 +5698,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -5686,7 +5708,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 80,
@@ -5706,9 +5728,10 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-pocheon-quarry-lake-mist",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "경기",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "gg-heyri",
@@ -5750,8 +5773,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-heyri-chronotope-wall",
       "imageCandidates": [
         {
           "id": "ref-heyri-chronotope-wall",
@@ -5766,7 +5789,7 @@
           "placeMatch": "confirmed",
           "viewType": "건축·반복 벽·원근·반야외",
           "notes": "헤이리 내 특정 건축물(시간의 벽) 참고 후보. 마을 전체를 포괄적으로 촬영지로 취급하지 않고 건물별 출입/허가 여부를 확인해야 함. 사진 재사용 권리 미확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -5778,7 +5801,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -5788,7 +5811,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 82,
@@ -5809,9 +5832,10 @@
       },
       "mapSearchQuery": "경기도 파주시 탄현면 헤이리마을길 헤이리 예술마을 안내센터",
       "referenceImageId": "ref-heyri-chronotope-wall",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "경기",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "nat-suncheon-drama-set",
@@ -5852,8 +5876,8 @@
       "shootingPermission": "일반 관람과 상업 촬영·세트 점유 허가를 구분해 운영자에게 문의",
       "parking": "주차·장비 하차·이동 조건 재확인",
       "fee": "촬영료·대관료 및 보증금 재확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-suncheon-drama-set-street",
       "referenceImageId": "ref-suncheon-drama-set-street",
       "imageCandidates": [
         {
@@ -5869,7 +5893,7 @@
           "placeMatch": "confirmed",
           "viewType": "야외 드라마 세트·레트로 거리",
           "notes": "기사 사진에서 순천 드라마촬영장의 시대극용 거리 세트를 식별할 수 있습니다. 세트 내 촬영 가능 여부와 사진 재사용 권리는 별도 확인해야 합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T05:00:00.000Z"
         },
         {
@@ -5910,8 +5934,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 82,
@@ -5930,8 +5954,8 @@
         "status": "location-reference",
         "rationale": "시대별 생활 공간을 재현한 야외 세트와 상점·골목 파사드가 있는 영화·드라마 촬영 후보. 반복되는 지붕선, 낡은 간판, 골목 깊이를 활용한 레트로·시대극 스타일 촬영을 검토할 수 있습니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "permitCost": "촬영 목적·인원·장비별 허가 주체, 예약 기한, 대관료·보증금 확인",
         "parking": "차량 주차·장비 하차점·촬영 구역까지 이동 거리 확인",
@@ -5983,8 +6007,8 @@
       "shootingPermission": "종교시설 운영과 예배 일정, 상업촬영·삼각대·드론 사용 조건을 관리 주체에 문의",
       "parking": "미확인 · 운영기관 확인 필요",
       "fee": "미확인 · 운영기관 확인 필요",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-bangju-church-reflection",
       "referenceImageId": "ref-bangju-church-reflection",
       "imageCandidates": [
         {
@@ -6000,7 +6024,7 @@
           "placeMatch": "confirmed",
           "viewType": "유리 입면·수면 반사·삼각 실루엣",
           "notes": "방주교회 건축을 보여주는 참고사진. 종교시설의 촬영 허용과 접근 가능 범위는 별도로 확인합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T00:00:00.000Z"
         }
       ],
@@ -6017,8 +6041,8 @@
         "shootingPermission": "미확인 · 촬영 전 문의",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "1차 조사 후보 · 현장 촬영 조건 확인 필요",
-      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "사진가 관점의 장소 후보입니다. 접근 가능 구역, 운영·예약, 상업촬영 허가, 장비 반입, 주차·하차 조건은 실제 촬영 전에 재확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 89,
@@ -6037,11 +6061,12 @@
         "rationale": "삼각 지붕의 윤곽과 수면의 반사, 유리·목재의 재료 대비를 활용하는 건축·인물 화보 후보.",
         "status": "desk-review"
       },
-      "referenceImageStatus": "장소 참고사진 · 대표사진 승인 아님",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "shootingDetails": {
         "permitCost": "상업촬영 허가 주체·예약 기한·촬영료·장비 반입 조건 확인",
         "fieldNotes": "현장 동선과 촬영 가능 구역을 조사해야 합니다."
-      }
+      },
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "nat-bonte-museum",
@@ -6084,8 +6109,8 @@
       "shootingPermission": "공식 방문 안내와 별개로 전문·상업 촬영, 플래시·장비 사용 여부 확인",
       "parking": "주차·장비 하차·이동 조건 재확인",
       "fee": "촬영료·대관료 및 보증금 재확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-bonte-museum-water-corridor",
       "referenceImageId": "ref-bonte-museum-water-corridor",
       "imageCandidates": [
         {
@@ -6101,7 +6126,7 @@
           "placeMatch": "confirmed",
           "viewType": "안도 다다오 건축·수면 반영·콘크리트",
           "notes": "건축·디자인 매체에 실린 본태박물관 참고 이미지로 연결했습니다. 실제 이미지 URL이 안정적으로 열리는지 확인이 필요하며, 대표사진 확정과 재사용 권리 승인은 완료되지 않았습니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T05:00:00.000Z"
         }
       ],
@@ -6130,8 +6155,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 89,
@@ -6150,8 +6175,8 @@
         "status": "location-reference",
         "rationale": "안도 다다오의 노출 콘크리트와 빛·물의 조합, 긴 수공간과 직선 동선, 전통 공예·현대미술·야외 조각공원이 결합된 건축 촬영 후보."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "permitCost": "촬영 목적·인원·장비별 허가 주체, 예약 기한, 대관료·보증금 확인",
         "parking": "차량 주차·장비 하차점·촬영 구역까지 이동 거리 확인",
@@ -6205,8 +6230,8 @@
       "shootingPermission": "일반 관람 촬영과 전문·상업 촬영 허가를 구분해 확인",
       "parking": "주차·장비 하차·이동 조건 재확인",
       "fee": "촬영료·대관료 및 보증금 재확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-mmca-cheongju-facade",
       "referenceImageId": "ref-mmca-cheongju-facade",
       "imageCandidates": [
         {
@@ -6222,7 +6247,7 @@
           "placeMatch": "confirmed",
           "viewType": "산업유산 건축·외벽 그리드·광장",
           "notes": "장소 소개 페이지의 미술관 외관 참고 이미지입니다. 대표사진 여부와 재사용 권리는 별도로 검토해야 합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T05:00:00.000Z"
         }
       ],
@@ -6243,8 +6268,8 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "장소 확인 · 장소 참고 이미지 표시 · 대표사진 선정 전",
-      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
       "updatedAt": "2026-10-14",
       "photoPotentialScore": 84,
@@ -6263,8 +6288,8 @@
         "status": "location-reference",
         "rationale": "옛 담배공장 산업시설을 문화·미술 공간으로 전환한 장소. 반복 창호와 노출 구조, 넓은 전면 광장과 산업 건축의 재료감을 건축·패션 에디토리얼 관점에서 살펴볼 후보."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 사진 표시 · 대표사진 적합성 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "permitCost": "촬영 목적·인원·장비별 허가 주체, 예약 기한, 대관료·보증금 확인",
         "parking": "차량 주차·장비 하차점·촬영 구역까지 이동 거리 확인",
@@ -6317,8 +6342,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-gyeongchun-rail-axis",
       "imageCandidates": [
         {
           "id": "ref-gyeongchun-rail-axis",
@@ -6333,7 +6358,7 @@
           "placeMatch": "confirmed",
           "viewType": "선형 구도·철길·수목·인물 스케일",
           "notes": "옛 철길의 소실점, 평행선, 나무 그늘을 참고하기 위한 후보. 2021년 보도사진이므로 현재 식생·동선 상태와 저작권을 별도 확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -6345,7 +6370,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -6355,7 +6380,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 72,
@@ -6376,9 +6401,10 @@
       },
       "mapSearchQuery": "서울특별시 노원구 화랑로 경춘선숲길 화랑대철도공원 입구",
       "referenceImageId": "ref-gyeongchun-rail-axis",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "seo-sema-bunker",
@@ -6420,8 +6446,8 @@
       "shootingPermission": "전시·시설 이용 시기별 운영 상태와 촬영 조건을 공식 홈페이지·관리부서에서 사전 확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-sema-bunker-gallery-grid",
       "imageCandidates": [
         {
           "id": "ref-sema-bunker-gallery-grid",
@@ -6436,7 +6462,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내·낮은 천장·그리드·전시",
           "notes": "2019년 전시 공간 참고 후보. 장소의 과거 전시 이미지이며 현재 개방/운영·촬영 허용 상태가 확인됐다는 의미가 아님. 재사용 권리 미확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
         {
@@ -6464,7 +6490,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "운영 종료 확인 · 재개관 전 촬영 후보에서 제외",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -6474,7 +6500,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.\n서울시립미술관 공식 공지에서 2025-01-13 운영 종료를 확인함. 재개관 및 일반 접근 가능 여부가 확인되기 전까지 촬영 계획 후보로 추천하지 않음.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.\n서울시립미술관 공식 공지에서 2025-01-13 운영 종료를 확인함. 재개관 및 일반 접근 가능 여부가 확인되기 전까지 촬영 계획 후보로 추천하지 않음. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-14T00:00:00.000Z",
       "photoPotentialScore": 87,
@@ -6494,10 +6520,11 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-sema-bunker-gallery-grid",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "phone": "",
       "province": "서울",
-      "regionGroup": "seoul"
+      "regionGroup": "seoul",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "gg-gyeonggi-museum-art",
@@ -6542,8 +6569,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-gyeonggi-museum-reflecting-pool",
       "imageCandidates": [
         {
           "id": "ref-gyeonggi-museum-reflecting-pool",
@@ -6558,7 +6585,7 @@
           "placeMatch": "confirmed",
           "viewType": "미니멀 건축·반사·사선 지붕",
           "notes": "미술관 외관의 경사진 지붕과 반사 수면을 보여주는 시각 후보. 출처가 언론 기사이므로 재사용 권리 및 현재 수면·동선 상태를 별도 확인.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -6570,7 +6597,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -6580,7 +6607,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 72,
@@ -6601,9 +6628,10 @@
       },
       "mapSearchQuery": "경기도 안산시 단원구 동산로 268 경기도미술관",
       "referenceImageId": "ref-gyeonggi-museum-reflecting-pool",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "경기",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "gg-goyang-aram",
@@ -6647,8 +6675,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-aramnuri-glass-grid-facade",
       "imageCandidates": [
         {
           "id": "ref-aramnuri-glass-grid-facade",
@@ -6663,7 +6691,7 @@
           "placeMatch": "confirmed",
           "viewType": "현대건축·격자·유리·광장",
           "notes": "설계·사진 정보가 소개된 건축 프로젝트 페이지의 외관 사진. 유리 격자와 광장의 단순한 기하학이 사진적 후보지만, 사진 재사용 권리는 확인 전.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -6677,7 +6705,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -6687,7 +6715,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 70,
@@ -6707,9 +6735,10 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-aramnuri-glass-grid-facade",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "경기",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "gg-gwangmyeong-cave",
@@ -6752,8 +6781,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "legacy-l194-gwangmyeong-cave",
       "imageCandidates": [
         {
           "id": "ref-gwangmyeong-cave-lit-rock",
@@ -6782,7 +6811,7 @@
           "license": "CC BY-SA 4.0",
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
-          "status": "candidate",
+          "status": "approved",
           "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요. 대표 참고사진으로 선택함(2026-10-14): 앞선 VOV World 이미지가 자동 브라우저 검사에서 로드되지 않아 동일 장소의 Wikimedia Commons 후보를 우선 연결했습니다. 공개 사용 시 출처·라이선스 조건을 확인하세요."
         }
       ],
@@ -6796,7 +6825,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -6806,7 +6835,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 70,
@@ -6826,9 +6855,10 @@
         "status": "desk-review"
       },
       "referenceImageId": "legacy-l194-gwangmyeong-cave",
-      "referenceImageStatus": "Wikimedia Commons 현장 사진 후보 · 재사용 조건 확인 필요",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "경기",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "ic-sorae-saltfield",
@@ -6869,8 +6899,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-sorae-windmill-shallow-reflection",
       "imageCandidates": [
         {
           "id": "ref-sorae-windmill-shallow-reflection",
@@ -6885,7 +6915,7 @@
           "placeMatch": "confirmed",
           "viewType": "야외·실루엣·수면 반영·수평선",
           "notes": "인천시 공원 갤러리의 풍차·습지 이미지. 반사·수평선·풍차의 실루엣을 활용하는 야외 촬영 참고 후보. 공공누리 유형 또는 별도 허가를 확인하기 전에는 대표사진 승인을 하지 않는다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
         {
@@ -6911,7 +6941,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -6921,7 +6951,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 73,
@@ -6942,9 +6972,10 @@
       },
       "mapSearchQuery": "인천광역시 남동구 소래로154번길 77 소래습지생태공원",
       "referenceImageId": "ref-sorae-windmill-shallow-reflection",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "인천",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "gg-suwon-hwaseong",
@@ -6989,8 +7020,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-hwaseong-wall-slope",
       "imageCandidates": [
         {
           "id": "ref-hwaseong-wall-slope",
@@ -7005,7 +7036,7 @@
           "placeMatch": "confirmed",
           "viewType": "성곽·원근·도시 레이어",
           "notes": "공식 수원화성 자료의 성곽과 도심 원경. 성벽의 대각선과 도심 레이어를 참고하되, 공개 재사용 조건을 확인하기 전까지 대표사진 승인은 하지 않는다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -7019,7 +7050,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -7029,7 +7060,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 73,
@@ -7050,9 +7081,10 @@
       },
       "mapSearchQuery": "경기도 수원시 팔달구 정조로 825 화성행궁 수원화성 성곽",
       "referenceImageId": "ref-hwaseong-wall-slope",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "경기",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "gg-starfield-suwon",
@@ -7095,8 +7127,8 @@
       "shootingPermission": "개인 방문 촬영과 상업·장비 촬영을 구분해 운영자 확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-starfield-suwon-library-interior",
       "imageCandidates": [
         {
           "id": "ref-starfield-suwon-library-interior",
@@ -7111,7 +7143,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내·다층 서가·계단·천창",
           "notes": "수원 별마당도서관 실제 실내 공간을 보여주는 시각 조사 후보이며 조감도가 아닌 현장 사진으로 보임. 다층 서가·중앙 계단·천창을 통해 인물 스케일과 대칭 구도를 연구할 수 있음. 사진 저작자와 공개 재사용 권리는 확인 전이며, 상업촬영·장비 사용은 운영자 별도 협의 필요.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         },
         {
@@ -7139,7 +7171,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": "2026-10-13"
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -7149,7 +7181,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 67,
@@ -7169,9 +7201,10 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-starfield-suwon-library-interior",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "province": "경기",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "ic-baedari",
@@ -7217,8 +7250,8 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "미등록",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-baedari-used-book-facade",
       "imageCandidates": [
         {
           "id": "ref-baedari-used-book-facade",
@@ -7233,7 +7266,7 @@
           "placeMatch": "confirmed",
           "viewType": "실제 거리·책방·생활 질감",
           "notes": "인천투어가 배다리 헌책방 골목 사진으로 제공하는 이미지. 책장·간판·자전거·입면이 담겨 있어 장소와 생활감 참고에 유효함. 사이트의 콘텐츠 이용 협의 문구와 이미지별 권리 확인 전까지 공개 대표사진으로 승인하지 않는다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-13T00:00:00.000Z"
         }
       ],
@@ -7248,7 +7281,7 @@
         "shootingPermission": "미확인",
         "lastCheckedAt": null
       },
-      "selectionStatus": "1차 후보 · 촬영 적합성 및 사실 검증 전",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "공식 운영정보",
         "실제 방문 시점의 사진",
@@ -7258,7 +7291,7 @@
         "주차·하차",
         "혼잡 시간"
       ],
-      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
+      "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13",
       "photoPotentialScore": 66,
@@ -7279,7 +7312,7 @@
       },
       "mapSearchQuery": "인천광역시 동구 금곡로 배다리 헌책방거리",
       "referenceImageId": "ref-baedari-used-book-facade",
-      "referenceImageStatus": "대표 참고사진 · 사용 권리 검토 전",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
       "legacyScout": {
         "sourceVersion": "FRAME ATLAS 이전 버전(v5 계열) 스카우팅 데이터",
         "sourceLocationId": "L-017",
@@ -7341,7 +7374,8 @@
         ]
       },
       "province": "인천",
-      "regionGroup": "capital"
+      "regionGroup": "capital",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "nat-busan-film-studio",
@@ -7379,8 +7413,8 @@
       "shootingPermission": "전문 제작 시설입니다. 견학 가능 여부와 별개로 개인·상업 촬영, 세트 이용 및 조명·장비 반입은 운영기관 승인 확인 필요",
       "parking": "시설 방문 시 주차 가능 여부·대형 차량 및 장비 하차는 사전 확인",
       "fee": "미확인 · 촬영 대관료 별도 문의",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-busan-film-studio-cine21-train-set",
       "referenceImageId": "ref-busan-film-studio-cine21-train-set",
       "imageCandidates": [
         {
@@ -7396,7 +7430,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내 촬영 세트·열차 내부·카메라 리그",
           "notes": "장소 관련 기사에 수록된 실제 촬영 세트 장면을 장소 참고 이미지로 사용합니다. 촬영소 전체 대표사진이나 공개 재사용 허가를 의미하지 않습니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T00:00:00.000Z"
         }
       ],
@@ -7417,9 +7451,11 @@
         "shootingPermission": "견학과 상업 촬영 허가 구분 필요",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "1차 조사 후보 · 시설 운영·촬영 승인 필요",
-      "notes": "한국관광공사 안내에는 250평·500평 규모의 실내 스튜디오와 부대시설이 소개되어 있습니다. 실제 촬영 가능 구역, 예약, 세트 사용, 장비 반입은 별도 문의합니다.",
-      "sourceVersion": "2026-10-14"
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "한국관광공사 안내에는 250평·500평 규모의 실내 스튜디오와 부대시설이 소개되어 있습니다. 실제 촬영 가능 구역, 예약, 세트 사용, 장비 반입은 별도 문의합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
+      "sourceVersion": "2026-10-14",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "nat-daegu-opera-house",
@@ -7457,8 +7493,8 @@
       "shootingPermission": "관람객 촬영과 무대·객석의 상업촬영은 다를 수 있으며 대관·촬영·조명 사용을 운영기관에 문의",
       "parking": "주차 안내 및 공연일 혼잡 확인 필요",
       "fee": "촬영 대관료·장비 반입 조건 미확인",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-daegu-opera-house-night-visitkorea",
       "referenceImageId": "ref-daegu-opera-house-night-visitkorea",
       "imageCandidates": [
         {
@@ -7474,7 +7510,7 @@
           "placeMatch": "confirmed",
           "viewType": "야간 외관·곡선 유리 파사드·입구",
           "notes": "해당 공연장의 실제 야간 외관 참고 이미지입니다. 대표사진 최종 채택 및 이미지 재사용 권한은 별도 검토합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T00:00:00.000Z"
         }
       ],
@@ -7495,8 +7531,10 @@
         "shootingPermission": "공연 대관과 촬영 허가는 별도 문의",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "1차 조사 후보 · 공연장 내부 촬영 허가 확인 필요",
-      "notes": "공식 안내는 국내 최초 단독 오페라 전용극장으로 설명하고 있으며, 외관 건축과 객석·무대 공간의 사진적 활용을 따로 검토합니다."
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "공식 안내는 국내 최초 단독 오페라 전용극장으로 설명하고 있으며, 외관 건축과 객석·무대 공간의 사진적 활용을 따로 검토합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "nat-sejong-arts-center",
@@ -7534,8 +7572,8 @@
       "shootingPermission": "공공 광장 이용과 공연장·로비의 상업촬영은 구분하여 운영기관에 사전 문의",
       "parking": "공식 안내 기준 주차 292대. 공연일 혼잡 및 장비 차량 주차는 재확인",
       "fee": "촬영 대관료 미확인",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-sejong-arts-center-culturelamp-exterior",
       "referenceImageId": "ref-sejong-arts-center-culturelamp-exterior",
       "imageCandidates": [
         {
@@ -7551,7 +7589,7 @@
           "placeMatch": "confirmed",
           "viewType": "유리 파사드·사선 지붕·진입 광장",
           "notes": "해당 공연장의 실제 외관을 보여주는 지상 시점 이미지입니다. 항공사진을 대표 참고 이미지로 쓰지 않으며, 대표사진 승인과 재사용 권리는 별도로 검토합니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T00:00:00.000Z"
         }
       ],
@@ -7572,8 +7610,10 @@
         "shootingPermission": "공연장 대관과 촬영 허가는 별도 문의",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "1차 조사 후보 · 출입·촬영 조건 확인 필요",
-      "notes": "공식 안내 기준 주소 및 주차 안내를 기록했습니다. 실제 촬영 가능 구역과 장비 반입·상업촬영 조건은 운영기관에 확인해야 합니다."
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "공식 안내 기준 주소 및 주차 안내를 기록했습니다. 실제 촬영 가능 구역과 장비 반입·상업촬영 조건은 운영기관에 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "nat-jeonju-palbok-art-factory",
@@ -7611,8 +7651,8 @@
       "shootingPermission": "일반 관람·전시 촬영과 상업촬영·삼각대·조명 사용은 다를 수 있으므로 공간별 사전 문의",
       "parking": "현장 주차 및 장비 하차 동선 재확인",
       "fee": "촬영·공간 대관료 및 상업 이용 조건 미확인",
-      "imageStatus": "장소 참고사진 후보 · 대표사진 판단 전",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-palbok-art-factory-visitjeonju",
       "referenceImageId": "ref-palbok-art-factory-visitjeonju",
       "imageCandidates": [
         {
@@ -7628,7 +7668,7 @@
           "placeMatch": "confirmed",
           "viewType": "산업건축·컬러 파사드·야외 광장",
           "notes": "비짓전주 장소 소개에 포함된 실제 팔복예술공장 사진입니다. 페이지 하단에 공공누리 제2유형(출처표시·상업적 이용 금지)이 표시되어 있어 그 조건을 유지해야 합니다. 대표사진 판단은 별도입니다.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-14T00:00:00.000Z"
         }
       ],
@@ -7649,11 +7689,13 @@
         "shootingPermission": "공간별·촬영 종류별 별도 문의",
         "lastCheckedAt": "2026-10-14"
       },
-      "selectionStatus": "1차 조사 후보 · 전시·산업건축 촬영 적합성 및 허가 확인 필요",
-      "notes": "전주시 관광 안내는 1979년부터 카세트테이프를 생산하던 공장이 문화예술 공간으로 재생된 이력을 소개합니다. 원본 자료의 이미지 이용 조건을 준수하고, 영리 촬영 전 운영기관에 문의해야 합니다.",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "notes": "전주시 관광 안내는 1979년부터 카세트테이프를 생산하던 공장이 문화예술 공간으로 재생된 이력을 소개합니다. 원본 자료의 이미지 이용 조건을 준수하고, 영리 촬영 전 운영기관에 문의해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "aliases": [
         "팔복예술공장"
-      ]
+      ],
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
     },
     {
       "id": "nat-bucheon-art-bunker-b39",
@@ -7700,8 +7742,8 @@
       "shootingPermission": "개인 쇼핑몰을 포함한 상업촬영은 허가 없는 촬영 금지. 공식 대관 절차 후 승인 필요.",
       "parking": "공식 안내: 50대 이상 주차 공간, 주차요금 없음. 촬영 장비차량·하차 동선은 별도 확인",
       "fee": "관람은 무료로 안내되지만 촬영·대관료는 신청 목적·공간별 문의 필요",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-b39-pump-room-20261015",
       "referenceImageId": "ref-b39-pump-room-20261015",
       "imageCandidates": [
         {
@@ -7718,7 +7760,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내 설비실·펌프·배관·산업 텍스처",
           "notes": "아시아경제 기사가 B39의 보존 설비실로 소개한 이미지. 장소 참고용이며 저작권·재사용 권리는 별도 확인 대상.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
@@ -7743,7 +7785,7 @@
         "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
         "lastCheckedAt": "2026-10-15"
       },
-      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "정확한 촬영 구역·출입 가능 범위 확인",
         "전문·상업촬영 허가 및 예약/대관 절차 확인",
@@ -7754,7 +7796,7 @@
         "전원·대기·분장·탈의 공간 및 화장실 확인",
         "관람객 동선·소음·안전·원상복구 조건 확인"
       ],
-      "notes": "구 소각장 설비를 살린 강한 산업미학의 장소. 공식 안내에서 영화·광고 등 상업촬영 공간 운영을 확인했으며, 관람 가능 구역과 촬영 승인은 분리해야 합니다.",
+      "notes": "구 소각장 설비를 살린 강한 산업미학의 장소. 공식 안내에서 영화·광고 등 상업촬영 공간 운영을 확인했으며, 관람 가능 구역과 촬영 승인은 분리해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-15",
       "updatedAt": "2026-10-15",
       "photoPotentialScore": 92,
@@ -7773,8 +7815,8 @@
         "status": "location-reference",
         "rationale": "폐소각장의 콘크리트 구조·대형 설비·기계실을 보존한 산업재생 공간. 벙커의 수직 스케일, 배관·철골·거친 표면과 컬러 조명의 대비를 산업·다크·뮤직비디오 에디토리얼 후보로 활용할 수 있습니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "parking": "공식 안내: 50대 이상 주차 공간, 주차요금 없음. 촬영 장비차량·하차 동선은 별도 확인",
         "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
@@ -7839,8 +7881,8 @@
       "shootingPermission": "전문·상업촬영 허가 여부, 작품 촬영 및 조명·삼각대 규정은 별도 확인. 일반 관람 공개가 상업촬영 승인을 뜻하지 않음.",
       "parking": "주차와 장비 하차 가능 구역을 미술관 공식 방문 안내로 확인",
       "fee": "일반 입장은 무료로 안내되나 촬영 허가·대관료는 별도 확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-photo-sema-exterior-20261015",
       "referenceImageId": "ref-photo-sema-exterior-20261015",
       "imageCandidates": [
         {
@@ -7857,7 +7899,7 @@
           "placeMatch": "confirmed",
           "viewType": "외관·레이어드 파사드·조형적 입구",
           "notes": "서울시 미디어허브가 사진미술관 외관으로 소개한 이미지. 장소 참고용이며 사진 재사용 권리는 별도 확인 대상.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
@@ -7878,7 +7920,7 @@
         "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
         "lastCheckedAt": "2026-10-15"
       },
-      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "정확한 촬영 구역·출입 가능 범위 확인",
         "전문·상업촬영 허가 및 예약/대관 절차 확인",
@@ -7889,7 +7931,7 @@
         "전원·대기·분장·탈의 공간 및 화장실 확인",
         "관람객 동선·소음·안전·원상복구 조건 확인"
       ],
-      "notes": "사진가를 위한 사진 특화 공립미술관이므로 주제 적합성이 높습니다. 공개 방문 정보와 전문 촬영 허가는 별도 상태로 관리합니다.",
+      "notes": "사진가를 위한 사진 특화 공립미술관이므로 주제 적합성이 높습니다. 공개 방문 정보와 전문 촬영 허가는 별도 상태로 관리합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-15",
       "updatedAt": "2026-10-15",
       "photoPotentialScore": 92,
@@ -7908,8 +7950,8 @@
         "status": "location-reference",
         "rationale": "국내 최초 사진 특화 공립미술관으로, 카메라 조리개에서 착안한 비틀린 큐브형 매스와 층층이 쌓인 외벽, 10m 높이 로비가 특징입니다. 사진 매체를 주제로 한 에디토리얼과 건축적 인물사진에 의미가 있는 장소입니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "parking": "주차와 장비 하차 가능 구역을 미술관 공식 방문 안내로 확인",
         "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
@@ -7974,8 +8016,8 @@
       "shootingPermission": "전문·상업촬영 및 창작자 작업공간 사용은 운영 주체에 별도 허가 확인",
       "parking": "도심 시설이므로 공식 교통·주차 안내와 장비 하차 지점을 확인",
       "fee": "전시 관람·공간 대관·촬영 비용은 사용 목적과 구역별 문의",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-daegu-art-factory-stair-hall-20261015",
       "referenceImageId": "ref-daegu-art-factory-stair-hall-20261015",
       "imageCandidates": [
         {
@@ -7992,7 +8034,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내홀·금속 계단·노출 벽돌",
           "notes": "한국관광공사 VISITKOREA 시설 안내 페이지에서 대구예술발전소 실내로 소개된 사진. 사용 권리는 별도 확인 대상.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
@@ -8013,7 +8055,7 @@
         "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
         "lastCheckedAt": "2026-10-15"
       },
-      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "정확한 촬영 구역·출입 가능 범위 확인",
         "전문·상업촬영 허가 및 예약/대관 절차 확인",
@@ -8024,7 +8066,7 @@
         "전원·대기·분장·탈의 공간 및 화장실 확인",
         "관람객 동선·소음·안전·원상복구 조건 확인"
       ],
-      "notes": "옛 산업시설의 높은 실내홀과 계단이 촬영 구도에 강점을 줍니다. 관광 사진이 아니라 구조·텍스처·행사 전환 공간을 중심으로 선별했습니다.",
+      "notes": "옛 산업시설의 높은 실내홀과 계단이 촬영 구도에 강점을 줍니다. 관광 사진이 아니라 구조·텍스처·행사 전환 공간을 중심으로 선별했습니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-15",
       "updatedAt": "2026-10-15",
       "photoPotentialScore": 87,
@@ -8043,8 +8085,8 @@
         "status": "location-reference",
         "rationale": "옛 산업시설의 벽돌·콘크리트·금속 계단과 넓은 실내홀을 예술창작 공간으로 재생한 장소입니다. 산업적 재료감과 열린 계단, 전시공간의 여백을 활용해 에디토리얼 구도를 만들 수 있습니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "parking": "도심 시설이므로 공식 교통·주차 안내와 장비 하차 지점을 확인",
         "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
@@ -8109,8 +8151,8 @@
       "shootingPermission": "공개 전시·투어 공간이더라도 전문·상업촬영은 별도 허가 및 촬영 구역 확인",
       "parking": "서울시 소개 자료는 주차 공간이 넉넉하지 않아 대중교통 이용을 권장. 장비차량 진입은 사전 확인",
       "fee": "투어·관람 조건과 별개로 전문촬영료·대관료 문의 필요",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-magok-culture-hall-interior-20261015",
       "referenceImageId": "ref-magok-culture-hall-interior-20261015",
       "imageCandidates": [
         {
@@ -8127,7 +8169,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내·근대 목조건축·창호·유리 바닥",
           "notes": "마곡문화관 옛 배수펌프장 실내로 소개된 기사 사진. 저작권·재사용 권리는 별도 확인 대상.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
@@ -8152,7 +8194,7 @@
         "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
         "lastCheckedAt": "2026-10-15"
       },
-      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "정확한 촬영 구역·출입 가능 범위 확인",
         "전문·상업촬영 허가 및 예약/대관 절차 확인",
@@ -8163,7 +8205,7 @@
         "전원·대기·분장·탈의 공간 및 화장실 확인",
         "관람객 동선·소음·안전·원상복구 조건 확인"
       ],
-      "notes": "서울시 공개 자료가 근대 건축물의 구조와 문화공간 운영을 설명합니다. 조형적 이유는 목조 펌프장과 콘크리트 기단의 대비이며, 전시일·촬영 가능 구역을 재확인해야 합니다.",
+      "notes": "서울시 공개 자료가 근대 건축물의 구조와 문화공간 운영을 설명합니다. 조형적 이유는 목조 펌프장과 콘크리트 기단의 대비이며, 전시일·촬영 가능 구역을 재확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-15",
       "updatedAt": "2026-10-15",
       "photoPotentialScore": 90,
@@ -8182,8 +8224,8 @@
         "status": "location-reference",
         "rationale": "1928년 완공된 옛 양천수리조합 배수펌프장을 재생한 근대 산업유산입니다. 목조 지붕 트러스와 큰 창, 콘크리트 기단, 수변 환경이 결합되어 역사건축·에디토리얼·다큐멘터리 이미지에 적합한 후보입니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "parking": "서울시 소개 자료는 주차 공간이 넉넉하지 않아 대중교통 이용을 권장. 장비차량 진입은 사전 확인",
         "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
@@ -8248,8 +8290,8 @@
       "shootingPermission": "일반 갤러리 관람과 패션·광고·뮤직비디오 촬영을 구분해 운영 재단과 사전 협의",
       "parking": "도산대로 도심 시설로 주차·장비 하차 위치 별도 확인",
       "fee": "전문촬영·대관 비용 및 사용 가능 구역은 재단 문의",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-songeun-architecture-entrance-20261015",
       "referenceImageId": "ref-songeun-architecture-entrance-20261015",
       "imageCandidates": [
         {
@@ -8266,7 +8308,7 @@
           "placeMatch": "confirmed",
           "viewType": "외관·삼각형 입구·콘크리트 표면",
           "notes": "송은 아트스페이스 건축으로 소개된 실제 외관 이미지. 장소 참고용이며 사진 권리는 별도 확인 대상.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
@@ -8291,7 +8333,7 @@
         "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
         "lastCheckedAt": "2026-10-15"
       },
-      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "정확한 촬영 구역·출입 가능 범위 확인",
         "전문·상업촬영 허가 및 예약/대관 절차 확인",
@@ -8302,7 +8344,7 @@
         "전원·대기·분장·탈의 공간 및 화장실 확인",
         "관람객 동선·소음·안전·원상복구 조건 확인"
       ],
-      "notes": "관광객 수보다 건축 자체의 고유성이 선정 이유입니다. 서울시 공식 관광정보에 위치·건축·관람정보가 있으며, 전문촬영 허가는 별도 확인해야 합니다.",
+      "notes": "관광객 수보다 건축 자체의 고유성이 선정 이유입니다. 서울시 공식 관광정보에 위치·건축·관람정보가 있으며, 전문촬영 허가는 별도 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-15",
       "updatedAt": "2026-10-15",
       "photoPotentialScore": 92,
@@ -8321,8 +8363,8 @@
         "status": "location-reference",
         "rationale": "헤르조그 & 드 뫼롱이 설계한 삼각형 형태의 콘크리트 건축입니다. 외벽의 패턴과 강한 입면, 내부 보이드·계단·갤러리 공간이 결합되어 건축 패션·조형 인물화보에 적합한 후보입니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "parking": "도산대로 도심 시설로 주차·장비 하차 위치 별도 확인",
         "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
@@ -8387,8 +8429,8 @@
       "shootingPermission": "공식 FAQ상 전시실과 외부·로비·카페의 촬영 범위가 다름. 상업촬영은 촬영 계획 제출 및 사전 허가 필요",
       "parking": "박물관 공식 방문 안내에서 주차·장비차량 출입 확인",
       "fee": "일반 관람과 촬영·대관 비용은 구분해 담당 부서 문의",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-njpc-exterior-20261015",
       "referenceImageId": "ref-njpc-exterior-20261015",
       "imageCandidates": [
         {
@@ -8405,7 +8447,7 @@
           "placeMatch": "confirmed",
           "viewType": "외관·유리 반사·석재 파사드·수목",
           "notes": "백남준아트센터 건물 외관으로 소개된 이미지. 건물 참고용이며 이미지 재사용 권리는 별도 확인 대상.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
@@ -8430,7 +8472,7 @@
         "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
         "lastCheckedAt": "2026-10-15"
       },
-      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "정확한 촬영 구역·출입 가능 범위 확인",
         "전문·상업촬영 허가 및 예약/대관 절차 확인",
@@ -8441,7 +8483,7 @@
         "전원·대기·분장·탈의 공간 및 화장실 확인",
         "관람객 동선·소음·안전·원상복구 조건 확인"
       ],
-      "notes": "기존 214개 데이터의 백남준아트센터를 고유 건축·미디어 공간으로 편입했습니다. 전시실에서 자유 촬영이 가능하다는 의미는 아니며, 구역별 촬영 규정을 명확히 적었습니다.",
+      "notes": "기존 214개 데이터의 백남준아트센터를 고유 건축·미디어 공간으로 편입했습니다. 전시실에서 자유 촬영이 가능하다는 의미는 아니며, 구역별 촬영 규정을 명확히 적었습니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-15",
       "updatedAt": "2026-10-15",
       "photoPotentialScore": 90,
@@ -8460,8 +8502,8 @@
         "status": "location-reference",
         "rationale": "유리 상부 매스와 어두운 석재 베이스가 대비되는 현대 미술관입니다. 외관 반사와 각진 볼륨이 조형적이며, 백남준의 미디어아트 관련 정체성을 건축적 이미지로 연결할 수 있습니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "parking": "박물관 공식 방문 안내에서 주차·장비차량 출입 확인",
         "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
@@ -8526,8 +8568,8 @@
       "shootingPermission": "관람 가능과 전문·상업촬영 승인은 별개. 갤러리 운영자 및 참여 작가/전시별 조건 확인",
       "parking": "농촌형 입지의 주차·장비 하차 조건을 공식 방문 안내로 확인",
       "fee": "전시 입장·공간 대관·전문촬영 비용은 운영자 문의",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-cica-gallery-20261015",
       "referenceImageId": "ref-cica-gallery-20261015",
       "imageCandidates": [
         {
@@ -8544,7 +8586,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내 전시실·창문광·노출 구조·조형물",
           "notes": "CICA미술관에서 열린 전시 설치 사진으로 확인되는 참고 이미지. 작품 및 사진 저작권은 재사용 전 확인 필요.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
@@ -8565,7 +8607,7 @@
         "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
         "lastCheckedAt": "2026-10-15"
       },
-      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "정확한 촬영 구역·출입 가능 범위 확인",
         "전문·상업촬영 허가 및 예약/대관 절차 확인",
@@ -8576,7 +8618,7 @@
         "전원·대기·분장·탈의 공간 및 화장실 확인",
         "관람객 동선·소음·안전·원상복구 조건 확인"
       ],
-      "notes": "전원형 공간과 자연광을 활용하는 후보입니다. 전시 설치물과 작품의 촬영 권리를 장소 이용 허가와 별도로 확인합니다.",
+      "notes": "전원형 공간과 자연광을 활용하는 후보입니다. 전시 설치물과 작품의 촬영 권리를 장소 이용 허가와 별도로 확인합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-15",
       "updatedAt": "2026-10-15",
       "photoPotentialScore": 85,
@@ -8595,8 +8637,8 @@
         "status": "location-reference",
         "rationale": "도시형 대형 미술관과 다른 전원형 현대미술관으로, 창으로 들어오는 자연광과 백색 벽·노출 구조·전시 설치의 조합이 특징입니다. 아티스트 프로필과 조용한 현대미술 에디토리얼에 적합한 후보입니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "parking": "농촌형 입지의 주차·장비 하차 조건을 공식 방문 안내로 확인",
         "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
@@ -8661,25 +8703,25 @@
       "shootingPermission": "전시관람과 상업 촬영을 구분해 공식 담당자에 문의. 공개 관람만으로 화보·광고 촬영을 승인한 것으로 간주하지 않음",
       "parking": "도심 사옥 시설의 주차·장비 하차·보안 출입 절차 확인",
       "fee": "전시 예약 조건과 별도로 촬영료·장소 대관 가능 여부 확인",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-apma-atrium-20261015",
       "referenceImageId": "ref-apma-atrium-20261015",
       "imageCandidates": [
         {
           "id": "ref-apma-atrium-20261015",
-          "title": "아모레퍼시픽미술관의 다층 아트리움과 원형 안내 데스크",
-          "imageUrl": "https://images.mindtrip.ai/attractions/74cb/1d22/8a30/5835/03b5/89b4/2bcc/8a5f",
-          "sourceThumbnail": "https://images.mindtrip.ai/attractions/74cb/1d22/8a30/5835/03b5/89b4/2bcc/8a5f",
-          "sourcePageUrl": "https://mindtrip.ai/attraction/seoul-south-korea/amorepacific-museum-art/at-WoLELb1t",
-          "sourceName": "Mindtrip · Amorepacific Museum of Art 공간 사진",
+          "title": "아모레퍼시픽미술관 실제 전시실·콘크리트 기둥과 격자 천장",
+          "imageUrl": "https://wimg.heraldcorp.com/content/default/2021/06/30/20210630000546_0.jpg",
+          "sourceThumbnail": "https://wimg.heraldcorp.com/content/default/2021/06/30/20210630000546_0.jpg",
+          "sourcePageUrl": "https://www.koreaherald.com/article/2643194",
+          "sourceName": "The Korea Herald · Amorepacific Museum of Art exhibition gallery",
           "creator": "원저작자 확인 필요",
           "rights": "unknown",
           "rightsLabel": "이미지 저작권·재사용 권리 미확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "실내 아트리움·콘크리트·유리 난간·수직 구도",
-          "notes": "아모레퍼시픽미술관으로 식별되는 아트리움 참고 이미지. 이미지 재사용 권리와 실제 촬영 가능 범위는 별도 확인 대상.",
-          "status": "candidate",
+          "viewType": "실내 전시실·콘크리트 기둥·격자 천장",
+          "notes": "The Korea Herald 기사에서 Amorepacific Museum of Art 전시 공간으로 식별되는 사진. 대표사진은 장소 일치 기준으로 승인하되 이미지 재사용 권리는 별도 확인 대상으로 유지.",
+          "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
@@ -8700,7 +8742,7 @@
         "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
         "lastCheckedAt": "2026-10-15"
       },
-      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "정확한 촬영 구역·출입 가능 범위 확인",
         "전문·상업촬영 허가 및 예약/대관 절차 확인",
@@ -8711,7 +8753,7 @@
         "전원·대기·분장·탈의 공간 및 화장실 확인",
         "관람객 동선·소음·안전·원상복구 조건 확인"
       ],
-      "notes": "기존 목록의 아모레퍼시픽미술관을 수직 아트리움과 콘크리트 구조라는 촬영 가치로 재등록했습니다. 실제 상업 촬영은 별도 허가가 필요합니다.",
+      "notes": "기존 목록의 아모레퍼시픽미술관을 수직 아트리움과 콘크리트 구조라는 촬영 가치로 재등록했습니다. 실제 상업 촬영은 별도 허가가 필요합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-15",
       "updatedAt": "2026-10-15",
       "photoPotentialScore": 88,
@@ -8730,8 +8772,8 @@
         "status": "location-reference",
         "rationale": "데이비드 치퍼필드가 설계한 아모레퍼시픽 본사와 연결된 미술관입니다. 콘크리트 기둥과 유리 난간, 다층 아트리움이 만드는 수직 구도와 자연광이 특징이며, 건축·제품·패션 에디토리얼 후보로 검토할 가치가 있습니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "parking": "도심 사옥 시설의 주차·장비 하차·보안 출입 절차 확인",
         "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
@@ -8796,8 +8838,8 @@
       "shootingPermission": "공식 대관은 일정 확인·신청·심의·결제 절차. 촬영 및 조명장비 사용은 대관 담당자에게 별도 확인",
       "parking": "공간별 주차·대형 장비차량·야외광장 하차 위치 확인",
       "fee": "공식 안내의 대관료는 공간·시간별 차등. 촬영 목적에 맞는 대관 가능 여부와 비용 문의",
-      "imageStatus": "장소 참고 이미지 연결 · 대표사진 미선정",
-      "primaryImageId": null,
+      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "primaryImageId": "ref-dongbu-warehouse-cafec-20261015",
       "referenceImageId": "ref-dongbu-warehouse-cafec-20261015",
       "imageCandidates": [
         {
@@ -8814,7 +8856,7 @@
           "placeMatch": "confirmed",
           "viewType": "실내 창고·목재 천장·팝업 전시",
           "notes": "동부창고 카페C의 전시 공간으로 소개된 사진. 장소 참고용이며 저작권·재사용 권리는 별도 확인 대상.",
-          "status": "candidate",
+          "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
@@ -8835,7 +8877,7 @@
         "shootingPermission": "전문·상업촬영 및 장비 사용 가능 범위는 운영자에 별도 확인",
         "lastCheckedAt": "2026-10-15"
       },
-      "selectionStatus": "촬영 후보 활성 · 장소 참고 이미지 표시 · 대표사진 미선정",
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "scoutingChecklist": [
         "정확한 촬영 구역·출입 가능 범위 확인",
         "전문·상업촬영 허가 및 예약/대관 절차 확인",
@@ -8846,7 +8888,7 @@
         "전원·대기·분장·탈의 공간 및 화장실 확인",
         "관람객 동선·소음·안전·원상복구 조건 확인"
       ],
-      "notes": "기존 214개 목록의 동부창고를 추가했습니다. 공식 사이트는 카페C 등 공간별 대관, 시간, 신청 절차를 안내하므로 실제 촬영 공간을 특정해 문의하도록 기록했습니다.",
+      "notes": "기존 214개 목록의 동부창고를 추가했습니다. 공식 사이트는 카페C 등 공간별 대관, 시간, 신청 절차를 안내하므로 실제 촬영 공간을 특정해 문의하도록 기록했습니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-15",
       "updatedAt": "2026-10-15",
       "photoPotentialScore": 87,
@@ -8865,8 +8907,8 @@
         "status": "location-reference",
         "rationale": "옛 담배공장 창고를 시민 예술·문화 공간으로 재생한 장소입니다. 높은 목재 트러스와 넓은 바닥, 반복되는 창고 구조와 야외광장이 산업·청춘·빈티지·현대 예술 에디토리얼에 활용될 수 있습니다."
       },
-      "referenceImageStatus": "장소 참고 이미지 · 대표사진 미선정",
-      "photoReviewStatus": "장소 일치 참고 이미지 연결 · 대표사진 적합성·재사용 권리 미확인",
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
       "shootingDetails": {
         "parking": "공간별 주차·대형 장비차량·야외광장 하차 위치 확인",
         "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
