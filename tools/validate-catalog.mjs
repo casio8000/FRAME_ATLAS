@@ -61,7 +61,7 @@ assert.ok(EXPECTED_GROUPS.every(group => activeGroupCounts[group] > 0), "Every o
 
 const requiredPlaces = [
   "nat-museum-san", "nat-cjenm-studio-center", "nat-studio-cube-daejeon", "nat-busan-cinema-center",
-  "nat-busan-film-studio", "nat-daegu-opera-house", "nat-sejong-arts-center", "nat-jeonju-palbok-art-factory", "nat-bucheon-art-bunker-b39", "seo-photo-sema", "nat-daegu-art-factory", "seo-magok-culture-hall", "seo-songeun-art-space", "gg-nam-june-paik-art-center", "gg-cica-museum", "seo-amorepacific-museum", "nat-cheongju-dongbu-warehouse", "seo-seoseoul-museum", "gg-gyeonggi-sangsang-campus",
+  "nat-busan-film-studio", "nat-daegu-opera-house", "nat-sejong-arts-center", "nat-jeonju-palbok-art-factory", "nat-bucheon-art-bunker-b39", "seo-photo-sema", "nat-daegu-art-factory", "seo-magok-culture-hall", "seo-songeun-art-space", "gg-nam-june-paik-art-center", "gg-cica-museum", "seo-amorepacific-museum", "nat-cheongju-dongbu-warehouse", "seo-seoseoul-museum", "gg-gyeonggi-sangsang-campus", "legacy-temiorae",
   "nat-jeonju-film-studios", "nat-suncheon-drama-set", "nat-bonte-museum",
   "nat-jeju-glass-house-seopjikoji", "seo-kbs-arena", "jj-bangju-church"
 ];
