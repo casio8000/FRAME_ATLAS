@@ -121,3 +121,12 @@ Last updated: 2026-10-15 (Korea Standard Time)
 - New total: 136 places. Photo references remain candidates; image reuse rights and commercial-shooting permission are NOT confirmed.
 - Next review priority: SBS Ilsan Production Center current operational/booking status; then compare distinctive large performance spaces from the previous catalog against actual public access and architecture. Avoid generic venues unless they add real photographic value.
 - The new cache build is `20261015-51`. The browser smoke test no longer performs an unstable scroll action on a card being re-rendered.
+
+
+## 2026-10-15 · v2.65 list-return and mobile-admin fix
+- Place details opened from the visible home catalog now remember the list scroll position. Returning restores that position and retains the current catalog filters instead of jumping to the first card (DDP).
+- The administrator-mode entry remains visible on the welcome screen, including mobile; the password dialog opens from the mobile button.
+- Verification: desktop/mobile browser smoke tests, location-data validation, app-resource checks, backup-merge tests, device-sync tests, and legacy audit test all passed.
+- Source commit: `d424fdaca64b1d7651f44f14606ac3a0cec86f3a`.
+- Quality Checks: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38699963376 — SUCCESS.
+- Pages deployment: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38699963424 — SUCCESS.
