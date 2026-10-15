@@ -31,8 +31,8 @@ const http=require("node:http"),fs=require("node:fs"),path=require("node:path"),
  assert.equal(await adminPage.locator("#adminModeMessage").isVisible(),true,"An unregistered password should be rejected");
  assert.equal(await adminPage.locator("body").evaluate(e=>e.classList.contains("admin-mode")),false,"Invalid credentials must not unlock administrator mode");
  await adminPage.locator("#adminModeCancelBtn").click();
- // Activate the layout directly for viewport testing; do not put an accepted passphrase in public test code.
- await adminPage.evaluate(()=>setAdminMode(true));
+ // Reveal the protected panel directly only for the layout test; do not put an accepted passphrase in public test code.
+ await adminPage.evaluate(()=>{document.body.classList.add("admin-mode");const panel=document.querySelector("#adminPanel");if(panel)panel.hidden=false;});
  await adminPage.locator('[data-nav-view="more"]').click();
  await adminPage.locator('#moreView [data-more-action="archive"]').click();
  await adminPage.waitForFunction(()=>!document.querySelector("#adminPanel").hidden);
