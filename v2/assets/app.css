@@ -1115,3 +1115,28 @@ body[data-app-view="welcome"] .admin-mode-toggle{display:inline-flex!important}
  dialog.admin-mode-dialog .toolbar{display:flex;flex-wrap:wrap}
  dialog.admin-mode-dialog .toolbar .btn{flex:1 1 120px;min-width:0;white-space:normal}
 }
+
+
+/* 20261016-70: public image discovery and reference-photo gallery. */
+.public-photo-search{background:linear-gradient(180deg,#f8faf6 0%,#fff 100%);padding:15px;border:1px solid var(--line);border-radius:12px;margin:12px 0}
+.public-photo-search h3{font-size:14px}
+.browse-intro{margin:0 0 10px}
+.public-photo-search .tiny{display:block;margin:0 0 9px}
+.public-photo-search select{width:100%;max-width:100%;margin-top:5px}
+.public-photo-search .sourcegrid{margin-top:10px}
+.browse-gallery-head{display:flex;justify-content:space-between;gap:10px;align-items:start}
+.browse-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.browse-photo-card{min-width:0;display:block;color:inherit;text-decoration:none;border:1px solid var(--line);border-radius:11px;background:#fff;overflow:hidden}
+.browse-photo-card:hover{border-color:#9cae9b;box-shadow:0 4px 14px rgba(20,40,25,.08)}
+.browse-photo-frame{position:relative;width:100%;height:150px;overflow:hidden;background:#f0f1eb}
+.browse-photo-frame img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .18s ease}
+.browse-photo-card:hover .browse-photo-frame img{transform:scale(1.025)}
+.browse-photo-open{position:absolute;right:7px;bottom:7px;padding:4px 7px;border-radius:6px;background:rgba(20,34,27,.88);color:#fff;font-size:10px;font-weight:800}
+.browse-photo-caption{display:flex;flex-direction:column;gap:4px;padding:8px 9px 10px}
+.browse-photo-caption b{font-size:11px;line-height:1.45;overflow-wrap:anywhere}
+.browse-photo-caption span{font-size:10px;line-height:1.4;color:var(--muted)}
+.browse-photo-caption small{font-size:9px;color:#8a5e28;line-height:1.4}
+.browse-photo-frame.image-missing{background:#f3f3ef}
+.browse-photo-frame.image-missing::after{content:"미리보기 불가 · 원문 열기";position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:8px;color:var(--muted);font-size:10px;background:#f3f3ef}
+@media(max-width:760px){.browse-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.browse-photo-frame{height:132px}.public-photo-search{padding:12px}}
+@media(max-width:390px){.browse-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.browse-photo-frame{height:110px}.browse-photo-caption{padding:7px}.browse-photo-caption b{font-size:10px}}
