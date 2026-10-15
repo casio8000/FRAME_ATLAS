@@ -369,8 +369,19 @@ function renderLanding(){
  grid.querySelectorAll("[data-home-place]").forEach(card=>card.addEventListener("click",()=>{selectedId=card.dataset.homePlace;showAppView("detail");}));
  const allGrid=$("homeAllPlacesGrid");
  if(allGrid){
-  const q=($("homeAllSearchInput")?.value||"").trim().toLowerCase(),region=$("homeAllRegionFilter")?.value||"";
-  const all=places.filter(p=>(!q||[p.name,p.region,p.category,p.summary,...(p.aliases||[])].join(" ").toLowerCase().includes(q))&&(!region||p.region===region))
+  const q=($("homeAllSearchInput")?.value||"").trim().toLowerCase(),region=$("homeAllRegionFilter")?.value||"",category=$("homeAllCategoryFilter")?.value||"";
+  const all=places.filter(p=>{
+   const haystack=[p.name,p.region,regionGroup(p.region),p.category,p.summary,p.photoProfile,p.address,p.placeType,p.indoorOutdoor,...(p.aliases||[]),...(p.searchTerms||[]),...(p.spaceTypes||[]),...(p.visualStrengths||[]),...(p.bestConcepts||[])].join(" ").toLowerCase();
+   const terms=q.split(/\s+/).filter(Boolean);
+   if(terms.some(term=>!haystack.includes(term)))return false;
+   if(region&&regionGroup(p.region)!==region)return false;
+   if(category){
+    const tags=[p.category,p.indoorOutdoor,p.placeType,p.summary,p.photoProfile,...(p.spaceTypes||[]),...(p.visualStrengths||[]),...(p.bestConcepts||[])].join(" ").toLowerCase();
+    const termsByCategory={실내:["실내","인테리어","홀","전시장","실내공간","갤러리"],실외:["실외","야외","거리","광장","공원","정원","외부"],건축:["건축","미술관","박물관","건물","구조","공간","콘크리트","벽돌"],자연:["자연","숲","바다","산","공원","정원","강","해변"],스튜디오:["스튜디오","공연장","대형스튜디오","촬영장","방송 세트"]}[category]||[category];
+    if(!termsByCategory.some(term=>tags.includes(term.toLowerCase())))return false;
+   }
+   return true;
+  })
    .sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(a.region)-["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(b.region)||a.name.localeCompare(b.name,"ko"));
   $("homeAllPlaceCount").textContent=all.length;
   allGrid.innerHTML=all.map((p,index)=>{
