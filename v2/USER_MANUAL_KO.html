@@ -1,31 +1,143 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111827"><title>FRAME ATLAS 2.0 사용자 매뉴얼</title>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827"><meta name="description" content="FRAME ATLAS 2.0 사용자 매뉴얼: 장소 탐색, 새 장소 등록, 사진 검토, 백업과 게시">
+<title>FRAME ATLAS 2.0 사용자 매뉴얼</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 <style>
-:root{color-scheme:light;--ink:#111827;--muted:#657280;--line:#E5E7EB;--blue:#3B82F6;--bg:#F8FAFC}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 Pretendard,"Noto Sans KR",Arial,sans-serif}
-main{max-width:900px;margin:auto;padding:24px 18px 80px}.hero{background:#111827;color:#fff;border-radius:24px;padding:clamp(24px,5vw,48px);margin:12px 0 28px}.eyebrow{font-size:12px;letter-spacing:2px;color:#93C5FD;font-weight:700}.hero h1{font-size:clamp(30px,5vw,44px);line-height:1.2;margin:12px 0}.hero p{color:#E5E7EB;max-width:680px}.stamp{display:inline-block;background:#1F2937;border:1px solid #374151;padding:5px 10px;border-radius:999px;font-size:12px}
-section{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin:16px 0}h2{font-size:23px;line-height:1.35;margin:0 0 14px}h3{font-size:17px;margin:20px 0 8px}p,li{color:#334155}a{color:#2563EB}table{width:100%;border-collapse:collapse;display:block;overflow-x:auto}th,td{text-align:left;border-bottom:1px solid var(--line);padding:10px;min-width:120px;vertical-align:top}th{background:#F8FAFC}code{background:#EFF6FF;padding:2px 5px;border-radius:5px;font-size:.9em}.warn{border-left:4px solid #F59E0B;padding:12px 14px;background:#FFFBEB;border-radius:8px}.ok{border-left:4px solid #10B981;padding:12px 14px;background:#ECFDF5;border-radius:8px}.steps{counter-reset:step;list-style:none;padding:0}.steps li{counter-increment:step;padding:0 0 12px 42px;position:relative}.steps li:before{content:counter(step);position:absolute;left:0;top:0;background:#EFF6FF;color:#2563EB;border-radius:50%;width:28px;height:28px;text-align:center;line-height:28px;font-weight:800}
-footer{color:var(--muted);font-size:13px;padding:20px 4px}
-@media(max-width:600px){main{padding:12px 12px 50px}section{padding:16px}.hero{border-radius:18px}}
-</style><style>.manual-float-controls{position:fixed;right:18px;bottom:20px;z-index:1000;display:flex;gap:8px}.manual-float-controls button{border:0;border-radius:999px;padding:12px 15px;background:#172b4d;color:#fff;font-weight:800;box-shadow:0 5px 20px #0f172a33;cursor:pointer}@media(max-width:600px){.manual-float-controls{right:12px;bottom:12px}.manual-float-controls button{padding:10px 12px}}</style></head><body><div class="manual-float-controls"><button type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ 맨 위로</button><button type="button" onclick="window.close()">닫기 ×</button></div><main>
-<div class="hero"><span class="stamp">FRAME ATLAS · 2.0</span><p class="eyebrow">USER GUIDE / FIELD SCOUTING</p><h1>사용자 매뉴얼</h1><p>전국의 촬영 장소를 사진가의 관점에서 탐색하고, 실제 장소 사진과 촬영 조건을 확인·기록하기 위한 안내서입니다.</p><p>PC에서는 장소 조사와 데이터 관리를, 모바일에서는 현장 확인과 빠른 장소 탐색을 중심으로 사용하도록 구성합니다.</p></div>
-<section><h2>1. 먼저 알아둘 점</h2><div class="warn"><b>저장 범위 주의</b><br>현재 버전의 ‘저장’은 기본적으로 이 브라우저의 작업 초안에 저장됩니다. PC에서 입력한 내용이 iPhone에 자동으로 즉시 나타난다고 가정하지 마세요. 장소 카탈로그를 GitHub에 게시하는 기능과 사진 파일을 저장소에 업로드하는 기능은 서로 다릅니다. 사진 파일 업로드·다른 기기 동기화는 별도로 검증해야 합니다.</div><p>검토 대기 후보는 실제 장소와 맞는 사진·촬영 가치가 확인될 때까지 활성 장소 목록에서 보류합니다. 장소 사진은 후보일 수 있습니다. 사진이 보인다는 사실만으로 해당 장소와 일치하거나 촬영 허가를 받은 사진이라는 뜻은 아닙니다.</p></section>
-<section><h2>2. 여섯 화면 사용법</h2><p class="ok"><b>주요 메뉴는 시안의 4개 탭입니다.</b> 홈 · 지도 · 저장 · 더보기. 전체 아카이브와 사진 후보(갤러리)는 더보기/마이페이지에서 들어갑니다. 이 구조로 스플래시, 홈, 장소 상세, 지도, 사진 후보, 마이페이지의 여섯 화면을 이용합니다.</p><h3>01 · 스플래시 / 시작 화면</h3><p>앱을 열면 FRAME ATLAS 소개 화면이 나옵니다. <b>시작하기</b> 또는 <b>메인 화면 둘러보기</b>를 눌러 장소 목록으로 이동합니다.</p><h3>02 · 메인 화면</h3><p>장소 검색창에 장소명·지역·촬영 분위기를 입력하고 전국 필터를 사용합니다. 장소 카드를 누르면 해당 장소 상세 화면으로 이동합니다. 장소 카드는 관광지 인기도보다 건축의 조형성, 질감, 빛, 배경 다양성 등 사진적 가능성을 살펴보기 위한 목록입니다.</p><h3>03 · 장소 상세 정보</h3><p>대표/참고 사진, 장소 설명, 사진 잠재력 점수, 사진 후보, 공식 출처 및 확인 상태를 살펴봅니다. 주소와 촬영 허가가 미확인이라면 촬영 확정 전에 공식 홈페이지나 관리 부서에 확인합니다. <b>현장 촬영 체크리스트</b>에 주차·장비 반입·접근성·전원·탈의 공간·촬영 제한 등을 입력하고 저장할 수 있습니다.</p><h3>04 · 지도 / 길찾기</h3><p>지역 필터와 장소 목록을 이용해 지도를 확인합니다. 지도 서비스가 표시하는 위치는 검색 결과일 수 있으므로 출발 전 주소와 출입구를 다시 확인합니다.</p><h3>05 · 사진 후보</h3><p>장소별 후보를 비교합니다. 장소와 일치하는지, 촬영 각도가 맞는지, 원문 링크와 이용 조건이 있는지 확인한 뒤 대표사진으로 선택합니다. 다른 장소의 사진이나 항공·드론 사진이 일반 촬영 참고사진에 섞이지 않도록 주의합니다.</p><h3>06 · 마이페이지</h3><p>저장 장소, 아카이브, 사진 후보, 백업 내보내기/가져오기, 설정과 이 매뉴얼을 이용합니다.</p></section>
-<section><h2>이전 버전 스카우팅 기록의 이관</h2><p>기존 FRAME ATLAS 데이터의 장소명이 정확히 일치하는 11개 장소(문화비축기지, 선유도공원, 세운상가, 성수동·문래동, 문화역서울284, 인천아트플랫폼, 개항장, 배다리, 미메시스, 수원 행궁동)에 한해 이전 버전의 창작/제작 적합성 점수, 추천 촬영 시간대, 렌즈·앵글, 광원·배경 제안, 장비·주차·전원, 위험·허가 체크리스트를 ‘이전 버전 스카우팅 기록’으로 보존했습니다. 기록의 날짜와 출처를 함께 표시하며, 현재 운영·촬영 허가·비용이 확인된 사실로 취급하지 않습니다. 새로 확인한 결과는 아래 현장 촬영 체크리스트에 기록하세요.</p></section><section><h2>3. 현장 촬영 체크리스트</h2><p>각 장소 상세 화면의 <b>현장 촬영 체크리스트</b>에서 아래 항목을 관리합니다. 미확인 항목은 추측으로 채우지 말고 ‘미확인’으로 두었다가 공식 출처·전화·현장 답사로 확인하세요.</p><table><thead><tr><th>항목</th><th>확인할 내용</th></tr></thead><tbody>
-<tr><td>주차·하차</td><td>주차장 위치, 요금, 높이 제한, 촬영 장비 하차 지점, 주차 후 이동 거리</td></tr>
-<tr><td>대중교통·도보</td><td>가까운 역·정류장, 도보 시간, 입구 위치, 야간 귀가 동선</td></tr>
-<tr><td>장비 반입</td><td>카트 사용, 계단·경사로, 엘리베이터, 반입 시간과 반입구</td></tr>
-<tr><td>접근성</td><td>휠체어 접근, 경사, 계단, 엘리베이터, 촬영 포인트까지의 동선</td></tr>
-<tr><td>편의 공간</td><td>화장실, 탈의실, 대기실, 휴식 공간, 물품 보관</td></tr>
-<tr><td>전원·조명</td><td>콘센트 사용 허가, 전력 제한, 자연광 방향, 일출·일몰, 인공조명 제한</td></tr>\n<tr><td>사진 설계</td><td>추천 초점거리(예: 24–35mm, 50mm, 85mm), 카메라 높이, 아이레벨·로우/하이앵글, 전신·3/4·환경 인물, 와이드·디테일 포인트</td></tr>\n<tr><td>배경·소음</td><td>간판·방문객·차량의 배경 통제 범위, 차광·플래그, 교통·작업·공조 소음의 시간대별 차이</td></tr>\n<tr><td>정리·복구</td><td>촬영 후 청소와 원상복구 범위, 시설물 접촉·파손 책임, 담당자 확인 절차</td></tr>
-<tr><td>날씨·혼잡</td><td>우천 대체 장소, 실내외 연결, 혼잡 시간대, 행사·휴관 일정</td></tr>
-<tr><td>촬영 조건</td><td>상업 촬영 허가, 사전 예약, 촬영료, 인원·장비 제한, 삼각대·플래시 제한</td></tr>
-<tr><td>연락처·기록</td><td>관리 부서, 공식 홈페이지, 확인 날짜, 담당자 답변과 근거 링크</td></tr>
+:root{color-scheme:light;--ink:#111827;--muted:#64748b;--line:#e2e8f0;--bg:#f8fafc}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.78 Pretendard,"Noto Sans KR",Arial,sans-serif}
+main{max-width:960px;margin:auto;padding:78px 18px 64px}.hero{background:#111827;color:#fff;border-radius:22px;padding:clamp(24px,5vw,44px);margin:0 0 22px}.eyebrow{font-size:12px;letter-spacing:1.7px;color:#93c5fd;font-weight:800}.hero h1{font-size:clamp(30px,5vw,44px);line-height:1.2;margin:10px 0}.hero p{color:#e5e7eb}.stamp{display:inline-block;background:#1f2937;border:1px solid #374151;padding:5px 10px;border-radius:999px;font-size:12px}
+section{background:#fff;border:1px solid var(--line);border-radius:16px;padding:clamp(17px,3vw,24px);margin:15px 0;scroll-margin-top:82px}h2{font-size:23px;line-height:1.35;margin:0 0 12px}h3{font-size:17px;margin:19px 0 7px}p,li{color:#334155}a{color:#1d4ed8;overflow-wrap:anywhere}ul,ol{padding-left:22px}li{margin:5px 0}code{background:#eff6ff;padding:2px 5px;border-radius:5px;font-size:.9em;overflow-wrap:anywhere}
+.warn,.ok,.note{padding:12px 14px;border-radius:9px;margin:12px 0}.warn{border-left:4px solid #f59e0b;background:#fffbeb}.ok{border-left:4px solid #10b981;background:#ecfdf5}.note{border-left:4px solid #60a5fa;background:#eff6ff}
+.toc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.toc a{display:block;padding:9px 11px;border:1px solid var(--line);border-radius:9px;text-decoration:none;background:#fff}
+.steps{counter-reset:step;list-style:none;padding:0}.steps li{counter-increment:step;padding:0 0 12px 42px;position:relative}.steps li:before{content:counter(step);position:absolute;left:0;top:1px;background:#eff6ff;color:#2563eb;border-radius:50%;width:28px;height:28px;text-align:center;line-height:28px;font-weight:800}
+table{width:100%;border-collapse:collapse;display:block;overflow-x:auto}th,td{text-align:left;border-bottom:1px solid var(--line);padding:9px 10px;min-width:118px;vertical-align:top}th{background:#f8fafc}
+.manual-float-controls{position:fixed;z-index:10000;right:clamp(12px,2vw,28px);top:12px;bottom:auto;display:flex!important;gap:8px;visibility:visible!important;opacity:1!important}
+.manual-float-controls button{display:inline-flex!important;align-items:center;justify-content:center;gap:5px;border:1px solid #334155;border-radius:999px;padding:10px 14px;background:#172b4d;color:#fff;font:700 14px Pretendard,"Noto Sans KR",Arial,sans-serif;box-shadow:0 5px 20px #0f172a33;cursor:pointer;white-space:nowrap;visibility:visible!important;opacity:1!important}
+.manual-float-controls button:focus-visible{outline:3px solid #93c5fd;outline-offset:3px}footer{color:var(--muted);font-size:13px;padding:18px 4px}
+@media(max-width:600px){main{padding:14px 12px 68px}.hero{border-radius:18px}.toc{grid-template-columns:1fr}.manual-float-controls{top:auto;bottom:12px;right:12px}.manual-float-controls button{padding:10px 12px;font-size:13px}section{border-radius:14px}}
+@media print{.manual-float-controls,.toc{display:none!important}main{padding:0;max-width:none}section,.hero{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="manual-float-controls" role="group" aria-label="매뉴얼 빠른 이동">
+<button id="manualTopBtn" type="button" aria-label="맨 위로 이동" title="맨 위로">↑ <span>맨 위로</span></button>
+<button id="manualCloseBtn" type="button" aria-label="매뉴얼 닫기 또는 앱으로 돌아가기" title="닫기">× <span>닫기</span></button>
+</div>
+<main id="manualTop">
+<div class="hero"><span class="stamp">FRAME ATLAS · 2.0</span><p class="eyebrow">USER GUIDE / LOCATION SCOUTING</p><h1>사용자 매뉴얼</h1>
+<p>건축의 형태와 재료, 빛과 그림자, 배경의 깊이, 인물 촬영 활용도를 검토하는 촬영 장소 조사 도구입니다. PC는 조사·편집·백업, iPhone은 탐색·현장 확인 중심으로 이용하세요.</p><p><span class="stamp">개정판 2026-10-15 · 새 장소 등록과 PC·모바일 사용 추가</span></p></div>
+<section id="quick"><h2>먼저 알아둘 핵심</h2><ol class="steps">
+<li><b>최신 2.0 주소로 열기.</b> <a href="./index.html">FRAME ATLAS 2.0 열기</a>. 주소에 <code>/v2/index.html</code>이 있어야 합니다.</li>
+<li><b>관리자 모드가 있어야 편집할 수 있습니다.</b> 새 장소 등록, 수정, 삭제, 사진 변경 및 게시 기능은 관리자 잠금 해제 후 이용합니다.</li>
+<li><b>저장과 게시를 구분하세요.</b> ‘이 기기에 임시저장’은 현재 브라우저의 초안입니다. 다른 기기로 전달하려면 백업 후 GitHub 게시와 배포를 확인해야 합니다.</li>
+<li><b>사진 일치·저작권·촬영 허가는 서로 별개입니다.</b> 방문이 가능해도 상업 촬영이나 사진 재사용이 허용된다는 뜻은 아닙니다.</li>
+</ol><div class="warn"><b>안전:</b> 중요한 편집 전후로 JSON 백업을 다운로드하세요. 브라우저 데이터 삭제, 기기 변경, 초안 초기화로 임시 자료를 잃을 수 있습니다.</div></section>
+<section id="toc"><h2>빠른 목차</h2><div class="toc">
+<a href="#screens">1. 화면과 메뉴</a><a href="#search">2. 검색과 목록 복귀</a><a href="#detail">3. 장소 상세·지도·즐겨찾기</a><a href="#admin">4. 관리자 모드</a><a href="#add">5. 새 장소 추가하기</a><a href="#edit">6. 수정·삭제</a><a href="#photos">7. 사진 검색과 대표사진</a><a href="#checklist">8. 현장 촬영 체크리스트</a><a href="#backup">9. 백업·복원·게시</a><a href="#devices">10. PC와 iPhone 이용</a><a href="#trouble">11. 문제 해결</a><a href="#standards">12. 장소 선정 원칙</a>
+</div></section>
+<section id="screens"><h2>1. 화면과 메뉴</h2><table><thead><tr><th>화면</th><th>용도·주의점</th></tr></thead><tbody>
+<tr><td>홈 / 전체 촬영 장소</td><td>추천과 전체 장소를 검색하고 지역·공간 유형·촬영 분위기로 좁힙니다.</td></tr>
+<tr><td>지도</td><td>선택한 장소의 지도·길찾기를 엽니다. 핀보다 정확한 주소와 실제 출입구를 다시 확인하세요.</td></tr>
+<tr><td>저장 장소</td><td>하트/저장하기로 즐겨찾기에 추가합니다. 개인 즐겨찾기는 현재 브라우저에 저장되며 기기 간 자동 동기화되지 않을 수 있습니다.</td></tr>
+<tr><td>사진 후보 / 내 갤러리</td><td>후보 사진과 장소 일치 상태를 비교합니다. ‘확인 필요’나 ‘다른 장소 사진’은 확정된 대표사진이 아닙니다.</td></tr>
+<tr><td>촬영 분석</td><td>조형성·구도·빛·에디토리얼 활용을 비교합니다. 점수는 촬영 허가 여부를 뜻하지 않습니다.</td></tr>
+<tr><td>마이페이지</td><td>전체 아카이브, 백업, 설정 및 이 매뉴얼을 엽니다.</td></tr>
+<tr><td>관리자 모드</td><td>편집·사진 변경·삭제·게시 기능을 엽니다. 작업 후 ‘관리자 잠금’을 누릅니다.</td></tr>
 </tbody></table></section>
-<section><h2>4. 사진 추가와 대표사진 선택</h2><ol class="steps"><li>상세 화면에서 <b>사진 추가 / 교체</b>로 이동합니다.</li><li>직접 이미지 URL을 넣거나 사진 파일을 선택합니다. URL이 있다고 해서 이미지가 저장소에 복사되는 것은 아닙니다. 웹 주소에서 표시되는 참고사진과 실제 GitHub에 저장된 이미지 파일은 다른 상태입니다. 파일 저장이 필요한 사진은 실제 파일을 선택해 추가하고, 이용 권리·장소 일치 정보를 확인한 뒤 GitHub 게시 기능으로 업로드해야 합니다.</li><li>사진 설명·구도·원문 링크·장소 일치 여부를 입력합니다.</li><li>저장된 후보 중에서 <b>대표사진으로 사용</b>을 선택합니다. 실제 장소와 일치하지 않으면 대표사진으로 지정하지 마세요.</li><li>저작권과 사용 조건을 확인합니다. 웹에서 볼 수 있다는 이유만으로 화보·상업 촬영에 재사용할 수 있는 것은 아닙니다.</li></ol><div class="warn">사진이 표시되지 않으면 원문 페이지에서 이미지가 살아 있는지 확인하고, 직접 이미지 주소인지 점검합니다. 사진 원문 링크와 직접 이미지 주소는 다를 수 있습니다.</div></section>
-<section><h2>5. 저장·백업·게시</h2><h3>이 기기에 임시 저장</h3><p>장소 정보와 체크리스트를 저장하면 브라우저의 로컬 작업 초안에 반영됩니다. 브라우저 데이터 삭제·기기 교체·비공개 모드 사용 시 작업을 잃을 수 있으므로 중요한 수정 전후로 JSON 백업을 내보내 보관하세요.</p><h3>JSON 백업</h3><ol><li>마이페이지에서 <b>백업 내보내기</b>를 선택합니다.</li><li>파일을 날짜와 함께 PC의 별도 폴더에 보관합니다.</li><li>복원이 필요하면 <b>백업 가져오기</b>를 사용하되, 현재 자료를 먼저 내보내 별도 보관합니다.</li></ol><h3>사진 파일을 GitHub에 저장하기</h3><p>장소 상세 화면에서 사진 파일을 선택해 후보로 추가한 뒤, 이용 권리와 장소 일치 여부를 확인합니다. 개인 기기의 임시보관 상태는 이 기기에서만 사용될 수 있습니다. 다른 기기에서도 같은 이미지 파일이 필요하다면 저장 가능한 권리가 확인된 파일을 GitHub 게시 기능으로 올린 후, 카탈로그와 파일 경로가 맞는지 확인합니다.</p><h3>관리자 모드</h3><ol><li>앱 상단의 <b>관리자 모드</b>를 누릅니다.</li><li>등록된 관리자 비밀번호 2개 중 하나를 입력합니다. 일반 사용자는 새 비밀번호를 등록할 수 없습니다.</li><li>페이지를 다시 열면 관리자 잠금이 자동으로 적용됩니다.</li></ol><p>두 비밀번호는 개인 비밀번호 보관함에 보관하고 다른 사람과 공유하지 마세요. 이 잠금은 화면 조작을 줄이기 위한 장치이며, 공개 웹앱 자체의 완전한 서버 인증은 아닙니다. 실제 GitHub 게시에는 별도의 저장소 쓰기 권한이 필요합니다.</p><h3>GitHub 게시</h3><p>게시 기능은 장소 카탈로그 JSON을 GitHub 저장소에 반영하는 작업입니다. 토큰을 입력하기 전 저장소와 권한을 확인하고, 신뢰하는 개인 기기에서만 진행하세요. 토큰은 저장소 쓰기 권한을 가질 수 있으므로 다른 사람과 공유하거나 공용 기기에서 사용하지 마세요. 게시 성공 뒤에도 GitHub Actions의 Pages 배포가 완료됐는지 확인하고 새로고침합니다.</p><div class="warn">현재 앱에서 사진 파일이 저장소에 업로드되거나 여러 기기 간 개인 기록이 자동 병합된다고 보장할 수 없습니다. JSON 카탈로그 게시와 이미지 파일 저장은 별도 기능입니다.</div></section>
-<section><h2>6. 자주 발생하는 문제</h2><h3>수정 사항이 보이지 않음</h3><ul><li>2.0 주소가 <code>/FRAME_ATLAS/v2/index.html</code>인지 확인합니다. 루트 주소는 이전 버전입니다.</li><li>PC에서는 <b>Ctrl + F5</b>로 강력 새로고침합니다.</li><li>홈 화면 아이콘으로 실행한 앱은 오래된 서비스 워커 캐시를 사용할 수 있습니다. 브라우저에서 사이트를 다시 열고 최신 화면을 확인합니다.</li><li>GitHub 저장소의 최신 커밋과 Pages 배포 상태가 일치하는지 확인합니다.</li></ul><h3>장소 사진이 안 나옴</h3><ul><li>후보 URL과 원문 페이지를 확인합니다.</li><li>원문이 차단되거나 삭제되었으면 다른 후보를 검색합니다.</li><li>다른 장소의 사진을 대신 표시하지 말고, 사진 미확인 상태를 유지합니다.</li></ul><h3>다른 기기에서 데이터가 다름</h3><p>로컬 초안은 브라우저·기기별로 다를 수 있습니다. 백업을 먼저 만들고, 게시/복원 전에는 원본 JSON을 보존합니다. 동기화가 성공했다고 표시되어도 실제 항목 수와 사진 표시를 확인합니다.</p></section>
-<section><h2>7. 장소 조사 원칙</h2><ul><li>유명 관광지라는 이유만으로 촬영 장소로 채택하지 않습니다.</li><li>구조·재료·빛·그림자·구도·배경 다양성·실내외 활용성을 평가합니다.</li><li>주소, 운영 상태, 사진 일치, 촬영 허가, 비용, 접근성에는 확인 날짜와 출처를 남깁니다.</li><li>공식 확인 전에는 촬영 가능·주차 가능·전원 사용 가능 등으로 단정하지 않습니다.</li><li>사진 후보의 장소 일치와 사용 권한은 서로 다른 확인 항목입니다.</li></ul></section>
-<footer>FRAME ATLAS 2.0 · 개인 촬영 장소 조사 도구 · 사용자 매뉴얼은 실제 기능 검증 결과에 따라 갱신합니다.</footer>
-</main><section><h2>매체 노출·촬영 이력 확인</h2><p>장소 상세 화면의 ‘매체 노출·촬영 이력’에는 작품명, 매체·제작사, 공개일 또는 방영일, 장면·공간 설명과 근거 링크가 확인된 경우에만 표시됩니다. 건축 기사나 장소 소개 콘텐츠는 영화·드라마·광고 촬영 이력과 구분하며, 공식 자료에 작품명이 없으면 임의로 추정하지 않습니다.</p></section></body></html>
+<section id="search"><h2>2. 검색과 목록 복귀</h2><ol class="steps">
+<li>검색창에 장소명·지역·분류·별칭·촬영 분위기를 입력합니다. 예: <code>벽돌 자연광 레트로</code>.</li>
+<li>지역·공간 유형·촬영 분위기·사진 상태 필터를 조합합니다. 결과가 없다면 검색어 수를 줄이고 필터를 ‘전체’로 되돌립니다.</li>
+<li>장소 카드를 눌러 상세 정보를 봅니다.</li>
+<li>상세 화면에서 <b>‘2.0 전체 장소 목록으로 돌아가기’</b>를 눌러 목록으로 복귀합니다. 이전에 보던 목록 위치와 필터를 유지하도록 설계되어 있습니다.</li>
+</ol><p class="note">‘맨 위로’ 버튼은 화면을 충분히 아래로 내렸을 때 나타납니다. 시작 화면이나 페이지 상단에서는 숨겨져 있을 수 있습니다.</p></section>
+<section id="detail"><h2>3. 장소 상세·지도·즐겨찾기</h2><ul>
+<li><b>사진 기획 점수:</b> 시각적 고유성, 구도 다양성, 빛·재료, 에디토리얼 활용도, 실내외 유연성을 정리한 기획 평가입니다. 출입 가능성과 허가는 별도로 확인합니다.</li>
+<li><b>장소 이용 정보:</b> 공식 홈페이지·전화·주소가 표시되면 원문에서 최신 운영시간, 휴관, 예약, 비용, 주차·장비 반입 조건을 확인합니다.</li>
+<li><b>지도/길찾기:</b> 지도 보기 또는 길찾기를 선택한 뒤 네이버 지도·티맵 등을 엽니다. 건물 대표 주소와 촬영 공간 입구가 다를 수 있습니다.</li>
+<li><b>저장하기:</b> 하트/저장하기로 즐겨찾기에 넣고 다시 눌러 해제합니다.</li>
+<li><b>매체 노출·촬영 이력:</b> 작품명과 근거가 확인된 정보만 참고합니다. 촬영 이력이 있다는 것과 현재 대관이 가능하다는 것은 다릅니다.</li>
+</ul></section>
+<section id="admin"><h2>4. 관리자 모드</h2><ol class="steps">
+<li>상단 ‘관리자 모드’를 누릅니다. 모바일에서도 같은 버튼을 사용합니다.</li>
+<li>전달받은 공통 관리자 비밀번호 2개 중 하나를 정확히 입력합니다. 대·소문자와 하이픈을 그대로 입력해야 하며, 앱에서 새 비밀번호를 등록할 수는 없습니다.</li>
+<li>잠금이 풀리면 장소·사진 편집 도구가 활성화됩니다.</li>
+<li>작업 후 ‘관리자 잠금’을 누릅니다. 페이지를 다시 열면 잠금 상태로 시작합니다.</li>
+</ol><div class="warn"><b>보안 주의:</b> 이 잠금은 공개 웹앱의 화면 조작을 줄이는 장치이지 서버 로그인은 아닙니다. GitHub 자료를 바꾸려면 별도의 저장소 쓰기 토큰이 필요합니다. 토큰과 비밀번호를 타인과 공유하지 마세요.</div></section>
+<section id="add"><h2>5. 새 장소 추가하기</h2><p>등록은 초안을 만드는 작업입니다. 위치·사진·촬영 가치를 확인한 후 게시해야 공통 카탈로그에 반영됩니다.</p>
+<h3>A. 등록 양식 열기</h3><ol class="steps"><li>관리자 모드를 엽니다.</li><li>홈의 <b>‘＋ 장소 신규 등록’</b> 또는 아카이브 관리자 패널의 <b>‘＋ 새 장소 등록’</b>을 누릅니다.</li><li>새 장소 상세 화면이 열리면 기본 정보와 촬영 기획 정보를 입력합니다.</li></ol>
+<h3>B. 기본 정보 입력</h3><table><thead><tr><th>항목</th><th>입력 방법</th></tr></thead><tbody>
+<tr><td>장소명·지역</td><td>공식 표기와 실제 시·도를 입력합니다. 장소명이 있어야 저장할 수 있습니다.</td></tr>
+<tr><td>분류·별칭</td><td>예: 산업유산·벽돌 창고. 별칭은 쉼표로 구분해 중복 검색에 활용합니다.</td></tr>
+<tr><td>주소·전화</td><td>공식 출처로 확인된 값만 씁니다. 모르는 값은 추정하지 않습니다.</td></tr>
+<tr><td>공식 홈페이지·근거 링크</td><td>관리기관·설계사·공공기관 등 근거 URL을 입력합니다. 복수 링크는 쉼표로 구분합니다.</td></tr>
+<tr><td>운영 상태·촬영 허가</td><td>모르면 ‘미확인’으로 둡니다. 일반 관람 허용과 상업 촬영 허가는 별도입니다.</td></tr>
+<tr><td>촬영·조사 메모</td><td>형태·빛·재료·구도·배경의 특징과 촬영 제한을 기록합니다.</td></tr>
+</tbody></table><p>입력 후 <b>‘장소 정보 저장’</b>을 누릅니다. 이 저장은 현재 기기의 임시 초안입니다.</p>
+<h3>C. 사진 기획·분류 정보 저장</h3><p>‘촬영 기획·분류 정보 입력’에서 사진가 관점의 설명, 공간 유형, 시각적 강점, 추천 콘셉트, 제약 조건, 사진 잠재력 점수(0–100), 조사 우선순위(A/B/C), 지도 검색어, 출처와 추가 메모를 입력하고 <b>‘촬영 기획·분류 정보 저장’</b>을 누릅니다. 쉼표로 구분하는 입력란은 쉼표를 사용합니다. 점수는 기획 평가이지 허가 가능성 점수가 아닙니다.</p>
+<h3>D. 사진과 확인 상태 추가</h3><ol class="steps">
+<li>Google·네이버·Bing 이미지 검색 또는 공식 출처를 열거나 Openverse/Wikimedia Commons 자동 검색을 사용합니다.</li>
+<li>실제 그 장소를 촬영한 사진인지 확인합니다. 다른 지점·지도 이미지·항공 사진을 일반 대표사진으로 잘못 사용하지 않습니다.</li>
+<li>‘사진 추가/교체’에서 이미지 URL 또는 파일을 선택하고, 사진 설명·구도·장소 일치 여부·원문 링크를 입력한 뒤 ‘사진 후보 추가’를 누릅니다. 지원 사진 파일은 JPG/PNG/WebP/AVIF, 8MB 이하입니다.</li>
+<li>‘장소 일치 확인 필요’는 근거를 확인한 뒤 변경합니다. 사진 이용 권한은 별도로 확인합니다.</li>
+<li>확인된 후보의 ‘대표사진으로 사용’ 또는 ‘대표사진 선택’을 누릅니다.</li>
+<li>모든 정보를 저장하고 JSON 백업을 내보낸 다음 ‘GitHub에 게시’를 실행합니다. 게시와 배포가 완료되어야 다른 기기에서 공통 자료로 볼 수 있습니다.</li>
+</ol><div class="warn"><b>중복 방지:</b> 먼저 기존 목록에서 장소명·별칭·주소를 검색합니다. 후보 사진이나 홈페이지가 있다는 이유만으로 추천 장소 검증이 끝난 것은 아닙니다.</div></section>
+<section id="edit"><h2>6. 장소 수정·삭제</h2><p>상세 화면의 ‘정보 수정’으로 편집 영역에 이동합니다. <b>기본 정보</b>, <b>촬영 기획·분류 정보</b>, <b>현장 체크리스트</b>는 각각 별도의 저장 버튼이 있으므로 수정한 영역마다 저장해야 합니다.</p>
+<p>‘장소 삭제’는 확인 대화상자를 거쳐 실행됩니다. 삭제 전에 JSON 백업을 내보내고 대상 장소 이름을 다시 확인하세요. 사진 후보의 ‘사진 정보 수정’, ‘이미지 주소 변경’, ‘파일로 교체’, ‘사진 삭제’도 각각 별도 작업입니다. 대표사진을 삭제하기 전 다른 사진을 대표로 지정할지 확인합니다.</p></section>
+<section id="photos"><h2>7. 사진 검색과 대표사진</h2>
+<h3>자동 검색은 검증이 아닙니다</h3><p>자동 검색 결과는 다른 장소, 저해상도 썸네일, 권리 조건이 불명확한 사진을 포함할 수 있습니다. 검색 완료 메시지는 장소·저작권 검증 완료를 뜻하지 않습니다. 원문 링크와 라이선스를 확인한 뒤 후보로 저장합니다.</p>
+<h3>이미지 URL과 사진 파일</h3><ul>
+<li><b>URL:</b> 인터넷 이미지 주소를 참조합니다. 원문이 삭제되거나 직접 이미지 주소가 막히면 표시되지 않을 수 있습니다. URL만 등록한다고 파일이 저장소로 복사되는 것은 아닙니다.</li>
+<li><b>파일:</b> 선택한 사진 파일은 먼저 현재 브라우저의 임시 보관에 들어갑니다. 대표/참고 사진으로 선택된 파일은 GitHub 게시 시 업로드 대상이 될 수 있습니다. 게시 완료 후 실제 표시 여부를 확인합니다.</li>
+<li><b>대표사진:</b> 장소를 직접 보여주고 구도·조형성이 있는 이미지를 고릅니다. 장소 일치가 미확인인 사진은 대표로 확정하지 않습니다.</li>
+</ul>
+<h3>‘사진을 불러올 수 없습니다’일 때</h3><ol><li>원문 페이지에서 사진 내용과 실제 장소를 대조합니다.</li><li>원문 삭제·접근 차단·직접 링크 차단 여부를 확인합니다.</li><li>다른 공식 출처나 권리 조건이 분명한 사진을 검색합니다.</li><li>대체 사진이 없으면 다른 장소 사진으로 채우지 말고 미확인 상태로 둡니다.</li><li>파일 게시 후 저장소의 <code>v2/assets/places/</code> 경로와 카탈로그 경로가 일치하는지 확인합니다.</li></ol>
+<div class="note">사진 표시, 실제 장소와 일치, 사진 재사용 권리, 장소에서의 상업 촬영 허가 — 이 네 가지는 서로 다릅니다.</div></section>
+<section id="checklist"><h2>8. 현장 촬영 체크리스트</h2><p>장소 상세 화면의 체크리스트를 입력하고 <b>‘현장 체크리스트 저장’</b>을 누릅니다. 미확인은 사실 확정이 아니라 점검할 항목입니다.</p>
+<table><thead><tr><th>분야</th><th>확인 내용</th></tr></thead><tbody>
+<tr><td>접근·이동</td><td>정확한 주소, 입구, 대중교통, 주차·하차, 장비 반입구, 계단·경사·엘리베이터</td></tr>
+<tr><td>운영·허가</td><td>운영시간·휴관, 상업 촬영, 예약 기한, 촬영료·보증금, 인원·장비 제한</td></tr>
+<tr><td>공간·장비</td><td>실내외 구역, 전원·전력, 천장 높이, 삼각대·플래시·조명·드론·연막 규정</td></tr>
+<tr><td>촬영 설계</td><td>자연광 방향, 시간대, 초점거리, 카메라 높이, 배경 통제, 와이드·인물·디테일 구도</td></tr>
+<tr><td>스태프·안전</td><td>화장실, 탈의·대기 공간, 혼잡·소음, 위험요소, 관람객 동선, 원상복구 책임</td></tr>
+<tr><td>근거</td><td>담당자 답변, 확인 날짜, 공식 페이지 URL과 재확인 필요사항</td></tr>
+</tbody></table></section>
+<section id="backup"><h2>9. 백업·복원·GitHub 게시</h2>
+<h3>수정 전 백업</h3><ol class="steps"><li>관리자 도구에서 ‘안전 백업 내보내기’ 또는 ‘백업 내보내기’를 누릅니다.</li><li>다운로드한 JSON을 PC의 별도 폴더에도 보관합니다. 날짜를 파일명에 붙이면 이전 상태를 구분하기 쉽습니다.</li><li>대량 수정 후에도 새 이름으로 추가 백업을 저장합니다.</li></ol>
+<h3>백업 가져오기</h3><p>‘JSON 백업 가져오기’에서 파일을 선택합니다. 현재 작업 카탈로그를 교체할 수 있으므로 가져오기 전에 현재 상태도 먼저 내보내세요. 복원 후 장소 수와 대표사진을 확인합니다.</p>
+<h3>GitHub에 게시해 PC·모바일에 반영하기</h3><ol class="steps">
+<li>백업 후 관리자 도구의 ‘GitHub에 게시’를 누릅니다.</li><li>저장소 <code>casio8000/FRAME_ATLAS</code>에만 Contents 읽기/쓰기 권한을 준 Fine-grained Personal Access Token을 입력합니다.</li><li>‘게시 시작’을 누르고 완료 또는 오류 메시지를 확인합니다. 게시 중 페이지를 닫거나 새로고침하지 마세요.</li><li>GitHub Actions의 Pages 배포 성공을 확인하고 PC와 iPhone에서 2.0 주소를 다시 엽니다.</li><li>다른 기기에서 변경된 장소·장소 수·사진 표시까지 확인합니다.</li></ol>
+<div class="warn"><b>중요:</b> 카탈로그 게시 기능은 장소 데이터와 선택된 사진 파일을 저장소에 반영합니다. 즐겨찾기와 기기별 임시 초안이 자동 병합되는 것은 아닙니다. 파일로 추가했지만 아직 게시하지 않은 사진은 다른 기기에서 보이지 않을 수 있습니다.</div>
+<p>토큰은 저장소에 저장되지 않으며 다시 게시할 때 재입력이 필요할 수 있습니다. 토큰을 다른 사람에게 보내거나 공용 PC에서 사용하지 마세요. ‘배포된 기본자료 다시 읽기’는 기기에 저장된 수정사항을 버릴 수 있으므로 반드시 먼저 백업해야 합니다.</p></section>
+<section id="devices"><h2>10. PC와 iPhone 이용</h2><table><thead><tr><th>작업</th><th>권장 기기</th><th>주의사항</th></tr></thead><tbody>
+<tr><td>대량 조사·입력·사진 검토</td><td>PC</td><td>영역마다 저장 버튼 확인, 수정 전후 JSON 백업</td></tr>
+<tr><td>현장 탐색·지도·주소 확인</td><td>iPhone</td><td>관리자 버튼은 모바일 상단에서도 사용 가능. 정확한 출입구와 허가 조건 확인</td></tr>
+<tr><td>공통 카탈로그 게시</td><td>PC 권장</td><td>게시 후 Pages 배포와 모바일 반영 확인</td></tr>
+<tr><td>사진 파일 등록</td><td>PC 권장</td><td>8MB 이하, 올바른 장소에 연결했는지 확인</td></tr>
+</tbody></table><p>홈 화면 아이콘에 오래된 화면이 남으면 앱을 닫고 Safari에서 2.0 주소를 직접 열어 비교합니다. 기기·브라우저별 즐겨찾기와 미게시 초안은 별개일 수 있습니다.</p></section>
+<section id="trouble"><h2>11. 문제 해결</h2>
+<h3>PC에서 매뉴얼 ‘맨 위로’·‘닫기 ×’가 안 보임</h3><p>이 개정판은 PC에서 오른쪽 위, 작은 화면에서는 오른쪽 아래에 버튼을 고정합니다. <a href="./USER_MANUAL_KO.html?v=20261015-68">매뉴얼 최신판 다시 열기</a>를 사용합니다. 닫기는 새 탭을 닫을 수 있으면 닫고, 그렇지 않으면 이전 화면 또는 앱으로 돌아갑니다.</p>
+<h3>관리자 비밀번호 불일치</h3><ul><li>예전에 이 PC에서 자체 등록했던 비밀번호는 이전 방식일 수 있습니다. 현재는 전달받은 공통 비밀번호 두 개만 사용합니다.</li><li>대·소문자와 하이픈을 확인하고 앞뒤 공백을 제거합니다. 새로고침한 뒤 다시 입력합니다.</li></ul>
+<h3>수정이 모바일에서 안 보임</h3><ol><li>작업한 기기에서 ‘임시저장’인지 ‘게시 완료’인지 확인합니다.</li><li>백업 후 GitHub에 게시합니다.</li><li>Actions에서 Pages 배포 성공 여부를 확인합니다.</li><li>PC는 Ctrl+F5, 모바일은 홈 화면 아이콘 대신 브라우저에서 직접 2.0 주소를 엽니다.</li></ol>
+<h3>목록으로 돌아갈 때 엉뚱한 위치로 이동</h3><p>장소 상세 화면의 ‘2.0 전체 장소 목록으로 돌아가기’를 누릅니다. 문제가 지속되면 현재 주소에 <code>/v2/index.html</code>이 있는지 확인하고 문제 화면을 캡처합니다.</p>
+<h3>게시 실패 또는 사진 파일을 찾지 못함</h3><p>오류 문구를 기록하고 토큰 권한, 저장소 이름, 배포 오류를 확인합니다. 파일이 기기 임시 보관에만 있으면 원래 기기에서 다시 선택해야 할 수 있습니다. 성공 메시지만 믿지 말고 실제 사진을 열어 확인합니다.</p>
+</section>
+<section id="standards"><h2>12. 장소 선정 원칙</h2><ul>
+<li>관광 인지도보다 조형적 고유성, 구도 다양성, 빛·재료, 패션·인물·에디토리얼 활용도, 실내외 유연성을 평가합니다.</li>
+<li>대형 스튜디오·공연장·산업유산·현대건축·미술관·도시 질감·자연과 인공 구조의 조합 등 촬영 결과를 차별화할 수 있는 유형을 찾습니다.</li>
+<li>장소 존재 여부, 사진의 실제 장소 일치, 사진 사용권, 상업 촬영 허가는 각각 확인합니다.</li>
+<li>운영 종료·휴관·출입 제한 또는 사진 불일치가 확인된 장소는 추천에서 보류합니다. 후보 사진이 있다는 이유로 검증 완료로 표시하지 않습니다.</li>
+</ul><div class="ok"><b>권장 순서:</b> 백업 → 중복 확인 → 공식 위치·출처 확인 → 사진 검증 → 촬영 가치 평가 → 각 영역 저장 → JSON 백업 → GitHub 게시 → 배포 후 PC·모바일 확인.</div></section>
+<footer>FRAME ATLAS 2.0 · 이 매뉴얼은 현재 제공되는 기능 기준입니다. 실제 운영·비용·촬영 허가·저작권 조건은 각 관리기관의 최신 안내를 확인하세요.</footer>
+</main>
+<script>
+(function(){
+ var topBtn=document.getElementById("manualTopBtn"),closeBtn=document.getElementById("manualCloseBtn");
+ if(topBtn)topBtn.addEventListener("click",function(){window.scrollTo({top:0,behavior:window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});});
+ if(closeBtn)closeBtn.addEventListener("click",function(){if(window.opener){window.close();return;}if(window.history&&window.history.length>1){window.history.back();return;}window.location.href="./index.html";});
+})();
+</script>
+</body></html>
