@@ -179,3 +179,7 @@ Last updated: 2026-10-16 (Korea Standard Time)
 
 
 - Follow-up after the prior checkpoint commit: reconciled the 200-place roadmap to the active 151-record catalog, updated region/type remaining targets to a provisional +49, and changed mobile image-search links to a 2-column layout. Cache-bust build is now `20261016-71`.
+
+
+- Final image-source enhancement: the Jeonju Film Studio record now has two reference-photo candidates (exterior and sound stage), and Studio Cube has three (exterior/interior candidates). All remain non-primary candidates with unknown reuse rights; no approved primary cover was assigned.
+- Last data count check after these additions: 151 active records, 14 separate reviewQueue items, unique active IDs, and all 14 planned IDs present. Place JSON and detail-gallery data are committed. The latest Pages workflow run should be checked for its final result before claiming public deployment is complete.
