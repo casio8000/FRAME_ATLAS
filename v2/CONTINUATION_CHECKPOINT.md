@@ -212,3 +212,11 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Representative image is a photo of the actual Temiorae compound from Culture Journal Mac's Temiorae feature. Per user policy, image/place identity is enough for representative approval; copyright/reuse and commercial shoot permits remain separate unknowns.
 - Home counts and cache version updated to 70 active places / 10 review candidates / `20261015-53`. Catalog validator and browser regression now require the restored location.
 - This new commit still needs a fresh quality gate and browser test before full validation can be claimed.
+
+
+## Follow-up — legacy L-214 Nonsan 1950 Studio (2026-10-15)
+- Restored L-214 as active place `nat-nonsan-sunshine-1950-set`, focusing the record on the city-operated **논산 선샤인랜드 1950스튜디오** rather than conflating it with the adjacent private `선샤인스튜디오`.
+- Nonsan City's official FAQ states commercial-shoot approval requires a submitted application and daily fee: broadcast productions ₩1,000,000/day; film/advertising and related production ₩2,500,000/day (official FAQ basis, recheck before booking). It currently lists 10:00–17:30 and a Wednesday closure, but older closure notices have changed, so confirm the latest official notice before visiting.
+- Representative photo is identified on the Korea Tourism Organization's Sunshine Land page and is approved under the user's rule. Photo reuse rights are still unverified separately.
+- Catalog: **71 active locations, 10 review-queue candidates**. Home counters and service-worker cache use `20261015-54`. Catalog validator and browser regression require this location.
+- Fresh CI is required on the latest commit before claiming this change is validated.
