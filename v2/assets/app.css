@@ -1017,3 +1017,9 @@ dialog.map-links-dialog{position:relative;max-width:min(560px,calc(100% - 24px))
 .searchbar .filters{grid-template-columns:minmax(170px,2fr) repeat(4,minmax(110px,1fr))}
 @media(max-width:760px){.searchbar .filters{grid-template-columns:1fr 1fr}.searchbar .filters #query{grid-column:1/-1}}
 @media(max-width:420px){.searchbar .filters{grid-template-columns:1fr}.searchbar .filters #query{grid-column:auto}}
+
+/* Home-screen new-location action: visible on desktop and touch layouts. */
+.landing-add-place-wrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px;padding-top:11px;border-top:1px solid rgba(49,91,66,.16)}
+.landing-add-place-wrap .btn{min-height:40px}
+.landing-add-place-wrap small{color:var(--muted);font-size:11px;line-height:1.45}
+@media(max-width:620px){.landing-add-place-wrap{align-items:stretch;gap:6px}.landing-add-place-wrap .btn{width:100%;justify-content:center}.landing-add-place-wrap small{font-size:10px}}
