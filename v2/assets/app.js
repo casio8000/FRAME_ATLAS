@@ -707,9 +707,9 @@ function renderBrowseGallery(p){
   const page=String(c.sourcePageUrl||src).trim();
   const label=String(c.title||p.name+" 참고사진");
   const match=c.placeMatch==="confirmed"?"장소 출처 확인 후보":"장소·구도 확인 필요";
-  const rights=String(c.rightsLabel||((c.rights&&c.rights!=="unknown")?c.rights:"이용권 미확인"));
-  return '<a class="browse-photo-card" href="'+esc(page)+'" target="_blank" rel="noopener noreferrer" aria-label="'+esc(label)+' 원문 열기"><div class="candidate-image-frame browse-photo-frame"><img data-image-fallback="true" data-fallback-thumbnail="'+esc(c.sourceThumbnail||"")+'" src="'+esc(src)+'" alt="'+esc(label)+'" loading="lazy" referrerpolicy="no-referrer"><span class="browse-photo-open">원문 ↗</span></div><div class="browse-photo-caption"><b>'+esc(label)+'</b><span>'+esc(match)+'</span><small>'+esc(rights)+'</small></div></a>';
- }).join("")+'</div><p class="searchnote">참고 이미지는 대표사진 승인이나 상업적 재사용 허가를 뜻하지 않습니다. 출처·실제 장소 일치·이용권을 각각 확인하세요.</p></div>';
+  const sourceHint=String(c.sourceName||"장소 참고 이미지");
+  return '<a class="browse-photo-card" href="'+esc(page)+'" target="_blank" rel="noopener noreferrer" aria-label="'+esc(label)+' 원문 열기"><div class="candidate-image-frame browse-photo-frame"><img data-image-fallback="true" data-fallback-thumbnail="'+esc(c.sourceThumbnail||"")+'" src="'+esc(src)+'" alt="'+esc(label)+'" loading="lazy" referrerpolicy="no-referrer"><span class="browse-photo-open">원문 ↗</span></div><div class="browse-photo-caption"><b>'+esc(label)+'</b><span>'+esc(match)+'</span><small>'+esc(sourceHint)+'</small></div></a>';
+ }).join("")+'</div><p class="searchnote">사진은 장소 분위기를 살펴보는 참고입니다. 실제 장소와 이미지에 보이는 구역이 맞는지 원문에서 한 번 더 살펴보세요.</p></div>';
 }
 function openMapLinksDialog(p,purpose){
  const dlg=$("mapLinksDialog");if(!dlg||!p)return;
@@ -1195,8 +1195,15 @@ $("nextUnphotographedBtn").addEventListener("click",()=>{
 $("exportBtn").addEventListener("click",()=>{if(requireAdminMode())exportCatalog();});
 $("importInput").addEventListener("change",e=>{if(e.target.files&&e.target.files[0]&&requireAdminMode())importCatalog(e.target.files[0]);e.target.value="";});
 $("reloadBtn").addEventListener("click",async()=>{if(!requireAdminMode())return;if(!confirm("이 기기에 저장된 임시 수정사항을 버리고 배포된 기본자료를 다시 읽을까요? 먼저 JSON을 내보내 백업하는 것이 안전합니다."))return;localStorage.removeItem(LOCAL_KEY);await loadBase();});
-$("publishBtn").addEventListener("click",()=>{if(!requireAdminMode())return;$("publishStatus").classList.add("hidden");$("publishStatus").textContent="";$("publishToken").value="";$("publishDialog").showModal();});
-$("cancelPublishBtn").addEventListener("click",()=>{$("publishToken").value="";$("publishDialog").close();});
+function initializePublishTokenPreference(){
+ const token=$("publishToken"),remember=$("rememberPublishToken");if(!token||!remember)return;
+ try{const saved=localStorage.getItem(PUBLISH_TOKEN_KEY)||"";if(saved){token.value=saved;remember.checked=true;}}catch(_){}
+ const savePreference=()=>{try{if(remember.checked&&token.value.trim())localStorage.setItem(PUBLISH_TOKEN_KEY,token.value.trim());else localStorage.removeItem(PUBLISH_TOKEN_KEY);}catch(_){}};
+ token.addEventListener("input",savePreference);remember.addEventListener("change",savePreference);
+}
+initializePublishTokenPreference();
+$("publishBtn").addEventListener("click",()=>{if(!requireAdminMode())return;$("publishStatus").classList.add("hidden");$("publishStatus").textContent="";$("publishToken").value=localStorage.getItem(PUBLISH_TOKEN_KEY)||"";$("publishDialog").showModal();});
+$("cancelPublishBtn").addEventListener("click",()=>{if(!$("rememberPublishToken")?.checked)$("publishToken").value="";$("publishDialog").close();});
 $("confirmPublishBtn").addEventListener("click",()=>{if(requireAdminMode())publishCatalog();});
 async function publishCatalog(){
  if(!requireAdminMode())return;
