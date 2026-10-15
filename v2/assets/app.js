@@ -308,8 +308,8 @@ function syncMergeLegacyDraft(local,remote){
   // An older legacy draft never replaces a newer published record.
  }
  merged.reviewQueue=syncMergeValue([],local.reviewQueue||[],remote.reviewQueue||[],"reviewQueue",conflicts);
- merged.deletedAssetPaths=syncStringArray([],local.deletedAssetPaths||[],remote.deletedAssetPaths||[]);
- merged.deletedPlaceIds=syncStringArray([],local.deletedPlaceIds||[],remote.deletedPlaceIds||[]);
+ merged.deletedAssetPaths=syncClone(remote.deletedAssetPaths||[]);
+ merged.deletedPlaceIds=syncClone(remote.deletedPlaceIds||[]);
  merged.updatedAt=stamp();
  return {catalog:merged,conflicts,legacy:true};
 }
