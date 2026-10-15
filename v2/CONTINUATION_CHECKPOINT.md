@@ -137,3 +137,11 @@ Last updated: 2026-10-15 (Korea Standard Time)
 - Password dialog is constrained to the iPhone viewport height and width and remains internally scrollable.
 - Added a mobile Playwright regression test that sets a test-only admin password, opens the admin workspace at 390 px width, and asserts document/panel width does not exceed viewport.
 - Build/cache ID: `20261015-66`. Awaiting current GitHub Actions results.
+
+
+## 2026-10-15 · v2.67 two-admin-passphrase gate
+- Removed the per-browser first-run password creation path, which allowed any visitor to self-register for administrator mode.
+- Admin mode now accepts exactly two pre-provisioned high-entropy passphrases, verified with PBKDF2-HMAC-SHA256 (310,000 iterations). They are not written to localStorage. The previous per-browser admin password hashes are discarded.
+- The concise Korean user manual was updated in the same commit. It explains admin entry and clearly states that the UI gate is not server-side authorization; GitHub publication still requires a valid repository-scoped write token.
+- Added a browser regression test to verify there are exactly two configured verifiers and invalid passwords do not unlock administrator mode.
+- Build/cache ID: `20261015-67`. Actual passphrases are deliberately not included in repository files or the manual.

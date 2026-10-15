@@ -24,10 +24,15 @@ const http=require("node:http"),fs=require("node:fs"),path=require("node:path"),
  assert.equal(await adminPage.locator("#adminModeDialog").evaluate(e=>e.open),true,"Mobile admin entry should open its password dialog");
  const dialogRect=await adminPage.locator("#adminModeDialog").evaluate(e=>({left:e.getBoundingClientRect().left,right:e.getBoundingClientRect().right,width:e.getBoundingClientRect().width}));
  assert.ok(dialogRect.left>=-1&&dialogRect.right<=391,"Mobile admin dialog must fit inside the iPhone viewport: "+JSON.stringify(dialogRect));
- await adminPage.locator("#adminPasswordInput").fill("AtlasTest66!");
- await adminPage.locator("#adminPasswordConfirm").fill("AtlasTest66!");
+ assert.equal(await adminPage.evaluate(()=>ADMIN_PASSWORD_KEYS.length),2,"Exactly two administrator passphrases should be allowed");
+ assert.equal(await adminPage.locator("#adminPasswordConfirmLabel").evaluate(e=>e.hidden),true,"Users must not be able to self-register a new administrator password");
+ await adminPage.locator("#adminPasswordInput").fill("AtlasTest66-not-authorized");
  await adminPage.locator("#adminModeConfirmBtn").click();
- await adminPage.waitForFunction(()=>document.body.classList.contains("admin-mode"));
+ assert.equal(await adminPage.locator("#adminModeMessage").isVisible(),true,"An unregistered password should be rejected");
+ assert.equal(await adminPage.locator("body").evaluate(e=>e.classList.contains("admin-mode")),false,"Invalid credentials must not unlock administrator mode");
+ await adminPage.locator("#adminModeCancelBtn").click();
+ // Activate the layout directly for viewport testing; do not put an accepted passphrase in public test code.
+ await adminPage.evaluate(()=>setAdminMode(true));
  await adminPage.locator('[data-nav-view="more"]').click();
  await adminPage.locator('#moreView [data-more-action="archive"]').click();
  await adminPage.waitForFunction(()=>!document.querySelector("#adminPanel").hidden);

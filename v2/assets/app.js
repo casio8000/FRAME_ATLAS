@@ -10,12 +10,18 @@ const $=id=>document.getElementById(id);
 let catalog={schemaVersion:1,places:[]},selectedId=null,searchCache=[],homeHeroPlaceId=null,adminModeUnlocked=false,homeListReturnScrollY=null;
 const esc=v=>String(v==null?"":v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const getPlace=id=>catalog.places.find(p=>p.id===id);
-const ADMIN_HASH_KEY="frameAtlas2AdminHashV1",ADMIN_SALT_KEY="frameAtlas2AdminSaltV1";
-function requireAdminMode(){if(adminModeUnlocked)return true;alert("이 작업은 관리자 모드에서만 가능합니다. 위쪽 ‘관리자 모드’를 눌러 잠금을 해제하세요.");return false;}
-async function adminPasswordDigest(password,salt){
+try{localStorage.removeItem("frameAtlas2AdminHashV1");localStorage.removeItem("frameAtlas2AdminSaltV1");}catch(_){}
+const ADMIN_PASSWORD_KEYS=Object.freeze([
+ {salt:"c763b69d92c8040d3be85ebf6faa4ec8",hash:"63ae8093d39b1fc4a801449f968302c0fd0eb6673e555f4b51e5d1c10e04b439",iterations:310000},
+ {salt:"85bc197424f71c5f832f3539b1b42dba",hash:"846110af940c594a031be223f901204250ec9e7a4b113de21b4f4bdc7e89ac4f",iterations:310000}
+]);
+function requireAdminMode(){if(adminModeUnlocked)return true;alert("이 작업은 관리자 모드에서만 가능합니다. 등록된 관리자 비밀번호 중 하나로 잠금을 해제하세요.");return false;}
+async function adminPasswordDigest(password,salt,iterations){
  if(!window.crypto||!crypto.subtle||!window.TextEncoder)throw new Error("최신 브라우저의 보안 암호화 기능이 필요합니다.");
- const data=new TextEncoder().encode(salt+"|"+password),hash=await crypto.subtle.digest("SHA-256",data);
- return Array.from(new Uint8Array(hash),b=>b.toString(16).padStart(2,"0")).join("");
+ const encoder=new TextEncoder();
+ const key=await crypto.subtle.importKey("raw",encoder.encode(password),"PBKDF2",false,["deriveBits"]);
+ const bits=await crypto.subtle.deriveBits({name:"PBKDF2",hash:"SHA-256",salt:encoder.encode(salt),iterations},key,256);
+ return Array.from(new Uint8Array(bits),b=>b.toString(16).padStart(2,"0")).join("");
 }
 function setAdminMode(unlocked){
  adminModeUnlocked=!!unlocked;document.body.classList.toggle("admin-mode",adminModeUnlocked);
@@ -26,31 +32,25 @@ function setAdminMode(unlocked){
 }
 function openAdminModeDialog(){
  const dialog=$("adminModeDialog");if(!dialog)return;
- const isSetup=!localStorage.getItem(ADMIN_HASH_KEY);
- dialog.dataset.setup=isSetup?"1":"0";
- $("adminPasswordConfirmLabel").hidden=!isSetup;
- $("adminModeDescription").textContent=isSetup?"처음 한 번 비밀번호를 설정합니다. 8자 이상으로 정하고 확인란에 한 번 더 입력하세요.":"이 브라우저에 설정한 관리자 비밀번호를 입력하세요. 잠금은 페이지를 다시 열면 적용됩니다.";
- $("adminModeConfirmBtn").textContent=isSetup?"비밀번호 설정 및 잠금 해제":"잠금 해제";
+ dialog.dataset.setup="0";
+ $("adminPasswordConfirmLabel").hidden=true;
+ $("adminModeDescription").textContent="등록된 관리자 비밀번호 2개 중 하나를 입력하세요. 이 화면에서 새 비밀번호를 등록할 수는 없습니다.";
+ $("adminModeConfirmBtn").textContent="관리자 모드 열기";
  $("adminPasswordInput").value="";$("adminPasswordConfirm").value="";
  $("adminModeMessage").hidden=true;$("adminModeMessage").textContent="";
  dialog.showModal();$("adminPasswordInput").focus();
 }
 async function confirmAdminMode(){
- const dialog=$("adminModeDialog"),message=$("adminModeMessage"),password=$("adminPasswordInput").value,isSetup=dialog.dataset.setup==="1";
+ const dialog=$("adminModeDialog"),message=$("adminModeMessage"),input=$("adminPasswordInput"),password=input.value;
  const fail=msg=>{message.textContent=msg;message.hidden=false;};
  try{
-  if(password.length<8){fail("비밀번호는 8자 이상으로 입력하세요.");return;}
-  if(isSetup){
-   if(password!==$("adminPasswordConfirm").value){fail("두 비밀번호가 일치하지 않습니다.");return;}
-   const bytes=new Uint8Array(16);crypto.getRandomValues(bytes);
-   const salt=Array.from(bytes,b=>b.toString(16).padStart(2,"0")).join("");
-   const digest=await adminPasswordDigest(password,salt);
-   localStorage.setItem(ADMIN_SALT_KEY,salt);localStorage.setItem(ADMIN_HASH_KEY,digest);
-  }else{
-   const salt=localStorage.getItem(ADMIN_SALT_KEY)||"",expected=localStorage.getItem(ADMIN_HASH_KEY)||"";
-   if(!expected||await adminPasswordDigest(password,salt)!==expected){fail("비밀번호가 맞지 않습니다.");$("adminPasswordInput").select();return;}
+  let authorized=false;
+  for(const allowed of ADMIN_PASSWORD_KEYS){
+   const digest=await adminPasswordDigest(password,allowed.salt,allowed.iterations);
+   if(digest===allowed.hash){authorized=true;break;}
   }
-  dialog.close();setAdminMode(true);
+  if(!authorized){fail("등록된 관리자 비밀번호와 일치하지 않습니다.");input.select();return;}
+  dialog.close();input.value="";$("adminPasswordConfirm").value="";setAdminMode(true);
  }catch(e){fail("관리자 모드를 열 수 없습니다: "+e.message);}
 }
 
