@@ -737,7 +737,7 @@ button,input,select,textarea{font-family:inherit}
 .welcome-photo-layer img[aria-hidden="true"]{display:none}
 
 #detail .shooting-checklist .searchnote{font-size:15px;line-height:1.75;color:#334155}
-@media(max-width:620px){#detail .shooting-checklist .searchnote{font-size:14px}}
+@media(max-width:620px){#detail .shooting-checklist .searchnote{font-size:15px;line-height:1.75}}
 
 @media(max-width:620px){
  #homeView .scout-feature-card{display:block;grid-template-columns:1fr;width:100%}
