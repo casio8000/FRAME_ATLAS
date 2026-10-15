@@ -327,8 +327,8 @@ async function syncAttachSupplementalPlaces(base){
    const names=new Set((base.places||[]).map(p=>String(p.name||"").trim().toLocaleLowerCase()));
    for(const place of (extra.places||[])){
     if(!place||!place.id)continue;
-    const n=String(place.name||"").trim().toLocaleLowerCase();
-    const existing=base.places.find(p=>p.id===place.id||(n&&String(p.name||"").trim().toLocaleLowerCase()===n));
+    const n=String(place.name||"").replace(/\s+/g,"").toLocaleLowerCase();
+    const existing=base.places.find(p=>p.id===place.id||(n&&String(p.name||"").replace(/\s+/g,"").toLocaleLowerCase()===n));
     if(existing){
      if(place.curationOverride){
       const incoming=Array.isArray(place.imageCandidates)?place.imageCandidates:[];
