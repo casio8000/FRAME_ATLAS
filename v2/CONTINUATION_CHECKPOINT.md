@@ -204,3 +204,11 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Added legacy L-025 Samtan Art Mine to the review queue, not the active list. Recent reporting says it is closed for safety reinforcement with reopening projected for October 2027. Its location photo is retained as a reference only until reopening and current access are rechecked.
 - Active catalog remains 67; review queue is now 10. Homepage queue counters and service-worker cache have been updated to `20261015-51`.
 - The queue/cache/test changes made after the green run still require a fresh GitHub Actions run before they are labelled fully verified.
+
+
+## Follow-up — restored legacy L-080 Temiorae (2026-10-15)
+- Added `legacy-temiorae` to the active catalog as a distinctive former provincial-governor residence compound: 1932-era red-brick residences, blue tiled roofs, stone paths and pine garden.
+- Current operating information checked against Daejeon Foundation's October 2026 announcement: generally Tuesday–Sunday, 10:00–17:00, Monday closed (holiday notices can override); individual buildings and tenant/artist-in-residence areas may have different access.
+- Representative image is a photo of the actual Temiorae compound from Culture Journal Mac's Temiorae feature. Per user policy, image/place identity is enough for representative approval; copyright/reuse and commercial shoot permits remain separate unknowns.
+- Home counts and cache version updated to 70 active places / 10 review candidates / `20261015-53`. Catalog validator and browser regression now require the restored location.
+- This new commit still needs a fresh quality gate and browser test before full validation can be claimed.
