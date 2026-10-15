@@ -177,3 +177,20 @@ Last updated: 2026-10-14 (Korea Standard Time)
 2. Inspect latest commit and the v2-quality.yml workflow result before making more code edits.
 3. Fix only concrete test failures; preserve source data and stable IDs.
 4. Update this section with test results before ending the work session.
+
+
+## Latest completed step — 2026-10-15
+- **Current development catalog:** 67 active locations, 9 review-queue candidates.
+- Reconciled the actual 214-record legacy `data/places.js` source against v2; this was an alias-aware curation step, not a claim that the 195 raw name mismatches are all missing.
+- Added nine legacy locations with place-matched reference images: B39, Photo SeMA, Daegu Art Factory, Magok Culture Hall, SongEun Art Space, Nam June Paik Art Center, CICA Museum, Amorepacific Museum of Art, and Cheongju Dongbu Warehouse.
+- Added legacy-name aliases to existing locations (for example, DDP, Museum SAN, Cultural Tank, MMCA, ACC, Bonte Museum, Tri-Bowl and Mungyeong Saejae) instead of creating duplicates.
+- Reference-image records have explicit unknown rights and all `primaryImageId` values remain null. Commercial shooting permission is not inferred from public visitor access.
+- Initial HTML counters and service-worker cache version now match `67` places and `20261015-49`.
+- Catalog/static consistency checks: no duplicate normalized names or IDs; seven region groups populated; reference-image links valid; all new place IDs included in catalog validator and browser smoke tests.
+- Phase report: `v2/PHASE3_LEGACY_CURATION_2026-10-15.md`.
+- **Still not yet claimed:** end-to-end browser automation success; check the current GitHub Actions run before declaring the step fully validated.
+
+## Continue from here — do not repeat prior work
+1. Check the latest `FRAME ATLAS v2 quality gate` run for the most recent development-branch commit.
+2. Fix any validation or UI issue identified by that run and re-run only the necessary checks.
+3. Continue the remaining legacy reconciliation, adding further artistic locations only after source/identity checks. Do not bulk-add all exact-name mismatches; some are subareas, aliases, restricted facilities or candidates with unconfirmed operation.
