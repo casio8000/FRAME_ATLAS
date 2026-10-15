@@ -4,7 +4,7 @@
   "scope": "전국 촬영 장소 아카이브 · 장소 참고사진, 대표사진 편집 판단, 재사용 권리와 촬영 허가를 독립 관리",
   "dataStatus": "전국 권역 확장판. 활성 장소 90곳, 검토 대기 후보 10곳. 구버전에서 이미 선별된 예술·건축·촬영시설 장소를 우선 복구했고 출처상 장소 일치가 확인된 이미지는 대표사진으로 지정했습니다. 저작권·재사용 권리와 전문·상업촬영 허가는 각 장소 상세항목에 별도 표기합니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T05:30:00.000Z",
+  "updatedAt": "2026-10-15T06:15:00.000Z",
   "places": [
     {
       "id": "nat-solol-art-museum",
@@ -1372,24 +1372,25 @@
       "shootingPermission": "공간 점유형 촬영은 사전 승인 필요 · 최신 운영기관 확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "imageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "primaryImageId": "ref-oil-tank-t4",
       "imageCandidates": [
         {
           "id": "ref-oil-tank-t4",
-          "title": "문화비축기지 T4 원형 탱크 내부",
-          "imageUrl": "https://mediahub.seoul.go.kr/css/2018seoul/public/front/common/file/file02_s3.jpg",
-          "sourcePageUrl": "https://mediahub.seoul.go.kr/css/2018seoul/public/front/mobile/html/m_file6.html",
-          "sourceName": "서울시 미디어허브",
+          "title": "문화비축기지 T4 탱크 내부의 철제 구조와 원형 천장",
+          "imageUrl": "https://www.decojournal.co.kr/storage/uploads/EF4HyFXFhp2vy4l0nO45rexwOpb7PH7pPbXaOXwN.jpeg",
+          "sourcePageUrl": "https://www.decojournal.co.kr/IXDESIGN/Culture/589",
+          "sourceName": "데코저널 · 문화비축기지 탱크 내부",
           "creator": "서울시 미디어허브",
           "rights": "unknown",
           "rightsLabel": "이용권 미확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "실내·산업건축",
-          "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
+          "viewType": "실내·산업탱크·철제 기둥·원형 공간",
+          "notes": "데코저널 · 문화비축기지 탱크 내부가 제공하는 실제 문화비축기지 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
-          "createdAt": "2026-10-13T00:00:00.000Z"
+          "createdAt": "2026-10-13T00:00:00.000Z",
+          "sourceThumbnail": "https://www.decojournal.co.kr/storage/uploads/EF4HyFXFhp2vy4l0nO45rexwOpb7PH7pPbXaOXwN.jpeg"
         },
         {
           "id": "commons-oil-tank-culture-park-ccby-sa4",
@@ -1407,6 +1408,10 @@
         }
       ],
       "sourceRefs": [
+        {
+          "name": "데코저널 · 문화비축기지 탱크 내부",
+          "url": "https://www.decojournal.co.kr/IXDESIGN/Culture/589"
+        },
         "https://parks.seoul.go.kr/content.do?key=2604300014"
       ],
       "verification": {
@@ -1428,7 +1433,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 92,
       "photoScoreBreakdown": {
         "distinctiveness": 28,
@@ -1446,7 +1451,7 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-oil-tank-t4",
-      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "referenceImageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 스카우팅 지침: 스태프 차량·장비 차량 분리 주차 가능 여부 확인",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -1538,7 +1543,7 @@
       },
       "province": "서울",
       "regionGroup": "seoul",
-      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
+      "photoReviewStatus": "실제 장소 사진 확인 · 대표사진 승인 · 재사용 권리/촬영허가 별도 확인"
     },
     {
       "id": "seo-seoul-station-284",
@@ -2315,27 +2320,32 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "imageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "primaryImageId": "ref-sewoon-citywalk-seoulmediahub",
       "imageCandidates": [
         {
           "id": "ref-sewoon-citywalk-seoulmediahub",
-          "title": "세운상가를 잇는 공중보행로와 도심 구조",
-          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2024/06/tzwTwtxyEPetKbnmbKefJvFLOZDIJKRU.jpg",
-          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2011520",
-          "sourceName": "서울시 미디어허브",
+          "title": "세운상가 파사드와 공중보행로",
+          "imageUrl": "https://image.fnnews.com/resource/media/image/2023/05/18/202305180731548589_l.jpg",
+          "sourcePageUrl": "https://www.fnnews.com/news/202305180601589659",
+          "sourceName": "파이낸셜뉴스 · 세운상가와 공중보행로",
           "creator": "홍혜수",
           "rights": "unknown",
           "rightsLabel": "이미지별 공개 재사용 조건 확인 필요",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "도시·공중보행로·수평선",
-          "notes": "세운상가 및 인접 보행로의 구조 참고 후보. 서울시 기사 이미지이나 이미지별 재사용 조건 확인 전까지 대표사진 승인 불가. 2025년 이후 일대 공원화/공사 계획이 있어 현재 접근구간을 반드시 재확인.",
+          "viewType": "외관·도시산업건축·공중보행로",
+          "notes": "파이낸셜뉴스 · 세운상가와 공중보행로가 제공하는 실제 세운상가 일대 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
-          "createdAt": "2026-10-13T00:00:00.000Z"
+          "createdAt": "2026-10-13T00:00:00.000Z",
+          "sourceThumbnail": "https://image.fnnews.com/resource/media/image/2023/05/18/202305180731548589_l.jpg"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "파이낸셜뉴스 · 세운상가와 공중보행로",
+          "url": "https://www.fnnews.com/news/202305180601589659"
+        },
         "https://www.seoul.go.kr/news/news_report.do?nttNo=439602",
         "https://mediahub.seoul.go.kr/archives/2011520"
       ],
@@ -2358,7 +2368,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 87,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -2377,7 +2387,7 @@
       },
       "mapSearchQuery": "서울특별시 중구 청계천로 세운상가 일대",
       "referenceImageId": "ref-sewoon-citywalk-seoulmediahub",
-      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "referenceImageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "shootingDetails": {
         "parking": "이전 조사 항목: 스태프 차량·장비 차량 주차 분리와 요금·높이 제한 확인 필요",
         "loadIn": "이전 조사 항목: 차량 하차 지점부터 촬영 위치까지 케이스 이동거리와 반입구 확인 필요",
@@ -2469,7 +2479,7 @@
       },
       "province": "서울",
       "regionGroup": "seoul",
-      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
+      "photoReviewStatus": "실제 장소 사진 확인 · 대표사진 승인 · 재사용 권리/촬영허가 별도 확인"
     },
     {
       "id": "seo-euljiro",
@@ -2512,27 +2522,32 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "imageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "primaryImageId": "ref-euljiro-rooftop-city-texture",
       "imageCandidates": [
         {
           "id": "ref-euljiro-rooftop-city-texture",
-          "title": "을지로 골목의 오래된 지붕·간판·도심 밀도",
-          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2024/06/FbAMFpgmQFhsaCHqzYfPyFQuzxsWrFTl.jpg",
-          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2011520",
-          "sourceName": "서울시 미디어허브",
+          "title": "을지로 인쇄골목의 노후 간판과 인쇄·금속 상가",
+          "imageUrl": "https://ojsfile.ohmynews.com/STD_IMG_FILE/2022/0923/IE003053697_STD.jpg",
+          "sourcePageUrl": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002867125",
+          "sourceName": "오마이뉴스 · 을지로 인쇄골목",
           "creator": "홍혜수",
           "rights": "unknown",
           "rightsLabel": "이미지별 공개 재사용 조건 확인 필요",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "도시 텍스처·지붕·원근",
-          "notes": "세운상가 인근 을지로 일대 지붕과 상업 건물의 밀도를 보여주는 참고 후보. 서울시 기사 이미지이나 재사용 권리는 별도 확인.",
+          "viewType": "골목·인쇄·금속 상가·간판",
+          "notes": "오마이뉴스 · 을지로 인쇄골목가 제공하는 실제 을지로 인쇄·금속 골목 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
-          "createdAt": "2026-10-13T00:00:00.000Z"
+          "createdAt": "2026-10-13T00:00:00.000Z",
+          "sourceThumbnail": "https://ojsfile.ohmynews.com/STD_IMG_FILE/2022/0923/IE003053697_STD.jpg"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "오마이뉴스 · 을지로 인쇄골목",
+          "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002867125"
+        },
         "https://mediahub.seoul.go.kr/archives/2011520"
       ],
       "verification": {
@@ -2554,7 +2569,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 86,
       "photoScoreBreakdown": {
         "distinctiveness": 24,
@@ -2573,10 +2588,10 @@
       },
       "mapSearchQuery": "서울특별시 중구 을지로3가역 을지로 인쇄·금속 골목",
       "referenceImageId": "ref-euljiro-rooftop-city-texture",
-      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "referenceImageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "province": "서울",
       "regionGroup": "seoul",
-      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
+      "photoReviewStatus": "실제 장소 사진 확인 · 대표사진 승인 · 재사용 권리/촬영허가 별도 확인"
     },
     {
       "id": "candidate-seoul-lg-arts-center",
@@ -3698,25 +3713,26 @@
       "shootingPermission": "스튜디오·오픈세트는 대관 계약 및 사전 허가 필요 · 일반 자유 촬영 불가로 간주",
       "parking": "주차·장비 하차·이동 조건 재확인",
       "fee": "촬영료·대관료 및 보증금 재확인",
-      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "imageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "primaryImageId": "ref-cjenm-studio-interior",
       "referenceImageId": "ref-cjenm-studio-interior",
       "imageCandidates": [
         {
           "id": "ref-cjenm-studio-interior",
-          "title": "CJ ENM 스튜디오 센터 드라마 스튜디오 내부",
+          "title": "CJ ENM 스튜디오 센터의 대형 제작 스테이지",
           "imageUrl": "https://cjenmstudiocenter.com/v2/resources/images/facility/Image_studio_3_n1.png",
-          "sourcePageUrl": "https://cjenmstudiocenter.com/v2/html/facility/facility-dramastudio.html",
-          "sourceName": "CJ ENM 스튜디오 센터 공식 시설 안내",
+          "sourcePageUrl": "https://cjenmstudiocenter.com/",
+          "sourceName": "CJ ENM 스튜디오 센터 공식 시설 이미지",
           "creator": "원저작자 확인 필요",
           "rights": "unknown",
           "rightsLabel": "재사용 권리 미확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "드라마 스튜디오·고천고·조명 리깅",
-          "notes": "공식 드라마 스튜디오 시설 안내의 내부 사진입니다. 실제 시설과의 일치는 확인했지만 재사용 권리와 특정 촬영 구역의 대관 가능 여부는 별도 확인이 필요합니다.",
+          "viewType": "실내·방송 제작 스테이지",
+          "notes": "CJ ENM 스튜디오 센터 공식 시설 이미지가 제공하는 실제 CJ ENM 스튜디오 센터 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
-          "createdAt": "2026-10-14T05:00:00.000Z"
+          "createdAt": "2026-10-14T05:00:00.000Z",
+          "sourceThumbnail": "https://cjenmstudiocenter.com/v2/resources/images/facility/Image_studio_3_n1.png"
         },
         {
           "id": "ref-cjenm-center-exterior-etoday",
@@ -3736,6 +3752,10 @@
         }
       ],
       "sourceRefs": [
+        {
+          "name": "CJ ENM 스튜디오 센터 공식 시설 이미지",
+          "url": "https://cjenmstudiocenter.com/"
+        },
         {
           "name": "CJ ENM Studio Center 공식 시설 안내",
           "url": "https://cjenmstudiocenter.com/v2/html/facility/facility-dramastudio.html"
@@ -3763,7 +3783,7 @@
       "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "notes": "이 사진은 해당 장소를 파악하기 위한 참고 이미지입니다. 예술적 대표사진으로 확정한 상태가 아니며, 이미지 재사용 권리와 실제 촬영 허가는 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 90,
       "photoScoreBreakdown": {
         "distinctiveness": 24,
@@ -3780,8 +3800,8 @@
         "status": "location-reference",
         "rationale": "13개 동의 제작 스튜디오와 드라마 스테이지, 오픈세트, LED 버추얼 프로덕션, 멀티로드가 결합된 전문 영상 제작 시설. 스튜디오 내부 구조·대형 세트·버추얼 프로덕션을 조사할 후보."
       },
-      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
-      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
+      "referenceImageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
+      "photoReviewStatus": "실제 장소 사진 확인 · 대표사진 승인 · 재사용 권리/촬영허가 별도 확인",
       "shootingDetails": {
         "permitCost": "촬영 목적·인원·장비별 허가 주체, 예약 기한, 대관료·보증금 확인",
         "parking": "차량 주차·장비 하차점·촬영 구역까지 이동 거리 확인",
@@ -3990,29 +4010,33 @@
       "shootingPermission": "버추얼 스튜디오 대관과 상업 제작은 운영사 예약·계약 및 보안 승인 필요",
       "parking": "주차·장비 하차·이동 동선은 방문 전 재확인",
       "fee": "촬영료·대관료·보증금은 운영기관에 문의",
-      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "imageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "primaryImageId": "ref-team-studios-volume-hankyung",
       "referenceImageId": "ref-team-studios-volume-hankyung",
       "imageCandidates": [
         {
           "id": "ref-team-studios-volume-hankyung",
-          "title": "팀스튜디오 LED 월 Volume Stage 참고사진",
-          "imageUrl": "https://img.hankyung.com/photo/202210/01.31494955.1.jpg",
-          "sourceThumbnail": "https://img.hankyung.com/photo/202210/01.31494955.1.jpg",
-          "sourcePageUrl": "https://plus.hankyung.com/apps/newsinside.view?aid=202210122020g&category=&sns=y",
-          "sourceName": "한국경제 · 판교 TEAM Studio 버추얼 프로덕션 현장",
+          "title": "SKT 팀스튜디오의 XR LED 배경과 촬영 장비",
+          "imageUrl": "https://img.seoul.co.kr/img/upload/2022/10/12/SSI_20221012164733.jpg",
+          "sourceThumbnail": "https://img.seoul.co.kr/img/upload/2022/10/12/SSI_20221012164733.jpg",
+          "sourcePageUrl": "https://www.seoul.co.kr/news/economy/IT/2022/10/12/20221012500193",
+          "sourceName": "서울신문 · SKT 팀스튜디오 XR 버추얼 프로덕션",
           "creator": "원저작자·재사용 조건 확인 필요",
           "rights": "unknown",
           "rightsLabel": "이미지 재사용 권리 미확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "LED 월·가상 도시 배경·촬영 장비",
-          "notes": "판교 TEAM Studio의 LED 월 기반 버추얼 프로덕션 무대를 보여주는 현장 참고 이미지입니다. 이미지 재사용 권리와 현재 시설 사양은 별도 확인해야 하며, 대표사진으로 선정된 상태는 아닙니다.",
+          "viewType": "실내·XR LED 볼륨 스테이지·촬영 장비",
+          "notes": "서울신문 · SKT 팀스튜디오 XR 버추얼 프로덕션가 제공하는 실제 SKT 팀스튜디오 XR·Volume 스테이지 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
           "createdAt": "2026-10-14T09:30:00.000Z"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "서울신문 · SKT 팀스튜디오 XR 버추얼 프로덕션",
+          "url": "https://www.seoul.co.kr/news/economy/IT/2022/10/12/20221012500193"
+        },
         {
           "name": "한국영상위원회 필름코리아 — SKT Team Studios-XR",
           "url": "https://www.filmkorea.or.kr/studio/studio_view.jsp?id=10171"
@@ -4036,7 +4060,7 @@
       "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
       "notes": "장소 확인과 참고 이미지 연결을 마쳤습니다. 이 이미지는 해당 장소를 식별하고 공간 성격을 파악하기 위한 참고 이미지입니다. 예술적 대표사진 선정, 이미지 재사용 권리, 실제 촬영 허가는 각각 별도로 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-14",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 88,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -4053,8 +4077,8 @@
         "status": "location-reference",
         "rationale": "판교 제2테크노밸리의 전문 버추얼 프로덕션 시설로, XR 스테이지와 U자형 Volume Stage의 LED 월을 이용해 영상 속 환경을 실시간으로 연출합니다. 광고·뮤직비디오·드라마의 가상 제작 공간과 촬영 장비 구성을 살펴볼 후보입니다."
       },
-      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
-      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
+      "referenceImageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
+      "photoReviewStatus": "실제 장소 사진 확인 · 대표사진 승인 · 재사용 권리/촬영허가 별도 확인",
       "province": "경기",
       "regionGroup": "capital"
     },
@@ -4976,7 +5000,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "imageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "primaryImageId": "ref-nodeul-island-step-garden-seoulmediahub",
       "imageCandidates": [
         {
@@ -5011,23 +5035,27 @@
         },
         {
           "id": "ref-nodeul-island-step-garden-seoulmediahub",
-          "title": "노들섬 계단형 틈새정원·조형 공간",
-          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/09/QJLZkEnibSHLpsSFLqAzhGASakOgWBNQ.jpg",
-          "sourceThumbnail": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/09/QJLZkEnibSHLpsSFLqAzhGASakOgWBNQ.jpg",
-          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2019435",
-          "sourceName": "서울시 미디어허브 · 노들섬 수변문화공간",
+          "title": "노들섬 공연장 외관의 트러스와 수평 파사드",
+          "imageUrl": "https://architizer-prod.imgix.net/media/mediadata/uploads/1594177399397Nodeul_Island_performance_hall_exterior02.jpg?auto=format%2Ccompress&cs=strip&q=60&w=1680",
+          "sourceThumbnail": "https://architizer-prod.imgix.net/media/mediadata/uploads/1594177399397Nodeul_Island_performance_hall_exterior02.jpg?auto=format%2Ccompress&cs=strip&q=60&w=1680",
+          "sourcePageUrl": "https://architizer.com/projects/nodeul-island-2/",
+          "sourceName": "Architizer · Nodeul Island Performance Hall",
           "creator": "조수봉",
           "rights": "unknown",
           "rightsLabel": "재사용 권리 미확인 · 사진 저작자·공공누리/이용 조건 별도 확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "계단형 정원·반복 아치·건축 기하학",
-          "notes": "2026년 서울시 미디어허브의 노들섬 수변문화공간 기사에서 제공한 해당 장소의 계단형 틈새정원 사진. 실제 장소를 보여주는 참고 이미지이며 대표사진 채택과 재사용 권한은 별도 검토합니다.",
+          "viewType": "외관·공연장·트러스·한강 수변",
+          "notes": "Architizer · Nodeul Island Performance Hall가 제공하는 실제 노들섬 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
           "createdAt": "2026-10-14T11:55:00.000Z"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "Architizer · Nodeul Island Performance Hall",
+          "url": "https://architizer.com/projects/nodeul-island-2/"
+        },
         "https://nodeul.org/location/"
       ],
       "verification": {
@@ -5049,7 +5077,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 83,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -5067,10 +5095,10 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-nodeul-island-step-garden-seoulmediahub",
-      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "referenceImageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "province": "서울",
       "regionGroup": "seoul",
-      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
+      "photoReviewStatus": "실제 장소 사진 확인 · 대표사진 승인 · 재사용 권리/촬영허가 별도 확인"
     },
     {
       "id": "seo-craft-museum",
@@ -5223,27 +5251,32 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "imageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "primaryImageId": "ref-namseoul-belgian-consulate",
       "imageCandidates": [
         {
           "id": "ref-namseoul-belgian-consulate",
-          "title": "남서울미술관 구 벨기에 영사관의 대칭 파사드",
-          "imageUrl": "https://mediahub.seoul.go.kr/wp-content/uploads/2018/12/21e018b4317021b34039c0d1ac2ca42e.jpg",
-          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/1198657",
-          "sourceName": "서울시 미디어허브",
+          "title": "구 벨기에 영사관으로 지어진 남서울미술관의 벽돌 파사드",
+          "imageUrl": "https://minio.nculture.org/amsweb-opt/multimedia_assets/90/85012/84198/c/%EA%B5%AC-%EB%B2%A8%EA%B8%B0%EC%97%90-%EC%98%81%EC%82%AC%EA%B4%80_%EA%B1%B4%EB%AC%BC-%EC%A0%95%EB%A9%B4_%EB%AC%B8%ED%99%94%EC%9E%AC%EC%B2%AD_%EC%A0%9C1%EC%9C%A0%ED%98%95-medium-size.jpg",
+          "sourcePageUrl": "https://ncms.nculture.org/legacy/story/7133",
+          "sourceName": "지역N문화 · 구 벨기에 영사관/서울시립 남서울미술관",
           "creator": "정명섭 기사 사진 · 이미지별 저작자/제공자 재확인",
           "rights": "unknown",
           "rightsLabel": "공개 재사용 권리 확인 필요",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "역사건축·대칭·벽돌·석재",
-          "notes": "서울시 기사 본문에서 남서울미술관 외관으로 명시된 이미지. 벽돌과 석재 띠, 좌우 대칭, 높은 창호가 보이는 사진가용 참고 후보. 공개 재사용 권리는 미확인.",
+          "viewType": "외관·역사적 벽돌·석조 기둥",
+          "notes": "지역N문화 · 구 벨기에 영사관/서울시립 남서울미술관가 제공하는 실제 서울시립미술관 남서울미술관 외관 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
-          "createdAt": "2026-10-13T00:00:00.000Z"
+          "createdAt": "2026-10-13T00:00:00.000Z",
+          "sourceThumbnail": "https://minio.nculture.org/amsweb-opt/multimedia_assets/90/85012/84198/c/%EA%B5%AC-%EB%B2%A8%EA%B8%B0%EC%97%90-%EC%98%81%EC%82%AC%EA%B4%80_%EA%B1%B4%EB%AC%BC-%EC%A0%95%EB%A9%B4_%EB%AC%B8%ED%99%94%EC%9E%AC%EC%B2%AD_%EC%A0%9C1%EC%9C%A0%ED%98%95-medium-size.jpg"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "지역N문화 · 구 벨기에 영사관/서울시립 남서울미술관",
+          "url": "https://ncms.nculture.org/legacy/story/7133"
+        },
         "https://sema.seoul.go.kr/kr/visit/namseoul",
         "https://mediahub.seoul.go.kr/archives/1198657"
       ],
@@ -5266,7 +5299,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 대표사진 승인 기준 적용(2026-10-15): 출처 페이지에서 해당 장소 사진임을 확인하여 대표사진으로 지정했습니다. 사진 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13",
+      "updatedAt": "2026-10-15",
       "photoPotentialScore": 82,
       "photoScoreBreakdown": {
         "distinctiveness": 25,
@@ -5284,10 +5317,10 @@
         "status": "desk-review"
       },
       "referenceImageId": "ref-namseoul-belgian-consulate",
-      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "referenceImageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "province": "서울",
       "regionGroup": "seoul",
-      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인"
+      "photoReviewStatus": "실제 장소 사진 확인 · 대표사진 승인 · 재사용 권리/촬영허가 별도 확인"
     },
     {
       "id": "seo-kbs-arena",
@@ -7881,29 +7914,33 @@
       "shootingPermission": "전문·상업촬영 허가 여부, 작품 촬영 및 조명·삼각대 규정은 별도 확인. 일반 관람 공개가 상업촬영 승인을 뜻하지 않음.",
       "parking": "주차와 장비 하차 가능 구역을 미술관 공식 방문 안내로 확인",
       "fee": "일반 입장은 무료로 안내되나 촬영 허가·대관료는 별도 확인",
-      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "imageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "primaryImageId": "ref-photo-sema-exterior-20261015",
       "referenceImageId": "ref-photo-sema-exterior-20261015",
       "imageCandidates": [
         {
           "id": "ref-photo-sema-exterior-20261015",
-          "title": "서울시립 사진미술관의 카메라 조리개 모티브 파사드",
-          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/02/CNQLnMdQdXUinFgOWVSnkeVCcZIZXIhU.jpg",
-          "sourceThumbnail": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/02/CNQLnMdQdXUinFgOWVSnkeVCcZIZXIhU.jpg",
-          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2017210",
-          "sourceName": "서울시 공식 미디어허브 · 사진미술관 외관",
+          "title": "서울시립 사진미술관의 루버 파사드와 곡선형 입구",
+          "imageUrl": "https://cdn.womennews.co.kr/news/photo/202506/263529_427961_749.jpg",
+          "sourceThumbnail": "https://cdn.womennews.co.kr/news/photo/202506/263529_427961_749.jpg",
+          "sourcePageUrl": "https://www.womennews.co.kr/news/articleView.html?idxno=263529",
+          "sourceName": "여성신문 · 서울시립 사진미술관 외관",
           "creator": "원저작자 확인 필요",
           "rights": "unknown",
           "rightsLabel": "이미지 저작권·재사용 권리 미확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "외관·레이어드 파사드·조형적 입구",
-          "notes": "서울시 미디어허브가 사진미술관 외관으로 소개한 이미지. 장소 참고용이며 사진 재사용 권리는 별도 확인 대상.",
+          "viewType": "외관·루버 파사드·유리 입구",
+          "notes": "여성신문 · 서울시립 사진미술관 외관가 제공하는 실제 서울시립 사진미술관 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "여성신문 · 서울시립 사진미술관 외관",
+          "url": "https://www.womennews.co.kr/news/articleView.html?idxno=263529"
+        },
         {
           "name": "서울시립 사진미술관 공식 방문·건축 안내",
           "url": "https://sema.seoul.go.kr/kr/visit/photosema"
@@ -7950,8 +7987,8 @@
         "status": "location-reference",
         "rationale": "국내 최초 사진 특화 공립미술관으로, 카메라 조리개에서 착안한 비틀린 큐브형 매스와 층층이 쌓인 외벽, 10m 높이 로비가 특징입니다. 사진 매체를 주제로 한 에디토리얼과 건축적 인물사진에 의미가 있는 장소입니다."
       },
-      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
-      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 저작권/재사용 권리는 별도 확인",
+      "referenceImageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
+      "photoReviewStatus": "실제 장소 사진 확인 · 대표사진 승인 · 재사용 권리/촬영허가 별도 확인",
       "shootingDetails": {
         "parking": "주차와 장비 하차 가능 구역을 미술관 공식 방문 안내로 확인",
         "loadIn": "장비 하차 지점부터 촬영 위치까지 반입 동선·거리 확인",
@@ -8975,29 +9012,33 @@
       "shootingPermission": "일반 관람은 공개되어 있으나 패션·광고·뮤직비디오 등 전문·상업촬영은 별도 허가 확인",
       "parking": "금나래중앙공원·금천구청 주변 주차 및 장비차량 하차 지점 확인",
       "fee": "일반 전시는 무료 안내. 촬영 허가·공간 대관·장비 설치 비용은 별도 확인",
-      "imageStatus": "대표사진 승인 · 이미지 재사용 권리 별도 확인",
+      "imageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
       "primaryImageId": "ref-seoseoul-facade-official-20261015",
       "referenceImageId": "ref-seoseoul-facade-official-20261015",
       "imageCandidates": [
         {
           "id": "ref-seoseoul-facade-official-20261015",
-          "title": "서울시립 서서울미술관 유리 입구와 해머드 스테인리스 파사드",
-          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/03/EzGGViVIduzHjnEgUODtrSaIFiOpWUZx.jpg",
-          "sourceThumbnail": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/03/EzGGViVIduzHjnEgUODtrSaIFiOpWUZx.jpg",
-          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2017440",
-          "sourceName": "서울시 미디어허브 · 서울시립 서서울미술관 개관 공간",
+          "title": "서울시립 서서울미술관의 해머드 스테인리스 파사드",
+          "imageUrl": "https://images.squarespace-cdn.com/content/v1/605d572bb11ec0469bd6e112/1780630999623-L2KRUYOXCABUD9B31HHF/%E1%84%89%E1%85%A5%E1%84%89%E1%85%A5%E1%84%8B%E1%85%AE%E1%86%AF%E1%84%86%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF%E1%84%80%E1%85%AA%E1%86%AB-photo-by-kim-yongkwan-002.jpg?format=1000w",
+          "sourceThumbnail": "https://images.squarespace-cdn.com/content/v1/605d572bb11ec0469bd6e112/1780630999623-L2KRUYOXCABUD9B31HHF/%E1%84%89%E1%85%A5%E1%84%89%E1%85%A5%E1%84%8B%E1%85%AE%E1%86%AF%E1%84%86%E1%85%B5%E1%84%89%E1%85%AE%E1%86%AF%E1%84%80%E1%85%AA%E1%86%AB-photo-by-kim-yongkwan-002.jpg?format=1000w",
+          "sourcePageUrl": "https://www.thesystemlab.com/work/seo-seoul-museum",
+          "sourceName": "The System Lab · Seo Seoul Museum of Art",
           "creator": "원저작자·재사용 조건 별도 확인",
           "rights": "unknown",
           "rightsLabel": "이미지 재사용 권리 미확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "외관·반사 금속 파사드·유리 입구",
-          "notes": "서울시 미디어허브 페이지에서 실제 서울시립 서서울미술관 외관으로 식별되는 사진. 임시 전시물에 좌우되지 않는 입구·금속 파사드 시점으로 대표사진 승인.",
+          "viewType": "외관·반사 금속·미니멀 건축",
+          "notes": "The System Lab · Seo Seoul Museum of Art가 제공하는 실제 서울시립 서서울미술관 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "The System Lab · Seo Seoul Museum of Art",
+          "url": "https://www.thesystemlab.com/work/seo-seoul-museum"
+        },
         {
           "name": "서울시립미술관 공식 방문 안내",
           "url": "https://sema.seoul.go.kr/kr/visit/seoseoul"
@@ -9005,10 +9046,6 @@
         {
           "name": "서울시 공식 개관특별전 안내·주소",
           "url": "https://news.seoul.go.kr/culture/archives/531825"
-        },
-        {
-          "name": "서울시 미디어허브 외관 사진",
-          "url": "https://mediahub.seoul.go.kr/archives/2017440"
         }
       ],
       "verification": {
@@ -9048,8 +9085,8 @@
         "status": "location-reference",
         "rationale": "2026년 3월 개관한 서울시 최초 공공 뉴미디어 특화 미술관입니다. 해머드 스테인리스 외벽이 하늘·공원·도시를 반사하고, 저층형 건축과 유리 입구가 보행 공간에 직접 연결됩니다. 건축·테크웨어·뉴미디어 아트 에디토리얼 후보로 선정했습니다."
       },
-      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 미확인",
-      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 재사용 권리 별도 확인",
+      "referenceImageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
+      "photoReviewStatus": "실제 장소 사진 확인 · 대표사진 승인 · 재사용 권리/촬영허가 별도 확인",
       "shootingDetails": {
         "parking": "금나래중앙공원·금천구청 주변 주차 및 장비차량 하차 지점 확인",
         "loadIn": "실제 촬영 포인트까지 장비 반입 동선 확인",
@@ -10109,23 +10146,27 @@
       "imageCandidates": [
         {
           "id": "img-legacy-sema-seosomun-20261015",
-          "title": "서울시립미술관 서소문본관 — 외관·역사적 파사드·현대 유리 연결부",
-          "imageUrl": "https://sema.seoul.go.kr/common/imgFileView?FILE_ID=842765",
-          "sourceThumbnail": "https://sema.seoul.go.kr/common/imgFileView?FILE_ID=842765",
-          "sourcePageUrl": "https://sema.seoul.go.kr/kr/visit/seosomun",
-          "sourceName": "서울시립미술관 공식 방문 안내·외관",
+          "title": "서울시립미술관 서소문본관의 역사적 석조 아치와 벽돌 파사드",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/49/3061549_image2_1.png",
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/49/3061549_image2_1.png",
+          "sourcePageUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=87770",
+          "sourceName": "한국관광공사 VISITKOREA · 서울시립미술관 서소문본관",
           "creator": "원저작자·재사용 조건은 출처 별도 확인",
           "rights": "unknown",
           "rightsLabel": "이미지 재사용 권리 별도 확인 필요",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "외관·역사적 파사드·현대 유리 연결부",
-          "notes": "출처 페이지에서 실제 서울시립미술관 서소문본관 사진임을 확인해 대표사진으로 지정했습니다. 이미지 저작권·재사용 권리는 별도 확인 대상이며, 일반 관람은 전문·상업촬영 허가를 뜻하지 않습니다.",
+          "viewType": "외관·석조 아치·근대 파사드",
+          "notes": "한국관광공사 VISITKOREA · 서울시립미술관 서소문본관가 제공하는 실제 서울시립미술관 서소문본관 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "한국관광공사 VISITKOREA · 서울시립미술관 서소문본관",
+          "url": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=87770"
+        },
         {
           "name": "서울시립미술관 공식 방문 안내·외관",
           "url": "https://sema.seoul.go.kr/kr/visit/seosomun"
@@ -10243,23 +10284,27 @@
       "imageCandidates": [
         {
           "id": "img-legacy-sema-bukseoul-20261015",
-          "title": "서울시립 북서울미술관 — 외관·유리 입구·공원 연계 건축",
-          "imageUrl": "https://sema.seoul.go.kr/common/imgFileView?FILE_ID=906535",
-          "sourceThumbnail": "https://sema.seoul.go.kr/common/imgFileView?FILE_ID=906535",
-          "sourcePageUrl": "https://sema.seoul.go.kr/kr/visit/bukseoul",
-          "sourceName": "서울시립미술관 공식 방문 안내·북서울미술관",
+          "title": "서울시립 북서울미술관의 언덕형 건축과 유리 아트리움",
+          "imageUrl": "https://static.designboom.com/wp-content/uploads/2013/08/SAMOO-buk-seoul-museum-of-art-designboom-02.jpg",
+          "sourceThumbnail": "https://static.designboom.com/wp-content/uploads/2013/08/SAMOO-buk-seoul-museum-of-art-designboom-02.jpg",
+          "sourcePageUrl": "https://www.designboom.com/architecture/s-a-m-o-o-visualizes-buk-seoul-art-museum-as-a-cultural-hill/",
+          "sourceName": "designboom · Buk Seoul Museum of Art architecture",
           "creator": "원저작자·재사용 조건은 출처 별도 확인",
           "rights": "unknown",
           "rightsLabel": "이미지 재사용 권리 별도 확인 필요",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "외관·유리 입구·공원 연계 건축",
-          "notes": "출처 페이지에서 실제 서울시립 북서울미술관 사진임을 확인해 대표사진으로 지정했습니다. 이미지 저작권·재사용 권리는 별도 확인 대상이며, 일반 관람은 전문·상업촬영 허가를 뜻하지 않습니다.",
+          "viewType": "외관·공원 연계 건축·유리 아트리움",
+          "notes": "designboom · Buk Seoul Museum of Art architecture가 제공하는 실제 서울시립 북서울미술관 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "designboom · Buk Seoul Museum of Art architecture",
+          "url": "https://www.designboom.com/architecture/s-a-m-o-o-visualizes-buk-seoul-art-museum-as-a-cultural-hill/"
+        },
         {
           "name": "서울시립미술관 공식 방문 안내·북서울미술관",
           "url": "https://sema.seoul.go.kr/kr/visit/bukseoul"
@@ -12039,23 +12084,27 @@
       "imageCandidates": [
         {
           "id": "img-legacy-hyundai-motorstudio-goyang-20261015",
-          "title": "현대 모터스튜디오 고양 — 실내·미디어 설치·반사 바닥",
-          "imageUrl": "https://motorstudio.hyundai.com/cts/SBR/2022/7/20221108-101623-947.jpg",
-          "sourceThumbnail": "https://motorstudio.hyundai.com/cts/SBR/2022/7/20221108-101623-947.jpg",
-          "sourcePageUrl": "https://motorstudio.hyundai.com/goyang/ln/main.do?strgCd=01",
-          "sourceName": "현대 모터스튜디오 고양 공식 홈페이지 이미지",
+          "title": "현대 모터스튜디오 고양의 LED 전시와 자동차 쇼룸",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/20/3369720_image2_1.jpg",
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/20/3369720_image2_1.jpg",
+          "sourcePageUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=112797",
+          "sourceName": "한국관광공사 VISITKOREA · 현대 모터스튜디오 고양",
           "creator": "원저작자·재사용 조건은 출처 별도 확인",
           "rights": "unknown",
           "rightsLabel": "이미지 재사용 권리 별도 확인 필요",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "실내·미디어 설치·반사 바닥",
-          "notes": "출처 페이지에서 실제 현대 모터스튜디오 고양 사진임을 확인해 대표사진으로 지정했습니다. 이미지 저작권·재사용 권리는 별도 확인 대상이며, 일반 관람은 전문·상업촬영 허가를 뜻하지 않습니다.",
+          "viewType": "실내·LED 미디어월·자동차 전시",
+          "notes": "한국관광공사 VISITKOREA · 현대 모터스튜디오 고양가 제공하는 실제 현대 모터스튜디오 고양 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "한국관광공사 VISITKOREA · 현대 모터스튜디오 고양",
+          "url": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=112797"
+        },
         {
           "name": "현대 모터스튜디오 고양 공식 홈페이지 이미지",
           "url": "https://motorstudio.hyundai.com/goyang/ln/main.do?strgCd=01"
