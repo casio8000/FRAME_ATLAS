@@ -4,7 +4,7 @@
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
   "dataStatus": "전국 136곳. 장소 식별이 가능한 참고사진을 연결하고 세부 항목에 출처·장소 일치·재사용 권리 확인 상태를 기록했습니다. 사진 최종 대표 승인과 전문 촬영 허가는 별도 확인 중입니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T16:25:00+09:00",
+  "updatedAt": "2026-10-15T16:45:00+09:00",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -15453,6 +15453,144 @@
         "photographerMemo": "옛 잠사공장의 산업 구조와 문화공간 재생이 겹쳐 실내 구조의 반복과 거친 재료를 에디토리얼 배경으로 사용"
       },
       "photoReviewStatus": "reference-image-rights-review-pending"
+    },
+    {
+      "id": "seoul-ewha-ecc",
+      "name": "이화여자대학교 ECC (이화캠퍼스복합단지)",
+      "region": "서울",
+      "category": "현대건축·선큰 플라자·대학 복합공간",
+      "spaceTypes": [
+        "실외",
+        "건축·공간",
+        "선큰 플라자",
+        "유리 파사드",
+        "캠퍼스 복합시설"
+      ],
+      "photoProfile": "완만한 지형을 파고든 긴 보행축과 양쪽으로 기울어진 유리 파사드가 깊은 원근선과 반복 패턴을 만드는 건축 촬영 후보입니다. 상부 녹지·계단·내부광으로 주간과 야간의 분위기를 다르게 구성할 수 있습니다.",
+      "visualStrengths": [
+        "양쪽 유리 파사드의 반복 수직선",
+        "지형을 따라 내려가는 선큰 보행축과 강한 소실점",
+        "돌 바닥의 질감·사선 그림자·규칙적인 조경 요소",
+        "야간 유리벽 내부광과 외부 어둠의 대비"
+      ],
+      "bestConcepts": [
+        "미니멀 건축 에디토리얼",
+        "패션 인물 화보의 대칭·원근 구도",
+        "도시적·미래적 테크웨어 룩북",
+        "주간 석재 질감과 야간 조명을 이용한 건축 기록"
+      ],
+      "constraints": [
+        "대학 캠퍼스 시설이므로 방문 가능 구역·행사·학사일정 확인",
+        "강의·학습 공간 및 실내 상업촬영은 시설 담당자 사전 허가 확인",
+        "삼각대·조명·대형 장비 반입과 상업촬영 허가 별도 문의",
+        "학생·교직원 얼굴과 사생활이 식별되지 않도록 촬영",
+        "사진 후보 저작권과 재사용 권리는 원문 크레딧·이용 조건 별도 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "이화여대 ECC 건축 사진",
+        "이화캠퍼스복합단지 선큰 플라자",
+        "Ewha Campus Complex architecture",
+        "Dominique Perrault ECC",
+        "이화여대 ECC 야간 건축"
+      ],
+      "aliases": [
+        "이화여대 ECC",
+        "ECC",
+        "이화캠퍼스복합단지",
+        "Ewha Campus Complex",
+        "Ewha Womans University Campus Center"
+      ],
+      "summary": "지형을 깊게 파고든 ‘캠퍼스 밸리’와 양쪽 유리 파사드가 독특한 현대건축 공간입니다. 관광 포인트라기보다 긴 원근축, 반복 창호, 석재 바닥의 질감, 상부 녹지와 야간 내부광을 활용한 패션·건축 에디토리얼에 가치가 있습니다.",
+      "address": "서울특별시 서대문구 이화여대길 52 이화여자대학교 내",
+      "coordinates": null,
+      "officialUrl": "https://www.ewha.ac.kr/ewha/life/amenities.do",
+      "openingStatus": "캠퍼스 방문 가능 구역·행사·운영 시간 방문 전 확인",
+      "shootingPermission": "상업촬영·삼각대·조명·실내 촬영은 시설 담당자 사전 확인 필요",
+      "parking": "대학 공식 주차안내 확인 · 촬영 장비 하차·주차는 별도 확인",
+      "fee": "캠퍼스 방문과 상업촬영·대관 비용은 구분하여 시설 담당자 확인",
+      "imageStatus": "장소 참고사진 후보 연결 · 대표사진 승인 및 재사용 권리 확인 전",
+      "primaryImageId": null,
+      "referenceImageId": "img-ewha-ecc-perrault-official-20261015",
+      "imageCandidates": [
+        {
+          "id": "img-ewha-ecc-perrault-official-20261015",
+          "title": "이화캠퍼스복합단지(ECC) 선큰 보행축과 유리 파사드 야간 전경",
+          "imageUrl": "https://perraultarchitecture.com/data/projet/fiche/1459/large_2014-ewha-womans-university_03_web_34e17.jpg",
+          "sourceThumbnail": "https://perraultarchitecture.com/data/projet/fiche/1459/large_2014-ewha-womans-university_03_web_34e17.jpg",
+          "sourcePageUrl": "https://perraultarchitecture.com/en/projects/2459-ewha_womans_university.html",
+          "sourceName": "Dominique Perrault Architecture · EWHA CAMPUS COMPLEX",
+          "creator": "원문 사진 크레딧 별도 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "설계사 프로젝트 사진 · 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "현대건축·선큰 플라자·유리 파사드·야간",
+          "notes": "설계사 Dominique Perrault Architecture의 ECC 프로젝트 페이지에서 확인되는 실제 건축 사진 후보입니다. 양쪽 유리 파사드의 수직 반복, 지형을 파고든 보행축, 긴 원근선과 야간 내부광이 사진적 근거입니다. 사진 저작권·복제 권한은 별도 확인 대상이며 이 연결은 촬영 장소 참고용이지 재사용 허가를 뜻하지 않습니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        },
+        {
+          "id": "ref-ewha-ecc-seoul-city-20261015",
+          "title": "이화여대 ECC 선큰 보행축과 테라스형 녹지",
+          "imageUrl": "https://www.seoul.go.kr/story/architecture/2021/images/stroll/stroll01_02_s01.jpg",
+          "sourceThumbnail": "https://www.seoul.go.kr/story/architecture/2021/images/stroll/stroll01_02_s01.jpg",
+          "sourcePageUrl": "https://www.seoul.go.kr/story/architecture/2021/m_stroll_01.html",
+          "sourceName": "서울특별시 · 산책의 건축",
+          "creator": "원문 사진 크레딧 별도 확인 필요",
+          "rights": "unknown",
+          "rightsStatus": "review-required",
+          "rightsLabel": "서울시 건축 소개 페이지 사진 · 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "주간·선큰 플라자·계단·테라스 녹지",
+          "notes": "서울시 건축 소개 페이지가 이화여대 ECC로 설명하는 사진 후보입니다. 중앙 보행축, 양쪽의 높은 벽과 상부 조경이 계층감 있는 구도를 만듭니다. 사진의 공개 재사용 권리는 원문 조건 확인 전까지 미확인으로 유지합니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "sourceRefs": [
+        "https://perraultarchitecture.com/en/projects/2459-ewha_womans_university.html",
+        "https://www.seoul.go.kr/story/architecture/2021/m_stroll_01.html",
+        "https://www.ewha.ac.kr/ewha/life/amenities.do"
+      ],
+      "verification": {
+        "location": "이화여대 공식 안내와 설계사 프로젝트 페이지로 장소 확인",
+        "photoMatch": "공식 설계사·서울시 건축 소개 페이지에 ECC로 제시된 사진 후보",
+        "rights": "미확인 · 사진 저작권/공개 재사용 조건 확인 필요",
+        "shootingPermission": "미확인 · 대학 시설 담당자에게 상업촬영 조건 문의",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "selectionStatus": "사진가 관점의 조형성·빛·원근축을 근거로 신규 후보 등록 · 현장/허가 검증 전",
+      "scoutingChecklist": [
+        "방문 가능 구역과 행사 일정",
+        "실외 보행축의 주간·야간 촬영 시간",
+        "실내 촬영과 학생 출입 제한",
+        "상업촬영 및 삼각대·조명 허가",
+        "사진 출처 크레딧과 재사용 권리"
+      ],
+      "notes": "ECC의 선큰 보행축과 반복 유리 파사드는 조형적 고유성이 높아 A급 촬영 탐색 후보로 등록했습니다. 사진은 설계사/서울시 소개 페이지의 참고 이미지이며 앱에 복제 저장한 사진이 아닙니다. 재사용 권리 확인 전에는 사진 출처를 유지하고 별도 이용 허가가 필요한 것으로 취급합니다.",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "photoPotentialScore": 94,
+      "photoScoreBreakdown": {
+        "distinctiveness": 29,
+        "compositionVariety": 19,
+        "lightAndTexture": 19,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 기획 평가 · 현장답사/운영/촬영 허가 확인 전",
+      "priorityLabel": "A · 최우선 촬영 탐색",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "선큰 보행축·유리 파사드의 반복과 강한 원근선, 주야간 광량 대비",
+        "status": "desk-review"
+      },
+      "mapSearchQuery": "서울특별시 서대문구 이화여대길 52 이화여자대학교 ECC",
+      "referenceImageStatus": "설계사 공식 프로젝트 사진을 참고사진으로 연결 · 재사용 권리 확인 필요"
     }
   ],
   "selectionRubric": {
