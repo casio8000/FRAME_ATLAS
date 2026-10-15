@@ -2,7 +2,11 @@
 (function(){
 "use strict";
 const DATA_URL="./data/places.json";
+const SUPPLEMENTAL_URL="./data/art_locations_curated_20261016.json";
 const LOCAL_KEY="frameAtlas2CatalogDraft";
+const BASELINE_KEY="frameAtlas2PublishedBaseline";
+const LEGACY_DRAFT_KEY="frameAtlas2LegacyDraftNeedsRebase";
+const PUBLISH_TOKEN_KEY="frameAtlas2GitHubPublishToken";
 const PENDING_DB="frameAtlas2PendingPhotos";
 const objectUrls=new Map();
 const PERMITTED=new Set(["cc0","public-domain","cc-by","cc-by-sa","permission","self-owned"]);
@@ -188,12 +192,159 @@ function mergePublishedPhotoReferences(draft,base){
  }
  return draft;
 }
+
+function syncClone(value){return value===undefined?undefined:JSON.parse(JSON.stringify(value));}
+function syncStable(value){
+ if(Array.isArray(value))return value.map(syncStable);
+ if(value&&typeof value==="object"){
+  const out={};Object.keys(value).sort().forEach(key=>{out[key]=syncStable(value[key]);});return out;
+ }
+ return value;
+}
+function syncSame(a,b){return JSON.stringify(syncStable(a))===JSON.stringify(syncStable(b));}
+function syncPlainObject(value){return !!value&&typeof value==="object"&&!Array.isArray(value);}
+function syncLaterTime(a,b){
+ const ta=Date.parse(a||""),tb=Date.parse(b||"");
+ if(Number.isFinite(ta)&&Number.isFinite(tb))return ta>=tb?(a||b):(b||a);
+ return a||b||null;
+}
+function syncStringArray(base,local,remote){
+ const order=[...(remote||[]),...(local||[]),...(base||[])],out=[];
+ for(const item of order){
+  if(out.includes(item))continue;
+  const b=(base||[]).includes(item),l=(local||[]).includes(item),r=(remote||[]).includes(item);
+  const include=l===b?r:(r===b?l:l);
+  if(include)out.push(item);
+ }
+ return out;
+}
+function syncKeyedArray(base,local,remote,path,conflicts){
+ const keyed=list=>new Map((Array.isArray(list)?list:[]).filter(x=>x&&x.id).map(x=>[String(x.id),x]));
+ const bm=keyed(base),lm=keyed(local),rm=keyed(remote);
+ const keys=[...new Set([...rm.keys(),...lm.keys(),...bm.keys()])],out=[];
+ for(const id of keys){
+  const b=bm.get(id),l=lm.get(id),r=rm.get(id),itemPath=path+"["+id+"]";
+  if(b===undefined){
+   if(l!==undefined&&r!==undefined)out.push(syncMergeValue(undefined,l,r,itemPath,conflicts));
+   else out.push(syncClone(l!==undefined?l:r));
+   continue;
+  }
+  if(l===undefined&&r===undefined)continue;
+  if(l===undefined){
+   if(syncSame(r,b))continue;
+   conflicts.push(itemPath+" (한 기기에서 삭제, 다른 기기에서 수정)");out.push(syncClone(r));continue;
+  }
+  if(r===undefined){
+   if(syncSame(l,b))continue;
+   conflicts.push(itemPath+" (최신 원본에서 삭제, 이 기기에서 수정)");out.push(syncClone(l));continue;
+  }
+  out.push(syncMergeValue(b,l,r,itemPath,conflicts));
+ }
+ return out;
+}
+function syncMergeValue(base,local,remote,path,conflicts){
+ if(path==="updatedAt"||path.endsWith(".updatedAt"))return syncLaterTime(local,remote)||syncClone(base);
+ if(path==="dataStatus"||path==="schemaVersion"||path==="app"||path==="scope")return syncClone(remote!==undefined?remote:(local!==undefined?local:base));
+ if(syncSame(local,base))return syncClone(remote);
+ if(syncSame(remote,base))return syncClone(local);
+ if(syncSame(local,remote))return syncClone(local);
+ if(Array.isArray(base)||Array.isArray(local)||Array.isArray(remote)){
+  const ba=Array.isArray(base)?base:[],la=Array.isArray(local)?local:[],ra=Array.isArray(remote)?remote:[];
+  const collection=/\.(places|reviewQueue|imageCandidates)$/.test(path);
+  if(collection)return syncKeyedArray(ba,la,ra,path,conflicts);
+  if([...ba,...la,...ra].every(x=>typeof x==="string"))return syncStringArray(ba,la,ra);
+  conflicts.push(path);return syncClone(remote);
+ }
+ if((base===undefined||syncPlainObject(base))&&syncPlainObject(local)&&syncPlainObject(remote)){
+  const out={},keys=[...new Set([...Object.keys(base||{}),...Object.keys(local),...Object.keys(remote)])];
+  for(const key of keys){
+   const b=(base&&Object.prototype.hasOwnProperty.call(base,key))?base[key]:undefined;
+   const l=Object.prototype.hasOwnProperty.call(local,key)?local[key]:undefined;
+   const r=Object.prototype.hasOwnProperty.call(remote,key)?remote[key]:undefined;
+   const merged=syncMergeValue(b,l,r,path?path+"."+key:key,conflicts);
+   if(merged!==undefined)out[key]=merged;
+  }
+  return out;
+ }
+ conflicts.push(path);return syncClone(remote!==undefined?remote:local);
+}
+function syncMergeCatalogThreeWay(baseline,local,remote){
+ const conflicts=[];
+ const merged=syncMergeValue(baseline,local,remote,"",conflicts);
+ merged.schemaVersion=2;
+ merged.updatedAt=stamp();
+ return {catalog:merged,conflicts,legacy:false};
+}
+function syncMergeLegacyDraft(local,remote){
+ const merged=syncClone(remote),byId=new Map((merged.places||[]).map(p=>[p.id,p])),conflicts=[];
+ for(const localPlace of (local.places||[])){
+  const remotePlace=byId.get(localPlace.id);
+  if(!remotePlace){merged.places.push(syncClone(localPlace));byId.set(localPlace.id,localPlace);continue;}
+  if(syncSame(localPlace,remotePlace))continue;
+  const localTime=Date.parse(localPlace.updatedAt||localPlace.createdAt||"");
+  const remoteTime=Date.parse(remotePlace.updatedAt||remotePlace.createdAt||"");
+  if(Number.isFinite(localTime)&&Number.isFinite(remoteTime)&&localTime>remoteTime){
+   const chosen=syncClone(localPlace);
+   const photoById=new Map();
+   for(const c of [...(remotePlace.imageCandidates||[]),...(chosen.imageCandidates||[])])if(c&&c.id)photoById.set(c.id,c);
+   chosen.imageCandidates=[...photoById.values()];
+   chosen.sourceRefs=syncStringArray([],chosen.sourceRefs||[],remotePlace.sourceRefs||[]);
+   const i=merged.places.findIndex(p=>p.id===localPlace.id);if(i>=0)merged.places[i]=chosen;
+   byId.set(chosen.id,chosen);
+  }else if(Number.isFinite(localTime)&&Number.isFinite(remoteTime)&&localTime===remoteTime){
+   const slim=p=>{const x=syncClone(p);for(const k of ["imageCandidates","primaryImageId","referenceImageId","referenceImageStatus","imageStatus","sourceRefs","updatedAt"])delete x[k];return x;};
+   if(!syncSame(slim(localPlace),slim(remotePlace))){
+    conflicts.push(String(localPlace.name||localPlace.id)+" (이전 초안이라 같은 시각의 서로 다른 수정 여부를 판단할 수 없음)");
+   }else{
+    const chosen=syncClone(remotePlace),photoById=new Map();
+    for(const c of [...(remotePlace.imageCandidates||[]),...(localPlace.imageCandidates||[])])if(c&&c.id)photoById.set(c.id,c);
+    chosen.imageCandidates=[...photoById.values()];
+    chosen.sourceRefs=syncStringArray([],remotePlace.sourceRefs||[],localPlace.sourceRefs||[]);
+    const i=merged.places.findIndex(p=>p.id===localPlace.id);if(i>=0)merged.places[i]=chosen;
+   }
+  }
+  // An older legacy draft never replaces a newer published record.
+ }
+ merged.reviewQueue=syncMergeValue([],local.reviewQueue||[],remote.reviewQueue||[],"reviewQueue",conflicts);
+ merged.deletedAssetPaths=syncStringArray([],local.deletedAssetPaths||[],remote.deletedAssetPaths||[]);
+ merged.deletedPlaceIds=syncStringArray([],local.deletedPlaceIds||[],remote.deletedPlaceIds||[]);
+ merged.updatedAt=stamp();
+ return {catalog:merged,conflicts,legacy:true};
+}
+function syncDecodeContentsFile(file){
+ if(!file||!file.content)throw new Error("GitHub에서 최신 카탈로그 내용을 읽을 수 없습니다. 토큰 권한을 확인하세요.");
+ const binary=atob(String(file.content).replace(/\s/g,"")),bytes=new Uint8Array(binary.length);
+ for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);
+ return JSON.parse(new TextDecoder().decode(bytes));
+}
+async function syncAttachSupplementalPlaces(base){
+ try{
+  const response=await fetch(SUPPLEMENTAL_URL+"?v="+Date.now(),{cache:"no-store"});
+  if(response.ok){
+   const extra=await response.json(),ids=new Set((base.places||[]).map(p=>p.id));
+   const names=new Set((base.places||[]).map(p=>String(p.name||"").trim().toLocaleLowerCase()));
+   for(const place of (extra.places||[])){
+    if(!place||!place.id||ids.has(place.id))continue;
+    const n=String(place.name||"").trim().toLocaleLowerCase();if(n&&names.has(n))continue;
+    base.places.push(syncClone(place));ids.add(place.id);if(n)names.add(n);
+   }
+  }
+ }catch(_){}
+ base.dataStatus="전국 "+(base.places||[]).length+"곳 · 예술·건축·자연 공간 조사 자료 포함";
+ return normalizeCatalog(base);
+}
+
 async function loadBase(){
  lastCleanRefresh=Date.now();
  try{
   const r=await fetch(DATA_URL+"?v="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("기본 카탈로그를 읽지 못했습니다 (HTTP "+r.status+")");
-  const base=normalizeCatalog(await r.json());
+  const base=await syncAttachSupplementalPlaces(normalizeCatalog(await r.json()));
   let draft=null;try{draft=JSON.parse(localStorage.getItem(LOCAL_KEY)||"null");}catch(_){}
+  if(draft&&Array.isArray(draft.places)){
+   if(!localStorage.getItem(BASELINE_KEY))localStorage.setItem(LEGACY_DRAFT_KEY,"1");
+  }else{
+   try{localStorage.setItem(BASELINE_KEY,JSON.stringify(base));localStorage.removeItem(LEGACY_DRAFT_KEY);}catch(_){}
+  }
   const source=draft&&Array.isArray(draft.places)?mergePublishedPhotoReferences(draft,base):base;
   catalog=normalizeCatalog(source);
   const routeAfterLoad=document.body.dataset.appView||"home";
