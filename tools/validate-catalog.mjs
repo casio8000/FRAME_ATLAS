@@ -47,6 +47,7 @@ for (const place of data.places) {
   assert.equal(ref.placeMatch, "confirmed", "Reference image must be marked as matching its place: " + place.id);
   assert.ok(ref.imageUrl || ref.sourceThumbnail || ref.assetPath || ref.pendingAsset, "Reference image has no usable source for " + place.id);
   assert.ok(ref.rights || ref.rightsStatus, "Reference image must have an explicit rights state (unknown is allowed): " + place.id);
+  assert.equal(place.primaryImageId, place.referenceImageId, "A source-identified location photo should be approved as the representative image: " + place.id);
   referenceImageCount += 1;
 
   if (place.primaryImageId) {
@@ -67,7 +68,7 @@ const requiredPlaces = [
 for (const id of requiredPlaces) {
   const place = data.places.find(item => item.id === id);
   assert.ok(place, "Required nationwide scouting location missing: " + id);
-  assert.equal(place.primaryImageId, null, "Required/newly curated place must not be auto-approved as a cover image: " + id);
+  assert.equal(place.primaryImageId, place.referenceImageId, "Required location with a confirmed matching photo should use that photo as its representative: " + id);
 }
 
 const expectedCount = data.places.length;
