@@ -182,7 +182,7 @@ function render(){
   // 공백으로 나눈 여러 검색어는 모두 일치해야 하며, 지역·유형·사진상태 필터와 함께 적용됩니다.
   const terms=q.split(/\s+/).filter(Boolean);
   if(terms.some(term=>!text.includes(term)))return false;
-  if(region&&regionGroup(p.region)!==region)return false;
+  if(region&&String(p.region||"").trim()!==region)return false;
   if(category){
    const tags=[p.category,p.indoorOutdoor,p.placeType,p.summary,p.photoProfile,...(p.spaceTypes||[]),...(p.visualStrengths||[]),...(p.bestConcepts||[])].join(" ").toLowerCase();
    const termsByCategory={
@@ -238,21 +238,21 @@ function render(){
  updateFloatingControls();
 }
 function regionGroup(region){
+ // '수도권'은 검색어 별칭으로만 지원하고 지역 선택은 경기·인천을 각각 유지합니다.
  const r=String(region||"").trim();
- if(r==="서울")return "서울";
- if(["경기","인천"].includes(r))return "수도권";
+ if(r==="경기"||r==="인천")return "수도권";
  if(["대전","세종","충북","충남"].includes(r))return "충청";
  if(["전북","전남"].includes(r))return "전라";
  if(["경북","경남"].includes(r))return "경상";
  return r;
 }
+const REGION_ORDER=["서울","경기","인천","부산","대구","광주","울산","강원","충북","충남","대전","세종","경북","경남","전북","전남","제주"];
 function syncRegionFilters(){
- const regions=Array.from(new Set((catalog.places||[]).map(p=>String(p.region||"").trim()).filter(Boolean))).sort((a,b)=>a.localeCompare(b,"ko"));
- const groups=[["서울","서울"],["수도권","경기·수도권"],["부산","부산"],["대구","대구"],["광주","광주"],["울산","울산"],["강원","강원"],["충청","충청"],["경상","경상"],["전라","전라"],["제주","제주"]];
+ const found=Array.from(new Set((catalog.places||[]).map(p=>String(p.region||"").trim()).filter(Boolean)));
+ const regions=[...REGION_ORDER,...found.filter(r=>!REGION_ORDER.includes(r)).sort((a,b)=>a.localeCompare(b,"ko"))];
  for(const [id,label] of [["homeAllRegionFilter","전국 전체"],["regionFilter","전국 전체"],["mapRegionFilter","전국 전체"],["analysisRegionFilter","모든 지역"]]){
   const select=$(id);if(!select)continue;const prior=select.value;
-  const compact=id==="regionFilter"||id==="homeAllRegionFilter";
-  const opts=compact?groups.filter(([value])=>regions.some(r=>regionGroup(r)===value)):regions.map(r=>[r,r]);
+  const opts=regions.map(r=>[r,r]);
   select.innerHTML='<option value="">'+label+'</option>'+opts.map(([value,name])=>'<option value="'+esc(value)+'">'+esc(name)+'</option>').join("");
   if(opts.some(([value])=>value===prior))select.value=prior;
  }
@@ -268,7 +268,7 @@ function showAppView(view,scroll=true){
  if(scroll)window.scrollTo({top:0,behavior:"auto"});
  updateFloatingControls();
 }
-function goToWorkspace(query="",region=""){archiveMode="all";selectedId=null;$("query").value=query;$("regionFilter").value=region?regionGroup(region):"";$("imageFilter").value="";if($("categoryFilter"))$("categoryFilter").value="";if($("moodFilter"))$("moodFilter").value="";showAppView("workspace");}
+function goToWorkspace(query="",region=""){archiveMode="all";selectedId=null;$("query").value=query;$("regionFilter").value=region;$("imageFilter").value="";if($("categoryFilter"))$("categoryFilter").value="";if($("moodFilter"))$("moodFilter").value="";showAppView("workspace");}
 const FAVORITES_KEY="frameAtlas2FavoritePlaces";
 let favorites=[];try{favorites=JSON.parse(localStorage.getItem(FAVORITES_KEY)||"[]");if(!Array.isArray(favorites))favorites=[];}catch(_){favorites=[];}
 let archiveMode="all";
@@ -387,7 +387,7 @@ function renderLanding(){
    const haystack=[p.name,p.region,regionGroup(p.region),p.category,p.summary,p.photoProfile,p.address,p.placeType,p.indoorOutdoor,...(p.aliases||[]),...(p.searchTerms||[]),...(p.spaceTypes||[]),...(p.visualStrengths||[]),...(p.bestConcepts||[])].join(" ").toLowerCase();
    const terms=q.split(/\s+/).filter(Boolean);
    if(terms.some(term=>!haystack.includes(term)))return false;
-   if(region&&regionGroup(p.region)!==region)return false;
+   if(region&&String(p.region||"").trim()!==region)return false;
    if(category){
     const tags=[p.category,p.indoorOutdoor,p.placeType,p.summary,p.photoProfile,...(p.spaceTypes||[]),...(p.visualStrengths||[]),...(p.bestConcepts||[])].join(" ").toLowerCase();
     const termsByCategory={실내:["실내","인테리어","홀","전시장","실내공간","갤러리"],실외:["실외","야외","거리","광장","공원","정원","외부"],건축:["건축","미술관","박물관","건물","구조","공간","콘크리트","벽돌"],자연:["자연","야외","숲","바다","산","공원","정원","강","해변","외부"],스튜디오:["스튜디오","공연장","대형스튜디오","촬영장","방송 세트"]}[category]||[category];
