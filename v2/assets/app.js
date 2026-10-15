@@ -557,12 +557,13 @@ function renderDetail(){
  if(venuePhone)venueParts.push('<div class="venue-info-item"><span>전화</span><a href="tel:'+esc(venuePhone.replace(/[^+\d]/g,""))+'">'+esc(venuePhone)+'</a></div>');
  if(/^https?:\/\//i.test(venueOfficial))venueParts.push('<div class="venue-info-item venue-official"><span>공식 사이트</span><a href="'+esc(venueOfficial)+'" target="_blank" rel="noopener noreferrer">홈페이지 열기 ↗</a></div>');
  const venueInfoCard=venueParts.length?'<div class="section venue-info-card"><h3>장소 이용 정보</h3><div class="venue-info-grid">'+venueParts.join("")+'</div><p class="searchnote">운영시간·휴관·촬영 허가 및 상업촬영 비용은 방문 전에 공식 홈페이지나 담당 부서에서 다시 확인하세요.</p></div>':'';
+ const creativeInfoForm='<div class="section creative-info-form"><h3>촬영 기획·분류 정보 입력</h3><p class="searchnote">기존 장소 상세 화면과 같은 기록 항목입니다. 항목을 채운 뒤 저장하세요. 시각적 잠재력 점수는 실측값이 아니라 기획 평가이며, 운영·촬영 허가와 구분합니다.</p><div class="catalogform"><label class="wide">사진가 관점의 촬영 설명<textarea id="f_photoProfile" rows="3" placeholder="공간의 조형성, 빛, 재료, 구도와 촬영 콘셉트">'+esc(p.photoProfile||"")+'</textarea></label><label class="wide">공간 유형 (쉼표로 구분)<input id="f_spaceTypes" value="'+esc((p.spaceTypes||[]).join(", "))+'" placeholder="실내, 실외, 산업건축"></label><label class="wide">시각적 강점 (쉼표로 구분)<textarea id="f_visualStrengths" rows="2" placeholder="반복 창호, 자연광, 콘크리트 질감">'+esc((p.visualStrengths||[]).join(", "))+'</textarea></label><label class="wide">추천 촬영 콘셉트 (쉼표로 구분)<textarea id="f_bestConcepts" rows="2" placeholder="패션 에디토리얼, 인물 화보, 브랜드 룩북">'+esc((p.bestConcepts||[]).join(", "))+'</textarea></label><label class="wide">사전 확인·제약 조건 (쉼표로 구분)<textarea id="f_constraints" rows="2" placeholder="촬영 허가, 혼잡 시간, 장비 반입">'+esc((p.constraints||[]).join(", "))+'</textarea></label><label>사진적 잠재력 (0–100)<input type="number" id="f_photoPotentialScore" min="0" max="100" value="'+esc(p.photoPotentialScore??0)+'"></label><label>조사 우선순위<select id="f_scoutPriority"><option value="1" '+(p.scoutPriority===1?'selected':'')+'>A · 우선 조사</option><option value="2" '+(p.scoutPriority===2?'selected':'')+'>B · 보완 조사</option><option value="3" '+(p.scoutPriority===3?'selected':'')+'>C · 조건부 조사</option></select></label><label class="wide">지도 검색어·세부 위치<input id="f_mapSearchQuery" value="'+esc(p.mapSearchQuery||"")+'" placeholder="장소 이름과 실제 출입구·촬영 구역"></label><label class="wide">공식 출처 URL (쉼표로 구분)<textarea id="f_sourceRefs" rows="2" placeholder="https://공식-운영기관...">'+esc((p.sourceRefs||[]).join(", "))+'</textarea></label><label class="wide">추가 메모·확인 기록<textarea id="f_placeNotes" rows="3" placeholder="확인일, 담당자 답변, 현장 답사, 사진 출처와 권리 조건">'+esc(p.notes||"")+'</textarea></label><div class="wide"><button type="button" class="btn primary" id="saveCreativeFieldsBtn">촬영 기획·분류 정보 저장</button></div></div></div>';
  const mediaExposureCard=renderMediaExposureCard(p);
  $("detail").innerHTML=
- '<div class="detailtitle"><div><h2>'+esc(p.name)+'</h2><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+' · ID '+esc(p.id)+'</p></div><div class="toolbar"><button class="btn small favorite-toggle" id="favoritePlaceBtn" type="button">♡ 저장하기</button><button class="btn small" id="editPlaceBtn">정보 수정</button><button class="btn small" id="deletePlaceBtn">장소 삭제</button></div></div>'+locationActions(p)+closureNotice+photoPanel+profileCard+venueInfoCard+mediaExposureCard+
+ '<div class="detailtitle"><div><h2>'+esc(p.name)+'</h2><p>'+esc(p.region)+' · '+esc(p.category||"분류 미정")+' · ID '+esc(p.id)+'</p></div><div class="toolbar"><button class="btn small favorite-toggle" id="favoritePlaceBtn" type="button">♡ 저장하기</button><button class="btn small" id="editPlaceBtn">정보 수정</button><button class="btn small" id="deletePlaceBtn">장소 삭제</button></div></div>'+locationActions(p)+closureNotice+photoPanel+profileCard+creativeInfoForm+venueInfoCard+mediaExposureCard+
  '<div class="section"><h3>사진 찾기 · 핵심 검색원 4개</h3><label class="tiny">사진가 관점의 검색 방향<select id="photoSearchMode" class="field"><option value="place">장소·현장 전경</option><option value="fashion">패션·인물 에디토리얼</option><option value="architecture">건축·기하학·질감</option><option value="interior">실내·자연광</option><option value="outdoor">야외·인물 배경</option><option value="details">디테일·재료·그림자</option></select></label><div id="sourceLinksHost">'+sourceLinks(p,"place")+'</div><p class="searchnote">검색 페이지 링크는 Google 이미지·네이버 이미지·Bing 이미지·공식 홈페이지/운영정보 4개로 줄였습니다. 아래 Openverse와 Wikimedia Commons는 열린 라이선스 후보를 별도로 검색합니다. 사진 속 장소 일치 여부와 재사용 권리는 반드시 확인하세요.</p></div>'+
  '<div class="section"><h3>열린 라이선스 이미지 자동 검색</h3><div class="row"><button class="btn primary" id="searchOpenverseBtn">Openverse 검색</button><button class="btn" id="searchCommonsBtn">Wikimedia Commons 검색</button><button class="btn" id="clearSearchBtn">검색 결과 지우기</button></div><div class="searchnote">Openverse와 Commons에서 제목·썸네일·출처·라이선스 정보를 불러옵니다. 결과에 다른 장소가 섞일 수 있으므로 실제 사진을 확인한 뒤 후보로 저장하세요.</div><div id="autoSearchStatus" class="statusbar hidden"></div><div id="autoResults" class="results"></div></div>'+
- '<div class="section"><h3>장소 기본 정보</h3><div class="catalogform"><label>장소명<input id="f_name" value="'+esc(p.name)+'"></label><label>지역<select id="f_region">'+["서울","경기","인천"].map(r=>'<option '+(p.region===r?'selected':'')+'>'+r+'</option>').join("")+'</select></label><label>분류<input id="f_category" value="'+esc(p.category||"")+'"></label><label>별칭(쉼표 구분)<input id="f_aliases" value="'+esc((p.aliases||[]).join(", "))+'"></label><label class="wide">주소<input id="f_address" value="'+esc(p.address||"")+'" placeholder="공식 출처로 확인된 주소"></label><label>전화번호<input id="f_phone" value="'+esc(p.phone||"")+'" placeholder="공식 대표번호"></label><label class="wide">공식 홈페이지·근거 링크<input id="f_official" value="'+esc(p.officialUrl||"")+'" placeholder="https://..."></label><label>운영 상태<select id="f_open">'+["미확인","운영 확인","운영시간 확인","휴관·폐쇄 확인"].map(v=>'<option '+((p.openingStatus||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>촬영 허가<select id="f_permission">'+["미확인","사전 허가 필요","제한 있음","허가 불필요 근거 확인","촬영 불가 근거 확인"].map(v=>'<option '+((p.shootingPermission||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label class="wide">촬영·조사 메모<textarea id="f_summary" rows="3">'+esc(p.summary||p.notes||"")+'</textarea></label><div class="wide"><button class="btn primary" id="savePlaceBtn">장소 정보 저장</button></div></div></div>'+
+ '<div class="section"><h3>장소 기본 정보</h3><div class="catalogform"><label>장소명<input id="f_name" value="'+esc(p.name)+'"></label><label>지역<select id="f_region">'+["서울","경기","인천","부산","대구","광주","울산","강원","충북","충남","대전","세종","경북","경남","전북","전남","제주"].map(r=>'<option value="'+r+'" '+(p.region===r?'selected':'')+'>'+r+'</option>').join("")+'</select></label><label>분류<input id="f_category" value="'+esc(p.category||"")+'"></label><label>별칭(쉼표 구분)<input id="f_aliases" value="'+esc((p.aliases||[]).join(", "))+'"></label><label class="wide">주소<input id="f_address" value="'+esc(p.address||"")+'" placeholder="공식 출처로 확인된 주소"></label><label>전화번호<input id="f_phone" value="'+esc(p.phone||"")+'" placeholder="공식 대표번호"></label><label class="wide">공식 홈페이지·근거 링크<input id="f_official" value="'+esc(p.officialUrl||"")+'" placeholder="https://..."></label><label>운영 상태<select id="f_open">'+["미확인","운영 확인","운영시간 확인","휴관·폐쇄 확인"].map(v=>'<option '+((p.openingStatus||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>촬영 허가<select id="f_permission">'+["미확인","사전 허가 필요","제한 있음","허가 불필요 근거 확인","촬영 불가 근거 확인"].map(v=>'<option '+((p.shootingPermission||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label class="wide">촬영·조사 메모<textarea id="f_summary" rows="3">'+esc(p.summary||p.notes||"")+'</textarea></label><div class="wide"><button class="btn primary" id="savePlaceBtn">장소 정보 저장</button></div></div></div>'+
  '<div class="section photo-editor"><h3>사진 추가 / 교체</h3><p class="searchnote">이미지 주소를 붙여 넣거나 기기에 저장된 사진 파일을 선택하세요. 추가한 후보는 아래에서 대표사진으로 지정할 수 있습니다.</p><div class="candidateform"><label>이미지 주소(URL)<input id="c_image" placeholder="사진 파일의 직접 주소 https://..."></label><label>사진 파일 선택<input type="file" id="c_file" accept="image/jpeg,image/png,image/webp,image/avif"></label><label>사진 설명<input id="c_title" placeholder="예: 건물 정면, 중앙홀, 야간 외관"></label><label>사진 구도<select id="c_view"><option>장소 전경</option><option>건물·장소 전경</option><option>실내</option><option>디테일</option><option>야외 인물 배경</option><option>항공·드론</option><option>지도·포스터</option></select></label><label>실제 장소와 일치 여부<select id="c_match"><option value="unverified">확인 필요</option><option value="confirmed">이 장소의 사진임을 확인</option><option value="mismatch">다른 장소 사진</option></select></label><label>사진 원문 링크(선택)<input id="c_page" placeholder="사진이 표시된 페이지 주소"></label><label class="wide">메모(선택)<input id="c_notes" placeholder="장소가 맞는 근거, 촬영 위치나 각도"></label><div class="wide"><button class="btn primary" id="addCandidateBtn">사진 후보 추가</button></div></div></div>'+
 '<div class="section"><h3>저장된 사진 후보 ('+imageCount(p)+')</h3><div id="candidateList">'+renderCandidates(p)+'</div></div>'+
  '<div class="section"><h3>장소 확인 상태</h3><div class="catalogform"><label>장소 정보<select id="v_location">'+["미확인","공식 출처 확인","현장 확인"].map(v=>'<option '+((p.verification?.location||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>대표사진의 장소 일치<select id="v_photo">'+["미확인","검토 중","확인 완료"].map(v=>'<option '+((p.verification?.photoMatch||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><label>촬영 가능 여부<select id="v_permission">'+["미확인","공식 근거 확인","서면 확인","현장 확인 필요"].map(v=>'<option '+((p.verification?.shootingPermission||"미확인")===v?'selected':'')+'>'+v+'</option>').join("")+'</select></label><div class="wide"><button class="btn" id="saveVerificationBtn">장소 확인 상태 저장</button></div></div></div>'+
@@ -573,6 +574,7 @@ function renderDetail(){
  $("editPlaceBtn").addEventListener("click",()=>{$("f_name").focus();$("f_name").scrollIntoView({behavior:"smooth",block:"center"});});
  $("deletePlaceBtn").addEventListener("click",()=>deletePlace(p.id));
  $("savePlaceBtn").addEventListener("click",()=>savePlace(p.id));
+ $("saveCreativeFieldsBtn").addEventListener("click",()=>saveCreativeFields(p.id));
  $("addCandidateBtn").addEventListener("click",()=>addCandidate(p.id));
  $("saveVerificationBtn").addEventListener("click",()=>saveVerification(p.id));
  $("photoSearchMode").addEventListener("change",()=>{$("sourceLinksHost").innerHTML=sourceLinks(p,$("photoSearchMode").value);});
@@ -639,6 +641,21 @@ function savePlace(id){
  const p=getPlace(id);if(!p)return;
  const name=$("f_name").value.trim();if(!name){alert("장소 이름을 입력하세요.");return;}
  p.name=name;p.region=$("f_region").value;p.category=$("f_category").value.trim();p.aliases=$("f_aliases").value.split(",").map(x=>x.trim()).filter(Boolean);p.address=$("f_address").value.trim();p.phone=$("f_phone").value.trim();p.officialUrl=$("f_official").value.trim();p.openingStatus=$("f_open").value;p.shootingPermission=$("f_permission").value;p.summary=$("f_summary").value.trim();p.updatedAt=stamp();localSave("장소정보 임시저장 완료");render();
+}
+function saveCreativeFields(id){
+ const p=getPlace(id);if(!p)return;
+ p.photoProfile=$("f_photoProfile").value.trim();
+ p.spaceTypes=$("f_spaceTypes").value.split(",").map(x=>x.trim()).filter(Boolean);
+ p.visualStrengths=$("f_visualStrengths").value.split(",").map(x=>x.trim()).filter(Boolean);
+ p.bestConcepts=$("f_bestConcepts").value.split(",").map(x=>x.trim()).filter(Boolean);
+ p.constraints=$("f_constraints").value.split(",").map(x=>x.trim()).filter(Boolean);
+ const score=Number($("f_photoPotentialScore").value);p.photoPotentialScore=Number.isFinite(score)?Math.max(0,Math.min(100,score)):0;
+ p.scoutPriority=[1,2,3].includes(Number($("f_scoutPriority").value))?Number($("f_scoutPriority").value):3;
+ p.mapSearchQuery=$("f_mapSearchQuery").value.trim();
+ p.sourceRefs=$("f_sourceRefs").value.split(",").map(x=>x.trim()).filter(Boolean);
+ p.notes=$("f_placeNotes").value.trim();p.scoreStatus="사용자 기획 평가 · 현장 확인 전";
+ p.searchTerms=[...new Set([p.name,p.region,p.category,p.mapSearchQuery,...(p.aliases||[]),...(p.spaceTypes||[]),...(p.visualStrengths||[]),...(p.bestConcepts||[])].filter(Boolean))];
+ p.updatedAt=stamp();localSave("촬영 기획·분류 정보를 이 기기에 저장했습니다");render();renderLanding();
 }
 function saveVerification(id){
  const p=getPlace(id);if(!p)return;p.verification=p.verification||{};p.verification.location=$("v_location").value;p.verification.photoMatch=$("v_photo").value;p.verification.shootingPermission=$("v_permission").value;p.verification.lastCheckedAt=stamp().slice(0,10);p.updatedAt=stamp();localSave("장소 확인 상태를 임시저장했습니다");render();renderLanding();
@@ -761,11 +778,30 @@ async function candidateAction(placeId,cid,action){
 }
 function deletePlace(id){if(!confirm("이 장소와 사진 후보 기록을 이 기기의 카탈로그에서 삭제할까요? 배포된 원본 자료는 바뀌지 않습니다."))return;catalog.places=catalog.places.filter(p=>p.id!==id);selectedId=catalog.places[0]?.id||null;localSave("장소 삭제를 이 기기에 임시저장");render();}
 function addNewPlace(){
- const name=prompt("새 장소 이름을 입력하세요.");if(!name||!name.trim())return;
- const region=prompt("지역을 입력하세요: 서울 / 경기 / 인천","서울");if(!["서울","경기","인천"].includes(region)){alert("지역은 서울, 경기, 인천 중 하나로 입력하세요.");return;}
- let id="new-place-"+Date.now().toString(36);while(catalog.places.some(p=>p.id===id))id="new-place-"+(Date.now()+Math.floor(Math.random()*10000)).toString(36);
- const p={id,name:name.trim(),region,category:"미분류",spaceTypes:["실내·외 조사 필요"],photoProfile:"사진가 관점의 조형성·빛·배경과 촬영 활용 가능성을 조사해야 하는 신규 후보 장소.",visualStrengths:["시각적 강점 조사 필요","배경 재료와 빛 분석 필요"],bestConcepts:["패션·인물 화보 활용성 검토","에디토리얼·브랜드 촬영 적합성 검토"],constraints:["운영·출입 조건 확인 필요","상업촬영 허가·장비 반입 확인 필요"],scoutPriority:3,searchTerms:[name.trim()+" "+region+" 사진 촬영 장소"],aliases:[],summary:"",address:"",coordinates:null,officialUrl:"",openingStatus:"미확인",shootingPermission:"미확인",parking:"미확인",fee:"미확인",imageStatus:"미등록",primaryImageId:null,imageCandidates:[],sourceRefs:[],verification:{location:"미확인",photoMatch:"미확인",rights:"미확인",shootingPermission:"미확인",lastCheckedAt:null},notes:"새로 등록한 장소. 사진가 관점 평가와 사실 검증이 필요합니다.",createdAt:stamp(),updatedAt:stamp()};
- catalog.places.unshift(p);selectedId=id;localSave("새 장소를 이 기기에 임시저장");render();
+ let id="new-place-"+Date.now().toString(36);
+ while(catalog.places.some(p=>p.id===id))id="new-place-"+(Date.now()+Math.floor(Math.random()*10000)).toString(36);
+ const name="새 촬영 장소 (이름 입력)";
+ const p={
+  id,name,region:"서울",category:"",aliases:[],address:"",phone:"",coordinates:null,
+  officialUrl:"",mapSearchQuery:"",summary:"",
+  spaceTypes:["실내","실외"],photoProfile:"장소의 조형성·빛·배경 재료와 사진가 관점의 촬영 활용 가능성을 입력하세요.",
+  visualStrengths:["시각적 강점 입력"],bestConcepts:["추천 촬영 콘셉트 입력"],
+  constraints:["운영·출입 조건 확인 필요","상업촬영 허가·장비 반입 확인 필요"],
+  scoutPriority:3,photoPotentialScore:0,scoreStatus:"사용자 신규 등록 · 검증 전",
+  searchTerms:[name+" 서울 사진 촬영 장소"],openingStatus:"미확인",
+  shootingPermission:"미확인",parking:"미확인",fee:"미확인",imageStatus:"대표사진 미등록",
+  primaryImageId:null,referenceImageId:null,imageCandidates:[],sourceRefs:[],
+  verification:{location:"미확인",photoMatch:"미확인",rights:"미확인",shootingPermission:"미확인",lastCheckedAt:null},
+  notes:"새로 등록한 장소입니다. 실제 장소·사진·운영 정보·촬영 허가를 확인하고 근거 출처를 기록하세요.",
+  createdAt:stamp(),updatedAt:stamp()
+ };
+ catalog.places.unshift(p);selectedId=id;archiveMode="all";
+ if($("query"))$("query").value="";if($("regionFilter"))$("regionFilter").value="";if($("imageFilter"))$("imageFilter").value="";
+ localSave("신규 장소 입력 양식을 열었습니다 · 아직 이 기기에 임시저장 상태입니다");
+ showAppView("detail");
+ render();
+ const nameField=$("f_name");
+ if(nameField){nameField.focus();nameField.select();nameField.scrollIntoView({behavior:"smooth",block:"center"});}
 }
 async function searchOpenverse(p){
  const status=$("autoSearchStatus"),host=$("autoResults");status.classList.remove("hidden");status.textContent="Openverse에서 장소 사진 후보를 검색 중…";host.innerHTML="";
