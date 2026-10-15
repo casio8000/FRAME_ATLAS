@@ -220,3 +220,12 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Representative photo is identified on the Korea Tourism Organization's Sunshine Land page and is approved under the user's rule. Photo reuse rights are still unverified separately.
 - Catalog: **71 active locations, 10 review-queue candidates**. Home counters and service-worker cache use `20261015-54`. Catalog validator and browser regression require this location.
 - Fresh CI is required on the latest commit before claiming this change is validated.
+
+
+## Validation result — 2026-10-15, commit 8da40bc5a73fd17a04393de0a8581aeee002ae32
+- GitHub Actions **FRAME ATLAS v2 development smoke test: PASS**: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38667330009
+- GitHub Actions **FRAME ATLAS v2 quality gate: PASS**: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38667329986
+- Catalog checks: 71 active places, 10 review candidates, 81 unique IDs, seven regions, all active places have a source-identified representative image, and home counters/cache agree.
+- Browser regression: desktop and mobile archive/home each rendered 71 places. Desktop image audit 71/71 loaded; mobile archive image audit 71/71 loaded; no held or missing images and no JavaScript page errors.
+- Latest commit at test time includes L-214 Nonsan 1950 Studio, L-080 Temiorae, Seoseoul Museum of Art, and Gyeonggi Sangsang Campus. All four have active metadata and a representative image where the source identifies the real location; rights and shoot permissions stay separate.
+- Current counters: 71 active, 10 review candidates; cache `20261015-54`. Root legacy v5.x and production `main` are unchanged. The development branch is not merged to production.
