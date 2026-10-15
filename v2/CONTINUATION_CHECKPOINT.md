@@ -203,3 +203,9 @@ Last updated: 2026-10-16 (Korea Standard Time) — build 20261016-72
 - Simplified public reference-photo text so the default emphasis is real-place/image matching and visual value; separate usage terms are mentioned mainly when an image itself will be reused in published/commercial material.
 - The user manual and roadmap now describe the actual merge flow; the optional per-device token setting is noted. Latest code SHA as checked during this work: `7e322dc3eb20fe542118753e70bc0e0c2e55c46f` for `v2/assets/app.js`; `v2/index.html` uses build `20261016-72` and matching JS/CSS/manual cache keys.
 - This is static and synthetic validation, not an end-to-end PC/iPhone browser session. Current Pages deployment status still needs verification for the final checkpoint commit.
+
+
+- CI recovery: the first browser smoke failure was a stale count assumption. `tests/v2-browser-smoke.cjs` was updated to count both the core catalogue and the supplemental art-space JSON, and its manual-link selector now accepts the cache-busted manual URL.
+- PWA cache alignment: `v2/sw.js` now uses build `20261016-72` and pre-caches `data/art_locations_curated_20261016.json`; `v2/manifest.webmanifest` start_url uses the same build key.
+- Verified on commit `a04891003a46b4e5a4d66332760efb721c5b2238`: GitHub Actions **FRAME ATLAS quality checks — success** (including desktop/mobile Playwright smoke test) and **Pages build and deployment — success**.
+- Supplemental locations are merged in the app’s runtime catalog. Before the next ‘GitHub 동기화·게시’, the core JSON file can still show 151 records; after a successful sync/publish, those 15 supplemental records are also incorporated into the core published catalog. The runtime loader deduplicates the supplemental list against the published core data.
