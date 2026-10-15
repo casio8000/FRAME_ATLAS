@@ -154,3 +154,5 @@ Last updated: 2026-10-15 (Korea Standard Time)
 - Added `v2/PLAN_200_PLACES_2026-10-15.md`. Baseline is 137 catalog place records plus 14 separate review candidates. A provisional net +63 is needed only if all 137 existing entries remain. Quality audit may mean investigating more than 63 candidates.
 - No location records were bulk-added as part of this planning step. Candidate venues require deduplication against current and legacy lists, exact-place photo review, official source review and separate permission checks before activation.
 - Next: check latest GitHub Actions quality/deploy results; inspect 137 records for holds/photo mismatch; compare against the legacy 214-place list if available; then research/import in batches around 15 with validation after every batch.
+
+- Follow-up research update: expanded the 200-place plan with a separate studio-facility track using KOFIC/KoBiz source pages. Namyangju is explicitly flagged for an operations/access recheck because its public visitor experience closed, and not presented as a currently public venue.
