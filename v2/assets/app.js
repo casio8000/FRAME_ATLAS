@@ -944,7 +944,7 @@ function exportCatalog(){
 function importCatalog(file){
  const reader=new FileReader();reader.onload=()=>{try{catalog=normalizeCatalog(JSON.parse(reader.result));selectedId=catalog.places[0]?.id||null;localSave("가져온 카탈로그를 이 기기에 임시저장");render();alert("가져오기 완료. 장소 "+catalog.places.length+"곳");}catch(e){alert("가져오기 실패: "+e.message);}};reader.readAsText(file,"utf-8");
 }
-$("addPlaceBtn").addEventListener("click",addNewPlace);
+$("addPlaceBtn").addEventListener("click",addNewPlace);if($("homeAddPlaceBtn"))$("homeAddPlaceBtn").addEventListener("click",addNewPlace);
 $("batchSearchA").addEventListener("click",()=>batchSearch("A"));
 $("batchSearchAll").addEventListener("click",()=>batchSearch("all"));
 $("nextUnphotographedBtn").addEventListener("click",()=>{
