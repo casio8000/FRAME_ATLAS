@@ -402,7 +402,11 @@ function render(){
   if(filter==="review"&&!hasPending(p))return false;
   if(filter==="ready"&&!isImageReady(p))return false;
   return true;
- }).sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(a.region)-["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(b.region)||a.name.localeCompare(b.name,"ko"));
+ }).sort((a,b)=>{
+  const at=Date.parse(a.createdAt||a.updatedAt||""),bt=Date.parse(b.createdAt||b.updatedAt||"");
+  if(Number.isFinite(at)&&Number.isFinite(bt)&&at!==bt)return bt-at;
+  return (a.scoutPriority||9)-(b.scoutPriority||9)||["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(a.region)-["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(b.region)||a.name.localeCompare(b.name,"ko");
+ });
  $("countAll").textContent=catalog.places.length;if($("workspaceTitle"))$("workspaceTitle").textContent=archiveMode==="favorites"?"내 저장 장소":"촬영 장소 아카이브";
  $("countNoImage").textContent=catalog.places.filter(p=>!isImageReady(p)).length;
  $("countReview").textContent=catalog.places.filter(hasPending).length;
@@ -553,6 +557,8 @@ function renderLanding(){
  const prefer=["seo-ddp","seo-oil-tank","seo-seoul-station-284","gg-mimesis","ic-tri-bowl","ic-art-platform"];
  const picked=prefer.map(get).filter(Boolean);
  const baseFeatured=[...picked,...places.filter(p=>!picked.some(x=>x.id===p.id)).sort((a,b)=>{
+  const at=Date.parse(a.createdAt||a.updatedAt||""),bt=Date.parse(b.createdAt||b.updatedAt||"");
+  if(Number.isFinite(at)&&Number.isFinite(bt)&&at!==bt)return bt-at;
   const aClosed=/운영 종료|폐쇄|영구 휴관/.test(String(a.openingStatus||""))?1:0,bClosed=/운영 종료|폐쇄|영구 휴관/.test(String(b.openingStatus||""))?1:0;
   return aClosed-bClosed+(a.visualCurationStatus==="conditional"?1:0)-(b.visualCurationStatus==="conditional"?1:0)||(a.scoutPriority||9)-(b.scoutPriority||9);
  })];
