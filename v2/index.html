@@ -5,29 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#192a21">
 <meta name="description" content="전국 17개 시·도 전문 사진 촬영 장소, 대형 스튜디오·공연장·건축·영상 로케이션 탐색.">
-<meta name="app-build" content="20261015-60">
+<meta name="app-build" content="20261015-61">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="FRAME ATLAS">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="format-detection" content="telephone=no">
 <title>FRAME ATLAS 2.0 · PHOTO LOCATION SCOUT</title>
-<link rel="manifest" href="manifest.webmanifest?v=20261015-60">
-<link rel="icon" type="image/svg+xml" href="icons/atlas-mark.svg?v=20261015-60">
-<link rel="apple-touch-icon" sizes="180x180" href="icons/atlas-touch-20261015-60.png?v=20261015-60">
-<link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"><link rel="stylesheet" href="assets/app.css?v=20261015-60">
+<link rel="manifest" href="manifest.webmanifest?v=20261015-61">
+<link rel="icon" type="image/svg+xml" href="icons/atlas-mark.svg?v=20261015-61">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/atlas-touch-20261015-61.png?v=20261015-61">
+<link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"><link rel="stylesheet" href="assets/app.css?v=20261015-61">
 
 </head>
 <body data-app-view="welcome">
 <div class="wrap">
  <header class="head">
   <a class="brandlock" href="#welcome" id="brandHomeBtn" aria-label="FRAME ATLAS 시작 화면">
-   <img class="brand-icon" src="icons/atlas-mark.svg?v=20261015-60" alt="">
+   <img class="brand-icon" src="icons/atlas-mark.svg?v=20261015-61" alt="">
    <span class="brand">FRAME ATLAS 2.0 <small>FIELD NOTES · LOCATION SCOUT</small></span>
   </a>
   <div class="head-actions">
    <span class="pill">NATIONWIDE · KOREA</span>
-   <button class="btn install-btn" id="installAppBtn" type="button">홈 화면에 추가</button>
+   <button class="btn admin-mode-toggle" id="adminModeBtn" type="button">관리자 모드</button><button class="btn install-btn" id="installAppBtn" type="button">홈 화면에 추가</button>
   </div>
  </header>
 <nav class="app-nav" id="appNav" aria-label="주요 화면">
@@ -98,17 +98,21 @@
  </section>
  <div class="notice"><span class="notice-mark">◎</span><div><b>장소 사진 우선</b><br>목록의 사진은 실제 촬영 장소를 파악하기 위한 참고 이미지입니다. 사진 속 건축 형태·간판·주변 구조가 등록 장소와 일치하는지 확인하고, 맞지 않으면 다른 후보로 바꾸세요.</div></div>
  <div class="worktopline"><button class="btn home-return" id="goHomeBtn" type="button">← 메인 화면</button><span>PHOTO LOCATION WORKSPACE <i>LOCATION ARCHIVE</i></span><span id="saveStatus" class="tagline">불러오는 중…</span></div>
- <div class="toolbar">
-  <button class="btn primary" id="addPlaceBtn">＋ 장소 등록</button>
-  <button class="btn orange" id="batchSearchA">A급 장소 사진 일괄검색</button>
-  <button class="btn" id="batchSearchAll">전체 장소 사진 일괄검색</button>
-  <button class="btn" id="nextUnphotographedBtn">다음 사진 미등록 장소 →</button>
-  <button class="btn" id="exportBtn">카탈로그 JSON 내보내기</button>
-  <button class="btn orange" id="publishBtn">GitHub에 게시</button>
-  <label class="btn filelabel">JSON 가져오기<input id="importInput" type="file" accept=".json,application/json"></label>
-  <button class="btn" id="reloadBtn">배포된 기본자료 다시 읽기</button>
- </div>
- <div id="batchStatus" class="statusbar hidden"></div>
+ <div class="workspace-admin-entry"><span id="adminModeState" class="tagline">편집·사진등록·삭제·게시 기능은 잠겨 있습니다.</span></div>
+ <section id="adminPanel" class="admin-panel" hidden>
+  <div class="admin-panel-head"><div><b>관리자 작업 도구</b><small>장소 수정·삭제, 사진 후보 관리, 가져오기·게시</small></div><span class="admin-mode-status">PASSWORD LOCK</span></div>
+  <div class="toolbar">
+   <button class="btn primary" id="addPlaceBtn">＋ 장소 등록</button>
+   <button class="btn orange" id="batchSearchA">A급 장소 사진 일괄검색</button>
+   <button class="btn" id="batchSearchAll">전체 장소 사진 일괄검색</button>
+   <button class="btn" id="nextUnphotographedBtn">다음 사진 미등록 장소 →</button>
+   <button class="btn" id="exportBtn">카탈로그 JSON 내보내기</button>
+   <button class="btn orange" id="publishBtn">GitHub에 게시</button>
+   <label class="btn filelabel">JSON 가져오기<input id="importInput" type="file" accept=".json,application/json"></label>
+   <button class="btn" id="reloadBtn">배포된 기본자료 다시 읽기</button>
+  </div>
+  <div id="batchStatus" class="statusbar hidden"></div>
+ </section>
  <div class="searchbar">
   <div class="filters">
    <input id="query" class="field" placeholder="여러 검색어를 띄어쓰기: 벽돌 자연광 레트로">
@@ -134,7 +138,7 @@
  
  <section id="welcomeView" class="welcome-screen" hidden>
   <div class="welcome-photo-layer"><img id="welcomeHeroImage" data-image-fallback="true" src="" alt="" referrerpolicy="no-referrer"><div class="welcome-photo-shade"></div></div>
-  <div class="welcome-content"><div class="welcome-logo-mark" aria-label="FRAME ATLAS 카메라 아이콘"><img src="icons/atlas-mark.svg?v=20261015-60" alt=""></div><p class="welcome-kicker">PHOTO LOCATION SCOUT</p><h1>FRAME<br>ATLAS <span>2.0</span></h1><p class="welcome-tagline">좋은 장소는,<br>좋은 사진을 만듭니다.</p><p class="welcome-copy">지역에 구애받지 않고 전국의 공간을 사진가의 시선으로 탐색하고, 촬영 참고사진과 장소 정보를 기록하세요.</p><button class="welcome-start" id="welcomeStartBtn" type="button">시작하기 <span>↗</span></button><button class="welcome-secondary" id="welcomeHomeBtn" type="button">메인 화면 둘러보기</button></div>
+  <div class="welcome-content"><div class="welcome-logo-mark" aria-label="FRAME ATLAS 카메라 아이콘"><img src="icons/atlas-mark.svg?v=20261015-61" alt=""></div><p class="welcome-kicker">PHOTO LOCATION SCOUT</p><h1>FRAME<br>ATLAS <span>2.0</span></h1><p class="welcome-tagline">좋은 장소는,<br>좋은 사진을 만듭니다.</p><p class="welcome-copy">지역에 구애받지 않고 전국의 공간을 사진가의 시선으로 탐색하고, 촬영 참고사진과 장소 정보를 기록하세요.</p><button class="welcome-start" id="welcomeStartBtn" type="button">시작하기 <span>↗</span></button><button class="welcome-secondary" id="welcomeHomeBtn" type="button">메인 화면 둘러보기</button></div>
  </section>
  <section id="mapView" class="app-screen" hidden>
   <div class="screen-heading"><div><p class="eyebrow">EXPLORE / NAVIGATION</p><h1>지도 보기</h1><p>장소를 선택하면 해당 장소의 지도 검색으로 이동합니다.</p></div><span class="screen-count" id="mapCount">34곳</span></div>
@@ -189,9 +193,17 @@
   </div>
   <div class="toolbar"><button class="btn primary" type="button" id="closeInstallDialogBtn">확인</button></div>
  </dialog>
- <dialog id="publishDialog"><h2>카탈로그를 GitHub에 게시</h2><p>이 동작은 장소 목록과 사진 후보 정보를 개발 브랜치의 v2/data/places.json에 커밋합니다. 이미지 파일 자체를 업로드하는 기능은 다음 단계에서 연결합니다.</p><div class="statusbar warn">Fine-grained Personal Access Token을 사용하고, casio8000/FRAME_ATLAS 저장소 하나에만 Contents 읽기/쓰기 권한을 부여하세요. 토큰은 이 입력창에서만 사용하며 브라우저 저장소에 보관하지 않습니다. 신뢰하는 기기에서만 사용하세요.</div><label>GitHub 토큰<input type="password" id="publishToken" autocomplete="off" spellcheck="false" placeholder="github_pat_..." /></label><div id="publishStatus" class="statusbar hidden"></div><div class="toolbar"><button type="button" class="btn" id="cancelPublishBtn">취소</button><button type="button" class="btn primary" id="confirmPublishBtn">게시 시작</button></div></dialog>
+ <dialog id="adminModeDialog" class="admin-mode-dialog">
+ <div class="dialog-kicker">ADMIN / EDIT MODE</div><h2>관리자 모드</h2>
+ <p class="dialog-lead" id="adminModeDescription">비밀번호를 입력하세요.</p>
+ <label>관리자 비밀번호<input id="adminPasswordInput" type="password" autocomplete="current-password" placeholder="8자 이상" /></label>
+ <label id="adminPasswordConfirmLabel">비밀번호 확인<input id="adminPasswordConfirm" type="password" autocomplete="new-password" placeholder="같은 비밀번호를 다시 입력" /></label>
+ <p id="adminModeMessage" class="statusbar warn" hidden></p>
+ <div class="toolbar"><button class="btn" type="button" id="adminModeCancelBtn">취소</button><button class="btn primary" type="button" id="adminModeConfirmBtn">잠금 해제</button></div>
+</dialog>
+<dialog id="publishDialog"><h2>카탈로그를 GitHub에 게시</h2><p>이 동작은 장소 목록과 사진 후보 정보를 개발 브랜치의 v2/data/places.json에 커밋합니다. 이미지 파일 자체를 업로드하는 기능은 다음 단계에서 연결합니다.</p><div class="statusbar warn">Fine-grained Personal Access Token을 사용하고, casio8000/FRAME_ATLAS 저장소 하나에만 Contents 읽기/쓰기 권한을 부여하세요. 토큰은 이 입력창에서만 사용하며 브라우저 저장소에 보관하지 않습니다. 신뢰하는 기기에서만 사용하세요.</div><label>GitHub 토큰<input type="password" id="publishToken" autocomplete="off" spellcheck="false" placeholder="github_pat_..." /></label><div id="publishStatus" class="statusbar hidden"></div><div class="toolbar"><button type="button" class="btn" id="cancelPublishBtn">취소</button><button type="button" class="btn primary" id="confirmPublishBtn">게시 시작</button></div></dialog>
  <footer class="footer">FRAME ATLAS 2.0 · Co-created by 지혜의 쉼터 with Claude &amp; Chat GPT · ⓒ 2026<br>2.0 PREVIEW · 장소 조사 · 이미지 검토 · 지도 연결 · 개인 기기 설치를 단계적으로 강화 중입니다.</footer>
 </div>
-<script defer src="assets/app.js?v=20261015-60"></script>
+<script defer src="assets/app.js?v=20261015-61"></script>
 </body>
 </html>
