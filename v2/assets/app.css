@@ -1067,3 +1067,51 @@ body[data-app-view="welcome"] .admin-mode-toggle{display:inline-flex!important}
 @media(max-width:620px){
  .head-actions .admin-mode-toggle{display:inline-flex!important;align-items:center;justify-content:center;white-space:nowrap;min-height:35px;font-size:10px;padding:7px 8px}
 }
+
+
+/* v2.66: contain administrator workspace to the iPhone viewport. */
+@media(max-width:767px){
+ html,body{width:100%;max-width:100%}
+ body.admin-mode{overflow-x:hidden}
+ body.admin-mode .wrap,
+ body.admin-mode #workspaceView,
+ body.admin-mode #workspaceView .workspace,
+ body.admin-mode #workspaceView .panel,
+ body.admin-mode #adminPanel{
+  width:100%;max-width:100%;min-width:0;
+ }
+ body.admin-mode #workspaceView .workspace{
+  grid-template-columns:minmax(0,1fr)!important;
+  gap:12px;
+ }
+ body.admin-mode #workspaceView .workspace .panel{grid-column:1/-1}
+ .admin-panel{padding:12px;min-width:0;overflow:hidden}
+ .admin-panel-head{align-items:flex-start;flex-wrap:wrap;gap:8px}
+ .admin-panel-head>div{flex:1 1 180px;min-width:0}
+ .admin-panel-head .admin-mode-status{white-space:normal;max-width:100%;overflow-wrap:anywhere}
+ .admin-primary-tools{grid-template-columns:minmax(0,1fr)!important;gap:9px}
+ .admin-primary-tools>div{min-width:0;width:100%;align-items:stretch}
+ .admin-primary-tools .btn,
+ .admin-panel .toolbar .btn,
+ .admin-panel .toolbar .filelabel{
+  width:100%;min-width:0;max-width:100%;
+  white-space:normal;overflow-wrap:anywhere;
+  text-align:center;justify-content:center;
+ }
+ .admin-panel .toolbar{display:grid;grid-template-columns:minmax(0,1fr);width:100%;max-width:100%}
+ .admin-panel details,
+ .admin-panel summary,
+ .admin-panel p,
+ .admin-panel small,
+ .admin-panel label{min-width:0;max-width:100%;overflow-wrap:anywhere}
+ .admin-panel input,
+ .admin-panel select,
+ .admin-panel textarea{min-width:0;max-width:100%}
+ dialog.admin-mode-dialog{
+  width:calc(100vw - 24px);max-width:440px;
+  max-height:calc(100dvh - 24px);
+  overflow-y:auto;overflow-x:hidden;margin:auto;
+ }
+ dialog.admin-mode-dialog .toolbar{display:flex;flex-wrap:wrap}
+ dialog.admin-mode-dialog .toolbar .btn{flex:1 1 120px;min-width:0;white-space:normal}
+}

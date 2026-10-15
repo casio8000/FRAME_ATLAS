@@ -130,3 +130,10 @@ Last updated: 2026-10-15 (Korea Standard Time)
 - Source commit: `d424fdaca64b1d7651f44f14606ac3a0cec86f3a`.
 - Quality Checks: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38699963376 — SUCCESS.
 - Pages deployment: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38699963424 — SUCCESS.
+
+
+## 2026-10-15 · v2.66 mobile administrator viewport fix
+- Mobile admin workspace is forced into a single fluid column with min-width safeguards; admin tools, text, and action buttons wrap instead of widening the page.
+- Password dialog is constrained to the iPhone viewport height and width and remains internally scrollable.
+- Added a mobile Playwright regression test that sets a test-only admin password, opens the admin workspace at 390 px width, and asserts document/panel width does not exceed viewport.
+- Build/cache ID: `20261015-66`. Awaiting current GitHub Actions results.
