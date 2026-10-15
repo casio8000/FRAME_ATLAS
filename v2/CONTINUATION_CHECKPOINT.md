@@ -194,3 +194,13 @@ Last updated: 2026-10-14 (Korea Standard Time)
 1. Check the latest `FRAME ATLAS v2 quality gate` run for the most recent development-branch commit.
 2. Fix any validation or UI issue identified by that run and re-run only the necessary checks.
 3. Continue the remaining legacy reconciliation, adding further artistic locations only after source/identity checks. Do not bulk-add all exact-name mismatches; some are subareas, aliases, restricted facilities or candidates with unconfirmed operation.
+
+
+## 2026-10-15 follow-up — representative-photo rule and operational status
+- User clarified the rule: when the source proves that an image depicts the actual place, mark it as the representative image. This replaces the previous unnecessary requirement to keep confirmed photos “reference only.”
+- Applied to all **67 active places**: `primaryImageId` now points to the confirmed `referenceImageId`; catalog status says representative approved. Image copyright/reuse rights and production/advertising shooting permission remain separate checks and are not implied by approval.
+- Fixed the single broken image discovered by Playwright: Amorepacific Museum of Art now uses a Korea Herald gallery photo from an article specifically about APMA. The earlier image failed in browser testing.
+- GitHub Actions on commit `ea0343a32028c84d96acb7eb1fb7084965472dde` passed both development browser regression and quality gate: all 67 active-place images loaded, desktop/mobile checks succeeded, and page errors were empty.
+- Added legacy L-025 Samtan Art Mine to the review queue, not the active list. Recent reporting says it is closed for safety reinforcement with reopening projected for October 2027. Its location photo is retained as a reference only until reopening and current access are rechecked.
+- Active catalog remains 67; review queue is now 10. Homepage queue counters and service-worker cache have been updated to `20261015-51`.
+- The queue/cache/test changes made after the green run still require a fresh GitHub Actions run before they are labelled fully verified.
