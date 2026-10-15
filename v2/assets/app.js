@@ -31,12 +31,24 @@ function bindImageFallbacks(root){
   img.dataset.originalImageUrl=img.getAttribute("src")||img.currentSrc||img.src||"";
   const initialFrame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");
   if(initialFrame){if(img.complete&&img.naturalWidth>0)initialFrame.classList.remove("image-loading");else initialFrame.classList.add("image-loading");}
+  let imageFallbackTimer=null;
+  const clearImageFallbackTimer=()=>{if(imageFallbackTimer!==null){clearTimeout(imageFallbackTimer);imageFallbackTimer=null;}};
+  const scheduleImageFallbackTimer=()=>{
+   clearImageFallbackTimer();
+   const attemptedUrl=img.getAttribute("src")||"";
+   imageFallbackTimer=setTimeout(()=>{
+    imageFallbackTimer=null;
+    if((img.getAttribute("src")||"")===attemptedUrl&&!(img.complete&&img.naturalWidth>0))img.dispatchEvent(new Event("error"));
+   },3200);
+  };
   img.addEventListener("load",()=>{
+   clearImageFallbackTimer();
    const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");
    if(frame)frame.classList.remove("image-loading","image-missing","proxy-loading");
    img.removeAttribute("aria-hidden");
   });
   img.addEventListener("error",()=>{
+   clearImageFallbackTimer();
    const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");
    const original=img.dataset.originalImageUrl||"";
    const thumbnail=img.dataset.fallbackThumbnail||"";
@@ -44,6 +56,7 @@ function bindImageFallbacks(root){
    if(!img.dataset.thumbnailTried && thumbnail && thumbnail!==original){
     img.dataset.thumbnailTried="1";
     img.src=thumbnail;
+    scheduleImageFallbackTimer();
     return;
    }
    // Retry only remote HTTP(S) image URLs through an image resize/cache proxy.
@@ -55,6 +68,7 @@ function bindImageFallbacks(root){
     const height=frame&&frame.classList.contains("thumb")?180:650;
     img.referrerPolicy="no-referrer";
     img.src="https://images.weserv.nl/?url="+encodeURIComponent(original)+"&w="+width+"&h="+height+"&fit=inside&output=webp";
+    scheduleImageFallbackTimer();
     return;
    }
    // If the first URL and its proxy fail, try another non-rejected candidate for the same place.
@@ -68,6 +82,7 @@ function bindImageFallbacks(root){
      img.dataset.originalImageUrl=alt.imageUrl||alt.sourceThumbnail||"";img.dataset.thumbnailTried="1";img.dataset.proxyTried="";img.removeAttribute("aria-hidden");
      if(frame)frame.classList.remove("image-missing","proxy-loading");
      img.src=img.dataset.originalImageUrl;
+     scheduleImageFallbackTimer();
      return;
     }
    }
@@ -78,6 +93,7 @@ function bindImageFallbacks(root){
   // Cached images can fail before the error listener has finished binding.
   if(img.complete&&img.naturalWidth===0)queueMicrotask(()=>img.dispatchEvent(new Event("error")));
   else if(img.complete&&img.naturalWidth>0){const frame=img.closest(".thumb,.reference-photo-wrap,.candidate-image-frame,.scout-feature-image,.landing-hero");if(frame)frame.classList.remove("image-loading","image-missing","proxy-loading");}
+  else scheduleImageFallbackTimer();
  });
 }
 function stamp(){return new Date().toISOString();}
