@@ -1011,9 +1011,9 @@ dialog.map-links-dialog{position:relative;max-width:min(560px,calc(100% - 24px))
 @media(max-width:760px){.searchbar .filters{grid-template-columns:1fr 1fr;gap:8px}.searchbar .filters #query{grid-column:1/-1}}
 @media(max-width:420px){.searchbar .filters{grid-template-columns:1fr}.searchbar .filters #query{grid-column:auto}}
 
-/* Build 20261015-54: three combined filters on the full archive, compact on mobile. */
-.home-all-controls{grid-template-columns:minmax(0,1fr) 180px 175px}
+/* Build 20261015-56: combined keyword, region, place type and mood filters. */
+.home-all-controls{grid-template-columns:minmax(0,1fr) 145px 160px 150px}
 @media(max-width:620px){.home-all-controls{grid-template-columns:1fr;gap:7px}.home-all-controls input{grid-column:auto}}
-.searchbar .filters{grid-template-columns:minmax(190px,2fr) repeat(3,minmax(132px,1fr))}
+.searchbar .filters{grid-template-columns:minmax(170px,2fr) repeat(4,minmax(110px,1fr))}
 @media(max-width:760px){.searchbar .filters{grid-template-columns:1fr 1fr}.searchbar .filters #query{grid-column:1/-1}}
 @media(max-width:420px){.searchbar .filters{grid-template-columns:1fr}.searchbar .filters #query{grid-column:auto}}
