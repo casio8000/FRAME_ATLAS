@@ -68,3 +68,7 @@ Temiorae was restored as active location `legacy-temiorae`. The red-brick, blue-
 
 ## Follow-up — legacy L-214 Nonsan 1950 Studio (2026-10-15)
 The legacy entry is restored as `nat-nonsan-sunshine-1950-set`, specifically scoped to the city-run 1950 Studio, not the adjacent private Sunshine Studio. Nonsan City's official FAQ describes a required commercial-shoot application and daily charges of ₩1,000,000 for broadcast productions and ₩2,500,000 for film/advertising productions (verify current rate at booking). The Korea Tourism Organization's Sunshine Land page identifies the representative photo as the actual 1950s street set. Per the user's rule, that image is approved as the representative; re-use rights remain unverified separately. Active catalog: 71; review queue: 10; cache: `20261015-54`.
+
+
+## Current verification result — 2026-10-15
+On commit `8da40bc5a73fd17a04393de0a8581aeee002ae32`, both [development browser regression](https://github.com/casio8000/FRAME_ATLAS/actions/runs/38667330009) and [catalog quality gate](https://github.com/casio8000/FRAME_ATLAS/actions/runs/38667329986) passed. The validator confirmed 71 active locations and 10 review candidates across seven regions; desktop and mobile rendered all 71 locations, the image audits loaded 71/71 in both layouts, and no JavaScript page errors were reported. Counters/cache were aligned at `71 / 10 / 20261015-54`. No production merge/deployment occurred.
