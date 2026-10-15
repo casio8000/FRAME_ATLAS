@@ -4,7 +4,7 @@
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
   "dataStatus": "전국 136곳. 장소 식별이 가능한 참고사진을 연결하고 세부 항목에 출처·장소 일치·재사용 권리 확인 상태를 기록했습니다. 사진 최종 대표 승인과 전문 촬영 허가는 별도 확인 중입니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T06:00:00.000Z",
+  "updatedAt": "2026-10-15T06:10:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -3021,7 +3021,7 @@
       "shootingPermission": "미확인",
       "parking": "미확인",
       "fee": "미확인",
-      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 별도 확인",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -3043,8 +3043,8 @@
         {
           "id": "img-suwon-hwaseong-gate-nculture",
           "title": "수원화성 장안문 성곽과 성문",
-          "imageUrl": "https://minio.nculture.org/amsweb-opt/multimedia_assets/17/72599/66112/c/JKH_0014-full-size.jpg",
-          "sourceThumbnail": "https://minio.nculture.org/amsweb-opt/multimedia_assets/17/72599/66112/c/JKH_0014-full-size.jpg",
+          "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fminio.nculture.org%2Famsweb-opt%2Fmultimedia_assets%2F17%2F72599%2F66112%2Fc%2FJKH_0014-full-size.jpg&w=900&h=650&fit=inside&output=webp",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fminio.nculture.org%2Famsweb-opt%2Fmultimedia_assets%2F17%2F72599%2F66112%2Fc%2FJKH_0014-full-size.jpg&w=900&h=650&fit=inside&output=webp",
           "sourcePageUrl": "https://ncms.nculture.org/castle-road/story/2252",
           "sourceName": "지역N문화 · 수원화성 성곽 자료",
           "rights": "unknown",
@@ -3052,9 +3052,12 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "야외·성문·석조와 목조건축",
-          "notes": "수원화성 장안문의 석조 성벽과 목조 문루를 보여주는 문화자료 사진 후보. 위치·구도 확인용이며 원저작물의 이용조건과 촬영 허가는 확인 전입니다. 이 외부 이미지 URL이 브라우저 검사에서 로드되지 않아 활성 사진 표시에서 제외했습니다. 장소 정보와 출처 기록은 유지합니다.",
-          "status": "rejected",
-          "createdAt": "2026-10-14"
+          "notes": "수원화성 장안문의 석조 성벽과 목조 문루를 보여주는 문화자료 사진 후보. 위치·구도 확인용이며 원저작물의 이용조건과 촬영 허가는 확인 전입니다. 이 외부 이미지 URL이 브라우저 검사에서 로드되지 않아 활성 사진 표시에서 제외했습니다. 장소 정보와 출처 기록은 유지합니다. 2026-10-15 직접 링크 응답 불안정으로 미리보기 프록시 경로를 사용합니다. 원본 주소는 originalImageUrl에 보관; 출처·저작권 상태는 변경하지 않았습니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-14",
+          "originalImageUrl": "https://minio.nculture.org/amsweb-opt/multimedia_assets/17/72599/66112/c/JKH_0014-full-size.jpg",
+          "rightsStatus": "review-required",
+          "updatedAt": "2026-10-15T06:10:00.000Z"
         },
         {
           "id": "ref-hwaseong-janganmun-mindtrip-2026",
@@ -3099,7 +3102,7 @@
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 추가 답사 구간으로 방화수류정·용연의 성곽·연못·전통건축 레이어를 따로 확인합니다. 구버전 L-204의 공간 제안을 중복 장소가 아닌 세부 촬영 포인트로 통합했습니다. 2026-10-15 사진 후보 보강: 수원화성 장안문과 성곽 석축. 출처: Mindtrip · 장안문 장소 안내 (https://mindtrip.ai/attraction/suwon-gyeonggi-do/janganmun-gate/at-ZW8oX8yD). 장안문 현판과 성문, 석축이 보이는 수원화성 사진. 해당 장소 참고사진으로 연결하고 재사용 권리 확인 중.",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "updatedAt": "2026-10-15T06:10:00.000Z",
       "photoPotentialScore": 73,
       "photoScoreBreakdown": {
         "distinctiveness": 23,
@@ -3117,7 +3120,7 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "경기도 수원시 팔달구 정조로 825 화성행궁 수원화성 성곽",
-      "referenceImageId": "ref-hwaseong-janganmun-mindtrip-2026",
+      "referenceImageId": "img-suwon-hwaseong-gate-nculture",
       "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중"
     },
     {
@@ -9532,7 +9535,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 별도 확인",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -9555,8 +9558,8 @@
           "id": "ref-seoul-photo-museum-official-2026",
           "createdAt": "2026-10-15T05:10:00.000Z",
           "title": "서울시립 사진미술관 외관",
-          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/05/8UdKruuHjmWQwGqCbvnykYkKyqUEqRga.jpg",
-          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2025%2F05%2F8UdKruuHjmWQwGqCbvnykYkKyqUEqRga.jpg&w=960&h=640&fit=inside&output=webp",
+          "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2025%2F05%2F8UdKruuHjmWQwGqCbvnykYkKyqRga.jpg&w=900&h=650&fit=inside&output=webp",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fmediahub.seoul.go.kr%2Fuploads%2Fmediahub%2F2025%2F05%2F8UdKruuHjmWQwGqCbvnykYkKyqRga.jpg&w=900&h=650&fit=inside&output=webp",
           "sourcePageUrl": "https://mediahub.seoul.go.kr/",
           "sourceName": "서울시 미디어허브",
           "creator": "페이지 사진 크레딧 확인 필요",
@@ -9566,9 +9569,10 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "미술관·현대 파사드",
-          "notes": "서울시 미디어허브에서 사진미술관 시설 사진 후보로 확보. 해당 시설 식별과 이미지 내용은 최종 페이지 대조 중이라는 상태를 상세 메모에 남기며, 장소 확인 전에는 대표사진으로 승인하지 않는다.",
+          "notes": "서울시 미디어허브에서 사진미술관 시설 사진 후보로 확보. 해당 시설 식별과 이미지 내용은 최종 페이지 대조 중이라는 상태를 상세 메모에 남기며, 장소 확인 전에는 대표사진으로 승인하지 않는다. 2026-10-15 직접 링크 응답 불안정으로 미리보기 프록시 경로를 사용합니다. 원본 주소는 originalImageUrl에 보관; 출처·저작권 상태는 변경하지 않았습니다.",
           "status": "candidate",
-          "updatedAt": "2026-10-15T05:10:00.000Z"
+          "updatedAt": "2026-10-15T06:10:00.000Z",
+          "originalImageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/05/8UdKruuHjmWQwGqCbvnykYkKyqRga.jpg"
         }
       ],
       "referenceImageId": "ref-seoul-photo-museum-official-2026",
@@ -9599,7 +9603,7 @@
       ],
       "legacyMood": "미니멀·모노크롬·실험적·현대적",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "updatedAt": "2026-10-15T06:10:00.000Z",
       "notes": "공식 방문 안내와 SBS 개관 보도사진을 연결했습니다. 실내 로비와 전시 공간 촬영은 별도 승인 전제로 검토합니다. 2026-10-15 사진 후보 보강: 서울시립 사진미술관 외관. 출처: 서울시 미디어허브 (https://mediahub.seoul.go.kr/). 서울시 미디어허브에서 사진미술관 시설 사진 후보로 확보. 해당 시설 식별과 이미지 내용은 최종 페이지 대조 중이라는 상태를 상세 메모에 남기며, 장소 확인 전에는 대표사진으로 승인하지 않는다."
     },
     {
@@ -9772,7 +9776,7 @@
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 별도 확인",
       "primaryImageId": null,
       "imageCandidates": [
         {
@@ -9795,8 +9799,8 @@
           "id": "ref-mungyeong-open-set-kstudio-2026",
           "createdAt": "2026-10-15T05:25:00.000Z",
           "title": "문경새재 오픈세트장 조선시대 골목",
-          "imageUrl": "https://k-studio.kr/posting/assets/k-tour_100_011-020/l012-mungyeong-mungyeongsaejae-open-set_01.jpg",
-          "sourceThumbnail": "https://k-studio.kr/posting/assets/k-tour_100_011-020/l012-mungyeong-mungyeongsaejae-open-set_01.jpg",
+          "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fk-studio.kr%2Fposting%2Fassets%2Fk-tour_100_011-020%2Fl012-mungyeong-mungyeongsaejae-open-set_01.jpg&w=900&h=650&fit=inside&output=webp",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fk-studio.kr%2Fposting%2Fassets%2Fk-tour_100_011-020%2Fl012-mungyeong-mungyeongsaejae-open-set_01.jpg&w=900&h=650&fit=inside&output=webp",
           "sourcePageUrl": "https://k-studio.kr/posting/ja/k-tour_100/011-020/l012-mungyeong-mungyeongsaejae-open-set",
           "sourceName": "Korea Pick · 문경새재 오픈세트장",
           "creator": "사이트 사진 크레딧 확인 필요",
@@ -9806,9 +9810,10 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "사극 세트·기와·돌담·토성 길",
-          "notes": "문경새재 오픈세트장으로 소개된 조선시대식 거리 사진. 세트의 거리 원근과 전통 건축이 보이는 참고사진; 재사용 권리 확인 중.",
+          "notes": "문경새재 오픈세트장으로 소개된 조선시대식 거리 사진. 세트의 거리 원근과 전통 건축이 보이는 참고사진; 재사용 권리 확인 중. 2026-10-15 직접 링크 응답 불안정으로 미리보기 프록시 경로를 사용합니다. 원본 주소는 originalImageUrl에 보관; 출처·저작권 상태는 변경하지 않았습니다.",
           "status": "candidate",
-          "updatedAt": "2026-10-15T05:25:00.000Z"
+          "updatedAt": "2026-10-15T06:10:00.000Z",
+          "originalImageUrl": "https://k-studio.kr/posting/assets/k-tour_100_011-020/l012-mungyeong-mungyeongsaejae-open-set_01.jpg"
         }
       ],
       "referenceImageId": "ref-mungyeong-open-set-kstudio-2026",
@@ -9853,7 +9858,7 @@
       ],
       "legacyMood": "시대극·영화적",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15T05:25:00.000Z",
+      "updatedAt": "2026-10-15T06:10:00.000Z",
       "notes": "구버전 목록에 있던 촬영 세트장으로 등록. legacy source가 기록한 '킹덤'·'슈룹' 촬영 크레딧은 보도 자료 기반이며 세트 구역별 촬영작품은 현장·출처를 추가 대조합니다. 2026-10-15 추가 이미지 조사: 문경새재 오픈세트장 조선시대 골목. 출처: Korea Pick · 문경새재 오픈세트장 (https://k-studio.kr/posting/ja/k-tour_100/011-020/l012-mungyeong-mungyeongsaejae-open-set). 문경새재 오픈세트장으로 소개된 조선시대식 거리 사진. 세트의 거리 원근과 전통 건축이 보이는 참고사진; 재사용 권리 확인 중."
     },
     {
@@ -14724,15 +14729,15 @@
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
       "fee": "입장료와 상업촬영 대관료를 구분해 확인",
-      "imageStatus": "장소 참고사진 등록 · 대표사진 승인 및 재사용 권리 확인 중",
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 별도 확인",
       "primaryImageId": null,
       "imageCandidates": [
         {
           "id": "ref-aviation-museum-bizhk-2026",
           "createdAt": "2026-10-15T05:10:00.000Z",
-          "title": "국립항공박물관 유리 아트리움과 공중 전시 항공기",
-          "imageUrl": "https://www.bizhankook.com/upload/bk/article/202303/25305-60918.jpg",
-          "sourceThumbnail": "https://www.bizhankook.com/upload/bk/article/202303/25305-60918.jpg",
+          "title": "국립항공박물관 유리 아트리움과 전시 항공기",
+          "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.bizhankook.com%2Fupload%2Fbk%2Farticle%2F202303%2F25305-60918.jpg&w=900&h=650&fit=inside&output=webp",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.bizhankook.com%2Fupload%2Fbk%2Farticle%2F202303%2F25305-60918.jpg&w=900&h=650&fit=inside&output=webp",
           "sourcePageUrl": "https://www.bizhankook.com/bk/article/25305",
           "sourceName": "비즈한국 · 국립항공박물관 소개",
           "creator": "기사 사진 크레딧 확인 필요",
@@ -14742,9 +14747,10 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "항공기·유리 아트리움·금속 구조",
-          "notes": "국립항공박물관의 아트리움에 전시된 항공기와 유리·철골 천장이 보이는 참고사진. 재사용 권리는 확인 중.",
+          "notes": "국립항공박물관의 아트리움에 전시된 항공기와 유리·철골 천장이 보이는 참고사진. 재사용 권리는 확인 중. 2026-10-15 직접 링크 응답 불안정으로 미리보기 프록시 경로를 사용합니다. 원본 주소는 originalImageUrl에 보관; 출처·저작권 상태는 변경하지 않았습니다.",
           "status": "candidate",
-          "updatedAt": "2026-10-15T05:10:00.000Z"
+          "updatedAt": "2026-10-15T06:10:00.000Z",
+          "originalImageUrl": "https://www.bizhankook.com/upload/bk/article/202303/25305-60918.jpg"
         }
       ],
       "referenceImageId": "ref-aviation-museum-bizhk-2026",
@@ -14765,7 +14771,7 @@
       "curationQueueStatus": "legacy-214-audit",
       "legacyCatalogId": "L-191",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15T05:10:00.000Z",
+      "updatedAt": "2026-10-15T06:10:00.000Z",
       "notes": "구버전 L-191의 사진가 관점 후보를 이관했습니다. 직접 사진 URL은 아직 확보되지 않아 실제 박물관 사진을 후속 보강 대상으로 기록합니다. 전시물 촬영 규정과 상업촬영 조건은 별도 확인해야 합니다. 2026-10-15 사진 후보 보강: 국립항공박물관 유리 아트리움과 공중 전시 항공기. 출처: 비즈한국 · 국립항공박물관 소개 (https://www.bizhankook.com/bk/article/25305). 국립항공박물관의 아트리움에 전시된 항공기와 유리·철골 천장이 보이는 참고사진. 재사용 권리는 확인 중."
     },
     {
