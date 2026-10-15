@@ -27,6 +27,7 @@ const http=require("node:http"),fs=require("node:fs"),path=require("node:path"),
  assert.equal(await adminPage.locator("#adminPasswordConfirmLabel").evaluate(e=>e.hidden),true,"Users must not be able to self-register a new administrator password");
  await adminPage.locator("#adminPasswordInput").fill("AtlasTest66-not-authorized");
  await adminPage.locator("#adminModeConfirmBtn").click();
+ await adminPage.locator("#adminModeMessage").waitFor({state:"visible",timeout:10000});
  assert.equal(await adminPage.locator("#adminModeMessage").isVisible(),true,"An unregistered password should be rejected");
  assert.equal(await adminPage.locator("body").evaluate(e=>e.classList.contains("admin-mode")),false,"Invalid credentials must not unlock administrator mode");
  await adminPage.locator("#adminModeCancelBtn").click();
