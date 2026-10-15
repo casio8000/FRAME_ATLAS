@@ -4,7 +4,7 @@
   "scope": "전국 촬영 장소 아카이브 · 장소 참고사진, 대표사진 편집 판단, 재사용 권리와 촬영 허가를 독립 관리",
   "dataStatus": "전국 권역 확장판. 활성 장소 90곳, 검토 대기 후보 10곳. 구버전에서 이미 선별된 예술·건축·촬영시설 장소를 우선 복구했고 출처상 장소 일치가 확인된 이미지는 대표사진으로 지정했습니다. 저작권·재사용 권리와 전문·상업촬영 허가는 각 장소 상세항목에 별도 표기합니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T06:15:00.000Z",
+  "updatedAt": "2026-10-15T06:30:00.000Z",
   "places": [
     {
       "id": "nat-solol-art-museum",
@@ -5006,52 +5006,58 @@
         {
           "id": "ref-nodeul-island-sunken-plaza-dusk",
           "title": "노들섬의 선큰 광장·상부 데크·황혼 조명",
-          "imageUrl": "https://architizer-prod.imgix.net/media/mediadata/uploads/1594177727427Nodeul_Island_upperlevel_plaza02.jpg?auto=format%2Ccompress&cs=strip&q=60&w=1680",
-          "sourcePageUrl": "https://architizer.com/projects/nodeul-island-2/",
-          "sourceName": "Architizer · Nodeul Island",
+          "imageUrl": "https://www.korean-culture.org/eng/webzine/202009/common/images/sub05_02.jpg",
+          "sourcePageUrl": "https://www.korean-culture.org/eng/webzine/202009/sub05.html",
+          "sourceName": "Korean Culture and Information Service · Nodeul Island at night",
           "creator": "건축 사진 저작자 확인 필요",
           "rights": "unknown",
           "rightsLabel": "공개 재사용 권리 미확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "현대건축·선큰·황혼·조명",
-          "notes": "노들섬의 레벨 차이와 조명, 광장 구성 참고 후보. 건축 플랫폼 사진의 저작권 및 현장 접근 가능 구역을 별도 확인.",
-          "status": "candidate",
-          "createdAt": "2026-10-13T00:00:00.000Z"
+          "viewType": "야간 외관·보행로·조명·도시 수변",
+          "notes": "한국문화 관련 공식 웹진에서 노들섬의 야간 문화공간 사진으로 소개한 이미지입니다. 실제 장소가 확인되어 대표사진으로 지정하며 재사용 권리는 별도 확인 대상입니다.",
+          "status": "approved",
+          "createdAt": "2026-10-13T00:00:00.000Z",
+          "sourceThumbnail": "https://www.korean-culture.org/eng/webzine/202009/common/images/sub05_02.jpg"
         },
         {
           "id": "legacy-l200-nodeul-island",
           "title": "노들섬 상부 공간 참고사진",
-          "viewType": "야외·건축·수변",
-          "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Nodeulseom_%2814005438206%29.jpg/960px-Nodeulseom_%2814005438206%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "sourceThumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Nodeulseom_%2814005438206%29.jpg/960px-Nodeulseom_%2814005438206%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-          "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Nodeulseom_(14005438206).jpg",
-          "sourceName": "travel oriented from Seoul / Wikimedia Commons",
+          "viewType": "야간 외관·보행로·조명·도시 수변",
+          "imageUrl": "https://www.korean-culture.org/eng/webzine/202009/common/images/sub05_02.jpg",
+          "sourceThumbnail": "https://www.korean-culture.org/eng/webzine/202009/common/images/sub05_02.jpg",
+          "sourcePageUrl": "https://www.korean-culture.org/eng/webzine/202009/sub05.html",
+          "sourceName": "Korean Culture and Information Service · Nodeul Island at night",
           "license": "CC BY-SA 2.0",
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
-          "status": "candidate",
-          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 2.0 출처·저자 표시 및 동일조건 공유 검토 필요."
+          "status": "approved",
+          "notes": "한국문화 관련 공식 웹진에서 노들섬의 야간 문화공간 사진으로 소개한 이미지입니다. 실제 장소가 확인되어 대표사진으로 지정하며 재사용 권리는 별도 확인 대상입니다.",
+          "rights": "unknown"
         },
         {
           "id": "ref-nodeul-island-step-garden-seoulmediahub",
-          "title": "노들섬 공연장 외관의 트러스와 수평 파사드",
-          "imageUrl": "https://architizer-prod.imgix.net/media/mediadata/uploads/1594177399397Nodeul_Island_performance_hall_exterior02.jpg?auto=format%2Ccompress&cs=strip&q=60&w=1680",
-          "sourceThumbnail": "https://architizer-prod.imgix.net/media/mediadata/uploads/1594177399397Nodeul_Island_performance_hall_exterior02.jpg?auto=format%2Ccompress&cs=strip&q=60&w=1680",
-          "sourcePageUrl": "https://architizer.com/projects/nodeul-island-2/",
-          "sourceName": "Architizer · Nodeul Island Performance Hall",
+          "title": "노들섬 문화공간의 야간 조명과 한강대교 보행 동선",
+          "imageUrl": "https://www.korean-culture.org/eng/webzine/202009/common/images/sub05_02.jpg",
+          "sourceThumbnail": "https://www.korean-culture.org/eng/webzine/202009/common/images/sub05_02.jpg",
+          "sourcePageUrl": "https://www.korean-culture.org/eng/webzine/202009/sub05.html",
+          "sourceName": "Korean Culture and Information Service · Nodeul Island at night",
           "creator": "조수봉",
           "rights": "unknown",
           "rightsLabel": "재사용 권리 미확인 · 사진 저작자·공공누리/이용 조건 별도 확인",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "외관·공연장·트러스·한강 수변",
-          "notes": "Architizer · Nodeul Island Performance Hall가 제공하는 실제 노들섬 사진임을 확인해 대표사진으로 지정했습니다. 이미지 재사용 권리는 별도 확인 대상입니다.",
+          "viewType": "야간 외관·보행로·조명·도시 수변",
+          "notes": "한국문화 관련 공식 웹진에서 노들섬의 야간 문화공간 사진으로 소개한 이미지입니다. 실제 장소가 확인되어 대표사진으로 지정하며 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
           "createdAt": "2026-10-14T11:55:00.000Z"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "Korean Culture and Information Service · Nodeul Island at night",
+          "url": "https://www.korean-culture.org/eng/webzine/202009/sub05.html"
+        },
         {
           "name": "Architizer · Nodeul Island Performance Hall",
           "url": "https://architizer.com/projects/nodeul-island-2/"
@@ -10974,23 +10980,27 @@
       "imageCandidates": [
         {
           "id": "img-legacy-daejeon-museum-of-art-20261015",
-          "title": "대전시립미술관 — 외관·곡선형 지붕·격자 파사드",
-          "imageUrl": "https://www.kukinews.com/data/kuk/image/2026/01/13/kuk20260113000020.jpg",
-          "sourceThumbnail": "https://www.kukinews.com/data/kuk/image/2026/01/13/kuk20260113000020.jpg",
-          "sourcePageUrl": "https://www.kukinews.com/article/view/kuk202601130009",
-          "sourceName": "쿠키뉴스·대전시립미술관 외관 사진",
+          "title": "대전시립미술관의 곡선형 지붕과 파란 유리 파사드",
+          "imageUrl": "https://ak-d.tripcdn.com/images/100m1f000001gzonp9D5A.jpg",
+          "sourceThumbnail": "https://ak-d.tripcdn.com/images/100m1f000001gzonp9D5A.jpg",
+          "sourcePageUrl": "https://id.trip.com/moments/detail/daejeon-21419-129405166?locale=en-ID",
+          "sourceName": "Trip.com · Daejeon Metropolitan City Museum of Art exterior",
           "creator": "원저작자·재사용 조건은 출처 별도 확인",
           "rights": "unknown",
           "rightsLabel": "이미지 재사용 권리 별도 확인 필요",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "외관·곡선형 지붕·격자 파사드",
-          "notes": "출처 페이지에서 실제 대전시립미술관 사진임을 확인해 대표사진으로 지정했습니다. 이미지 저작권·재사용 권리는 별도 확인 대상이며, 일반 관람은 전문·상업촬영 허가를 뜻하지 않습니다.",
+          "viewType": "외관·곡선형 지붕·유리 파사드·경사 진입로",
+          "notes": "대전시립미술관으로 명시된 외관 사진이며 곡선형 지붕과 유리 파사드가 보입니다. 장소 사진임을 확인해 대표사진으로 지정했고 이미지 재사용 권리는 별도 확인 대상입니다.",
           "status": "approved",
           "createdAt": "2026-10-15"
         }
       ],
       "sourceRefs": [
+        {
+          "name": "Trip.com · Daejeon Metropolitan City Museum of Art exterior",
+          "url": "https://id.trip.com/moments/detail/daejeon-21419-129405166?locale=en-ID"
+        },
         {
           "name": "쿠키뉴스·대전시립미술관 외관 사진",
           "url": "https://www.kukinews.com/article/view/kuk202601130009"
