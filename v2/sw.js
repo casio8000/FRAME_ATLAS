@@ -1,4 +1,4 @@
-const BUILD_ID="20261015-55";
+const BUILD_ID="20261015-56";
 const CACHE_NAME="frame-atlas-v2-shell-"+BUILD_ID;
 const CORE_FILES=["./?fa_build="+BUILD_ID,"./index.html?fa_build="+BUILD_ID,"./assets/app.css?v="+BUILD_ID,"./assets/app.js?v="+BUILD_ID,"./data/places.json","./manifest.webmanifest?v="+BUILD_ID,"./icons/atlas-mark.svg?v="+BUILD_ID,"./icons/atlas-touch-"+BUILD_ID+".svg","./icons/icon-192.png","./icons/icon-180.png"];
 const APP_BASE=new URL("./",self.location.href);
