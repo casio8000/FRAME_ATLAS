@@ -175,4 +175,7 @@ Last updated: 2026-10-16 (Korea Standard Time)
 - These are preliminary scouting records, not final recommendations or proof of visitor/shooting permission. Studio access, current operations, booking, commercial filming terms, and image reuse rights require separate confirmation.
 - Linked place-specific images are reference candidates only; no image was made an approved primary cover. Other new records retain search terms and official source links rather than invented images.
 - The normal detail screen now exposes Google Images, Naver Images, Bing Images and an official source search regardless of administrator mode. A candidate-image gallery lets users browse saved reference images and open each original source. Automatic Openverse/Wikimedia candidate fetching and image administration remain administrator-only.
-- Updated the Korean user manual, app cache build marker to `20261016-70`, the research plan, and the 200-place roadmap. Data and code changes have been committed to GitHub; GitHub Pages deployment and real-browser visual verification still need confirmation.
+- Updated the Korean user manual, app cache build marker to `20261016-71`, the research plan, and the 200-place roadmap. Data and code changes have been committed to GitHub; GitHub Pages deployment and real-browser visual verification still need confirmation.
+
+
+- Follow-up after the prior checkpoint commit: reconciled the 200-place roadmap to the active 151-record catalog, updated region/type remaining targets to a provisional +49, and changed mobile image-search links to a 2-column layout. Cache-bust build is now `20261016-71`.
