@@ -33,13 +33,13 @@ function bindImageFallbacks(root){
   if(initialFrame){if(img.complete&&img.naturalWidth>0)initialFrame.classList.remove("image-loading");else initialFrame.classList.add("image-loading");}
   let imageFallbackTimer=null;
   const clearImageFallbackTimer=()=>{if(imageFallbackTimer!==null){clearTimeout(imageFallbackTimer);imageFallbackTimer=null;}};
-  const scheduleImageFallbackTimer=()=>{
+  const scheduleImageFallbackTimer=(delay=7000)=>{
    clearImageFallbackTimer();
    const attemptedUrl=img.getAttribute("src")||"";
    imageFallbackTimer=setTimeout(()=>{
     imageFallbackTimer=null;
     if((img.getAttribute("src")||"")===attemptedUrl&&!(img.complete&&img.naturalWidth>0))img.dispatchEvent(new Event("error"));
-   },3200);
+   },delay);
   };
   img.addEventListener("load",()=>{
    clearImageFallbackTimer();
@@ -68,7 +68,7 @@ function bindImageFallbacks(root){
     const height=frame&&frame.classList.contains("thumb")?180:650;
     img.referrerPolicy="no-referrer";
     img.src="https://images.weserv.nl/?url="+encodeURIComponent(original)+"&w="+width+"&h="+height+"&fit=inside&output=webp";
-    scheduleImageFallbackTimer();
+    scheduleImageFallbackTimer(14000);
     return;
    }
    // If the first URL and its proxy fail, try another non-rejected candidate for the same place.
