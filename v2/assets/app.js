@@ -104,12 +104,12 @@ function bindImageFallbacks(root){
    img.dataset.fallbackCurrentUrl=next;img.loading="eager";
    const f=frame();if(f){f.classList.remove("image-missing");f.classList.add("image-loading");if(/^https:\/\/images\.weserv\.nl\//i.test(next))f.classList.add("proxy-loading");else f.classList.remove("proxy-loading");}
    img.removeAttribute("aria-hidden");img.src=next;
-   const wait=/^https:\/\/images\.weserv\.nl\//i.test(next)?8500:5500;
+   const wait=/^https:\/\/images\.weserv\.nl\//i.test(next)?14000:10000;
    timer=setTimeout(()=>{if((img.getAttribute("src")||"")===next&&!(img.complete&&img.naturalWidth>0))nextSource();},wait);
   };
   img.addEventListener("load",()=>{clearTimer();clearObserver();const f=frame();if(f)f.classList.remove("image-loading","image-missing","proxy-loading");img.removeAttribute("aria-hidden");});
   img.addEventListener("error",()=>nextSource());
-  const startWatch=()=>{clearObserver();timer=setTimeout(()=>{if(!(img.complete&&img.naturalWidth>0))nextSource();},6000);};
+  const startWatch=()=>{clearObserver();timer=setTimeout(()=>{if(!(img.complete&&img.naturalWidth>0))nextSource();},12000);};
   if(img.complete&&img.naturalWidth===0)queueMicrotask(nextSource);
   else if(img.complete&&img.naturalWidth>0){if(firstFrame)firstFrame.classList.remove("image-loading","image-missing","proxy-loading");}
   else if(img.loading==="lazy"&&"IntersectionObserver" in window){observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){clearObserver();startWatch();}},{rootMargin:"200px"});observer.observe(img);}

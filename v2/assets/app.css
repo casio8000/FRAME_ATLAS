@@ -1050,3 +1050,13 @@ body:not(.admin-mode) #homeAddPlaceBtn{display:none!important}
 #adminModeMessage[hidden]{display:none!important}
 .admin-mode-dialog .toolbar{justify-content:flex-end}
 .welcome-logo-mark img{display:block;width:38px;height:38px;object-fit:contain}
+
+/* Build 20261015-64: explain admin actions without exposing them during normal browsing. */
+.admin-primary-tools{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:12px 0}
+.admin-primary-tools>div{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:5px}
+.admin-primary-tools .btn{min-height:42px;white-space:normal;text-align:left}
+.admin-primary-tools small,.admin-advanced-tools>p{font-size:10px;color:var(--muted);line-height:1.5}
+.admin-advanced-tools{border-top:1px solid var(--line);padding-top:10px;margin-top:8px}
+.admin-advanced-tools summary{cursor:pointer;font-weight:850;font-size:12px;color:var(--muted);padding:8px 0}
+@media(max-width:760px){.admin-primary-tools{grid-template-columns:1fr 1fr}.admin-primary-tools>div{width:100%}.admin-primary-tools .btn{width:100%;text-align:center;justify-content:center}}
+@media(max-width:420px){.admin-primary-tools{grid-template-columns:1fr}.admin-primary-tools .btn{text-align:left;justify-content:flex-start}}
