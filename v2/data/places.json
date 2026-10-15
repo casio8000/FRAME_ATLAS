@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
-  "dataStatus": "전국 136곳. 장소 식별이 가능한 참고사진을 연결하고 세부 항목에 출처·장소 일치·재사용 권리 확인 상태를 기록했습니다. 사진 최종 대표 승인과 전문 촬영 허가는 별도 확인 중입니다.",
+  "dataStatus": "전국 151곳. 14곳의 신규 장소를 1차 조사 레코드로 등록했습니다. 참고사진은 권리·세부 장소 일치 확인 전 후보이며 촬영 허가는 별도 확인 중.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T16:55:00+09:00",
+  "updatedAt": "2026-10-16T22:20:00+09:00",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -15610,6 +15610,1483 @@
       },
       "mapSearchQuery": "서울특별시 서대문구 이화여대길 52 이화여자대학교 ECC",
       "referenceImageStatus": "설계사 공식 프로젝트 사진을 참고사진으로 연결 · 재사용 권리 확인 필요"
+    },
+    {
+      "id": "busan-cinema-studios",
+      "name": "BUSAN Cinema Studios · 부산영화촬영스튜디오",
+      "region": "부산",
+      "category": "전문 영화·방송 제작 스튜디오",
+      "spaceTypes": [
+        "실내",
+        "대형 사운드 스테이지",
+        "크로마키·특수촬영"
+      ],
+      "photoProfile": "대형 방음 스테이지와 크로마키·특수촬영 시설을 갖춘 제작 인프라입니다. 공개 포토스폿이 아니라 사전 협의형 공간으로 분류합니다.",
+      "visualStrengths": [
+        "대형 무주 공간",
+        "크로마키·조명 리그",
+        "세트 구성에 따른 배경 통제"
+      ],
+      "bestConcepts": [
+        "광고·브랜드 캠페인",
+        "제품·인물 조명 실험",
+        "영상·패션 에디토리얼"
+      ],
+      "constraints": [
+        "일반 자유 출입을 전제하지 않음",
+        "견학·대관 가능 여부 사전 확인",
+        "전력·장비·보험·촬영료 확인",
+        "참고사진 이용권 미확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "부산영화촬영스튜디오 BUSAN Cinema Studios 사운드스테이지 내부",
+        "Busan Cinema Studios chroma key sound stage"
+      ],
+      "aliases": [
+        "부산영화촬영스튜디오",
+        "Busan Film Studios"
+      ],
+      "summary": "부산의 전문 실내 제작시설. 일부 견학 프로그램과 전문 대관을 구분해 확인해야 합니다.",
+      "address": "부산광역시 해운대구 해운대해변로 52",
+      "coordinates": null,
+      "officialUrl": "https://www.koreanfilm.or.kr/eng/studioset/studiosetConnecter.jsp?url=studio%2Fstudio04.jsp",
+      "openingStatus": "전문 제작시설 · 일반 방문은 운영기관 견학 프로그램 또는 별도 승인 확인 필요",
+      "shootingPermission": "상업 촬영·스테이지 사용·장비 반입은 사전 대관 협의 필요",
+      "parking": "방문 승인 시 주차·장비 하역 위치 확인",
+      "fee": "대관료·전력·특수시설 비용 문의 필요",
+      "imageStatus": "참고사진 후보 연결 · 이용권 미확인",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-busan-cinema-studios-01",
+          "title": "BUSAN Cinema Studios 그린스크린 스테이지",
+          "imageUrl": "https://fmskorea14.weebly.com/uploads/3/8/6/5/38659023/3367767_orig.jpg",
+          "sourceThumbnail": "https://fmskorea14.weebly.com/uploads/3/8/6/5/38659023/3367767_orig.jpg",
+          "sourcePageUrl": "https://fmskorea14.weebly.com/articles/busan-cinema-studios",
+          "sourceName": "FMS Korea",
+          "creator": "FMS Korea",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "그린스크린·대형 스튜디오",
+          "notes": "시설 소개 이미지 후보. 원문과 장소는 대조 대상이며 이미지 재사용 권리는 미확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://www.koreanfilm.or.kr/eng/studioset/studiosetConnecter.jsp?url=studio%2Fstudio04.jsp",
+        "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=c11e1861-c22b-401e-9ca0-cab56bdc4ec3"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "장소 출처 참고사진 후보 · 세부 구역 최종 확인 전",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 85,
+      "photoScoreBreakdown": {
+        "distinctiveness": 26,
+        "compositionVariety": 16,
+        "lightAndTexture": 17,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "대형 방음 스테이지와 크로마키·특수촬영 시설을 갖춘 제작 인프라입니다. 공개 포토스폿이 아니라 사전 협의형 공간으로 분류합니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": "ref-busan-cinema-studios-01",
+      "referenceImageStatus": "대표사진 아님 · 참고사진 후보 · 이용권 검토 전"
+    },
+    {
+      "id": "dima-studio-ansung",
+      "name": "DIMA 종합촬영소",
+      "region": "경기",
+      "category": "대학 기반 전문 영상·방송 제작시설",
+      "spaceTypes": [
+        "실내",
+        "방송 스튜디오",
+        "크로마키·실습 공간"
+      ],
+      "photoProfile": "방송·영상 교육 시설의 스튜디오와 무대 세팅이 갖는 제작공간의 잠재력을 조사합니다. 대학 교육시설이므로 외부 이용 승인이 전제됩니다.",
+      "visualStrengths": [
+        "크로마키·세트 공간",
+        "방송 조명 환경",
+        "규모가 다른 실내 공간"
+      ],
+      "bestConcepts": [
+        "영상 콘셉트 테스트",
+        "제품·인물 조명 실험",
+        "교육·제작 현장 기록"
+      ],
+      "constraints": [
+        "대학시설 외부 출입 여부 확인",
+        "대관·외부 촬영 허용 여부 사전 문의",
+        "학생·교직원 초상권 주의",
+        "사진 권리 미확인"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "DIMA 종합촬영소 안성 스튜디오 내부 크로마키",
+        "동아방송예술대학교 종합촬영소"
+      ],
+      "aliases": [
+        "동아방송예술대학교 종합촬영소",
+        "DIMA studio"
+      ],
+      "summary": "안성의 대학 기반 종합촬영·방송제작 시설. 외부 사진가 이용은 별도 확인 대상입니다.",
+      "address": "경기도 안성시 삼죽면 동아예대길 47",
+      "coordinates": null,
+      "officialUrl": "https://www.dima.ac.kr/",
+      "openingStatus": "대학 교육·제작시설 · 외부 방문·촬영 가능 여부 확인 필요",
+      "shootingPermission": "학교·시설 담당 부서의 외부 촬영 승인 및 대관 여부 확인",
+      "parking": "방문 승인 시 주차 동선 확인",
+      "fee": "외부 대관·촬영료 미확인",
+      "imageStatus": "참고사진 후보 연결 · 이용권 미확인",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-dima-studio-01",
+          "title": "DIMA 실습·방송 스튜디오 사진 후보",
+          "imageUrl": "https://m.imagazinekorea.com/upload/Editor/Editor_2025730152417_146284.jpg",
+          "sourceThumbnail": "https://m.imagazinekorea.com/upload/Editor/Editor_2025730152417_146284.jpg",
+          "sourcePageUrl": "https://m.imagazinekorea.com/neighbor/view.asp?SearchGubun=&SearchWord=&no=11164&pType=A&page=1",
+          "sourceName": "The Neighbor 매거진",
+          "creator": "The Neighbor 매거진",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "방송·크로마키 스튜디오",
+          "notes": "기사 사진 후보. 기사 게재는 사진 재사용이나 상업 이용 허가를 뜻하지 않음.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://www.dima.ac.kr/",
+        "https://www.filmkorea.or.kr/studio/studio_view.jsp?id=10044"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "장소 출처 참고사진 후보 · 세부 구역 최종 확인 전",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 80,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 16,
+        "lightAndTexture": 17,
+        "editorialVersatility": 15,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "B · 보완 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "방송·영상 교육 시설의 스튜디오와 무대 세팅이 갖는 제작공간의 잠재력을 조사합니다. 대학 교육시설이므로 외부 이용 승인이 전제됩니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": "ref-dima-studio-01",
+      "referenceImageStatus": "대표사진 아님 · 참고사진 후보 · 이용권 검토 전"
+    },
+    {
+      "id": "goyang-aqua-studio",
+      "name": "고양아쿠아스튜디오",
+      "region": "경기",
+      "category": "수조형 특수촬영·전문 제작시설",
+      "spaceTypes": [
+        "실내·외",
+        "대형·소형 수조",
+        "특수촬영 스튜디오"
+      ],
+      "photoProfile": "대형·소형 수조와 실내 스튜디오가 있는 특수촬영 시설입니다. 일반 로케이션과 달리 전문 대관·안전·보험 조건을 확인해야 합니다.",
+      "visualStrengths": [
+        "수조의 수면·반사",
+        "수중·침수 연출 가능성",
+        "실내 스튜디오와 수조의 조합"
+      ],
+      "bestConcepts": [
+        "수중·물 반사 패션 영상",
+        "특수효과 장면",
+        "브랜드 필름"
+      ],
+      "constraints": [
+        "무단 방문·촬영 금지",
+        "수조별 사용·운영 조건 확인",
+        "안전·보험·스태프·장비 조건 확인",
+        "참고사진 이용권 미확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "고양아쿠아스튜디오 대형 수조 촬영장",
+        "Goyang Aqua Studio water tank sound stage"
+      ],
+      "aliases": [
+        "고양아쿠아특수촬영스튜디오",
+        "고양 아쿠아스튜디오"
+      ],
+      "summary": "대형·소형 수조와 실내 스튜디오를 갖춘 특수촬영 시설. 개인 포토스폿보다 대관·제작 협의형입니다.",
+      "address": "경기도 고양시 덕양구 통일로396번길 250",
+      "coordinates": null,
+      "officialUrl": "https://www.gipa.or.kr/introduce/07_5.php",
+      "openingStatus": "전문 특수촬영시설 · 일반 관람 가능 여부와 현 운영상태 확인 필요",
+      "shootingPermission": "수조·스튜디오 사용 및 상업촬영 사전 대관·안전 협의 필요",
+      "parking": "대관 승인 시 장비 차량·주차 동선 확인",
+      "fee": "수조·스튜디오별 대관료 문의 필요",
+      "imageStatus": "미등록 · 공개 이미지 검색 제공",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.gipa.or.kr/introduce/07_5.php",
+        "https://www.filmkorea.or.kr/studio/studio_view.jsp?id=10025"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "미확인 · 공개 이미지 검색으로 확인 필요",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 87,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 17,
+        "lightAndTexture": 18,
+        "editorialVersatility": 16,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "대형·소형 수조와 실내 스튜디오가 있는 특수촬영 시설입니다. 일반 로케이션과 달리 전문 대관·안전·보험 조건을 확인해야 합니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": null,
+      "referenceImageStatus": "미등록 · 이미지 검색으로 참고사진 조사 필요"
+    },
+    {
+      "id": "jeonju-film-studios",
+      "name": "전주영화종합촬영소",
+      "region": "전북",
+      "category": "영화 제작 스튜디오·야외 촬영 세트",
+      "spaceTypes": [
+        "실내",
+        "야외 세트",
+        "버추얼 스튜디오"
+      ],
+      "photoProfile": "실내 스테이지와 야외 세트·촬영센터를 조사할 수 있는 전문 제작시설입니다. 시설의 최신 구성과 외부 접근 가능 여부는 운영기관에서 재확인해야 합니다.",
+      "visualStrengths": [
+        "실내 스테이지와 야외 세트의 대비",
+        "대형 세트·배경 통제",
+        "버추얼 프로덕션 시설 여부"
+      ],
+      "bestConcepts": [
+        "시네마틱 에디토리얼",
+        "세트 기반 인물·패션 영상",
+        "프로덕션 콘셉트 촬영"
+      ],
+      "constraints": [
+        "일반 관람·외부 촬영 가능 여부 확인",
+        "시설별 예약·대관 가능 일정 확인",
+        "최신 시설 구성 확인",
+        "현장사진 및 재사용 권리 확인"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "전주영화종합촬영소 J1 J2 스튜디오 야외세트",
+        "Jeonju Film Studios stage exterior"
+      ],
+      "aliases": [
+        "전주 영화종합촬영소",
+        "Jeonju Film Studios"
+      ],
+      "summary": "전주의 영화 제작 인프라. 일반 관광지보다 사전 신청·대관 중심으로 접근해야 합니다.",
+      "address": "전북특별자치도 전주시 완산구 원상림길 125-14",
+      "coordinates": null,
+      "officialUrl": "https://www.jeonjustudio.or.kr/",
+      "openingStatus": "전문 영화제작시설 · 시설 관람·대관은 공식 신청 절차 확인",
+      "shootingPermission": "대관·외부 촬영의 사전 신청 및 운영기관 허가 필요",
+      "parking": "대관 승인 시 주차·장비 하역 위치 확인",
+      "fee": "공식 대관 요금표·최신 조건 확인 필요",
+      "imageStatus": "미등록 · 공개 이미지 검색 제공",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.jeonjustudio.or.kr/",
+        "https://cine21.com/news/view/?mag_id=108000"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "미확인 · 공개 이미지 검색으로 확인 필요",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 83,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 17,
+        "lightAndTexture": 16,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "B · 보완 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "실내 스테이지와 야외 세트·촬영센터를 조사할 수 있는 전문 제작시설입니다. 시설의 최신 구성과 외부 접근 가능 여부는 운영기관에서 재확인해야 합니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": null,
+      "referenceImageStatus": "미등록 · 이미지 검색으로 참고사진 조사 필요"
+    },
+    {
+      "id": "daejeon-video-special-effects-town",
+      "name": "대전영상특수효과타운·대전영화촬영스튜디오",
+      "region": "대전",
+      "category": "영화·영상 제작 및 후반작업 시설",
+      "spaceTypes": [
+        "실내",
+        "대형 스튜디오",
+        "미니어처 스튜디오",
+        "편집·시사 공간"
+      ],
+      "photoProfile": "일반 스튜디오·미니어처 스튜디오 및 후반작업·시사 시설이 결합된 제작 인프라입니다. 일반 공개공간으로 오해하지 않도록 대관형으로 구분합니다.",
+      "visualStrengths": [
+        "높은 천고의 실내 스튜디오",
+        "미니어처·세트 제작 공간",
+        "산업적 제작 공간의 질감"
+      ],
+      "bestConcepts": [
+        "메이킹 필름·제작 현장 기록",
+        "제품·인물 조명 세팅",
+        "산업·테크 에디토리얼"
+      ],
+      "constraints": [
+        "출입·촬영 사전 협의",
+        "시설별 대관 가능 여부 확인",
+        "보안·제작 중인 세트 촬영 제한",
+        "이미지 권리 미확인"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "대전영상특수효과타운 A스튜디오 B스튜디오 내부",
+        "대전영화촬영스튜디오 특수효과타운"
+      ],
+      "aliases": [
+        "대전영화촬영스튜디오",
+        "대전 영상특수효과타운"
+      ],
+      "summary": "대전정보문화산업진흥원 관련 제작시설. 공간 대여·편집실·시사실 사용 조건을 확인할 필요가 있습니다.",
+      "address": "대전광역시 유성구 대덕대로512번길 20",
+      "coordinates": null,
+      "officialUrl": "https://dicia.or.kr/sub.do?menuIdx=MENU_000000000000041",
+      "openingStatus": "전문 제작·후반작업 시설 · 외부 방문과 스튜디오 대관 조건 확인 필요",
+      "shootingPermission": "운영기관 사전 신청·승인 및 대관 가능 여부 확인",
+      "parking": "방문·대관 시 시설 담당자에게 확인",
+      "fee": "공간별 대관료 확인 필요",
+      "imageStatus": "미등록 · 공개 이미지 검색 제공",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://dicia.or.kr/sub.do?menuIdx=MENU_000000000000041",
+        "https://diciackl.or.kr/mobile/facility/list.do?menuKey=102"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "미확인 · 공개 이미지 검색으로 확인 필요",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 80,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 16,
+        "lightAndTexture": 18,
+        "editorialVersatility": 14,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "B · 보완 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "일반 스튜디오·미니어처 스튜디오 및 후반작업·시사 시설이 결합된 제작 인프라입니다. 일반 공개공간으로 오해하지 않도록 대관형으로 구분합니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": null,
+      "referenceImageStatus": "미등록 · 이미지 검색으로 참고사진 조사 필요"
+    },
+    {
+      "id": "studio-cube-daejeon",
+      "name": "스튜디오 큐브",
+      "region": "대전",
+      "category": "대형 방송·영상 제작 스튜디오",
+      "spaceTypes": [
+        "실내",
+        "대형 스튜디오",
+        "특수효과 스튜디오",
+        "버추얼 프로덕션"
+      ],
+      "photoProfile": "대형 세트와 다수 스튜디오를 포함한 방송·영상 제작 인프라입니다. 외관은 건축적 관심 대상이나 내부 제작 구역은 승인 없는 접근을 전제하지 않습니다.",
+      "visualStrengths": [
+        "대형 스테이지의 규모감",
+        "유리 연결동선·중정",
+        "크로마키와 버추얼 프로덕션"
+      ],
+      "bestConcepts": [
+        "건축·산업 에디토리얼",
+        "테크·미래형 제작 영상",
+        "승인된 세트 기반 브랜드 영상"
+      ],
+      "constraints": [
+        "전문 제작시설로 일반 출입·촬영 제한 가능",
+        "시설별 대관·버추얼 스튜디오 조건 확인",
+        "내부를 일반 공개 구역으로 표현하지 않음",
+        "참고사진 저작권 미확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "대전 스튜디오 큐브 외관 내부 버추얼 스튜디오",
+        "Studio Cube Daejeon sound stage"
+      ],
+      "aliases": [
+        "대전 스튜디오큐브",
+        "Studio Cube Daejeon"
+      ],
+      "summary": "대전의 대형 방송영상 제작시설. 내부 촬영은 별도 허가·대관 대상입니다.",
+      "address": "대전광역시 유성구 대덕대로 480",
+      "coordinates": null,
+      "officialUrl": "https://welcon.kocca.kr/ko/info/business/1956778",
+      "openingStatus": "전문 제작시설 · 일반 출입 여부와 견학 가능 일정을 사전 확인",
+      "shootingPermission": "시설 대관·상업촬영 사전 신청 및 승인 필요",
+      "parking": "운영기관 안내에 따라 확인",
+      "fee": "스튜디오 대관 및 특수시설 비용 확인 필요",
+      "imageStatus": "참고사진 후보 연결 · 이용권 미확인",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-studio-cube-01",
+          "title": "스튜디오 큐브 외관 사진 후보",
+          "imageUrl": "https://image.cine21.com/resize/cine21/movie/2025/0723/10_15_06__6880379a04e11%5BS1000%2C1000%5D.jpg",
+          "sourceThumbnail": "https://image.cine21.com/resize/cine21/movie/2025/0723/10_15_06__6880379a04e11%5BS1000%2C1000%5D.jpg",
+          "sourcePageUrl": "https://cine21.com/news/view/?mag_id=107998",
+          "sourceName": "Cine21",
+          "creator": "Cine21",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "제작시설 외관",
+          "notes": "기사 이미지 후보. 사진 재사용 권리 및 현장 구역은 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://m.haeahn.com/en/project/detail.do?prjctSeq=1706",
+        "https://welcon.kocca.kr/ko/info/business/1956778",
+        "https://gfc.filmkorea.or.kr/studio/studio_view.jsp?id=10029"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "장소 출처 참고사진 후보 · 세부 구역 최종 확인 전",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 85,
+      "photoScoreBreakdown": {
+        "distinctiveness": 26,
+        "compositionVariety": 17,
+        "lightAndTexture": 18,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "대형 세트와 다수 스튜디오를 포함한 방송·영상 제작 인프라입니다. 외관은 건축적 관심 대상이나 내부 제작 구역은 승인 없는 접근을 전제하지 않습니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": "ref-studio-cube-01",
+      "referenceImageStatus": "대표사진 아님 · 참고사진 후보 · 이용권 검토 전"
+    },
+    {
+      "id": "kfilm-studio-paju",
+      "name": "K Film Studio 파주 대형스튜디오",
+      "region": "경기",
+      "category": "민간 대형 렌탈·제작 스튜디오",
+      "spaceTypes": [
+        "실내",
+        "대형 호리존",
+        "세트·광고 촬영"
+      ],
+      "photoProfile": "대형 호리존과 세트 제작, 조명·전력·스태프 공간을 활용할 수 있는 예약형 제작시설입니다. 공개 포토스폿이 아닌 민간 대관 스튜디오입니다.",
+      "visualStrengths": [
+        "넓은 호리존과 배경 통제",
+        "높은 천고·조명 설치 가능성",
+        "세트·제품·인물 촬영 유연성"
+      ],
+      "bestConcepts": [
+        "패션 룩북·에디토리얼",
+        "제품·브랜드 캠페인",
+        "광고·영상 제작"
+      ],
+      "constraints": [
+        "사전 예약·대관료 확인",
+        "스튜디오별 주소·규격 최신성 확인",
+        "플래시·조명·리그 반입 조건 확인",
+        "상업 이용 조건 별도 문의"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "K Film Studio 파주 제4스튜디오 대형스튜디오 내부",
+        "케이필름 파주 호리존 스튜디오"
+      ],
+      "aliases": [
+        "케이필름 제4스튜디오",
+        "K Film Studio Paju",
+        "케이필름 파주스튜디오"
+      ],
+      "summary": "파주 지역의 민간 대형 렌탈 스튜디오. 위치·스테이지별 대관 대상과 예약 조건을 확인해야 합니다.",
+      "address": "경기도 파주시 파주읍 샛봉우재길 174-17 (케이필름 제4스튜디오)",
+      "coordinates": null,
+      "officialUrl": "https://www.filmkorea.or.kr/studio/studio_view.jsp?id=10207",
+      "openingStatus": "민간 대관형 전문 스튜디오 · 사전 문의·예약 필수",
+      "shootingPermission": "대관 계약과 촬영 범위·장비 조건 사전 확인",
+      "parking": "최신 주차·장비 하역 조건 확인",
+      "fee": "대관료·냉난방·전력 및 추가시설 비용 문의 필요",
+      "imageStatus": "미등록 · 공개 이미지 검색 제공",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.filmkorea.or.kr/studio/studio_view.jsp?id=10207",
+        "https://www.filmkorea.or.kr/studio/call_studio.jsp"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "미확인 · 공개 이미지 검색으로 확인 필요",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 84,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 16,
+        "lightAndTexture": 18,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "B · 보완 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "대형 호리존과 세트 제작, 조명·전력·스태프 공간을 활용할 수 있는 예약형 제작시설입니다. 공개 포토스폿이 아닌 민간 대관 스튜디오입니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": null,
+      "referenceImageStatus": "미등록 · 이미지 검색으로 참고사진 조사 필요"
+    },
+    {
+      "id": "snu-museum-of-art",
+      "name": "서울대학교미술관",
+      "region": "서울",
+      "category": "현대미술관·비정형 건축",
+      "spaceTypes": [
+        "실내",
+        "외관",
+        "경사진 동선",
+        "전시 공간"
+      ],
+      "photoProfile": "비정형 매스와 경사진 동선, 떠 있는 듯한 외피가 인상적인 현대미술관입니다. 외관·공용부·전시실의 촬영 가능 조건은 구분해야 합니다.",
+      "visualStrengths": [
+        "사선과 돌출 매스",
+        "금속·유리 외피",
+        "전시공간과 야외 조형물의 대비"
+      ],
+      "bestConcepts": [
+        "건축·패션 에디토리얼",
+        "미니멀 인물화보",
+        "기하학·실루엣 촬영"
+      ],
+      "constraints": [
+        "미술관·대학 내 촬영 규정 확인",
+        "전시 작품·삼각대·플래시 제한 확인",
+        "상업화보는 별도 승인",
+        "참고사진 재사용 권리 미확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "서울대학교미술관 건축 외관 렘 콜하스",
+        "SNU Museum of Art exterior architecture"
+      ],
+      "aliases": [
+        "서울대미술관",
+        "MoA 서울대학교미술관"
+      ],
+      "summary": "서울대 관악캠퍼스의 현대미술관. 비정형 건축과 경사 동선이 사진적 탐색 대상입니다.",
+      "address": "서울특별시 관악구 관악로 1 서울대학교 151동",
+      "coordinates": null,
+      "officialUrl": "https://www.snumoa.org/",
+      "openingStatus": "전시·휴관·관람 안내는 공식 홈페이지에서 확인",
+      "shootingPermission": "전시실·공용부 촬영 규정과 상업촬영 승인 확인 필요",
+      "parking": "캠퍼스 방문·주차 정책 사전 확인",
+      "fee": "관람·주차 및 촬영 비용 확인 필요",
+      "imageStatus": "참고사진 후보 연결 · 이용권 미확인",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-snu-moa-01",
+          "title": "서울대학교미술관 외관 사진 후보",
+          "imageUrl": "https://artguide.artforum.com/uploads/location.000/id05088/location_large.jpg",
+          "sourceThumbnail": "https://artguide.artforum.com/uploads/location.000/id05088/location_large.jpg",
+          "sourcePageUrl": "https://artguide.artforum.com/artguide/seoul-national-university-museum-of-art-5088",
+          "sourceName": "Artforum Artguide",
+          "creator": "Artforum Artguide",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "건축 외관",
+          "notes": "장소 소개에 실린 외관 후보. 원문 출처 표기와 이미지 재사용 권리는 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://www.snumoa.org/",
+        "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=81474"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "장소 출처 참고사진 후보 · 세부 구역 최종 확인 전",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 86,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 18,
+        "lightAndTexture": 16,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "비정형 매스와 경사진 동선, 떠 있는 듯한 외피가 인상적인 현대미술관입니다. 외관·공용부·전시실의 촬영 가능 조건은 구분해야 합니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": "ref-snu-moa-01",
+      "referenceImageStatus": "대표사진 아님 · 참고사진 후보 · 이용권 검토 전"
+    },
+    {
+      "id": "arko-art-center",
+      "name": "아르코미술관",
+      "region": "서울",
+      "category": "근현대 건축·붉은 벽돌 미술관",
+      "spaceTypes": [
+        "실내",
+        "외관",
+        "공원 연계",
+        "벽돌 파사드"
+      ],
+      "photoProfile": "붉은 벽돌 건축과 깊은 개구부, 공원과 보행공간의 관계가 사진적 특성입니다. 전시장 내부는 외부 공공공간과 촬영 규칙이 다를 수 있습니다.",
+      "visualStrengths": [
+        "붉은 벽돌·깊은 창호",
+        "반복 패턴과 그림자",
+        "공원·보행 공간과 건축의 관계"
+      ],
+      "bestConcepts": [
+        "에디토리얼 인물화보",
+        "흑백 건축사진",
+        "도시문화 포트레이트"
+      ],
+      "constraints": [
+        "외부 공공구역과 전시실 규칙 구분",
+        "전시장 촬영·삼각대·조명 허가 확인",
+        "행사 일정·혼잡 확인",
+        "통행·시설 이용 방해 금지"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "아르코미술관 붉은 벽돌 건축 외관",
+        "ARKO Art Center facade red brick"
+      ],
+      "aliases": [
+        "ARKO Art Center",
+        "아르코 아트센터"
+      ],
+      "summary": "대학로 마로니에공원 인근의 공공 미술관. 붉은 벽돌과 창호의 리듬이 사진적 특성입니다.",
+      "address": "서울특별시 종로구 동숭길 3",
+      "coordinates": null,
+      "officialUrl": "https://www.arko.or.kr/artcenter/",
+      "openingStatus": "전시·행사별 개방 일정은 공식 안내 확인",
+      "shootingPermission": "전시실·공용부 촬영과 상업 화보는 운영기관 승인 여부 확인",
+      "parking": "대학로 주변 유료 주차장 및 장비 하차 위치 확인",
+      "fee": "전시·촬영 비용은 사용 조건에 따라 문의",
+      "imageStatus": "참고사진 후보 연결 · 이용권 미확인",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-arko-01",
+          "title": "아르코미술관 붉은 벽돌 입구 사진",
+          "imageUrl": "https://static.frieze.com/files/inline-images/ARKO-Art-Center-5.png?VersionId=_3xpEaC0jRJfTBu3i5Y9h14LCfYbewpJ",
+          "sourceThumbnail": "https://static.frieze.com/files/inline-images/ARKO-Art-Center-5.png?VersionId=_3xpEaC0jRJfTBu3i5Y9h14LCfYbewpJ",
+          "sourcePageUrl": "https://www.frieze.com/ko/article/frieze-seoul-2024-non-profits",
+          "sourceName": "Frieze",
+          "creator": "Frieze",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "붉은 벽돌 파사드·입구",
+          "notes": "장소 소개 기사 이미지 후보. 재사용 권리 미확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://www.arko.or.kr/artcenter/",
+        "https://cimam.org/general-information/who-are-our-members-home/institutional-members/arko-art-center/"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "장소 출처 참고사진 후보 · 세부 구역 최종 확인 전",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 89,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 18,
+        "lightAndTexture": 18,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "붉은 벽돌 건축과 깊은 개구부, 공원과 보행공간의 관계가 사진적 특성입니다. 전시장 내부는 외부 공공공간과 촬영 규칙이 다를 수 있습니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": "ref-arko-01",
+      "referenceImageStatus": "대표사진 아님 · 참고사진 후보 · 이용권 검토 전"
+    },
+    {
+      "id": "jeju-provincial-art-museum",
+      "name": "제주도립미술관",
+      "region": "제주",
+      "category": "미니멀 건축·수면 반사·자연광",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "반영 수공간",
+        "콘크리트·유리"
+      ],
+      "photoProfile": "콘크리트 매스와 유리, 반영 수공간이 조형적 프레임을 이루는 미술관입니다. 빛과 날씨에 따른 반영의 변화를 탐색할 수 있습니다.",
+      "visualStrengths": [
+        "콘크리트·유리의 단순한 매스",
+        "수면 반사",
+        "기둥과 개구부의 반복 프레임"
+      ],
+      "bestConcepts": [
+        "미니멀 패션 에디토리얼",
+        "모노톤 인물화보",
+        "건축·반영 사진"
+      ],
+      "constraints": [
+        "실내·전시실 촬영 규정 확인",
+        "삼각대·플래시·상업 촬영 허가 확인",
+        "수변 안전·접근 제한 준수",
+        "참고 이미지 재사용 권리 미확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "제주도립미술관 외관 수면 반사",
+        "Jeju Museum of Art architecture reflecting pool"
+      ],
+      "aliases": [
+        "제주특별자치도립미술관",
+        "Jeju Museum of Art"
+      ],
+      "summary": "제주도립미술관의 콘크리트 파사드와 반영 수공간을 중심으로 건축·인물 촬영 가능성을 탐색합니다.",
+      "address": "제주특별자치도 제주시 1100로 2894-78",
+      "coordinates": null,
+      "officialUrl": "https://www.jeju.go.kr/jmoa/index.htm",
+      "openingStatus": "운영시간·휴관일은 공식 홈페이지에서 재확인",
+      "shootingPermission": "개인 관람 촬영과 상업 화보·장비 사용 가능 여부 별도 확인",
+      "parking": "현장 주차 이용 조건 공식 안내 확인",
+      "fee": "관람·촬영 비용 및 전시별 조건 확인",
+      "imageStatus": "참고사진 후보 연결 · 이용권 미확인",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-jeju-moa-01",
+          "title": "제주도립미술관 외관과 수면 반사",
+          "imageUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/4742b4ab-71a5-4a32-b43d-f9394b0087a7.webp",
+          "sourceThumbnail": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/4742b4ab-71a5-4a32-b43d-f9394b0087a7.webp",
+          "sourcePageUrl": "https://www.visitjeju.net/en/detail/view?contentsid=CONT_000000000500544",
+          "sourceName": "Visit Jeju",
+          "creator": "Visit Jeju",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "외관·반영 수공간",
+          "notes": "공식 관광 안내 사진 후보. 사진의 상업적 재사용은 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "ref-jeju-moa-02",
+          "title": "제주도립미술관 건축 디테일 사진 후보",
+          "imageUrl": "https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1/project_images/1699302/021/gansam-architects-associates-jeju-provincial-art-museum.jpg",
+          "sourceThumbnail": "https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1/project_images/1699302/021/gansam-architects-associates-jeju-provincial-art-museum.jpg",
+          "sourcePageUrl": "https://divisare.com/projects/118228-gansam-architects-associates-jeju-provincial-art-museum",
+          "sourceName": "Divisare / Gansam Architects",
+          "creator": "Divisare / Gansam Architects",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "건축·반영 공간",
+          "notes": "건축 프로젝트 사진 후보. 저작권자와 재사용 범위 확인 전까지 참고용.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://www.jeju.go.kr/jmoa/index.htm",
+        "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500544&menuId=DOM_000002016001000000"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "장소 출처 참고사진 후보 · 세부 구역 최종 확인 전",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 86,
+      "photoScoreBreakdown": {
+        "distinctiveness": 26,
+        "compositionVariety": 19,
+        "lightAndTexture": 18,
+        "editorialVersatility": 16,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "콘크리트 매스와 유리, 반영 수공간이 조형적 프레임을 이루는 미술관입니다. 빛과 날씨에 따른 반영의 변화를 탐색할 수 있습니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": "ref-jeju-moa-01",
+      "referenceImageStatus": "대표사진 아님 · 참고사진 후보 · 이용권 검토 전"
+    },
+    {
+      "id": "arario-museum-tapdong-cinema",
+      "name": "아라리오뮤지엄 탑동시네마",
+      "region": "제주",
+      "category": "산업적 질감·재생 건축·현대미술 전시",
+      "spaceTypes": [
+        "실내",
+        "옛 건축 재생",
+        "전시 공간",
+        "다층 시야"
+      ],
+      "photoProfile": "기존 영화관을 활용한 전시 공간으로, 노출 재료와 다층 시야·집중된 조명이 만드는 산업적·시네마틱한 분위기를 살펴볼 수 있습니다.",
+      "visualStrengths": [
+        "노출 천장·구조 재료",
+        "층을 관통하는 시야",
+        "전시 조명과 벽·바닥 질감"
+      ],
+      "bestConcepts": [
+        "예술·패션 에디토리얼",
+        "어두운 실내 인물화보",
+        "문화공간 건축 기록"
+      ],
+      "constraints": [
+        "전시실 촬영 규정 확인",
+        "작품·관람객 촬영 및 플래시 제한",
+        "상업 화보·삼각대·장비는 별도 허가",
+        "참고 이미지 이용권 미확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "아라리오뮤지엄 탑동시네마 실내 전시 공간",
+        "Arario Museum Tapdong Cinema interior"
+      ],
+      "aliases": [
+        "탑동시네마",
+        "아라리오 탑동시네마",
+        "Arario Museum Tapdong Cinema"
+      ],
+      "summary": "제주 탑동의 옛 영화관을 활용한 미술관. 구조와 질감을 살펴보고 전시·촬영 규칙을 별도 확인해야 합니다.",
+      "address": "제주특별자치도 제주시 탑동로 14",
+      "coordinates": null,
+      "officialUrl": "https://arario.com/bbs/content.php?co_id=location",
+      "openingStatus": "전시·휴관 일정은 공식 홈페이지에서 확인",
+      "shootingPermission": "미술관 내 사진촬영·상업촬영·삼각대 규정 별도 확인",
+      "parking": "제주 도심 주차·하차 위치 확인 필요",
+      "fee": "입장료 및 촬영 허가 비용 확인 필요",
+      "imageStatus": "참고사진 후보 연결 · 이용권 미확인",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-arario-tapdong-01",
+          "title": "아라리오뮤지엄 탑동시네마 전시실 사진 후보",
+          "imageUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/202111/26/09eaa349-6bb0-464d-b1f8-4d96e3c6f9d5.webp",
+          "sourceThumbnail": "https://api.cdn.visitjeju.net/photomng/imgpath/202111/26/09eaa349-6bb0-464d-b1f8-4d96e3c6f9d5.webp",
+          "sourcePageUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020416",
+          "sourceName": "비짓제주",
+          "creator": "비짓제주",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내 전시·재생 건축",
+          "notes": "장소 안내 이미지 후보. 전시 촬영과 이미지 재사용 허가는 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://arario.com/bbs/content.php?co_id=location",
+        "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020416"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "장소 출처 참고사진 후보 · 세부 구역 최종 확인 전",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 87,
+      "photoScoreBreakdown": {
+        "distinctiveness": 27,
+        "compositionVariety": 18,
+        "lightAndTexture": 18,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "기존 영화관을 활용한 전시 공간으로, 노출 재료와 다층 시야·집중된 조명이 만드는 산업적·시네마틱한 분위기를 살펴볼 수 있습니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": "ref-arario-tapdong-01",
+      "referenceImageStatus": "대표사진 아님 · 참고사진 후보 · 이용권 검토 전"
+    },
+    {
+      "id": "korea-traditional-architecture-museum",
+      "name": "한국고건축박물관",
+      "region": "충남",
+      "category": "전통건축·지붕선·목재 디테일",
+      "spaceTypes": [
+        "실내",
+        "야외 전시",
+        "전통 목조건축 모형",
+        "기와·한옥"
+      ],
+      "photoProfile": "전통건축의 지붕선, 기둥, 공포와 목재 디테일을 살펴볼 수 있는 박물관입니다. 실물 건축·모형·전시 공간의 구분을 확인합니다.",
+      "visualStrengths": [
+        "전통 지붕과 처마선",
+        "기둥·공포·목재 디테일",
+        "마당과 건축 비례"
+      ],
+      "bestConcepts": [
+        "전통 의상·패션 에디토리얼",
+        "인물·건축 디테일",
+        "전통과 현대의 대비"
+      ],
+      "constraints": [
+        "전시실·모형 촬영 및 삼각대 조건 확인",
+        "상업 화보·장비 반입은 별도 허가",
+        "전시물 접촉 금지",
+        "이미지 이용권 미확인"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "한국고건축박물관 예산 전통건축 지붕 기둥",
+        "Korea Traditional Architecture Museum Yesan"
+      ],
+      "aliases": [
+        "한국 고건축 박물관",
+        "Korea Traditional Architecture Museum"
+      ],
+      "summary": "충남 예산의 전통건축 전문 박물관. 전통 건축의 비례와 세부 장식을 촬영 연구 대상으로 봅니다.",
+      "address": "충청남도 예산군 덕산면 홍덕서로 543",
+      "coordinates": null,
+      "officialUrl": "https://www.ktam.or.kr/",
+      "openingStatus": "관람 시간·휴관일은 박물관 또는 예산군 공식 안내에서 확인",
+      "shootingPermission": "전시·야외 공간별 촬영 허가와 상업 촬영 여부 확인",
+      "parking": "현장 주차 조건 확인",
+      "fee": "입장료 및 촬영 사용료 최신 안내 확인 필요",
+      "imageStatus": "미등록 · 공개 이미지 검색 제공",
+      "primaryImageId": null,
+      "imageCandidates": [],
+      "sourceRefs": [
+        "https://www.ktam.or.kr/",
+        "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=94739"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "미확인 · 공개 이미지 검색으로 확인 필요",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 84,
+      "photoScoreBreakdown": {
+        "distinctiveness": 26,
+        "compositionVariety": 17,
+        "lightAndTexture": 18,
+        "editorialVersatility": 16,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "B · 보완 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "전통건축의 지붕선, 기둥, 공포와 목재 디테일을 살펴볼 수 있는 박물관입니다. 실물 건축·모형·전시 공간의 구분을 확인합니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": null,
+      "referenceImageStatus": "미등록 · 이미지 검색으로 참고사진 조사 필요"
+    },
+    {
+      "id": "chilseong-shipyard",
+      "name": "칠성조선소",
+      "region": "강원",
+      "category": "산업유산·수변·옛 조선소",
+      "spaceTypes": [
+        "실내·외",
+        "옛 작업장",
+        "카페·전시",
+        "청초호 수변"
+      ],
+      "photoProfile": "옛 조선소의 거친 재료, 선박 제작 흔적과 청초호 수변이 함께 있는 산업유산형 공간입니다. 영업·전시 구역과 일반 이용 구역을 구분합니다.",
+      "visualStrengths": [
+        "낡은 공장·목재·철의 질감",
+        "산업시설의 흔적",
+        "수변·도시 배경"
+      ],
+      "bestConcepts": [
+        "워크웨어·산업 에디토리얼",
+        "로컬 브랜드·다큐멘터리 포트레이트",
+        "질감 중심 인물화보"
+      ],
+      "constraints": [
+        "카페·전시·공용 구역 중심으로 접근",
+        "영업·행사·혼잡 시간 재확인",
+        "상업 촬영·장비 반입은 운영자 동의",
+        "통행·영업 방해 금지"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "속초 칠성조선소 옛 조선소 건물 내부 수변",
+        "Chilsung Shipyard Sokcho"
+      ],
+      "aliases": [
+        "칠성 보트야드",
+        "Chilsung Boatyard"
+      ],
+      "summary": "속초 청초호 주변의 옛 조선소를 문화·카페 공간으로 활용하는 장소. 영업 공간과 산업 흔적을 구분해 촬영합니다.",
+      "address": "강원특별자치도 속초시 중앙로46번길 45",
+      "coordinates": null,
+      "officialUrl": "https://linktr.ee/chilsungboatyard",
+      "openingStatus": "카페·문화공간으로 운영된 이력 확인 · 당일 영업시간과 개방 구역 재확인",
+      "shootingPermission": "상업촬영·삼각대·조명·장비 반입은 운영자 동의 필요",
+      "parking": "인근 공영주차장 및 장비 하차 위치 확인",
+      "fee": "방문 비용·촬영료·공간 이용 조건 별도 문의",
+      "imageStatus": "참고사진 후보 연결 · 이용권 미확인",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-chilseong-01",
+          "title": "칠성조선소 옛 선박 제작 흔적 사진",
+          "imageUrl": "https://cdn.globale.co.kr/news/photo/202310/26158_35257_752.jpg",
+          "sourceThumbnail": "https://cdn.globale.co.kr/news/photo/202310/26158_35257_752.jpg",
+          "sourcePageUrl": "https://www.globale.co.kr/news/articleView.html?idxno=26158",
+          "sourceName": "글로벌E",
+          "creator": "글로벌E",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "옛 조선소·목재 선박 구조",
+          "notes": "장소 관련 기사 이미지 후보. 재사용 권리는 미확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=7095706d-a2ca-4584-8310-8f36d0e3d16e",
+        "https://linktr.ee/chilsungboatyard"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "장소 출처 참고사진 후보 · 세부 구역 최종 확인 전",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 91,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 19,
+        "lightAndTexture": 20,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "옛 조선소의 거친 재료, 선박 제작 흔적과 청초호 수변이 함께 있는 산업유산형 공간입니다. 영업·전시 구역과 일반 이용 구역을 구분합니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": "ref-chilseong-01",
+      "referenceImageStatus": "대표사진 아님 · 참고사진 후보 · 이용권 검토 전"
+    },
+    {
+      "id": "oar-contemporary-art-museum",
+      "name": "오아르미술관(OAR Contemporary Art Museum)",
+      "region": "경북",
+      "category": "현대미술관·고분 경관·유리 파사드",
+      "spaceTypes": [
+        "실내",
+        "외관",
+        "루프탑·미디어 전시",
+        "고분 인접 경관"
+      ],
+      "photoProfile": "현대미술관의 유리·콘크리트 건축과 주변 신라 고분 경관이 나란히 놓이는 장소입니다. 외관·루프탑·전시실의 촬영 허용 범위를 구분합니다.",
+      "visualStrengths": [
+        "현대적 유리·콘크리트 외관",
+        "고분의 곡선과 건축 수평선",
+        "전시 조명·미디어 공간"
+      ],
+      "bestConcepts": [
+        "미니멀 패션 에디토리얼",
+        "전통·현대 대비 인물화보",
+        "건축·문화공간 사진"
+      ],
+      "constraints": [
+        "전시실·루프탑·카페 구역별 촬영 정책 확인",
+        "상업화보·삼각대·플래시·조명은 사전 문의",
+        "작품·관람객 촬영 규정 준수",
+        "참고사진 재사용 권리 미확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "오아르미술관 경주 건축 외관 고분",
+        "OAR Museum Gyeongju contemporary art architecture"
+      ],
+      "aliases": [
+        "오아르 미술관",
+        "OAR Museum",
+        "OAR Contemporary Art Museum"
+      ],
+      "summary": "경주 노서동 고분 인근의 현대미술관. 현대건축과 고분의 형태적 대비가 사진적 탐색 가치가 있습니다.",
+      "address": "경상북도 경주시 금성로 260-6",
+      "coordinates": null,
+      "officialUrl": "https://www.oar-museum.com/",
+      "openingStatus": "공식 안내 기준 운영 시설 · 당일 휴관·전시 일정은 홈페이지 확인",
+      "shootingPermission": "미술관 내부·루프탑·상업 촬영은 운영기관 규정 확인",
+      "parking": "현재 주차 이용 조건 공식 안내 확인",
+      "fee": "입장료 및 촬영 사용료 확인 필요",
+      "imageStatus": "참고사진 후보 연결 · 이용권 미확인",
+      "primaryImageId": null,
+      "imageCandidates": [
+        {
+          "id": "ref-oar-museum-01",
+          "title": "오아르미술관 외관과 인접 고분 경관",
+          "imageUrl": "https://img2.stibee.com/68987_3090432_1763095158596524025.jpg",
+          "sourceThumbnail": "https://img2.stibee.com/68987_3090432_1763095158596524025.jpg",
+          "sourcePageUrl": "https://kia.or.kr/m/data/awards.php?code=awards&idx=19525&page=1&ptype=view",
+          "sourceName": "한국건축가협회",
+          "creator": "한국건축가협회",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "유리 파사드·고분 경관",
+          "notes": "건축상 소개 자료의 이미지 후보. 원 저작권 및 재사용 권리 미확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://www.oar-museum.com/",
+        "https://oar-museum.com/sub01/sub03.php",
+        "https://data.visitkorea.or.kr/page/3486762"
+      ],
+      "verification": {
+        "location": "공식·신뢰 출처 1차 확인",
+        "photoMatch": "장소 출처 참고사진 후보 · 세부 구역 최종 확인 전",
+        "rights": "미확인",
+        "shootingPermission": "미확인 · 운영기관 사전 확인 필요",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 조사 레코드 · 현장 접근·운영·촬영 허가·사진 이용권 확인 전",
+      "scoutingChecklist": [
+        "공식 운영정보 최신 확인",
+        "일반 방문·외부인 출입 가능 여부",
+        "실제 촬영 구역과 사진의 장소 일치",
+        "개인 촬영과 상업촬영 허가 구분",
+        "삼각대·조명·장비 반입",
+        "이미지 이용권·출처 표기",
+        "주차·장비 하차 동선",
+        "혼잡 시간·현장 제약"
+      ],
+      "notes": "사진가 관점의 1차 탁상 조사입니다. 공개 사진이나 시설 소개만으로 일반 출입·촬영 허가 또는 이미지 재사용 권리가 생기는 것은 아닙니다. 운영기관에 최신 조건을 확인하고 참고사진은 실제 장소·구역 및 이용권을 확인한 뒤에만 대표사진으로 승인하세요.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 89,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 19,
+        "lightAndTexture": 18,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 1차 탁상 평가 · 현장답사·실제 촬영·운영 및 허가 검증 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "현대미술관의 유리·콘크리트 건축과 주변 신라 고분 경관이 나란히 놓이는 장소입니다. 외관·루프탑·전시실의 촬영 허용 범위를 구분합니다.",
+        "status": "desk-review"
+      },
+      "referenceImageId": "ref-oar-museum-01",
+      "referenceImageStatus": "대표사진 아님 · 참고사진 후보 · 이용권 검토 전"
     }
   ],
   "selectionRubric": {
