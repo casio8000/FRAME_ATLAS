@@ -145,3 +145,12 @@ Last updated: 2026-10-15 (Korea Standard Time)
 - The concise Korean user manual was updated in the same commit. It explains admin entry and clearly states that the UI gate is not server-side authorization; GitHub publication still requires a valid repository-scoped write token.
 - Added a browser regression test to verify there are exactly two configured verifiers and invalid passwords do not unlock administrator mode.
 - Build/cache ID: `20261015-67`. Actual passphrases are deliberately not included in repository files or the manual.
+
+
+## 2026-10-15 · User manual refresh and 200-place plan
+- Created restore branch `backup/pre-manual-and-200-place-expansion-2026-10-15` from the pre-task main head `5b80371ca8faa121cab0d31eca288160671b1e06`.
+- Rebuilt `v2/USER_MANUAL_KO.html`: desktop top-right and mobile bottom-right sticky controls; close button falls back to browser history or app; expanded instructions for navigation, new place registration, edit/delete, image URL vs local file, image source verification, field checklist, JSON backup/restore, GitHub publication, PC/iPhone and troubleshooting.
+- Updated the manual link in `v2/index.html` to use query version `20261015-68`.
+- Added `v2/PLAN_200_PLACES_2026-10-15.md`. Baseline is 137 catalog place records plus 14 separate review candidates. A provisional net +63 is needed only if all 137 existing entries remain. Quality audit may mean investigating more than 63 candidates.
+- No location records were bulk-added as part of this planning step. Candidate venues require deduplication against current and legacy lists, exact-place photo review, official source review and separate permission checks before activation.
+- Next: check latest GitHub Actions quality/deploy results; inspect 137 records for holds/photo mismatch; compare against the legacy 214-place list if available; then research/import in batches around 15 with validation after every batch.
