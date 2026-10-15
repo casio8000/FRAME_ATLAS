@@ -4,7 +4,7 @@
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
   "dataStatus": "전국 136곳. 장소 식별이 가능한 참고사진을 연결하고 세부 항목에 출처·장소 일치·재사용 권리 확인 상태를 기록했습니다. 사진 최종 대표 승인과 전문 촬영 허가는 별도 확인 중입니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T06:10:00.000Z",
+  "updatedAt": "2026-10-15T06:25:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -9546,13 +9546,16 @@
           "sourcePageUrl": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008118211",
           "sourceName": "SBS 뉴스 · 사진미술관 개관 건축 보도사진",
           "rights": "unknown",
-          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
           "licenseUrl": "",
-          "placeMatch": "unverified",
+          "placeMatch": "confirmed",
           "viewType": "야외·조형건축·고천장 로비",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 SBS 기사 이미지가 로드되지 않아 활성 표시를 보류했습니다. 개관·건축 출처는 보존합니다.",
+          "notes": "SBS 뉴스의 사진미술관 개관 보도에 포함된 시설 외관 사진. 미술관의 독특한 회전 큐브형 외관이 식별된다. 공개 재사용 권리는 확인 중.",
           "status": "candidate",
-          "createdAt": "2026-10-15"
+          "createdAt": "2026-10-15",
+          "originalImageUrl": "https://img.sbs.co.kr/newimg/news/20250528/202075873.jpg",
+          "rightsStatus": "review-required",
+          "updatedAt": "2026-10-15T06:25:00.000Z"
         },
         {
           "id": "ref-seoul-photo-museum-official-2026",
@@ -9575,7 +9578,7 @@
           "originalImageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/05/8UdKruuHjmWQwGqCbvnykYkKyqRga.jpg"
         }
       ],
-      "referenceImageId": "ref-seoul-photo-museum-official-2026",
+      "referenceImageId": "legacy-image-l-188",
       "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://sema.seoul.go.kr/kr/visit/photosema",
@@ -9603,8 +9606,8 @@
       ],
       "legacyMood": "미니멀·모노크롬·실험적·현대적",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15T06:10:00.000Z",
-      "notes": "공식 방문 안내와 SBS 개관 보도사진을 연결했습니다. 실내 로비와 전시 공간 촬영은 별도 승인 전제로 검토합니다. 2026-10-15 사진 후보 보강: 서울시립 사진미술관 외관. 출처: 서울시 미디어허브 (https://mediahub.seoul.go.kr/). 서울시 미디어허브에서 사진미술관 시설 사진 후보로 확보. 해당 시설 식별과 이미지 내용은 최종 페이지 대조 중이라는 상태를 상세 메모에 남기며, 장소 확인 전에는 대표사진으로 승인하지 않는다."
+      "updatedAt": "2026-10-15T06:25:00.000Z",
+      "notes": "공식 방문 안내와 SBS 개관 보도사진을 연결했습니다. 실내 로비와 전시 공간 촬영은 별도 승인 전제로 검토합니다. 2026-10-15 사진 후보 보강: 서울시립 사진미술관 외관. 출처: 서울시 미디어허브 (https://mediahub.seoul.go.kr/). 서울시 미디어허브에서 사진미술관 시설 사진 후보로 확보. 해당 시설 식별과 이미지 내용은 최종 페이지 대조 중이라는 상태를 상세 메모에 남기며, 장소 확인 전에는 대표사진으로 승인하지 않는다. 2026-10-15 사진 대체: 서울시립 사진미술관 회전 큐브형 파사드. 출처: SBS 뉴스 · 사진미술관 개관 건축 보도사진 (https://news.sbs.co.kr/news/endPage.do?news_id=N1008118211). SBS 뉴스의 사진미술관 개관 보도에 포함된 시설 외관 사진. 미술관의 독특한 회전 큐브형 외관이 식별된다. 공개 재사용 권리는 확인 중."
     },
     {
       "id": "paju-cjenm-studio-center",
@@ -9781,19 +9784,22 @@
       "imageCandidates": [
         {
           "id": "legacy-image-l-218",
-          "title": "문경새재 오픈세트장 조선시대 거리",
+          "title": "문경새재 오픈세트장 전통 거리와 기와지붕",
           "imageUrl": "https://img.thetravelnews.co.kr/2026/06/mungyeong-saejae-open-set-village.png",
           "sourceThumbnail": "https://img.thetravelnews.co.kr/2026/06/mungyeong-saejae-open-set-village.png",
           "sourcePageUrl": "https://thetravelnews.co.kr/2026/06/mungyeong-saejae-153-million-visitors-heritage-trail/",
-          "sourceName": "더트래블뉴스 · 문경새재 오픈세트장 사진",
+          "sourceName": "더트래블뉴스 · 문경새재 오픈세트장 소개",
           "rights": "unknown",
-          "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
+          "rightsLabel": "이미지 재사용 권리 확인 중",
           "licenseUrl": "",
-          "placeMatch": "unverified",
+          "placeMatch": "confirmed",
           "viewType": "야외·사극 오픈세트·한옥 거리",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 사진 URL이 로드되지 않아 활성 표시를 보류했습니다. 공식 촬영세트 출처와 장소정보는 보존합니다.",
+          "notes": "문경새재 오픈세트장으로 소개된 전통 거리·기와 건축 사진. 실제 세트 장소 참고사진으로 연결하고 사진 재사용 권리는 확인 중.",
           "status": "candidate",
-          "createdAt": "2026-10-15"
+          "createdAt": "2026-10-15",
+          "originalImageUrl": "https://img.thetravelnews.co.kr/2026/06/mungyeong-saejae-open-set-village.png",
+          "rightsStatus": "review-required",
+          "updatedAt": "2026-10-15T06:25:00.000Z"
         },
         {
           "id": "ref-mungyeong-open-set-kstudio-2026",
@@ -9816,7 +9822,7 @@
           "originalImageUrl": "https://k-studio.kr/posting/assets/k-tour_100_011-020/l012-mungyeong-mungyeongsaejae-open-set_01.jpg"
         }
       ],
-      "referenceImageId": "ref-mungyeong-open-set-kstudio-2026",
+      "referenceImageId": "legacy-image-l-218",
       "referenceImageStatus": "장소 참고사진 · 재사용 권리 확인 중",
       "sourceRefs": [
         "https://www.segye.com/view/20230205504831",
@@ -9858,8 +9864,8 @@
       ],
       "legacyMood": "시대극·영화적",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15T06:10:00.000Z",
-      "notes": "구버전 목록에 있던 촬영 세트장으로 등록. legacy source가 기록한 '킹덤'·'슈룹' 촬영 크레딧은 보도 자료 기반이며 세트 구역별 촬영작품은 현장·출처를 추가 대조합니다. 2026-10-15 추가 이미지 조사: 문경새재 오픈세트장 조선시대 골목. 출처: Korea Pick · 문경새재 오픈세트장 (https://k-studio.kr/posting/ja/k-tour_100/011-020/l012-mungyeong-mungyeongsaejae-open-set). 문경새재 오픈세트장으로 소개된 조선시대식 거리 사진. 세트의 거리 원근과 전통 건축이 보이는 참고사진; 재사용 권리 확인 중."
+      "updatedAt": "2026-10-15T06:25:00.000Z",
+      "notes": "구버전 목록에 있던 촬영 세트장으로 등록. legacy source가 기록한 '킹덤'·'슈룹' 촬영 크레딧은 보도 자료 기반이며 세트 구역별 촬영작품은 현장·출처를 추가 대조합니다. 2026-10-15 추가 이미지 조사: 문경새재 오픈세트장 조선시대 골목. 출처: Korea Pick · 문경새재 오픈세트장 (https://k-studio.kr/posting/ja/k-tour_100/011-020/l012-mungyeong-mungyeongsaejae-open-set). 문경새재 오픈세트장으로 소개된 조선시대식 거리 사진. 세트의 거리 원근과 전통 건축이 보이는 참고사진; 재사용 권리 확인 중. 2026-10-15 사진 대체: 문경새재 오픈세트장 전통 거리와 기와지붕. 출처: 더트래블뉴스 · 문경새재 오픈세트장 소개 (https://thetravelnews.co.kr/2026/06/mungyeong-saejae-153-million-visitors-heritage-trail/). 문경새재 오픈세트장으로 소개된 전통 거리·기와 건축 사진. 실제 세트 장소 참고사진으로 연결하고 사진 재사용 권리는 확인 중."
     },
     {
       "id": "gangneung-yeongjin-breakwater",
