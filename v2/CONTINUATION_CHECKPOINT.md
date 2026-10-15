@@ -229,3 +229,14 @@ Last updated: 2026-10-14 (Korea Standard Time)
 - Browser regression: desktop and mobile archive/home each rendered 71 places. Desktop image audit 71/71 loaded; mobile archive image audit 71/71 loaded; no held or missing images and no JavaScript page errors.
 - Latest commit at test time includes L-214 Nonsan 1950 Studio, L-080 Temiorae, Seoseoul Museum of Art, and Gyeonggi Sangsang Campus. All four have active metadata and a representative image where the source identifies the real location; rights and shoot permissions stay separate.
 - Current counters: 71 active, 10 review candidates; cache `20261015-54`. Root legacy v5.x and production `main` are unchanged. The development branch is not merged to production.
+
+
+## Latest batch — 19 legacy-curated locations, 2026-10-15
+- Increased the active catalog from 71 to **90 locations**, keeping **10 review-only candidates** separate.
+- Added the following previously curated places from the old 214-record catalog: 정동1928 아트센터, 소대헌·호연재 고택, 장림포구, UN조각공원, 서울시립미술관 서소문본관, 서울시립 북서울미술관, 한국근대문학관, 수원시립미술관 행궁본관, 아르떼뮤지엄 강릉, 이응노미술관, 대전시립미술관, 대구미술관, 울산시립미술관, 솔거미술관, 제주도립미술관, 서울도서관, MBC 드림센터, 헤이리시네마, 현대 모터스튜디오 고양.
+- Each new record has a source-identified representative photo with `primaryImageId === referenceImageId`; reuse/copyright rights and commercial-shoot permissions are written separately in the details. Studio, museum, library and performance spaces are not treated as open-access production locations without approval.
+- Fixed broken external image URLs for Daejeon Museum of Art and Nodeul Island and refreshed the cache to `20261015-57`.
+- Static consistency checks passed: 90 active, 10 review queue, 100 unique record IDs, unique normalized active/review names, seven regional groups; home counts show 90 places and 10 review candidates.
+- Browser regression passed on commit `46164e3d675a258c75d9d9099defc1f1dc616708`: PC image audit **90/90 loaded**, mobile archive image audit **90/90 loaded**, all 90 cards rendered, 10 review candidates preserved, zero page errors. Run: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38669996761
+- Quality gate passed on the same commit: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38669996733
+- **Deployment status:** development branch only; production `main` and the old root v5.x app remain unchanged. The current development source is saved; do not describe these changes as production-deployed.
