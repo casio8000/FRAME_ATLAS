@@ -171,11 +171,12 @@ function refreshSharedCatalogIfClean(){
 }
 function render(){
  syncRegionFilters();
- const q=$("query").value.trim().toLowerCase(),region=$("regionFilter").value,filter=$("imageFilter").value;
+ const q=$("query").value.trim().toLowerCase(),region=$("regionFilter").value,filter=$("imageFilter").value,category=$("categoryFilter")?$("categoryFilter").value:"";
  const places=catalog.places.filter(p=>{
   const text=[p.name,p.region,p.category,p.summary,...(p.aliases||[])].join(" ").toLowerCase();
   if(archiveMode==="favorites"&&!favorites.includes(p.id))return false;
-  if(q&&!text.includes(q))return false;if(region&&p.region!==region)return false;
+  if(q&&!text.includes(q))return false;if(region&&regionGroup(p.region)!==region)return false;
+  if(category){const tags=[p.category,p.indoorOutdoor,p.placeType,p.summary,...(p.visualStrengths||[]),...(p.bestConcepts||[])].join(" ").toLowerCase();const terms={실내:["실내","인테리어","홀","전시장","실내공간"],실외:["실외","야외","거리","광장","공원","정원"],건축:["건축","미술관","박물관","건물","구조","공간"],자연:["자연","숲","바다","산","공원","정원"],스튜디오:["스튜디오","공연장","대형스튜디오","촬영장"]}[category]||[category];if(!terms.some(t=>tags.includes(t.toLowerCase())))return false;}
   if(filter==="none"&&activePhoto(p))return false;
   if(filter==="review"&&!hasPending(p))return false;
   if(filter==="ready"&&!isImageReady(p))return false;
@@ -205,12 +206,24 @@ function render(){
  renderDetail();
  updateFloatingControls();
 }
+function regionGroup(region){
+ const r=String(region||"").trim();
+ if(r==="서울")return "서울";
+ if(["경기","인천"].includes(r))return "수도권";
+ if(["대전","세종","충북","충남"].includes(r))return "충청";
+ if(["전북","전남"].includes(r))return "전라";
+ if(["경북","경남"].includes(r))return "경상";
+ return r;
+}
 function syncRegionFilters(){
  const regions=Array.from(new Set((catalog.places||[]).map(p=>String(p.region||"").trim()).filter(Boolean))).sort((a,b)=>a.localeCompare(b,"ko"));
+ const groups=[["서울","서울"],["수도권","경기·수도권"],["부산","부산"],["대구","대구"],["광주","광주"],["울산","울산"],["강원","강원"],["충청","충청"],["경상","경상"],["전라","전라"],["제주","제주"]];
  for(const [id,label] of [["homeAllRegionFilter","전국 전체"],["regionFilter","전국 전체"],["mapRegionFilter","전국 전체"],["analysisRegionFilter","모든 지역"]]){
   const select=$(id);if(!select)continue;const prior=select.value;
-  select.innerHTML='<option value="">'+label+'</option>'+regions.map(region=>'<option value="'+esc(region)+'">'+esc(region)+'</option>').join("");
-  if(regions.includes(prior))select.value=prior;
+  const compact=id==="regionFilter"||id==="homeAllRegionFilter";
+  const opts=compact?groups.filter(([value])=>regions.some(r=>regionGroup(r)===value)):regions.map(r=>[r,r]);
+  select.innerHTML='<option value="">'+label+'</option>'+opts.map(([value,name])=>'<option value="'+esc(value)+'">'+esc(name)+'</option>').join("");
+  if(opts.some(([value])=>value===prior))select.value=prior;
  }
 }
 function showAppView(view,scroll=true){
@@ -945,6 +958,7 @@ async function publishCatalog(){
 $("query").addEventListener("input",render);
 $("regionFilter").addEventListener("change",render);
 $("imageFilter").addEventListener("change",render);
+if($("categoryFilter"))$("categoryFilter").addEventListener("change",render);
 $("brandHomeBtn").addEventListener("click",event=>{event.preventDefault();showAppView("welcome");});
 $("welcomeStartBtn").addEventListener("click",()=>showAppView("home"));$("welcomeHomeBtn").addEventListener("click",()=>showAppView("home"));
 $("startBrowseBtn").addEventListener("click",()=>goToWorkspace("",""));$("homeMapBtn").addEventListener("click",()=>showAppView("map"));$("seeAllPlacesBtn").addEventListener("click",showHomeAllPlaces);$("homeAllPlacesBtn").addEventListener("click",showHomeAllPlaces);
