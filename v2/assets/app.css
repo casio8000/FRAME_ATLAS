@@ -1023,3 +1023,6 @@ dialog.map-links-dialog{position:relative;max-width:min(560px,calc(100% - 24px))
 .landing-add-place-wrap .btn{min-height:40px}
 .landing-add-place-wrap small{color:var(--muted);font-size:11px;line-height:1.45}
 @media(max-width:620px){.landing-add-place-wrap{align-items:stretch;gap:6px}.landing-add-place-wrap .btn{width:100%;justify-content:center}.landing-add-place-wrap small{font-size:10px}}
+
+/* Keep the splash icon and prevent a first-paint archive flash. */
+.welcome-logo-mark img{display:block;width:38px;height:38px;object-fit:contain}
