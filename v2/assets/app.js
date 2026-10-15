@@ -336,7 +336,6 @@ async function syncAttachSupplementalPlaces(base){
       for(const candidate of incoming)byImageId.set(candidate.id,Object.assign({},byImageId.get(candidate.id)||{},syncClone(candidate)));
       existing.imageCandidates=[...byImageId.values()];
       for(const key of ["primaryImageId","referenceImageId"])if(place[key])existing[key]=place[key];
-      existing.photoReviewStatus="pending-place-photo-review";
       existing.notes=[existing.notes,place.imageCandidates?.[0]?.notes].filter(Boolean).join(" ");
      }
      continue;
