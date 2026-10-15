@@ -2,9 +2,9 @@
   "schemaVersion": 2,
   "app": "FRAME ATLAS 2.0",
   "scope": "전국 촬영 장소 아카이브 · 장소 참고사진, 대표사진 편집 판단, 재사용 권리와 촬영 허가를 독립 관리",
-  "dataStatus": "전국 권역 확장판. 활성 장소 69곳, 검토 대기 후보 10곳. 장소 일치가 출처로 확인된 사진은 대표사진으로 승인하며, 운영 중단·재개장 예정 장소는 검토 대기로 분리합니다. 이미지 재사용 권리와 전문·상업촬영 허가는 별도 확인 대상입니다.",
+  "dataStatus": "전국 권역 확장판. 활성 장소 70곳, 검토 대기 후보 10곳. 장소 사진임이 출처로 확인되면 대표사진으로 승인합니다. 이미지 재사용 권리와 전문·상업촬영 허가는 별도로 관리하며 휴장·재개장 예정 장소는 검토 대기에 둡니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T03:00:00.000Z",
+  "updatedAt": "2026-10-15T03:15:00.000Z",
   "places": [
     {
       "id": "nat-solol-art-museum",
@@ -9206,6 +9206,153 @@
         "sourceVersion": "FRAME ATLAS v5.23 legacy catalog",
         "migrationStatus": "curated-addition",
         "priorPhotoStatus": "기존 사진 상태 재검증 후 출처 사진 승인"
+      }
+    },
+    {
+      "id": "legacy-temiorae",
+      "name": "테미오래",
+      "region": "대전 중구",
+      "province": "충청",
+      "regionGroup": "chungcheong",
+      "category": "1932년 옛 충남도지사 관사촌·붉은 벽돌·청기와·소나무 정원",
+      "spaceTypes": [
+        "근대 관사 건축",
+        "붉은 벽돌·청기와 파사드",
+        "석재 길·소나무 정원",
+        "전시·문화 공간"
+      ],
+      "photoProfile": "1932년 조성된 옛 충청남도지사 관사촌을 재생한 문화예술 공간입니다. 붉은 벽돌과 흰 창틀, 푸른 기와, 굽은 석재 길과 오래된 소나무가 만드는 근대건축·정원 구도가 독특해 레트로 패션, 영화적 인물사진, 시대감 있는 에디토리얼에 활용할 수 있습니다.",
+      "visualStrengths": [
+        "붉은 벽돌과 흰 창틀·푸른 기와의 색 대비",
+        "완만한 석재 길과 관사 입구가 만드는 원근",
+        "소나무·관목과 오래된 주거건축의 레이어",
+        "건물별 외관·마당·복도·전시실의 서로 다른 분위기"
+      ],
+      "bestConcepts": [
+        "근대건축·레트로 패션 에디토리얼",
+        "시대극·영화적 환경인물",
+        "아티스트·디자이너 프로필",
+        "벽돌·목재·석재 질감 중심의 포트레이트"
+      ],
+      "constraints": [
+        "건물별 개방·전시 일정과 입주 창작자 공간을 구분",
+        "일반 관람과 전문·상업촬영·광고촬영 허가를 구분",
+        "플래시·삼각대·조명·영상장비 사용 조건 확인",
+        "문화재 건물·벽·창호·정원 식재에 장비 접촉 금지"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "테미오래 공식 사진",
+        "테미오래 옛 관사 건축",
+        "테미오래 상업촬영 허가"
+      ],
+      "aliases": [
+        "충남도지사 관사촌",
+        "옛 충청남도지사 관사촌"
+      ],
+      "summary": "옛 충남도지사 관사촌의 근대 주거건축과 소나무 정원이 결합된 문화공간. 붉은 벽돌·청기와·석재 동선이 레트로·시대감 있는 촬영을 구성합니다.",
+      "address": "대전광역시 중구 보문로205번길 27",
+      "coordinates": null,
+      "officialUrl": "https://www.temiorae.com/",
+      "mapSearchQuery": "테미오래 대전광역시 중구 보문로205번길 27",
+      "openingStatus": "대전문화재단 2026년 10월 운영 안내: 화–일 10:00–17:00, 월요일 휴관(공휴일은 공지별 변동). 개별 관사 개방과 전시 일정 재확인",
+      "shootingPermission": "대전문화재단 운영 안내와 공개 관람은 화보·광고 등 전문·상업촬영 허가를 의미하지 않음. 촬영 장소·인원·장비별 사전 협의 필요",
+      "parking": "도심 관사촌 주변 주차 가능 구역 및 대형 장비차량 하차 지점 확인",
+      "fee": "일반 관람 무료 안내와 별개로 대관·촬영료·조명장비 사용 비용은 운영기관 확인",
+      "imageStatus": "대표사진 승인 · 사진 재사용 권리 별도 확인",
+      "primaryImageId": "ref-temiorae-red-brick-residence-20261015",
+      "referenceImageId": "ref-temiorae-red-brick-residence-20261015",
+      "imageCandidates": [
+        {
+          "id": "ref-temiorae-red-brick-residence-20261015",
+          "title": "테미오래 옛 충남도지사 관사 붉은 벽돌·청기와와 소나무 길",
+          "imageUrl": "https://cdn.themac.co.kr/news/photo/202401/3504_12828_4828.jpg",
+          "sourceThumbnail": "https://cdn.themac.co.kr/news/photo/202401/3504_12828_4828.jpg",
+          "sourcePageUrl": "https://www.themac.co.kr/news/articleView.html?idxno=3504",
+          "sourceName": "문화저널 맥 · 테미오래 문화공간 소개",
+          "creator": "기사 사진 원저작자 확인 필요",
+          "rights": "unknown",
+          "rightsLabel": "사진 재사용 권리 미확인",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "근대 관사 외관·붉은 벽돌·청기와·정원 동선",
+          "notes": "문화저널 맥의 테미오래 공간 소개 기사에 실린 실제 옛 관사와 정원 사진입니다. 장소 참고가 아닌 대표사진으로 지정하되, 사진 저작권/재사용 권리와 현장 촬영 허가는 별도 확인합니다.",
+          "status": "approved",
+          "createdAt": "2026-10-15"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "name": "테미오래 공식 홈페이지",
+          "url": "https://www.temiorae.com/"
+        },
+        {
+          "name": "대전문화재단 2026년 10월 운영 안내",
+          "url": "https://www.dcaf.or.kr/web/board.do?bbsIdx=19127&menuIdx=374"
+        },
+        {
+          "name": "한국문화예술교육진흥원 인문360 장소 정보",
+          "url": "https://inmun360.culture.go.kr/content/373.do?cid=2365494&mode=view&page="
+        },
+        {
+          "name": "문화저널 맥·테미오래 문화공간 및 건축 소개",
+          "url": "https://www.themac.co.kr/news/articleView.html?idxno=3504"
+        }
+      ],
+      "verification": {
+        "location": "대전문화재단의 2026년 운영 공지와 공식 장소 정보 확인",
+        "photoMatch": "출처 페이지에서 테미오래 옛 관사와 정원 사진임을 확인 · 대표사진 승인",
+        "rights": "미확인",
+        "shootingPermission": "일반 운영 안내와 전문·상업촬영 허가는 별도 확인",
+        "lastCheckedAt": "2026-10-15"
+      },
+      "selectionStatus": "장소 확인 · 대표사진 승인 · 촬영허가 별도 확인",
+      "scoutingChecklist": [
+        "건물별 개방·전시·입주 창작자 구역 확인",
+        "전문·상업촬영 승인 주체·예약기한 확인",
+        "사진 저작권·재사용 권리 확인",
+        "삼각대·플래시·조명·영상장비 규정",
+        "대관료·보증금·촬영 인원·시간 제한",
+        "주차·장비 하차·장비 반입 동선",
+        "관람객·입주 창작자 동선과 사생활 보호",
+        "문화재·정원 시설물 접촉·원상복구 조건"
+      ],
+      "notes": "기존 목록 L-080의 테미오래를 2.0에 복구했습니다. 1932년 조성된 관사촌의 근대건축과 정원이 일반적인 공원과 구분되는 시각적 강점입니다. 공개 관람이 상업촬영 허가를 뜻하지 않으며, 입주 창작자·일부 동은 공개 범위가 다를 수 있습니다. 사진의 장소 일치를 확인해 대표사진으로 승인했습니다. 사진 재사용 권리는 별도 확인 대상입니다.",
+      "createdAt": "2026-10-15",
+      "updatedAt": "2026-10-15",
+      "photoPotentialScore": 88,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 18,
+        "lightAndTexture": 19,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 탁상 평가 · 촬영허가·현장답사·이미지 권리 별도 확인 전",
+      "priorityLabel": "A · 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "status": "location-reference",
+        "rationale": "근대 관사 건축의 붉은 벽돌·푸른 기와·소나무 정원과 석재 동선이 서로 다른 프레임을 제공합니다."
+      },
+      "referenceImageStatus": "대표사진 승인 · 이미지 재사용 권리 미확인",
+      "photoReviewStatus": "해당 장소 사진 확인 · 대표사진 승인 · 재사용 권리 별도 확인",
+      "shootingDetails": {
+        "parking": "도심 주차와 촬영 장비차량 하차 장소 확인",
+        "loadIn": "관사 입구와 관람 동선에 방해되지 않는 장비 반입 동선 확인",
+        "power": "실내 전원·조명 설치 승인 여부 확인",
+        "equipmentRestrictions": "삼각대·플래시·조명·연막·벽면 부착 금지 여부를 운영자에 확인",
+        "crewBase": "분장·탈의·대기 공간 사용 가능 여부 확인",
+        "permitCost": "촬영 목적·인원·장비별 허가·대관 비용 확인",
+        "fieldNotes": "외관·석재 길·소나무·창호를 주요 촬영 포인트로 조사; 건물별 개방 범위는 별도 확인.",
+        "lastFieldCheck": "현장답사 전"
+      },
+      "legacyScout": {
+        "sourceId": "L-080",
+        "sourceVersion": "FRAME ATLAS v5.23 legacy catalog",
+        "migrationStatus": "curated-addition",
+        "priorPhotoStatus": "구버전의 이미지/허가 상태를 재검증; 공식 운영정보와 출처 사진으로 보강"
       }
     }
   ],
