@@ -36,3 +36,14 @@
 - 개발용 `.github/workflows/v2-smoke.yml`은 현재 테스트 동기화 전까지 수동 실행만 허용하도록 변경.
 - 변경 커밋: 테스트 `f6cc4cea77f3a02b15af2a6f6bfe95eefac35829`; quality workflow `e7ddd277b5f853bf8183a24955a159c542227c38`; 개발 workflow `27b974d70a00a0a9ae9dfb4d52f6f655fa123a85`.
 - 검증 진행: main 검사 실행 `38681133758`은 결과 확인 전 상태. 최종 pass 여부를 성공으로 간주하지 않는다.
+
+
+## 2026-10-15 — 참고사진 보강 및 최종 검증
+- 기존 136곳 카탈로그는 유지하고 참고사진 후보 17건을 추가 연결했다. 사진 출처·장소 일치를 기록했으며, 재사용 권리 미확인 사진은 대표사진 최종 승인으로 표시하지 않았다.
+- 깨지는 이미지 URL 3건(Songdo, 예술의전당, 아바이마을)을 실제 브라우저 감사로 발견해 대체했고, LG아트센터·백남준아트센터·부산 영화의전당·아르떼뮤지엄 강릉 참고사진도 추가했다.
+- 최종 데이터 커밋: `29587d5136e96fe1c4841f63e829dd0d59476a15`.
+- 자동 검증 결과: PC 이미지 감사 `total=136, displayed=83, loaded=83, missing=0`; PC·모바일 smoke test PASS. 모바일 감사 로그에 1건 지연 로드가 남았지만 테스트는 통과했고 broken/missing 이미지는 0건.
+- 최종 Quality Checks: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38682682454 — SUCCESS.
+- GitHub Pages 배포: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38682681839 — SUCCESS.
+- 바로 확인할 경로: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
+- 현재 남은 작업은 장소 참고사진이 없는 53곳의 실제 사진 조사 및 새 후보의 저작권·상업촬영 조건 확인이다. 완료된 사진 추가·Actions 메일 원인 분석은 다시 반복하지 않는다.
