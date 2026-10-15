@@ -124,6 +124,8 @@ function stamp(){return new Date().toISOString();}
 function localSave(msg){try{localStorage.setItem(LOCAL_KEY,JSON.stringify(catalog));$("saveStatus").textContent=msg||("이 기기에 임시저장 · "+new Date().toLocaleTimeString("ko-KR"));if($("homeFeaturedGrid"))renderLanding();}catch(e){$("saveStatus").textContent="임시저장 실패: "+e.message;}}
 function normalizeCatalog(obj){
  if(!obj||!Array.isArray(obj.places))throw new Error("places 배열이 없는 카탈로그 파일입니다.");
+ if(!Array.isArray(obj.deletedPlaceIds))obj.deletedPlaceIds=[];
+ if(!Array.isArray(obj.deletedAssetPaths))obj.deletedAssetPaths=[];
  const seen=new Set();
  obj.schemaVersion=2;
  obj.places.forEach((p,index)=>{
@@ -250,7 +252,7 @@ function syncMergeValue(base,local,remote,path,conflicts){
  if(syncSame(local,remote))return syncClone(local);
  if(Array.isArray(base)||Array.isArray(local)||Array.isArray(remote)){
   const ba=Array.isArray(base)?base:[],la=Array.isArray(local)?local:[],ra=Array.isArray(remote)?remote:[];
-  const collection=/\.(places|reviewQueue|imageCandidates)$/.test(path);
+  const collection=/(^|\.)(places|reviewQueue|imageCandidates)$/.test(path);
   if(collection)return syncKeyedArray(ba,la,ra,path,conflicts);
   if([...ba,...la,...ra].every(x=>typeof x==="string"))return syncStringArray(ba,la,ra);
   conflicts.push(path);return syncClone(remote);
@@ -1002,7 +1004,15 @@ async function candidateAction(placeId,cid,action){
   p.updatedAt=stamp();localSave("사진을 삭제했습니다");render();renderLanding();return;
  }
 }
-function deletePlace(id){if(!requireAdminMode())return;if(!confirm("이 장소와 사진 후보 기록을 이 기기의 카탈로그에서 삭제할까요? 배포된 원본 자료는 바뀌지 않습니다."))return;catalog.places=catalog.places.filter(p=>p.id!==id);selectedId=catalog.places[0]?.id||null;localSave("장소 삭제를 이 기기에 임시저장");render();}
+function deletePlace(id){
+ if(!requireAdminMode())return;
+ const target=getPlace(id);if(!target)return;
+ if(!confirm("이 장소를 이 기기의 카탈로그에서 삭제할까요? GitHub 동기화·게시 후 다른 기기에도 삭제가 반영됩니다."))return;
+ catalog.deletedPlaceIds=Array.from(new Set([...(catalog.deletedPlaceIds||[]),id]));
+ catalog.deletedAssetPaths=Array.from(new Set([...(catalog.deletedAssetPaths||[]),...(target.imageCandidates||[]).map(c=>c&&c.assetPath).filter(Boolean)]));
+ catalog.places=catalog.places.filter(p=>p.id!==id);selectedId=catalog.places[0]?.id||null;
+ localSave("장소 삭제를 이 기기에 임시저장 · GitHub 동기화 시 반영");render();renderLanding();
+}
 function addNewPlace(){
  if(!requireAdminMode())return;
  let id="new-place-"+Date.now().toString(36);
@@ -1200,6 +1210,21 @@ async function publishCatalog(){
   const before=await fetch(repo+catalogPath+"?ref=main",{headers,cache:"no-store"});
   if(!before.ok)throw new Error("현재 카탈로그 확인 실패 (HTTP "+before.status+"). 토큰 권한과 브랜치를 확인하세요.");
   const currentCatalog=await before.json();
+  const remoteRaw=syncDecodeContentsFile(currentCatalog);
+  const remoteLatest=await syncAttachSupplementalPlaces(normalizeCatalog(remoteRaw));
+  const baselineText=localStorage.getItem(BASELINE_KEY);
+  let mergeResult;
+  if(baselineText){
+   let baseline;
+   try{baseline=normalizeCatalog(JSON.parse(baselineText));}catch(_){throw new Error("이 기기의 병합 기준 자료를 읽을 수 없습니다. 현재 자료를 JSON으로 백업한 뒤 기본자료를 다시 읽고 재시도하세요.");}
+   mergeResult=syncMergeCatalogThreeWay(baseline,catalog,remoteLatest);
+  }else mergeResult=syncMergeLegacyDraft(catalog,remoteLatest);
+  if(mergeResult.conflicts.length){
+   const list=mergeResult.conflicts.slice(0,8).join(" · ");
+   throw new Error("같은 장소의 같은 항목이 서로 다르게 수정되어 안전상 게시를 멈췄습니다. 수정 충돌: "+list+(mergeResult.conflicts.length>8?" 외 "+(mergeResult.conflicts.length-8)+"건":"")+". 이 기기의 JSON 백업을 먼저 내보낸 뒤 충돌 항목을 정리하고 다시 게시하세요. 로컬 자료는 삭제하지 않았습니다.");
+  }
+  catalog=normalizeCatalog(mergeResult.catalog);
+  status.textContent="현재 GitHub 자료와 이 기기 변경사항을 병합했습니다. 사진과 장소 자료를 게시합니다…";
   const staged=[];
   for(const p of catalog.places){
    for(const c of (p.imageCandidates||[])){
@@ -1257,12 +1282,14 @@ async function publishCatalog(){
    }catch(e){cleanupFailed.push(assetPath);}
   }
   for(const key of staged){try{await deletePendingPhoto(key);}catch(_){}}
+  catalog=normalizeCatalog(publishedCatalog);
   catalog.deletedAssetPaths=cleanupFailed;
-  localSave("GitHub에 장소 카탈로그와 선택 사진을 게시했습니다");
+  try{localStorage.setItem(BASELINE_KEY,JSON.stringify(publishedCatalog));localStorage.removeItem(LEGACY_DRAFT_KEY);}catch(_){}
+  localSave("GitHub에 장소 카탈로그와 선택 사진을 동기화·게시했습니다");
   render();renderLanding();
   status.classList.remove("hidden");
-  status.textContent="게시 완료. 커밋: "+String(result.commit&&result.commit.sha||"성공")+" · 장소 정보와 사진 변경사항을 게시했습니다."+ (cleanupFailed.length?" 다만 오래된 이미지 파일 "+cleanupFailed.length+"개는 삭제 재시도가 필요합니다. 다시 게시하면 재시도됩니다.":"") +" PC와 아이폰에서 같은 카탈로그를 볼 수 있습니다.";
-  $("publishToken").value="";btn.textContent="게시 완료";
+  status.textContent="동기화·게시 완료. 커밋: "+String(result.commit&&result.commit.sha||"성공")+" · 다른 기기의 새 장소와 서로 다른 항목의 수정사항을 병합했습니다."+ (mergeResult.legacy?" 이전 버전의 초안이어서 삭제는 자동 반영하지 않았습니다.":"")+(cleanupFailed.length?" 오래된 사진 파일 "+cleanupFailed.length+"개는 삭제 재시도가 필요합니다.":"")+" PC와 모바일에서 최신 자료를 다시 열면 같은 카탈로그를 볼 수 있습니다.";
+  $("publishToken").value=localStorage.getItem(PUBLISH_TOKEN_KEY)||"";btn.textContent="동기화 완료";
  }catch(e){status.textContent="게시 실패: "+e.message+" · 토큰은 저장하지 않았습니다.";}
  finally{btn.disabled=false;}
 }
