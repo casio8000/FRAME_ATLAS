@@ -54,3 +54,9 @@ Date: 2026-10-15 (KST)
 
 ## Next checkpoint
 Continue alias-aware reconciliation of the remaining old records. Where a location is genuinely distinct and artistically strong, add only after confirming location identity and source page; keep uncertain broadcast studios, restricted venues and uncertain operating status in review queue rather than treating them as generally accessible.
+
+
+## Follow-up correction — 2026-10-15
+The user clarified that a photo proven to depict the actual place should be marked approved as the representative image. Accordingly, all 67 active places now have `primaryImageId === referenceImageId` when the source identifies the location. This is an image/place identity approval only; copyright/reuse rights and commercial-shoot permission remain independent. The single image that failed the browser smoke test (Amorepacific Museum of Art) was replaced with an APMA gallery image from The Korea Herald. Development browser regression and quality gate passed on commit `ea0343a32028c84d96acb7eb1fb7084965472dde` with 67/67 images loaded.
+
+Legacy L-025 Samtan Art Mine was added to the review queue rather than the active catalog because recent news reports closure for safety reinforcement and a projected October 2027 reopening. The catalog is 67 active + 10 review-queue items. The latest queue-counter/cache changes are awaiting a fresh CI run.
