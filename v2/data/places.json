@@ -4,7 +4,7 @@
   "scope": "전국 촬영 장소 아카이브 · 사진·공간·촬영 실무 검증 전 후보를 별도 보류",
   "dataStatus": "전국 136곳. 이번 보강에서는 장소 내용과 일치하는 참고사진 13장을 추가 연결했으며, 대표사진 최종 선정·재사용 권리·상업촬영 허가는 별도 검증 상태로 유지합니다.",
   "selectionMethod": "관광지 인지도보다 조형성·재료감·빛과 그림자·배경 다양성·실내외 촬영 가능성·사진적 개성을 우선 평가",
-  "updatedAt": "2026-10-15T04:30:00.000Z",
+  "updatedAt": "2026-10-15T04:45:00.000Z",
   "places": [
     {
       "id": "seo-oil-tank",
@@ -10192,11 +10192,11 @@
       "imageCandidates": [
         {
           "id": "ref-sokcho-abai-village-ferry-2026",
-          "title": "속초 아바이마을 갯배와 청초호 선착장",
-          "imageUrl": "https://images.mindtrip.ai/attractions/6cc4/8115/40a8/b5fe/1086/0824/ae5f/8348",
-          "sourceThumbnail": "https://images.mindtrip.ai/attractions/6cc4/8115/40a8/b5fe/1086/0824/ae5f/8348",
-          "sourcePageUrl": "https://mindtrip.ai/attraction/sokcho-gangwon-do/abai-village/at-WKwzGCAl",
-          "sourceName": "Mindtrip · Abai Village 장소 안내",
+          "title": "아바이마을 갯배와 청초호 하구",
+          "imageUrl": "https://tong.visitkorea.or.kr/cms/resource/78/3048478_image2_1.jpg",
+          "sourceThumbnail": "https://tong.visitkorea.or.kr/cms/resource/78/3048478_image2_1.jpg",
+          "sourcePageUrl": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=107594",
+          "sourceName": "한국관광공사 대한민국 구석구석",
           "creator": "사진 저작자 별도 확인 필요",
           "rights": "unknown",
           "rightsLabel": "이미지 재사용 권리 확인 중",
@@ -10204,9 +10204,10 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "수변·갯배·선착장·생활 로케이션",
-          "notes": "아바이마을 선착장과 갯배가 보이는 장소 참고사진. 이미지 제공처의 재사용 조건이 확인되지 않아 대표사진 승인으로 간주하지 않는다.",
+          "notes": "한국관광공사 아바이마을 갯배 안내에 게재된 장소 사진. 갯배·수로와 실제 장소가 일치한다. 앱 대표사진 재사용 권리는 별도 확인 중이다.",
           "status": "candidate",
-          "createdAt": "2026-10-15T04:30:00.000Z"
+          "createdAt": "2026-10-15T04:30:00.000Z",
+          "updatedAt": "2026-10-15T04:45:00.000Z"
         }
       ],
       "referenceImageId": "ref-sokcho-abai-village-ferry-2026",
@@ -10249,7 +10250,7 @@
       ],
       "legacyMood": "레트로·서정·생활감",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15T04:30:00.000Z",
+      "updatedAt": "2026-10-15T04:45:00.000Z",
       "notes": "드라마 '가을동화'의 대표 아이콘으로 소개된 갯배와 아바이마을. 문화예술 재생사업이 진행 중인 곳으로 보도됨. 2026-10-15 참고사진 보강: Mindtrip · Abai Village 장소 안내의 속초 아바이마을 갯배와 청초호 선착장. 이미지가 장소 참고와 맞는 점은 확인했으나 공개 앱 재사용 권리는 확인 중이며 대표사진으로 최종 승인되지 않음."
     },
     {
@@ -12072,11 +12073,11 @@
       "imageCandidates": [
         {
           "id": "ref-seoul-arts-center-official-2026",
-          "title": "예술의전당 콘서트홀 원형 외관과 광장",
-          "imageUrl": "https://www.sac.or.kr/upfile/uploadfile/asa/board/pressrelease/article/2026/03/bf19408428e5b2ebaf1c0674778f0765.jpg",
-          "sourceThumbnail": "https://www.sac.or.kr/upfile/uploadfile/asa/board/pressrelease/article/2026/03/bf19408428e5b2ebaf1c0674778f0765.jpg",
-          "sourcePageUrl": "https://www.sac.or.kr/site/main/board/pressrelease/316580",
-          "sourceName": "예술의전당 공식 보도자료",
+          "title": "예술의전당 원형 공연장 외관과 열주",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2021/02/e33ea16ef8ec40768f604725b2b74f7e.jpg",
+          "sourceThumbnail": "https://mediahub.seoul.go.kr/uploads/mediahub/2021/02/e33ea16ef8ec40768f604725b2b74f7e.jpg",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2006942",
+          "sourceName": "서울시 미디어허브",
           "creator": "예술의전당 홈페이지 사진 크레딧 확인 필요",
           "rights": "unknown",
           "rightsLabel": "이미지 재사용 권리 확인 중",
@@ -12084,9 +12085,10 @@
           "licenseUrl": "",
           "placeMatch": "confirmed",
           "viewType": "원형 공연장·유리 파사드·광장·야간",
-          "notes": "예술의전당 공식 보도자료에 게재된 콘서트홀 외관 이미지. 장소 일치는 확인했으며, 앱 대표사진으로 사용할 권리는 별도 확인 중이다.",
+          "notes": "서울시 미디어허브에 게재된 예술의전당 원형 공연장 외관 사진. 장소 일치 참고용이며 재사용 권리는 확인 중이다.",
           "status": "candidate",
-          "createdAt": "2026-10-15T04:30:00.000Z"
+          "createdAt": "2026-10-15T04:30:00.000Z",
+          "updatedAt": "2026-10-15T04:45:00.000Z"
         }
       ],
       "referenceImageId": "ref-seoul-arts-center-official-2026",
@@ -12108,7 +12110,7 @@
       "curationQueueStatus": "legacy-214-audit",
       "legacyCatalogId": "L-149",
       "createdAt": "2026-10-15",
-      "updatedAt": "2026-10-15T04:30:00.000Z",
+      "updatedAt": "2026-10-15T04:45:00.000Z",
       "notes": "구버전 L-149를 대형 공연·문화시설 후보로 이관했습니다. 작품·공연장별 촬영 및 상업촬영은 별도 협의가 필요합니다. 2026-10-15 참고사진 보강: 예술의전당 공식 보도자료의 예술의전당 콘서트홀 원형 외관과 광장. 이미지가 장소 참고와 맞는 점은 확인했으나 공개 앱 재사용 권리는 확인 중이며 대표사진으로 최종 승인되지 않음."
     },
     {
