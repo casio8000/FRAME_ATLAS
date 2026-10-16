@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 4
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 5
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -302,3 +302,14 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100;
 - Replaced the non-loading Seodo Station candidate image with the directly verifiable on-site photo URL from a Naver travel blog. The old World Daily image URL and source URL are retained in `previousImageUrl` and `previousSourcePageUrl` for audit history; usage rights remain unknown.
 - Post-merge data: 200 unique locations, 307 photo candidate records including retired histories, 17 active image-match review candidates, 306 candidates without clearly cleared reuse rights, and 0 broken selected-image references or structural errors.
 - Sources: Brique Magazine's March 2026 opening article for Seo-Seoul Museum of Art (https://magazine.brique.co/brq-news/seoseoul-museum-opening-geumnarae-park-kimchanjoong-thesystemlab/); Seoul's official Donuimun Museum Village image path (https://english.seoul.go.kr/wp-content/uploads/2023/12/donuimun-01.jpg); VisitKorea's Haenggung-dong Mural Village listing (https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=50c0daa1-83a7-416c-a38f-7b5257fed378); Naver blog field photograph with the Seodo station sign (https://blog.naver.com/hey_che/222381772211).
+
+
+## Release 2026-10-16 · Photo audit batch 5 — working public-space references
+- Created safety branch `backup/pre-image-audit-batch5-2026-10-16` from pre-audit main commit `22c6864b70a9e0802cfd4aa94c772b32a418cabb`.
+- Repaired four alternate photo references without changing any selected primary/reference ID or increasing the place count:
+  - Seongsu Daelim Changgo now points to the Daelim Changgo interior image displayed on the venue-source page rather than the older Sekainavi image; source and reuse rights remain in review.
+  - Daejeon Lee Ungno Museum now uses the Daejeon City photo archive's explicitly named 2026 exterior photograph. The record notes both the page's Public Nuri Type 1 label and the archive's separate attribution/no-alteration/permission conditions, so reuse is not marked commercially cleared.
+  - Busan UN Sculpture Park now points to the VisitKorea image showing an actual sculptural installation on the park walkway.
+  - Incheon Open Port now points to Incheon City's tourism site photo of the Qing/Japanese concession-boundary staircase and surrounding historic street; the old TripPose URL remains as history.
+- Post-merge catalog: **200 locations**, **307 photo candidates**, **13 active place-match review candidates**, **306 reuse-rights candidates still not clearly cleared**, and **0 structural or selected-reference errors**. All edited candidates remain alternates; existing selected primary/reference IDs are unchanged.
+- Official/venue source pages checked: Daelim Changgo venue photo and place description (https://visit.seoul.kr/en/places/daelim-changgo); Daejeon City's Lee Ungno Museum photo record (https://photo.daejeon.go.kr/prog/photodbCate/74387/view.do?cateNo=50&mno=sub01_05) and its separate photo-use rules (https://photo.daejeon.go.kr/kor/sitemap_15.do); VisitKorea's UN Sculpture Park photo page (https://www.koreatriptips.com/en/tourist-attractions/2953407.html); Incheon tourism's Qing/Japanese Concession Boundary Steps (https://chn-itour.incheon.go.kr/cmn/board/BBSMSTR_000000000081/2052bbsDetail.do).
