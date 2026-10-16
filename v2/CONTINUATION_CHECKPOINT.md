@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — image-load reliability batch 9
+Last updated: 2026-10-16 (Korea Standard Time) — image-load reliability batch 10
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -351,3 +351,13 @@ Last updated: 2026-10-16 (Korea Standard Time) — image-load reliability batch 
 - No place count, selected photo ID, or rights status changed. Daecheongho rights status remains `review-required` pending separate review.
 - Source page: https://www.welfarehello.com/community/hometownNews/0649c2c6-11f2-4650-acd7-3e300a6daf5a (the page identifies the source blog as Daejeon Metropolitan City's Story Daejeon).
 - Quality check and Pages deployment for this batch are pending.
+
+
+## Release 2026-10-16 · Image-load reliability batch 10
+- Created safety branch `backup/pre-paradise-city-image-repair-batch10-2026-10-16` from pre-change main commit `5cfaf04c94cb827704883d985125f235568b57a3`.
+- Found a second external-image issue after batch 9: Paradise City’s UniqHotels pumpkin image URL returned **HTTP 404**, despite the previous run snapshot reporting it as still loading. Replaced it with the working Esquire Korea direct image file `https://www.esquirekorea.co.kr/resources/online/online_image/2026/06/16/2d093ae9-3102-4d19-b337-8762f7f80362.png`.
+- The source article (2026-06-23) identifies the photo as Yayoi Kusama’s “Great Gigantic Pumpkin” and credits the image source to Paradise City. The candidate title and view type now accurately describe the indoor large-scale sculpture, lobby and reflective floor.
+- Preserved the failed URL and source in `lastFailedImageUrl` and `lastFailedSourcePageUrl`. Rights status was not changed; public reuse and commercial shoot permissions are still not cleared.
+- Extended desktop and mobile photo audits to require this specific candidate to load from the replacement image host. Place count remains 200.
+- Source checked: https://www.esquirekorea.co.kr/article/1904479 (Esquire Korea, 2026-06-23, photo source credited in caption to Paradise City).
+- Quality test and Pages deployment are pending.
