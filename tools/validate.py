@@ -144,6 +144,13 @@ for index, place in enumerate(places, 1):
         value = place.get(key)
         if value and value not in local_ids:
             ERRORS.append(f"{place_id} {key}가 존재하지 않는 사진 후보를 가리킵니다: {value}")
+        elif value:
+            selected = next((candidate for candidate in image_candidates
+                             if isinstance(candidate, dict) and candidate.get("id") == value), None)
+            if selected and (selected.get("status") == "rejected" or selected.get("placeMatch") != "confirmed"):
+                ERRORS.append(
+                    f"{place_id} {key}가 제외되었거나 장소 일치가 확인되지 않은 사진을 가리킵니다: {value}"
+                )
 
 records_with_candidates = sum(1 for p in places if isinstance(p, dict) and bool(p.get("imageCandidates")))
 primary_count = sum(1 for p in places if isinstance(p, dict) and p.get("primaryImageId"))
