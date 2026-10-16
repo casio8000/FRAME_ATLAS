@@ -401,3 +401,10 @@ Last updated: 2026-10-17 (Korea Standard Time) — mobile image audit batch 12 a
 - Quality run #580 passed the three priority mobile photo checks but its 7-second snapshot still showed 191/200 mobile images loaded, zero missing and nine still loading. This was an incomplete loading snapshot rather than a confirmed missing-photo state.
 - Reworked the mobile browser audit so it captures pending cards after the initial snapshot, retries each pending card one at a time in the viewport, waits up to 20 seconds for either a loaded image or the explicit missing-photo fallback, then requires the final mobile archive to contain zero loading and zero missing states. This avoids the prior pattern of forcing the same few hard-coded IDs only.
 - No place data or photo assignment was changed. Quality run #581 was running the previous test while this update was prepared. This commit starts a new full quality and Pages deployment cycle.
+
+
+## Release 2026-10-17 · Report disclaimer sync hotfix batch 15
+- Created safety branch `backup/pre-report-disclaimer-fix-batch15-2026-10-17` from main `c5ee14e096a3f1c1233e7f047286ef85fe3b5db2`.
+- Quality run #581 verified the 200-place catalog and photo/license validation successfully but then failed the report-consistency step because the Python report generator still emitted the older generic rights disclaimer while the checked-in `tools/report.md` had the more precise CC BY/CC BY-SA/CC0 explanation. The report body and actual counts matched; the discrepancy was one explanatory paragraph.
+- Updated the generator's disclaimer to match the checked-in report exactly. No place data, photo URL, selected photo, license metadata, or status was changed.
+- Quality run #582 is separately testing the per-card mobile loading retry introduced in batch 14. A new quality/Pages cycle will validate this report hotfix and the broader mobile retry logic.
