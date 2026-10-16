@@ -30,15 +30,21 @@ Date: 2026-10-16 (Korea Standard Time)
 4. Added durable audit checkpoint file. Commit: 915d6927a48084b0fd2ef67e08b36f99dacf8dee
 5. A GitHub Actions quality-check run was queued and is being monitored. Do not call the changes validated until the run completes and actual public pages are checked.
 
-## Additional important finding
-- The current automated workflow's tools/check_app.py explicitly requires legacy-v5.44.html and inspects its scripts, sync code, manifest and cache version. This means deleting that file immediately would break the repository's quality checks and remove the current test target. Before removing the file, migrate or replace those checks so they validate the supported v2 app, then delete legacy assets in a controlled commit.
-- v2/assets/app.js publishes the large places.json using GitHub's Contents API. The API's content payload may be omitted for files above 1 MiB; the read path has now been changed to fetch raw JSON separately while retaining the Contents SHA for safe update. This needs to pass Actions and be verified in the browser before considered complete.
+## Additional important findings
+- The quality checker is now migrated to the supported V2 shell; `legacy-v5.44.html` was removed from main only after the replacement checks passed. The original file's blob SHA `ec2ffb4e88c379751076a9e0a7b49ed84db72f41` is preserved as the backup branch's root `index.html`.
+- The V2 browser smoke test and quality run `38879973279` passed; Pages deployment `38879973573` also passed. The smoke test reported 200 places on both desktop and mobile, zero uncaught JavaScript errors, and correct 2.0 navigation/detail return behavior.
+- Photo audit numbers are bounded snapshots rather than a full guarantee that every source is available. In the latest 7-second home snapshot, 104 of 186 non-held photos had loaded, zero had the app's final `image-missing` flag, and 82 were still pending; mobile archive reported 180 loaded, 6 loading, and zero final-missing flags. Do not equate pending loads with broken images.
+- The test run creates `test-results/v2-image-audit.json`; the workflow now uploads JSON audit files alongside screenshots so future reports retain the per-location failure/pending distinction.
+- Two mojibake-named root exports had exact blob duplicates under readable Korean filenames, with no source-code or manual references found. The garbled aliases are being removed; readable-name exports are preserved.
+- `v2/assets/app.js` contains the local photo staging and GitHub asset upload flow and keeps legacy external image URLs supported. Static and mock tests pass, but a real write using the user's GitHub token and a manual iPhone publication check have not been performed.
+- Root legacy `sw.js`, `manifest.json`, `data/places.js`, and backup/sync modules remain pending a separate offline/rollback audit; they have not been deleted.
 
 ## Next steps
-1. Verify the new cleanup commit's Actions quality run and Pages deployment. Previous v2 browser smoke testing passed on the pre-cleanup commit; repeat it after the deletion.
-2. Continue auditing root `sw.js`, `manifest.json`, `data/places.js`, old sync/backup modules and icons. Do not delete these as a batch: first identify root-PWA offline behavior and any useful recovery functions.
-3. Preserve the 214-location validated legacy dataset and the current v2 base/supplemental JSON; compare IDs with a full-data retrieval path before any catalog modification.
-4. Confirm the photo flow end-to-end in the actual app when available: select local file (JPEG/PNG/WebP/AVIF, up to 8 MB) -> IndexedDB staging -> GitHub `v2/assets/places/<placeId>/<candidateId>.<ext>` upload -> catalog `assetPath`/relative `imageUrl` update -> public reload on PC and iPhone. Code paths and CI markers have been inspected, but a real write using the user's GitHub token has not been performed.
-5. Improve photo publishing recovery if real use reveals orphaned uploads, size/memory problems or stale catalog conflicts. Keep previous external URLs working and migrate only when the exact place/photo match has been confirmed.
-6. Keep build ID `20261016-89` synchronized among `v2/index.html`, `v2/sw.js`, and `v2/manifest.webmanifest` until the next coherent build bump.
-7. Report verified automated test results separately from PC/iPhone live-use checks. Never treat source inspection as proof of an actual photo upload or device synchronization.
+1. Verify the current cleanup commit's Actions and Pages deployment before doing another code change.
+2. Review uploaded browser audit JSON and separate genuinely broken image sources from slow or still-pending remote responses; do not change the catalog automatically from a timed-out image request.
+3. Preserve the current 200-place V2 catalog; no place additions or catalog rewrites in this phase.
+4. Confirm photo publishing end-to-end in the app when available: local file (JPEG/PNG/WebP/AVIF, up to 8 MB) -> IndexedDB staging -> GitHub path `v2/assets/places/<placeId>/<candidateId>.<ext>` -> catalog path/URL update -> public reload on PC and iPhone. Code markers and mock tests are verified; real token-backed upload is not.
+5. Continue auditing root `sw.js`, `manifest.json`, `data/places.js`, old sync/backup modules and icons before deleting anything that may still serve old installed PWAs or recovery.
+6. Keep build ID `20261016-89` consistent until the next intentional app build bump.
+7. Keep this checkpoint updated after each meaningful, validated change so work can resume without repeating the same audit.
+

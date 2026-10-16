@@ -86,7 +86,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: frame-atlas-v2-browser-smoke
-          path: test-results/*.png
+          path: |
+            test-results/*.png
+            test-results/*.json
           if-no-files-found: ignore
 
       - name: Validate location data
