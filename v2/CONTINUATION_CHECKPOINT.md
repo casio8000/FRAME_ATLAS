@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 2
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 3
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -285,3 +285,12 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100;
 - Recomputed the catalog report from both data lists: 200 locations, 307 photo candidate records including rejected history, 26 unresolved active image-match candidates, 306 candidates with reuse rights not clearly cleared, and 0 structural/selected-reference errors.
 - The latest 14 new-location photo assignments remain unchanged. Automated quality checks for the preceding batch passed and its Pages deployment succeeded. This batch awaits its own quality test and deployment result.
 - Source checks: LG Art Center official TUBE architectural tour (https://www.lgart.com/architecture/ko/audio/5); Seoul Mediahub Upcycling Plaza page (https://mediahub.seoul.go.kr/archives/2018487); Seoul Mediahub New City Hall page (https://mediahub.seoul.go.kr/archives/160215); Seoul Urban Life Museum name visible in its exterior image (source recorded in catalog); MK News photo source for Jangsaengpo Culture Warehouse (https://www.mk.co.kr/news/society/11079574).
+
+
+## Release 2026-10-16 · Photo audit batch 3 and accurate location references
+- Created safety branch `backup/pre-image-audit-batch3-2026-10-16` from pre-audit main commit `1fc1bb065459351ab44c4057c48b6f68e8d9118a`.
+- Confirmed location matching and source captions for four photo candidates: Jangtaesan Natural Recreation Forest skyway; Busan Cinema Center LED canopy at night; Peace Culture Bunker exterior; and MMCA Cheongju first-floor storage. None of the existing primary/reference IDs were changed.
+- Replaced the legacy Jangtaesan forest-road URL with a source-linked photo explicitly captioned as the Jangtaesan skyway in NewsWA, crediting Korea Tourism PhotoKorea photographer Lee Beom-su. The previous URL is retained in the candidate notes for history.
+- Rejected one generic Unsplash studio image from the Paju CJ ENM Studio Center record because there is no evidence that the picture depicts the actual CJ ENM site. The URL and source note remain stored, but the image is no longer an active photo candidate.
+- Post-merge report: 200 locations, 307 records including rejected history, 21 active location-match review candidates, 306 candidates without clearly cleared reuse rights, and 0 structural or selected-reference errors. The 200 current selected reference IDs remain unchanged.
+- Source pages: NewsWA's Jangtaesan skyway photo caption credits Korea Tourism PhotoKorea (https://www.news-wa.com/article/travel/tour-korea/2025/09/14/20250914500020); VisitKorea's Busan Cinema Center at night (https://english.visitkorea.or.kr/svc/contents/infoBscView.do?dataSetId=76&menuSn=229&vcontsId=177333); CoRe Architects' Peace Culture Bunker photo portfolio (https://www.co-re.kr/project/peace-culture-bunker); NewsPim's MMCA Cheongju opening story (https://m.newspim.com/news/view/20181226000640).
