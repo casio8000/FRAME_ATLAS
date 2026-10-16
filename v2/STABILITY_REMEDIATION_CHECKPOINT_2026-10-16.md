@@ -84,12 +84,17 @@ Date: 2026-10-16 (Korea Standard Time)
 - Updated `tools/check_app.py` to require preserved files under the archive and fail if the old root `data/` directory or root image harvester returns.
 - Root `sw.js`, `manifest.json`, and icons remain as the minimal transition layer for already-installed root PWAs. V2 app code and active catalogs were not edited.
 
+## 2026-10-16 photo publishing regression guards
+- Expanded `tools/test_photo_assets.js` beyond Base64 checks. It verifies (1) separate raw catalog read for the >1 MiB V2 catalog, (2) photo file commit before catalog reference, (3) deterministic `v2/assets/places/<placeId>/<candidateId>.<ext>` path and relative display URL, (4) use of the current Contents API blob SHA, (5) old asset deletion only after the new catalog PUT succeeds, and (6) fail-closed handling for unexpected image-path status, photo upload failures, and raw-catalog read failures.
+- The conversion test covers 13 sizes through 8 MiB. Latest run `38891378854` passed the full quality workflow; Pages deployment `38891379066` passed at commit `053227faf438e22083c4bdbcb2322f739da33ca8`.
+- These are static/unit regression checks. A real photo upload using the user's GitHub write token and confirmation from a second device remains untested; the token must be entered only in the app and not shared in chat.
+- The active V2 base catalog SHA remains `be85145fb6efd1eec81372c6e630cf1acd165156`; the supplemental catalog SHA remains `2a39300efe667caf41ed0309d3fa0926f5dd7cce`. Neither was changed during archiving or test updates.
+
 ## Next steps
-1. Verify this archival commit's Actions quality run and Pages deployment.
-2. Preserve the current V2 catalog; do not add or rewrite locations during stability work.
-3. Use the uploaded photo-audit JSON to identify truly final-missing images; treat still-loading images separately and never modify records automatically from a timeout.
-4. Complete an actual authorized photo-upload test when the user opens the app with their own GitHub write token: local file -> IndexedDB staging -> repository asset path -> catalog publication -> public reload on PC and iPhone. Static and mock checks are not proof of a real upload.
-5. Keep the small root PWA transition bridge, manifest, and icons until already-installed root PWAs are safely handled.
-6. Keep build ID `20261016-89` synchronized until an intentional V2 app build bump.
-7. Continue updating this checkpoint after each verified step to avoid repeating work after interruptions.
+1. Perform one authorized photo upload from the app using the user's own GitHub token entered locally in the app. Confirm the committed file under `v2/assets/places/<placeId>/<candidateId>.<ext>`, the catalog's `assetPath` and relative `imageUrl`, and display after reloading a second device. Do not send the token through chat.
+2. Continue image validation in small batches. At the latest 7-second all-images-eager home snapshot, 0 of 186 non-held images had a final missing flag, but 85 were still pending; this is a stress snapshot and not a final availability guarantee.
+3. Preserve the 200-place V2 catalog during stability work; do not add or rewrite locations until a specific data task is requested.
+4. Keep the small root PWA transition bridge, manifest, and referenced icons while already-installed root PWAs are transitioned.
+5. Keep build ID `20261016-89` synchronized until an intentional V2 app build bump.
+6. Update this checkpoint after every validated phase so interrupted work resumes without repeating audits.
 
