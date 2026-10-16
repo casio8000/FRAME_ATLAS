@@ -68,7 +68,7 @@ if HTML_PATH.is_file():
     local_checked = 0
     for ref in refs:
         ref = ref.strip()
-        if not ref or ref.startswith(("#", "data:", "blob:", "javascript:", "mailto:", "tel:")):
+        if not ref or ref.startswith("#") or re.match(r"^[a-z][a-z0-9+.-]*:", ref, re.I):
             continue
         if re.match(r"^(?:https?:)?//", ref, re.I):
             continue
