@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; force-refresh PC/mobile cache after 201-vs-200 report
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 1
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -265,3 +265,13 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100;
 - Automated regression passed using a synthetic stale PC draft with an alternate-ID DDP duplicate, an unfinished “50/51” placeholder, and one unique local-only test location: count stays 200, duplicate is merged, placeholders are removed, unique local-only record remains separately backed up, and the user gets a visible notice.
 - Final catalog/report counts: 200 locations; 304 photo candidates; 303 candidates with URL/path; 1 no URL/path; 265 confirmed, 37 unverified, 1 unconfirmed, 1 mismatch (rejected/mismatch candidate is intentionally retained only as a historical rejection record); no selected primary/reference ID points to a rejected or non-confirmed candidate.
 - Mid-project assessment: location collection is complete for the 200-place target and should remain frozen. Main work now shifts to image loading and source/rights review, real iPhone verification, and regression checks for backup/restore, cross-device merge/conflicts, and data preservation. Many photos are external references, not local files, and photo match, reuse rights, and filming permissions are separate questions.
+
+
+## Release 2026-10-16 · Photo audit batch 1 and report precision
+- Created safety branch `backup/pre-image-audit-batch1-2026-10-16` from the pre-audit main commit `b5d1d16d284f9c800e48d1fdfb7385506968d4bc` before changing photo metadata.
+- Visually checked three alternate image/source pairs and promoted only their place-match state to `confirmed`: `ref-gyeongchun-rail-axis` (Gyeongchun Line Forest Trail), `ref-naksan-wall-news-night` (Naksan/Hanyang fortress wall night view), and `ref-starfield-suwon-library-interior` (Starfield Suwon Byeolmadang Library). Their status remains `candidate`; reuse rights stay unknown; no primary/reference-image IDs were changed.
+- Rejected `ref-acc-gwangju-architecture` as a usable photo candidate because it is a high-angle complex-wide view rather than a useful ground-level scouting reference. Its original URL and history remain; `placeMatch` stays unverified because the exact sub-location was not proven.
+- Refined `tools/validate.py`: active photo-match review totals now exclude candidates marked `rejected`, while the state table preserves all candidate history. This avoids counting an excluded image as an active review task.
+- Post-merge result: **200 unique locations**, **307 photo candidates**, 271 confirmed, 34 unverified, 1 unconfirmed, and 1 mismatch. The state table includes rejected-history candidates; the active match-review count is 34. There remain 306 candidates whose image reuse rights are not clearly cleared.
+- Checked the successful desktop/mobile smoke artifacts from quality run #567 (build 100): 200/200 catalog cards rendered, 200/200 displayed image elements loaded, and 0 held/missing/pending images in the captured audit. All latest 14 locations remained loaded. The actual physical iPhone Safari/PWA acceptance test remains outstanding.
+- Sources reviewed: FN News article on Gyeongchun Forest Trail (https://www.fnnews.com/news/202110051153483478); Nongmin Hanyang Fortress/Naksan route article (https://www.nongmin.com/article/20250317500224); Starfield Suwon Byeolmadang Library photo source (https://koreacrate.com/blogs/blog/starfield-byeolmadang-library-opens-in-suwon-south-korea).

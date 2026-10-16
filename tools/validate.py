@@ -158,7 +158,7 @@ reference_count = sum(1 for p in places if isinstance(p, dict) and p.get("refere
 photos_with_refs = sum(1 for c in candidates if c.get("imageUrl") or c.get("sourceThumbnail") or c.get("assetPath") or c.get("pendingAsset"))
 local_assets = sum(1 for c in candidates if c.get("assetPath") or str(c.get("imageUrl") or "").startswith("./assets/places/"))
 missing_refs = sum(1 for c in candidates if not (c.get("imageUrl") or c.get("sourceThumbnail") or c.get("assetPath") or c.get("pendingAsset")))
-match_review = sum(1 for c in candidates if c.get("placeMatch") != "confirmed")
+match_review = sum(1 for c in candidates if c.get("status") != "rejected" and c.get("placeMatch") != "confirmed")
 rights_review = sum(1 for c in candidates if (c.get("usageRightsStatus") or c.get("rightsStatus")) not in
                     ("commercial-use-cleared", "user-owned", "public-domain-dedication"))
 match_states = Counter(str(c.get("placeMatch") or "(미기재)") for c in candidates)
@@ -203,6 +203,8 @@ report = [
     "| 상태 | 후보 수 |",
     "|---|---:|",
     *[f"| {key} | {value} |" for key, value in sorted(match_states.items())],
+    "",
+    "> 상단의 장소 일치 재검토 건수는 상태가 rejected가 아닌 활성 사진 후보만 집계합니다. 아래 상태별 표에는 제외된 후보의 이력도 포함됩니다.",
     "",
     "### 이용권 상태",
     "",
