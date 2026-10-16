@@ -39,6 +39,12 @@ Date: 2026-10-16 (Korea Standard Time)
 - `v2/assets/app.js` contains the local photo staging and GitHub asset upload flow and keeps legacy external image URLs supported. Static and mock tests pass, but a real write using the user's GitHub token and a manual iPhone publication check have not been performed.
 - Root legacy `sw.js`, `manifest.json`, `data/places.js`, and backup/sync modules remain pending a separate offline/rollback audit; they have not been deleted.
 
+## 2026-10-16 follow-up
+- Latest completed quality run `38880334171` and Pages deployment `38880333611` both passed for the duplicate-export cleanup and photo-audit artifact change.
+- The workflow now includes `test-results/*.json` in the browser-smoke artifact; audit snapshots identify truly `image-missing` cards separately from photos still loading. The last home snapshot showed 0 final-missing flags but 89 pending at 7 seconds under the test's all-images-eager stress pass; the mobile archive snapshot showed 0 final-missing flags, 180 loaded, and 6 still loading. This is not a guarantee every remote image URL will remain reachable.
+- Two garbled-name exports were removed; readable Korean export files with exactly matching blob hashes remain. No active app/manual references to the garbled filenames were found.
+- Root `MANUAL.md` was a V5.40 guide and is being replaced with a pointer to the current 2.0 manual. Its prior contents (blob SHA `af46a5531ab59cfafb83f4bd9ed6dc87421130de`) are preserved on the backup branch.
+
 ## Next steps
 1. Verify the current cleanup commit's Actions and Pages deployment before doing another code change.
 2. Review uploaded browser audit JSON and separate genuinely broken image sources from slow or still-pending remote responses; do not change the catalog automatically from a timed-out image request.

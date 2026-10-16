@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/quality-check.yml"
       - "README.md"
+      - "MANUAL.md"
       - "ARCHIVE_INDEX*.md"
       - "legacy-v5.44.html"
       - "v2/*.md"
@@ -29,6 +30,7 @@ on:
     paths:
       - ".github/workflows/quality-check.yml"
       - "README.md"
+      - "MANUAL.md"
       - "ARCHIVE_INDEX*.md"
       - "legacy-v5.44.html"
       - "v2/*.md"
