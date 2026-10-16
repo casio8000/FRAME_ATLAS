@@ -521,7 +521,7 @@ function showHomeAllPlaces(){
    showAppView("home",false);renderLanding();
   }
   requestAnimationFrame(()=>{
-   const grid=$("homeFeaturedGrid");
+   const grid=$("newlyAddedSection")||$("homeFeaturedGrid");
    if(shouldRestorePreviousPosition){
     window.scrollTo({top:Math.max(0,restoreScrollY),behavior:"auto"});
     homeListReturnScrollY=null;
@@ -566,7 +566,7 @@ function renderNewlyAddedLocations(){
   if($("query"))$("query").value="";
   if($("regionFilter"))$("regionFilter").value="";
   if($("imageFilter"))$("imageFilter").value="";
-  showAppView("workspace");
+  showAppView("detail");
   render();
  }));
 }
@@ -664,6 +664,7 @@ function renderLanding(){
    return '<button type="button" class="home-place-row" data-home-all-place="'+esc(p.id)+'"><span class="home-place-thumb">'+(photo&&!held?'<img loading="lazy" data-image-fallback="true" data-fallback-thumbnail="'+esc(photo.sourceThumbnail||"")+'" src="'+esc(url)+'" alt="'+esc(p.name)+' 촬영 참고사진" referrerpolicy="no-referrer">':'<span class="home-place-placeholder">'+(held?"사진 검토 보류":"▧")+'</span>')+'</span><span class="home-place-info"><small>'+String(index+1).padStart(2,"0")+' / '+esc(p.region||"수도권")+'</small><b>'+esc(p.name)+'</b><span>'+esc(p.category||"장소 유형 조사 필요")+'</span><em>'+esc(status)+'</em></span><span class="home-place-chevron">↗</span></button>';
   }).join("")||'<div class="landing-empty">조건에 맞는 장소가 없습니다.</div>';
   bindImageFallbacks(allGrid);
+  renderNewlyAddedLocations();
   allGrid.querySelectorAll("[data-home-all-place]").forEach(card=>card.addEventListener("click",()=>{selectedId=card.dataset.homeAllPlace;showAppView("detail");}));
  }
  const queue=(Array.isArray(catalog.reviewQueue)?catalog.reviewQueue:[]).filter(item=>!["registered-in-catalog","merged-into-catalog"].includes(item.curationQueueStatus));
