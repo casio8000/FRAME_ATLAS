@@ -21,14 +21,21 @@ Date: 2026-10-16 (Korea Standard Time)
 - .github/workflows/quality-check.yml checks JS syntax, browser smoke test, location data, app resources/version/photo import, backup merge and per-device sync tests, and legacy audit summary.
 
 ## Changes made in this checkpoint
-1. Root index.html: removed the visible public link to legacy-v5.44.html. The root redirect and direct 2.0 link remain.
+1. Root index.html: removed the visible public link to legacy-v5.44.html. The root redirect remains directed to v2.
    Commit: d810cf49be8ec1bc2754052be9bc634f207d0f0e
-2. v2/manifest.webmanifest: aligned start_url from fa_build=20261016-72 to fa_build=20261016-88.
-   Commit: ef1c557133c116351432db3b2085ce4d71b26c56
-3. A GitHub Actions quality-check run was queued for the manifest commit. Do not call the changes validated until the run completes and actual public pages are checked.
+2. Fixed v2/manifest.webmanifest start_url version mismatch, then aligned all current v2 shell references to build 20261016-89.
+   Latest shell commits: index f9f7b1f37598d4e658a12b193bfcbedf5545729c; service worker 9587bdee8e59204c49ca69825eb2b1a211347b42; manifest 4b0a517d0b37c47b1a379d7b8795161afe07282f; root redirect ed824c9179184895e6dfaafc672efcc80239475a.
+3. Fixed large-catalog publishing read path in v2/assets/app.js: the Contents API metadata is still used for its SHA, but JSON content is read from raw.githubusercontent.com because the catalog is over 1 MiB and Contents responses may omit its base64 content.
+   Commit: 2fab8c3f56bb6a907c161a264dd5b59cf2df42dd
+4. Added durable audit checkpoint file. Commit: 915d6927a48084b0fd2ef67e08b36f99dacf8dee
+5. A GitHub Actions quality-check run was queued and is being monitored. Do not call the changes validated until the run completes and actual public pages are checked.
+
+## Additional important finding
+- The current automated workflow's tools/check_app.py explicitly requires legacy-v5.44.html and inspects its scripts, sync code, manifest and cache version. This means deleting that file immediately would break the repository's quality checks and remove the current test target. Before removing the file, migrate or replace those checks so they validate the supported v2 app, then delete legacy assets in a controlled commit.
+- v2/assets/app.js publishes the large places.json using GitHub's Contents API. The API's content payload may be omitted for files above 1 MiB; the read path has now been changed to fetch raw JSON separately while retaining the Contents SHA for safe update. This needs to pass Actions and be verified in the browser before considered complete.
 
 ## Next steps
-1. Confirm Actions result and verify the root index and manifest contents.
+1. Confirm latest Actions result and verify the root index, v2 manifest and build references.
 2. Inspect root sw.js/manifest.json and all code references to legacy-v5.44.html, legacy root scripts, and old data files.
 3. Inspect quality-check script/test assumptions before deleting any legacy files.
 4. Compare v2 base and supplemental catalog counts/IDs without losing or duplicating locations. Use a full-data retrieval path before any large JSON write.
