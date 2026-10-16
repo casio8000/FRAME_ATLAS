@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""FRAME ATLAS 앱 셸 및 인라인 JavaScript 정적 검사."""
+"""FRAME ATLAS 2.0 app-shell, catalog, offline-cache, and photo-publishing checks."""
 from __future__ import annotations
 
 import json
@@ -7,306 +7,225 @@ import re
 import subprocess
 import tempfile
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
-HTML_PATH = ROOT / "legacy-v5.44.html"
-SW_PATH = ROOT / "sw.js"
-SYNC_PATH = ROOT / "data" / "device-sync.js"
-AUDIT_PATH = ROOT / "data" / "legacy-v6-audit.js"
-AUDIT_TEST_PATH = ROOT / "tests" / "legacy-v6-audit.test.js"
-SYNC_TEST_PATH = ROOT / "tools" / "test_device_sync.js"
-MANIFEST_PATH = ROOT / "manifest.json"
+APP_ROOT = ROOT / "v2"
+HTML_PATH = APP_ROOT / "index.html"
+JS_PATH = APP_ROOT / "assets" / "app.js"
+CSS_PATH = APP_ROOT / "assets" / "app.css"
+SW_PATH = APP_ROOT / "sw.js"
+MANIFEST_PATH = APP_ROOT / "manifest.webmanifest"
+CATALOG_PATH = APP_ROOT / "data" / "places.json"
+SUPPLEMENTAL_PATH = APP_ROOT / "data" / "art_locations_curated_20261016.json"
 errors: list[str] = []
 checks: list[str] = []
+
 
 def fail(message: str) -> None:
     errors.append(message)
 
-if not HTML_PATH.is_file():
-    print("ERROR: legacy-v5.44.html이 없습니다.")
-    raise SystemExit(1)
-html = HTML_PATH.read_text(encoding="utf-8")
-sw = SW_PATH.read_text(encoding="utf-8") if SW_PATH.is_file() else ""
-if not SW_PATH.is_file():
-    fail("sw.js가 없습니다.")
-if not SYNC_PATH.is_file():
-    fail("data/device-sync.js가 없습니다.")
-if not AUDIT_PATH.is_file():
-    fail("data/legacy-v6-audit.js가 없습니다.")
-if not AUDIT_TEST_PATH.is_file():
-    fail("tests/legacy-v6-audit.test.js가 없습니다.")
-if not SYNC_TEST_PATH.is_file():
-    fail("tools/test_device_sync.js가 없습니다.")
 
-# 앱에서 참조하는 로컬 script 파일이 저장소에 존재하는지 확인합니다.
-script_tags = list(re.finditer(r"<script\b([^>]*)>([\s\S]*?)</script\s*>", html, re.I))
-if not script_tags:
-    fail("script 태그를 찾지 못했습니다.")
-inline_scripts = []
-for match in script_tags:
-    attrs, body = match.group(1), match.group(2)
-    src_match = re.search(r"""\bsrc\s*=\s*["']([^"']+)["']""", attrs, re.I)
-    if src_match:
-        src = src_match.group(1)
-        if not re.match(r"^(?:https?:)?//|^data:", src, re.I):
-            local_path = (ROOT / src.split("?", 1)[0].split("#", 1)[0]).resolve()
-            if ROOT.resolve() not in local_path.parents and local_path != ROOT.resolve():
-                fail(f"저장소 밖을 가리키는 script 경로: {src}")
-            elif not local_path.is_file():
-                fail(f"존재하지 않는 로컬 script: {src}")
-    elif not re.search(r"""\btype\s*=\s*["']application/(?:ld\+json|json)["']""", attrs, re.I):
-        inline_scripts.append(body)
-checks.append(f"script 태그 {len(script_tags)}개 확인")
-
-# 인라인 코드 블록 전체를 하나의 파일로 이어붙여 문법을 검사합니다.
-# 개별 태그마다 검사할 때 놓칠 수 있는 최상위 const/let 중복 선언도 함께 찾습니다.
-combined_js = "\n;\n".join(inline_scripts)
-with tempfile.TemporaryDirectory(prefix="frame-atlas-check-") as tmp:
-    js_path = Path(tmp) / "inline-app.js"
-    js_path.write_text(combined_js, encoding="utf-8")
+def check_js(path: Path, label: str) -> None:
+    if not path.is_file():
+        fail(f"{label} 파일이 없습니다: {path.relative_to(ROOT)}")
+        return
     try:
         result = subprocess.run(
-            ["node", "--check", str(js_path)],
+            ["node", "--check", str(path)],
             text=True,
             capture_output=True,
             check=False,
             timeout=30,
         )
         if result.returncode:
-            fail("인라인 JavaScript 문법 오류:\n" + (result.stderr.strip() or result.stdout.strip()))
+            fail(f"{label} JavaScript 문법 오류:\n" + (result.stderr.strip() or result.stdout.strip()))
         else:
-            checks.append("인라인 JavaScript 문법 통과 (Node.js --check)")
+            checks.append(f"{label} JavaScript 문법 통과")
     except FileNotFoundError:
         fail("Node.js가 없습니다. GitHub Actions 환경에 Node.js를 설치해야 합니다.")
     except subprocess.TimeoutExpired:
-        fail("JavaScript 문법 검사 시간 초과")
+        fail(f"{label} JavaScript 문법 검사 시간 초과")
 
-# 독립 동기화 엔진 파일도 Node.js로 별도 문법 검사합니다.
-if SYNC_PATH.is_file():
-    try:
-        result = subprocess.run(
-            ["node", "--check", str(SYNC_PATH)],
-            text=True,
-            capture_output=True,
-            check=False,
-            timeout=30,
-        )
-        if result.returncode:
-            fail("기기별 동기화 엔진 JavaScript 문법 오류:\n" + (result.stderr.strip() or result.stdout.strip()))
+
+for required_path, label in [
+    (HTML_PATH, "2.0 시작 화면"),
+    (JS_PATH, "2.0 앱 코드"),
+    (CSS_PATH, "2.0 스타일"),
+    (SW_PATH, "2.0 서비스 워커"),
+    (MANIFEST_PATH, "2.0 웹 앱 매니페스트"),
+    (CATALOG_PATH, "2.0 장소 카탈로그"),
+    (SUPPLEMENTAL_PATH, "2.0 보조 장소 카탈로그"),
+    (ROOT / "tests" / "v2-browser-smoke.cjs", "2.0 브라우저 스모크 테스트"),
+]:
+    if not required_path.is_file():
+        fail(f"{label} 파일이 없습니다: {required_path.relative_to(ROOT)}")
+
+if HTML_PATH.is_file():
+    html = HTML_PATH.read_text(encoding="utf-8")
+    # Confirm that all fixed local app resources referenced by the HTML still exist.
+    refs = re.findall(r"""\b(?:src|href)\s*=\s*["']([^"']+)["']""", html, re.I)
+    local_checked = 0
+    for ref in refs:
+        ref = ref.strip()
+        if not ref or ref.startswith(("#", "data:", "blob:", "javascript:", "mailto:", "tel:")):
+            continue
+        if re.match(r"^(?:https?:)?//", ref, re.I):
+            continue
+        # Only static resources are checked here; in-page routes/fragments are not files.
+        path_part = ref.split("?", 1)[0].split("#", 1)[0]
+        if not path_part:
+            continue
+        candidate = (APP_ROOT / path_part).resolve()
+        if APP_ROOT.resolve() not in candidate.parents and candidate != APP_ROOT.resolve():
+            fail(f"2.0 화면의 로컬 리소스 경로가 앱 폴더 밖을 가리킵니다: {ref}")
+        elif not candidate.is_file():
+            fail(f"2.0 화면에서 참조하지만 없는 로컬 리소스: {ref}")
         else:
-            checks.append("기기별 동기화 엔진 문법 통과 (Node.js --check)")
-    except (FileNotFoundError, subprocess.TimeoutExpired) as exc:
-        fail(f"기기별 동기화 엔진 문법 검사 실패: {exc}")
+            local_checked += 1
+    checks.append(f"2.0 HTML 고정 리소스 {local_checked}개 확인")
 
-# 이전 V6 데이터 점검 모듈도 별도 문법 검사를 거칩니다.
-if AUDIT_PATH.is_file():
-    try:
-        result = subprocess.run(
-            ["node", "--check", str(AUDIT_PATH)],
-            text=True,
-            capture_output=True,
-            check=False,
-            timeout=30,
-        )
-        if result.returncode:
-            fail("이전 V6 점검 모듈 JavaScript 문법 오류:\n" + (result.stderr.strip() or result.stdout.strip()))
-        else:
-            checks.append("이전 V6 점검 모듈 문법 통과 (Node.js --check)")
-    except (FileNotFoundError, subprocess.TimeoutExpired) as exc:
-        fail(f"이전 V6 점검 모듈 문법 검사 실패: {exc}")
+    build_match = re.search(r'<meta\s+name=["\']app-build["\']\s+content=["\']([^"\']+)', html, re.I)
+    if not build_match:
+        fail("2.0 HTML에 app-build 버전이 없습니다.")
+        build_id = ""
+    else:
+        build_id = build_match.group(1)
+        checks.append(f"2.0 HTML 빌드 식별자 확인: {build_id}")
 
-# PWA manifest 및 아이콘 경로를 검사합니다.
-if not MANIFEST_PATH.is_file():
-    fail("manifest.json이 없습니다.")
+    if re.search(r"legacy-v5\.44\.html", html, re.I):
+        fail("2.0 HTML에 공개 구버전 화면 링크가 남아 있습니다.")
+
+    if 'assets/app.js?v=' not in html or 'assets/app.css?v=' not in html:
+        fail("2.0 HTML에서 앱 JS/CSS의 버전 쿼리를 사용하지 않습니다.")
+    else:
+        checks.append("2.0 앱 JS/CSS 캐시 버전 쿼리 확인")
 else:
+    html = ""
+    build_id = ""
+
+check_js(JS_PATH, "2.0 앱 코드")
+
+if SW_PATH.is_file():
+    sw = SW_PATH.read_text(encoding="utf-8")
+    sw_match = re.search(r'const\s+BUILD_ID\s*=\s*["\']([^"\']+)["\']', sw)
+    if not sw_match:
+        fail("2.0 서비스 워커 BUILD_ID를 읽을 수 없습니다.")
+    elif build_id and sw_match.group(1) != build_id:
+        fail(f"2.0 HTML/서비스 워커 빌드 불일치: {build_id} / {sw_match.group(1)}")
+    else:
+        checks.append("2.0 HTML과 서비스 워커 빌드 일치")
+
+    core_match = re.search(r"const\s+CORE_FILES\s*=\s*\[([\s\S]*?)\];", sw)
+    if not core_match:
+        fail("2.0 서비스 워커 CORE_FILES 목록을 찾지 못했습니다.")
+    else:
+        core_paths = re.findall(r'["\']([^"\']+)["\']', core_match.group(1))
+        missing = []
+        for item in core_paths:
+            item = item.split("?", 1)[0].split("#", 1)[0]
+            if not item or item.startswith(("http://", "https://")):
+                continue
+            resolved = (APP_ROOT / item).resolve()
+            if APP_ROOT.resolve() not in resolved.parents and resolved != APP_ROOT.resolve():
+                missing.append(item + " (앱 폴더 밖)")
+            elif not resolved.is_file():
+                missing.append(item)
+        if missing:
+            fail("2.0 서비스 워커의 캐시 선행 파일 누락: " + ", ".join(missing))
+        else:
+            checks.append(f"2.0 서비스 워커 캐시 선행 파일 {len(core_paths)}개 확인")
+
+if MANIFEST_PATH.is_file():
     try:
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         start_url = str(manifest.get("start_url", ""))
         if not start_url:
-            fail("manifest.json에 start_url이 없습니다.")
-        elif not (ROOT / start_url.split("?", 1)[0].split("#", 1)[0]).is_file():
-            fail(f"manifest start_url 파일이 없습니다: {start_url}")
+            fail("2.0 manifest에 start_url이 없습니다.")
+        else:
+            start_path = start_url.split("?", 1)[0].split("#", 1)[0]
+            if not (APP_ROOT / start_path).is_file():
+                fail(f"2.0 manifest 시작 화면 파일이 없습니다: {start_url}")
+            else:
+                checks.append("2.0 manifest 시작 화면 경로 확인")
+        if build_id and ("fa_build=" + build_id) not in start_url:
+            fail(f"2.0 manifest start_url의 빌드 식별자가 현재 HTML과 다릅니다: {start_url}")
+        elif build_id:
+            checks.append("2.0 manifest 시작 주소 빌드 식별자 일치")
         for icon in manifest.get("icons", []):
             src = str(icon.get("src", ""))
-            if src and not (ROOT / src.split("?", 1)[0].split("#", 1)[0]).is_file():
-                fail(f"manifest 아이콘 파일이 없습니다: {src}")
-        checks.append("manifest JSON 및 시작 화면/아이콘 경로 통과")
+            if src and not (APP_ROOT / src.split("?", 1)[0].split("#", 1)[0]).is_file():
+                fail(f"2.0 manifest 아이콘 파일이 없습니다: {src}")
+        if manifest.get("scope") not in ("./", "./"):
+            fail(f"2.0 manifest scope가 앱 경로와 일치하지 않습니다: {manifest.get('scope')}")
+        checks.append("2.0 manifest JSON 및 아이콘 경로 확인")
     except (json.JSONDecodeError, OSError) as exc:
-        fail(f"manifest.json을 읽을 수 없습니다: {exc}")
+        fail(f"2.0 manifest를 읽을 수 없습니다: {exc}")
 
-# 화면 버전과 서비스 워커 캐시 이름이 서로 어긋나면 오래된 화면이 남을 수 있습니다.
-version_match = re.search(r"<title>\s*FRAME ATLAS v([0-9]+\.[0-9]+)", html, re.I)
-cache_match = re.search(r"CACHE_NAME\s*=\s*['\"]frame-atlas-v([0-9]+\.[0-9]+)-", sw)
-if not version_match:
-    fail("페이지 제목에서 앱 버전을 읽을 수 없습니다.")
-elif not cache_match:
-    fail("서비스 워커 캐시 이름에 버전이 없습니다.")
-elif version_match.group(1) != cache_match.group(1):
-    fail(f"앱/서비스 워커 버전 불일치: {version_match.group(1)} / {cache_match.group(1)}")
-else:
-    checks.append(f"앱과 서비스 워커 버전 일치: v{version_match.group(1)}")
+# Validate the main and supplemental catalogs without rewriting or normalizing source data.
+for path, label in [(CATALOG_PATH, "기본"), (SUPPLEMENTAL_PATH, "보조")]:
+    if not path.is_file():
+        continue
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        places = data.get("places")
+        if not isinstance(places, list):
+            fail(f"{label} 카탈로그에 places 배열이 없습니다.")
+            continue
+        seen = set()
+        for number, place in enumerate(places, 1):
+            if not isinstance(place, dict) or not place.get("id"):
+                fail(f"{label} 카탈로그 {number}번째 항목에 id가 없습니다.")
+                continue
+            if place["id"] in seen:
+                fail(f"{label} 카탈로그에 중복 장소 ID가 있습니다: {place['id']}")
+            seen.add(place["id"])
+            if not place.get("name") and not str(place["id"]).startswith("new-place-"):
+                fail(f"{label} 카탈로그 항목에 장소명이 없습니다: {place['id']}")
+            for candidate in place.get("imageCandidates", []):
+                asset_path = candidate.get("assetPath") if isinstance(candidate, dict) else None
+                if asset_path:
+                    asset = (ROOT / str(asset_path)).resolve()
+                    if ROOT.resolve() not in asset.parents:
+                        fail(f"저장소 밖 사진 경로: {asset_path}")
+                    elif not asset.is_file():
+                        fail(f"카탈로그가 참조하지만 저장소에 없는 사진 파일: {asset_path}")
+        checks.append(f"{label} 카탈로그 JSON / ID / 사진 경로 확인 ({len(places)}개 항목)")
+    except (json.JSONDecodeError, OSError) as exc:
+        fail(f"{label} 카탈로그를 읽을 수 없습니다: {exc}")
 
-# 아이폰 복원·이미지 가져오기 경로에 대한 회귀 검사입니다.
-required = {
-    "더보기 메뉴의 이미지 가져오기": "['image','장소 이미지 가져오기'",
-    "이미지 가져오기 메뉴 핸들러": "async function openImageImport(",
-    "이미지 전용 가져오기 함수": "async function bkApplyImages(",
-    "iOS 대응 FileReader 사용": "new FileReader()",
-    "공통 Data URL → Blob 변환 함수": "function faBackupDataUrlToBlob(data)",
-    "안전 병합 모듈 스크립트": 'src="data/backup-merge.js"',
-    "로컬 우선 병합 함수 호출": "window.FABackupMerge.mergeRaw",
-    "병합 복원 버튼 충돌 정책": "새 항목 추가 · 충돌 시 현재 기기 우선",
-    "수동 백업 병합의 삭제 정책": "삭제를 다른 백업에 전파하지 않습니다",
-    "구형 공유 스냅샷과 자동 동기화 구분": "이 구형 공유 스냅샷 방식은 자동 양방향 동기화가 아닙니다",
-}
-for label, token in required.items():
-    if token not in html:
-        fail(f"필수 기능 코드 누락: {label}")
-    else:
-        checks.append(f"{label} 확인")
-if "async function bkApply(replace)" not in html or "window.FABackupMerge.mergeValues" not in html:
-    fail("백업 복원 경로에 안전한 항목별 병합 로직이 없습니다.")
-else:
-    checks.append("백업의 항목별 안전 병합 경로 확인")
+# Future uploaded photos should be repository assets; existing remote URLs remain supported.
+if JS_PATH.is_file():
+    app_js = JS_PATH.read_text(encoding="utf-8")
+    for label, marker in {
+        "GitHub 사진 업로드": 'Add FRAME ATLAS location photo',
+        "저장소 사진 경로": 'v2/assets/places/',
+        "사진 파일 업로드 후 카탈로그 경로 저장": 'c.assetPath=path',
+        "기존 외부 이미지 주소 지원": 'c.imageUrl=url',
+        "1 MiB 초과 원격 카탈로그 읽기 경로": 'raw.githubusercontent.com/casio8000/FRAME_ATLAS/main/',
+        "사진 파일 선택 후 크기 제한": 'file.size>8*1024*1024',
+    }.items():
+        if marker not in app_js:
+            fail(f"2.0 사진/게시 기능 코드가 누락되었습니다: {label}")
+        else:
+            checks.append(f"2.0 {label} 확인")
 
-if html.count("faBackupDataUrlToBlob(o.data)") < 3:
-    fail("전체 백업 복원과 공유 백업 적용에서 공통 Blob 변환 함수를 모두 사용하지 않습니다.")
-if re.search(r"fetch\(o\.data\)\)\.blob\(\)", html):
-    fail("레거시 fetch(Data URL).blob() 복원 코드가 남아 있습니다.")
-if "더보기 → 데이터 관리" in html:
-    fail("사용 안내에 실제 메뉴와 다른 '더보기 → 데이터 관리' 경로가 남아 있습니다.")
-
-if "async async function ghApi" in html:
-    fail("GitHub API 함수에 중복 async 선언이 남아 있습니다.")
-else:
-    checks.append("GitHub API 함수 선언 확인")
-if "자동 양방향 동기화는 아직 구현되지 않았습니다" in html:
-    fail("현재 버전과 맞지 않는 자동 동기화 미구현 안내가 남아 있습니다.")
-else:
-    checks.append("구형 도움말의 자동 동기화 안내 최신화 확인")
-
-# 새 기기별 동기화는 비공개 저장소, 백업 게이트 및 항목별 병합을 요구합니다.
-sync_js = SYNC_PATH.read_text(encoding="utf-8") if SYNC_PATH.is_file() else ""
-for label, token in {
-    "기기별 동기화 모듈 연결": 'src="data/device-sync.js',
-    "이전 V6 점검 모듈 연결": 'src="data/legacy-v6-audit.js"',
-    "비공개 저장소 강제": 'if (repo.private !== true)',
-    "기기별 독립 레코드 경로": 'const ROOT_PATH = "sync/v1/devices"',
-    "동기화 전 안전 백업 확인": 'const backupGateAt = Number(root.localStorage.getItem(BACKUP_GATE_KEY) || 0);',
-    "사진 파일 개별 전송": 'if (rec.store === "pblob")',
-    "충돌 사진의 로컬 보존": 'action: "preserve-local-photo"',
-    "충돌 내역 조회 함수": "function getConflicts()",
-    "삭제 기록 시각 비교": "function remoteSupersedesDelete(",
-    "동기화 중 추가 변경 재실행": "let rerunRequested = false;",
-}.items():
-    source = html if label in {"기기별 동기화 모듈 연결", "이전 V6 점검 모듈 연결"} else sync_js
-    if token not in source:
-        fail(f"기기별 동기화 안전 검사 누락: {label}")
-    else:
-        checks.append(f"{label} 확인")
-# Temporary API/network failures must retry with a bounded backoff; auth/permission errors must not loop.
-for label, token in {
-    "일시 오류 재시도 분류": "function isRetryableError(error)",
-    "제한된 지수형 재시도 일정": "const RETRY_DELAYS = [5000, 15000, 30000, 60000, 120000];",
-    "재시도 중지 시 타이머 정리": "clearRetry(true);",
-    "실패 후 자동 재시도 예약": "queueRetry(error);",
-}.items():
-    if token not in sync_js:
-        fail(f"기기별 동기화 재시도 안정성 검사 누락: {label}")
-    else:
-        checks.append(f"{label} 확인")
-
-if "core.isRetryableError" not in (ROOT / "tools" / "test_device_sync.js").read_text(encoding="utf-8"):
-    fail("일시적 동기화 오류 분류 테스트가 없습니다.")
-else:
-    checks.append("일시적 동기화 오류 분류 테스트 확인")
-
-if 'faDeviceSyncShowConflicts()' not in html:
-    fail("동기화 충돌 내역 조회 버튼이 없습니다.")
-else:
-    checks.append("동기화 충돌 내역 조회 버튼 확인")
-if "async function ghPush(){const s=$('gh_s'),ls={};if(localStorage.getItem('faDeviceSyncEnabled')==='1')" not in html:
-    fail("안전 동기화 사용 중 기존 단일 파일 업로드가 차단되지 않습니다.")
-else:
-    checks.append("안전 동기화와 기존 단일 파일 업로드 간섭 방지 확인")
-if "async function ghPull(){const s=$('gh_s');if(localStorage.getItem('faDeviceSyncEnabled')==='1')" not in html:
-    fail("안전 동기화 사용 중 기존 단일 파일 내려받기가 차단되지 않습니다.")
-else:
-    checks.append("안전 동기화와 기존 단일 파일 내려받기 간섭 방지 확인")
-
-if "if(ri.private!==true)" not in html:
-    fail("기존 백업 API의 공개 저장소 차단 검사가 없습니다.")
-else:
-    checks.append("기존 백업 API의 비공개 저장소 강제 확인")
-if "if(repoInfo.private!==true)" not in html:
-    fail("기존 공유 스냅샷의 공개 저장소 차단 검사가 없습니다.")
-else:
-    checks.append("기존 공유 스냅샷의 비공개 저장소 강제 확인")
-
-if "node tools/test_device_sync.js" not in (ROOT / ".github/workflows/quality-check.yml").read_text(encoding="utf-8"):
-    fail("GitHub Actions에 기기별 동기화 테스트가 연결되지 않았습니다.")
-else:
-    checks.append("GitHub Actions 기기별 동기화 테스트 연결 확인")
-
-# 공유 전체 스냅샷은 로컬 개인 데이터가 있을 때 자동으로 덮어쓰면 안 됩니다.
-for label, token in {
-    "공유 백업 적용 전 전체 백업 생성": "async function faDownloadPreApplyBackup()",
-    "공유 스냅샷 변경 시 보류 상태": "const FA531_PENDING_HASH='fa532SharedSnapshotPendingHash'",
-    "백그라운드 자동 적용 차단": "if(!manual)",
-    "백업 후 재확인 절차": "const pendingHash=localStorage.getItem(FA531_PENDING_HASH)",
-    "복원 전 명시적 사용자 확인": "const ok=confirm('안전 백업을 파일로 저장했는지 확인하세요.",
-}.items():
-    if token not in html:
-        fail(f"공유 동기화 안전 검사 누락: {label}")
-    else:
-        checks.append(f"{label} 확인")
-
-apply_start = html.find("async function faApplySharedSnapshot(d,hash,manual)")
-clear_at = html.find("const stores=['places','pmeta','pblob'];for(const st of stores)await IDB.clear(st);", apply_start)
-guard_at = html.find("const pendingHash=localStorage.getItem(FA531_PENDING_HASH)", apply_start)
-confirm_at = html.find("const ok=confirm('안전 백업을 파일로 저장했는지 확인하세요.", apply_start)
-if min(apply_start, clear_at, guard_at, confirm_at) < 0 or not (apply_start < guard_at < confirm_at < clear_at):
-    fail("공유 스냅샷의 백업·확인 절차가 로컬 저장소 초기화보다 앞에 있지 않습니다.")
-else:
-    checks.append("공유 스냅샷 초기화 전 안전 게이트 순서 확인")
-
-# 예전 안내가 자동 덮어쓰기를 약속하지 않도록 회귀 검사합니다.
-for obsolete in [
-    "이후 변경된 백업은 자동 반영됩니다.",
-    "새 버전을 자동 반영합니다.",
-    "기기 간 자동 반영을 원하면",
-]:
-    if obsolete in html:
-        fail(f"오래된 공유 백업 자동 반영 안내가 남아 있습니다: {obsolete}")
-    else:
-        checks.append(f"오래된 자동 덮어쓰기 안내 제거: {obsolete}")
-
-# 화면 출력 경로의 HTML 이스케이프와 동적 URL 검증 회귀 검사입니다.
-for label, token in {
-    "HTML 문자 이스케이프 함수": "const esc=",
-    "이미지 주소 제한 함수": "function safeImageSrc(value)",
-    "http/https 링크 제한 함수": "function safeHref(value)",
-}.items():
-    if token not in html:
-        fail(f"필수 출력 보안 처리 누락: {label}")
-    else:
-        checks.append(f"{label} 확인")
-for raw, label in [
-    ('<div class="name">${x.name}</div>', "장소 카드의 미이스케이프 장소명"),
-    ('href="${x.naver}"', "검증되지 않은 Naver 주소 직접 삽입"),
-    ('href="${x.google}"', "검증되지 않은 Google 주소 직접 삽입"),
-    ('href="${x.officialUrl}"', "검증되지 않은 공식 URL 직접 삽입"),
-    ('src="${m.url||phOf(k)}"', "미검증 이미지 주소 직접 삽입"),
-]:
-    if raw in html:
-        fail(f"미해결 동적 출력 패턴: {label}")
-
+# Root URL should lead to the supported 2.0 app, not expose the archived V5 page.
+root_index = ROOT / "index.html"
+if root_index.is_file():
+    root_html = root_index.read_text(encoding="utf-8")
+    if "v2/index.html" not in root_html:
+        fail("저장소 첫 화면이 FRAME ATLAS 2.0으로 이동하지 않습니다.")
+    if re.search(r'href=["\'][^"\']*legacy-v5\.44\.html', root_html, re.I):
+        fail("저장소 첫 화면에 구버전 공개 링크가 남아 있습니다.")
+    if "v2/index.html" in root_html and not re.search(r'href=["\']legacy-v5\.44\.html', root_html, re.I):
+        checks.append("저장소 첫 화면이 2.0으로 연결되고 구버전 링크가 숨겨짐")
 
 if errors:
-    print("FRAME ATLAS 정적 검사: 실패")
+    print("FRAME ATLAS 2.0 정적 검사: 실패")
     for item in errors:
         print("ERROR:", item)
     raise SystemExit(1)
-print("FRAME ATLAS 정적 검사: 통과")
+print("FRAME ATLAS 2.0 정적 검사: 통과")
 for item in checks:
     print("OK:", item)
