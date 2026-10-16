@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 7
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; rights-status normalization batch 8
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -332,3 +332,12 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100;
 - Updated Daecheongho Meditation Garden's selected reference to a ground-level photo showing the actual garden sign, timber boardwalk, and circular platform. The matching high-angle Joongdo image is retained as a rejected duplicate history record.
 - Post-merge: **200 locations**, **307 candidate records**, **0 active location-match review candidates**, **306 reuse-rights candidates not clearly cleared**, and **0 structural/selected-photo errors**. No selected reference points to a rejected candidate, and every photo candidate now has a URL or stored asset reference.
 - Source pages: Leeum Museum official gallery/interior photo (https://www.leeumhoam.org/leeum/info/museum); Daejeon City's official traditional-house article (https://www.daejeon.go.kr/its/ItsdjNormalboardView.do?boardGubun=itsdj01&boardSeq=3548&menuSeq=5929&pageIndex=1&searchCondition=TOTAL&searchKeyword=%EC%82%AC%ED%9A%8C%EC%A0%81%EA%B2%BD%EC%A0%9C); Chosun Ilbo's Nakdong Estuary Eco Center reopening photo (https://www.chosun.com/national/regional/yeongnam/2024/05/02/4WK2RC6YVFFHZAF77ANANRPHBU/?outputType=amp); Daecheongho Meditation Garden photo article (https://njob-crew.com/entry/%EC%98%AC-%EC%97%AC%EB%A6%84-%EC%82%AC%EC%83%89%EC%9D%98-%EC%84%AC%EC%9C%BC%EB%A1%9C-%EB%96%A0%EB%82%98%EC%9A%94-%EB%8C%80%EC%B2%AD%ED%98%B8-%EB%AA%85%EC%83%81%EC%A0%95%EC%9B%90-%ED%9E%90%EB%A7%81%EC%97%AC%ED%96%89-%EC%97%B4%EB%A6%B0%EA%B4%80%EA%B4%91%EC%A7%80).
+
+
+## Release 2026-10-16 · Rights metadata normalization batch 8
+- Created safety branch `backup/pre-rights-metadata-normalization-2026-10-16` from pre-change main commit `722de0319f32f301bead8899419b514fbca46dc5`.
+- Normalized 125 legacy candidate records in the raw source catalog that lacked standard rights-status fields. Existing rights descriptions, license strings, source pages, labels, and image choices were preserved. Added `rightsStatusSource` to record whether a normalized value came from a legacy rights field, a license field, an existing review label, or a conservative default.
+- The merged 200-place catalog now has a recognized rights-status value for all 307 candidate records: 54 unknown; 11 attribution-required; 82 reference-only; 159 review-required; 1 public-domain dedication. **0 status fields missing**. The independent review queue remains **306 candidates**, because a normalized metadata value is not legal clearance.
+- Enhanced `tools/validate.py` so any future candidate without a recognized standard rights status fails quality validation; regenerated `tools/report.md` with status completeness and an explicit note that normalization does not grant reuse permission.
+- Updated the Korean user manual and changed its link query to `v=20261016-108` for cache freshness. Did not change app functionality, place IDs, selected photo IDs, or the 200-place target.
+- Next review should prioritize explicit license evidence first, then sources with separate image-use rules. External URL runtime loading and real iPhone rendering remain separate checks.

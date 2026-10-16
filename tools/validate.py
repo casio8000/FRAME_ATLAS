@@ -14,6 +14,10 @@ BASE_PATH = APP_ROOT / "data" / "places.json"
 SUPPLEMENT_PATH = APP_ROOT / "data" / "art_locations_curated_20261016.json"
 REPORT_PATH = ROOT / "tools" / "report.md"
 ERRORS: list[str] = []
+RIGHTS_STATUS_VALUES = {
+    "commercial-use-cleared", "user-owned", "public-domain-dedication",
+    "license-attribution-required", "reference-only", "review-required", "unknown",
+}
 
 
 def load_catalog(path: Path, label: str) -> dict:
@@ -125,6 +129,11 @@ for index, place in enumerate(places, 1):
             ERRORS.append(f"{place_id} 사진 후보 ID가 중복됩니다: {candidate_id}")
         local_ids.add(candidate_id)
         candidates.append(candidate)
+        rights_status = str(candidate.get("usageRightsStatus") or candidate.get("rightsStatus") or "").strip()
+        if not rights_status:
+            ERRORS.append(f"{place_id}/{candidate_id} 표준 이용권 상태가 누락되었습니다.")
+        elif rights_status not in RIGHTS_STATUS_VALUES:
+            ERRORS.append(f"{place_id}/{candidate_id} 표준 이용권 상태 값이 허용되지 않습니다: {rights_status}")
         image_url = str(candidate.get("imageUrl") or "")
         if image_url and not re.match(r"^https?://", image_url, re.I):
             if image_url.startswith("./assets/places/"):
@@ -161,6 +170,7 @@ missing_refs = sum(1 for c in candidates if not (c.get("imageUrl") or c.get("sou
 match_review = sum(1 for c in candidates if c.get("status") != "rejected" and c.get("placeMatch") != "confirmed")
 rights_review = sum(1 for c in candidates if (c.get("usageRightsStatus") or c.get("rightsStatus")) not in
                     ("commercial-use-cleared", "user-owned", "public-domain-dedication"))
+rights_status_missing = sum(1 for c in candidates if not str(c.get("usageRightsStatus") or c.get("rightsStatus") or "").strip())
 match_states = Counter(str(c.get("placeMatch") or "(미기재)") for c in candidates)
 rights_states = Counter(str(c.get("usageRightsStatus") or c.get("rightsStatus") or "(미기재)") for c in candidates)
 
@@ -168,7 +178,7 @@ report = [
     "# FRAME ATLAS 2.0 데이터 검증 보고서",
     "",
     f"- 기본 카탈로그 {len(base.get('places') or [])}곳 · 보조 카탈로그 {len(supplement.get('places') or [])}개 · 기존 장소와 병합 {matched}건 · 별도 추가 {appended}곳 · 통합 장소 {len(places)}곳",
-    f"- 구조 오류 {len(ERRORS)}건 · 사진 후보 출처/파일 경로 누락 {missing_refs}건 · 장소 일치 재검토 후보 {match_review}건 · 이미지 이용권 상태 재검토 후보 {rights_review}건",
+    f"- 구조 오류 {len(ERRORS)}건 · 사진 후보 출처/파일 경로 누락 {missing_refs}건 · 장소 일치 재검토 후보 {match_review}건 · 표준 이용권 상태 누락 {rights_status_missing}건 · 이미지 이용권 상태 재검토 후보 {rights_review}건",
     "",
     "## 장소 카탈로그 정합성",
     "",
@@ -194,6 +204,8 @@ report = [
     f"| 사진 후보가 없는 장소 | {len(places) - records_with_candidates}곳 |",
     f"| 대표사진으로 지정된 장소 | {primary_count}곳 |",
     f"| 참고사진이 지정된 장소 | {reference_count}곳 |",
+    f"| 표준 이용권 상태가 기록된 후보 | {len(candidates) - rights_status_missing}개 |",
+    f"| 표준 이용권 상태가 누락된 후보 | {rights_status_missing}개 |",
     f"| URL·저장소 파일 경로가 있는 후보 | {photos_with_refs}개 |",
     f"| GitHub 저장소 사진 파일로 등록된 후보 | {local_assets}개 |",
     f"| URL/파일 경로가 없는 후보 | {missing_refs}개 |",
@@ -212,7 +224,7 @@ report = [
     "|---|---:|",
     *[f"| {key} | {value} |" for key, value in sorted(rights_states.items())],
     "",
-    "> URL이 있는 사진은 외부 주소를 참조하는 후보일 수 있으며, 이것이 장소 일치·이용권·상업 촬영 허가를 증명하지 않습니다. 새로 직접 등록한 사진 파일은 GitHub에 게시된 뒤에만 다른 기기에서도 같은 저장소 파일을 불러올 수 있습니다. 현장 확인이나 이용권이 미완료인 항목은 미확인 상태로 유지합니다.",
+    "> 표준 이용권 상태를 채운 것은 메타데이터 형식을 정리한 것이며, 사진 재사용 권리를 새로 승인한 것이 아닙니다. URL이 있는 사진은 외부 주소를 참조하는 후보일 수 있으며, 장소 일치·이용권·상업 촬영 허가를 증명하지 않습니다. 새로 직접 등록한 사진 파일은 GitHub에 게시된 뒤에만 다른 기기에서도 같은 저장소 파일을 불러올 수 있습니다.",
     "",
     "## 구조 오류",
     "",
