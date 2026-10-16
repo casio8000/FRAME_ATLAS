@@ -195,7 +195,8 @@ function reconcileLocalDraftToPublished(draft,base){
  for(const p of published){const name=normalizedPlaceName(p.name);if(name)nameCounts.set(name,(nameCounts.get(name)||0)+1);}
  const byUniqueName=new Map(published.filter(p=>{const n=normalizedPlaceName(p.name);return n&&nameCounts.get(n)===1;}).map(p=>[normalizedPlaceName(p.name),p]));
  const matched=new Map(),unmatched=[];
- for(const local of draft.places){
+ const localRecords=[...draft.places,...readLocalOnlyPlaces()];
+ for(const local of localRecords){
   if(!local||!local.id||isPlaceholderPlace(local))continue;
   const canonical=byId.get(local.id)||byUniqueName.get(normalizedPlaceName(local.name));
   if(!canonical){unmatched.push(syncClone(local));continue;}
@@ -204,7 +205,7 @@ function reconcileLocalDraftToPublished(draft,base){
  }
  const localOnlyMap=new Map();
  const localOnlyKey=p=>String(p.id||"")+"|"+normalizedPlaceName(p.name);
- for(const p of [...readLocalOnlyPlaces(),...unmatched]){
+ for(const p of unmatched){
   if(!p||!p.id||isPlaceholderPlace(p))continue;
   const name=normalizedPlaceName(p.name);
   if(byId.has(p.id)||byUniqueName.has(name))continue;
