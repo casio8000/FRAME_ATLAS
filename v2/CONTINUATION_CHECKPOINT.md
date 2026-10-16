@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — build 20261016-72
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-88; location research batch 2 recorded
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -209,3 +209,14 @@ Last updated: 2026-10-16 (Korea Standard Time) — build 20261016-72
 - PWA cache alignment: `v2/sw.js` now uses build `20261016-72` and pre-caches `data/art_locations_curated_20261016.json`; `v2/manifest.webmanifest` start_url uses the same build key.
 - Verified on commit `a04891003a46b4e5a4d66332760efb721c5b2238`: GitHub Actions **FRAME ATLAS quality checks — success** (including desktop/mobile Playwright smoke test) and **Pages build and deployment — success**.
 - Supplemental locations are merged in the app’s runtime catalog. Before the next ‘GitHub 동기화·게시’, the core JSON file can still show 151 records; after a successful sync/publish, those 15 supplemental records are also incorporated into the core published catalog. The runtime loader deduplicates the supplemental list against the published core data.
+
+
+## 2026-10-16 — Second researched location batch
+- Added seven new location candidates to v2/data/art_locations_curated_20261016.json: Uijeongbu Art Library, SeMA Art Archives, Gana Art Center, Artspace Boan1942, piknic, Pohang Space Walk, and the specific Álvaro Siza Hall / Anyang Pavilion.
+- Selection used official venue pages, local government/tourism sources, architectural project references, and media/photo cross-checks. Existing catalog entries such as Photo SeMA, Nam-Seoul Museum, Incheon Art Platform, Mimesis Art Museum, Anyang Art Park, MMCA Cheongju and Nam June Paik Art Center were not re-added as new broad locations.
+- The data bundle now has 51 supplement records. Applying the app's ID/name deduplication to the 151 core entries yields 186 distinct visible catalog entries, including the new seven, before any user-local draft adjustments. The core catalogue itself remains 151 until a successful publish merges the supplemental file.
+- Reference images were attached to the seven entries as candidate and reference-only; they do not certify commercial reuse rights or on-site commercial-shoot permission. piknic's official notice limits ordinary visitor photography to phone cameras and prohibits video/equipment photography; professional equipment use must be separately approved.
+- Excluded Korea Furniture Museum from this active batch because the Korea Tourism Organization result surfaced a current renovation-closure note; re-check reopening before considering it for an active list.
+- Research matrix and source URLs: v2/LOCATION_RESEARCH_BATCH2_2026-10-16.md.
+- The Korean user manual was updated in the same task to list the seven venues and their specific restrictions.
+- Verification still required after deployment: GitHub Actions FRAME ATLAS quality checks, pages build and deployment, and a fresh app open to confirm the supplemental JSON and candidate photos render.
