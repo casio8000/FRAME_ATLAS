@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T01:12:00.000Z",
-  "description": "Curated art, architecture and photo location references. Image overrides are merged by place ID or normalized name so desktop and mobile use the same confirmed candidate.",
+  "updatedAt": "2026-10-16T01:16:00.000Z",
+  "description": "National photo-location scouting candidates: architecturally distinctive resorts/hotels, private design stays, art spaces, and media-featured immersive venues. Images are location-reference candidates; field access, commercial-shoot permission and image reuse conditions remain to be confirmed.",
   "places": [
     {
       "id": "yangpyeong-lee-jaehyo-gallery",
@@ -1951,6 +1951,1552 @@
           "createdAt": "2026-10-16T01:12:00.000Z"
         }
       ]
+    },
+    {
+      "id": "pohang-east-cape-private-stay",
+      "name": "이스트케이프 프라이빗 스테이",
+      "region": "경북",
+      "category": "해안 절벽·노출콘크리트·럭셔리 스테이",
+      "address": "경상북도 포항시 북구 흥해읍 해안로 1766-17",
+      "coordinates": null,
+      "officialUrl": "https://www.stayfolio.com/findstay/east-cape",
+      "openingStatus": "숙박 예약 운영 정보는 공식/예약 페이지에서 방문일 기준 확인",
+      "shootingPermission": "사유 숙소이므로 투숙과 상업촬영은 별개; 객실·수영장·건물 촬영과 조명 장비 사용은 운영자 사전 동의 필요",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "독채 스테이",
+        "프라이빗 풀",
+        "해안 건축"
+      ],
+      "photoProfile": "노출콘크리트 매스와 바닥부터 천장까지 이어지는 유리창, 동해 수평선을 함께 다룰 수 있는 소규모 럭셔리 스테이. 단순한 재료와 바다의 여백으로 미니멀 패션·건축 에디토리얼을 구성하기 좋다.",
+      "visualStrengths": [
+        "노출콘크리트와 유리의 절제된 입면",
+        "실내·프라이빗 풀·동해 수평선 연결",
+        "소나무 숲과 해안 절벽이 만드는 배경 레이어"
+      ],
+      "bestConcepts": [
+        "미니멀 럭셔리 패션 에디토리얼",
+        "건축·라이프스타일 캠페인",
+        "자연광 중심의 프라이빗 스테이 룩북"
+      ],
+      "constraints": [
+        "숙박 예약과 상업촬영 허가를 별도 확인",
+        "객실·수영장·사유 동선 촬영은 운영자 승인 필요",
+        "해안 강풍·염분과 장비 안전 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "이스트케이프 포항 건축 노출콘크리트 프라이빗 풀",
+        "East Cape Pohang architecture stay"
+      ],
+      "aliases": [
+        "EAST CAPE",
+        "이스트 케이프",
+        "이스트케이프 풀빌라"
+      ],
+      "summary": "바다와 소나무 숲 사이의 노출콘크리트 스테이. 스케일보다 재료·수평선·유리 반사를 활용하는 사진가용 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://www.stayfolio.com/findstay/east-cape"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-east-cape-exposed-concrete-20261016",
+          "title": "이스트케이프 노출콘크리트와 바다 전망 건축",
+          "imageUrl": "https://images.stayfolio.com/system/pictures/images/000/271/749/original/33ac828f7727d16fa5ca9f79e7186eb70dc60955.jpg?1749006593",
+          "sourceThumbnail": "https://images.stayfolio.com/system/pictures/images/000/271/749/original/33ac828f7727d16fa5ca9f79e7186eb70dc60955.jpg?1749006593",
+          "sourcePageUrl": "https://www.stayfolio.com/findstay/east-cape",
+          "sourceName": "스테이폴리오 · EAST CAPE",
+          "creator": "스테이폴리오 · EAST CAPE",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "노출콘크리트·유리 파사드·해안 스테이",
+          "notes": "노출콘크리트 건물과 전면 유리, 바다 전망을 연구하기 위한 장소 참고 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-east-cape-exposed-concrete-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "숙박 플랫폼에서 건축과 바다 전망을 확인해 선정했습니다. 사진은 참고용이며 상업촬영은 소유자 허가를 받아야 합니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 92,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 19,
+        "lightAndTexture": 19,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 건축 스테이 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "노출콘크리트 매스와 바닥부터 천장까지 이어지는 유리창, 동해 수평선을 함께 다룰 수 있는 소규모 럭셔리 스테이. 단순한 재료와 바다의 여백으로 미니멀 패션·건축 에디토리얼을 구성하기 좋다.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:04:00.000Z",
+      "mediaAppearances": []
+    },
+    {
+      "id": "jeju-riad-private-pool-villa",
+      "name": "리아드 제주",
+      "region": "제주",
+      "category": "모로코 리야드형 독채·중정 수영장·온실",
+      "address": "제주특별자치도 제주시 애월읍 금성5길 44",
+      "coordinates": null,
+      "officialUrl": "https://www.stayfolio.com/findstay/riad",
+      "openingStatus": "독채 숙박 운영 · 예약일 기준 운영 및 이용조건 확인",
+      "shootingPermission": "숙박과 별도로 상업촬영·장비 반입·수영장 촬영 허가 필요",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "독채 펜션",
+        "중정 수영장",
+        "온실",
+        "옥상"
+      ],
+      "photoProfile": "모로코 전통 주택의 중정 구성을 제주 해안 맥락에 옮긴 독채 스테이. 중앙 수영장, 온실, 옥상 석양과 타일 질감을 한 장소에서 확보할 수 있어 이국적 패션·뷰티 캠페인의 배경으로 연구 가치가 있다.",
+      "visualStrengths": [
+        "중정형 야외 수영장과 둘러싼 건축",
+        "숨은 온실과 초록빛 내부",
+        "옥상에서 바라보는 해안 석양"
+      ],
+      "bestConcepts": [
+        "모로코풍 패션·뷰티 에디토리얼",
+        "휴양지 럭셔리 캠페인",
+        "컬러·타일·수면 반사 중심의 인물화보"
+      ],
+      "constraints": [
+        "개인 숙소이므로 소유자 촬영 동의 필수",
+        "예약객 프라이버시·수영장 사용 시간 확인",
+        "강한 햇빛과 수면 반사에 따른 노출 제어"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "리아드 제주 애월 모로코 중정 수영장",
+        "RIAD Jeju Moroccan architecture pool villa"
+      ],
+      "aliases": [
+        "RIAD",
+        "RIAD JEJU",
+        "리아드 풀빌라"
+      ],
+      "summary": "모로코식 중정과 수영장, 온실을 갖춘 제주 독채 스테이. 바다 풍경보다 공간 구조와 색감에 초점을 둔 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://www.stayfolio.com/findstay/riad"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-riad-jeju-courtyard-20261016",
+          "title": "리아드 제주 중정형 수영장과 건축",
+          "imageUrl": "https://images.stayfolio.com/system/pictures/images/000/132/379/original/f148ce063bfa30b933769f893a54e965da6dea88.jpg?1658400649",
+          "sourceThumbnail": "https://images.stayfolio.com/system/pictures/images/000/132/379/original/f148ce063bfa30b933769f893a54e965da6dea88.jpg?1658400649",
+          "sourcePageUrl": "https://www.stayfolio.com/findstay/riad",
+          "sourceName": "스테이폴리오 · RIAD",
+          "creator": "스테이폴리오 · RIAD",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "모로코풍 중정·수영장·건축",
+          "notes": "모로코식 중정과 수영장 중심의 공간 구성을 연구하기 위한 장소 참고 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-riad-jeju-courtyard-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "숙박 플랫폼의 모로코식 중정과 수영장 설명을 토대로 추가했습니다. 개인 숙소라 상업촬영은 별도 허가가 필요합니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 88,
+      "photoScoreBreakdown": {
+        "distinctiveness": 27,
+        "compositionVariety": 17,
+        "lightAndTexture": 18,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 프라이빗 풀빌라 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "모로코 전통 주택의 중정 구성을 제주 해안 맥락에 옮긴 독채 스테이. 중앙 수영장, 온실, 옥상 석양과 타일 질감을 한 장소에서 확보할 수 있어 이국적 패션·뷰티 캠페인의 배경으로 연구 가치가 있다.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:05:00.000Z",
+      "mediaAppearances": []
+    },
+    {
+      "id": "jeju-dadamga-design-stay",
+      "name": "다담가",
+      "region": "제주",
+      "category": "제주 돌담·노출콘크리트·연못·유리 라운지",
+      "address": "제주특별자치도 서귀포시 남원읍 남위남성로 32",
+      "coordinates": null,
+      "officialUrl": "https://www.stayfolio.com/findstay/stay-dadamga",
+      "openingStatus": "독채 숙박 운영 · 방문일 기준 예약/운영 정보 확인",
+      "shootingPermission": "사유 숙소; 객실·자쿠지·정원·연못 촬영은 소유자 사전 동의 필요",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "독채 스테이",
+        "돌담",
+        "연못",
+        "유리 라운지",
+        "실내 자쿠지"
+      ],
+      "photoProfile": "제주 전통 돌담과 노출콘크리트를 함께 쓰고 귤밭·연못·유리 라운지를 연결한 현대적 스테이. 자연의 질감과 건축의 직선, 물 반사를 조합할 수 있다.",
+      "visualStrengths": [
+        "제주 돌담과 노출콘크리트의 재료 대비",
+        "연못에 비치는 건축과 정원",
+        "유리 라운지와 외부 풍경의 연속"
+      ],
+      "bestConcepts": [
+        "한국적 재료와 글로벌 라이프스타일 캠페인",
+        "모노톤·뉴트럴 컬러 룩북",
+        "정적 인물화보와 건축 디테일"
+      ],
+      "constraints": [
+        "사유 숙소 예약 및 촬영 허가 별도",
+        "투숙객 동선·공용공간 사용 범위 확인",
+        "물가 촬영 안전 및 장비 보호"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "제주 다담가 돌담 노출콘크리트 연못 스테이",
+        "STAY DADAMGA Jeju architecture"
+      ],
+      "aliases": [
+        "STAY DADAMGA",
+        "스테이 다담가"
+      ],
+      "summary": "전통 돌담과 현대 건축을 함께 담을 수 있는 제주 남원의 스테이. 연못 반사와 재료 대비를 중심으로 조사할 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://www.stayfolio.com/findstay/stay-dadamga"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-stay-dadamga-architecture-20261016",
+          "title": "다담가의 제주 돌담·현대 건축·연못",
+          "imageUrl": "https://images.stayfolio.com/system/pictures/images/000/435/474/original/4108b61d003cb109a87f87dd60fe2735dbe14169.jpg?1781072408",
+          "sourceThumbnail": "https://images.stayfolio.com/system/pictures/images/000/435/474/original/4108b61d003cb109a87f87dd60fe2735dbe14169.jpg?1781072408",
+          "sourcePageUrl": "https://www.stayfolio.com/findstay/stay-dadamga",
+          "sourceName": "스테이폴리오 · STAY DADAMGA",
+          "creator": "스테이폴리오 · STAY DADAMGA",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "돌담·노출콘크리트·정원",
+          "notes": "제주 돌담과 노출콘크리트, 연못과 유리 라운지가 함께 있는 공간 참고 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-stay-dadamga-architecture-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "공간의 돌담·현대 건축·연못 조합을 확인해 추가했습니다. 공개 촬영장이 아니므로 상업촬영은 운영자 승인이 필요합니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 91,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 18,
+        "lightAndTexture": 19,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 건축 스테이 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "제주 전통 돌담과 노출콘크리트를 함께 쓰고 귤밭·연못·유리 라운지를 연결한 현대적 스테이. 자연의 질감과 건축의 직선, 물 반사를 조합할 수 있다.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:06:00.000Z",
+      "mediaAppearances": []
+    },
+    {
+      "id": "jeju-trimmen-design-stay",
+      "name": "트믐(TRIMMEN)",
+      "region": "제주",
+      "category": "삼각 지붕·대지의 여백·프라이빗 스테이",
+      "address": "제주특별자치도 서귀포시 대정읍 무릉전지로35번길 26-32",
+      "coordinates": null,
+      "officialUrl": "https://www.stayfolio.com/findstay/trimmen",
+      "openingStatus": "독채 숙박 운영 · 방문일 기준 예약/운영 정보 확인",
+      "shootingPermission": "사유 숙소; 상업촬영·삼각대·조명 사용 허가 필요",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "독채 스테이",
+        "삼각 지붕",
+        "테라스",
+        "오션뷰"
+      ],
+      "photoProfile": "삼각 지붕의 독립된 실루엣과 대지 사이의 여백, 실내에서 바다로 이어지는 시선이 돋보이는 제주 스테이. 단순한 기하학과 사선으로 미니멀·시네마틱 촬영을 기획할 수 있다.",
+      "visualStrengths": [
+        "삼각 지붕과 대지 사이의 여백",
+        "곡선 계단과 2층 바다 전망",
+        "풍경이 실내로 이어지는 큰 창"
+      ],
+      "bestConcepts": [
+        "미니멀 시네마틱 에디토리얼",
+        "기하학적 패션 룩북",
+        "수평선·실내 조도 대비 촬영"
+      ],
+      "constraints": [
+        "숙박형 사유 공간이므로 촬영 허가 필요",
+        "일몰·바다 방향의 빛을 사전 답사",
+        "객실·주변 사유지 프라이버시 준수"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "제주 트믐 스테이 삼각 지붕 건축",
+        "TRIMMEN Jeju architecture stay"
+      ],
+      "aliases": [
+        "TRIMMEN",
+        "트믐 스테이"
+      ],
+      "summary": "삼각 지붕과 기하학적 여백이 특징인 제주 독채 스테이. 건축 실루엣과 수평선을 함께 활용하는 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://www.stayfolio.com/findstay/trimmen"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-trimmen-triangle-roof-20261016",
+          "title": "트믐의 삼각 지붕과 제주 풍경",
+          "imageUrl": "https://images.stayfolio.com/system/pictures/images/000/564/749/original/cce36356f2f754f21e9792fcb5c1b342e1156697.jpeg?1789450118",
+          "sourceThumbnail": "https://images.stayfolio.com/system/pictures/images/000/564/749/original/cce36356f2f754f21e9792fcb5c1b342e1156697.jpeg?1789450118",
+          "sourcePageUrl": "https://www.stayfolio.com/findstay/trimmen",
+          "sourceName": "스테이폴리오 · TRIMMEN",
+          "creator": "스테이폴리오 · TRIMMEN",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "삼각 지붕·건축과 풍경",
+          "notes": "삼각 지붕과 대지의 여백, 자연으로 이어지는 실내 시선을 보여주는 참고 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-trimmen-triangle-roof-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "삼각 지붕과 자연 속 여백을 활용할 수 있어 추가했습니다. 개인 숙소로 상업적 이용은 운영자 확인이 필요합니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 90,
+      "photoScoreBreakdown": {
+        "distinctiveness": 27,
+        "compositionVariety": 19,
+        "lightAndTexture": 19,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 건축 스테이 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "삼각 지붕의 독립된 실루엣과 대지 사이의 여백, 실내에서 바다로 이어지는 시선이 돋보이는 제주 스테이. 단순한 기하학과 사선으로 미니멀·시네마틱 촬영을 기획할 수 있다.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:07:00.000Z",
+      "mediaAppearances": []
+    },
+    {
+      "id": "jeju-parnas-hotel",
+      "name": "파르나스 호텔 제주",
+      "region": "제주",
+      "category": "럭셔리 해안 호텔·파노라마 오션뷰·인피니티풀",
+      "address": "제주특별자치도 서귀포시 중문관광로72번길 100",
+      "coordinates": null,
+      "officialUrl": "https://www.parnashoteljeju.com/ko/main.do",
+      "openingStatus": "호텔 운영 · 방문일 기준 공식 이용 안내 확인",
+      "shootingPermission": "수영장·객실·상업촬영 및 조명 장비는 사전 허가 필요",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "호텔",
+        "인피니티풀",
+        "대형 유리창",
+        "오션뷰"
+      ],
+      "photoProfile": "제주 해안선과 맞닿은 듯한 긴 인피니티풀, 파노라마 창과 테라스를 결합한 럭셔리 호텔. 인물 실루엣과 수평선, 반사면을 활용하는 패션·리조트 캠페인 후보.",
+      "visualStrengths": [
+        "바다로 이어지는 긴 인피니티풀",
+        "파노라마 창·반사 수면",
+        "객실 테라스와 해안 절벽의 레이어"
+      ],
+      "bestConcepts": [
+        "리조트웨어·럭셔리 패션 화보",
+        "수평선과 인물 실루엣",
+        "미니멀 웰니스·뷰티 캠페인"
+      ],
+      "constraints": [
+        "수영장·객실의 출입 및 촬영 규정 확인",
+        "상업촬영·조명·대형 장비 반입 허가",
+        "방문객 프라이버시·안전 동선 우선"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "파르나스 호텔 제주 인피니티풀 건축",
+        "Parnas Hotel Jeju infinity pool architecture"
+      ],
+      "aliases": [
+        "PARNAS HOTEL JEJU",
+        "파르나스 제주"
+      ],
+      "summary": "제주 중문 해안의 인피니티풀과 파노라마 오션뷰를 활용할 수 있는 럭셔리 호텔 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://www.parnashoteljeju.com/ko/main.do",
+        "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000013610"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-parnas-jeju-infinity-pool-20261016",
+          "title": "파르나스 호텔 제주 인피니티풀·바다 전망",
+          "imageUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/202407/27/2dde5cc8-2cfc-4ca6-9bc5-ef3d2d5bd23e.webp",
+          "sourceThumbnail": "https://api.cdn.visitjeju.net/photomng/imgpath/202407/27/2dde5cc8-2cfc-4ca6-9bc5-ef3d2d5bd23e.webp",
+          "sourcePageUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000013610",
+          "sourceName": "비짓제주 · 파르나스 호텔 제주",
+          "creator": "비짓제주 · 파르나스 호텔 제주",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "인피니티풀·오션뷰·호텔 건축",
+          "notes": "제주 관광 공식 자료의 호텔 이미지. 수면과 수평선, 인물 실루엣 구도를 연구하기 위한 참고 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-parnas-jeju-infinity-pool-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "공식 호텔 안내와 제주 관광 자료의 시설 사진을 참고로 연결했습니다. 객실·수영장 촬영 가능 여부와 상업촬영 허가는 별도 확인합니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 87,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 18,
+        "lightAndTexture": 17,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 프리미엄 호텔 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "제주 해안선과 맞닿은 듯한 긴 인피니티풀, 파노라마 창과 테라스를 결합한 럭셔리 호텔. 인물 실루엣과 수평선, 반사면을 활용하는 패션·리조트 캠페인 후보.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:08:00.000Z",
+      "mediaAppearances": []
+    },
+    {
+      "id": "busan-village-de-ananti",
+      "name": "빌라쥬 드 아난티",
+      "region": "부산",
+      "category": "해안 리조트·대형 복합 건축·문화 리테일",
+      "address": "부산광역시 기장군 기장읍 기장해안로 267-7",
+      "coordinates": null,
+      "officialUrl": "https://ananti.kr/ko/village/VL0701",
+      "openingStatus": "리조트 및 상업·문화 공간 운영 · 방문일 기준 개방구역 확인",
+      "shootingPermission": "숙박·회원 전용 시설과 공개 리테일·갤러리 공간 구분; 상업촬영 및 장비 사용은 운영자 사전 협의",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "리조트",
+        "호텔·레지던스",
+        "광장",
+        "갤러리·리테일",
+        "수영장"
+      ],
+      "photoProfile": "언덕 지형 위에 배치된 수직 호텔·레지던스 타워와 저층 문화·상업 공간, 바다를 향한 보행 동선이 함께 구성된 대형 리조트. 수직 스케일과 원근 촬영이 가능하다.",
+      "visualStrengths": [
+        "대지 경사를 따라 배치된 타워",
+        "저층 문화 리테일과 고층 숙박시설의 대비",
+        "바다 전망과 보행 광장의 깊이감"
+      ],
+      "bestConcepts": [
+        "도시형 리조트 패션 캠페인",
+        "건축·라이프스타일 에디토리얼",
+        "직선·반복·수직 스케일 촬영"
+      ],
+      "constraints": [
+        "수영장·객실·회원 전용 구역 출입 조건 확인",
+        "상업 촬영·삼각대·조명 사용 사전 협의",
+        "혼잡 시간대와 게스트 프라이버시 확인"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "빌라쥬 드 아난티 건축 외관",
+        "Village de Ananti architecture Gijang"
+      ],
+      "aliases": [
+        "VILLAGE DE ANANTI",
+        "아난티 앳 부산 빌라쥬",
+        "아난티 빌라쥬"
+      ],
+      "summary": "대형 타워와 수변 문화공간이 결합된 부산 기장의 리조트. 공간 규모와 반복선, 원근을 중심으로 검토할 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://ananti.kr/ko/village/VL0701",
+        "https://vmspace.com/eng/project/project_view.html?base_seq=MjczNg%3D%3D&page=1"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-village-de-ananti-architecture-20261016",
+          "title": "빌라쥬 드 아난티의 복합 건축 타워와 거리",
+          "imageUrl": "https://vmspace.com/ActiveFile/spacem.org/board_img/3514603126539bfc41e01d.jpg",
+          "sourceThumbnail": "https://vmspace.com/ActiveFile/spacem.org/board_img/3514603126539bfc41e01d.jpg",
+          "sourcePageUrl": "https://vmspace.com/eng/project/project_view.html?base_seq=MjczNg%3D%3D&page=1",
+          "sourceName": "공간(VM SPACE) · Village de Ananti",
+          "creator": "공간(VM SPACE) · Village de Ananti",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "리조트 건축·수직 타워·도시 동선",
+          "notes": "건축 전문 매체의 프로젝트 사진. 대지 경사와 타워 배치를 참고하기 위한 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-village-de-ananti-architecture-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "공식 리조트 안내와 건축 전문 매체의 프로젝트 사진을 연결했습니다. 아난티 앳 부산 코브와는 별도 단지로 등록하고 출입·촬영 허가는 별도 확인합니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 89,
+      "photoScoreBreakdown": {
+        "distinctiveness": 27,
+        "compositionVariety": 19,
+        "lightAndTexture": 18,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 복합 리조트 건축 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "언덕 지형 위에 배치된 수직 호텔·레지던스 타워와 저층 문화·상업 공간, 바다를 향한 보행 동선이 함께 구성된 대형 리조트. 수직 스케일과 원근 촬영이 가능하다.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:09:00.000Z",
+      "mediaAppearances": [
+        {
+          "title": "리조트 복합건축 프로젝트 소개",
+          "source": "공간(VM SPACE)",
+          "url": "https://vmspace.com/eng/project/project_view.html?base_seq=MjczNg%3D%3D&page=1",
+          "note": "건축·리조트 프로젝트 사진 및 공간 구성 참고"
+        }
+      ]
+    },
+    {
+      "id": "busan-ananti-at-busan-cove",
+      "name": "아난티 앳 부산 코브",
+      "region": "부산",
+      "category": "해안 리조트·조형 실내풀·유리 파사드",
+      "address": "부산광역시 기장군 기장읍 기장해안로 268-31",
+      "coordinates": null,
+      "officialUrl": "https://ananti.kr/ko/cove/CV0401",
+      "openingStatus": "호텔·리조트 운영 · 방문일 기준 시설별 이용 조건 확인",
+      "shootingPermission": "일부 수영장·회원 시설은 이용 자격 제한; 상업촬영·조명·장비 반입은 운영자 사전 승인 필요",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "호텔",
+        "실내 수영장",
+        "인피니티풀",
+        "해안"
+      ],
+      "photoProfile": "곡선 리브 천장, 분기형 기둥, 청색 수면과 바다 방향의 대형 창이 한 프레임에 들어오는 건축적 수영장 공간. 구조·반사·수평선을 강조하는 럭셔리 에디토리얼 후보.",
+      "visualStrengths": [
+        "조형적 리브 천장과 분기형 기둥",
+        "물의 반사와 수평선",
+        "백색 건축·유리·청색 수면의 색 대비"
+      ],
+      "bestConcepts": [
+        "럭셔리·리조트웨어 화보",
+        "건축 디테일과 수면 반사",
+        "미니멀 인물 실루엣"
+      ],
+      "constraints": [
+        "실내풀·야외풀의 투숙/회원 자격 확인",
+        "상업촬영 및 조명 장비 사전 허가",
+        "수영장 안전·투숙객 프라이버시 준수"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "아난티 앳 부산 코브 실내 인피니티풀 건축",
+        "Ananti at Busan Cove architecture pool"
+      ],
+      "aliases": [
+        "ANANTI AT BUSAN COVE",
+        "아난티 코브"
+      ],
+      "summary": "조형적 천장과 기둥, 바다 방향의 유리창이 돋보이는 건축적 리조트 공간. 촬영 승인 여부를 먼저 확인할 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://ananti.kr/ko/cove/CV0401",
+        "https://www.ssyenc.com/kr/business/masterpiece/the-ananti-cove"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-ananti-cove-sculptural-pool-20261016",
+          "title": "아난티 코브 조형 천장과 실내 수영장",
+          "imageUrl": "https://www.ssyenc.com/resources/kr/images/business/masterpiece/the-ananti-cove/project_big.jpg",
+          "sourceThumbnail": "https://www.ssyenc.com/resources/kr/images/business/masterpiece/the-ananti-cove/project_big.jpg",
+          "sourcePageUrl": "https://www.ssyenc.com/kr/business/masterpiece/the-ananti-cove",
+          "sourceName": "쌍용건설 · 아난티 코브 프로젝트",
+          "creator": "쌍용건설 · 아난티 코브 프로젝트",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "곡선 리브 천장·유리·수면 반사",
+          "notes": "시공사 프로젝트 소개의 건축 사진. 구조적 리듬과 유리 너머 바다를 참고할 수 있다.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-ananti-cove-sculptural-pool-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "공식 사이트와 시공사 건축 프로젝트 사진을 연결했습니다. 일부 풀 시설이 회원·투숙객 전용일 수 있어 공개 촬영장으로 간주하지 않습니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 91,
+      "photoScoreBreakdown": {
+        "distinctiveness": 29,
+        "compositionVariety": 18,
+        "lightAndTexture": 20,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 건축 리조트 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "곡선 리브 천장, 분기형 기둥, 청색 수면과 바다 방향의 대형 창이 한 프레임에 들어오는 건축적 수영장 공간. 구조·반사·수평선을 강조하는 럭셔리 에디토리얼 후보.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:10:00.000Z",
+      "mediaAppearances": []
+    },
+    {
+      "id": "yeosu-arte-museum",
+      "name": "아르떼뮤지엄 여수",
+      "region": "전남",
+      "category": "몰입형 미디어아트·대형 프로젝션·암실 공간",
+      "address": "전라남도 여수시 박람회길 1, 여수세계박람회 국제관 A동 3층",
+      "coordinates": null,
+      "officialUrl": "https://kr.artemuseum.com/yeosu",
+      "openingStatus": "공식 안내상 매일 10:00~18:00 · 방문일 기준 최신 안내 확인",
+      "shootingPermission": "전시별 사진·영상 촬영, 삼각대·조명 및 상업촬영 가능 범위는 운영자 규정 확인",
+      "spaceTypes": [
+        "실내",
+        "미디어아트",
+        "몰입형 전시",
+        "암실",
+        "프로젝션"
+      ],
+      "photoProfile": "바다·자연 이미지를 벽과 바닥에 투사하는 몰입형 전시 공간. 빛의 색·반사·실루엣을 디자인할 수 있어 뷰티·패션·뮤직비디오 무드 보드에 유용하다.",
+      "visualStrengths": [
+        "벽·바닥을 잇는 대형 미디어 프로젝션",
+        "어두운 공간의 인물 실루엣과 색광",
+        "여수 바다 이미지를 재구성한 몰입형 전시"
+      ],
+      "bestConcepts": [
+        "컬러 라이트 패션·뷰티 화보",
+        "실루엣·반사 바닥·무드 영상",
+        "뮤직비디오·에디토리얼 배경"
+      ],
+      "constraints": [
+        "전시별 사진·영상 촬영 규정 확인",
+        "상업 촬영·조명·삼각대 허가",
+        "관람객 통제 및 작품 투사면 보호"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "아르떼뮤지엄 여수 미디어아트 공간",
+        "ARTE MUSEUM YEOSU immersive projection"
+      ],
+      "aliases": [
+        "ARTE MUSEUM YEOSU",
+        "아르떼뮤지엄 YEOSU"
+      ],
+      "summary": "여수의 바다와 자연을 대형 미디어아트로 재구성한 실내 촬영 콘셉트 후보. 공개 가능 여부와 상업촬영 규정 확인이 선행되어야 한다.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://kr.artemuseum.com/yeosu"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-arte-museum-yeosu-immersive-20261016",
+          "title": "아르떼뮤지엄 여수의 몰입형 빛·색 프로젝션",
+          "imageUrl": "https://ak-d.tripcdn.com/images/1mk22224x8ug9zsfa96C8.jpg",
+          "sourceThumbnail": "https://ak-d.tripcdn.com/images/1mk22224x8ug9zsfa96C8.jpg",
+          "sourcePageUrl": "https://kr.artemuseum.com/yeosu",
+          "sourceName": "아르떼뮤지엄 여수 · 공식 장소 안내/참고 이미지",
+          "creator": "아르떼뮤지엄 여수 · 공식 장소 안내/참고 이미지",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "미디어아트·색광·실루엣",
+          "notes": "미디어 전시 공간을 촬영 콘셉트 참고용으로 연결. 전시별 촬영 허가와 실제 이미지 매칭은 현장에서 다시 확인해야 한다.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-arte-museum-yeosu-immersive-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "공식 안내는 여수 엑스포 국제관 A동 3층의 몰입형 미디어아트 전시 공간을 소개합니다. 입장객 촬영과 상업촬영은 별도 허가를 확인합니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 88,
+      "photoScoreBreakdown": {
+        "distinctiveness": 27,
+        "compositionVariety": 19,
+        "lightAndTexture": 20,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 5
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 몰입형 공간 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "바다·자연 이미지를 벽과 바닥에 투사하는 몰입형 전시 공간. 빛의 색·반사·실루엣을 디자인할 수 있어 뷰티·패션·뮤직비디오 무드 보드에 유용하다.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:11:00.000Z",
+      "mediaAppearances": [
+        {
+          "title": "아르떼뮤지엄 여수 전시 안내",
+          "source": "아르떼뮤지엄 공식",
+          "url": "https://kr.artemuseum.com/yeosu",
+          "note": "여수 바다와 자연을 주제로 한 몰입형 미디어아트 공간"
+        }
+      ]
+    },
+    {
+      "id": "seoul-thehyundai-sounds-forest",
+      "name": "더현대 서울·사운즈 포레스트",
+      "region": "서울",
+      "category": "대형 실내조경·수직 아트리움·자연광",
+      "address": "서울특별시 영등포구 여의대로 108",
+      "coordinates": null,
+      "officialUrl": "https://www.ehyundai.com",
+      "openingStatus": "상업시설 운영 · 방문일 기준 영업시간과 행사/혼잡 확인",
+      "shootingPermission": "일반 고객 동선·브랜드 행사와 분리; 상업촬영·삼각대·조명·모델 촬영은 시설 운영자 승인 필요",
+      "spaceTypes": [
+        "실내",
+        "조경",
+        "아트리움",
+        "수직 보이드",
+        "상업공간",
+        "자연광"
+      ],
+      "photoProfile": "넓은 실내 녹지, 높은 층고와 자연채광, 여러 층의 난간이 한 장면 안에 겹치는 도심형 실내 조경 공간. 숲의 질감과 건축 스케일이 공존해 라이프스타일·패션·건축 인물화보에 적합하다.",
+      "visualStrengths": [
+        "대형 실내 숲과 식재 질감",
+        "높은 층고·개방형 아트리움·여러 층 난간",
+        "자연광과 실내 조명의 혼합"
+      ],
+      "bestConcepts": [
+        "패션·라이프스타일 에디토리얼",
+        "도심 속 자연·웰니스 캠페인",
+        "건축적 원근과 인물 스케일"
+      ],
+      "constraints": [
+        "상업촬영 대관 가능 여부·비용 확인",
+        "고객 얼굴·브랜드 매장·사유 저작물 프레임 관리",
+        "혼잡 시간대와 행사 일정 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "더현대 서울 사운즈 포레스트 실내 조경",
+        "The Hyundai Seoul Sounds Forest atrium"
+      ],
+      "aliases": [
+        "THE HYUNDAI SEOUL",
+        "사운즈 포레스트",
+        "Sounds Forest"
+      ],
+      "summary": "도심 한가운데서 실내 숲과 수직 공간을 한 장면에 담을 수 있는 건축·조경 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://fashionbiz.co.kr/article/220726",
+        "https://www.ehyundai.com"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-thehyundai-sounds-forest-20261016",
+          "title": "더현대 서울 사운즈 포레스트의 실내 정원과 아트리움",
+          "imageUrl": "https://www.fashionbiz.co.kr/images/articleImg/textImg/1761182855372-%ED%98%84%EB%8C%80%EB%B0%B1%ED%99%94%EC%A0%90_%EB%8D%94%ED%98%84%EB%8C%80%20%EC%84%9C%EC%9A%B8%20%EC%82%AC%EC%9A%B4%EC%A6%88%20%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8%20%EC%A0%84%EA%B2%BD%20%EC%82%AC%EC%A7%84.jpg",
+          "sourceThumbnail": "https://www.fashionbiz.co.kr/images/articleImg/textImg/1761182855372-%ED%98%84%EB%8C%80%EB%B0%B1%ED%99%94%EC%A0%90_%EB%8D%94%ED%98%84%EB%8C%80%20%EC%84%9C%EC%9A%B8%20%EC%82%AC%EC%9A%B4%EC%A6%88%20%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8%20%EC%A0%84%EA%B2%BD%20%EC%82%AC%EC%A7%84.jpg",
+          "sourcePageUrl": "https://fashionbiz.co.kr/article/220726",
+          "sourceName": "패션비즈 · 사운즈 포레스트 조경대상 소개",
+          "creator": "패션비즈 · 사운즈 포레스트 조경대상 소개",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "실내 숲·아트리움·자연광",
+          "notes": "실내 녹지 공간과 높은 층고를 보여주는 사진. 다층 난간과 식재의 스케일을 참고하기 위한 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-thehyundai-sounds-forest-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "조경 전문 보도는 실내 녹지 공간과 큰 층고를 소개합니다. 일반 방문과 브랜드·상업촬영은 조건이 다르므로 대관과 장비 반입을 별도로 확인합니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 91,
+      "photoScoreBreakdown": {
+        "distinctiveness": 27,
+        "compositionVariety": 19,
+        "lightAndTexture": 18,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 수도권 우선 스카우팅",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "넓은 실내 녹지, 높은 층고와 자연채광, 여러 층의 난간이 한 장면 안에 겹치는 도심형 실내 조경 공간. 숲의 질감과 건축 스케일이 공존해 라이프스타일·패션·건축 인물화보에 적합하다.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:12:00.000Z",
+      "mediaAppearances": [
+        {
+          "title": "사운즈 포레스트 조경대상 수상 소개",
+          "source": "패션비즈",
+          "url": "https://fashionbiz.co.kr/article/220726",
+          "note": "대형 실내 녹지 공간과 수상 이력 소개"
+        }
+      ]
+    },
+    {
+      "id": "incheon-inspire-aurora",
+      "name": "인스파이어 엔터테인먼트 리조트·오로라",
+      "region": "인천",
+      "category": "복합 리조트·몰입형 LED 스트리트·미디어 건축",
+      "address": "인천광역시 중구 공항문화로 127",
+      "coordinates": null,
+      "officialUrl": "https://www.inspirekorea.com",
+      "openingStatus": "복합 리조트 운영 · 방문일 기준 시설·출입 구역 확인",
+      "shootingPermission": "LED 스트리트·호텔·아레나별 촬영 규정 상이; 상업촬영·삼각대·조명은 운영자 사전 허가 필요",
+      "spaceTypes": [
+        "실내",
+        "복합 리조트",
+        "몰입형 미디어",
+        "LED 스트리트",
+        "엔터테인먼트",
+        "호텔"
+      ],
+      "photoProfile": "천장과 양쪽 벽을 감싸는 약 150m 규모의 고화질 LED 콘텐츠 거리. 영상광이 인물·바닥·벽에 동시에 반사되므로 사이버펑크·뮤직비디오·컬러 에디토리얼 배경으로 조사 가치가 높다.",
+      "visualStrengths": [
+        "천장과 벽을 감싸는 긴 LED 캐노피",
+        "영상광의 색 반사와 바닥 대칭",
+        "대형 복합 리조트의 스케일과 동선"
+      ],
+      "bestConcepts": [
+        "컬러 라이트 패션·뮤직비디오",
+        "미래적·사이버펑크 에디토리얼",
+        "실루엣과 반사 바닥을 이용한 인물 촬영"
+      ],
+      "constraints": [
+        "상업 촬영·영상 촬영·삼각대 허가 확인",
+        "LED 콘텐츠 송출 및 혼잡 시간에 따라 프레임 변화",
+        "보안 구역과 촬영 금지 구역 준수"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "인스파이어 리조트 오로라 150m LED 스트리트",
+        "INSPIRE Aurora digital street architecture"
+      ],
+      "aliases": [
+        "INSPIRE Entertainment Resort",
+        "INSPIRE Aurora",
+        "인스파이어 오로라"
+      ],
+      "summary": "인천 영종도의 대형 복합 리조트 안에 있는 몰입형 미디어 스트리트. 조형 배경과 영상광을 중심으로 기획할 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://www.inspirekorea.com",
+        "https://prtimes.jp/main/html/rd/p/000000025.000128436.html"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-inspire-aurora-led-street-20261016",
+          "title": "인스파이어 오로라의 천장·벽 LED 몰입 공간",
+          "imageUrl": "https://prcdn.freetls.fastly.net/release_image/128436/25/128436-25-9dae1ec62943e7a7af38a4a4ede48589-874x580.png?auto=webp&fit=bounds&format=jpeg&height=480&width=720",
+          "sourceThumbnail": "https://prcdn.freetls.fastly.net/release_image/128436/25/128436-25-9dae1ec62943e7a7af38a4a4ede48589-874x580.png?auto=webp&fit=bounds&format=jpeg&height=480&width=720",
+          "sourcePageUrl": "https://prtimes.jp/main/html/rd/p/000000025.000128436.html",
+          "sourceName": "INSPIRE Integrated Resort · 오로라 보도자료",
+          "creator": "INSPIRE Integrated Resort · 오로라 보도자료",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "몰입형 LED·복합 리조트·컬러 라이트",
+          "notes": "운영사 보도자료에 수록된 오로라 공간 참고 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-inspire-aurora-led-street-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "운영사 보도자료에서 천장과 벽면 LED를 활용한 몰입형 공간을 확인했습니다. 영업 구역과 촬영 허가를 별도로 확인합니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 90,
+      "photoScoreBreakdown": {
+        "distinctiveness": 29,
+        "compositionVariety": 19,
+        "lightAndTexture": 20,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 4
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 미디어 공간 우선 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "천장과 양쪽 벽을 감싸는 약 150m 규모의 고화질 LED 콘텐츠 거리. 영상광이 인물·바닥·벽에 동시에 반사되므로 사이버펑크·뮤직비디오·컬러 에디토리얼 배경으로 조사 가치가 높다.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-13T01:13:00.000Z",
+      "mediaAppearances": [
+        {
+          "title": "오로라 콘텐츠 소개",
+          "source": "INSPIRE Integrated Resort / PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000025.000128436.html",
+          "note": "몰입형 LED 스트리트 소개"
+        }
+      ]
+    },
+    {
+      "id": "seongsu-haus-nowhere-seoul",
+      "name": "하우스 노웨어 서울",
+      "region": "서울",
+      "category": "미래형 리테일 건축·조형 콘크리트·전시형 플래그십",
+      "address": "서울특별시 성동구 뚝섬로 433",
+      "coordinates": null,
+      "officialUrl": "https://korean.visitseoul.net/etc-area/HAUSNOWHERESEOUL/KOP3o3i2c",
+      "openingStatus": "2025년 9월 개장 · 서울 관광정보 안내시간은 방문일 기준 확인",
+      "shootingPermission": "매장과 전시형 공간의 촬영 규정 확인; 상업촬영·삼각대·조명 및 브랜드 공간 사용은 운영자 동의 필요",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "브랜드 플래그십",
+        "노출콘크리트",
+        "전시형 리테일",
+        "도시 건축"
+      ],
+      "photoProfile": "층층이 적층된 곡면 콘크리트 매스와 상부의 격자형 구조가 결합된 성수동 플래그십. 낮은 앵글과 인물 스케일 대비, 수직선·곡선의 충돌로 미래지향 패션 에디토리얼을 만들기 좋은 후보.",
+      "visualStrengths": [
+        "수평 띠와 곡면 콘크리트 입면",
+        "상부 격자 프레임과 수직 스케일",
+        "건물 앞 보행로와 도시 배경의 대비"
+      ],
+      "bestConcepts": [
+        "미래지향 패션 에디토리얼",
+        "브랜드 캠페인·건축 인물화보",
+        "로우앵글과 원근을 활용한 룩북"
+      ],
+      "constraints": [
+        "공공 보행공간과 실내 점포의 촬영 범위 구분",
+        "상업촬영·조명·삼각대 및 브랜드 공간 사용 허가",
+        "출입구·보행 동선 방해 금지"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "하우스 노웨어 서울 건축 외관 성수동",
+        "HAUS NOWHERE SEOUL architecture facade"
+      ],
+      "aliases": [
+        "HAUS NOWHERE SEOUL",
+        "젠틀몬스터 하우스 노웨어",
+        "아이아이컴바인드 신사옥"
+      ],
+      "summary": "2025년 문을 연 성수동의 조형적 콘크리트 플래그십. 최근 건축과 전시형 리테일을 연결할 수 있는 신규 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://korean.visitseoul.net/etc-area/HAUSNOWHERESEOUL/KOP3o3i2c",
+        "https://www.fashionsnap.com/article/2025-09-05/haus-nowhere-seoul/"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-haus-nowhere-exterior-20261016",
+          "title": "하우스 노웨어 서울의 곡면 콘크리트 입면",
+          "imageUrl": "https://fashionsnap-assets.com/article/images/2025/09/hnws-20250901-231-d8751f46-1b04-4530-8702-d89587038c10.jpg",
+          "sourceThumbnail": "https://fashionsnap-assets.com/article/images/2025/09/hnws-20250901-231-d8751f46-1b04-4530-8702-d89587038c10.jpg",
+          "sourcePageUrl": "https://www.fashionsnap.com/article/2025-09-05/haus-nowhere-seoul/",
+          "sourceName": "FASHIONSNAP · HAUS NOWHERE SEOUL",
+          "creator": "FASHIONSNAP · HAUS NOWHERE SEOUL",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "곡면 콘크리트·수평 띠·수직 건축",
+          "notes": "2025년 개장 전 공개된 실제 외관 이미지. 로우앵글과 수평 입면을 참고하기 위한 사진.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-haus-nowhere-exterior-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "서울 공식 관광정보와 건축·패션 매체를 통해 주소와 2025년 개장 정보를 연결했습니다. 실내는 운영자 촬영 허가를 받아야 합니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 94,
+      "photoScoreBreakdown": {
+        "distinctiveness": 29,
+        "compositionVariety": 20,
+        "lightAndTexture": 20,
+        "editorialVersatility": 19,
+        "indoorOutdoorFlexibility": 6
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 수도권 최우선 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "층층이 적층된 곡면 콘크리트 매스와 상부의 격자형 구조가 결합된 성수동 플래그십. 낮은 앵글과 인물 스케일 대비, 수직선·곡선의 충돌로 미래지향 패션 에디토리얼을 만들기 좋은 후보.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:14:00.000Z",
+      "mediaAppearances": [
+        {
+          "title": "하우스 노웨어 서울 개장 소개",
+          "source": "서울 공식 관광정보",
+          "url": "https://korean.visitseoul.net/etc-area/HAUSNOWHERESEOUL/KOP3o3i2c",
+          "note": "신사옥·플래그십 및 전시형 공간 소개"
+        }
+      ]
+    },
+    {
+      "id": "namhae-sol-beach-resort",
+      "name": "쏠비치 남해",
+      "region": "경남",
+      "category": "테라스형 해안 리조트·오션뷰 호텔·프라이빗 빌라",
+      "address": "경상남도 남해군 미조면 미송로303번길 115",
+      "coordinates": null,
+      "officialUrl": "https://www.sonohotelsresorts.com/solbeach_nh/roomsviewall",
+      "openingStatus": "2025년 7월 5일 그랜드 오픈 · 방문일 기준 운영시설 확인",
+      "shootingPermission": "투숙객 공간과 상업촬영을 구분; 빌라·객실·인피니티풀 촬영은 운영자 사전 허가 필요",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "호텔",
+        "프라이빗 빌라",
+        "오션뷰 객실",
+        "수영장",
+        "야외 공간"
+      ],
+      "photoProfile": "남해의 계단식 논과 이탈리아 포지타노를 연상시키는 테라스 구조를 차용한 해안 리조트. 바다를 담는 곡면 유리 객실, 테라스·수영장·인테리어를 구분해 조사하면 리조트웨어와 럭셔리 라이프스타일 촬영을 기획할 수 있다.",
+      "visualStrengths": [
+        "단차형 객실·테라스와 바다의 중첩",
+        "곡면 유리와 파노라마 오션뷰",
+        "풀사이드와 베이커리 인테리어의 색감"
+      ],
+      "bestConcepts": [
+        "리조트웨어·럭셔리 여행 캠페인",
+        "유리창·수평선·인물 실루엣",
+        "컬러풀한 풀사이드·휴양지 에디토리얼"
+      ],
+      "constraints": [
+        "투숙객 공간·수영장·빌라 프라이버시 확인",
+        "사업 목적 촬영 허가 및 대관비 확인",
+        "계절별 운영시설과 촬영 가능 동선 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "쏠비치 남해 리조트 건축 테라스",
+        "Sol Beach Namhae resort architecture"
+      ],
+      "aliases": [
+        "SOL BEACH NAMHAE",
+        "남해 쏠비치",
+        "쏠비치 남해 빌라"
+      ],
+      "summary": "2025년 개장한 남해의 계단식 테라스형 리조트. 호텔과 프라이빗 빌라를 함께 갖춰 건축·숙박 공간 촬영을 구분해 조사할 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://www.sonohotelsresorts.com/solbeach_nh/roomsviewall",
+        "https://www.sonohospitality.com/fo/ps/pressRoomView.do?idx=165&searchKeyword="
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-sol-beach-namhae-ocean-suite-20261016",
+          "title": "쏠비치 남해의 곡면 유리창과 오션뷰 객실",
+          "imageUrl": "https://www.sonohotelsresorts.com/api/hms/user/management/file/image/syC4VWiu8REv7AJ7qDugIg%3D%3D/1",
+          "sourceThumbnail": "https://www.sonohotelsresorts.com/api/hms/user/management/file/image/syC4VWiu8REv7AJ7qDugIg%3D%3D/1",
+          "sourcePageUrl": "https://www.sonohotelsresorts.com/solbeach_nh/roomsviewall/detail/RM00071864",
+          "sourceName": "소노호텔앤리조트 · 쏠비치 남해",
+          "creator": "소노호텔앤리조트 · 쏠비치 남해",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "곡면 유리·오션뷰 객실·미니멀 인테리어",
+          "notes": "리조트 공식 객실 페이지의 실내 참고 이미지. 외관 촬영 사진은 별도 답사 후보로 남긴다.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-sol-beach-namhae-ocean-suite-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "소노인터내셔널은 2025년 7월 5일 개장과 계단형 설계, 객실 및 프라이빗 풀빌라 유형을 소개합니다. 현재 연결 사진은 공식 객실 내부 참고 이미지이며, 리조트 외관의 지상 촬영 사진은 별도 비교 대상으로 둡니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 92,
+      "photoScoreBreakdown": {
+        "distinctiveness": 28,
+        "compositionVariety": 19,
+        "lightAndTexture": 19,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 전국 우선 리조트 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "남해의 계단식 논과 이탈리아 포지타노를 연상시키는 테라스 구조를 차용한 해안 리조트. 바다를 담는 곡면 유리 객실, 테라스·수영장·인테리어를 구분해 조사하면 리조트웨어와 럭셔리 라이프스타일 촬영을 기획할 수 있다.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:15:00.000Z",
+      "mediaAppearances": [
+        {
+          "title": "쏠비치 남해 그랜드 오픈 안내",
+          "source": "소노인터내셔널",
+          "url": "https://www.sonohospitality.com/fo/ps/pressRoomView.do?idx=165&searchKeyword=",
+          "note": "개장일, 계단형 설계, 호텔·빌라 시설 소개"
+        }
+      ]
+    },
+    {
+      "id": "gangneung-haslla-art-world",
+      "name": "하슬라아트월드·뮤지엄호텔",
+      "region": "강원",
+      "category": "해안 절벽 미술관·조각공원·뮤지엄호텔",
+      "address": "강원특별자치도 강릉시 강동면 율곡로 1441",
+      "coordinates": null,
+      "officialUrl": "https://www.museumhaslla.com/home_new/",
+      "openingStatus": "공식 사이트 운영 안내상 연중 운영 · 방문일 기준 전시·시설 시간 확인",
+      "shootingPermission": "전시·조각공원별 관람 규정 적용; 상업촬영·삼각대·조명·객실 촬영은 운영자 사전 허가 필요",
+      "spaceTypes": [
+        "실내",
+        "실외",
+        "미술관",
+        "야외조각공원",
+        "스카이워크",
+        "뮤지엄호텔",
+        "바다 전망"
+      ],
+      "photoProfile": "바다를 향한 절벽 위에 현대미술·대지미술·조각공원·뮤지엄호텔이 이어지는 복합예술공간. 소나무 숲 속 금속 보행로, 기하학적 설치물, 독특한 객실 인테리어까지 조형·자연·인테리어를 조합할 수 있다.",
+      "visualStrengths": [
+        "해안 절벽·소나무 숲·금속 조형 보행로",
+        "대지미술과 곡면·기하학적 설치",
+        "뮤지엄호텔 객실의 욕조·가구 디자인",
+        "실내 미술과 동해 수평선의 색 대비"
+      ],
+      "bestConcepts": [
+        "한국적 자연과 글로벌 패션 에디토리얼",
+        "조형물 중심 인물화보",
+        "독특한 욕조·가구·컬러의 인테리어 촬영",
+        "해안 배경의 시네마틱 실루엣"
+      ],
+      "constraints": [
+        "작품 손상·출입 제한 구역 준수",
+        "전시실·조각공원·호텔 촬영 규정 상이",
+        "객실 촬영은 숙박 및 운영자 승인 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "하슬라아트월드 조각공원 미술관 건축",
+        "Haslla Art World sculpture park museum hotel"
+      ],
+      "aliases": [
+        "HASLLA ART WORLD",
+        "하슬라미술관",
+        "하슬라 뮤지엄호텔"
+      ],
+      "summary": "자연·설치미술·건축·호텔 인테리어가 결합된 강릉의 복합예술공간. 관광 풍경보다 조형 공간 자체를 촬영할 이유가 분명한 후보.",
+      "parking": "주차·스태프 집결·장비 하차 동선은 방문 전 확인",
+      "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
+      "sourceRefs": [
+        "https://www.museumhaslla.com/home_new/",
+        "https://www.museumhaslla.com/facility",
+        "https://www.museumhaslla.com/park"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-haslla-sculpture-walkway-20261016",
+          "title": "하슬라아트월드 소나무 숲과 조형 보행로",
+          "imageUrl": "https://contents.sixshop.com/thumbnails/uploadedFiles/70221/default/image_1722237259721_1000.jpg",
+          "sourceThumbnail": "https://contents.sixshop.com/thumbnails/uploadedFiles/70221/default/image_1722237259721_1000.jpg",
+          "sourcePageUrl": "https://www.museumhaslla.com/park",
+          "sourceName": "하슬라아트월드 공식 웹사이트",
+          "creator": "하슬라아트월드 공식 웹사이트",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "조각공원·금속 보행로·소나무 숲",
+          "notes": "공식 조각공원 페이지의 장소 참고 이미지. 자연 속 보행로와 조형 작품을 보여주는 사진.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "primaryImageId": null,
+      "referenceImageId": "ref-haslla-sculpture-walkway-20261016",
+      "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
+      "verification": {
+        "location": "공식 또는 신뢰 출처에서 장소 확인",
+        "photoMatch": "참고 이미지와 장소 명칭 연결",
+        "rights": "참고 이미지로 등록 · 재사용 조건 확인 필요",
+        "shootingPermission": "현장·상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "1차 온라인 스카우팅 후보 · 현장답사/촬영허가 미확인",
+      "scoutingChecklist": [
+        "실제 장소와 대표사진의 현장 일치 확인",
+        "빛·재료·반사·원근 등 사진가 관점 구도 확인",
+        "방문객 동선·혼잡 시간·촬영 가능 구역 확인",
+        "상업촬영·삼각대·조명·장비 반입 사전 승인 확인"
+      ],
+      "notes": "공식 시설 안내는 야외 조각공원, 미술관 여러 관과 뮤지엄호텔을 함께 소개합니다. 조각공원·실내 미술·호텔 인테리어를 분리해 답사하고 촬영허가를 확인하는 것이 좋습니다.",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "photoPotentialScore": 96,
+      "photoScoreBreakdown": {
+        "distinctiveness": 30,
+        "compositionVariety": 20,
+        "lightAndTexture": 20,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "1차 온라인 조사에 따른 사진적 잠재력 평가 · 현장답사 전",
+      "priorityLabel": "A · 최우선 예술 공간 후보",
+      "selectionGate": {
+        "passesPhotoSpecificity": true,
+        "tourismPopularityUsedAsScore": false,
+        "rationale": "바다를 향한 절벽 위에 현대미술·대지미술·조각공원·뮤지엄호텔이 이어지는 복합예술공간. 소나무 숲 속 금속 보행로, 기하학적 설치물, 독특한 객실 인테리어까지 조형·자연·인테리어를 조합할 수 있다.",
+        "status": "initial-scouting"
+      },
+      "visualCurationStatus": "candidate",
+      "curationQueueStatus": "new-candidate-2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T01:16:00.000Z",
+      "mediaAppearances": [
+        {
+          "title": "하슬라아트월드 공식 시설 안내",
+          "source": "하슬라아트월드",
+          "url": "https://www.museumhaslla.com/facility",
+          "note": "조각공원·미술관·뮤지엄호텔 등 복합 시설 확인"
+        }
+      ]
+    },
+    {
+      "id": "seoul-seoseoul-museum",
+      "name": "서울시립 서서울미술관",
+      "curationOverride": true,
+      "referenceImageId": "ref-seoseoul-museum-city-facade-20261016",
+      "referenceImageStatus": "서울시 공식 외관 참고사진 · 상업 재사용 권리/촬영 규정 후속 확인",
+      "imageStatus": "공식 외관 참고사진 추가 · 대표사진 승인 전",
+      "imageCandidates": [
+        {
+          "id": "ref-seoseoul-museum-city-facade-20261016",
+          "title": "서울시립 서서울미술관 물결형 금속 외관",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/03/DBaLpcyibBORwFInSQaUwNqrcbDyHbQO.jpg",
+          "sourceThumbnail": "https://mediahub.seoul.go.kr/uploads/mediahub/2026/03/DBaLpcyibBORwFInSQaUwNqrcbDyHbQO.jpg",
+          "sourcePageUrl": "https://news.seoul.go.kr/culture/archives/531729",
+          "sourceName": "서울특별시 미디어허브 · 서서울미술관 개관",
+          "creator": "서울특별시 미디어허브 · 서서울미술관 개관",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "뉴미디어 미술관·반사 금속 파사드·공원",
+          "notes": "서울시 공식 미디어허브의 개관 관련 외관 사진. 기존 후보 사진이 로딩되지 않는 문제를 보완하기 위한 대체 장소 참고 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://sema.seoul.go.kr/kr/visit/seoseoul",
+        "https://news.seoul.go.kr/culture/archives/531729"
+      ],
+      "notes": "2026-10-16 보강: 서울시 미디어허브의 서서울미술관 외관 참고사진을 추가해 기존 이미지 로딩 실패에 대비했습니다. 사진 재사용 권리와 현장 촬영 규정은 별도 확인.",
+      "updatedAt": "2026-10-16"
     }
   ]
 }
