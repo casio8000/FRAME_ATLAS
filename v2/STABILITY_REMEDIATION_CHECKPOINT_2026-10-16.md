@@ -64,6 +64,12 @@ Date: 2026-10-16 (Korea Standard Time)
 - Replaced byte-by-byte string concatenation for photo and catalog Base64 with chunked `bytesToBase64`. Added a Node test covering 13 byte sizes through 8 MiB and static recovery-order checks.
 - The browser/Actions tests can validate conversion and retry-cleanup ordering. A real GitHub-token upload still requires an actual authorized user-session test and has not been run.
 
+## 2026-10-16 validation target correction
+- Found a root cause in the CI report: tools/validate.py analyzed legacy data/places.js (214 records), not the active V2 catalog shown by the app (200 records).
+- The old validation script/report are archived as V5 artifacts. The new tools/validate.py validates v2/data/places.json plus v2/data/art_locations_curated_20261016.json using the app's ID/name merge and curation-override behavior, and writes a deterministic tools/report.md.
+- The active catalog content has not been rewritten. Pre-run read-only analysis found 151 base records, 65 supplemental entries, 16 entries that merge into existing places, 49 unique additions, and 200 merged locations. It found 288 photo candidates, 0 repository-stored image assets, 39 candidates whose place match is not confirmed, and 1 candidate without an image URL/thumbnail/file reference. These are report metrics, not edits.
+- CI's git diff check remains as a guard to ensure the committed report matches the active V2 data.
+
 ## Next steps
 1. Verify the current cleanup commit's Actions and Pages deployment before doing another code change.
 2. Review uploaded browser audit JSON and separate genuinely broken image sources from slow or still-pending remote responses; do not change the catalog automatically from a timed-out image request.

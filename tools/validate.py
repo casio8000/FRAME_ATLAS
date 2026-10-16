@@ -1,98 +1,216 @@
 #!/usr/bin/env python3
-"""FRAME ATLAS 데이터 검증. 사용: python tools/validate.py [--strict]
-오류(E)가 있으면 종료코드 1을 반환해 품질검사를 실패 처리합니다. 기본 모드는 경고(W)를 기록만 하며 --strict는 경고도 실패로 처리합니다. Pages 배포 차단 여부는 저장소의 브랜치 보호 규칙 설정에 따릅니다."""
-import json,re,sys,math,itertools,collections,pathlib
-R=pathlib.Path(__file__).resolve().parent.parent
-t=(R/'data/places.js').read_text(encoding='utf-8');D=json.loads(t[t.index('{'):t.rindex('}')+1])
-L=D['locations'];HID=set(D.get('hidden',[]));E=[];W=[];by={r['id']:r for r in L}
-GEN=['신규 스카우팅 후보','실제 촬영 전','현장 답사 후','추후 확인','좋은 장소','분위기가 좋','추천합니다','방문하기 좋','다양한 촬영','아름다운','멋진']
-TPL=re.compile(r'의 구조와 .* 분위기가 핵심');IO={'실내','실외','실내·외'}
-def bg(s):z=re.sub(r'\s','',s);return {z[i:i+2] for i in range(len(z)-1)}
-def hav(a,b,c,d):p=math.pi/180;x=math.sin((c-a)*p/2)**2+math.cos(a*p)*math.cos(c*p)*math.sin((d-b)*p/2)**2;return 12742*math.asin(math.sqrt(x))
-for i,c in collections.Counter(r['id'] for r in L).items():
-    if c>1:E.append(f'ID 중복: {i}')
-for r in L:
-    if not re.fullmatch(r'[A-Za-z0-9_-]{1,40}',r['id']):E.append(f"ID 형식 오류(영문·숫자·_-만): {r['id']}")
-    for k in('name','region','type'):
-        if not str(r.get(k,'')).strip():E.append(f"{r['id']} 필수값 없음: {k}")
-    if r.get('indoorOutdoor') not in IO:W.append(f"{r['id']} 실내외 표기 {r.get('indoorOutdoor')!r} (실내/실외/실내·외)")
-nr=collections.defaultdict(list)
-for r in L:
-    if r['id'] not in HID:nr[(r['name'],r['region'])].append(r['id'])
-for k,v in nr.items():
-    if len(v)>1:E.append(f'같은 장소 중복(이름+지역): {k} {v}')
-co={}
-for it in D.get('coordStr','').split(';'):
-    if ':' in it:
-        k,v=it.split(':');la,lo=map(float,v.split(','));i='L-'+k
-        if i not in by:E.append(f'좌표의 장소 ID 없음: {i}')
-        elif not(33<=la<=38.7 and 124.5<=lo<=132):E.append(f'좌표가 한국 범위 밖: {i} {la},{lo}')
-        else:co[i]=(la,lo)
-for a,b in itertools.combinations([i for i in co if i not in HID],2):
-    if hav(*co[a],*co[b])<0.06:W.append(f'좌표 60m 이내(중복 의심): {a} {by[a]["name"]} / {b} {by[b]["name"]}')
-for r in L:
-    r['pro_light']=(r.get('pro') or {}).get('light','');r['pro_plan']=(r.get('pro') or {}).get('plan','')
-for f in('memo','visualProfile','imageAnalysis','scout','pro_light','pro_plan'):
-    cn=collections.Counter((r.get(f) or '').strip() for r in L if (r.get(f) or '').strip())
-    for tx,n in cn.items():
-        if n>=3:E.append(f'[{f}] 같은 문구 {n}곳 반복(일반 문구): "{tx[:40]}…"')
-        elif n==2:W.append(f'[{f}] 같은 문구 2곳: "{tx[:40]}"')
-    for r in L:
-        tx=(r.get(f) or '').strip()
-        if not tx:continue
-        if TPL.search(tx):E.append(f"{r['id']} [{f}] 유형·분위기만 치환한 템플릿 문구")
-        if len(tx)<45 and any(g in tx for g in GEN):W.append(f"{r['id']} {r['name']} [{f}] 상투 문구: {tx[:40]}")
-        for o in L:
-            if o['id']!=r['id'] and len(o['name'])>=4 and o['name'] in tx and o['name'] not in r['name']:W.append(f"{r['id']} {r['name']} [{f}]에 다른 장소명 「{o['name']}」 포함")
-mm=[(r['id'],bg(r['memo'])) for r in L if len((r.get('memo') or '').strip())>=12]
-for (a,A),(b,B) in itertools.combinations(mm,2):
-    n=len(A&B)
-    if n/((len(A)+len(B)-n) or 1)>=.85 and by[a]['memo']!=by[b]['memo']:W.append(f'메모가 거의 같음: {a} / {b}')
-NEWS=re.compile(r'kakaocdn|daumcdn|segye|joongdo|esquire|arcpublishing|korearank|welfarehello|trippose|chosun|blog')
-for r in L:
-    u=r.get('imageUrl') or ''
-    if u and not u.startswith('https://'):W.append(f"{r['id']} 이미지 URL이 https가 아님")
-    if u and NEWS.search(u):W.append(f"{r['id']} {r['name']} 블로그·기사 이미지: 상업 이용 전 허락 확인 필요")
-nk=lambda s:re.sub(r'[\s·()-]','',s)
-for a,b in itertools.combinations([r for r in L if r['id'] not in HID],2):
-    x,y=nk(a['name']),nk(b['name'])
-    if len(x)>=4 and len(y)>=4 and (x in y or y in x):W.append(f"이름이 겹침(중복·하위 장소 의심): {a['id']} {a['name']} / {b['id']} {b['name']}")
-for r in L:
-    m=(r.get('memo') or '').strip()
-    for f in('visualProfile','scout'):
-        if m and (r.get(f) or '').strip()==m:E.append(f"{r['id']} {r['name']} memo와 {f}가 같은 문장(같은 문구가 두 번 표시됨)")
-short=sum(1 for r in L if 0<len((r.get('memo') or '').strip())<8)
-VISIBLE=[r for r in L if r['id'] not in HID]
-def unverified_location(r):
-    q=r.get('locationReview') or {}
-    return q.get('coordinateStatus')!='precise-coordinate-verified' or not q.get('siteVisitVerified')
-def missing_permit(r):
-    q=r.get('permitReview') or {}
-    return q.get('status') not in ('approved','conditional','not-required-confirmed','denied') or not q.get('evidenceUrl') or not q.get('lastChecked')
-def image_unverified(r):
-    q=r.get('imageReview') or {}
-    return not (q.get('placeMatchVerified') is True or q.get('status')=='place-match-verified')
-def rights_unverified(r):
-    q=r.get('imageReview') or {}
-    has=bool(r.get('imageUrl') or r.get('cardImage'))
-    return has and q.get('usageRightsStatus') not in ('commercial-use-cleared','user-owned')
-def field_scout_missing(r):
-    q=r.get('technicalReview') or {}
-    points=[p for p in (q.get('fieldPoints') or []) if p.get('name') and p.get('position') and p.get('lens') and p.get('light') and p.get('notes')]
-    return not q.get('fieldScouted') or len(points)<3
-quality=[
- ('앱 표시 장소',len(VISIBLE)),
- ('기본 촬영 포인트 0개',sum(len(r.get('points') or [])==0 for r in VISIBLE)),
- ('기본 촬영 포인트 3개 미만',sum(len(r.get('points') or [])<3 for r in VISIBLE)),
- ('공식 정보 링크 없음',sum(not r.get('officialUrl') for r in VISIBLE)),
- ('대표 사진 장소 일치 미확인',sum(image_unverified(r) for r in VISIBLE)),
- ('이미지 이용권 확인 필요(이미지 있는 레코드)',sum(rights_unverified(r) for r in VISIBLE)),
- ('상업촬영 허가 근거/확인일 미충족',sum(missing_permit(r) for r in VISIBLE)),
- ('정밀좌표 또는 현장답사 미기록',sum(unverified_location(r) for r in VISIBLE)),
- ('현장 실측 촬영 포인트 3개 미확보',sum(field_scout_missing(r) for r in VISIBLE)),
+"""Validate the active FRAME ATLAS 2.0 catalogs and write a deterministic report."""
+from __future__ import annotations
+
+import copy
+import json
+import re
+from collections import Counter
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+APP_ROOT = ROOT / "v2"
+BASE_PATH = APP_ROOT / "data" / "places.json"
+SUPPLEMENT_PATH = APP_ROOT / "data" / "art_locations_curated_20261016.json"
+REPORT_PATH = ROOT / "tools" / "report.md"
+ERRORS: list[str] = []
+
+
+def load_catalog(path: Path, label: str) -> dict:
+    if not path.is_file():
+        ERRORS.append(f"{label} 카탈로그 파일이 없습니다: {path.relative_to(ROOT)}")
+        return {"places": []}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as exc:
+        ERRORS.append(f"{label} 카탈로그 JSON을 읽을 수 없습니다: {exc}")
+        return {"places": []}
+    if not isinstance(data, dict) or not isinstance(data.get("places"), list):
+        ERRORS.append(f"{label} 카탈로그에 places 배열이 없습니다.")
+        return {"places": []}
+    return data
+
+
+def norm_name(value: object) -> str:
+    return re.sub(r"\s+", "", str(value or "")).lower()
+
+
+def duplicate_ids(places: list[dict]) -> list[tuple[str, int]]:
+    count = Counter(str(p.get("id") or "") for p in places if isinstance(p, dict))
+    return [(key, number) for key, number in count.items() if key and number > 1]
+
+
+def merge_catalogs(base: dict, supplement: dict) -> tuple[list[dict], int, int]:
+    places = copy.deepcopy(base.get("places") or [])
+    ids = {p.get("id") for p in places if isinstance(p, dict)}
+    names = {norm_name(p.get("name")) for p in places if isinstance(p, dict)}
+    matched = 0
+    appended = 0
+    for incoming in supplement.get("places") or []:
+        if not isinstance(incoming, dict) or not incoming.get("id"):
+            ERRORS.append("보조 카탈로그 항목에 ID가 없습니다.")
+            continue
+        name = norm_name(incoming.get("name"))
+        existing = next((p for p in places if isinstance(p, dict) and
+                         (p.get("id") == incoming.get("id") or
+                          (name and norm_name(p.get("name")) == name))), None)
+        if existing is not None:
+            matched += 1
+            if incoming.get("curationOverride"):
+                by_id = {c.get("id"): c for c in existing.get("imageCandidates", [])
+                         if isinstance(c, dict) and c.get("id")}
+                for candidate in incoming.get("imageCandidates") or []:
+                    if isinstance(candidate, dict) and candidate.get("id"):
+                        prior = by_id.get(candidate["id"], {})
+                        by_id[candidate["id"]] = {**prior, **copy.deepcopy(candidate)}
+                existing["imageCandidates"] = list(by_id.values())
+                for key in ("primaryImageId", "referenceImageId"):
+                    if key in incoming:
+                        existing[key] = incoming[key]
+                if incoming.get("overrideExistingFields") is True:
+                    for key in ("name", "category", "imageStatus", "selectionStatus", "photoProfile", "summary"):
+                        if isinstance(incoming.get(key), str) and incoming[key].strip():
+                            existing[key] = incoming[key]
+                    for key in ("aliases", "sourceRefs", "bestConcepts", "visualStrengths"):
+                        if isinstance(incoming.get(key), list):
+                            existing[key] = copy.deepcopy(incoming[key])
+            continue
+        if incoming.get("id") not in ids and (not name or name not in names):
+            places.append(copy.deepcopy(incoming))
+            ids.add(incoming["id"])
+            if name:
+                names.add(name)
+            appended += 1
+    return places, matched, appended
+
+
+base = load_catalog(BASE_PATH, "기본")
+supplement = load_catalog(SUPPLEMENT_PATH, "보조")
+if base.get("schemaVersion") != 2:
+    ERRORS.append("기본 카탈로그 schemaVersion이 2가 아닙니다.")
+if duplicate_ids(base.get("places") or []):
+    ERRORS.append("기본 카탈로그에 중복 장소 ID가 있습니다: " + str(duplicate_ids(base.get("places") or [])[:10]))
+if duplicate_ids(supplement.get("places") or []):
+    ERRORS.append("보조 카탈로그에 중복 장소 ID가 있습니다: " + str(duplicate_ids(supplement.get("places") or [])[:10]))
+
+places, matched, appended = merge_catalogs(base, supplement)
+seen_ids: set[str] = set()
+candidates: list[dict] = []
+for index, place in enumerate(places, 1):
+    if not isinstance(place, dict):
+        ERRORS.append(f"통합 카탈로그 {index}번째 장소 레코드가 객체가 아닙니다.")
+        continue
+    place_id = str(place.get("id") or "")
+    if not re.fullmatch(r"[A-Za-z0-9_-]{1,80}", place_id):
+        ERRORS.append(f"장소 ID 형식 오류: {place_id or '(미기재)'}")
+    if place_id and place_id in seen_ids:
+        ERRORS.append(f"통합 카탈로그에 중복 장소 ID가 있습니다: {place_id}")
+    seen_ids.add(place_id)
+    for key in ("id", "name", "region", "category"):
+        if not str(place.get(key) or "").strip():
+            ERRORS.append(f"{place_id or index} 장소 필수값 누락: {key}")
+    image_candidates = place.get("imageCandidates", [])
+    if not isinstance(image_candidates, list):
+        ERRORS.append(f"{place_id} imageCandidates가 배열이 아닙니다.")
+        image_candidates = []
+    local_ids: set[str] = set()
+    for candidate in image_candidates:
+        if not isinstance(candidate, dict):
+            ERRORS.append(f"{place_id} 사진 후보 레코드가 객체가 아닙니다.")
+            continue
+        candidate_id = str(candidate.get("id") or "")
+        if not candidate_id:
+            ERRORS.append(f"{place_id} 사진 후보 ID가 없습니다.")
+        elif candidate_id in local_ids:
+            ERRORS.append(f"{place_id} 사진 후보 ID가 중복됩니다: {candidate_id}")
+        local_ids.add(candidate_id)
+        candidates.append(candidate)
+        image_url = str(candidate.get("imageUrl") or "")
+        if image_url and not re.match(r"^https?://", image_url, re.I):
+            if image_url.startswith("./assets/places/"):
+                local = (APP_ROOT / image_url[2:]).resolve()
+                if APP_ROOT.resolve() not in local.parents or not local.is_file():
+                    ERRORS.append(f"{place_id}/{candidate_id} 카탈로그가 참조하지만 없는 저장소 사진: {image_url}")
+            else:
+                ERRORS.append(f"{place_id}/{candidate_id} 지원하지 않는 이미지 주소: {image_url}")
+        asset_path = str(candidate.get("assetPath") or "")
+        if asset_path:
+            if not asset_path.startswith("v2/assets/places/"):
+                ERRORS.append(f"{place_id}/{candidate_id} assetPath 형식 오류: {asset_path}")
+            local_asset = (ROOT / asset_path).resolve()
+            if ROOT.resolve() not in local_asset.parents or not local_asset.is_file():
+                ERRORS.append(f"{place_id}/{candidate_id} assetPath 파일을 찾을 수 없습니다: {asset_path}")
+    for key in ("primaryImageId", "referenceImageId"):
+        value = place.get(key)
+        if value and value not in local_ids:
+            ERRORS.append(f"{place_id} {key}가 존재하지 않는 사진 후보를 가리킵니다: {value}")
+
+records_with_candidates = sum(1 for p in places if isinstance(p, dict) and bool(p.get("imageCandidates")))
+primary_count = sum(1 for p in places if isinstance(p, dict) and p.get("primaryImageId"))
+reference_count = sum(1 for p in places if isinstance(p, dict) and p.get("referenceImageId"))
+photos_with_refs = sum(1 for c in candidates if c.get("imageUrl") or c.get("sourceThumbnail") or c.get("assetPath") or c.get("pendingAsset"))
+local_assets = sum(1 for c in candidates if c.get("assetPath") or str(c.get("imageUrl") or "").startswith("./assets/places/"))
+missing_refs = sum(1 for c in candidates if not (c.get("imageUrl") or c.get("sourceThumbnail") or c.get("assetPath") or c.get("pendingAsset"))
+match_review = sum(1 for c in candidates if c.get("placeMatch") != "confirmed")
+rights_review = sum(1 for c in candidates if (c.get("usageRightsStatus") or c.get("rightsStatus")) not in
+                    ("commercial-use-cleared", "user-owned", "public-domain-dedication"))
+match_states = Counter(str(c.get("placeMatch") or "(미기재)") for c in candidates)
+rights_states = Counter(str(c.get("usageRightsStatus") or c.get("rightsStatus") or "(미기재)") for c in candidates)
+
+report = [
+    "# FRAME ATLAS 2.0 데이터 검증 보고서",
+    "",
+    f"- 기본 카탈로그 {len(base.get('places') or [])}곳 · 보조 카탈로그 {len(supplement.get('places') or [])}개 · 기존 장소와 병합 {matched}건 · 별도 추가 {appended}곳 · 통합 장소 {len(places)}곳",
+    f"- 구조 오류 {len(ERRORS)}건 · 사진 후보 출처/파일 경로 누락 {missing_refs}건 · 장소 일치 재검토 후보 {match_review}건 · 이미지 이용권 상태 재검토 후보 {rights_review}건",
+    "",
+    "## 장소 카탈로그 정합성",
+    "",
+    "| 항목 | 결과 |",
+    "|---|---:|",
+    f"| 기본 장소 카탈로그 | {len(base.get('places') or [])}곳 |",
+    f"| 보조 장소 후보 | {len(supplement.get('places') or [])}개 |",
+    f"| 보조 항목 중 기존 장소와 일치 | {matched}건 |",
+    f"| 별도 장소로 통합 | {appended}곳 |",
+    f"| 앱 기준 통합 장소 | {len(places)}곳 |",
+    f"| 필수 ID·이름·지역·유형 누락 | {sum('장소 필수값 누락' in e for e in ERRORS)}건 |",
+    f"| 중복 장소 ID | {len(duplicate_ids(places))}개 |",
+    f"| 사진 후보 ID 중복 | {sum('사진 후보 ID' in e and '중복' in e for e in ERRORS)}건 |",
+    f"| 참조가 끊긴 대표/참고 사진 ID | {sum('존재하지 않는 사진 후보' in e for e in ERRORS)}건 |",
+    "",
+    "## 사진 자료 현황",
+    "",
+    "| 항목 | 결과 |",
+    "|---|---:|",
+    f"| 사진 후보 전체 | {len(candidates)}개 |",
+    f"| 사진 후보가 있는 장소 | {records_with_candidates}곳 |",
+    f"| 사진 후보가 없는 장소 | {len(places) - records_with_candidates}곳 |",
+    f"| 대표사진으로 지정된 장소 | {primary_count}곳 |",
+    f"| 참고사진이 지정된 장소 | {reference_count}곳 |",
+    f"| URL·저장소 파일 경로가 있는 후보 | {photos_with_refs}개 |",
+    f"| GitHub 저장소 사진 파일로 등록된 후보 | {local_assets}개 |",
+    f"| URL/파일 경로가 없는 후보 | {missing_refs}개 |",
+    "",
+    "### 장소 일치 상태",
+    "",
+    "| 상태 | 후보 수 |",
+    "|---|---:|",
+    *[f"| {key} | {value} |" for key, value in sorted(match_states.items())],
+    "",
+    "### 이용권 상태",
+    "",
+    "| 상태 | 후보 수 |",
+    "|---|---:|",
+    *[f"| {key} | {value} |" for key, value in sorted(rights_states.items())],
+    "",
+    "> URL이 있는 사진은 외부 주소를 참조하는 후보일 수 있으며, 이것이 장소 일치·이용권·상업 촬영 허가를 증명하지 않습니다. 새로 직접 등록한 사진 파일은 GitHub에 게시된 뒤에만 다른 기기에서도 같은 저장소 파일을 불러올 수 있습니다. 현장 확인이나 이용권이 미완료인 항목은 미확인 상태로 유지합니다.",
+    "",
+    "## 구조 오류",
+    "",
+    *([f"- {err}" for err in ERRORS] if ERRORS else ["- 없음"]),
+    "",
 ]
-rep=['# 데이터 검증 보고서','',f'- 전체 레코드 {len(L)}곳 · 앱 표시 {len(VISIBLE)}곳 · 오류 {len(E)} · 경고 {len(W)} · 8자 미만 메모 {short}곳','','## 전문 스카우팅 품질 공백(현장 확인 전의 데이터 상태)','','| 항목 | 건수 |','|---|---:|']+[f'| {k} | {v} |' for k,v in quality]+['','> 이 표는 현재 파일에 기록된 검증 필드의 충족 여부입니다. 장소의 실제 존재·운영·허가·이미지 일치에 대한 현장 실사를 대신하지 않습니다.','','## 오류']+['- '+x for x in E]+['','## 경고']+['- '+x for x in W]
-(R/'tools/report.md').write_text('\n'.join(rep),encoding='utf-8');print('\n'.join(rep[:3]+rep[5:]))
-for x in E[:30]:print('E',x)
-for x in W[:15]:print('W',x)
-sys.exit(1 if E or(W and '--strict' in sys.argv) else 0)
+REPORT_PATH.write_text("\n".join(report), encoding="utf-8")
+print("\n".join(report[:4]))
+for error in ERRORS:
+    print("ERROR:", error)
+raise SystemExit(1 if ERRORS else 0)

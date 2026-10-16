@@ -46,3 +46,10 @@
 
 - 현재 앱 루트에서 구버전(V5.8/V5.9) 추가 개선사항, 장소 자료, 종합 평가와 기존 공유 동기화 제안서를 분리해 `archive/legacy-v5-docs/`에 보관했습니다.
 - 네 파일의 Git blob 내용은 변경하지 않고 경로만 옮겼습니다. 현재 운영 안내는 루트 `MANUAL.md` 및 `v2/USER_MANUAL_KO.html`을 기준으로 합니다.
+
+
+## 2026-10-16 검증 도구 분리
+
+- 이전 tools/validate.py는 2.0이 아닌 구형 data/places.js(214곳)를 검증해 CI 보고서에 현재 앱과 다른 장소 수를 표시했습니다.
+- 구형 검증기는 archive/legacy-v5-app/validate_legacy_v5.py로 보관하고, 기존 보고서는 archive/legacy-v5-app/report_v5.md로 이동했습니다.
+- 현재 tools/validate.py와 tools/report.md는 실제 2.0 기본 카탈로그와 보조 카탈로그를 앱과 같은 ID/이름 병합 규칙으로 검증합니다. 두 원본 카탈로그 데이터는 변경하지 않았습니다.

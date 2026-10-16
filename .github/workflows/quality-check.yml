@@ -79,7 +79,7 @@ jobs:
             test-results/*.json
           if-no-files-found: ignore
 
-      - name: Validate location data
+      - name: Validate FRAME ATLAS 2.0 location data
         run: python tools/validate.py
 
       - name: Ensure validation report matches current data
