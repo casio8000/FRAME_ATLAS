@@ -10,13 +10,34 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100;
 
 ## Current verified UI state
 - Current integrated catalog count is 200 unique locations: base catalog 151 + supplement 67 − 18 ID/name matches = 200. This count is confirmed by the catalog merge/validation report. The latest 14 additions now each have a primary and reference image candidate assignment.
-- GitHub Actions quality run #562 passed on build 20261016-99, including the desktop/mobile smoke suite, canonical count tests, unpublished local-draft preservation test, newest-14 photo-load check, catalog validation, report consistency, backup/photo/device-sync tests. Pages deployment #601 passed for the same build. The exact 200-count reconciliation is regression-tested; the actual user PC browser storage cannot be inspected remotely. Build 20261016-100 has now been committed to force-refresh the installed/desktop caches; await its own quality and Pages runs before declaring that cache-refresh release verified.
+- GitHub Actions quality run #567 passed for build 20261016-100, including desktop/mobile Playwright checks, canonical count tests, stale PC-only draft and alternate-ID duplicate reconciliation, preservation of genuine local-only drafts, the newest-14 photo checks, catalog validation, report consistency, backup/photo/device-sync tests. Pages deployment #607 succeeded for the same build family. Build 100 updates V2 app assets, service-worker cache, manifest start URL, root redirect and root bridge cache to force stale desktop/PWA clients to refresh. The browser audit rendered 200/200 cards, loaded 200/200 location images, and flagged 0 missing images. All newest 14 images loaded.
 - A floating “맨 위로” control appears after scrolling.
 - A floating “전체 촬영장소로 돌아가기” control is available from a selected place detail.
 - The first screen fits the version header, splash copy and creator credits into a fixed viewport, with nationwide (not Seoul-area-only) wording.
 - Mobile input font sizing and page/list scrolling have been adjusted for iPhone Safari layout stability.
 - Incheon Open Port uses a refreshed image reference from the Incheon Tour site. It is a reference candidate; commercial reuse rights have not been verified.
 - The previous-version scout notes are separately labelled as legacy information and are not represented as current confirmed permit/fee facts.
+
+## Midpoint evaluation — 2026-10-16
+
+### Current position
+- Location-count phase: complete and frozen at 200 unique places. Base 151 + supplemental candidates 67 − 18 ID/name matches = 200; 49 supplemental entries were added as distinct places. Do not add more places during core verification except corrections or replacements for duplicates/incorrect entries.
+- Latest photo batch: all 14 recently added locations have place-matched primary/reference assignments; all 14 loaded in the current automated audit.
+- Automated stability: build 100 quality checks passed. The smoke suite tests a stale PC catalog that contains an alternate-ID duplicate, unfinished numbered placeholders, and one unique unpublished location. The published catalog is reconciled to exactly 200; the genuine unpublished location is moved to frameAtlas2UnpublishedPlaceDrafts and disclosed, not silently deleted.
+- Live-view audit from the latest automated browser run: 200 cards rendered, 200 images loaded, 0 missing-image flags. This is a time-specific run, not a guarantee that external hosts will never fail later.
+
+### Current risks and limitations
+- Photo source reliability is not the same as photo rights. The catalog has 307 photo candidates; 306 have a URL or asset reference, but 0 photo files are stored inside the repository. External hosts may change, rate-limit, or block hotlinking.
+- Candidate matching states: 268 confirmed, 37 unverified, 1 unconfirmed, and 1 mismatch. The selected primary/reference image IDs are checked to avoid rejected or non-confirmed images, but unused alternates still need review.
+- Rights statuses are not yet uniformly cleared for re-use: 306/307 candidates remain in a status other than public-domain-dedication; many are intentionally reference-only, review-required, unknown, or missing a rights status. Do not describe reference images as commercial-use-cleared.
+- Automated mobile-browser emulation passed, but actual iPhone Safari/home-screen app behavior still needs hands-on confirmation. Remote inspection cannot read the user's PC localStorage, so the exact formerly counted 201st local record cannot be named.
+
+### Recommended validation sequence (no new-location expansion)
+1. Verify the user's PC after build 100 is freshly loaded: expected common count 200; any unique unpublished draft should appear only in the local-draft notice/backup, not as a 201st common location.
+2. Validate core flows on desktop and mobile emulation: opening/return navigation, search/region/category filters, all-places list, newest-six section, place details, map choice, saved places and missing-photo fallback.
+3. Validate data safety: export/import backup; local draft preservation; GitHub publish; cross-device merge; conflict handling; and ensure no local-only private draft is accidentally published or lost.
+4. Continue the 200-place image pass: confirm the 37 unverified candidates, check source stability and place match, then review usage-rights/source metadata. Fix any broken external image with a correct source or repository-hosted image when allowed.
+5. Perform a final hands-on PC + actual iPhone Safari/PWA acceptance test before declaring v2.0 release-ready.
 
 ## Hero image behavior
 - Select a random location with a usable non-mismatch photo when the app first opens. On the first use, avoid the formerly fixed DDP hero if other usable photos exist.
