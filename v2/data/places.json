@@ -81,7 +81,13 @@
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "문화비축기지 T6를 직접 촬영한 공개 라이선스 사진. 저자·출처 표시 및 동일조건 공유 검토 필요."
+          "notes": "문화비축기지 T6를 직접 촬영한 공개 라이선스 사진. 저자·출처 표시 및 동일조건 공유 검토 필요. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다.",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Oil-tank-culture-park.jpg",
+          "creator": "Mvcervi",
+          "rightsLabel": "CC BY-SA 4.0 · 저작자 표시·동일조건(변경 시)",
+          "rightsStatusSource": "wikimedia-license-page",
+          "attribution": "Mvcervi / Mvcervi / Wikimedia Commons — CC BY-SA 4.0"
         }
       ],
       "sourceRefs": [
@@ -269,11 +275,14 @@
           "licenseUrl": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?menuNo=200018&wrtSn=11179916",
           "placeMatch": "confirmed",
           "viewType": "야외·콘크리트 퍼골라",
-          "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다.",
+          "notes": "웹 조사 1차 후보. 화면 구도와 장소 일치는 확인 후보로 검토하되, 대표사진 확정 전 원본 해상도·권리·실제 촬영 공간 활용성을 다시 확인합니다. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다.",
           "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z",
           "rightsStatus": "license-attribution-required",
-          "rightsStatusSource": "legacy-rights-field"
+          "rightsStatusSource": "gongu-explicit-license-record",
+          "license": "CC BY",
+          "licenseEvidenceUrl": "https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?menuNo=200018&wrtSn=11179916",
+          "attribution": "김상범 / 공유마당 — CC BY"
         }
       ],
       "sourceRefs": [
@@ -598,7 +607,13 @@
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "여의도 SeMA 벙커 사진. 저자·출처 표시 및 동일조건 공유 검토 필요. Wikimedia 표준 upload.wikimedia.org 썸네일 경로로 변경했습니다."
+          "notes": "여의도 SeMA 벙커 사진. 저자·출처 표시 및 동일조건 공유 검토 필요. Wikimedia 표준 upload.wikimedia.org 썸네일 경로로 변경했습니다. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다.",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Yeouido_SeMA_Bunker.jpg",
+          "creator": "Wikiwater2020",
+          "rightsLabel": "CC BY-SA 3.0 · 저작자 표시·동일조건(변경 시)",
+          "rightsStatusSource": "wikimedia-license-page",
+          "attribution": "Wikiwater2020 / Wikiwater2020 / Wikimedia Commons — CC BY-SA 3.0"
         }
       ],
       "sourceRefs": [
@@ -1316,7 +1331,13 @@
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY 4.0 출처·저자 표시 필요."
+          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY 4.0 출처·저자 표시 필요. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다.",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:%EB%AC%B8%ED%99%94%EC%97%AD%EC%84%9C%EC%9A%B8284_2024.jpg",
+          "creator": "Narubaru7",
+          "rightsLabel": "CC BY 4.0 · 저작자 표시",
+          "rightsStatusSource": "wikimedia-license-page",
+          "attribution": "Narubaru7 / Narubaru7 / Wikimedia Commons — CC BY 4.0"
         },
         {
           "id": "commons-culture-station-seoul-284-cc0",
@@ -1330,7 +1351,13 @@
           "rightsStatus": "public-domain-dedication",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "문화역서울284 외관 사진. CC0 공개 기증으로 재사용 가능하나 출처 기록은 유지."
+          "notes": "문화역서울284 외관 사진. CC0 공개 기증으로 재사용 가능하나 출처 기록은 유지. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다.",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Culture_Station_Seoul_284_(2014_08_05).jpg",
+          "creator": "HaulS",
+          "rightsLabel": "CC0 1.0 · 공개기증",
+          "rightsStatusSource": "wikimedia-license-page",
+          "attribution": "HaulS / HaulS / Wikimedia Commons — CC0 1.0"
         }
       ],
       "sourceRefs": [
@@ -1642,7 +1669,13 @@
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 2.0 출처·저자 표시 및 동일조건 공유 검토 필요. Wikimedia의 표준 upload.wikimedia.org 썸네일 경로로 수정했습니다."
+          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 2.0 출처·저자 표시 및 동일조건 공유 검토 필요. Wikimedia의 표준 upload.wikimedia.org 썸네일 경로로 수정했습니다. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다.",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Nodeulseom_(14005438206).jpg",
+          "creator": "travel oriented from Seoul",
+          "rightsLabel": "CC BY-SA 2.0 · 저작자 표시·동일조건(변경 시)",
+          "rightsStatusSource": "wikimedia-license-page",
+          "attribution": "travel oriented from Seoul / travel oriented from Seoul / Wikimedia Commons — CC BY-SA 2.0"
         },
         {
           "id": "img-nodeul-island-night-promenade-ar",
@@ -1897,7 +1930,13 @@
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "국립현대미술관 서울관을 직접 촬영한 공개 라이선스 사진. 저자·출처 표시 및 변경 여부 고지 필요."
+          "notes": "국립현대미술관 서울관을 직접 촬영한 공개 라이선스 사진. 저자·출처 표시 및 변경 여부 고지 필요. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다.",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:MMCA_Seoul.jpg",
+          "creator": "서울연구원",
+          "rightsLabel": "CC BY 4.0 · 저작자 표시",
+          "rightsStatusSource": "wikimedia-license-page",
+          "attribution": "서울연구원 / 서울연구원 / Wikimedia Commons — CC BY 4.0"
         }
       ],
       "sourceRefs": [
@@ -3489,7 +3528,13 @@
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요. 대표 참고사진으로 선택함(2026-10-14): 앞선 VOV World 이미지가 자동 브라우저 검사에서 로드되지 않아 동일 장소의 Wikimedia Commons 후보를 우선 연결했습니다. 공개 사용 시 출처·라이선스 조건을 확인하세요. Wikimedia의 표준 upload.wikimedia.org 썸네일 경로로 수정했습니다."
+          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요. 대표 참고사진으로 선택함(2026-10-14): 앞선 VOV World 이미지가 자동 브라우저 검사에서 로드되지 않아 동일 장소의 Wikimedia Commons 후보를 우선 연결했습니다. 공개 사용 시 출처·라이선스 조건을 확인하세요. Wikimedia의 표준 upload.wikimedia.org 썸네일 경로로 수정했습니다. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다.",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Gwangmyeong_Cave.jpg",
+          "creator": "S099001",
+          "rightsLabel": "CC BY-SA 4.0 · 저작자 표시·동일조건(변경 시)",
+          "rightsStatusSource": "wikimedia-license-page",
+          "attribution": "S099001 / S099001 / Wikimedia Commons — CC BY-SA 4.0"
         }
       ],
       "sourceRefs": [
@@ -3749,7 +3794,13 @@
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요. Wikimedia 표준 upload.wikimedia.org 썸네일 경로로 수정했습니다. Wikimedia 표준 upload.wikimedia.org 경로로 수정; 이전 경로의 파일명 인코딩 오류를 바로잡았습니다."
+          "notes": "2026-10-10에 장소 일치 확인된 기존 아카이브 후보. CC BY-SA 4.0 출처·저자 표시 및 동일조건 공유 검토 필요. Wikimedia 표준 upload.wikimedia.org 썸네일 경로로 수정했습니다. Wikimedia 표준 upload.wikimedia.org 경로로 수정; 이전 경로의 파일명 인코딩 오류를 바로잡았습니다. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다.",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg",
+          "creator": "LR0725",
+          "rightsLabel": "CC BY-SA 4.0 · 저작자 표시·동일조건(변경 시)",
+          "rightsStatusSource": "wikimedia-license-page",
+          "attribution": "LR0725 / LR0725 / Wikimedia Commons — CC BY-SA 4.0"
         }
       ],
       "sourceRefs": [
@@ -3881,7 +3932,13 @@
           "rightsStatus": "license-attribution-required",
           "placeMatch": "confirmed",
           "status": "candidate",
-          "notes": "인천아트플랫폼 중앙길을 직접 촬영한 공개 라이선스 사진. 저자·출처 표시 및 동일조건 공유 검토 필요."
+          "notes": "인천아트플랫폼 중앙길을 직접 촬영한 공개 라이선스 사진. 저자·출처 표시 및 동일조건 공유 검토 필요. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다.",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:%EC%9D%B8%EC%B2%9C%EC%95%84%ED%8A%B8%ED%94%8C%EB%9E%AB%ED%8F%BC_%EC%A4%91%EC%95%99%EA%B8%B8_Incheon_Art_Platform,_Central_way.jpg",
+          "creator": "이강철",
+          "rightsLabel": "CC BY-SA 3.0 · 저작자 표시·동일조건(변경 시)",
+          "rightsStatusSource": "wikimedia-license-page",
+          "attribution": "이강철 / 이강철 / Wikimedia Commons — CC BY-SA 3.0"
         }
       ],
       "sourceRefs": [
@@ -4610,7 +4667,7 @@
         {
           "id": "ref-sorae-windmill-shallow-reflection",
           "title": "소래습지 풍차와 얕은 수면의 반영",
-          "imageUrl": "https://www.incheon.go.kr/data/editor/20241218/202412181109150701.jpg",
+          "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.incheon.go.kr%2Fdata%2Feditor%2F20241218%2F202412181109150701.jpg&w=960&h=640&fit=inside&output=webp",
           "sourcePageUrl": "https://www.incheon.go.kr/park/park011701",
           "sourceName": "인천광역시 · 인천의 공원 갤러리",
           "creator": "인천광역시 자료 · 사진별 이용 조건 확인 필요",
@@ -4618,26 +4675,34 @@
           "rightsLabel": "공개 재사용 조건 확인 필요",
           "licenseUrl": "",
           "placeMatch": "confirmed",
-          "viewType": "야외·실루엣·수면 반영·수평선",
-          "notes": "인천시 공원 갤러리의 풍차·습지 이미지. 반사·수평선·풍차의 실루엣을 활용하는 야외 촬영 참고 후보. 공공누리 유형 또는 별도 허가를 확인하기 전에는 대표사진 승인을 하지 않는다. 2026-10-14 브라우저 검증에서 이미지가 로드되지 않아 활성 참고 후보에서 제외했습니다.",
-          "status": "rejected",
+          "viewType": "야외·풍차 실루엣·얕은 수면·수평선",
+          "notes": "인천시 공원 갤러리의 풍차·습지 이미지. 반사·수평선·풍차의 실루엣을 활용하는 야외 촬영 참고 후보. 공공누리 유형 또는 별도 허가를 확인하기 전에는 대표사진 승인을 하지 않는다. 2026-10-14 브라우저 검증에서 이미지가 로드되지 않아 활성 참고 후보에서 제외했습니다. 대체 이미지 복구(2026-10-17): 기존 인천시 공식 이미지 주소는 이전 자동 브라우저 검사에서 표시되지 않아 같은 원본을 이미지 프록시 미리보기로 다시 연결했습니다. 원본 직접 주소는 previousImageUrl에 보존했습니다. 사진 이용조건은 인천시 원문에서 별도 확인 대상입니다.",
+          "status": "candidate",
           "createdAt": "2026-10-13T00:00:00.000Z",
           "rightsStatus": "review-required",
-          "rightsStatusSource": "rights-label-or-license"
+          "rightsStatusSource": "rights-label-or-license",
+          "previousImageUrl": "https://www.incheon.go.kr/data/editor/20241218/202412181109150701.jpg",
+          "sourceThumbnail": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.incheon.go.kr%2Fdata%2Feditor%2F20241218%2F202412181109150701.jpg&w=960&h=640&fit=inside&output=webp"
         },
         {
           "id": "legacy-l195-sorae-saltfield",
-          "title": "소래 염전 재현 공간 참고사진",
-          "viewType": "야외·염전·풍경",
+          "title": "소래염전 모형 — 시흥갯골생태공원 안내소 내부",
+          "viewType": "실내·역사 모형·전시 참고",
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Replica_of_Sorae_Salt_Field.jpg/960px-Replica_of_Sorae_Salt_Field.jpg",
           "sourceThumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Replica_of_Sorae_Salt_Field.jpg/960px-Replica_of_Sorae_Salt_Field.jpg",
           "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Replica_of_Sorae_Salt_Field.jpg",
           "sourceName": "오모군 / Wikimedia Commons",
           "license": "CC BY 3.0",
           "rightsStatus": "license-attribution-required",
-          "placeMatch": "confirmed",
-          "status": "candidate",
-          "notes": "소래 염전 재현 공간의 참고사진이며 공원 내 특정 촬영 포인트와 동일한지는 방문 전 확인. CC BY 3.0 출처·저자 표시 필요. Wikimedia의 표준 upload.wikimedia.org 썸네일 경로로 수정했습니다."
+          "placeMatch": "mismatch",
+          "status": "rejected",
+          "notes": "소래 염전 재현 공간의 참고사진이며 공원 내 특정 촬영 포인트와 동일한지는 방문 전 확인. CC BY 3.0 출처·저자 표시 필요. Wikimedia의 표준 upload.wikimedia.org 썸네일 경로로 수정했습니다. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다. 장소 재검증(2026-10-17): Wikimedia Commons 원문은 이 사진이 ‘시흥갯골생태공원 종합안내소 안에 있는 소래염전 모형’이라고 설명합니다. 소래습지생태공원의 야외 염전·풍차 구간 사진이 아니므로 활성 장소 사진에서 제외하고 mismatch로 보존합니다. 라이선스와 출처 이력은 유지합니다.",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Replica_of_Sorae_Salt_Field.jpg",
+          "creator": "오모군",
+          "rightsLabel": "CC BY 3.0 · 저작자 표시",
+          "rightsStatusSource": "wikimedia-license-page",
+          "attribution": "오모군 / 오모군 / Wikimedia Commons — CC BY 3.0"
         }
       ],
       "sourceRefs": [],
@@ -4678,7 +4743,7 @@
         "status": "desk-review"
       },
       "mapSearchQuery": "인천광역시 남동구 소래로154번길 77 소래습지생태공원",
-      "referenceImageId": "legacy-l195-sorae-saltfield",
+      "referenceImageId": "ref-sorae-windmill-shallow-reflection",
       "referenceImageStatus": "Wikimedia 참고사진 후보 · 이용조건 재확인 필요"
     },
     {
@@ -11791,14 +11856,17 @@
           "creator": "Purity0126",
           "rights": "CC BY-SA 3.0",
           "rightsStatus": "license-attribution-required",
-          "rightsLabel": "CC BY-SA 3.0 · 저작자 표시 및 동일조건 검토",
+          "rightsLabel": "CC BY-SA 3.0 · 저작자 표시·동일조건(변경 시)",
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
           "placeMatch": "confirmed",
           "viewType": "현대건축·유리 파사드·진입 광장",
-          "notes": "대구미술관을 직접 촬영한 Wikimedia Commons 이미지. 저작자 Purity0126, CC BY-SA 3.0으로 표시되어 있어 출처·저작자 표시와 동일조건 라이선스 준수 여부를 기록해야 한다.",
+          "notes": "대구미술관을 직접 촬영한 Wikimedia Commons 이미지. 저작자 Purity0126, CC BY-SA 3.0으로 표시되어 있어 출처·저작자 표시와 동일조건 라이선스 준수 여부를 기록해야 한다. 라이선스 근거 정리(2026-10-17): 원문 페이지의 이용조건을 licenseUrl·licenseEvidenceUrl에 연결하고 저작자/출처 표시 정보를 분리했습니다. 해당 파일에 대한 조건부 라이선스이며, 장소 촬영 허가·인물/상표 등 제3자 권리·시설 접근 조건을 승인하지 않습니다.",
           "status": "candidate",
           "updatedAt": "2026-10-15T05:40:00.000Z",
-          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Daegu_Art_Museum.jpg"
+          "licenseEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Daegu_Art_Museum.jpg",
+          "license": "CC BY-SA 3.0",
+          "rightsStatusSource": "wikimedia-license-page",
+          "attribution": "Purity0126 / Wikimedia Commons — CC BY-SA 3.0"
         }
       ],
       "referenceImageId": "ref-daegu-art-museum-commons-2026",

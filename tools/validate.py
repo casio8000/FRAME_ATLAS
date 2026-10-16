@@ -134,6 +134,13 @@ for index, place in enumerate(places, 1):
             ERRORS.append(f"{place_id}/{candidate_id} 표준 이용권 상태가 누락되었습니다.")
         elif rights_status not in RIGHTS_STATUS_VALUES:
             ERRORS.append(f"{place_id}/{candidate_id} 표준 이용권 상태 값이 허용되지 않습니다: {rights_status}")
+        elif rights_status in ("license-attribution-required", "public-domain-dedication"):
+            if not str(candidate.get("licenseUrl") or "").strip():
+                ERRORS.append(f"{place_id}/{candidate_id} 명시적 라이선스 URL이 누락되었습니다.")
+            if not str(candidate.get("licenseEvidenceUrl") or "").strip():
+                ERRORS.append(f"{place_id}/{candidate_id} 라이선스 근거 URL이 누락되었습니다.")
+            if rights_status == "license-attribution-required" and not str(candidate.get("creator") or candidate.get("attribution") or "").strip():
+                ERRORS.append(f"{place_id}/{candidate_id} 조건부 라이선스 저작자 표시 정보가 누락되었습니다.")
         image_url = str(candidate.get("imageUrl") or "")
         if image_url and not re.match(r"^https?://", image_url, re.I):
             if image_url.startswith("./assets/places/"):
@@ -168,8 +175,11 @@ photos_with_refs = sum(1 for c in candidates if c.get("imageUrl") or c.get("sour
 local_assets = sum(1 for c in candidates if c.get("assetPath") or str(c.get("imageUrl") or "").startswith("./assets/places/"))
 missing_refs = sum(1 for c in candidates if not (c.get("imageUrl") or c.get("sourceThumbnail") or c.get("assetPath") or c.get("pendingAsset")))
 match_review = sum(1 for c in candidates if c.get("status") != "rejected" and c.get("placeMatch") != "confirmed")
-rights_review = sum(1 for c in candidates if (c.get("usageRightsStatus") or c.get("rightsStatus")) not in
-                    ("commercial-use-cleared", "user-owned", "public-domain-dedication"))
+rights_review = sum(1 for c in candidates if c.get("status") != "rejected" and (c.get("usageRightsStatus") or c.get("rightsStatus")) not in
+                     ("commercial-use-cleared", "user-owned", "public-domain-dedication", "license-attribution-required"))
+conditional_license_count = sum(1 for c in candidates if c.get("status") != "rejected" and (c.get("usageRightsStatus") or c.get("rightsStatus")) == "license-attribution-required")
+public_domain_count = sum(1 for c in candidates if c.get("status") != "rejected" and (c.get("usageRightsStatus") or c.get("rightsStatus")) == "public-domain-dedication")
+license_evidence_count = sum(1 for c in candidates if c.get("status") != "rejected" and (c.get("usageRightsStatus") or c.get("rightsStatus")) in ("license-attribution-required", "public-domain-dedication") and c.get("licenseUrl") and c.get("licenseEvidenceUrl"))
 rights_status_missing = sum(1 for c in candidates if not str(c.get("usageRightsStatus") or c.get("rightsStatus") or "").strip())
 match_states = Counter(str(c.get("placeMatch") or "(미기재)") for c in candidates)
 rights_states = Counter(str(c.get("usageRightsStatus") or c.get("rightsStatus") or "(미기재)") for c in candidates)
@@ -178,7 +188,7 @@ report = [
     "# FRAME ATLAS 2.0 데이터 검증 보고서",
     "",
     f"- 기본 카탈로그 {len(base.get('places') or [])}곳 · 보조 카탈로그 {len(supplement.get('places') or [])}개 · 기존 장소와 병합 {matched}건 · 별도 추가 {appended}곳 · 통합 장소 {len(places)}곳",
-    f"- 구조 오류 {len(ERRORS)}건 · 사진 후보 출처/파일 경로 누락 {missing_refs}건 · 장소 일치 재검토 후보 {match_review}건 · 표준 이용권 상태 누락 {rights_status_missing}건 · 이미지 이용권 상태 재검토 후보 {rights_review}건",
+    f"- 구조 오류 {len(ERRORS)}건 · 사진 후보 출처/파일 경로 누락 {missing_refs}건 · 장소 일치 재검토 후보 {match_review}건 · 표준 이용권 상태 누락 {rights_status_missing}건 · 활성 이용조건 추가 확인 대상 {rights_review}건 · 조건부 라이선스 {conditional_license_count}건 · 공개기증(CC0) {public_domain_count}건",
     "",
     "## 장소 카탈로그 정합성",
     "",
@@ -206,6 +216,11 @@ report = [
     f"| 참고사진이 지정된 장소 | {reference_count}곳 |",
     f"| 표준 이용권 상태가 기록된 후보 | {len(candidates) - rights_status_missing}개 |",
     f"| 표준 이용권 상태가 누락된 후보 | {rights_status_missing}개 |",
+    f"| 활성 이용조건 추가 확인 대상 | {rights_review}개 |",
+    f"| 조건부 라이선스(활성) | {conditional_license_count}개 |",
+    f"| 공개기증(CC0, 활성) | {public_domain_count}개 |",
+    f"| 라이선스 URL·근거 URL 연결(활성) | {license_evidence_count}개 |",
+    f"| 라이선스 근거가 있는 제외 이력 후보 | {sum(1 for c in candidates if c.get('status') == 'rejected' and (c.get('usageRightsStatus') or c.get('rightsStatus')) in ('license-attribution-required', 'public-domain-dedication') and c.get('licenseUrl') and c.get('licenseEvidenceUrl'))}개 |",
     f"| URL·저장소 파일 경로가 있는 후보 | {photos_with_refs}개 |",
     f"| GitHub 저장소 사진 파일로 등록된 후보 | {local_assets}개 |",
     f"| URL/파일 경로가 없는 후보 | {missing_refs}개 |",

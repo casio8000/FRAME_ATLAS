@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — image-load reliability batch 10
+Last updated: 2026-10-17 (Korea Standard Time) — mobile image audit batch 12 and rights metadata audit batch 13
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -383,3 +383,14 @@ Last updated: 2026-10-16 (Korea Standard Time) — image-load reliability batch 
 - Mobile archive audit previously had 197/200 images loaded after seven seconds, zero missing and three still loading: Seoul City Hall Seosomun Museum, Suwon Museum of Art Haenggung Main, and MBC studio rental. Desktop targeted retries in batch 11 demonstrated that these cards should be tested individually instead of forcing all remote images at once.
 - Added the same per-card, in-view eager retry and 25-second success-or-explicit-missing wait for those three mobile cards. Added a release assertion requiring all three to finish loaded with no missing/loading flags after retries.
 - This is test/checkpoint-only; photo source records and the 200-place catalog remain unchanged. Quality test and Pages deployment are pending for this batch.
+
+
+## Release 2026-10-17 · Rights metadata audit batch 13 — explicit CC licenses
+- Created safety branch `backup/pre-license-metadata-batch13-2026-10-17` from main commit `84e5215cf413ce7202db4d865e8ddc7d3c4560cc`.
+- Added the source-page evidence URL, canonical license URL, creator/attribution and consistent license label to 12 file-level licensing records. Existing rights statuses were preserved; no conditionally licensed photograph was relabeled as unrestricted/commercially cleared.
+- Verified the file-specific CC BY, CC BY-SA or CC0 statements on Wikimedia Commons and the CC BY label on the Gongu record. The 11 original conditional-license records include one image whose scene is actually a salt-field model inside Siheung Gaetgol Ecology Park's information centre, not the outdoor Sorae wetland place. That image is now rejected/mismatch history, retains its license metadata, and no longer remains selected.
+- Restored Sorae Wetland's reference to the official Incheon City windmill/wetland photo through an image-proxy preview; the direct original URL is preserved in `previousImageUrl`. Its rights status stays `review-required` pending photo-specific conditions.
+- Strengthened `tools/validate.py` to require license/evidence URLs for conditional-license and CC0 records, and creator/attribution for conditional licenses. The report now separates active conditional licenses from the active images still needing further rights/conditions review.
+- Expected totals: 200 places, 307 photo records, 0 active place-match review records, 0 candidates without an image URL/path, 10 active conditional licenses, 1 active CC0, 11 active candidates with license/source evidence links, 1 retired licensed-image history record, and 267 active candidates needing additional rights/conditions review.
+- Quality run #580 (mobile targeted photo retries) was still in progress when this batch was prepared. Desktop run #579 verified 200/200 loaded with zero missing/pending/held. Mobile baseline was 197/200 loaded after 7s, 0 missing and 3 loading; batch #580 added targeted retries for those three. Append its final result after CI.
+- Source pages: Oil Tank Culture Park (https://commons.wikimedia.org/wiki/File:Oil-tank-culture-park.jpg); SeMA Bunker (https://commons.wikimedia.org/wiki/File:Yeouido_SeMA_Bunker.jpg); Culture Station CC BY 4.0 (https://commons.wikimedia.org/wiki/File:%EB%AC%B8%ED%99%94%EC%97%AD%EC%84%9C%EC%9A%B8284_2024.jpg); Culture Station CC0 (https://commons.wikimedia.org/wiki/File:Culture_Station_Seoul_284_(2014_08_05).jpg); Nodeul Island (https://commons.wikimedia.org/wiki/File:Nodeulseom_(14005438206).jpg); MMCA Seoul (https://commons.wikimedia.org/wiki/File:MMCA_Seoul.jpg); Gwangmyeong Cave (https://commons.wikimedia.org/wiki/File:Gwangmyeong_Cave.jpg); Starfield Library (https://commons.wikimedia.org/wiki/File:%EB%B3%84%EB%A7%88%EB%8B%B9%EB%8F%84%EC%84%9C%EA%B4%803.jpg); Incheon Art Platform (https://commons.wikimedia.org/wiki/File:%EC%9D%B8%EC%B2%9C%EC%95%84%ED%8A%B8%ED%94%8C%EB%9E%AB%ED%8F%BC_%EC%A4%91%EC%95%99%EA%B8%B8_Incheon_Art_Platform,_Central_way.jpg); Sorae model (https://commons.wikimedia.org/wiki/File:Replica_of_Sorae_Salt_Field.jpg); Daegu Art Museum (https://commons.wikimedia.org/wiki/File:Daegu_Art_Museum.jpg); Seonyudo Park (https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?menuNo=200018&wrtSn=11179916).
