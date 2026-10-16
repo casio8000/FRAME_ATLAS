@@ -473,7 +473,9 @@
       "referenceImageId": "ref-koo-house-garden",
       "referenceImageStatus": "장소 참고 이미지",
       "newlyAdded": true,
-      "newlyAddedAt": "2026-10-16T00:03:00.000Z"
+      "newlyAddedAt": "2026-10-16T00:03:00.000Z",
+      "curationOverride": true,
+      "overrideExistingFields": true
     },
     {
       "id": "seoul-art-sonje-center",
@@ -3513,9 +3515,9 @@
         "열우물마을 역사 사진"
       ],
       "category": "역사 기록·도시재생 변화 기록",
-      "photoProfile": "과거 인천 십정동 열우물 벽화마을의 골목 벽화를 기록하는 역사 자료입니다. 재개발로 예전 벽화 골목은 현재 촬영 배경으로 남아 있지 않으므로, 현장 답사용 추천지가 아니라 장소 변화와 도시 기억을 확인하는 참고 기록으로만 봅니다.",
-      "summary": "예전 벽화 골목은 재개발로 바뀌었습니다. 아래 사진은 과거 모습을 보여주는 역사 기록이며, 현재 방문 가능한 벽화마을로 오해하지 않도록 표시합니다.",
-      "imageStatus": "역사 참고사진 연결 · 현재 현장과 구분",
+      "photoProfile": "과거 인천 십정동 열우물 벽화골목의 역사 기록입니다. 재개발 이후 현재 주거단지와 혼동하지 않도록 과거 골목 벽화 사진만 참고합니다.",
+      "summary": "이 항목은 과거 벽화골목의 기록용이며 현재 촬영 배경 추천에서는 제외됩니다. 아파트 단지 놀이터처럼 보이는 사진은 잘못된 후보로 제외했습니다.",
+      "imageStatus": "과거 벽화골목 역사사진 연결 · 현재 주거단지 사진 제외",
       "selectionStatus": "역사 기록 전용 · 현재 촬영 장소 추천에서 제외",
       "referenceImageId": "ref-yeolumul-historic-mural-20261016",
       "imageCandidates": [
@@ -3566,14 +3568,15 @@
           "rights": "reference-only",
           "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
           "rightsStatus": "reference-only",
-          "placeMatch": "confirmed",
-          "viewType": "현재 아파트 단지 내 생활유산 조형물",
-          "notes": "현재 남은 조형물을 과거 벽화 골목 사진과 혼동하지 않도록 이 항목에서는 선택에서 제외합니다.",
-          "status": "candidate",
+          "placeMatch": "mismatch",
+          "viewType": "제외된 잘못된 사진·현재 아파트 단지",
+          "notes": "사용자 검토에서 아파트 단지 놀이터처럼 보이는 잘못된 장소 사진으로 확인되어 제외. 기존 기기 임시저장에서도 fallback으로 사용되지 않도록 rejected/mismatch 처리.",
+          "status": "rejected",
           "refreshPublishedReference": true,
           "createdAt": "2026-10-16T02:00:00.000Z"
         }
-      ]
+      ],
+      "notes": "아파트 단지 놀이터처럼 보이는 현재 사진은 잘못된 장소 사진으로 rejected/mismatch 처리."
     },
     {
       "id": "paju-heyri-cinema",

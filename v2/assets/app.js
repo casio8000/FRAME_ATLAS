@@ -12,8 +12,37 @@ const objectUrls=new Map();
 const PERMITTED=new Set(["cc0","public-domain","cc-by","cc-by-sa","permission","self-owned"]);
 const $=id=>document.getElementById(id);
 let catalog={schemaVersion:1,places:[]},selectedId=null,searchCache=[],homeHeroPlaceId=null,adminModeUnlocked=false,homeListReturnScrollY=null;
+const PLACE_REGION_ORDER=["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"];
+const PINNED_HOME_IDS=Object.freeze(["seo-ddp","seo-oil-tank","seo-seoul-station-284","gg-mimesis","ic-tri-bowl","ic-art-platform"]);
+let publishedArchiveMeta=new Map();
 const esc=v=>String(v==null?"":v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const getPlace=id=>catalog.places.find(p=>p.id===id);
+function compareCatalogPlaces(a,b){
+ const aPin=PINNED_HOME_IDS.indexOf(a.id),bPin=PINNED_HOME_IDS.indexOf(b.id);
+ if(aPin>=0||bPin>=0){if(aPin<0)return 1;if(bPin<0)return -1;return aPin-bPin;}
+ const am=publishedArchiveMeta.get(a.id),bm=publishedArchiveMeta.get(b.id);
+ const at=Date.parse(am?am.sortStamp:(a.createdAt||a.updatedAt||"")),bt=Date.parse(bm?bm.sortStamp:(b.createdAt||b.updatedAt||""));
+ if(Number.isFinite(at)&&Number.isFinite(bt)&&at!==bt)return bt-at;
+ if(Number.isFinite(at)!==Number.isFinite(bt))return Number.isFinite(at)?-1:1;
+ const ap=am?am.scoutPriority:(Number(a.scoutPriority)||9),bp=bm?bm.scoutPriority:(Number(b.scoutPriority)||9);
+ if(ap!==bp)return ap-bp;
+ const ar=PLACE_REGION_ORDER.indexOf(am?am.region:String(a.region||"").trim()),br=PLACE_REGION_ORDER.indexOf(bm?bm.region:String(b.region||"").trim());
+ if(ar!==br)return ar-br;
+ const byName=String(am?am.name:a.name||"").localeCompare(String(bm?bm.name:b.name||""),"ko");
+ if(byName)return byName;
+ if(am&&bm)return am.position-bm.position;
+ if(am)return -1;if(bm)return 1;
+ return String(a.id||"").localeCompare(String(b.id||""));
+}
+function isPlaceholderPlace(p){
+ const name=String(p?.name||"").normalize("NFKC").replace(/[\u200B-\u200D\uFEFF]/g,"").trim().replace(/\s+/g,"");
+ if(!name)return true;
+ const withoutNumberPrefix=name.replace(/^번호/,"").replace(/^\d{1,3}번?/,"");
+ if(/^(?:\d{1,3}번?|번호\d{1,3}번?)$/i.test(name))return true;
+ if(/^(?:새촬영장소(?:\(?이름입력\)?)?|장소이름입력|이름입력)$/i.test(withoutNumberPrefix))return true;
+ if(/새촬영장소/i.test(withoutNumberPrefix)&&/이름입력/i.test(withoutNumberPrefix))return true;
+ return false;
+}
 try{localStorage.removeItem("frameAtlas2AdminHashV1");localStorage.removeItem("frameAtlas2AdminSaltV1");}catch(_){}
 const ADMIN_PASSWORD_KEYS=Object.freeze([
  {salt:"c763b69d92c8040d3be85ebf6faa4ec8",hash:"63ae8093d39b1fc4a801449f968302c0fd0eb6673e555f4b51e5d1c10e04b439",iterations:310000},
@@ -172,6 +201,12 @@ function mergePublishedPhotoReferences(draft,base){
   for(const key of ["visualCurationStatus","photoReviewStatus","mediaExposureStatus","selectionStatus"]){if(!String(p[key]||"").trim()&&String(fresh[key]||"").trim())p[key]=fresh[key];}
   if((!Array.isArray(p.mediaAppearances)||!p.mediaAppearances.length)&&Array.isArray(fresh.mediaAppearances)&&fresh.mediaAppearances.length)p.mediaAppearances=JSON.parse(JSON.stringify(fresh.mediaAppearances));
   if(!Array.isArray(p.imageCandidates))p.imageCandidates=[];
+  const refreshedPublishedReferences=(fresh.imageCandidates||[]).filter(c=>c&&c.refreshPublishedReference===true);
+  if(refreshedPublishedReferences.length){
+   p.photoSelectionCleared=false;
+   if(fresh.referenceImageId&&refreshedPublishedReferences.some(c=>c.id===fresh.referenceImageId))p.referenceImageId=fresh.referenceImageId;
+   if(fresh.primaryImageId===null&&p.primaryImageId){const oldPrimary=p.imageCandidates.find(c=>c.id===p.primaryImageId);if(!oldPrimary||(!oldPrimary.pendingAsset&&!oldPrimary.assetPath))p.primaryImageId=null;}
+  }
   if(p.photoSelectionCleared)continue;
   for(const sourceCandidate of (fresh.imageCandidates||[])){
    const localCandidate=p.imageCandidates.find(c=>c.id===sourceCandidate.id);
@@ -343,7 +378,7 @@ async function syncAttachSupplementalPlaces(base){
       const byImageId=new Map((existing.imageCandidates||[]).map(c=>[c.id,c]));
       for(const candidate of incoming)byImageId.set(candidate.id,Object.assign({},byImageId.get(candidate.id)||{},syncClone(candidate)));
       existing.imageCandidates=[...byImageId.values()];
-      for(const key of ["primaryImageId","referenceImageId"])if(place[key])existing[key]=place[key];
+      for(const key of ["primaryImageId","referenceImageId"])if(Object.prototype.hasOwnProperty.call(place,key))existing[key]=place[key];
       if(place.overrideExistingFields===true){
        for(const key of ["name","category","imageStatus","selectionStatus","photoProfile","summary"]){
         if(typeof place[key]==="string"&&place[key].trim())existing[key]=place[key];
@@ -370,6 +405,7 @@ async function loadBase(){
  try{
   const r=await fetch(DATA_URL+"?v="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("기본 카탈로그를 읽지 못했습니다 (HTTP "+r.status+")");
   const base=await syncAttachSupplementalPlaces(normalizeCatalog(await r.json()));
+  publishedArchiveMeta=new Map((base.places||[]).map((p,index)=>[p.id,{position:index,sortStamp:String(p.createdAt||p.updatedAt||""),newlyAddedStamp:String(p.newlyAddedAt||p.createdAt||p.updatedAt||""),scoutPriority:Number(p.scoutPriority)||9,region:String(p.region||"").trim(),name:String(p.name||"")} ]));
   let draft=null;try{draft=JSON.parse(localStorage.getItem(LOCAL_KEY)||"null");}catch(_){}
   if(draft&&Array.isArray(draft.places)){
    if(!localStorage.getItem(BASELINE_KEY))localStorage.setItem(LEGACY_DRAFT_KEY,"1");
@@ -377,14 +413,10 @@ async function loadBase(){
    try{localStorage.setItem(BASELINE_KEY,JSON.stringify(base));localStorage.removeItem(LEGACY_DRAFT_KEY);}catch(_){}
   }
   const source=draft&&Array.isArray(draft.places)?mergePublishedPhotoReferences(draft,base):base;
-  // Clear leftover blank/number-only drafts left by earlier registration screens.
+  // Remove unfinished registration drafts including "50번" and "51번 새 촬영장소(이름입력)".
   if(Array.isArray(source.places)){
    const beforeCount=source.places.length;
-   source.places=source.places.filter(p=>{
-    const name=String(p?.name||"").replace(/\s+/g," ").trim();
-    const placeholder=/^(?:\d{1,3}|새\s*촬영장소(?:\s*\(\s*이름\s*입력\s*\))?|장소\s*이름\s*입력|이름\s*입력)$/i.test(name);
-    return !!name&&!placeholder;
-   });
+   source.places=source.places.filter(p=>!isPlaceholderPlace(p));
    if(draft&&source.places.length!==beforeCount){try{localStorage.setItem(LOCAL_KEY,JSON.stringify(source));}catch(_){}}
   }
   catalog=normalizeCatalog(source);
@@ -392,7 +424,7 @@ async function loadBase(){
   if(selectedId&&!getPlace(selectedId))selectedId=null;
   if(draft){
    try{localStorage.setItem(LOCAL_KEY,JSON.stringify(catalog));}catch(_){}
-   $("saveStatus").textContent="이 기기의 작업 초안 불러옴 · 사진 연결 확인";
+   $("saveStatus").textContent="공통 장소 순서 적용 · 이 기기 임시수정 병합";
   }else $("saveStatus").textContent="공통 카탈로그 최신본 불러옴";
   render();renderLanding();showAppView(routeAfterLoad,false);
  }catch(e){$("saveStatus").textContent="자료 불러오기 실패: "+e.message;$("placeList").innerHTML='<div class="empty">기본 자료를 불러오지 못했습니다.<br>GitHub Pages URL에서 열었는지 확인하세요.</div>';renderLanding();}
@@ -441,11 +473,7 @@ function render(){
   if(filter==="review"&&!hasPending(p))return false;
   if(filter==="ready"&&!isImageReady(p))return false;
   return true;
- }).sort((a,b)=>{
-  const at=Date.parse(a.createdAt||a.updatedAt||""),bt=Date.parse(b.createdAt||b.updatedAt||"");
-  if(Number.isFinite(at)&&Number.isFinite(bt)&&at!==bt)return bt-at;
-  return (a.scoutPriority||9)-(b.scoutPriority||9)||["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(a.region)-["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(b.region)||a.name.localeCompare(b.name,"ko");
- });
+ }).sort(compareCatalogPlaces);
  $("countAll").textContent=catalog.places.length;if($("workspaceTitle"))$("workspaceTitle").textContent=archiveMode==="favorites"?"내 저장 장소":"촬영 장소 아카이브";
  $("countNoImage").textContent=catalog.places.filter(p=>!isImageReady(p)).length;
  $("countReview").textContent=catalog.places.filter(hasPending).length;
@@ -577,9 +605,12 @@ function renderNewlyAddedLocations(){
  section.hidden=archiveMode==="favorites";
  if(section.hidden)return;
  const newest=(catalog.places||[]).filter(p=>p&&p.newlyAdded).sort((a,b)=>{
-  const at=Date.parse(a.newlyAddedAt||a.createdAt||a.updatedAt||"");
-  const bt=Date.parse(b.newlyAddedAt||b.createdAt||b.updatedAt||"");
+  const am=publishedArchiveMeta.get(a.id),bm=publishedArchiveMeta.get(b.id);
+  const at=Date.parse(am?am.newlyAddedStamp:(a.newlyAddedAt||a.createdAt||a.updatedAt||"")),bt=Date.parse(bm?bm.newlyAddedStamp:(b.newlyAddedAt||b.createdAt||b.updatedAt||""));
   if(Number.isFinite(at)&&Number.isFinite(bt)&&at!==bt)return bt-at;
+  if(Number.isFinite(at)!==Number.isFinite(bt))return Number.isFinite(at)?-1:1;
+  if(am&&bm)return am.position-bm.position;
+  if(am)return -1;if(bm)return 1;
   return String(b.id||"").localeCompare(String(a.id||""));
  }).slice(0,6);
  if(count)count.textContent=newest.length+"곳";
@@ -628,17 +659,10 @@ function renderLanding(){
  $("homeCountPlaces").textContent=places.length;if($("homeFeaturedCount"))$("homeFeaturedCount").textContent=places.length;
  $("homeCountPhotos").textContent=places.filter(p=>!!activePhoto(p)).length;
  const get=id=>places.find(p=>p.id===id);
- const prefer=["seo-ddp","seo-oil-tank","seo-seoul-station-284","gg-mimesis","ic-tri-bowl","ic-art-platform"];
- const picked=prefer.map(get).filter(Boolean);
- const baseFeatured=[...picked,...places.filter(p=>!picked.some(x=>x.id===p.id)).sort((a,b)=>{
-  const at=Date.parse(a.createdAt||a.updatedAt||""),bt=Date.parse(b.createdAt||b.updatedAt||"");
-  if(Number.isFinite(at)&&Number.isFinite(bt)&&at!==bt)return bt-at;
-  const aClosed=/운영 종료|폐쇄|영구 휴관/.test(String(a.openingStatus||""))?1:0,bClosed=/운영 종료|폐쇄|영구 휴관/.test(String(b.openingStatus||""))?1:0;
-  return aClosed-bClosed+(a.visualCurationStatus==="conditional"?1:0)-(b.visualCurationStatus==="conditional"?1:0)||(a.scoutPriority||9)-(b.scoutPriority||9);
- })];
+ const baseFeatured=places.slice().sort(compareCatalogPlaces);
  const heroPlace=chooseHomeHeroPlace(places)||baseFeatured.find(p=>activePhoto(p))||baseFeatured[0];
  /* The first visible card is the same random location as the hero; on mobile the photo banner is compacted into this first card. */
- const featured=heroPlace?[heroPlace,...baseFeatured.filter(p=>p.id!==heroPlace.id)]:baseFeatured;
+ const featured=baseFeatured; // Hero image can rotate; numbered catalog order never changes.
  if(heroPlace){
   const photo=activePhoto(heroPlace),hero=$("landingHeroImage");
   if(hero&&photo){
@@ -684,7 +708,7 @@ function renderLanding(){
    }
    return true;
   })
-   .sort((a,b)=>(a.scoutPriority||9)-(b.scoutPriority||9)||["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(a.region)-["서울","경기","인천","강원","대전","세종","충북","충남","전북","전남","광주","대구","경북","부산","울산","경남","제주"].indexOf(b.region)||a.name.localeCompare(b.name,"ko"));
+   .sort(compareCatalogPlaces);
   $("homeAllPlaceCount").textContent=all.length;
   allGrid.innerHTML=all.map((p,index)=>{
    const photo=activePhoto(p),url=photo?(photo.imageUrl||photo.sourceThumbnail||""):"";
