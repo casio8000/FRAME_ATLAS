@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
     paths:
+      - ".github/workflows/quality-check.yml"
+      - "README.md"
+      - "ARCHIVE_INDEX*.md"
+      - "legacy-v5.44.html"
+      - "v2/**"
       - "index.html"
       - "data/**"
       - "sw.js"
@@ -18,6 +23,11 @@ on:
   pull_request:
     branches: [main]
     paths:
+      - ".github/workflows/quality-check.yml"
+      - "README.md"
+      - "ARCHIVE_INDEX*.md"
+      - "legacy-v5.44.html"
+      - "v2/**"
       - "index.html"
       - "data/**"
       - "sw.js"
