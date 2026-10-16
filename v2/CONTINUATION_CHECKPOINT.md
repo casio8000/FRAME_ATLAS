@@ -220,3 +220,11 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-88; 
 - Research matrix and source URLs: v2/LOCATION_RESEARCH_BATCH2_2026-10-16.md.
 - The Korean user manual was updated in the same task to list the seven venues and their specific restrictions.
 - Verification still required after deployment: GitHub Actions FRAME ATLAS quality checks, pages build and deployment, and a fresh app open to confirm the supplemental JSON and candidate photos render.
+
+
+## Release 2026-10-16 · newest 14 photo pass (in progress)
+- User priority: finish the latest approximately 14 location photos and the “새로 추가된 장소” section before any unrelated feature work; consolidate the catalog toward 200 locations.
+- Identified the 14 newest photo-unassigned candidates created at 2026-10-16T07:30Z: 양주 장욱진미술관, 안양 김중업건축박물관, 대구 간송미술관, 제주 유민미술관, 제주 글라스하우스(휘닉스 아일랜드), 통영 전혁림미술관, 부산 국립해양박물관, 군산 이당미술관, 국립익산박물관, 춘천 이상원미술관, 거제식물원 정글돔, 김포 애기봉평화생태공원, 대구 수창청춘맨숀, 서귀포 소라의성.
+- Added place-matched reference image candidates from tourism source pages for 제주 유민미술관, 춘천 이상원미술관, 김포 애기봉평화생태공원, 군산 이당미술관. Commit sequence: 25e6b9e4 and 56320b2b.
+- Remaining 10 of the newest 14 still have no verified image candidate. Do not mark the batch complete until each remaining image is matched to the actual place and the image load is checked. The exact catalog count and PC/mobile visual parity still require a live deployed smoke test.
+- Official/public tourism page evidence located for 양주 장욱진미술관, 안양 김중업건축박물관, 대구 간송미술관, 거제식물원 정글돔, 대구 수창청춘맨숀, and other remaining locations; direct image URLs and actual display need to be added/verified before completion.
