@@ -537,7 +537,12 @@ function showPlaceArchive(event){
  /* Stay in the current 2.0 page so unsaved editing context is not lost; showHomeAllPlaces scrolls to the visible full catalog. */
  showHomeAllPlaces();
 }
-if(backToArchiveBtn)backToArchiveBtn.addEventListener("click",showPlaceArchive);
+if(backToArchiveBtn){
+ backToArchiveBtn.addEventListener("click",event=>{
+  event.preventDefault();event.stopPropagation();
+  showHomeAllPlaces();
+ },{capture:true});
+}
 
 function isFavorite(id){return favorites.includes(id);}
 function toggleFavorite(id){if(isFavorite(id))favorites=favorites.filter(x=>x!==id);else favorites.push(id);try{localStorage.setItem(FAVORITES_KEY,JSON.stringify(favorites));}catch(_){}render();renderLanding();renderMoreScreen();renderPhotosScreen();}
