@@ -1,7 +1,7 @@
 "use strict";
 const assert = require("node:assert/strict");
-global.FABackupMerge = require("../data/backup-merge.js");
-const sync = require("../data/device-sync.js");
+global.FABackupMerge = require("../archive/legacy-v5-app/data/backup-merge.js");
+const sync = require("../archive/legacy-v5-app/data/device-sync.js");
 const core = sync.core;
 const remoteSupersedesDelete = core.remoteSupersedesDelete;
 const peerReportsConflict = core.peerReportsConflict;
@@ -174,7 +174,7 @@ const peerReportsConflict = core.peerReportsConflict;
     global.DB = [place];
     global.PMETA = { "P-1": { kind: "blob", credit: "local user" } };
     global.PCACHE = {};
-    global.FABackupMerge = require("../data/backup-merge.js");
+    global.FABackupMerge = require("../archive/legacy-v5-app/data/backup-merge.js");
     global.bkLS = function () {
       const activeStorage = global.localStorage;
       const out = {};

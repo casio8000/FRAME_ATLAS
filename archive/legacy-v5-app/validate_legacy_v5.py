@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""FRAME ATLAS 데이터 검증. 사용: python tools/validate.py [--strict]
+"""보관용 FRAME ATLAS V5 데이터 검증기. 사용: python archive/legacy-v5-app/validate_legacy_v5.py [--strict]
 오류(E)가 있으면 종료코드 1을 반환해 품질검사를 실패 처리합니다. 기본 모드는 경고(W)를 기록만 하며 --strict는 경고도 실패로 처리합니다. Pages 배포 차단 여부는 저장소의 브랜치 보호 규칙 설정에 따릅니다."""
 import json,re,sys,math,itertools,collections,pathlib
 R=pathlib.Path(__file__).resolve().parents[2]
-t=(R/'data/places.js').read_text(encoding='utf-8');D=json.loads(t[t.index('{'):t.rindex('}')+1])
+t=(R/'archive/legacy-v5-app/data/places.js').read_text(encoding='utf-8');D=json.loads(t[t.index('{'):t.rindex('}')+1])
 L=D['locations'];HID=set(D.get('hidden',[]));E=[];W=[];by={r['id']:r for r in L}
 GEN=['신규 스카우팅 후보','실제 촬영 전','현장 답사 후','추후 확인','좋은 장소','분위기가 좋','추천합니다','방문하기 좋','다양한 촬영','아름다운','멋진']
 TPL=re.compile(r'의 구조와 .* 분위기가 핵심');IO={'실내','실외','실내·외'}

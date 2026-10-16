@@ -14,11 +14,12 @@ https://casio8000.github.io/FRAME_ATLAS/v2/index.html
 - `v2/data/places.json`: 전국 촬영 장소 카탈로그
 - `v2/USER_MANUAL_KO.html`: 사용자 매뉴얼
 - `tools/validate.py`: 2.0 기본·보조 카탈로그 통합과 사진 파일 경로 검증
+- `archive/legacy-v5-app/`: 구형 V5 코드·214개 장소 원본·백업/동기화 테스트 대상
 - `archive/legacy-v5-docs/`: 이전 v5.x 조사·평가·동기화 문서(참고용 보관; 현재 앱 지침 아님)
 - `v2/CONTINUATION_CHECKPOINT.md`: 다음 작업을 이어갈 때 확인할 최신 체크포인트
 - `.github/workflows/quality-check.yml`: 데이터·앱·PC/모바일 브라우저 자동 검사
 
-저장소 루트의 `index.html`은 FRAME ATLAS 2.0으로 이동시키는 진입점입니다. 중복 V5.44 화면 파일은 자동 검사가 실제 서비스 중인 2.0을 직접 검증하도록 바꾼 뒤 기본 브랜치에서 제거했습니다. 원본 파일은 `backup/legacy-material-before-cleanup-2026-10-15` 브랜치의 루트 `index.html`과 동일한 Git blob(SHA `ec2ffb4e88c379751076a9e0a7b49ed84db72f41`)로 보존됩니다. 루트의 `data/`, `sw.js`, `manifest.json` 및 백업·동기화 모듈은 오프라인·복구 경로와 2.0으로의 기능 이관을 추가 점검하기 전까지 유지합니다.
+저장소 루트의 `index.html`은 FRAME ATLAS 2.0으로 이동시키는 진입점입니다. 중복 V5.44 화면 파일은 자동 검사가 실제 서비스 중인 2.0을 직접 검증하도록 바꾼 뒤 기본 브랜치에서 제거했습니다. 원본 파일은 `backup/legacy-material-before-cleanup-2026-10-15` 브랜치의 루트 `index.html`과 동일한 Git blob(SHA `ec2ffb4e88c379751076a9e0a7b49ed84db72f41`)로 보존됩니다. 루트의 `sw.js`, `manifest.json`, 아이콘은 이미 설치된 구형 PWA를 2.0으로 넘기는 작은 전환 계층으로 유지합니다. 구형 `data/` 모듈과 214개 장소 원본, V5 이미지 수집기는 `archive/legacy-v5-app/`로 옮겨 현재 서비스 경로에서 분리했습니다. 원본 데이터는 삭제하지 않았습니다.
 
 ## 관리자 모드와 게시 권한
 

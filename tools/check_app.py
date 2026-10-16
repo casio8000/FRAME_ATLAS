@@ -242,6 +242,28 @@ else:
     if app_files_line and "./data/" not in app_files_line and not any(pattern in root_sw for pattern in retired_fetch_patterns):
         checks.append("루트 전환 서비스 워커가 구형 data/ 모듈을 선행 캐시하지 않음")
 
+# Legacy V5 data/code are archived and must not reappear under served root paths.
+legacy_root = ROOT / "data"
+if legacy_root.exists():
+    fail("구형 데이터 디렉터리 data/가 루트에 다시 나타났습니다. V5 자료는 archive/legacy-v5-app/data/에 보관하세요.")
+legacy_archive_required = [
+    ROOT / "archive" / "legacy-v5-app" / "data" / "places.js",
+    ROOT / "archive" / "legacy-v5-app" / "data" / "DB_SCHEMA.json",
+    ROOT / "archive" / "legacy-v5-app" / "data" / "backup-merge.js",
+    ROOT / "archive" / "legacy-v5-app" / "data" / "device-sync.js",
+    ROOT / "archive" / "legacy-v5-app" / "data" / "image-registry.js",
+    ROOT / "archive" / "legacy-v5-app" / "data" / "legacy-v6-audit.js",
+    ROOT / "archive" / "legacy-v5-app" / "data" / "review-workflow.js",
+    ROOT / "archive" / "legacy-v5-app" / "data" / "서울수도권_추가장소_기본가져오기.csv",
+    ROOT / "archive" / "legacy-v5-app" / "data" / "서울수도권_추가장소_상세데이터.json",
+    ROOT / "archive" / "legacy-v5-app" / "tools" / "harvest_images.py",
+]
+for legacy_path in legacy_archive_required:
+    if not legacy_path.is_file():
+        fail(f"보존 대상 구형 자료가 archive/legacy-v5-app/에서 누락됐습니다: {legacy_path.relative_to(ROOT)}")
+if not (ROOT / "tools" / "harvest_images.py").exists():
+    checks.append("루트 V5 이미지 수집기가 아카이브 경로로 분리됨")
+
 # Root URL should lead to the supported 2.0 app, not expose the archived V5 page.
 root_index = ROOT / "index.html"
 if root_index.is_file():

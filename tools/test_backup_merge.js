@@ -1,6 +1,6 @@
 "use strict";
 const assert = require("node:assert/strict");
-const { areEqual, mergeRaw, mergeValues } = require("../data/backup-merge.js");
+const { areEqual, mergeRaw, mergeValues } = require("../archive/legacy-v5-app/data/backup-merge.js");
 
 {
   const local = JSON.stringify({ id: "P1", memo: "PC 메모", localOnly: 1 });

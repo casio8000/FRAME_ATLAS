@@ -4,7 +4,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const vm = require("node:vm");
 
-const source = fs.readFileSync(path.join(__dirname, "../data/legacy-v6-audit.js"), "utf8");
+const source = fs.readFileSync(path.join(__dirname, "../archive/legacy-v5-app/data/legacy-v6-audit.js"), "utf8");
 const sandbox = { window: { document: null } };
 vm.runInNewContext(source, sandbox);
 const audit = sandbox.window.FALegacyV6Audit;

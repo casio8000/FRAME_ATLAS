@@ -37,7 +37,7 @@ Date: 2026-10-16 (Korea Standard Time)
 - The test run creates `test-results/v2-image-audit.json`; the workflow now uploads JSON audit files alongside screenshots so future reports retain the per-location failure/pending distinction.
 - Two mojibake-named root exports had exact blob duplicates under readable Korean filenames, with no source-code or manual references found. The garbled aliases are being removed; readable-name exports are preserved.
 - `v2/assets/app.js` contains the local photo staging and GitHub asset upload flow and keeps legacy external image URLs supported. Static and mock tests pass, but a real write using the user's GitHub token and a manual iPhone publication check have not been performed.
-- Root legacy `sw.js`, `manifest.json`, `data/places.js`, and backup/sync modules remain pending a separate offline/rollback audit; they have not been deleted.
+- At the earlier checkpoint, root V5 code/data was retained pending audit. The later 2026-10-16 root-legacy isolation entry below records that the old data/modules were moved under `archive/legacy-v5-app/` while preserving the original 214-place data blob and regression tests.
 
 ## 2026-10-16 follow-up
 - Latest completed quality run `38880334171` and Pages deployment `38880333611` both passed for the duplicate-export cleanup and photo-audit artifact change.
@@ -74,14 +74,22 @@ Date: 2026-10-16 (Korea Standard Time)
 - Changed the root transition service worker cache name to frame-atlas-root-bridge-20261016-2 so installation gets a fresh cache, then prunes the previous bridge cache on activation while preserving frame-atlas-v2-* caches.
 - The transition worker now pre-caches only the redirect shell, legacy manifest and legacy icons; it no longer pre-downloads the old 1.34 MB data/places.js or the retired V5 backup/sync modules.
 - Removed retired data modules from the root worker's shared-fresh path matcher and added checker assertions to prevent them from returning to the preload list.
-- Legacy source files remain present for now because a validator, image harvester and safety tests still depend on some of them. They are not deleted in this step.
+- This was the pre-archive state. Following dependency review, V5 data/code and the image harvester were moved to `archive/legacy-v5-app/`; safety tests now reference the preserved archived modules.
+
+## 2026-10-16 root legacy data isolation
+- Audited direct dependencies before moving old paths. Active V2 validation reads the V2 base and supplemental JSON; the V5 validator and V5 image harvester were the remaining active scripts that depended on root `data/places.js` / `data/image-registry.js`.
+- Moved V5 data modules and the 214-place `places.js` blob to `archive/legacy-v5-app/data/`; moved the old image harvester to `archive/legacy-v5-app/tools/`. The archived V5 validator now reads the archived data copy and writes only `archive/legacy-v5-app/report_v5.md`.
+- Updated the V5 backup merge, device sync, and V6 audit tests to load archived modules. The safety tests remain in active CI without keeping those modules at served root paths.
+- Archived the readable Korean CSV/JSON reference pair and removed only the exact duplicate `추가장소_검토자료.csv/json` aliases. The 214-place catalog's Git blob SHA is preserved; its bytes were not rewritten.
+- Updated `tools/check_app.py` to require preserved files under the archive and fail if the old root `data/` directory or root image harvester returns.
+- Root `sw.js`, `manifest.json`, and icons remain as the minimal transition layer for already-installed root PWAs. V2 app code and active catalogs were not edited.
 
 ## Next steps
-1. Verify the current cleanup commit's Actions and Pages deployment before doing another code change.
-2. Review uploaded browser audit JSON and separate genuinely broken image sources from slow or still-pending remote responses; do not change the catalog automatically from a timed-out image request.
-3. Preserve the current 200-place V2 catalog; no place additions or catalog rewrites in this phase.
-4. Confirm photo publishing end-to-end in the app when available: local file (JPEG/PNG/WebP/AVIF, up to 8 MB) -> IndexedDB staging -> GitHub path `v2/assets/places/<placeId>/<candidateId>.<ext>` -> catalog path/URL update -> public reload on PC and iPhone. Code markers and mock tests are verified; real token-backed upload is not.
-5. Continue auditing root `sw.js`, `manifest.json`, `data/places.js`, old sync/backup modules and icons before deleting anything that may still serve old installed PWAs or recovery.
-6. Keep build ID `20261016-89` consistent until the next intentional app build bump.
-7. Keep this checkpoint updated after each meaningful, validated change so work can resume without repeating the same audit.
+1. Verify this archival commit's Actions quality run and Pages deployment.
+2. Preserve the current V2 catalog; do not add or rewrite locations during stability work.
+3. Use the uploaded photo-audit JSON to identify truly final-missing images; treat still-loading images separately and never modify records automatically from a timeout.
+4. Complete an actual authorized photo-upload test when the user opens the app with their own GitHub write token: local file -> IndexedDB staging -> repository asset path -> catalog publication -> public reload on PC and iPhone. Static and mock checks are not proof of a real upload.
+5. Keep the small root PWA transition bridge, manifest, and icons until already-installed root PWAs are safely handled.
+6. Keep build ID `20261016-89` synchronized until an intentional V2 app build bump.
+7. Continue updating this checkpoint after each verified step to avoid repeating work after interruptions.
 
