@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T20:45:00.000Z",
+  "updatedAt": "2026-10-16T20:50:00.000Z",
   "description": "National photo-location scouting candidates across Korea. Photo URLs are reference-only: the place match has been visually checked against a matching source page where available, but actual live deployment loading, reuse permissions, and filming permission remain separate checks. All fourteen candidates added at 2026-10-16T07:30Z now have a primary reference-photo assignment. App data merge uses explicit curation overrides for these image references so an existing same-name catalog entry can inherit the assigned photo without duplicating the place.",
   "places": [
     {
@@ -3517,7 +3517,7 @@
       "category": "역사 기록·도시재생 변화 기록",
       "photoProfile": "과거 인천 십정동 열우물 벽화골목의 역사 기록입니다. 재개발 이후 현재 주거단지와 혼동하지 않도록 과거 골목 벽화 사진만 참고합니다.",
       "summary": "이 항목은 과거 벽화골목의 기록용이며 현재 촬영 배경 추천에서는 제외됩니다. 아파트 단지 놀이터처럼 보이는 사진은 잘못된 후보로 제외했습니다.",
-      "imageStatus": "과거 벽화골목 역사사진 연결 · 현재 주거단지 사진 제외",
+      "imageStatus": "과거 벽화골목 역사 참고 대표사진 · 현재 현장과 구분",
       "selectionStatus": "역사 기록 전용 · 현재 촬영 장소 추천에서 제외",
       "referenceImageId": "ref-yeolumul-historic-mural-20261016",
       "imageCandidates": [
@@ -3576,7 +3576,14 @@
           "createdAt": "2026-10-16T02:00:00.000Z"
         }
       ],
-      "notes": "아파트 단지 놀이터처럼 보이는 현재 사진은 잘못된 장소 사진으로 rejected/mismatch 처리."
+      "notes": "아파트 단지 놀이터처럼 보이는 현재 사진은 잘못된 장소 사진으로 rejected/mismatch 처리.",
+      "primaryImageId": "ref-yeolumul-historic-mural-20261016",
+      "referenceImageStatus": "역사 참고 사진",
+      "verification": {
+        "photoMatch": "인천시 공식 웹진의 과거 열우물길 사진으로 확인; 현재 현장과 구분",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "updatedAt": "2026-10-16"
     },
     {
       "id": "paju-heyri-cinema",
