@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-94; automated desktop/mobile test passed; selected image integrity rules tightened
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-98; count reconciliation and newest-photo tests passed
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -10,7 +10,7 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-94; 
 
 ## Current verified UI state
 - Current integrated catalog count is 200 unique locations: base catalog 151 + supplement 65 − 16 ID/name matches = 200. This count is confirmed by the catalog merge/validation report. The latest 14 additions now each have a primary and reference image candidate assignment.
-- The last recorded browser smoke run stopped at a flaky scroll on a changing card; this commit removes that unnecessary scroll before rerunning the whole test. Do not claim end-to-end pass until the next Actions run completes.
+- GitHub Actions quality run #554 passed, including the desktop/mobile smoke suite, canonical count tests, unpublished local-draft preservation test, newest-14 photo-load check, catalog validation, report consistency, backup/photo/device-sync tests. Pages deployment #590 passed for the published app/manual. The exact 200-count reconciliation is regression-tested; the actual user PC browser storage cannot be inspected remotely.
 - A floating “맨 위로” control appears after scrolling.
 - A floating “전체 촬영장소로 돌아가기” control is available from a selected place detail.
 - The first screen fits the version header, splash copy and creator credits into a fixed viewport, with nationwide (not Seoul-area-only) wording.
@@ -219,7 +219,7 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-94; 
 - Excluded Korea Furniture Museum from this active batch because the Korea Tourism Organization result surfaced a current renovation-closure note; re-check reopening before considering it for an active list.
 - Research matrix and source URLs: v2/LOCATION_RESEARCH_BATCH2_2026-10-16.md.
 - The Korean user manual was updated in the same task to list the seven venues and their specific restrictions.
-- Verification still required after deployment: GitHub Actions FRAME ATLAS quality checks, pages build and deployment, and a fresh app open to confirm the supplemental JSON and candidate photos render.
+- Post-deployment checks completed: quality run #554 and Pages run #590 passed. The most recent browser audit rendered 200/200 location cards with 0 missing-image flags; 111 image loads completed and 89 were still loading/lazy-loading at the snapshot, while all newest 14 images loaded successfully. Actual physical iPhone testing remains outstanding.
 
 
 ## Release 2026-10-16 · latest 14 photo references assigned
@@ -227,12 +227,20 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-94; 
 - The 14 newest locations now all have a matching image candidate, and both `primaryImageId` and `referenceImageId` point to that candidate: 양주 장욱진미술관, 안양 김중업건축박물관, 대구 간송미술관, 제주 유민미술관, 제주 글라스하우스(휘닉스 아일랜드), 통영 전혁림미술관, 부산 국립해양박물관, 군산 이당미술관, 국립익산박물관, 춘천 이상원미술관, 거제식물원 정글돔, 김포 애기봉평화생태공원, 대구 수창청춘맨숀, 서귀포 소라의성.
 - Each of the 14 external photo URLs was opened and visually checked against a corresponding place/source page during this pass. These are still reference images, not locally hosted assets; if a remote host blocks hotlinking or changes an address, fallback behavior may be needed.
 - Set `curationOverride=true` for this 14-place batch so a same-ID/name record already in the base catalog inherits the curated image references rather than being duplicated. Updated `syncAttachSupplementalPlaces()` to also carry over `newlyAdded`, `newlyAddedAt`, `imageStatus`, and `referenceImageStatus` for existing matches, so the recent-location section remains consistent across devices.
-- Updated app build, service worker, manifest, and root entry to `20261016-94` to refresh the correct files after the merge fix.
-- Validation report after merging: base 151, supplement 65, 16 matches, 49 appended, 200 unique locations; 302 photo candidates; every location has at least one photo candidate and all 200 have a reference-photo assignment. 38 places have an explicit primary-image ID; the recent 14 all have one.
-- Verification complete for the deployed app/data build: GitHub Actions quality checks passed (run 523; browser smoke test, data validation, report consistency, app resource checks, backup/photo/device-sync tests all succeeded). GitHub Pages deployment passed (run 555) for the same build commit. The latest browser audit recorded 200/200 place cards displayed, 0 marked missing, 120 images loaded and 80 still lazy-loading at the snapshot; all newest 14 photo images loaded successfully. The mobile screenshot shows the “새로 추가된 장소” section with image cards and the count 6곳. The previously misassigned Yeolumul primary photo was corrected to the confirmed historical mural reference; the old apartment-like image stays rejected. New validator/test checks now prevent a primary or reference photo ID from pointing to a rejected or unconfirmed candidate. Actual physical iPhone testing has not been performed.
+- Updated app build, service worker, manifest, and root entry to `20261016-98` to refresh the local-draft reconciliation, home notice, and corrected photo fallback URLs.
+- Validation report after merging: base 151, supplement 65, 16 matches, 49 appended, 200 unique locations; 304 photo candidates, 303 with a usable URL/path, 1 with no URL/path; every location has at least one candidate and all 200 have a reference-photo assignment. 38 places have an explicit primary-image ID; the recent 14 all have one. Selected primary/reference IDs now validate to non-rejected `placeMatch=confirmed` candidates.
+- Verification complete for the latest app/data logic: GitHub Actions quality checks passed (run #554; catalog validation, report consistency, app resource checks, real-browser desktop/mobile smoke test, backup/photo/device-sync tests). GitHub Pages deployment passed (run #590) for app and documentation. The browser audit recorded 200/200 place cards, 0 missing-image flags; 111 images were loaded and 89 were still loading/lazy at the snapshot, while all newest 14 loaded successfully. The screenshot shows the mobile “새로 추가된 장소” section with six image cards. Actual physical iPhone testing has not been performed.
 
 
 ## Release 2026-10-16 · latest image-integrity repair
 - Yeolumul mural-village record now assigns `primaryImageId` and `referenceImageId` to `ref-yeolumul-historic-mural-20261016`. The apartment/playground-like candidate remains explicitly rejected/mismatch so it cannot become a fallback.
 - `tools/validate.py` now reports an error if either selected primary/reference image points to a rejected candidate or anything other than a confirmed place match. `tests/v2-browser-smoke.cjs` has regression assertions for all 14 newest photo assignments and the Yeolumul primary-photo correction.
-- Latest quality run #523 passed and Pages deployment run #555 succeeded. The browser audit found 0 missing-image flags across 200 displayed cards; all newest 14 loaded. There are still 80 older cards with images pending lazy loading in the snapshot, not confirmed failures.
+- Latest quality run #554 passed and Pages deployment run #590 succeeded. The 200-card audit had 0 missing-image flags; 111 loaded, 89 were still loading/lazy at the snapshot, and all newest 14 loaded. The latest count-reconciliation regression uses a synthetic PC draft with an alternate-ID duplicate and one unique unpublished place: active count stays at 200, duplicate is merged to the canonical ID, and the unique unpublished place is retained separately in `frameAtlas2UnpublishedPlaceDrafts`. The home screen tells the user when such drafts are preserved; JSON backup export/import also carries `localUnpublishedPlaces`.
+
+
+## Release 2026-10-16 · PC/mobile count reconciliation and mid-project review
+- Canonical shared count remains 200 (151 base + 65 supplemental − 16 ID/name matches). The discrepancy was traced to the old loader trusting per-device local draft arrays: a PC can retain a place with an alternate ID and/or one or more unpublished records, inflating the visible count independently of the published catalog.
+- New `reconcileLocalDraftToPublished()` matches drafts by stable ID or a unique normalized location name, merges alternate-ID duplicates into the canonical ID, preserves user fields/photo candidates, and separates unknown local-only records into `frameAtlas2UnpublishedPlaceDrafts`. These records are not counted among the shared 200, are not silently deleted, and remain included in JSON export/import (`localUnpublishedPlaces`). The home screen shows a notice when separate drafts exist.
+- Automated regression passed using a synthetic stale PC draft with an alternate-ID DDP duplicate, an unfinished “50/51” placeholder, and one unique local-only test location: count stays 200, duplicate is merged, placeholders are removed, unique local-only record remains separately backed up, and the user gets a visible notice.
+- Final catalog/report counts: 200 locations; 304 photo candidates; 303 candidates with URL/path; 1 no URL/path; 265 confirmed, 37 unverified, 1 unconfirmed, 1 mismatch (rejected/mismatch candidate is intentionally retained only as a historical rejection record); no selected primary/reference ID points to a rejected or non-confirmed candidate.
+- Mid-project assessment: location collection is complete for the 200-place target and should remain frozen. Main work now shifts to image loading and source/rights review, real iPhone verification, and regression checks for backup/restore, cross-device merge/conflicts, and data preservation. Many photos are external references, not local files, and photo match, reuse rights, and filming permissions are separate questions.
