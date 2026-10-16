@@ -218,7 +218,7 @@ if not root_sw_path.is_file():
     fail("루트 서비스 워커 파일이 없습니다.")
 else:
     root_sw = root_sw_path.read_text(encoding="utf-8")
-    if not re.search(r"const\\s+CACHE_NAME\\s*=\\s*['\"]frame-atlas-root-bridge-[^'\"]+['\"]", root_sw):
+    if "const CACHE_NAME = 'frame-atlas-root-bridge-" not in root_sw:
         fail("루트 서비스 워커가 V2 전환용 캐시 이름을 사용하지 않습니다.")
     if "path.startsWith(v2Prefix)" not in root_sw or "path === v2Prefix.slice(0, -1)" not in root_sw:
         fail("루트 서비스 워커가 /v2/ 요청을 제외하지 않습니다.")
