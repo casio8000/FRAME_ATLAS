@@ -364,8 +364,22 @@ Last updated: 2026-10-16 (Korea Standard Time) — image-load reliability batch 
 
 
 ## Release 2026-10-17 · Image-load audit batch 11 — targeted retry recovery
+- Created safety branch `backup/pre-image-load-audit-batch11-recovery-2026-10-17` from pre-change main `ed87f1494c594886ae7e456cc1c6b47516abadd6`.
+- Quality run #579 passed after the three previously pending desktop cards were scrolled into view and checked individually. Desktop audit: **200/200 loaded**, **0 missing**, **0 pending**, and **0 held**. Daejeon Video Special Effects Town, Gyeonggi Sangsang Campus, and MBC studio rental all returned loaded states. MBC loaded via the images.weserv.nl fallback using the official MBC source image; its original image URL and rights status were not changed.
+- The first mass-eager test attempt (#578) was reverted: forcing all 200 remote images eager at once produced artificial concurrency and 100 pending cards. The recovered test keeps the usual lazy-load sweep and only forces the three priority cards individually.
+- Pages deployment #621 succeeded. No catalog/photo source data changed; the shared catalog remains 200 places, 307 image candidate records and 306 reuse-rights candidates not clearly cleared.
+- Mobile screenshot audit from #579: 200 archive cards, 197 loaded at the 7-second broad snapshot, **0 missing**, **3 still loading** (Seoul City Hall Seosomun Museum, Suwon Museum of Art Haenggung Main, MBC rental studio). The next batch adds the same individual in-view retries on mobile, followed by an explicit assertion that these three finish as loaded photos.
+
+
 - Created safety branch `backup/pre-image-load-audit-batch11-2026-10-17` from pre-change main `ed87f1494c594886ae7e456cc1c6b47516abadd6`.
 - Baseline quality run #577 recorded 197/200 active images loaded, zero missing, and three still loading. Those records were Daejeon Video Special Effects Town, Gyeonggi Sangsang Campus, and MBC studio rental; each retained fallback URLs and did not enter the explicit missing state.
 - First test-only attempt to force all 200 images to `loading=eager` caused an artificial concurrency pile-up: only 100 loaded while 100 remained pending, then the new assertion failed. This did not prove 100 bad URLs; it showed that forcing every external image simultaneously is not a reliable runtime test.
 - Recovery: restored the normal full-grid lazy-load sweep and its previous 30-second settling window. The test then scrolls only the three previously pending cards into view one at a time, temporarily requests eager loading on each, waits up to 25 seconds for a loaded or explicit missing state, and asserts that these three all finish successfully. The prior all-grid pending assertion and mass eager-loading mobile test were removed.
 - No catalog or source-photo data was changed. Pages deployment succeeded for the first instrumentation commit; its quality run failed only because the forced-eager audit left 100 unresolved loading states. The targeted-retry version is now queued for quality validation.
+
+
+## Release 2026-10-17 · Image-load audit batch 12 — targeted mobile image retries
+- Created safety branch `backup/pre-mobile-image-load-audit-batch12-2026-10-17` from pre-change main `07fba14d446045820606d291fbeb0655a0705970`.
+- Mobile archive audit previously had 197/200 images loaded after seven seconds, zero missing and three still loading: Seoul City Hall Seosomun Museum, Suwon Museum of Art Haenggung Main, and MBC studio rental. Desktop targeted retries in batch 11 demonstrated that these cards should be tested individually instead of forcing all remote images at once.
+- Added the same per-card, in-view eager retry and 25-second success-or-explicit-missing wait for those three mobile cards. Added a release assertion requiring all three to finish loaded with no missing/loading flags after retries.
+- This is test/checkpoint-only; photo source records and the 200-place catalog remain unchanged. Quality test and Pages deployment are pending for this batch.
