@@ -212,6 +212,21 @@ if JS_PATH.is_file():
         else:
             checks.append(f"2.0 {label} 확인")
 
+# The retired root worker must not hijack V2 URLs or purge the V2 cache namespace.
+root_sw_path = ROOT / "sw.js"
+if not root_sw_path.is_file():
+    fail("루트 서비스 워커 파일이 없습니다.")
+else:
+    root_sw = root_sw_path.read_text(encoding="utf-8")
+    if not re.search(r"const\\s+CACHE_NAME\\s*=\\s*['\"]frame-atlas-root-bridge-[^'\"]+['\"]", root_sw):
+        fail("루트 서비스 워커가 V2 전환용 캐시 이름을 사용하지 않습니다.")
+    if "path.startsWith(v2Prefix)" not in root_sw or "path === v2Prefix.slice(0, -1)" not in root_sw:
+        fail("루트 서비스 워커가 /v2/ 요청을 제외하지 않습니다.")
+    if "!k.startsWith('frame-atlas-v2-')" not in root_sw:
+        fail("루트 서비스 워커가 V2 캐시 공간을 보호하지 않습니다.")
+    if all(marker in root_sw for marker in ["path.startsWith(v2Prefix)", "path === v2Prefix.slice(0, -1)", "!k.startsWith('frame-atlas-v2-')"]):
+        checks.append("루트 서비스 워커가 V2 경로와 V2 캐시를 보호함")
+
 # Root URL should lead to the supported 2.0 app, not expose the archived V5 page.
 root_index = ROOT / "index.html"
 if root_index.is_file():
