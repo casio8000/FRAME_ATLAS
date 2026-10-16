@@ -34,4 +34,28 @@ assert.ok(stagingCleanup > successfulCatalogPut, "staged photo blobs must only b
 assert.ok(source.includes("if(c&&c.assetPath&&!c.pendingAsset)pendingPhotoKeysToClear.add(pendingKey(p.id,c.id));"),
   "retry cleanup must include prior successful asset uploads after a failed catalog commit");
 
-console.log("FRAME ATLAS photo asset tests: Base64 13 sizes (up to 8 MiB) + retry cleanup guards passed");
+
+const rawCatalogRead = source.indexOf('const rawCatalogResponse=await fetch("https://raw.githubusercontent.com/casio8000/FRAME_ATLAS/main/"+catalogPath');
+const photoPut = source.indexOf('const payload={message:"Add FRAME ATLAS location photo",content:bytesToBase64(bytes),branch:"main"};', publishStart);
+const catalogPut = source.indexOf('fetch(repo+catalogPath,{method:"PUT"', publishStart);
+const assetDeleteLoop = source.indexOf("for(const assetPath of assetPathsToDelete)", publishStart);
+assert.ok(rawCatalogRead > publishStart && rawCatalogRead < photoPut,
+  "large remote catalog must be read independently before upload work begins");
+assert.ok(photoPut > rawCatalogRead && catalogPut > photoPut,
+  "repository photo files must be uploaded before the catalog points to them");
+assert.ok(source.includes('const path="v2/assets/places/"+p.id+"/"+c.id+"."+ext;'),
+  "photos must be stored under a deterministic repository-relative place/candidate path");
+assert.ok(source.includes('c.assetPath=path;c.imageUrl="./assets/places/"+p.id+"/"+c.id+"."+ext;c.pendingAsset=false;'),
+  "successful photo upload must set both repository path and relative display URL");
+assert.ok(source.includes("sha:currentCatalog.sha"),
+  "catalog update must use the current Contents API blob SHA, not a guessed commit SHA");
+assert.ok(assetDeleteLoop > successfulCatalogPut,
+  "old repository photos must not be deleted until the new catalog publish succeeds");
+assert.ok(source.includes('else if(ex.status!==404)throw new Error("사진 파일 경로 확인 실패'),
+  "only a true 404 may be treated as a not-yet-existing asset path");
+assert.ok(source.includes('if(!up.ok)throw new Error("사진 파일 업로드 실패'),
+  "a failed photo upload must stop catalog publication and preserve the local pending file");
+assert.ok(source.includes('if(!rawCatalogResponse.ok)throw new Error("최신 카탈로그 원문 읽기 실패'),
+  "a failed raw-catalog read must abort instead of publishing against guessed data");
+
+console.log("FRAME ATLAS photo asset tests: Base64 13 sizes (up to 8 MiB), upload ordering, SHA/path checks, and retry cleanup guards passed");
