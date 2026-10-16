@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T23:10:00+09:00",
+  "updatedAt": "2026-10-16T00:18:42.724Z",
   "description": "15 additional art, architecture and sculpture locations emphasizing Korean material culture with global editorial potential. Loaded as supplemental records and merged by ID.",
   "places": [
     {
@@ -124,7 +124,8 @@
       },
       "referenceImageId": "ref-lee-jaehyo-installation",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:00:00.000Z"
     },
     {
       "id": "namyangju-ayu-space",
@@ -234,7 +235,8 @@
       },
       "referenceImageId": "ref-ayu-space-architecture",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:01:00.000Z"
     },
     {
       "id": "yangpyeong-eham-campus",
@@ -342,7 +344,8 @@
       },
       "referenceImageId": "ref-eham-campus-pond",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:02:00.000Z"
     },
     {
       "id": "yangpyeong-koo-house-museum",
@@ -467,7 +470,8 @@
       },
       "referenceImageId": "ref-koo-house-garden",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:03:00.000Z"
     },
     {
       "id": "seoul-art-sonje-center",
@@ -517,10 +521,45 @@
         "https://artsonje.org/about/facilities/",
         "https://artsonje.org/visit/visitticketing/"
       ],
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-art-sonje-center-seoul-official-20261016",
+          "title": "아트선재센터 건축 외관",
+          "imageUrl": "https://english.visitseoul.net/comm/getImage?fileNo=2&fileTy=MEDIA&parentSn=38265&srvcId=MEDIA&thumbTy=L",
+          "sourceThumbnail": "https://english.visitseoul.net/comm/getImage?fileNo=2&fileTy=MEDIA&parentSn=38265&srvcId=MEDIA&thumbTy=L",
+          "sourcePageUrl": "https://english.visitseoul.net/attractions/Art%20Sonje%20Center/ENP002405",
+          "sourceName": "서울관광재단 Visit Seoul",
+          "creator": "서울관광재단",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "건축 외관",
+          "notes": "서울관광재단의 아트선재센터 장소 사진. 외관과 입면 구성을 확인하기 위한 참고 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "ref-art-sonje-center-detail-20261016",
+          "title": "아트선재센터 공간 참고사진",
+          "imageUrl": "https://english.visitseoul.net/comm/getImage?fileNo=1&fileTy=MEDIA&parentSn=74121&srvcId=MEDIA&thumbTy=L",
+          "sourceThumbnail": "https://english.visitseoul.net/comm/getImage?fileNo=1&fileTy=MEDIA&parentSn=74121&srvcId=MEDIA&thumbTy=L",
+          "sourcePageUrl": "https://english.visitseoul.net/attractions/Art%20Sonje%20Center/ENP002405",
+          "sourceName": "서울관광재단 Visit Seoul",
+          "creator": "서울관광재단",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "공간·전시",
+          "notes": "서울관광재단의 상세 사진. 등록 장소와 일치하는지 화면에서 확인한 뒤 대표사진으로 사용.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
       "coordinates": null,
       "imageStatus": "이미지 검색 가능",
-      "primaryImageId": null,
+      "primaryImageId": "ref-art-sonje-center-seoul-official-20261016",
       "verification": {
         "location": "공식 또는 신뢰 출처에서 확인",
         "photoMatch": "이미지 검색으로 공간 확인 가능",
@@ -554,9 +593,10 @@
         "rationale": "김종성 건축가가 설계한 미술관과 도심 속 한옥정원·옥상정원이 결합된 동시대미술 공간. 삼청동의 한국적 도시 맥락과 미니멀한 기하학 공간, 실험적인 전시가 공존합니다.",
         "status": "initial-scouting"
       },
-      "referenceImageId": null,
+      "referenceImageId": "ref-art-sonje-center-seoul-official-20261016",
       "referenceImageStatus": "이미지 검색으로 참고 이미지 확인",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:04:00.000Z"
     },
     {
       "id": "seoul-arario-museum-in-space",
@@ -662,7 +702,8 @@
       },
       "referenceImageId": "ref-arario-space-exterior",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:05:00.000Z"
     },
     {
       "id": "seoul-kim-jong-yung-museum",
@@ -768,7 +809,8 @@
       },
       "referenceImageId": "ref-kim-jong-yung-courtyard",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:06:00.000Z"
     },
     {
       "id": "seoul-whanki-museum",
@@ -874,7 +916,8 @@
       },
       "referenceImageId": "ref-whanki-courtyard",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:07:00.000Z"
     },
     {
       "id": "seoul-soma-museum-sculpture-park",
@@ -982,7 +1025,8 @@
       },
       "referenceImageId": "ref-soma-exterior",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:08:00.000Z"
     },
     {
       "id": "seoul-museum-hanmi-samcheong",
@@ -1089,7 +1133,8 @@
       },
       "referenceImageId": "ref-museum-hanmi-exterior",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:09:00.000Z"
     },
     {
       "id": "namyangju-moran-museum",
@@ -1213,7 +1258,8 @@
       },
       "referenceImageId": "ref-moran-sculpture-garden",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:10:00.000Z"
     },
     {
       "id": "gyeongju-wooyang-museum",
@@ -1320,7 +1366,8 @@
       },
       "referenceImageId": "ref-wooyang-sculpture-garden",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:11:00.000Z"
     },
     {
       "id": "jeju-kim-tschang-yeul-museum",
@@ -1370,10 +1417,45 @@
         "https://kimtschang-yeul.jeju.go.kr/",
         "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020631&menuId=DOM_000001718000000000"
       ],
-      "imageCandidates": [],
+      "imageCandidates": [
+        {
+          "id": "ref-kim-tschang-yeul-official-architecture-20261016",
+          "title": "제주도립김창열미술관 건축과 빛의 정원",
+          "imageUrl": "https://kimtschang-yeul.jeju.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000003673&fileSn=0",
+          "sourceThumbnail": "https://kimtschang-yeul.jeju.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000003673&fileSn=0",
+          "sourcePageUrl": "https://kimtschang-yeul.jeju.go.kr/cnt/cntManagerView.do?idx=26&menuNum=21300",
+          "sourceName": "제주도립김창열미술관 공식 홈페이지",
+          "creator": "제주도립김창열미술관",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "건축·중정",
+          "notes": "미술관 공식 건축 소개의 이미지. 회(回)자형 구조와 빛의 정원, 물·돌·그림자의 관계를 확인하는 참고 사진.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "ref-kim-tschang-yeul-official-architecture-02-20261016",
+          "title": "제주도립김창열미술관 건축 참고사진 2",
+          "imageUrl": "https://kimtschang-yeul.jeju.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000003673&fileSn=1",
+          "sourceThumbnail": "https://kimtschang-yeul.jeju.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000003673&fileSn=1",
+          "sourcePageUrl": "https://kimtschang-yeul.jeju.go.kr/cnt/cntManagerView.do?idx=26&menuNum=21300",
+          "sourceName": "제주도립김창열미술관 공식 홈페이지",
+          "creator": "제주도립김창열미술관",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "건축·중정",
+          "notes": "미술관 공식 건축 소개의 보조 이미지. 외관·중정 구성이 장소와 일치하는지 확인할 후보.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
       "coordinates": null,
       "imageStatus": "이미지 검색 가능",
-      "primaryImageId": null,
+      "primaryImageId": "ref-kim-tschang-yeul-official-architecture-20261016",
       "verification": {
         "location": "공식 또는 신뢰 출처에서 확인",
         "photoMatch": "이미지 검색으로 공간 확인 가능",
@@ -1407,9 +1489,10 @@
         "rationale": "김창열 화백의 물방울 회화를 기리는 미술관으로, 여러 개의 콘크리트 매스가 빛의 중정을 중심으로 이어집니다. 물과 반사, 절제된 건축, 제주 특유의 돌과 낮은 지형을 함께 탐색할 수 있습니다.",
         "status": "initial-scouting"
       },
-      "referenceImageId": null,
+      "referenceImageId": "ref-kim-tschang-yeul-official-architecture-20261016",
       "referenceImageStatus": "이미지 검색으로 참고 이미지 확인",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:12:00.000Z"
     },
     {
       "id": "jeju-itami-jun-museum",
@@ -1516,7 +1599,8 @@
       },
       "referenceImageId": "ref-itami-jun-exterior",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:13:00.000Z"
     },
     {
       "id": "seoul-kukje-gallery",
@@ -1622,7 +1706,8 @@
       },
       "referenceImageId": "ref-kukje-k1-exterior",
       "referenceImageStatus": "장소 참고 이미지",
-      "newlyAdded": true
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16T00:14:00.000Z"
     },
     {
       "id": "gg-mimesis",
