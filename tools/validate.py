@@ -183,6 +183,7 @@ report = [
     f"| 중복 장소 ID | {len(duplicate_ids(places))}개 |",
     f"| 사진 후보 ID 중복 | {sum('사진 후보 ID' in e and '중복' in e for e in ERRORS)}건 |",
     f"| 참조가 끊긴 대표/참고 사진 ID | {sum('존재하지 않는 사진 후보' in e for e in ERRORS)}건 |",
+    f"| 제외 또는 미확인 사진을 지정한 대표/참고 사진 ID | {sum('제외되었거나 장소 일치가 확인되지 않은 사진' in e for e in ERRORS)}건 |",
     "",
     "## 사진 자료 현황",
     "",
