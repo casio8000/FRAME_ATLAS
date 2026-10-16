@@ -206,6 +206,10 @@ if JS_PATH.is_file():
         "기존 외부 이미지 주소 지원": 'c.imageUrl=url',
         "1 MiB 초과 원격 카탈로그 읽기 경로": 'raw.githubusercontent.com/casio8000/FRAME_ATLAS/main/',
         "사진 파일 선택 후 크기 제한": 'file.size>8*1024*1024',
+        "메모리 안전한 Base64 변환": "function bytesToBase64(bytes)",
+        "재시도 후 임시 사진 정리": "const pendingPhotoKeysToClear",
+        "이전 실패 게시의 사진 보관 복구": "c.assetPath&&!c.pendingAsset",
+
     }.items():
         if marker not in app_js:
             fail(f"2.0 사진/게시 기능 코드가 누락되었습니다: {label}")

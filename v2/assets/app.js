@@ -1320,6 +1320,13 @@ initializePublishTokenPreference();
 $("publishBtn").addEventListener("click",()=>{if(!requireAdminMode())return;$("publishStatus").classList.add("hidden");$("publishStatus").textContent="";$("publishToken").value=rememberedPublishToken();$("publishDialog").showModal();});
 $("cancelPublishBtn").addEventListener("click",()=>{if(!$("rememberPublishToken")?.checked)$("publishToken").value="";$("publishDialog").close();});
 $("confirmPublishBtn").addEventListener("click",()=>{if(requireAdminMode())publishCatalog();});
+function bytesToBase64(bytes){
+ const chunkSize=0x8000;let binary="";
+ for(let offset=0;offset<bytes.length;offset+=chunkSize){
+  binary+=String.fromCharCode(...bytes.subarray(offset,Math.min(offset+chunkSize,bytes.length)));
+ }
+ return btoa(binary);
+}
 async function publishCatalog(){
  if(!requireAdminMode())return;
  const token=$("publishToken").value.trim(),status=$("publishStatus"),btn=$("confirmPublishBtn");
@@ -1366,8 +1373,8 @@ async function publishCatalog(){
     const ex=await fetch(repo+encodedPath+"?ref=main",{headers,cache:"no-store"});
     if(ex.ok){const exj=await ex.json();existingSha=exj.sha;}
     else if(ex.status!==404)throw new Error("사진 파일 경로 확인 실패 (HTTP "+ex.status+"): "+p.name);
-    const bytes=new Uint8Array(await photo.blob.arrayBuffer());let binary="";for(let i=0;i<bytes.length;i++)binary+=String.fromCharCode(bytes[i]);
-    const payload={message:"Add FRAME ATLAS location photo",content:btoa(binary),branch:"main"};
+    const bytes=new Uint8Array(await photo.blob.arrayBuffer());
+    const payload={message:"Add FRAME ATLAS location photo",content:bytesToBase64(bytes),branch:"main"};
     if(existingSha)payload.sha=existingSha;
     const up=await fetch(repo+encodedPath,{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},headers),body:JSON.stringify(payload)});
     const upj=await up.json();
@@ -1390,8 +1397,7 @@ async function publishCatalog(){
   const assetPathsToDelete=[...(catalog.deletedAssetPaths||[])];
   publishedCatalog.updatedAt=stamp();
   const bodyText=JSON.stringify(publishedCatalog,null,2),bytes=new TextEncoder().encode(bodyText);
-  let binaryText="";for(let i=0;i<bytes.length;i++)binaryText+=String.fromCharCode(bytes[i]);
-  const content=btoa(binaryText);
+  const content=bytesToBase64(bytes);
   const put=await fetch(repo+catalogPath,{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},headers),body:JSON.stringify({message:"Publish FRAME ATLAS 2.0 catalog",content,sha:currentCatalog.sha,branch:"main"})});
   const result=await put.json();
   if(!put.ok)throw new Error("카탈로그 저장 실패 (HTTP "+put.status+"): "+String(result.message||"응답 오류"));
@@ -1407,7 +1413,16 @@ async function publishCatalog(){
     if(!del.ok)throw new Error("HTTP "+del.status);
    }catch(e){cleanupFailed.push(assetPath);}
   }
-  for(const key of staged){try{await deletePendingPhoto(key);}catch(_){}}
+  // Clean up staged blobs only after the catalog commit succeeds. Include assets uploaded by a prior
+  // attempt whose catalog PUT failed: their local candidate already has assetPath, so staged[] is empty on retry.
+  const pendingPhotoKeysToClear=new Set(staged);
+  for(const p of catalog.places){
+   for(const c of (p.imageCandidates||[])){
+    if(c&&c.assetPath&&!c.pendingAsset)pendingPhotoKeysToClear.add(pendingKey(p.id,c.id));
+   }
+  }
+  for(const key of pendingPhotoKeysToClear){try{const pending=await getPendingPhoto(key);if(pending)await deletePendingPhoto(key);}catch(_){}}
+
   catalog=normalizeCatalog(publishedCatalog);
   catalog.deletedAssetPaths=cleanupFailed;
   try{localStorage.setItem(BASELINE_KEY,JSON.stringify(publishedCatalog));localStorage.removeItem(LEGACY_DRAFT_KEY);}catch(_){}
@@ -1416,7 +1431,7 @@ async function publishCatalog(){
   status.classList.remove("hidden");
   status.textContent="동기화·게시 완료. 커밋: "+String(result.commit&&result.commit.sha||"성공")+" · 다른 기기의 새 장소와 서로 다른 항목의 수정사항을 병합했습니다."+ (mergeResult.legacy?" 이전 버전의 초안이어서 삭제는 자동 반영하지 않았습니다.":"")+(cleanupFailed.length?" 오래된 사진 파일 "+cleanupFailed.length+"개는 삭제 재시도가 필요합니다.":"")+" PC와 모바일에서 최신 자료를 다시 열면 같은 카탈로그를 볼 수 있습니다.";
   $("publishToken").value=rememberedPublishToken();btn.textContent="동기화 완료";
- }catch(e){status.textContent="게시 실패: "+e.message+" · 토큰은 저장하지 않았습니다.";}
+ }catch(e){status.textContent="게시 실패: "+e.message+" · 이 기기의 임시 자료와 아직 게시되지 않은 사진은 유지했습니다." ;}
  finally{btn.disabled=false;}
 }
 $("query").addEventListener("input",render);

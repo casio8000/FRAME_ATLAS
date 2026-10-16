@@ -58,6 +58,12 @@ Date: 2026-10-16 (Korea Standard Time)
 - The previous code-only root-worker commit `b9e6dc18c9f1fe2349a11ab320f8b1515c640919` deployed successfully, but its first QA attempt exposed the checker issue noted above.
 - Quality workflows now trigger for app/data/service-worker/tool/test changes rather than every README/checkpoint/archive/manual-only edit. Uploaded photo assets still deploy without starting the full browser test. This keeps small documentation saves from repeatedly re-running a long browser smoke test.
 
+## 2026-10-16 photo publishing resilience work
+- Identified a retry cleanup issue: when an image upload committed to GitHub but the following catalog PUT failed, local state saved its new `assetPath` and `pendingAsset=false`. A retry correctly skipped re-upload, but old IndexedDB blobs were only deleted from the current attempt's `staged[]` array, so that recovered blob could remain forever.
+- Fixed cleanup to collect all local pending-photo keys whose candidates now have a published `assetPath` and `pendingAsset=false`, and clear those blobs only after the catalog PUT succeeds. If the catalog update fails, temporary photos remain.
+- Replaced byte-by-byte string concatenation for photo and catalog Base64 with chunked `bytesToBase64`. Added a Node test covering 13 byte sizes through 8 MiB and static recovery-order checks.
+- The browser/Actions tests can validate conversion and retry-cleanup ordering. A real GitHub-token upload still requires an actual authorized user-session test and has not been run.
+
 ## Next steps
 1. Verify the current cleanup commit's Actions and Pages deployment before doing another code change.
 2. Review uploaded browser audit JSON and separate genuinely broken image sources from slow or still-pending remote responses; do not change the catalog automatically from a timed-out image request.
