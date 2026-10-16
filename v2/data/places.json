@@ -6428,7 +6428,7 @@
         },
         {
           "id": "img-suwon-haenggung-mural-alley-visitkorea",
-          "title": "수원 행궁동 벽화마을 골목 참고사진",
+          "title": "수원 행궁동 벽화마을 실제 골목",
           "imageUrl": "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=edab89bb-a55c-4c80-b345-380904b41894",
           "sourceThumbnail": "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=edab89bb-a55c-4c80-b345-380904b41894",
           "sourcePageUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=50c0daa1-83a7-416c-a38f-7b5257fed378",
@@ -6436,9 +6436,9 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "unverified",
-          "viewType": "야외·골목·벽면 패턴",
-          "notes": "특정 골목 사진을 장소 후보 참고로 등록. 방문객 중심 관광 포인트가 아니라 촬영에 적합한 골목 구간을 현장에서 다시 선별. 2026-10-15 자동 브라우저 검사에서 해당 링크를 로드하지 못했으며, 두 번째 후보는 정확한 골목 위치도 미확인이라 활성 대표·참고사진 표시를 보류합니다.",
+          "placeMatch": "confirmed",
+          "viewType": "야외·벽화 담장·좁은 골목·생활 배경",
+          "notes": "한국관광공사 대한민국 구석구석의 ‘행궁동 벽화마을’ 상세 페이지에 연결된 동일 사진이며, 실제 벽화 담장과 좁은 생활 골목이 보여 장소 일치를 확인했습니다(2026-10-16). 이 사진은 행궁동 전체가 아니라 벽화마을의 특정 골목 구간을 나타내며 대표/참고사진 ID는 변경하지 않았습니다. 공개 재사용 권리와 현장 촬영 허가는 별도 확인합니다.",
           "status": "candidate",
           "createdAt": "2026-10-14"
         },
@@ -9465,7 +9465,7 @@
       "imageCandidates": [
         {
           "id": "legacy-image-l-187",
-          "title": "서서울미술관 망치드 스테인리스 외관",
+          "title": "서울시립 서서울미술관 해머드 스테인리스 외관",
           "imageUrl": "https://media.brique.co/2026/03/seoseoul-museum-of-art-12-1536x864.jpg",
           "sourceThumbnail": "https://media.brique.co/2026/03/seoseoul-museum-of-art-12-1536x864.jpg",
           "sourcePageUrl": "https://magazine.brique.co/brq-news/seoseoul-museum-opening-geumnarae-park-kimchanjoong-thesystemlab/",
@@ -9473,9 +9473,9 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "unverified",
-          "viewType": "야외·금속 파사드·야간",
-          "notes": "구버전 214곳 목록에 연결되어 있던 사진입니다. 장소와의 일치 확인 후 참고자료로 우선 등록했으며 사용권·대표사진 최종 승인은 후속 검토합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 건축 기사 출처와 장소 정보는 보존합니다.",
+          "placeMatch": "confirmed",
+          "viewType": "외부·금속 파사드·공원 보행로·건축",
+          "notes": "직접 이미지에 ‘서울시립 서서울미술관 / SEO-SEOUL MUSEUM OF ART’ 시설명이 표시됩니다. 2026-03-12 개관을 다룬 브리크매거진 기사와 사진을 대조해 장소 일치를 확인했습니다(2026-10-16). 이미지 URL은 이 확인 과정에서 열렸습니다. 대표/참고사진 ID는 변경하지 않았으며 사진 재사용 권리와 상업 촬영 허가는 별도 확인 대상입니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         },
@@ -12365,19 +12365,21 @@
       "imageCandidates": [
         {
           "id": "img-seodo-station-segye",
-          "title": "구 서도역 목조 역사와 선로",
-          "imageUrl": "https://mimg.segye.com/content/image/2022/09/24/ori/20220924502828.jpg",
-          "sourceThumbnail": "https://mimg.segye.com/content/image/2022/09/24/ori/20220924502828.jpg",
-          "sourcePageUrl": "https://www.segye.com/",
-          "sourceName": "세계일보 기사 이미지 · 구 서도역",
+          "title": "남원 구 서도역 목조 역사와 역명 표지",
+          "imageUrl": "https://mblogthumb-phinf.pstatic.net/MjAyMTA2MDJfMTA2/MDAxNjIyNTYzNDUyOTI1.f0lNNshH0QdfIilKjZcBI73cSlk7LztirZ0Fe2t0tvkg.v4tNYs7vRTW2uOa99ExQZZBGM2nXcKTi_3OC6aNUtLAg.JPEG.hey_che/DSC02773%EB%82%A8%EC%9B%90%EC%84%9C%EB%8F%84%EC%97%AD.jpg?type=w800",
+          "sourceThumbnail": "https://mblogthumb-phinf.pstatic.net/MjAyMTA2MDJfMTA2/MDAxNjIyNTYzNDUyOTI1.f0lNNshH0QdfIilKjZcBI73cSlk7LztirZ0Fe2t0tvkg.v4tNYs7vRTW2uOa99ExQZZBGM2nXcKTi_3OC6aNUtLAg.JPEG.hey_che/DSC02773%EB%82%A8%EC%9B%90%EC%84%9C%EB%8F%84%EC%97%AD.jpg?type=w800",
+          "sourcePageUrl": "https://blog.naver.com/hey_che/222381772211",
+          "sourceName": "네이버 블로그 현장사진 · 남원 서도역",
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "unverified",
-          "viewType": "야외·폐역·목조건축",
-          "notes": "구버전 214곳 자료에 구 서도역 사진으로 기록된 직접 이미지입니다. 실제 장소 참고용으로 우선 연결하고 사용권은 후속 확인합니다. 2026-10-15 자동 브라우저 검증에서 이미지 URL이 로드되지 않아 활성 표시를 보류했습니다. 구 서도역 장소와 기사 출처를 보존합니다.",
+          "placeMatch": "confirmed",
+          "viewType": "야외·목조 역사·철길·역명 표지·레트로",
+          "notes": "이전 세계일보 이미지 URL은 https://mimg.segye.com/content/image/2022/09/24/ori/20220924502828.jpg 이며 2026-10-15 자동 브라우저 점검에서 열리지 않아 교체했습니다. 대체 사진은 목조 역사 위 역명판에 ‘서도 / Seodo’가 보여 구 서도역임을 시각적으로 확인할 수 있고, 게시물 제목도 남원 서도역 현장을 가리킵니다(2026-10-16). 기존 URL과 출처 경로는 별도 필드에 보존했습니다. 공개 재사용 권리와 현장 촬영 허가는 미확인입니다.",
           "status": "candidate",
-          "createdAt": "2026-10-15"
+          "createdAt": "2026-10-15",
+          "previousImageUrl": "https://mimg.segye.com/content/image/2022/09/24/ori/20220924502828.jpg",
+          "previousSourcePageUrl": "https://www.segye.com/"
         },
         {
           "id": "ref-seodo-visitkorea-2026",
@@ -12671,7 +12673,7 @@
       "imageCandidates": [
         {
           "id": "img-donuimun-seoul-official",
-          "title": "돈의문박물관마을 골목·근현대 건축",
+          "title": "돈의문박물관마을 레트로 실내 전시공간",
           "imageUrl": "https://english.seoul.go.kr/wp-content/uploads/2023/12/donuimun-01.jpg",
           "sourceThumbnail": "https://english.seoul.go.kr/wp-content/uploads/2023/12/donuimun-01.jpg",
           "sourcePageUrl": "https://english.seoul.go.kr/donuimun-museum-village-5/",
@@ -12679,9 +12681,9 @@
           "rights": "unknown",
           "rightsLabel": "참고사진으로 우선 등록 · 사용권 후속 검토",
           "licenseUrl": "",
-          "placeMatch": "unverified",
-          "viewType": "야외·근현대 생활건축·골목",
-          "notes": "서울시 공식 소개 페이지의 실제 장소 사진을 참고자료로 우선 등록했습니다. 사용권·상업촬영 허가는 별도 후속 확인합니다. 2026-10-15 자동 브라우저 검증에서 공식 사진 URL이 로드되지 않아 활성 표시를 보류했습니다. 서울시 공식 페이지와 장소 정보는 보존합니다.",
+          "placeMatch": "confirmed",
+          "viewType": "실내·레트로 인테리어·컬러 대비·인물 촬영",
+          "notes": "서울시 공식 Donuimun Museum Village 경로의 사진 파일(donuimun-01.jpg)임을 대조했습니다. 사진은 야외 골목이나 외관이 아니라 컬러풀한 레트로 실내 전시·체험공간을 보여주므로 제목과 촬영 유형을 수정했습니다(2026-10-16). 실제 시설 내 공간 일치는 확인했으며, 현재 전시 상태와 촬영 가능 여부·사진 재사용 권리는 별도 확인합니다.",
           "status": "candidate",
           "createdAt": "2026-10-15"
         },

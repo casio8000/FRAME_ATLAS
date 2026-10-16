@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 3
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 4
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -294,3 +294,11 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100;
 - Rejected one generic Unsplash studio image from the Paju CJ ENM Studio Center record because there is no evidence that the picture depicts the actual CJ ENM site. The URL and source note remain stored, but the image is no longer an active photo candidate.
 - Post-merge report: 200 locations, 307 records including rejected history, 21 active location-match review candidates, 306 candidates without clearly cleared reuse rights, and 0 structural or selected-reference errors. The 200 current selected reference IDs remain unchanged.
 - Source pages: NewsWA's Jangtaesan skyway photo caption credits Korea Tourism PhotoKorea (https://www.news-wa.com/article/travel/tour-korea/2025/09/14/20250914500020); VisitKorea's Busan Cinema Center at night (https://english.visitkorea.or.kr/svc/contents/infoBscView.do?dataSetId=76&menuSn=229&vcontsId=177333); CoRe Architects' Peace Culture Bunker photo portfolio (https://www.co-re.kr/project/peace-culture-bunker); NewsPim's MMCA Cheongju opening story (https://m.newspim.com/news/view/20181226000640).
+
+
+## Release 2026-10-16 · Photo audit batch 4 — alleys, museum frontage, station photos
+- Created safety branch `backup/pre-image-audit-batch4-2026-10-16` from pre-audit main commit `74238b2417af8c21d2ea334a56837dbe7e2cc97b`.
+- Confirmed the exact photo/location relationship for four references without changing the selected primary/reference IDs: Seoul Seo-Seoul Museum of Art (Brique article and visible bilingual museum sign), Donuimun Museum Village (Seoul official-site image file, relabelled as an indoor retro exhibition space rather than an outdoor alley), Suwon Haenggung-dong Mural Village (VisitKorea detail and matching mural alley), and Namwon Seodo Station (the replacement image visibly shows the ‘서도 / Seodo’ sign).
+- Replaced the non-loading Seodo Station candidate image with the directly verifiable on-site photo URL from a Naver travel blog. The old World Daily image URL and source URL are retained in `previousImageUrl` and `previousSourcePageUrl` for audit history; usage rights remain unknown.
+- Post-merge data: 200 unique locations, 307 photo candidate records including retired histories, 17 active image-match review candidates, 306 candidates without clearly cleared reuse rights, and 0 broken selected-image references or structural errors.
+- Sources: Brique Magazine's March 2026 opening article for Seo-Seoul Museum of Art (https://magazine.brique.co/brq-news/seoseoul-museum-opening-geumnarae-park-kimchanjoong-thesystemlab/); Seoul's official Donuimun Museum Village image path (https://english.seoul.go.kr/wp-content/uploads/2023/12/donuimun-01.jpg); VisitKorea's Haenggung-dong Mural Village listing (https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=50c0daa1-83a7-416c-a38f-7b5257fed378); Naver blog field photograph with the Seodo station sign (https://blog.naver.com/hey_che/222381772211).
