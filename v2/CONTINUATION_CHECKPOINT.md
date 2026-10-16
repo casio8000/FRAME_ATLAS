@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-94; automated desktop/mobile test passed
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-94; automated desktop/mobile test passed; selected image integrity rules tightened
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -229,4 +229,10 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-94; 
 - Set `curationOverride=true` for this 14-place batch so a same-ID/name record already in the base catalog inherits the curated image references rather than being duplicated. Updated `syncAttachSupplementalPlaces()` to also carry over `newlyAdded`, `newlyAddedAt`, `imageStatus`, and `referenceImageStatus` for existing matches, so the recent-location section remains consistent across devices.
 - Updated app build, service worker, manifest, and root entry to `20261016-94` to refresh the correct files after the merge fix.
 - Validation report after merging: base 151, supplement 65, 16 matches, 49 appended, 200 unique locations; 302 photo candidates; every location has at least one photo candidate and all 200 have a reference-photo assignment. 38 places have an explicit primary-image ID; the recent 14 all have one.
-- Verification complete for the automated environment: GitHub Actions quality checks passed (run 517; all steps, including Playwright desktop/mobile smoke test and data validation, succeeded). GitHub Pages build and deployment passed for the current documentation commit (run 547). The archived browser image audit recorded 200/200 location cards displayed, 0 marked missing, and all newest 14 photo images loaded; 121 older images were still pending/lazy-loading at the audit snapshot. The mobile screenshot shows the “새로 추가된 장소” section with image cards and the count 6곳. Actual physical iPhone testing has not been performed and remains the only device-specific visual check.
+- Verification complete for the deployed app/data build: GitHub Actions quality checks passed (run 523; browser smoke test, data validation, report consistency, app resource checks, backup/photo/device-sync tests all succeeded). GitHub Pages deployment passed (run 555) for the same build commit. The latest browser audit recorded 200/200 place cards displayed, 0 marked missing, 120 images loaded and 80 still lazy-loading at the snapshot; all newest 14 photo images loaded successfully. The mobile screenshot shows the “새로 추가된 장소” section with image cards and the count 6곳. The previously misassigned Yeolumul primary photo was corrected to the confirmed historical mural reference; the old apartment-like image stays rejected. New validator/test checks now prevent a primary or reference photo ID from pointing to a rejected or unconfirmed candidate. Actual physical iPhone testing has not been performed.
+
+
+## Release 2026-10-16 · latest image-integrity repair
+- Yeolumul mural-village record now assigns `primaryImageId` and `referenceImageId` to `ref-yeolumul-historic-mural-20261016`. The apartment/playground-like candidate remains explicitly rejected/mismatch so it cannot become a fallback.
+- `tools/validate.py` now reports an error if either selected primary/reference image points to a rejected candidate or anything other than a confirmed place match. `tests/v2-browser-smoke.cjs` has regression assertions for all 14 newest photo assignments and the Yeolumul primary-photo correction.
+- Latest quality run #523 passed and Pages deployment run #555 succeeded. The browser audit found 0 missing-image flags across 200 displayed cards; all newest 14 loaded. There are still 80 older cards with images pending lazy loading in the snapshot, not confirmed failures.
