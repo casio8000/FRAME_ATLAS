@@ -60,6 +60,8 @@ const expectedPhotoPlaceIds=new Set(catalogForCounts.places.filter(isActivePhoto
  assert.equal(localOnlyDrafts.length,1,"A unique PC-only draft should be preserved separately rather than silently discarded");
  assert.equal(localOnlyDrafts[0].id,"new-place-pc-only-smoke","The quarantined record should be the unique PC-only draft, not the duplicate");
  assert.ok(await draftPage.locator("#saveStatus").innerText().then(t=>t.includes("미게시 초안 1건 별도 보존")),"The user should be told when a local-only draft was preserved separately");
+ assert.ok(await draftPage.locator("#localDraftNotice").isVisible(),"The home screen must display a notice when local-only drafts are preserved");
+ assert.ok((await draftPage.locator("#localDraftNotice").innerText()).includes("미게시 초안 1건"),"The home notice should accurately count quarantined local-only drafts");
  await draftContext.close(); await draftContext.close();
  const randomContext=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:"block"});
  const randomPage=await randomContext.newPage();
