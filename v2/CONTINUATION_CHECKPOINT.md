@@ -363,9 +363,9 @@ Last updated: 2026-10-16 (Korea Standard Time) — image-load reliability batch 
 - Quality test and Pages deployment are pending.
 
 
-## Release 2026-10-17 · Image-load audit batch 11 — eliminate lazy-load false-pending results
-- Created safety branch `backup/pre-image-load-audit-batch11-2026-10-17` from pre-change main `ef76e4e02f25d5c89ff9e3e9a83caba956618930`.
-- Quality run #577 recorded 197/200 active images loaded, zero missing, and three still loading. Those cards had an empty `currentSrc` and retained fallback URLs, so they were not confirmed failures. The test's rapid scroll sweep was not reliably triggering lazy-image observers for every card.
-- Updated desktop and mobile Playwright audit setup to set each archive image to eager loading, scroll each card into view with a short observer-settling interval, then wait up to 45 seconds for each image to load or reach an explicit missing-image fallback.
-- Added fail-fast assertions that both desktop and mobile archive audits contain no unresolved loading states at the end. No published place/photo data or rights status was changed in this batch.
-- Quality test and Pages workflow results for this test-only commit are pending.
+## Release 2026-10-17 · Image-load audit batch 11 — targeted retry recovery
+- Created safety branch `backup/pre-image-load-audit-batch11-2026-10-17` from pre-change main `ed87f1494c594886ae7e456cc1c6b47516abadd6`.
+- Baseline quality run #577 recorded 197/200 active images loaded, zero missing, and three still loading. Those records were Daejeon Video Special Effects Town, Gyeonggi Sangsang Campus, and MBC studio rental; each retained fallback URLs and did not enter the explicit missing state.
+- First test-only attempt to force all 200 images to `loading=eager` caused an artificial concurrency pile-up: only 100 loaded while 100 remained pending, then the new assertion failed. This did not prove 100 bad URLs; it showed that forcing every external image simultaneously is not a reliable runtime test.
+- Recovery: restored the normal full-grid lazy-load sweep and its previous 30-second settling window. The test then scrolls only the three previously pending cards into view one at a time, temporarily requests eager loading on each, waits up to 25 seconds for a loaded or explicit missing state, and asserts that these three all finish successfully. The prior all-grid pending assertion and mass eager-loading mobile test were removed.
+- No catalog or source-photo data was changed. Pages deployment succeeded for the first instrumentation commit; its quality run failed only because the forced-eager audit left 100 unresolved loading states. The targeted-retry version is now queued for quality validation.
