@@ -1378,7 +1378,7 @@ function exportCatalog(){
 }
 function importCatalog(file){
  if(!requireAdminMode())return;
- const reader=new FileReader();reader.onload=()=>{try{const imported=JSON.parse(reader.result),extras=Array.isArray(imported.localUnpublishedPlaces)?imported.localUnpublishedPlaces:[];delete imported.localUnpublishedPlaces;if(extras.length)writeLocalOnlyPlaces([...readLocalOnlyPlaces(),...extras]);catalog=normalizeCatalog(imported);selectedId=catalog.places[0]?.id||null;localSave("가져온 카탈로그를 이 기기에 임시저장");render();alert("가져오기 완료. 공통 장소 "+catalog.places.length+"곳"+(readLocalOnlyPlaces().length?" · 미게시 초안 "+readLocalOnlyPlaces().length+"건 별도 보존":""));}catch(e){alert("가져오기 실패: "+e.message);}};reader.readAsText(file,"utf-8");
+ const reader=new FileReader();reader.onload=()=>{try{const imported=JSON.parse(reader.result),extras=Array.isArray(imported.localUnpublishedPlaces)?imported.localUnpublishedPlaces:[];delete imported.localUnpublishedPlaces;if(extras.length)writeLocalOnlyPlaces([...readLocalOnlyPlaces(),...extras]);const currentPublishedView=syncClone(catalog);catalog=normalizeCatalog(mergePublishedPhotoReferences(reconcileLocalDraftToPublished(imported,currentPublishedView),currentPublishedView));selectedId=catalog.places[0]?.id||null;localSave("가져온 카탈로그를 이 기기에 임시저장");render();alert("가져오기 완료. 공통 장소 "+catalog.places.length+"곳"+(readLocalOnlyPlaces().length?" · 미게시 초안 "+readLocalOnlyPlaces().length+"건 별도 보존":""));}catch(e){alert("가져오기 실패: "+e.message);}};reader.readAsText(file,"utf-8");
 }
 $("addPlaceBtn").addEventListener("click",addNewPlace);if($("homeAddPlaceBtn"))$("homeAddPlaceBtn").addEventListener("click",addNewPlace);
 $("batchSearchA").addEventListener("click",()=>{if(requireAdminMode())batchSearch("A");});
