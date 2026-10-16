@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T12:10:00.000Z",
+  "updatedAt": "2026-10-16T12:35:00.000Z",
   "description": "National photo-location scouting candidates across Korea. Photo URLs are reference-only: the place match has been visually checked against a matching source page where available, but actual live deployment loading, reuse permissions, and filming permission remain separate checks. All fourteen candidates added at 2026-10-16T07:30Z now have a primary reference-photo assignment. App data merge uses explicit curation overrides for these image references so an existing same-name catalog entry can inherit the assigned photo without duplicating the place.",
   "places": [
     {
@@ -3711,11 +3711,11 @@
         "K Film Studio Paju",
         "케이필름 파주스튜디오"
       ],
-      "imageStatus": "공식 등록 참고사진 연결 · 촬영 허가 별도 확인",
+      "imageStatus": "공식 스튜디오 카탈로그 참고사진 선택",
       "selectionStatus": "공식 스튜디오 등록 사진 연결 완료 · 접근·대관·촬영 허가 별도 확인",
       "photoProfile": "필름코리아에 등록된 대형 세트 제작 공간의 참고사진. 고천장, 넓은 무대 면적, 조명 그리드 및 호리존을 살펴보는 스튜디오 스카우팅 후보이며 실제 이용 가능성과 대관·촬영 허가를 별도 확인해야 합니다.",
       "summary": "공식 등록 자료의 대형 스튜디오 내부 참고사진을 연결했습니다. 사진 이용권과 스튜디오 대관·촬영 가능 조건은 사전에 운영처에 확인하세요.",
-      "referenceImageId": "ref-kfilm-studio-interior-20261016",
+      "referenceImageId": "ref-kfilm-studio-official-alt-20261016",
       "imageCandidates": [
         {
           "id": "ref-kfilm-studio-interior-20261016",
@@ -3753,7 +3753,10 @@
           "refreshPublishedReference": true,
           "createdAt": "2026-10-16T02:00:00.000Z"
         }
-      ]
+      ],
+      "primaryImageId": "ref-kfilm-studio-official-alt-20261016",
+      "referenceImageStatus": "장소 참고 이미지",
+      "updatedAt": "2026-10-16"
     },
     {
       "id": "gg-uijeongbu-art-library",
@@ -4513,12 +4516,29 @@
           "notes": "설계 프로젝트의 공간 참조용. 이미지 재사용 권리는 별도 확인.",
           "status": "candidate",
           "createdAt": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "ref-anyang-pavilion-aju-news-alt-20261016",
+          "title": "안양 파빌리온 백색 노출 콘크리트와 숲",
+          "imageUrl": "https://image.ajunews.com/content/image/2013/10/24/20131024000140_0.jpg",
+          "sourcePageUrl": "https://www.ajunews.com/view/20131024000165",
+          "sourceName": "아주경제",
+          "creator": "아주경제",
+          "viewType": "건축 외관·백색 콘크리트·숲",
+          "notes": "아주경제 기사 본문에 '안양예술공원 안양 파빌리온'으로 명시된 지상 사진입니다. 기존 Archello 주소가 오래 걸리는 경우 대표 참고사진으로 사용합니다. 참고 이미지이며 재사용 권리는 별도 확인.",
+          "sourceThumbnail": "https://image.ajunews.com/content/image/2013/10/24/20131024000140_0.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T12:35:00.000Z"
         }
       ],
       "coordinates": null,
-      "imageStatus": "장소 참고 이미지 · 대표사진 최종 검토 필요",
-      "primaryImageId": "ref-anyang-pavilion-exterior",
-      "referenceImageId": "ref-anyang-pavilion-exterior",
+      "imageStatus": "장소 확인 출처의 참고사진 연결 · 대체 후보 사용",
+      "primaryImageId": "ref-anyang-pavilion-aju-news-alt-20261016",
+      "referenceImageId": "ref-anyang-pavilion-aju-news-alt-20261016",
       "verification": {
         "location": "안양시 문화관광 안내 확인",
         "photoMatch": "장소별 참고 이미지 연결",
@@ -4547,7 +4567,9 @@
       "createdAt": "2026-10-16",
       "updatedAt": "2026-10-16",
       "newlyAdded": true,
-      "newlyAddedAt": "2026-10-16"
+      "newlyAddedAt": "2026-10-16",
+      "curationOverride": true,
+      "referenceImageStatus": "장소 참고 이미지"
     },
     {
       "id": "gg-yangju-chang-ucchin-museum",
@@ -5817,6 +5839,76 @@
       "scoreStatus": "아직 점수화하지 않음",
       "referenceImageStatus": "장소 참고 이미지",
       "curationOverride": true
+    },
+    {
+      "id": "chuncheon-sangsangmadang",
+      "name": "KT&G 상상마당 춘천",
+      "region": "강원",
+      "category": "건축·복합문화공간·공연장",
+      "curationOverride": true,
+      "primaryImageId": "ref-chuncheon-sangsangmadang-jejunews-alt-20261016",
+      "referenceImageId": "ref-chuncheon-sangsangmadang-jejunews-alt-20261016",
+      "imageStatus": "장소 확인 기사 참고사진 연결 · 대표사진 대체",
+      "referenceImageStatus": "장소 참고 이미지",
+      "imageCandidates": [
+        {
+          "id": "ref-chuncheon-sangsangmadang-jejunews-alt-20261016",
+          "title": "KT&G 상상마당 춘천 내부 벽돌 회랑",
+          "imageUrl": "https://www.jejunews.com/news/photo/202405/2211211_238120_88.jpg",
+          "sourcePageUrl": "https://www.jejunews.com/news/articleView.html?idxno=2211211",
+          "sourceName": "제주일보",
+          "creator": "제주일보",
+          "viewType": "실내·벽돌 회랑·건축 디테일",
+          "notes": "제주일보의 '상상마당 춘천' 건축 기사에서 장소명과 함께 캡션이 확인되는 지상 사진입니다. 항공사진 대신 벽돌·보행 동선의 질감을 참고할 수 있습니다. 재사용 권리는 별도 확인.",
+          "sourceThumbnail": "https://www.jejunews.com/news/photo/202405/2211211_238120_88.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T12:35:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://www.jejunews.com/news/articleView.html?idxno=2211211"
+      ],
+      "notes": "사진가 관점의 건축 디테일 참고 이미지. 실제 공간별 촬영 허가와 재사용 조건은 별도 확인.",
+      "updatedAt": "2026-10-16"
+    },
+    {
+      "id": "seo-seonyudo",
+      "name": "선유도공원",
+      "region": "서울",
+      "category": "도시 재생·공원·건축·공공미술",
+      "curationOverride": true,
+      "primaryImageId": "ref-seonyudo-seoul-mediahub-artwalk-2026",
+      "referenceImageId": "ref-seonyudo-seoul-mediahub-artwalk-2026",
+      "imageStatus": "서울시 출처의 장소 확인 참고사진 연결",
+      "referenceImageStatus": "장소 참고 이미지",
+      "imageCandidates": [
+        {
+          "id": "ref-seonyudo-seoul-mediahub-artwalk-2026",
+          "title": "선유도공원 남측 산책로의 그림자 아카이브 설치",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/07/xNwbSeXMpKgdQQtcWQrsrhHSbIqoMfBC.jpg",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2015223",
+          "sourceName": "서울시 내 손안에 서울",
+          "creator": "서울시민기자 이혜숙",
+          "viewType": "공공미술·퍼골라·빛과 그림자",
+          "notes": "서울시 기사에서 선유도공원 남측 산책로의 '그림자 아카이브' 작품으로 직접 설명되는 사진입니다. 공원 내 공간·빛·그림자 참고용이며 사진 재사용 권리는 별도 확인.",
+          "sourceThumbnail": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/07/xNwbSeXMpKgdQQtcWQrsrhHSbIqoMfBC.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T12:35:00.000Z"
+        }
+      ],
+      "sourceRefs": [
+        "https://mediahub.seoul.go.kr/archives/2015223"
+      ],
+      "notes": "정수장 산업유산·공원·공공미술의 관계를 담는 촬영 후보입니다. 현장 이용 및 촬영 조건은 별도 확인.",
+      "updatedAt": "2026-10-16"
     }
   ]
 }
