@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T00:18:42.724Z",
+  "updatedAt": "2026-10-16T00:39:05.920Z",
   "description": "15 additional art, architecture and sculpture locations emphasizing Korean material culture with global editorial potential. Loaded as supplemental records and merged by ID.",
   "places": [
     {
@@ -1787,6 +1787,90 @@
           "notes": "도시 전경이나 항공사진 대신 미술관 고유의 유리 입면과 디지털 파사드가 보이는 단일 사진.",
           "status": "candidate",
           "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "goyang-aqua-studio",
+      "name": "고양아쿠아스튜디오",
+      "region": "경기",
+      "category": "특수촬영·수중스튜디오",
+      "curationOverride": true,
+      "primaryImageId": "ref-goyang-aqua-tank-20261016",
+      "referenceImageId": "ref-goyang-aqua-tank-20261016",
+      "imageCandidates": [
+        {
+          "id": "ref-goyang-aqua-tank-20261016",
+          "title": "고양아쿠아스튜디오 야외 수조",
+          "imageUrl": "https://dimg.donga.com/wps/NEWS/IMAGE/2023/09/15/121190089.1.jpg",
+          "sourceThumbnail": "https://dimg.donga.com/wps/NEWS/IMAGE/2023/09/15/121190089.1.jpg",
+          "sourcePageUrl": "https://www.donga.com/news/Society/article/all/20230915/121190093/1",
+          "sourceName": "동아일보",
+          "creator": "동아일보",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "야외 수조·산업적 공간",
+          "notes": "고양아쿠아스튜디오의 실제 야외 수조를 담은 장소 사진. 수면·콘크리트·산업 구조를 촬영 레퍼런스로 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "daejeon-video-special-effects-town",
+      "name": "대전영상특수효과타운·대전영화촬영스튜디오",
+      "region": "대전",
+      "category": "영화·특수효과 스튜디오",
+      "curationOverride": true,
+      "primaryImageId": "ref-daejeon-vfx-town-building-20261016",
+      "referenceImageId": "ref-daejeon-vfx-town-building-20261016",
+      "imageCandidates": [
+        {
+          "id": "ref-daejeon-vfx-town-building-20261016",
+          "title": "대전영상특수효과타운 건물",
+          "imageUrl": "https://dicia.or.kr/template/home/resources/images/sub/sub02/img_020101_0101.png",
+          "sourceThumbnail": "https://dicia.or.kr/template/home/resources/images/sub/sub02/img_020101_0101.png",
+          "sourcePageUrl": "https://dicia.or.kr/sub.do?menuIdx=MENU_000000000000041",
+          "sourceName": "대전정보문화산업진흥원",
+          "creator": "대전정보문화산업진흥원",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "건축 외관",
+          "notes": "운영기관의 시설 소개 페이지에 표시된 대전영상특수효과타운 건물 사진.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "korea-traditional-architecture-museum",
+      "name": "한국고건축박물관",
+      "region": "충남",
+      "category": "전통건축·박물관",
+      "curationOverride": true,
+      "primaryImageId": "ref-korea-traditional-architecture-museum-facade-20261016",
+      "referenceImageId": "ref-korea-traditional-architecture-museum-facade-20261016",
+      "imageCandidates": [
+        {
+          "id": "ref-korea-traditional-architecture-museum-facade-20261016",
+          "title": "한국고건축박물관 전통 건축 외관",
+          "imageUrl": "https://tour.chungnam.go.kr/thumbnail/trsrcn/920_TRSRCN_202501150330091340.JPG",
+          "sourceThumbnail": "https://tour.chungnam.go.kr/thumbnail/trsrcn/920_TRSRCN_202501150330091340.JPG",
+          "sourcePageUrl": "https://tour.chungnam.go.kr/prog/trsrcn/kor/sub02_01_01/view.do?trsrcnNo=951",
+          "sourceName": "충남관광",
+          "creator": "충남관광",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "전통 건축 외관",
+          "notes": "충남관광의 한국고건축박물관 대표 이미지. 전통 목조건축의 처마·공포·입면을 촬영 참고자료로 활용.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:00:00.000Z"
         }
       ]
     }
