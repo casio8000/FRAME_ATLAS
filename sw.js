@@ -1,6 +1,6 @@
 /* FRAME ATLAS v5.44: versioned shell plus safe per-device sync and legacy V6 audit. */
-const CACHE_NAME = 'frame-atlas-root-bridge-20261016';
-const APP_FILES = ['./', './index.html', './data/places.js', './data/DB_SCHEMA.json', './data/review-workflow.js', './data/backup-merge.js', './data/device-sync.js', './data/legacy-v6-audit.js', './data/image-registry.js', './manifest.json', './assets/icons/icon-180.png', './assets/icons/icon-192.png', './assets/icons/icon-512.png'];
+const CACHE_NAME = 'frame-atlas-root-bridge-20261016-2';
+const APP_FILES = ['./', './index.html', './manifest.json', './assets/icons/icon-180.png', './assets/icons/icon-192.png', './assets/icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
@@ -32,7 +32,7 @@ self.addEventListener('fetch', event => {
   const scopePath = new URL(self.registration.scope).pathname;
   const v2Prefix = scopePath.endsWith('/') ? scopePath + 'v2/' : scopePath + '/v2/';
   if (path === v2Prefix.slice(0, -1) || path.startsWith(v2Prefix)) return;
-  const sharedFresh = req.mode === 'navigate' || /\/(?:index\.html|data\/places\.js|data\/image-registry\.js|data\/review-workflow\.js|data\/backup-merge\.js|data\/device-sync\.js|data\/legacy-v6-audit\.js|data\/DB_SCHEMA\.json|manifest\.json|sw\.js)$/.test(path);
+  const sharedFresh = req.mode === 'navigate' || /\/(?:index\.html|manifest\.json|sw\.js)$/.test(path);
   if (sharedFresh) {
     event.respondWith((async () => {
       const cache = await caches.open(CACHE_NAME);

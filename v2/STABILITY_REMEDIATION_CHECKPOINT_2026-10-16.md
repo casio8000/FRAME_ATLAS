@@ -70,6 +70,12 @@ Date: 2026-10-16 (Korea Standard Time)
 - The active catalog content has not been rewritten. Pre-run read-only analysis found 151 base records, 65 supplemental entries, 16 entries that merge into existing places, 49 unique additions, and 200 merged locations. It found 288 photo candidates, 0 repository-stored image assets, 39 candidates whose place match is not confirmed, and 1 candidate without an image URL/thumbnail/file reference. These are report metrics, not edits.
 - CI's git diff check remains as a guard to ensure the committed report matches the active V2 data.
 
+## 2026-10-16 root transition cache slimming
+- Changed the root transition service worker cache name to frame-atlas-root-bridge-20261016-2 so installation gets a fresh cache, then prunes the previous bridge cache on activation while preserving frame-atlas-v2-* caches.
+- The transition worker now pre-caches only the redirect shell, legacy manifest and legacy icons; it no longer pre-downloads the old 1.34 MB data/places.js or the retired V5 backup/sync modules.
+- Removed retired data modules from the root worker's shared-fresh path matcher and added checker assertions to prevent them from returning to the preload list.
+- Legacy source files remain present for now because a validator, image harvester and safety tests still depend on some of them. They are not deleted in this step.
+
 ## Next steps
 1. Verify the current cleanup commit's Actions and Pages deployment before doing another code change.
 2. Review uploaded browser audit JSON and separate genuinely broken image sources from slow or still-pending remote responses; do not change the catalog automatically from a timed-out image request.

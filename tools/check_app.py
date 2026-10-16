@@ -224,12 +224,23 @@ else:
     root_sw = root_sw_path.read_text(encoding="utf-8")
     if "const CACHE_NAME = 'frame-atlas-root-bridge-" not in root_sw:
         fail("루트 서비스 워커가 V2 전환용 캐시 이름을 사용하지 않습니다.")
+    app_files_line = next((line for line in root_sw.splitlines() if line.startswith("const APP_FILES = ")), "")
+    if not app_files_line:
+        fail("루트 서비스 워커 APP_FILES 목록을 찾지 못했습니다.")
+    elif "./data/" in app_files_line:
+        fail("루트 전환 서비스 워커가 구형 data/ 모듈을 선행 캐시합니다.")
+    retired_fetch_patterns = [r"data\\/places\\.js", r"data\\/image-registry\\.js", r"data\\/review-workflow\\.js",
+                              r"data\\/backup-merge\\.js", r"data\\/device-sync\\.js", r"data\\/legacy-v6-audit\\.js", r"data\\/DB_SCHEMA\\.json"]
+    if any(pattern in root_sw for pattern in retired_fetch_patterns):
+        fail("루트 서비스 워커의 최신 리소스 정규식에 구형 data/ 모듈이 남아 있습니다.")
     if "path.startsWith(v2Prefix)" not in root_sw or "path === v2Prefix.slice(0, -1)" not in root_sw:
         fail("루트 서비스 워커가 /v2/ 요청을 제외하지 않습니다.")
     if "!k.startsWith('frame-atlas-v2-')" not in root_sw:
         fail("루트 서비스 워커가 V2 캐시 공간을 보호하지 않습니다.")
     if all(marker in root_sw for marker in ["path.startsWith(v2Prefix)", "path === v2Prefix.slice(0, -1)", "!k.startsWith('frame-atlas-v2-')"]):
         checks.append("루트 서비스 워커가 V2 경로와 V2 캐시를 보호함")
+    if app_files_line and "./data/" not in app_files_line and not any(pattern in root_sw for pattern in retired_fetch_patterns):
+        checks.append("루트 전환 서비스 워커가 구형 data/ 모듈을 선행 캐시하지 않음")
 
 # Root URL should lead to the supported 2.0 app, not expose the archived V5 page.
 root_index = ROOT / "index.html"
