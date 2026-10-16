@@ -1332,7 +1332,11 @@ async function publishCatalog(){
   const before=await fetch(repo+catalogPath+"?ref=main",{headers,cache:"no-store"});
   if(!before.ok)throw new Error("현재 카탈로그 확인 실패 (HTTP "+before.status+"). 토큰 권한과 브랜치를 확인하세요.");
   const currentCatalog=await before.json();
-  const remoteRaw=syncDecodeContentsFile(currentCatalog);
+  // The GitHub Contents API may omit the base64 content for files larger than 1 MiB.
+  // Read the public catalog through raw.githubusercontent.com, while retaining the Contents API SHA for safe PUT updates.
+  const rawCatalogResponse=await fetch("https://raw.githubusercontent.com/casio8000/FRAME_ATLAS/main/"+catalogPath+"?v="+Date.now(),{cache:"no-store"});
+  if(!rawCatalogResponse.ok)throw new Error("최신 카탈로그 원문 읽기 실패 (HTTP "+rawCatalogResponse.status+"). 게시를 중단했으며 기존 자료는 변경하지 않았습니다.");
+  const remoteRaw=await rawCatalogResponse.json();
   const remoteLatest=await syncAttachSupplementalPlaces(normalizeCatalog(remoteRaw));
   const baselineText=localStorage.getItem(BASELINE_KEY);
   let mergeResult;
