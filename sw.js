@@ -1,5 +1,5 @@
 /* FRAME ATLAS v5.44: versioned shell plus safe per-device sync and legacy V6 audit. */
-const CACHE_NAME = 'frame-atlas-root-bridge-20261016-2';
+const CACHE_NAME = 'frame-atlas-root-bridge-20261016-3';
 const APP_FILES = ['./', './index.html', './manifest.json', './assets/icons/icon-180.png', './assets/icons/icon-192.png', './assets/icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
