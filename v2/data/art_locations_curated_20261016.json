@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T20:10:00.000Z",
-  "description": "National photo-location scouting candidates including architecture, art spaces, design stays, specialist studios, and distinctive cultural venues. All photo URLs are reference candidates; site access, commercial-shoot permission, and image reuse rights require separate verification. 2026-10-16 second research batch adds seven researched candidates. Fourteen additional distinct scouting candidates were added on 2026-10-16 to reach the 200-location target. Four of those fourteen now have place-matched reference images from official tourism sources; the remaining eleven still need photo candidates and verification.",
+  "updatedAt": "2026-10-16T20:30:00.000Z",
+  "description": "National photo-location scouting candidates including architecture, art spaces, design stays, specialist studios, and distinctive cultural venues. All photo URLs are reference candidates; site access, commercial-shoot permission, and image reuse rights require separate verification. 2026-10-16 second research batch adds seven researched candidates. Fourteen additional distinct scouting candidates were added on 2026-10-16 to reach the 200-location target. All fourteen of those newest candidates now have a place-matched reference image candidate connected. These are reference-only external URLs; actual cross-device display and availability still require validation from official tourism sources; the remaining eleven still need photo candidates and verification.",
   "places": [
     {
       "id": "yangpyeong-lee-jaehyo-gallery",
@@ -4573,15 +4573,33 @@
       "phone": "공식 홈페이지 확인",
       "openingStatus": "운영시간·휴관일은 방문 전 공식 안내 확인",
       "shootingPermission": "상업 촬영·삼각대·조명 사용은 별도 확인",
-      "imageStatus": "대표 참고사진 확인 필요",
-      "primaryImageId": null,
-      "referenceImageId": null,
-      "imageCandidates": [],
+      "imageStatus": "장소별 참고사진 연결 · 실제 표시 확인 필요",
+      "primaryImageId": "ref-yangju-chang-ucchin-museum-exterior-2020",
+      "referenceImageId": "ref-yangju-chang-ucchin-museum-exterior-2020",
+      "imageCandidates": [
+        {
+          "id": "ref-yangju-chang-ucchin-museum-exterior-2020",
+          "title": "양주시립 장욱진미술관의 조형적 외관",
+          "imageUrl": "https://img.etoday.co.kr/pto_db/2020/06/20200623174012_1476132_1200_800.jpg",
+          "sourcePageUrl": "https://bravo.etoday.co.kr/view/atc_view/11168",
+          "sourceName": "브라보 마이 라이프",
+          "creator": "브라보 마이 라이프",
+          "viewType": "미술관 외관·숲과 건축",
+          "notes": "장욱진미술관 건축 외관을 보여 주는 기사 이미지. 흰색 조형 매스와 주변 숲의 대비를 촬영 참고 포인트로 삼음.",
+          "sourceThumbnail": "https://img.etoday.co.kr/pto_db/2020/06/20200623174012_1476132_1200_800.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T20:30:00.000Z"
+        }
+      ],
       "coordinates": null,
       "verification": {
         "location": "공식·공공 출처 확인 또는 추가 확인 필요",
-        "photoMatch": "대표사진 미연결",
-        "rights": "참고 이미지 추가 검토 필요",
+        "photoMatch": "장소가 명시된 출처 페이지의 사진 연결",
+        "rights": "참고용 · 재사용 조건 별도 확인",
         "shootingPermission": "방문 전 확인",
         "lastCheckedAt": "2026-10-16"
       },
@@ -4596,7 +4614,7 @@
       "newlyAdded": true,
       "newlyAddedAt": "2026-10-16T07:30:00.000Z",
       "createdAt": "2026-10-16T07:30:00.000Z",
-      "updatedAt": "2026-10-16T07:30:00.000Z",
+      "updatedAt": "2026-10-16",
       "aliases": [],
       "searchTerms": [
         "양주 장욱진미술관 공식 사진",
@@ -4608,7 +4626,8 @@
         "상업 촬영·삼각대·조명 사용 가능 여부 사전 문의"
       ],
       "photoPotentialScore": 0,
-      "scoreStatus": "아직 점수화하지 않음"
+      "scoreStatus": "아직 점수화하지 않음",
+      "referenceImageStatus": "장소 참고 이미지"
     },
     {
       "id": "gg-anyang-kimchungup-architecture-museum",
@@ -4641,15 +4660,33 @@
       "phone": "공식 홈페이지 확인",
       "openingStatus": "운영시간·휴관일은 방문 전 공식 안내 확인",
       "shootingPermission": "상업 촬영·삼각대·조명 사용은 별도 확인",
-      "imageStatus": "대표 참고사진 확인 필요",
-      "primaryImageId": null,
-      "referenceImageId": null,
-      "imageCandidates": [],
+      "imageStatus": "장소별 참고사진 연결 · 실제 표시 확인 필요",
+      "primaryImageId": "ref-kimchungup-architecture-museum-exterior",
+      "referenceImageId": "ref-kimchungup-architecture-museum-exterior",
+      "imageCandidates": [
+        {
+          "id": "ref-kimchungup-architecture-museum-exterior",
+          "title": "김중업건축박물관 옛 유유산업 공장 재생 건축",
+          "imageUrl": "https://datacdn.ibtravel.co.kr/files/2023/10/18102759/HKR5331.jpg",
+          "sourcePageUrl": "https://www.ibtravel.co.kr/issue/19266/",
+          "sourceName": "이번여행",
+          "creator": "이번여행",
+          "viewType": "재생 건축·벽돌과 콘크리트 외관",
+          "notes": "김중업건축박물관을 직접 소개하는 여행 기사 이미지. 옛 공장 건물의 재생 건축이라는 장소 맥락과 맞는 참고 사진.",
+          "sourceThumbnail": "https://datacdn.ibtravel.co.kr/files/2023/10/18102759/HKR5331.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T20:30:00.000Z"
+        }
+      ],
       "coordinates": null,
       "verification": {
         "location": "공식·공공 출처 확인 또는 추가 확인 필요",
-        "photoMatch": "대표사진 미연결",
-        "rights": "참고 이미지 추가 검토 필요",
+        "photoMatch": "장소가 명시된 출처 페이지의 사진 연결",
+        "rights": "참고용 · 재사용 조건 별도 확인",
         "shootingPermission": "방문 전 확인",
         "lastCheckedAt": "2026-10-16"
       },
@@ -4664,7 +4701,7 @@
       "newlyAdded": true,
       "newlyAddedAt": "2026-10-16T07:30:00.000Z",
       "createdAt": "2026-10-16T07:30:00.000Z",
-      "updatedAt": "2026-10-16T07:30:00.000Z",
+      "updatedAt": "2026-10-16",
       "aliases": [],
       "searchTerms": [
         "안양 김중업건축박물관 공식 사진",
@@ -4676,7 +4713,8 @@
         "상업 촬영·삼각대·조명 사용 가능 여부 사전 문의"
       ],
       "photoPotentialScore": 0,
-      "scoreStatus": "아직 점수화하지 않음"
+      "scoreStatus": "아직 점수화하지 않음",
+      "referenceImageStatus": "장소 참고 이미지"
     },
     {
       "id": "daegu-kansong-art-museum",
@@ -4709,15 +4747,33 @@
       "phone": "공식 홈페이지 확인",
       "openingStatus": "운영시간·휴관일은 방문 전 공식 안내 확인",
       "shootingPermission": "상업 촬영·삼각대·조명 사용은 별도 확인",
-      "imageStatus": "대표 참고사진 확인 필요",
-      "primaryImageId": null,
-      "referenceImageId": null,
-      "imageCandidates": [],
+      "imageStatus": "장소별 참고사진 연결 · 실제 표시 확인 필요",
+      "primaryImageId": "ref-daegu-kansong-museum-official-exterior",
+      "referenceImageId": "ref-daegu-kansong-museum-official-exterior",
+      "imageCandidates": [
+        {
+          "id": "ref-daegu-kansong-museum-official-exterior",
+          "title": "대구간송미술관 정면·기둥과 유리 파사드",
+          "imageUrl": "https://ww.kansong.org/ckedtr/uploads/20250125172346_dalo5.jpg",
+          "sourcePageUrl": "https://ww.kansong.org/daegu/index.do?bbsId=BBS_00381&menu_id=00004892&menu_link=%2Ficms%2Fbbs%2FselectBoardArticle.do&nttId=21972",
+          "sourceName": "대구간송미술관",
+          "creator": "간송미술문화재단",
+          "viewType": "현대 미술관 건축·파사드",
+          "notes": "대구간송미술관 공식 웹사이트의 보도자료 이미지. 건물명 표기와 외관을 확인할 수 있는 장소 참고 사진.",
+          "sourceThumbnail": "https://ww.kansong.org/ckedtr/uploads/20250125172346_dalo5.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T20:30:00.000Z"
+        }
+      ],
       "coordinates": null,
       "verification": {
         "location": "공식·공공 출처 확인 또는 추가 확인 필요",
-        "photoMatch": "대표사진 미연결",
-        "rights": "참고 이미지 추가 검토 필요",
+        "photoMatch": "장소가 명시된 출처 페이지의 사진 연결",
+        "rights": "참고용 · 재사용 조건 별도 확인",
         "shootingPermission": "방문 전 확인",
         "lastCheckedAt": "2026-10-16"
       },
@@ -4732,7 +4788,7 @@
       "newlyAdded": true,
       "newlyAddedAt": "2026-10-16T07:30:00.000Z",
       "createdAt": "2026-10-16T07:30:00.000Z",
-      "updatedAt": "2026-10-16T07:30:00.000Z",
+      "updatedAt": "2026-10-16",
       "aliases": [],
       "searchTerms": [
         "대구 간송미술관 공식 사진",
@@ -4744,7 +4800,8 @@
         "상업 촬영·삼각대·조명 사용 가능 여부 사전 문의"
       ],
       "photoPotentialScore": 0,
-      "scoreStatus": "아직 점수화하지 않음"
+      "scoreStatus": "아직 점수화하지 않음",
+      "referenceImageStatus": "장소 참고 이미지"
     },
     {
       "id": "jeju-yumin-art-nouveau-museum",
@@ -4864,15 +4921,33 @@
       "phone": "공식 홈페이지 확인",
       "openingStatus": "운영시간·휴관일은 방문 전 공식 안내 확인",
       "shootingPermission": "상업 촬영·삼각대·조명 사용은 별도 확인",
-      "imageStatus": "대표 참고사진 확인 필요",
-      "primaryImageId": null,
-      "referenceImageId": null,
-      "imageCandidates": [],
+      "imageStatus": "장소별 참고사진 연결 · 실제 표시 확인 필요",
+      "primaryImageId": "ref-jeju-glass-house-phoenix-exterior",
+      "referenceImageId": "ref-jeju-glass-house-phoenix-exterior",
+      "imageCandidates": [
+        {
+          "id": "ref-jeju-glass-house-phoenix-exterior",
+          "title": "섭지코지 글라스하우스의 유리 파사드와 정원",
+          "imageUrl": "https://thumbnews.nateimg.co.kr/view610/news.nateimg.co.kr/orgImg/na/2025/04/23/7251933_high.jpg",
+          "sourcePageUrl": "https://news.nate.com/view/20250423n32648",
+          "sourceName": "뉴스1·네이트 뉴스",
+          "creator": "뉴스1",
+          "viewType": "유리 건축·정원·해안 풍경",
+          "notes": "글라스하우스 재개장 관련 보도에 실린 외관 사진. 현재 카페 이용 공간으로 소개되므로 촬영 허가와 운영 범위는 별도 확인.",
+          "sourceThumbnail": "https://thumbnews.nateimg.co.kr/view610/news.nateimg.co.kr/orgImg/na/2025/04/23/7251933_high.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T20:30:00.000Z"
+        }
+      ],
       "coordinates": null,
       "verification": {
         "location": "공식·공공 출처 확인 또는 추가 확인 필요",
-        "photoMatch": "대표사진 미연결",
-        "rights": "참고 이미지 추가 검토 필요",
+        "photoMatch": "장소가 명시된 출처 페이지의 사진 연결",
+        "rights": "참고용 · 재사용 조건 별도 확인",
         "shootingPermission": "방문 전 확인",
         "lastCheckedAt": "2026-10-16"
       },
@@ -4887,7 +4962,7 @@
       "newlyAdded": true,
       "newlyAddedAt": "2026-10-16T07:30:00.000Z",
       "createdAt": "2026-10-16T07:30:00.000Z",
-      "updatedAt": "2026-10-16T07:30:00.000Z",
+      "updatedAt": "2026-10-16",
       "aliases": [],
       "searchTerms": [
         "제주 글라스하우스(휘닉스 아일랜드) 공식 사진",
@@ -4899,7 +4974,8 @@
         "상업 촬영·삼각대·조명 사용 가능 여부 사전 문의"
       ],
       "photoPotentialScore": 0,
-      "scoreStatus": "아직 점수화하지 않음"
+      "scoreStatus": "아직 점수화하지 않음",
+      "referenceImageStatus": "장소 참고 이미지"
     },
     {
       "id": "tongyeong-jeonhyuklim-museum",
@@ -4932,15 +5008,33 @@
       "phone": "공식 홈페이지 확인",
       "openingStatus": "운영시간·휴관일은 방문 전 공식 안내 확인",
       "shootingPermission": "상업 촬영·삼각대·조명 사용은 별도 확인",
-      "imageStatus": "대표 참고사진 확인 필요",
-      "primaryImageId": null,
-      "referenceImageId": null,
-      "imageCandidates": [],
+      "imageStatus": "장소별 참고사진 연결 · 실제 표시 확인 필요",
+      "primaryImageId": "ref-tongyeong-jeonhyuklim-museum-exterior",
+      "referenceImageId": "ref-tongyeong-jeonhyuklim-museum-exterior",
+      "imageCandidates": [
+        {
+          "id": "ref-tongyeong-jeonhyuklim-museum-exterior",
+          "title": "통영 전혁림미술관의 색채 타일 외관",
+          "imageUrl": "https://img.khan.co.kr/news/2025/12/06/2025120501000116800016951.jpg",
+          "sourcePageUrl": "https://www.khan.co.kr/en/article/202512061556137",
+          "sourceName": "경향신문",
+          "creator": "경향신문",
+          "viewType": "미술관 외관·컬러 타일",
+          "notes": "통영 전혁림미술관을 다루는 기사 이미지. 다채로운 타일 벽면과 비정형 입면이 장소의 시각적 특징을 보여 줌.",
+          "sourceThumbnail": "https://img.khan.co.kr/news/2025/12/06/2025120501000116800016951.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T20:30:00.000Z"
+        }
+      ],
       "coordinates": null,
       "verification": {
         "location": "공식·공공 출처 확인 또는 추가 확인 필요",
-        "photoMatch": "대표사진 미연결",
-        "rights": "참고 이미지 추가 검토 필요",
+        "photoMatch": "장소가 명시된 출처 페이지의 사진 연결",
+        "rights": "참고용 · 재사용 조건 별도 확인",
         "shootingPermission": "방문 전 확인",
         "lastCheckedAt": "2026-10-16"
       },
@@ -4955,7 +5049,7 @@
       "newlyAdded": true,
       "newlyAddedAt": "2026-10-16T07:30:00.000Z",
       "createdAt": "2026-10-16T07:30:00.000Z",
-      "updatedAt": "2026-10-16T07:30:00.000Z",
+      "updatedAt": "2026-10-16",
       "aliases": [],
       "searchTerms": [
         "통영 전혁림미술관 공식 사진",
@@ -4967,7 +5061,8 @@
         "상업 촬영·삼각대·조명 사용 가능 여부 사전 문의"
       ],
       "photoPotentialScore": 0,
-      "scoreStatus": "아직 점수화하지 않음"
+      "scoreStatus": "아직 점수화하지 않음",
+      "referenceImageStatus": "장소 참고 이미지"
     },
     {
       "id": "busan-national-maritime-museum",
@@ -5000,15 +5095,33 @@
       "phone": "공식 홈페이지 확인",
       "openingStatus": "운영시간·휴관일은 방문 전 공식 안내 확인",
       "shootingPermission": "상업 촬영·삼각대·조명 사용은 별도 확인",
-      "imageStatus": "대표 참고사진 확인 필요",
-      "primaryImageId": null,
-      "referenceImageId": null,
-      "imageCandidates": [],
+      "imageStatus": "장소별 참고사진 연결 · 실제 표시 확인 필요",
+      "primaryImageId": "ref-busan-national-maritime-museum-exterior",
+      "referenceImageId": "ref-busan-national-maritime-museum-exterior",
+      "imageCandidates": [
+        {
+          "id": "ref-busan-national-maritime-museum-exterior",
+          "title": "부산 국립해양박물관의 곡선 지붕과 유리 외벽",
+          "imageUrl": "https://koreabeyonddestinations.weebly.com/uploads/1/0/1/9/101902136/busan-national-maritime-museum-tabikr-korea_1.jpg",
+          "sourcePageUrl": "https://koreabeyonddestinations.weebly.com/busan-city.html",
+          "sourceName": "Korea Beyond Destinations",
+          "creator": "Korea Beyond Destinations",
+          "viewType": "박물관 외관·곡선 지붕",
+          "notes": "건물명이 표시된 박물관 외관 참고 이미지. 외관의 곡선과 유리 파사드를 확인할 수 있으며 출처·재사용 조건은 별도 확인.",
+          "sourceThumbnail": "https://koreabeyonddestinations.weebly.com/uploads/1/0/1/9/101902136/busan-national-maritime-museum-tabikr-korea_1.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T20:30:00.000Z"
+        }
+      ],
       "coordinates": null,
       "verification": {
         "location": "공식·공공 출처 확인 또는 추가 확인 필요",
-        "photoMatch": "대표사진 미연결",
-        "rights": "참고 이미지 추가 검토 필요",
+        "photoMatch": "장소가 명시된 출처 페이지의 사진 연결",
+        "rights": "참고용 · 재사용 조건 별도 확인",
         "shootingPermission": "방문 전 확인",
         "lastCheckedAt": "2026-10-16"
       },
@@ -5023,7 +5136,7 @@
       "newlyAdded": true,
       "newlyAddedAt": "2026-10-16T07:30:00.000Z",
       "createdAt": "2026-10-16T07:30:00.000Z",
-      "updatedAt": "2026-10-16T07:30:00.000Z",
+      "updatedAt": "2026-10-16",
       "aliases": [],
       "searchTerms": [
         "부산 국립해양박물관 공식 사진",
@@ -5035,7 +5148,8 @@
         "상업 촬영·삼각대·조명 사용 가능 여부 사전 문의"
       ],
       "photoPotentialScore": 0,
-      "scoreStatus": "아직 점수화하지 않음"
+      "scoreStatus": "아직 점수화하지 않음",
+      "referenceImageStatus": "장소 참고 이미지"
     },
     {
       "id": "gunsan-idang-art-museum",
@@ -5155,15 +5269,33 @@
       "phone": "공식 홈페이지 확인",
       "openingStatus": "운영시간·휴관일은 방문 전 공식 안내 확인",
       "shootingPermission": "상업 촬영·삼각대·조명 사용은 별도 확인",
-      "imageStatus": "대표 참고사진 확인 필요",
-      "primaryImageId": null,
-      "referenceImageId": null,
-      "imageCandidates": [],
+      "imageStatus": "장소별 참고사진 연결 · 실제 표시 확인 필요",
+      "primaryImageId": "ref-national-iksan-museum-entrance-gov",
+      "referenceImageId": "ref-national-iksan-museum-entrance-gov",
+      "imageCandidates": [
+        {
+          "id": "ref-national-iksan-museum-entrance-gov",
+          "title": "국립익산박물관 진입부와 지형에 열린 건축",
+          "imageUrl": "https://www.korea.kr/goNewsRes/attaches/innods/images/000176/SONG6736_640.jpg",
+          "sourcePageUrl": "https://gonggam.korea.kr/newsContentView.es?mid=a12601000000&news_id=adf35016-f909-4937-9b26-f5a98126c368&section_id=NCCD_PUBLISH",
+          "sourceName": "대한민국 정책브리핑 K-공감",
+          "creator": "대한민국 정부",
+          "viewType": "박물관 진입부·경사와 유리",
+          "notes": "국립익산박물관을 소개하는 정부 정책 콘텐츠의 진입부 사진. 미륵사지 유적과 연결되는 낮은 수평 건축의 형태를 참고할 수 있음.",
+          "sourceThumbnail": "https://www.korea.kr/goNewsRes/attaches/innods/images/000176/SONG6736_640.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T20:30:00.000Z"
+        }
+      ],
       "coordinates": null,
       "verification": {
         "location": "공식·공공 출처 확인 또는 추가 확인 필요",
-        "photoMatch": "대표사진 미연결",
-        "rights": "참고 이미지 추가 검토 필요",
+        "photoMatch": "장소가 명시된 출처 페이지의 사진 연결",
+        "rights": "참고용 · 재사용 조건 별도 확인",
         "shootingPermission": "방문 전 확인",
         "lastCheckedAt": "2026-10-16"
       },
@@ -5178,7 +5310,7 @@
       "newlyAdded": true,
       "newlyAddedAt": "2026-10-16T07:30:00.000Z",
       "createdAt": "2026-10-16T07:30:00.000Z",
-      "updatedAt": "2026-10-16T07:30:00.000Z",
+      "updatedAt": "2026-10-16",
       "aliases": [],
       "searchTerms": [
         "국립익산박물관 공식 사진",
@@ -5190,7 +5322,8 @@
         "상업 촬영·삼각대·조명 사용 가능 여부 사전 문의"
       ],
       "photoPotentialScore": 0,
-      "scoreStatus": "아직 점수화하지 않음"
+      "scoreStatus": "아직 점수화하지 않음",
+      "referenceImageStatus": "장소 참고 이미지"
     },
     {
       "id": "chuncheon-leesangwon-art-museum",
@@ -5312,15 +5445,33 @@
       "phone": "공식 홈페이지 확인",
       "openingStatus": "운영시간·휴관일은 방문 전 공식 안내 확인",
       "shootingPermission": "상업 촬영·삼각대·조명 사용은 별도 확인",
-      "imageStatus": "대표 참고사진 확인 필요",
-      "primaryImageId": null,
-      "referenceImageId": null,
-      "imageCandidates": [],
+      "imageStatus": "장소별 참고사진 연결 · 실제 표시 확인 필요",
+      "primaryImageId": "ref-geoje-jungledome-exterior",
+      "referenceImageId": "ref-geoje-jungledome-exterior",
+      "imageCandidates": [
+        {
+          "id": "ref-geoje-jungledome-exterior",
+          "title": "거제식물원 정글돔 유리 격자 외관",
+          "imageUrl": "https://www.bizhankook.com/upload/bk/article/202311/thumb/26672-64898-sample.jpg",
+          "sourcePageUrl": "https://bizhankook.com/articles/26672.html",
+          "sourceName": "비즈한국",
+          "creator": "비즈한국",
+          "viewType": "유리 온실 외관·기하학 구조",
+          "notes": "거제식물원 정글돔을 직접 소개하는 기사 이미지. 삼각 격자의 유리 돔과 입구 표기가 보여 장소 일치를 확인할 수 있음.",
+          "sourceThumbnail": "https://www.bizhankook.com/upload/bk/article/202311/thumb/26672-64898-sample.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T20:30:00.000Z"
+        }
+      ],
       "coordinates": null,
       "verification": {
         "location": "공식·공공 출처 확인 또는 추가 확인 필요",
-        "photoMatch": "대표사진 미연결",
-        "rights": "참고 이미지 추가 검토 필요",
+        "photoMatch": "장소가 명시된 출처 페이지의 사진 연결",
+        "rights": "참고용 · 재사용 조건 별도 확인",
         "shootingPermission": "방문 전 확인",
         "lastCheckedAt": "2026-10-16"
       },
@@ -5335,7 +5486,7 @@
       "newlyAdded": true,
       "newlyAddedAt": "2026-10-16T07:30:00.000Z",
       "createdAt": "2026-10-16T07:30:00.000Z",
-      "updatedAt": "2026-10-16T07:30:00.000Z",
+      "updatedAt": "2026-10-16",
       "aliases": [],
       "searchTerms": [
         "거제식물원 정글돔 공식 사진",
@@ -5347,7 +5498,8 @@
         "상업 촬영·삼각대·조명 사용 가능 여부 사전 문의"
       ],
       "photoPotentialScore": 0,
-      "scoreStatus": "아직 점수화하지 않음"
+      "scoreStatus": "아직 점수화하지 않음",
+      "referenceImageStatus": "장소 참고 이미지"
     },
     {
       "id": "gimpo-aegibong-peace-ecopark",
@@ -5468,15 +5620,33 @@
       "phone": "공식 홈페이지 확인",
       "openingStatus": "운영시간·휴관일은 방문 전 공식 안내 확인",
       "shootingPermission": "상업 촬영·삼각대·조명 사용은 별도 확인",
-      "imageStatus": "대표 참고사진 확인 필요",
-      "primaryImageId": null,
-      "referenceImageId": null,
-      "imageCandidates": [],
+      "imageStatus": "장소별 참고사진 연결 · 실제 표시 확인 필요",
+      "primaryImageId": "ref-daegu-suchang-youth-mansion-exterior",
+      "referenceImageId": "ref-daegu-suchang-youth-mansion-exterior",
+      "imageCandidates": [
+        {
+          "id": "ref-daegu-suchang-youth-mansion-exterior",
+          "title": "대구 수창청춘맨숀의 재생 산업건축 외관",
+          "imageUrl": "https://media.triple.guide/triple-cms/c_limit%2Cf_auto%2Ch_1024%2Cw_1024/f842a562-21b8-434b-8b34-e756d6bed425.jpeg",
+          "sourcePageUrl": "https://triple.guide/attractions/69f50f8d-305b-4f2b-825f-959d1f5bbf79",
+          "sourceName": "트리플",
+          "creator": "트리플",
+          "viewType": "산업·근대건축 재생 외관",
+          "notes": "수창청춘맨숀 장소 소개에 실린 외관 이미지. 기존 아파트의 구조와 표면 질감을 확인할 수 있어 뉴트로 에디토리얼 참고에 적합.",
+          "sourceThumbnail": "https://media.triple.guide/triple-cms/c_limit%2Cf_auto%2Ch_1024%2Cw_1024/f842a562-21b8-434b-8b34-e756d6bed425.jpeg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T20:30:00.000Z"
+        }
+      ],
       "coordinates": null,
       "verification": {
         "location": "공식·공공 출처 확인 또는 추가 확인 필요",
-        "photoMatch": "대표사진 미연결",
-        "rights": "참고 이미지 추가 검토 필요",
+        "photoMatch": "장소가 명시된 출처 페이지의 사진 연결",
+        "rights": "참고용 · 재사용 조건 별도 확인",
         "shootingPermission": "방문 전 확인",
         "lastCheckedAt": "2026-10-16"
       },
@@ -5491,7 +5661,7 @@
       "newlyAdded": true,
       "newlyAddedAt": "2026-10-16T07:30:00.000Z",
       "createdAt": "2026-10-16T07:30:00.000Z",
-      "updatedAt": "2026-10-16T07:30:00.000Z",
+      "updatedAt": "2026-10-16",
       "aliases": [],
       "searchTerms": [
         "대구 수창청춘맨숀 공식 사진",
@@ -5503,7 +5673,8 @@
         "상업 촬영·삼각대·조명 사용 가능 여부 사전 문의"
       ],
       "photoPotentialScore": 0,
-      "scoreStatus": "아직 점수화하지 않음"
+      "scoreStatus": "아직 점수화하지 않음",
+      "referenceImageStatus": "장소 참고 이미지"
     },
     {
       "id": "seogwipo-soraseong",
@@ -5536,15 +5707,33 @@
       "phone": "공식 홈페이지 확인",
       "openingStatus": "운영시간·휴관일은 방문 전 공식 안내 확인",
       "shootingPermission": "상업 촬영·삼각대·조명 사용은 별도 확인",
-      "imageStatus": "대표 참고사진 확인 필요",
-      "primaryImageId": null,
-      "referenceImageId": null,
-      "imageCandidates": [],
+      "imageStatus": "장소별 참고사진 연결 · 실제 표시 확인 필요",
+      "primaryImageId": "ref-seogwipo-soraseong-exterior-yonhap-2026",
+      "referenceImageId": "ref-seogwipo-soraseong-exterior-yonhap-2026",
+      "imageCandidates": [
+        {
+          "id": "ref-seogwipo-soraseong-exterior-yonhap-2026",
+          "title": "서귀포 소라의성의 곡선·석재 외관",
+          "imageUrl": "https://img7.yna.co.kr/etc/inner/KR/2026/04/24/AKR20260424117300056_01_i_P4.jpg",
+          "sourcePageUrl": "https://www.yna.co.kr/view/AKR20260424117300056",
+          "sourceName": "연합뉴스",
+          "creator": "연합뉴스",
+          "viewType": "해안 건축 유산·석재와 곡선",
+          "notes": "소라의성을 직접 다루는 최근 연합뉴스 기사 이미지. 석재 벽, 곡선형 흰 매스, 해안 식생이 함께 보여 건축 형태 참고에 유용.",
+          "sourceThumbnail": "https://img7.yna.co.kr/etc/inner/KR/2026/04/24/AKR20260424117300056_01_i_P4.jpg",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "status": "candidate",
+          "createdAt": "2026-10-16T20:30:00.000Z"
+        }
+      ],
       "coordinates": null,
       "verification": {
         "location": "공식·공공 출처 확인 또는 추가 확인 필요",
-        "photoMatch": "대표사진 미연결",
-        "rights": "참고 이미지 추가 검토 필요",
+        "photoMatch": "장소가 명시된 출처 페이지의 사진 연결",
+        "rights": "참고용 · 재사용 조건 별도 확인",
         "shootingPermission": "방문 전 확인",
         "lastCheckedAt": "2026-10-16"
       },
@@ -5559,7 +5748,7 @@
       "newlyAdded": true,
       "newlyAddedAt": "2026-10-16T07:30:00.000Z",
       "createdAt": "2026-10-16T07:30:00.000Z",
-      "updatedAt": "2026-10-16T07:30:00.000Z",
+      "updatedAt": "2026-10-16",
       "aliases": [],
       "searchTerms": [
         "서귀포 소라의성 공식 사진",
@@ -5571,7 +5760,8 @@
         "상업 촬영·삼각대·조명 사용 가능 여부 사전 문의"
       ],
       "photoPotentialScore": 0,
-      "scoreStatus": "아직 점수화하지 않음"
+      "scoreStatus": "아직 점수화하지 않음",
+      "referenceImageStatus": "장소 참고 이미지"
     }
   ]
 }
