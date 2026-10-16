@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-99; canonical count reconciliation and photo audit passed
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; force-refresh PC/mobile cache after 201-vs-200 report
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -9,8 +9,8 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-99; 
 - This checkpoint records the work so a dropped ChatGPT connection does not require restarting the project from the beginning. Code changes are stored in Git commits, not only in the conversation.
 
 ## Current verified UI state
-- Current integrated catalog count is 200 unique locations: base catalog 151 + supplement 65 − 16 ID/name matches = 200. This count is confirmed by the catalog merge/validation report. The latest 14 additions now each have a primary and reference image candidate assignment.
-- GitHub Actions quality run #557 passed on build 20261016-99, including the desktop/mobile smoke suite, canonical count tests, unpublished local-draft preservation test, newest-14 photo-load check, catalog validation, report consistency, backup/photo/device-sync tests. Pages deployment #595 passed for the same build. The exact 200-count reconciliation is regression-tested; the actual user PC browser storage cannot be inspected remotely.
+- Current integrated catalog count is 200 unique locations: base catalog 151 + supplement 67 − 18 ID/name matches = 200. This count is confirmed by the catalog merge/validation report. The latest 14 additions now each have a primary and reference image candidate assignment.
+- GitHub Actions quality run #562 passed on build 20261016-99, including the desktop/mobile smoke suite, canonical count tests, unpublished local-draft preservation test, newest-14 photo-load check, catalog validation, report consistency, backup/photo/device-sync tests. Pages deployment #601 passed for the same build. The exact 200-count reconciliation is regression-tested; the actual user PC browser storage cannot be inspected remotely. Build 20261016-100 has now been committed to force-refresh the installed/desktop caches; await its own quality and Pages runs before declaring that cache-refresh release verified.
 - A floating “맨 위로” control appears after scrolling.
 - A floating “전체 촬영장소로 돌아가기” control is available from a selected place detail.
 - The first screen fits the version header, splash copy and creator credits into a fixed viewport, with nationwide (not Seoul-area-only) wording.
