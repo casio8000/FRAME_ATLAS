@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T00:39:05.920Z",
-  "description": "15 additional art, architecture and sculpture locations emphasizing Korean material culture with global editorial potential. Loaded as supplemental records and merged by ID.",
+  "updatedAt": "2026-10-16T01:12:00.000Z",
+  "description": "Curated art, architecture and photo location references. Image overrides are merged by place ID or normalized name so desktop and mobile use the same confirmed candidate.",
   "places": [
     {
       "id": "yangpyeong-lee-jaehyo-gallery",
@@ -1871,6 +1871,84 @@
           "notes": "충남관광의 한국고건축박물관 대표 이미지. 전통 목조건축의 처마·공포·입면을 촬영 참고자료로 활용.",
           "status": "candidate",
           "createdAt": "2026-10-16T01:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "snu-museum-of-art",
+      "name": "서울대학교미술관",
+      "curationOverride": true,
+      "primaryImageId": "ref-snu-moa-exterior-yna-20261016",
+      "referenceImageId": "ref-snu-moa-exterior-yna-20261016",
+      "imageCandidates": [
+        {
+          "id": "ref-snu-moa-exterior-yna-20261016",
+          "title": "서울대학교미술관 유리 파사드와 외부 조각광장",
+          "imageUrl": "https://img6.yna.co.kr/etc/inner/KR/2026/04/16/AKR20260416162800005_01_i_P4.jpg",
+          "sourceThumbnail": "https://img6.yna.co.kr/etc/inner/KR/2026/04/16/AKR20260416162800005_01_i_P4.jpg",
+          "sourcePageUrl": "https://www.yna.co.kr/amp/view/AKR20260416162800005",
+          "sourceName": "연합뉴스",
+          "creator": "연합뉴스 사진",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "현대 건축 외관·유리 파사드·광장",
+          "notes": "서울대학교미술관의 실제 유리 파사드와 전면 광장, 외부 조각을 담은 장소 확인용 참고 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:10:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "seoul-ewha-ecc",
+      "name": "이화여자대학교 ECC (이화캠퍼스복합단지)",
+      "curationOverride": true,
+      "primaryImageId": "ref-ewha-ecc-sunken-ohmynews-20261016",
+      "referenceImageId": "ref-ewha-ecc-sunken-ohmynews-20261016",
+      "imageCandidates": [
+        {
+          "id": "ref-ewha-ecc-sunken-ohmynews-20261016",
+          "title": "이화여대 ECC 선큰 광장과 양측 유리·금속 파사드",
+          "imageUrl": "https://ojsfile.ohmynews.com/PHT_IMG_FILE/2017/0308/IE002121815_PHT.jpg",
+          "sourceThumbnail": "https://ojsfile.ohmynews.com/PHT_IMG_FILE/2017/0308/IE002121815_PHT.jpg",
+          "sourcePageUrl": "https://www.ohmynews.com/NWS_Web/View/img_pg.aspx?CNTN_CD=IE002121815",
+          "sourceName": "오마이뉴스",
+          "creator": "오마이뉴스 사진",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "현대 건축·선큰 광장·대칭 원근",
+          "notes": "ECC의 길게 이어지는 선큰 광장과 양측 경사진 파사드를 보여주는 장소 확인용 사진.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:11:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "wanju-samrye-culture-art-village",
+      "name": "완주 삼례문화예술촌",
+      "curationOverride": true,
+      "primaryImageId": "ref-samrye-warehouse-seoulnews-20261016",
+      "referenceImageId": "ref-samrye-warehouse-seoulnews-20261016",
+      "imageCandidates": [
+        {
+          "id": "ref-samrye-warehouse-seoulnews-20261016",
+          "title": "삼례문화예술촌의 재생된 옛 양곡창고 건축",
+          "imageUrl": "https://img.seoul.co.kr/img/upload/2016/10/19/SSI_20161019191625.jpg",
+          "sourceThumbnail": "https://img.seoul.co.kr/img/upload/2016/10/19/SSI_20161019191625.jpg",
+          "sourcePageUrl": "https://www.seoul.co.kr/news/plan/kimnam/2016/10/20/20161020021002",
+          "sourceName": "서울신문",
+          "creator": "서울신문 사진",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "재생 건축·산업 창고·외관",
+          "notes": "옛 양곡창고를 문화공간으로 재생한 삼례문화예술촌의 건축 외관 참고 이미지.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T01:12:00.000Z"
         }
       ]
     }
