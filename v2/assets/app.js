@@ -413,6 +413,15 @@ async function loadBase(){
    try{localStorage.setItem(BASELINE_KEY,JSON.stringify(base));localStorage.removeItem(LEGACY_DRAFT_KEY);}catch(_){}
   }
   const source=draft&&Array.isArray(draft.places)?mergePublishedPhotoReferences(draft,base):base;
+  // Keep published "newly added" labels current even when this device has an older local draft.
+  // Only sync this display metadata; preserve the device's other personal edits and photos.
+  if(Array.isArray(source.places)){
+   const publishedNewPlaces=new Map((base.places||[]).filter(p=>p&&p.newlyAdded).map(p=>[p.id,p]));
+   for(const place of source.places){
+    const published=publishedNewPlaces.get(place.id);
+    if(published){place.newlyAdded=true;place.newlyAddedAt=published.newlyAddedAt||published.createdAt||published.updatedAt||"2026-10-16";}
+   }
+  }
   // Remove unfinished registration drafts including "50번" and "51번 새 촬영장소(이름입력)".
   if(Array.isArray(source.places)){
    const beforeCount=source.places.length;
