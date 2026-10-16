@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-88; location research batch 2 recorded
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-94; latest 14 photo references assigned
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -9,7 +9,7 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-88; 
 - This checkpoint records the work so a dropped ChatGPT connection does not require restarting the project from the beginning. Code changes are stored in Git commits, not only in the conversation.
 
 ## Current verified UI state
-- The V2 catalog now holds 136 registered locations across the nationwide archive. The old checkpoint's 34-place figure was stale and has been superseded.
+- Current integrated catalog count is 200 unique locations: base catalog 151 + supplement 65 − 16 ID/name matches = 200. This count is confirmed by the catalog merge/validation report. The latest 14 additions now each have a primary and reference image candidate assignment.
 - The last recorded browser smoke run stopped at a flaky scroll on a changing card; this commit removes that unnecessary scroll before rerunning the whole test. Do not claim end-to-end pass until the next Actions run completes.
 - A floating “맨 위로” control appears after scrolling.
 - A floating “전체 촬영장소로 돌아가기” control is available from a selected place detail.
@@ -222,9 +222,11 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-88; 
 - Verification still required after deployment: GitHub Actions FRAME ATLAS quality checks, pages build and deployment, and a fresh app open to confirm the supplemental JSON and candidate photos render.
 
 
-## Release 2026-10-16 · newest 14 photo pass (in progress)
-- User priority: finish the latest approximately 14 location photos and the “새로 추가된 장소” section before any unrelated feature work; consolidate the catalog toward 200 locations.
-- Identified the 14 newest photo-unassigned candidates created at 2026-10-16T07:30Z: 양주 장욱진미술관, 안양 김중업건축박물관, 대구 간송미술관, 제주 유민미술관, 제주 글라스하우스(휘닉스 아일랜드), 통영 전혁림미술관, 부산 국립해양박물관, 군산 이당미술관, 국립익산박물관, 춘천 이상원미술관, 거제식물원 정글돔, 김포 애기봉평화생태공원, 대구 수창청춘맨숀, 서귀포 소라의성.
-- Added place-matched reference image candidates from tourism source pages for 제주 유민미술관, 춘천 이상원미술관, 김포 애기봉평화생태공원, 군산 이당미술관. Commit sequence: 25e6b9e4 and 56320b2b.
-- Remaining 10 of the newest 14 still have no verified image candidate. Do not mark the batch complete until each remaining image is matched to the actual place and the image load is checked. The exact catalog count and PC/mobile visual parity still require a live deployed smoke test.
-- Official/public tourism page evidence located for 양주 장욱진미술관, 안양 김중업건축박물관, 대구 간송미술관, 거제식물원 정글돔, 대구 수창청춘맨숀, and other remaining locations; direct image URLs and actual display need to be added/verified before completion.
+## Release 2026-10-16 · latest 14 photo references assigned
+- User priority remains: finish the recent location photos and the “새로 추가된 장소” section before unrelated work.
+- The 14 newest locations now all have a matching image candidate, and both `primaryImageId` and `referenceImageId` point to that candidate: 양주 장욱진미술관, 안양 김중업건축박물관, 대구 간송미술관, 제주 유민미술관, 제주 글라스하우스(휘닉스 아일랜드), 통영 전혁림미술관, 부산 국립해양박물관, 군산 이당미술관, 국립익산박물관, 춘천 이상원미술관, 거제식물원 정글돔, 김포 애기봉평화생태공원, 대구 수창청춘맨숀, 서귀포 소라의성.
+- Each of the 14 external photo URLs was opened and visually checked against a corresponding place/source page during this pass. These are still reference images, not locally hosted assets; if a remote host blocks hotlinking or changes an address, fallback behavior may be needed.
+- Set `curationOverride=true` for this 14-place batch so a same-ID/name record already in the base catalog inherits the curated image references rather than being duplicated. Updated `syncAttachSupplementalPlaces()` to also carry over `newlyAdded`, `newlyAddedAt`, `imageStatus`, and `referenceImageStatus` for existing matches, so the recent-location section remains consistent across devices.
+- Updated app build, service worker, manifest, and root entry to `20261016-94` to refresh the correct files after the merge fix.
+- Validation report after merging: base 151, supplement 65, 16 matches, 49 appended, 200 unique locations; 302 photo candidates; every location has at least one photo candidate and all 200 have a reference-photo assignment. 38 places have an explicit primary-image ID; the recent 14 all have one.
+- Remaining verification: wait for the latest GitHub Actions quality check and Pages deployment to finish, then visually confirm the live “새로 추가된 장소” cards and all-place list on PC and iPhone. Do not claim the live PC/iPhone screen test is complete before that check.
