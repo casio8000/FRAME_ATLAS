@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 1
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 2
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -275,3 +275,13 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100;
 - Post-merge result: **200 unique locations**, **307 photo candidates**, 271 confirmed, 34 unverified, 1 unconfirmed, and 1 mismatch. The state table includes rejected-history candidates; the active match-review count is 34. There remain 306 candidates whose image reuse rights are not clearly cleared.
 - Checked the successful desktop/mobile smoke artifacts from quality run #567 (build 100): 200/200 catalog cards rendered, 200/200 displayed image elements loaded, and 0 held/missing/pending images in the captured audit. All latest 14 locations remained loaded. The actual physical iPhone Safari/PWA acceptance test remains outstanding.
 - Sources reviewed: FN News article on Gyeongchun Forest Trail (https://www.fnnews.com/news/202110051153483478); Nongmin Hanyang Fortress/Naksan route article (https://www.nongmin.com/article/20250317500224); Starfield Suwon Byeolmadang Library photo source (https://koreacrate.com/blogs/blog/starfield-byeolmadang-library-opens-in-suwon-south-korea).
+
+
+## Release 2026-10-16 · Photo audit batch 2 and duplicate candidate cleanup
+- Created safety branch `backup/pre-image-audit-batch2-2026-10-16` from pre-audit main commit `0b29197f8aa2d3c4509a6b04af19666dab27a694` before editing image candidate records.
+- Kept the shared catalog frozen at 200 unique locations. Existing active reference selections were not changed.
+- Checked source pages/direct imagery for LG Art Center Seoul's TUBE, Jangsaengpo Culture Warehouse's media-art interior, Seoul Upcycling Plaza, Seoul New City Hall's curved glass facade, and Seoul Urban Life Museum. Exact or www/non-www alias URLs with identical file paths were matched before duplicate records were pruned.
+- Eight redundant candidate records were excluded from the active photo gallery: LG Art Center (1), Jangsaengpo Culture Warehouse (1), Seoul Upcycling Plaza (2), Seoul City Hall (3), and Seoul Urban Life Museum (1). Their original source URLs and notes were preserved; chosen reference candidates remain active and unchanged.
+- Recomputed the catalog report from both data lists: 200 locations, 307 photo candidate records including rejected history, 26 unresolved active image-match candidates, 306 candidates with reuse rights not clearly cleared, and 0 structural/selected-reference errors.
+- The latest 14 new-location photo assignments remain unchanged. Automated quality checks for the preceding batch passed and its Pages deployment succeeded. This batch awaits its own quality test and deployment result.
+- Source checks: LG Art Center official TUBE architectural tour (https://www.lgart.com/architecture/ko/audio/5); Seoul Mediahub Upcycling Plaza page (https://mediahub.seoul.go.kr/archives/2018487); Seoul Mediahub New City Hall page (https://mediahub.seoul.go.kr/archives/160215); Seoul Urban Life Museum name visible in its exterior image (source recorded in catalog); MK News photo source for Jangsaengpo Culture Warehouse (https://www.mk.co.kr/news/society/11079574).
