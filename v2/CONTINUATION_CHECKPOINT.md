@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; rights-status normalization batch 8
+Last updated: 2026-10-16 (Korea Standard Time) — image-load reliability batch 9
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -341,3 +341,13 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100;
 - Enhanced `tools/validate.py` so any future candidate without a recognized standard rights status fails quality validation; regenerated `tools/report.md` with status completeness and an explicit note that normalization does not grant reuse permission.
 - Updated the Korean user manual and changed its link query to `v=20261016-108` for cache freshness. Did not change app functionality, place IDs, selected photo IDs, or the 200-place target.
 - Next review should prioritize explicit license evidence first, then sources with separate image-use rules. External URL runtime loading and real iPhone rendering remain separate checks.
+
+
+## Release 2026-10-16 · Image-load reliability batch 9
+- Created safety branch `backup/pre-image-load-reliability-batch9-2026-10-16` from pre-change main commit `7988ad8b70e783d2dd6540043475ba855291ca6b`.
+- The preceding desktop browser audit loaded **199/200** active reference images; Daecheongho Meditation Garden was the only missing image. Its Kakao CDN URL and the wsrv thumbnail fallback both failed in the audit.
+- Replaced the selected Daecheongho reference URL with the direct image URL from Daejeon Metropolitan City's official Story Daejeon blog, republished on Wello. The image shows an entrance deck, trail-sign board, and lake; the source page is retained. The failed URL/source are saved in `lastFailedImageUrl` and `lastFailedSourcePageUrl`.
+- Added smoke-test release gates: desktop audit fails on any active image missing-state; Daecheongho must load from the verified replacement host; mobile archive audit also fails on any missing-image card.
+- No place count, selected photo ID, or rights status changed. Daecheongho rights status remains `review-required` pending separate review.
+- Source page: https://www.welfarehello.com/community/hometownNews/0649c2c6-11f2-4650-acd7-3e300a6daf5a (the page identifies the source blog as Daejeon Metropolitan City's Story Daejeon).
+- Quality check and Pages deployment for this batch are pending.
