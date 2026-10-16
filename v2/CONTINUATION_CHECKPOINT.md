@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 6
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 7
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -322,3 +322,13 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100;
 - No locations were added and no selected primary/reference-photo IDs were changed. The shared catalog remains **200 places**, **307 candidate records including history**, **4 active place-match review candidates**, **306 image candidates whose reuse rights are not clearly cleared**, and **0 structural/selected-image errors**.
 - The Korean user manual was updated with the same audit summary and its link query changed to `v=20261016-106` to avoid stale browser cache. Application JSON is requested with no-store/time-varying URLs, so the app shell build remains 20261016-100.
 - Source pages reviewed: Solgeo Art Museum/NOL World (https://world.nol.com/en/content/pois/29e25710-c7f9-46eb-91f6-a40319ef80cb); Jangnim Port photo reference (https://triple.guide/articles/45dad00e-703f-4633-bad0-29c3ae19f288); Arte Museum Gangneung (https://cn.artemuseum.com/GANGNEUNG); FNN CJ ENM Studio Center (https://www.fnn.jp/articles/-/385893?display=full); Hyangho Beach (https://triple.guide/attractions/2bddb32c-d3da-43d2-ab15-197ddf317121); Daegu Art Museum exhibition photo caption (https://m.aaart.co.kr/m/m_article.html?no=8704); Iksan Prison Film Set article (https://v.daum.net/v/KaxpzHBW82?f=p).
+
+
+## Release 2026-10-16 · Photo audit batch 7 — last unresolved source matches
+- Created safety branch `backup/pre-image-audit-batch7-2026-10-16` from pre-audit main commit `9ac5a05b8a2bd0e62fd018d3e6012f9bc65abb8f`.
+- Linked the official Leeum Museum of Art lobby/rotunda photo from the museum's own introduction page; the direct image shows the curved light well, columns, and reflective floor. The candidate's previously blank image URL is now populated.
+- Replaced the broken Sodaeheon–Hoyeonjae heritage-house image with a direct photograph on Daejeon Metropolitan City's official Daejeon Is You page, within the section specifically titled ‘소대헌·호연재 고택’.
+- Confirmed the Nakdong Estuary Eco Center photo against the Chosun Ilbo original caption, which names the center exterior inside Eulsukdo Ecological Park and attributes the image to Busan City.
+- Updated Daecheongho Meditation Garden's selected reference to a ground-level photo showing the actual garden sign, timber boardwalk, and circular platform. The matching high-angle Joongdo image is retained as a rejected duplicate history record.
+- Post-merge: **200 locations**, **307 candidate records**, **0 active location-match review candidates**, **306 reuse-rights candidates not clearly cleared**, and **0 structural/selected-photo errors**. No selected reference points to a rejected candidate, and every photo candidate now has a URL or stored asset reference.
+- Source pages: Leeum Museum official gallery/interior photo (https://www.leeumhoam.org/leeum/info/museum); Daejeon City's official traditional-house article (https://www.daejeon.go.kr/its/ItsdjNormalboardView.do?boardGubun=itsdj01&boardSeq=3548&menuSeq=5929&pageIndex=1&searchCondition=TOTAL&searchKeyword=%EC%82%AC%ED%9A%8C%EC%A0%81%EA%B2%BD%EC%A0%9C); Chosun Ilbo's Nakdong Estuary Eco Center reopening photo (https://www.chosun.com/national/regional/yeongnam/2024/05/02/4WK2RC6YVFFHZAF77ANANRPHBU/?outputType=amp); Daecheongho Meditation Garden photo article (https://njob-crew.com/entry/%EC%98%AC-%EC%97%AC%EB%A6%84-%EC%82%AC%EC%83%89%EC%9D%98-%EC%84%AC%EC%9C%BC%EB%A1%9C-%EB%96%A0%EB%82%98%EC%9A%94-%EB%8C%80%EC%B2%AD%ED%98%B8-%EB%AA%85%EC%83%81%EC%A0%95%EC%9B%90-%ED%9E%90%EB%A7%81%EC%97%AC%ED%96%89-%EC%97%B4%EB%A6%B0%EA%B4%80%EA%B4%91%EC%A7%80).
