@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — mobile image audit batch 12 and rights metadata audit batch 13
+Last updated: 2026-10-17 (Korea Standard Time) — mobile image audit batch 14, rights metadata batch 13 and Sorae image URL repair
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -408,3 +408,11 @@ Last updated: 2026-10-17 (Korea Standard Time) — mobile image audit batch 12 a
 - Quality run #581 verified the 200-place catalog and photo/license validation successfully but then failed the report-consistency step because the Python report generator still emitted the older generic rights disclaimer while the checked-in `tools/report.md` had the more precise CC BY/CC BY-SA/CC0 explanation. The report body and actual counts matched; the discrepancy was one explanatory paragraph.
 - Updated the generator's disclaimer to match the checked-in report exactly. No place data, photo URL, selected photo, license metadata, or status was changed.
 - Quality run #582 is separately testing the per-card mobile loading retry introduced in batch 14. A new quality/Pages cycle will validate this report hotfix and the broader mobile retry logic.
+
+
+## Release 2026-10-17 · Sorae wetland photo URL repair batch 16
+- Created from main commit `93266c1c2e11e258b1f01034726f23486361ae99` after quality run #582 failed during the desktop photo audit because the Sorae reference candidate's preview URL was wrapped again by the app's fallback proxy, creating a nested proxy URL and a confirmed missing-image state.
+- Replaced the nested proxy preview with the separate direct image endpoint used by Incheon Tour's official Sorae Wetland Ecological Park detail page: `https://itour.incheon.go.kr/common/viewImg.do?imgId=DBI21121615182359828`. The new photo visibly shows an actual wooden windmill and wetland boardwalk.
+- Preserved the original Incheon City direct URL in `previousImageUrl`, the failed nested proxy in `lastFailedImageUrl`, and the earlier source page in `previousSourcePageUrl`. The official Incheon Tour detail page now supplies `sourcePageUrl`; usage rights remain `review-required` because photo-specific reuse conditions are not yet verified.
+- The licensed Wikimedia CC BY 3.0 Sorae salt-field model remains `rejected/mismatch` with all author/license metadata preserved; it is no longer the selected reference.
+- Catalog remains 200 locations and 307 photo candidate records. Quality run #583 is testing the report-disclaimer hotfix; this URL change triggers another desktop/mobile verification cycle.
