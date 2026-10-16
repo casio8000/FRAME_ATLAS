@@ -749,6 +749,8 @@ function renderLanding(){
  syncRegionFilters();
  const grid=$("homeFeaturedGrid");if(!grid)return;
  const places=Array.isArray(catalog.places)?catalog.places:[];
+ const localDraftNotice=$("localDraftNotice"),localDraftCount=readLocalOnlyPlaces().length;
+ if(localDraftNotice){localDraftNotice.hidden=!localDraftCount;localDraftNotice.textContent=localDraftCount?"이 기기에만 있던 미게시 초안 "+localDraftCount+"건을 별도 보존했습니다. 공통 장소 목록은 "+places.length+"곳입니다. 필요하면 관리자 모드에서 JSON 내보내기로 백업할 수 있습니다.":"";}
  $("homeCountPlaces").textContent=places.length;if($("homeFeaturedCount"))$("homeFeaturedCount").textContent=places.length;
  $("homeCountPhotos").textContent=places.filter(p=>!!activePhoto(p)).length;
  const get=id=>places.find(p=>p.id===id);
