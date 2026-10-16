@@ -3847,7 +3847,9 @@
       "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
       "priorityLabel": "우선 답사 후보",
       "createdAt": "2026-10-16",
-      "updatedAt": "2026-10-16"
+      "updatedAt": "2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16"
     },
     {
       "id": "seoul-sema-art-archives",
@@ -3965,7 +3967,9 @@
       "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
       "priorityLabel": "우선 답사 후보",
       "createdAt": "2026-10-16",
-      "updatedAt": "2026-10-16"
+      "updatedAt": "2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16"
     },
     {
       "id": "seoul-gana-art-center",
@@ -4084,7 +4088,9 @@
       "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
       "priorityLabel": "우선 답사 후보",
       "createdAt": "2026-10-16",
-      "updatedAt": "2026-10-16"
+      "updatedAt": "2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16"
     },
     {
       "id": "seoul-boan1942-artspace",
@@ -4204,7 +4210,9 @@
       "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
       "priorityLabel": "우선 답사 후보",
       "createdAt": "2026-10-16",
-      "updatedAt": "2026-10-16"
+      "updatedAt": "2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16"
     },
     {
       "id": "seoul-piknic-cultural-space",
@@ -4306,7 +4314,9 @@
       "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
       "priorityLabel": "조건 확인 후 답사",
       "createdAt": "2026-10-16",
-      "updatedAt": "2026-10-16"
+      "updatedAt": "2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16"
     },
     {
       "id": "pohang-space-walk",
@@ -4423,7 +4433,9 @@
       "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
       "priorityLabel": "우선 답사 후보",
       "createdAt": "2026-10-16",
-      "updatedAt": "2026-10-16"
+      "updatedAt": "2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16"
     },
     {
       "id": "gg-anyang-pavilion-alvaro-siza",
@@ -4526,7 +4538,9 @@
       "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
       "priorityLabel": "우선 답사 후보",
       "createdAt": "2026-10-16",
-      "updatedAt": "2026-10-16"
+      "updatedAt": "2026-10-16",
+      "newlyAdded": true,
+      "newlyAddedAt": "2026-10-16"
     }
   ]
 }
