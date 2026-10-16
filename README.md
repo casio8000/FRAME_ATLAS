@@ -16,7 +16,7 @@ https://casio8000.github.io/FRAME_ATLAS/v2/index.html
 - `v2/CONTINUATION_CHECKPOINT.md`: 다음 작업을 이어갈 때 확인할 최신 체크포인트
 - `.github/workflows/quality-check.yml`: 데이터·앱·PC/모바일 브라우저 자동 검사
 
-저장소 루트의 `index.html`과 `data/`는 이전 v5 앱과의 호환성을 위해 보존 중입니다. 2.0에 모든 기능이 이관되고 검증되기 전에는 루트 앱이나 해당 데이터·백업·동기화 파일을 삭제하지 않습니다.
+저장소 루트의 `index.html`은 FRAME ATLAS 2.0으로 이동시키는 진입점입니다. 중복 V5.44 화면 파일은 자동 검사가 실제 서비스 중인 2.0을 직접 검증하도록 바꾼 뒤 기본 브랜치에서 제거했습니다. 원본 파일은 `backup/legacy-material-before-cleanup-2026-10-15` 브랜치의 루트 `index.html`과 동일한 Git blob(SHA `ec2ffb4e88c379751076a9e0a7b49ed84db72f41`)로 보존됩니다. 루트의 `data/`, `sw.js`, `manifest.json` 및 백업·동기화 모듈은 오프라인·복구 경로와 2.0으로의 기능 이관을 추가 점검하기 전까지 유지합니다.
 
 ## 관리자 모드와 게시 권한
 

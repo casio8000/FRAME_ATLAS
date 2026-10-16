@@ -35,12 +35,10 @@ Date: 2026-10-16 (Korea Standard Time)
 - v2/assets/app.js publishes the large places.json using GitHub's Contents API. The API's content payload may be omitted for files above 1 MiB; the read path has now been changed to fetch raw JSON separately while retaining the Contents SHA for safe update. This needs to pass Actions and be verified in the browser before considered complete.
 
 ## Next steps
-1. Confirm latest Actions result and verify the root index, v2 manifest and build references.
-2. Inspect root sw.js/manifest.json and all code references to legacy-v5.44.html, legacy root scripts, and old data files.
-3. Inspect quality-check script/test assumptions before deleting any legacy files.
-4. Compare v2 base and supplemental catalog counts/IDs without losing or duplicating locations. Use a full-data retrieval path before any large JSON write.
-5. Inspect image publishing flow end-to-end: local IndexedDB staging -> GitHub image file upload -> catalog assetPath update -> public image render -> failure recovery.
-6. Standardize future images to repository-relative assetPath, with source/rights/place-match metadata, while allowing older external imageUrl/sourceThumbnail references to remain until migrated.
-7. Review service-worker cache rules and unify build identifiers in index, manifest, CSS/JS URLs and worker.
-8. Remove obsolete files only after dependency/reference audit, backup, and quality tests. Prefer one small change per commit.
-9. Report what is verified versus what still requires user testing on PC/iPhone. Never claim device validation based on code inspection alone.
+1. Verify the new cleanup commit's Actions quality run and Pages deployment. Previous v2 browser smoke testing passed on the pre-cleanup commit; repeat it after the deletion.
+2. Continue auditing root `sw.js`, `manifest.json`, `data/places.js`, old sync/backup modules and icons. Do not delete these as a batch: first identify root-PWA offline behavior and any useful recovery functions.
+3. Preserve the 214-location validated legacy dataset and the current v2 base/supplemental JSON; compare IDs with a full-data retrieval path before any catalog modification.
+4. Confirm the photo flow end-to-end in the actual app when available: select local file (JPEG/PNG/WebP/AVIF, up to 8 MB) -> IndexedDB staging -> GitHub `v2/assets/places/<placeId>/<candidateId>.<ext>` upload -> catalog `assetPath`/relative `imageUrl` update -> public reload on PC and iPhone. Code paths and CI markers have been inspected, but a real write using the user's GitHub token has not been performed.
+5. Improve photo publishing recovery if real use reveals orphaned uploads, size/memory problems or stale catalog conflicts. Keep previous external URLs working and migrate only when the exact place/photo match has been confirmed.
+6. Keep build ID `20261016-89` synchronized among `v2/index.html`, `v2/sw.js`, and `v2/manifest.webmanifest` until the next coherent build bump.
+7. Report verified automated test results separately from PC/iPhone live-use checks. Never treat source inspection as proof of an actual photo upload or device synchronization.
