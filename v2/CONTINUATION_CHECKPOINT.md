@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 5
+Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100; count reconciliation plus photo-audit batch 6
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -313,3 +313,12 @@ Last updated: 2026-10-16 (Korea Standard Time) — app shell build 20261016-100;
   - Incheon Open Port now points to Incheon City's tourism site photo of the Qing/Japanese concession-boundary staircase and surrounding historic street; the old TripPose URL remains as history.
 - Post-merge catalog: **200 locations**, **307 photo candidates**, **13 active place-match review candidates**, **306 reuse-rights candidates still not clearly cleared**, and **0 structural or selected-reference errors**. All edited candidates remain alternates; existing selected primary/reference IDs are unchanged.
 - Official/venue source pages checked: Daelim Changgo venue photo and place description (https://visit.seoul.kr/en/places/daelim-changgo); Daejeon City's Lee Ungno Museum photo record (https://photo.daejeon.go.kr/prog/photodbCate/74387/view.do?cateNo=50&mno=sub01_05) and its separate photo-use rules (https://photo.daejeon.go.kr/kor/sitemap_15.do); VisitKorea's UN Sculpture Park photo page (https://www.koreatriptips.com/en/tourist-attractions/2953407.html); Incheon tourism's Qing/Japanese Concession Boundary Steps (https://chn-itour.incheon.go.kr/cmn/board/BBSMSTR_000000000081/2052bbsDetail.do).
+
+
+## Release 2026-10-16 · Photo audit batch 6 — source-matched references
+- Created safety branch `backup/pre-image-audit-batch6-2026-10-16` from current main commit `1c4850fabfa2a8e81eb8ca10cd4fac9765639613` before edits.
+- Confirmed seven active candidate/source pairs and updated photo descriptions: Solgeo Art Museum interior (NOL World photo listing); Arte Museum Gangneung immersive ocean projection (official museum location page); CJ ENM Studio Center's virtual LED stage (FNN article caption); Hyangho Beach's BTS-related bus stop (Triple location entry and visible BUS STOP sign); Daegu Art Museum's Lee Kang-so retrospective view (AAArt caption explicitly credits Daegu Art Museum); and Iksan Prison Film Set's corridor and cells (article source and visible set layout); Jangnim Port's colorful facade walkway (replaced the previous higher-angle candidate with a ground-level Triple photo).
+- Two candidates were retired from active use without deleting their source history: the unidentified Hangang bridge-pier photo (bridge/accessible segment not identifiable) and an old Suwon downtown alley photo (exact Haenggung-dong location not verifiable). Both stay marked as unverified in their preserved rejected history.
+- No locations were added and no selected primary/reference-photo IDs were changed. The shared catalog remains **200 places**, **307 candidate records including history**, **4 active place-match review candidates**, **306 image candidates whose reuse rights are not clearly cleared**, and **0 structural/selected-image errors**.
+- The Korean user manual was updated with the same audit summary and its link query changed to `v=20261016-106` to avoid stale browser cache. Application JSON is requested with no-store/time-varying URLs, so the app shell build remains 20261016-100.
+- Source pages reviewed: Solgeo Art Museum/NOL World (https://world.nol.com/en/content/pois/29e25710-c7f9-46eb-91f6-a40319ef80cb); Jangnim Port photo reference (https://triple.guide/articles/45dad00e-703f-4633-bad0-29c3ae19f288); Arte Museum Gangneung (https://cn.artemuseum.com/GANGNEUNG); FNN CJ ENM Studio Center (https://www.fnn.jp/articles/-/385893?display=full); Hyangho Beach (https://triple.guide/attractions/2bddb32c-d3da-43d2-ab15-197ddf317121); Daegu Art Museum exhibition photo caption (https://m.aaart.co.kr/m/m_article.html?no=8704); Iksan Prison Film Set article (https://v.daum.net/v/KaxpzHBW82?f=p).
