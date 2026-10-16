@@ -50,6 +50,14 @@ Date: 2026-10-16 (Korea Standard Time)
 - Current manual remains `MANUAL.md` (redirect pointer to 2.0) and `v2/USER_MANUAL_KO.html`; the prior V5.40 manual blob is also preserved in the backup branch.
 - The current 200-place V2 catalog and all legacy data/PWA recovery modules remain untouched.
 
+## 2026-10-16 root service-worker isolation
+- Found and fixed a legacy PWA isolation risk: root `sw.js` previously intercepted nested `/v2/` requests and could delete cache names beginning `frame-atlas-v2-` on activation.
+- Root worker now uses `frame-atlas-root-bridge-20261016` so existing root-installed PWAs install the transition worker, skips the nested V2 path based on its registered scope, and preserves the `frame-atlas-v2-*` cache namespace.
+- `tools/check_app.py` now checks the above guardrails. Initial QA failed only because the checker's regex was over-escaped; that check was simplified to a literal cache-name prefix and then verified.
+- Current commit `61345a05eb3ff5106ca9cca0835617a3a09d79d8`: quality run `38881608589` succeeded and Pages deployment `38881608655` succeeded.
+- The previous code-only root-worker commit `b9e6dc18c9f1fe2349a11ab320f8b1515c640919` deployed successfully, but its first QA attempt exposed the checker issue noted above.
+- Quality workflows now trigger for app/data/service-worker/tool/test changes rather than every README/checkpoint/archive/manual-only edit. Uploaded photo assets still deploy without starting the full browser test. This keeps small documentation saves from repeatedly re-running a long browser smoke test.
+
 ## Next steps
 1. Verify the current cleanup commit's Actions and Pages deployment before doing another code change.
 2. Review uploaded browser audit JSON and separate genuinely broken image sources from slow or still-pending remote responses; do not change the catalog automatically from a timed-out image request.

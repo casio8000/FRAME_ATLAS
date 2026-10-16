@@ -5,14 +5,6 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/quality-check.yml"
-      - "README.md"
-      - "MANUAL.md"
-      - "ARCHIVE_INDEX*.md"
-      - "archive/**"
-      - "legacy-v5.44.html"
-      - "v2/*.md"
-      - "v2/*.html"
-      - "v2/icons/**"
       - "index.html"
       - "data/**"
       - "sw.js"
@@ -30,14 +22,6 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/quality-check.yml"
-      - "README.md"
-      - "MANUAL.md"
-      - "ARCHIVE_INDEX*.md"
-      - "archive/**"
-      - "legacy-v5.44.html"
-      - "v2/*.md"
-      - "v2/*.html"
-      - "v2/icons/**"
       - "index.html"
       - "data/**"
       - "sw.js"
