@@ -6,6 +6,7 @@ const SUPPLEMENTAL_URL="./data/art_locations_curated_20261016.json";
 const LOCAL_KEY="frameAtlas2CatalogDraft";
 const BASELINE_KEY="frameAtlas2PublishedBaseline";
 const LEGACY_DRAFT_KEY="frameAtlas2LegacyDraftNeedsRebase";
+const LOCAL_ONLY_PLACES_KEY="frameAtlas2UnpublishedPlaceDrafts";
 const PUBLISH_TOKEN_KEY="frameAtlas2GitHubPublishToken";
 const PENDING_DB="frameAtlas2PendingPhotos";
 const objectUrls=new Map();
@@ -179,6 +180,83 @@ function normalizeCatalog(obj){
  return obj;
 }
 let lastCleanRefresh=0;
+function normalizedPlaceName(value){
+ return String(value||"").normalize("NFKC").replace(/[\u200B-\u200D\uFEFF]/g,"").trim().replace(/\s+/g,"").toLocaleLowerCase();
+}
+function readLocalOnlyPlaces(){
+ try{const value=JSON.parse(localStorage.getItem(LOCAL_ONLY_PLACES_KEY)||"[]");return Array.isArray(value)?value.filter(p=>p&&p.id&&!isPlaceholderPlace(p)):[];}catch(_){return [];}
+}
+function writeLocalOnlyPlaces(places){
+ try{localStorage.setItem(LOCAL_ONLY_PLACES_KEY,JSON.stringify(places));return true;}catch(_){return false;}
+}
+function reconcileLocalDraftToPublished(draft,base){
+ if(!draft||!Array.isArray(draft.places)||!Array.isArray(base?.places))return draft;
+ const published=base.places,byId=new Map(published.map(p=>[p.id,p])),nameCounts=new Map();
+ for(const p of published){const name=normalizedPlaceName(p.name);if(name)nameCounts.set(name,(nameCounts.get(name)||0)+1);}
+ const byUniqueName=new Map(published.filter(p=>{const n=normalizedPlaceName(p.name);return n&&nameCounts.get(n)===1;}).map(p=>[normalizedPlaceName(p.name),p]));
+ const matched=new Map(),unmatched=[];
+ for(const local of draft.places){
+  if(!local||!local.id||isPlaceholderPlace(local))continue;
+  const canonical=byId.get(local.id)||byUniqueName.get(normalizedPlaceName(local.name));
+  if(!canonical){unmatched.push(syncClone(local));continue;}
+  if(!matched.has(canonical.id))matched.set(canonical.id,[]);
+  matched.get(canonical.id).push({local,exactId:local.id===canonical.id});
+ }
+ const localOnlyMap=new Map();
+ const localOnlyKey=p=>String(p.id||"")+"|"+normalizedPlaceName(p.name);
+ for(const p of [...readLocalOnlyPlaces(),...unmatched]){
+  if(!p||!p.id||isPlaceholderPlace(p))continue;
+  const name=normalizedPlaceName(p.name);
+  if(byId.has(p.id)||byUniqueName.has(name))continue;
+  const key=localOnlyKey(p),prior=localOnlyMap.get(key);
+  if(!prior||Date.parse(p.updatedAt||p.createdAt||"")>=Date.parse(prior.updatedAt||prior.createdAt||""))localOnlyMap.set(key,Object.assign({},prior||{},syncClone(p),{localDraftOnly:true,localDraftReason:"not-in-published-catalog"}));
+ }
+ const localOnly=[...localOnlyMap.values()];
+ if(!writeLocalOnlyPlaces(localOnly)){
+  throw new Error("이 기기에만 저장된 미게시 장소를 안전하게 보존하지 못했습니다. 브라우저 저장 공간을 확인한 뒤 다시 열어 주세요.");
+ }
+ const reconciled=[];
+ for(const canonical of published){
+  const records=matched.get(canonical.id)||[];
+  if(!records.length){reconciled.push(syncClone(canonical));continue;}
+  records.sort((a,b)=>Number(b.exactId)-Number(a.exactId));
+  const preferred=records[0].local;
+  const target=Object.assign({},syncClone(canonical),syncClone(preferred),{id:canonical.id,name:canonical.name});
+  const imageMap=new Map();
+  for(const record of [...records.slice(1),records[0]]){
+   for(const candidate of Array.isArray(record.local.imageCandidates)?record.local.imageCandidates:[]){
+    if(candidate&&candidate.id)imageMap.set(candidate.id,Object.assign({},imageMap.get(candidate.id)||{},syncClone(candidate)));
+   }
+  }
+  target.imageCandidates=[...imageMap.values()];
+  for(const key of ["aliases","sourceRefs","bestConcepts","visualStrengths","searchTerms","spaceTypes"]){
+   const all=[];
+   for(const values of [canonical[key],...records.map(record=>record.local[key])]){
+    if(!Array.isArray(values))continue;
+    for(const value of values)if(value!=null&&!all.some(old=>JSON.stringify(old)===JSON.stringify(value)))all.push(syncClone(value));
+   }
+   if(all.length)target[key]=all;
+  }
+  if(!target.primaryImageId||!target.imageCandidates.some(c=>c.id===target.primaryImageId&&c.status!=="rejected"&&c.placeMatch==="confirmed")){
+   const alternate=records.map(record=>record.local.primaryImageId).find(id=>id&&target.imageCandidates.some(c=>c.id===id&&c.status!=="rejected"&&c.placeMatch==="confirmed"));
+   target.primaryImageId=alternate||canonical.primaryImageId||null;
+  }
+  if(!target.referenceImageId||!target.imageCandidates.some(c=>c.id===target.referenceImageId&&c.status!=="rejected"&&c.placeMatch==="confirmed")){
+   const alternate=records.map(record=>record.local.referenceImageId).find(id=>id&&target.imageCandidates.some(c=>c.id===id&&c.status!=="rejected"&&c.placeMatch==="confirmed"));
+   target.referenceImageId=alternate||canonical.referenceImageId||null;
+  }
+  for(const record of records.slice(1)){
+   const local=record.local;
+   for(const [key,value] of Object.entries(local)){
+    if(["id","name","imageCandidates","aliases","sourceRefs","bestConcepts","visualStrengths","searchTerms","spaceTypes"].includes(key))continue;
+    if((target[key]==null||target[key]==="")&&value!=null&&value!=="")target[key]=syncClone(value);
+   }
+  }
+  reconciled.push(target);
+ }
+ draft.places=reconciled;
+ return draft;
+}
 function mergePublishedPhotoReferences(draft,base){
  if(!draft||!Array.isArray(draft.places))return base;
  const excluded=new Set(base.excludedLocationIds||[]);
@@ -416,7 +494,7 @@ async function loadBase(){
   }else{
    try{localStorage.setItem(BASELINE_KEY,JSON.stringify(base));localStorage.removeItem(LEGACY_DRAFT_KEY);}catch(_){}
   }
-  const source=draft&&Array.isArray(draft.places)?mergePublishedPhotoReferences(draft,base):base;
+  const source=draft&&Array.isArray(draft.places)?mergePublishedPhotoReferences(reconcileLocalDraftToPublished(draft,base),base):base;
   // Keep published "newly added" labels current even when this device has an older local draft.
   // Only sync this display metadata; preserve the device's other personal edits and photos.
   if(Array.isArray(source.places)){
@@ -437,7 +515,8 @@ async function loadBase(){
   if(selectedId&&!getPlace(selectedId))selectedId=null;
   if(draft){
    try{localStorage.setItem(LOCAL_KEY,JSON.stringify(catalog));}catch(_){}
-   $("saveStatus").textContent="공통 장소 순서 적용 · 이 기기 임시수정 병합";
+   const keptDraftCount=readLocalOnlyPlaces().length;
+   $("saveStatus").textContent="공통 장소 "+catalog.places.length+"곳 · 이 기기 임시수정 병합"+(keptDraftCount?" · 미게시 초안 "+keptDraftCount+"건 별도 보존":"");
   }else $("saveStatus").textContent="공통 카탈로그 최신본 불러옴";
   render();renderLanding();showAppView(routeAfterLoad,false);
  }catch(e){$("saveStatus").textContent="자료 불러오기 실패: "+e.message;$("placeList").innerHTML='<div class="empty">기본 자료를 불러오지 못했습니다.<br>GitHub Pages URL에서 열었는지 확인하세요.</div>';renderLanding();}
@@ -1291,13 +1370,14 @@ async function batchSearch(scope){
  }finally{buttons.forEach(b=>b.disabled=false);}
 }
 function exportCatalog(){
- const blob=new Blob([JSON.stringify(catalog,null,2)],{type:"application/json;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
+ const backup=Object.assign({},catalog,{localUnpublishedPlaces:readLocalOnlyPlaces()});
+ const blob=new Blob([JSON.stringify(backup,null,2)],{type:"application/json;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=url;a.download="frame-atlas-v2-catalog-"+new Date().toISOString().slice(0,10)+".json";document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
  $("saveStatus").textContent="카탈로그 JSON 내보내기 완료";
 }
 function importCatalog(file){
  if(!requireAdminMode())return;
- const reader=new FileReader();reader.onload=()=>{try{catalog=normalizeCatalog(JSON.parse(reader.result));selectedId=catalog.places[0]?.id||null;localSave("가져온 카탈로그를 이 기기에 임시저장");render();alert("가져오기 완료. 장소 "+catalog.places.length+"곳");}catch(e){alert("가져오기 실패: "+e.message);}};reader.readAsText(file,"utf-8");
+ const reader=new FileReader();reader.onload=()=>{try{const imported=JSON.parse(reader.result),extras=Array.isArray(imported.localUnpublishedPlaces)?imported.localUnpublishedPlaces:[];delete imported.localUnpublishedPlaces;if(extras.length)writeLocalOnlyPlaces([...readLocalOnlyPlaces(),...extras]);catalog=normalizeCatalog(imported);selectedId=catalog.places[0]?.id||null;localSave("가져온 카탈로그를 이 기기에 임시저장");render();alert("가져오기 완료. 공통 장소 "+catalog.places.length+"곳"+(readLocalOnlyPlaces().length?" · 미게시 초안 "+readLocalOnlyPlaces().length+"건 별도 보존":""));}catch(e){alert("가져오기 실패: "+e.message);}};reader.readAsText(file,"utf-8");
 }
 $("addPlaceBtn").addEventListener("click",addNewPlace);if($("homeAddPlaceBtn"))$("homeAddPlaceBtn").addEventListener("click",addNewPlace);
 $("batchSearchA").addEventListener("click",()=>{if(requireAdminMode())batchSearch("A");});
