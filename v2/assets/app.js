@@ -379,6 +379,10 @@ async function syncAttachSupplementalPlaces(base){
       for(const candidate of incoming)byImageId.set(candidate.id,Object.assign({},byImageId.get(candidate.id)||{},syncClone(candidate)));
       existing.imageCandidates=[...byImageId.values()];
       for(const key of ["primaryImageId","referenceImageId"])if(Object.prototype.hasOwnProperty.call(place,key))existing[key]=place[key];
+      // Published curation may add photos to an existing same-name place; keep its new-place label in sync too.
+      for(const key of ["newlyAdded","newlyAddedAt","imageStatus","referenceImageStatus"]){
+       if(Object.prototype.hasOwnProperty.call(place,key))existing[key]=syncClone(place[key]);
+      }
       if(place.overrideExistingFields===true){
        for(const key of ["name","category","imageStatus","selectionStatus","photoProfile","summary"]){
         if(typeof place[key]==="string"&&place[key].trim())existing[key]=place[key];
