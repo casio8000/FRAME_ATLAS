@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T01:16:00.000Z",
-  "description": "National photo-location scouting candidates: architecturally distinctive resorts/hotels, private design stays, art spaces, and media-featured immersive venues. Images are location-reference candidates; field access, commercial-shoot permission and image reuse conditions remain to be confirmed.",
+  "updatedAt": "2026-10-16T07:00:00.000Z",
+  "description": "National photo-location scouting candidates including architecture, art spaces, design stays, specialist studios, and distinctive cultural venues. All photo URLs are reference candidates; site access, commercial-shoot permission, and image reuse rights require separate verification. 2026-10-16 second research batch adds seven researched candidates.",
   "places": [
     {
       "id": "yangpyeong-lee-jaehyo-gallery",
@@ -3747,6 +3747,786 @@
           "createdAt": "2026-10-16T02:00:00.000Z"
         }
       ]
+    },
+    {
+      "id": "gg-uijeongbu-art-library",
+      "name": "의정부미술도서관",
+      "region": "경기",
+      "category": "아트 라이브러리·복층 아트리움",
+      "address": "경기도 의정부시 민락로 248",
+      "phone": "031-828-8870",
+      "officialUrl": "https://www.uilib.go.kr/art/index.do",
+      "openingStatus": "자료열람공간 화~금 09:00~21:00, 토~일 09:00~18:00; 전시관 화~일 10:00~18:00. 월요일 및 법정공휴일 휴관(방문 전 재확인).",
+      "shootingPermission": "일반 열람과 상업촬영은 별개입니다. 이용자 초상권, 삼각대·조명·장비 사용 및 상업촬영은 도서관에 사전 문의.",
+      "spaceTypes": [
+        "실내",
+        "아트리움",
+        "도서관",
+        "계단·보이드"
+      ],
+      "photoProfile": "미술관 기능을 함께 갖춘 공공 도서관. 1~3층을 잇는 개방형 보이드, 나선형 계단, 전면 유리와 흰색 곡선 가구가 겹쳐 인물·패션 에디토리얼에서 수직선과 곡선, 자연광을 함께 구성할 수 있습니다.",
+      "visualStrengths": [
+        "3개 층을 시각적으로 연결하는 나선형 동선",
+        "전면 창의 확산광과 바닥·계단 그림자",
+        "흰색 곡선 가구와 서가의 대비"
+      ],
+      "bestConcepts": [
+        "미니멀 인물·패션 에디토리얼",
+        "책·지식·창작을 주제로 한 라이프스타일",
+        "곡선과 수직선을 이용한 그래픽 구도"
+      ],
+      "constraints": [
+        "도서관 이용자와 학습을 방해하지 않는 촬영",
+        "상업 촬영·삼각대·조명 사용 가능 여부 사전 문의",
+        "혼잡 시간대와 행사 일정을 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "의정부미술도서관 나선형 계단 아트리움",
+        "Uijeongbu Art Library interior spiral staircase"
+      ],
+      "aliases": [
+        "의정부 미술도서관",
+        "Uijeongbu Art Library"
+      ],
+      "summary": "도서관과 미술관을 결합한 복층 공간. 나선형 계단과 대형 창으로 들어오는 자연광이 일반적인 카페·도서관과 다른 그래픽한 인물 배경을 만듭니다.",
+      "parking": "주차 가능(공식 이용 안내 기준, 현장 요금·운영 확인)",
+      "fee": "무료 이용(전시·행사별 별도 조건 확인)",
+      "sourceRefs": [
+        "https://www.uilib.go.kr/art/index.do",
+        "https://www.uilib.go.kr/art/html.do?menu_idx=9",
+        "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?menuSn=351&vcontsId=183625",
+        "https://www.decojournal.co.kr/News/Things/3213"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-uijeongbu-art-library-atrium",
+          "title": "의정부미술도서관 복층 아트리움과 곡선 서가",
+          "imageUrl": "https://www.decojournal.co.kr/storage/uploads/CQgJF7bFSarDopIvhhxN4AfeQy9rMH9Drk8v5e5G.jpg",
+          "sourceThumbnail": "https://www.decojournal.co.kr/storage/uploads/CQgJF7bFSarDopIvhhxN4AfeQy9rMH9Drk8v5e5G.jpg",
+          "sourcePageUrl": "https://www.decojournal.co.kr/News/Things/3213",
+          "sourceName": "Deco Journal",
+          "creator": "Deco Journal",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "아트리움·실내",
+          "notes": "기사의 장소 표기와 내부 구조를 교차 확인한 참고 이미지. 대표 이미지 재사용 권리를 의미하지 않음.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "coordinates": null,
+      "imageStatus": "장소 참고 이미지 · 대표사진 최종 검토 필요",
+      "primaryImageId": "ref-uijeongbu-art-library-atrium",
+      "referenceImageId": "ref-uijeongbu-art-library-atrium",
+      "verification": {
+        "location": "공식 도서관 안내 확인",
+        "photoMatch": "장소별 참고 이미지 연결",
+        "rights": "참고용·재사용 권리 미확인",
+        "shootingPermission": "상업촬영·장비 사용 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "신규 추가 · 사진가 관점 1차 조사 · 현장 촬영 검증 전",
+      "scoutingChecklist": [
+        "공식 운영시간과 전시 일정을 확인",
+        "실내 촬영 및 장비 반입 허용 여부 문의",
+        "이용자 비노출 구도와 빛 방향 확인",
+        "사진 출처 및 이용 조건 별도 확인"
+      ],
+      "notes": "공식 도서관 자료와 관광 안내를 교차 확인. 사진은 공간 구성을 이해하기 위한 참고 후보이며, 실제 화보·광고 촬영 승인으로 해석하지 말 것. 다른 이용자의 얼굴·학습 자료가 노출되지 않도록 확인 필요.",
+      "photoPotentialScore": 84,
+      "photoScoreBreakdown": {
+        "distinctiveness": 23,
+        "compositionVariety": 18,
+        "lightAndTexture": 19,
+        "editorialVersatility": 16,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
+      "priorityLabel": "우선 답사 후보",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16"
+    },
+    {
+      "id": "seoul-sema-art-archives",
+      "name": "서울시립 미술아카이브(SeMA AA)",
+      "region": "서울",
+      "category": "현대미술 아카이브·건축 복합공간",
+      "address": "서울특별시 종로구 평창문화로 101",
+      "phone": "02-2124-7400",
+      "officialUrl": "https://sema.seoul.go.kr/semaaa/front/info/sub0601.jsp",
+      "openingStatus": "화~금 10:00~20:00; 주말·공휴일 하절기 10:00~19:00, 동절기 10:00~18:00. 월요일 휴관(방문 전 공식 안내 확인).",
+      "shootingPermission": "전시작품·자료 및 내부 공간의 촬영 조건은 전시별·공간별로 확인. 상업촬영·삼각대·조명은 사전 문의.",
+      "spaceTypes": [
+        "실내",
+        "외부 계단·램프",
+        "현대건축",
+        "아카이브"
+      ],
+      "photoProfile": "북한산·홍제천 인근 지형을 따라 매스를 낮고 수평적으로 나누어 배치한 서울시립미술관 분관. 유리·콘크리트·계단·경사로가 실내외를 연결해 조용하고 절제된 건축 에디토리얼에 적합합니다.",
+      "visualStrengths": [
+        "산자락과 수평 매스의 관계",
+        "유리 파사드와 콘크리트 경사로",
+        "안과 밖을 잇는 계단·테라스·정원 동선"
+      ],
+      "bestConcepts": [
+        "건축과 인물의 비례를 강조하는 에디토리얼",
+        "차분한 미니멀 패션·아트 북",
+        "도시·산자락의 대비를 이용한 프레임"
+      ],
+      "constraints": [
+        "공공 동선과 연구·자료 공간 구분",
+        "전시·아카이브 촬영 규정 별도 확인",
+        "야외 테라스·램프는 운영 통제 구역인지 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "서울시립 미술아카이브 건축 외부 계단",
+        "SeMA Art Archives architecture glass concrete"
+      ],
+      "aliases": [
+        "SeMA AA",
+        "서울시립미술관 미술아카이브",
+        "Art Archives Seoul Museum of Art"
+      ],
+      "summary": "현대미술 기록을 다루는 미술관이자 지형과 건축의 관계가 뚜렷한 공간. 낮은 수평 매스, 유리·콘크리트, 경사로의 레이어가 촬영에 강점을 줍니다.",
+      "parking": "현장 주차·요금 및 여유 공간 확인",
+      "fee": "일반 관람 무료(특별전은 별도 가능)",
+      "sourceRefs": [
+        "https://sema.seoul.go.kr/semaaa/front/info/sub0601.jsp",
+        "https://sema.seoul.go.kr/en/visit/art_archive",
+        "https://vmspace.com/report/report_view.html?base_seq=MjU4Ng%3D%3D"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-sema-aa-official-exterior",
+          "title": "서울시립 미술아카이브 외부 매스와 광장",
+          "imageUrl": "https://sema.seoul.go.kr/semaaa/semarna/images/sub/img_introduction_map_01.jpg",
+          "sourceThumbnail": "https://sema.seoul.go.kr/semaaa/semarna/images/sub/img_introduction_map_01.jpg",
+          "sourcePageUrl": "https://sema.seoul.go.kr/semaaa/front/info/sub0601.jsp",
+          "sourceName": "서울시립미술관 공식 홈페이지",
+          "creator": "Kim YongKwan 표기(공식 사이트)",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "외부 건축·광장",
+          "notes": "공식 건축 소개 페이지에서 제공되는 참고 이미지. 이미지 재사용은 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "ref-sema-aa-architecture-press",
+          "title": "서울시립 미술아카이브 유리 파사드와 경사로",
+          "imageUrl": "https://vmspace.com/ActiveFile/spacem.org/board_img/1997963772649cd97f323c4.jpg",
+          "sourceThumbnail": "https://vmspace.com/ActiveFile/spacem.org/board_img/1997963772649cd97f323c4.jpg",
+          "sourcePageUrl": "https://vmspace.com/eng/report/report_view.html?base_seq=MjU4Ng%3D%3D",
+          "sourceName": "SPACE",
+          "creator": "SPACE",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "외부·건축",
+          "notes": "건축 전문 매체의 공간 참고 이미지. 편집·상업 재사용 권리 확인 전 참고용.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "coordinates": null,
+      "imageStatus": "장소 참고 이미지 · 대표사진 최종 검토 필요",
+      "primaryImageId": "ref-sema-aa-official-exterior",
+      "referenceImageId": "ref-sema-aa-official-exterior",
+      "verification": {
+        "location": "공식 미술관 안내 확인",
+        "photoMatch": "장소별 참고 이미지 연결",
+        "rights": "참고용·재사용 권리 미확인",
+        "shootingPermission": "상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "신규 추가 · 사진가 관점 1차 조사 · 현장 촬영 검증 전",
+      "scoutingChecklist": [
+        "공식 운영일 및 당일 전시 확인",
+        "공용·전시·연구 공간을 구분",
+        "외부 파사드의 시간대별 반사와 그림자 관찰",
+        "촬영 허용 범위와 장비 사용 여부 문의"
+      ],
+      "notes": "공식 페이지에서 건축 콘셉트·주소·운영 정보를 확인. 사진 후보는 공간 이해용이며 현장 촬영·작품 이미지 이용 권한을 보증하지 않습니다.",
+      "photoPotentialScore": 87,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 18,
+        "lightAndTexture": 20,
+        "editorialVersatility": 16,
+        "indoorOutdoorFlexibility": 8
+      },
+      "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
+      "priorityLabel": "우선 답사 후보",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16"
+    },
+    {
+      "id": "seoul-gana-art-center",
+      "name": "가나아트센터",
+      "region": "서울",
+      "category": "현대미술 갤러리·경사지 건축",
+      "address": "서울특별시 종로구 평창30길 28",
+      "phone": "02-720-1020",
+      "officialUrl": "https://www.ganaart.com/about/",
+      "openingStatus": "화~일 10:00~19:00; 월요일·추석 휴관으로 안내됨. 전시·대관 상황은 방문 전 공식 확인.",
+      "shootingPermission": "전시장·야외 계단·테라스의 일반 관람 촬영과 상업촬영은 구분. 패션·광고·영상 제작은 사전 대관·허가 문의.",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "현대미술",
+        "경사지 건축",
+        "야외 계단"
+      ],
+      "photoProfile": "평창동의 급경사 지형을 활용해 전시실과 유리·목재의 공용부, 야외 계단식 공간, 공중 연결 동선을 구성한 현대미술 복합공간. 흰 석재의 무게감과 목재 차양의 따뜻한 질감이 한국의 산자락과 만나 국제적 아트 에디토리얼에 적합합니다.",
+      "visualStrengths": [
+        "경사지에 놓인 흰 석재 매스",
+        "목재 차양·유리 입면의 질감 대비",
+        "야외 계단식 공간과 다층 동선"
+      ],
+      "bestConcepts": [
+        "미니멀 패션과 건축의 스케일 대비",
+        "아트·디자인 매거진 에디토리얼",
+        "계단·차양을 활용한 인물 실루엣"
+      ],
+      "constraints": [
+        "전시 일정에 따라 내부 접근 구역이 다를 수 있음",
+        "야외 계단·테라스·연결 통로의 촬영 허용 범위 확인",
+        "상업촬영은 대관 부서와 사전 협의"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "가나아트센터 건축 야외 계단",
+        "Gana Art Center Wilmotte timber stairs facade"
+      ],
+      "aliases": [
+        "Gana Art Center",
+        "가나 아트센터",
+        "가나아트 센터"
+      ],
+      "summary": "장 미셸 빌모트 설계의 경사지형 현대미술관. 석재 매스와 목재·유리, 야외 계단을 활용한 건축 중심의 패션·아트 촬영 잠재력이 높습니다.",
+      "parking": "현장 주차 가능 여부·대수와 발레 운영 확인",
+      "fee": "공식/관광 안내에 관람료 5,000원 표기, 전시별 확인",
+      "sourceRefs": [
+        "https://www.ganaart.com/about/",
+        "https://www.wilmotte.com/en/projects/gana-art-center/",
+        "https://english.visitseoul.net/attractions/Gana-Art-Center/ENP002082"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-gana-art-center-architect-stairs",
+          "title": "가나아트센터 야외 계단과 목재 차양",
+          "imageUrl": "https://www.wilmotte.com/wp-content/uploads/2023/03/1998_seoul_gana-art-centeryoung-chea-park-11-modifier-scaled.jpg",
+          "sourceThumbnail": "https://www.wilmotte.com/wp-content/uploads/2023/03/1998_seoul_gana-art-centeryoung-chea-park-11-modifier-scaled.jpg",
+          "sourcePageUrl": "https://www.wilmotte.com/en/projects/gana-art-center/",
+          "sourceName": "Wilmotte & Associés",
+          "creator": "Young Chea Park 표기(건축가 페이지 파일명)",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "야외 계단·차양",
+          "notes": "건축 설계사 공식 프로젝트 페이지의 장소 참고 이미지. 재사용 권한은 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "ref-gana-art-center-dusk",
+          "title": "가나아트센터 석재 외관과 야간 조명",
+          "imageUrl": "https://media.timeout.com/images/102344093/image.jpg",
+          "sourceThumbnail": "https://media.timeout.com/images/102344093/image.jpg",
+          "sourcePageUrl": "https://www.timeout.com/seoul/museums/gana-art-gallery",
+          "sourceName": "Time Out",
+          "creator": "Time Out",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "외부·해질녘",
+          "notes": "외부 매스와 조명 분위기 참고용이며 사진 이용권은 확인되지 않음.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "coordinates": null,
+      "imageStatus": "장소 참고 이미지 · 대표사진 최종 검토 필요",
+      "primaryImageId": "ref-gana-art-center-architect-stairs",
+      "referenceImageId": "ref-gana-art-center-architect-stairs",
+      "verification": {
+        "location": "공식 갤러리 안내 확인",
+        "photoMatch": "장소별 참고 이미지 연결",
+        "rights": "참고용·재사용 권리 미확인",
+        "shootingPermission": "상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "신규 추가 · 사진가 관점 1차 조사 · 현장 촬영 검증 전",
+      "scoutingChecklist": [
+        "당일 전시와 내부 공개 구역 확인",
+        "대관·상업촬영 조건 문의",
+        "오후 측광과 목재 차양 그림자 관찰",
+        "대표사진으로 쓸 구도는 현장 또는 공식 허용 자료로 재확인"
+      ],
+      "notes": "가나아트 공식 홈페이지와 건축 설계사 프로젝트 페이지, 서울 공식 관광안내를 교차 확인. 사진 후보는 참고 전용이며 화보 촬영 허가를 의미하지 않습니다.",
+      "photoPotentialScore": 88,
+      "photoScoreBreakdown": {
+        "distinctiveness": 25,
+        "compositionVariety": 19,
+        "lightAndTexture": 19,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
+      "priorityLabel": "우선 답사 후보",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16"
+    },
+    {
+      "id": "seoul-boan1942-artspace",
+      "name": "아트스페이스 보안1942(통의동 보안여관)",
+      "region": "서울",
+      "category": "근대 여관 재생·독립 전시공간",
+      "address": "서울특별시 종로구 효자로 33",
+      "phone": "02-720-8409",
+      "officialUrl": "https://b1942.com/",
+      "openingStatus": "보안1942 화~일 12:00~18:00, 보안책방 화~일 12:00~19:00으로 관광안내에 표기. 전시별 운영 일정 확인.",
+      "shootingPermission": "전시실과 문화공간은 전시작·관람객 보호 규정을 우선. 상업 촬영·영상·조명은 사전 문의.",
+      "spaceTypes": [
+        "실내",
+        "역사 건축",
+        "전시 공간",
+        "낡은 목재·벽체"
+      ],
+      "photoProfile": "1942년부터 여관으로 사용되던 건물이 독립 전시·책방·카페·문화공간으로 재생된 곳. 오래된 목재와 거친 구조, 좁은 복도와 현대 전시의 흰 벽이 공존해 질감이 강한 인물·다큐멘터리·에디토리얼을 구상하기 좋습니다.",
+      "visualStrengths": [
+        "옛 건물의 노출 목구조와 시간의 흔적",
+        "협소한 복도·프레임·그림자",
+        "거친 재료와 현대 전시공간의 대비"
+      ],
+      "bestConcepts": [
+        "시간의 흔적을 살린 인물화보",
+        "아날로그·문학·예술 테마의 에디토리얼",
+        "저채도 영화적 구도"
+      ],
+      "constraints": [
+        "전시마다 촬영 규정과 접근 가능한 공간이 바뀔 수 있음",
+        "시설·책방·숙박영역은 서로 다른 이용 구역",
+        "관람객과 전시작을 방해하지 않도록 사전 협의"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "보안1942 통의동 보안여관 내부 목구조",
+        "Boan1942 artspace historic interior gallery"
+      ],
+      "aliases": [
+        "보안1942",
+        "통의동 보안여관",
+        "Boan1942",
+        "Artspace Boan"
+      ],
+      "summary": "근대 여관의 물성과 동시대 전시가 함께 남아 있는 문화공간. 새 건물에서 얻기 어려운 목재·벽체·복도의 레이어가 인물 중심의 예술적 화면을 만듭니다.",
+      "parking": "소형차 중심 주차 안내가 있으나 이용 가능 여부 확인",
+      "fee": "전시별 관람료와 행사 조건 확인",
+      "sourceRefs": [
+        "https://b1942.com/",
+        "https://culture.seoul.go.kr/culture/culture/cultureSpace/view.do?facCode=101931&menuNo=200119",
+        "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=175341",
+        "https://www.frieze.com/frieze-film/boan-1942-artspace"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-boan1942-white-gallery",
+          "title": "보안1942 전시실과 현대 작품 설치",
+          "imageUrl": "https://storage.heypop.kr/assets/2025/11/06092519/20251106_002512-%EA%B3%B5%EA%B0%84%EC%9D%B4%EB%AF%B8%EC%A7%805-scaled.jpg",
+          "sourceThumbnail": "https://storage.heypop.kr/assets/2025/11/06092519/20251106_002512-%EA%B3%B5%EA%B0%84%EC%9D%B4%EB%AF%B8%EC%A7%805-scaled.jpg",
+          "sourcePageUrl": "https://heypop.kr/place/130978/",
+          "sourceName": "Heypop",
+          "creator": "Heypop",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "전시실 내부",
+          "notes": "공간 소개 기사에 연결된 참고 사진. 전시작과 사진은 권리자 허락 없이 재사용하지 않음.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "ref-boan1942-old-structure",
+          "title": "보안1942의 옛 목구조와 어두운 전시실",
+          "imageUrl": "https://static.frieze.com/files/inline-images/004.jpg?VersionId=zbm5UGJpfggvHt9uLJ5weXS5fJFdDXb.",
+          "sourceThumbnail": "https://static.frieze.com/files/inline-images/004.jpg?VersionId=zbm5UGJpfggvHt9uLJ5weXS5fJFdDXb.",
+          "sourcePageUrl": "https://www.frieze.com/frieze-film/boan-1942-artspace",
+          "sourceName": "Frieze",
+          "creator": "Frieze",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "옛 건물·전시",
+          "notes": "문화공간의 재생된 내부 구조 참고용. 실제 전시와 사진 재사용 권한은 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "coordinates": null,
+      "imageStatus": "장소 참고 이미지 · 대표사진 최종 검토 필요",
+      "primaryImageId": "ref-boan1942-old-structure",
+      "referenceImageId": "ref-boan1942-old-structure",
+      "verification": {
+        "location": "서울문화포털·한국관광공사 안내 확인",
+        "photoMatch": "장소별 참고 이미지 연결",
+        "rights": "참고용·재사용 권리 미확인",
+        "shootingPermission": "전시별 상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "신규 추가 · 사진가 관점 1차 조사 · 현장 촬영 검증 전",
+      "scoutingChecklist": [
+        "전시 및 입장 가능 구역 확인",
+        "낡은 구조와 신설 전시 공간의 관계 관찰",
+        "삼각대·장비·상업촬영 승인 여부 문의",
+        "이미지 출처와 재사용 권리 별도 확인"
+      ],
+      "notes": "서울문화포털·한국관광공사와 공간의 공식 사이트를 교차 확인. 사진은 질감·공간 구조 참고용으로 추가했으며, 상업촬영이나 사진 재사용 권한을 의미하지 않습니다.",
+      "photoPotentialScore": 84,
+      "photoScoreBreakdown": {
+        "distinctiveness": 22,
+        "compositionVariety": 17,
+        "lightAndTexture": 20,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
+      "priorityLabel": "우선 답사 후보",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16"
+    },
+    {
+      "id": "seoul-piknic-cultural-space",
+      "name": "피크닉(piknic)",
+      "region": "서울",
+      "category": "벽돌 건축·전시·정원 복합공간",
+      "address": "서울특별시 중구 퇴계로6가길 30",
+      "phone": "02-318-3233",
+      "officialUrl": "https://piknic.kr/",
+      "openingStatus": "화~일 10:00~18:00, 월요일 휴관으로 공식 안내. 전시 준비·대관에 따른 휴관 가능.",
+      "shootingPermission": "공식 관람 안내: 휴대폰 카메라 촬영만 가능하며 영상 및 촬영 장비 사용 금지. 상업 촬영은 일반 관람 촬영과 다르므로 대관·협업 부서에 사전 문의.",
+      "spaceTypes": [
+        "실내",
+        "벽돌 외관",
+        "전시 공간",
+        "정원·테라스"
+      ],
+      "photoProfile": "옛 건물을 문화공간으로 재생해 전시·카페·숍·식음·정원을 함께 운영하는 도심 복합공간. 벽돌 입면, 흰 창틀, 식재와 오래된 건물의 표면이 도시적이면서 따뜻한 배경을 만듭니다.",
+      "visualStrengths": [
+        "주황색 벽돌과 대형 창 프레임",
+        "작은 정원과 건물 사이의 경계",
+        "옛 구조와 전시 그래픽의 관계"
+      ],
+      "bestConcepts": [
+        "도시형 라이프스타일 에디토리얼",
+        "건축 디테일·벽돌·창 프레임",
+        "전시와 공간을 주제로 한 문화 콘텐츠"
+      ],
+      "constraints": [
+        "공식 안내에 따라 일반 관람은 휴대폰 카메라만 가능",
+        "영상 및 촬영 장비 사용 금지 안내를 반드시 준수",
+        "상업 화보는 별도 대관·협업 승인을 문의"
+      ],
+      "scoutPriority": 2,
+      "searchTerms": [
+        "피크닉 중구 퇴계로 벽돌 건축 정원",
+        "piknic Seoul cultural space brick facade"
+      ],
+      "aliases": [
+        "piknic",
+        "피크닉 문화공간",
+        "피크닉 전시공간"
+      ],
+      "summary": "도심의 옛 벽돌 건물 안에 전시와 정원이 놓인 문화공간. 벽돌·창·식재의 조합은 감각적인 배경이지만, 공식 일반 관람 규칙상 촬영 장비와 영상 촬영은 금지되어 있어 화보 촬영은 별도 협의가 필수입니다.",
+      "parking": "발레 주차 안내가 있으나 운영과 요금은 방문 전 확인",
+      "fee": "전시별 입장권·가격 확인",
+      "sourceRefs": [
+        "https://piknic.kr/",
+        "https://piknic.kr/home/sub05/notice.php",
+        "https://piknic.kr/home/sub04/rent.php",
+        "https://english.visitseoul.net/entertainment/piknic/ENP9hdag0"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-piknic-official-facade",
+          "title": "피크닉 벽돌 외관과 입구",
+          "imageUrl": "https://piknic.kr/upload/CATEGORY3/EXHIBITION/20240910/66dfb458af4f2.jpg",
+          "sourceThumbnail": "https://piknic.kr/upload/CATEGORY3/EXHIBITION/20240910/66dfb458af4f2.jpg",
+          "sourcePageUrl": "https://piknic.kr/",
+          "sourceName": "피크닉 공식 홈페이지",
+          "creator": "piknic",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "벽돌 외관",
+          "notes": "공식 공간 이미지. 열람 참고용이며 상업적 재사용은 별도 허락이 필요.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "coordinates": null,
+      "imageStatus": "장소 참고 이미지 · 대표사진 최종 검토 필요",
+      "primaryImageId": "ref-piknic-official-facade",
+      "referenceImageId": "ref-piknic-official-facade",
+      "verification": {
+        "location": "공식 사이트 주소·운영 안내 확인",
+        "photoMatch": "장소별 참고 이미지 연결",
+        "rights": "참고용·재사용 권리 미확인",
+        "shootingPermission": "일반 관람 촬영 장비 제한 공식 안내 확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "신규 추가 · 사진가 관점 1차 조사 · 장비·상업촬영 별도 승인 필요",
+      "scoutingChecklist": [
+        "전시 준비 기간과 관람 가능 날짜 확인",
+        "공식 촬영 규칙 재확인",
+        "상업 촬영·장비 사용은 대관 부서에 문의",
+        "벽돌 파사드·정원·창 프레임의 빛 방향 관찰"
+      ],
+      "notes": "일반 관람은 휴대폰 카메라만 가능하며 영상 및 촬영 장비 사용 금지라는 공식 안내를 명시했습니다. 전문 화보·광고 촬영 장소로 확정된 것이 아니며, 촬영 장비가 필요한 경우 사전 승인부터 확인하세요.",
+      "photoPotentialScore": 83,
+      "photoScoreBreakdown": {
+        "distinctiveness": 23,
+        "compositionVariety": 18,
+        "lightAndTexture": 17,
+        "editorialVersatility": 18,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
+      "priorityLabel": "조건 확인 후 답사",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16"
+    },
+    {
+      "id": "pohang-space-walk",
+      "name": "포항 스페이스워크",
+      "region": "경북",
+      "category": "대형 강철 조형·체험형 구조물",
+      "address": "경상북도 포항시 북구 두호동 산8 (환호공원)",
+      "phone": "054-270-5176",
+      "officialUrl": "https://pohang.go.kr/phtour/wmap/tourInformation/view.do?cate_id=93&menu_idx=104&tour_info_idx=747",
+      "openingStatus": "하절기(4~10월) 평일 10:00~20:00, 주말·공휴일 10:00~21:00; 동절기(11~3월) 평일 10:00~17:00, 주말·공휴일 10:00~18:00. 매월 첫째 주 월요일 휴무(공식 안내 기준).",
+      "shootingPermission": "관람객이 구조물 위를 이동하는 체험형 조형물. 바람·기상·안전 통제와 운영시간을 준수하고, 드론·대형 장비·상업 촬영은 별도 문의.",
+      "spaceTypes": [
+        "야외",
+        "대형 조형물",
+        "강철 구조",
+        "해안·도시 스카이라인"
+      ],
+      "photoProfile": "포스코가 제작해 포항시에 기부한 대형 체험형 강철 조형물. 교차하는 곡선 계단과 반복되는 철재 선이 하늘·바다·도시를 프레임 안에 담아 강한 원근, 실루엣, 그래픽한 패션 구도를 만들 수 있습니다.",
+      "visualStrengths": [
+        "강철 트랙의 반복 곡선과 큰 루프",
+        "해안과 도시 스카이라인을 배경으로 한 실루엣",
+        "해질녘·야간 조명에 나타나는 금속 질감"
+      ],
+      "bestConcepts": [
+        "실루엣과 기하학을 결합한 에디토리얼",
+        "강철·산업도시의 미래적 인물화보",
+        "긴 원근선과 하늘을 활용한 와이드 구도"
+      ],
+      "constraints": [
+        "기상·풍속·안전 통제에 따라 입장이 제한될 수 있음",
+        "계단·난간·통행로에서 장비 설치를 임의로 하지 않기",
+        "운영시간 밖 야간 촬영과 상업 촬영은 별도 확인"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "포항 스페이스워크 야간 강철 조형",
+        "Pohang Space Walk steel sculpture sunset night"
+      ],
+      "aliases": [
+        "스페이스 워크",
+        "Space Walk Pohang",
+        "환호공원 스페이스워크"
+      ],
+      "summary": "대형 강철 트랙의 반복 곡선이 도시·바다를 배경으로 겹치는 장소. 넓은 화각과 실루엣, 강한 원근을 활용할 수 있지만 현장 안전과 상업촬영 조건은 운영기관에 확인해야 합니다.",
+      "parking": "환호공원 주차·접근 동선 현장 확인",
+      "fee": "일반 관람 안내와 운영 통제 확인",
+      "sourceRefs": [
+        "https://pohang.go.kr/phtour/wmap/tourInformation/view.do?cate_id=93&menu_idx=104&tour_info_idx=747",
+        "https://www.yna.co.kr/view/AKR20231011127200053"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-pohang-space-walk-night",
+          "title": "포항 스페이스워크 야간 강철 트랙",
+          "imageUrl": "https://img8.yna.co.kr/etc/inner/KR/2023/10/11/AKR20231011127200053_01_i_P4.jpg",
+          "sourceThumbnail": "https://img8.yna.co.kr/etc/inner/KR/2023/10/11/AKR20231011127200053_01_i_P4.jpg",
+          "sourcePageUrl": "https://www.yna.co.kr/view/AKR20231011127200053",
+          "sourceName": "연합뉴스",
+          "creator": "연합뉴스",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "야간 강철 조형",
+          "notes": "장소와 구조물 형태 확인용. 뉴스 사진의 상업적 재사용 권리는 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        },
+        {
+          "id": "ref-pohang-space-walk-coastal",
+          "title": "포항 스페이스워크의 해안·도시 조망",
+          "imageUrl": "https://bestofkorea.com/wp-content/uploads/2025/05/BOK_Pohang_Travel_Cover_2025.jpg",
+          "sourceThumbnail": "https://bestofkorea.com/wp-content/uploads/2025/05/BOK_Pohang_Travel_Cover_2025.jpg",
+          "sourcePageUrl": "https://bestofkorea.com/guide-to-pohang-korea-must-do/",
+          "sourceName": "Best of Korea",
+          "creator": "Best of Korea",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "낮·해안 조망",
+          "notes": "해안과 구조물의 시각적 관계를 참고하기 위한 후보. 사진 재사용 권리 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "coordinates": null,
+      "imageStatus": "장소 참고 이미지 · 대표사진 최종 검토 필요",
+      "primaryImageId": "ref-pohang-space-walk-night",
+      "referenceImageId": "ref-pohang-space-walk-night",
+      "verification": {
+        "location": "포항시 공식 관광 안내 확인",
+        "photoMatch": "장소별 참고 이미지 연결",
+        "rights": "참고용·재사용 권리 미확인",
+        "shootingPermission": "현장 안전·상업 촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "신규 추가 · 사진가 관점 1차 조사 · 기상·안전 확인 필수",
+      "scoutingChecklist": [
+        "당일 기상·통제·운영시간 확인",
+        "관람객 동선과 안전시설 준수",
+        "아래쪽 관람 위치와 구조물 위 촬영을 구분",
+        "해질녘·야간 운영 및 장비 사용을 사전 문의"
+      ],
+      "notes": "포항시 공식 관광안내에서 위치·운영시간·관리기관을 확인. 사진은 구조물 형태를 보여주는 참고 후보이며, 구조물 위에서의 장비 촬영이 허가되었다는 뜻은 아닙니다.",
+      "photoPotentialScore": 94,
+      "photoScoreBreakdown": {
+        "distinctiveness": 30,
+        "compositionVariety": 20,
+        "lightAndTexture": 21,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 6
+      },
+      "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
+      "priorityLabel": "우선 답사 후보",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16"
+    },
+    {
+      "id": "gg-anyang-pavilion-alvaro-siza",
+      "name": "안양 파빌리온(알바루 시자 홀)",
+      "region": "경기",
+      "category": "현대건축 파빌리온·공공예술",
+      "address": "경기도 안양시 만안구 예술공원로 180",
+      "phone": "031-687-0548",
+      "officialUrl": "https://www.anyang.go.kr/tour/contents.do?key=1868",
+      "openingStatus": "안양시 문화관광 안내 기준 화~일 10:00~18:00, 월요일·신정·설·추석 연휴 휴관. 특별 운영·행사 일정 재확인.",
+      "shootingPermission": "안양예술공원 내 별도 건축 포인트. 일반 관람과 상업촬영·삼각대·조명 사용은 구분해 운영기관에 문의.",
+      "spaceTypes": [
+        "실내",
+        "야외",
+        "현대건축",
+        "공공예술",
+        "숲과 콘크리트"
+      ],
+      "photoProfile": "기존 ‘안양예술공원’ 항목의 포괄적인 공원 안내와 구분되는 특정 건축물. 알바루 시자와 카를루스 카스타네이라가 설계한 낮고 흰 파빌리온이 바위·소나무·산자락과 어우러져 한국의 자연 지형과 국제적 미니멀 건축을 함께 담을 수 있습니다.",
+      "visualStrengths": [
+        "낮고 긴 흰 매스와 산림 배경",
+        "거친 바위·소나무와 매끄러운 건축 표면",
+        "입구 그늘과 낮은 수평선"
+      ],
+      "bestConcepts": [
+        "한국 산림과 유럽 미니멀 건축의 대비",
+        "건축 비례를 활용한 패션 에디토리얼",
+        "콘크리트 질감·그림자 중심의 조형 이미지"
+      ],
+      "constraints": [
+        "기존 안양예술공원 레코드 내부의 세부 장소임을 인지",
+        "실내·전시 사용 여부와 촬영 가능 구역 확인",
+        "공공예술 작품 보호 및 상업촬영 사전 문의"
+      ],
+      "scoutPriority": 1,
+      "searchTerms": [
+        "안양 파빌리온 알바루 시자 홀 외관",
+        "Álvaro Siza Hall Anyang Pavilion white concrete"
+      ],
+      "aliases": [
+        "안양 파빌리온",
+        "알바루 시자 홀",
+        "Álvaro Siza Hall",
+        "Anyang Pavilion"
+      ],
+      "summary": "안양예술공원의 여러 공공예술 포인트 중 국제적 건축가의 설계가 명확한 특정 파빌리온. 공원 전체보다 건축 형태·재료·주변 자연의 관계를 집중적으로 기록하기 위한 세부 촬영 장소입니다.",
+      "parking": "안양예술공원 공영주차장 및 현장 안내 확인",
+      "fee": "공식 운영·프로그램에 따른 조건 확인",
+      "sourceRefs": [
+        "https://www.anyang.go.kr/tour/contents.do?key=1868",
+        "https://www.anyang.go.kr/tour/contents.do?key=2719",
+        "https://archello.com/project/alvaro-siza-hall-anyang-pavilion"
+      ],
+      "imageCandidates": [
+        {
+          "id": "ref-anyang-pavilion-exterior",
+          "title": "안양 파빌리온 흰색 파빌리온과 산림",
+          "imageUrl": "https://archello.com/thumbs/images/2025/01/07/--lvaro-siza-with-carlos-castanheira---lvaro-siza-hall-.-anyang-pavilion-art-galleries-archello.1736255194.8131.jpg?auto=compress&fit=crop",
+          "sourceThumbnail": "https://archello.com/thumbs/images/2025/01/07/--lvaro-siza-with-carlos-castanheira---lvaro-siza-hall-.-anyang-pavilion-art-galleries-archello.1736255194.8131.jpg?auto=compress&fit=crop",
+          "sourcePageUrl": "https://archello.com/project/alvaro-siza-hall-anyang-pavilion",
+          "sourceName": "Archello",
+          "creator": "Archello",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "외관·건축",
+          "notes": "설계 프로젝트의 공간 참조용. 이미지 재사용 권리는 별도 확인.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z"
+        }
+      ],
+      "coordinates": null,
+      "imageStatus": "장소 참고 이미지 · 대표사진 최종 검토 필요",
+      "primaryImageId": "ref-anyang-pavilion-exterior",
+      "referenceImageId": "ref-anyang-pavilion-exterior",
+      "verification": {
+        "location": "안양시 문화관광 안내 확인",
+        "photoMatch": "장소별 참고 이미지 연결",
+        "rights": "참고용·재사용 권리 미확인",
+        "shootingPermission": "상업촬영 조건 미확인",
+        "lastCheckedAt": "2026-10-16"
+      },
+      "selectionStatus": "기존 안양예술공원의 별도 세부 포인트 · 신규 추가 · 현장 촬영 검증 전",
+      "scoutingChecklist": [
+        "안양예술공원 내 파빌리온의 정확한 진입점 확인",
+        "운영일·전시·행사 일정 확인",
+        "건축물 주변 자연광과 그림자 관찰",
+        "상업촬영·삼각대·조명 사용 조건 문의"
+      ],
+      "notes": "안양시의 APAP·문화관광 안내와 건축 전문 프로젝트 페이지를 교차 확인했습니다. 공원 자체를 재등록한 것이 아니라 알바루 시자 설계의 파빌리온이라는 구체적 건축 포인트를 분리한 것입니다. 현장 촬영 허가 및 사진 이용권은 별도 확인이 필요합니다.",
+      "photoPotentialScore": 92,
+      "photoScoreBreakdown": {
+        "distinctiveness": 29,
+        "compositionVariety": 19,
+        "lightAndTexture": 20,
+        "editorialVersatility": 17,
+        "indoorOutdoorFlexibility": 7
+      },
+      "scoreStatus": "사진가 관점의 기획 평가(현장 검증 전)",
+      "priorityLabel": "우선 답사 후보",
+      "createdAt": "2026-10-16",
+      "updatedAt": "2026-10-16"
     }
   ]
 }
