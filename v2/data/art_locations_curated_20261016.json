@@ -394,25 +394,27 @@
       "fee": "관람료 최신 안내 확인",
       "sourceRefs": [
         "http://koohouse.org",
-        "https://access.visitkorea.or.kr/ms/detail.do?cotId=525c0851-66f5-43b3-9e5a-2d13fb81e285"
+        "https://access.visitkorea.or.kr/ms/detail.do?cotId=525c0851-66f5-43b3-9e5a-2d13fb81e285",
+        "https://heypop.kr/place/76659/"
       ],
       "imageCandidates": [
         {
           "id": "ref-koo-house-garden",
-          "title": "구하우스미술관 외부 정원과 건축",
-          "imageUrl": "https://access.visitkorea.or.kr/bfvk_img/call?cmd=VIEW&id=b4fdaaad-24bd-4b03-860d-a9d637b051ce",
-          "sourceThumbnail": "https://access.visitkorea.or.kr/bfvk_img/call?cmd=VIEW&id=b4fdaaad-24bd-4b03-860d-a9d637b051ce",
-          "sourcePageUrl": "https://access.visitkorea.or.kr/ms/detail.do?cotId=525c0851-66f5-43b3-9e5a-2d13fb81e285",
-          "sourceName": "한국관광공사",
-          "creator": "한국관광공사",
+          "title": "구하우스미술관 정원과 현대건축 외관",
+          "imageUrl": "https://storage.heypop.kr/assets/2023/11/21173414/PC-2-scaled.jpg",
+          "sourceThumbnail": "https://storage.heypop.kr/assets/2023/11/21173414/PC-2-scaled.jpg",
+          "sourcePageUrl": "https://heypop.kr/place/76659/",
+          "sourceName": "헤이팝 · 구하우스미술관 소개",
+          "creator": "헤이팝 · 구하우스미술관 소개",
           "rights": "reference-only",
-          "rightsLabel": "장소 참고 이미지",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
           "rightsStatus": "reference-only",
           "placeMatch": "confirmed",
-          "viewType": "정원·현대건축",
-          "notes": "정원 동선과 건축을 함께 보는 참고 이미지.",
+          "viewType": "미술관 외관·정원·건축",
+          "notes": "구하우스미술관 공간을 식별할 수 있는 외관·정원 참고사진으로 교체. 전시장별 촬영 허가와 사진 재사용 조건은 별도 확인.",
           "status": "candidate",
-          "createdAt": "2026-10-16T00:00:00.000Z"
+          "createdAt": "2026-10-16T02:00:00.000Z",
+          "refreshPublishedReference": true
         },
         {
           "id": "ref-koo-house-interior",
@@ -433,7 +435,7 @@
         }
       ],
       "coordinates": null,
-      "imageStatus": "참고 이미지 연결",
+      "imageStatus": "교체 참고사진 연결 · 재사용 및 촬영 조건 별도 확인",
       "primaryImageId": null,
       "verification": {
         "location": "공식 또는 신뢰 출처에서 확인",
@@ -2909,28 +2911,30 @@
       "fee": "숙박·입장료와 상업촬영 대관료를 구분해 확인",
       "sourceRefs": [
         "https://fashionbiz.co.kr/article/220726",
-        "https://www.ehyundai.com"
+        "https://www.ehyundai.com",
+        "https://www.seoulwire.com/news/articleView.html?idxno=437174"
       ],
       "imageCandidates": [
         {
           "id": "ref-thehyundai-sounds-forest-20261016",
-          "title": "더현대 서울 사운즈 포레스트의 실내 정원과 아트리움",
-          "imageUrl": "https://www.fashionbiz.co.kr/images/articleImg/textImg/1761182855372-%ED%98%84%EB%8C%80%EB%B0%B1%ED%99%94%EC%A0%90_%EB%8D%94%ED%98%84%EB%8C%80%20%EC%84%9C%EC%9A%B8%20%EC%82%AC%EC%9A%B4%EC%A6%88%20%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8%20%EC%A0%84%EA%B2%BD%20%EC%82%AC%EC%A7%84.jpg",
-          "sourceThumbnail": "https://www.fashionbiz.co.kr/images/articleImg/textImg/1761182855372-%ED%98%84%EB%8C%80%EB%B0%B1%ED%99%94%EC%A0%90_%EB%8D%94%ED%98%84%EB%8C%80%20%EC%84%9C%EC%9A%B8%20%EC%82%AC%EC%9A%B4%EC%A6%88%20%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8%20%EC%A0%84%EA%B2%BD%20%EC%82%AC%EC%A7%84.jpg",
-          "sourcePageUrl": "https://fashionbiz.co.kr/article/220726",
-          "sourceName": "패션비즈 · 사운즈 포레스트 조경대상 소개",
-          "creator": "패션비즈 · 사운즈 포레스트 조경대상 소개",
+          "title": "더현대 서울 사운즈 포레스트 실내 정원과 자연광",
+          "imageUrl": "https://cdn.seoulwire.com/news/photo/202102/437174_634704_1753.jpg",
+          "sourceThumbnail": "https://cdn.seoulwire.com/news/photo/202102/437174_634704_1753.jpg",
+          "sourcePageUrl": "https://www.seoulwire.com/news/articleView.html?idxno=437174",
+          "sourceName": "서울와이어 · 더현대 서울 실내 녹지 공간 소개",
+          "creator": "서울와이어 · 더현대 서울 실내 녹지 공간 소개",
           "rights": "reference-only",
           "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
           "rightsStatus": "reference-only",
           "placeMatch": "confirmed",
           "viewType": "실내 숲·아트리움·자연광",
-          "notes": "실내 녹지 공간과 높은 층고를 보여주는 사진. 다층 난간과 식재의 스케일을 참고하기 위한 이미지.",
+          "notes": "다층 개방 공간과 실내 정원, 채광이 확인되는 사운즈 포레스트 참고사진. 기사 사진 재사용과 상업촬영 허가는 별도 확인.",
           "status": "candidate",
-          "createdAt": "2026-10-16T01:10:00.000Z"
+          "createdAt": "2026-10-16T02:00:00.000Z",
+          "refreshPublishedReference": true
         }
       ],
-      "imageStatus": "장소 참고사진 연결 · 대표사진 승인 전",
+      "imageStatus": "대체 참고사진 연결 · 대표사진 승인 및 촬영 조건 별도 확인",
       "primaryImageId": null,
       "referenceImageId": "ref-thehyundai-sounds-forest-20261016",
       "referenceImageStatus": "장소 참고 이미지 · 현장 촬영허가 및 재사용 조건 미확인",
@@ -3497,6 +3501,231 @@
       ],
       "notes": "2026-10-16 보강: 서울시 미디어허브의 서서울미술관 외관 참고사진을 추가해 기존 이미지 로딩 실패에 대비했습니다. 사진 재사용 권리와 현장 촬영 규정은 별도 확인.",
       "updatedAt": "2026-10-16"
+    },
+    {
+      "id": "incheon-yeolumul-mural-village",
+      "name": "인천 십정동 열우물마을 옛 벽화골목 (역사 기록)",
+      "curationOverride": true,
+      "overrideExistingFields": true,
+      "aliases": [
+        "열우물 벽화마을",
+        "십정동 열우물 벽화마을",
+        "열우물마을 역사 사진"
+      ],
+      "category": "역사 기록·도시재생 변화 기록",
+      "photoProfile": "과거 인천 십정동 열우물 벽화마을의 골목 벽화를 기록하는 역사 자료입니다. 재개발로 예전 벽화 골목은 현재 촬영 배경으로 남아 있지 않으므로, 현장 답사용 추천지가 아니라 장소 변화와 도시 기억을 확인하는 참고 기록으로만 봅니다.",
+      "summary": "예전 벽화 골목은 재개발로 바뀌었습니다. 아래 사진은 과거 모습을 보여주는 역사 기록이며, 현재 방문 가능한 벽화마을로 오해하지 않도록 표시합니다.",
+      "imageStatus": "역사 참고사진 연결 · 현재 현장과 구분",
+      "selectionStatus": "역사 기록 전용 · 현재 촬영 장소 추천에서 제외",
+      "referenceImageId": "ref-yeolumul-historic-mural-20261016",
+      "imageCandidates": [
+        {
+          "id": "ref-yeolumul-historic-mural-20261016",
+          "title": "인천 십정동 열우물 옛 벽화골목 (과거 기록)",
+          "imageUrl": "https://img1.daumcdn.net/thumb/R800x0/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F1934CF3C4FB35FF202&scode=mtistory2",
+          "sourceThumbnail": "https://img1.daumcdn.net/thumb/R800x0/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F1934CF3C4FB35FF202&scode=mtistory2",
+          "sourcePageUrl": "https://liveincheon.tistory.com/28",
+          "sourceName": "통하는 인천 · 열우물 벽화마을 과거 기록",
+          "creator": "통하는 인천 · 열우물 벽화마을 과거 기록",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "역사 사진·옛 골목 벽화",
+          "notes": "과거 벽화마을의 모습을 기록한 참고사진입니다. 재개발 후 현재 촬영장소로 추천하지 않습니다. 사진 재사용 권리 확인 필요.",
+          "status": "candidate",
+          "refreshPublishedReference": true,
+          "createdAt": "2026-10-16T02:00:00.000Z"
+        },
+        {
+          "id": "ref-yeolumul-mural-village-liveincheon-2026",
+          "title": "구형 열우물마을 골목 사진 (교체 전 후보)",
+          "imageUrl": "https://t1.daumcdn.net/cfile/tistory/242F12385575741C32",
+          "sourceThumbnail": "https://t1.daumcdn.net/cfile/tistory/242F12385575741C32",
+          "sourcePageUrl": "https://liveincheon.tistory.com/2707?category=542747",
+          "sourceName": "통하는 인천 · 과거 벽화마을 기록",
+          "creator": "통하는 인천 · 과거 벽화마을 기록",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "과거 사진·교체 전 후보",
+          "notes": "교체 전 후보이므로 대표사진 선택에서 제외합니다.",
+          "status": "candidate",
+          "refreshPublishedReference": true,
+          "createdAt": "2026-10-16T02:00:00.000Z"
+        },
+        {
+          "id": "img-yeolumul-current-life-art-official-20261015",
+          "title": "현재 열우물 생활유산 조형물 (별도 장소 기록 아님)",
+          "imageUrl": "https://www.incheon.go.kr/data/editor/20231201/202312010916362241.jpg",
+          "sourceThumbnail": "https://www.incheon.go.kr/data/editor/20231201/202312010916362241.jpg",
+          "sourcePageUrl": "https://www.incheon.go.kr/goodmorning/GOOD010101/view?curPage=&nttNo=2041997&srchCategoryCode=SCN&srchKey=&srchPblicteIssnoCode=202312&srchWord=",
+          "sourceName": "인천광역시 공식 웹진",
+          "creator": "인천광역시 공식 웹진",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "현재 아파트 단지 내 생활유산 조형물",
+          "notes": "현재 남은 조형물을 과거 벽화 골목 사진과 혼동하지 않도록 이 항목에서는 선택에서 제외합니다.",
+          "status": "candidate",
+          "refreshPublishedReference": true,
+          "createdAt": "2026-10-16T02:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "paju-heyri-cinema",
+      "name": "파주 헤이리시네마",
+      "curationOverride": true,
+      "overrideExistingFields": true,
+      "imageStatus": "교체 참고사진 연결 · 촬영 허가와 이미지 이용 조건 확인 필요",
+      "selectionStatus": "참고사진 교체 완료 · 실제 공간 대관·촬영 허가는 별도 확인",
+      "referenceImageId": "ref-heyri-cinema-hankyung-2026",
+      "imageCandidates": [
+        {
+          "id": "ref-heyri-cinema-hankyung-2026",
+          "title": "파주 헤이리시네마 실제 소규모 아트하우스 객석",
+          "imageUrl": "https://img.hankyung.com/photo/202502/01.39571848.1.jpg",
+          "sourceThumbnail": "https://img.hankyung.com/photo/202502/01.39571848.1.jpg",
+          "sourcePageUrl": "https://www.hankyung.com/article/202502208046i",
+          "sourceName": "한국경제 · 헤이리시네마 소개",
+          "creator": "한국경제 · 헤이리시네마 소개",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "소규모 영화관·객석·실내 조명",
+          "notes": "헤이리시네마 소개 기사에 실린 객석 참고사진으로 교체. 상업적 사진 재사용과 내부 촬영은 별도 확인.",
+          "status": "candidate",
+          "refreshPublishedReference": true,
+          "createdAt": "2026-10-16T02:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "cheongju-dongbu-warehouse",
+      "name": "청주 동부창고",
+      "curationOverride": true,
+      "overrideExistingFields": true,
+      "imageStatus": "공식 웹사이트 참고사진 연결 · 촬영·재사용 조건 별도 확인",
+      "selectionStatus": "참고사진 교체 완료 · 산업창고 내부 공간의 촬영 활용성 확인",
+      "referenceImageId": "img-cheongju-dongbu-warehouse-visitkorea",
+      "imageCandidates": [
+        {
+          "id": "img-cheongju-dongbu-warehouse-visitkorea",
+          "title": "청주 동부창고 옛 창고 내부의 서가·산업 구조",
+          "imageUrl": "https://www.dbchangko.org/admode/upload/used/4/984676381579159341.jpg",
+          "sourceThumbnail": "https://www.dbchangko.org/admode/upload/used/4/984676381579159341.jpg",
+          "sourcePageUrl": "https://www.dbchangko.org/sub.php?code=26",
+          "sourceName": "청주 동부창고 공식 웹사이트",
+          "creator": "청주 동부창고 공식 웹사이트",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "산업창고·서가·고천장 내부",
+          "notes": "동부창고 공식 홈페이지에서 확인한 내부 공간 참고사진. 전시·행사 일정, 촬영 허가 및 재사용 조건은 별도 확인.",
+          "status": "candidate",
+          "refreshPublishedReference": true,
+          "createdAt": "2026-10-16T02:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "seoul-photo-museum",
+      "name": "서울시립 사진미술관",
+      "curationOverride": true,
+      "overrideExistingFields": true,
+      "imageStatus": "건축 외관 대체 참고사진 연결 · 재사용 조건 별도 확인",
+      "selectionStatus": "대체 이미지 연결 완료 · 건축 형태를 기준으로 현장 확인",
+      "referenceImageId": "legacy-image-l-188",
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-188",
+          "title": "서울시립 사진미술관의 조형 큐브형 파사드",
+          "imageUrl": "https://artcue.kr/media/museums/main/museum_%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD-%EC%82%AC%EC%A7%84%EB%AF%B8%EC%88%A0%EA%B4%80.jpg",
+          "sourceThumbnail": "https://artcue.kr/media/museums/main/museum_%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD-%EC%82%AC%EC%A7%84%EB%AF%B8%EC%88%A0%EA%B4%80.jpg",
+          "sourcePageUrl": "https://artcue.kr/museums/seoul-museum-of-photography/",
+          "sourceName": "아트큐 · 서울시립 사진미술관 소개",
+          "creator": "아트큐 · 서울시립 사진미술관 소개",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "현대 건축·회전 큐브형 파사드",
+          "notes": "서울시립 사진미술관의 조형적 외관을 식별할 수 있는 대체 참고사진. 사진 재사용과 촬영 허가 별도 확인.",
+          "status": "candidate",
+          "refreshPublishedReference": true,
+          "createdAt": "2026-10-16T02:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "mungyeong-saejae-open-set",
+      "name": "문경새재 오픈세트장",
+      "curationOverride": true,
+      "overrideExistingFields": true,
+      "imageStatus": "전통 거리 대체 참고사진 연결 · 촬영 허가 별도 확인",
+      "selectionStatus": "대체 이미지 연결 완료 · 한옥 세트·골목 원근 촬영 후보",
+      "referenceImageId": "legacy-image-l-218",
+      "imageCandidates": [
+        {
+          "id": "legacy-image-l-218",
+          "title": "문경새재 오픈세트장 전통 거리와 기와지붕",
+          "imageUrl": "https://cdn.welfarehello.com/naver-blog/production/mungyeongsi/2025-02/223748971593/mungyeongsi_223748971593_6.jpg?f=webp&q=80&w=800",
+          "sourceThumbnail": "https://cdn.welfarehello.com/naver-blog/production/mungyeongsi/2025-02/223748971593/mungyeongsi_223748971593_6.jpg?f=webp&q=80&w=800",
+          "sourcePageUrl": "https://www.welfarehello.com/community/hometownNews/f812b28c-3848-477a-adc9-72222943540b",
+          "sourceName": "문경 지역 소개 자료",
+          "creator": "문경 지역 소개 자료",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "전통 한옥 세트·골목 원근·산 배경",
+          "notes": "문경새재 오픈세트장으로 소개된 실제 전통 거리 참고사진으로 교체. 촬영 허가 및 사진 재사용은 별도 확인.",
+          "status": "candidate",
+          "refreshPublishedReference": true,
+          "createdAt": "2026-10-16T02:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "kfilm-studio-paju",
+      "name": "K Film Studio 파주 대형스튜디오",
+      "curationOverride": true,
+      "overrideExistingFields": true,
+      "aliases": [
+        "케이필름 제4스튜디오",
+        "K Film Studio Paju",
+        "케이필름 파주스튜디오"
+      ],
+      "imageStatus": "공식 등록 참고사진 연결 · 촬영 허가 별도 확인",
+      "selectionStatus": "공식 스튜디오 등록 사진 연결 완료 · 접근·대관·촬영 허가 별도 확인",
+      "photoProfile": "필름코리아에 등록된 대형 세트 제작 공간의 참고사진. 고천장, 넓은 무대 면적, 조명 그리드 및 호리존을 살펴보는 스튜디오 스카우팅 후보이며 실제 이용 가능성과 대관·촬영 허가를 별도 확인해야 합니다.",
+      "summary": "공식 등록 자료의 대형 스튜디오 내부 참고사진을 연결했습니다. 사진 이용권과 스튜디오 대관·촬영 가능 조건은 사전에 운영처에 확인하세요.",
+      "referenceImageId": "ref-kfilm-studio-interior-20261016",
+      "imageCandidates": [
+        {
+          "id": "ref-kfilm-studio-interior-20261016",
+          "title": "케이필름 제4스튜디오 대형 세트 제작 공간 내부",
+          "imageUrl": "https://filmkorea.ecn.cdn.infralab.net/9/studio/dest/202608/11063.png",
+          "sourceThumbnail": "https://filmkorea.ecn.cdn.infralab.net/9/studio/dest/202608/11063.png",
+          "sourcePageUrl": "https://www.filmkorea.or.kr/studio/studio_view.jsp?id=10207",
+          "sourceName": "필름코리아 · 케이필름 제4스튜디오 등록 자료",
+          "creator": "필름코리아 · 케이필름 제4스튜디오 등록 자료",
+          "rights": "reference-only",
+          "rightsLabel": "장소 참고 이미지 · 재사용 및 촬영 조건 별도 확인",
+          "rightsStatus": "reference-only",
+          "placeMatch": "confirmed",
+          "viewType": "대형 호리존·고천장 세트 제작 공간",
+          "notes": "필름코리아 스튜디오 등록 페이지의 K Film Studio 사진 자료. 실제 대관 가능 날짜, 촬영 허가 및 사진 재사용 조건은 별도 확인.",
+          "status": "candidate",
+          "refreshPublishedReference": true,
+          "createdAt": "2026-10-16T02:00:00.000Z"
+        }
+      ]
     }
   ]
 }

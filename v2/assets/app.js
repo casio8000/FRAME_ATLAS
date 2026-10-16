@@ -173,7 +173,13 @@ function mergePublishedPhotoReferences(draft,base){
   if((!Array.isArray(p.mediaAppearances)||!p.mediaAppearances.length)&&Array.isArray(fresh.mediaAppearances)&&fresh.mediaAppearances.length)p.mediaAppearances=JSON.parse(JSON.stringify(fresh.mediaAppearances));
   if(!Array.isArray(p.imageCandidates))p.imageCandidates=[];
   if(p.photoSelectionCleared)continue;
-  for(const sourceCandidate of (fresh.imageCandidates||[])){if(!p.imageCandidates.some(c=>c.id===sourceCandidate.id))p.imageCandidates.push(JSON.parse(JSON.stringify(sourceCandidate)));}
+  for(const sourceCandidate of (fresh.imageCandidates||[])){
+   const localCandidate=p.imageCandidates.find(c=>c.id===sourceCandidate.id);
+   if(!localCandidate)p.imageCandidates.push(JSON.parse(JSON.stringify(sourceCandidate)));
+   else if(sourceCandidate.refreshPublishedReference===true&&!localCandidate.pendingAsset&&!localCandidate.assetPath){
+    Object.assign(localCandidate,JSON.parse(JSON.stringify(sourceCandidate)));
+   }
+  }
   const usable=c=>c&&c.status!=="rejected"&&(c.imageUrl||c.sourceThumbnail||c.pendingAsset||c.assetPath);
   const publicPrimary=(fresh.imageCandidates||[]).find(c=>c&&c.id===fresh.primaryImageId&&usable(c));
   if(publicPrimary){
@@ -338,6 +344,14 @@ async function syncAttachSupplementalPlaces(base){
       for(const candidate of incoming)byImageId.set(candidate.id,Object.assign({},byImageId.get(candidate.id)||{},syncClone(candidate)));
       existing.imageCandidates=[...byImageId.values()];
       for(const key of ["primaryImageId","referenceImageId"])if(place[key])existing[key]=place[key];
+      if(place.overrideExistingFields===true){
+       for(const key of ["name","category","imageStatus","selectionStatus","photoProfile","summary"]){
+        if(typeof place[key]==="string"&&place[key].trim())existing[key]=place[key];
+       }
+       for(const key of ["aliases","sourceRefs","bestConcepts","visualStrengths"]){
+        if(Array.isArray(place[key]))existing[key]=syncClone(place[key]);
+       }
+      }
       existing.notes=[existing.notes,place.imageCandidates?.[0]?.notes].filter(Boolean).join(" ");
      }
      continue;
@@ -363,6 +377,16 @@ async function loadBase(){
    try{localStorage.setItem(BASELINE_KEY,JSON.stringify(base));localStorage.removeItem(LEGACY_DRAFT_KEY);}catch(_){}
   }
   const source=draft&&Array.isArray(draft.places)?mergePublishedPhotoReferences(draft,base):base;
+  // Clear leftover blank/number-only drafts left by earlier registration screens.
+  if(Array.isArray(source.places)){
+   const beforeCount=source.places.length;
+   source.places=source.places.filter(p=>{
+    const name=String(p?.name||"").replace(/\s+/g," ").trim();
+    const placeholder=/^(?:\d{1,3}|새\s*촬영장소(?:\s*\(\s*이름\s*입력\s*\))?|장소\s*이름\s*입력|이름\s*입력)$/i.test(name);
+    return !!name&&!placeholder;
+   });
+   if(draft&&source.places.length!==beforeCount){try{localStorage.setItem(LOCAL_KEY,JSON.stringify(source));}catch(_){}}
+  }
   catalog=normalizeCatalog(source);
   const routeAfterLoad=document.body.dataset.appView||"home";
   if(selectedId&&!getPlace(selectedId))selectedId=null;

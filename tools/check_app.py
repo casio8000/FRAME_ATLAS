@@ -9,7 +9,7 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-HTML_PATH = ROOT / "index.html"
+HTML_PATH = ROOT / "legacy-v5.44.html"
 SW_PATH = ROOT / "sw.js"
 SYNC_PATH = ROOT / "data" / "device-sync.js"
 AUDIT_PATH = ROOT / "data" / "legacy-v6-audit.js"
@@ -23,7 +23,7 @@ def fail(message: str) -> None:
     errors.append(message)
 
 if not HTML_PATH.is_file():
-    print("ERROR: index.html이 없습니다.")
+    print("ERROR: legacy-v5.44.html이 없습니다.")
     raise SystemExit(1)
 html = HTML_PATH.read_text(encoding="utf-8")
 sw = SW_PATH.read_text(encoding="utf-8") if SW_PATH.is_file() else ""
