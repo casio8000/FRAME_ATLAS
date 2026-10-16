@@ -45,6 +45,11 @@ Date: 2026-10-16 (Korea Standard Time)
 - Two garbled-name exports were removed; readable Korean export files with exactly matching blob hashes remain. No active app/manual references to the garbled filenames were found.
 - Root `MANUAL.md` was a V5.40 guide and is being replaced with a pointer to the current 2.0 manual. Its prior contents (blob SHA `af46a5531ab59cfafb83f4bd9ed6dc87421130de`) are preserved on the backup branch.
 
+## 2026-10-16 document archive
+- Moved four outdated root documents to `archive/legacy-v5-docs/` without rewriting their contents: v5.8 add-on notes, v5.9 location research guide, v5.8 scouting assessment, and the 2026-10-11 sync architecture proposal.
+- Current manual remains `MANUAL.md` (redirect pointer to 2.0) and `v2/USER_MANUAL_KO.html`; the prior V5.40 manual blob is also preserved in the backup branch.
+- The current 200-place V2 catalog and all legacy data/PWA recovery modules remain untouched.
+
 ## Next steps
 1. Verify the current cleanup commit's Actions and Pages deployment before doing another code change.
 2. Review uploaded browser audit JSON and separate genuinely broken image sources from slow or still-pending remote responses; do not change the catalog automatically from a timed-out image request.

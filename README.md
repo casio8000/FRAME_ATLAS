@@ -13,6 +13,7 @@ https://casio8000.github.io/FRAME_ATLAS/v2/index.html
 - `v2/assets/app.js`, `v2/assets/app.css`: 동작과 반응형 디자인
 - `v2/data/places.json`: 전국 촬영 장소 카탈로그
 - `v2/USER_MANUAL_KO.html`: 사용자 매뉴얼
+- `archive/legacy-v5-docs/`: 이전 v5.x 조사·평가·동기화 문서(참고용 보관; 현재 앱 지침 아님)
 - `v2/CONTINUATION_CHECKPOINT.md`: 다음 작업을 이어갈 때 확인할 최신 체크포인트
 - `.github/workflows/quality-check.yml`: 데이터·앱·PC/모바일 브라우저 자동 검사
 
