@@ -90,7 +90,7 @@ function bindImageFallbacks(root){
    const f=frame(),w=f&&f.classList.contains("thumb")?260:900,h=f&&f.classList.contains("thumb")?190:650;
    return "https://images.weserv.nl/?url="+encodeURIComponent(url)+"&w="+w+"&h="+h+"&fit=inside&output=webp";
   };
-  const alternateProxyUrl=url=>{if(!/^https?:\\/\\//i.test(url))return "";const f=frame(),w=f&&f.classList.contains("thumb")?260:900,h=f&&f.classList.contains("thumb")?190:650;return "https://wsrv.nl/?url="+encodeURIComponent(url)+"&w="+w+"&h="+h+"&fit=inside&output=webp";};
+  const alternateProxyUrl=url=>{if(!/^https?:/i.test(url))return "";const f=frame(),w=f&&f.classList.contains("thumb")?260:900,h=f&&f.classList.contains("thumb")?190:650;return "https://wsrv.nl/?url="+encodeURIComponent(url)+"&w="+w+"&h="+h+"&fit=inside&output=webp";};
   // Order: thumbnail -> proxy of failed original -> other verified candidate URLs -> their proxies.
   const thumb=img.dataset.fallbackThumbnail||"";addUrl(thumb);addUrl(proxyUrl(initial));addUrl(alternateProxyUrl(initial));
   const alts=[];
