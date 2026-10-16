@@ -126,6 +126,8 @@ if SW_PATH.is_file():
             item = item.split("?", 1)[0].split("#", 1)[0]
             if not item or item.startswith(("http://", "https://")):
                 continue
+            if item in (".", "./"):
+                item = "index.html"
             resolved = (APP_ROOT / item).resolve()
             if APP_ROOT.resolve() not in resolved.parents and resolved != APP_ROOT.resolve():
                 missing.append(item + " (앱 폴더 밖)")
