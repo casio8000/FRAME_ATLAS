@@ -246,6 +246,12 @@ else:
 legacy_root = ROOT / "data"
 if legacy_root.exists():
     fail("구형 데이터 디렉터리 data/가 루트에 다시 나타났습니다. V5 자료는 archive/legacy-v5-app/data/에 보관하세요.")
+root_unused_icon = ROOT / "assets" / "icons" / "icon-128.png"
+if root_unused_icon.exists():
+    fail("참조되지 않는 구형 128px 아이콘이 루트 assets/에 다시 나타났습니다.")
+legacy_icon_archive = ROOT / "archive" / "legacy-v5-app" / "assets" / "icons" / "icon-128.png"
+if not legacy_icon_archive.is_file():
+    fail("구형 128px 아이콘이 아카이브에 보존되지 않았습니다.")
 legacy_archive_required = [
     ROOT / "archive" / "legacy-v5-app" / "data" / "places.js",
     ROOT / "archive" / "legacy-v5-app" / "data" / "DB_SCHEMA.json",

@@ -9,6 +9,7 @@
 - `data/review-workflow.js`, `data/image-registry.js`: V5의 장소 검증 워크스페이스 및 이미지 레지스트리.
 - `data/서울수도권_추가장소_기본가져오기.csv`, `data/서울수도권_추가장소_상세데이터.json`: 이전 장소 검토용 내보내기 자료.
 - `tools/harvest_images.py`: V5 데이터 전용 이미지 후보 수집기. V2 카탈로그나 사진 게시에 사용하지 마세요.
+- `assets/icons/icon-128.png`: 현재 매니페스트·서비스 워커·2.0 화면에서 참조하지 않는 구형 아이콘.
 - `validate_legacy_v5.py`, `report_v5.md`: 구형 장소 데이터의 이전 검증기와 보고서.
 
 현재 2.0의 장소 수·사진 후보·저장소 사진 경로 상태는 [현재 보고서](../../tools/report.md)를, 사용 방법은 [2.0 사용자 매뉴얼](../../v2/USER_MANUAL_KO.html)을 참고하세요.
