@@ -56,6 +56,8 @@ const expectedPhotoPlaceIds=new Set(catalogForCounts.places.filter(isActivePhoto
  assert.equal(cleanedDraft.places.length,expectedPlaceCount,"A PC-only place draft and duplicate-name row must not change the published active count");
  assert.equal(cleanedDraft.places.filter(p=>p.id==="seo-ddp").length,1,"Canonical locations should only appear once by stable published ID");
  assert.equal(cleanedDraft.places.filter(p=>normName(p.name)===normName(duplicateSource.name)).length,1,"Alternate-ID records that duplicate a published location should merge into the canonical record");
+ await draftPage.locator("#welcomeStartBtn").click();
+ await draftPage.waitForFunction(()=>!document.querySelector("#homeView")?.hidden,{timeout:15000});
  const localOnlyDrafts=await draftPage.evaluate(()=>JSON.parse(localStorage.getItem("frameAtlas2UnpublishedPlaceDrafts")||"[]"));
  assert.equal(localOnlyDrafts.length,1,"A unique PC-only draft should be preserved separately rather than silently discarded");
  assert.equal(localOnlyDrafts[0].id,"new-place-pc-only-smoke","The quarantined record should be the unique PC-only draft, not the duplicate");
