@@ -150,7 +150,7 @@ primary_count = sum(1 for p in places if isinstance(p, dict) and p.get("primaryI
 reference_count = sum(1 for p in places if isinstance(p, dict) and p.get("referenceImageId"))
 photos_with_refs = sum(1 for c in candidates if c.get("imageUrl") or c.get("sourceThumbnail") or c.get("assetPath") or c.get("pendingAsset"))
 local_assets = sum(1 for c in candidates if c.get("assetPath") or str(c.get("imageUrl") or "").startswith("./assets/places/"))
-missing_refs = sum(1 for c in candidates if not (c.get("imageUrl") or c.get("sourceThumbnail") or c.get("assetPath") or c.get("pendingAsset"))
+missing_refs = sum(1 for c in candidates if not (c.get("imageUrl") or c.get("sourceThumbnail") or c.get("assetPath") or c.get("pendingAsset")))
 match_review = sum(1 for c in candidates if c.get("placeMatch") != "confirmed")
 rights_review = sum(1 for c in candidates if (c.get("usageRightsStatus") or c.get("rightsStatus")) not in
                     ("commercial-use-cleared", "user-owned", "public-domain-dedication"))
