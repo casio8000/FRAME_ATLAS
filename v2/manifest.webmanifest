@@ -3,7 +3,7 @@
   "short_name": "FRAME ATLAS",
   "description": "전국 예술·건축·자연 촬영 장소 탐색, 참고 이미지와 PC·모바일 데이터 동기화",
   "id": "./index.html",
-  "start_url": "./index.html?fa_build=20261017-128",
+  "start_url": "./index.html?fa_build=20261017-129",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
