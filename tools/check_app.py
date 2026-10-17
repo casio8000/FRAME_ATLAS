@@ -116,6 +116,48 @@ if SW_PATH.is_file():
     else:
         checks.append("2.0 HTML과 서비스 워커 빌드 일치")
 
+    # Protect the PC stale-screen regression: asset cache fingerprints must match the
+    # visible app build so a newly deployed shell cannot keep reusing older JS/CSS.
+    if build_id:
+        for label, resource in [
+            ("앱 JavaScript", f"assets/app.js?v={build_id}"),
+            ("앱 스타일시트", f"assets/app.css?v={build_id}"),
+            ("웹 앱 매니페스트", f"manifest.webmanifest?v={build_id}"),
+        ]:
+            if resource not in html:
+                fail(f"2.0 {label} 캐시 버전이 현재 HTML 빌드와 일치하지 않습니다: {resource}")
+            else:
+                checks.append(f"2.0 {label} 캐시 버전 일치")
+
+    # A new service worker must refresh an already-open app entry when it activates,
+    # but must never turn a separately opened manual/document into the home screen.
+    activate_marker = 'self.addEventListener("activate"'
+    fetch_marker = 'self.addEventListener("fetch"'
+    activate_start = sw.find(activate_marker)
+    fetch_start = sw.find(fetch_marker)
+    if activate_start < 0 or fetch_start <= activate_start:
+        fail("2.0 서비스 워커 활성화/요청 처리 구간을 찾을 수 없습니다.")
+    else:
+        activate_block = sw[activate_start:fetch_start]
+        for label, marker in [
+            ("열린 앱 진입 화면 탐색", 'self.clients.matchAll({type:"window",includeUncontrolled:true})'),
+            ("최신 진입 주소로 갱신", 'client.navigate(latest.toString()).catch(()=>null)'),
+            ("같은 빌드 중복 갱신 방지", 'if(current.searchParams.get("fa_build")===BUILD_ID)continue;'),
+            ("앱 진입 경로만 갱신", 'if(current.origin!==APP_BASE.origin||!entryPaths.includes(current.pathname))continue;'),
+        ]:
+            if marker not in activate_block:
+                fail(f"2.0 서비스 워커 캐시 회귀 검사 실패: {label} 규칙이 없습니다.")
+            else:
+                checks.append(f"2.0 서비스 워커 {label} 규칙 확인")
+        if "Promise.all(clients.map" in activate_block or "await client.navigate(" in activate_block:
+            fail("2.0 서비스 워커가 앱 이동 완료를 기다려 활성화를 막을 수 있습니다.")
+        else:
+            checks.append("2.0 서비스 워커가 화면 갱신 완료를 기다리지 않아 활성화가 막히지 않음")
+        if 'request.mode==="navigate"&&appEntryPaths.includes(url.pathname)' not in sw:
+            fail("2.0 서비스 워커의 특별한 탐색 처리가 앱 진입 경로로 제한되지 않았습니다.")
+        else:
+            checks.append("2.0 서비스 워커의 특별한 탐색 처리가 앱 진입 경로로 제한됨")
+
     core_match = re.search(r"const\s+CORE_FILES\s*=\s*\[([\s\S]*?)\];", sw)
     if not core_match:
         fail("2.0 서비스 워커 CORE_FILES 목록을 찾지 못했습니다.")
