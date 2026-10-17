@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — batch 20 stabilizes mobile retry after dynamic card replacement
+Last updated: 2026-10-17 (Korea Standard Time) — batch 21 exposes attribution and license terms on photo detail
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -469,3 +469,13 @@ Last updated: 2026-10-17 (Korea Standard Time) — batch 20 stabilizes mobile re
 - No catalog records, source URLs, selected IDs, rights state, app JavaScript, or build ID changed. The current place and photo counts stay 200 and 307.
 - User manual adds a short note explaining that automatic photo audits retry delayed cards sequentially; its link query moves to v=20261017-120.
 - Quality run #589 failure artifact: browser audit had 200/200 loaded, 0 missing, 0 pending on desktop; it failed only because a mobile card detached during the retry. Run #590 should re-confirm mobile audit with the more robust locator flow.
+
+
+## Release 2026-10-17 · Batch 21 — photo attribution UI
+- Created safety branch `backup/pre-photo-attribution-ui-batch21-2026-10-17` from pre-change main commit `8095878ad4ed3de536eed24c289b897ba4b20413` before modifying the public photo display.
+- Added a visible attribution block to selected/reference-photo detail when the image has an explicit CC BY/CC BY-SA or CC0 status: creator, license name, and a link to the exact license-evidence page. A separate sentence reminds users that photo-file licensing does not authorize photography at the location.
+- Added a compact creator/license line to alternate-photo gallery cards for explicitly licensed images. Images without explicit licensing keep their existing usage-warning behavior and are not relabelled as cleared.
+- Added a real-browser regression assertion for Incheon Art Platform's selected Wikimedia Commons photo: the detail must display creator `이강철`, `CC BY-SA 3.0`, and the exact Commons file-evidence URL.
+- Sources checked: Oil Tank Culture Park T6 file page (https://commons.wikimedia.org/wiki/File:Oil-tank-culture-park.jpg, CC BY-SA 4.0); SeMA Bunker (https://commons.wikimedia.org/wiki/File:Yeouido_SeMA_Bunker.jpg, CC BY-SA 3.0); Nodeulseom (https://commons.wikimedia.org/wiki/File:Nodeulseom_(14005438206).jpg, CC BY-SA 2.0); Incheon Art Platform (https://commons.wikimedia.org/wiki/File:%EC%9D%B8%EC%B2%9C%EC%95%84%ED%8A%B8%ED%94%8C%EB%9E%AB%ED%8F%BC_%EC%A4%91%EC%95%99%EA%B8%B8_Incheon_Art_Platform,_Central_way.jpg, CC BY-SA 3.0).
+- App shell/service-worker cache build changed to `20261017-121`; manual link query changed to `v=20261017-121`. User manual now documents the same attribution behavior.
+- The 200-place target, candidate IDs, external image URLs, and rights status values were not changed. Awaiting quality run and Pages deployment.
