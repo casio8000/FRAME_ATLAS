@@ -519,3 +519,20 @@ Last updated: 2026-10-17 (Korea Standard Time) — build 20261017-124 user-confi
 - Idang Art Museum: the selected red-brick exterior is consistent with the former Yeonghwa-jang bathhouse/inn building converted into the museum. The banner/wires weaken its editorial value, not its place identity; preserve it as a valid reference until a verifiable stronger candidate is found.
 - Next photo improvement batch: (1) replace watermark-bearing Glass House image only if a clear, exact-location alternative is confirmed; (2) seek a less banner-dominated Suchang Youth Mansion photo; (3) seek a more architectural Aegibong image; (4) add a stronger interior/outdoor reference for Idang; (5) visually verify National Maritime Museum's selected image and source.
 - Catalog remains frozen at 200 unique places / 307 candidate records. This audit did not change catalog data or photo IDs.
+
+
+## Follow-up image-quality fix — batch 22 extension (2026-10-17)
+
+- Kept the national catalog frozen at 200 locations. Three selected-reference image URLs were improved without changing place IDs, candidate IDs, or primary/reference pointers: Glass House (unwatermarked architecture image), Idang Art Museum (interior archive photo showing tilework and exposed plumbing), and Aegibong (curved skywalk with explicit place-name sign).
+- Old images and source metadata are retained in each candidate's `previousImageUrl`, `previousSourcePageUrl`, `previousSourceName`, and `previousTitle` fields. No extra candidate records were added, so the total remains 307.
+- Status is still `reference-only` for these images; this is a scouting image change, not rights approval or filming permission.
+- Run the complete quality check and verify PC/mobile 200/200 photo loading before merging this change into `main`.
+
+
+## Photo refinement validation in progress
+
+- Pull request: https://github.com/casio8000/FRAME_ATLAS/pull/6
+- Test run #596: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38996081364 (pending at the time of this note; browser smoke and data validation must complete before merge).
+- Added exact-image regression assertions for Glass House, Idang Art Museum, and Aegibong: expected candidate IDs/source hosts, confirmed place match, preserved previous image URL for rollback, and reference-only rights state.
+- Updated manual section 22 with the visible reference-photo changes. The previous location IDs, candidate IDs, selected primary/reference IDs, and counts (200 places / 307 candidates) are unchanged.
+- Do not merge or report the three replacements as deployed until PR quality check succeeds and the resulting Pages deployment completes.

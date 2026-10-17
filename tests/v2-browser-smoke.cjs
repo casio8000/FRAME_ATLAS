@@ -24,6 +24,23 @@ for(const id of newestFourteenIds){
  assert.ok(/^https?:\/\//i.test(String(candidate.imageUrl||candidate.sourceThumbnail||"")),"Newest photo batch primary photo must have an external image URL: "+id);
 }
 
+const refinedReferencePhotos=[
+ {placeId:"jeju-glass-house-seopjikoji",candidateId:"ref-jeju-glass-house-phoenix-exterior",host:/^https:\/\/blogthumb\.pstatic\.net\//i,previousHost:/^https:\/\/thumbnews\.nateimg\.co\.kr\//i},
+ {placeId:"gunsan-idang-art-museum",candidateId:"ref-idang-art-museum-gunsan-tourism",host:/^https:\/\/img1\.daumcdn\.net\/thumb\//i,previousHost:/^https:\/\/media\.triple\.guide\//i},
+ {placeId:"gimpo-aegibong-peace-ecopark",candidateId:"ref-aegibong-peace-ecopark-official-tourism",host:/^https:\/\/arisukorea\.com\/upload\/editor\//i,previousHost:/^https:\/\/m1\.gimpo\.go\.kr\//i}
+];
+for(const expected of refinedReferencePhotos){
+ const place=catalogForCounts.places.find(p=>p.id===expected.placeId);
+ const candidate=place?.imageCandidates?.find(c=>c.id===expected.candidateId);
+ assert.ok(candidate,"Refined photo candidate must exist for "+expected.placeId);
+ assert.equal(place.primaryImageId,expected.candidateId,"Refined photo should remain the primary reference for "+expected.placeId);
+ assert.equal(place.referenceImageId,expected.candidateId,"Refined photo should remain the selected reference for "+expected.placeId);
+ assert.equal(candidate.status,"candidate","Refined photo stays a candidate, not a rights-cleared asset: "+expected.placeId);
+ assert.equal(candidate.placeMatch,"confirmed","Refined photo's place match must remain confirmed: "+expected.placeId);
+ assert.match(String(candidate.imageUrl||""),expected.host,"Refined image URL must use the reviewed source host: "+expected.placeId);
+ assert.match(String(candidate.previousImageUrl||""),expected.previousHost,"Previous image URL must be retained for rollback: "+expected.placeId);
+ assert.equal(candidate.rightsStatus,"reference-only","Refined reference photo must not be labelled rights-cleared: "+expected.placeId);
+}
 const kfilmAlt=catalogForCounts.places.find(p=>normName(p.name)===normName("K Film Studio 파주 대형스튜디오"));assert.ok(kfilmAlt&&(kfilmAlt.imageCandidates||[]).some(c=>c.id==="ref-kfilm-studio-official-alt-20261016"&&String(c.imageUrl||"").includes("filmkorea.ecn.cdn.infralab.net")),"K Film official studio photo should remain as an alternate reference");
 const kooHouse=catalogForCounts.places.find(p=>normName(p.name)===normName("구하우스미술관"));assert.ok(kooHouse,"Koo House should exist");assert.ok((kooHouse.imageCandidates||[]).some(c=>c.id==="ref-koo-house-garden"&&String(c.imageUrl||"").includes("storage.heypop.kr")),"Koo House should use its updated garden/exterior reference");
 const yeolumul=catalogForCounts.places.find(p=>/열우물/.test(String(p.name||"")));assert.ok(yeolumul,"Historic Yeolumul record should exist");assert.ok((yeolumul.imageCandidates||[]).some(c=>c.id==="img-yeolumul-current-life-art-official-20261015"&&c.status==="rejected"&&c.placeMatch==="mismatch"),"The misleading apartment-complex image must be explicitly rejected");assert.ok((yeolumul.imageCandidates||[]).some(c=>c.id==="ref-yeolumul-historic-mural-20261016"&&String(c.imageUrl||"").includes("/data/editor/20190501/20190501150055.jpg")),"Yeolumul primary reference should use the directly linked historical mural photo from Incheon City");assert.ok((yeolumul.imageCandidates||[]).some(c=>c.id==="ref-yeolumul-mural-village-liveincheon-2026"&&String(c.imageUrl||"").includes("/data/editor/20190501/20190501150813.jpg")),"Yeolumul alternate reference should use a second historical mural photo");assert.equal(yeolumul.primaryImageId,"ref-yeolumul-historic-mural-20261016","Yeolumul primary photo should point to the confirmed historic mural, not the rejected apartment-like image");
