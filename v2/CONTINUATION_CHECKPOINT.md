@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — build 20261017-124 user-confirmed normal; quality run #595 and Pages deployment #641 passed
+Last updated: 2026-10-17 (Korea Standard Time) — PRs #6/#7 merged; quality #602 and Pages #647 passed; five reference photos improved
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -529,13 +529,13 @@ Last updated: 2026-10-17 (Korea Standard Time) — build 20261017-124 user-confi
 - Run the complete quality check and verify PC/mobile 200/200 photo loading before merging this change into `main`.
 
 
-## Photo refinement validation in progress
+## Photo refinement validation — completed
 
 - Pull request: https://github.com/casio8000/FRAME_ATLAS/pull/6
-- PR #6 has since merged successfully; the final PR quality run #599 passed and Pages deployment #644 succeeded. The main-branch quality run #600 was still in progress at this checkpoint.
+- PR #6 merged; quality #599 passed and Pages #644 succeeded. Main quality #600 subsequently passed; PR #7 quality #601 and main quality #602 passed; Pages #647 succeeded.
 - Added exact-image regression assertions for Glass House, Idang Art Museum, and Aegibong: expected candidate IDs/source hosts, confirmed place match, preserved previous image URL for rollback, and reference-only rights state.
 - Updated manual section 22 with the visible reference-photo changes. The previous location IDs, candidate IDs, selected primary/reference IDs, and counts (200 places / 307 candidates) are unchanged.
-- Do not merge or report the three replacements as deployed until PR quality check succeeds and the resulting Pages deployment completes.
+- Three photo replacements are already merged and deployed; do not revert unless a new source/matching defect is found.
 
 
 ## Merge and deploy completion — three same-location reference-photo improvements
@@ -545,13 +545,23 @@ Last updated: 2026-10-17 (Korea Standard Time) — build 20261017-124 user-confi
 - Pages deployment #644 succeeded for the merge commit: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38996377658.
 - Replaced photo references: Glass House (unwatermarked facade/cantilever/grass-slope view), Idang Art Museum (historical bathhouse-tile/exposed-pipe interior photo), and Aegibong (curved skywalk with place-name sign). Same candidate IDs and same primary/reference IDs; previous image/source/title retained for rollback.
 - All three photos remain `reference-only`; no reuse/shooting permission is implied. Counts remain 200 places and 307 photo candidate records.
-- Main quality run #600 was still running after merge when written: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38996377760. PR run #599 validated the same merged application/test tree; update the result only after #600 conclusively reports.
-- Next priorities after confirmation: visually review National Maritime Museum’s selected photo, then improve the remaining banner-dominated Suchang Youth Mansion image if a verified same-place source is available. Do not add places; keep the total frozen at 200.
+- Main quality run #600 later passed. PR #7 quality run #601 passed; main quality #602 passed; Pages deployment #647 succeeded.
+- Next priorities: continue source/image quality review of any remaining weak selected photos, review rights/use-condition metadata separately, and verify the whole catalog on a physical iPhone. National Maritime Museum and Suchang Youth Mansion now have Korea Tourism Organization reference photos from PR #7. Do not add places; keep the total frozen at 200.
 
 
-## Photo quality batch 23 — deployed candidates prepared
+## Photo quality batch 23 — merged and deployed
 
-- Two additional selected reference photos are proposed in branch `photos/refine-maritime-museum-suchang-20261017`: Busan National Maritime Museum (KTO curved roof/tower view) and Daegu Suchang Youth Mansion (KTO interior with weathered concrete/exposed pipes).
-- Candidate IDs and primary/reference pointers remain unchanged, and prior image/source metadata is saved for rollback. Both rights states remain `reference-only`.
-- Updated user manual section 23 and added exact source-host regression assertions. Require PR quality/browser test to pass with 200/200 desktop/mobile images loaded before merge/deployment.
-- No new locations; expected count remains 200 places / 307 candidate records.
+- Busan National Maritime Museum now uses the Korea Tourism Organization's curved-roof/tower exterior reference. Daegu Suchang Youth Mansion now uses the KTO interior reference showing weathered concrete, exposed pipes and art posters.
+- Candidate IDs, primary/reference pointers and place IDs remain unchanged. Prior image/source/title metadata is available for rollback; both rights states remain `reference-only`.
+- PR #7 merged; quality checks #601 and #602 passed; Pages deployment #647 succeeded. PC/mobile audits reported 200/200 images loaded, 0 missing/loading/pending and 0 page errors.
+- No new locations; total remains 200 places / 307 candidate records.
+
+
+## Final checkpoint after photo batch 23 — 2026-10-17
+
+- Current deployed app build: `20261017-124`. PC cache issue was user-confirmed resolved.
+- PR #6 / quality #599 / Pages #644: merged and successful. PR #7 / quality #601 / main quality #602 / Pages #647: merged and successful.
+- Final 200-place browser audit: desktop 200/200 selected photos loaded; mobile 200/200 selected photos loaded; 0 missing/loading/pending; 200 rows in desktop/mobile home/archive views; smoke PASS; no page errors.
+- Five same-location photo references improved: Jeju Glass House, Gunsan Idang Art Museum, Gimpo Aegibong Peace/Ecology Park, Busan National Maritime Museum, and Daegu Suchang Youth Mansion. Old image URLs/sources/titles are retained for rollback, and all five remain `reference-only`.
+- Current data remains 200 locations / 307 photo candidate records. 267 active photo candidates still require rights/use-condition review; place/photo matching does not establish reuse permission.
+- Next work: inspect remaining weak selected photos without adding places; continue separate rights-status review; verify the full catalog on a physical iPhone; then plan independent-repository migration after ensuring a complete backup.
