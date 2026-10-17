@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — desktop pending-image retry batch 18; batch 17 source repair preserved
+Last updated: 2026-10-17 (Korea Standard Time) — image-load repair batches 17–18 passed desktop/mobile browser checks
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -439,3 +439,14 @@ Last updated: 2026-10-17 (Korea Standard Time) — desktop pending-image retry b
 - User manual now documents the delayed-image review procedure; its navigation link query is v=20261017-118.
 - App shell build ID remains 20261017-117; only the manual link cache query and test retry logic changed.
 - Quality run #586 reported the one pending Nam-Seoul Museum photo with 2 fallback URLs remaining; run #587 after this patch will confirm the targeted retry resolves it or expose the final broken URL.
+
+
+## Verification completed · quality run #587 and Pages deployment #629
+- Quality workflow run #587 passed: JavaScript syntax, catalog/report checks, desktop/mobile UI smoke tests, safe backup merge, photo asset publication recovery, device sync safety, and legacy audit tests all passed.
+- Desktop browser audit: **200/200 images loaded**, **0 missing**, **0 pending**.
+- Mobile archive audit: **200/200 images loaded**, **0 missing**, **0 still loading**.
+- Overall browser smoke test: **PASS**, with no uncaught page JavaScript errors.
+- The two formerly failing selected reference photos now load at their final image URLs: Cheongsapo Daritdol Observatory (Klook CDN) and Sorae Wetland Ecological Park (Daum CDN). Proxy nesting is prevented in the app fallback helper.
+- Pages deployment run #629 succeeded. App build ID: `20261017-117`; manual link query is now `v=20261017-119`.
+- Catalog remains **200 places** and **307 image candidate records**. Rights metadata remains separate from image loading: both replaced photo candidates still have `rightsStatus=review-required`; physical iPhone Safari/PWA acceptance still needs testing on the user's device.
+- Run links: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38986800180 and https://github.com/casio8000/FRAME_ATLAS/actions/runs/38986800351.

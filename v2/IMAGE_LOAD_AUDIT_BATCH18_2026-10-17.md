@@ -15,3 +15,13 @@
 - 사진 URL·선택된 사진 ID·사용권 상태는 변경 없음.
 - 사용자 매뉴얼에 지연 이미지 처리 방법을 추가했습니다.
 - 확인 대상: [남서울미술관 외관 원문 이미지](https://mediahub.seoul.go.kr/archives/1198657)
+
+
+## Final CI verification — 2026-10-17
+
+- GitHub Actions quality run #587: **success**.
+- Desktop: **200/200 loaded**, 0 missing, 0 pending.
+- Mobile archive: **200/200 loaded**, 0 missing, 0 loading.
+- Smoke result: **PASS**, zero page errors.
+- GitHub Pages deployment #629: **success**.
+- This verifies automated desktop/mobile browser emulation; it does not replace a physical iPhone Safari/PWA check.
