@@ -30,7 +30,7 @@ const refinedReferencePhotos=[
  {placeId:"gimpo-aegibong-peace-ecopark",candidateId:"ref-aegibong-peace-ecopark-official-tourism",host:/^https:\/\/arisukorea\.com\/upload\/editor\//i,previousHost:/^https:\/\/m1\.gimpo\.go\.kr\//i},
  {placeId:"busan-national-maritime-museum",candidateId:"ref-busan-national-maritime-museum-exterior",host:/^https:\/\/tong\.visitkorea\.or\.kr\/cms\/resource\/98\/2943098_image2_1\.bmp$/i,previousHost:/^https:\/\/koreabeyonddestinations\.weebly\.com\//i},
  {placeId:"daegu-suchang-youth-mansion",candidateId:"ref-daegu-suchang-youth-mansion-exterior",host:/^https:\/\/tong\.visitkorea\.or\.kr\/cms\/resource\/48\/2864748_image2_1\.jpg$/i,previousHost:/^https:\/\/media\.triple\.guide\//i},
- {placeId:"gg-yangju-chang-ucchin-museum",candidateId:"ref-yangju-chang-ucchin-museum-exterior-2020",host:/^https:\/\/images\.divisare\.com\/images\//i,previousHost:/^https:\/\/ggc\.ggcf\.kr\/uploadimg\//i,sourcePage:/^https:\/\/divisare\.com\/projects\/257332-chae-pereira-architects-chang-ucchin-museum$/i,creator:"Park Wansoon"}
+ {placeId:"gg-yangju-chang-ucchin-museum",candidateId:"ref-yangju-chang-ucchin-museum-exterior-2020",host:/^https:\/\/images\.divisare\.com\/images\//i,imagePath:/\/v1\/project_images\/4436131\/CHAE_PEREIRA_ARCHITECTS_9\/chae-pereira-architects-chang-ucchin-museum\.jpg$/i,previousHost:/^https:\/\/ggc\.ggcf\.kr\/uploadimg\//i,sourcePage:/^https:\/\/divisare\.com\/projects\/257332-chae-pereira-architects-chang-ucchin-museum$/i,creator:"Park Wansoon"}
 ];
 for(const expected of refinedReferencePhotos){
  const place=catalogForCounts.places.find(p=>p.id===expected.placeId);
@@ -41,6 +41,7 @@ for(const expected of refinedReferencePhotos){
  assert.equal(candidate.status,"candidate","Refined photo stays a candidate, not a rights-cleared asset: "+expected.placeId);
  assert.equal(candidate.placeMatch,"confirmed","Refined photo's place match must remain confirmed: "+expected.placeId);
  assert.match(String(candidate.imageUrl||""),expected.host,"Refined image URL must use the reviewed source host: "+expected.placeId);
+ if(expected.imagePath)assert.match(String(candidate.imageUrl||""),expected.imagePath,"Refined image URL must point to the exact reviewed photo: "+expected.placeId);
  assert.match(String(candidate.previousImageUrl||""),expected.previousHost,"Previous image URL must be retained for rollback: "+expected.placeId);
  if(expected.sourcePage)assert.match(String(candidate.sourcePageUrl||""),expected.sourcePage,"Refined photo source page must remain attached: "+expected.placeId);
  if(expected.creator)assert.equal(candidate.creator,expected.creator,"Refined photo creator credit must match the source page: "+expected.placeId);
