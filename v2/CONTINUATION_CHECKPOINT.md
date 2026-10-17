@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — PC stale-cache refresh fix committed; build 20261017-124 pending live browser verification
+Last updated: 2026-10-17 (Korea Standard Time) — PC issue user-confirmed resolved; build 20261017-124 passed quality run #594 and Pages deployment #640
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -10,12 +10,12 @@ Last updated: 2026-10-17 (Korea Standard Time) — PC stale-cache refresh fix co
 
 ## Active checkpoint — PC stale-screen / 201-count regression (2026-10-17)
 
-- User report: on PC, clicking “시작하기” sometimes opens an old-looking screen, the newest-location section is absent, and the count is 201. Pressing Ctrl+F5 shows the new-place section and 200 places. iPhone appears normal in the user's partial check.
+- User report: on PC, clicking “시작하기” sometimes opened an old-looking screen, the newest-location section was absent, and the count was 201. Pressing Ctrl+F5 showed the new-place section and 200 places. After build 20261017-124 was applied, the user confirmed the PC now displays normally; mark this symptom resolved unless it recurs.
 - Diagnosis from source: the prior service worker's activation cleaned up old caches and claimed open clients, but deliberately did not navigate the already-open app tab. FRAME ATLAS is a single-page app, so its old JavaScript and rendered UI could survive a deployment even after the new service worker was installed. This matches the hard-refresh symptom; the specific stale local-storage record has not been identified and should not be assumed to be the root cause.
 - Fix committed to `main` in build `20261017-124`: version-fingerprint the app-shell URLs in `v2/index.html`, update the PWA `start_url`, and have the new service worker reload only open `/v2/` or `/v2/index.html` app-entry clients once when a new worker activates. It starts navigation without waiting for the reload inside the activation promise, so activation can finish. The special versioned navigation response is now limited to `/v2/` and `/v2/index.html`; other pages such as `USER_MANUAL_KO.html` use the normal fetch path. A brief one-time refresh can be visible during an upgrade.
 - Updated `v2/USER_MANUAL_KO.html` with the new PC symptom and safe recovery steps. Updated `v2/WORK_LOG_2026-10-17.md` as a compact session checkpoint.
 - Static GitHub source verification confirms that `index.html`, `sw.js`, `manifest.webmanifest`, the manual, and the work log all contain build `20261017-124` where applicable; the old `20261017-121` version string is no longer present in the three app-shell files. The final runtime adjustment, manual revision, and checkpoints are committed on `main`; use the repository's recent commit history for the current head rather than this historical checkpoint hash.
-- Validation limit: the live Pages URL was not accessible to the available web-fetch environment and no CI check status was returned for the new commit, so do not report deployment success or a real-PC pass yet. Check GitHub Pages deployment and then verify: (1) normal PC opening, (2) start splash → home, (3) latest-six section visible, (4) common count exactly 200, (5) repeated Home/More/Detail transitions do not restore old UI, (6) iPhone visual regression check. Do not clear browser storage or delete local drafts; use Ctrl+F5 only as a last resort after backup.
+- Verification completed: quality run #594 succeeded and Pages deployment #640 succeeded on commit `a27244909e196f13e3af41db98b2a7f80a084ca7`. User confirmed normal PC display, including the newest-location section and 200-place count. The physical iPhone whole-catalog check remains incomplete; do not describe browser emulation as physical-device acceptance.
 
 ## Current verified UI state
 - Current integrated catalog count is 200 unique locations: base catalog 151 + supplement 67 − 18 ID/name matches = 200. This count is confirmed by the catalog merge/validation report. The latest 14 additions now each have a primary and reference image candidate assignment.
@@ -488,3 +488,14 @@ Last updated: 2026-10-17 (Korea Standard Time) — PC stale-cache refresh fix co
 - Sources checked: Oil Tank Culture Park T6 file page (https://commons.wikimedia.org/wiki/File:Oil-tank-culture-park.jpg, CC BY-SA 4.0); SeMA Bunker (https://commons.wikimedia.org/wiki/File:Yeouido_SeMA_Bunker.jpg, CC BY-SA 3.0); Nodeulseom (https://commons.wikimedia.org/wiki/File:Nodeulseom_(14005438206).jpg, CC BY-SA 2.0); Incheon Art Platform (https://commons.wikimedia.org/wiki/File:%EC%9D%B8%EC%B2%9C%EC%95%84%ED%8A%B8%ED%94%8C%EB%9E%AB%ED%8F%BC_%EC%A4%91%EC%95%99%EA%B8%B8_Incheon_Art_Platform,_Central_way.jpg, CC BY-SA 3.0).
 - App shell/service-worker cache build changed to `20261017-121`; manual link query changed to `v=20261017-121`. User manual now documents the same attribution behavior.
 - The 200-place target, candidate IDs, external image URLs, and rights status values were not changed. Awaiting quality run and Pages deployment.
+
+
+## Latest continuation checkpoint — catalog integrity and confirmed cache fix
+
+- User-confirmed PC fix: latest 2.0 screen renders normally, newest-location section is visible, and the count is 200. Close the earlier PC 201/stale-screen incident unless it recurs.
+- Current deployed app build at this checkpoint: `20261017-124`.
+- Quality run #594: PASS — https://github.com/casio8000/FRAME_ATLAS/actions/runs/38994695991. Pages deployment #640: SUCCESS — https://github.com/casio8000/FRAME_ATLAS/actions/runs/38994695871.
+- Fresh source-data cross-check matched `tools/report.md`: base 151, supplement 67, name/ID matches 18, appended 49, integrated 200 places, 307 photo candidates; duplicate IDs 0; missing required place fields 0; duplicate candidate IDs 0; broken selected-photo references 0; selected photo mismatch/rejected references 0; missing photo URLs/paths 0; missing standardized rights status 0; active photo-match review candidates 0.
+- Rights review remains separate: 267 active photo candidates still need conditions/reuse review. This is not a place-data or selected-image-link structural error and must not be represented as automatically cleared for commercial reuse.
+- Added a static regression check in `tools/check_app.py` to guard the exact failure pattern: app-shell asset versions must match `app-build`; service-worker activation must refresh only app-entry pages; identical builds must not force repeated navigations; activation must not wait for page navigation; manual pages must not be rewritten to the home screen. The next quality run must validate this check.
+- Next steps: (1) confirm new quality run passes; (2) inspect remaining non-selected candidate history only where it can affect the displayed reference photo; (3) keep the 200-location count frozen during verification; (4) test the full catalog on actual iPhone when accessible; (5) plan independent-repository migration only after the existing project and deployment path are backed up and validated.
