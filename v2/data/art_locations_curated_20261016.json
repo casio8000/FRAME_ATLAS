@@ -5984,6 +5984,49 @@
         }
       ],
       "updatedAt": "2026-10-17T12:45:00+09:00"
+    },
+    {
+      "id": "jeonju-film-studios",
+      "name": "전주영화종합촬영소",
+      "curationOverride": true,
+      "primaryImageId": null,
+      "referenceImageId": "ref-jeonju-film-01",
+      "imageCandidates": [
+        {
+          "id": "ref-jeonju-film-01",
+          "title": "전주영화종합촬영소 J1 스튜디오 내부 — 그린스크린·천장 설비",
+          "imageUrl": "https://image.cine21.com/resize/cine21/movie/2025/0723/10_32_01__68803b91d5f05%5BH800-%5D.jpg",
+          "sourceThumbnail": "https://image.cine21.com/resize/cine21/movie/2025/0723/10_32_01__68803b91d5f05%5BH800-%5D.jpg",
+          "sourcePageUrl": "https://cine21.com/news/view/?mag_id=108000",
+          "sourceName": "Cine21",
+          "creator": "백종헌",
+          "rights": "unknown",
+          "rightsLabel": "이용권 미확인",
+          "rightsStatus": "unknown",
+          "licenseUrl": "",
+          "placeMatch": "confirmed",
+          "viewType": "실내·J1 스튜디오·그린스크린·전동식 세트 배튼",
+          "notes": "Cine21의 2025년 7월 25일 전주영화종합촬영소 현장 기사에서 '스튜디오 내부'로 직접 연결되는 사진입니다. 그린스크린과 조명·천장 트러스, 높은 천고가 함께 보여 실내 스튜디오의 실제 촬영 여건을 검토하는 참고사진으로 기존 외관 사진보다 직접적입니다. 사진 재사용 권리는 별도 확인이 필요하며 승인된 이용권을 뜻하지 않습니다.",
+          "status": "candidate",
+          "createdAt": "2026-10-16T00:00:00.000Z",
+          "previousImageUrl": "https://image.cine21.com/resize/cine21/movie/2025/0723/10_31_50__68803b8683933%5BS1000%2C1000%5D.JPG",
+          "previousSourceThumbnail": "https://image.cine21.com/resize/cine21/movie/2025/0723/10_31_50__68803b8683933%5BS1000%2C1000%5D.JPG",
+          "previousSourcePageUrl": "https://cine21.com/news/view/?mag_id=108000",
+          "previousSourceName": "Cine21",
+          "previousCreator": "Cine21",
+          "previousRights": "unknown",
+          "previousRightsLabel": "이용권 미확인",
+          "previousRightsStatus": "unknown",
+          "previousLicenseUrl": "",
+          "previousPlaceMatch": "confirmed",
+          "previousViewType": "스튜디오 외관",
+          "previousTitle": "전주영화종합촬영소 J1 스튜디오 외관",
+          "previousNotes": "전주영화종합촬영소 현장 기사 사진 후보. 장소 식별은 출처 기준이며 사진 재사용 권리는 미확인.",
+          "previousUpdatedAt": "2026-10-16T00:00:00.000Z",
+          "updatedAt": "2026-10-17T12:58:00+09:00"
+        }
+      ],
+      "updatedAt": "2026-10-17T12:58:00+09:00"
     }
   ]
 }
