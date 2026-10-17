@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — image-load repair batch 17; desktop/mobile image assertions and proxy nesting fix
+Last updated: 2026-10-17 (Korea Standard Time) — desktop pending-image retry batch 18; batch 17 source repair preserved
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -429,3 +429,13 @@ Last updated: 2026-10-17 (Korea Standard Time) — image-load repair batch 17; d
 - Bumped synchronized app shell/service-worker/manifest/root-entry build ID to `20261017-117`; user manual link query also uses `v=20261017-117`.
 - Place count stays **200** and candidate count stays **307**. The new CI cycle must pass before treating this repair as verified.
 - Sources: Klook Busan day-tour image (https://www.klook.com/en-GB/activity/74132-busan-oneday-tour-busan/); Busan City Cheongsapo context (https://www.busan.go.kr/news/storyreport/view?dataNo=70451&gugun=Prev); Daily Travel Sketch Sorae image page (https://v.daum.net/v/9CoaMZmjHO); previous Incheon Tour source remains in photo history.
+
+
+## Release 2026-10-17 · Desktop pending-image retry batch 18
+- Created safety branch backup/pre-desktop-pending-retry-batch18-2026-10-17 from main commit cd216b25a0ab070f4f7d6f4c94b5eae506d3be9f.
+- Batch 17 source replacement and nested-proxy guard passed JavaScript syntax validation, but quality run #586's desktop browser audit found 199/200 photos loaded, 0 missing, and 1 still in a loading state: Seoul City Hall Nam-Seoul Museum exterior. This is a delayed/fallback-in-progress image, not a confirmed broken URL.
+- Updated desktop smoke audit to identify only cards still pending after the regular 30-second lazy-load sweep and revisit them one at a time. This mirrors mobile retry behavior and avoids triggering unnecessary requests for all 200 external URLs.
+- Kept explicit failure rules for missing photos, images still pending after retry, and the two repaired images (Cheongsapo and Sorae) on both desktop and mobile. No source photo URL, selected reference ID, rights status, or place count changed in this test adjustment.
+- User manual now documents the delayed-image review procedure; its navigation link query is v=20261017-118.
+- App shell build ID remains 20261017-117; only the manual link cache query and test retry logic changed.
+- Quality run #586 reported the one pending Nam-Seoul Museum photo with 2 fallback URLs remaining; run #587 after this patch will confirm the targeted retry resolves it or expose the final broken URL.

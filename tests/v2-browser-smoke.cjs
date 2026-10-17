@@ -140,6 +140,20 @@ const expectedPhotoPlaceIds=new Set(catalogForCounts.places.filter(isActivePhoto
  await page.locator("#homeFeaturedGrid .scout-feature-card").evaluateAll(async cards=>{for(const card of cards){card.scrollIntoView({block:"center",behavior:"instant"});await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));}window.scrollTo(0,0);await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));});
  await page.waitForTimeout(30000);
  for(const priorityPhotoId of ["daejeon-video-special-effects-town","gyeonggi-sangsang-campus","seo-mbc-studio-rental"]){const priorityCard=page.locator('#homeFeaturedGrid .scout-feature-card[data-home-place="'+priorityPhotoId+'"]');await priorityCard.scrollIntoViewIfNeeded();await priorityCard.locator("img").evaluate(img=>{img.loading="eager";});await page.waitForFunction(id=>{const card=[...document.querySelectorAll("#homeFeaturedGrid .scout-feature-card")].find(x=>x.dataset.homePlace===id),img=card?.querySelector("img"),frame=card?.querySelector(".scout-feature-image");return !!img&&(img.complete&&img.naturalWidth>0||!!frame?.classList.contains("image-missing"));},priorityPhotoId,{timeout:25000}).catch(()=>null);}
+ // Retry only cards still loading after the normal lazy-load sweep; do not force all 200 external URLs at once.
+ const desktopPendingIds=await page.locator("#homeFeaturedGrid .scout-feature-card").evaluateAll(cards=>cards.filter(card=>{
+  const img=card.querySelector("img"),frame=card.querySelector(".scout-feature-image"),held=(card.querySelector(".scout-feature-bottom")?.textContent||"").includes("대표사진 검토 보류")||!String(img?.getAttribute("src")||"").trim();
+  return !!img&&!held&&!(img.complete&&img.naturalWidth>0)&&!frame?.classList.contains("image-missing");
+ }).map(card=>card.dataset.homePlace||"").filter(Boolean));
+ for(const pendingPhotoId of desktopPendingIds.slice(0,30)){
+  const pendingCard=page.locator('#homeFeaturedGrid .scout-feature-card[data-home-place="'+pendingPhotoId+'"]');
+  await pendingCard.scrollIntoViewIfNeeded();
+  await pendingCard.locator("img").evaluate(img=>{img.loading="eager";});
+  await page.waitForFunction(id=>{
+   const card=[...document.querySelectorAll("#homeFeaturedGrid .scout-feature-card")].find(x=>x.dataset.homePlace===id),img=card?.querySelector("img"),frame=card?.querySelector(".scout-feature-image");
+   return !!img&&(img.complete&&img.naturalWidth>0||!!frame?.classList.contains("image-missing"));
+  },pendingPhotoId,{timeout:20000}).catch(()=>null);
+ }
  await page.waitForTimeout(1000);
  const photoAudit=await page.locator("#homeFeaturedGrid .scout-feature-card").evaluateAll(cards=>cards.map((card,index)=>{const img=card.querySelector("img"),frame=card.querySelector(".scout-feature-image"),held=(card.querySelector(".scout-feature-bottom")?.textContent||"").includes("대표사진 검토 보류")||!String(img?.getAttribute("src")||"").trim();let queueRemaining=null;try{queueRemaining=JSON.parse(img?.dataset?.fallbackQueue||"[]").length;}catch{}return {index:index+1,id:card.dataset.homePlace||"",name:card.querySelector(".scout-feature-body>b")?.textContent?.trim()||"",held,loaded:!!img&&img.complete&&img.naturalWidth>0,naturalWidth:img?.naturalWidth||0,missing:!!frame?.classList.contains("image-missing"),loading:!!frame?.classList.contains("image-loading"),currentSrc:img?.currentSrc||"",assignedSrc:img?.getAttribute("src")||"",fallbackCurrentUrl:img?.dataset?.fallbackCurrentUrl||"",fallbackQueueRemaining:queueRemaining,src:img?.currentSrc||img?.src||""};}));
  const visiblePhotos=photoAudit.filter(x=>!x.held),brokenPhotos=visiblePhotos.filter(x=>x.missing),pendingPhotos=visiblePhotos.filter(x=>!x.loaded&&!x.missing);
