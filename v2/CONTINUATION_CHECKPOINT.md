@@ -565,3 +565,14 @@ Last updated: 2026-10-17 (Korea Standard Time) — PRs #6/#7 merged; quality #60
 - Five same-location photo references improved: Jeju Glass House, Gunsan Idang Art Museum, Gimpo Aegibong Peace/Ecology Park, Busan National Maritime Museum, and Daegu Suchang Youth Mansion. Old image URLs/sources/titles are retained for rollback, and all five remain `reference-only`.
 - Current data remains 200 locations / 307 photo candidate records. 267 active photo candidates still require rights/use-condition review; place/photo matching does not establish reuse permission.
 - Next work: inspect remaining weak selected photos without adding places; continue separate rights-status review; verify the full catalog on a physical iPhone; then plan independent-repository migration after ensuring a complete backup.
+
+
+## Active checkpoint — photo quality batch 24 (Yangju Chang Ucchin Museum)
+
+- User confirmed the PC now displays normally: newest-place section visible, total 200. Do not reopen the resolved cache regression unless it recurs.
+- Next photo-quality work started without adding locations. Yangju Chang Ucchin Museum's previous front-on reference is being replaced with a stronger architecture/landscape view from Divisare's project page for Chae-Pereira Architects: https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1/project_images/4436131/CHAE_PEREIRA_ARCHITECTS_9/chae-pereira-architects-chang-ucchin-museum.jpg.
+- The source page identifies the project location as Yangju, Korea and credits the photo to Park Wansoon. The new composition includes the museum's white forms, forest, stone riverbank and bridge. Source: https://divisare.com/projects/257332-chae-pereira-architects-chang-ucchin-museum.
+- Same place ID `gg-yangju-chang-ucchin-museum` and candidate ID `ref-yangju-chang-ucchin-museum-exterior-2020`; selected primary/reference pointers do not change. Previous URL/source/title/creator/viewType are preserved for rollback.
+- rightsStatus=reference-only remains unchanged. No explicit image reuse license was verified. This is not approval for republication or commercial reuse.
+- Regression test adds exact host/source page/photographer assertions and retains the general PC/mobile full-photo audit. Expected totals remain 200 locations / 307 candidates.
+- Status at checkpoint: changes prepared on branch `photos/refine-yangju-chang-ucchin-20261017`; quality test, PR merge and Pages deployment are pending. Do not claim the replacement is deployed until CI and Pages confirm success.
