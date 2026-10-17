@@ -595,3 +595,15 @@ Last updated: 2026-10-17 (Korea Standard Time) — photo PR #8 and docs PR #9 me
 - Photo batch 24 remains merged in PR #8; quality run #603 passed with desktop/mobile audits at 200/200 images, 0 missing/loading/pending, and 0 page errors.
 - Pages deployment status following the PR #8/#9 main-branch commits was not independently retrievable with the available GitHub workflow interface in this session. The prior separately confirmed deployment remains #647. Do not claim batch 24 is live until a later Pages deployment success is explicitly confirmed or the updated live site is inspected.
 - Ongoing priorities: keep locations frozen at 200; review remaining selected-photo quality without adding locations; rights/use-condition status review remains separate from reference-image selection; complete actual iPhone whole-catalog acceptance when accessible; plan independent-repository migration only after backup and source/deployment validation.
+
+
+## First-open cache migration checkpoint — build 20261017-127 (2026-10-17)
+
+- Work branch: `fix/first-open-cache-20261017-127`; changes saved as separate commits while working.
+- Root `index.html` now sends the legacy URL directly to `v2/index.html?fa_build=20261017-127` rather than the old static `fa_entry` query.
+- Root `sw.js` cache namespace was bumped to `frame-atlas-root-bridge-20261017-8`. On activation it migrates already-open root/index legacy tabs to the versioned 2.0 entry; it does not navigate the manual or tabs already on the nested `/v2/` app.
+- `v2/index.html`, its CSS/JS/manifest query keys, `v2/sw.js`, and the PWA `start_url` now consistently use build `20261017-127`. The v2 worker rotates its shell cache and fetches a versioned entry for navigation.
+- `v2/USER_MANUAL_KO.html` documents the new migration behavior and safe steps. It warns users not to clear all browser data, and to export a JSON backup before using Ctrl+F5 if the symptom persists.
+- No place catalog or photo candidate data was changed. Expected count remains 200 places / 307 photo candidate records.
+- Not yet merged or deployed at this checkpoint. Next: run the catalog validator and Playwright desktop/mobile smoke suite; check that the root entry redirects to build 127, the newly-added section shows six items, desktop/mobile counts are 200, then merge only after quality checks pass. After merge, confirm the actual GitHub Pages deployment and live entry URL.
+- Ongoing review stays frozen at 200 locations: next content task is photo quality/reuse-condition review, not adding places. Physical iPhone home-screen acceptance still needs a real-device check.

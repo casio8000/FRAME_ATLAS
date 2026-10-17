@@ -1,5 +1,6 @@
-/* FRAME ATLAS v5.44: versioned shell plus safe per-device sync and legacy V6 audit. */
-const CACHE_NAME = 'frame-atlas-root-bridge-20261016-7';
+/* FRAME ATLAS root bridge: migrate stale legacy root tabs into the versioned 2.0 entry. */
+const BUILD_ID = '20261017-127';
+const CACHE_NAME = 'frame-atlas-root-bridge-20261017-8';
 const APP_FILES = ['./', './index.html', './manifest.json', './assets/icons/icon-180.png', './assets/icons/icon-192.png', './assets/icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
@@ -19,6 +20,24 @@ self.addEventListener('activate', event => {
     const keys = await caches.keys();
     await Promise.all(keys.filter(k => k.startsWith('frame-atlas-') && k !== CACHE_NAME && !k.startsWith('frame-atlas-v2-')).map(k => caches.delete(k)));
     await self.clients.claim();
+
+    // Upgrade an already-open legacy root tab without navigating unrelated pages
+    // or tabs already inside the separately scoped v2 application.
+    const scopeUrl = new URL(self.registration.scope);
+    const rootEntryPaths = new Set([
+      scopeUrl.pathname,
+      new URL('./index.html', scopeUrl).pathname
+    ]);
+    const latestV2 = new URL('./v2/index.html?fa_build=' + BUILD_ID, scopeUrl).toString();
+    const clients = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+    for (const client of clients) {
+      try {
+        const current = new URL(client.url);
+        if (current.origin !== scopeUrl.origin || !rootEntryPaths.has(current.pathname)) continue;
+        if (current.searchParams.get('fa_build') === BUILD_ID) continue;
+        client.navigate(latestV2).catch(() => null);
+      } catch (_) { /* ignore a closing or inaccessible client */ }
+    }
   })());
 });
 self.addEventListener('fetch', event => {
