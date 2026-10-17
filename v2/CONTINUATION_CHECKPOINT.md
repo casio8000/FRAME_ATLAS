@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — image-load repair batches 17–18 passed desktop/mobile browser checks
+Last updated: 2026-10-17 (Korea Standard Time) — image-load batches 17–18 passed; batch 19 fixes proxy-aware Paradise City source assertion
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -450,3 +450,12 @@ Last updated: 2026-10-17 (Korea Standard Time) — image-load repair batches 17�
 - Pages deployment run #629 succeeded. App build ID: `20261017-117`; manual link query is now `v=20261017-119`.
 - Catalog remains **200 places** and **307 image candidate records**. Rights metadata remains separate from image loading: both replaced photo candidates still have `rightsStatus=review-required`; physical iPhone Safari/PWA acceptance still needs testing on the user's device.
 - Run links: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38986800180 and https://github.com/casio8000/FRAME_ATLAS/actions/runs/38986800351.
+
+
+## Release 2026-10-17 · Batch 19 — proxy-aware Paradise City source assertion
+- Quality run #587 fully passed on the app/test source: desktop audit 200/200 loaded, 0 missing, 0 pending; mobile archive 200/200 loaded, 0 missing, 0 loading; smoke PASS; no page errors. Pages run #629 also passed.
+- A second run (#588), triggered only by the final documentation/cache-query commit, again showed 200/200 desktop images loaded with no missing or pending images, but failed one overly strict Paradise City URL assertion.
+- The failure artifact confirms the image loaded successfully through the approved fallback proxy URL. The resolved proxy URL contained the encoded original Esquire Korea image path; the test incorrectly searched the un-decoded URL string for the original hostname.
+- Corrected the regression test to decode the rendered image URL before checking for the verified Esquire original path. This accepts either direct rendering or the app's fallback proxy while still verifying the source identity, and does not weaken the load-success assertion.
+- No app code, photo URL, catalog entry, selected reference ID, rights status, or place count changed in this test-only repair. A final quality run is pending.
+- Reference evidence: https://www.esquirekorea.co.kr/article/1904479 and the #588 browser artifact (desktop 200/200 loaded, 0 missing, 0 pending).

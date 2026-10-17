@@ -25,3 +25,8 @@
 - Smoke result: **PASS**, zero page errors.
 - GitHub Pages deployment #629: **success**.
 - This verifies automated desktop/mobile browser emulation; it does not replace a physical iPhone Safari/PWA check.
+
+
+## Batch 19 regression-test note
+
+The follow-up quality run #588 loaded **200/200 desktop images** with zero missing/pending images but failed the Paradise City assertion because it compared the rendered URL string directly to the source-host string. The artifact's rendered image URL is an images.weserv.nl proxy containing the encoded original Esquire Korea path. The test is updated to decode the URL before checking the original source path. The app image fallback behavior and catalog data were not changed.
