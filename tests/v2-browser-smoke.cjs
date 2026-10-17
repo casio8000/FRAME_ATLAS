@@ -13,6 +13,20 @@ assert.ok(v2IndexSource.includes("assets/app.js?v="+currentBuild)&&v2IndexSource
 assert.ok(v2WorkerSource.includes('const BUILD_ID="'+currentBuild+'"'),"Nested service worker must use the app build ID");
 assert.ok(v2Manifest.start_url.endsWith("?fa_build="+currentBuild),"PWA start_url must open the current cache-repair build");
 assert.ok(rootBridgeSource.includes("client.navigate(latestV2)")&&rootBridgeSource.includes("frame-atlas-root-bridge-"),"Root service worker must migrate an already-open legacy root tab on activation");
+
+/* Photo-quality regression: Studio Cube should point to the actual Studio V interior without adding a location or candidate. */
+const studioCubePlace=catalogForCounts.places.find(p=>p.id==="studio-cube-daejeon");
+assert.ok(studioCubePlace,"Studio Cube must stay in the shared place catalog");
+assert.equal(studioCubePlace.referenceImageId,"ref-studio-cube-01","Studio Cube photo candidate ID must remain stable");
+const studioCubePhoto=(studioCubePlace.imageCandidates||[]).find(c=>c.id==="ref-studio-cube-01");
+assert.ok(studioCubePhoto,"Studio Cube selected photo candidate must exist");
+assert.match(String(studioCubePhoto.imageUrl||""),/lg\.com\/content\/dam\/channel\/wcms\/global\/newsroom\/news\/media-entertainment-solution\/lg-showcases-advanced-led-solution-at-south-koreas-largest-virtual-production-studio\/Image-LG-Daejeon-StudioCube_1\.jpg$/i,"Studio Cube should use the source-verified Studio V interior image");
+assert.match(String(studioCubePhoto.sourcePageUrl||""),/^https:\/\/www\.lg\.com\/global\/newsroom\/news\/media-entertainment-solution\//i,"Studio Cube image should link to the original LG newsroom source");
+assert.equal(studioCubePhoto.status,"candidate","Studio Cube visual reference must not be marked as a rights-cleared asset");
+assert.equal(studioCubePhoto.placeMatch,"confirmed","Studio Cube image must retain its confirmed place match");
+assert.equal(studioCubePhoto.rightsStatus,"unknown","Studio Cube photo reuse terms must remain unverified");
+assert.match(String(studioCubePhoto.previousImageUrl||""),/image\.cine21\.com\/resize\/cine21\/movie\/2025\/0723\//i,"The prior Studio Cube image URL must remain available for rollback");
+assert.equal(catalogForCounts.places.reduce((n,p)=>n+(Array.isArray(p.imageCandidates)?p.imageCandidates.length:0),0),307,"Photo update must not increase the catalog's 307 candidate records");
 const requiredRepairPhotoSources=[
  {placeId:"busan-cheongsapo-dallitdol",candidateId:"ref-cheongsapo-busan-city-photo-2026",sourcePattern:/^https:\/\/res\.klook\.com\//i},
  {placeId:"ic-sorae-saltfield",candidateId:"ref-sorae-windmill-shallow-reflection",sourcePattern:/^https:\/\/img2\.daumcdn\.net\//i}
