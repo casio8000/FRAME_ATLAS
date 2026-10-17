@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — image-load batches 17–18 passed; batch 19 fixes proxy-aware Paradise City source assertion
+Last updated: 2026-10-17 (Korea Standard Time) — batch 20 stabilizes mobile retry after dynamic card replacement
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -459,3 +459,13 @@ Last updated: 2026-10-17 (Korea Standard Time) — image-load batches 17–18 pa
 - Corrected the regression test to decode the rendered image URL before checking for the verified Esquire original path. This accepts either direct rendering or the app's fallback proxy while still verifying the source identity, and does not weaken the load-success assertion.
 - No app code, photo URL, catalog entry, selected reference ID, rights status, or place count changed in this test-only repair. A final quality run is pending.
 - Reference evidence: https://www.esquirekorea.co.kr/article/1904479 and the #588 browser artifact (desktop 200/200 loaded, 0 missing, 0 pending).
+
+
+## Release 2026-10-17 · Batch 20 — mobile retry stability
+- Created safety branch backup/pre-mobile-detached-retry-batch20-2026-10-17 from main commit f1996d9f0b384d0d56597f7b16a5801315b09124.
+- Quality run #589 desktop photo audit reported 200/200 loaded with 0 missing and 0 pending. The mobile test failed during an image retry because a card element had been replaced by the app while the retry was scrolling it into view: Playwright raised "Element is not attached to the DOM" at the mobile retry loop. This was a browser-test locator race, not an image-load failure.
+- Updated mobile retry to re-query the current card by stable location ID before each action, and catch a detach between the scroll/eager-load actions. The final archive audit still requires 0 missing and 0 loading cards, and specifically requires both repaired images to load.
+- Kept the Paradise City assertion proxy-aware by decoding the rendered URL before checking the verified Esquire original path.
+- No catalog records, source URLs, selected IDs, rights state, app JavaScript, or build ID changed. The current place and photo counts stay 200 and 307.
+- User manual adds a short note explaining that automatic photo audits retry delayed cards sequentially; its link query moves to v=20261017-120.
+- Quality run #589 failure artifact: browser audit had 200/200 loaded, 0 missing, 0 pending on desktop; it failed only because a mobile card detached during the retry. Run #590 should re-confirm mobile audit with the more robust locator flow.

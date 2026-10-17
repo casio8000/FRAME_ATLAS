@@ -30,3 +30,8 @@
 ## Batch 19 regression-test note
 
 The follow-up quality run #588 loaded **200/200 desktop images** with zero missing/pending images but failed the Paradise City assertion because it compared the rendered URL string directly to the source-host string. The artifact's rendered image URL is an images.weserv.nl proxy containing the encoded original Esquire Korea path. The test is updated to decode the URL before checking the original source path. The app image fallback behavior and catalog data were not changed.
+
+
+## Batch 20 — mobile retry locator race
+
+Quality run #589 passed the desktop image audit (200/200 loaded, 0 missing, 0 pending) but hit a Playwright locator error during mobile delayed-image retry: a card was replaced by the application while the test was scrolling it into view. The test now re-queries the current card by stable place ID before each retry action and tolerates a detach between scrolling and eager-load assignment. The final mobile assertion still requires 200 cards and zero missing/loading images; no image or catalog data was changed.

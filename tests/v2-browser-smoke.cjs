@@ -177,7 +177,17 @@ await page.screenshot({path:"test-results/frame-atlas-home-desktop.png"});await 
  const readMobileArchive=()=>mp.locator("#placeList .place").evaluateAll(cards=>cards.map((card,index)=>{const img=card.querySelector(".thumb img"),frame=card.querySelector(".thumb");return {id:card.dataset.select||"",index:index+1,name:card.querySelector("h3")?.textContent?.trim()||"",src:img?.currentSrc||img?.getAttribute("src")||"",hasSource:!!String(img?.getAttribute("src")||"").trim(),loaded:!!img&&img.complete&&img.naturalWidth>0,loading:!!String(img?.getAttribute("src")||"").trim()&&(!img?.complete||!(img?.naturalWidth>0))&&!!frame?.classList.contains("image-loading"),missing:!!String(img?.getAttribute("src")||"").trim()&&!(img?.naturalWidth>0)&&!!frame?.classList.contains("image-missing")};}));
  let archiveAudit=await readMobileArchive();
  const mobileLoadRetryIds=[...new Set(archiveAudit.filter(x=>x.loading&&x.id).map(x=>x.id))];
- for(const pendingPhotoId of mobileLoadRetryIds.slice(0,30)){const pendingCard=mp.locator('#placeList .place[data-select="'+pendingPhotoId+'"]');await pendingCard.scrollIntoViewIfNeeded();await pendingCard.locator(".thumb img").evaluate(img=>{img.loading="eager";});await mp.waitForFunction(id=>{const card=[...document.querySelectorAll("#placeList .place")].find(x=>x.dataset.select===id),img=card?.querySelector(".thumb img"),frame=card?.querySelector(".thumb");return !!img&&(img.complete&&img.naturalWidth>0||!!frame?.classList.contains("image-missing"));},pendingPhotoId,{timeout:20000}).catch(()=>null);}
+  for(const pendingPhotoId of mobileLoadRetryIds.slice(0,30)){
+   const selector='#placeList .place[data-select="'+pendingPhotoId+'"]';
+   // The app can replace list cards while a fallback image succeeds; always re-query by stable place ID.
+   await mp.waitForFunction(id=>!!document.querySelector('#placeList .place[data-select="'+id+'"]'),pendingPhotoId,{timeout:5000}).catch(()=>null);
+   try{await mp.locator(selector).scrollIntoViewIfNeeded({timeout:5000});}catch{}
+   try{await mp.locator(selector+" .thumb img").evaluate(img=>{img.loading="eager";});}catch{}
+   await mp.waitForFunction(id=>{
+    const card=document.querySelector('#placeList .place[data-select="'+id+'"]'),img=card?.querySelector(".thumb img"),frame=card?.querySelector(".thumb");
+    return !!img&&(img.complete&&img.naturalWidth>0||!!frame?.classList.contains("image-missing"));
+   },pendingPhotoId,{timeout:20000}).catch(()=>null);
+  }
  archiveAudit=await readMobileArchive();
  console.log("MOBILE_ARCHIVE_IMAGE_AUDIT",JSON.stringify({total:archiveAudit.length,loaded:archiveAudit.filter(x=>x.loaded).length,loading:archiveAudit.filter(x=>x.loading).length,missing:archiveAudit.filter(x=>x.missing).map(x=>({name:x.name,index:x.index}))}));
 assert.equal(archiveAudit.filter(x=>x.missing).length,0,"Mobile archive must not end with missing-image cards: "+JSON.stringify(archiveAudit.filter(x=>x.missing)));assert.equal(archiveAudit.filter(x=>x.loading).length,0,"Mobile archive photo audit must finish without unresolved loading states after targeted retries: "+JSON.stringify(archiveAudit.filter(x=>x.loading)));const repairedMobilePhotos=archiveAudit.filter(x=>["busan-cheongsapo-dallitdol","ic-sorae-saltfield"].includes(x.id));assert.equal(repairedMobilePhotos.length,2,"Both repaired external-photo locations must appear in the mobile archive audit");assert.ok(repairedMobilePhotos.every(x=>x.loaded&&!x.loading&&!x.missing),"Both repaired external photos must load successfully in the mobile archive: "+JSON.stringify(repairedMobilePhotos.filter(x=>!x.loaded||x.loading||x.missing)));
