@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — PC issue user-confirmed resolved; build 20261017-124 passed quality run #594 and Pages deployment #640
+Last updated: 2026-10-17 (Korea Standard Time) — build 20261017-124 user-confirmed normal; quality run #595 and Pages deployment #641 passed
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -494,8 +494,19 @@ Last updated: 2026-10-17 (Korea Standard Time) — PC issue user-confirmed resol
 
 - User-confirmed PC fix: latest 2.0 screen renders normally, newest-location section is visible, and the count is 200. Close the earlier PC 201/stale-screen incident unless it recurs.
 - Current deployed app build at this checkpoint: `20261017-124`.
-- Quality run #594: PASS — https://github.com/casio8000/FRAME_ATLAS/actions/runs/38994695991. Pages deployment #640: SUCCESS — https://github.com/casio8000/FRAME_ATLAS/actions/runs/38994695871.
+- Quality run #595: PASS — https://github.com/casio8000/FRAME_ATLAS/actions/runs/38995171458. Pages deployment #641: SUCCESS — https://github.com/casio8000/FRAME_ATLAS/actions/runs/38995171160.
 - Fresh source-data cross-check matched `tools/report.md`: base 151, supplement 67, name/ID matches 18, appended 49, integrated 200 places, 307 photo candidates; duplicate IDs 0; missing required place fields 0; duplicate candidate IDs 0; broken selected-photo references 0; selected photo mismatch/rejected references 0; missing photo URLs/paths 0; missing standardized rights status 0; active photo-match review candidates 0.
 - Rights review remains separate: 267 active photo candidates still need conditions/reuse review. This is not a place-data or selected-image-link structural error and must not be represented as automatically cleared for commercial reuse.
-- Added a static regression check in `tools/check_app.py` to guard the exact failure pattern: app-shell asset versions must match `app-build`; service-worker activation must refresh only app-entry pages; identical builds must not force repeated navigations; activation must not wait for page navigation; manual pages must not be rewritten to the home screen. The next quality run must validate this check.
+- Added static regression checks in `tools/check_app.py` for the exact failure pattern: app-shell asset versions match `app-build`; service-worker activation refreshes only app-entry pages; identical builds do not cause repeated navigations; activation does not wait for page navigation; manual pages are not rewritten to the home screen. These checks passed in quality run #595.
 - Next steps: (1) confirm new quality run passes; (2) inspect remaining non-selected candidate history only where it can affect the displayed reference photo; (3) keep the 200-location count frozen during verification; (4) test the full catalog on actual iPhone when accessible; (5) plan independent-repository migration only after the existing project and deployment path are backed up and validated.
+
+
+## 2026-10-17 — Latest validation results and documentation alignment
+
+- User-confirmed: PC start → home shows the latest-added section and a total of 200 places. Treat the stale-PC/count issue as resolved unless it recurs.
+- Build `20261017-124` is the current deployed app. [Quality run #595 passed](https://github.com/casio8000/FRAME_ATLAS/actions/runs/38995171458) and [Pages deployment #641 succeeded](https://github.com/casio8000/FRAME_ATLAS/actions/runs/38995171160).
+- Desktop/mobile Playwright checks all report 200 place rows; image audits report 200/200 loaded, 0 missing, 0 pending/loading, and 0 uncaught page errors.
+- Static cache-regression guard is now part of `tools/check_app.py`, and the new checks passed in run #595.
+- `v2/README.md` now has a dated current-state section and explicitly labels the 34-location/36-photo figures as the initial 2026-10-13 snapshot, not current totals.
+- Current merged catalog remains 200 locations / 307 photo candidate records; no location entries or photo assignments were changed in this documentation update.
+- Outstanding: actual iPhone full-catalog visual check; independent `FRAME_ATLAS_v2.0` repository/deployment migration after a safety backup plan. Do not claim real iPhone acceptance from browser emulation.
