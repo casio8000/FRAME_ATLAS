@@ -527,3 +527,12 @@ Last updated: 2026-10-17 (Korea Standard Time) — build 20261017-124 user-confi
 - Old images and source metadata are retained in each candidate's `previousImageUrl`, `previousSourcePageUrl`, `previousSourceName`, and `previousTitle` fields. No extra candidate records were added, so the total remains 307.
 - Status is still `reference-only` for these images; this is a scouting image change, not rights approval or filming permission.
 - Run the complete quality check and verify PC/mobile 200/200 photo loading before merging this change into `main`.
+
+
+## Photo refinement validation in progress
+
+- Pull request: https://github.com/casio8000/FRAME_ATLAS/pull/6
+- Test run #596: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38996081364 (pending at the time of this note; browser smoke and data validation must complete before merge).
+- Added exact-image regression assertions for Glass House, Idang Art Museum, and Aegibong: expected candidate IDs/source hosts, confirmed place match, preserved previous image URL for rollback, and reference-only rights state.
+- Updated manual section 22 with the visible reference-photo changes. The previous location IDs, candidate IDs, selected primary/reference IDs, and counts (200 places / 307 candidates) are unchanged.
+- Do not merge or report the three replacements as deployed until PR quality check succeeds and the resulting Pages deployment completes.
