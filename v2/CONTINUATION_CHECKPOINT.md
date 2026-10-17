@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — mobile image audit batch 14, rights metadata batch 13 and Sorae image URL repair
+Last updated: 2026-10-17 (Korea Standard Time) — image-load repair batch 17; desktop/mobile image assertions and proxy nesting fix
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -416,3 +416,16 @@ Last updated: 2026-10-17 (Korea Standard Time) — mobile image audit batch 14, 
 - Preserved the original Incheon City direct URL in `previousImageUrl`, the failed nested proxy in `lastFailedImageUrl`, and the earlier source page in `previousSourcePageUrl`. The official Incheon Tour detail page now supplies `sourcePageUrl`; usage rights remain `review-required` because photo-specific reuse conditions are not yet verified.
 - The licensed Wikimedia CC BY 3.0 Sorae salt-field model remains `rejected/mismatch` with all author/license metadata preserved; it is no longer the selected reference.
 - Catalog remains 200 locations and 307 photo candidate records. Quality run #583 is testing the report-disclaimer hotfix; this URL change triggers another desktop/mobile verification cycle.
+
+
+## Release 2026-10-17 · Image-load repair batch 17 — Cheongsapo and Sorae
+- Created safety branch `backup/pre-image-load-repair-batch17-2026-10-17` from pre-change main commit `94b46327851a43aeeba6732a5a3ae1a196ad0e67`.
+- Latest desktop browser test (#584) failed on two active images after all fallback URLs had been exhausted: Busan Cheongsapo Daritdol Observatory and Sorae Wetland Ecological Park. The audit had 198/200 images loaded and 2 in the explicit missing state.
+- Replaced Cheongsapo's failing Busan City image API with a Klook CDN photo showing the curved glass walkway and sea. The Busan City page that documents the observatory is stored as `locationEvidenceUrl`. The original image URL and source remain in history fields.
+- Replaced Sorae's failing direct Incheon Tour image URL with a Daum CDN image from an article identifying Sorae Wetland Ecological Park and showing boardwalk, reeds, and windmill. Failed URLs remain in history fields/notes.
+- Preserved `rightsStatus=review-required` for both candidates. This photo-reference fix does not grant image reuse rights or commercial-shoot permissions.
+- Updated image fallback helpers so URLs already hosted by `images.weserv.nl` or `wsrv.nl` are not wrapped in another proxy URL.
+- Added regression assertions for the expected replacement source candidates and loaded states on desktop/mobile. Desktop audit now fails if active images remain loading after targeted retries.
+- Bumped synchronized app shell/service-worker/manifest/root-entry build ID to `20261017-117`; user manual link query also uses `v=20261017-117`.
+- Place count stays **200** and candidate count stays **307**. The new CI cycle must pass before treating this repair as verified.
+- Sources: Klook Busan day-tour image (https://www.klook.com/en-GB/activity/74132-busan-oneday-tour-busan/); Busan City Cheongsapo context (https://www.busan.go.kr/news/storyreport/view?dataNo=70451&gugun=Prev); Daily Travel Sketch Sorae image page (https://v.daum.net/v/9CoaMZmjHO); previous Incheon Tour source remains in photo history.

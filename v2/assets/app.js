@@ -115,12 +115,13 @@ function bindImageFallbacks(root){
   const placeId=img.dataset.homePreview||img.dataset.placePreview||img.closest("[data-home-place]")?.dataset.homePlace||img.closest("[data-select]")?.dataset.select||img.closest("[data-photos-detail]")?.dataset.photosDetail||img.closest("[data-map-place]")?.dataset.mapPlace||img.closest("[data-analysis-place]")?.dataset.analysisPlace||selectedId;
   const place=getPlace(placeId),queue=[],seen=new Set([initial]);
   const addUrl=value=>{const url=String(value||"").trim();if(!url||seen.has(url)||!(/^(https?:\/\/|blob:|data:image\/)/i.test(url)))return;seen.add(url);queue.push(url);};
+  cons  const isImageProxyUrl=url=>/^https?:\/\/(?:images\.weserv\.nl|wsrv\.nl)\//i.test(String(url||""));
   const proxyUrl=url=>{
-   if(!/^https?:\/\//i.test(url)||/^https:\/\/images\.weserv\.nl\//i.test(url))return "";
+   if(!/^https?:\/\//i.test(url)||isImageProxyUrl(url))return "";
    const f=frame(),w=f&&f.classList.contains("thumb")?260:900,h=f&&f.classList.contains("thumb")?190:650;
    return "https://images.weserv.nl/?url="+encodeURIComponent(url)+"&w="+w+"&h="+h+"&fit=inside&output=webp";
   };
-  const alternateProxyUrl=url=>{if(!/^https?:/i.test(url))return "";const f=frame(),w=f&&f.classList.contains("thumb")?260:900,h=f&&f.classList.contains("thumb")?190:650;return "https://wsrv.nl/?url="+encodeURIComponent(url)+"&w="+w+"&h="+h+"&fit=inside&output=webp";};
+  const alternateProxyUrl=url=>{if(!/^https?:/i.test(url)||isImageProxyUrl(url))return "";const f=frame(),w=f&&f.classList.contains("thumb")?260:900,h=f&&f.classList.contains("thumb")?190:650;return "https://wsrv.nl/?url="+encodeURIComponent(url)+"&w="+w+"&h="+h+"&fit=inside&output=webp";};
   // Order: thumbnail -> proxy of failed original -> other verified candidate URLs -> their proxies.
   const thumb=img.dataset.fallbackThumbnail||"";addUrl(thumb);addUrl(proxyUrl(initial));addUrl(alternateProxyUrl(initial));
   const alts=[];
