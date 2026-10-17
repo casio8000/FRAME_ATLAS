@@ -532,7 +532,18 @@ Last updated: 2026-10-17 (Korea Standard Time) — build 20261017-124 user-confi
 ## Photo refinement validation in progress
 
 - Pull request: https://github.com/casio8000/FRAME_ATLAS/pull/6
-- Test run #596: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38996081364 (pending at the time of this note; browser smoke and data validation must complete before merge).
+- PR #6 has since merged successfully; the final PR quality run #599 passed and Pages deployment #644 succeeded. The main-branch quality run #600 was still in progress at this checkpoint.
 - Added exact-image regression assertions for Glass House, Idang Art Museum, and Aegibong: expected candidate IDs/source hosts, confirmed place match, preserved previous image URL for rollback, and reference-only rights state.
 - Updated manual section 22 with the visible reference-photo changes. The previous location IDs, candidate IDs, selected primary/reference IDs, and counts (200 places / 307 candidates) are unchanged.
 - Do not merge or report the three replacements as deployed until PR quality check succeeds and the resulting Pages deployment completes.
+
+
+## Merge and deploy completion — three same-location reference-photo improvements
+
+- PR #6 merged to main as `4d53b9f38b5b0a68dd745b89c0ef98ffbb6e442b`: https://github.com/casio8000/FRAME_ATLAS/pull/6.
+- Final PR quality test #599 passed: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38996198372. It reported desktop 200/200 loaded, held/missing/pending 0; mobile 200/200 loaded, loading/missing 0; all desktop/mobile home/archive place rows at 200; smoke PASS; no uncaught JS errors.
+- Pages deployment #644 succeeded for the merge commit: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38996377658.
+- Replaced photo references: Glass House (unwatermarked facade/cantilever/grass-slope view), Idang Art Museum (historical bathhouse-tile/exposed-pipe interior photo), and Aegibong (curved skywalk with place-name sign). Same candidate IDs and same primary/reference IDs; previous image/source/title retained for rollback.
+- All three photos remain `reference-only`; no reuse/shooting permission is implied. Counts remain 200 places and 307 photo candidate records.
+- Main quality run #600 was still running after merge when written: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38996377760. PR run #599 validated the same merged application/test tree; update the result only after #600 conclusively reports.
+- Next priorities after confirmation: visually review National Maritime Museum’s selected photo, then improve the remaining banner-dominated Suchang Youth Mansion image if a verified same-place source is available. Do not add places; keep the total frozen at 200.
