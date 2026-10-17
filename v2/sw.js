@@ -1,4 +1,4 @@
-const BUILD_ID="20261017-123";
+const BUILD_ID="20261017-124";
 const CACHE_NAME="frame-atlas-v2-shell-"+BUILD_ID;
 const CORE_FILES=["./?fa_build="+BUILD_ID,"./index.html?fa_build="+BUILD_ID,"./assets/app.css?v="+BUILD_ID,"./assets/app.js?v="+BUILD_ID,"./data/places.json","./data/art_locations_curated_20261016.json","./manifest.webmanifest?v="+BUILD_ID,"./icons/atlas-icon-180-20261015-64.png","./icons/atlas-icon-192-20261015-64.png","./icons/atlas-icon-512-20261015-64.png"];
 const APP_BASE=new URL("./",self.location.href);
@@ -24,7 +24,8 @@ self.addEventListener("activate",event=>event.waitUntil(
 self.addEventListener("fetch",event=>{
  const request=event.request;if(request.method!=="GET")return;
  const url=new URL(request.url);if(url.origin!==self.location.origin||!url.pathname.startsWith(APP_BASE.pathname))return;
- if(request.mode==="navigate"){
+ const appEntryPaths=[APP_BASE.pathname,new URL("./index.html",APP_BASE).pathname];
+ if(request.mode==="navigate"&&appEntryPaths.includes(url.pathname)){
   // Always request this deployment's versioned entry page; this avoids a stale unversioned index being reused on first open.
   const freshUrl=new URL("./index.html?fa_build="+BUILD_ID,APP_BASE);
   const fresh=new Request(freshUrl.toString(),{method:"GET",headers:request.headers,mode:"same-origin",credentials:"same-origin",cache:"no-store",redirect:"follow"});
