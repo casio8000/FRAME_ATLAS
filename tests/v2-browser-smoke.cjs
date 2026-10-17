@@ -27,6 +27,20 @@ assert.equal(studioCubePhoto.placeMatch,"confirmed","Studio Cube image must reta
 assert.equal(studioCubePhoto.rightsStatus,"unknown","Studio Cube photo reuse terms must remain unverified");
 assert.match(String(studioCubePhoto.previousImageUrl||""),/image\.cine21\.com\/resize\/cine21\/movie\/2025\/0723\//i,"The prior Studio Cube image URL must remain available for rollback");
 assert.equal(catalogForCounts.places.reduce((n,p)=>n+(Array.isArray(p.imageCandidates)?p.imageCandidates.length:0),0),307,"Photo update must not increase the catalog's 307 candidate records");
+/* Photo-quality regression: Jeonju Film Studio selected reference should show the J1 interior without changing candidate count. */
+const jeonjuStudioPlace=catalogForCounts.places.find(p=>p.id==="jeonju-film-studios");
+assert.ok(jeonjuStudioPlace,"Jeonju Film Studio must stay in the shared place catalog");
+assert.equal(jeonjuStudioPlace.referenceImageId,"ref-jeonju-film-01","Jeonju photo candidate ID must remain stable");
+const jeonjuPhoto=(jeonjuStudioPlace.imageCandidates||[]).find(c=>c.id==="ref-jeonju-film-01");
+assert.ok(jeonjuPhoto,"Jeonju Film Studio selected photo candidate must exist");
+assert.match(String(jeonjuPhoto.imageUrl||""),/image\.cine21\.com\/resize\/cine21\/movie\/2025\/0723\/10_32_01__68803b91d5f05%5BH800-%5D\.jpg$/i,"Jeonju selected image must be the Cine21 J1 studio interior");
+assert.equal(jeonjuPhoto.sourceName,"Cine21","Jeonju photo source should remain identified");
+assert.equal(jeonjuPhoto.creator,"백종헌","Jeonju photo credit should match the source byline");
+assert.equal(jeonjuPhoto.status,"candidate","Jeonju photo must not be marked as rights-cleared");
+assert.equal(jeonjuPhoto.placeMatch,"confirmed","Jeonju photo should retain its confirmed place match");
+assert.equal(jeonjuPhoto.rightsStatus,"unknown","Jeonju photo reuse rights must remain unverified");
+assert.match(String(jeonjuPhoto.previousImageUrl||""),/10_31_50__68803b8683933%5BS1000%2C1000%5D\.JPG$/i,"The prior Jeonju exterior URL must remain available for rollback");
+assert.equal(catalogForCounts.places.reduce((n,p)=>n+(Array.isArray(p.imageCandidates)?p.imageCandidates.length:0),0),307,"Jeonju photo change must preserve the 307 candidate records");
 const requiredRepairPhotoSources=[
  {placeId:"busan-cheongsapo-dallitdol",candidateId:"ref-cheongsapo-busan-city-photo-2026",sourcePattern:/^https:\/\/res\.klook\.com\//i},
  {placeId:"ic-sorae-saltfield",candidateId:"ref-sorae-windmill-shallow-reflection",sourcePattern:/^https:\/\/img2\.daumcdn\.net\//i}
