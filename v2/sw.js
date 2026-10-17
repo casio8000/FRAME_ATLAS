@@ -1,4 +1,4 @@
-const BUILD_ID="20261017-122";
+const BUILD_ID="20261017-123";
 const CACHE_NAME="frame-atlas-v2-shell-"+BUILD_ID;
 const CORE_FILES=["./?fa_build="+BUILD_ID,"./index.html?fa_build="+BUILD_ID,"./assets/app.css?v="+BUILD_ID,"./assets/app.js?v="+BUILD_ID,"./data/places.json","./data/art_locations_curated_20261016.json","./manifest.webmanifest?v="+BUILD_ID,"./icons/atlas-icon-180-20261015-64.png","./icons/atlas-icon-192-20261015-64.png","./icons/atlas-icon-512-20261015-64.png"];
 const APP_BASE=new URL("./",self.location.href);
@@ -8,15 +8,18 @@ self.addEventListener("activate",event=>event.waitUntil(
   .then(keys=>Promise.all(keys.filter(key=>key.startsWith("frame-atlas-v2-")&&key!==CACHE_NAME).map(key=>caches.delete(key))))
   .then(()=>self.clients.claim())
   .then(()=>self.clients.matchAll({type:"window",includeUncontrolled:true}))
-  .then(clients=>Promise.all(clients.map(client=>{
-   const current=new URL(client.url);
-   const entryPaths=[APP_BASE.pathname,new URL("./index.html",APP_BASE).pathname];
-   // Refresh only the app entry page. Leave the separately opened user manual and other tabs untouched.
-   if(current.origin!==APP_BASE.origin||!entryPaths.includes(current.pathname))return Promise.resolve();
-   if(current.searchParams.get("fa_build")===BUILD_ID)return Promise.resolve();
-   const latest=new URL("./index.html?fa_build="+BUILD_ID,APP_BASE);
-   return client.navigate(latest.toString()).catch(()=>null);
-  })))
+  .then(clients=>{
+   for(const client of clients){
+    const current=new URL(client.url);
+    const entryPaths=[APP_BASE.pathname,new URL("./index.html",APP_BASE).pathname];
+    // Only refresh the app entry. Do not navigate the separately opened manual or other pages.
+    if(current.origin!==APP_BASE.origin||!entryPaths.includes(current.pathname))continue;
+    if(current.searchParams.get("fa_build")===BUILD_ID)continue;
+    const latest=new URL("./index.html?fa_build="+BUILD_ID,APP_BASE);
+    // Start navigation but do not hold the activation event open while navigation completes.
+    client.navigate(latest.toString()).catch(()=>null);
+   }
+  })
 ));
 self.addEventListener("fetch",event=>{
  const request=event.request;if(request.method!=="GET")return;
