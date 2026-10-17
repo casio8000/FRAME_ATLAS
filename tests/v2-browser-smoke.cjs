@@ -27,7 +27,9 @@ for(const id of newestFourteenIds){
 const refinedReferencePhotos=[
  {placeId:"jeju-glass-house-seopjikoji",candidateId:"ref-jeju-glass-house-phoenix-exterior",host:/^https:\/\/blogthumb\.pstatic\.net\//i,previousHost:/^https:\/\/thumbnews\.nateimg\.co\.kr\//i},
  {placeId:"gunsan-idang-art-museum",candidateId:"ref-idang-art-museum-gunsan-tourism",host:/^https:\/\/img1\.daumcdn\.net\/thumb\//i,previousHost:/^https:\/\/media\.triple\.guide\//i},
- {placeId:"gimpo-aegibong-peace-ecopark",candidateId:"ref-aegibong-peace-ecopark-official-tourism",host:/^https:\/\/arisukorea\.com\/upload\/editor\//i,previousHost:/^https:\/\/m1\.gimpo\.go\.kr\//i}
+ {placeId:"gimpo-aegibong-peace-ecopark",candidateId:"ref-aegibong-peace-ecopark-official-tourism",host:/^https:\/\/arisukorea\.com\/upload\/editor\//i,previousHost:/^https:\/\/m1\.gimpo\.go\.kr\//i},
+ {placeId:"busan-national-maritime-museum",candidateId:"ref-busan-national-maritime-museum-exterior",host:/^https:\/\/tong\.visitkorea\.or\.kr\/cms\/resource\/98\/2943098_image2_1\.bmp$/i,previousHost:/^https:\/\/koreabeyonddestinations\.weebly\.com\//i},
+ {placeId:"daegu-suchang-youth-mansion",candidateId:"ref-daegu-suchang-youth-mansion-exterior",host:/^https:\/\/tong\.visitkorea\.or\.kr\/cms\/resource\/48\/2864748_image2_1\.jpg$/i,previousHost:/^https:\/\/media\.triple\.guide\//i}
 ];
 for(const expected of refinedReferencePhotos){
  const place=catalogForCounts.places.find(p=>p.id===expected.placeId);
