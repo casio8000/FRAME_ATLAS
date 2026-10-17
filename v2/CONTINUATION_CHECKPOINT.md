@@ -639,3 +639,14 @@ Last updated: 2026-10-17 (Korea Standard Time) — photo PR #8 and docs PR #9 me
 - Data checks: base 151 + supplemental records 68 -> 19 existing-place merges + 49 distinct additional places -> 200 total places. Photo candidates remain 307, IDs unique, selected photo ID unchanged for Studio Cube. Its image URL now targets LG Global Newsroom's Studio V interior; prior URL/source metadata is preserved, and `rightsStatus=unknown` remains explicit.
 - Main-push duplicate quality run #39000005597 completed successfully at 2026-10-17T03:47:59Z.
 - Open follow-up: physically test iPhone Safari and the home-screen shortcut. Remaining photo-quality flags are a review queue, not automatic replacements; keep total places frozen at 200.
+
+## Photo-quality follow-up — Jeonju Film Studio J1 interior (2026-10-17; build 129 branch)
+
+- Working branch: `photo/jeonju-studio-interior-20261017-129`; do not merge before browser, catalog and Pages checks pass.
+- Existing location ID `jeonju-film-studios` and selected reference candidate ID `ref-jeonju-film-01` are preserved. The chosen image changes from the Cine21 J1 exterior URL to the same article's direct image link labeled “스튜디오 내부”: https://image.cine21.com/resize/cine21/movie/2025/0723/10_32_01__68803b91d5f05%5BH800-%5D.jpg.
+- Source: https://cine21.com/news/view/?mag_id=108000. Article credits photo to 백종헌 and describes J1's high ceiling and motorized set battens; the selected interior photo shows the green-screen stage and overhead lighting structure. Source match is confirmed, candidate remains `status=candidate`, and photo reuse status stays `rightsStatus=unknown`.
+- Prior image URL, thumbnail, source page/name, creator, rights fields, view type, title and notes are preserved as `previous*` metadata for rollback.
+- Integrated catalog count remains 200 locations / 307 unique photo candidates. Data arithmetic: base 151 + supplemental records 69, existing-place merges 20 + distinct additional places 49 = 200. No new photo candidate ID is created; `tools/report.md` is updated to supplemental 69 / matches 20 / additional places 49 / total places 200.
+- App entry, v2 shell, nested service worker, PWA start URL and manual cache link use build `20261017-129`; root bridge cache is `frame-atlas-root-bridge-20261017-10`. Manual chapter 26 and `IMAGE_AUDIT_BATCH26` are saved.
+- The branch still needs the Jeonju-specific regression assertions and full automated quality run. Required checks: 200 desktop/mobile home/archive rows; 200/200 image loads with no page errors; 307 candidate records; candidate ID and former URL preserved; image source resolves to the new Cine21 interior; data report counts consistent. Only then create/merge PR and verify Pages deploy.
+- Physical iPhone Safari/home-screen shortcut acceptance remains open. Keep the overall place count frozen at 200 while remaining visual-quality candidates are reviewed one by one.
