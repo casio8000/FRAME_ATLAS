@@ -605,5 +605,16 @@ Last updated: 2026-10-17 (Korea Standard Time) — photo PR #8 and docs PR #9 me
 - `v2/index.html`, its CSS/JS/manifest query keys, `v2/sw.js`, and the PWA `start_url` now consistently use build `20261017-127`. The v2 worker rotates its shell cache and fetches a versioned entry for navigation.
 - `v2/USER_MANUAL_KO.html` documents the new migration behavior and safe steps. It warns users not to clear all browser data, and to export a JSON backup before using Ctrl+F5 if the symptom persists.
 - No place catalog or photo candidate data was changed. Expected count remains 200 places / 307 photo candidate records.
-- Not yet merged or deployed at this checkpoint. Next: run the catalog validator and Playwright desktop/mobile smoke suite; check that the root entry redirects to build 127, the newly-added section shows six items, desktop/mobile counts are 200, then merge only after quality checks pass. After merge, confirm the actual GitHub Pages deployment and live entry URL.
+- PR #10 merged to main as `537a894b96305680b2839c02f45d95d02a61809d` on 2026-10-17. The PR quality run #38999049043 passed. GitHub Pages deployment run #38999222209 completed successfully for this merge commit. The subsequent main-push quality run #38999222779 was still in progress at the time of this checkpoint update.
 - Ongoing review stays frozen at 200 locations: next content task is photo quality/reuse-condition review, not adding places. Physical iPhone home-screen acceptance still needs a real-device check.
+
+
+## Build 127 merge/deployment closeout — 2026-10-17
+
+- PR #10: https://github.com/casio8000/FRAME_ATLAS/pull/10 — merged as `537a894b96305680b2839c02f45d95d02a61809d`.
+- PR quality run #38999049043: success. JavaScript syntax, browser smoke test, catalog validator/report consistency, resource/version checks, backup merge, photo asset, per-device sync, and legacy audit checks all passed.
+- Browser log: `V2_IMAGE_AUDIT` reported 200 total / 200 displayed / 200 loaded, no held/missing/pending photos. `MOBILE_ARCHIVE_IMAGE_AUDIT` reported 200 total / 200 loaded. Final smoke summary: desktop home 200, desktop archive 200, mobile home 200, mobile archive 200, `smoke=PASS`, `pageErrors=[]`.
+- GitHub Pages deployment run #38999222209 completed successfully for merge commit `537a894b...`. The 2.0 entry, root bridge, PWA start URL, and nested service-worker shell use build `20261017-127`.
+- No place or photo candidate records changed: catalog remains 200 places / 307 candidates. The PC's previous 201-place state was handled by cache/version and tab-migration changes; browser tests prove the source behaves correctly in automated desktop/mobile browsers, not yet on the user's physical iPhone.
+- The main-push quality workflow #38999222779 had not completed when recorded; its PR-equivalent run is green. Check its final status before declaring all post-merge quality workflows closed.
+- Next: keep the place count frozen at 200; continue visual quality review of remaining weaker selected photos and the 267 active photo candidates whose reuse conditions need follow-up. Real iPhone Safari/home-screen acceptance and the independent-repository separation remain open tasks after the final workflow status is checked.
