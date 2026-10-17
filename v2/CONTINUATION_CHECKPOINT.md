@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — PR #8 merged; quality #603 passed; post-merge Pages deployment confirmation pending
+Last updated: 2026-10-17 (Korea Standard Time) — photo PR #8 and docs PR #9 merged; quality #603/#605 passed; post-merge Pages deployment confirmation pending
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -585,3 +585,13 @@ Last updated: 2026-10-17 (Korea Standard Time) — PR #8 merged; quality #603 pa
 - Automated PC/mobile audit: 200 rows in desktop home/archive and mobile home/archive; 200/200 images loaded in both audits; 0 missing/loading/pending; smoke PASS; no page errors.
 - Source metadata and prior image rollback data are intact; candidate/place pointers did not change; `rightsStatus=reference-only` remains. Totals are 200 places / 307 candidate records.
 - The GitHub tool used for this checkpoint can fetch PR-triggered quality runs but cannot list post-merge Pages deployment runs. Treat the source merge and quality pass as confirmed; Pages live deployment after merge remains unconfirmed here.
+
+
+## Documentation/cache-key closeout — PR #9 (2026-10-17)
+
+- Documentation PR #9 merged to main as `32f2ad04e65bc55e1d2ebc6ee3f7f7463b4552ba`: https://github.com/casio8000/FRAME_ATLAS/pull/9.
+- Quality run #605 passed: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38998368950. The browser suite, catalog validator, app/resource checks, backup merge, photo assets, per-device sync, and legacy-audit tests completed successfully.
+- User manual link cache key is now `USER_MANUAL_KO.html?v=20261017-126`; app shell build remains `20261017-124`. No place records or photo candidate records changed in PR #9.
+- Photo batch 24 remains merged in PR #8; quality run #603 passed with desktop/mobile audits at 200/200 images, 0 missing/loading/pending, and 0 page errors.
+- Pages deployment status following the PR #8/#9 main-branch commits was not independently retrievable with the available GitHub workflow interface in this session. The prior separately confirmed deployment remains #647. Do not claim batch 24 is live until a later Pages deployment success is explicitly confirmed or the updated live site is inspected.
+- Ongoing priorities: keep locations frozen at 200; review remaining selected-photo quality without adding locations; rights/use-condition status review remains separate from reference-image selection; complete actual iPhone whole-catalog acceptance when accessible; plan independent-repository migration only after backup and source/deployment validation.
