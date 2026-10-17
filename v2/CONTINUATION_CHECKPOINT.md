@@ -510,3 +510,12 @@ Last updated: 2026-10-17 (Korea Standard Time) — build 20261017-124 user-confi
 - `v2/README.md` now has a dated current-state section and explicitly labels the 34-location/36-photo figures as the initial 2026-10-13 snapshot, not current totals.
 - Current merged catalog remains 200 locations / 307 photo candidate records; no location entries or photo assignments were changed in this documentation update.
 - Outstanding: actual iPhone full-catalog visual check; independent `FRAME_ATLAS_v2.0` repository/deployment migration after a safety backup plan. Do not claim real iPhone acceptance from browser emulation.
+
+
+## Photo quality audit batch 22 — 2026-10-17
+
+- Audit record: `v2/IMAGE_AUDIT_BATCH22_2026-10-17.md`.
+- Recent-14 spot-check: 13 selected photos visually checked against place identity/source context. National Maritime Museum image remains a separate visual verification target; no mismatch has been asserted without sufficient evidence.
+- Idang Art Museum: the selected red-brick exterior is consistent with the former Yeonghwa-jang bathhouse/inn building converted into the museum. The banner/wires weaken its editorial value, not its place identity; preserve it as a valid reference until a verifiable stronger candidate is found.
+- Next photo improvement batch: (1) replace watermark-bearing Glass House image only if a clear, exact-location alternative is confirmed; (2) seek a less banner-dominated Suchang Youth Mansion photo; (3) seek a more architectural Aegibong image; (4) add a stronger interior/outdoor reference for Idang; (5) visually verify National Maritime Museum's selected image and source.
+- Catalog remains frozen at 200 unique places / 307 candidate records. This audit did not change catalog data or photo IDs.
