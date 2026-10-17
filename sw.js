@@ -1,6 +1,6 @@
 /* FRAME ATLAS root bridge: migrate stale legacy root tabs into the versioned 2.0 entry. */
-const BUILD_ID = '20261017-127';
-const CACHE_NAME = 'frame-atlas-root-bridge-20261017-8';
+const BUILD_ID = '20261017-128';
+const CACHE_NAME = 'frame-atlas-root-bridge-20261017-9';
 const APP_FILES = ['./', './index.html', './manifest.json', './assets/icons/icon-180.png', './assets/icons/icon-192.png', './assets/icons/icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
