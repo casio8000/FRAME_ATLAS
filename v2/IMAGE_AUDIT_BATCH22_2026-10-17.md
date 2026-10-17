@@ -74,4 +74,4 @@
 - 원문: https://divisare.com/projects/257332-chae-pereira-architects-chang-ucchin-museum. 해당 페이지는 장소를 Yangju, Korea로 명시하고 사진가를 Park Wansoon으로 표기합니다. 이미지에는 미술관 외관, 숲, 하천변 돌담과 작은 다리가 함께 보여 건축과 자연의 관계를 설명하기에 적합합니다.
 - 기존 후보 ID `ref-yangju-chang-ucchin-museum-exterior-2020`, primary/reference 포인터 및 장소 ID는 변경하지 않았습니다. 이전 사진 URL·출처·출처명·제목·저자·구도 정보를 복구용 `previous*` 필드에 보존했습니다.
 - 사진 재사용 조건은 확인되지 않았으므로 `rightsStatus=reference-only`를 유지합니다. 새 장소를 추가하지 않아 전체 카탈로그는 200곳 / 307개 사진 후보를 유지합니다.
-- 다음 게이트: GitHub 품질검사에서 원문·사진가 메타데이터, 기존 URL 보존 및 PC·모바일 200/200 이미지 로드를 확인한 후 병합·배포합니다.
+- 검증 결과: PR #8 병합 완료, GitHub Actions 품질검사 #603 성공. 실제 브라우저 감사는 PC·모바일 각각 200/200 이미지 로드, 누락·대기 0건, JavaScript 오류 0건을 기록했습니다. 병합 후 GitHub Pages 배포 완료 여부는 별도 확인이 필요하며, 이 기록만으로 공개 사이트 반영까지 완료됐다고 단정하지 않습니다.
