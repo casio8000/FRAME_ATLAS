@@ -65,3 +65,13 @@
 | 김포 애기봉평화생태공원 | 단순 보행로 사진 대신 장소 표지와 곡선 스카이워크가 보이는 사진 | ARISU KOREA DMC 장소 소개 이미지. 이미지 자체에 공원 표지가 보이고 구조적 구도가 강함. 원저작자·재사용 조건은 미확인이라 reference-only 유지. |
 
 이번 변경은 기존 후보 3개의 URL/설명 업데이트이며 새 후보 ID를 만들지 않았으므로 데이터의 장소 수는 200곳, 후보 레코드는 307개로 유지됩니다. 자동화 품질검사에서 변경된 이미지가 실제로 로드되고 새 장소/선택 ID와 정합성이 유지되는지 확인한 뒤 배포합니다.
+
+
+## 후속 사진 품질 개선 — 배치 24: 양주 장욱진미술관 (2026-10-17)
+
+- 기존 경기문화재단 정면 외관 사진은 장소와 일치하지만 건축과 주변 환경의 관계가 덜 드러나, 같은 장소의 건축 프로젝트 사진으로 교체안을 준비했습니다.
+- 새 이미지 URL: https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1/project_images/4436131/CHAE_PEREIRA_ARCHITECTS_9/chae-pereira-architects-chang-ucchin-museum.jpg.
+- 원문: https://divisare.com/projects/257332-chae-pereira-architects-chang-ucchin-museum. 해당 페이지는 장소를 Yangju, Korea로 명시하고 사진가를 Park Wansoon으로 표기합니다. 이미지에는 미술관 외관, 숲, 하천변 돌담과 작은 다리가 함께 보여 건축과 자연의 관계를 설명하기에 적합합니다.
+- 기존 후보 ID `ref-yangju-chang-ucchin-museum-exterior-2020`, primary/reference 포인터 및 장소 ID는 변경하지 않았습니다. 이전 사진 URL·출처·출처명·제목·저자·구도 정보를 복구용 `previous*` 필드에 보존했습니다.
+- 사진 재사용 조건은 확인되지 않았으므로 `rightsStatus=reference-only`를 유지합니다. 새 장소를 추가하지 않아 전체 카탈로그는 200곳 / 307개 사진 후보를 유지합니다.
+- 다음 게이트: GitHub 품질검사에서 원문·사진가 메타데이터, 기존 URL 보존 및 PC·모바일 200/200 이미지 로드를 확인한 후 병합·배포합니다.
