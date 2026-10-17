@@ -1,6 +1,6 @@
 # FRAME ATLAS 2.0 — Continuation checkpoint
 
-Last updated: 2026-10-17 (Korea Standard Time) — PRs #6/#7 merged; quality #602 and Pages #647 passed; five reference photos improved
+Last updated: 2026-10-17 (Korea Standard Time) — PR #8 merged; quality #603 passed; post-merge Pages deployment confirmation pending
 
 ## Current release
 - Live path: https://casio8000.github.io/FRAME_ATLAS/v2/index.html
@@ -575,4 +575,13 @@ Last updated: 2026-10-17 (Korea Standard Time) — PRs #6/#7 merged; quality #60
 - Same place ID `gg-yangju-chang-ucchin-museum` and candidate ID `ref-yangju-chang-ucchin-museum-exterior-2020`; selected primary/reference pointers do not change. Previous URL/source/title/creator/viewType are preserved for rollback.
 - rightsStatus=reference-only remains unchanged. No explicit image reuse license was verified. This is not approval for republication or commercial reuse.
 - Regression test adds exact host/source page/photographer assertions and retains the general PC/mobile full-photo audit. Expected totals remain 200 locations / 307 candidates.
-- Status at checkpoint: changes prepared on branch `photos/refine-yangju-chang-ucchin-20261017`; quality test, PR merge and Pages deployment are pending. Do not claim the replacement is deployed until CI and Pages confirm success.
+- Status update: PR #8 merged to main at `f1ed8a3d6ff7e673dcb37ce345ca4842d69970e4`; quality run #603 passed. Desktop and mobile audits each loaded 200/200 images, with zero missing/loading/pending photos and zero page errors. Post-merge Pages deployment success is not independently confirmed in this checkpoint; do not claim the image is live until that is verified.
+
+
+## Batch 24 final validation — PR #8 merged (2026-10-17)
+
+- PR #8: https://github.com/casio8000/FRAME_ATLAS/pull/8 — merged as `f1ed8a3d6ff7e673dcb37ce345ca4842d69970e4`.
+- Quality run #603: PASS — https://github.com/casio8000/FRAME_ATLAS/actions/runs/38997993769.
+- Automated PC/mobile audit: 200 rows in desktop home/archive and mobile home/archive; 200/200 images loaded in both audits; 0 missing/loading/pending; smoke PASS; no page errors.
+- Source metadata and prior image rollback data are intact; candidate/place pointers did not change; `rightsStatus=reference-only` remains. Totals are 200 places / 307 candidate records.
+- The GitHub tool used for this checkpoint can fetch PR-triggered quality runs but cannot list post-merge Pages deployment runs. Treat the source merge and quality pass as confirmed; Pages live deployment after merge remains unconfirmed here.
