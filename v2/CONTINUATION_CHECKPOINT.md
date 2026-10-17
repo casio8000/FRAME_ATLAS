@@ -547,3 +547,11 @@ Last updated: 2026-10-17 (Korea Standard Time) — build 20261017-124 user-confi
 - All three photos remain `reference-only`; no reuse/shooting permission is implied. Counts remain 200 places and 307 photo candidate records.
 - Main quality run #600 was still running after merge when written: https://github.com/casio8000/FRAME_ATLAS/actions/runs/38996377760. PR run #599 validated the same merged application/test tree; update the result only after #600 conclusively reports.
 - Next priorities after confirmation: visually review National Maritime Museum’s selected photo, then improve the remaining banner-dominated Suchang Youth Mansion image if a verified same-place source is available. Do not add places; keep the total frozen at 200.
+
+
+## Photo quality batch 23 — deployed candidates prepared
+
+- Two additional selected reference photos are proposed in branch `photos/refine-maritime-museum-suchang-20261017`: Busan National Maritime Museum (KTO curved roof/tower view) and Daegu Suchang Youth Mansion (KTO interior with weathered concrete/exposed pipes).
+- Candidate IDs and primary/reference pointers remain unchanged, and prior image/source metadata is saved for rollback. Both rights states remain `reference-only`.
+- Updated user manual section 23 and added exact source-host regression assertions. Require PR quality/browser test to pass with 200/200 desktop/mobile images loaded before merge/deployment.
+- No new locations; expected count remains 200 places / 307 candidate records.
