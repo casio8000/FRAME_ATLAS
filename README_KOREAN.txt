@@ -1,4 +1,4 @@
-FRAME ATLAS 3.0 — v12.32
+FRAME ATLAS 3.0 — v12.34
 
 - 장소 286곳 (기본 169 + 추가 117), 장소 ID 중복 0
 - 대표사진 후보 선택/저장 수정: coverImage, selectedCoverImage, userSelectedCover 3개 값을 함께 저장
@@ -9,3 +9,12 @@ FRAME ATLAS 3.0 — v12.32
 - 개인 메모/즐겨찾기/촬영계획/개인 장소 등은 앱 내 개인 JSON으로 별도 보관
 - 국내외 패션 에디토리얼 참고 갤러리 `editorial-reference-gallery.html` 포함 (index.html과 같은 루트에 유지)
 - 대표사진 선택 직후 후보 카드가 첫 칸으로 이동하고 버튼이 `현재 대표사진`으로 바뀌도록 상세화면 갱신 수정
+
+[v12.34 업데이트] 장소 세부 분류별 에디토리얼 참조자료는 선정 이미지와 발행처 원문 중심으로 정리했습니다. 카드 이미지를 누르면 원본 이미지가 열리고, 더 많은 사진은 발행처 원문 링크에서 확인합니다. 이 모듈에서는 Google·네이버·Bing 이미지 검색을 제공하지 않습니다. 일반 장소 대표사진 검색 기능은 그대로 유지됩니다.
+
+
+[에디토리얼 통합 후보 v12.34]
+- 기존 286개 장소 데이터는 유지하고, 최신 에디토리얼 참조자료 라이브러리를 통합한 검토용 후보입니다.
+- 세부 분류 73개 중 main app legacy category bridge는 EDITORIAL_REFERENCE_GALLERY_MAIN_ATLAS_CATEGORY_BRIDGE_v2.10.csv를 참고하세요.
+- 정적 HTML 단독 파일 미리보기에서 JS가 실행되지 않아도 카드가 나타나도록 standalone v2.10에 정적 카드 목록을 넣었습니다.
+- 실제 배포 전 PC 및 iPhone에서 원문 링크·이미지·장소별 추천 2건을 별도 확인해야 합니다.

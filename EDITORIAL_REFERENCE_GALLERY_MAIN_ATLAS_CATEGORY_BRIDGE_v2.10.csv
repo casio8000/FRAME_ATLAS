@@ -1,0 +1,98 @@
+﻿taxonomy_version,subcategory_id,subcategory_label,major_category_id,major_category_label,main_atlas_category_id,main_atlas_category_label,mapping_type,priority,notes
+v2.10,tax-sub-a01-01,유리·금속 파사드·반사,tax-major-a01,현대건축·조형 구조,glass-metal-reflection,유리·금속 파사드·반사,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a01-02,곡선·비정형·조형 건축,tax-major-a01,현대건축·조형 구조,curved-sculptural,곡선·비정형·조형 건축,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a01-03,대형 공공건축·캐노피·캔틸레버,tax-major-a01,현대건축·조형 구조,monumental-public,대형 공공건축·캐노피·캔틸레버,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a01-04,중정·선큰·반영 수공간,tax-major-a01,현대건축·조형 구조,concrete-courtyard,콘크리트 중정·반영 수공간,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a01-05,현대주택·모더니즘·미니멀 기하학,tax-major-a01,현대건축·조형 구조,modern-residential,현대 주택·건축가 주택,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a01-06,업무시설·기업 사옥,tax-major-a01,현대건축·조형 구조,monumental-public,대형 공공건축·캐노피·캔틸레버,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a01-06,업무시설·기업 사옥,tax-major-a01,현대건축·조형 구조,design-interior,디자인 실내·가구·카페,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a02-01,노출 콘크리트·브루탈리즘,tax-major-a02,산업공간·브루탈리즘·인프라,raw-concrete-bunker,노출 콘크리트·지하·벙커,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a02-02,공장·창고·산업재생,tax-major-a02,산업공간·브루탈리즘·인프라,industrial-warehouse,공장·창고·산업재생,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a02-03,벽돌·셔터·작업장 골목,tax-major-a02,산업공간·브루탈리즘·인프라,brick-workshop-alley,벽돌·셔터·작업장 골목,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a02-04,지하·벙커·터널,tax-major-a02,산업공간·브루탈리즘·인프라,raw-concrete-bunker,노출 콘크리트·지하·벙커,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a02-05,기계설비·정비공간·주차장·램프,tax-major-a02,산업공간·브루탈리즘·인프라,industrial-warehouse,공장·창고·산업재생,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a02-06,양조장·식품공장·산업유산,tax-major-a02,산업공간·브루탈리즘·인프라,industrial-warehouse,공장·창고·산업재생,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a03-01,아트리움·계단·수직 보이드,tax-major-a03,실내건축·디자인·상업공간,atrium-staircase,아트리움·계단·수직 보이드,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a03-02,대형서가·도서관·아카이브,tax-major-a03,실내건축·디자인·상업공간,library-books,대형서가·책장·아카이브,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a03-03,디자인 실내·가구·카페·레스토랑,tax-major-a03,실내건축·디자인·상업공간,design-interior,디자인 실내·가구·카페,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a03-04,클래식 홀·로비·복도·뉴트럴 인테리어,tax-major-a03,실내건축·디자인·상업공간,design-interior,디자인 실내·가구·카페,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a03-04,클래식 홀·로비·복도·뉴트럴 인테리어,tax-major-a03,실내건축·디자인·상업공간,historic-civic-hall,근대 공공건축·고전 홀,direct-existing-map,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a03-05,상업시설·플래그십·쇼룸·차량 전시,tax-major-a03,실내건축·디자인·상업공간,sports-transport,모터스포츠·공항·대형 교통 시설,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a04-01,화이트큐브·미술관 전시실,tax-major-a04,미술·전시·문화공간,white-cube-gallery,화이트큐브·미니멀 갤러리,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a04-02,조각·야외 설치작품,tax-major-a04,미술·전시·문화공간,sculpture-installation,조각·야외 설치작품,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a04-03,미디어아트·프로젝션·빛 인터랙션,tax-major-a04,미술·전시·문화공간,media-projection,몰입형 미디어아트·프로젝션,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a04-04,문화시설 공용공간·출판·아카이브 문화,tax-major-a04,미술·전시·문화공간,library-books,대형서가·책장·아카이브,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a04-04,문화시설 공용공간·출판·아카이브 문화,tax-major-a04,미술·전시·문화공간,design-interior,디자인 실내·가구·카페,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-01,한옥·고택·처마·마당,tax-major-a05,전통건축·역사유산,hanok-courtyard,한옥·고택·처마·마당,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-02,궁궐·회랑·기둥·문,tax-major-a05,전통건축·역사유산,palace-fortress-stone,궁궐·성곽·석재 역사공간,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-03,성곽·석재·계단·담장,tax-major-a05,전통건축·역사유산,palace-fortress-stone,궁궐·성곽·석재 역사공간,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-04,사찰·종교·의례 건축,tax-major-a05,전통건축·역사유산,palace-fortress-stone,궁궐·성곽·석재 역사공간,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-04,사찰·종교·의례 건축,tax-major-a05,전통건축·역사유산,historic-civic-hall,근대 공공건축·고전 홀,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-05,근대 공공건축·고전 홀,tax-major-a05,전통건축·역사유산,historic-civic-hall,근대 공공건축·고전 홀,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-06,장식 벽면·타일·벽돌·아치 파사드,tax-major-a05,전통건축·역사유산,old-brick-heritage,근대 벽돌·아치·석재 파사드,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-07,농촌·돌담·민속마을,tax-major-a05,전통건축·역사유산,rural-stonewall,농촌·돌담·민속마을,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-08,군사유산·추모·역사 흔적,tax-major-a05,전통건축·역사유산,military-memorial-history,군사유산·추모·역사 상처 공간,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-09,서원·향교·정자·누정,tax-major-a05,전통건축·역사유산,hanok-courtyard,한옥·고택·처마·마당,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-09,서원·향교·정자·누정,tax-major-a05,전통건축·역사유산,palace-fortress-stone,궁궐·성곽·석재 역사공간,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-10,근대건축·역사 공공건축,tax-major-a05,전통건축·역사유산,historic-civic-hall,근대 공공건축·고전 홀,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-10,근대건축·역사 공공건축,tax-major-a05,전통건축·역사유산,old-brick-heritage,근대 벽돌·아치·석재 파사드,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-11,전통 마을·토속 건축·석조 주거,tax-major-a05,전통건축·역사유산,rural-stonewall,농촌·돌담·민속마을,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a05-11,전통 마을·토속 건축·석조 주거,tax-major-a05,전통건축·역사유산,hanok-courtyard,한옥·고택·처마·마당,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a06-01,구도심 골목·시장·생활 흔적,tax-major-a06,도시·거리·생활풍경,old-alley-livelihood,구도심 골목·시장·생활 흔적,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a06-02,상업 골목·간판·쇼윈도,tax-major-a06,도시·거리·생활풍경,old-alley-livelihood,구도심 골목·시장·생활 흔적,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a06-03,도시 계단·육교·보행 통로,tax-major-a06,도시·거리·생활풍경,atrium-staircase,아트리움·계단·수직 보이드,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a06-03,도시 계단·육교·보행 통로,tax-major-a06,도시·거리·생활풍경,steel-infrastructure,철골·교량·대형 인프라,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a06-03,도시 계단·육교·보행 통로,tax-major-a06,도시·거리·생활풍경,old-alley-livelihood,구도심 골목·시장·생활 흔적,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a06-04,옥상·주차 데크·고층 도시 전망,tax-major-a06,도시·거리·생활풍경,city-night-neon,야간 도시·네온·젖은 도로,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a06-04,옥상·주차 데크·고층 도시 전망,tax-major-a06,도시·거리·생활풍경,steel-infrastructure,철골·교량·대형 인프라,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a06-04,옥상·주차 데크·고층 도시 전망,tax-major-a06,도시·거리·생활풍경,riverfront-bridge,강변·수변 교량·도시 스카이라인,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a06-05,야간 도시·네온·젖은 도로,tax-major-a06,도시·거리·생활풍경,city-night-neon,야간 도시·네온·젖은 도로,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a06-06,컬러 마을·계단식 주거지,tax-major-a06,도시·거리·생활풍경,rural-stonewall,농촌·돌담·민속마을,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a06-06,컬러 마을·계단식 주거지,tax-major-a06,도시·거리·생활풍경,old-alley-livelihood,구도심 골목·시장·생활 흔적,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a07-01,철길·선로·폐역,tax-major-a07,교통·이동·대형시설,railway-linear,철길·폐역·선형 철도 공간,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a07-02,플랫폼·역사·환승 공간,tax-major-a07,교통·이동·대형시설,railway-linear,철길·폐역·선형 철도 공간,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a07-03,철골·교량·대형 인프라,tax-major-a07,교통·이동·대형시설,steel-infrastructure,철골·교량·대형 인프라,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a07-03,철골·교량·대형 인프라,tax-major-a07,교통·이동·대형시설,riverfront-bridge,강변·수변 교량·도시 스카이라인,direct-existing-map,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a07-04,공항·격납고·터미널,tax-major-a07,교통·이동·대형시설,sports-transport,모터스포츠·공항·대형 교통 시설,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a07-05,고속도로·램프·차량 동선,tax-major-a07,교통·이동·대형시설,sports-transport,모터스포츠·공항·대형 교통 시설,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a07-06,버스 터미널·대형 교통 허브,tax-major-a07,교통·이동·대형시설,sports-transport,모터스포츠·공항·대형 교통 시설,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a08-01,숲길·거목·수직 패턴,tax-major-a08,자연·숲·정원·식생,forest-vertical-light,숲길·거목·수직 패턴,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a08-02,온실·식물원·유리 천장,tax-major-a08,자연·숲·정원·식생,greenhouse-botanical,온실·식물원·유리 천장,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a08-03,정형식·자연형 정원·조경,tax-major-a08,자연·숲·정원·식생,garden-water,정원·호수·연못·조경 프레임,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a08-04,연못·호수·수면 반사,tax-major-a08,자연·숲·정원·식생,garden-water,정원·호수·연못·조경 프레임,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a08-05,꽃밭·초지·계절 색채,tax-major-a08,자연·숲·정원·식생,garden-water,정원·호수·연못·조경 프레임,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a08-05,꽃밭·초지·계절 색채,tax-major-a08,자연·숲·정원·식생,forest-vertical-light,숲길·거목·수직 패턴,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a09-01,강변·수변 교량·도시 스카이라인,tax-major-a09,수변·해안·습지,riverfront-bridge,강변·수변 교량·도시 스카이라인,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a09-02,해변·모래사장·수평선,tax-major-a09,수변·해안·습지,beach-sand-horizon,해변·모래사장·수평선,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a09-03,암반 해안·방파제,tax-major-a09,수변·해안·습지,rocky-coast-harbor,암반 해안·방파제·항만,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a09-04,항만·어항·선박·부두,tax-major-a09,수변·해안·습지,rocky-coast-harbor,암반 해안·방파제·항만,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a09-05,갯벌·습지·염전·갯골,tax-major-a09,수변·해안·습지,wetland-saltfield,염전·갯골·습지·평지 여백,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a09-06,해안사구·모래언덕,tax-major-a09,수변·해안·습지,beach-sand-horizon,해변·모래사장·수평선,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a09-06,해안사구·모래언덕,tax-major-a09,수변·해안·습지,rocky-coast-harbor,암반 해안·방파제·항만,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a10-01,채석장·암석·광물 표면,tax-major-a10,지형·암석·광야,rocky-quarry,채석장·암석·광물 표면,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a10-02,산악·능선·분지·계곡,tax-major-a10,지형·암석·광야,mountain-ridges,산악·분지·계곡·능선,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a10-03,협곡·절벽·암벽·지층,tax-major-a10,지형·암석·광야,rocky-quarry,채석장·암석·광물 표면,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a10-03,협곡·절벽·암벽·지층,tax-major-a10,지형·암석·광야,mountain-ridges,산악·분지·계곡·능선,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a10-04,동굴·광산·지하 암반,tax-major-a10,지형·암석·광야,rocky-quarry,채석장·암석·광물 표면,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a10-04,동굴·광산·지하 암반,tax-major-a10,지형·암석·광야,raw-concrete-bunker,노출 콘크리트·지하·벙커,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a10-05,황무지·소금 평지·광활한 지평선,tax-major-a10,지형·암석·광야,wetland-saltfield,염전·갯골·습지·평지 여백,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a10-06,풍력 능선·풍력발전단지,tax-major-a10,지형·암석·광야,mountain-ridges,산악·분지·계곡·능선,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a10-06,풍력 능선·풍력발전단지,tax-major-a10,지형·암석·광야,steel-infrastructure,철골·교량·대형 인프라,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a10-07,사구·모래언덕·건조 지형,tax-major-a10,지형·암석·광야,beach-sand-horizon,해변·모래사장·수평선,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a10-07,사구·모래언덕·건조 지형,tax-major-a10,지형·암석·광야,rocky-quarry,채석장·암석·광물 표면,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a11-01,공연장·객석·무대,tax-major-a11,공연·스튜디오·세트,performance-auditorium,공연장·객석·무대,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a11-02,백스테이지·분장실·리허설,tax-major-a11,공연·스튜디오·세트,performance-auditorium,공연장·객석·무대,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a11-02,백스테이지·분장실·리허설,tax-major-a11,공연·스튜디오·세트,studio-filmset,스튜디오·영화 세트·버추얼 프로덕션,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a11-03,사진·영상 스튜디오,tax-major-a11,공연·스튜디오·세트,studio-filmset,스튜디오·영화 세트·버추얼 프로덕션,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a11-04,영화 세트·가상 프로덕션·인공 배경,tax-major-a11,공연·스튜디오·세트,studio-filmset,스튜디오·영화 세트·버추얼 프로덕션,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a12-01,호텔·리조트·수영장·테라스,tax-major-a12,숙박·레저·스포츠,resort-hotel-pool,호텔·리조트·수영장·테라스,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a12-02,빌라·휴양 건축·전망 공간,tax-major-a12,숙박·레저·스포츠,resort-hotel-pool,호텔·리조트·수영장·테라스,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a12-02,빌라·휴양 건축·전망 공간,tax-major-a12,숙박·레저·스포츠,modern-residential,현대 주택·건축가 주택,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a12-03,스파·웰니스·온천,tax-major-a12,숙박·레저·스포츠,resort-hotel-pool,호텔·리조트·수영장·테라스,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a12-03,스파·웰니스·온천,tax-major-a12,숙박·레저·스포츠,garden-water,정원·호수·연못·조경 프레임,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a12-04,골프장·코트·야외 스포츠,tax-major-a12,숙박·레저·스포츠,sports-transport,모터스포츠·공항·대형 교통 시설,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a12-05,모터스포츠·레이싱 시설,tax-major-a12,숙박·레저·스포츠,sports-transport,모터스포츠·공항·대형 교통 시설,direct-existing-map,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a12-06,놀이·축제·전망대·케이블카·관광 구조물,tax-major-a12,숙박·레저·스포츠,sports-transport,모터스포츠·공항·대형 교통 시설,manual-nearest-category,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a12-06,놀이·축제·전망대·케이블카·관광 구조물,tax-major-a12,숙박·레저·스포츠,garden-water,정원·호수·연못·조경 프레임,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a12-06,놀이·축제·전망대·케이블카·관광 구조물,tax-major-a12,숙박·레저·스포츠,monumental-public,대형 공공건축·캐노피·캔틸레버,manual-nearest-category,secondary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
+v2.10,tax-sub-a07-07,버스·시내 대중교통 내부,tax-major-a07,교통·이동·대형시설,urban-bus-interior,버스·시내 대중교통 내부,new-dedicated,primary,세부 분류와 메인 프로그램의 legacyCategoryIds를 연결. 유사 맵은 자동 추론값이므로 배포 후 대표 장소에서 점검.
