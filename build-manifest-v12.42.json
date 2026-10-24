@@ -1,0 +1,26 @@
+{
+  "appVersion": "12.42",
+  "date": "2026-10-24",
+  "baseCount": 169,
+  "additionCount": 146,
+  "placeCount": 315,
+  "uniquePlaceIds": 315,
+  "appEditorialReferenceCount": 249,
+  "appEditorialActiveCount": 233,
+  "appEditorialCategoryCount": 39,
+  "galleryVersion": "2.18",
+  "galleryRecordCount": 256,
+  "galleryActiveCount": 240,
+  "galleryMajorCategoryCount": 12,
+  "gallerySubcategoryCount": 73,
+  "galleryStaticCardCount": 240,
+  "newPlaceIds": [
+    "fa3-new-147",
+    "fa3-new-148",
+    "fa3-new-149"
+  ],
+  "targetBrowserTest": "not performed",
+  "externalImageLoadTest": "not performed",
+  "deployedByAssistant": false,
+  "notes": "Editorial photo cycling and duplicate avoidance; 3 new metro venue/studio candidates; CJ ENM address/contact updated. Web deployment and real-device image loads not tested."
+}
