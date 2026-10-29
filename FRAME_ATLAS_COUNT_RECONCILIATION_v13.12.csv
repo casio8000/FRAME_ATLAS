@@ -1,0 +1,8 @@
+﻿data_set,count,meaning
+source place catalog,385,v13.38 source catalog: 169 base + 216 additions
+new candidate batch reviewed,10,"ID, normalized local name, English name, aliases and address cross-check"
+matched existing places,3,National Museum of Korean Provisional Government; FUTURA SEOUL; Hyundai Card Music Library/Understage
+new candidate additions,7,Only candidate records with no existing identity match
+merged final places,392,385 + 7; one FUTURA SEOUL duplicate merged to canonical ID fa3-new-188
+editorial references total,283,All editorial reference records
+editorial references active,264,recordStatus active and/or isActiveCard true

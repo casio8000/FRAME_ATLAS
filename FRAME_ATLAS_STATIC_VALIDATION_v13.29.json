@@ -1,0 +1,22 @@
+{
+  "version": "v13.29",
+  "testedAt": "2026-10-29",
+  "result": "PASS",
+  "jsFilesChecked": 18,
+  "inlineScriptsChecked": 3,
+  "jsonFilesChecked": 24,
+  "csvFilesChecked": 32,
+  "csvRowsChecked": 5125,
+  "catalogSourceRecordCount": 421,
+  "tmapChecks": {
+    "correctParamsPresent": true,
+    "obsoleteSearchOrHomepageFallback": false,
+    "desktopHomepageFallbackRemoved": true
+  },
+  "warnings": [],
+  "errors": [],
+  "limits": [
+    "Actual iPhone TMAP app opening/route calculation is not testable in this runtime.",
+    "External Nominatim geocoding and entrance-level correctness must be confirmed on device after deployment."
+  ]
+}

@@ -1,7 +1,8 @@
-window.FRAME_ATLAS_DATA = {
+/* FRAME ATLAS 3.0 place-data baseline v13.22 · 169 base records reconstructed from the v13.20 place dataset; app runtime v13.23 */
+window.FRAME_ATLAS_DATA ={
   "app": "FRAME ATLAS 3.0",
-  "dataVersion": "12.42",
-  "targetCount": 169,
+  "dataVersion": "13.22",
+  "targetCount": 421,
   "places": [
     {
       "id": "fa3-001",
@@ -44,7 +45,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 마포구 증산로 87",
       "phone": "",
       "officialUrl": "https://parks.seoul.go.kr/content.do?key=2604300014",
-      "mapSearchQuery": "서울 문화비축기지",
+      "mapSearchQuery": "문화비축기지 서울특별시 마포구 증산로 87",
       "openingStatus": "미확인",
       "shootingPermission": "공간 점유형 촬영은 사전 승인 필요 · 최신 운영기관 확인",
       "parking": "미확인",
@@ -105,7 +106,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 1,
-      "mapQuery": "서울 문화비축기지",
+      "mapQuery": "문화비축기지 서울특별시 마포구 증산로 87",
       "coverImage": "https://mediahub.seoul.go.kr/wp-content/uploads/2019/09/ad0313c8f11f9141dc40d8e7b5ef6f82.jpg",
       "selectedCoverImage": "https://mediahub.seoul.go.kr/wp-content/uploads/2019/09/ad0313c8f11f9141dc40d8e7b5ef6f82.jpg",
       "selectedCoverTitle": "문화비축기지 · Excel 사진 URL",
@@ -146,7 +147,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-002",
@@ -186,7 +194,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 영등포구 선유로 343",
       "phone": "",
       "officialUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
-      "mapSearchQuery": "서울 선유도공원",
+      "mapSearchQuery": "선유도공원 서울특별시 영등포구 선유로 343",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -247,7 +255,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 2,
-      "mapQuery": "서울 선유도공원",
+      "mapQuery": "선유도공원 서울특별시 영등포구 선유로 343",
       "editorialReferenceIds": [
         "vogue-korea-jeju-spring-2024",
         "vogue-medongol-garden-fashion-2024"
@@ -319,7 +327,14 @@ window.FRAME_ATLAS_DATA = {
         }
       ],
       "userSelectedCover": "https://img.khan.co.kr/lady/2020/07/23/l_2020072304000008000224243.jpg",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-003",
@@ -360,7 +375,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 중구 을지로 281",
       "phone": "02-2153-0000",
       "officialUrl": "https://ddp.or.kr/",
-      "mapSearchQuery": "서울특별시 중구 을지로 281 동대문디자인플라자 DDP",
+      "mapSearchQuery": "동대문디자인플라자(DDP) 서울특별시 중구 을지로 281",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -421,7 +436,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 사진 점검 v12.29: 사용자 요청에 따라 곡선형 외관 사진으로 교체. 이전 서울 중구 URL은 웹 요청에서 502가 확인되어 기본 후보에서 제외.",
       "catalogNumber": 3,
-      "mapQuery": "서울특별시 중구 을지로 281 동대문디자인플라자 DDP",
+      "mapQuery": "동대문디자인플라자(DDP) 서울특별시 중구 을지로 281",
       "coverImage": "https://www.hanchao.com/varimg/photogallery/Article_Photo/6909/big_299640.jpg",
       "selectedCoverImage": "https://www.hanchao.com/varimg/photogallery/Article_Photo/6909/big_299640.jpg",
       "selectedCoverTitle": "동대문디자인플라자(DDP) 곡선형 외관 · 테라코타/은빛 곡면 파사드",
@@ -469,7 +484,14 @@ window.FRAME_ATLAS_DATA = {
       "photoSourceUrl": "https://www.hanchao.com/contents/spot_photo.html?id=6925",
       "directImageUrl": "https://www.hanchao.com/varimg/photogallery/Article_Photo/6909/big_299640.jpg",
       "imageSearchUrl": "https://www.google.com/search?tbm=isch&q=%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%EC%9D%B8%ED%94%8C%EB%9D%BC%EC%9E%90%28DDP%29",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-004",
@@ -509,7 +531,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 영등포구 여의대로 지하 76",
       "phone": "",
       "officialUrl": "https://sema.seoul.go.kr/kr/",
-      "mapSearchQuery": "서울 서울시립미술관 SeMA 벙커",
+      "mapSearchQuery": "서울시립미술관 SeMA 벙커 서울특별시 영등포구 여의대로 지하 76",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -570,7 +592,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 4,
-      "mapQuery": "서울 서울시립미술관 SeMA 벙커",
+      "mapQuery": "서울시립미술관 SeMA 벙커 서울특별시 영등포구 여의대로 지하 76",
       "editorialReferenceIds": [
         "daniella-concrete-riverbed",
         "elle-concrete-forms"
@@ -596,14 +618,21 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-005",
       "name": "세운상가 일대",
       "en": "",
       "region": "서울",
-      "regionDetail": "서울",
+      "regionDetail": "서울 종로구",
       "category": "근현대 건축·도시 질감",
       "spaceTypes": [
         "야외",
@@ -636,10 +665,10 @@ window.FRAME_ATLAS_DATA = {
         "서울시가 2025년 세운지구 도심공원 1단계 사업과 2026년 상반기 착공 목표를 발표했으므로 현재 공사·접근구간 확인 필요",
         "보행데크·옥상·상가 내부는 개방 여부와 촬영 조건을 각각 확인"
       ],
-      "address": "",
+      "address": "서울특별시 종로구 청계천로 159 (세운상가 대표 위치; 실제 촬영 구역·출입구 별도 확인)",
       "phone": "",
-      "officialUrl": "https://www.seoul.go.kr/news/news_report.do?nttNo=439602",
-      "mapSearchQuery": "서울특별시 중구 청계천로 세운상가 일대",
+      "officialUrl": "https://korean.visitseoul.net/attractions/%EC%84%B8%EC%9A%B4%EC%83%81%EA%B0%80/KOP023561",
+      "mapSearchQuery": "세운상가 일대 서울특별시 종로구 청계천로 159 (세운상가 대표 위치; 실제 촬영 구역·출입구 별도 확인)",
       "openingStatus": "공사 및 접근구간 확인 필요",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -649,7 +678,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "서울시 미디어허브",
       "photoMatchStatus": "사용자 선택 · 대표사진 확정(백업 2026-10-23 10:54) · 장소 일치/네트워크 별도 확인",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "서울 공식 관광정보 · 세운상가 안내",
+          "url": "https://korean.visitseoul.net/attractions/%EC%84%B8%EC%9A%B4%EC%83%81%EA%B0%80/KOP023561"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [],
       "compositionTips": [],
@@ -687,7 +721,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "seo-sewoon",
-      "addressStatus": "미확인",
+      "addressStatus": "공식 관광 안내 주소 기록 · 세운상가군 내 촬영 구역/진입구 미확인",
       "photoHold": false,
       "searchTerms": [
         "세운상가 일대",
@@ -695,11 +729,12 @@ window.FRAME_ATLAS_DATA = {
         "근현대 건축·도시 질감",
         "세운상가 건축 난간 옥상 전경 사진",
         "Sewoon Sangga architecture photography",
-        "세운상가 패션 화보"
+        "세운상가 패션 화보",
+        "서울특별시 종로구 청계천로 159 (세운상가 대표 위치; 실제 촬영 구역·출입구 별도 확인)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 5,
-      "mapQuery": "서울특별시 중구 청계천로 세운상가 일대",
+      "mapQuery": "세운상가 일대 서울특별시 종로구 청계천로 159 (세운상가 대표 위치; 실제 촬영 구역·출입구 별도 확인)",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -753,14 +788,21 @@ window.FRAME_ATLAS_DATA = {
           "role": "user_candidate"
         }
       ],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://korean.visitseoul.net/attractions/%EC%84%B8%EC%9A%B4%EC%83%81%EA%B0%80/KOP023561",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-006",
       "name": "문래창작촌",
       "en": "",
       "region": "서울",
-      "regionDetail": "서울",
+      "regionDetail": "서울 영등포구",
       "category": "공업지대·예술 골목",
       "spaceTypes": [
         "야외"
@@ -790,10 +832,10 @@ window.FRAME_ATLAS_DATA = {
         "보행·작업 안전",
         "상업촬영 허가"
       ],
-      "address": "",
+      "address": "서울특별시 영등포구 도림로128가길 13-8 (문래창작촌 안내 위치; 개별 골목 촬영점 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "서울특별시 영등포구 도림로128길 문래창작촌 일대",
+      "officialUrl": "https://mediahub.seoul.go.kr/archives/2013479",
+      "mapSearchQuery": "문래창작촌 서울특별시 영등포구 도림로128가길 13-8 (문래창작촌 안내 위치; 개별 골목 촬영점 미확인)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -803,7 +845,16 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "Behance · MULLAE-SEOUL",
       "photoMatchStatus": "장소 확인 후보",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "서울시 공식 콘텐츠 · 문래창작촌 위치 안내",
+          "url": "https://mediahub.seoul.go.kr/archives/2013479"
+        },
+        {
+          "title": "서울시 공식 콘텐츠 · 문래창작촌 골목 설명",
+          "url": "https://mediahub.seoul.go.kr/archives/2017226"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [],
       "compositionTips": [],
@@ -841,7 +892,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "seo-mullae",
-      "addressStatus": "미확인",
+      "addressStatus": "서울시 공식 자료 기반 대표 위치 · 개별 골목/건물 촬영점 미확인",
       "photoHold": false,
       "searchTerms": [
         "문래창작촌",
@@ -849,11 +900,12 @@ window.FRAME_ATLAS_DATA = {
         "공업지대·예술 골목",
         "문래창작촌 철공소 골목 사진",
         "Mullae Art Village industrial alley",
-        "문래동 패션 화보"
+        "문래동 패션 화보",
+        "서울특별시 영등포구 도림로128가길 13-8 (문래창작촌 안내 위치; 개별 골목 촬영점 미확인)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 6,
-      "mapQuery": "서울특별시 영등포구 도림로128길 문래창작촌 일대",
+      "mapQuery": "문래창작촌 서울특별시 영등포구 도림로128가길 13-8 (문래창작촌 안내 위치; 개별 골목 촬영점 미확인)",
       "editorialReferenceIds": [
         "daniella-industrial-brick-grille-v21",
         "pap-space-between-brick-industrial-v27"
@@ -879,14 +931,21 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://mediahub.seoul.go.kr/archives/2013479",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-007",
       "name": "성수동 옛 공장 골목",
       "en": "",
       "region": "서울",
-      "regionDetail": "서울",
+      "regionDetail": "서울 성동구",
       "category": "산업건축·스트리트",
       "spaceTypes": [
         "야외"
@@ -916,10 +975,10 @@ window.FRAME_ATLAS_DATA = {
         "영업 방해 금지",
         "상업촬영 허가"
       ],
-      "address": "",
+      "address": "서울특별시 성동구 성수동2가 연무장길 일대 (산업 골목 후보 구역; 정확한 지점 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "서울특별시 성동구 성수이로 성수동 옛 공장 골목",
+      "officialUrl": "https://www.sd.go.kr/pr/webNewsToolDetail.do?eatitle=2021%EB%85%84+8%EC%9B%94%ED%98%B8&key=5091&subNo=19530",
+      "mapSearchQuery": "성수동 옛 공장 골목 서울특별시 성동구 성수동2가 연무장길 일대 (산업 골목 후보 구역; 정확한 지점 미확인)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -929,7 +988,16 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "서울신문 · 성수동 수제화·공장 골목 기사",
       "photoMatchStatus": "장소 확인 후보",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "성동구 공식 지역 콘텐츠 · 성수동 산업거리 맥락",
+          "url": "https://www.sd.go.kr/pr/webNewsToolDetail.do?eatitle=2021%EB%85%84+8%EC%9B%94%ED%98%B8&key=5091&subNo=19530"
+        },
+        {
+          "title": "성동구 공식 안내 · 성수 수제화거리",
+          "url": "https://www.sd.go.kr/main/contents.do?key=1734"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [],
       "compositionTips": [],
@@ -967,7 +1035,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "seo-seongsu",
-      "addressStatus": "미확인",
+      "addressStatus": "구역 참고 주소 · 정확한 골목/건물/촬영 진입점 미확인",
       "photoHold": false,
       "searchTerms": [
         "성수동 옛 공장 골목",
@@ -975,11 +1043,12 @@ window.FRAME_ATLAS_DATA = {
         "산업건축·스트리트",
         "성수동 옛 공장 외관 벽돌 사진",
         "Seongsu-dong old factory street photography",
-        "성수동 패션 룩북 촬영"
+        "성수동 패션 룩북 촬영",
+        "서울특별시 성동구 성수동2가 연무장길 일대 (산업 골목 후보 구역; 정확한 지점 미확인)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 7,
-      "mapQuery": "서울특별시 성동구 성수이로 성수동 옛 공장 골목",
+      "mapQuery": "성수동 옛 공장 골목 서울특별시 성동구 성수동2가 연무장길 일대 (산업 골목 후보 구역; 정확한 지점 미확인)",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -1008,7 +1077,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://www.sd.go.kr/pr/webNewsToolDetail.do?eatitle=2021%EB%85%84+8%EC%9B%94%ED%98%B8&key=5091&subNo=19530",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-008",
@@ -1051,7 +1127,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 중구 통일로 1",
       "phone": "",
       "officialUrl": "https://www.seoul284.org/space/menu/256",
-      "mapSearchQuery": "서울 문화역서울284",
+      "mapSearchQuery": "문화역서울284 서울특별시 중구 통일로 1",
       "openingStatus": "미확인",
       "shootingPermission": "상업·패션 촬영, 삼각대·조명 사용은 문화역서울284 운영기관의 최신 대관·촬영 절차 확인",
       "parking": "미확인",
@@ -1124,7 +1200,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. | v12.9 1차 에디토리얼 검수: 역사 공간의 기둥·스테인드글라스·아치 창으로 빛과 대칭·반사를 연구.",
       "catalogNumber": 8,
-      "mapQuery": "서울 문화역서울284",
+      "mapQuery": "문화역서울284 서울특별시 중구 통일로 1",
       "editorialReferenceIds": [
         "w-mag-library",
         "vogue-korea-adieu-art-2020"
@@ -1151,7 +1227,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-009",
@@ -1191,7 +1274,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 강서구 마곡동로 161",
       "phone": "",
       "officialUrl": "https://botanicpark.seoul.go.kr/",
-      "mapSearchQuery": "서울 서울식물원 온실",
+      "mapSearchQuery": "서울식물원 온실 서울특별시 강서구 마곡동로 161",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -1261,7 +1344,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 9,
-      "mapQuery": "서울 서울식물원 온실",
+      "mapQuery": "서울식물원 온실 서울특별시 강서구 마곡동로 161",
       "coverImage": "https://mediahub.seoul.go.kr/wp-content/uploads/2019/09/f0c3250d86d7744fb47ed6a2606cee97.jpg",
       "selectedCoverImage": "https://mediahub.seoul.go.kr/wp-content/uploads/2019/09/f0c3250d86d7744fb47ed6a2606cee97.jpg",
       "selectedCoverTitle": "서울식물원 온실 · Excel 사진 URL",
@@ -1304,7 +1387,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialVisualSearchKo": "서울식물원 온실 온실 식물원 유리천장 식생 패션 에디토리얼 패션 화보",
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "indoor",
-      "indoorOutdoorConfidence": "높음"
+      "indoorOutdoorConfidence": "높음",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-010",
@@ -1345,7 +1435,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 용산구 양녕로 445",
       "phone": "",
       "officialUrl": "https://nodeul.org/location/",
-      "mapSearchQuery": "서울 노들섬",
+      "mapSearchQuery": "노들섬 서울특별시 용산구 양녕로 445",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -1478,7 +1568,7 @@ window.FRAME_ATLAS_DATA = {
         "서울 노들섬은 동일 장소 별칭으로 통합"
       ],
       "catalogNumber": 10,
-      "mapQuery": "서울 노들섬",
+      "mapQuery": "노들섬 서울특별시 용산구 양녕로 445",
       "editorialReferenceIds": [
         "vogue-korea-seoul-bridges-2026",
         "elle-theatre-couture"
@@ -1568,7 +1658,14 @@ window.FRAME_ATLAS_DATA = {
       "photoSourceUrl": "https://commons.wikimedia.org/wiki/File:Nodeulseom_(14005438206).jpg",
       "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Nodeulseom_%2814005438206%29.jpg",
       "editorialVisualFocus": "강변 산책로와 노을 수평선 · 계단식 틈새정원과 프레임 · 실내 문화공간의 천장·서가",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-011",
@@ -1637,7 +1734,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 종로구 율곡로3길 4",
       "phone": "02-6450-7000",
       "officialUrl": "https://craftmuseum.seoul.go.kr/",
-      "mapSearchQuery": "서울 서울공예박물관 일대",
+      "mapSearchQuery": "서울공예박물관 일대 서울특별시 종로구 율곡로3길 4",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -1698,7 +1795,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 11,
-      "mapQuery": "서울 서울공예박물관 일대",
+      "mapQuery": "서울공예박물관 일대 서울특별시 종로구 율곡로3길 4",
       "editorialReferenceIds": [
         "bazaar-hanok-dior",
         "vogue-korea-hanok-erdem-2024"
@@ -1763,7 +1860,14 @@ window.FRAME_ATLAS_DATA = {
       "selectedCoverTitle": "서울공예박물관 교육동 외관 · 원형 루버 파사드",
       "selectedCoverSourceUrl": "https://mediahub.seoul.go.kr/archives/2007949",
       "photoSourceUrl": "https://mediahub.seoul.go.kr/archives/2007949",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-012",
@@ -1832,7 +1936,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 종로구 삼청로 30",
       "phone": "",
       "officialUrl": "https://www.mmca.go.kr/visitingInfo/seoulInfo.do",
-      "mapSearchQuery": "서울 국립현대미술관 서울관 일대",
+      "mapSearchQuery": "국립현대미술관 서울관 일대 서울특별시 종로구 삼청로 30",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -1893,7 +1997,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 12,
-      "mapQuery": "서울 국립현대미술관 서울관 일대",
+      "mapQuery": "국립현대미술관 서울관 일대 서울특별시 종로구 삼청로 30",
       "editorialReferenceIds": [
         "gravitypope-water-courtyard",
         "etro-magma-casa-dinosauro-fw2526-v22"
@@ -1919,7 +2023,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-013",
@@ -1983,7 +2094,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 관악구 남부순환로 2076",
       "phone": "",
       "officialUrl": "https://sema.seoul.go.kr/kr/visit/namseoul",
-      "mapSearchQuery": "서울 서울시립미술관 남서울미술관 외관",
+      "mapSearchQuery": "서울시립미술관 남서울미술관 외관 서울특별시 관악구 남부순환로 2076",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -2061,7 +2172,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. | v12.9 1차 에디토리얼 검수: 옛 벨기에 영사관의 고전적 석재 파사드는 브루탈리즘이 아님. 고전적 대칭·디테일·빛 중심으로 수정.",
       "catalogNumber": 13,
-      "mapQuery": "서울 서울시립미술관 남서울미술관 외관",
+      "mapQuery": "서울시립미술관 남서울미술관 외관 서울특별시 관악구 남부순환로 2076",
       "editorialReferenceIds": [
         "vogue-korea-gucci-gyeongbokgung-2023",
         "vogue-medongol-garden-fashion-2024"
@@ -2088,14 +2199,21 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-014",
       "name": "을지로 인쇄·금속 골목",
       "en": "",
       "region": "서울",
-      "regionDetail": "서울",
+      "regionDetail": "서울 중구",
       "category": "도시 텍스처·야간",
       "spaceTypes": [
         "야외"
@@ -2127,10 +2245,10 @@ window.FRAME_ATLAS_DATA = {
         "운영 상점·작업장을 방해하지 않는 촬영 동선 확인",
         "재개발·공사·상가 운영 변화와 보행 안전을 촬영 전 확인"
       ],
-      "address": "",
+      "address": "서울특별시 중구 을지로3가~을지로4가 일대 (구역 참조; 개별 골목 촬영점 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "서울특별시 중구 을지로3가역 을지로 인쇄·금속 골목",
+      "officialUrl": "https://futureheritage.seoul.go.kr/futureHeritageMeet/futureHeritage/view.do?htNo=2684",
+      "mapSearchQuery": "을지로 인쇄·금속 골목 서울특별시 중구 을지로3가~을지로4가 일대 (구역 참조; 개별 골목 촬영점 미확인)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -2140,7 +2258,16 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "서울시 미디어허브",
       "photoMatchStatus": "장소 확인 후보",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "서울미래유산 공식 안내 · 을지로 조명거리",
+          "url": "https://futureheritage.seoul.go.kr/futureHeritageMeet/futureHeritage/view.do?htNo=2684"
+        },
+        {
+          "title": "서울시 공식 콘텐츠 · 을지로 골목 안내",
+          "url": "https://mediahub.seoul.go.kr/archives/2019015"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [],
       "compositionTips": [],
@@ -2178,7 +2305,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "seo-euljiro",
-      "addressStatus": "미확인",
+      "addressStatus": "서울미래유산/시 공식 구역 안내 · 세부 촬영점 미확인",
       "photoHold": false,
       "searchTerms": [
         "을지로 인쇄·금속 골목",
@@ -2186,11 +2313,12 @@ window.FRAME_ATLAS_DATA = {
         "도시 텍스처·야간",
         "을지로 인쇄골목 금속 셔터 야간 사진",
         "Euljiro printing alley night photography",
-        "을지로 패션 화보"
+        "을지로 패션 화보",
+        "서울특별시 중구 을지로3가~을지로4가 일대 (구역 참조; 개별 골목 촬영점 미확인)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 14,
-      "mapQuery": "서울특별시 중구 을지로3가역 을지로 인쇄·금속 골목",
+      "mapQuery": "을지로 인쇄·금속 골목 서울특별시 중구 을지로3가~을지로4가 일대 (구역 참조; 개별 골목 촬영점 미확인)",
       "editorialReferenceIds": [
         "city-night-mango",
         "euljiro-industrial-portrait"
@@ -2216,14 +2344,21 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://futureheritage.seoul.go.kr/futureHeritageMeet/futureHeritage/view.do?htNo=2684",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-015",
       "name": "경춘선숲길 옛 철길 구간",
       "en": "",
       "region": "서울",
-      "regionDetail": "서울",
+      "regionDetail": "서울 노원구",
       "category": "철길·선형 공간",
       "spaceTypes": [
         "야외"
@@ -2253,10 +2388,10 @@ window.FRAME_ATLAS_DATA = {
         "보행자 혼잡",
         "상업촬영 허가"
       ],
-      "address": "",
+      "address": "서울특별시 노원구 공릉동 272-2 (경춘선숲길 공식 안내 위치; 전체 구간의 촬영점 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "서울특별시 노원구 화랑로 경춘선숲길 화랑대철도공원 입구",
+      "officialUrl": "https://parks.seoul.go.kr/content.do?key=2604300009",
+      "mapSearchQuery": "경춘선숲길 옛 철길 구간 서울특별시 노원구 공릉동 272-2 (경춘선숲길 공식 안내 위치; 전체 구간의 촬영점 미확인)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -2266,7 +2401,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "파이낸셜뉴스",
       "photoMatchStatus": "장소 확인 후보",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "서울시 공원 공식 안내 · 경춘선숲길",
+          "url": "https://parks.seoul.go.kr/content.do?key=2604300009"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "24–35mm 공간·환경 기준 컷",
@@ -2313,7 +2453,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "seo-gyeongchun",
-      "addressStatus": "미확인",
+      "addressStatus": "서울시 공원 공식 안내 주소 · 경춘선숲길 구간별 촬영점 미확인",
       "photoHold": false,
       "searchTerms": [
         "경춘선숲길 옛 철길 구간",
@@ -2321,11 +2461,12 @@ window.FRAME_ATLAS_DATA = {
         "철길·선형 공간",
         "경춘선숲길 옛 철길 선형 사진",
         "Gyeongchun Line Forest Park photography",
-        "경춘선숲길 인물 화보"
+        "경춘선숲길 인물 화보",
+        "서울특별시 노원구 공릉동 272-2 (경춘선숲길 공식 안내 위치; 전체 구간의 촬영점 미확인)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 15,
-      "mapQuery": "서울특별시 노원구 화랑로 경춘선숲길 화랑대철도공원 입구",
+      "mapQuery": "경춘선숲길 옛 철길 구간 서울특별시 노원구 공릉동 272-2 (경춘선숲길 공식 안내 위치; 전체 구간의 촬영점 미확인)",
       "editorialReferenceIds": [
         "daniella-railway-bridge",
         "vogue-uk-train-journey"
@@ -2353,14 +2494,21 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "verifiedAddressSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604300009",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-016",
       "name": "낙산공원 서울성곽 구간",
       "en": "",
       "region": "서울",
-      "regionDetail": "서울",
+      "regionDetail": "서울 종로구",
       "category": "석성·도시 레이어",
       "spaceTypes": [
         "야외"
@@ -2390,10 +2538,10 @@ window.FRAME_ATLAS_DATA = {
         "보행로 점유",
         "상업촬영 허가"
       ],
-      "address": "",
+      "address": "서울특별시 종로구 낙산길 41 (낙산공원 안내 위치; 성곽 구간 촬영점 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "서울특별시 종로구 낙산길 낙산공원 한양도성 구간",
+      "officialUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+      "mapSearchQuery": "낙산공원 서울성곽 구간 서울특별시 종로구 낙산길 41 (낙산공원 안내 위치; 성곽 구간 촬영점 미확인)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -2403,7 +2551,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "농민신문 · 한양도성 순성 기사",
       "photoMatchStatus": "장소 확인 후보",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "서울시 공원 공식 안내 · 낙산공원",
+          "url": "https://parks.seoul.go.kr/content.do?key=2604070017"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [],
       "compositionTips": [],
@@ -2441,7 +2594,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "seo-naksan-wall",
-      "addressStatus": "미확인",
+      "addressStatus": "서울시 공원 공식 안내 주소 · 선택한 성곽구간/진입점 미확인",
       "photoHold": false,
       "searchTerms": [
         "낙산공원 서울성곽 구간",
@@ -2449,11 +2602,12 @@ window.FRAME_ATLAS_DATA = {
         "석성·도시 레이어",
         "낙산공원 서울성곽 돌담 도시 전경 사진",
         "Naksan Seoul City Wall photography",
-        "낙산공원 인물 화보"
+        "낙산공원 인물 화보",
+        "서울특별시 종로구 낙산길 41 (낙산공원 안내 위치; 성곽 구간 촬영점 미확인)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 16,
-      "mapQuery": "서울특별시 종로구 낙산길 낙산공원 한양도성 구간",
+      "mapQuery": "낙산공원 서울성곽 구간 서울특별시 종로구 낙산길 41 (낙산공원 안내 위치; 성곽 구간 촬영점 미확인)",
       "editorialReferenceIds": [
         "vogue-korea-gucci-gyeongbokgung-2023",
         "vogue-medongol-garden-fashion-2024"
@@ -2479,14 +2633,21 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://parks.seoul.go.kr/content.do?key=2604070017",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-017",
       "name": "파주출판도시",
       "en": "",
       "region": "경기·수도권",
-      "regionDetail": "경기",
+      "regionDetail": "경기 파주시",
       "category": "현대건축·책의 도시",
       "spaceTypes": [
         "야외",
@@ -2517,10 +2678,10 @@ window.FRAME_ATLAS_DATA = {
         "실내 촬영 사전 승인",
         "상업촬영 허가"
       ],
-      "address": "",
+      "address": "경기도 파주시 회동길 145 (파주출판도시 대표 위치; 개별 촬영 건물 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "경기도 파주시 회동길 파주출판도시 아시아출판문화정보센터",
+      "officialUrl": "https://tour.paju.go.kr/user/tour/place/BD_tourPlaceInfoView.do?cntntsSn=23&menuCode=82&q_gubun=thema2",
+      "mapSearchQuery": "파주출판도시 경기도 파주시 회동길 145 (파주출판도시 대표 위치; 개별 촬영 건물 미확인)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -2530,7 +2691,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "Divisare · Samho Building",
       "photoMatchStatus": "장소 확인 후보",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "파주시 공식 관광정보 · 파주출판도시",
+          "url": "https://tour.paju.go.kr/user/tour/place/BD_tourPlaceInfoView.do?cntntsSn=23&menuCode=82&q_gubun=thema2"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "24–35mm 건축 / 50mm 인물 / 70–85mm 디테일"
@@ -2580,7 +2746,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "gg-paju-bookcity",
-      "addressStatus": "미확인",
+      "addressStatus": "파주시 공식 관광 안내의 대표 위치 · 개별 건물/출입구 별도 확인",
       "photoHold": false,
       "searchTerms": [
         "파주출판도시",
@@ -2588,11 +2754,12 @@ window.FRAME_ATLAS_DATA = {
         "현대건축·책의 도시",
         "파주출판도시 건축 파사드 사진",
         "Paju Book City architecture photography",
-        "파주출판도시 패션 화보"
+        "파주출판도시 패션 화보",
+        "경기도 파주시 회동길 145 (파주출판도시 대표 위치; 개별 촬영 건물 미확인)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. | v12.9 1차 에디토리얼 검수: 현대 건축의 기하학·큰 매스와 인물 스케일에 적합. 구체 재료가 확인되지 않은 상태에서 동일 건축양식이라 주장하지 않음.",
       "catalogNumber": 17,
-      "mapQuery": "경기도 파주시 회동길 파주출판도시 아시아출판문화정보센터",
+      "mapQuery": "파주출판도시 경기도 파주시 회동길 145 (파주출판도시 대표 위치; 개별 촬영 건물 미확인)",
       "editorialReferenceIds": [
         "w-mag-library",
         "commas-resort-2024-szechenyi-baths"
@@ -2619,14 +2786,21 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "verifiedAddressSourceUrl": "https://tour.paju.go.kr/user/tour/place/BD_tourPlaceInfoView.do?cntntsSn=23&menuCode=82&q_gubun=thema2",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-018",
       "name": "미메시스 아트 뮤지엄",
       "en": "",
       "region": "경기·수도권",
-      "regionDetail": "경기",
+      "regionDetail": "경기 파주시",
       "category": "조형건축·화이트 볼륨",
       "spaceTypes": [
         "실내",
@@ -2657,10 +2831,10 @@ window.FRAME_ATLAS_DATA = {
         "실내 사진·상업촬영 허가",
         "행사·전시 일정"
       ],
-      "address": "",
+      "address": "경기도 파주시 문발로 253 (미메시스 아트 뮤지엄)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "경기도 파주시 문발로 미메시스 아트 뮤지엄",
+      "officialUrl": "https://mimesisartmuseum.co.kr/%EC%9D%B4%EC%9A%A9-%EC%95%88%EB%82%B4-Visit",
+      "mapSearchQuery": "미메시스 아트 뮤지엄 경기도 파주시 문발로 253 (미메시스 아트 뮤지엄)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -2670,7 +2844,16 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "Aida Architecture 블로그",
       "photoMatchStatus": "사용자 선택 · 장소 일치 재확인 필요",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "미메시스 아트 뮤지엄 공식 이용 안내",
+          "url": "https://mimesisartmuseum.co.kr/%EC%9D%B4%EC%9A%A9-%EC%95%88%EB%82%B4-Visit"
+        },
+        {
+          "title": "파주시 공식 관광정보 · 미메시스 아트 뮤지엄",
+          "url": "https://tour.paju.go.kr/user/tour/place/BD_tourPlaceInfoView.do?cntntsSn=2101&menuCode=8"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [],
       "compositionTips": [],
@@ -2708,7 +2891,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "gg-mimesis",
-      "addressStatus": "미확인",
+      "addressStatus": "시설 공식 주소 대조 · 촬영 구역·출입 조건 별도 확인",
       "photoHold": false,
       "searchTerms": [
         "미메시스 아트 뮤지엄",
@@ -2716,11 +2899,12 @@ window.FRAME_ATLAS_DATA = {
         "조형건축·화이트 볼륨",
         "미메시스 아트 뮤지엄 흰 곡면 건축 사진",
         "Mimesis Art Museum interior exterior",
-        "미메시스 미술관 패션 화보"
+        "미메시스 미술관 패션 화보",
+        "경기도 파주시 문발로 253 (미메시스 아트 뮤지엄)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 18,
-      "mapQuery": "경기도 파주시 문발로 미메시스 아트 뮤지엄",
+      "mapQuery": "미메시스 아트 뮤지엄 경기도 파주시 문발로 253 (미메시스 아트 뮤지엄)",
       "editorialReferenceIds": [
         "vogue-korea-ddp-fashion-2022",
         "behance-lichi-korea-ddp-campaign"
@@ -2767,14 +2951,21 @@ window.FRAME_ATLAS_DATA = {
       "coverImage": "https://cdn.imweb.me/upload/S2021010436a7d21e00d83/8d5d90a01eef0.jpg",
       "photoSourceUrl": "https://www.pajuart.net/artspace/?bmode=view&idx=17027390",
       "directImageUrl": "https://cdn.imweb.me/upload/S2021010436a7d21e00d83/8d5d90a01eef0.jpg",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://mimesisartmuseum.co.kr/%EC%9D%B4%EC%9A%A9-%EC%95%88%EB%82%B4-Visit",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-019",
       "name": "헤이리 예술마을 건축 구간",
       "en": "",
       "region": "경기·수도권",
-      "regionDetail": "경기",
+      "regionDetail": "경기 파주시",
       "category": "실험적 건축·예술공간",
       "spaceTypes": [
         "야외",
@@ -2805,10 +2996,10 @@ window.FRAME_ATLAS_DATA = {
         "실내 촬영 허가",
         "주말 혼잡"
       ],
-      "address": "",
+      "address": "경기도 파주시 탄현면 헤이리마을길 82-105 (마을 안내시설 대표 위치; 개별 건물/게이트 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "경기도 파주시 탄현면 헤이리마을길 헤이리 예술마을 안내센터",
+      "officialUrl": "https://www.heyri.net/play",
+      "mapSearchQuery": "헤이리 예술마을 건축 구간 경기도 파주시 탄현면 헤이리마을길 82-105 (마을 안내시설 대표 위치; 개별 건물/게이트 미확인)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -2818,7 +3009,16 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "gooood · Heyri Chronotope Wall",
       "photoMatchStatus": "장소 확인 후보",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "헤이리 예술마을 공식 홈페이지 · 방문 안내",
+          "url": "https://www.heyri.net/play"
+        },
+        {
+          "title": "헤이리 예술마을 공식 위치/안내 페이지",
+          "url": "https://www.heyri.net/289"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [],
       "compositionTips": [],
@@ -2856,7 +3056,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "gg-heyri",
-      "addressStatus": "미확인",
+      "addressStatus": "마을 공식 안내 위치 · 실제 촬영 건물/게이트는 미확인",
       "photoHold": false,
       "searchTerms": [
         "헤이리 예술마을 건축 구간",
@@ -2864,11 +3064,12 @@ window.FRAME_ATLAS_DATA = {
         "실험적 건축·예술공간",
         "헤이리 예술마을 현대건축 외관 사진",
         "Heyri Art Village architecture photography",
-        "헤이리 건축 화보"
+        "헤이리 건축 화보",
+        "경기도 파주시 탄현면 헤이리마을길 82-105 (마을 안내시설 대표 위치; 개별 건물/게이트 미확인)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 19,
-      "mapQuery": "경기도 파주시 탄현면 헤이리마을길 헤이리 예술마을 안내센터",
+      "mapQuery": "헤이리 예술마을 건축 구간 경기도 파주시 탄현면 헤이리마을길 82-105 (마을 안내시설 대표 위치; 개별 건물/게이트 미확인)",
       "editorialReferenceIds": [
         "lofficiel-ostuni-2025",
         "grazia-adriatic-trulli-2025"
@@ -2894,7 +3095,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://www.heyri.net/play",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-020",
@@ -2968,7 +3176,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "공식 공원 대표 위치만 사용. 정밀 좌표 미검증 — 개별 작품 좌표·주차장·촬영점은 공식 안내 지도와 현장답사로 확정.",
       "phone": "",
       "officialUrl": "https://www.apap.or.kr",
-      "mapSearchQuery": "경기도 안양시 만안구 예술공원로 안양예술공원",
+      "mapSearchQuery": "안양예술공원 공식 공원 대표 위치만 사용. 정밀 좌표 미검증 — 개별 작품 좌표·주차장·촬영점은 공식 안내 지도와 현장답사로 확정.",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -3033,11 +3241,12 @@ window.FRAME_ATLAS_DATA = {
         "야외 설치미술·자연",
         "안양예술공원 설치미술 작품 건축 사진",
         "Anyang Art Park public art photography",
-        "안양예술공원 인물 화보"
+        "안양예술공원 인물 화보",
+        "공식 공원 대표 위치만 사용. 정밀 좌표 미검증 — 개별 작품 좌표·주차장·촬영점은 공식 안내 지도와 현장답사로 확정."
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 20,
-      "mapQuery": "경기도 안양시 만안구 예술공원로 안양예술공원",
+      "mapQuery": "안양예술공원 공식 공원 대표 위치만 사용. 정밀 좌표 미검증 — 개별 작품 좌표·주차장·촬영점은 공식 안내 지도와 현장답사로 확정.",
       "editorialReferenceIds": [
         "vogue-korea-adieu-art-2020",
         "vogue-chalamet-city-land-art"
@@ -3065,7 +3274,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-021",
@@ -3105,7 +3321,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 포천시 신북면 아트밸리로 234",
       "phone": "",
       "officialUrl": "https://artvalley.pcfac.or.kr/",
-      "mapSearchQuery": "경기 포천아트밸리 채석장 전망·수변",
+      "mapSearchQuery": "포천아트밸리 채석장 전망·수변 경기도 포천시 신북면 아트밸리로 234",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -3175,7 +3391,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 21,
-      "mapQuery": "경기 포천아트밸리 채석장 전망·수변",
+      "mapQuery": "포천아트밸리 채석장 전망·수변 경기도 포천시 신북면 아트밸리로 234",
       "editorialReferenceIds": [
         "daniella-rocky-gravel",
         "vogue-hoyeon-dune-movement"
@@ -3206,14 +3422,21 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-022",
       "name": "수원화성 성곽·성문 구간",
       "en": "",
       "region": "경기·수도권",
-      "regionDetail": "경기",
+      "regionDetail": "경기 수원시",
       "category": "역사건축·석성",
       "spaceTypes": [
         "야외"
@@ -3245,10 +3468,10 @@ window.FRAME_ATLAS_DATA = {
         "성문·성곽·각루 등 촬영 포인트를 구분해 이동 동선 구성",
         "문화유산 보호구역·행사 통제·삼각대/조명 허용은 촬영 전 문의"
       ],
-      "address": "",
+      "address": "경기도 수원시 팔달구 정조로 825 (화성행궁 대표 위치; 선택 성곽·성문 구간은 별도 확인)",
       "phone": "",
       "officialUrl": "https://www.visitsuwon.or.kr/base/contents/view?contentsNo=1&menuLevel=3&menuNo=1",
-      "mapSearchQuery": "경기도 수원시 팔달구 정조로 825 화성행궁 수원화성 성곽",
+      "mapSearchQuery": "수원화성 성곽·성문 구간 경기도 수원시 팔달구 정조로 825 (화성행궁 대표 위치; 선택 성곽·성문 구간은 별도 확인)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -3258,7 +3481,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "수원화성관광 · 수원문화재단",
       "photoMatchStatus": "장소 확인 후보",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "수원 공식 관광정보 · 수원화성 안내",
+          "url": "https://www.visitsuwon.or.kr/base/contents/view?contentsNo=1&menuLevel=3&menuNo=1"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "24–35mm 성문·성곽 / 50mm 전신 / 85mm 돌·기와 디테일"
@@ -3308,7 +3536,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "gg-suwon-hwaseong",
-      "addressStatus": "미확인",
+      "addressStatus": "수원시 공식 관광정보 기반 대표 주소 · 성곽·성문 구간의 촬영점 별도 확인",
       "photoHold": false,
       "searchTerms": [
         "수원화성 성곽·성문 구간",
@@ -3316,11 +3544,12 @@ window.FRAME_ATLAS_DATA = {
         "역사건축·석성",
         "수원화성 성문 성곽 디테일 사진",
         "Suwon Hwaseong fortress architecture photography",
-        "수원화성 화보 촬영"
+        "수원화성 화보 촬영",
+        "경기도 수원시 팔달구 정조로 825 (화성행궁 대표 위치; 선택 성곽·성문 구간은 별도 확인)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. | v12.9 1차 에디토리얼 검수: 성곽의 문화유산 맥락을 고려해 전통 재료·그림자·레이어를 관찰하고, 현대 패션은 보조적 참조로 한정.",
       "catalogNumber": 22,
-      "mapQuery": "경기도 수원시 팔달구 정조로 825 화성행궁 수원화성 성곽",
+      "mapQuery": "수원화성 성곽·성문 구간 경기도 수원시 팔달구 정조로 825 (화성행궁 대표 위치; 선택 성곽·성문 구간은 별도 확인)",
       "editorialReferenceIds": [
         "vogue-korea-gucci-gyeongbokgung-2023",
         "vogue-medongol-garden-fashion-2024"
@@ -3347,7 +3576,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "verifiedAddressSourceUrl": "https://www.visitsuwon.or.kr/base/contents/view?contentsNo=1&menuLevel=3&menuNo=1",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-023",
@@ -3388,7 +3624,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 과천시 광명로 313",
       "phone": "",
       "officialUrl": "https://www.mmca.go.kr/visitingInfo/gwacheonInfo.do",
-      "mapSearchQuery": "경기 국립현대미술관 과천관 조각공원 일대",
+      "mapSearchQuery": "국립현대미술관 과천관 조각공원 일대 경기도 과천시 광명로 313",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -3449,7 +3685,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 23,
-      "mapQuery": "경기 국립현대미술관 과천관 조각공원 일대",
+      "mapQuery": "국립현대미술관 과천관 조각공원 일대 경기도 과천시 광명로 313",
       "editorialReferenceIds": [
         "vogue-korea-adieu-art-2020",
         "vogue-chalamet-city-land-art"
@@ -3494,14 +3730,21 @@ window.FRAME_ATLAS_DATA = {
           "rightsLabel": "원문 출처를 기록했습니다. 사진 재사용·상업적 이용 권한은 별도 확인이 필요합니다."
         }
       ],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-024",
       "name": "경기도미술관 외부 공간",
       "en": "",
       "region": "경기·수도권",
-      "regionDetail": "경기",
+      "regionDetail": "경기 안산시",
       "category": "현대건축·공원",
       "spaceTypes": [
         "야외",
@@ -3532,10 +3775,10 @@ window.FRAME_ATLAS_DATA = {
         "상업촬영 허가",
         "전시·행사 일정"
       ],
-      "address": "",
+      "address": "경기도 안산시 단원구 동산로 268 (경기도미술관 외부공간; 실제 촬영 지점 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "경기도 안산시 단원구 동산로 268 경기도미술관",
+      "officialUrl": "https://www.ggcf.kr/pages/GyeonggiMuseumofModernArt",
+      "mapSearchQuery": "경기도미술관 외부 공간 경기도 안산시 단원구 동산로 268 (경기도미술관 외부공간; 실제 촬영 지점 미확인)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -3545,7 +3788,16 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "반월신문",
       "photoMatchStatus": "장소 확인 후보",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "경기문화재단 공식 안내 · 경기도미술관",
+          "url": "https://www.ggcf.kr/pages/GyeonggiMuseumofModernArt"
+        },
+        {
+          "title": "경기도미술관 공식 건축 안내",
+          "url": "https://gmoma.ggcf.kr/pages/architecture"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [],
       "compositionTips": [],
@@ -3583,7 +3835,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "gg-gyeonggi-museum-art",
-      "addressStatus": "미확인",
+      "addressStatus": "경기문화재단 공식 주소 기록 · 외부공간 촬영구역/허가 별도 확인",
       "photoHold": false,
       "searchTerms": [
         "경기도미술관 외부 공간",
@@ -3591,11 +3843,12 @@ window.FRAME_ATLAS_DATA = {
         "현대건축·공원",
         "경기도미술관 외관 건축 사진",
         "Gyeonggi Museum of Modern Art architecture",
-        "경기도미술관 패션 화보"
+        "경기도미술관 패션 화보",
+        "경기도 안산시 단원구 동산로 268 (경기도미술관 외부공간; 실제 촬영 지점 미확인)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 24,
-      "mapQuery": "경기도 안산시 단원구 동산로 268 경기도미술관",
+      "mapQuery": "경기도미술관 외부 공간 경기도 안산시 단원구 동산로 268 (경기도미술관 외부공간; 실제 촬영 지점 미확인)",
       "editorialReferenceIds": [
         "vogue-korea-jeju-spring-2024",
         "vogue-medongol-garden-fashion-2024"
@@ -3621,7 +3874,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://www.ggcf.kr/pages/GyeonggiMuseumofModernArt",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-025",
@@ -3691,7 +3951,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 광명시 가학로85번길 142",
       "phone": "",
       "officialUrl": "https://gm.go.kr/cv/gc/CVGC_14000.jsp",
-      "mapSearchQuery": "경기 광명동굴 내부 공간",
+      "mapSearchQuery": "광명동굴 내부 공간 경기도 광명시 가학로85번길 142",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -3752,7 +4012,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 사진 점검 v12.29: 장소 내부 요청에 따라 동굴 안의 계단·암반·조명 공간으로 대표사진을 교체. 기존 외부 장면으로 오인될 수 있는 후보는 대체 목록 후순위.",
       "catalogNumber": 25,
-      "mapQuery": "경기 광명동굴 내부 공간",
+      "mapQuery": "광명동굴 내부 공간 경기도 광명시 가학로85번길 142",
       "editorialReferenceIds": [
         "daniella-rocky-gravel",
         "vogue-hoyeon-dune-movement"
@@ -3823,7 +4083,14 @@ window.FRAME_ATLAS_DATA = {
       "photoSourceUrl": "https://www.i-rang.net/place/gwangmyeong-cave",
       "directImageUrl": "https://www.i-rang.net/data/place/%EA%B4%91%EB%AA%85%EB%8F%99%EA%B5%B46.jpg",
       "imageSearchUrl": "https://www.google.com/search?tbm=isch&q=%EA%B4%91%EB%AA%85%EB%8F%99%EA%B5%B4%20%EB%82%B4%EB%B6%80%20%EA%B3%B5%EA%B0%84",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-026",
@@ -3864,7 +4131,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 고양시 일산동구 중앙로 1286",
       "phone": "",
       "officialUrl": "https://www.artgy.or.kr/aram/location.aspx",
-      "mapSearchQuery": "경기 고양아람누리 건축·광장",
+      "mapSearchQuery": "고양아람누리 건축·광장 경기도 고양시 일산동구 중앙로 1286",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -3934,7 +4201,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 26,
-      "mapQuery": "경기 고양아람누리 건축·광장",
+      "mapQuery": "고양아람누리 건축·광장 경기도 고양시 일산동구 중앙로 1286",
       "editorialReferenceIds": [
         "vogue-medongol-garden-fashion-2024",
         "vida-akbari-dubai-hard-light-terraces-2025"
@@ -3962,7 +4229,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "중간",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-027",
@@ -4004,7 +4278,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 수원시 장안구 수성로 175",
       "phone": "",
       "officialUrl": "https://www.starfield.co.kr/suwon/about/rentalInfo.do",
-      "mapSearchQuery": "경기 스타필드 수원 별마당도서관",
+      "mapSearchQuery": "스타필드 수원 별마당도서관 경기도 수원시 장안구 수성로 175",
       "openingStatus": "미확인",
       "shootingPermission": "개인 방문 촬영과 상업·장비 촬영을 구분해 운영자 확인",
       "parking": "미확인",
@@ -4074,7 +4348,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 27,
-      "mapQuery": "경기 스타필드 수원 별마당도서관",
+      "mapQuery": "스타필드 수원 별마당도서관 경기도 수원시 장안구 수성로 175",
       "editorialReferenceIds": [
         "daniella-glass-staircase",
         "newwave-inbetween-architecture"
@@ -4127,7 +4401,14 @@ window.FRAME_ATLAS_DATA = {
           "role": "representative_photo_candidate",
           "note": "공식 대관 안내 페이지의 별마당도서관 사진. 기존 장소 레코드에 대표 사진이 비어 있어 추가."
         }
-      ]
+      ],
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-028",
@@ -4168,7 +4449,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "인천광역시 제물포구 제물량로218번길 3",
       "phone": "",
       "officialUrl": "https://inartplatform.kr/intro/location",
-      "mapSearchQuery": "인천 인천아트플랫폼",
+      "mapSearchQuery": "인천아트플랫폼 인천광역시 제물포구 제물량로218번길 3",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -4246,7 +4527,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. | v12.9 1차 에디토리얼 검수: 실제는 근대 벽돌 창고의 재생 공간. 잔혹주의로 부르지 않고 산업유산·건물군의 연결을 참고.",
       "catalogNumber": 28,
-      "mapQuery": "인천 인천아트플랫폼",
+      "mapQuery": "인천아트플랫폼 인천광역시 제물포구 제물량로218번길 3",
       "editorialReferenceIds": [
         "marieclaire-surreal-seoul-2023",
         "lofficiel-monaco-structured-elegance-2025"
@@ -4298,14 +4579,21 @@ window.FRAME_ATLAS_DATA = {
           "rights": "unknown",
           "rightsLabel": "원문 출처를 기록했습니다. 사진 재사용·상업적 이용 권한은 별도 확인이 필요합니다."
         }
-      ]
+      ],
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-029",
-      "name": "송도 트라이보울 외부",
+      "name": "송도 트라이보울",
       "en": "",
       "region": "인천",
-      "regionDetail": "인천",
+      "regionDetail": "인천 연수구",
       "category": "조형건축·수변",
       "spaceTypes": [
         "야외"
@@ -4335,10 +4623,10 @@ window.FRAME_ATLAS_DATA = {
         "행사 일정",
         "상업촬영 허가"
       ],
-      "address": "",
+      "address": "인천광역시 연수구 인천타워대로 250 (송도동 24-6)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "인천광역시 연수구 인천타워대로 250 송도 트라이보울",
+      "officialUrl": "https://www.ifac.or.kr/ifacintro/facilities/tribowl.do?key=m2502106873402",
+      "mapSearchQuery": "송도 트라이보울 인천광역시 연수구 인천타워대로 250 (송도동 24-6)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -4346,10 +4634,26 @@ window.FRAME_ATLAS_DATA = {
       "photoPotentialScore": 92,
       "scoreNote": "사진가 관점의 탁상 기획 평가 · 현장답사/실제 촬영/운영·허가 검증 전",
       "coverImageSource": "yeonhan architects · 트라이보울 프로젝트",
-      "photoMatchStatus": "장소 확인 후보",
-      "imageRightsStatus": "미확인",
-      "officialSources": [],
-      "aliases": [],
+      "photoMatchStatus": "인천문화재단 공식 시설 페이지·주소와 사진상 트라이보울 형태 대조 확인 · 실제 브라우저 로딩 및 재사용 권리는 별도 확인",
+      "imageRightsStatus": "공식 시설 출처 기록 · 이미지 재사용 및 상업적 이용 권리는 별도 확인",
+      "officialSources": [
+        {
+          "title": "트라이보울 공식 홈페이지 · 오시는 길",
+          "url": "https://tribowl.kr/_NBoard/page.php?hid=location"
+        },
+        {
+          "title": "인천문화재단 · 트라이보울 시설 안내",
+          "url": "https://www.ifac.or.kr/ifacintro/facilities/tribowl.do?key=m2502106873402"
+        }
+      ],
+      "aliases": [
+        "송도 트라이보울 외부",
+        "인천 트라이보울 야외 광장",
+        "인천 트라이보울",
+        "송도 트라이볼",
+        "인천 트라이볼",
+        "트라이보울 야외광장"
+      ],
       "recommendedLenses": [],
       "compositionTips": [],
       "shootingPlan": {
@@ -4386,7 +4690,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "ic-tri-bowl",
-      "addressStatus": "미확인",
+      "addressStatus": "시설 공식 안내 주소 · 외부 광장 촬영 가능 구역 별도 확인",
       "photoHold": false,
       "searchTerms": [
         "송도 트라이보울 외부",
@@ -4394,11 +4698,16 @@ window.FRAME_ATLAS_DATA = {
         "조형건축·수변",
         "송도 트라이보울 곡면 건축 사진",
         "Songdo Tri-Bowl architecture photography",
-        "트라이보울 패션 화보"
+        "트라이보울 패션 화보",
+        "송도 트라이보울",
+        "인천 트라이보울 야외광장",
+        "인천 트라이볼",
+        "송도 트라이볼",
+        "인천광역시 연수구 인천타워대로 250 (송도동 24-6)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 29,
-      "mapQuery": "인천광역시 연수구 인천타워대로 250 송도 트라이보울",
+      "mapQuery": "송도 트라이보울 인천광역시 연수구 인천타워대로 250 (송도동 24-6)",
       "editorialReferenceIds": [
         "vogue-korea-ddp-fashion-2022",
         "behance-lichi-korea-ddp-campaign"
@@ -4423,8 +4732,48 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "imageCandidates": [
+        {
+          "src": "https://ifac.or.kr/resource/www/images/sub/img_facility02_T.jpg",
+          "imageUrl": "https://ifac.or.kr/resource/www/images/sub/img_facility02_T.jpg",
+          "title": "송도 트라이보울 야간 외관 · 인천문화재단 공식 시설 사진",
+          "sourcePageUrl": "https://www.ifac.or.kr/ifacintro/facilities/tribowl.do?key=m2502106873402",
+          "sourceName": "인천문화재단 · 트라이보울 시설 안내",
+          "placeMatch": "confirmed",
+          "rights": "unknown",
+          "rightsLabel": "공식 출처 기록 · 재사용 권리 확인 필요",
+          "status": "selected",
+          "role": "selected_cover",
+          "fallbackPriority": "v13.26"
+        },
+        {
+          "src": "https://www.ifez.go.kr/other/attach/process.file.do?TP=dn&key=A88C2C92829B229&sn=60980",
+          "imageUrl": "https://www.ifez.go.kr/other/attach/process.file.do?TP=dn&key=A88C2C92829B229&sn=60980",
+          "title": "송도 트라이보울 야경과 반영 · 인천경제자유구역청",
+          "sourcePageUrl": "https://www.ifez.go.kr/promote/pst/view.do?pst_id=rep_photo&pst_sn=234330&search=",
+          "sourceName": "인천경제자유구역청",
+          "placeMatch": "confirmed",
+          "rights": "unknown",
+          "rightsLabel": "공식 출처 기록 · 재사용 권리 확인 필요",
+          "status": "candidate",
+          "role": "fallback_candidate",
+          "fallbackPriority": "v13.26"
+        }
+      ],
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://tribowl.kr/_NBoard/page.php?hid=location",
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "coverImage": "https://ifac.or.kr/resource/www/images/sub/img_facility02_T.jpg",
+      "selectedCoverImage": "https://ifac.or.kr/resource/www/images/sub/img_facility02_T.jpg",
+      "userSelectedCover": "https://ifac.or.kr/resource/www/images/sub/img_facility02_T.jpg",
+      "selectedCoverTitle": "송도 트라이보울 야간 외관 · 인천문화재단 공식 시설 사진",
+      "selectedCoverSourceUrl": "https://www.ifac.or.kr/ifacintro/facilities/tribowl.do?key=m2502106873402",
+      "photoSourceUrl": "https://www.ifac.or.kr/ifacintro/facilities/tribowl.do?key=m2502106873402",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-030",
@@ -4465,7 +4814,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "인천광역시 제물포구 관동1가 개항장 거리 일대",
       "phone": "",
       "officialUrl": "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=APD21112609214993209",
-      "mapSearchQuery": "인천광역시 제물포구 관동1가 개항장 거리 인천개항박물관",
+      "mapSearchQuery": "인천 개항장 근대건축 구간 인천광역시 제물포구 관동1가 개항장 거리 일대",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -4538,7 +4887,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. | v12.9 1차 에디토리얼 검수: 개항기 건축과 현대 도시의 중첩에 맞는 옛/새 대비·반사·거리 원근을 중심으로 선정.",
       "catalogNumber": 30,
-      "mapQuery": "인천광역시 제물포구 관동1가 개항장 거리 인천개항박물관",
+      "mapQuery": "인천 개항장 근대건축 구간 인천광역시 제물포구 관동1가 개항장 거리 일대",
       "editorialReferenceIds": [
         "daniella-industrial-brick-grille-v21",
         "pap-space-between-brick-industrial-v27"
@@ -4583,7 +4932,14 @@ window.FRAME_ATLAS_DATA = {
       ],
       "coverImage": "https://itour.incheon.go.kr/common/viewImg.do?imgId=DBI21121410580796373",
       "photoSourceUrl": "https://itour.incheon.go.kr/intgrfind/list.do?ipt_intgrfind_kword=%EA%B0%9C%ED%95%AD",
-      "directImageUrl": "https://itour.incheon.go.kr/common/viewImg.do?imgId=DBI21121410580796373"
+      "directImageUrl": "https://itour.incheon.go.kr/common/viewImg.do?imgId=DBI21121410580796373",
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-031",
@@ -4637,7 +4993,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD21122911365999349",
-      "mapSearchQuery": "인천광역시 동구 금곡로 배다리 헌책방거리",
+      "mapSearchQuery": "인천 배다리 헌책방 골목 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -4705,11 +5061,12 @@ window.FRAME_ATLAS_DATA = {
         "헌책방·구도심 질감",
         "인천 배다리 헌책방 골목 사진",
         "Incheon Baedari book alley photography",
-        "배다리 빈티지 화보"
+        "배다리 빈티지 화보",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. | v12.9 1차 에디토리얼 검수: 책방 골목의 작은 스케일·생활감·표면을 반영해 거친 산업건축 중심 연결을 제외.",
       "catalogNumber": 31,
-      "mapQuery": "인천광역시 동구 금곡로 배다리 헌책방거리",
+      "mapQuery": "인천 배다리 헌책방 골목 정확 주소/진입점 현장 확인 필요",
       "editorialReferenceIds": [
         "w-mag-library",
         "commas-resort-2024-szechenyi-baths"
@@ -4758,14 +5115,21 @@ window.FRAME_ATLAS_DATA = {
           "rights": "unknown",
           "rightsLabel": "원문 출처를 기록했습니다. 사진 재사용·상업적 이용 권한은 별도 확인이 필요합니다."
         }
-      ]
+      ],
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-032",
       "name": "소래습지생태공원 염전·풍차 구간",
       "en": "",
       "region": "인천",
-      "regionDetail": "인천",
+      "regionDetail": "인천 남동구",
       "category": "염전 흔적·습지·실루엣",
       "spaceTypes": [
         "야외"
@@ -4795,10 +5159,10 @@ window.FRAME_ATLAS_DATA = {
         "일몰·날씨 확인",
         "상업촬영 허가"
       ],
-      "address": "",
+      "address": "인천광역시 남동구 소래로154번길 77 (공원 대표 주소; 염전·풍차 구간별 촬영점 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "인천광역시 남동구 소래로154번길 77 소래습지생태공원",
+      "officialUrl": "https://www.incheon.go.kr/park/park010301",
+      "mapSearchQuery": "소래습지생태공원 염전·풍차 구간 인천광역시 남동구 소래로154번길 77 (공원 대표 주소; 염전·풍차 구간별 촬영점 미확인)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -4808,7 +5172,16 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "인천광역시 · 인천의 공원 갤러리",
       "photoMatchStatus": "장소 확인 후보",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "인천시 공원 공식 안내 · 소래습지생태공원",
+          "url": "https://www.incheon.go.kr/park/park010301"
+        },
+        {
+          "title": "인천시 관광 공식 안내 · 소래습지생태공원",
+          "url": "https://itour.incheon.go.kr/ssst/ssst/detail.do?cotId=ITD21121615132555085"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "24–35mm 공간·환경 기준 컷",
@@ -4855,7 +5228,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "ic-sorae-saltfield",
-      "addressStatus": "미확인",
+      "addressStatus": "인천시 공식 공원 주소 · 세부 촬영점/제한구역 미확인",
       "photoHold": false,
       "searchTerms": [
         "소래습지생태공원 염전·풍차 구간",
@@ -4863,11 +5236,12 @@ window.FRAME_ATLAS_DATA = {
         "염전 흔적·습지·실루엣",
         "소래습지생태공원 염전 풍차 사진",
         "Sorae Wetland Ecological Park salt field photography",
-        "소래습지 인물 화보"
+        "소래습지 인물 화보",
+        "인천광역시 남동구 소래로154번길 77 (공원 대표 주소; 염전·풍차 구간별 촬영점 미확인)"
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 32,
-      "mapQuery": "인천광역시 남동구 소래로154번길 77 소래습지생태공원",
+      "mapQuery": "소래습지생태공원 염전·풍차 구간 인천광역시 남동구 소래로154번길 77 (공원 대표 주소; 염전·풍차 구간별 촬영점 미확인)",
       "editorialReferenceIds": [
         "artpartner-salt-plain",
         "id-camargue-salt-flats"
@@ -4895,7 +5269,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "verifiedAddressSourceUrl": "https://www.incheon.go.kr/park/park010301",
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-033",
@@ -4938,7 +5319,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 파주시 광탄면 일대 · 정확한 주소는 대관 문의 시 확인",
       "phone": "010-4946-2009",
       "officialUrl": "https://kikai.kr/",
-      "mapSearchQuery": "KIKAI 인더스트리얼 스튜디오 파주 광탄",
+      "mapSearchQuery": "KIKAI 인더스트리얼 스튜디오 경기도 파주시 광탄면 일대 · 정확한 주소는 대관 문의 시 확인",
       "openingStatus": "예약·대관형 촬영 스튜디오. 일정·정확한 진입 위치는 사전 문의",
       "shootingPermission": "촬영 목적·팀 규모에 따른 대관 협의. 이용 구역·비용·장비·특수효과 조건은 계약 전 확인.",
       "parking": "미확인 · 공식 안내와 현장 동선 확인",
@@ -4999,7 +5380,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "공식 홈페이지는 웹드라마·숏폼 드라마·뮤직비디오·패션화보 등의 촬영 용도를 안내하지만 구체 작품명은 공개하지 않습니다.",
       "catalogNumber": 33,
-      "mapQuery": "KIKAI 인더스트리얼 스튜디오 파주 광탄",
+      "mapQuery": "KIKAI 인더스트리얼 스튜디오 경기도 파주시 광탄면 일대 · 정확한 주소는 대관 문의 시 확인",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -5028,7 +5409,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-034",
@@ -5070,7 +5458,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산광역시 수영구 구락로123번길 20",
       "phone": "",
       "officialUrl": "https://www.f1963.org/",
-      "mapSearchQuery": "부산 F1963",
+      "mapSearchQuery": "F1963 부산광역시 수영구 구락로123번길 20",
       "openingStatus": "방문 전 공식 운영 일정 확인",
       "shootingPermission": "상업촬영·장비 사용 가능 여부 사전 확인",
       "parking": "공식 안내 확인 필요",
@@ -5131,7 +5519,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "장소 자체의 산업건축·재생 공간성이 선정 이유이며, 대표사진은 장소 일치와 권리 확인 후 추가해야 합니다.",
       "catalogNumber": 34,
-      "mapQuery": "부산 F1963",
+      "mapQuery": "F1963 부산광역시 수영구 구락로123번길 20",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -5157,7 +5545,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-035",
@@ -5197,7 +5592,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산광역시 영도구 흰여울길 일대",
       "phone": "",
       "officialUrl": "https://www.visitbusan.net/",
-      "mapSearchQuery": "부산 흰여울문화마을 해안 골목",
+      "mapSearchQuery": "흰여울문화마을 해안 골목 부산광역시 영도구 흰여울길 일대",
       "openingStatus": "주거지·공공 보행로 운영 상황 현장 확인",
       "shootingPermission": "공공장소라도 상업촬영·장비 사용은 사전 확인",
       "parking": "골목 내 주차 제한 가능 · 외곽 주차 확인",
@@ -5348,7 +5743,7 @@ window.FRAME_ATLAS_DATA = {
         "부산 흰여울문화마을은 동일 장소 별칭으로 통합"
       ],
       "catalogNumber": 35,
-      "mapQuery": "부산 흰여울문화마을 해안 골목",
+      "mapQuery": "흰여울문화마을 해안 골목 부산광역시 영도구 흰여울길 일대",
       "editorialReferenceIds": [
         "models-blue-coast",
         "rocky-coast-zimmermann"
@@ -5410,7 +5805,14 @@ window.FRAME_ATLAS_DATA = {
       "selectedCoverTitle": "부산 흰여울문화마을 · 대표 이미지 후보",
       "selectedCoverSourceUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=862&vcontsId=215227",
       "photoSourceUrl": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?menuSn=862&vcontsId=215227",
-      "directImageUrl": "https://tong.visitkorea.or.kr/cms/resource_etc/41/3394341_image2_1.jpg"
+      "directImageUrl": "https://tong.visitkorea.or.kr/cms/resource_etc/41/3394341_image2_1.jpg",
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-036",
@@ -5451,7 +5853,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "대구광역시 중구 달성로22길 31-12",
       "phone": "",
       "officialUrl": "https://www.daeguartfactory.kr/",
-      "mapSearchQuery": "대구 대구예술발전소",
+      "mapSearchQuery": "대구예술발전소 대구광역시 중구 달성로22길 31-12",
       "openingStatus": "공식 운영 일정 확인 필요",
       "shootingPermission": "전시·공간별 촬영 및 상업 이용 사전 확인",
       "parking": "현장 확인 필요",
@@ -5512,7 +5914,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "산업건축과 전시 공간의 조형성을 우선 평가했습니다. 현재 개방·촬영 허가 여부는 별도 확인 대상입니다.",
       "catalogNumber": 36,
-      "mapQuery": "대구 대구예술발전소",
+      "mapQuery": "대구예술발전소 대구광역시 중구 달성로22길 31-12",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -5538,7 +5940,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "DAEGU",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-037",
@@ -5580,7 +5989,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "전북특별자치도 전주시 덕진구 구렛들1길 46",
       "phone": "",
       "officialUrl": "https://www.palbokart.kr/",
-      "mapSearchQuery": "전북 팔복예술공장",
+      "mapSearchQuery": "팔복예술공장 전북특별자치도 전주시 덕진구 구렛들1길 46",
       "openingStatus": "공식 운영 일정 확인 필요",
       "shootingPermission": "상업촬영·전시 공간 사용 사전 문의",
       "parking": "공식 안내 확인 필요",
@@ -5641,7 +6050,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "전국 확장 1차 후보. 사진을 대표 이미지로 확정하기 전 실제 장소 일치·이용권·촬영 조건을 확인해야 합니다.",
       "catalogNumber": 37,
-      "mapQuery": "전북 팔복예술공장",
+      "mapQuery": "팔복예술공장 전북특별자치도 전주시 덕진구 구렛들1길 46",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -5667,7 +6076,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEONBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-038",
@@ -5741,7 +6157,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "광주광역시 동구 문화전당로 38",
       "phone": "",
       "officialUrl": "https://www.acc.go.kr/",
-      "mapSearchQuery": "광주 국립아시아문화전당 건축·외부공간",
+      "mapSearchQuery": "국립아시아문화전당 건축·외부공간 광주광역시 동구 문화전당로 38",
       "openingStatus": "공식 운영 일정 확인 필요",
       "shootingPermission": "상업촬영·조명 장비·삼각대 사용 여부 사전 확인",
       "parking": "공식 안내 확인 필요",
@@ -5805,7 +6221,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "공공 문화공간의 건축적 선과 레벨 차를 중심으로 선정했습니다. 실내 촬영은 별도 허가를 전제로 합니다.",
       "catalogNumber": 38,
-      "mapQuery": "광주 국립아시아문화전당 건축·외부공간",
+      "mapQuery": "국립아시아문화전당 건축·외부공간 광주광역시 동구 문화전당로 38",
       "editorialReferenceIds": [
         "vogue-medongol-garden-fashion-2024",
         "vida-akbari-dubai-hard-light-terraces-2025"
@@ -5831,7 +6247,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GWANGJU",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-039",
@@ -5873,7 +6296,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "강원특별자치도 원주시 지정면 오크밸리2길 260",
       "phone": "",
       "officialUrl": "https://www.museumsan.org/",
-      "mapSearchQuery": "강원 뮤지엄 SAN 건축·수공간",
+      "mapSearchQuery": "뮤지엄 SAN 건축·수공간 강원특별자치도 원주시 지정면 오크밸리2길 260",
       "openingStatus": "공식 운영 일정 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명 사용 여부 사전 확인",
       "parking": "공식 안내 확인 필요",
@@ -5946,7 +6369,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "조형성과 빛·반사·재료감이 뚜렷한 후보입니다. 실내 전시 작품과 공간의 촬영은 별도 규정을 확인해야 합니다.",
       "catalogNumber": 39,
-      "mapQuery": "강원 뮤지엄 SAN 건축·수공간",
+      "mapQuery": "뮤지엄 SAN 건축·수공간 강원특별자치도 원주시 지정면 오크밸리2길 260",
       "editorialReferenceIds": [
         "vogue-korea-jeju-spring-2024",
         "vogue-medongol-garden-fashion-2024"
@@ -6017,7 +6440,14 @@ window.FRAME_ATLAS_DATA = {
       "directImageUrl": "https://img.koreatimes.co.kr/upload/newsV2/images/09-01%28284%29.jpg",
       "hiddenImages": [
         "https://img1.kakaocdn.net/thumb/R1280x0.fpng/?fname=http://t1.daumcdn.net/brunch/service/user/c0jT/image/FaaZrBGB3nciLg29vsrrvyQrZpc.png"
-      ]
+      ],
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-040",
@@ -6056,8 +6486,8 @@ window.FRAME_ATLAS_DATA = {
       ],
       "address": "제주특별자치도 서귀포시 안덕면 산록남로762번길 113",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "제주 방주교회 건축 외관",
+      "officialUrl": "https://access.visitkorea.or.kr/ms/detail.do?cotId=ed236a24-f9e1-4772-9ac6-f27643288205",
+      "mapSearchQuery": "방주교회 건축 외관 제주특별자치도 서귀포시 안덕면 산록남로762번길 113",
       "openingStatus": "방문·출입 가능 시간 확인 필요",
       "shootingPermission": "종교시설 및 상업촬영 허가 사전 확인",
       "parking": "현장 확인 필요",
@@ -6067,7 +6497,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "Visit Jeju · 제주관광공사",
       "photoMatchStatus": "장소 확인 후보",
       "imageRightsStatus": "미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "한국관광공사 공식 관광정보 · 방주교회",
+          "url": "https://access.visitkorea.or.kr/ms/detail.do?cotId=ed236a24-f9e1-4772-9ac6-f27643288205"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "24–35mm 공간·건축 기준 컷",
@@ -6127,7 +6562,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "건축적 실루엣과 수면 반사를 사진적 강점으로 평가했습니다. 사유·종교 공간의 출입과 촬영 권한을 반드시 확인해야 합니다.",
       "catalogNumber": 40,
-      "mapQuery": "제주 방주교회 건축 외관",
+      "mapQuery": "방주교회 건축 외관 제주특별자치도 서귀포시 안덕면 산록남로762번길 113",
       "editorialReferenceIds": [
         "gravitypope-water-courtyard",
         "etro-magma-casa-dinosauro-fw2526-v22"
@@ -6155,7 +6590,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "JEJU",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-041",
@@ -6196,7 +6638,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "울산광역시 남구 장생포고래로 110",
       "phone": "",
       "officialUrl": "https://www.ulsan.go.kr/",
-      "mapSearchQuery": "울산 장생포문화창고",
+      "mapSearchQuery": "장생포문화창고 울산광역시 남구 장생포고래로 110",
       "openingStatus": "공식 운영 일정 확인 필요",
       "shootingPermission": "상업촬영 및 장비 사용 사전 확인",
       "parking": "공식 안내 확인 필요",
@@ -6257,7 +6699,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "항만 산업도시와 창고형 공간의 조형성을 기준으로 선정했습니다. 시설 운영·촬영 가능 범위는 별도 확인해야 합니다.",
       "catalogNumber": 41,
-      "mapQuery": "울산 장생포문화창고",
+      "mapQuery": "장생포문화창고 울산광역시 남구 장생포고래로 110",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -6283,7 +6725,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "ULSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-042",
@@ -6325,7 +6774,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "대전광역시 중구 중앙로 101",
       "phone": "",
       "officialUrl": "https://www.daejeon.go.kr/djBrand/djBrand50View.do?menuSeq=7863&ntatcSeq=1496616596",
-      "mapSearchQuery": "대전 대전근현대사전시관·옛 충남도청사",
+      "mapSearchQuery": "대전근현대사전시관·옛 충남도청사 대전광역시 중구 중앙로 101",
       "openingStatus": "공식 운영 일정과 개방 구역을 방문일 기준 확인",
       "shootingPermission": "전시관·공공건물 내부 촬영 및 상업촬영은 사전 문의",
       "parking": "주변 주차시설과 장비 하차 지점 확인 필요",
@@ -6401,7 +6850,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "대전시 공식 자료는 옛 충남도청사 본관을 활용한 전시공간이며 건축 원형이 보존된 장소로 소개합니다. 촬영 구역과 현재 운영 조건은 별도 확인 대상입니다. | v12.9 1차 에디토리얼 검수: 옛 관공서의 반복 창·대칭 파사드에 맞는 역사 건축과 빛·그림자 참고.",
       "catalogNumber": 42,
-      "mapQuery": "대전 대전근현대사전시관·옛 충남도청사",
+      "mapQuery": "대전근현대사전시관·옛 충남도청사 대전광역시 중구 중앙로 101",
       "editorialReferenceIds": [
         "w-mag-library",
         "vogue-korea-adieu-art-2020"
@@ -6431,7 +6880,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "DAEJEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-043",
@@ -6473,7 +6929,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "세종특별자치시 수목원로 136",
       "phone": "",
       "officialUrl": "https://www.sjna.or.kr/",
-      "mapSearchQuery": "세종 국립세종수목원 사계절전시온실",
+      "mapSearchQuery": "국립세종수목원 사계절전시온실 세종특별자치시 수목원로 136",
       "openingStatus": "방문일 기준 운영시간·휴관일 확인",
       "shootingPermission": "상업촬영·삼각대·조명 사용 여부 사전 문의",
       "parking": "공식 방문 안내 확인 필요",
@@ -6546,7 +7002,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "일반 정원 산책이 아닌 온실의 유리·철골 구조와 식물 레이어를 촬영 자원으로 평가했습니다. 상업촬영 가능 여부는 미확인입니다.",
       "catalogNumber": 43,
-      "mapQuery": "세종 국립세종수목원 사계절전시온실",
+      "mapQuery": "국립세종수목원 사계절전시온실 세종특별자치시 수목원로 136",
       "editorialReferenceIds": [
         "olivia-greenhouse-model",
         "harpers-bazaar-czech-sweet-valentino"
@@ -6605,7 +7061,14 @@ window.FRAME_ATLAS_DATA = {
           "status": "candidate",
           "role": "user_candidate"
         }
-      ]
+      ],
+      "regionCode": "SEJONG",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-044",
@@ -6678,7 +7141,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "충청북도 청주시 청원구 상당로 314",
       "phone": "",
       "officialUrl": "https://www.cheongju.go.kr/ktour/selectClturCntnts2019View.do?key=20328&clturCntntsNo=2128&clturCode",
-      "mapSearchQuery": "충북 청주 문화제조창",
+      "mapSearchQuery": "청주 문화제조창 충청북도 청주시 청원구 상당로 314",
       "openingStatus": "시설·전시·상업공간별 운영시간 확인",
       "shootingPermission": "상업촬영과 장비 설치는 시설별 사전 문의",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -6742,7 +7205,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "공식 관광정보는 이곳을 1946~2004년 연초 제조창이던 산업시설을 재생한 복합문화공간으로 설명합니다. 방문객·상업시설과 구분해 촬영 구역을 확인해야 합니다.",
       "catalogNumber": 44,
-      "mapQuery": "충북 청주 문화제조창",
+      "mapQuery": "청주 문화제조창 충청북도 청주시 청원구 상당로 314",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -6768,7 +7231,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "CHUNGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-045",
@@ -6808,7 +7278,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "충청남도 공주시 무령로 201 일대",
       "phone": "",
       "officialUrl": "https://tour.chungnam.go.kr/prog/trsrcn/kor/sub02_01_01/view.do?trsrcnNo=248",
-      "mapSearchQuery": "충남 공주 제민천·근대건축 골목",
+      "mapSearchQuery": "공주 제민천·근대건축 골목 충청남도 공주시 무령로 201 일대",
       "openingStatus": "공공 보행 구간은 현장 상황 확인",
       "shootingPermission": "주민·상점 영업 구역과 별개로 상업촬영·장비 사용 확인",
       "parking": "주변 공영주차장과 도보 이동 확인 필요",
@@ -6872,7 +7342,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "관광 순위가 아니라 하천의 선형 구도와 원도심 근대건축의 레이어를 사진적 이유로 선정했습니다. 주민 생활 공간에서의 촬영은 반드시 배려와 사전 확인이 필요합니다.",
       "catalogNumber": 45,
-      "mapQuery": "충남 공주 제민천·근대건축 골목",
+      "mapQuery": "공주 제민천·근대건축 골목 충청남도 공주시 무령로 201 일대",
       "editorialReferenceIds": [
         "euljiro-industrial-portrait",
         "vogue-korea-seoul-fashion-face-2025"
@@ -6898,7 +7368,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "CHUNGNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-046",
@@ -6939,7 +7416,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "전라남도 여수시 웅천동 산 272 일대",
       "phone": "",
       "officialUrl": "https://www.yeosu.go.kr/tour/travel/info_each_area?idx=501&mode=view",
-      "mapSearchQuery": "전남 여수 예술의 섬 장도",
+      "mapSearchQuery": "여수 예술의 섬 장도 전라남도 여수시 웅천동 산 272 일대",
       "openingStatus": "연중 개방 안내이나 만조 시 장도교 통제 가능 — 당일 공지 확인",
       "shootingPermission": "야외·전시관·작업실별 촬영 권한 사전 확인",
       "parking": "장도 내 차량 진입 제한 안내 — 웅천 공영주차장·예울마루 주차장 확인",
@@ -7014,7 +7491,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "여수시 공식 정보에 따르면 장도는 창작스튜디오·다목적 전시장·정원·전망데크가 있는 예술공간이며 장도교는 만조 시 출입 제한이 있을 수 있습니다. 방문 전 물때와 공식 통제를 반드시 확인해야 합니다.",
       "catalogNumber": 46,
-      "mapQuery": "전남 여수 예술의 섬 장도",
+      "mapQuery": "여수 예술의 섬 장도 전라남도 여수시 웅천동 산 272 일대",
       "editorialReferenceIds": [
         "models-blue-coast",
         "rocky-coast-zimmermann"
@@ -7045,7 +7522,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "JEONNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-047",
@@ -7115,7 +7599,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경상북도 경주시 경감로 614",
       "phone": "",
       "officialUrl": "http://www.gjsam.or.kr/",
-      "mapSearchQuery": "경북 경주 솔거미술관",
+      "mapSearchQuery": "경주 솔거미술관 경상북도 경주시 경감로 614",
       "openingStatus": "공식 홈페이지에서 방문일 운영시간·휴관·입장 조건 확인",
       "shootingPermission": "전시실·작품·상업촬영 및 장비 사용 사전 확인",
       "parking": "경주엑스포대공원 주차장 이용 조건 공식 안내 확인",
@@ -7185,7 +7669,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "경주시 공식 관광정보는 솔거미술관을 건축가 승효상이 설계한 공립미술관으로 소개하고, 자연광이 들어오는 큰 창을 사진적 요소로 설명합니다. 전시 작품과 내부 촬영 허용 범위는 별도 확인해야 합니다.",
       "catalogNumber": 47,
-      "mapQuery": "경북 경주 솔거미술관",
+      "mapQuery": "경주 솔거미술관 경상북도 경주시 경감로 614",
       "editorialReferenceIds": [
         "daniella-forest-roots",
         "vogue-korea-jeju-spring-2024"
@@ -7256,7 +7740,14 @@ window.FRAME_ATLAS_DATA = {
       "hiddenImages": [
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Solgeo_Art_Museum%2C_Gyeongju_on_December_25th%2C_2018.jpg/1280px-Solgeo_Art_Museum%2C_Gyeongju_on_December_25th%2C_2018.jpg?utm_source=ko.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Solgeo_Art_Museum%2C_Gyeongju_on_December_25th%2C_2018.jpg/1280px-Solgeo_Art_Museum%2C_Gyeongju_on_December_25th%2C_2018.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-      ]
+      ],
+      "regionCode": "GYEONGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-048",
@@ -7298,7 +7789,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경상남도 김해시 진례면 진례로 275-51",
       "phone": "",
       "officialUrl": "https://clayarch.ghct.or.kr/home/main",
-      "mapSearchQuery": "경남 클레이아크 김해미술관",
+      "mapSearchQuery": "클레이아크 김해미술관 경상남도 김해시 진례면 진례로 275-51",
       "openingStatus": "화~일 운영 안내 · 방문일 운영시간·휴관 확인",
       "shootingPermission": "상업촬영·삼각대·조명 사용 및 작품 촬영 사전 확인",
       "parking": "공식 방문 안내 확인 필요",
@@ -7361,7 +7852,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "김해문화관광재단 공식 미술관 사이트와 2026년 문화정보 자료에서 확인되는 예술공간입니다. 세라믹 건축과 전시공간을 우선 평가했으며 촬영 규정은 직접 확인해야 합니다.",
       "catalogNumber": 48,
-      "mapQuery": "경남 클레이아크 김해미술관",
+      "mapQuery": "클레이아크 김해미술관 경상남도 김해시 진례면 진례로 275-51",
       "editorialReferenceIds": [
         "vogue-korea-ddp-fashion-2022",
         "behance-lichi-korea-ddp-campaign"
@@ -7387,7 +7878,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-049",
@@ -7434,7 +7932,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 중구 칠패로 5",
       "phone": "",
       "officialUrl": "https://seosomun.org/index.do",
-      "mapSearchQuery": "서울 서소문성지 역사박물관",
+      "mapSearchQuery": "서소문성지 역사박물관 서울특별시 중구 칠패로 5",
       "openingStatus": "방문 전 운영 여부 확인",
       "shootingPermission": "추모·종교 공간의 성격을 존중하고, 방문객 관람을 방해하지 않는다. 패션·상업 촬영, 삼각대·조명은 방문 전 공식 문의 및 현장 규정 확인 필요.",
       "parking": "미확인",
@@ -7644,7 +8142,7 @@ window.FRAME_ATLAS_DATA = {
         "서울 서소문성지역사박물관은 동일 장소 별칭으로 통합"
       ],
       "catalogNumber": 49,
-      "mapQuery": "서울 서소문성지 역사박물관",
+      "mapQuery": "서소문성지 역사박물관 서울특별시 중구 칠패로 5",
       "coverImage": "https://c3globe.com/wp-content/uploads/2023/11/00-seosomun-historic-park-and-museum-of-holy-land.jpg",
       "selectedCoverImage": "https://c3globe.com/wp-content/uploads/2023/11/00-seosomun-historic-park-and-museum-of-holy-land.jpg",
       "selectedCoverTitle": "서소문성지 역사박물관 하늘광장 · 적벽돌 보이드",
@@ -7732,7 +8230,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoorConfidence": "높음",
       "userSelectedCover": "https://c3globe.com/wp-content/uploads/2023/11/00-seosomun-historic-park-and-museum-of-holy-land.jpg",
       "editorialVisualFocus": "긴 회랑과 반복되는 기둥·벽체 · 빛이 유입되는 절개와 어두운 지하 공간 · 외부 역사 건축과 내부 현대 콘크리트의 대비",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-050",
@@ -7774,7 +8279,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 중구 세종대로 119",
       "phone": "",
       "officialUrl": "https://sca.seoul.go.kr/",
-      "mapSearchQuery": "서울 서울도시건축전시관",
+      "mapSearchQuery": "서울도시건축전시관 서울특별시 중구 세종대로 119",
       "openingStatus": "방문 전 운영 여부 확인",
       "shootingPermission": "촬영 가능 여부·상업촬영 조건 확인 필요",
       "parking": "미확인",
@@ -7838,7 +8343,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "",
       "catalogNumber": 50,
-      "mapQuery": "서울 서울도시건축전시관",
+      "mapQuery": "서울도시건축전시관 서울특별시 중구 세종대로 119",
       "coverImage": "https://mediahub.seoul.go.kr/wp-content/uploads/2019/09/7a3661d92566275fc0f993390a8c31fa.jpg",
       "selectedCoverImage": "https://mediahub.seoul.go.kr/wp-content/uploads/2019/09/7a3661d92566275fc0f993390a8c31fa.jpg",
       "selectedCoverTitle": "서울도시건축전시관 · Excel 사진 URL",
@@ -7882,7 +8387,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-051",
@@ -7925,7 +8437,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 강서구 마곡중앙로 136",
       "phone": "1661-0017",
       "officialUrl": "https://lgart.com/home/display/region/content/JSVFelN3a2tTendqd1FGWHRaQTNQNU15c2N4eW1wSkppNjdDSW9JK0xkTEFhND0=",
-      "mapSearchQuery": "서울 LG아트센터 서울",
+      "mapSearchQuery": "LG아트센터 서울 서울특별시 강서구 마곡중앙로 136",
       "openingStatus": "방문 전 운영 여부 확인",
       "shootingPermission": "촬영 가능 여부·상업촬영 조건 확인 필요",
       "parking": "미확인",
@@ -7984,7 +8496,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "",
       "catalogNumber": 51,
-      "mapQuery": "서울 LG아트센터 서울",
+      "mapQuery": "LG아트센터 서울 서울특별시 강서구 마곡중앙로 136",
       "editorialReferenceIds": [
         "elle-theatre-couture",
         "vanity-fair-theatre-alessio-albi"
@@ -8010,7 +8522,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-052",
@@ -8052,7 +8571,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 용산구 이태원로55길 60-16",
       "phone": "",
       "officialUrl": "https://www.leeumhoam.org/leeum/info/museum/1",
-      "mapSearchQuery": "서울 리움미술관",
+      "mapSearchQuery": "리움미술관 서울특별시 용산구 이태원로55길 60-16",
       "openingStatus": "방문 전 운영 여부 확인",
       "shootingPermission": "촬영 가능 여부·상업촬영 조건 확인 필요",
       "parking": "미확인",
@@ -8116,7 +8635,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "",
       "catalogNumber": 52,
-      "mapQuery": "서울 리움미술관",
+      "mapQuery": "리움미술관 서울특별시 용산구 이태원로55길 60-16",
       "editorialReferenceIds": [
         "vida-akbari-dubai-hard-light-terraces-2025",
         "elle-glass-house-irina-2021"
@@ -8194,7 +8713,14 @@ window.FRAME_ATLAS_DATA = {
       "coverImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Leeum%2C_Samsung_Museum_of_Art.jpg/1280px-Leeum%2C_Samsung_Museum_of_Art.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "photoSourceUrl": "https://news.samsung.com/kr/%EC%9D%B8%ED%84%B0%EB%B7%B0-%ED%95%9C%EA%B5%AD-%EB%AF%B8%EC%88%A0%EC%9D%98-%EC%82%B4%EC%95%84%EC%9E%88%EB%8A%94-%EC%97%AD%EC%82%AC%EB%A5%BC-%ED%92%88%EB%8B%A4-%EB%8D%94-%ED%94%84",
       "directImageUrl": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2021/12/theframe-1213-02.png",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-053",
@@ -8236,7 +8762,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 마포구 성암로 267 (상암 MBC 시설 문의; 일산 드림센터 별도 운영)",
       "phone": "",
       "officialUrl": "https://with.mbc.co.kr/m/rental/",
-      "mapSearchQuery": "서울 MBC 방송 스튜디오 대관시설",
+      "mapSearchQuery": "MBC 방송 스튜디오 대관시설 서울특별시 마포구 성암로 267 (상암 MBC 시설 문의; 일산 드림센터 별도 운영)",
       "openingStatus": "시설 대관 안내를 통해 사전 신청·승인 필요",
       "shootingPermission": "공식 대관·사용 승인 및 시설 담당자 사전 협의",
       "parking": "대관 승인 후 시설별 주차·장비 하차 동선 확인",
@@ -8313,7 +8839,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "대형 스튜디오 및 공연장 유형을 보강하기 위해 추가. 페이지는 상암 MBC 신사옥과 일산 드림센터 시설 대관을 함께 안내하므로 사진 속 세부 스튜디오와 실제 대관 장소는 별도 확인.",
       "catalogNumber": 53,
-      "mapQuery": "서울 MBC 방송 스튜디오 대관시설",
+      "mapQuery": "MBC 방송 스튜디오 대관시설 서울특별시 마포구 성암로 267 (상암 MBC 시설 문의; 일산 드림센터 별도 운영)",
       "editorialReferenceIds": [
         "showstudio-projection",
         "kaltblut-geometry-of-body"
@@ -8341,7 +8867,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-054",
@@ -8384,7 +8917,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 용인시 처인구 백암면 용천드라마길 25",
       "phone": "",
       "officialUrl": "https://djgpark.imbc.com/",
-      "mapSearchQuery": "경기 용인 대장금파크 오픈세트",
+      "mapSearchQuery": "용인 대장금파크 오픈세트 경기도 용인시 처인구 백암면 용천드라마길 25",
       "openingStatus": "공식 홈페이지에서 방문일 운영·휴장·촬영 통제 확인",
       "shootingPermission": "관람 촬영과 상업·방송 촬영은 구분하며 별도 대관·승인 확인",
       "parking": "공식 방문 안내 확인",
@@ -8450,7 +8983,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "MBC 공식 촬영 작품 목록과 홈페이지에 기록된 타이틀을 매체 노출 근거로 연결했습니다. 특정 작품 촬영 장면·세트는 세부 위치별로 다를 수 있어 현장 확인이 필요합니다.",
       "catalogNumber": 54,
-      "mapQuery": "경기 용인 대장금파크 오픈세트",
+      "mapQuery": "용인 대장금파크 오픈세트 경기도 용인시 처인구 백암면 용천드라마길 25",
       "editorialReferenceIds": [
         "showstudio-projection",
         "kaltblut-geometry-of-body"
@@ -8476,7 +9009,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-055",
@@ -8518,7 +9058,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "충청남도 논산시 연무읍 봉황로 90",
       "phone": "",
       "officialUrl": "https://www.sunshinestudio.co.kr/",
-      "mapSearchQuery": "충남 논산 선샤인스튜디오",
+      "mapSearchQuery": "논산 선샤인스튜디오 충청남도 논산시 연무읍 봉황로 90",
       "openingStatus": "방문일 운영시간·정기휴무·공사 여부 공식 확인",
       "shootingPermission": "공개 관람과 상업방송·영화·화보 촬영 허가는 다름; 운영자에게 대관 문의",
       "parking": "공식 안내상 주차 가능 · 운영 상황 확인",
@@ -8584,7 +9124,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "논산시·한국관광공사·공식 선샤인스튜디오의 작품·시설 정보를 근거로 포함했습니다. 선샤인랜드의 1950 스튜디오와 선샤인스튜디오는 별개 시설이므로 혼동하지 않도록 주소와 출처를 분리했습니다.",
       "catalogNumber": 55,
-      "mapQuery": "충남 논산 선샤인스튜디오",
+      "mapQuery": "논산 선샤인스튜디오 충청남도 논산시 연무읍 봉황로 90",
       "editorialReferenceIds": [
         "showstudio-projection",
         "kaltblut-geometry-of-body"
@@ -8610,7 +9150,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "CHUNGNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-056",
@@ -8674,7 +9221,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기 부천",
       "phone": "",
       "officialUrl": "https://artbunkerb39.org/ko/main/main.html",
-      "mapSearchQuery": "경기 부천아트벙커 B39",
+      "mapSearchQuery": "부천아트벙커 B39 경기 부천",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -8733,7 +9280,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "폐소각장을 재생한 산업문화공간. 공식 대관 기록에 영화·드라마·광고·방송·화보·뮤직비디오 촬영작품이 기재되어 있습니다. 상업촬영은 대관·승인 절차가 필요합니다.",
       "catalogNumber": 56,
-      "mapQuery": "경기 부천아트벙커 B39",
+      "mapQuery": "부천아트벙커 B39 경기 부천",
       "editorialReferenceIds": [
         "showstudio-projection",
         "kaltblut-geometry-of-body"
@@ -8762,7 +9309,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-057",
@@ -8803,7 +9357,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "강원 태백",
       "phone": "",
       "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=6bcb0418-e772-4fcd-8a18-dab8c3234c18",
-      "mapSearchQuery": "강원 철암역두 선탄시설",
+      "mapSearchQuery": "철암역두 선탄시설 강원 태백",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -8862,7 +9416,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 자료의 93점 창작 적합도 평가를 이관했습니다. 해당 점수는 현장 허가나 안전 승인을 뜻하지 않으며, 시설 내부 접근은 별도 확인이 필요합니다.",
       "catalogNumber": 57,
-      "mapQuery": "강원 철암역두 선탄시설",
+      "mapQuery": "철암역두 선탄시설 강원 태백",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -8891,7 +9445,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-058",
@@ -8949,7 +9510,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "대전 서구",
       "phone": "",
       "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=ee78a56f-8fb0-421e-b714-b20472df9e00",
-      "mapSearchQuery": "대전 장태산자연휴양림 메타세쿼이아 숲·스카이웨이",
+      "mapSearchQuery": "장태산자연휴양림 메타세쿼이아 숲·스카이웨이 대전 서구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -9017,7 +9578,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "숲길 전체를 관광지로 추천하기보다 나무의 수직선과 스카이웨이 구조가 함께 잡히는 프레임을 우선 조사합니다. 사진 링크는 후보로 등록하고 실제 구도 대조 후 대표 참조로 전환합니다.",
       "catalogNumber": 58,
-      "mapQuery": "대전 장태산자연휴양림 메타세쿼이아 숲·스카이웨이",
+      "mapQuery": "장태산자연휴양림 메타세쿼이아 숲·스카이웨이 대전 서구",
       "editorialReferenceIds": [
         "daniella-forest-roots",
         "vogue-korea-jeju-spring-2024"
@@ -9045,7 +9606,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "DAEJEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-059",
@@ -9105,7 +9673,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산 사하구",
       "phone": "",
       "officialUrl": "https://www.visitbusan.net/archive/dataSearch/view.nm?dataSid=METADATA005725",
-      "mapSearchQuery": "부산 부산 장림포구 컬러 하버·수변 건축",
+      "mapSearchQuery": "부산 장림포구 컬러 하버·수변 건축 부산 사하구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -9173,7 +9741,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "색채 건축과 실제 어항의 레이어가 사진적 이유입니다. 부두 작업·주민 동선을 방해하지 않는 촬영 위치를 선정해야 합니다.",
       "catalogNumber": 59,
-      "mapQuery": "부산 부산 장림포구 컬러 하버·수변 건축",
+      "mapQuery": "부산 장림포구 컬러 하버·수변 건축 부산 사하구",
       "editorialReferenceIds": [
         "models-blue-coast",
         "rocky-coast-zimmermann"
@@ -9207,7 +9775,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-060",
@@ -9267,7 +9842,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "대전 대덕구",
       "phone": "",
       "officialUrl": "https://daejeontour.co.kr/sights_djt/44?page=2",
-      "mapSearchQuery": "대전 대전 소대헌·호연재 고택",
+      "mapSearchQuery": "대전 소대헌·호연재 고택 대전 대덕구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -9326,7 +9901,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "대전관광 공식 이미지가 연결된 전통 고택입니다. 방문 시 거주·보존구역과 상업촬영 가능 범위를 확인해야 합니다.",
       "catalogNumber": 60,
-      "mapQuery": "대전 대전 소대헌·호연재 고택",
+      "mapQuery": "대전 소대헌·호연재 고택 대전 대덕구",
       "editorialReferenceIds": [
         "bazaar-hanok-dior",
         "vogue-korea-hanok-erdem-2024"
@@ -9352,7 +9927,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "DAEJEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-061",
@@ -9412,7 +9994,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산 해운대구",
       "phone": "",
       "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=d24fc1d9-56ee-4cec-b8c5-8ba1f20101ee",
-      "mapSearchQuery": "부산 부산 청사포 다릿돌전망대",
+      "mapSearchQuery": "부산 청사포 다릿돌전망대 부산 해운대구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -9480,7 +10062,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "전망대의 선형 구조와 해안선이 겹치는 구도를 기준으로 선정했습니다. 강풍·파랑·운영 통제에 유의합니다.",
       "catalogNumber": 61,
-      "mapQuery": "부산 부산 청사포 다릿돌전망대",
+      "mapQuery": "부산 청사포 다릿돌전망대 부산 해운대구",
       "editorialReferenceIds": [
         "models-blue-coast",
         "rocky-coast-zimmermann"
@@ -9508,7 +10090,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-062",
@@ -9550,7 +10139,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기 수원",
       "phone": "",
       "officialUrl": "https://suma.suwon.go.kr/",
-      "mapSearchQuery": "경기 수원시립미술관 행궁본관",
+      "mapSearchQuery": "수원시립미술관 행궁본관 경기 수원",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -9609,7 +10198,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 자료는 공식 미술관 이미지로 기록한 사진을 이관했습니다. 전시 일정·작품 촬영·상업촬영 허가는 별도 확인합니다.",
       "catalogNumber": 62,
-      "mapQuery": "경기 수원시립미술관 행궁본관",
+      "mapQuery": "수원시립미술관 행궁본관 경기 수원",
       "editorialReferenceIds": [
         "daniella-concrete-riverbed",
         "elle-concrete-forms"
@@ -9635,7 +10224,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-063",
@@ -9676,7 +10272,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "강원 강릉",
       "phone": "",
       "officialUrl": "https://artemuseum.com/GANGNEUNG",
-      "mapSearchQuery": "강원 아르떼뮤지엄 강릉",
+      "mapSearchQuery": "아르떼뮤지엄 강릉 강원 강릉",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -9735,7 +10331,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "전시 콘텐츠는 교체될 수 있으며 일반 관람 사진촬영과 상업 촬영·플래시 사용은 구분해 확인해야 합니다.",
       "catalogNumber": 63,
-      "mapQuery": "강원 아르떼뮤지엄 강릉",
+      "mapQuery": "아르떼뮤지엄 강릉 강원 강릉",
       "editorialReferenceIds": [
         "showstudio-projection",
         "var-magazine-projection-editorial-v28"
@@ -9761,7 +10357,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-064",
@@ -9830,7 +10433,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "대전 유성구",
       "phone": "",
       "officialUrl": "https://www.leeungnomuseum.or.kr/",
-      "mapSearchQuery": "대전 대전 이응노미술관",
+      "mapSearchQuery": "대전 이응노미술관 대전 유성구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -9889,7 +10492,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "건축·공간 사진 후보를 등록하되 실제 장소 일치와 이미지 로드를 재확인한 뒤 대표참조로 전환합니다.",
       "catalogNumber": 64,
-      "mapQuery": "대전 대전 이응노미술관",
+      "mapQuery": "대전 이응노미술관 대전 유성구",
       "editorialReferenceIds": [
         "gravitypope-water-courtyard",
         "etro-magma-casa-dinosauro-fw2526-v22"
@@ -9918,7 +10521,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "DAEJEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-065",
@@ -9960,7 +10570,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "충북 청주",
       "phone": "",
       "officialUrl": "https://www.mmca.go.kr/",
-      "mapSearchQuery": "충북 국립현대미술관 청주",
+      "mapSearchQuery": "국립현대미술관 청주 충북 청주",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -10019,7 +10629,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "옛 연초제조창을 활용한 수장형 미술관으로 사진적 독자성이 있습니다. 작품 촬영·수장고 진입·장비 반입 허가를 별도 확인합니다.",
       "catalogNumber": 65,
-      "mapQuery": "충북 국립현대미술관 청주",
+      "mapQuery": "국립현대미술관 청주 충북 청주",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -10045,7 +10655,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "CHUNGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-066",
@@ -10087,7 +10704,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산 해운대구",
       "phone": "",
       "officialUrl": "https://www.dureraum.org/",
-      "mapSearchQuery": "부산 부산 영화의전당",
+      "mapSearchQuery": "부산 영화의전당 부산 해운대구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -10146,7 +10763,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "대형 지붕과 색채 조명, 공연 광장 경계가 사진적 차별점입니다. 공연 운영·행사 통제·상업 촬영 허가를 별도 확인합니다.",
       "catalogNumber": 66,
-      "mapQuery": "부산 부산 영화의전당",
+      "mapQuery": "부산 영화의전당 부산 해운대구",
       "editorialReferenceIds": [
         "vogue-medongol-garden-fashion-2024",
         "vida-akbari-dubai-hard-light-terraces-2025"
@@ -10175,7 +10792,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-067",
@@ -10244,7 +10868,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "제주 서귀포",
       "phone": "",
       "officialUrl": "https://www.bontemuseum.com/",
-      "mapSearchQuery": "제주 제주 본태박물관",
+      "mapSearchQuery": "제주 본태박물관 제주 서귀포",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -10303,7 +10927,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "안도 다다오가 설계한 건축물로 노출 콘크리트·빛·물의 조합을 촬영 배경으로 선정했습니다. 상업촬영은 미술관 승인 및 전시별 조건을 확인해야 합니다.",
       "catalogNumber": 67,
-      "mapQuery": "제주 제주 본태박물관",
+      "mapQuery": "제주 본태박물관 제주 서귀포",
       "editorialReferenceIds": [
         "gravitypope-water-courtyard",
         "etro-magma-casa-dinosauro-fw2526-v22"
@@ -10332,7 +10956,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEJU",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-068",
@@ -10373,7 +11004,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울",
       "phone": "",
       "officialUrl": "https://www.jeongdong1928.com/blank-2",
-      "mapSearchQuery": "서울 정동1928 아트센터",
+      "mapSearchQuery": "정동1928 아트센터 서울",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -10431,7 +11062,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "근대 건축 요소와 정돈된 공연·행사홀이 결합된 공간. 대관·상업촬영은 공식 신청과 승인 절차를 거쳐야 합니다.",
       "catalogNumber": 68,
-      "mapQuery": "서울 정동1928 아트센터",
+      "mapQuery": "정동1928 아트센터 서울",
       "editorialReferenceIds": [
         "w-mag-library",
         "vogue-korea-adieu-art-2020"
@@ -10457,7 +11088,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-069",
@@ -10517,7 +11155,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산 사하구",
       "phone": "",
       "officialUrl": "https://www.busan.go.kr/wetland/ndeintroduce",
-      "mapSearchQuery": "부산 부산 낙동강하구에코센터",
+      "mapSearchQuery": "부산 낙동강하구에코센터 부산 사하구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -10585,7 +11223,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "센터 건축과 을숙도 습지가 함께 구성되는 촬영 후보. 사진 링크의 장소 일치는 등록 후 재확인하며, 실내·상업촬영 구역은 별도 문의합니다.",
       "catalogNumber": 69,
-      "mapQuery": "부산 부산 낙동강하구에코센터",
+      "mapQuery": "부산 낙동강하구에코센터 부산 사하구",
       "editorialReferenceIds": [
         "vida-akbari-dubai-hard-light-terraces-2025",
         "elle-glass-house-irina-2021"
@@ -10613,7 +11251,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-070",
@@ -10673,7 +11318,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산 남구",
       "phone": "",
       "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=35b540c7-13bb-486c-9f03-1e7be998ce4e",
-      "mapSearchQuery": "부산 부산 UN조각공원",
+      "mapSearchQuery": "부산 UN조각공원 부산 남구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -10741,7 +11386,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "단순 공원 경관이 아니라 조각과 식생이 겹쳐지는 프레임을 촬영 목표로 선별했습니다. 조형물별 촬영 제약과 상업촬영 조건은 확인합니다.",
       "catalogNumber": 70,
-      "mapQuery": "부산 부산 UN조각공원",
+      "mapQuery": "부산 UN조각공원 부산 남구",
       "editorialReferenceIds": [
         "vogue-korea-adieu-art-2020",
         "vogue-chalamet-city-land-art"
@@ -10769,7 +11414,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-071",
@@ -10811,7 +11463,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울 금천구",
       "phone": "",
       "officialUrl": "https://sema.seoul.go.kr/kr/visit/seoseoul",
-      "mapSearchQuery": "서울 서울시립 서서울미술관",
+      "mapSearchQuery": "서울시립 서서울미술관 서울 금천구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -10870,7 +11522,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "시스템랩의 공식 건축 프로젝트 자료와 서울시립미술관 방문 정보를 연결했습니다. 외부 보행구간 중심으로 촬영 지점을 잡고 상업촬영·장비 사용 조건은 현장 확인합니다.",
       "catalogNumber": 71,
-      "mapQuery": "서울 서울시립 서서울미술관",
+      "mapQuery": "서울시립 서서울미술관 서울 금천구",
       "editorialReferenceIds": [
         "vida-akbari-dubai-hard-light-terraces-2025",
         "elle-glass-house-irina-2021"
@@ -10899,7 +11551,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-072",
@@ -10966,6 +11625,18 @@ window.FRAME_ATLAS_DATA = {
         {
           "title": "서울시 공식 홈페이지 · 서울시립사진미술관",
           "url": "https://sema.seoul.go.kr/kr/visit/photosema"
+        },
+        {
+          "title": "서울시 미디어허브 · 사진자료실 내부 사진 후보",
+          "url": "https://mediahub.seoul.go.kr/archives/2016337"
+        },
+        {
+          "title": "서울시 미디어허브 · 전시공간 내부 사진 후보",
+          "url": "https://mediahub.seoul.go.kr/archives/2014643"
+        },
+        {
+          "title": "서울시 미디어허브 · 로비/안내 데스크 내부 사진 후보",
+          "url": "https://mediahub.seoul.go.kr/archives/2014648"
         }
       ],
       "aliases": [
@@ -11043,11 +11714,12 @@ window.FRAME_ATLAS_DATA = {
         "SeMA Photo",
         "사진 전문 미술관",
         "서울 도봉구 사진 미술관",
-        "사진미술관 외관"
+        "사진미술관 외관",
+        "서울특별시 도봉구 마들로13길 68"
       ],
-      "notes": "공식 방문 안내와 SBS 개관 보도사진을 연결했습니다. 실내 로비와 전시 공간 촬영은 별도 승인 전제로 검토합니다.",
+      "notes": "공식 방문 안내와 SBS 개관 보도사진을 연결했습니다. 실내 로비와 전시 공간 촬영은 별도 승인 전제로 검토합니다. 서울시 공식 미디어허브의 내부 사진자료실·전시공간·로비 사진을 후보로 추가했습니다. 대표사진은 유지했습니다.",
       "catalogNumber": 72,
-      "mapQuery": "서울 서울시립 사진미술관",
+      "mapQuery": "서울시립사진미술관 서울특별시 도봉구 마들로13길 68",
       "directImageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/05/ylyqTotqQoItkpjhJuGchKWrcDDESiRE.jpg?ver=1.0",
       "photoSourceUrl": "https://mediahub.seoul.go.kr/archives/2014648",
       "coverImage": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/05/ylyqTotqQoItkpjhJuGchKWrcDDESiRE.jpg?ver=1.0",
@@ -11091,6 +11763,45 @@ window.FRAME_ATLAS_DATA = {
           "rightsLabel": "서울시 공식 출처 기록 · 재사용 조건/기기 표시 별도 확인",
           "status": "candidate",
           "role": "user_candidate"
+        },
+        {
+          "title": "서울시립사진미술관 사진자료실 내부 · 서울시 미디어허브",
+          "src": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/11/YSFurczXnZwdNHZWVHdwEfHVirbIBCKX.JPG",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/11/YSFurczXnZwdNHZWVHdwEfHVirbIBCKX.JPG",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2016337",
+          "sourceName": "서울시 공식 미디어허브",
+          "placeMatch": "confirmed",
+          "rights": "unknown",
+          "rightsLabel": "서울시 공식 원문 링크 기록 · 사진 재사용 조건과 기기별 로딩은 별도 확인",
+          "status": "candidate",
+          "role": "interior_photo_candidate",
+          "note": "실내 사진자료실 후보. 기존 대표사진은 변경하지 않았습니다."
+        },
+        {
+          "title": "서울시립사진미술관 전시공간 · 설치 작품과 공간 깊이",
+          "src": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/06/dzrjmOUqkqXbrFFkTPbgqzHMaxtyMNBR.jpg",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/06/dzrjmOUqkqXbrFFkTPbgqzHMaxtyMNBR.jpg",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2014643",
+          "sourceName": "서울시 공식 미디어허브",
+          "placeMatch": "confirmed",
+          "rights": "unknown",
+          "rightsLabel": "서울시 공식 원문 링크 기록 · 사진 재사용 조건과 기기별 로딩은 별도 확인",
+          "status": "candidate",
+          "role": "interior_photo_candidate",
+          "note": "전시 설치물과 내부 구성을 참고할 후보 이미지입니다. 기존 대표사진은 변경하지 않았습니다."
+        },
+        {
+          "title": "서울시립사진미술관 로비·안내 데스크 내부",
+          "src": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/05/osWfKfuoknEtNeCsSIrtoBSAPDxmbqZT.jpg",
+          "imageUrl": "https://mediahub.seoul.go.kr/uploads/mediahub/2025/05/osWfKfuoknEtNeCsSIrtoBSAPDxmbqZT.jpg",
+          "sourcePageUrl": "https://mediahub.seoul.go.kr/archives/2014648",
+          "sourceName": "서울시 공식 미디어허브",
+          "placeMatch": "confirmed",
+          "rights": "unknown",
+          "rightsLabel": "서울시 공식 원문 링크 기록 · 사진 재사용 조건과 기기별 로딩은 별도 확인",
+          "status": "candidate",
+          "role": "interior_photo_candidate",
+          "note": "실내 로비와 접수 공간의 참고 후보입니다. 기존 대표사진은 변경하지 않았습니다."
         }
       ],
       "editorialReferenceIds": [
@@ -11122,7 +11833,14 @@ window.FRAME_ATLAS_DATA = {
       "hiddenImages": [
         "https://museums.moc.gov.tw/Admins/Upload/CkImages/6480BE2F-9FC8-4744-8838-BFE02B0474C5.JPG"
       ],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-073",
@@ -11164,7 +11882,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기 파주시",
       "phone": "",
       "officialUrl": "https://www.cjenm.com/",
-      "mapSearchQuery": "경기 파주 CJ ENM 스튜디오 센터",
+      "mapSearchQuery": "파주 CJ ENM 스튜디오 센터 경기 파주시",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -11223,7 +11941,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 목록의 대형 제작단지 후보를 사진자료와 함께 보강합니다. 보도사진은 스튜디오 설비 참고용이며 대관 가능 시설·규모·사용료는 운영사에 확인해야 합니다.",
       "catalogNumber": 73,
-      "mapQuery": "경기 파주 CJ ENM 스튜디오 센터",
+      "mapQuery": "파주 CJ ENM 스튜디오 센터 경기 파주시",
       "editorialReferenceIds": [
         "showstudio-projection",
         "kaltblut-geometry-of-body"
@@ -11249,7 +11967,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-074",
@@ -11291,7 +12016,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경북 문경",
       "phone": "",
       "officialUrl": "https://www.gbmg.go.kr/",
-      "mapSearchQuery": "경북 문경새재 오픈세트장",
+      "mapSearchQuery": "문경새재 오픈세트장 경북 문경",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -11355,7 +12080,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 목록에 있던 촬영 세트장으로 등록. legacy source가 기록한 '킹덤'·'슈룹' 촬영 크레딧은 보도 자료 기반이며 세트 구역별 촬영작품은 현장·출처를 추가 대조합니다.",
       "catalogNumber": 74,
-      "mapQuery": "경북 문경새재 오픈세트장",
+      "mapQuery": "문경새재 오픈세트장 경북 문경",
       "editorialReferenceIds": [
         "showstudio-projection",
         "kaltblut-geometry-of-body"
@@ -11381,7 +12106,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-075",
@@ -11423,7 +12155,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "강원 강릉",
       "phone": "",
       "officialUrl": "https://www.kukinews.com/article/view/kuk202602250064",
-      "mapSearchQuery": "강원 강릉 주문진 영진해변 방사제 — 《도깨비》 촬영지",
+      "mapSearchQuery": "강릉 주문진 영진해변 방사제 — 《도깨비》 촬영지 강원 강릉",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -11491,7 +12223,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "드라마 '도깨비' 주인공이 처음 만나는 장면의 촬영지로 알려진 영진해변 방사제. 바다와 낮은 방사제 구조물을 배경으로 한 환경인물 컷 후보.",
       "catalogNumber": 75,
-      "mapQuery": "강원 강릉 주문진 영진해변 방사제 — 《도깨비》 촬영지",
+      "mapQuery": "강릉 주문진 영진해변 방사제 — 《도깨비》 촬영지 강원 강릉",
       "editorialReferenceIds": [
         "models-blue-coast",
         "rocky-coast-zimmermann"
@@ -11519,7 +12251,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-076",
@@ -11561,7 +12300,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "강원 강릉",
       "phone": "",
       "officialUrl": "https://www.kukinews.com/article/view/kuk202602250064",
-      "mapSearchQuery": "강원 강릉 소돌 방파제 — 《더 글로리》 촬영지 후보",
+      "mapSearchQuery": "강릉 소돌 방파제 — 《더 글로리》 촬영지 후보 강원 강릉",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -11629,7 +12368,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "드라마 '더 글로리' 촬영지로 소개된 소돌 방파제. 방파제 선과 바다를 활용하는 시네마틱 컷 후보.",
       "catalogNumber": 76,
-      "mapQuery": "강원 강릉 소돌 방파제 — 《더 글로리》 촬영지 후보",
+      "mapQuery": "강릉 소돌 방파제 — 《더 글로리》 촬영지 후보 강원 강릉",
       "editorialReferenceIds": [
         "models-blue-coast",
         "rocky-coast-zimmermann"
@@ -11657,7 +12396,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-077",
@@ -11698,7 +12444,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "강원 강릉",
       "phone": "",
       "officialUrl": "https://www.kukinews.com/article/view/kuk202602250064",
-      "mapSearchQuery": "강원 강릉 향호해변 버스정류장 — BTS 관련 영상 로케이션",
+      "mapSearchQuery": "강릉 향호해변 버스정류장 — BTS 관련 영상 로케이션 강원 강릉",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -11766,7 +12512,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "방탄소년단 뮤직비디오·앨범재킷 촬영지로 알려진 향호해변 버스정류장(보도에 따르면 다시 제작된 구조물). 단순한 구조물과 바다의 대비.",
       "catalogNumber": 77,
-      "mapQuery": "강원 강릉 향호해변 버스정류장 — BTS 관련 영상 로케이션",
+      "mapQuery": "강릉 향호해변 버스정류장 — BTS 관련 영상 로케이션 강원 강릉",
       "editorialReferenceIds": [
         "models-blue-coast",
         "town-country-summer-2017-coastal-dune-fashion"
@@ -11794,7 +12540,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-078",
@@ -11836,7 +12589,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경북 안동",
       "phone": "",
       "officialUrl": "https://v.daum.net/v/ZY2iMcloMN",
-      "mapSearchQuery": "경북 안동 만휴정·외나무다리",
+      "mapSearchQuery": "안동 만휴정·외나무다리 경북 안동",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -11904,7 +12657,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "드라마 '미스터 션샤인'의 중요한 배경으로 소개된 안동 만휴정. 외나무다리와 숲, 고택 분위기를 활용하는 전통·시대극 콘셉트 후보.",
       "catalogNumber": 78,
-      "mapQuery": "경북 안동 만휴정·외나무다리",
+      "mapQuery": "안동 만휴정·외나무다리 경북 안동",
       "editorialReferenceIds": [
         "bazaar-hanok-dior",
         "vogue-korea-hanok-erdem-2024"
@@ -11935,7 +12688,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GYEONGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-079",
@@ -11977,7 +12737,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "강원 삼척",
       "phone": "",
       "officialUrl": "https://www.segye.com/view/20230205504831",
-      "mapSearchQuery": "강원 삼척 맹방해변 — BTS 《Butter》 앨범재킷 촬영지",
+      "mapSearchQuery": "삼척 맹방해변 — BTS 《Butter》 앨범재킷 촬영지 강원 삼척",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -12045,7 +12805,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "방탄소년단 '버터' 앨범 재킷 촬영지로 알려진 삼척 맹방해변. 넓은 모래사장과 짙푸른 바다, 파도 포말.",
       "catalogNumber": 79,
-      "mapQuery": "강원 삼척 맹방해변 — BTS 《Butter》 앨범재킷 촬영지",
+      "mapQuery": "삼척 맹방해변 — BTS 《Butter》 앨범재킷 촬영지 강원 삼척",
       "editorialReferenceIds": [
         "models-blue-coast",
         "town-country-summer-2017-coastal-dune-fashion"
@@ -12073,7 +12833,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-080",
@@ -12115,7 +12882,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "강원 삼척",
       "phone": "",
       "officialUrl": "https://www.segye.com/view/20230205504831",
-      "mapSearchQuery": "강원 삼척 부남해변 — 《헤어질 결심》 촬영지",
+      "mapSearchQuery": "삼척 부남해변 — 《헤어질 결심》 촬영지 강원 삼척",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -12183,7 +12950,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "영화 '헤어질 결심' 마지막 장면에 등장하는 부남해변으로 소개됨. 쓸쓸하고 정적인 해안 분위기.",
       "catalogNumber": 80,
-      "mapQuery": "강원 삼척 부남해변 — 《헤어질 결심》 촬영지",
+      "mapQuery": "삼척 부남해변 — 《헤어질 결심》 촬영지 강원 삼척",
       "editorialReferenceIds": [
         "models-blue-coast",
         "rocky-coast-zimmermann"
@@ -12211,7 +12978,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-081",
@@ -12253,7 +13027,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "인천 부평구",
       "phone": "",
       "officialUrl": "https://www.kyeonggi.com/article/201805020984645",
-      "mapSearchQuery": "인천 인천 십정동 열우물 벽화마을",
+      "mapSearchQuery": "인천 십정동 열우물 벽화마을 인천 부평구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -12312,7 +13086,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "영화 '은밀하게 위대하게'를 비롯해 '나쁜 녀석들', '가면', '악의 연대기' 등 영화·드라마 촬영지로 소개된 산동네 벽화마을.",
       "catalogNumber": 81,
-      "mapQuery": "인천 인천 십정동 열우물 벽화마을",
+      "mapQuery": "인천 십정동 열우물 벽화마을 인천 부평구",
       "coverImage": "https://ypzxxdrj8709.edge.naverncp.com/data2/content/image/2016/09/22/.cache/512/201609220512499.jpg",
       "selectedCoverImage": "https://ypzxxdrj8709.edge.naverncp.com/data2/content/image/2016/09/22/.cache/512/201609220512499.jpg",
       "selectedCoverTitle": "인천 십정동 열우물 벽화마을 사진 후보",
@@ -12380,7 +13154,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "userSelectedCover": "https://ypzxxdrj8709.edge.naverncp.com/data2/content/image/2016/09/22/.cache/512/201609220512499.jpg",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-082",
@@ -12422,7 +13203,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "인천 연수구",
       "phone": "",
       "officialUrl": "https://www.kyeonggi.com/article/201805020984645",
-      "mapSearchQuery": "인천 인천 송도센트럴파크 수변·도시 스카이라인",
+      "mapSearchQuery": "인천 송도센트럴파크 수변·도시 스카이라인 인천 연수구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -12490,7 +13271,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "'도깨비', '태양의 후예', '화유기', '밥 잘 사주는 예쁜 누나' 등 로맨틱 장면이 촬영된 곳으로 소개된 송도 수변공원. 이국적 고층건물과 한옥마을이 어우러짐.",
       "catalogNumber": 82,
-      "mapQuery": "인천 인천 송도센트럴파크 수변·도시 스카이라인",
+      "mapQuery": "인천 송도센트럴파크 수변·도시 스카이라인 인천 연수구",
       "editorialReferenceIds": [
         "vogue-korea-jeju-spring-2024",
         "vogue-medongol-garden-fashion-2024"
@@ -12518,7 +13299,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-083",
@@ -12560,7 +13348,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "강원 속초",
       "phone": "",
       "officialUrl": "https://www.heraldk.com/article/2026011016445704034",
-      "mapSearchQuery": "강원 속초 아바이마을 갯배",
+      "mapSearchQuery": "속초 아바이마을 갯배 강원 속초",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -12631,7 +13419,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "드라마 '가을동화'의 대표 아이콘으로 소개된 갯배와 아바이마을. 문화예술 재생사업이 진행 중인 곳으로 보도됨. | v12.9 1차 에디토리얼 검수: 갯배와 수면, 주거지의 관계에 맞춰 수평선·반사·야외 색면 중심으로 수정.",
       "catalogNumber": 83,
-      "mapQuery": "강원 속초 아바이마을 갯배",
+      "mapQuery": "속초 아바이마을 갯배 강원 속초",
       "editorialReferenceIds": [
         "euljiro-industrial-portrait",
         "vogue-korea-seoul-fashion-face-2025"
@@ -12658,7 +13446,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-084",
@@ -12700,7 +13495,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울",
       "phone": "",
       "officialUrl": "https://culture.seoul.go.kr/culture/bbs/B0000000/view.do?menuNo=200050&nttId=15851",
-      "mapSearchQuery": "서울 서울책보고 대형서가 공간",
+      "mapSearchQuery": "서울책보고 대형서가 공간 서울",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -12758,7 +13553,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "대형서가·문화공간의 구조와 지적·그래픽·아카이브·미니멀 분위기를 활용할 수 있는 로케이션 후보.",
       "catalogNumber": 84,
-      "mapQuery": "서울 서울책보고 대형서가 공간",
+      "mapQuery": "서울책보고 대형서가 공간 서울",
       "editorialReferenceIds": [
         "w-mag-library",
         "commas-resort-2024-szechenyi-baths"
@@ -12784,14 +13579,21 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-085",
       "name": "KT&G 상상마당 춘천",
       "en": "",
       "region": "강원",
-      "regionDetail": "강원",
+      "regionDetail": "강원특별자치도 춘천시 스포츠타운길399번길 25",
       "category": "복합문화예술공간·갤러리·사운드홀",
       "spaceTypes": [
         "실내",
@@ -12824,10 +13626,10 @@ window.FRAME_ATLAS_DATA = {
         "운영기관·공간별 촬영 가능 구역과 상업촬영 조건 확인",
         "방문객·시설 운영·안전 동선 준수"
       ],
-      "address": "강원 춘천",
+      "address": "강원특별자치도 춘천시 스포츠타운길399번길 25",
       "phone": "",
-      "officialUrl": "https://sangsangmadang.com/",
-      "mapSearchQuery": "강원 KT&G 상상마당 춘천",
+      "officialUrl": "https://www.sangsangmadang.com/main/cc",
+      "mapSearchQuery": "KT&G 상상마당 춘천 강원특별자치도 춘천시 스포츠타운길399번길 25",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -12837,8 +13639,21 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "Trippose · KT&G 상상마당 춘천",
       "photoMatchStatus": "사용자 선택 · 대표사진 확정(백업 2026-10-23 10:54) · 장소 일치/네트워크 별도 확인",
       "imageRightsStatus": "사용권 후속 검토",
-      "officialSources": [],
-      "aliases": [],
+      "officialSources": [
+        {
+          "name": "KT&G 상상마당 춘천 공식 페이지",
+          "url": "https://www.sangsangmadang.com/main/cc"
+        }
+      ],
+      "aliases": [
+        "KT&G 상상마당 춘천 아트센터",
+        "상상마당 춘천",
+        "춘천 상상마당",
+        "KT&G 춘천 상상마당",
+        "춘천 아트센터",
+        "Sangsangmadang Chuncheon",
+        "KT&G 춘천 아트센터"
+      ],
       "recommendedLenses": [],
       "compositionTips": [],
       "shootingPlan": {
@@ -12875,18 +13690,27 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "chuncheon-sangsangmadang",
-      "addressStatus": "공식/관광 출처 URL 기록",
+      "addressStatus": "춘천시 관광 포털 공식 주소 기록",
       "photoHold": false,
       "searchTerms": [
         "KT&G 상상마당 춘천",
         "강원",
         "강원 춘천",
         "복합문화예술공간·갤러리·사운드홀",
-        "KT&G 상상마당 춘천 사진 촬영 장소"
+        "KT&G 상상마당 춘천 사진 촬영 장소",
+        "상상마당 춘천",
+        "춘천 아트센터",
+        "강원 현대건축",
+        "의암호",
+        "야외 공연장",
+        "문화예술 공간",
+        "춘천 촬영 장소",
+        "KT&G 상상마당 춘천 아트센터",
+        "강원특별자치도 춘천시 스포츠타운길399번길 25"
       ],
-      "notes": "복합문화예술공간의 구조와 예술·도시·컬러풀·공연적 분위기를 활용할 수 있는 로케이션 후보.",
+      "notes": "복합문화예술공간의 구조와 예술·도시·컬러풀·공연적 분위기를 활용할 수 있는 로케이션 후보.\n\n[중복 레코드 병합 · v13.26] 추가 레코드의 공간 특징: 의암호 주변의 자연 지형과 어우러진 복합문화예술 공간. 김수근 건축의 역사적 외형, 흰 매스와 검은 곡선 요소, 외부 데크·광장·수변 조망을 이용해 건축과 인물의 스케일 대비를 구성할 수 있다.",
       "catalogNumber": 85,
-      "mapQuery": "강원 KT&G 상상마당 춘천",
+      "mapQuery": "KT&G 상상마당 춘천 강원특별자치도 춘천시 스포츠타운길399번길 25",
       "editorialReferenceIds": [
         "bazaar-hanok-dior",
         "vogue-korea-hanok-erdem-2024"
@@ -12949,9 +13773,41 @@ window.FRAME_ATLAS_DATA = {
           "placeMatch": "title-match",
           "status": "candidate",
           "role": "user_candidate"
+        },
+        {
+          "title": "KT&G 상상마당 춘천 아트센터 외관·입구 계단",
+          "src": "https://bomnae.chuncheon.go.kr/upload/thum/20210727181857-e1e-5c95ab9c26db.jpg",
+          "imageUrl": "https://bomnae.chuncheon.go.kr/upload/thum/20210727181857-e1e-5c95ab9c26db.jpg",
+          "sourcePageUrl": "https://www.chuncheon.go.kr/tour/destination/all-tour/detail/?tourId=173",
+          "sourceName": "춘천시 관광 포털",
+          "placeMatch": "confirmed",
+          "rights": "unknown",
+          "rightsLabel": "공식 출처 기록 · 재사용 조건 확인 필요",
+          "status": "candidate",
+          "role": "representative_photo_candidate"
+        },
+        {
+          "title": "KT&G 상상마당 춘천 아트센터 원경·데크 보조 후보",
+          "src": "https://img.trippose.com/thum/1059112/800/533",
+          "imageUrl": "https://img.trippose.com/thum/1059112/800/533",
+          "sourcePageUrl": "https://en.trippose.com/culture/kt-g-sangsangmadang-chuncheon-art-center",
+          "sourceName": "TripPose · 외관/데크 보조 후보",
+          "placeMatch": "confirmed",
+          "rights": "unknown",
+          "rightsLabel": "출처 기록 · 재사용 조건 확인 필요",
+          "status": "candidate",
+          "role": "secondary_candidate"
         }
       ],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "duplicateMergeVersion": "v13.26",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-086",
@@ -13023,7 +13879,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "제주",
       "phone": "",
       "officialUrl": "https://www.visitjeju.net/",
-      "mapSearchQuery": "제주 제주 빛의 벙커",
+      "mapSearchQuery": "제주 빛의 벙커 제주",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -13081,7 +13937,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "지하·몰입형 전시공간의 구조와 다크·몰입·컬러·미스터리 분위기를 활용할 수 있는 로케이션 후보.",
       "catalogNumber": 86,
-      "mapQuery": "제주 제주 빛의 벙커",
+      "mapQuery": "제주 빛의 벙커 제주",
       "editorialReferenceIds": [
         "showstudio-projection",
         "var-magazine-projection-editorial-v28"
@@ -13110,7 +13966,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEJU",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-087",
@@ -13152,7 +14015,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "전북 군산",
       "phone": "",
       "officialUrl": "https://www.gunsan.go.kr/",
-      "mapSearchQuery": "전북 군산근대미술관",
+      "mapSearchQuery": "군산근대미술관 전북 군산",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -13211,7 +14074,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "근대건축·전시공간의 구조와 레트로·벽돌·역사·서정 분위기를 활용할 수 있는 로케이션 후보.",
       "catalogNumber": 87,
-      "mapQuery": "전북 군산근대미술관",
+      "mapQuery": "군산근대미술관 전북 군산",
       "editorialReferenceIds": [
         "marieclaire-surreal-seoul-2023",
         "lofficiel-monaco-structured-elegance-2025"
@@ -13240,7 +14103,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEONBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-088",
@@ -13283,7 +14153,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산",
       "phone": "",
       "officialUrl": "https://bscf.or.kr/",
-      "mapSearchQuery": "부산 부산 홍티아트센터",
+      "mapSearchQuery": "부산 홍티아트센터 부산",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -13341,7 +14211,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "산업재생·예술창작공간의 구조와 산업·거침·예술·다크 분위기를 활용할 수 있는 로케이션 후보.",
       "catalogNumber": 88,
-      "mapQuery": "부산 부산 홍티아트센터",
+      "mapQuery": "부산 홍티아트센터 부산",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -13367,7 +14237,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-089",
@@ -13409,7 +14286,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기 김포",
       "phone": "",
       "officialUrl": "https://cicamuseum.com/",
-      "mapSearchQuery": "경기 김포 CICA미술관",
+      "mapSearchQuery": "김포 CICA미술관 경기 김포",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -13477,7 +14354,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "도심형 미술관과 다른 전원형 건축·전시 환경으로 인물과 작품을 함께 프레임에 넣기 좋음.",
       "catalogNumber": 89,
-      "mapQuery": "경기 김포 CICA미술관",
+      "mapQuery": "김포 CICA미술관 경기 김포",
       "editorialReferenceIds": [
         "gabriela-hearst-cr24-white-cube-editorial",
         "vogue-korea-hermes-designers-sculpture-gallery"
@@ -13505,7 +14382,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-090",
@@ -13551,7 +14435,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "대구 수성구",
       "phone": "",
       "officialUrl": "https://artmuseum.daegu.go.kr/",
-      "mapSearchQuery": "대구 대구미술관",
+      "mapSearchQuery": "대구미술관 대구 수성구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -13610,7 +14494,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "높은 천장과 넓은 아트리움, 대형 설치작품이 들어갈 수 있는 구조가 특징.",
       "catalogNumber": 90,
-      "mapQuery": "대구 대구미술관",
+      "mapQuery": "대구미술관 대구 수성구",
       "editorialReferenceIds": [
         "daniella-glass-staircase",
         "newwave-inbetween-architecture"
@@ -13639,7 +14523,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "DAEGU",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-091",
@@ -13681,7 +14572,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "대전 서구",
       "phone": "",
       "officialUrl": "https://www.daejeon.go.kr/dma/",
-      "mapSearchQuery": "대전 대전시립미술관",
+      "mapSearchQuery": "대전시립미술관 대전 서구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -13740,7 +14631,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "대형 전시실, 로비, 아트라운지 등 실내 공간 선택지가 많아 팀 촬영의 백업 장소로 유용.",
       "catalogNumber": 91,
-      "mapQuery": "대전 대전시립미술관",
+      "mapQuery": "대전시립미술관 대전 서구",
       "editorialReferenceIds": [
         "daniella-glass-staircase",
         "newwave-inbetween-architecture"
@@ -13766,7 +14657,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "DAEJEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-092",
@@ -13808,7 +14706,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산 사하구",
       "phone": "",
       "officialUrl": "https://www.busan.go.kr/moca/",
-      "mapSearchQuery": "부산 부산현대미술관",
+      "mapSearchQuery": "부산현대미술관 부산 사하구",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·삼각대·조명·장비 반입 여부 사전 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -13876,7 +14774,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "지하·지상 전시실과 복도·계단 등 넓은 실내 동선이 있어 인물 촬영의 다양한 스케일을 확보하기 좋음.",
       "catalogNumber": 92,
-      "mapQuery": "부산 부산현대미술관",
+      "mapQuery": "부산현대미술관 부산 사하구",
       "editorialReferenceIds": [
         "daniella-glass-staircase",
         "newwave-inbetween-architecture"
@@ -13904,7 +14802,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-093",
@@ -13946,7 +14851,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 강남구 도산대로4길 17",
       "phone": "",
       "officialUrl": "https://www.songeun.or.kr/",
-      "mapSearchQuery": "서울 서울 송은 — The ST / 송은 건축",
+      "mapSearchQuery": "서울 송은 — The ST / 송은 건축 서울특별시 강남구 도산대로4길 17",
       "openingStatus": "방문 전 운영 여부 확인",
       "shootingPermission": "촬영 가능 여부·상업촬영 조건 확인 필요",
       "parking": "미확인",
@@ -14021,7 +14926,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 214곳에서 빠진 건축적으로 차별성이 높은 후보를 별도 등록했습니다. 공공 보행 구간과 건물 관리 구역은 구분하여 촬영 가능 지점을 확인해야 합니다. 사진 점검 v12.29: 기존 v12.25 백업에는 예전 iPhone 사진 URL이 명확히 저장되어 있지 않아 확인 가능한 실제 송은 건축 외관으로 PC/iPhone 공통 대표 URL을 고정.",
       "catalogNumber": 93,
-      "mapQuery": "서울 서울 송은 — The ST / 송은 건축",
+      "mapQuery": "서울 송은 — The ST / 송은 건축 서울특별시 강남구 도산대로4길 17",
       "editorialReferenceIds": [
         "daniella-concrete-riverbed",
         "elle-concrete-forms"
@@ -14104,7 +15009,14 @@ window.FRAME_ATLAS_DATA = {
         "https://kiramonthly.com/1479",
         "https://www.domusweb.it/content/dam/domusweb/it/architecture/gallery/2021/07/16/herzog--de-meuron-seul-edificio-per-uffici-centro-culturale/domus_herzog_de_meuron_6.jpg",
         "https://vmspace.com/ActiveFile/spacem.org/board_img/71676058761d54bb3e605d.jpg"
-      ]
+      ],
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-094",
@@ -14147,7 +15059,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 용인시 기흥구 백남준로 10",
       "phone": "",
       "officialUrl": "https://njp.ggcf.kr/",
-      "mapSearchQuery": "경기 용인 백남준아트센터",
+      "mapSearchQuery": "용인 백남준아트센터 경기도 용인시 기흥구 백남준로 10",
       "openingStatus": "방문 전 운영 여부 확인",
       "shootingPermission": "촬영 가능 여부·상업촬영 조건 확인 필요",
       "parking": "미확인",
@@ -14209,7 +15121,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "백남준의 미디어아트 자체와 곡선 유리 건축을 촬영 자원으로 선정했습니다. 작품 이미지·영상 저작권과 시설의 상업촬영 조건은 별도로 확인해야 합니다.",
       "catalogNumber": 94,
-      "mapQuery": "경기 용인 백남준아트센터",
+      "mapQuery": "용인 백남준아트센터 경기도 용인시 기흥구 백남준로 10",
       "editorialReferenceIds": [
         "vida-akbari-dubai-hard-light-terraces-2025",
         "elle-glass-house-irina-2021"
@@ -14269,7 +15181,14 @@ window.FRAME_ATLAS_DATA = {
           "role": "user_candidate"
         }
       ],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-095",
@@ -14311,7 +15230,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 송파구 올림픽로 300 롯데월드몰 8층",
       "phone": "",
       "officialUrl": "https://www.lotteconcerthall.com/",
-      "mapSearchQuery": "서울 서울 롯데콘서트홀",
+      "mapSearchQuery": "서울 롯데콘서트홀 서울특별시 송파구 올림픽로 300 롯데월드몰 8층",
       "openingStatus": "방문 전 운영 여부 확인",
       "shootingPermission": "촬영 가능 여부·상업촬영 조건 확인 필요",
       "parking": "미확인",
@@ -14373,7 +15292,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 214곳에 있던 롯데콘서트홀을 대형 공연장 후보로 승격했습니다. 예술적으로 특징이 있는 무대·오르간·목재 객석을 촬영 대상으로 평가했으며, 공연 중 무단 촬영은 포함하지 않습니다.",
       "catalogNumber": 95,
-      "mapQuery": "서울 서울 롯데콘서트홀",
+      "mapQuery": "서울 롯데콘서트홀 서울특별시 송파구 올림픽로 300 롯데월드몰 8층",
       "editorialReferenceIds": [
         "elle-theatre-couture",
         "vanity-fair-theatre-alessio-albi"
@@ -14399,7 +15318,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-096",
@@ -14441,7 +15367,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "제주특별자치도 제주시 애월읍 어림비로 478",
       "phone": "",
       "officialUrl": "https://kr.artemuseum.com/jeju",
-      "mapSearchQuery": "제주 제주 아르떼뮤지엄",
+      "mapSearchQuery": "제주 아르떼뮤지엄 제주특별자치도 제주시 애월읍 어림비로 478",
       "openingStatus": "방문 전 운영 여부 확인",
       "shootingPermission": "촬영 가능 여부·상업촬영 조건 확인 필요",
       "parking": "미확인",
@@ -14505,7 +15431,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "강릉 아르떼뮤지엄과는 별도 지점이며 장소 자체가 다르므로 별도 등록했습니다. 대형 투사 작품은 전시 변경이 가능하고 상업적으로 재촬영할 수 있다는 뜻은 아닙니다.",
       "catalogNumber": 96,
-      "mapQuery": "제주 제주 아르떼뮤지엄",
+      "mapQuery": "제주 아르떼뮤지엄 제주특별자치도 제주시 애월읍 어림비로 478",
       "editorialReferenceIds": [
         "showstudio-projection",
         "var-magazine-projection-editorial-v28"
@@ -14534,7 +15460,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEJU",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-097",
@@ -14577,7 +15510,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 송파구 올림픽로 424 올림픽공원",
       "phone": "",
       "officialUrl": "https://www.ksponco.or.kr/menu.es?mid=a20301030800",
-      "mapSearchQuery": "서울 서울 KSPO DOME",
+      "mapSearchQuery": "서울 KSPO DOME 서울특별시 송파구 올림픽로 424 올림픽공원",
       "openingStatus": "방문 전 운영 여부 확인",
       "shootingPermission": "촬영 가능 여부·상업촬영 조건 확인 필요",
       "parking": "미확인",
@@ -14641,7 +15574,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "공식 시설 안내에 KSPO DOME과 대관·리깅·시설 규모가 안내되어 있습니다. 사진 참고 후보는 아직 미등록이며 직접 표시 가능한 실제 공간 사진을 추후 연결합니다.",
       "catalogNumber": 97,
-      "mapQuery": "서울 서울 KSPO DOME",
+      "mapQuery": "서울 KSPO DOME 서울특별시 송파구 올림픽로 424 올림픽공원",
       "editorialReferenceIds": [
         "elle-theatre-couture",
         "vanity-fair-theatre-alessio-albi"
@@ -14667,7 +15600,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-098",
@@ -14709,7 +15649,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 파주시 회동길 145 아시아출판문화정보센터",
       "phone": "",
       "officialUrl": "https://www.pajubookcity.org/",
-      "mapSearchQuery": "경기 파주 지혜의숲 대형 서가",
+      "mapSearchQuery": "파주 지혜의숲 대형 서가 경기도 파주시 회동길 145 아시아출판문화정보센터",
       "openingStatus": "방문 전 운영 여부 확인",
       "shootingPermission": "촬영 가능 여부·상업촬영 조건 확인 필요",
       "parking": "미확인",
@@ -14773,7 +15713,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 목록에서 빠진 대형 서가 공간. 서울책보고와 비슷해 보일 수 있지만, 출판도시 공간과 대형 서가의 스케일을 활용하는 별도 후보이며 실제 사진·구도를 비교해 관리합니다.",
       "catalogNumber": 98,
-      "mapQuery": "경기 파주 지혜의숲 대형 서가",
+      "mapQuery": "파주 지혜의숲 대형 서가 경기도 파주시 회동길 145 아시아출판문화정보센터",
       "editorialReferenceIds": [
         "w-mag-library",
         "commas-resort-2024-szechenyi-baths"
@@ -14799,7 +15739,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-099",
@@ -14854,7 +15801,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "전북특별자치도 남원시 사매면 서도길 32",
       "phone": "",
       "officialUrl": "https://www.namwon.go.kr/tour/index.do",
-      "mapSearchQuery": "전북 남원 구 서도역",
+      "mapSearchQuery": "남원 구 서도역 전북특별자치도 남원시 사매면 서도길 32",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -14913,7 +15860,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-001을 이관했습니다. 직접 사진 후보는 세계일보 기사 이미지로 표기돼 있어 장소 참고자료로 우선 등록했으며 작품명·정확한 촬영 이력은 후속 확인 대상입니다.",
       "catalogNumber": 99,
-      "mapQuery": "전북 남원 구 서도역",
+      "mapQuery": "남원 구 서도역 전북특별자치도 남원시 사매면 서도길 32",
       "editorialReferenceIds": [
         "daniella-railway-bridge",
         "vogue-uk-train-journey"
@@ -14939,7 +15886,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEONBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-100",
@@ -14980,7 +15934,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "전북특별자치도 익산시 성당면 함낭로 207",
       "phone": "",
       "officialUrl": "https://www.iksan.go.kr/",
-      "mapSearchQuery": "전북 익산 교도소세트장",
+      "mapSearchQuery": "익산 교도소세트장 전북특별자치도 익산시 성당면 함낭로 207",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -15039,7 +15993,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-029의 장소 사진을 참고 후보로 이관했습니다. 실제 작품별 촬영 목록과 상업 대관 조건은 운영기관의 최신 정보로 확인해야 합니다.",
       "catalogNumber": 100,
-      "mapQuery": "전북 익산 교도소세트장",
+      "mapQuery": "익산 교도소세트장 전북특별자치도 익산시 성당면 함낭로 207",
       "editorialReferenceIds": [
         "showstudio-projection",
         "kaltblut-geometry-of-body"
@@ -15065,7 +16019,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEONBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-101",
@@ -15135,7 +16096,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 성동구 성수이로 78",
       "phone": "",
       "officialUrl": "https://search.naver.com/search.naver?query=%EC%84%B1%EC%88%98%20%EB%8C%80%EB%A6%BC%EC%B0%BD%EA%B3%A0",
-      "mapSearchQuery": "서울 서울 성수 대림창고",
+      "mapSearchQuery": "서울 성수 대림창고 서울특별시 성동구 성수이로 78",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -15194,7 +16155,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-079의 장소 이미지 후보를 이관했습니다. 영업장 촬영은 사전 허가를 전제로 하며, 별도 촬영 대관이 가능한지는 직접 확인해야 합니다.",
       "catalogNumber": 101,
-      "mapQuery": "서울 서울 성수 대림창고",
+      "mapQuery": "서울 성수 대림창고 서울특별시 성동구 성수이로 78",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -15220,7 +16181,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-102",
@@ -15281,7 +16249,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 종로구 송월길 14-3",
       "phone": "",
       "officialUrl": "https://dmuseum.seoul.go.kr/",
-      "mapSearchQuery": "서울 서울 돈의문박물관마을",
+      "mapSearchQuery": "서울 돈의문박물관마을 서울특별시 종로구 송월길 14-3",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -15357,7 +16325,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-081에 연결된 서울시 공식 사진을 이관했습니다. 재현·보존 건물과 상업 영업장 구역을 구분하고 촬영 허가를 확인해야 합니다. | v12.9 1차 에디토리얼 검수: 한옥만 있는 곳이 아니라 여러 시대의 생활건축이 혼재하므로 층위·반사·골목 원근을 중심으로 선택.",
       "catalogNumber": 102,
-      "mapQuery": "서울 서울 돈의문박물관마을",
+      "mapQuery": "서울 돈의문박물관마을 서울특별시 종로구 송월길 14-3",
       "editorialReferenceIds": [
         "euljiro-industrial-portrait",
         "vogue-korea-seoul-fashion-face-2025"
@@ -15403,7 +16371,14 @@ window.FRAME_ATLAS_DATA = {
           "rights": "unknown",
           "rightsLabel": "원문 출처를 기록했습니다. 사진 재사용·상업적 이용 권한은 별도 확인이 필요합니다."
         }
-      ]
+      ],
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-103",
@@ -15444,7 +16419,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "대전광역시 중구 보문로 205 일대",
       "phone": "",
       "officialUrl": "https://www.temiorae.com/",
-      "mapSearchQuery": "대전 대전 테미오래 옛 충남도지사 관사촌",
+      "mapSearchQuery": "대전 테미오래 옛 충남도지사 관사촌 대전광역시 중구 보문로 205 일대",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "테미오래 공식 촬영 허가 지침과 관사별 개방 여부 확인; 비공개 관사 및 전시물에 진입·접촉하지 않음",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -15524,7 +16499,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-080의 공식 출처를 이관했습니다. 건물별로 내부 개방·상업촬영 조건이 다를 수 있어 시설 관리처 확인이 필요합니다. | v12.9 1차 에디토리얼 검수: 1930년대 관사촌은 브루탈리즘과 유형이 다르므로 거친 콘크리트 화보를 빼고 주거건축·시간 층위 중심으로 변경.",
       "catalogNumber": 103,
-      "mapQuery": "대전 대전 테미오래 옛 충남도지사 관사촌",
+      "mapQuery": "대전 테미오래 옛 충남도지사 관사촌 대전광역시 중구 보문로 205 일대",
       "editorialReferenceIds": [
         "sothebys-brutalist-house-editorial",
         "vogue-yun-hyongkeun-house-2026"
@@ -15551,7 +16526,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "DAEJEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-104",
@@ -15592,7 +16574,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 용산구 한강대로 100",
       "phone": "",
       "officialUrl": "https://apma.amorepacific.com/",
-      "mapSearchQuery": "서울 서울 아모레퍼시픽미술관·본사 건축",
+      "mapSearchQuery": "서울 아모레퍼시픽미술관·본사 건축 서울특별시 용산구 한강대로 100",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -15660,7 +16642,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-145의 건축가 기록을 이관했습니다. 미술관 내부·전시공간 촬영 허가와 건물 공용부 사용 규정을 별도로 확인해야 합니다.",
       "catalogNumber": 104,
-      "mapQuery": "서울 서울 아모레퍼시픽미술관·본사 건축",
+      "mapQuery": "서울 아모레퍼시픽미술관·본사 건축 서울특별시 용산구 한강대로 100",
       "coverImage": "https://mediahub.seoul.go.kr/wp-content/uploads/2019/09/91d0d5a9dcef4acd353090b51a2f1a99.jpg",
       "selectedCoverImage": "https://mediahub.seoul.go.kr/wp-content/uploads/2019/09/91d0d5a9dcef4acd353090b51a2f1a99.jpg",
       "selectedCoverTitle": "서울 아모레퍼시픽미술관·본사 건축 · Excel 사진 URL",
@@ -15714,7 +16696,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "photoSourceUrl": "https://mediahub.seoul.go.kr/archives/1252437",
-      "directImageUrl": "https://mediahub.seoul.go.kr/wp-content/uploads/2019/09/91d0d5a9dcef4acd353090b51a2f1a99.jpg"
+      "directImageUrl": "https://mediahub.seoul.go.kr/wp-content/uploads/2019/09/91d0d5a9dcef4acd353090b51a2f1a99.jpg",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-105",
@@ -15755,7 +16744,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 용인시 처인구 포곡읍 에버랜드로 562번길 38",
       "phone": "",
       "officialUrl": "https://www.leeumhoam.org/hoam",
-      "mapSearchQuery": "경기 용인 호암미술관·희원 전통정원",
+      "mapSearchQuery": "용인 호암미술관·희원 전통정원 경기도 용인시 처인구 포곡읍 에버랜드로 562번길 38",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -15823,7 +16812,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-165에 기록된 호숫가 정원과 전시관 조합을 이관했습니다. 관람 촬영과 상업 화보·장비 설치는 별도 승인 대상입니다.",
       "catalogNumber": 105,
-      "mapQuery": "경기 용인 호암미술관·희원 전통정원",
+      "mapQuery": "용인 호암미술관·희원 전통정원 경기도 용인시 처인구 포곡읍 에버랜드로 562번길 38",
       "editorialReferenceIds": [
         "vogue-korea-jeju-spring-2024",
         "vogue-medongol-garden-fashion-2024"
@@ -15851,7 +16840,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-106",
@@ -15892,7 +16888,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 서초구 남부순환로 2406",
       "phone": "",
       "officialUrl": "https://www.sac.or.kr/",
-      "mapSearchQuery": "서울 서울 예술의전당",
+      "mapSearchQuery": "서울 예술의전당 서울특별시 서초구 남부순환로 2406",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -15951,7 +16947,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-149를 대형 공연·문화시설 후보로 이관했습니다. 작품·공연장별 촬영 및 상업촬영은 별도 협의가 필요합니다.",
       "catalogNumber": 106,
-      "mapQuery": "서울 서울 예술의전당",
+      "mapQuery": "서울 예술의전당 서울특별시 서초구 남부순환로 2406",
       "editorialReferenceIds": [
         "elle-theatre-couture",
         "vanity-fair-theatre-alessio-albi"
@@ -15977,7 +16973,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-107",
@@ -16018,7 +17021,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 종로구 세종대로 175",
       "phone": "",
       "officialUrl": "https://www.sejongpac.or.kr/",
-      "mapSearchQuery": "서울 서울 세종문화회관",
+      "mapSearchQuery": "서울 세종문화회관 서울특별시 종로구 세종대로 175",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -16077,7 +17080,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-150에서 추가했습니다. 상업촬영·광장 점유·삼각대 이용은 운영기관과 사전 협의해야 합니다.",
       "catalogNumber": 107,
-      "mapQuery": "서울 서울 세종문화회관",
+      "mapQuery": "서울 세종문화회관 서울특별시 종로구 세종대로 175",
       "editorialReferenceIds": [
         "elle-theatre-couture",
         "vanity-fair-theatre-alessio-albi"
@@ -16106,7 +17109,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-108",
@@ -16147,7 +17157,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 노원구 동일로 1238",
       "phone": "",
       "officialUrl": "https://sema.seoul.go.kr/kr/visit/bukseoul",
-      "mapSearchQuery": "서울 서울시립 북서울미술관",
+      "mapSearchQuery": "서울시립 북서울미술관 서울특별시 노원구 동일로 1238",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -16206,7 +17216,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-119에서 추가했습니다. 실제 전시실 사진과 개방 구역의 상업촬영 허가가 확인되면 사진 후보를 보강합니다.",
       "catalogNumber": 108,
-      "mapQuery": "서울 서울시립 북서울미술관",
+      "mapQuery": "서울시립 북서울미술관 서울특별시 노원구 동일로 1238",
       "editorialReferenceIds": [
         "daniella-glass-staircase",
         "newwave-inbetween-architecture"
@@ -16251,7 +17261,14 @@ window.FRAME_ATLAS_DATA = {
           "rightsLabel": "원문 출처를 기록했습니다. 사진 재사용·상업적 이용 권한은 별도 확인이 필요합니다."
         }
       ],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-109",
@@ -16323,7 +17340,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 수원시 권선구 서둔로 166",
       "phone": "",
       "officialUrl": "https://sscampus.ggcf.kr/pages/guide",
-      "mapSearchQuery": "경기 수원 경기상상캠퍼스",
+      "mapSearchQuery": "수원 경기상상캠퍼스 경기도 수원시 권선구 서둔로 166",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -16382,7 +17399,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-192를 경기문화재단 공식 운영안내와 함께 이관했습니다. 행사 일정·상업촬영 허가는 후속 확인 대상입니다.",
       "catalogNumber": 109,
-      "mapQuery": "경기 수원 경기상상캠퍼스",
+      "mapQuery": "수원 경기상상캠퍼스 경기도 수원시 권선구 서둔로 166",
       "editorialReferenceIds": [
         "daniella-forest-roots",
         "vogue-korea-jeju-spring-2024"
@@ -16408,7 +17425,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-110",
@@ -16449,7 +17473,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 시흥시 동서로 287",
       "phone": "",
       "officialUrl": "https://access.visitkorea.or.kr/cos/detail.do?cotId=6c0e7e10-d251-48c1-bba9-f837bc6f47a5",
-      "mapSearchQuery": "경기 시흥갯골생태공원 옛 염전·데크·바람개비",
+      "mapSearchQuery": "시흥갯골생태공원 옛 염전·데크·바람개비 경기도 시흥시 동서로 287",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -16517,7 +17541,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-195를 한국관광공사 장소 출처로 이관했습니다. 바람·조수·운영 통제와 촬영 대관 조건을 방문일 기준 확인해야 합니다.",
       "catalogNumber": 110,
-      "mapQuery": "경기 시흥갯골생태공원 옛 염전·데크·바람개비",
+      "mapQuery": "시흥갯골생태공원 옛 염전·데크·바람개비 경기도 시흥시 동서로 287",
       "editorialReferenceIds": [
         "artpartner-salt-plain",
         "id-camargue-salt-flats"
@@ -16545,7 +17569,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-111",
@@ -16615,7 +17646,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 파주시 탄현면 헤이리마을길 93-75",
       "phone": "",
       "officialUrl": "https://hcine.kr/about",
-      "mapSearchQuery": "경기 파주 헤이리시네마",
+      "mapSearchQuery": "파주 헤이리시네마 경기도 파주시 탄현면 헤이리마을길 93-75",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -16674,7 +17705,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-197의 공식 대관 페이지를 이관했습니다. 촬영은 일정·콘텐츠 승인과 대관 협의를 전제로 합니다.",
       "catalogNumber": 111,
-      "mapQuery": "경기 파주 헤이리시네마",
+      "mapQuery": "파주 헤이리시네마 경기도 파주시 탄현면 헤이리마을길 93-75",
       "coverImage": "https://img.hankyung.com/photo/202502/01.39571846.1.jpg",
       "selectedCoverImage": "https://img.hankyung.com/photo/202502/01.39571846.1.jpg",
       "selectedCoverTitle": "파주 헤이리시네마 소규모 아트하우스 객석",
@@ -16719,7 +17750,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-112",
@@ -16760,7 +17798,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "전라남도 순천시 비례골길 24",
       "phone": "",
       "officialUrl": "https://www.suncheon.go.kr/",
-      "mapSearchQuery": "전남 순천 드라마촬영장",
+      "mapSearchQuery": "순천 드라마촬영장 전라남도 순천시 비례골길 24",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -16836,7 +17874,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-033에 기록된 드라마 세트 장소를 2.0에 추가했습니다. 작품별 촬영 크레딧과 현재 개방 세트는 시·운영기관 자료로 재확인해야 합니다. | v12.9 1차 에디토리얼 검수: 시대 재현 세트장이라는 특징에 맞춰 오래된 도시와 움직임, 레트로 색면을 비교.",
       "catalogNumber": 112,
-      "mapQuery": "전남 순천 드라마촬영장",
+      "mapQuery": "순천 드라마촬영장 전라남도 순천시 비례골길 24",
       "editorialReferenceIds": [
         "showstudio-projection",
         "kaltblut-geometry-of-body"
@@ -16863,7 +17901,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "JEONNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-113",
@@ -16910,7 +17955,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "인천광역시 중구 영종해안남로321번길 186",
       "phone": "032-729-5116",
       "officialUrl": "https://www.p-city.com/front",
-      "mapSearchQuery": "인천 인천 파라다이스시티 예술·건축 복합공간",
+      "mapSearchQuery": "인천 파라다이스시티 아트 스페이스 인천광역시 중구 영종해안남로321번길 186",
       "openingStatus": "공식 행사 페이지 기준 운영 시간은 전시별 상이(최근 안내: 10:00–20:00, 입장 마감 19:30, 화요일 휴관). 방문일 전 공식 안내 확인.",
       "shootingPermission": "공식 안내에서 삼각대와 전문 촬영 장비 반입 제한을 명시한 바 있음. 패션·상업 촬영은 별도 승인 여부를 공식 문의(032-729-5116)로 확인하고 전시별 촬영 정책을 따른다.",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -16991,11 +18036,12 @@ window.FRAME_ATLAS_DATA = {
         "인천",
         "인천광역시 중구 영종해안남로321번길 186",
         "복합리조트·현대건축·아트 설치·로비",
-        "인천 파라다이스시티 예술·건축 복합공간 사진 촬영 장소"
+        "인천 파라다이스시티 예술·건축 복합공간 사진 촬영 장소",
+        "인천 파라다이스시티 아트 스페이스"
       ],
       "notes": "구버전 L-169에 기록된 예술 공간·로비 촬영 후보를 이관했습니다. 리조트 운영구역과 설치작품별 상업촬영 권한은 별도로 확인해야 합니다. | v12.27: 기존 파라다이스시티 복합공간 기록을 요청한 아트 스페이스 중심으로 구체화해 중복 등록을 피함. 전시마다 작품/촬영 정책이 변할 수 있고, 공식 안내상 삼각대·전문 촬영 장비는 반입 제한될 수 있음. 사진 점검 v12.29: 이전 Kakao CDN 서명형 URL 대신 기사에서 직접 확인되는 전시장 내부 이미지로 교체. 종전 서명 URL은 만료 위험이 있어 후순위 후보.",
       "catalogNumber": 113,
-      "mapQuery": "인천 인천 파라다이스시티 예술·건축 복합공간",
+      "mapQuery": "인천 파라다이스시티 아트 스페이스 인천광역시 중구 영종해안남로321번길 186",
       "editorialReferenceIds": [
         "grazia-verdura-resort-pool",
         "zimmermann-f22-chateau-gudanes"
@@ -17056,7 +18102,14 @@ window.FRAME_ATLAS_DATA = {
       "photoSourceUrl": "https://localsegye.co.kr/news/view/1065599382459175",
       "directImageUrl": "https://localsegye.co.kr/news/data/20230831/p1065599382459175_616_thum.jpg",
       "imageSearchUrl": "https://www.google.com/search?tbm=isch&q=%EC%9D%B8%EC%B2%9C%20%ED%8C%8C%EB%9D%BC%EB%8B%A4%EC%9D%B4%EC%8A%A4%EC%8B%9C%ED%8B%B0%20%EC%95%84%ED%8A%B8%20%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-114",
@@ -17097,7 +18150,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 중구 덕수궁길 61",
       "phone": "",
       "officialUrl": "https://sema.seoul.go.kr/kr/visit/seosomun",
-      "mapSearchQuery": "서울 서울시립미술관 서소문본관",
+      "mapSearchQuery": "서울시립미술관 서소문본관 서울특별시 중구 덕수궁길 61",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영·장비 반입은 별도 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -17156,7 +18209,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-114의 장소 설명을 이관했습니다. 구버전 연결 이미지 URL은 다른 장소에 잘못 연결됐을 가능성이 있어 재사용하지 않고 직접 사진을 다시 확보합니다.",
       "catalogNumber": 114,
-      "mapQuery": "서울 서울시립미술관 서소문본관",
+      "mapQuery": "서울시립미술관 서소문본관 서울특별시 중구 덕수궁길 61",
       "editorialReferenceIds": [
         "daniella-glass-staircase",
         "newwave-inbetween-architecture"
@@ -17185,14 +18238,21 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-115",
       "name": "서울 마곡문화관 — 옛 양천수리조합 배수펌프장",
       "en": "",
       "region": "서울",
-      "regionDetail": "서울",
+      "regionDetail": "서울 강서구 마곡동",
       "category": "근대 산업유산·목조 펌프장·수변 건축",
       "spaceTypes": [
         "실내",
@@ -17225,10 +18285,10 @@ window.FRAME_ATLAS_DATA = {
         "상업촬영·삼각대·조명 설치 사전 문의",
         "보존 시설·유리 바닥과 방문객 동선 준수"
       ],
-      "address": "서울특별시 강서구 마곡동 서울식물원 내",
+      "address": "서울 강서구 마곡동 서울식물원 내 마곡문화관",
       "phone": "",
       "officialUrl": "https://botanicpark.seoul.go.kr/",
-      "mapSearchQuery": "서울 서울 마곡문화관 — 옛 양천수리조합 배수펌프장",
+      "mapSearchQuery": "서울 마곡문화관 — 옛 양천수리조합 배수펌프장 서울 강서구 마곡동 서울식물원 내 마곡문화관",
       "openingStatus": "서울식물원 및 마곡문화관 방문일 운영·휴관 안내 확인",
       "shootingPermission": "전시·상업촬영·장비 반입은 관리기관 사전 승인 확인",
       "parking": "서울식물원 주차·장비 하차 동선 확인 필요",
@@ -17236,12 +18296,19 @@ window.FRAME_ATLAS_DATA = {
       "photoPotentialScore": 92,
       "scoreNote": "건축·산업유산 조형성 평가 · 현장 촬영 조건 후속 확인",
       "coverImageSource": "SPACE · Magok Cultural Center 건축 프로젝트",
-      "photoMatchStatus": "장소 확인 후보",
-      "imageRightsStatus": "후속 검토",
-      "officialSources": [],
+      "photoMatchStatus": "서울앤 원문에 기록된 마곡문화관 사진 후보 · 실제 브라우저 로딩 및 재사용 권리 별도 확인",
+      "imageRightsStatus": "출처 기록 완료 · 사진 재사용 권리 미확인",
+      "officialSources": [
+        {
+          "name": "공식 기관 홈페이지",
+          "url": "https://botanicpark.seoul.go.kr/"
+        }
+      ],
       "aliases": [
         "마곡문화관",
-        "옛 양천수리조합 배수펌프장"
+        "옛 양천수리조합 배수펌프장",
+        "서울식물원 마곡문화관",
+        "서울식물원 내 마곡문화관"
       ],
       "recommendedLenses": [],
       "compositionTips": [],
@@ -17279,7 +18346,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "2.0 후보 카탈로그",
       "sourceId": "seoul-magok-cultural-hall",
-      "addressStatus": "서울식물원 공식 운영정보·SPACE 및 C3GLOBE 건축자료",
+      "addressStatus": "주소 후보 · 현장 진입점 확인 필요",
       "photoHold": false,
       "searchTerms": [
         "서울 마곡문화관 — 옛 양천수리조합 배수펌프장",
@@ -17288,11 +18355,17 @@ window.FRAME_ATLAS_DATA = {
         "근대 산업유산·목조 펌프장·수변 건축",
         "마곡문화관",
         "옛 양천수리조합 배수펌프장",
-        "서울 마곡문화관 — 옛 양천수리조합 배수펌프장 사진 촬영 장소"
+        "서울 마곡문화관 — 옛 양천수리조합 배수펌프장 사진 촬영 장소",
+        "서울식물원 마곡문화관",
+        "근대산업건축·전시공간",
+        "서울식물원 마곡문화관 공식 사진",
+        "서울식물원 마곡문화관 건축 공간 사진",
+        "서울식물원 마곡문화관 패션 에디토리얼 촬영",
+        "서울 강서구 마곡동 서울식물원 내 마곡문화관"
       ],
       "notes": "구버전 L-189에서 빠진 산업유산 후보를 2.0에 추가했습니다. 1928년 배수펌프장의 목조 상부·콘크리트 기단·보존 설비가 사진적 차별점입니다. 작품 촬영 크레딧은 확인하지 못했으므로 건축 출처와 실제 영상 크레딧은 구분합니다.",
       "catalogNumber": 115,
-      "mapQuery": "서울 서울 마곡문화관 — 옛 양천수리조합 배수펌프장",
+      "mapQuery": "서울 마곡문화관 — 옛 양천수리조합 배수펌프장 서울 강서구 마곡동 서울식물원 내 마곡문화관",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -17317,8 +18390,50 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "imageCandidates": [
+        {
+          "title": "서울식물원 마곡문화관 · 외관과 건축 프레임",
+          "src": "https://img.hani.co.kr/imgdb/resize/2019/0531/155919649601_20190531.JPG",
+          "sourcePageUrl": "https://www.seouland.com/arti/culture/culture_general/5189.html",
+          "sourceName": "서울앤 · 마곡문화관 소개 사진",
+          "placeMatch": "confirmed",
+          "imageUrl": "https://img.hani.co.kr/imgdb/resize/2019/0531/155919649601_20190531.JPG",
+          "rights": "unknown",
+          "rightsLabel": "장소 일치 확인 · 사진 재사용 권리 별도 확인",
+          "status": "selected_cover",
+          "role": "selected_cover",
+          "note": "실제 장소 사진 후보입니다. 대표사진 자동 지정 금지; 이 앱에서 직접 선택하기 전에 장소 일치와 브라우저 로딩을 확인하고 재사용 권한은 별도로 확인하세요."
+        },
+        {
+          "title": "마곡문화관 · 건축 디테일 참고",
+          "src": "https://c3globe.com/wp-content/uploads/2025/01/06-magok-cultural-hall.jpg",
+          "sourcePageUrl": "https://c3globe.com/magok-cultural-hall-by-choon-choi-and-changmo-ahn/",
+          "sourceName": "C3 Globe · Magok Cultural Hall",
+          "placeMatch": "confirmed",
+          "imageUrl": "https://c3globe.com/wp-content/uploads/2025/01/06-magok-cultural-hall.jpg",
+          "rights": "unknown",
+          "rightsLabel": "출처 URL 기록 · 사진 재사용/상업 이용 권한 미확인",
+          "status": "candidate",
+          "role": "representative_photo_candidate",
+          "note": "실제 장소 사진 후보입니다. 대표사진 자동 지정 금지; 이 앱에서 직접 선택하기 전에 장소 일치와 브라우저 로딩을 확인하고 재사용 권한은 별도로 확인하세요."
+        }
+      ],
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "coverImage": "https://img.hani.co.kr/imgdb/resize/2019/0531/155919649601_20190531.JPG",
+      "selectedCoverImage": "https://img.hani.co.kr/imgdb/resize/2019/0531/155919649601_20190531.JPG",
+      "userSelectedCover": "https://img.hani.co.kr/imgdb/resize/2019/0531/155919649601_20190531.JPG",
+      "selectedCoverTitle": "서울식물원 마곡문화관 · 외관과 건축 프레임",
+      "selectedCoverSourceUrl": "https://www.seouland.com/arti/culture/culture_general/5189.html",
+      "photoSourceUrl": "https://www.seouland.com/arti/culture/culture_general/5189.html",
+      "directImageUrl": "https://img.hani.co.kr/imgdb/resize/2019/0531/155919649601_20190531.JPG",
+      "duplicateMergeVersion": "v13.26",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-116",
@@ -17361,7 +18476,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산광역시 중구 백산길 13",
       "phone": "",
       "officialUrl": "https://www.bscf.or.kr/view.do?no=1006",
-      "mapSearchQuery": "부산 부산 한성1918 B-Culture Plaza",
+      "mapSearchQuery": "부산 한성1918 B-Culture Plaza 부산광역시 중구 백산길 13",
       "openingStatus": "부산문화재단 공식 공간 소개에서 운영·공간 정보 확인",
       "shootingPermission": "시설 대관·상업촬영 및 장비 반입은 운영자 사전 협의",
       "parking": "도심 주변 주차 및 장비 하차 지점 확인 필요",
@@ -17425,7 +18540,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-089의 한성1918을 독립 장소로 추가했습니다. 이곳의 핵심은 생활문화센터 일반 소개가 아니라 근대 벽돌 건축의 곡선 파사드와 내부 그리드·콘크리트 재료감입니다. 특정 영화·드라마 촬영작품은 확인되지 않아 영상 크레딧을 임의로 추가하지 않았습니다.",
       "catalogNumber": 116,
-      "mapQuery": "부산 부산 한성1918 B-Culture Plaza",
+      "mapQuery": "부산 한성1918 B-Culture Plaza 부산광역시 중구 백산길 13",
       "editorialReferenceIds": [
         "marieclaire-surreal-seoul-2023",
         "lofficiel-monaco-structured-elegance-2025"
@@ -17454,7 +18569,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-117",
@@ -17496,7 +18618,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "대전광역시 동구 추동 일대",
       "phone": "",
       "officialUrl": "https://access.visitkorea.or.kr/opentour/detail.do?cotId=71fb781c-962a-48ab-8d36-b27280556072",
-      "mapSearchQuery": "대전 대전 대청호 명상정원",
+      "mapSearchQuery": "대전 대청호 명상정원 대전광역시 동구 추동 일대",
       "openingStatus": "방문일 기준 공원·접근로 상태 확인",
       "shootingPermission": "상업촬영과 장비 설치 여부는 관할기관에 확인",
       "parking": "공식 방문정보와 인근 주차 공간 확인 필요",
@@ -17567,7 +18689,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-101을 이관했습니다. 현재 연결 사진은 지형과 실제 장소 식별에 유용하지만 지상 시점으로 촬영 포인트를 보여주지는 않으므로, 대표사진은 지상 시점 사진을 확보한 뒤 선택합니다.",
       "catalogNumber": 117,
-      "mapQuery": "대전 대전 대청호 명상정원",
+      "mapQuery": "대전 대청호 명상정원 대전광역시 동구 추동 일대",
       "editorialReferenceIds": [
         "vogue-korea-jeju-spring-2024",
         "vogue-medongol-garden-fashion-2024"
@@ -17595,7 +18717,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "DAEJEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-118",
@@ -17638,7 +18767,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산광역시 해운대구 APEC로 58",
       "phone": "",
       "officialUrl": "https://art.busan.go.kr/",
-      "mapSearchQuery": "부산 부산시립미술관",
+      "mapSearchQuery": "부산시립미술관 부산광역시 해운대구 APEC로 58",
       "openingStatus": "공식 홈페이지에서 재개관 일정·방문일 전시·휴관일 확인",
       "shootingPermission": "전시실·작품 촬영과 상업 촬영은 미술관에 사전 문의",
       "parking": "공식 방문 안내에서 주차·장비 하차 동선 확인",
@@ -17708,7 +18837,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-132에서 추가했습니다. 부산시립미술관 공식 안내에 따르면 2026년 9월 17일 재개관했으며 대형 미디어 조형물 등 새로운 전시 계획이 소개되었습니다. 실제 장소 사진은 별도 확보 후 연결합니다.",
       "catalogNumber": 118,
-      "mapQuery": "부산 부산시립미술관",
+      "mapQuery": "부산시립미술관 부산광역시 해운대구 APEC로 58",
       "editorialReferenceIds": [
         "gabriela-hearst-cr24-white-cube-editorial",
         "vogue-korea-hermes-designers-sculpture-gallery"
@@ -17736,7 +18865,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-119",
@@ -17779,7 +18915,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "울산광역시 중구 미술관길 72",
       "phone": "",
       "officialUrl": "https://ulsan.go.kr/s/uam/main.ulsan",
-      "mapSearchQuery": "울산 울산시립미술관",
+      "mapSearchQuery": "울산시립미술관 울산광역시 중구 미술관길 72",
       "openingStatus": "공식 홈페이지에서 방문일 전시·운영시간·휴관일 확인",
       "shootingPermission": "전시실·XR Lab 상업촬영은 운영기관에 사전 문의",
       "parking": "공식 방문 안내에서 주차 및 장비 반입 동선 확인",
@@ -17847,7 +18983,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-138에서 추가했습니다. 울산시립미술관 공식 시설안내에는 넓은 전시실과 실감 미디어아트 XR Lab이 있어 시각적 활용성이 높습니다. 구버전 블로그 사진은 만료된 주소라 재사용하지 않고 공식 실제 장소 사진을 다시 연결해야 합니다.",
       "catalogNumber": 119,
-      "mapQuery": "울산 울산시립미술관",
+      "mapQuery": "울산시립미술관 울산광역시 중구 미술관길 72",
       "editorialReferenceIds": [
         "showstudio-projection",
         "var-magazine-projection-editorial-v28"
@@ -17923,7 +19059,14 @@ window.FRAME_ATLAS_DATA = {
         }
       ],
       "userSelectedCover": "https://img5.yna.co.kr/photo/cms/2021/12/15/26/PCM20211215000126990_P4.jpg",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "ULSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-120",
@@ -17977,7 +19120,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "전북특별자치도 전주시 완산구 일대",
       "phone": "",
       "officialUrl": "https://www.jeonju.go.kr/",
-      "mapSearchQuery": "전북 전주 완산 벙커 더 스페이스",
+      "mapSearchQuery": "전주 완산 벙커 더 스페이스 전북특별자치도 전주시 완산구 일대",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -18036,7 +19179,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-008의 지하공간 후보와 사진주소를 이관했습니다. 현재 운영·출입·상업촬영 조건은 공식적으로 재확인해야 하며, 사진은 참고자료로 우선 등록합니다.",
       "catalogNumber": 120,
-      "mapQuery": "전북 전주 완산 벙커 더 스페이스",
+      "mapQuery": "전주 완산 벙커 더 스페이스 전북특별자치도 전주시 완산구 일대",
       "editorialReferenceIds": [
         "daniella-concrete-riverbed",
         "elle-concrete-forms"
@@ -18062,7 +19205,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEONBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-121",
@@ -18119,7 +19269,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "전북특별자치도 완주군 삼례읍 삼례역로 81-13",
       "phone": "",
       "officialUrl": "https://korea.kr/news/reporterView.do?newsId=148924424",
-      "mapSearchQuery": "전북 완주 삼례문화예술촌",
+      "mapSearchQuery": "완주 삼례문화예술촌 전북특별자치도 완주군 삼례읍 삼례역로 81-13",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -18178,7 +19328,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-013의 정책브리핑 사진을 이관했습니다. 옛 양곡창고라는 장소 특성은 사진적 가치가 있으나, 개별 건물의 운영 상태와 상업촬영 조건은 확인이 필요합니다.",
       "catalogNumber": 121,
-      "mapQuery": "전북 완주 삼례문화예술촌",
+      "mapQuery": "완주 삼례문화예술촌 전북특별자치도 완주군 삼례읍 삼례역로 81-13",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -18204,7 +19354,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEONBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-122",
@@ -18245,7 +19402,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "인천광역시 중구 일대",
       "phone": "",
       "officialUrl": "https://itour.incheon.go.kr/",
-      "mapSearchQuery": "인천 인천 잇다스페이스",
+      "mapSearchQuery": "인천 잇다스페이스 인천광역시 중구 일대",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -18316,7 +19473,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-018의 인천투어 사진을 이관했습니다. 관광 API 사진은 로드 상태가 불안정할 수 있어 브라우저 검사에서 실패하면 대체 사진을 확보해야 하며, 사용권·상업촬영은 후속 확인 대상입니다. | v12.9 1차 에디토리얼 검수: 근대 벽돌과 작은 중정에 맞는 질감·그림자·내외부 레이어를 우선.",
       "catalogNumber": 122,
-      "mapQuery": "인천 인천 잇다스페이스",
+      "mapQuery": "인천 잇다스페이스 인천광역시 중구 일대",
       "editorialReferenceIds": [
         "marieclaire-surreal-seoul-2023",
         "lofficiel-monaco-structured-elegance-2025"
@@ -18346,7 +19503,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-123",
@@ -18401,7 +19565,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "충청북도 청주시 청원구 덕벌로 30",
       "phone": "",
       "officialUrl": "https://www.cjcf.or.kr/",
-      "mapSearchQuery": "충북 청주 동부창고",
+      "mapSearchQuery": "청주 동부창고 충청북도 청주시 청원구 덕벌로 30",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -18460,7 +19624,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-054의 한국관광공사 사진을 이관했습니다. 공간 운영·행사 일정과 촬영 가능 구역은 방문일 기준 확인해야 합니다.",
       "catalogNumber": 123,
-      "mapQuery": "충북 청주 동부창고",
+      "mapQuery": "청주 동부창고 충청북도 청주시 청원구 덕벌로 30",
       "coverImage": "https://img9.yna.co.kr/etc/inner/KR/2024/05/14/AKR20240514129400064_02_i_P4.jpg",
       "selectedCoverImage": "https://img9.yna.co.kr/etc/inner/KR/2024/05/14/AKR20240514129400064_02_i_P4.jpg",
       "selectedCoverTitle": "청주 동부창고 사이 공간",
@@ -18504,7 +19668,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "userSelectedCover": "https://img9.yna.co.kr/etc/inner/KR/2024/05/14/AKR20240514129400064_02_i_P4.jpg",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "CHUNGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-124",
@@ -18576,7 +19747,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "인천광역시 서구 장고개로 231번길 9",
       "phone": "",
       "officialUrl": "https://cosmo40.com/",
-      "mapSearchQuery": "인천 인천 코스모40",
+      "mapSearchQuery": "인천 코스모40 인천광역시 서구 장고개로 231번길 9",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -18635,7 +19806,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-076의 코스모40 장소와 인천투어 사진을 이관했습니다. 시설별 영업·전시 구역과 상업촬영 대관은 별도 승인 대상입니다.",
       "catalogNumber": 124,
-      "mapQuery": "인천 인천 코스모40",
+      "mapQuery": "인천 코스모40 인천광역시 서구 장고개로 231번길 9",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -18661,7 +19832,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-125",
@@ -18732,7 +19910,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "부산광역시 영도구 대평북로 36 일대",
       "phone": "",
       "officialUrl": "https://www.kangkangee.com/",
-      "mapSearchQuery": "부산 부산 깡깡이예술마을",
+      "mapSearchQuery": "부산 깡깡이예술마을 부산광역시 영도구 대평북로 36 일대",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -18791,7 +19969,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-083의 한국관광공사 사진을 이관했습니다. 현장 작업구역과 주민 공간을 촬영 구역과 구분하고, 상업촬영·안전 통제를 반드시 확인해야 합니다.",
       "catalogNumber": 125,
-      "mapQuery": "부산 부산 깡깡이예술마을",
+      "mapQuery": "부산 깡깡이예술마을 부산광역시 영도구 대평북로 36 일대",
       "editorialReferenceIds": [
         "models-blue-coast",
         "rocky-coast-zimmermann"
@@ -18817,7 +19995,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "BUSAN",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-126",
@@ -18889,7 +20074,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 고양시 일산서구 킨텍스로 217-6",
       "phone": "",
       "officialUrl": "https://motorstudio.hyundai.com/goyang/ln/main.do?strgCd=01",
-      "mapSearchQuery": "경기도 고양시 일산서구 킨텍스로 217-6 현대 모터스튜디오 고양",
+      "mapSearchQuery": "고양 현대 모터스튜디오 경기도 고양시 일산서구 킨텍스로 217-6",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -18957,7 +20142,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-198의 대형 산업·전시공간 후보를 이관했습니다. 직접 사진 주소를 확보하지 못해 사진 링크는 후속 보강 대상으로 남겨 두며, 전시장 촬영과 상업 촬영은 운영사 승인 확인이 필요합니다.",
       "catalogNumber": 126,
-      "mapQuery": "경기도 고양시 일산서구 킨텍스로 217-6 현대 모터스튜디오 고양",
+      "mapQuery": "고양 현대 모터스튜디오 경기도 고양시 일산서구 킨텍스로 217-6",
       "editorialReferenceIds": [
         "pap-court-tennis-editorial-2019",
         "vogue-arabia-yas-marina-racing-editorial"
@@ -18988,7 +20173,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-127",
@@ -19061,7 +20253,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 강서구 하늘길 177",
       "phone": "",
       "officialUrl": "https://www.aviation.or.kr/",
-      "mapSearchQuery": "서울 서울 국립항공박물관",
+      "mapSearchQuery": "서울 국립항공박물관 서울특별시 강서구 하늘길 177",
       "openingStatus": "방문일 기준 운영·개방 구역 확인 필요",
       "shootingPermission": "상업촬영 및 장비 반입은 사전 승인 확인",
       "parking": "현장 주차·장비 하차 동선 확인 필요",
@@ -19120,7 +20312,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "구버전 L-191의 사진가 관점 후보를 이관했습니다. 직접 사진 URL은 아직 확보되지 않아 실제 박물관 사진을 후속 보강 대상으로 기록합니다. 전시물 촬영 규정과 상업촬영 조건은 별도 확인해야 합니다.",
       "catalogNumber": 127,
-      "mapQuery": "서울 서울 국립항공박물관",
+      "mapQuery": "서울 국립항공박물관 서울특별시 강서구 하늘길 177",
       "editorialReferenceIds": [
         "pap-court-tennis-editorial-2019",
         "vogue-arabia-yas-marina-racing-editorial"
@@ -19168,7 +20360,14 @@ window.FRAME_ATLAS_DATA = {
           "rightsLabel": "원문 출처를 기록했습니다. 사진 재사용·상업적 이용 권한은 별도 확인이 필요합니다."
         }
       ],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-128",
@@ -19211,7 +20410,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "강원특별자치도 정선군 고한읍 함백산로 1445-44",
       "phone": "033-591-3001",
       "officialUrl": "https://samtanartmine.com/",
-      "mapSearchQuery": "삼탄아트마인 강원 정선 고한읍",
+      "mapSearchQuery": "삼탄아트마인 강원특별자치도 정선군 고한읍 함백산로 1445-44",
       "openingStatus": "공개 관광정보 기준 계절별 운영시간과 월·화 휴관 안내가 있으나, 임시 휴관 가능성이 있어 방문 전 재확인",
       "shootingPermission": "일반 관람과 촬영 대관은 별도입니다. 상업촬영·조명·장비 반입 가능 구역과 비용을 운영기관에 확인해야 합니다.",
       "parking": "공개 관광정보에 주차 가능으로 안내됨. 장비차량·하차 위치는 현장 확인 필요",
@@ -19277,7 +20476,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "한국관광공사 소개 기사에서 《태양의 후예》, 《유령》, 영화 《스파이》, 《협상종결자》 촬영지로 언급됩니다. 특정 장면의 정확한 촬영 위치까지 확인된 것은 아닙니다.",
       "catalogNumber": 128,
-      "mapQuery": "삼탄아트마인 강원 정선 고한읍",
+      "mapQuery": "삼탄아트마인 강원특별자치도 정선군 고한읍 함백산로 1445-44",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -19303,7 +20502,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-129",
@@ -19345,7 +20551,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "충청북도 충주시 앙성면 가곡로 1434",
       "phone": "0507-1446-0746",
       "officialUrl": "https://5factory.kr/",
-      "mapSearchQuery": "오대호아트팩토리 충주 앙성면",
+      "mapSearchQuery": "오대호아트팩토리 충청북도 충주시 앙성면 가곡로 1434",
       "openingStatus": "한국관광공사 안내 기준 화~일 10:00~17:30, 월요일 휴무(공휴일 운영 여부 별도 확인). 방문 전 최신 운영정보 확인",
       "shootingPermission": "일반 이용과 촬영은 별도입니다. 상업촬영·조명·삼각대·장비 반입 조건을 운영기관에 사전 문의",
       "parking": "주차·장비 하차 위치는 방문 전 확인",
@@ -19411,7 +20617,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "한국관광공사 안내는 재활용 폐품으로 만든 작품을 전시하는 정크아트 공간으로 소개합니다. 특정 영화·드라마·광고 촬영지라는 근거는 확인하지 못했으므로 작품 크레딧을 주장하지 않습니다.",
       "catalogNumber": 129,
-      "mapQuery": "오대호아트팩토리 충주 앙성면",
+      "mapQuery": "오대호아트팩토리 충청북도 충주시 앙성면 가곡로 1434",
       "editorialReferenceIds": [
         "vogue-korea-adieu-art-2020",
         "vogue-chalamet-city-land-art"
@@ -19440,7 +20646,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "CHUNGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-130",
@@ -19483,7 +20696,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "전라남도 나주시 나주천1길 93",
       "phone": "061-335-0970",
       "officialUrl": "https://www.njcf.or.kr/www/facilities",
-      "mapSearchQuery": "나빌레라문화센터 나주 나주천1길 93",
+      "mapSearchQuery": "나빌레라문화센터 전라남도 나주시 나주천1길 93",
       "openingStatus": "나주문화재단 안내 기준 화~일 09:00~18:00, 월요일 및 공휴일 휴관. 전시·행사 일정은 공식 안내에서 재확인",
       "shootingPermission": "문화시설의 일반 이용과 상업촬영은 별도입니다. 전시관·창작실·소극장별 대관 및 촬영 승인 조건을 확인해야 합니다.",
       "parking": "미확인 · 공식 문의 후 확인",
@@ -19551,7 +20764,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "나주문화재단은 옛 나주잠사 공장의 역사적 가치를 살린 문화예술 복합공간으로 소개합니다. 촬영 대관 허가와 사진 사용권은 별도이며, 공개된 장소 이미지가 곧 상업 촬영 허가를 뜻하지 않습니다.",
       "catalogNumber": 130,
-      "mapQuery": "나빌레라문화센터 나주 나주천1길 93",
+      "mapQuery": "나빌레라문화센터 전라남도 나주시 나주천1길 93",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -19580,7 +20793,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEONNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-131",
@@ -19630,7 +20850,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 서대문구 이화여대길 52 이화여자대학교 내",
       "phone": "",
       "officialUrl": "https://www.ewha.ac.kr/ewha/life/amenities.do",
-      "mapSearchQuery": "서울특별시 서대문구 이화여대길 52 이화여자대학교 ECC",
+      "mapSearchQuery": "이화여자대학교 ECC (이화캠퍼스복합단지) 서울특별시 서대문구 이화여대길 52 이화여자대학교 내",
       "openingStatus": "캠퍼스 방문 가능 구역·행사·운영 시간 방문 전 확인",
       "shootingPermission": "상업촬영·삼각대·조명·실내 촬영은 시설 담당자 사전 확인 필요",
       "parking": "대학 공식 주차안내 확인 · 촬영 장비 하차·주차는 별도 확인",
@@ -19704,7 +20924,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "ECC의 선큰 보행축과 반복 유리 파사드는 조형적 고유성이 높아 A급 촬영 탐색 후보로 등록했습니다. 사진은 설계사/서울시 소개 페이지의 참고 이미지이며 앱에 복제 저장한 사진이 아닙니다. 재사용 권리 확인 전에는 사진 출처를 유지하고 별도 이용 허가가 필요한 것으로 취급합니다.",
       "catalogNumber": 131,
-      "mapQuery": "서울특별시 서대문구 이화여대길 52 이화여자대학교 ECC",
+      "mapQuery": "이화여자대학교 ECC (이화캠퍼스복합단지) 서울특별시 서대문구 이화여대길 52 이화여자대학교 내",
       "editorialReferenceIds": [
         "gravitypope-water-courtyard",
         "etro-magma-casa-dinosauro-fw2526-v22"
@@ -19773,7 +20993,14 @@ window.FRAME_ATLAS_DATA = {
       "coverImage": "https://love.seoul.go.kr/tmda/Pds/Board/seoul_news_write/article_201903_01%281200%29.jpg",
       "photoSourceUrl": "https://love.seoul.go.kr/articles/6438",
       "directImageUrl": "https://love.seoul.go.kr/tmda/Pds/Board/seoul_news_write/article_201903_01%281200%29.jpg",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-132",
@@ -19815,7 +21042,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울 한강 교량 하부 중 공개적으로 접근 가능한 보행·공공구간(교량명은 현장 지정 필요)",
       "phone": "",
       "officialUrl": "https://plainmagazine.com/hypnotic-photographs-underside-seouls-27-bridges/",
-      "mapSearchQuery": "서울특별시 한강공원 교량 하부 접근 가능한 공공 구간",
+      "mapSearchQuery": "한강 교량 하부·접근 가능한 공공 구간 서울 한강 교량 하부 중 공개적으로 접근 가능한 보행·공공구간(교량명은 현장 지정 필요)",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -19876,7 +21103,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다.",
       "catalogNumber": 132,
-      "mapQuery": "서울특별시 한강공원 교량 하부 접근 가능한 공공 구간",
+      "mapQuery": "한강 교량 하부·접근 가능한 공공 구간 서울 한강 교량 하부 중 공개적으로 접근 가능한 보행·공공구간(교량명은 현장 지정 필요)",
       "editorialReferenceIds": [
         "vogue-korea-seoul-bridges-2026",
         "daniella-concrete-riverbed"
@@ -19905,7 +21132,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-133",
@@ -19947,7 +21181,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "경기도 수원시 팔달구 행궁동 벽화마을 일대",
       "phone": "",
       "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=50c0daa1-83a7-416c-a38f-7b5257fed378",
-      "mapSearchQuery": "경기도 수원시 팔달구 행궁동 공방거리 행리단길",
+      "mapSearchQuery": "수원 행궁동 구도심 골목 경기도 수원시 팔달구 행궁동 벽화마을 일대",
       "openingStatus": "미확인",
       "shootingPermission": "미확인",
       "parking": "미확인",
@@ -20008,7 +21242,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "우선순위는 사진적 가능성에 대한 1차 편집 판단이며, 허가·운영·현장 접근이 확인된 순위가 아닙니다. 승인 전 공식 자료를 확인해야 합니다. 2026-10-15 사진 후보 보강: 수원 행궁동 벽화 골목과 오래된 주택가. 출처: 한국관광공사 대한민국 구석구석 (https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=50c0daa1-83a7-416c-a38f-7b5257fed378). 한국관광공사의 행궁동·벽화마을 안내 사진. 골목형 촬영 배경 참고로 연결하며 사진 재사용 권리 확인 중.",
       "catalogNumber": 133,
-      "mapQuery": "경기도 수원시 팔달구 행궁동 공방거리 행리단길",
+      "mapQuery": "수원 행궁동 구도심 골목 경기도 수원시 팔달구 행궁동 벽화마을 일대",
       "editorialReferenceIds": [
         "euljiro-industrial-portrait",
         "vogue-korea-seoul-fashion-face-2025"
@@ -20034,7 +21268,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGGI_METRO",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-134",
@@ -20076,7 +21317,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 성동구 자동차시장길 49",
       "phone": "02-2153-0400",
       "officialUrl": "https://seoulup.or.kr/",
-      "mapSearchQuery": "서울특별시 성동구 자동차시장길 49",
+      "mapSearchQuery": "서울새활용플라자 서울특별시 성동구 자동차시장길 49",
       "openingStatus": "월~토 10:00~18:00 안내 · 일요일 휴관, 최신 안내 확인",
       "shootingPermission": "전시·공간·상업촬영 조건 사전 문의",
       "parking": "미확인",
@@ -20151,7 +21392,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "사진적 잠재력을 기준으로 선정한 1차 후보입니다. 참고사진의 재사용 권리와 상업 촬영 허가 여부는 확인되지 않았습니다. 실제 촬영 전 운영기관에 별도로 확인하세요. 2026-10-15 사진 후보 보강: 서울새활용플라자 외관과 계단 구조. 출처: 서울시 미디어허브 (https://mediahub.seoul.go.kr/archives/2018487). 서울시 미디어허브의 서울새활용플라자 장소 소개 사진. 재사용 권리 및 현재 촬영 가능 공간은 별도 확인.",
       "catalogNumber": 134,
-      "mapQuery": "서울특별시 성동구 자동차시장길 49",
+      "mapQuery": "서울새활용플라자 서울특별시 성동구 자동차시장길 49",
       "editorialReferenceIds": [
         "daniella-glass-staircase",
         "newwave-inbetween-architecture"
@@ -20182,7 +21423,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-135",
@@ -20224,7 +21472,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 노원구 동일로174길 27",
       "phone": "02-3399-2900",
       "officialUrl": "https://museum.seoul.go.kr/sulm/index.do",
-      "mapSearchQuery": "서울특별시 노원구 동일로174길 27",
+      "mapSearchQuery": "서울생활사박물관 서울특별시 노원구 동일로174길 27",
       "openingStatus": "화~일 09:00~18:00 안내 · 월요일 휴관, 최신 운영정보 확인",
       "shootingPermission": "실내 상업촬영·플래시·삼각대 사용 금지(공식 관람안내). 외관 등 촬영은 관리 주체에 사전 확인.",
       "parking": "미확인",
@@ -20290,7 +21538,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "사진적 잠재력을 기준으로 선정한 1차 후보입니다. 참고사진의 재사용 권리와 상업 촬영 허가 여부는 확인되지 않았습니다. 실제 촬영 전 운영기관에 별도로 확인하세요.",
       "catalogNumber": 135,
-      "mapQuery": "서울특별시 노원구 동일로174길 27",
+      "mapQuery": "서울생활사박물관 서울특별시 노원구 동일로174길 27",
       "editorialReferenceIds": [
         "w-mag-library",
         "commas-resort-2024-szechenyi-baths"
@@ -20319,7 +21567,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-136",
@@ -20361,7 +21616,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 중구 세종대로 110",
       "phone": "02-120",
       "officialUrl": "https://www.seoul.go.kr/",
-      "mapSearchQuery": "서울특별시 중구 세종대로 110 서울시청 신청사",
+      "mapSearchQuery": "서울시청 신청사 유리 파사드 서울특별시 중구 세종대로 110",
       "openingStatus": "외부 공개 구역 및 청사 출입은 방문 전 공식 안내 확인",
       "shootingPermission": "청사·광장 점유형 촬영, 삼각대·조명 설치 및 상업 촬영은 서울시·현장 관리 주체에 사전 확인.",
       "parking": "미확인 · 도심 주차·장비 하차 조건 확인",
@@ -20427,7 +21682,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "관광 목적의 장소가 아니라 유리 파사드·반사·그리드가 패션·인물 에디토리얼에 주는 조형적 가능성을 기준으로 추가했습니다. 참고사진은 서울시 미디어허브 이미지이며, 재사용 권리와 현장 촬영 가능 범위는 별도로 확인해야 합니다. 2026-10-15 사진 후보 보강: 서울시청 신청사 유리 파사드와 반사면. 출처: 서울시 미디어허브 (https://mediahub.seoul.go.kr/archives/160215). 서울시 신청사의 곡면 유리 외피와 반사면을 보여주는 서울시 미디어허브 사진. 장소 참고사진으로 연결하고 재사용 권리 확인 중.",
       "catalogNumber": 136,
-      "mapQuery": "서울특별시 중구 세종대로 110 서울시청 신청사",
+      "mapQuery": "서울시청 신청사 유리 파사드 서울특별시 중구 세종대로 110",
       "editorialReferenceIds": [
         "vida-akbari-dubai-hard-light-terraces-2025",
         "elle-glass-house-irina-2021"
@@ -20459,7 +21714,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-137",
@@ -20502,7 +21764,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "서울특별시 도봉구 마들로 932",
       "phone": "02-3494-1970",
       "officialUrl": "https://tour.dobong.go.kr/Contents.asp?code=10007287",
-      "mapSearchQuery": "서울특별시 도봉구 마들로 932 평화문화진지",
+      "mapSearchQuery": "평화문화진지 서울특별시 도봉구 마들로 932",
       "openingStatus": "공식 운영시간·휴관일 확인 후 방문",
       "shootingPermission": "상업·장비 촬영은 사전 문의 필요",
       "parking": "미확인",
@@ -20568,7 +21830,7 @@ window.FRAME_ATLAS_DATA = {
       ],
       "notes": "사진적 잠재력을 기준으로 선정한 1차 후보입니다. 참고사진의 재사용 권리와 상업 촬영 허가 여부는 확인되지 않았습니다. 실제 촬영 전 운영기관에 별도로 확인하세요.",
       "catalogNumber": 137,
-      "mapQuery": "서울특별시 도봉구 마들로 932 평화문화진지",
+      "mapQuery": "평화문화진지 서울특별시 도봉구 마들로 932",
       "editorialReferenceIds": [
         "vivienne-westwood-fw2425-margate-caves",
         "michael-asmussen-war-memorial-korea-v27"
@@ -20597,7 +21859,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "SEOUL",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-151",
@@ -20651,7 +21920,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "https://www.incheon.go.kr/",
-      "mapSearchQuery": "인천 중구 북성동 인천 상상플랫폼",
+      "mapSearchQuery": "인천 상상플랫폼 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "운영 주체 및 상업촬영 조건 확인",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -20717,11 +21986,12 @@ window.FRAME_ATLAS_DATA = {
         "철제 구조",
         "대형 개구부",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "장소 후보 등록—최신 운영 및 상업촬영 조건 미확인 사진 점검 v12.29: 현재 대화에서 요청된 사진을 장소 외관/내부 유형에 맞춰 재확인하고 공통 대표 URL로 지정. PC/iPhone 실제 요청은 배포 후 확인 필요.",
       "catalogNumber": 151,
-      "mapQuery": "인천 중구 북성동 인천 상상플랫폼",
+      "mapQuery": "인천 상상플랫폼 정확 주소/진입점 현장 확인 필요",
       "editorialReferenceIds": [
         "models-blue-coast",
         "rocky-coast-zimmermann"
@@ -20772,7 +22042,14 @@ window.FRAME_ATLAS_DATA = {
       "photoSourceUrl": "https://sangsangplatform.or.kr/index.do",
       "directImageUrl": "https://sangsangplatform.or.kr/template/site/ssp/images/main_img01.png",
       "imageSearchUrl": "https://www.google.com/search?tbm=isch&q=%EC%9D%B8%EC%B2%9C%20%EC%83%81%EC%83%81%ED%94%8C%EB%9E%AB%ED%8F%BC",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-158",
@@ -20811,7 +22088,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "",
-      "mapSearchQuery": "대구 수창청춘맨숀",
+      "mapSearchQuery": "수창청춘맨숀 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -20873,11 +22150,12 @@ window.FRAME_ATLAS_DATA = {
         "레트로·도시적·예술·실험적",
         "환경인물",
         "에디토리얼",
-        "산업텍스처"
+        "산업텍스처",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "신규 후보 — 최신 웹/현장 검증 전",
       "catalogNumber": 158,
-      "mapQuery": "대구 수창청춘맨숀",
+      "mapQuery": "수창청춘맨숀 정확 주소/진입점 현장 확인 필요",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -20906,7 +22184,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "DAEGU",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-162",
@@ -20950,7 +22235,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=13941295-50d3-4e80-ae10-31a1975c307e",
-      "mapSearchQuery": "대전 대덕구 계족산 황톳길",
+      "mapSearchQuery": "계족산 황톳길 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "촬영 전 최신 조건 및 상업촬영 허가 확인",
       "parking": "합법 주차·장비 하차 위치 확인",
@@ -21015,11 +22300,12 @@ window.FRAME_ATLAS_DATA = {
         "자연",
         "청량",
         "원시적",
-        "힐링"
+        "힐링",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "한국관광공사 관광정보 | v12.27 사진 재검수: 대표사진이 없던 상태에서 황톳길과 숲의 경로가 보이는 사진을 추가 사진 점검 v12.29: 현재 대화에서 요청된 사진을 장소 외관/내부 유형에 맞춰 재확인하고 공통 대표 URL로 지정. PC/iPhone 실제 요청은 배포 후 확인 필요.",
       "catalogNumber": 162,
-      "mapQuery": "대전 대덕구 계족산 황톳길",
+      "mapQuery": "계족산 황톳길 정확 주소/진입점 현장 확인 필요",
       "editorialReferenceIds": [
         "daniella-forest-roots",
         "vogue-korea-jeju-spring-2024"
@@ -21068,7 +22354,14 @@ window.FRAME_ATLAS_DATA = {
           "role": "representative_photo_candidate",
           "note": "현재 대화에서 요청된 사진을 장소 외관/내부 유형에 맞춰 재확인하고 공통 대표 URL로 지정. PC/iPhone 실제 요청은 배포 후 확인 필요."
         }
-      ]
+      ],
+      "regionCode": "DAEJEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-164",
@@ -21124,7 +22417,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "공식 홈페이지 기준 위치 확인",
       "phone": "",
       "officialUrl": "https://www.gwangjubiennale.org/",
-      "mapSearchQuery": "광주 북구 광주비엔날레 전시관",
+      "mapSearchQuery": "광주비엔날레 전시관 공식 홈페이지 기준 위치 확인",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "사전 허가 확인",
       "parking": "장비차량 하차 및 주차 위치 확인",
@@ -21189,11 +22482,12 @@ window.FRAME_ATLAS_DATA = {
         "화이트큐브·실험적·국제적",
         "화이트큐브",
         "실험적",
-        "국제적"
+        "국제적",
+        "공식 홈페이지 기준 위치 확인"
       ],
       "notes": "2026년 공식 운영자료 및 웹 이미지 교차 확인",
       "catalogNumber": 164,
-      "mapQuery": "광주 북구 광주비엔날레 전시관",
+      "mapQuery": "광주비엔날레 전시관 공식 홈페이지 기준 위치 확인",
       "coverImage": "https://wimg.sedaily.com/news/cms/2026/09/15/news-p.v1.20260915.367a089105f546f2a32bd4bac715de47_P1.jpg",
       "selectedCoverImage": "https://wimg.sedaily.com/news/cms/2026/09/15/news-p.v1.20260915.367a089105f546f2a32bd4bac715de47_P1.jpg",
       "selectedCoverTitle": "광주비엔날레 전시관 외관",
@@ -21238,7 +22532,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "낮음 · 확인 필요",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "중간",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GWANGJU",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-165",
@@ -21291,7 +22592,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "공식 홈페이지 기준 위치 확인",
       "phone": "",
       "officialUrl": "https://chuncheon.museum.go.kr/",
-      "mapSearchQuery": "강원 춘천 국립춘천박물관",
+      "mapSearchQuery": "국립춘천박물관 공식 홈페이지 기준 위치 확인",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "사전 허가 확인",
       "parking": "장비차량 하차 및 주차 위치 확인",
@@ -21360,11 +22661,12 @@ window.FRAME_ATLAS_DATA = {
         "차분함·한국적·현대적",
         "차분함",
         "한국적",
-        "현대적"
+        "현대적",
+        "공식 홈페이지 기준 위치 확인"
       ],
       "notes": "2026년 공식 운영자료 및 웹 이미지 교차 확인",
       "catalogNumber": 165,
-      "mapQuery": "강원 춘천 국립춘천박물관",
+      "mapQuery": "국립춘천박물관 공식 홈페이지 기준 위치 확인",
       "editorialReferenceIds": [
         "daniella-glass-staircase",
         "newwave-inbetween-architecture"
@@ -21390,7 +22692,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-166",
@@ -21434,7 +22743,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=b138c674-ed77-41e0-95a7-b6d82dad5010",
-      "mapSearchQuery": "강원 태백 삼방동 전망대",
+      "mapSearchQuery": "삼방동 전망대 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "촬영 전 최신 조건 및 상업촬영 허가 확인",
       "parking": "합법 주차·장비 하차 위치 확인",
@@ -21494,11 +22803,12 @@ window.FRAME_ATLAS_DATA = {
         "시간감",
         "거칠음",
         "다큐",
-        "향수"
+        "향수",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "한국관광공사 관광정보",
       "catalogNumber": 166,
-      "mapQuery": "강원 태백 삼방동 전망대",
+      "mapQuery": "삼방동 전망대 정확 주소/진입점 현장 확인 필요",
       "coverImage": "https://t1.daumcdn.net/news/202409/12/yonhap/20240912080033409lhfi.jpg",
       "selectedCoverImage": "https://t1.daumcdn.net/news/202409/12/yonhap/20240912080033409lhfi.jpg",
       "selectedCoverTitle": "삼방동 전망대에서 바라본 철암역두 선탄시설 · 연합뉴스 사진",
@@ -21541,7 +22851,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "중간",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-167",
@@ -21580,8 +22897,8 @@ window.FRAME_ATLAS_DATA = {
       ],
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "강원 철원 소이산 지하벙커",
+      "officialUrl": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=8547f664-6e30-4645-9003-3533ab9bd2d4",
+      "mapSearchQuery": "소이산 지하벙커 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -21591,7 +22908,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "엑셀 직접 이미지 URL 또는 개별 이미지 검색 결과",
       "photoMatchStatus": "장소명·출처 페이지 기준 대표사진 후보 연결 · 현장 일치/URL 작동 재확인 필요 · 소이산 지하벙커는 실내 벙커와 외부 입구 접근부가 모두 존재하므로 실내·외 복합으로 분류.",
       "imageRightsStatus": "출처 기록 완료 · 재사용 권한 미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "한국관광공사 공식 관광정보 · 소이산 모노레일/주변 관광",
+          "url": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=8547f664-6e30-4645-9003-3533ab9bd2d4"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "35mm",
@@ -21637,11 +22959,12 @@ window.FRAME_ATLAS_DATA = {
         "군사시설·지하벙커",
         "어둠·긴장감·콘크리트·역사",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "신규 후보 — 최신 웹/현장 검증 전",
       "catalogNumber": 167,
-      "mapQuery": "강원 철원 소이산 지하벙커",
+      "mapQuery": "소이산 지하벙커 정확 주소/진입점 현장 확인 필요",
       "coverImage": "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2FbBoA%2Fimage%2FLF19_K2shR3yxfS5ZMiWPJGkzRo.jpg",
       "selectedCoverImage": "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2FbBoA%2Fimage%2FLF19_K2shR3yxfS5ZMiWPJGkzRo.jpg",
       "selectedCoverTitle": "철원 지하벙커 입구 후보",
@@ -21689,7 +23012,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "중간",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GANGWON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-170",
@@ -21727,7 +23057,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "",
-      "mapSearchQuery": "충북 충주 비내섬",
+      "mapSearchQuery": "비내섬 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -21794,11 +23124,12 @@ window.FRAME_ATLAS_DATA = {
         "강변·자연",
         "고독·자연·영화적",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 170,
-      "mapQuery": "충북 충주 비내섬",
+      "mapQuery": "비내섬 정확 주소/진입점 현장 확인 필요",
       "editorialReferenceIds": [
         "vogue-korea-seoul-bridges-2026",
         "daniella-concrete-riverbed"
@@ -21826,7 +23157,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "CHUNGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-171",
@@ -21863,8 +23201,8 @@ window.FRAME_ATLAS_DATA = {
       ],
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "충북 제천 무암저수지",
+      "officialUrl": "https://tour.jecheon.go.kr/tour/base/tour/contents/view?clturCntntsNo=328&cpn=1&menuLevel=3&menuNo=52&psz=10&rcpp=16&sc1=B040200&sc2=all&siteId=base&so1=X.CLTUR_CNTNTS_NO&trc=28",
+      "mapSearchQuery": "무암저수지 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -21874,7 +23212,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "",
       "photoMatchStatus": "출처에서 장소명 확인 · 대표사진 후보",
       "imageRightsStatus": "not-applicable",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "제천시 공식 관광정보 · 무암저수지 연계 등산 코스",
+          "url": "https://tour.jecheon.go.kr/tour/base/tour/contents/view?clturCntntsNo=328&cpn=1&menuLevel=3&menuNo=52&psz=10&rcpp=16&sc1=B040200&sc2=all&siteId=base&so1=X.CLTUR_CNTNTS_NO&trc=28"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "35mm",
@@ -21920,11 +23263,12 @@ window.FRAME_ATLAS_DATA = {
         "저수지·산",
         "고요·쓸쓸함·자연",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 171,
-      "mapQuery": "충북 제천 무암저수지",
+      "mapQuery": "무암저수지 정확 주소/진입점 현장 확인 필요",
       "coverImage": "https://tong.visitkorea.or.kr/cms/resource/79/1841179_image2_1.jpg?index=1&name=image2",
       "selectedCoverImage": "https://tong.visitkorea.or.kr/cms/resource/79/1841179_image2_1.jpg?index=1&name=image2",
       "selectedCoverTitle": "무암저수지 · 한국관광공사 촬영지 소개 사진",
@@ -21967,7 +23311,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "중간",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "CHUNGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-172",
@@ -22006,7 +23357,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "",
-      "mapSearchQuery": "충남 서천 장항 옛 제련소 일대",
+      "mapSearchQuery": "장항 옛 제련소 일대 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -22068,11 +23419,12 @@ window.FRAME_ATLAS_DATA = {
         "산업적·황량함",
         "환경인물",
         "에디토리얼",
-        "산업텍스처"
+        "산업텍스처",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 172,
-      "mapQuery": "충남 서천 장항 옛 제련소 일대",
+      "mapQuery": "장항 옛 제련소 일대 정확 주소/진입점 현장 확인 필요",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -22098,7 +23450,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "CHUNGNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-173",
@@ -22134,10 +23493,10 @@ window.FRAME_ATLAS_DATA = {
         "확인 필요",
         "시설 촬영허가 확인"
       ],
-      "address": "정확 주소/진입점 현장 확인 필요",
+      "address": "충청남도 당진시 신평로 813 (신평양조장 안내 주소; 방문·촬영은 별도 문의)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "충남 당진 신평양조장",
+      "officialUrl": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=174164",
+      "mapSearchQuery": "신평양조장 충청남도 당진시 신평로 813 (신평양조장 안내 주소; 방문·촬영은 별도 문의)",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -22147,7 +23506,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "엑셀 직접 이미지 URL 또는 개별 이미지 검색 결과",
       "photoMatchStatus": "장소명·출처 페이지 기준 대표사진 후보 연결 · 현장 일치/URL 작동 재확인 필요",
       "imageRightsStatus": "출처 기록 완료 · 재사용 권한 미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "한국관광공사 공식 관광정보 · 신평양조장",
+          "url": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=174164"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "35mm",
@@ -22185,7 +23549,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "v5.32 기존 장소 데이터",
       "sourceId": "L-045",
-      "addressStatus": "정확 주소/진입점 현장 확인 필요",
+      "addressStatus": "한국관광공사 공식 관광정보 주소 · 촬영 허가 미확인",
       "photoHold": false,
       "searchTerms": [
         "신평양조장",
@@ -22194,11 +23558,12 @@ window.FRAME_ATLAS_DATA = {
         "레트로·산업적",
         "환경인물",
         "에디토리얼",
-        "산업텍스처"
+        "산업텍스처",
+        "충청남도 당진시 신평로 813 (신평양조장 안내 주소; 방문·촬영은 별도 문의)"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 173,
-      "mapQuery": "충남 당진 신평양조장",
+      "mapQuery": "신평양조장 충청남도 당진시 신평로 813 (신평양조장 안내 주소; 방문·촬영은 별도 문의)",
       "coverImage": "https://blog.kakaocdn.net/dn/EbjFD/btrEuP7Iawy/Si7n6rxKJkukgvMCkQYCd1/img.jpg",
       "selectedCoverImage": "https://blog.kakaocdn.net/dn/EbjFD/btrEuP7Iawy/Si7n6rxKJkukgvMCkQYCd1/img.jpg",
       "selectedCoverTitle": "신평양조장 외관",
@@ -22243,13 +23608,20 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "중간",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=174164",
+      "regionCode": "CHUNGNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-174",
       "name": "판교 시간이멈춘마을",
       "en": "",
-      "region": "충청",
+      "region": "충남",
       "regionDetail": "충남 서천군 판교면",
       "category": "옛 주거·상업",
       "spaceTypes": [
@@ -22281,7 +23653,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "충청남도 서천군 판교면 종판로 882-8",
       "phone": "",
       "officialUrl": "https://www.seocheon.go.kr/prog/tursmCn/v2/tour/sub01_02_13/view.do?cnt_no=59",
-      "mapSearchQuery": "충청남도 서천군 판교면 종판로 882-8 판교 근대역사문화공간 시간이 멈춘 마을",
+      "mapSearchQuery": "판교 시간이멈춘마을 충청남도 서천군 판교면 종판로 882-8",
       "openingStatus": "충남관광 안내상 상시 개방 표기; 방문 전 행사·공사 등 현장 운영 변경 여부 확인",
       "shootingPermission": "관광 개방 공간이라도 상업 촬영·장비 설치·영업장 촬영은 관리 주체와 주민/사업자 동의 확인",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -22353,11 +23725,13 @@ window.FRAME_ATLAS_DATA = {
         "옛 주거·상업",
         "레트로·1960~70년대",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "충청",
+        "충청남도 서천군 판교면 종판로 882-8"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요 | v12.9 1차 에디토리얼 검수: 충남 서천의 판교 근대역사문화공간임을 관광 출처로 재확인. 레트로 거리의 표면·간판·생활사를 참고. 지명 혼동 예방: 이 장소는 경기도 성남 판교가 아니라 충청남도 서천군 판교면 소재.",
       "catalogNumber": 174,
-      "mapQuery": "충청남도 서천군 판교면 종판로 882-8 판교 근대역사문화공간 시간이 멈춘 마을",
+      "mapQuery": "판교 시간이멈춘마을 충청남도 서천군 판교면 종판로 882-8",
       "coverImage": "https://tour.chungnam.go.kr/thumbnail/trsrcn/920_TRSRCN_202605111229239221.JPG",
       "selectedCoverImage": "https://tour.chungnam.go.kr/thumbnail/trsrcn/920_TRSRCN_202605111229239221.JPG",
       "selectedCoverTitle": "충남관광 공식 대표이미지 · 판교 근대역사문화공간",
@@ -22401,7 +23775,15 @@ window.FRAME_ATLAS_DATA = {
       "editorialVisualSearchKo": "판교 시간이멈춘마을 구도심 골목 시장 오래된 간판 패션 에디토리얼 패션 화보",
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
-      "indoorOutdoorConfidence": "높음"
+      "indoorOutdoorConfidence": "높음",
+      "regionRaw": "충청",
+      "regionCode": "CHUNGNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-176",
@@ -22454,7 +23836,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "공식 홈페이지 기준 위치 확인",
       "phone": "",
       "officialUrl": "https://www.hanjimuseum.co.kr/",
-      "mapSearchQuery": "전북 전주 전주한지박물관",
+      "mapSearchQuery": "전주한지박물관 공식 홈페이지 기준 위치 확인",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "사전 허가 확인",
       "parking": "장비차량 하차 및 주차 위치 확인",
@@ -22519,11 +23901,12 @@ window.FRAME_ATLAS_DATA = {
         "한국적·따뜻함·질감",
         "한국적",
         "따뜻함",
-        "질감"
+        "질감",
+        "공식 홈페이지 기준 위치 확인"
       ],
       "notes": "2026년 공식 운영자료 및 웹 이미지 교차 확인 사진 점검 v12.29: 현재 대화에서 요청된 사진을 장소 외관/내부 유형에 맞춰 재확인하고 공통 대표 URL로 지정. PC/iPhone 실제 요청은 배포 후 확인 필요.",
       "catalogNumber": 176,
-      "mapQuery": "전북 전주 전주한지박물관",
+      "mapQuery": "전주한지박물관 공식 홈페이지 기준 위치 확인",
       "coverImage": "https://tour.jeonju.go.kr/upload_data/board_data/BBS_0000018/173832505533210.jpg",
       "selectedCoverImage": "https://tour.jeonju.go.kr/upload_data/board_data/BBS_0000018/173832505533210.jpg",
       "selectedCoverTitle": "전주한지박물관 내부 · 한지 전시·체험 공간",
@@ -22574,7 +23957,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoorConfidence": "높음",
       "userSelectedCover": "https://tour.jeonju.go.kr/upload_data/board_data/BBS_0000018/173832505533210.jpg",
       "imageSearchUrl": "https://www.google.com/search?tbm=isch&q=%EC%A0%84%EC%A3%BC%ED%95%9C%EC%A7%80%EB%B0%95%EB%AC%BC%EA%B4%80",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEONBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-178",
@@ -22609,10 +23999,10 @@ window.FRAME_ATLAS_DATA = {
         "확인 필요",
         "시설 촬영허가 확인"
       ],
-      "address": "정확 주소/진입점 현장 확인 필요",
+      "address": "전북특별자치도 군산시 해망로 214 (군산근대건축관)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "전북 군산 군산근대건축관",
+      "officialUrl": "https://museum.gunsan.go.kr/new/contents/exhibition101.jsp",
+      "mapSearchQuery": "군산근대건축관 전북특별자치도 군산시 해망로 214 (군산근대건축관)",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -22622,7 +24012,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "Korea.net · 군산 근대문화유산",
       "photoMatchStatus": "군산근대건축관의 실제 출입구와 외관을 보여주는 직접 이미지 후보. 실외 분류와 일치.",
       "imageRightsStatus": "원문 출처를 기록했습니다. 사진 재사용·상업적 이용 권한은 별도 확인이 필요합니다.",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "군산근대역사박물관 공식 안내 · 군산근대건축관",
+          "url": "https://museum.gunsan.go.kr/new/contents/exhibition101.jsp"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "35mm",
@@ -22660,7 +24055,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "v5.32 기존 장소 데이터",
       "sourceId": "L-004",
-      "addressStatus": "정확 주소/진입점 현장 확인 필요",
+      "addressStatus": "군산시 박물관 공식 주소 · 운영시간/촬영 허가 별도 확인",
       "photoHold": false,
       "searchTerms": [
         "군산근대건축관",
@@ -22668,11 +24063,12 @@ window.FRAME_ATLAS_DATA = {
         "근대건축",
         "빈티지·역사",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "전북특별자치도 군산시 해망로 214 (군산근대건축관)"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 178,
-      "mapQuery": "전북 군산 군산근대건축관",
+      "mapQuery": "군산근대건축관 전북특별자치도 군산시 해망로 214 (군산근대건축관)",
       "editorialReferenceIds": [
         "vogue-korea-armani-west-sea-island-2026",
         "zimmermann-madeira-coast-ss24"
@@ -22717,7 +24113,14 @@ window.FRAME_ATLAS_DATA = {
           "rightsLabel": "원문 출처를 기록했습니다. 사진 재사용·상업적 이용 권한은 별도 확인이 필요합니다."
         }
       ],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://museum.gunsan.go.kr/new/contents/exhibition101.jsp",
+      "regionCode": "JEONBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-180",
@@ -22753,10 +24156,10 @@ window.FRAME_ATLAS_DATA = {
         "확인 필요",
         "작업장·사유지 출입 확인"
       ],
-      "address": "정확 주소/진입점 현장 확인 필요",
+      "address": "전남 신안군 증도면 태평염전 일원 (염전 구역 참조; 특정 진입점·촬영 지점 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "전남 신안 증도 염전 주변",
+      "officialUrl": "https://www.taepyungsalt.com/company/business_place",
+      "mapSearchQuery": "증도 염전 주변 전남 신안군 증도면 태평염전 일원 (염전 구역 참조; 특정 진입점·촬영 지점 미확인)",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -22766,7 +24169,16 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "주간조선 — 신안 염전 이미지",
       "photoMatchStatus": "기존 사진 참고 후보 · 재확인 필요",
       "imageRightsStatus": "not-checked",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "태평염전 운영사 공식 홈페이지 · 사업장 안내",
+          "url": "https://www.taepyungsalt.com/company/business_place"
+        },
+        {
+          "title": "태평염전 운영사 공식 홈페이지 · 염전 소개",
+          "url": "https://www.taepyungsalt.com/brand-story/taepyeung-salt-farm/"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "24–35mm 공간·환경 기준 컷",
@@ -22810,7 +24222,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "v5.32 기존 장소 데이터",
       "sourceId": "L-036",
-      "addressStatus": "정확 주소/진입점 현장 확인 필요",
+      "addressStatus": "운영사 공식자료로 시설·사업장 범위 확인 · 염전 구역의 정확한 진입점은 미확인",
       "photoHold": false,
       "searchTerms": [
         "증도 염전 주변",
@@ -22819,11 +24231,12 @@ window.FRAME_ATLAS_DATA = {
         "고독·광활함",
         "환경인물",
         "에디토리얼",
-        "산업텍스처"
+        "산업텍스처",
+        "전남 신안군 증도면 태평염전 일원 (염전 구역 참조; 특정 진입점·촬영 지점 미확인)"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 180,
-      "mapQuery": "전남 신안 증도 염전 주변",
+      "mapQuery": "증도 염전 주변 전남 신안군 증도면 태평염전 일원 (염전 구역 참조; 특정 진입점·촬영 지점 미확인)",
       "editorialReferenceIds": [
         "vogue-korea-armani-west-sea-island-2026",
         "zimmermann-madeira-coast-ss24"
@@ -22851,7 +24264,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "중간",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "verifiedAddressSourceUrl": "https://www.taepyungsalt.com/company/business_place",
+      "regionCode": "JEONNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-181",
@@ -22904,7 +24324,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "https://www.suncheon.go.kr/",
-      "mapSearchQuery": "전남 순천 청춘창고",
+      "mapSearchQuery": "청춘창고 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "옛 창고의 구조와 청년문화 공간 성격을 활용하는 촬영 후보. 운영행사와 대관 여부 확인.",
       "parking": "장비차량 포함 주차·하차 동선 사전 확인",
@@ -22973,11 +24393,12 @@ window.FRAME_ATLAS_DATA = {
         "벽돌",
         "창고",
         "목재",
-        "철골"
+        "철골",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "순천시/지역문화공간 정보 확인",
       "catalogNumber": 181,
-      "mapQuery": "전남 순천 청춘창고",
+      "mapQuery": "청춘창고 정확 주소/진입점 현장 확인 필요",
       "editorialReferenceIds": [
         "marieclaire-surreal-seoul-2023",
         "lofficiel-monaco-structured-elegance-2025"
@@ -23006,7 +24427,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEONNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-182",
@@ -23046,7 +24474,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "",
-      "mapSearchQuery": "전남 담양 담빛예술창고",
+      "mapSearchQuery": "담빛예술창고 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -23107,11 +24535,12 @@ window.FRAME_ATLAS_DATA = {
         "옛 창고·문화공간",
         "산업적·빈티지·벽돌·서정",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "신규 후보 — 최신 웹/현장 검증 전",
       "catalogNumber": 182,
-      "mapQuery": "전남 담양 담빛예술창고",
+      "mapQuery": "담빛예술창고 정확 주소/진입점 현장 확인 필요",
       "editorialReferenceIds": [
         "vogue-korea-old-garage-2026",
         "blueprint-industrial-gown"
@@ -23137,7 +24566,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "both",
       "indoorOutdoorConfidence": "중간",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEONNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-183",
@@ -23175,7 +24611,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "",
-      "mapSearchQuery": "전남 담양 해동문화예술촌",
+      "mapSearchQuery": "해동문화예술촌 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -23236,11 +24672,12 @@ window.FRAME_ATLAS_DATA = {
         "옛 주조장·근대건축 재생",
         "레트로·산업적·예술·시간감",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "신규 후보 — 최신 웹/현장 검증 전",
       "catalogNumber": 183,
-      "mapQuery": "전남 담양 해동문화예술촌",
+      "mapQuery": "해동문화예술촌 정확 주소/진입점 현장 확인 필요",
       "editorialReferenceIds": [
         "marieclaire-surreal-seoul-2023",
         "lofficiel-monaco-structured-elegance-2025"
@@ -23266,7 +24703,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEONNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-184",
@@ -23303,8 +24747,8 @@ window.FRAME_ATLAS_DATA = {
       ],
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "전남 장흥 장흥교도소 촬영장",
+      "officialUrl": "https://www.jangheung.go.kr",
+      "mapSearchQuery": "장흥교도소 촬영장 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -23314,7 +24758,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "엑셀 직접 이미지 URL 또는 개별 이미지 검색 결과",
       "photoMatchStatus": "장소명·출처 페이지 기준 대표사진 후보 연결 · 현장 일치/URL 작동 재확인 필요",
       "imageRightsStatus": "출처 기록 완료 · 재사용 권한 미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "장흥군 공식 홈페이지(시설 직접 안내 페이지 추가 확인 필요)",
+          "url": "https://www.jangheung.go.kr"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "35mm",
@@ -23360,11 +24809,12 @@ window.FRAME_ATLAS_DATA = {
         "교도소·촬영장",
         "어둡고 긴장감",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 184,
-      "mapQuery": "전남 장흥 장흥교도소 촬영장",
+      "mapQuery": "장흥교도소 촬영장 정확 주소/진입점 현장 확인 필요",
       "coverImage": "https://news.nateimg.co.kr/orgImg/jo/2023/11/12/7cf985ad-c4d9-4237-b793-f8756dcd3693.jpg",
       "selectedCoverImage": "https://news.nateimg.co.kr/orgImg/jo/2023/11/12/7cf985ad-c4d9-4237-b793-f8756dcd3693.jpg",
       "selectedCoverTitle": "장흥교도소 촬영장 내부",
@@ -23409,7 +24859,21 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "중간",
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "relatedSources": [
+        {
+          "title": "연합뉴스 · 옛 장흥교도소의 문화예술복합공간 재생 기사(2차 자료)",
+          "url": "https://www.yna.co.kr/view/AKR20250630108500054",
+          "note": "빠삐용Zip 관련 기사; 공식 대관·촬영 담당자/주소 확인은 별도 필요"
+        }
+      ],
+      "regionCode": "JEONNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-186",
@@ -23459,7 +24923,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "https://www.pohang.go.kr/",
-      "mapSearchQuery": "경북 포항시 남구 구룡포읍 구룡포 근대문화역사거리 외곽 골목",
+      "mapSearchQuery": "구룡포 근대문화역사거리 외곽 골목 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "L-006과 중복 동선 여부 및 촬영허가 확인",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -23525,11 +24989,12 @@ window.FRAME_ATLAS_DATA = {
         "담장",
         "바다 조망",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "장소 후보 등록—최신 운영 및 상업촬영 조건 미확인",
       "catalogNumber": 186,
-      "mapQuery": "경북 포항시 남구 구룡포읍 구룡포 근대문화역사거리 외곽 골목",
+      "mapQuery": "구룡포 근대문화역사거리 외곽 골목 정확 주소/진입점 현장 확인 필요",
       "coverImage": "https://cdn.ancnews.kr/news/photo/202410/17968_19813_124.jpg",
       "selectedCoverImage": "https://cdn.ancnews.kr/news/photo/202410/17968_19813_124.jpg",
       "selectedCoverTitle": "구룡포 근대문화역사거리",
@@ -23580,7 +25045,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-187",
@@ -23615,10 +25087,10 @@ window.FRAME_ATLAS_DATA = {
         "확인 필요",
         "사유공간 및 시설 확인"
       ],
-      "address": "정확 주소/진입점 현장 확인 필요",
+      "address": "경상북도 포항시 남구 구룡포읍 호미로 277 (근대역사 구역 안내 주소; 운영·촬영 지점 재확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "경북 포항 구룡포 근대역사관 일대",
+      "officialUrl": "https://access.visitkorea.or.kr/ms/detail.do?cotId=46ceaebd-eb9b-45f5-ac52-495942b89958",
+      "mapSearchQuery": "구룡포 근대역사관 일대 경상북도 포항시 남구 구룡포읍 호미로 277 (근대역사 구역 안내 주소; 운영·촬영 지점 재확인)",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -23628,7 +25100,16 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "호텔701 관광 안내 사진",
       "photoMatchStatus": "구룡포 근대역사관 입구가 보이는 장소 일치 사진 후보 · 외부 로딩/이용조건 추가 확인 필요",
       "imageRightsStatus": "원문 출처 기록 · 외부 이미지 이용조건 별도 확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "한국관광공사 공식 관광정보 · 구룡포 근대역사 구역",
+          "url": "https://access.visitkorea.or.kr/ms/detail.do?cotId=46ceaebd-eb9b-45f5-ac52-495942b89958"
+        },
+        {
+          "title": "포항시 공식 관광 안내 · 구룡포 근대역사 구역",
+          "url": "https://pohang.go.kr/phtour/wmap/tourInformation/view.do?tour_info_idx=347"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "24–35mm 골목 / 50mm 환경 인물 / 85mm 건축 디테일"
@@ -23669,7 +25150,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "v5.32 기존 장소 데이터",
       "sourceId": "L-006",
-      "addressStatus": "정확 주소/진입점 현장 확인 필요",
+      "addressStatus": "공식 관광 안내 주소 참고 · 최신 보수/운영 공지 및 정확한 촬영점 재확인 필요",
       "photoHold": false,
       "searchTerms": [
         "구룡포 근대역사관 일대",
@@ -23677,11 +25158,12 @@ window.FRAME_ATLAS_DATA = {
         "근대주택·골목",
         "레트로·역사",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "경상북도 포항시 남구 구룡포읍 호미로 277 (근대역사 구역 안내 주소; 운영·촬영 지점 재확인)"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요 | v12.9 1차 에디토리얼 검수: 옛 주거 골목과 항구의 깊이에 맞춰 시간의 흔적·레이어·반사 참고로 재선정.",
       "catalogNumber": 187,
-      "mapQuery": "경북 포항 구룡포 근대역사관 일대",
+      "mapQuery": "구룡포 근대역사관 일대 경상북도 포항시 남구 구룡포읍 호미로 277 (근대역사 구역 안내 주소; 운영·촬영 지점 재확인)",
       "coverImage": "https://www.hotel701-grp.com/html/img/sub1_tour_img5.jpg",
       "selectedCoverImage": "https://www.hotel701-grp.com/html/img/sub1_tour_img5.jpg",
       "selectedCoverTitle": "구룡포 근대역사관 입구 사진 후보",
@@ -23727,7 +25209,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialVisualSearchKo": "구룡포 근대역사관 일대 현대 주택 건축가 주택 패션 에디토리얼 인물 패션 화보",
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
-      "indoorOutdoorConfidence": "높음"
+      "indoorOutdoorConfidence": "높음",
+      "verifiedAddressSourceUrl": "https://access.visitkorea.or.kr/ms/detail.do?cotId=46ceaebd-eb9b-45f5-ac52-495942b89958",
+      "regionCode": "GYEONGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-188",
@@ -23762,10 +25251,10 @@ window.FRAME_ATLAS_DATA = {
         "확인 필요",
         "시설 촬영조건 확인"
       ],
-      "address": "정확 주소/진입점 현장 확인 필요",
+      "address": "경상북도 청송군 주왕산면 주왕산로 494 (청송한옥민예촌)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "경북 청송 청송한옥민예촌",
+      "officialUrl": "https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=1bac4ae3-cf3b-4807-abef-0a0315128e33",
+      "mapSearchQuery": "청송한옥민예촌 경상북도 청송군 주왕산면 주왕산로 494 (청송한옥민예촌)",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -23775,7 +25264,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "엑셀 직접 이미지 URL 또는 개별 이미지 검색 결과",
       "photoMatchStatus": "장소명·출처 페이지 기준 대표사진 후보 연결 · 현장 일치/URL 작동 재확인 필요",
       "imageRightsStatus": "출처 기록 완료 · 재사용 권한 미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "한국관광공사 공식 관광정보 · 청송한옥민예촌",
+          "url": "https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=1bac4ae3-cf3b-4807-abef-0a0315128e33"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "35mm",
@@ -23813,7 +25307,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "v5.32 기존 장소 데이터",
       "sourceId": "L-030",
-      "addressStatus": "정확 주소/진입점 현장 확인 필요",
+      "addressStatus": "한국관광공사 공식 관광정보 주소 · 촬영 구역/대관은 별도 확인",
       "photoHold": false,
       "searchTerms": [
         "청송한옥민예촌",
@@ -23821,11 +25315,12 @@ window.FRAME_ATLAS_DATA = {
         "고택·한옥",
         "고요·전통·서정",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "경상북도 청송군 주왕산면 주왕산로 494 (청송한옥민예촌)"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 188,
-      "mapQuery": "경북 청송 청송한옥민예촌",
+      "mapQuery": "청송한옥민예촌 경상북도 청송군 주왕산면 주왕산로 494 (청송한옥민예촌)",
       "coverImage": "https://cdn.welfarehello.com/naver-blog/production/gocheongsong/2023-10/223245120609/gocheongsong_223245120609_14.jpg?f=webp&q=80&w=800",
       "selectedCoverImage": "https://cdn.welfarehello.com/naver-blog/production/gocheongsong/2023-10/223245120609/gocheongsong_223245120609_14.jpg?f=webp&q=80&w=800",
       "selectedCoverTitle": "청송한옥민예촌",
@@ -23870,7 +25365,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=1bac4ae3-cf3b-4807-abef-0a0315128e33",
+      "regionCode": "GYEONGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-189",
@@ -23908,7 +25410,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "",
-      "mapSearchQuery": "경북 문경 가은오픈세트장",
+      "mapSearchQuery": "가은오픈세트장 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -23969,11 +25471,12 @@ window.FRAME_ATLAS_DATA = {
         "영화세트",
         "시대극·영화적",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 189,
-      "mapQuery": "경북 문경 가은오픈세트장",
+      "mapQuery": "가은오픈세트장 정확 주소/진입점 현장 확인 필요",
       "coverImage": "https://cdn.welfarehello.com/naver-blog/production/mungyeongsi/2023-10/223245914052/mungyeongsi_223245914052_10.jpg?f=webp&q=80&w=800",
       "selectedCoverImage": "https://cdn.welfarehello.com/naver-blog/production/mungyeongsi/2023-10/223245914052/mungyeongsi_223245914052_10.jpg?f=webp&q=80&w=800",
       "selectedCoverTitle": "가은오픈세트장 전통 거리",
@@ -24018,7 +25521,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGBUK",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-190",
@@ -24055,8 +25565,8 @@ window.FRAME_ATLAS_DATA = {
       ],
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "경남 창원 진해 근대항만·산업공간 후보군",
+      "officialUrl": "https://www.changwon.go.kr/tour/index.do?menuCode=001_003000000000&page.pageNo=1&search.searchKeyword=%EA%B3%B5%EC%9B%90&tourProgramNo=85",
+      "mapSearchQuery": "진해 근대항만·산업공간 후보군 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -24066,7 +25576,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "노컷뉴스 · 진해 명동 마리나",
       "photoMatchStatus": "진해 명동 마리나의 계류 선박과 수변이 보이는 사진. 진해 근대 산업시설 자체의 사진은 아니므로 상세 설명에서 마리나 수변 후보로 구분.",
       "imageRightsStatus": "원문 출처를 기록했습니다. 사진 재사용·상업적 이용 권한은 별도 확인이 필요합니다.",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "창원시 공식 관광정보 · 진해 해안·항만 관광 안내",
+          "url": "https://www.changwon.go.kr/tour/index.do?menuCode=001_003000000000&page.pageNo=1&search.searchKeyword=%EA%B3%B5%EC%9B%90&tourProgramNo=85"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "35mm",
@@ -24112,11 +25627,12 @@ window.FRAME_ATLAS_DATA = {
         "항만·근대건축",
         "시간감·항구·도시적·레트로",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "신규 후보 — 최신 웹/현장 검증 전",
       "catalogNumber": 190,
-      "mapQuery": "경남 창원 진해 근대항만·산업공간 후보군",
+      "mapQuery": "진해 근대항만·산업공간 후보군 정확 주소/진입점 현장 확인 필요",
       "coverImage": "https://file2.nocutnews.co.kr/newsroom/image/2025/03/11/202503111102598591_0.jpg",
       "selectedCoverImage": "https://file2.nocutnews.co.kr/newsroom/image/2025/03/11/202503111102598591_0.jpg",
       "selectedCoverTitle": "진해 명동 마리나 항만과 수평선 전경 후보",
@@ -24161,7 +25677,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "GYEONGNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-191",
@@ -24196,10 +25719,10 @@ window.FRAME_ATLAS_DATA = {
         "확인 필요",
         "주민 생활공간 배려"
       ],
-      "address": "정확 주소/진입점 현장 확인 필요",
+      "address": "경상남도 밀양시 옛 읍성·구도심 골목 일대 (구역 참고; 정확한 촬영 지점 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "경남 밀양 밀양 옛 읍성·구도심 골목",
+      "officialUrl": "https://www.miryang.go.kr/tur/index.do?mnNo=60201000000",
+      "mapSearchQuery": "밀양 옛 읍성·구도심 골목 경상남도 밀양시 옛 읍성·구도심 골목 일대 (구역 참고; 정확한 촬영 지점 미확인)",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -24209,7 +25732,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "",
       "photoMatchStatus": "참고 후보 · 장소 일치 재확인 필요",
       "imageRightsStatus": "not-applicable",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "밀양시 공식 관광정보 · 관광안내소/관광정보",
+          "url": "https://www.miryang.go.kr/tur/index.do?mnNo=60201000000"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "24–35mm 거리 원근 / 50mm 환경 인물 / 85mm 디테일"
@@ -24250,7 +25778,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "v5.32 기존 장소 데이터",
       "sourceId": "L-037",
-      "addressStatus": "정확 주소/진입점 현장 확인 필요",
+      "addressStatus": "구역 참고 주소 · 옛 읍성의 정확한 유적 경계/촬영점 추가 확인 필요",
       "photoHold": false,
       "searchTerms": [
         "밀양 옛 읍성·구도심 골목",
@@ -24258,11 +25786,12 @@ window.FRAME_ATLAS_DATA = {
         "구도심",
         "고요·낡음",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "경상남도 밀양시 옛 읍성·구도심 골목 일대 (구역 참고; 정확한 촬영 지점 미확인)"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요 | v12.9 1차 에디토리얼 검수: 구도심의 오래된 외벽과 현재 생활의 접점을 중심으로 재연결.",
       "catalogNumber": 191,
-      "mapQuery": "경남 밀양 밀양 옛 읍성·구도심 골목",
+      "mapQuery": "밀양 옛 읍성·구도심 골목 경상남도 밀양시 옛 읍성·구도심 골목 일대 (구역 참고; 정확한 촬영 지점 미확인)",
       "coverImage": "https://cdn.welfarehello.com/naver-blog/production/miryangsi/2025-02/223765016402/miryangsi_223765016402_0.jpg?f=webp&q=80&w=800",
       "selectedCoverImage": "https://cdn.welfarehello.com/naver-blog/production/miryangsi/2025-02/223765016402/miryangsi_223765016402_0.jpg?f=webp&q=80&w=800",
       "selectedCoverTitle": "밀양 구도심 한옥 골목 참고 사진 후보",
@@ -24306,7 +25835,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialVisualSearchKo": "밀양 옛 읍성·구도심 골목 구도심 골목 시장 오래된 간판 패션 에디토리얼 패션 화보",
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
-      "indoorOutdoorConfidence": "높음"
+      "indoorOutdoorConfidence": "높음",
+      "verifiedAddressSourceUrl": "https://www.miryang.go.kr/tur/index.do?mnNo=60201000000",
+      "regionCode": "GYEONGNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-192",
@@ -24341,10 +25877,10 @@ window.FRAME_ATLAS_DATA = {
         "확인 필요",
         "정확한 포인트·사유지 확인"
       ],
-      "address": "정확 주소/진입점 현장 확인 필요",
+      "address": "경상남도 통영시 도산면 해안마을 일대 (마을·해안 진입점 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "경남 통영 도산면 해안마을 일대",
+      "officialUrl": "https://www.tongyeong.go.kr/tour.web",
+      "mapSearchQuery": "도산면 해안마을 일대 경상남도 통영시 도산면 해안마을 일대 (마을·해안 진입점 미확인)",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -24354,7 +25890,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "",
       "photoMatchStatus": "참고 후보 · 장소 일치 재확인 필요",
       "imageRightsStatus": "not-applicable",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "통영시 공식 관광 홈페이지(도산면 세부 후보지 추가 특정 필요)",
+          "url": "https://www.tongyeong.go.kr/tour.web"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "24–35mm 공간·환경 기준 컷",
@@ -24398,7 +25939,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "v5.32 기존 장소 데이터",
       "sourceId": "L-038",
-      "addressStatus": "정확 주소/진입점 현장 확인 필요",
+      "addressStatus": "구역 참고 주소 · 특정 마을/해안 진입점과 촬영 위치 추가 확인 필요",
       "photoHold": false,
       "searchTerms": [
         "도산면 해안마을 일대",
@@ -24406,11 +25947,12 @@ window.FRAME_ATLAS_DATA = {
         "어촌",
         "고독·바다·생활감",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "경상남도 통영시 도산면 해안마을 일대 (마을·해안 진입점 미확인)"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 192,
-      "mapQuery": "경남 통영 도산면 해안마을 일대",
+      "mapQuery": "도산면 해안마을 일대 경상남도 통영시 도산면 해안마을 일대 (마을·해안 진입점 미확인)",
       "coverImage": "https://tong.visitkorea.or.kr/cms/resource/40/3555240_image2_1.jpg",
       "selectedCoverImage": "https://tong.visitkorea.or.kr/cms/resource/40/3555240_image2_1.jpg",
       "selectedCoverTitle": "통영 도산면 인근 해안마을 사진 후보 · 정확한 지점 확인 필요",
@@ -24455,7 +25997,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialVisualSearchKo": "도산면 해안마을 일대 구도심 골목 시장 오래된 간판 패션 에디토리얼 패션 화보",
       "editorialCategoryConfidence": "중간",
       "indoorOutdoor": "outdoor",
-      "indoorOutdoorConfidence": "높음"
+      "indoorOutdoorConfidence": "높음",
+      "verifiedAddressSourceUrl": "https://www.tongyeong.go.kr/tour.web",
+      "regionCode": "GYEONGNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-193",
@@ -24490,10 +26039,10 @@ window.FRAME_ATLAS_DATA = {
         "확인 필요",
         "현재 개발·공사 여부 확인"
       ],
-      "address": "정확 주소/진입점 현장 확인 필요",
+      "address": "경상남도 진주시 강남동 철도문화공원·옛 진주역 주변 (세부 촬영점 미확인)",
       "phone": "",
-      "officialUrl": "",
-      "mapSearchQuery": "경남 진주 옛 진주역 주변",
+      "officialUrl": "https://www.jinju.go.kr/03630.web?xposition=35.18013045123264&yposition=128.1077555797863",
+      "mapSearchQuery": "옛 진주역 주변 경상남도 진주시 강남동 철도문화공원·옛 진주역 주변 (세부 촬영점 미확인)",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -24503,7 +26052,12 @@ window.FRAME_ATLAS_DATA = {
       "coverImageSource": "https://ko.wikipedia.org/wiki/%EC%A7%84%EC%A3%BC%EC%97%AD",
       "photoMatchStatus": "장소명·출처 페이지 기준 대표사진 후보 연결 · 현장 일치/URL 작동 재확인 필요",
       "imageRightsStatus": "출처 기록 완료 · 재사용 권한 미확인",
-      "officialSources": [],
+      "officialSources": [
+        {
+          "title": "진주시 공식 위치기반 관광정보 · 철도문화공원/옛 진주역",
+          "url": "https://www.jinju.go.kr/03630.web?xposition=35.18013045123264&yposition=128.1077555797863"
+        }
+      ],
       "aliases": [],
       "recommendedLenses": [
         "35mm",
@@ -24541,7 +26095,7 @@ window.FRAME_ATLAS_DATA = {
       "checklistGroups": {},
       "dataSource": "v5.32 기존 장소 데이터",
       "sourceId": "L-039",
-      "addressStatus": "정확 주소/진입점 현장 확인 필요",
+      "addressStatus": "진주시 공식 위치기반 관광정보로 권역 확인 · 세부 촬영점/출입구 미확인",
       "photoHold": false,
       "searchTerms": [
         "옛 진주역 주변",
@@ -24549,11 +26103,12 @@ window.FRAME_ATLAS_DATA = {
         "철도·구도심",
         "산업적·도시적·레트로",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "경상남도 진주시 강남동 철도문화공원·옛 진주역 주변 (세부 촬영점 미확인)"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 193,
-      "mapQuery": "경남 진주 옛 진주역 주변",
+      "mapQuery": "옛 진주역 주변 경상남도 진주시 강남동 철도문화공원·옛 진주역 주변 (세부 촬영점 미확인)",
       "coverImage": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Jinju_Station.JPG",
       "selectedCoverImage": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Jinju_Station.JPG",
       "selectedCoverTitle": "옛 진주역 주변 산업유산 · 정면 파사드",
@@ -24613,7 +26168,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
       "userSelectedCover": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Jinju_Station.JPG",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "verifiedAddressSourceUrl": "https://www.jinju.go.kr/03630.web?xposition=35.18013045123264&yposition=128.1077555797863",
+      "regionCode": "GYEONGNAM",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-195",
@@ -24666,7 +26228,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "공식 홈페이지 기준 위치 확인",
       "phone": "",
       "officialUrl": "https://jmoa.jeju.go.kr/",
-      "mapSearchQuery": "제주 제주시 제주도립미술관",
+      "mapSearchQuery": "제주도립미술관 공식 홈페이지 기준 위치 확인",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "사전 허가 확인",
       "parking": "장비차량 하차 및 주차 위치 확인",
@@ -24735,11 +26297,12 @@ window.FRAME_ATLAS_DATA = {
         "밝음·정제됨·제주적",
         "밝음",
         "정제됨",
-        "제주적"
+        "제주적",
+        "공식 홈페이지 기준 위치 확인"
       ],
       "notes": "2026년 공식 운영자료 및 웹 이미지 교차 확인",
       "catalogNumber": 195,
-      "mapQuery": "제주 제주시 제주도립미술관",
+      "mapQuery": "제주도립미술관 공식 홈페이지 기준 위치 확인",
       "editorialReferenceIds": [
         "gabriela-hearst-cr24-white-cube-editorial",
         "vogue-korea-hermes-designers-sculpture-gallery"
@@ -24768,7 +26331,14 @@ window.FRAME_ATLAS_DATA = {
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
       "imageCandidates": [],
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEJU",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-197",
@@ -24806,7 +26376,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "정확 주소/진입점 현장 확인 필요",
       "phone": "",
       "officialUrl": "",
-      "mapSearchQuery": "제주 성읍민속마을 외곽 돌담길",
+      "mapSearchQuery": "성읍민속마을 외곽 돌담길 정확 주소/진입점 현장 확인 필요",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "확인 필요",
       "parking": "스태프 차량·장비차량 분리 주차 가능 여부 확인",
@@ -24867,11 +26437,12 @@ window.FRAME_ATLAS_DATA = {
         "돌담·농촌",
         "고요·제주적",
         "환경인물",
-        "에디토리얼"
+        "에디토리얼",
+        "정확 주소/진입점 현장 확인 필요"
       ],
       "notes": "기존 1차 발굴 DB — 최신 현장조건 확인 필요",
       "catalogNumber": 197,
-      "mapQuery": "제주 성읍민속마을 외곽 돌담길",
+      "mapQuery": "성읍민속마을 외곽 돌담길 정확 주소/진입점 현장 확인 필요",
       "coverImage": "https://api.cdn.visitjeju.net/photomng/imgpath/202409/06/43aa9b3d-8117-486b-a6c5-91b830fd466a.webp",
       "selectedCoverImage": "https://api.cdn.visitjeju.net/photomng/imgpath/202409/06/43aa9b3d-8117-486b-a6c5-91b830fd466a.webp",
       "selectedCoverTitle": "성읍민속마을 초가와 돌담길",
@@ -24916,7 +26487,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "JEJU",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "approximate-or-needs-review",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-198",
@@ -24972,7 +26550,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "공식 안내 위치: 인천 부평구 산곡동 449 일원. 정밀 좌표 미검증 — 개방 B구역과 출입 게이트를 지도에서 확인.",
       "phone": "",
       "officialUrl": "https://www.incheon.go.kr/campmarket/CA070101",
-      "mapSearchQuery": "인천 캠프마켓 B구역 인천 부평구 산곡동 449",
+      "mapSearchQuery": "부평 캠프마켓 개방공간 B구역 공식 안내 위치: 인천 부평구 산곡동 449 일원. 정밀 좌표 미검증 — 개방 B구역과 출입 게이트를 지도에서 확인.",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "공간 사용 허가 및 상업촬영 적용 여부 확인 필요",
       "parking": "인근 공영주차장 안내를 확인하고 장비 하차와 주차 분리",
@@ -25038,11 +26616,12 @@ window.FRAME_ATLAS_DATA = {
         "대형 잔디광장",
         "옛 기지 흔적",
         "역사 공간",
-        "넓은 단체 구도"
+        "넓은 단체 구도",
+        "공식 안내 위치: 인천 부평구 산곡동 449 일원. 정밀 좌표 미검증 — 개방 B구역과 출입 게이트를 지도에서 확인."
       ],
       "notes": "개방구역 주소 확인; 상업촬영 허가·장비 반입 미확인",
       "catalogNumber": 198,
-      "mapQuery": "인천 캠프마켓 B구역 인천 부평구 산곡동 449",
+      "mapQuery": "부평 캠프마켓 개방공간 B구역 공식 안내 위치: 인천 부평구 산곡동 449 일원. 정밀 좌표 미검증 — 개방 B구역과 출입 게이트를 지도에서 확인.",
       "coverImage": "https://img.sbs.co.kr/newimg/news/20231220/201872572.jpg",
       "selectedCoverImage": "https://img.sbs.co.kr/newimg/news/20231220/201872572.jpg",
       "selectedCoverTitle": "부평 캠프마켓 반환부지 항공사진 후보 (SBS, 2023)",
@@ -25087,7 +26666,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "중간",
       "indoorOutdoor": "outdoor",
       "indoorOutdoorConfidence": "높음",
-      "editorialReviewStatus": "taxonomy-category-matched"
+      "editorialReviewStatus": "taxonomy-category-matched",
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-199",
@@ -25139,7 +26725,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "공식 홈페이지 기준 위치 확인",
       "phone": "",
       "officialUrl": "https://www.ifac.or.kr/",
-      "mapSearchQuery": "인천 중구 한국근대문학관",
+      "mapSearchQuery": "한국근대문학관 공식 홈페이지 기준 위치 확인",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "사전 허가 확인",
       "parking": "장비차량 하차 및 주차 위치 확인",
@@ -25204,11 +26790,12 @@ window.FRAME_ATLAS_DATA = {
         "문학적·빈티지·어두움",
         "문학적",
         "빈티지",
-        "어두움"
+        "어두움",
+        "공식 홈페이지 기준 위치 확인"
       ],
       "notes": "2026년 공식 운영자료 및 웹 이미지 교차 확인 | v12.9 1차 에디토리얼 검수: 근대 벽돌 건축과 문학 전시의 정적인 여백에 맞게 선택. 브루탈리즘 단정은 제외.",
       "catalogNumber": 199,
-      "mapQuery": "인천 중구 한국근대문학관",
+      "mapQuery": "한국근대문학관 공식 홈페이지 기준 위치 확인",
       "coverImage": "https://archivenew.vop.co.kr/images/1af01a5f49044b6d7fa3b43a36520dad/2013-09/25070839_NISI20130925_0008716647.jpg",
       "selectedCoverImage": "https://archivenew.vop.co.kr/images/1af01a5f49044b6d7fa3b43a36520dad/2013-09/25070839_NISI20130925_0008716647.jpg",
       "selectedCoverTitle": "한국근대문학관 외관",
@@ -25254,7 +26841,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialVisualSearchKo": "한국근대문학관 대형 서가 책장 아카이브 패션 에디토리얼 패션 화보",
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "both",
-      "indoorOutdoorConfidence": "중간"
+      "indoorOutdoorConfidence": "중간",
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     },
     {
       "id": "fa3-200",
@@ -25303,7 +26897,7 @@ window.FRAME_ATLAS_DATA = {
       "address": "공식 홈페이지 기준 위치 확인",
       "phone": "",
       "officialUrl": "https://www.incheon.go.kr/tour/",
-      "mapSearchQuery": "인천 중구 인천개항박물관",
+      "mapSearchQuery": "인천개항박물관 공식 홈페이지 기준 위치 확인",
       "openingStatus": "현재 운영·개방 여부 확인 필요",
       "shootingPermission": "사전 허가 확인",
       "parking": "장비차량 하차 및 주차 위치 확인",
@@ -25372,11 +26966,12 @@ window.FRAME_ATLAS_DATA = {
         "고전적·시간감·다큐",
         "고전적",
         "시간감",
-        "다큐"
+        "다큐",
+        "공식 홈페이지 기준 위치 확인"
       ],
       "notes": "2026년 공식 운영자료 및 웹 이미지 교차 확인 | v12.9 1차 에디토리얼 검수: 역사 박물관이므로 기념·전시 맥락을 보존하며 근대 건축의 외관·창·빛을 참고.",
       "catalogNumber": 200,
-      "mapQuery": "인천 중구 인천개항박물관",
+      "mapQuery": "인천개항박물관 공식 홈페이지 기준 위치 확인",
       "editorialReferenceIds": [
         "w-mag-library",
         "vogue-korea-adieu-art-2020"
@@ -25403,8 +26998,14 @@ window.FRAME_ATLAS_DATA = {
       "editorialCategoryConfidence": "높음",
       "indoorOutdoor": "indoor",
       "indoorOutdoorConfidence": "높음",
-      "imageCandidates": []
+      "imageCandidates": [],
+      "regionCode": "INCHEON",
+      "regionCodeSource": "normalized-from-current-region-v13.14",
+      "regionCodeReconciledAt": "2026-10-26",
+      "editorialSuitabilityAudit": "category-level suggestion only · visual fit not independently verified",
+      "addressVerificationStatus": "address-string-not-source-verified",
+      "verifiedAddressSourceUrl": "",
+      "addressSourceReviewedAt": ""
     }
-  ],
-  "imageLibraryPath": "assets/image-library.js"
+  ]
 };

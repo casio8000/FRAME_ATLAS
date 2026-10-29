@@ -1,0 +1,39 @@
+{
+  "version": "v13.29",
+  "testType": "Node VM mocked TMAP URL/control-flow tests; not iPhone app launch",
+  "testedAt": "2026-10-29",
+  "tests": [
+    {
+      "id": "registered-coordinate-route-params",
+      "status": "PASS",
+      "detail": "tmap://route?rGoName=%EC%88%98%EC%9B%90%EC%BB%A8%EB%B2%A4%EC%85%98%EC%84%BC%ED%84%B0+%EC%BB%A8%EB%B2%A4%EC%85%98%ED%99%80&rGoX=127.0286&rGoY=37.2636"
+    },
+    {
+      "id": "missing-coordinate-geocode-then-route",
+      "status": "PASS",
+      "detail": "tmap://route?rGoName=%EC%88%98%EC%9B%90%EC%BB%A8%EB%B2%A4%EC%85%98%EC%84%BC%ED%84%B0+%EC%BB%A8%EB%B2%A4%EC%85%98%ED%99%80&rGoX=127.0286&rGoY=37.2636"
+    },
+    {
+      "id": "no-coordinate-no-homepage-fallback",
+      "status": "PASS",
+      "detail": "{\"opens\":[{\"url\":\"about:blank\",\"target\":\"_blank\"}],\"closed\":true,\"toasts\":[\"목적지 좌표를 확인한 뒤 티맵 경로를 요청합니다.\",\"목적지 좌표를 찾지 못했습니다. 티맵 홈페이지 대신 안내만 표시했습니다. 네이버 지도에서 정확한 장소·진입점을 확인해 주세요.\"]}"
+    },
+    {
+      "id": "desktop-no-tmap-homepage",
+      "status": "PASS",
+      "detail": "{\"opens\":[],\"toasts\":[\"티맵은 모바일 앱 길찾기 방식입니다. PC에서는 티맵 홈페이지를 열지 않습니다. PC에서는 네이버 지도, iPhone에서는 티맵 버튼을 이용해 주세요.\"]}"
+    },
+    {
+      "id": "no-obsolete-tmap-scheme-or-params",
+      "status": "PASS",
+      "detail": "{\"bad\":false,\"gotOpenMap\":true}"
+    }
+  ],
+  "passed": 5,
+  "failed": 0,
+  "limitations": [
+    "Actual iPhone TMAP app launch and route initiation cannot be tested in this isolated environment.",
+    "Coordinate lookup uses the existing OpenStreetMap/Nominatim call in the app; correctness of entrance-level location must be checked on device.",
+    "On coordinate lookup failure, no route URI/homepage is opened; the user is told to verify place/address in Naver Maps."
+  ]
+}

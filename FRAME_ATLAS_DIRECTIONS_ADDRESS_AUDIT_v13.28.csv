@@ -1,0 +1,422 @@
+﻿id,name,region,address,addressVerificationStatus,approximate,directionDestination,directionStatus,hasCoordinates
+fa3-001,문화비축기지,서울,서울특별시 마포구 증산로 87,address-string-not-source-verified,False,"문화비축기지, 서울특별시 마포구 증산로 87",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-002,선유도공원,서울,서울특별시 영등포구 선유로 343,address-string-not-source-verified,False,"선유도공원, 서울특별시 영등포구 선유로 343",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-003,동대문디자인플라자(DDP),서울,서울특별시 중구 을지로 281,address-string-not-source-verified,False,"동대문디자인플라자(DDP), 서울특별시 중구 을지로 281",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-004,서울시립미술관 SeMA 벙커,서울,서울특별시 영등포구 여의대로 지하 76,address-string-not-source-verified,False,"서울시립미술관 SeMA 벙커, 서울특별시 영등포구 여의대로 지하 76",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-005,세운상가 일대,서울,서울특별시 종로구 청계천로 159 (세운상가 대표 위치; 실제 촬영 구역·출입구 별도 확인),address-string-not-source-verified,True,"세운상가 일대, 서울 종로구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-006,문래창작촌,서울,서울특별시 영등포구 도림로128가길 13-8 (문래창작촌 안내 위치; 개별 골목 촬영점 미확인),approximate-or-needs-review,True,"문래창작촌, 서울 영등포구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,True
+fa3-007,성수동 옛 공장 골목,서울,서울특별시 성동구 성수동2가 연무장길 일대 (산업 골목 후보 구역; 정확한 지점 미확인),approximate-or-needs-review,True,"성수동 옛 공장 골목, 서울 성동구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-008,문화역서울284,서울,서울특별시 중구 통일로 1,address-string-not-source-verified,False,"문화역서울284, 서울특별시 중구 통일로 1",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-009,서울식물원 온실,서울,서울특별시 강서구 마곡동로 161,address-string-not-source-verified,False,"서울식물원 온실, 서울특별시 강서구 마곡동로 161",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-010,노들섬,서울,서울특별시 용산구 양녕로 445,address-string-not-source-verified,False,"노들섬, 서울특별시 용산구 양녕로 445",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-011,서울공예박물관 일대,서울,서울특별시 종로구 율곡로3길 4,address-string-not-source-verified,False,"서울공예박물관 일대, 서울특별시 종로구 율곡로3길 4",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-012,국립현대미술관 서울관 일대,서울,서울특별시 종로구 삼청로 30,address-string-not-source-verified,False,"국립현대미술관 서울관 일대, 서울특별시 종로구 삼청로 30",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-013,서울시립미술관 남서울미술관 외관,서울,서울특별시 관악구 남부순환로 2076,address-string-not-source-verified,False,"서울시립미술관 남서울미술관 외관, 서울특별시 관악구 남부순환로 2076",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-014,을지로 인쇄·금속 골목,서울,서울특별시 중구 을지로3가~을지로4가 일대 (구역 참조; 개별 골목 촬영점 미확인),approximate-or-needs-review,True,"을지로 인쇄·금속 골목, 서울 중구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-015,경춘선숲길 옛 철길 구간,서울,서울특별시 노원구 공릉동 272-2 (경춘선숲길 공식 안내 위치; 전체 구간의 촬영점 미확인),approximate-or-needs-review,True,"경춘선숲길 옛 철길 구간, 서울 노원구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-016,낙산공원 서울성곽 구간,서울,서울특별시 종로구 낙산길 41 (낙산공원 안내 위치; 성곽 구간 촬영점 미확인),approximate-or-needs-review,True,"낙산공원 서울성곽 구간, 서울 종로구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-017,파주출판도시,경기·수도권,경기도 파주시 회동길 145 (파주출판도시 대표 위치; 개별 촬영 건물 미확인),approximate-or-needs-review,True,"파주출판도시, 경기 파주시",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,True
+fa3-018,미메시스 아트 뮤지엄,경기·수도권,경기도 파주시 문발로 253 (미메시스 아트 뮤지엄),address-string-not-source-verified,False,"미메시스 아트 뮤지엄, 경기도 파주시 문발로 253 (미메시스 아트 뮤지엄)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-019,헤이리 예술마을 건축 구간,경기·수도권,경기도 파주시 탄현면 헤이리마을길 82-105 (마을 안내시설 대표 위치; 개별 건물/게이트 미확인),approximate-or-needs-review,True,"헤이리 예술마을 건축 구간, 경기 파주시",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-020,안양예술공원,경기·수도권,공식 공원 대표 위치만 사용. 정밀 좌표 미검증 — 개별 작품 좌표·주차장·촬영점은 공식 안내 지도와 현장답사로 확정.,address-string-not-source-verified,True,"안양예술공원, 경기",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,True
+fa3-021,포천아트밸리 채석장 전망·수변,경기·수도권,경기도 포천시 신북면 아트밸리로 234,address-string-not-source-verified,False,"포천아트밸리 채석장 전망·수변, 경기도 포천시 신북면 아트밸리로 234",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-022,수원화성 성곽·성문 구간,경기·수도권,경기도 수원시 팔달구 정조로 825 (화성행궁 대표 위치; 선택 성곽·성문 구간은 별도 확인),address-string-not-source-verified,True,"수원화성 성곽·성문 구간, 경기 수원시",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-023,국립현대미술관 과천관 조각공원 일대,경기·수도권,경기도 과천시 광명로 313,address-string-not-source-verified,False,"국립현대미술관 과천관 조각공원 일대, 경기도 과천시 광명로 313",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-024,경기도미술관 외부 공간,경기·수도권,경기도 안산시 단원구 동산로 268 (경기도미술관 외부공간; 실제 촬영 지점 미확인),approximate-or-needs-review,True,"경기도미술관 외부 공간, 경기 안산시",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-025,광명동굴 내부 공간,경기·수도권,경기도 광명시 가학로85번길 142,address-string-not-source-verified,False,"광명동굴 내부 공간, 경기도 광명시 가학로85번길 142",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-026,고양아람누리 건축·광장,경기·수도권,경기도 고양시 일산동구 중앙로 1286,address-string-not-source-verified,False,"고양아람누리 건축·광장, 경기도 고양시 일산동구 중앙로 1286",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-027,스타필드 수원 별마당도서관,경기·수도권,경기도 수원시 장안구 수성로 175,address-string-not-source-verified,False,"스타필드 수원 별마당도서관, 경기도 수원시 장안구 수성로 175",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-028,인천아트플랫폼,인천,인천광역시 제물포구 제물량로218번길 3,address-string-not-source-verified,False,"인천아트플랫폼, 인천광역시 제물포구 제물량로218번길 3",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-029,송도 트라이보울,인천,인천광역시 연수구 인천타워대로 250 (송도동 24-6),address-string-not-source-verified,False,"송도 트라이보울, 인천광역시 연수구 인천타워대로 250 (송도동 24-6)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-030,인천 개항장 근대건축 구간,인천,인천광역시 제물포구 관동1가 개항장 거리 일대,approximate-or-needs-review,True,"인천 개항장 근대건축 구간, 인천",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-031,인천 배다리 헌책방 골목,인천,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"인천 배다리 헌책방 골목, 인천",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-032,소래습지생태공원 염전·풍차 구간,인천,인천광역시 남동구 소래로154번길 77 (공원 대표 주소; 염전·풍차 구간별 촬영점 미확인),approximate-or-needs-review,True,"소래습지생태공원 염전·풍차 구간, 인천 남동구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-033,KIKAI 인더스트리얼 스튜디오,경기·수도권,경기도 파주시 광탄면 일대 · 정확한 주소는 대관 문의 시 확인,approximate-or-needs-review,True,"KIKAI 인더스트리얼 스튜디오, 경기",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-034,F1963,부산,부산광역시 수영구 구락로123번길 20,address-string-not-source-verified,False,"F1963, 부산광역시 수영구 구락로123번길 20",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-035,흰여울문화마을 해안 골목,부산,부산광역시 영도구 흰여울길 일대,approximate-or-needs-review,True,"흰여울문화마을 해안 골목, 부산",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-036,대구예술발전소,대구,대구광역시 중구 달성로22길 31-12,address-string-not-source-verified,False,"대구예술발전소, 대구광역시 중구 달성로22길 31-12",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-037,팔복예술공장,전북,전북특별자치도 전주시 덕진구 구렛들1길 46,address-string-not-source-verified,False,"팔복예술공장, 전북특별자치도 전주시 덕진구 구렛들1길 46",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-038,국립아시아문화전당 건축·외부공간,광주,광주광역시 동구 문화전당로 38,address-string-not-source-verified,False,"국립아시아문화전당 건축·외부공간, 광주광역시 동구 문화전당로 38",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-039,뮤지엄 SAN 건축·수공간,강원,강원특별자치도 원주시 지정면 오크밸리2길 260,address-string-not-source-verified,False,"뮤지엄 SAN 건축·수공간, 강원특별자치도 원주시 지정면 오크밸리2길 260",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-040,방주교회 건축 외관,제주,제주특별자치도 서귀포시 안덕면 산록남로762번길 113,address-string-not-source-verified,False,"방주교회 건축 외관, 제주특별자치도 서귀포시 안덕면 산록남로762번길 113",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-041,장생포문화창고,울산,울산광역시 남구 장생포고래로 110,address-string-not-source-verified,False,"장생포문화창고, 울산광역시 남구 장생포고래로 110",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-042,대전근현대사전시관·옛 충남도청사,대전,대전광역시 중구 중앙로 101,address-string-not-source-verified,False,"대전근현대사전시관·옛 충남도청사, 대전광역시 중구 중앙로 101",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-043,국립세종수목원 사계절전시온실,세종,세종특별자치시 수목원로 136,address-string-not-source-verified,False,"국립세종수목원 사계절전시온실, 세종특별자치시 수목원로 136",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-044,청주 문화제조창,충북,충청북도 청주시 청원구 상당로 314,address-string-not-source-verified,False,"청주 문화제조창, 충청북도 청주시 청원구 상당로 314",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-045,공주 제민천·근대건축 골목,충남,충청남도 공주시 무령로 201 일대,approximate-or-needs-review,True,"공주 제민천·근대건축 골목, 충남",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-046,여수 예술의 섬 장도,전남,전라남도 여수시 웅천동 산 272 일대,approximate-or-needs-review,True,"여수 예술의 섬 장도, 전남",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-047,경주 솔거미술관,경북,경상북도 경주시 경감로 614,address-string-not-source-verified,False,"경주 솔거미술관, 경상북도 경주시 경감로 614",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-048,클레이아크 김해미술관,경남,경상남도 김해시 진례면 진례로 275-51,address-string-not-source-verified,False,"클레이아크 김해미술관, 경상남도 김해시 진례면 진례로 275-51",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-049,서소문성지 역사박물관,서울,서울특별시 중구 칠패로 5,address-string-not-source-verified,False,"서소문성지 역사박물관, 서울특별시 중구 칠패로 5",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-050,서울도시건축전시관,서울,서울특별시 중구 세종대로 119,address-string-not-source-verified,False,"서울도시건축전시관, 서울특별시 중구 세종대로 119",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-051,LG아트센터 서울,서울,서울특별시 강서구 마곡중앙로 136,address-string-not-source-verified,False,"LG아트센터 서울, 서울특별시 강서구 마곡중앙로 136",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-052,리움미술관,서울,서울특별시 용산구 이태원로55길 60-16,address-string-not-source-verified,False,"리움미술관, 서울특별시 용산구 이태원로55길 60-16",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-053,MBC 방송 스튜디오 대관시설,서울,서울특별시 마포구 성암로 267 (상암 MBC 시설 문의; 일산 드림센터 별도 운영),address-string-not-source-verified,False,"MBC 방송 스튜디오 대관시설, 서울특별시 마포구 성암로 267 (상암 MBC 시설 문의; 일산 드림센터 별도 운영)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-054,용인 대장금파크 오픈세트,경기·수도권,경기도 용인시 처인구 백암면 용천드라마길 25,address-string-not-source-verified,False,"용인 대장금파크 오픈세트, 경기도 용인시 처인구 백암면 용천드라마길 25",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-055,논산 선샤인스튜디오,충남,충청남도 논산시 연무읍 봉황로 90,address-string-not-source-verified,False,"논산 선샤인스튜디오, 충청남도 논산시 연무읍 봉황로 90",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-056,부천아트벙커 B39,경기·수도권,경기 부천,address-string-not-source-verified,False,"부천아트벙커 B39, 경기 부천",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-057,철암역두 선탄시설,강원,강원 태백,address-string-not-source-verified,False,"철암역두 선탄시설, 강원 태백",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-058,장태산자연휴양림 메타세쿼이아 숲·스카이웨이,대전,대전 서구,address-string-not-source-verified,False,"장태산자연휴양림 메타세쿼이아 숲·스카이웨이, 대전 서구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-059,부산 장림포구 컬러 하버·수변 건축,부산,부산 사하구,address-string-not-source-verified,False,"부산 장림포구 컬러 하버·수변 건축, 부산 사하구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-060,대전 소대헌·호연재 고택,대전,대전 대덕구,address-string-not-source-verified,False,"대전 소대헌·호연재 고택, 대전 대덕구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-061,부산 청사포 다릿돌전망대,부산,부산 해운대구,address-string-not-source-verified,False,"부산 청사포 다릿돌전망대, 부산 해운대구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-062,수원시립미술관 행궁본관,경기·수도권,경기 수원,address-string-not-source-verified,False,"수원시립미술관 행궁본관, 경기 수원",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-063,아르떼뮤지엄 강릉,강원,강원 강릉,address-string-not-source-verified,False,"아르떼뮤지엄 강릉, 강원 강릉",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-064,대전 이응노미술관,대전,대전 유성구,address-string-not-source-verified,False,"대전 이응노미술관, 대전 유성구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-065,국립현대미술관 청주,충북,충북 청주,address-string-not-source-verified,False,"국립현대미술관 청주, 충북 청주",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-066,부산 영화의전당,부산,부산 해운대구,address-string-not-source-verified,False,"부산 영화의전당, 부산 해운대구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-067,제주 본태박물관,제주,제주 서귀포,address-string-not-source-verified,False,"제주 본태박물관, 제주 서귀포",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-068,정동1928 아트센터,서울,서울,address-string-not-source-verified,False,"정동1928 아트센터, 서울",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-069,부산 낙동강하구에코센터,부산,부산 사하구,address-string-not-source-verified,False,"부산 낙동강하구에코센터, 부산 사하구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-070,부산 UN조각공원,부산,부산 남구,address-string-not-source-verified,False,"부산 UN조각공원, 부산 남구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-071,서울시립 서서울미술관,서울,서울 금천구,address-string-not-source-verified,False,"서울시립 서서울미술관, 서울 금천구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-072,서울시립사진미술관,서울,서울특별시 도봉구 마들로13길 68,address-string-not-source-verified,False,"서울시립사진미술관, 서울특별시 도봉구 마들로13길 68",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-073,파주 CJ ENM 스튜디오 센터,경기·수도권,경기 파주시,address-string-not-source-verified,False,"파주 CJ ENM 스튜디오 센터, 경기 파주시",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-074,문경새재 오픈세트장,경북,경북 문경,address-string-not-source-verified,False,"문경새재 오픈세트장, 경북 문경",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-075,강릉 주문진 영진해변 방사제 — 《도깨비》 촬영지,강원,강원 강릉,address-string-not-source-verified,False,"강릉 주문진 영진해변 방사제 — 《도깨비》 촬영지, 강원 강릉",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-076,강릉 소돌 방파제 — 《더 글로리》 촬영지 후보,강원,강원 강릉,address-string-not-source-verified,False,"강릉 소돌 방파제 — 《더 글로리》 촬영지 후보, 강원 강릉",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-077,강릉 향호해변 버스정류장 — BTS 관련 영상 로케이션,강원,강원 강릉,address-string-not-source-verified,False,"강릉 향호해변 버스정류장 — BTS 관련 영상 로케이션, 강원 강릉",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-078,안동 만휴정·외나무다리,경북,경북 안동,address-string-not-source-verified,False,"안동 만휴정·외나무다리, 경북 안동",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-079,삼척 맹방해변 — BTS 《Butter》 앨범재킷 촬영지,강원,강원 삼척,address-string-not-source-verified,False,"삼척 맹방해변 — BTS 《Butter》 앨범재킷 촬영지, 강원 삼척",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-080,삼척 부남해변 — 《헤어질 결심》 촬영지,강원,강원 삼척,address-string-not-source-verified,False,"삼척 부남해변 — 《헤어질 결심》 촬영지, 강원 삼척",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-081,인천 십정동 열우물 벽화마을,인천,인천 부평구,address-string-not-source-verified,False,"인천 십정동 열우물 벽화마을, 인천 부평구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-082,인천 송도센트럴파크 수변·도시 스카이라인,인천,인천 연수구,address-string-not-source-verified,False,"인천 송도센트럴파크 수변·도시 스카이라인, 인천 연수구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-083,속초 아바이마을 갯배,강원,강원 속초,address-string-not-source-verified,False,"속초 아바이마을 갯배, 강원 속초",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-084,서울책보고 대형서가 공간,서울,서울,address-string-not-source-verified,False,"서울책보고 대형서가 공간, 서울",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-085,KT&G 상상마당 춘천,강원,강원특별자치도 춘천시 스포츠타운길399번길 25,address-string-not-source-verified,False,"KT&G 상상마당 춘천, 강원특별자치도 춘천시 스포츠타운길399번길 25",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-086,제주 빛의 벙커,제주,제주,address-string-not-source-verified,False,"제주 빛의 벙커, 제주",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-087,군산근대미술관,전북,전북 군산,address-string-not-source-verified,False,"군산근대미술관, 전북 군산",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-088,부산 홍티아트센터,부산,부산,address-string-not-source-verified,False,"부산 홍티아트센터, 부산",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-089,김포 CICA미술관,경기·수도권,경기 김포,address-string-not-source-verified,False,"김포 CICA미술관, 경기 김포",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-090,대구미술관,대구,대구 수성구,address-string-not-source-verified,False,"대구미술관, 대구 수성구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-091,대전시립미술관,대전,대전 서구,address-string-not-source-verified,False,"대전시립미술관, 대전 서구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-092,부산현대미술관,부산,부산 사하구,address-string-not-source-verified,False,"부산현대미술관, 부산 사하구",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-093,서울 송은 — The ST / 송은 건축,서울,서울특별시 강남구 도산대로4길 17,address-string-not-source-verified,False,"서울 송은 — The ST / 송은 건축, 서울특별시 강남구 도산대로4길 17",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-094,용인 백남준아트센터,경기·수도권,경기도 용인시 기흥구 백남준로 10,address-string-not-source-verified,False,"용인 백남준아트센터, 경기도 용인시 기흥구 백남준로 10",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-095,서울 롯데콘서트홀,서울,서울특별시 송파구 올림픽로 300 롯데월드몰 8층,address-string-not-source-verified,False,"서울 롯데콘서트홀, 서울특별시 송파구 올림픽로 300 롯데월드몰 8층",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-096,제주 아르떼뮤지엄,제주,제주특별자치도 제주시 애월읍 어림비로 478,address-string-not-source-verified,False,"제주 아르떼뮤지엄, 제주특별자치도 제주시 애월읍 어림비로 478",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-097,서울 KSPO DOME,서울,서울특별시 송파구 올림픽로 424 올림픽공원,address-string-not-source-verified,False,"서울 KSPO DOME, 서울특별시 송파구 올림픽로 424 올림픽공원",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-098,파주 지혜의숲 대형 서가,경기·수도권,경기도 파주시 회동길 145 아시아출판문화정보센터,address-string-not-source-verified,False,"파주 지혜의숲 대형 서가, 경기도 파주시 회동길 145 아시아출판문화정보센터",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-099,남원 구 서도역,전북,전북특별자치도 남원시 사매면 서도길 32,address-string-not-source-verified,False,"남원 구 서도역, 전북특별자치도 남원시 사매면 서도길 32",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-100,익산 교도소세트장,전북,전북특별자치도 익산시 성당면 함낭로 207,address-string-not-source-verified,False,"익산 교도소세트장, 전북특별자치도 익산시 성당면 함낭로 207",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-101,서울 성수 대림창고,서울,서울특별시 성동구 성수이로 78,address-string-not-source-verified,False,"서울 성수 대림창고, 서울특별시 성동구 성수이로 78",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-102,서울 돈의문박물관마을,서울,서울특별시 종로구 송월길 14-3,address-string-not-source-verified,False,"서울 돈의문박물관마을, 서울특별시 종로구 송월길 14-3",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-103,대전 테미오래 옛 충남도지사 관사촌,대전,대전광역시 중구 보문로 205 일대,approximate-or-needs-review,True,"대전 테미오래 옛 충남도지사 관사촌, 대전",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,True
+fa3-104,서울 아모레퍼시픽미술관·본사 건축,서울,서울특별시 용산구 한강대로 100,address-string-not-source-verified,False,"서울 아모레퍼시픽미술관·본사 건축, 서울특별시 용산구 한강대로 100",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-105,용인 호암미술관·희원 전통정원,경기·수도권,경기도 용인시 처인구 포곡읍 에버랜드로 562번길 38,address-string-not-source-verified,False,"용인 호암미술관·희원 전통정원, 경기도 용인시 처인구 포곡읍 에버랜드로 562번길 38",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-106,서울 예술의전당,서울,서울특별시 서초구 남부순환로 2406,address-string-not-source-verified,False,"서울 예술의전당, 서울특별시 서초구 남부순환로 2406",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-107,서울 세종문화회관,서울,서울특별시 종로구 세종대로 175,address-string-not-source-verified,False,"서울 세종문화회관, 서울특별시 종로구 세종대로 175",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-108,서울시립 북서울미술관,서울,서울특별시 노원구 동일로 1238,address-string-not-source-verified,False,"서울시립 북서울미술관, 서울특별시 노원구 동일로 1238",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-109,수원 경기상상캠퍼스,경기·수도권,경기도 수원시 권선구 서둔로 166,address-string-not-source-verified,False,"수원 경기상상캠퍼스, 경기도 수원시 권선구 서둔로 166",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-110,시흥갯골생태공원 옛 염전·데크·바람개비,경기·수도권,경기도 시흥시 동서로 287,address-string-not-source-verified,False,"시흥갯골생태공원 옛 염전·데크·바람개비, 경기도 시흥시 동서로 287",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-111,파주 헤이리시네마,경기·수도권,경기도 파주시 탄현면 헤이리마을길 93-75,address-string-not-source-verified,False,"파주 헤이리시네마, 경기도 파주시 탄현면 헤이리마을길 93-75",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-112,순천 드라마촬영장,전남,전라남도 순천시 비례골길 24,address-string-not-source-verified,False,"순천 드라마촬영장, 전라남도 순천시 비례골길 24",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-113,인천 파라다이스시티 아트 스페이스,인천,인천광역시 중구 영종해안남로321번길 186,address-string-not-source-verified,False,"인천 파라다이스시티 아트 스페이스, 인천광역시 중구 영종해안남로321번길 186",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-114,서울시립미술관 서소문본관,서울,서울특별시 중구 덕수궁길 61,address-string-not-source-verified,False,"서울시립미술관 서소문본관, 서울특별시 중구 덕수궁길 61",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-115,서울 마곡문화관 — 옛 양천수리조합 배수펌프장,서울,서울 강서구 마곡동 서울식물원 내 마곡문화관,address-string-not-source-verified,False,"서울 마곡문화관 — 옛 양천수리조합 배수펌프장, 서울 강서구 마곡동 서울식물원 내 마곡문화관",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-116,부산 한성1918 B-Culture Plaza,부산,부산광역시 중구 백산길 13,address-string-not-source-verified,False,"부산 한성1918 B-Culture Plaza, 부산광역시 중구 백산길 13",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-117,대전 대청호 명상정원,대전,대전광역시 동구 추동 일대,approximate-or-needs-review,True,"대전 대청호 명상정원, 대전",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-118,부산시립미술관,부산,부산광역시 해운대구 APEC로 58,address-string-not-source-verified,False,"부산시립미술관, 부산광역시 해운대구 APEC로 58",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-119,울산시립미술관,울산,울산광역시 중구 미술관길 72,address-string-not-source-verified,False,"울산시립미술관, 울산광역시 중구 미술관길 72",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-120,전주 완산 벙커 더 스페이스,전북,전북특별자치도 전주시 완산구 일대,approximate-or-needs-review,True,"전주 완산 벙커 더 스페이스, 전북",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-121,완주 삼례문화예술촌,전북,전북특별자치도 완주군 삼례읍 삼례역로 81-13,address-string-not-source-verified,False,"완주 삼례문화예술촌, 전북특별자치도 완주군 삼례읍 삼례역로 81-13",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-122,인천 잇다스페이스,인천,인천광역시 중구 일대,approximate-or-needs-review,True,"인천 잇다스페이스, 인천",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-123,청주 동부창고,충북,충청북도 청주시 청원구 덕벌로 30,address-string-not-source-verified,False,"청주 동부창고, 충청북도 청주시 청원구 덕벌로 30",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-124,인천 코스모40,인천,인천광역시 서구 장고개로 231번길 9,address-string-not-source-verified,False,"인천 코스모40, 인천광역시 서구 장고개로 231번길 9",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-125,부산 깡깡이예술마을,부산,부산광역시 영도구 대평북로 36 일대,approximate-or-needs-review,True,"부산 깡깡이예술마을, 부산",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-126,고양 현대 모터스튜디오,경기·수도권,경기도 고양시 일산서구 킨텍스로 217-6,address-string-not-source-verified,False,"고양 현대 모터스튜디오, 경기도 고양시 일산서구 킨텍스로 217-6",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-127,서울 국립항공박물관,서울,서울특별시 강서구 하늘길 177,address-string-not-source-verified,False,"서울 국립항공박물관, 서울특별시 강서구 하늘길 177",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-128,삼탄아트마인,강원,강원특별자치도 정선군 고한읍 함백산로 1445-44,address-string-not-source-verified,False,"삼탄아트마인, 강원특별자치도 정선군 고한읍 함백산로 1445-44",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-129,오대호아트팩토리,충북,충청북도 충주시 앙성면 가곡로 1434,address-string-not-source-verified,False,"오대호아트팩토리, 충청북도 충주시 앙성면 가곡로 1434",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-130,나빌레라문화센터,전남,전라남도 나주시 나주천1길 93,address-string-not-source-verified,False,"나빌레라문화센터, 전라남도 나주시 나주천1길 93",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-131,이화여자대학교 ECC (이화캠퍼스복합단지),서울,서울특별시 서대문구 이화여대길 52 이화여자대학교 내,address-string-not-source-verified,False,"이화여자대학교 ECC (이화캠퍼스복합단지), 서울특별시 서대문구 이화여대길 52 이화여자대학교 내",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-132,한강 교량 하부·접근 가능한 공공 구간,서울,서울 한강 교량 하부 중 공개적으로 접근 가능한 보행·공공구간(교량명은 현장 지정 필요),address-string-not-source-verified,False,"한강 교량 하부·접근 가능한 공공 구간, 서울 한강 교량 하부 중 공개적으로 접근 가능한 보행·공공구간(교량명은 현장 지정 필요)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-133,수원 행궁동 구도심 골목,경기·수도권,경기도 수원시 팔달구 행궁동 벽화마을 일대,approximate-or-needs-review,True,"수원 행궁동 구도심 골목, 경기",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-134,서울새활용플라자,서울,서울특별시 성동구 자동차시장길 49,address-string-not-source-verified,False,"서울새활용플라자, 서울특별시 성동구 자동차시장길 49",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-135,서울생활사박물관,서울,서울특별시 노원구 동일로174길 27,address-string-not-source-verified,False,"서울생활사박물관, 서울특별시 노원구 동일로174길 27",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-136,서울시청 신청사 유리 파사드,서울,서울특별시 중구 세종대로 110,address-string-not-source-verified,False,"서울시청 신청사 유리 파사드, 서울특별시 중구 세종대로 110",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-137,평화문화진지,서울,서울특별시 도봉구 마들로 932,address-string-not-source-verified,False,"평화문화진지, 서울특별시 도봉구 마들로 932",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-151,인천 상상플랫폼,인천,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"인천 상상플랫폼, 인천 중구 북성동",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,True
+fa3-158,수창청춘맨숀,대구,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"수창청춘맨숀, 대구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-162,계족산 황톳길,대전,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"계족산 황톳길, 대전 대덕구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-164,광주비엔날레 전시관,광주,공식 홈페이지 기준 위치 확인,address-string-not-source-verified,False,"광주비엔날레 전시관, 공식 홈페이지 기준 위치 확인",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-165,국립춘천박물관,강원,공식 홈페이지 기준 위치 확인,address-string-not-source-verified,False,"국립춘천박물관, 공식 홈페이지 기준 위치 확인",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-166,삼방동 전망대,강원,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"삼방동 전망대, 강원 태백",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-167,소이산 지하벙커,강원,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"소이산 지하벙커, 강원 철원",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-170,비내섬,충북,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"비내섬, 충북 충주",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,True
+fa3-171,무암저수지,충북,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"무암저수지, 충북 제천",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,True
+fa3-172,장항 옛 제련소 일대,충남,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"장항 옛 제련소 일대, 충남 서천",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-173,신평양조장,충남,충청남도 당진시 신평로 813 (신평양조장 안내 주소; 방문·촬영은 별도 문의),address-string-not-source-verified,False,"신평양조장, 충청남도 당진시 신평로 813 (신평양조장 안내 주소; 방문·촬영은 별도 문의)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-174,판교 시간이멈춘마을,충남,충청남도 서천군 판교면 종판로 882-8,address-string-not-source-verified,False,"판교 시간이멈춘마을, 충청남도 서천군 판교면 종판로 882-8",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-176,전주한지박물관,전북,공식 홈페이지 기준 위치 확인,address-string-not-source-verified,False,"전주한지박물관, 공식 홈페이지 기준 위치 확인",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-178,군산근대건축관,전북,전북특별자치도 군산시 해망로 214 (군산근대건축관),address-string-not-source-verified,False,"군산근대건축관, 전북특별자치도 군산시 해망로 214 (군산근대건축관)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-180,증도 염전 주변,전남,전남 신안군 증도면 태평염전 일원 (염전 구역 참조; 특정 진입점·촬영 지점 미확인),approximate-or-needs-review,True,"증도 염전 주변, 전남 신안",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-181,청춘창고,전남,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"청춘창고, 전남 순천",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,True
+fa3-182,담빛예술창고,전남,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"담빛예술창고, 전남 담양",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,True
+fa3-183,해동문화예술촌,전남,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"해동문화예술촌, 전남 담양",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-184,장흥교도소 촬영장,전남,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"장흥교도소 촬영장, 전남 장흥",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-186,구룡포 근대문화역사거리 외곽 골목,경북,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"구룡포 근대문화역사거리 외곽 골목, 경북 포항시 남구 구룡포읍",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-187,구룡포 근대역사관 일대,경북,경상북도 포항시 남구 구룡포읍 호미로 277 (근대역사 구역 안내 주소; 운영·촬영 지점 재확인),address-string-not-source-verified,False,"구룡포 근대역사관 일대, 경상북도 포항시 남구 구룡포읍 호미로 277 (근대역사 구역 안내 주소; 운영·촬영 지점 재확인)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-188,청송한옥민예촌,경북,경상북도 청송군 주왕산면 주왕산로 494 (청송한옥민예촌),address-string-not-source-verified,False,"청송한옥민예촌, 경상북도 청송군 주왕산면 주왕산로 494 (청송한옥민예촌)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-189,가은오픈세트장,경북,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"가은오픈세트장, 경북 문경",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,True
+fa3-190,진해 근대항만·산업공간 후보군,경남,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"진해 근대항만·산업공간 후보군, 경남 창원",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-191,밀양 옛 읍성·구도심 골목,경남,경상남도 밀양시 옛 읍성·구도심 골목 일대 (구역 참고; 정확한 촬영 지점 미확인),approximate-or-needs-review,True,"밀양 옛 읍성·구도심 골목, 경남 밀양",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-192,도산면 해안마을 일대,경남,경상남도 통영시 도산면 해안마을 일대 (마을·해안 진입점 미확인),approximate-or-needs-review,True,"도산면 해안마을 일대, 경남 통영",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-193,옛 진주역 주변,경남,경상남도 진주시 강남동 철도문화공원·옛 진주역 주변 (세부 촬영점 미확인),approximate-or-needs-review,True,"옛 진주역 주변, 경남 진주",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-195,제주도립미술관,제주,공식 홈페이지 기준 위치 확인,address-string-not-source-verified,False,"제주도립미술관, 공식 홈페이지 기준 위치 확인",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-197,성읍민속마을 외곽 돌담길,제주,정확 주소/진입점 현장 확인 필요,approximate-or-needs-review,True,"성읍민속마을 외곽 돌담길, 제주",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-198,부평 캠프마켓 개방공간 B구역,인천,공식 안내 위치: 인천 부평구 산곡동 449 일원. 정밀 좌표 미검증 — 개방 B구역과 출입 게이트를 지도에서 확인.,address-string-not-source-verified,True,"부평 캠프마켓 개방공간 B구역, 인천 부평구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-199,한국근대문학관,인천,공식 홈페이지 기준 위치 확인,address-string-not-source-verified,False,"한국근대문학관, 공식 홈페이지 기준 위치 확인",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-200,인천개항박물관,인천,공식 홈페이지 기준 위치 확인,address-string-not-source-verified,False,"인천개항박물관, 공식 홈페이지 기준 위치 확인",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-201,경주 오아르미술관,경북,경상북도 경주시 금성로 260-6,address-string-not-source-verified,False,"경주 오아르미술관, 경상북도 경주시 금성로 260-6",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,True
+fa3-202,이천 논스페이스,경기·수도권,경기도 이천시 동산로395번길 139-12,address-string-not-source-verified,False,"이천 논스페이스, 경기도 이천시 동산로395번길 139-12",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-203,수원 광교 르디투어,경기·수도권,경기도 수원시 영통구 웰빙타운로36번길 46-234,address-string-not-source-verified,False,"수원 광교 르디투어, 경기도 수원시 영통구 웰빙타운로36번길 46-234",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-204,분당 카페 모아니,경기·수도권,경기도 성남시 분당구 쇳골로 116,address-string-not-source-verified,False,"분당 카페 모아니, 경기도 성남시 분당구 쇳골로 116",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-205,"가평 신천리 주택 (곽희수 설계, 사유지)",경기·수도권,미확인,approximate-or-needs-review,True,"가평 신천리 주택 (곽희수 설계, 사유지), 경기 가평군 신천리",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-206,아모레퍼시픽 본사,서울,서울특별시 용산구 한강대로 100 (아모레퍼시픽 본사; 일반 방문·촬영 정책 별도 확인),address-string-not-source-verified,False,"아모레퍼시픽 본사, 서울특별시 용산구 한강대로 100 (아모레퍼시픽 본사; 일반 방문·촬영 정책 별도 확인)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-207,코오롱 원앤온리(One&Only) 타워,서울,서울특별시 강서구 마곡동 (마곡산업지구),address-string-not-source-verified,False,"코오롱 원앤온리(One&Only) 타워, 서울특별시 강서구 마곡동 (마곡산업지구)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-208,갤러리아백화점 광교점,경기·수도권,경기도 수원시 영통구 광교 (정확한 주소 확인 필요),approximate-or-needs-review,True,"갤러리아백화점 광교점, 경기 수원시 영통구 광교",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-209,우란문화재단,서울,서울특별시 성동구 연무장7길 11,address-string-not-source-verified,False,"우란문화재단, 서울특별시 성동구 연무장7길 11",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-210,사비나미술관,서울,서울특별시 은평구 진관1로 93,address-string-not-source-verified,False,"사비나미술관, 서울특별시 은평구 진관1로 93",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-211,무목적 (서촌),서울,서울특별시 종로구 누하동 22,address-string-not-source-verified,False,"무목적 (서촌), 서울특별시 종로구 누하동 22",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-212,KB청춘마루,서울,서울특별시 마포구 홍익로 18,address-string-not-source-verified,False,"KB청춘마루, 서울특별시 마포구 홍익로 18",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-213,더 넥센 유니버시티,서울,서울특별시 강서구 마곡중앙로 177,address-string-not-source-verified,False,"더 넥센 유니버시티, 서울특별시 강서구 마곡중앙로 177",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-214,클리오 사옥,서울,미확인 (서울 성동구 성수동),approximate-or-needs-review,True,"클리오 사옥, 서울 성동구 성수동",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-215,송파 책박물관,서울,미확인 (서울 송파구 가락동),approximate-or-needs-review,True,"송파 책박물관, 서울 송파구 가락동",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-216,통의동 브릭웰 (brickwell),서울,미확인 (서울 종로구 통의동),approximate-or-needs-review,True,"통의동 브릭웰 (brickwell), 서울 종로구 통의동",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-217,루이비통 메종 서울,서울,서울특별시 강남구 청담동 (정확한 주소 확인 필요),approximate-or-needs-review,True,"루이비통 메종 서울, 서울 강남구 청담동",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-218,세종 엠브릿지,세종,미확인 (세종특별자치시),approximate-or-needs-review,True,"세종 엠브릿지, 세종특별자치시 도담동 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-219,제주 유민미술관 (지니어스 로사이),제주,미확인 (제주 서귀포시),approximate-or-needs-review,True,"제주 유민미술관 (지니어스 로사이), 제주 서귀포시",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-220,서울 JCC(재능문화센터),서울,미확인,approximate-or-needs-review,True,"서울 JCC(재능문화센터), 서울",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-221,마임 비전 빌리지,경기·수도권,미확인 (경기도 여주시 능서면),approximate-or-needs-review,True,"마임 비전 빌리지, 경기 여주시 능서면",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-222,강릉 씨마크호텔,강원,미확인 (강원특별자치도 강릉시),approximate-or-needs-review,True,"강릉 씨마크호텔, 강원 강릉시 (경포)",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-223,투문정션 (TWO MOON),경기·수도권,미확인,approximate-or-needs-review,True,"투문정션 (TWO MOON), 경기 (일산 북쪽 약 1시간, 위치 확인 필요)",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-224,브릭스 빌딩 (마포 동교동),서울,서울특별시 마포구 동교동 (정확한 번지 확인 필요),approximate-or-needs-review,True,"브릭스 빌딩 (마포 동교동), 서울 마포구 동교동",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-002,하슬라아트월드,강원,강원특별자치도 강릉시 강동면 율곡로 1441,address-string-not-source-verified,False,"하슬라아트월드, 강원특별자치도 강릉시 강동면 율곡로 1441",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-003,이재효갤러리 1977,경기·수도권,경기도 양평군 지평면 초천길 83-22,address-string-not-source-verified,False,"이재효갤러리 1977, 경기도 양평군 지평면 초천길 83-22",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-004,구하우스 미술관,경기·수도권,경기도 양평군 서종면 무내미길 49-12,address-string-not-source-verified,False,"구하우스 미술관, 경기도 양평군 서종면 무내미길 49-12",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-005,바우지움 조각미술관,강원,강원특별자치도 고성군 토성면 원암온천3길 37,address-string-not-source-verified,False,"바우지움 조각미술관, 강원특별자치도 고성군 토성면 원암온천3길 37",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-006,젊은달와이파크,강원,강원특별자치도 영월군 주천면 송학주천로 1467-9,address-string-not-source-verified,False,"젊은달와이파크, 강원특별자치도 영월군 주천면 송학주천로 1467-9",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-007,모란미술관,경기·수도권,경기도 남양주시 화도읍 경춘로2110번길 8,address-string-not-source-verified,False,"모란미술관, 경기도 남양주시 화도읍 경춘로2110번길 8",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-008,김영갑갤러리 두모악,제주,제주특별자치도 서귀포시 성산읍 삼달로 137,address-string-not-source-verified,False,"김영갑갤러리 두모악, 제주특별자치도 서귀포시 성산읍 삼달로 137",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-009,서울대학교 미술관 MoA,서울,서울특별시 관악구 관악로 1 (서울대학교 내),address-string-not-source-verified,False,"서울대학교 미술관 MoA, 서울특별시 관악구 관악로 1 (서울대학교 내)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-010,아라리오뮤지엄 인 스페이스,서울,서울특별시 종로구 율곡로 83,address-string-not-source-verified,False,"아라리오뮤지엄 인 스페이스, 서울특별시 종로구 율곡로 83",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-011,피크닉(piknic),서울,서울특별시 중구 퇴계로6가길 30,address-string-not-source-verified,False,"피크닉(piknic), 서울특별시 중구 퇴계로6가길 30",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-012,아트선재센터,서울,서울특별시 종로구 율곡로3길 87,address-string-not-source-verified,False,"아트선재센터, 서울특별시 종로구 율곡로3길 87",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-013,포항 스페이스워크,경북,경상북도 포항시 북구 환호공원길 30 (환호공원 내),address-string-not-source-verified,False,"포항 스페이스워크, 경상북도 포항시 북구 환호공원길 30 (환호공원 내)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-014,제주 글라스하우스(섭지코지),제주,서귀포시 성산읍 섭지코지 일대 (정확한 출입·주소 확인 필요),approximate-or-needs-review,True,"제주 글라스하우스(섭지코지), 제주특별자치도 서귀포시 성산읍",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-015,포도뮤지엄,제주,제주특별자치도 서귀포시 안덕면 산록남로 788,address-string-not-source-verified,False,"포도뮤지엄, 제주특별자치도 서귀포시 안덕면 산록남로 788",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-016,뮤지엄한미 삼청,서울,"서울특별시 종로구 삼청로9길 45 (주요 안내 주소, 방문 전 확인)",address-string-not-source-verified,False,"뮤지엄한미 삼청, 서울특별시 종로구 삼청로9길 45 (주요 안내 주소, 방문 전 확인)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-017,한국석조각박물관,서울,서울특별시 성북구 성북동 일대 (정확한 도로명주소 확인 필요),approximate-or-needs-review,True,"한국석조각박물관, 서울특별시 성북구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-018,의정부 미술도서관,경기·수도권,경기도 의정부시 민락로 248,address-string-not-source-verified,False,"의정부 미술도서관, 경기도 의정부시 민락로 248",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-019,환기미술관,서울,서울특별시 종로구 자하문로40길 63,address-string-not-source-verified,False,"환기미술관, 서울특별시 종로구 자하문로40길 63",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-020,대구간송미술관,대구,대구광역시 수성구 미술관로 70,address-string-not-source-verified,False,"대구간송미술관, 대구광역시 수성구 미술관로 70",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-021,경남도립미술관,경남,경상남도 창원시 의창구 용지로 296,address-string-not-source-verified,False,"경남도립미술관, 경상남도 창원시 의창구 용지로 296",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-022,파크로쉬 리조트앤웰니스,강원,강원특별자치도 정선군 북평면 중봉길 9-12,address-string-not-source-verified,False,"파크로쉬 리조트앤웰니스, 강원특별자치도 정선군 북평면 중봉길 9-12",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-023,양주시립 장욱진미술관,경기·수도권,경기도 양주시 장흥면 권율로 193,address-string-not-source-verified,False,"양주시립 장욱진미술관, 경기도 양주시 장흥면 권율로 193",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-024,스페이스K 서울,서울,서울특별시 강서구 마곡중앙8로 32,address-string-not-source-verified,False,"스페이스K 서울, 서울특별시 강서구 마곡중앙8로 32",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-025,아산 외암민속마을,충남,충청남도 아산시 송악면 외암민속길 5,address-string-not-source-verified,False,"아산 외암민속마을, 충청남도 아산시 송악면 외암민속길 5",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-026,담양 소쇄원,전남,전라남도 담양군 가사문학면 소쇄원길 17,address-string-not-source-verified,False,"담양 소쇄원, 전라남도 담양군 가사문학면 소쇄원길 17",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-027,더현대 서울,서울,서울특별시 영등포구 여의대로 108,address-string-not-source-verified,False,"더현대 서울, 서울특별시 영등포구 여의대로 108",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-028,뮤지엄 원(Museum 1),부산,부산광역시 해운대구 센텀서로 20,address-string-not-source-verified,False,"뮤지엄 원(Museum 1), 부산광역시 해운대구 센텀서로 20",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-029,아트스페이스 보안 1942,서울,서울특별시 종로구 효자로 33 (방문 전 상세 확인),address-string-not-source-verified,False,"아트스페이스 보안 1942, 서울특별시 종로구 효자로 33 (방문 전 상세 확인)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-030,강릉 솔올미술관,강원,강원특별자치도 강릉시 원대로 45 (방문 전 확인),address-string-not-source-verified,False,"강릉 솔올미술관, 강원특별자치도 강릉시 원대로 45 (방문 전 확인)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-031,서울로봇인공지능과학관(RAIM),서울,서울특별시 도봉구 마들로13길 56,public-source-verified,False,"서울로봇인공지능과학관(RAIM), 서울특별시 도봉구 마들로13길 56",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-new-032,한국가구박물관,서울,서울특별시 성북구 대사관로 121 (주소 확인 필요),approximate-or-needs-review,True,"한국가구박물관, 서울특별시 성북구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-033,가나아트센터 평창동,서울,서울특별시 종로구 평창30길 28 (주소 확인 필요),approximate-or-needs-review,True,"가나아트센터 평창동, 서울특별시 종로구 평창동",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-034,하우스 오브 디올 서울,서울,서울특별시 강남구 압구정로 464 (현장 확인),address-string-not-source-verified,False,"하우스 오브 디올 서울, 서울특별시 강남구 압구정로 464 (현장 확인)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-035,별마당도서관 코엑스,서울,서울특별시 강남구 영동대로 513 코엑스몰,address-string-not-source-verified,False,"별마당도서관 코엑스, 서울특별시 강남구 영동대로 513 코엑스몰",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-036,금호미술관,서울,서울특별시 종로구 삼청로 18 (방문 전 확인),address-string-not-source-verified,False,"금호미술관, 서울특별시 종로구 삼청로 18 (방문 전 확인)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-037,국립현대미술관 덕수궁관,서울,서울특별시 중구 세종대로 99 덕수궁 내,address-string-not-source-verified,False,"국립현대미술관 덕수궁관, 서울특별시 중구 세종대로 99 덕수궁 내",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-038,플랫폼엘 컨템포러리 아트센터,서울,서울특별시 강남구 언주로133길 11,address-string-not-source-verified,False,"플랫폼엘 컨템포러리 아트센터, 서울특별시 강남구 언주로133길 11",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-039,일민미술관,서울,서울특별시 종로구 세종대로 152,address-string-not-source-verified,False,"일민미술관, 서울특별시 종로구 세종대로 152",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-040,국제갤러리 삼청,서울,서울특별시 종로구 삼청로 54,address-string-not-source-verified,False,"국제갤러리 삼청, 서울특별시 종로구 삼청로 54",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-041,팩토리2,서울,"서울특별시 종로구 새문안로 42, 피어선빌딩 1008호",address-string-not-source-verified,False,"팩토리2, 서울특별시 종로구 새문안로 42, 피어선빌딩 1008호",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-042,서울 웨이브 아트센터,서울,서울특별시 서초구 잠원로 145-35 (잠원한강공원 서울웨이브 아트센터 주변; 시설 출입점 미확인),approximate-or-needs-review,True,"서울 웨이브 아트센터, 서울특별시 서초구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-043,세빛섬,서울,서울특별시 서초구 올림픽대로 2085-14,address-string-not-source-verified,False,"세빛섬, 서울특별시 서초구 올림픽대로 2085-14",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-044,커먼그라운드,서울,서울특별시 광진구 아차산로 200,address-string-not-source-verified,False,"커먼그라운드, 서울특별시 광진구 아차산로 200",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-045,경인미술관,서울,서울특별시 종로구 인사동10길 11-4,address-string-not-source-verified,False,"경인미술관, 서울특별시 종로구 인사동10길 11-4",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-046,국립중앙박물관,서울,서울특별시 용산구 서빙고로 137,address-string-not-source-verified,False,"국립중앙박물관, 서울특별시 용산구 서빙고로 137",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-047,경동교회,서울,서울특별시 동대문구 왕산로 130,address-string-not-source-verified,False,"경동교회, 서울특별시 동대문구 왕산로 130",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-048,배미꾸미 조각공원,인천,인천광역시 옹진군 북도면 모도로140번길 41 (배미꾸미 해변·조각공원),address-string-not-source-verified,False,"배미꾸미 조각공원, 인천광역시 옹진군 북도면 모도로140번길 41 (배미꾸미 해변·조각공원)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-049,국립해양박물관,부산,부산광역시 영도구 해양로 301번길 45,address-string-not-source-verified,False,"국립해양박물관, 부산광역시 영도구 해양로 301번길 45",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-050,감천문화마을,부산,부산광역시 사하구 감내2로 일대,approximate-or-needs-review,True,"감천문화마을, 부산광역시 사하구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-051,광주시립미술관,광주,광주광역시 북구 하서로 52,address-string-not-source-verified,False,"광주시립미술관, 광주광역시 북구 하서로 52",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-052,김창열미술관,제주,제주특별자치도 제주시 한림읍 용금로 883-5,address-string-not-source-verified,False,"김창열미술관, 제주특별자치도 제주시 한림읍 용금로 883-5",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-053,제주돌문화공원,제주,제주특별자치도 제주시 조천읍 남조로 2023,address-string-not-source-verified,False,"제주돌문화공원, 제주특별자치도 제주시 조천읍 남조로 2023",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-054,포도호텔,제주,제주특별자치도 서귀포시 안덕면 산록남로 863,address-string-not-source-verified,False,"포도호텔, 제주특별자치도 서귀포시 안덕면 산록남로 863",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-055,제주4·3평화공원,제주,제주특별자치도 제주시 명림로 430,address-string-not-source-verified,False,"제주4·3평화공원, 제주특별자치도 제주시 명림로 430",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-057,목포 근대역사관 1·2관,전남,1관: 영산로29번길 6 / 2관: 번화로 18,address-string-not-source-verified,False,"목포 근대역사관 1·2관, 1관: 영산로29번길 6 / 2관: 번화로 18",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-058,목포 갓바위 해상보행교·문화권,전남,전라남도 목포시 남농로 166-1 일대,approximate-or-needs-review,True,"목포 갓바위 해상보행교·문화권, 전라남도 목포시",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-059,광주 양림동 근대문화마을,광주,광주광역시 남구 양림동 일대,approximate-or-needs-review,True,"광주 양림동 근대문화마을, 광주광역시 남구",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-060,순천만국가정원,전남,전라남도 순천시 국가정원1호길 47,address-string-not-source-verified,False,"순천만국가정원, 전라남도 순천시 국가정원1호길 47",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-061,보성 대한다원,전남,전라남도 보성군 보성읍 녹차로 763,address-string-not-source-verified,False,"보성 대한다원, 전라남도 보성군 보성읍 녹차로 763",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-062,통영 디피랑,경남,경상남도 통영시 남망길 18 일대,approximate-or-needs-review,True,"통영 디피랑, 경상남도 통영시",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-063,동해 무릉별유천지,강원,강원특별자치도 동해시 삼화동 762-6 일원,address-string-not-source-verified,False,"동해 무릉별유천지, 강원특별자치도 동해시 삼화동 762-6 일원",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-064,경주엑스포대공원 경주타워,경북,경상북도 경주시 경감로 614,address-string-not-source-verified,False,"경주엑스포대공원 경주타워, 경상북도 경주시 경감로 614",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-065,단양 만천하스카이워크,충북,충청북도 단양군 적성면 옷바위길 10,address-string-not-source-verified,False,"단양 만천하스카이워크, 충청북도 단양군 적성면 옷바위길 10",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-066,이천 설봉국제조각공원,경기·수도권,경기도 이천시 경충대로2709번길 128 일대,approximate-or-needs-review,True,"이천 설봉국제조각공원, 경기도 이천시",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-067,전주 서학동 예술마을,전북,전북특별자치도 전주시 완산구 서학로 일대,approximate-or-needs-review,True,"전주 서학동 예술마을, 전북특별자치도 전주시",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-068,논산 명재고택,충남,충청남도 논산시 노성면 노성산성길 50 일대(정확 주소 재확인),approximate-or-needs-review,True,"논산 명재고택, 충청남도 논산시",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-069,안동 병산서원,경북,경상북도 안동시 풍천면 병산길 386,address-string-not-source-verified,False,"안동 병산서원, 경상북도 안동시 풍천면 병산길 386",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-070,영주 소수서원,경북,경상북도 영주시 순흥면 소백로 2740,address-string-not-source-verified,False,"영주 소수서원, 경상북도 영주시 순흥면 소백로 2740",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-071,국립공주박물관,충남,충청남도 공주시 관광단지길 34,address-string-not-source-verified,False,"국립공주박물관, 충청남도 공주시 관광단지길 34",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-072,백제문화단지,충남,충청남도 부여군 규암면 백제문로 455,address-string-not-source-verified,False,"백제문화단지, 충청남도 부여군 규암면 백제문로 455",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-073,독립기념관,경기·수도권,경기도 파주시 탄현면 소리개길 20,address-string-not-source-verified,False,"독립기념관, 경기도 파주시 탄현면 소리개길 20",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-074,국립세종도서관,세종,세종특별자치시 다솜3로 48,address-string-not-source-verified,False,"국립세종도서관, 세종특별자치시 다솜3로 48",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-075,대구근대역사관,대구,대구광역시 중구 경상감영길 67,address-string-not-source-verified,False,"대구근대역사관, 대구광역시 중구 경상감영길 67",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-076,수원 삼성 이노베이션 뮤지엄,경기·수도권,경기도 수원시 영통구 삼성로 129,address-string-not-source-verified,False,"수원 삼성 이노베이션 뮤지엄, 경기도 수원시 영통구 삼성로 129",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-077,강화 조양방직,인천,인천광역시 강화군 강화읍 향나무길5번길 12 (강화 조양방직),address-string-not-source-verified,False,"강화 조양방직, 인천광역시 강화군 강화읍 향나무길5번길 12 (강화 조양방직)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-078,영주 선비촌,경북,경상북도 영주시 순흥면 소백로 2796,address-string-not-source-verified,False,"영주 선비촌, 경상북도 영주시 순흥면 소백로 2796",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-079,신안 기점·소악도 12사도 순례길,전남,전라남도 신안군 증도면 기점도·소악도 일대 (출발 선착장과 당일 이동 경로 확인 필요),approximate-or-needs-review,True,"신안 기점·소악도 12사도 순례길, 전남 신안군 증도면 기점도·소악도 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-080,신안 자은도 무한의다리,전남,전라남도 신안군 자은면 둔장해변 일대 (무한의다리 진입점 확인),approximate-or-needs-review,True,"신안 자은도 무한의다리, 전남 신안군 자은면 둔장해변 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-081,태안 신두리 해안사구,충남,충청남도 태안군 원북면 신두해변길 201-54 일대 (탐방로·사구센터 진입점 확인),approximate-or-needs-review,True,"태안 신두리 해안사구, 충남 태안군 원북면 신두해변길 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-082,제주 알뜨르비행장 및 일본군 비행기 격납고,제주,제주특별자치도 서귀포시 대정읍 상모리 1670 일대 (공개 진입 공간과 관람 범위 확인),approximate-or-needs-review,True,"제주 알뜨르비행장 및 일본군 비행기 격납고, 제주 서귀포시 대정읍 상모리 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-083,영덕 풍력발전단지,경북,경상북도 영덕군 영덕읍 창포리 산70 일대 (공개 전망·접근 지점 확인),approximate-or-needs-review,True,"영덕 풍력발전단지, 경북 영덕군 영덕읍 창포리 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-084,인제 원대리 자작나무숲,강원,강원특별자치도 인제군 인제읍 원대리 자작나무숲 탐방 안내소 일대,approximate-or-needs-review,True,"인제 원대리 자작나무숲, 강원특별자치도 인제군 인제읍 원대리 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-085,철원 노동당사,강원,강원특별자치도 철원군 철원읍 관전리 3-2 일대 (현장 표지·접근 가능 구역 확인),approximate-or-needs-review,True,"철원 노동당사, 강원특별자치도 철원군 철원읍 관전리 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-086,영암 국제자동차경주장 KIC,전남,전라남도 영암군 삼호읍 에프원로 2 (방문·대관 입구 재확인),address-string-not-source-verified,False,"영암 국제자동차경주장 KIC, 전라남도 영암군 삼호읍 에프원로 2 (방문·대관 입구 재확인)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-087,광주 전일빌딩245,광주,광주광역시 동구 금남로 245,address-string-not-source-verified,False,"광주 전일빌딩245, 광주광역시 동구 금남로 245",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-088,양구 펀치볼 분지 전망권,강원,강원특별자치도 양구군 해안면 일대 (허가된 공개 전망·관찰 지점 확인 필요),approximate-or-needs-review,True,"양구 펀치볼 분지 전망권, 강원특별자치도 양구군 해안면 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-111,제주 유동룡미술관,제주,제주특별자치도 제주시 한림읍 일대 · 정확 주소는 방문 전 공식 안내 재확인,approximate-or-needs-review,True,"제주 유동룡미술관, 제주특별자치도 제주시 한림읍 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-112,사유원,대구,대구광역시 군위군 부계면 치산효령로 1176,address-string-not-source-verified,False,"사유원, 대구광역시 군위군 부계면 치산효령로 1176",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-113,파주 아시아출판문화정보센터,경기·수도권,경기도 파주시 회동길 145,address-string-not-source-verified,False,"파주 아시아출판문화정보센터, 경기도 파주시 회동길 145",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-115,LCDC SEOUL,서울,서울특별시 성동구 연무장17길 10,address-string-not-source-verified,False,"LCDC SEOUL, 서울특별시 성동구 연무장17길 10",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-116,덕수궁 석조전·정관헌,서울,서울특별시 중구 세종대로 99,address-string-not-source-verified,False,"덕수궁 석조전·정관헌, 서울특별시 중구 세종대로 99",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-117,부산 아홉산숲,부산,부산광역시 기장군 철마면 미동길 37-1,address-string-not-source-verified,False,"부산 아홉산숲, 부산광역시 기장군 철마면 미동길 37-1",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-118,평택 공간미학(米學),경기·수도권,경기도 평택시 오성면 신리 일대 (정확한 진입 주소 확인 필요),approximate-or-needs-review,True,"평택 공간미학(米學), 경기도 평택시 오성면 신리 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-119,부산 피아크(P.ARK),부산,부산광역시 영도구 해양로195번길 180,address-string-not-source-verified,False,"부산 피아크(P.ARK), 부산광역시 영도구 해양로195번길 180",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-120,대구 디아크 문화관,대구,대구광역시 달성군 다사읍 강정본길 57-1,address-string-not-source-verified,False,"대구 디아크 문화관, 대구광역시 달성군 다사읍 강정본길 57-1",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-121,서울 용산공원 부분개방부지,서울,서울특별시 용산구 서빙고로 221,address-string-not-source-verified,False,"서울 용산공원 부분개방부지, 서울특별시 용산구 서빙고로 221",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-122,화성 소다미술관,경기·수도권,경기도 화성시 효행로707번길 30,address-string-not-source-verified,False,"화성 소다미술관, 경기도 화성시 효행로707번길 30",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-123,통영 전혁림미술관,경남,경상남도 통영시 봉수1길 10,address-string-not-source-verified,False,"통영 전혁림미술관, 경상남도 통영시 봉수1길 10",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-124,제천 의림지·제림,충북,충청북도 제천시 의림지로 33,address-string-not-source-verified,False,"제천 의림지·제림, 충청북도 제천시 의림지로 33",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-125,원주 소금산 그랜드밸리,강원,강원특별자치도 원주시 지정면 소금산길 165-1,address-string-not-source-verified,False,"원주 소금산 그랜드밸리, 강원특별자치도 원주시 지정면 소금산길 165-1",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-126,아산 공세리성당,충남,충청남도 아산시 인주면 공세리성당길 10,address-string-not-source-verified,False,"아산 공세리성당, 충청남도 아산시 인주면 공세리성당길 10",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-127,안동 월영교,경북,경상북도 안동시 상아동 569,address-string-not-source-verified,False,"안동 월영교, 경상북도 안동시 상아동 569",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-128,진주성·촉석루,경남,경상남도 진주시 남강로 626,address-string-not-source-verified,False,"진주성·촉석루, 경상남도 진주시 남강로 626",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-129,울산 태화강 국가정원·십리대숲,울산,울산광역시 중구 태화강국가정원길 154,address-string-not-source-verified,False,"울산 태화강 국가정원·십리대숲, 울산광역시 중구 태화강국가정원길 154",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-130,익산 미륵사지·국립익산박물관,전북,전북특별자치도 익산시 금마면 미륵사지로 362,address-string-not-source-verified,False,"익산 미륵사지·국립익산박물관, 전북특별자치도 익산시 금마면 미륵사지로 362",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-133,세종 금강보행교,세종,세종특별자치시 세종동 금강보행교 일대,approximate-or-needs-review,True,"세종 금강보행교, 세종",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-139,서울 KBS아레나,서울,서울특별시 강서구 공항대로 376 (화곡동),address-string-not-source-verified,False,"서울 KBS아레나, 서울특별시 강서구 공항대로 376 (화곡동)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-140,서울 YES24 라이브홀,서울,서울특별시 광진구 구천면로 20,address-string-not-source-verified,False,"서울 YES24 라이브홀, 서울특별시 광진구 구천면로 20",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-141,서울 세종대학교 대양홀,서울,서울특별시 광진구 능동로 209 (세종대학교 정문 왼편),address-string-not-source-verified,False,"서울 세종대학교 대양홀, 서울특별시 광진구 능동로 209 (세종대학교 정문 왼편)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-142,서울 블루스퀘어 SOL 트래블홀,서울,서울특별시 용산구 이태원로 294,address-string-not-source-verified,False,"서울 블루스퀘어 SOL 트래블홀, 서울특별시 용산구 이태원로 294",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-149,인천 인스파이어 아레나 대형 공연장,인천,인천광역시 중구 공항문화로 127,address-string-not-source-verified,False,"인천 인스파이어 아레나 대형 공연장, 인천광역시 중구 공항문화로 127",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-160,고척스카이돔 · 대형 실내 공연·스포츠 아레나,서울,서울 구로구 경인로 430,address-string-not-source-verified,False,"고척스카이돔 · 대형 실내 공연·스포츠 아레나, 서울 구로구 경인로 430",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-161,서울월드컵경기장 · 야외 스타디움,서울,서울 마포구 월드컵로 240,address-string-not-source-verified,False,"서울월드컵경기장 · 야외 스타디움, 서울 마포구 월드컵로 240",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-162,장충체육관 · 실내 아레나·공연 무대,서울,서울 중구 동호로 241,address-string-not-source-verified,False,"장충체육관 · 실내 아레나·공연 무대, 서울 중구 동호로 241",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-163,김중업건축박물관,경기·수도권,경기도 안양시 만안구 예술공원로103번길 4,address-string-not-source-verified,False,"김중업건축박물관, 경기도 안양시 만안구 예술공원로103번길 4",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-164,아르코미술관,서울,서울특별시 종로구 동숭길 3,address-string-not-source-verified,False,"아르코미술관, 서울특별시 종로구 동숭길 3",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-165,아트센터 인천 콘서트홀,인천,인천광역시 연수구 아트센터대로 222 (송도동),address-string-not-source-verified,False,"아트센터 인천 콘서트홀, 인천광역시 연수구 아트센터대로 222 (송도동)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-166,전남도립미술관,전남,전라남도 광양시 광양읍 순광로 660,address-string-not-source-verified,False,"전남도립미술관, 전라남도 광양시 광양읍 순광로 660",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-167,동해 도째비골 스카이밸리·해랑전망대,강원,강원특별자치도 동해시 묵호진동 2-109 (도째비골 스카이밸리),address-string-not-source-verified,False,"동해 도째비골 스카이밸리·해랑전망대, 강원특별자치도 동해시 묵호진동 2-109 (도째비골 스카이밸리)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-168,부산 아미산전망대·낙동강하구 조망,부산,부산광역시 사하구 다대낙조2길 77,address-string-not-source-verified,False,"부산 아미산전망대·낙동강하구 조망, 부산광역시 사하구 다대낙조2길 77",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-170,명동예술극장,서울,서울 중구 명동길 35,address-string-not-source-verified,False,"명동예술극장, 서울 중구 명동길 35",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-171,서울함공원,서울,서울 마포구 마포나루길 407,address-string-not-source-verified,False,"서울함공원, 서울 마포구 마포나루길 407",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-172,김포아트빌리지 한옥마을·아트센터,경기·수도권,경기 김포시 모담공원로 170,address-string-not-source-verified,False,"김포아트빌리지 한옥마을·아트센터, 경기 김포시 모담공원로 170",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-173,수원 방화수류정·용연 조망,경기·수도권,경기 수원시 팔달구 매향동 151,address-string-not-source-verified,False,"수원 방화수류정·용연 조망, 경기 수원시 팔달구 매향동 151",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-175,전북도립미술관,전북,전북특별자치도 완주군 구이면 모악산길 111-6,address-string-not-source-verified,False,"전북도립미술관, 전북특별자치도 완주군 구이면 모악산길 111-6",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-176,고은사진미술관,부산,부산광역시 해운대구 해운대로452번길 16,address-string-not-source-verified,False,"고은사진미술관, 부산광역시 해운대구 해운대로452번길 16",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-177,원주 한지테마파크,강원,강원특별자치도 원주시 한지공원길 151,address-string-not-source-verified,False,"원주 한지테마파크, 강원특별자치도 원주시 한지공원길 151",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-178,서울로7017 보행데크,서울,서울특별시 중구 청파로 일대,approximate-or-needs-review,True,"서울로7017 보행데크, 서울 중구·용산구 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-179,퐁피두센터 한화,서울,"서울특별시 영등포구 63로 50, 63빌딩 별관 G층",address-string-not-source-verified,False,"퐁피두센터 한화, 서울특별시 영등포구 63로 50, 63빌딩 별관 G층",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-180,박서보미술관,서울,서울특별시 서대문구 연희로24길 9-54,address-string-not-source-verified,False,"박서보미술관, 서울특별시 서대문구 연희로24길 9-54",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-181,당진 아미미술관,충남,충청남도 당진시 순성면 남부로 753-4,address-string-not-source-verified,False,"당진 아미미술관, 충청남도 당진시 순성면 남부로 753-4",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-182,청주시립미술관 본관,충북,충청북도 청주시 서원구 충렬로18번길 50,address-string-not-source-verified,False,"청주시립미술관 본관, 충청북도 청주시 서원구 충렬로18번길 50",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-183,양구 박수근미술관,강원,강원특별자치도 양구군 양구읍 박수근로 265-15,address-string-not-source-verified,False,"양구 박수근미술관, 강원특별자치도 양구군 양구읍 박수근로 265-15",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-184,한성백제박물관,서울,서울특별시 송파구 위례성대로 71 (방이동 88-20),address-string-not-source-verified,False,"한성백제박물관, 서울특별시 송파구 위례성대로 71 (방이동 88-20)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-185,울진 후포 등기산 스카이워크,경북,경상북도 울진군 후포면 등기산 일대,approximate-or-needs-review,True,"울진 후포 등기산 스카이워크, 경북 울진군 후포면 후포항·등기산",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-186,철원 한탄강 주상절리길 잔도,강원,강원특별자치도 철원군 갈말읍 군탄리 순담매표소 일대,approximate-or-needs-review,True,"철원 한탄강 주상절리길 잔도, 강원특별자치도 철원군 갈말읍 한탄강 순담·드르니 구간",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-187,정동심곡 바다부채길,강원,정동 매표소: 강원특별자치도 강릉시 강동면 정동진리 50-13 / 심곡 매표소: 강동면 심곡리 114-3,address-string-not-source-verified,False,"정동심곡 바다부채길, 정동 매표소: 강원특별자치도 강릉시 강동면 정동진리 50-13 / 심곡 매표소: 강동면 심곡리 114-3",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-188,푸투라서울 FUTURA SEOUL,서울,서울특별시 종로구 북촌로 61,address-string-not-source-verified,False,"푸투라서울 FUTURA SEOUL, 서울특별시 종로구 북촌로 61",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-189,부산근현대역사관 본관,부산,부산광역시 중구 대청로 112,address-string-not-source-verified,False,"부산근현대역사관 본관, 부산광역시 중구 대청로 112",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-190,국립무형유산원,전북,전북특별자치도 전주시 완산구 서학로 95,address-string-not-source-verified,False,"국립무형유산원, 전북특별자치도 전주시 완산구 서학로 95",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-191,국립김해박물관,경남,경상남도 김해시 가야의길 190,address-string-not-source-verified,False,"국립김해박물관, 경상남도 김해시 가야의길 190",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-192,국립민속박물관 파주,경기·수도권,경기도 파주시 탄현면 헤이리로 30,address-string-not-source-verified,False,"국립민속박물관 파주, 경기도 파주시 탄현면 헤이리로 30",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-193,부산영화체험박물관,부산,부산광역시 중구 대청로126번길 12,address-string-not-source-verified,False,"부산영화체험박물관, 부산광역시 중구 대청로126번길 12",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-194,국립부여박물관,충남,충청남도 부여군 부여읍 금성로 5,address-string-not-source-verified,False,"국립부여박물관, 충청남도 부여군 부여읍 금성로 5",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-195,국립대구박물관,대구,대구광역시 수성구 청호로 321,address-string-not-source-verified,False,"국립대구박물관, 대구광역시 수성구 청호로 321",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-196,부산 오륙도스카이워크,부산,부산광역시 남구 용호동 950-3,address-string-not-source-verified,False,"부산 오륙도스카이워크, 부산광역시 남구 용호동 950-3",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-197,제주 용머리해안,제주,제주특별자치도 서귀포시 안덕면 사계리 112-3,address-string-not-source-verified,False,"제주 용머리해안, 제주특별자치도 서귀포시 안덕면 사계리 112-3",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-198,거제 매미성,경남,경상남도 거제시 장목면 복항길 29,address-string-not-source-verified,False,"거제 매미성, 경상남도 거제시 장목면 복항길 29",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-199,대전 엑스포다리·한빛탑 야간 조망권,대전,대전광역시 유성구 대덕대로 480 일대,approximate-or-needs-review,True,"대전 엑스포다리·한빛탑 야간 조망권, 대전 유성구 도룡동",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-200,경기도서관,경기·수도권,경기도 수원시 영통구 도청로 40,address-string-not-source-verified,False,"경기도서관, 경기도 수원시 영통구 도청로 40",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-201,국립인천해양박물관,인천,인천광역시 제물포구 월미로 294,address-string-not-source-verified,False,"국립인천해양박물관, 인천광역시 제물포구 월미로 294",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-202,국립세계문자박물관,인천,인천광역시 연수구 센트럴로 217,address-string-not-source-verified,False,"국립세계문자박물관, 인천광역시 연수구 센트럴로 217",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-203,국립생태원 에코리움,충남,충청남도 서천군 마서면 금강로 1210,address-string-not-source-verified,False,"국립생태원 에코리움, 충청남도 서천군 마서면 금강로 1210",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-204,국립경주박물관,경북,경상북도 경주시 일정로 186,address-string-not-source-verified,False,"국립경주박물관, 경상북도 경주시 일정로 186",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-205,국립전주박물관,전북,전북특별자치도 전주시 완산구 쑥고개길 249,address-string-not-source-verified,False,"국립전주박물관, 전북특별자치도 전주시 완산구 쑥고개길 249",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-206,국립나주박물관,전남,전라남도 나주시 반남면 고분로 747,address-string-not-source-verified,False,"국립나주박물관, 전라남도 나주시 반남면 고분로 747",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-207,국립진주박물관,경남,경상남도 진주시 남강로 626,address-string-not-source-verified,False,"국립진주박물관, 경상남도 진주시 남강로 626",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-208,군산 경암동 철길마을,전북,전북특별자치도 군산시 경촌4길 14,address-string-not-source-verified,False,"군산 경암동 철길마을, 전북특별자치도 군산시 경촌4길 14",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-209,경주 문무대왕릉 해안,경북,경상북도 경주시 문무대왕면 봉길리 해안,address-string-not-source-verified,False,"경주 문무대왕릉 해안, 경상북도 경주시 문무대왕면 봉길리 해안",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-211,동해 추암 촛대바위 해안,강원,강원특별자치도 동해시 추암동 추암해안,address-string-not-source-verified,False,"동해 추암 촛대바위 해안, 강원특별자치도 동해시 추암동 추암해안",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-135,서울 STAGE1 성수 대형 호리존 스튜디오,서울,서울 성동구 성수동 일대(정확한 도로명 주소는 예약처 확인),approximate-or-needs-review,True,"서울 STAGE1 성수 대형 호리존 스튜디오, 서울 성동구 성수동 일대 · 예약 시 정확한 도로명 주소 확인",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-136,서울 레이어41 대형 복합 스튜디오,서울,서울특별시 성동구 성수동2가 277-4 (아차산로9길 41),address-string-not-source-verified,False,"서울 레이어41 대형 복합 스튜디오, 서울특별시 성동구 성수동2가 277-4 (아차산로9길 41)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-137,서울 레이어57 대형 산업 스튜디오,서울,서울특별시 성동구 성수동2가 276-8 (성수이로20길 57),address-string-not-source-verified,False,"서울 레이어57 대형 산업 스튜디오, 서울특별시 성동구 성수동2가 276-8 (성수이로20길 57)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-138,서울 레이어26 자연광 호리존 스튜디오,서울,서울특별시 성동구 성수동2가 279-2 (아차산로11가길 26),address-string-not-source-verified,False,"서울 레이어26 자연광 호리존 스튜디오, 서울특별시 성동구 성수동2가 279-2 (아차산로11가길 26)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-143,서울 블랭크빔 성수 스튜디오,서울,서울 성동구 성수동 일대 · 정확한 출입 주소는 공식 예약 안내 확인,approximate-or-needs-review,True,"서울 블랭크빔 성수 스튜디오, 서울 성동구 성수동 일대 · 예약 시 정확한 도로명 주소 확인",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-144,서울 디아트 미아점 대형 촬영 스튜디오,서울,서울특별시 강북구 오패산로 118-11 (미아동),address-string-not-source-verified,False,"서울 디아트 미아점 대형 촬영 스튜디오, 서울특별시 강북구 오패산로 118-11 (미아동)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-145,서울 SLR 렌탈 시네 스튜디오 호리존,서울,서울특별시 마포구 양화로10길 37 (서교동),address-string-not-source-verified,False,"서울 SLR 렌탈 시네 스튜디오 호리존, 서울특별시 마포구 양화로10길 37 (서교동)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-146,서울 에고톤 스튜디오,서울,서울특별시 금천구 (정확한 도로명 주소 확인 필요),approximate-or-needs-review,True,"서울 에고톤 스튜디오, 서울 금천구 (정확한 도로명 주소·출입구 위치는 운영처 확인 필요)",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-147,서울 Studio D2 대형 호리존 스튜디오,서울,서울특별시 마포구 모래내로7길 62 두보빌딩 B2,address-string-not-source-verified,False,"서울 Studio D2 대형 호리존 스튜디오, 서울특별시 마포구 모래내로7길 62 두보빌딩 B2",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-148,경기 VA STUDIO HANAM 대형 버추얼 프로덕션 스튜디오,경기·수도권,경기도 하남시 미사강변한강로 325·345 일대(스테이지별 주소 확인),approximate-or-needs-review,True,"경기 VA STUDIO HANAM 대형 버추얼 프로덕션 스튜디오, 경기도 하남시 미사강변한강로 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-150,K-Film Studio #5 · 파주 대형 호리존,경기·수도권,경기 파주시 파주읍 봉서산로 308-8,address-string-not-source-verified,False,"K-Film Studio #5 · 파주 대형 호리존, 경기 파주시 파주읍 봉서산로 308-8",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-151,BasicTech XR/VP Studio · 파주,경기·수도권,경기도 파주시 신촌1로 17 베이직테크빌딩,address-string-not-source-verified,False,"BasicTech XR/VP Studio · 파주, 경기도 파주시 신촌1로 17 베이직테크빌딩",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-152,Aube Studio · 성수 촬영 스튜디오,서울,서울 성동구 아차산로11가길 6 (성수동2가),address-string-not-source-verified,False,"Aube Studio · 성수 촬영 스튜디오, 서울 성동구 아차산로11가길 6 (성수동2가)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-153,K-Film Studio #1 · 서울 마포 호리존,서울,서울 마포구 백범로 35 (신수동),address-string-not-source-verified,False,"K-Film Studio #1 · 서울 마포 호리존, 서울 마포구 백범로 35 (신수동)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-154,SM Studio · 파주 대형 스테이지,경기·수도권,경기도 파주시 평화로428번길 7 (검산동),address-string-not-source-verified,False,"SM Studio · 파주 대형 스테이지, 경기도 파주시 평화로428번길 7 (검산동)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-155,XON Studios · 고양 일산 LED 버추얼 프로덕션,경기·수도권,경기도 고양시 일산동구 고봉로770번길 60 (설문동),address-string-not-source-verified,False,"XON Studios · 고양 일산 LED 버추얼 프로덕션, 경기도 고양시 일산동구 고봉로770번길 60 (설문동)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-156,K-Film Studio #2 · 파주 문발 호리존,경기·수도권,경기 파주시 문발로 214-34 (문발동),address-string-not-source-verified,False,"K-Film Studio #2 · 파주 문발 호리존, 경기 파주시 문발로 214-34 (문발동)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-157,K-Film Studio #3 · 파주 탄현 화이트·그린 호리존,경기·수도권,경기 파주시 탄현면 오금로50번길 35,address-string-not-source-verified,False,"K-Film Studio #3 · 파주 탄현 화이트·그린 호리존, 경기 파주시 탄현면 오금로50번길 35",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-158,난든집 파주 스튜디오 · 대형 제작 스테이지,경기·수도권,경기 파주시 파주읍 샛봉우재길 174-21 (봉암리 261),address-string-not-source-verified,False,"난든집 파주 스튜디오 · 대형 제작 스테이지, 경기 파주시 파주읍 샛봉우재길 174-21 (봉암리 261)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-159,날다스튜디오 · 파주 고층 리깅 스튜디오,경기·수도권,경기 파주시 파주읍 바리골길 290 (향양리 215),address-string-not-source-verified,False,"날다스튜디오 · 파주 고층 리깅 스튜디오, 경기 파주시 파주읍 바리골길 290 (향양리 215)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-212,현대카드 뮤직 라이브러리,서울,서울특별시 용산구 이태원로 246,address-string-not-source-verified,False,"현대카드 뮤직 라이브러리, 서울특별시 용산구 이태원로 246",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-213,국립대한민국임시정부기념관,서울,서울특별시 서대문구 통일로 279-24,address-string-not-source-verified,False,"국립대한민국임시정부기념관, 서울특별시 서대문구 통일로 279-24",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-214,서울기록원,서울,서울특별시 은평구 통일로62길 7,address-string-not-source-verified,False,"서울기록원, 서울특별시 은평구 통일로62길 7",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-215,한국만화박물관,경기·수도권,경기도 부천시 길주로 1,address-string-not-source-verified,False,"한국만화박물관, 경기도 부천시 길주로 1",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-216,정약용도서관,경기·수도권,경기도 남양주시 다산중앙로82번안길 138,address-string-not-source-verified,False,"정약용도서관, 경기도 남양주시 다산중앙로82번안길 138",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-217,수원화성박물관,경기·수도권,경기도 수원시 팔달구 창룡대로 21,address-string-not-source-verified,False,"수원화성박물관, 경기도 수원시 팔달구 창룡대로 21",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-218,현대 모터스튜디오 서울,서울,서울특별시 강남구 언주로 738,address-string-not-source-verified,False,"현대 모터스튜디오 서울, 서울특별시 강남구 언주로 738",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-219,전쟁기념관,서울,서울특별시 용산구 이태원로 29,address-string-not-source-verified,False,"전쟁기념관, 서울특별시 용산구 이태원로 29",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-220,서서울호수공원,서울,서울특별시 양천구 남부순환로64길 26,address-string-not-source-verified,False,"서서울호수공원, 서울특별시 양천구 남부순환로64길 26",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-221,서울숲,서울,서울특별시 성동구 뚝섬로 273,address-string-not-source-verified,False,"서울숲, 서울특별시 성동구 뚝섬로 273",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-222,임진각 평화누리공원,경기·수도권,경기도 파주시 문산읍 임진각로 148-40,address-string-not-source-verified,False,"임진각 평화누리공원, 경기도 파주시 문산읍 임진각로 148-40",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-223,물의 정원,경기·수도권,경기도 남양주시 조안면 북한강로 398,address-string-not-source-verified,False,"물의 정원, 경기도 남양주시 조안면 북한강로 398",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-v1309-in-003,DOQ SEOUL · 이태원 복합 전시공간,서울,서울 용산구 이태원 일대 · 상세 주소 확인 필요,approximate-or-needs-review,True,"DOQ SEOUL · 이태원 복합 전시공간, 서울 용산구 이태원 일대 · 정확 주소 확인 필요",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-v1309-in-007,서울아트책보고,서울,"서울특별시 구로구 경인로 430, 고척스카이돔 지하 공간",address-string-not-source-verified,False,"서울아트책보고, 서울특별시 구로구 경인로 430, 고척스카이돔 지하 공간",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-v1309-in-008,디뮤지엄 성수,서울,"서울특별시 성동구 왕십리로 83-21, 아크로 서울포레스트",public-source-verified,False,"디뮤지엄 성수, 서울특별시 성동구 왕십리로 83-21, 아크로 서울포레스트",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-v1309-in-009,502 Studio · 독산 산업형 스튜디오,서울,서울 금천구 독산동 일대 · 정확 주소와 운영처 확인 필요,approximate-or-needs-review,True,"502 Studio · 독산 산업형 스튜디오, 서울 금천구 독산동 일대 · 상세 주소 확인 필요",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-v1309-in-010,문래 구공장형 촬영공간 · 언하이드,서울,서울특별시 영등포구 문래동 일대 · 정확 주소와 운영처 확인 필요,approximate-or-needs-review,True,"문래 구공장형 촬영공간 · 언하이드, 서울 영등포구 문래동 일대 · 상세 주소 확인 필요",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-v1309-in-005,의정부 음악도서관,경기·수도권,경기도 의정부시 장곡로 280 · 방문 전 운영처 재확인,public-source-verified,False,"의정부 음악도서관, 경기도 의정부시 장곡로 280 · 방문 전 운영처 재확인",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-v1309-in-006,송도컨벤시아 전시장,인천,인천광역시 연수구 센트럴로 123,public-source-verified,False,"송도컨벤시아 전시장, 인천광역시 연수구 센트럴로 123",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-v1314-in-001,킨텍스 제1·2전시장,경기·수도권,경기도 고양시 일산서구 킨텍스로 217-60,public-source-verified,False,"킨텍스 제1·2전시장, 경기도 고양시 일산서구 킨텍스로 217-60",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-v1314-in-002,수원컨벤션센터 전시홀·컨벤션홀,경기·수도권,경기도 수원시 영통구 광교중앙로 140,public-source-verified,False,"수원컨벤션센터 전시홀·컨벤션홀, 경기도 수원시 영통구 광교중앙로 140",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-v1314-in-003,T팩토리 성수,서울,서울특별시 성동구 성수이로7길 일대 · 상세 주소·운영 확인 필요,approximate-or-needs-review,True,"T팩토리 성수, 서울특별시 성동구 성수이로 7길 일대 · 정확 주소 방문 전 확인",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-v1314-in-004,KIR SEOUL · 키르서울,서울,서울특별시 성동구 성수이로26길 27-20,public-source-verified,False,"KIR SEOUL · 키르서울, 서울특별시 성동구 성수이로26길 27-20",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-v1314-in-005,OWF STUDIO · 성수,서울,서울특별시 성동구 성수일로4가길 10-57,public-source-verified,False,"OWF STUDIO · 성수, 서울특별시 성동구 성수일로4가길 10-57",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-v1315-in-001,레이어20 · 원효로 변전소 재생 스튜디오,서울,서울특별시 용산구 원효로1가 129-20 (원효로 236),address-string-not-source-verified,False,"레이어20 · 원효로 변전소 재생 스튜디오, 서울특별시 용산구 원효로1가 129-20 (원효로 236)",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-v1317-in-001,Layer11 스튜디오 · 신수동 자연광 산업 공간,서울,서울특별시 마포구 광성로 41-11 (신수동 93-4),public-source-verified,False,"Layer11 스튜디오 · 신수동 자연광 산업 공간, 서울특별시 마포구 광성로 41-11 (신수동 93-4)",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-v1317-in-002,1289 Bunker · 이태원 지하 복합 프로덕션 공간,서울,서울특별시 용산구 이태원역 4번 출구 인근 · 상세 번지 예약처 확인,approximate-or-needs-review,True,"1289 Bunker · 이태원 지하 복합 프로덕션 공간, 서울 용산구 이태원역 4번 출구 인근 · 번지 미확인",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-v1344-in-001,Studio Steel Brix,서울,서울특별시 마포구 성암로 15-8 (성산동),public-source-verified,False,"Studio Steel Brix, 서울특별시 마포구 성암로 15-8 (성산동)",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-v1344-in-002,ANDMUSEUM Studio,서울,서울특별시 성동구 아차산로15길 47-38 (성수동2가 280-18),public-source-verified,False,"ANDMUSEUM Studio, 서울특별시 성동구 아차산로15길 47-38 (성수동2가 280-18)",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-new-242,Roof Square · 상부광장 건축 후보,서울,서울 동북권 후보 · 정확한 현장 주소와 공개 접근 경로 미확인,approximate-or-needs-review,True,"Roof Square · 상부광장 건축 후보, 서울 동북권 · 정확 위치 확인 필요",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-v1322-in-003,BLANKBEAM · 성수 자연광 스튜디오,서울,"서울특별시 성동구 성수일로3길 15, 2층",public-source-verified,False,"BLANKBEAM · 성수 자연광 스튜디오, 서울특별시 성동구 성수일로3길 15, 2층",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-v1322-in-004,Tanino Studio · 성수,서울,"서울특별시 성동구 성수일로 84, 803호",public-source-verified,False,"Tanino Studio · 성수, 서울특별시 성동구 성수일로 84, 803호",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-new-240,남산 야외식물원 · 정원 촬영 후보,서울,서울특별시 용산구 이태원동 남산 야외식물원 일대 · 정확 진입점 확인 필요,approximate-or-needs-review,True,"남산 야외식물원 · 정원 촬영 후보, 서울 용산구 이태원동 남산 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-239,수봉근린공원 스카이워크,인천,인천광역시 미추홀구 수봉안길 84 일대 · 정확 진입점 확인 필요,approximate-or-needs-review,True,"수봉근린공원 스카이워크, 인천 미추홀구 수봉산 일대",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-238,서울스카이 전망대,서울,서울특별시 송파구 올림픽로 300 롯데월드타워 117~123층,public-source-verified,False,"서울스카이 전망대, 서울특별시 송파구 올림픽로 300 롯데월드타워 117~123층",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-new-236,송도 G타워 전망대,인천,인천광역시 연수구 아트센터대로 175,address-string-not-source-verified,False,"송도 G타워 전망대, 인천광역시 연수구 아트센터대로 175",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-235,서울시청 하늘광장,서울,서울특별시 중구 세종대로 110 서울시청 본관 8~10층,public-source-verified,False,"서울시청 하늘광장, 서울특별시 중구 세종대로 110 서울시청 본관 8~10층",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-new-234,스페이스 톤 갤러리,서울,서울특별시 마포구 토정로 43-2 · 방문 전 운영 확인,address-string-not-source-verified,False,"스페이스 톤 갤러리, 서울특별시 마포구 토정로 43-2 · 방문 전 운영 확인",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-233,프리즈 하우스 서울,서울,서울특별시 중구 동호로15길 17 · 행사·기간별 운영 확인,address-string-not-source-verified,False,"프리즈 하우스 서울, 서울특별시 중구 동호로15길 17 · 행사·기간별 운영 확인",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-232,기흥호수공원 · 수변 촬영 구간,경기·수도권,경기도 용인시 기흥구 하갈동·공세동·고매동 일원 · 진입점 확인 필요,approximate-or-needs-review,True,"기흥호수공원 · 수변 촬영 구간, 경기 용인시 기흥구 하갈동·공세동·고매동",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-231,미사한강공원 · 강변 촬영 구간,경기·수도권,경기도 하남시 선동 413번지 일원 · 진입점 확인 필요,approximate-or-needs-review,True,"미사한강공원 · 강변 촬영 구간, 경기 하남시 선동 한강변",목적지명·권역 기반 검색 · 정확한 진입점은 지도에서 확인 필요,False
+fa3-new-230,광교호수공원 · 수변 보행교,경기·수도권,경기도 수원시 영통구 광교호수공원로 102,address-string-not-source-verified,False,"광교호수공원 · 수변 보행교, 경기도 수원시 영통구 광교호수공원로 102",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-229,인천개항장 근대건축전시관,인천,인천광역시 중구 신포로23번길 77,address-string-not-source-verified,False,"인천개항장 근대건축전시관, 인천광역시 중구 신포로23번길 77",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-228,인천도시역사관,인천,인천광역시 연수구 인천타워대로 238,address-string-not-source-verified,False,"인천도시역사관, 인천광역시 연수구 인천타워대로 238",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-227,성남큐브미술관,경기·수도권,경기도 성남시 분당구 성남대로 808,address-string-not-source-verified,False,"성남큐브미술관, 경기도 성남시 분당구 성남대로 808",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-226,서울시립 미술아카이브,서울,서울특별시 종로구 평창문화로 101,public-source-verified,False,"서울시립 미술아카이브, 서울특별시 종로구 평창문화로 101",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
+fa3-new-225,대한민국역사박물관,서울,서울특별시 종로구 세종대로 198,address-string-not-source-verified,False,"대한민국역사박물관, 서울특별시 종로구 세종대로 198",등록 주소로 길찾기 요청 · 지도 결과와 실제 진입구 확인,False
+fa3-new-224,서울역사박물관,서울,서울특별시 종로구 새문안로 55,public-source-verified,False,"서울역사박물관, 서울특별시 종로구 새문안로 55",주소 공개 원문 확인 · 실제 출입구는 현장 확인,False
