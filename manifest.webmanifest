@@ -1,7 +1,7 @@
 {
   "name": "FRAME ATLAS 3.0",
-  "short_name": "FRAME ATLAS v13.29",
-  "description": "FRAME ATLAS 3.0 v13.29 · Professional photo location scout",
+  "short_name": "FRAME ATLAS v13.47",
+  "description": "FRAME ATLAS 3.0 v13.47 · 592개 장소 · 412개 에디토리얼(활성 385) · 대관정보 및 사진·주소 검증 보강",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
